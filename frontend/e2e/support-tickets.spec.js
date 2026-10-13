@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+import { browserLoginSlot as loginSlot, installBrowserSession } from './helpers/browser-session';
 
 // Isolated real Strapi/PostgreSQL accounts; primary save/reload is unintercepted.
 // Other interceptions are explicitly named failure or delayed-response cases.
@@ -17,19 +18,10 @@ const active = page => page.getByTestId('active-organization');
 const dialog = page => page.getByRole('dialog', { name: 'Выбор организации', exact: true });
 const option = (page, id) => page.getByTestId(`organization-option-${id}`);
 const summaries = page => page.getByTestId('support-ticket-summary');
-const loginTimes = [];
 function deferred() { let resolve; const promise = new Promise(done => { resolve = done; }); return { promise, resolve }; }
 
 // Do not disable the real login rate limit. Leave room for setup diagnostics and
 // additional login-boundary cases, pausing only if this serial worker fills a window.
-async function loginSlot() {
-  while (loginTimes.length && Date.now() - loginTimes[0] > 61000) loginTimes.shift();
-  if (loginTimes.length >= 16) {
-    await new Promise(resolve => setTimeout(resolve, 61050 - (Date.now() - loginTimes[0])));
-    while (loginTimes.length && Date.now() - loginTimes[0] > 61000) loginTimes.shift();
-  }
-  loginTimes.push(Date.now());
-}
 
 test.beforeAll(async ({}, testInfo) => {
   expect(process.env.APP_ENV, 'Use backend-node/scripts/run-support-tests.sh').toBe('test');
@@ -42,13 +34,15 @@ test.beforeAll(async ({}, testInfo) => {
     expect(url.protocol).toBe('http:');
     expect(url.username + url.password + url.search + url.hash).toBe('');
   }
+  expect(new URL(api).origin).toBe(new URL(process.env.E2E_SUPPORT_BASE_URL).origin);
+  expect(new URL(api).pathname).toBe('/api/v1');
   for (const id of [a, b]) expect(id).toMatch(/^[a-f0-9-]{36}$/);
   expect(a).not.toBe(b);
-  // A replacement worker loses loginTimes, while the backend retains its real
+  // A replacement worker loses the local login clock, while the backend retains its real
   // 20/minute window. With workers=1, clear that window before every later
   // worker (including mobile) starts; the first worker has the runner cooldown.
   // This wait never retries a rejected login or changes the backend limiter.
-  if (testInfo.workerIndex > 0) await new Promise(resolve => setTimeout(resolve, 61050));
+  if (testInfo.workerIndex > 0) { test.setTimeout(testInfo.timeout + 61050); await new Promise(resolve => setTimeout(resolve, 61050)); }
 });
 
 async function login(page, kind = 'editor') {
@@ -74,19 +68,12 @@ async function response(page, method) {
 async function readTickets(page) {
   return page.evaluate(async url => {
     const session = JSON.parse(sessionStorage.getItem('alageum_session') || '{}');
-    const reply = await fetch(url, { headers: { Authorization: `Bearer ${session.access_token}`, 'X-Organization-ID': session.organization_id }, cache: 'no-store' });
+    const reply = await fetch(url, { credentials: 'same-origin', headers: { 'X-Browser-Session': session.browser_session, 'X-Organization-ID': session.organization_id }, cache: 'no-store' });
     return { status: reply.status, body: await reply.json() };
   }, tickets);
 }
-async function installLogin(page, request, kind = 'editor') {
-  await loginSlot();
-  const result = await request.post(`${api}/auth/login`, { data: { email: email(kind), password: process.env.E2E_SUPPORT_PASSWORD } });
-  expect(result.status()).toBe(200);
-  const pair = await result.json();
-  await page.evaluate(session => {
-    sessionStorage.setItem('alageum_session', JSON.stringify(session));
-    window.dispatchEvent(new Event('alageum:session-changed'));
-  }, { ...pair, organization_id: kind === 'other' ? b : a });
+async function installLogin(page, kind = 'editor') {
+  return installBrowserSession(page, { email: email(kind), password: process.env.E2E_SUPPORT_PASSWORD, organizationId: kind === 'other' ? b : a });
 }
 async function choose(page, id) {
   await page.getByTestId('organization-switch-trigger').click();
@@ -147,7 +134,7 @@ async function screenshot(page, testInfo, name) {
   await testInfo.attach(name, { path, contentType: 'image/png' });
 }
 
-test('responsive saved ticket: real create, summary, reload and organization isolation', async ({ page, request }, testInfo) => {
+test('responsive saved ticket: real create, summary, reload and organization isolation', async ({ page }, testInfo) => {
   const errors = []; page.on('pageerror', error => errors.push(error.message));
   await login(page);
   const title = ` Fictitious saved support ${testInfo.project.name} ${Date.now()} `;
@@ -164,7 +151,7 @@ test('responsive saved ticket: real create, summary, reload and organization iso
   await reachable(refresh(page));
   await screenshot(page, testInfo, 'saved-fictitious-ticket');
   // Real login to the other organization must never expose this accepted summary.
-  await installLogin(page, request, 'other'); await expect(active(page)).toContainText(b);
+  await installLogin(page, 'other'); await expect(active(page)).toContainText(b);
   await expect(list(page)).toHaveAttribute('aria-busy', 'false');
   await expect(summaries(page).filter({ hasText: title.trim() })).toHaveCount(0);
   expect((await readTickets(page)).body.items.some(item => item.id === summary.id)).toBe(false);
@@ -192,12 +179,15 @@ test('responsive validation: code-point limits, exact whitespace and cancel pres
 for (const kind of ['readonly', 'createonly', 'denied']) test(`${kind} permissions limit navigation and resource requests independently`, async ({ page }) => {
   const calls = []; page.on('request', value => { if ([tickets, categories].includes(value.url())) calls.push(`${value.method()} ${value.url()}`); });
   await login(page, kind);
+  // Check the permission-controlled cabinet navigation, not the independent
+  // public/local support link in the shared footer.
+  const supportLink = page.locator('.sidebar').getByRole('link', { name: 'Поддержка', exact: true });
   if (kind === 'denied') {
     await expect(page.getByRole('main').getByRole('alert')).toContainText('нет доступа к обращениям');
-    await expect(page.getByRole('link', { name: 'Поддержка', exact: true })).toHaveCount(0);
+    await expect(supportLink).toHaveCount(0);
     await expect(form(page)).toHaveCount(0); await expect(list(page)).toHaveCount(0); expect(calls).toEqual([]);
   } else {
-    await expect(page.getByRole('link', { name: 'Поддержка', exact: true })).toBeVisible();
+    await expect(supportLink).toBeVisible();
     if (kind === 'readonly') {
       await expect(form(page)).toHaveCount(0); await expect(list(page)).toHaveAttribute('aria-busy', 'false');
       expect(calls).toContain(`GET ${tickets}`); expect(calls).not.toContain(`GET ${categories}`);
@@ -327,7 +317,7 @@ test('dirty organization switch cancellation keeps draft; confirmed switch clear
   await choose(page, b); await finishSwitch(page, b); await expect(subject(page)).toHaveValue(''); await expect(message(page)).toHaveValue('');
 });
 
-for (const boundary of ['organization', 'new login']) test(`late category and ticket reads stay hidden after ${boundary}`, async ({ page, request }) => {
+for (const boundary of ['organization', 'new login']) test(`late category and ticket reads stay hidden after ${boundary}`, async ({ page }) => {
   await login(page, boundary === 'organization' ? 'multi' : 'editor');
   await expect(form(page).getByRole('combobox')).toBeEnabled(); await expect(list(page)).toHaveAttribute('aria-busy', 'false');
   const lateCategories = await holdRealReply(page, categories);
@@ -335,7 +325,7 @@ for (const boundary of ['organization', 'new login']) test(`late category and ti
   await page.reload(); expect((await lateCategories.started).status).toBe(200); expect((await lateList.started).status).toBe(200);
   if (boundary === 'organization') {
     await choose(page, b); await expect(dialog(page)).not.toBeVisible(); await expect(active(page)).toContainText(b);
-  } else { await installLogin(page, request, 'other'); await expect(active(page)).toContainText(b); }
+  } else { await installLogin(page, 'other'); await expect(active(page)).toContainText(b); }
   await expect(form(page).getByRole('combobox')).toBeEnabled(); await expect(list(page)).toHaveAttribute('aria-busy', 'false');
   const current = await list(page).innerText();
   await lateCategories.release(); await lateList.release();
@@ -343,13 +333,13 @@ for (const boundary of ['organization', 'new login']) test(`late category and ti
   await expect(form(page).getByRole('alert')).toHaveCount(0);
 });
 
-for (const boundary of ['organization', 'same-account login']) test(`late successful POST cannot confirm in a newer ${boundary} context`, async ({ page, request }) => {
+for (const boundary of ['organization', 'same-account login']) test(`late successful POST cannot confirm in a newer ${boundary} context`, async ({ page }) => {
   await login(page, boundary === 'organization' ? 'multi' : 'editor'); await fill(page, `Fictitious delayed write ${Date.now()}`);
   const held = await holdRealReply(page, tickets, value => value.method() === 'POST'); await submit(page).click(); expect((await held.started).status).toBe(201);
   if (boundary === 'organization') {
     await choose(page, b); await expect(page.getByTestId('organization-discard-confirmation')).toContainText('Сохранение ещё выполняется');
     await finishSwitch(page, b);
-  } else { await installLogin(page, request); await expect(subject(page)).toHaveValue(''); }
+  } else { await installLogin(page); await expect(subject(page)).toHaveValue(''); }
   await fill(page, 'Fictitious current context draft'); await held.release();
   await expect(subject(page)).toHaveValue('Fictitious current context draft'); await expect(form(page).getByRole('status')).toHaveCount(0);
   await expect(submit(page)).toBeEnabled();

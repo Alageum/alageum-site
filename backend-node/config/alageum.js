@@ -29,6 +29,14 @@ module.exports = ({ env }) => {
     maxRequestBytes: 1024 * 1024,
     googleEnabled: ["1", "true"].includes(env("ALAGEUM_GOOGLE_ENABLED", "false")),
     browserOrigin: env("ALAGEUM_BROWSER_ORIGIN", ""),
+    registrationMail: {
+      provider: env("ALAGEUM_REGISTRATION_MAIL_PROVIDER", "disabled"),
+      host: env("ALAGEUM_SMTP_HOST", ""),
+      port: Number(env("ALAGEUM_SMTP_PORT", "587")),
+      user: env("ALAGEUM_SMTP_USER", ""),
+      pass: env("ALAGEUM_SMTP_PASSWORD", ""),
+      from: env("ALAGEUM_MAIL_FROM", ""),
+    },
     googleClientId: env("ALAGEUM_GOOGLE_CLIENT_ID", ""),
     googleClientSecret: env("ALAGEUM_GOOGLE_CLIENT_SECRET", ""),
   };

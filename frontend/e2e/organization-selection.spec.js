@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+import { browserLoginSlot } from './helpers/browser-session';
 
 // Real isolated Strapi/PostgreSQL logins. Named failure injection and delayed real
 // replies cover lifecycle races; ordinary selection never edits browser storage.
@@ -27,9 +28,10 @@ const confirmDiscard = page => page.getByTestId('organization-discard-confirmati
 const proceed = page => confirmDiscard(page).getByRole('button', { name: 'Продолжить без сохранения', exact: true });
 function deferred() { let resolve; const promise = new Promise(done => { resolve = done; }); return { promise, resolve }; }
 
-// The complete serial suite stays below the real 20/minute login limit. The
-// runner waits out its setup-login window and never disables the limiter.
-test.beforeAll(() => {
+// Prepare and login share the real 20/minute limiter. Pace complete login
+// attempts and wait out prior workers without disabling the limiter.
+test.beforeAll(async ({}, testInfo) => {
+  if (testInfo.workerIndex > 0) { test.setTimeout(testInfo.timeout + 61050); await new Promise(resolve => setTimeout(resolve, 61050)); }
   expect(process.env.APP_ENV, 'Use backend-node/scripts/run-organization-tests.sh').toBe('test');
   expect(process.env.ALAGEUM_TEST_ORGANIZATION_FIXTURES).toBe('1');
   expect(Boolean(process.env.E2E_ORGANIZATION_PASSWORD && process.env.E2E_ORGANIZATION_PASSWORD.length >= 40)).toBe(true);
@@ -40,11 +42,14 @@ test.beforeAll(() => {
     expect(url.protocol).toBe('http:');
     expect(url.username + url.password + url.search + url.hash).toBe('');
   }
+  expect(new URL(api).origin).toBe(new URL(process.env.E2E_ORGANIZATION_BASE_URL).origin);
+  expect(new URL(api).pathname).toBe('/api/v1');
   for (const id of [a, b]) expect(id).toMatch(/^[a-f0-9-]{36}$/);
   expect(a).not.toBe(b);
 });
 
 async function startLogin(page, kind = 'multi', next = '/b2b/profile') {
+  await browserLoginSlot();
   await page.goto(`/login?next=${encodeURIComponent(next)}`);
   await page.getByLabel('Email', { exact: true }).fill(email(kind));
   await page.getByLabel('Пароль', { exact: true }).fill(process.env.E2E_ORGANIZATION_PASSWORD);
@@ -79,7 +84,7 @@ async function switchTo(page, id) {
 async function readProfile(page, id) {
   return page.evaluate(async ({ url, organization }) => {
     const session = JSON.parse(sessionStorage.getItem('alageum_session') || '{}');
-    const response = await fetch(url, { headers: { Authorization: `Bearer ${session.access_token}`, 'X-Organization-ID': organization }, cache: 'no-store' });
+    const response = await fetch(url, { credentials: 'same-origin', headers: { 'X-Browser-Session': session.browser_session, 'X-Organization-ID': organization }, cache: 'no-store' });
     return { status: response.status, body: await response.json() };
   }, { url: profileEndpoint, organization: id });
 }
@@ -178,7 +183,7 @@ test('responsive active organization: a single membership opens the requested pr
   const saved = await page.evaluate(async ({ url, organization, version, businessContact }) => {
     const session = JSON.parse(sessionStorage.getItem('alageum_session') || '{}');
     if (session.organization_id !== organization) throw new Error('Screenshot fixture organization changed');
-    const response = await fetch(url, { method: 'PATCH', headers: { Authorization: `Bearer ${session.access_token}`, 'X-Organization-ID': organization, 'Content-Type': 'application/json' }, body: JSON.stringify({ version, business_contact_name: businessContact }) });
+    const response = await fetch(url, { credentials: 'same-origin', method: 'PATCH', headers: { 'X-Browser-Session': session.browser_session, 'X-Organization-ID': organization, 'Content-Type': 'application/json' }, body: JSON.stringify({ version, business_contact_name: businessContact }) });
     return { status: response.status, body: await response.json() };
   }, { url: profileEndpoint, organization: a, version: before.body.version, businessContact: screenshotContact });
   expect(saved.status).toBe(200); expect(saved.body).toMatchObject({ organization_id: a, business_contact_name: screenshotContact });
@@ -337,33 +342,38 @@ test('fresh stale-session detail recovery requires choice and never requests the
   expect(await storedOrganization(page)).toBe(b);
 });
 
-test('expired access and expired refresh clear identity during selection', async ({ page }) => {
+test('expired cookie session clears identity during selection without refresh', async ({ page }) => {
   await login(page); await openSelection(page);
   let refreshes = 0;
   await page.route(meEndpoint, route => reply(route, expired, 401));
-  await page.route(refreshEndpoint, route => { if (route.request().method() !== 'OPTIONS') refreshes++; return reply(route, expired, 401); });
+  page.on('request', request => { if (request.url() === refreshEndpoint && request.method() === 'POST') refreshes++; });
   await switchSubmit(page).click();
   await expect.poll(() => page.evaluate(() => sessionStorage.getItem('alageum_session'))).toBeNull();
   await expect(personal(page)).toHaveCount(0); await expect(company(page)).toHaveCount(0);
-  expect(refreshes).toBe(1);
+  expect(refreshes).toBe(0);
 });
 
-test('successful refresh during selection preserves the explicit candidate UUID', async ({ page }) => {
+test('expired candidate read requires fresh login and explicit candidate UUID selection', async ({ page }) => {
   await login(page); await openSelection(page);
   const candidateHeaders = []; let rejected = false, refreshes = 0;
   page.on('request', request => { if (request.url() === refreshEndpoint && request.method() === 'POST') refreshes++; });
-  await page.route(meEndpoint, route => {
+  const rejectOnce = route => {
     if (route.request().method() === 'OPTIONS') return route.continue();
     const id = route.request().headers()['x-organization-id'];
     candidateHeaders.push(id);
     if (id === b && !rejected) { rejected = true; return reply(route, expired, 401); }
     return route.continue();
-  });
+  };
+  await page.route(meEndpoint, rejectOnce);
   await switchSubmit(page).click();
-  await expect(dialog(page)).not.toBeVisible(); await expect(active(page)).toContainText(b);
+  await expect.poll(() => page.evaluate(() => sessionStorage.getItem('alageum_session'))).toBeNull();
+  await expect(personal(page)).toHaveCount(0); await expect(company(page)).toHaveCount(0);
+  expect(candidateHeaders.filter(id => id === b)).toHaveLength(1);
+  expect(refreshes).toBe(0);
+  await page.unroute(meEndpoint, rejectOnce);
+  await login(page, 'multi', b);
+  await expect(active(page)).toContainText(b);
   expect(await storedOrganization(page)).toBe(b);
-  expect(candidateHeaders.filter(id => id === b).length).toBeGreaterThanOrEqual(2);
-  expect(refreshes).toBe(1);
 });
 
 test('dismissed membership loading cannot reopen the chooser or change the current organization', async ({ page }) => {
@@ -413,10 +423,11 @@ test('Back, Forward, Escape and backdrop dismiss selection without changing tena
 });
 
 test('invalid credentials expose no membership choices and anonymous public pages stay independent', async ({ page }) => {
+  await browserLoginSlot();
   await page.goto('/login');
   await page.getByLabel('Email', { exact: true }).fill('organization-unknown@fixture.invalid');
   await page.getByLabel('Пароль', { exact: true }).fill('Fictitious wrong password 123!');
-  const failed = page.waitForResponse(response => response.url() === `${api}/auth/login`);
+  const failed = page.waitForResponse(response => response.url() === `${api}/auth/browser-login`);
   await page.getByRole('button', { name: 'Войти', exact: true }).click(); expect((await failed).status()).toBe(401);
   const loginError = page.locator('form').filter({ has: page.getByLabel('Email', { exact: true }) }).getByRole('alert');
   await expect(loginError).toHaveText('Email or password is incorrect');

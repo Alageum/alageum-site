@@ -14,7 +14,7 @@ test('mandatory production and development config gates replace stale proof only
   const temporary = fs.mkdtempSync(path.join(os.tmpdir(), 'alageum-source-context-build-'));
   try {
     const copy = relative => { const dest = path.join(temporary, relative); fs.mkdirSync(path.dirname(dest), { recursive: true }); fs.copyFileSync(path.join(root, relative), dest); };
-    for (const relative of ['next.config.mjs', 'scripts/verify-source-context-build.mjs',
+    for (const relative of ['next.config.mjs', 'lib/api/browserProxy.js', 'scripts/verify-source-context-build.mjs',
       'lib/catalog/source-context/sourceContexts.js', 'lib/catalog/source-context/sourceContextManifest.json',
       'lib/catalog/sources.js', 'lib/catalog/sources-manifest.json', 'lib/catalog/models/transformer2026Shape.js']) copy(relative);
     fs.symlinkSync(fs.realpathSync(path.join(root, 'node_modules')), path.join(temporary, 'node_modules'), 'dir');

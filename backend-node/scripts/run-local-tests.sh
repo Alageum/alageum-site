@@ -62,10 +62,10 @@ export ALAGEUM_CMS_BROWSER_DATABASE_URL="postgresql://alageum_node_test:$PG_PASS
 export APP_ENV=test HOST=127.0.0.1 ALAGEUM_SEED_DEMO=1 ALAGEUM_IMPORT_CATALOG=1
 export ALAGEUM_TEST_ADMIN_FIXTURES=1
 export STRAPI_TELEMETRY_DISABLED=true STRAPI_HIDE_UPDATE_MESSAGE=true NEXT_TELEMETRY_DISABLED=1
-export CORS_ORIGINS="http://127.0.0.1:$WEB_PORT"
-export E2E_API_URL="http://127.0.0.1:$PORT/api/v1" E2E_BASE_URL="http://127.0.0.1:$WEB_PORT"
+export CORS_ORIGINS="http://127.0.0.1:$WEB_PORT" ALAGEUM_BROWSER_ORIGIN="http://127.0.0.1:$WEB_PORT"
+export API_INTERNAL_BASE_URL="http://127.0.0.1:$PORT/api/v1" E2E_API_URL="http://127.0.0.1:$WEB_PORT/api/v1" E2E_BASE_URL="http://127.0.0.1:$WEB_PORT"
 export E2E_CMS_BASE_URL="http://127.0.0.1:$PORT/cms"
-export E2E_QUOTES_BASE_URL="$E2E_BASE_URL" NEXT_PUBLIC_API_URL="$E2E_API_URL" NEXT_PUBLIC_CATALOG_SOURCE=api
+export E2E_QUOTES_BASE_URL="$E2E_BASE_URL" NEXT_PUBLIC_API_URL=/api/v1 NEXT_PUBLIC_CATALOG_SOURCE=api
 for key in APP_KEYS ADMIN_JWT_SECRET API_TOKEN_SALT TRANSFER_TOKEN_SALT ENCRYPTION_KEY ALAGEUM_JWT_SECRET; do
   value=$(node -p 'require("node:crypto").randomBytes(32).toString("hex")')
   if [[ "$key" == APP_KEYS ]]; then value="$value,$(node -p 'require("node:crypto").randomBytes(32).toString("hex")')"; fi

@@ -39,7 +39,9 @@ for (const [route, title] of [['/', 'Производство'], ['/company','П
         const rect = await arrow.evaluate(el => ({ width: el.getBoundingClientRect().width, height: el.getBoundingClientRect().height }));
         expect(rect).toEqual({ width: 18, height: 18 });
       }
-      await expect(page.locator('.corp-cta')).toHaveCSS('background-color', 'rgb(24, 32, 31)');
+      // The 2026-10-13 handoff intentionally replaced green-gray with neutral
+      // gray. Keep this independent literal assertion aligned with that design.
+      await expect(page.locator('.corp-cta')).toHaveCSS('background-color', 'rgb(30, 30, 30)');
     });
     if (route === '/company') await test.step('all solution cards fit a 320px viewport', async () => {
       await page.setViewportSize({ width: 320, height: 780 });
@@ -284,3 +286,4 @@ test('expanded project portfolio filters work, case routes open and words fit', 
     expect(overflow, slug).toEqual([]);
   }
 });
+

@@ -1,5 +1,8 @@
 "use strict";
 const authModule = require("./domain/auth");
+const { createBrowserSessions } = require("./domain/browser-sessions");
+const { createRegistration } = require("./domain/registration");
+const registrationSchema = require("./domain/registration-schema");
 const federatedModule = require("./domain/federated-auth");
 const federatedSchema = require("./domain/federated-schema");
 const supportModule = require("./domain/support");
@@ -57,13 +60,16 @@ module.exports = {
     await catalogFiltersModule.ensureSchema(db);
     await pageEditorial.completePageSchema(strapi);
     await federatedSchema.ensureSchema(db);
-    const federated = federatedModule.createFederatedAuth({ db, config, audit: auditModule.audit });
+    await registrationSchema.ensureSchema(db);
+    const browserSessions = createBrowserSessions({ db, config, audit: auditModule.audit });
+    const federated = federatedModule.createFederatedAuth({ db, config, audit: auditModule.audit, browserSessions });
     const auth = authModule.createAuth({
-      browserSessions: federated,
+      browserSessions,
       db,
       config,
       audit: auditModule.audit,
     });
+    const registration = createRegistration({ db, auth, config, audit: auditModule.audit, browserSessions });
     const catalog = createCatalog({ db, auth, audit: auditModule.audit, compatibilityReads: true });
     const catalogFilters = catalogFiltersModule.createCatalogFilters({ db });
     const quotes = quoteModule.createQuotes({
@@ -88,7 +94,7 @@ module.exports = {
     const documents = documentsModule.createDocuments({ db, auth, audit: auditModule.audit });
     const signing = signingModule.createDocumentSigning({ db, auth, audit: auditModule.audit, enabled: config.documentSigningEnabled });
     const system = systemModule.createSystem({ db, metrics: strapi.alageumMetrics, environment: config.env });
-    strapi.alageum = { auth, federated, catalog, catalogFilters, quotes, quoteCreateLimit, cmsCatalog, organizationProfile, organizationMembers, support, orders, invoices, documents, signing, system };
+    strapi.alageum = { auth, federated, browserSessions, registration, catalog, catalogFilters, quotes, quoteCreateLimit, cmsCatalog, organizationProfile, organizationMembers, support, orders, invoices, documents, signing, system };
     if (config.importCatalog)
       strapi.log.info(
         "Reviewed catalog import: " +
@@ -96,5 +102,9 @@ module.exports = {
       );
     await auth.seed();
     await support.seedDemo(config);
+    registration.startMailWorker();
+  },
+  async destroy({ strapi }) {
+    await strapi.alageum?.registration?.stopMailWorker();
   },
 };

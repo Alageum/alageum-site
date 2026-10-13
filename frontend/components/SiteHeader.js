@@ -44,7 +44,7 @@ const corporateSections = [
   links: [
   ["Контактная информация", "/contacts", "Телефоны, почта и региональные офисы"],
   ["Подготовить запрос", "/inquiry", "Соберите исходные данные"],
-  ["Кабинет клиента", "/workspace", "Покупатель и проверка менеджером"]]
+  ["Личный кабинет", "/account", "Аккаунт и доступ к компании"]]
 
 }];
 
@@ -59,7 +59,7 @@ const catalogSections = [
 { href: '/catalog/home', label: 'Каталог', title: 'Оборудование для вашего проекта', note: 'Выберите направление или начните с инженерной задачи.', links: [['Каталог продукции', '/catalog', 'Категории и технические параметры'], ['Производители', '/manufacturers', 'Промышленные площадки'], ['Материалы', '/documents', 'Каталоги и источники']] },
 { href: '/catalog', label: 'Продукция', title: 'Технический каталог', note: 'Параметры, исполнения и документы.', links: [['Трансформаторы', '/catalog?category=transformers', 'Преобразование напряжения'], ['Подстанции', '/catalog?category=substations', 'Комплектные решения'], ['Моя подборка', '/selection', 'Позиции для вашего проекта']] },
 { href: '/client/projects', label: 'Проекты', title: 'От подбора до документов', note: 'Локальное рабочее пространство. Черновики сохраняются в этом браузере.', links: [['Мои проекты', '/client/projects', 'Задача и состав оборудования'], ['Запросы и заказы', '/client/orders', 'Этапы локального согласования'], ['Документы', '/client/documents', 'Спецификации и черновики']] },
-{ href: '/client', label: 'Кабинет', title: 'Всё по вашему проекту', note: 'Запросы, документы и обращения с сохранением контекста.', links: [['Обзор', '/client', 'Ваше рабочее пространство'], ['Поддержка', '/client/support', 'Вопросы по оборудованию и документам'], ['Профиль компании', '/client/profile', 'Контакты и реквизиты проекта']] }];
+{ href: '/account', label: 'Кабинет', title: 'Личный кабинет', note: 'Аккаунт и подтверждённый доступ к данным вашей компании.', links: [['Мой аккаунт', '/account', 'Профиль и заявки на доступ'], ['Кабинет компании', '/b2b', 'Данные в рамках выданных прав'], ['Локальные черновики', '/client', 'Сохранены только в этом браузере']] }];
 
 function Chevron({ expanded = false }) {
   return <svg className={`site-chevron${expanded ? " is-expanded" : ""}`} width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4" /></svg>;
@@ -67,7 +67,7 @@ function Chevron({ expanded = false }) {
 
 export default function SiteHeader({ selectionCount }) {
   const pathname = usePathname();
-  const area = pathname.startsWith('/careers') ? 'careers' : ['/catalog', '/client', '/b2b', '/selection', '/inquiry', '/login'].some((root) => pathname === root || pathname.startsWith(`${root}/`)) ? 'catalog' : 'company';
+  const area = pathname.startsWith('/careers') ? 'careers' : ['/catalog', '/client', '/b2b', '/selection', '/inquiry', '/login', '/account', '/register', '/verify-email', '/forgot-password', '/reset-password'].some((root) => pathname === root || pathname.startsWith(`${root}/`)) ? 'catalog' : 'company';
   const sections = area === 'careers' ? careerSections : area === 'catalog' ? catalogSections : corporateSections;
   const { hasPermission } = useAuth();
   const headerRef = useRef(null);
@@ -77,7 +77,7 @@ export default function SiteHeader({ selectionCount }) {
   const suppressFocusPreview = useRef(false);
   const pendingSubmenuFocus = useRef(false);
   const [menu, setMenu] = useState({ pathname, preview: null, desktop: false, mobile: false, group: null });
-  const navPath = ['/manufacturers', '/documents'].some((prefix) => pathname.startsWith(prefix)) ? '/company' : pathname.startsWith('/projects') ? '/solutions' : pathname.startsWith('/inquiry') || pathname.startsWith('/client') ? '/contacts' : pathname;
+  const navPath = ['/account', '/b2b', '/login', '/register', '/verify-email', '/forgot-password', '/reset-password'].some(root => pathname === root || pathname.startsWith(`${root}/`)) ? '/account' : ['/manufacturers', '/documents'].some((prefix) => pathname.startsWith(prefix)) ? '/company' : pathname.startsWith('/projects') ? '/solutions' : pathname.startsWith('/inquiry') || pathname.startsWith('/client') ? '/contacts' : pathname;
   const exactIndex = sections.findIndex(section => navPath === section.href);
   const currentIndex = exactIndex >= 0 ? exactIndex : sections.reduce((found,section,index) => navPath.startsWith(`${section.href}/`) && section.href.length > (sections[found]?.href.length || 0) ? index : found,-1);
   const onCurrentPath = menu.pathname === pathname;
@@ -174,7 +174,7 @@ export default function SiteHeader({ selectionCount }) {
           <LocaleElement as="div" className="site-header-actions">
             <div className="site-header-language"><LanguageSwitcher /></div>
             {area !== 'company' && <Link href={area === 'careers' ? '/careers/apply' : '/client/projects'} className="brand-header-contact" onNavigate={() => closeMenus()}>{area === 'careers' ? 'Оставить резюме' : 'Создать проект'} <LocaleElement as="span" aria-hidden="true">↗</LocaleElement></Link>}
-            <Link href="/client" className="site-language site-metadata" onNavigate={() => closeMenus()}>Кабинет клиента</Link>
+            <Link href="/account" className="site-language site-metadata" onNavigate={() => closeMenus()}>Личный кабинет</Link>
             {hasPermission('catalog.manage') && <Link href="/admin/catalog" className="site-selection-link">Управление каталогом</Link>}
             {area === 'catalog' && <Suspense fallback={<Link href="/selection" className="site-selection-link">Подборка</Link>}><SelectionNavigation selectionCount={selectionCount} onNavigate={() => closeMenus()} /></Suspense>}
             <LocaleElement as="button" ref={toggleRef} type="button" className="site-menu-toggle" aria-label={mobileOpen ? "Закрыть навигацию" : "Открыть навигацию"} aria-expanded={mobileOpen} aria-controls="site-mobile-navigation" onClick={() => {

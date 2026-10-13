@@ -13,7 +13,11 @@ await mkdir(stage, { recursive: true });
 for (const entry of ['app', 'components', 'lib', 'public', 'package.json', 'jsconfig.json']) {
  await cp(join(root, entry), join(stage, entry), { recursive: true });
 }
-for (const route of ['b2b', 'ai', 'login', 'admin']) await rm(join(stage, 'app', '(site)', route), { recursive: true, force: true });
+// The public-only export has no authentication provider or private API.
+// Remove both canonical routes and their locale re-exports together.
+for (const route of ['b2b', 'ai', 'login', 'admin', 'account', 'register', 'verify-email', 'forgot-password', 'reset-password']) {
+ for (const group of ['(site)', '[locale]/(site)']) await rm(join(stage, 'app', group, route), { recursive: true, force: true });
+}
 const layoutPath = join(stage, 'app/layout.js');
 await writeFile(layoutPath, (await readFile(layoutPath, 'utf8'))
  .replace("import { AuthProvider } from '@/components/AuthProvider';\n", '')

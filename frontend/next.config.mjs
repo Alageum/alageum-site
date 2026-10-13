@@ -1,3 +1,5 @@
+import { browserApiRewrites } from "./lib/api/browserProxy.js";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Keep the static-default interruption test build separate from the live
@@ -7,6 +9,7 @@ const nextConfig = {
   output: "standalone",
   poweredByHeader: false,
   reactStrictMode: true,
+  async rewrites() { return browserApiRewrites(); },
 };
 
 export default async function config(phase) {

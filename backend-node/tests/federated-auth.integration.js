@@ -119,7 +119,7 @@ test("real PostgreSQL Google signup, cookie sessions, replay, cancellation and t
     await assert.rejects(auth.permission(ctx({ jar, boundary: sessionId }), "document.sign"), { code: "permission_denied" });
     const other = ctx({ jar, boundary: sessionId }); other.headers["x-organization-id"] = randomUUID();
     await assert.rejects(auth.context(other), { code: "organization_access_denied" });
-    await federated.logout(ctx({ jar, boundary: sessionId, method: "POST" })); assert.ok(!jar.has("alageum_dev_session"));
+    const logoutResponse = ctx({ jar, boundary: sessionId, method: "POST" }); await federated.logout(logoutResponse); assert.equal(logoutResponse.writes.length, 0);
     await assert.rejects(federated.currentUser(ctx({ jar, boundary: sessionId })), { code: "authentication_required" });
   });
   await t.test("logout invalidates a pending provider exchange before it can recreate a session", async () => {
@@ -128,8 +128,9 @@ test("real PostgreSQL Google signup, cookie sessions, replay, cancellation and t
     let release; const wait = new Promise(resolve => { release = resolve; });
     const next = await begin(other, { wait }), pending = finish(other, next);
     while (await table("federated_attempts").where({ state_hash: hash(next.query.state) }).first()) await new Promise(resolve => setTimeout(resolve, 5));
-    await federated.logout(ctx({ jar: other, boundary, method: "POST" })); release();
-    assert.equal(new URL((await pending).location).searchParams.get("federated"), "invalid_federated_state"); assert.ok(!other.has("alageum_dev_session"));
+    const logoutResponse = ctx({ jar: other, boundary, method: "POST" }); await federated.logout(logoutResponse); assert.equal(logoutResponse.writes.length, 0); release();
+    assert.equal(new URL((await pending).location).searchParams.get("federated"), "invalid_federated_state");
+    await assert.rejects(federated.currentUser(ctx({ jar: other, boundary, method: "GET" })), { code: "authentication_required" });
   });
   await t.test("transactional session recheck rejects revocation and wrong actor; holds session until signing commit", async () => {
     const other = new Map(), signed = await finish(other, await begin(other));
@@ -153,8 +154,8 @@ test("real PostgreSQL Google signup, cookie sessions, replay, cancellation and t
     await assert.rejects(db.transaction(connection => auth.assertActiveSession(connection, request, userId)), { code: "authentication_required" });
     const now = Math.floor(Date.now() / 1000), bearer = ctx();
     bearer.headers.authorization = "Bearer " + jwt.sign({ sub: userId, type: "access", jti: randomUUID(), iat: now, nbf: now, exp: now + 300 }, config.jwtSecret, { issuer: config.jwtIssuer, audience: config.jwtAudience });
-    await auth.assertActiveSession({}, bearer, userId);
-    await assert.rejects(auth.assertActiveSession({}, bearer, randomUUID()), { code: "invalid_token" });
+    await db.transaction(tx => auth.assertActiveSession(tx, bearer, userId));
+    await assert.rejects(db.transaction(tx => auth.assertActiveSession(tx, bearer, randomUUID())), { code: "invalid_token" });
   });
   await t.test("inactive linked account cannot obtain a session", async () => {
     await table("users").where({ id: userId }).update({ is_active: false });

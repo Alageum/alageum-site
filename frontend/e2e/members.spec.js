@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+import { browserLoginSlot as loginSlot, installBrowserSession } from './helpers/browser-session';
 
 // Ordinary list, pagination, inactive/global-role and tenant reads use isolated
 // PostgreSQL fixtures. Only explicitly named errors/races use interception.
@@ -17,17 +18,7 @@ const chooser = page => page.getByRole('dialog', { name: 'Выбор орган�
 const next = page => page.getByRole('button', { name: 'Следующая', exact: true });
 const previous = page => page.getByRole('button', { name: 'Предыдущая', exact: true });
 const first = page => page.getByRole('button', { name: 'К первой странице', exact: true });
-const loginTimes = [];
 function deferred() { let resolve; const promise = new Promise(done => { resolve = done; }); return { promise, resolve }; }
-
-async function loginSlot() {
-  while (loginTimes.length && Date.now() - loginTimes[0] > 61000) loginTimes.shift();
-  if (loginTimes.length >= 16) {
-    await new Promise(resolve => setTimeout(resolve, 61050 - (Date.now() - loginTimes[0])));
-    while (loginTimes.length && Date.now() - loginTimes[0] > 61000) loginTimes.shift();
-  }
-  loginTimes.push(Date.now());
-}
 
 test.beforeAll(async ({}, testInfo) => {
   expect(process.env.APP_ENV, 'Use backend-node/scripts/run-member-tests.sh').toBe('test');
@@ -39,9 +30,11 @@ test.beforeAll(async ({}, testInfo) => {
     expect(['127.0.0.1', 'localhost', '[::1]']).toContain(parsed.hostname);
     expect(parsed.protocol).toBe('http:'); expect(parsed.username + parsed.password + parsed.search + parsed.hash).toBe('');
   }
+  expect(new URL(api).origin).toBe(new URL(process.env.E2E_MEMBER_BASE_URL).origin);
+  expect(new URL(api).pathname).toBe('/api/v1');
   for (const value of [a, b]) expect(value).toMatch(/^[a-f0-9-]{36}$/);
   expect(a).not.toBe(b);
-  if (testInfo.workerIndex > 0) await new Promise(resolve => setTimeout(resolve, 61050));
+  if (testInfo.workerIndex > 0) { test.setTimeout(testInfo.timeout + 61050); await new Promise(resolve => setTimeout(resolve, 61050)); }
 });
 
 async function login(page, kind = 'reader', destination = path(1)) {
@@ -58,19 +51,8 @@ async function login(page, kind = 'reader', destination = path(1)) {
   await expect(active(page)).toContainText(kind === 'other' ? b : a);
 }
 
-async function loginPair(request, kind) {
-  await loginSlot();
-  const result = await request.post(`${api}/auth/login`, { data: { email: `member-${kind}@fixture.invalid`, password: process.env.E2E_MEMBER_PASSWORD } });
-  expect(result.status()).toBe(200);
-  return { ...await result.json(), organization_id: kind === 'other' ? b : a };
-}
-
-async function installLogin(page, request, kind, notify = true) {
-  const session = await loginPair(request, kind);
-  await page.evaluate(({ session, notify }) => {
-    sessionStorage.setItem('alageum_session', JSON.stringify(session));
-    if (notify) window.dispatchEvent(new Event('alageum:session-changed'));
-  }, { session, notify });
+async function installLogin(page, kind, notify = true) {
+  return installBrowserSession(page, { email: `member-${kind}@fixture.invalid`, password: process.env.E2E_MEMBER_PASSWORD, organizationId: kind === 'other' ? b : a, notify });
 }
 
 async function switchTo(page, id) {
@@ -293,20 +275,20 @@ test('cancelled organization choice never commits a delayed candidate or alters 
   await expect(page.getByTestId('organization-switch-trigger')).toBeFocused();
 });
 
-test('new login including same tenant invalidates held old success and late unauthorized reads', async ({ page, request }) => {
+test('new login including same tenant invalidates held old success and late unauthorized reads', async ({ page }) => {
   for (const [kind, status] of [['peer', undefined], ['other', undefined], ['other', 401]]) {
     await login(page); await expect(rows(page)).toHaveCount(50);
     let refreshes = 0; const listener = request => { if (request.url() === `${api}/auth/refresh` && request.method() === 'POST') refreshes++; };
     page.on('request', listener);
     const held = await holdRealReply(page, url(1), { status, transform: body => ({ ...body, items: body.items.map(item => ({ ...item, display_name: 'Fictitious stale prior login' })) }) });
     await page.getByRole('button', { name: 'Обновить список', exact: true }).click(); expect((await held.started).status).toBe(200);
-    await installLogin(page, request, kind); await expect(rows(page)).toHaveCount(kind === 'other' ? 2 : 50);
+    await installLogin(page, kind); await expect(rows(page)).toHaveCount(kind === 'other' ? 2 : 50);
     await held.release(); await expect(list(page)).not.toContainText('Fictitious stale prior login'); await expect(alerts(page)).toHaveCount(0);
     await expect(active(page)).toContainText(kind === 'other' ? b : a); expect(refreshes).toBe(0); page.off('request', listener);
   }
 });
 
-test('logout during pending read removes rows and retains the exact bounded login return', async ({ page, request }) => {
+test('logout during pending read removes rows and retains the exact bounded login return', async ({ page }) => {
   await login(page, 'reader', path(2)); await expect(rows(page)).toHaveCount(5);
   const held = await holdRealReply(page, url(2));
   await page.getByRole('button', { name: 'Обновить список', exact: true }).click(); expect((await held.started).status).toBe(200);
@@ -314,13 +296,13 @@ test('logout during pending read removes rows and retains the exact bounded logi
   await expect(list(page)).toHaveCount(0); await held.release();
   await expect(page.getByRole('heading', { name: 'Войдите в B2B кабинет', exact: true })).toBeVisible();
   await expect(page.getByRole('link', { name: 'Войти', exact: true })).toHaveAttribute('href', `/login?next=${encodeURIComponent(path(2))}`);
-  await installLogin(page, request, 'other'); await expect(page.getByTestId('members-total')).toHaveText('Всего участников: 2'); await expect(rows(page)).toHaveCount(0);
+  await installLogin(page, 'other'); await expect(page.getByTestId('members-total')).toHaveText('Всего участников: 2'); await expect(rows(page)).toHaveCount(0);
   await first(page).click(); await expect(rows(page)).toHaveCount(2);
 });
 
-test('persisted pageshow hides stale rows and reloads authority after an unannounced storage change', async ({ page, request }) => {
+test('persisted pageshow hides stale rows and reloads authority after an unannounced storage change', async ({ page }) => {
   await login(page); await expect(rows(page)).toHaveCount(50);
-  await installLogin(page, request, 'other', false);
+  await installLogin(page, 'other', false);
   // A controlled persisted-pageshow event reproduces a frozen document missing
   // another document's session notification; it does not claim real BFCache use.
   await page.evaluate(() => window.dispatchEvent(new PageTransitionEvent('pageshow', { persisted: true })));
@@ -339,17 +321,22 @@ test('Back Forward replaces a restored error with a fresh authorized page read',
   await expect(rows(page)).toHaveCount(5); await expect(alerts(page)).toHaveCount(0);
 });
 
-test('read refresh retries once and terminal expiration returns safely to the same page', async ({ page }) => {
+test('cookie expiration never retries and returns safely to the same members page', async ({ page }) => {
   await login(page); await expect(rows(page)).toHaveCount(50);
   let reads = 0, refreshes = 0;
   page.on('request', request => { if (request.url() === `${api}/auth/refresh` && request.method() === 'POST') refreshes++; });
   const once = route => { if (route.request().method() !== 'GET') return route.continue(); return ++reads === 1 ? reply(route, rejection, 401) : route.continue(); };
-  await page.route(url(2), once); await next(page).click(); await expect(rows(page)).toHaveCount(5);
-  expect(reads).toBe(2); expect(refreshes).toBe(1); await page.unroute(url(2), once);
+  await page.route(url(2), once); await next(page).click();
+  await expect(list(page)).toHaveCount(0); await expect(page.getByRole('heading', { name: 'Войдите в B2B кабинет', exact: true })).toBeVisible();
+  expect(reads).toBe(1); expect(refreshes).toBe(0);
+  await expect(page.getByRole('link', { name: 'Войти', exact: true })).toHaveAttribute('href', `/login?next=${encodeURIComponent(path(2))}`);
+  await page.unroute(url(2), once);
+  await login(page, 'reader', path(2)); await expect(rows(page)).toHaveCount(5);
   const expired = route => reply(route, rejection, 401);
-  await page.route(url(2), expired); await page.route(`${api}/auth/refresh`, expired); await page.reload();
+  await page.route(url(2), expired); await page.reload();
   await expect(list(page)).toHaveCount(0); await expect(page.getByRole('heading', { name: 'Войдите в B2B кабинет', exact: true })).toBeVisible();
   await expect(page.getByRole('link', { name: 'Войти', exact: true })).toHaveAttribute('href', `/login?next=${encodeURIComponent(path(2))}`);
-  await page.unroute(url(2), expired); await page.unroute(`${api}/auth/refresh`, expired);
+  expect(refreshes).toBe(0);
+  await page.unroute(url(2), expired);
   await login(page, 'reader', path(2)); await expect(rows(page)).toHaveCount(5);
 });

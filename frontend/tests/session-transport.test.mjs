@@ -2,7 +2,9 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import { getSession, getSessionGeneration, setSession, subscribeSession } from '../lib/api/sessionTransport.js';
 
-const account = { access_token: 'access-a', refresh_token: 'refresh-a', organization_id: 'org-a' };
+const sessionA = '10000000-0000-4000-8000-000000000001', sessionB = '10000000-0000-4000-8000-000000000002';
+const orgA = '20000000-0000-4000-8000-000000000001', orgB = '20000000-0000-4000-8000-000000000002';
+const account = { access_token: `browser:${sessionA}`, browser_session: sessionA, organization_id: orgA };
 const key = 'alageum_session';
 function browser() {
   const oldWindow = globalThis.window, oldStorage = globalThis.sessionStorage;
@@ -29,8 +31,8 @@ test('persisted pageshow lets existing subscribers observe silent account, tenan
   const env = browser();
   try {
     for (const next of [
-      { access_token: 'access-b', refresh_token: 'refresh-b', organization_id: 'org-b' },
-      { ...account, organization_id: 'org-b' }, null,
+      { access_token: `browser:${sessionB}`, browser_session: sessionB, organization_id: orgB },
+      { ...account, organization_id: orgB }, null,
     ]) {
       setSession(account);
       const generation = getSessionGeneration(), snapshots = [], otherSnapshots = [];
@@ -69,10 +71,11 @@ test('legitimate preserved-generation token rotation remains the same boundary o
   const env = browser();
   let unsubscribe;
   try {
-    setSession(account);
+    const legacy = { access_token: 'memory-access', refresh_token: 'memory-refresh' };
+    setSession(legacy);
     const generation = getSessionGeneration(), snapshots = [];
     unsubscribe = subscribeSession(() => snapshots.push(getSessionGeneration()));
-    const refreshed = { ...account, access_token: 'rotated-a', refresh_token: 'rotated-refresh-a' };
+    const refreshed = { ...legacy, access_token: 'rotated-a', refresh_token: 'rotated-refresh-a' };
     setSession(refreshed, { preserveGeneration: true });
     const writes = env.writes;
     pageshow(true);
@@ -105,7 +108,7 @@ test('storage and custom session notifications still use the existing snapshot f
     setSession(account);
     const generation = getSessionGeneration(), snapshots = [];
     unsubscribe = subscribeSession(() => snapshots.push(getSessionGeneration()));
-    sessionStorage.setItem(key, JSON.stringify({ ...account, organization_id: 'org-b' }));
+    sessionStorage.setItem(key, JSON.stringify({ ...account, organization_id: orgB }));
     window.dispatchEvent(new Event('storage'));
     window.dispatchEvent(new Event('alageum:session-changed'));
     assert.deepEqual(snapshots, [generation + 1, generation + 1]);
@@ -128,4 +131,24 @@ test('unsubscribe removes pageshow, storage and custom listeners without removin
     assert.deepEqual(events, ['pageshow']);
     assert.deepEqual(otherEvents, ['pageshow', 'pageshow', 'storage', 'alageum:session-changed']);
   } finally { unsubscribe?.(); unsubscribeOther?.(); env.restore(); }
+});
+
+test('legacy bearer credentials are document-local and never persisted or restored', async () => {
+  const env = browser();
+  try {
+    setSession({ access_token: 'private-access', refresh_token: 'private-refresh' });
+    assert.deepEqual(JSON.parse(sessionStorage.getItem(key)), {});
+    assert.equal(getSession().access_token, 'private-access');
+    sessionStorage.setItem(key, JSON.stringify({ access_token: 'old-dev-access', refresh_token: 'old-dev-refresh' }));
+    const fresh = await import(`../lib/api/sessionTransport.js?fresh=${Date.now()}`);
+    assert.deepEqual(fresh.getSession(), {});
+  } finally { env.restore(); }
+});
+test('browser storage retains only public session boundary and valid organization', () => {
+  const env = browser();
+  try {
+    setSession({ ...account, access_token: 'secret-bearer', refresh_token: 'secret-refresh', password: 'never-store', unrelated: true });
+    assert.deepEqual(JSON.parse(sessionStorage.getItem(key)), account);
+    assert.deepEqual(getSession(), account);
+  } finally { env.restore(); }
 });

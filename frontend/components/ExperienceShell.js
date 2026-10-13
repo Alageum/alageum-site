@@ -13,7 +13,7 @@ import CorporateArrow from '@/components/public/CorporateArrow';
 export default function ExperienceShell({ children }) {
   const pathname = usePathname() || '/';
   const technical = (pathname.startsWith('/catalog') && pathname !== '/catalog/home') || pathname.startsWith('/admin/catalog') || pathname.endsWith('/print');
-  const utility = ['/client', '/selection', '/inquiry', '/workspace', '/login', '/b2b', '/ai'].some((route) => pathname === route || pathname.startsWith(`${route}/`));
+  const utility = ['/client', '/selection', '/inquiry', '/workspace', '/login', '/account', '/register', '/verify-email', '/forgot-password', '/reset-password', '/b2b', '/ai'].some((route) => pathname === route || pathname.startsWith(`${route}/`));
   const shellRef = useRef(null);
   const progressRef = useRef(null);
   const backTopRef = useRef(null);

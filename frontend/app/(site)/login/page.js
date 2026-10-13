@@ -21,11 +21,12 @@ export default function LoginPage() {
   const ready = useSyncExternalStore(subscribeReady, clientReady, serverReady);
   const sessionGeneration = useSyncExternalStore(subscribeSession, getSessionGeneration, () => 0);
   const { profile, loading, setProfile } = useAuth();
-  const [email, setEmail] = useState("buyer@demo.example");
-  const [password, setPassword] = useState("ChangeMe123!");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [pending, setPending] = useState(false);
   const [choice, setChoice] = useState(null);
+  const [completed, setCompleted] = useState(false);
   const emailInput = useRef(null),submitting = useRef(false),activeFlow = useRef(null);
   useLayoutEffect(() => {
     const flow = { controller: new AbortController() };
@@ -34,8 +35,8 @@ export default function LoginPage() {
   }, []);
 
   const complete = useCallback((next) => {
-    setProfile(next);setChoice(null);setPassword("");
-    router.replace(loginDestination(new URLSearchParams(window.location.search).get("next")));
+    setProfile(next.requiresOnboarding ? null : next);setChoice(null);setPassword("");setCompleted(true);
+    router.replace(next.requiresOnboarding ? "/account" : loginDestination(new URLSearchParams(window.location.search).get("next")));
   }, [router, setProfile]);
   const cancelChoice = useCallback(async (generation) => {
     if (getSessionGeneration() === generation && getSession().browser_session) {
@@ -51,7 +52,7 @@ export default function LoginPage() {
     const flow = activeFlow.current;
     const current = () => flow && activeFlow.current === flow && !flow.controller.signal.aborted;
     if (submitting.current || !current()) return;
-    submitting.current = true;setPending(true);setError("");
+    submitting.current = true;setPending(true);setError("");setCompleted(false);
     try {
       const next = await login(email, password, { signal: flow.controller.signal });
       if (!current()) return;
@@ -70,7 +71,7 @@ export default function LoginPage() {
 
   // A page reopened after an interrupted login can resume the authenticated
   // membership choice without retaining credentials or choosing the first name.
-  const resumeChoice = ready && !pending && !loading && !profile && !getSession().federated_pending && Boolean(getSession().access_token);
+  const resumeChoice = ready && !completed && !pending && !loading && !profile && !getSession().federated_pending && Boolean(getSession().access_token);
   if (resumeChoice && !choice) setChoice({ generation: sessionGeneration });
   const choiceGeneration = choice?.generation ?? (resumeChoice ? sessionGeneration : null);
   return <LocaleElement as="section" className="brand-login">
@@ -90,6 +91,8 @@ export default function LoginPage() {
       {error && <LocaleElement as="p" className="error" role="alert">{error}</LocaleElement>}
       <LocaleElement as="button" className="button" disabled={!ready || pending}>{pending ? "Вход…" : "Войти"}</LocaleElement>
     </LocaleElement>}
+    <LocaleElement as="p"><LocaleElement as="a" href="/register">Регистрация</LocaleElement> · <LocaleElement as="a" href="/forgot-password">Забыли пароль?</LocaleElement></LocaleElement>
+    <LocaleElement as="p"><LocaleElement as="a" href="/verify-email">Подтвердить email</LocaleElement></LocaleElement>
     </LocaleElement>
   </LocaleElement>;
 }

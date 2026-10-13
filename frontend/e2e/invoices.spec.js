@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+import { browserLoginSlot as loginSlot, installBrowserSession } from './helpers/browser-session';
 
 // The ordinary list/empty/isolation reads use real isolated PostgreSQL
 // fixtures. Interception is limited to named error and delayed-response cases.
@@ -16,17 +17,7 @@ const active = page => page.getByTestId('active-organization');
 const alerts = page => page.locator('.shell > section').getByRole('alert');
 const option = (page, id) => page.getByTestId(`organization-option-${id}`);
 const email = kind => `invoice-${kind}@fixture.invalid`;
-const loginTimes = [];
 function deferred() { let resolve; const promise = new Promise(done => { resolve = done; }); return { promise, resolve }; }
-
-async function loginSlot() {
-  while (loginTimes.length && Date.now() - loginTimes[0] > 61000) loginTimes.shift();
-  if (loginTimes.length >= 16) {
-    await new Promise(resolve => setTimeout(resolve, 61050 - (Date.now() - loginTimes[0])));
-    while (loginTimes.length && Date.now() - loginTimes[0] > 61000) loginTimes.shift();
-  }
-  loginTimes.push(Date.now());
-}
 
 test.beforeAll(async ({}, testInfo) => {
   expect(process.env.APP_ENV, 'Use backend-node/scripts/run-invoice-tests.sh').toBe('test');
@@ -39,11 +30,13 @@ test.beforeAll(async ({}, testInfo) => {
     expect(url.protocol).toBe('http:');
     expect(url.username + url.password + url.search + url.hash).toBe('');
   }
+  expect(new URL(api).origin).toBe(new URL(process.env.E2E_INVOICE_BASE_URL).origin);
+  expect(new URL(api).pathname).toBe('/api/v1');
   for (const id of [a, b, emptyOrganization]) expect(id).toMatch(/^[a-f0-9-]{36}$/);
   expect(new Set([a, b, emptyOrganization]).size).toBe(3);
   // A replacement worker has a fresh local clock but shares the server limiter.
   // Waiting preserves the real limiter; there is no login retry or bypass.
-  if (testInfo.workerIndex > 0) await new Promise(resolve => setTimeout(resolve, 61050));
+  if (testInfo.workerIndex > 0) { test.setTimeout(testInfo.timeout + 61050); await new Promise(resolve => setTimeout(resolve, 61050)); }
 });
 
 async function login(page, kind = 'reader', next = '/b2b/finance') {
@@ -59,15 +52,8 @@ async function login(page, kind = 'reader', next = '/b2b/finance') {
   await expect(page).toHaveURL(new RegExp(`${next}$`));
   await expect(active(page)).toContainText(kind === 'other' ? b : kind === 'empty' ? emptyOrganization : a, { useInnerText: true });
 }
-async function installLogin(page, request, kind) {
-  await loginSlot();
-  const result = await request.post(`${api}/auth/login`, { data: { email: email(kind), password: process.env.E2E_INVOICE_PASSWORD } });
-  expect(result.status()).toBe(200);
-  const pair = await result.json();
-  await page.evaluate(session => {
-    sessionStorage.setItem('alageum_session', JSON.stringify(session));
-    window.dispatchEvent(new Event('alageum:session-changed'));
-  }, { ...pair, organization_id: kind === 'other' ? b : a });
+async function installLogin(page, kind) {
+  return installBrowserSession(page, { email: email(kind), password: process.env.E2E_INVOICE_PASSWORD, organizationId: kind === 'other' ? b : a });
 }
 async function switchTo(page, id) {
   await page.getByTestId('organization-switch-trigger').click();
@@ -306,12 +292,12 @@ test('controlled persisted pageshow clears mounted invoice rows after unannounce
   expect(await page.evaluate(() => sessionStorage.getItem('alageum_session'))).toBeNull();
 });
 
-test('same-organization and different-organization new logins invalidate held invoice responses', async ({ page, request }) => {
+test('same-organization and different-organization new logins invalidate held invoice responses', async ({ page }) => {
   for (const kind of ['peer', 'other']) {
     await login(page); await expect(summaries(page)).toHaveCount(3);
     const held = await holdRealReply(page, endpoint, { transform: body => ({ ...body, items: body.items.map(item => ({ ...item, number: 'Fictitious stale prior login' })) }) });
     await page.reload(); expect((await held.started).status).toBe(200);
-    await installLogin(page, request, kind);
+    await installLogin(page, kind);
     await expect(list(page)).toHaveAttribute('aria-busy', 'false');
     await held.release();
     await expect(active(page)).toContainText(kind === 'other' ? b : a, { useInnerText: true });
@@ -322,12 +308,12 @@ test('same-organization and different-organization new logins invalidate held in
   }
 });
 
-test('late old-login invoice 401 cannot refresh or sign out a newer login', async ({ page, request }) => {
+test('late old-login invoice 401 cannot refresh or sign out a newer login', async ({ page }) => {
   await login(page); await expect(summaries(page)).toHaveCount(3);
   let refreshes = 0; page.on('request', request => { if (request.url() === `${api}/auth/refresh` && request.method() === 'POST') refreshes++; });
   const held = await holdRealReply(page, endpoint, { status: 401 });
   await page.reload(); expect((await held.started).status).toBe(200);
-  await installLogin(page, request, 'other');
+  await installLogin(page, 'other');
   await expect(summaries(page)).toContainText('FIXTURE-OTHER-001', { useInnerText: true });
   await held.release();
   await expect(active(page)).toContainText(b, { useInnerText: true });
@@ -346,7 +332,7 @@ test('Back and Forward reload failed invoices without restoring a stale error', 
   await expect(summaries(page)).toHaveCount(3); await expect(alerts(page)).toHaveCount(0);
 });
 
-test('invoice refresh recovers once and terminal expiration preserves the exact finance login return', async ({ page }) => {
+test('invoice cookie expiration never retries and preserves the exact finance login return', async ({ page }) => {
   await login(page); await expect(summaries(page)).toHaveCount(3);
   let reads = 0, refreshes = 0;
   page.on('request', request => { if (request.url() === `${api}/auth/refresh` && request.method() === 'POST') refreshes++; });
@@ -355,22 +341,25 @@ test('invoice refresh recovers once and terminal expiration preserves the exact 
     return ++reads === 1 ? reply(route, rejection, 401) : route.continue();
   };
   await page.route(endpoint, once); await page.reload();
-  await expect(summaries(page)).toHaveCount(3);
-  expect(reads).toBe(2); expect(refreshes).toBe(1);
+  await expect(page.getByRole('heading', { name: 'Войдите в B2B кабинет', exact: true })).toBeVisible();
+  await expect(list(page)).toHaveCount(0);
+  expect(reads).toBe(1); expect(refreshes).toBe(0);
+  await expect(page.getByRole('link', { name: 'Войти', exact: true })).toHaveAttribute('href', '/login?next=%2Fb2b%2Ffinance');
   await page.unroute(endpoint, once);
-  const unauthorized = route => reply(route, rejection, 401), expired = route => reply(route, rejection, 401);
-  await page.route(endpoint, unauthorized); await page.route(`${api}/auth/refresh`, expired);
-  await page.reload();
+  await login(page); await expect(summaries(page)).toHaveCount(3);
+  const unauthorized = route => reply(route, rejection, 401);
+  await page.route(endpoint, unauthorized); await page.reload();
   await expect(page.getByRole('heading', { name: 'Войдите в B2B кабинет', exact: true })).toBeVisible();
   await expect(list(page)).toHaveCount(0);
   await expect(page.getByRole('link', { name: 'Войти', exact: true })).toHaveAttribute('href', '/login?next=%2Fb2b%2Ffinance');
-  await page.unroute(endpoint, unauthorized); await page.unroute(`${api}/auth/refresh`, expired);
+  expect(refreshes).toBe(0);
+  await page.unroute(endpoint, unauthorized);
   await login(page); await expect(summaries(page)).toHaveCount(3);
 });
 
 test('interrupted finance login cannot install a late session or reopen invoices', async ({ page }) => {
   let invoiceReads = 0; page.on('request', request => { if (request.url() === endpoint && request.method() === 'GET') invoiceReads++; });
-  const held = await holdRealReply(page, `${api}/auth/login`, { method: 'POST' });
+  const held = await holdRealReply(page, `${api}/auth/browser-login`, { method: 'POST' });
   await loginSlot();
   await page.goto('/login?next=%2Fb2b%2Ffinance');
   await page.getByLabel('Email', { exact: true }).fill(email('reader'));

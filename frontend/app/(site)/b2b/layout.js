@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useSyncExternalStore } from "react";import {
   usePathname, useRouter } from "@/components/locale/navigation";
+import Link from "@/components/locale/LocaleLink";
 import B2BNav from "@/components/B2BNav";
 import { useAuth } from "@/components/AuthProvider";
 import { organizationContentBoundary, organizationDestination } from "@/lib/organizations/navigation";
@@ -26,6 +27,6 @@ export default function B2BLayout({ children }) {
   }, [redirecting, pathname, router]);
 
   return <LocaleElement as="div" className="shell"><B2BNav /><LocaleElement as="section">
-    {loading || redirecting ? <LocaleElement as="p" role="status">Проверка доступа…</LocaleElement> : profile ? <LocaleElement as="div" key={tenantKey}>{children}</LocaleElement> : <LocaleElement as="section" className="card"><LocaleElement as="h1">{getSession().access_token ? "Выберите доступную организацию" : "Войдите в B2B кабинет"}</LocaleElement><LocaleElement as="p">Для продолжения войдите и выберите доступную организацию.</LocaleElement></LocaleElement>}
+    {loading || redirecting ? <LocaleElement as="p" role="status">Проверка доступа…</LocaleElement> : profile ? <LocaleElement as="div" key={tenantKey}>{children}</LocaleElement> : <LocaleElement as="section" className="card"><LocaleElement as="h1">{getSession().access_token ? "Выберите доступную организацию" : "Войдите в B2B кабинет"}</LocaleElement><LocaleElement as="p">Для доступа к данным компании необходимо подтверждённое членство. Статус заявки доступен в личном кабинете.</LocaleElement><Link className="button" href="/account">Открыть личный кабинет</Link></LocaleElement>}
   </LocaleElement></LocaleElement>;
 }
