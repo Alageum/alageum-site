@@ -65,7 +65,8 @@ export function setSession(value, { preserveGeneration = false, pendingFederated
     volatileWindow = window;
     volatileSession = supplied.browser_session || !supplied.access_token ? null : supplied;
     federatedPending = pendingFederated;
-    sessionStorage.setItem(SESSION_KEY, JSON.stringify(stored));
+    if (stored.browser_session) sessionStorage.setItem(SESSION_KEY, JSON.stringify(stored));
+    else sessionStorage.removeItem(SESSION_KEY);
     if (!preserveGeneration) generation += 1;
     fingerprint = sessionFingerprint();
     window.dispatchEvent(new Event("alageum:session-changed"));

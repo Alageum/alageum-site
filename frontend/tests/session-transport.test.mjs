@@ -137,7 +137,7 @@ test('legacy bearer credentials are document-local and never persisted or restor
   const env = browser();
   try {
     setSession({ access_token: 'private-access', refresh_token: 'private-refresh' });
-    assert.deepEqual(JSON.parse(sessionStorage.getItem(key)), {});
+    assert.equal(sessionStorage.getItem(key), null);
     assert.equal(getSession().access_token, 'private-access');
     sessionStorage.setItem(key, JSON.stringify({ access_token: 'old-dev-access', refresh_token: 'old-dev-refresh' }));
     const fresh = await import(`../lib/api/sessionTransport.js?fresh=${Date.now()}`);
@@ -150,5 +150,31 @@ test('browser storage retains only public session boundary and valid organizatio
     setSession({ ...account, access_token: 'secret-bearer', refresh_token: 'secret-refresh', password: 'never-store', unrelated: true });
     assert.deepEqual(JSON.parse(sessionStorage.getItem(key)), account);
     assert.deepEqual(getSession(), account);
+  } finally { env.restore(); }
+});
+
+test('empty pending and restored sessions keep storage absent without changing boundary semantics', () => {
+  const env = browser();
+  try {
+    setSession(account);
+    const generation = getSessionGeneration();
+    setSession({}, { pendingFederated: true });
+    assert.equal(sessionStorage.getItem(key), null);
+    assert.deepEqual(getSession(), { federated_pending: true });
+    assert.equal(getSessionGeneration(), generation + 1);
+    setSession({}, { preserveGeneration: true });
+    assert.equal(sessionStorage.getItem(key), null);
+    assert.deepEqual(getSession(), {});
+    assert.equal(getSessionGeneration(), generation + 1);
+  } finally { env.restore(); }
+});
+
+test('invalid public boundaries never leave a persistent session marker', () => {
+  const env = browser();
+  try {
+    setSession(account);
+    setSession({ browser_session: 'invalid-boundary', access_token: 'never-persist' });
+    assert.equal(sessionStorage.getItem(key), null);
+    assert.deepEqual(getSession(), {});
   } finally { env.restore(); }
 });

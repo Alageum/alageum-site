@@ -108,7 +108,7 @@ test('interrupted callback suspension is document-local and never traps a reload
     setSession({ access_token: 'valid-prior' });
     const result = resumeFederatedLogin({ sessionId, signal: controller.signal });
     assert.equal(getSession().federated_pending, true);
-    assert.equal(JSON.parse(sessionStorage.getItem('alageum_session')).federated_pending, undefined);
+    assert.equal(sessionStorage.getItem('alageum_session'), null);
     const freshDocument = await import(`../lib/api/sessionTransport.js?reload=${Date.now()}`);
     assert.deepEqual(freshDocument.getSession(), {});
     controller.abort(); pending.resolve(response(401, { error: { code: 'authentication_required' } }));

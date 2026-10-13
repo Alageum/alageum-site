@@ -126,6 +126,31 @@ const organization = '20000000-0000-4000-8000-000000000001';
 const cookiePair = id => ({ session_id: id, user: { id: 'user' } });
 const cookieMarker = id => ({ access_token: `browser:${id}`, browser_session: id });
 
+test('rejected password login restores absence or the still-owned prior public marker', async () => {
+  for (const prior of [null, cookieMarker(browserB)]) {
+    const calls = [], pending = deferred(), started = deferred();
+    const env = browser(async url => {
+      calls.push(url);
+      if (url.endsWith('/auth/browser-prepare')) return response(200, { flow_id: browserA });
+      if (url.endsWith('/auth/browser-cancel')) return response(204);
+      started.resolve(); return pending.promise;
+    });
+    try {
+      if (prior) setSession(prior);
+      const signingIn = login('synthetic@example.test', 'invalid-test-password');
+      const rejected = assert.rejects(signingIn, { status: 401, code: 'invalid_credentials' });
+      await started.promise;
+      assert.equal(getSession().federated_pending, true);
+      assert.deepEqual(JSON.parse(sessionStorage.getItem('alageum_session')), prior);
+      pending.resolve(response(401, { error: { code: 'invalid_credentials' } }));
+      await rejected;
+      assert.deepEqual(getSession(), prior ?? {});
+      assert.deepEqual(JSON.parse(sessionStorage.getItem('alageum_session')), prior);
+      assert.equal(calls.filter(url => url.endsWith('/auth/browser-cancel')).length, 1);
+    } finally { env.restore(); }
+  }
+});
+
 test('delayed cookie login /me cannot restore an older identity after a newer login', async () => {
   const pendingMe = deferred(), started = deferred();
   const env = browser(async url => {
