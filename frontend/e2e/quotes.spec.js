@@ -1,32 +1,76 @@
+import { randomBytes, randomUUID } from 'node:crypto';
 import { expect, test } from '@playwright/test';
 const productId = '11111111-1111-4111-8111-111111111111', quoteId = '22222222-2222-4222-8222-222222222222';
 const userId = '33333333-3333-4333-8333-333333333333', orgId = '44444444-4444-4444-8444-444444444444';
 const product = { id: productId, public_key: 'rfq-test', slug: 'rfq-test', sku: 'RFQ-1', translations: { ru: { name: 'Тестовое оборудование' } }, price_mode: 'fixed', price: '1200.00', currency: 'KZT', version: 1, specs: {}, category_public_key: 'transformers' };
 const quote = { id: quoteId, status: 'submitted', comment: 'Проект школы', item_count: 1, created_at: '2026-10-01T15:00:00Z', items: [{ id: productId, product_id: productId, quantity: '3', product_snapshot: product }] };
-const session = { access_token: 'test-access', refresh_token: 'test-refresh', organization_id: orgId };
+// Synthetic credentials are accepted only by the page-route mock below.
+const mockPassword = 'Quotes-mock-only-2026!';
+const accounts = new Map([['buyer@demo.example', userId], ['second@demo.example', '55555555-5555-4555-8555-555555555555']]);
+const mockSessions = new WeakMap();
 async function api(page, options = {}) {
+  const origin = new URL(test.info().project.use.baseURL).origin;
+  const secure = origin.startsWith('https:');
+  const sessionCookie = secure ? '__Host-alageum_session' : 'alageum_dev_session';
+  const attemptCookie = secure ? '__Host-alageum_google' : 'alageum_dev_google';
   let requests = [], saved = false, failures = options.failures || 0, currentUser = userId, expired = false, expiryUsed = false, listExpiryUsed = false, savedUser = null;
+  let sessionId = null, sessionToken = null, flowId = null, flowToken = null;
   const products = options.products || [product];
+  const cookie = (name, value) => page.context().addCookies([{ name, value, url: `${origin}/`, httpOnly: true, secure, sameSite: 'Lax' }]);
+  const installSession = async email => {
+    currentUser = accounts.get(email); expired = false;
+    sessionId = randomUUID(); sessionToken = randomBytes(32).toString('base64url');
+    await cookie(sessionCookie, sessionToken);
+    return { access_token: `browser:${sessionId}`, browser_session: sessionId, organization_id: orgId };
+  };
+  mockSessions.set(page, () => installSession('buyer@demo.example'));
   await page.route('**/api/v1/**', async route => {
-    const fulfill = options => route.fulfill({ headers: { 'access-control-allow-origin': '*', 'access-control-allow-methods': 'GET, POST, OPTIONS', 'access-control-allow-headers': 'authorization, content-type, x-organization-id, idempotency-key' }, ...options });
-    if (route.request().method() === 'OPTIONS') return fulfill({ status: 204, body: '' });
-    const url = new URL(route.request().url()), path = url.pathname.replace('/api/v1', '');
+    const request = route.request(), headers = await request.allHeaders();
+    const fulfill = options => route.fulfill({ headers: { 'cache-control': 'private, no-store' }, ...options });
+    const denied = (status = 401, code = 'session_expired') => fulfill({ status, json: { error: { code } } });
+    const url = new URL(request.url()), path = url.pathname.replace('/api/v1', '');
+    // A wildcard CORS mock would conceal a broken cross-origin browser build.
+    expect(url.origin).toBe(origin);
+    expect(headers.authorization).toBeUndefined();
+    if (!['GET', 'HEAD'].includes(request.method()) && headers.origin !== origin) return denied(403, 'origin_denied');
+    const cookies = new Map((headers.cookie || '').split(';').filter(Boolean).map(value => value.trim().split('=')));
     if (path === '/catalog/products') return fulfill({ json: { items: options.hidden ? [] : products, total: options.hidden ? 0 : products.length } });
-    if (path === '/auth/login') { currentUser = route.request().postDataJSON().email === 'second@demo.example' ? '55555555-5555-4555-8555-555555555555' : userId; expired = false; return fulfill({ json: { ...session, access_token: `test-access-${currentUser}`, refresh_token: `test-refresh-${currentUser}` } }); }
-    if (path === '/auth/refresh') return fulfill({ status: 401, json: { error: { code: 'session_expired' } } });
+    if (path === '/auth/providers') return fulfill({ json: { google: { available: false } } });
+    if (path === '/auth/browser-prepare' && request.method() === 'POST') {
+      flowId = randomUUID(); flowToken ||= randomBytes(32).toString('base64url');
+      await cookie(attemptCookie, flowToken);
+      return fulfill({ json: { flow_id: flowId } });
+    }
+    if (path === '/auth/browser-login' && request.method() === 'POST') {
+      const body = request.postDataJSON();
+      if (!flowId || body.flow_id !== flowId || cookies.get(attemptCookie) !== flowToken) return denied(401, 'invalid_federated_state');
+      if (!accounts.has(body.email) || body.password !== mockPassword) return denied(401, 'invalid_credentials');
+      flowId = null;
+      await installSession(body.email);
+      return fulfill({ json: { session_id: sessionId, user: { id: currentUser, email: body.email } } });
+    }
+    if (path === '/auth/browser-cancel' && request.method() === 'POST') {
+      if (request.postDataJSON().flow_id === flowId && cookies.get(attemptCookie) === flowToken) flowId = null;
+      return fulfill({ status: 204, body: '' });
+    }
+    // These legacy endpoints must never satisfy a website login or refresh.
+    if (path === '/auth/login' || path === '/auth/refresh') throw new Error(`Unexpected legacy browser auth request: ${path}`);
+    if (!sessionId || headers['x-browser-session'] !== sessionId || cookies.get(sessionCookie) !== sessionToken) return denied();
+    if (expired) return denied();
     if (path === '/auth/me') return fulfill({ json: { user: { id: currentUser, email: currentUser === userId ? 'buyer@demo.example' : 'second@demo.example' }, organization: { id: orgId, name: 'Тестовая организация' }, permissions: ['quote.read', 'quote.create'] } });
-    if (path === '/quotes/catalog' && route.request().method() === 'POST') {
-      requests.push({ key: route.request().headers()['idempotency-key'], body: route.request().postDataJSON() });
-      if ((options.expireOnce && !expiryUsed) || expired) { expiryUsed = true; expired = true; return fulfill({ status: 401, json: { error: { code: 'session_expired' } } }); }
+    if (path.startsWith('/quotes') && headers['x-organization-id'] !== orgId) return denied(403, 'organization_access_denied');
+    if (path === '/quotes/catalog' && request.method() === 'POST') {
+      requests.push({ key: headers['idempotency-key'], body: request.postDataJSON() });
+      if (options.expireOnce && !expiryUsed) { expiryUsed = true; expired = true; return denied(); }
       saved = true; savedUser = currentUser;
       if (failures-- > 0) return route.abort('failed');
       if (options.delay) await new Promise(resolve => setTimeout(resolve, options.delay));
       if (options.waitForSubmission) await options.waitForSubmission;
-      if (options.delayedUnauthorized) return fulfill({ status: 401, json: { error: { code: 'session_expired' } } });
+      if (options.delayedUnauthorized) return denied();
       return fulfill({ status: requests.length > 1 ? 200 : 201, json: quote });
     }
     if (path === '/quotes') {
-      if (options.expireListOnce && !listExpiryUsed) { listExpiryUsed = true; return fulfill({ status: 401, json: { error: { code: 'session_expired' } } }); }
+      if (options.expireListOnce && !listExpiryUsed) { listExpiryUsed = true; expired = true; return denied(); }
       expect(url.searchParams.get('mine')).toBe('true');
       return fulfill({ json: { items: (saved && savedUser === currentUser) || options.saved ? [quote] : [], total: (saved && savedUser === currentUser) || options.saved ? 1 : 0, page: 1, page_size: 20 } });
     }
@@ -36,10 +80,19 @@ async function api(page, options = {}) {
   return requests;
 }
 async function seed(page, { authenticated = true, old = false } = {}) {
-  await page.addInitScript(({ session, productId, authenticated, old }) => {
-    if (authenticated && !sessionStorage.getItem('alageum_session')) sessionStorage.setItem('alageum_session', JSON.stringify(session));
+  const session = authenticated ? await mockSessions.get(page)() : null;
+  await page.addInitScript(({ session, productId, old }) => {
+    // Install once, so a full reload cannot resurrect an expired login.
+    if (!sessionStorage.getItem('alageum.e2e.quote-seeded')) {
+      if (session) sessionStorage.setItem('alageum_session', JSON.stringify(session));
+      sessionStorage.setItem('alageum.e2e.quote-seeded', '1');
+    }
     if (!localStorage.getItem('alageum.catalog.api-selection.v1')) localStorage.setItem('alageum.catalog.api-selection.v1', JSON.stringify([{ id: 'rfq-test', ...(old ? {} : { databaseId: productId }), quantity: 3 }]));
-  }, { session, productId, authenticated, old });
+  }, { session, productId, old });
+}
+async function fillLogin(page, email = 'buyer@demo.example') {
+  await page.getByLabel('Email', { exact: true }).fill(email);
+  await page.getByLabel('Пароль', { exact: true }).fill(mockPassword);
 }
 test('login stays disabled before hydration and preserves the inquiry return URL', async ({ page }) => {
   await api(page);
@@ -55,7 +108,7 @@ test('login stays disabled before hydration and preserves the inquiry return URL
     await route.continue();
   };
   const loginRequests = [];
-  page.on('request', request => { if (new URL(request.url()).pathname.endsWith('/auth/login')) loginRequests.push(request); });
+  page.on('request', request => { if (new URL(request.url()).pathname.endsWith('/auth/browser-login')) loginRequests.push(request); });
   await page.route('**/_next/static/**', holdScripts);
   const destination = '/login?next=%2Finquiry%3Fsource%3Dapi';
   try {
@@ -70,6 +123,7 @@ test('login stays disabled before hydration and preserves the inquiry return URL
     expect(loginRequests).toHaveLength(0);
     releaseScripts();
     await expect(submit).toBeEnabled();
+    await fillLogin(page);
     await submit.click();
     await expect(page).toHaveURL(/\/inquiry\?source=api$/);
     await expect(page.getByLabel('Количество RFQ-1')).toHaveValue('3');
@@ -87,6 +141,7 @@ test('anonymous catalogue selection resumes through login, submits once and relo
   await page.getByLabel('Количество RFQ-1').fill('3');
   await page.getByRole('link', { name: 'Запросить КП →' }).click();
   await page.getByRole('link', { name: 'Войти и продолжить' }).click();
+  await fillLogin(page);
   await page.getByRole('button', { name: 'Войти', exact: true }).click();
   await expect(page).toHaveURL(/\/inquiry\?source=api$/);
   await expect(page.getByLabel('Количество RFQ-1')).toHaveValue('3');
@@ -145,6 +200,7 @@ test('own list is guarded, direct unavailable detail has no request data', async
   await page.goto('/b2b/quotes');
   await expect(page.getByRole('heading', { name: 'Войдите в B2B кабинет' })).toBeVisible();
   await page.getByRole('link', { name: 'Войти', exact: true }).click();
+  await fillLogin(page);
   await page.getByRole('button', { name: 'Войти', exact: true }).click();
   await expect(page).toHaveURL(/\/b2b\/quotes$/);
   await expect(page.getByText('У вас пока нет сохранённых запросов.')).toBeVisible();
@@ -171,6 +227,7 @@ test('expired session interrupts submission, login restores scoped message and s
   await page.getByRole('button', { name: 'Сохранить запрос КП', exact: true }).click();
   await expect(page.getByRole('link', { name: 'Войти и продолжить' })).toBeVisible();
   await page.getByRole('link', { name: 'Войти и продолжить' }).click();
+  await fillLogin(page);
   await page.getByRole('button', { name: 'Войти', exact: true }).click();
   await expect(page.getByLabel('Сообщение (необязательно)')).toHaveValue('Сохранить при истечении сессии');
   await page.getByRole('button', { name: 'Повторить сохранение', exact: true }).click();
@@ -206,7 +263,7 @@ test('switching accounts hides private draft and preserves original account unce
   await page.getByRole('button', { name: 'Сохранить запрос КП', exact: true }).click();
   await expect(page.getByRole('alert', { name: 'Ошибка запроса КП' })).toBeVisible();
   await page.goto('/login?next=%2Finquiry%3Fsource%3Dapi');
-  await page.getByLabel('Email').fill('second@demo.example');
+  await fillLogin(page, 'second@demo.example');
   await page.getByRole('button', { name: 'Войти', exact: true }).click();
   await expect(page.getByLabel('Сообщение (необязательно)')).toHaveValue('');
   await expect(page.getByRole('button', { name: 'Повторить сохранение', exact: true })).toHaveCount(0);
@@ -214,7 +271,7 @@ test('switching accounts hides private draft and preserves original account unce
   await page.getByLabel('Количество RFQ-1').fill('4');
   await page.getByLabel('Количество RFQ-1').fill('3');
   await page.goto('/login?next=%2Finquiry%3Fsource%3Dapi');
-  await page.getByLabel('Email').fill('buyer@demo.example');
+  await fillLogin(page);
   await page.getByRole('button', { name: 'Войти', exact: true }).click();
   await expect(page.getByLabel('Сообщение (необязательно)')).toHaveValue('Личный проект первого пользователя');
   await page.getByRole('button', { name: 'Повторить сохранение', exact: true }).click();
@@ -266,7 +323,7 @@ test('pending response cannot navigate a different account or overwrite its priv
   await page.getByRole('link', { name: 'Мои запросы →', exact: true }).click();
   await expect(page).toHaveURL(/\/b2b\/quotes$/);
   await page.getByRole('link', { name: 'Войти', exact: true }).click();
-  await page.getByLabel('Email').fill('second@demo.example');
+  await fillLogin(page, 'second@demo.example');
   await page.getByRole('button', { name: 'Войти', exact: true }).click();
   await expect(page).toHaveURL(/\/b2b\/quotes$/);
   await page.getByRole('link', { name: 'Новый запрос', exact: true }).click();
@@ -293,7 +350,7 @@ test('late unauthorized POST neither retries as the new account nor expires its 
   // The list's expired session response prompts a normal login without unloading
   // the document, so the original POST remains genuinely in flight.
   await page.getByRole('link', { name: 'Войти', exact: true }).click();
-  await page.getByLabel('Email').fill('second@demo.example');
+  await fillLogin(page, 'second@demo.example');
   await page.getByRole('button', { name: 'Войти', exact: true }).click();
   await expect(page).toHaveURL(/\/b2b\/quotes$/);
   await page.getByRole('link', { name: 'Новый запрос', exact: true }).click();

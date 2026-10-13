@@ -56,6 +56,61 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  account-session-contracts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_DB: postgres
+          POSTGRES_USER: alageum_auth_test
+          POSTGRES_PASSWORD: disposable-auth-ci-only
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U alageum_auth_test -d postgres"
+          --health-interval 5s --health-timeout 3s --health-retries 20
+    env:
+      ALAGEUM_BROWSER_SESSION_TEST_DATABASE_URL: postgresql://alageum_auth_test:disposable-auth-ci-only@127.0.0.1:5432/alageum_browser_session_test
+      ALAGEUM_FEDERATED_TEST_DATABASE_URL: postgresql://alageum_auth_test:disposable-auth-ci-only@127.0.0.1:5432/alageum_federated_test
+      ALAGEUM_REGISTRATION_TEST_DATABASE_URL: postgresql://alageum_auth_test:disposable-auth-ci-only@127.0.0.1:5432/alageum_registration_test
+      ALAGEUM_REGISTRATION_BROWSER_TEST_DATABASE_URL: postgresql://alageum_auth_test:disposable-auth-ci-only@127.0.0.1:5432/alageum_registration_browser_test
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: backend-node/package-lock.json
+      - name: Install locked backend dependencies
+        working-directory: backend-node
+        run: npm ci
+      - name: Create isolated identity test databases
+        working-directory: backend-node
+        run: |
+          node <<'NODE'
+          const { Client } = require('pg');
+          (async () => {
+            const db = new Client({ connectionString: 'postgresql://alageum_auth_test:disposable-auth-ci-only@127.0.0.1:5432/postgres' });
+            await db.connect();
+            try {
+              await db.query('CREATE DATABASE alageum_browser_session_test');
+              await db.query('CREATE DATABASE alageum_federated_test');
+              await db.query('CREATE DATABASE alageum_registration_test');
+              await db.query('CREATE DATABASE alageum_registration_browser_test');
+            } finally { await db.end(); }
+          })().catch(error => { console.error(error); process.exitCode = 1; });
+          NODE
+      - name: Verify actual password Google registration reset and approval boundaries
+        working-directory: backend-node
+        run: >-
+          node --test --test-concurrency=1
+          tests/browser-sessions.integration.js tests/federated-auth.integration.js
+          tests/registration.integration.js tests/registration-browser.integration.js
+          tests/registration.test.js tests/google-oidc.test.js
+
   native-quote-storage:
     runs-on: ubuntu-24.04
     timeout-minutes: 30
@@ -405,6 +460,10 @@ jobs:
       DATABASE_URL: postgresql://alageum_strapi_ci:disposable-node-strapi-ci@127.0.0.1:5432/alageum_strapi_ci
       ALAGEUM_DOMAIN_TEST_DATABASE_URL: postgresql://alageum_strapi_ci:disposable-node-strapi-ci@127.0.0.1:5432/alageum_strapi_domain_test
       ALAGEUM_CMS_BROWSER_DATABASE_URL: postgresql://alageum_strapi_ci:disposable-node-strapi-ci@127.0.0.1:5432/alageum_strapi_browser_test
+      ALAGEUM_BROWSER_SESSION_TEST_DATABASE_URL: postgresql://alageum_strapi_ci:disposable-node-strapi-ci@127.0.0.1:5432/alageum_browser_session_test
+      ALAGEUM_FEDERATED_TEST_DATABASE_URL: postgresql://alageum_strapi_ci:disposable-node-strapi-ci@127.0.0.1:5432/alageum_federated_test
+      ALAGEUM_REGISTRATION_TEST_DATABASE_URL: postgresql://alageum_strapi_ci:disposable-node-strapi-ci@127.0.0.1:5432/alageum_registration_test
+      ALAGEUM_REGISTRATION_BROWSER_TEST_DATABASE_URL: postgresql://alageum_strapi_ci:disposable-node-strapi-ci@127.0.0.1:5432/alageum_registration_browser_test
       HOST: 127.0.0.1
       PORT: '8016'
       ALAGEUM_SEED_DEMO: '1'
@@ -466,6 +525,10 @@ jobs:
             try {
               await db.query('CREATE DATABASE alageum_strapi_domain_test');
               await db.query('CREATE DATABASE alageum_strapi_browser_test');
+              await db.query('CREATE DATABASE alageum_browser_session_test');
+              await db.query('CREATE DATABASE alageum_federated_test');
+              await db.query('CREATE DATABASE alageum_registration_test');
+              await db.query('CREATE DATABASE alageum_registration_browser_test');
             }
             finally { await db.end(); }
           })().catch(error => { console.error(error); process.exitCode = 1; });

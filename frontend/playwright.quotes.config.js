@@ -12,6 +12,6 @@ export default defineConfig({
   webServer: process.env.E2E_QUOTES_BASE_URL ? undefined : {
     command: production ? `npm run start -- --hostname 127.0.0.1 --port ${port}` : `npm run dev -- --webpack --hostname 127.0.0.1 --port ${port}`,
     url: `${baseURL}/catalog`, reuseExistingServer: !process.env.CI, timeout: 120000,
-    env: { NEXT_TELEMETRY_DISABLED: '1', ...(production ? { NODE_ENV: 'production', ALAGEUM_QUOTES_BUILD: '1', NEXT_PUBLIC_CATALOG_SOURCE: 'static' } : {}) },
+    env: { NEXT_TELEMETRY_DISABLED: '1', NEXT_PUBLIC_API_URL: '/api/v1', ...(production ? { NODE_ENV: 'production', ALAGEUM_QUOTES_BUILD: '1', NEXT_PUBLIC_CATALOG_SOURCE: 'static' } : {}) },
   },
 });

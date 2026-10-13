@@ -59,6 +59,15 @@ PGPASSWORD="$PG_PASSWORD" "$PG_BIN/createdb" -h 127.0.0.1 -p "$PG_PORT" -U alage
 export DATABASE_URL="postgresql://alageum_node_test:$PG_PASSWORD@127.0.0.1:$PG_PORT/alageum_strapi_test"
 export ALAGEUM_DOMAIN_TEST_DATABASE_URL="postgresql://alageum_node_test:$PG_PASSWORD@127.0.0.1:$PG_PORT/alageum_strapi_domain_test"
 export ALAGEUM_CMS_BROWSER_DATABASE_URL="postgresql://alageum_node_test:$PG_PASSWORD@127.0.0.1:$PG_PORT/alageum_strapi_browser_test"
+# Authentication integration tests each require a fresh, explicitly named database.
+PGPASSWORD="$PG_PASSWORD" "$PG_BIN/createdb" -h 127.0.0.1 -p "$PG_PORT" -U alageum_node_test alageum_browser_session_test
+export ALAGEUM_BROWSER_SESSION_TEST_DATABASE_URL="postgresql://alageum_node_test:$PG_PASSWORD@127.0.0.1:$PG_PORT/alageum_browser_session_test"
+PGPASSWORD="$PG_PASSWORD" "$PG_BIN/createdb" -h 127.0.0.1 -p "$PG_PORT" -U alageum_node_test alageum_federated_test
+export ALAGEUM_FEDERATED_TEST_DATABASE_URL="postgresql://alageum_node_test:$PG_PASSWORD@127.0.0.1:$PG_PORT/alageum_federated_test"
+PGPASSWORD="$PG_PASSWORD" "$PG_BIN/createdb" -h 127.0.0.1 -p "$PG_PORT" -U alageum_node_test alageum_registration_test
+export ALAGEUM_REGISTRATION_TEST_DATABASE_URL="postgresql://alageum_node_test:$PG_PASSWORD@127.0.0.1:$PG_PORT/alageum_registration_test"
+PGPASSWORD="$PG_PASSWORD" "$PG_BIN/createdb" -h 127.0.0.1 -p "$PG_PORT" -U alageum_node_test alageum_registration_browser_test
+export ALAGEUM_REGISTRATION_BROWSER_TEST_DATABASE_URL="postgresql://alageum_node_test:$PG_PASSWORD@127.0.0.1:$PG_PORT/alageum_registration_browser_test"
 export APP_ENV=test HOST=127.0.0.1 ALAGEUM_SEED_DEMO=1 ALAGEUM_IMPORT_CATALOG=1
 export ALAGEUM_TEST_ADMIN_FIXTURES=1
 export STRAPI_TELEMETRY_DISABLED=true STRAPI_HIDE_UPDATE_MESSAGE=true NEXT_TELEMETRY_DISABLED=1

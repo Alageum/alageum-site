@@ -198,15 +198,31 @@ test('responsive active organization: a single membership opens the requested pr
   await expect(active(page)).toContainText(a);
 });
 
-test('zero memberships stays recoverable and cancel clears the incomplete login', async ({ page }) => {
+test('zero memberships opens personal onboarding without tenant grants and logout revokes the session', async ({ page }) => {
   let profileReads = 0; page.on('request', request => { if (request.url() === profileEndpoint) profileReads++; });
   await startLogin(page, 'none');
-  await expect(page.getByTestId('organization-empty')).toHaveText('Нет доступных организаций. Обратитесь к администратору, чтобы получить активное членство.');
-  await expect(chooser(page).getByRole('radio')).toHaveCount(0);
-  await expect(chooser(page).getByRole('button', { name: 'Продолжить', exact: true })).toHaveCount(0);
-  await cancelSelection(page).click();
+  await expect(page).toHaveURL(/\/account$/);
+  await expect(page.getByText(email('none'), { exact: true })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Запросить доступ к компании', exact: true })).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Открыть кабинет компании', exact: true })).toHaveCount(0);
+  const session = await page.evaluate(() => JSON.parse(sessionStorage.getItem('alageum_session') || '{}'));
+  expect(session.browser_session).toMatch(/^[a-f0-9-]{36}$/);
+  expect(session.access_token).toBe(`browser:${session.browser_session}`);
+  expect(session.refresh_token).toBeUndefined();
+  expect(session.organization_id).toBeUndefined();
+  const headers = { 'X-Browser-Session': session.browser_session };
+  const account = await page.request.get(`${api}/auth/account`, { headers });
+  expect(account.status()).toBe(200);
+  expect(await account.json()).toMatchObject({ user: { email: email('none') }, onboarding_status: 'no_company', permissions: [], company_requests: [] });
+  const memberships = await page.request.get(`${api}/organizations`, { headers });
+  expect(memberships.status()).toBe(200);
+  expect((await memberships.json()).items).toEqual([]);
+  expect(profileReads).toBe(0);
+  await page.getByRole('button', { name: 'Выйти', exact: true }).click();
+  await expect(page).toHaveURL(/\/login$/);
   await expect(page.getByLabel('Email', { exact: true })).toBeVisible();
   expect(await page.evaluate(() => sessionStorage.getItem('alageum_session'))).toBeNull();
+  expect((await page.request.get(`${api}/auth/account`, { headers })).status()).toBe(401);
   expect(profileReads).toBe(0);
 });
 

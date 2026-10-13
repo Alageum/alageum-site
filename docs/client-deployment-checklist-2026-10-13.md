@@ -120,8 +120,10 @@ cookie login. Migrated E2E helpers carry only the public tab boundary, retain
 real tenant-denial checks and require reauthentication on cookie-session 401s.
 Each cabinet runner also checks cookie relay, boundary/tenant/Origin denial and
 logout through the actual Next proxy before its browser suite. This HTTP proof
-is separate from Chromium acceptance. The historical `catalog-rfq.yml` still
-starts Python and must not be presented as a current Node deployment test.
+is separate from Chromium acceptance. The `catalog-rfq.yml` follow-up separates current Node browser acceptance
+from two retained Python-only API security assertions. All five original
+security cases remain required across those jobs; the Python job is not a
+deployment path.
 Do not re-enable bearer persistence or weaken origin checks to accommodate old
 fixtures. Final real-browser results remain a release requirement.
 
