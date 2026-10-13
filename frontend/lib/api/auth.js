@@ -119,5 +119,11 @@ export async function logout() {
     catch (error) { if (error.status !== 401) throw error; }
   }
   else if (session.refresh_token) await apiFetch("/auth/logout", { method: "POST", body: JSON.stringify({ refresh_token: session.refresh_token }) });
-  if (getSessionGeneration() === generation) clearSession();
+  if (getSessionGeneration() === generation) {
+    clearSession();
+    // A surviving UI owner may navigate only while this exact logout boundary
+    // remains current. An older completion must never redirect a newer login.
+    return { cleared: true, generation: getSessionGeneration() };
+  }
+  return { cleared: false };
 }

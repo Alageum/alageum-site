@@ -10,6 +10,7 @@ import { logout } from '@/lib/api/auth';
 import { getSessionGeneration, subscribeSession } from '@/lib/api/sessionTransport';
 import { getPersonalAccount, requestCompanyAccess } from '@/lib/api/registration';
 import { accountError, companyRequestLabels } from '@/lib/account/model';
+import { acceptsLogoutReceipt } from '@/lib/account/logout';
 import useAccountOperation from './useAccountOperation';
 import styles from './Account.module.css';
 
@@ -32,12 +33,11 @@ function CompanyRequestForm({ onSaved }) {
   </LocaleElement>;
 }
 
-function PersonalAccountScope({ generation }) {
+function PersonalAccountScope({ generation, signOut, signingOut, logoutError }) {
   const router = useRouter();
   const { profile, setProfile } = useAuth();
   const [read, setRead] = useState({ status: 'loading', value: null, error: null });
   const [revision, setRevision] = useState(0), [choice, setChoice] = useState(false), [saved, setSaved] = useState(false);
-  const { pending: signingOut, error: logoutError, run: runLogout } = useAccountOperation();
   const reload = useCallback(() => setRevision(value => value + 1), []);
   useEffect(() => {
     const controller = new AbortController();
@@ -49,7 +49,6 @@ function PersonalAccountScope({ generation }) {
   const selected = useCallback(next => { setProfile(next); setChoice(false); router.replace('/b2b'); }, [setProfile, router]);
   const closeChoice = useCallback(() => setChoice(false), []);
   function refresh() { setRead({ status: 'loading', value: null, error: null }); reload(); }
-  function signOut() { runLogout(() => logout(), () => { setProfile(null); router.replace('/login'); }); }
   if (read.status === 'loading') return <LocaleElement as="section" className={styles.page}><LocaleElement as="p" role="status">Загрузка личного кабинета…</LocaleElement></LocaleElement>;
   if (read.status === 'error') return <LocaleElement as="section" className={styles.page}>
     <LocaleElement as="h1">Личный кабинет</LocaleElement><LocaleElement as="p" className="error" role="alert">{accountError(read.error)}</LocaleElement>
@@ -101,6 +100,28 @@ const serverReady = () => false;
 export default function PersonalAccount() {
   const ready = useSyncExternalStore(subscribeReady, clientReady, serverReady);
   const generation = useSyncExternalStore(subscribeSession, getSessionGeneration, () => 0);
+  const router = useRouter();
+  const { setProfile } = useAuth();
+  const [logoutGeneration, setLogoutGeneration] = useState(null);
+  // Logout clears the session and unmounts its keyed data scope before its
+  // promise resolves. Keep operation ownership in this surviving page boundary.
+  const { pending: signingOut, error: logoutError, run: runLogout } = useAccountOperation();
+  const signOut = useCallback(() => {
+    if (signingOut || generation !== getSessionGeneration() || !getSession().access_token) return;
+    setLogoutGeneration(generation);
+    runLogout(async () => {
+      try { return await logout(); }
+      catch (error) {
+        // An old logout failure must not repaint a newer account's error state.
+        if (generation !== getSessionGeneration()) return { cleared: false };
+        throw error;
+      }
+    }, receipt => {
+      if (!acceptsLogoutReceipt(receipt, getSessionGeneration(), getSession())) return;
+      setProfile(null);
+      router.replace('/login');
+    });
+  }, [generation, router, setProfile, runLogout, signingOut]);
   if (!ready) return <LocaleElement as="section" className={styles.page}><LocaleElement as="p" role="status">Проверка сессии…</LocaleElement></LocaleElement>;
   if (!getSession().access_token) return <LocaleElement as="section" className={styles.page}>
     <LocaleElement as="h1">Личный кабинет</LocaleElement><LocaleElement as="p">Войдите или создайте аккаунт, чтобы запросить доступ к компании.</LocaleElement>
@@ -108,5 +129,5 @@ export default function PersonalAccount() {
   </LocaleElement>;
   // A new login/organization gets a fresh component: private data from the
   // previous scope is never visible while its replacement is loading.
-  return <PersonalAccountScope key={generation} generation={generation} />;
+  return <PersonalAccountScope key={generation} generation={generation} signOut={signOut} signingOut={signingOut} logoutError={logoutGeneration === generation ? logoutError : ''} />;
 }

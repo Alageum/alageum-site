@@ -93,7 +93,7 @@ test("RFQ and ticket creation through UI", async ({ page }) => {
   await expect(page.getByText("Playwright RFQ", { exact: true })).toBeVisible();
   await page.goto("/b2b/support");
   const ticketForm = page.getByRole("form", { name: "Новое обращение", exact: true });
-  await ticketForm.getByLabel("Категория", { exact: true }).selectOption({ index: 1 });
+  await ticketForm.getByRole("combobox", { name: "Категория", exact: true }).selectOption({ index: 1 });
   await ticketForm.getByLabel("Тема", { exact: true }).fill("Playwright ticket");
   await ticketForm.getByLabel("Сообщение", { exact: true }).fill("Deterministic E2E message");
   await ticketForm.getByRole("button", { name: "Создать обращение", exact: true }).click();
