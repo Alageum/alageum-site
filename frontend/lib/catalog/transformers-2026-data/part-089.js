@@ -1,0 +1,966 @@
+// Generated from independently reviewed source records.
+const records = [
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ОРДНЖ-25000/220",
+    "execution": "однофазный; РПН",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      166,
+      175
+    ],
+    "sourceRow": {
+      "pdfPage": 175,
+      "printedPage": 175,
+      "designation": "ОРДНЖ-25000/220",
+      "variant": null,
+      "tableModelIndexOnPage": 18
+    },
+    "sourceFamilyId": "asia-single-phase-railway-rpn",
+    "sourceRecordType": "model",
+    "manufacturer": "ТОО «Asia Trafo»",
+    "manufacturers": [
+      "ТОО «Asia Trafo»"
+    ],
+    "manufacturerEvidencePages": [
+      166
+    ],
+    "brand": "Alageum Electric",
+    "isOrderableSku": false,
+    "power": 25000,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "25000",
+        "unit": "кВА",
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "27,5-27,5",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "1/1-1-0",
+        "unit": "",
+        "page": 175,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "11,5; 11,5; 24,0",
+        "unit": "%",
+        "page": 175
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "*",
+        "unit": "%",
+        "page": 175
+      }
+    ],
+    "notes": [
+      "Source uses an asterisk for unspecified characteristic; no numeric value inferred."
+    ],
+    "image": "/catalog-source/transformers-2026/page-175.webp",
+    "imageSourcePage": 175,
+    "imageCaption": "Страница 175 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "25000",
+        "unit": "кВА",
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "27,5-27,5",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "1/1-1-0",
+        "unit": null,
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "11,5; 11,5; 24,0",
+        "unit": "%",
+        "page": 175
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "*",
+        "unit": "%",
+        "page": 175
+      }
+    ],
+    "id": "alageum-ordn-25000-220-1baed01b",
+    "name": "ОРДНЖ-25000/220",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-asia-single-phase-railway-rpn",
+    "familyName": "Двухобмоточные однофазные трансформаторы с РПН",
+    "series": "Двухобмоточные однофазные трансформаторы с РПН",
+    "subtype": "однофазный; РПН",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "25000",
+        "unit": "кВА",
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "27,5-27,5",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "1/1-1-0",
+        "unit": "",
+        "page": 175,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "11,5; 11,5; 24,0",
+        "unit": "%",
+        "page": 175
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "*",
+        "unit": "%",
+        "page": 175
+      }
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ОРДТНЖ-25000/110",
+    "execution": "однофазный; РПН",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      166,
+      175
+    ],
+    "sourceRow": {
+      "pdfPage": 175,
+      "printedPage": 175,
+      "designation": "ОРДТНЖ-25000/110",
+      "variant": "СН 38,5 кВ; НН 27,5-27,5 кВ",
+      "tableModelIndexOnPage": 19
+    },
+    "sourceFamilyId": "asia-single-phase-railway-rpn",
+    "sourceRecordType": "model",
+    "manufacturer": "ТОО «Asia Trafo»",
+    "manufacturers": [
+      "ТОО «Asia Trafo»"
+    ],
+    "manufacturerEvidencePages": [
+      166
+    ],
+    "brand": "Alageum Electric",
+    "isOrderableSku": false,
+    "power": 25000,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "25000",
+        "unit": "кВА",
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "115",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "27,5-27,5",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "1/1/1-1-0-0",
+        "unit": "",
+        "page": 175,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "38,5",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "17,0; 9,6; 6,0",
+        "unit": "%",
+        "page": 175
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0.3",
+        "unit": "%",
+        "page": 175
+      }
+    ],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-175.webp",
+    "imageSourcePage": 175,
+    "imageCaption": "Страница 175 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "25000",
+        "unit": "кВА",
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "115",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "27,5-27,5",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "1/1/1-1-0-0",
+        "unit": null,
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "38,5",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "17,0; 9,6; 6,0",
+        "unit": "%",
+        "page": 175
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0.3",
+        "unit": "%",
+        "page": 175
+      }
+    ],
+    "id": "alageum-ordtn-25000-110-sn-38-5-kv-nn-27-5-27-5-kv-f7bf5bf1",
+    "name": "ОРДТНЖ-25000/110",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-asia-single-phase-railway-rpn",
+    "familyName": "Двухобмоточные однофазные трансформаторы с РПН",
+    "series": "Двухобмоточные однофазные трансформаторы с РПН",
+    "subtype": "однофазный; РПН",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "25000",
+        "unit": "кВА",
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "115",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "27,5-27,5",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "1/1/1-1-0-0",
+        "unit": "",
+        "page": 175,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "38,5",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "17,0; 9,6; 6,0",
+        "unit": "%",
+        "page": 175
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0.3",
+        "unit": "%",
+        "page": 175
+      }
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ОРДТНЖ-25000/110",
+    "execution": "однофазный; РПН",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      166,
+      175
+    ],
+    "sourceRow": {
+      "pdfPage": 175,
+      "printedPage": 175,
+      "designation": "ОРДТНЖ-25000/110",
+      "variant": "СН 27,5-27,5 кВ; НН 11,0 кВ",
+      "tableModelIndexOnPage": 20
+    },
+    "sourceFamilyId": "asia-single-phase-railway-rpn",
+    "sourceRecordType": "model",
+    "manufacturer": "ТОО «Asia Trafo»",
+    "manufacturers": [
+      "ТОО «Asia Trafo»"
+    ],
+    "manufacturerEvidencePages": [
+      166
+    ],
+    "brand": "Alageum Electric",
+    "isOrderableSku": false,
+    "power": 25000,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "25000",
+        "unit": "кВА",
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "115",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "11,0",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "1/1/1-1-0-0",
+        "unit": "",
+        "page": 175,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "27,5-27,5",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "9,6; 17,0; 6,0",
+        "unit": "%",
+        "page": 175
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0.3",
+        "unit": "%",
+        "page": 175
+      }
+    ],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-175.webp",
+    "imageSourcePage": 175,
+    "imageCaption": "Страница 175 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "25000",
+        "unit": "кВА",
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "115",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "11,0",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "1/1/1-1-0-0",
+        "unit": null,
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "27,5-27,5",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "9,6; 17,0; 6,0",
+        "unit": "%",
+        "page": 175
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0.3",
+        "unit": "%",
+        "page": 175
+      }
+    ],
+    "id": "alageum-ordtn-25000-110-sn-27-5-27-5-kv-nn-11-0-kv-b6bad86b",
+    "name": "ОРДТНЖ-25000/110",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-asia-single-phase-railway-rpn",
+    "familyName": "Двухобмоточные однофазные трансформаторы с РПН",
+    "series": "Двухобмоточные однофазные трансформаторы с РПН",
+    "subtype": "однофазный; РПН",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "25000",
+        "unit": "кВА",
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "115",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "11,0",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "1/1/1-1-0-0",
+        "unit": "",
+        "page": 175,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "27,5-27,5",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "9,6; 17,0; 6,0",
+        "unit": "%",
+        "page": 175
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0.3",
+        "unit": "%",
+        "page": 175
+      }
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ОРДТНЖ-25000/220",
+    "execution": "однофазный; РПН",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      166,
+      175
+    ],
+    "sourceRow": {
+      "pdfPage": 175,
+      "printedPage": 175,
+      "designation": "ОРДТНЖ-25000/220",
+      "variant": "СН 38,5 кВ; НН 27,5-27,5 кВ",
+      "tableModelIndexOnPage": 21
+    },
+    "sourceFamilyId": "asia-single-phase-railway-rpn",
+    "sourceRecordType": "model",
+    "manufacturer": "ТОО «Asia Trafo»",
+    "manufacturers": [
+      "ТОО «Asia Trafo»"
+    ],
+    "manufacturerEvidencePages": [
+      166
+    ],
+    "brand": "Alageum Electric",
+    "isOrderableSku": false,
+    "power": 25000,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "25000",
+        "unit": "кВА",
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "27,5-27,5",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "1/1/1-1-0-0",
+        "unit": "",
+        "page": 175,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "38,5",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "20,7; 13,2; 6,5",
+        "unit": "%",
+        "page": 175
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0.3",
+        "unit": "%",
+        "page": 175
+      }
+    ],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-175.webp",
+    "imageSourcePage": 175,
+    "imageCaption": "Страница 175 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "25000",
+        "unit": "кВА",
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "27,5-27,5",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "1/1/1-1-0-0",
+        "unit": null,
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "38,5",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "20,7; 13,2; 6,5",
+        "unit": "%",
+        "page": 175
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0.3",
+        "unit": "%",
+        "page": 175
+      }
+    ],
+    "id": "alageum-ordtn-25000-220-sn-38-5-kv-nn-27-5-27-5-kv-c91d6b9e",
+    "name": "ОРДТНЖ-25000/220",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-asia-single-phase-railway-rpn",
+    "familyName": "Двухобмоточные однофазные трансформаторы с РПН",
+    "series": "Двухобмоточные однофазные трансформаторы с РПН",
+    "subtype": "однофазный; РПН",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "25000",
+        "unit": "кВА",
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "27,5-27,5",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "1/1/1-1-0-0",
+        "unit": "",
+        "page": 175,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "38,5",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "20,7; 13,2; 6,5",
+        "unit": "%",
+        "page": 175
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0.3",
+        "unit": "%",
+        "page": 175
+      }
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ОРДТНЖ-25000/220",
+    "execution": "однофазный; РПН",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      166,
+      175
+    ],
+    "sourceRow": {
+      "pdfPage": 175,
+      "printedPage": 175,
+      "designation": "ОРДТНЖ-25000/220",
+      "variant": "СН 27,5-27,5 кВ; НН 11,0 кВ",
+      "tableModelIndexOnPage": 22
+    },
+    "sourceFamilyId": "asia-single-phase-railway-rpn",
+    "sourceRecordType": "model",
+    "manufacturer": "ТОО «Asia Trafo»",
+    "manufacturers": [
+      "ТОО «Asia Trafo»"
+    ],
+    "manufacturerEvidencePages": [
+      166
+    ],
+    "brand": "Alageum Electric",
+    "isOrderableSku": false,
+    "power": 25000,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "25000",
+        "unit": "кВА",
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "11,0",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "1/1/1-1-0-0",
+        "unit": "",
+        "page": 175,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "27,5-27,5",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "13,2; 20,7; 6,5",
+        "unit": "%",
+        "page": 175
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0.3",
+        "unit": "%",
+        "page": 175
+      }
+    ],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-175.webp",
+    "imageSourcePage": 175,
+    "imageCaption": "Страница 175 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "25000",
+        "unit": "кВА",
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "11,0",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "1/1/1-1-0-0",
+        "unit": null,
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "27,5-27,5",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "13,2; 20,7; 6,5",
+        "unit": "%",
+        "page": 175
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0.3",
+        "unit": "%",
+        "page": 175
+      }
+    ],
+    "id": "alageum-ordtn-25000-220-sn-27-5-27-5-kv-nn-11-0-kv-79cd15e6",
+    "name": "ОРДТНЖ-25000/220",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-asia-single-phase-railway-rpn",
+    "familyName": "Двухобмоточные однофазные трансформаторы с РПН",
+    "series": "Двухобмоточные однофазные трансформаторы с РПН",
+    "subtype": "однофазный; РПН",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "25000",
+        "unit": "кВА",
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "11,0",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "1/1/1-1-0-0",
+        "unit": "",
+        "page": 175,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "27,5-27,5",
+        "unit": "кВ",
+        "page": 175
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "13,2; 20,7; 6,5",
+        "unit": "%",
+        "page": 175
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0.3",
+        "unit": "%",
+        "page": 175
+      }
+    ],
+    "configurations": []
+  }
+];
+export default records;

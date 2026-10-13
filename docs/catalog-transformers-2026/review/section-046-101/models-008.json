@@ -1,0 +1,1940 @@
+[
+  {
+    "id": "alageum-2026-tmpn-p62-r6",
+    "familyId": "tmpn-top",
+    "name": "ТМПН-250/3",
+    "sourceDesignation": "ТМПН-250/3",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      62,
+      63,
+      66
+    ],
+    "rawSpecs": [
+      {
+        "label": "Pо",
+        "raw": "0,55",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 63
+      },
+      {
+        "label": "Pк",
+        "raw": "4,2",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 63
+      },
+      {
+        "label": "Iо",
+        "raw": "0,6",
+        "unitAsPrinted": "%",
+        "sourcePage": 63
+      },
+      {
+        "label": "Uк",
+        "raw": "5,5",
+        "unitAsPrinted": "%",
+        "sourcePage": 63
+      },
+      {
+        "label": "L",
+        "raw": "1394",
+        "unitAsPrinted": "мм",
+        "sourcePage": 63
+      },
+      {
+        "label": "B",
+        "raw": "996",
+        "unitAsPrinted": "мм",
+        "sourcePage": 63
+      },
+      {
+        "label": "H",
+        "raw": "1745",
+        "unitAsPrinted": "мм",
+        "sourcePage": 63
+      },
+      {
+        "label": "Полная масса",
+        "raw": "1375",
+        "unitAsPrinted": "кг",
+        "sourcePage": 63
+      },
+      {
+        "label": "Масса масла",
+        "raw": "370",
+        "unitAsPrinted": "кг",
+        "sourcePage": 63
+      },
+      {
+        "label": "Количество ступеней регулирования",
+        "raw": "25",
+        "unitAsPrinted": null,
+        "sourcePage": 62
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "raw": "380",
+        "unitAsPrinted": "В",
+        "sourcePage": 62
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "raw": "2247",
+        "unitAsPrinted": "В",
+        "sourcePage": 62
+      },
+      {
+        "label": "Схема соединения",
+        "raw": "Ун/У-0",
+        "unitAsPrinted": null,
+        "sourcePage": 62
+      },
+      {
+        "label": "Напряжение ступеней регулирования",
+        "raw": "2947-2897-2847-2797-2747-2697-2647-2597-2547-2497-2447-2397-2347-2297-2247-2197-2147-2097-2047-1997-1947-1897-1847-1797-1747",
+        "unitAsPrinted": "В",
+        "sourcePage": 62
+      },
+      {
+        "label": "Температура окружающего воздуха",
+        "raw": "от -45 до +40",
+        "unitAsPrinted": "°C",
+        "sourcePage": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Высота над уровнем моря",
+        "raw": "до1000",
+        "unitAsPrinted": "м",
+        "sourcePage": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Относительная влажность воздуха",
+        "raw": "не более80% при +25°C",
+        "unitAsPrinted": null,
+        "sourcePage": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Номинальное напряжение первичной обмотки",
+        "raw": "0,38",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Стандарт",
+        "raw": "ГОСТ11677",
+        "unitAsPrinted": null,
+        "sourcePage": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Переключатель",
+        "raw": "без возбуждения",
+        "unitAsPrinted": null,
+        "sourcePage": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "raw": "тряска, вибрация, воздействие инерционных сил, удары, взрывоопасная и химически агрессивная среда",
+        "unitAsPrinted": null,
+        "sourcePage": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      }
+    ],
+    "assetFamilyIds": [
+      "oil-tmpn-top"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Loss header literally says Вт although decimal magnitudes may indicate a source unit error; not converted."
+    ],
+    "series": "ТМПН",
+    "context": "верхние выводы по чертежу66",
+    "sourceRow": {
+      "page": 62,
+      "table": "technical",
+      "row": 6
+    },
+    "powerKva": 250,
+    "voltageRaw": "380/2247 В",
+    "commonProseGroupIds": [
+      "common-prose-06-p62"
+    ],
+    "designation": "ТМПН-250/3",
+    "execution": "верхние выводы по чертежу66",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "technicalSpecs": [
+      {
+        "label": "Pо",
+        "value": "0,55",
+        "unit": "Вт",
+        "page": 63
+      },
+      {
+        "label": "Pк",
+        "value": "4,2",
+        "unit": "Вт",
+        "page": 63
+      },
+      {
+        "label": "Iо",
+        "value": "0,6",
+        "unit": "%",
+        "page": 63
+      },
+      {
+        "label": "Uк",
+        "value": "5,5",
+        "unit": "%",
+        "page": 63
+      },
+      {
+        "label": "L",
+        "value": "1394",
+        "unit": "мм",
+        "page": 63
+      },
+      {
+        "label": "B",
+        "value": "996",
+        "unit": "мм",
+        "page": 63
+      },
+      {
+        "label": "H",
+        "value": "1745",
+        "unit": "мм",
+        "page": 63
+      },
+      {
+        "label": "Полная масса",
+        "value": "1375",
+        "unit": "кг",
+        "page": 63
+      },
+      {
+        "label": "Масса масла",
+        "value": "370",
+        "unit": "кг",
+        "page": 63
+      },
+      {
+        "label": "Количество ступеней регулирования",
+        "value": "25",
+        "unit": null,
+        "page": 62
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "380",
+        "unit": "В",
+        "page": 62
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "2247",
+        "unit": "В",
+        "page": 62
+      },
+      {
+        "label": "Схема соединения",
+        "value": "Ун/У-0",
+        "unit": null,
+        "page": 62
+      },
+      {
+        "label": "Напряжение ступеней регулирования",
+        "value": "2947-2897-2847-2797-2747-2697-2647-2597-2547-2497-2447-2397-2347-2297-2247-2197-2147-2097-2047-1997-1947-1897-1847-1797-1747",
+        "unit": "В",
+        "page": 62
+      },
+      {
+        "label": "Температура окружающего воздуха",
+        "value": "от -45 до +40",
+        "unit": "°C",
+        "page": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Высота над уровнем моря",
+        "value": "до1000",
+        "unit": "м",
+        "page": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Относительная влажность воздуха",
+        "value": "не более80% при +25°C",
+        "unit": null,
+        "page": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Номинальное напряжение первичной обмотки",
+        "value": "0,38",
+        "unit": "кВ",
+        "page": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ11677",
+        "unit": null,
+        "page": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Переключатель",
+        "value": "без возбуждения",
+        "unit": null,
+        "page": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "value": "тряска, вибрация, воздействие инерционных сил, удары, взрывоопасная и химически агрессивная среда",
+        "unit": null,
+        "page": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-tmpn-p62-r7",
+    "familyId": "tmpn-top",
+    "name": "ТМПН-250/3",
+    "sourceDesignation": "ТМПН-250/3",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      62,
+      63,
+      66
+    ],
+    "rawSpecs": [
+      {
+        "label": "Pо",
+        "raw": "0,65",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 63
+      },
+      {
+        "label": "Pк",
+        "raw": "4,3",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 63
+      },
+      {
+        "label": "Iо",
+        "raw": "0,6",
+        "unitAsPrinted": "%",
+        "sourcePage": 63
+      },
+      {
+        "label": "Uк",
+        "raw": "5,5",
+        "unitAsPrinted": "%",
+        "sourcePage": 63
+      },
+      {
+        "label": "L",
+        "raw": "1394",
+        "unitAsPrinted": "мм",
+        "sourcePage": 63
+      },
+      {
+        "label": "B",
+        "raw": "996",
+        "unitAsPrinted": "мм",
+        "sourcePage": 63
+      },
+      {
+        "label": "H",
+        "raw": "1745",
+        "unitAsPrinted": "мм",
+        "sourcePage": 63
+      },
+      {
+        "label": "Полная масса",
+        "raw": "1320",
+        "unitAsPrinted": "кг",
+        "sourcePage": 63
+      },
+      {
+        "label": "Масса масла",
+        "raw": "370",
+        "unitAsPrinted": "кг",
+        "sourcePage": 63
+      },
+      {
+        "label": "Количество ступеней регулирования",
+        "raw": "25",
+        "unitAsPrinted": null,
+        "sourcePage": 62
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "raw": "380",
+        "unitAsPrinted": "В",
+        "sourcePage": 62
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "raw": "2005",
+        "unitAsPrinted": "В",
+        "sourcePage": 62
+      },
+      {
+        "label": "Схема соединения",
+        "raw": "Ун/У-0",
+        "unitAsPrinted": null,
+        "sourcePage": 62
+      },
+      {
+        "label": "Напряжение ступеней регулирования",
+        "raw": "3100-3025-2945-2865-2790-2710-2630-2555-2475-2395-2320-2240-2165-2085-2005-1930-1850-1770-1695-1615-1535-1460-1380-1300-1225",
+        "unitAsPrinted": "В",
+        "sourcePage": 62
+      },
+      {
+        "label": "Температура окружающего воздуха",
+        "raw": "от -45 до +40",
+        "unitAsPrinted": "°C",
+        "sourcePage": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Высота над уровнем моря",
+        "raw": "до1000",
+        "unitAsPrinted": "м",
+        "sourcePage": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Относительная влажность воздуха",
+        "raw": "не более80% при +25°C",
+        "unitAsPrinted": null,
+        "sourcePage": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Номинальное напряжение первичной обмотки",
+        "raw": "0,38",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Стандарт",
+        "raw": "ГОСТ11677",
+        "unitAsPrinted": null,
+        "sourcePage": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Переключатель",
+        "raw": "без возбуждения",
+        "unitAsPrinted": null,
+        "sourcePage": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "raw": "тряска, вибрация, воздействие инерционных сил, удары, взрывоопасная и химически агрессивная среда",
+        "unitAsPrinted": null,
+        "sourcePage": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      }
+    ],
+    "assetFamilyIds": [
+      "oil-tmpn-top"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Loss header literally says Вт although decimal magnitudes may indicate a source unit error; not converted."
+    ],
+    "series": "ТМПН",
+    "context": "верхние выводы по чертежу66",
+    "sourceRow": {
+      "page": 62,
+      "table": "technical",
+      "row": 7
+    },
+    "powerKva": 250,
+    "voltageRaw": "380/2005 В",
+    "commonProseGroupIds": [
+      "common-prose-06-p62"
+    ],
+    "designation": "ТМПН-250/3",
+    "execution": "верхние выводы по чертежу66",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "technicalSpecs": [
+      {
+        "label": "Pо",
+        "value": "0,65",
+        "unit": "Вт",
+        "page": 63
+      },
+      {
+        "label": "Pк",
+        "value": "4,3",
+        "unit": "Вт",
+        "page": 63
+      },
+      {
+        "label": "Iо",
+        "value": "0,6",
+        "unit": "%",
+        "page": 63
+      },
+      {
+        "label": "Uк",
+        "value": "5,5",
+        "unit": "%",
+        "page": 63
+      },
+      {
+        "label": "L",
+        "value": "1394",
+        "unit": "мм",
+        "page": 63
+      },
+      {
+        "label": "B",
+        "value": "996",
+        "unit": "мм",
+        "page": 63
+      },
+      {
+        "label": "H",
+        "value": "1745",
+        "unit": "мм",
+        "page": 63
+      },
+      {
+        "label": "Полная масса",
+        "value": "1320",
+        "unit": "кг",
+        "page": 63
+      },
+      {
+        "label": "Масса масла",
+        "value": "370",
+        "unit": "кг",
+        "page": 63
+      },
+      {
+        "label": "Количество ступеней регулирования",
+        "value": "25",
+        "unit": null,
+        "page": 62
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "380",
+        "unit": "В",
+        "page": 62
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "2005",
+        "unit": "В",
+        "page": 62
+      },
+      {
+        "label": "Схема соединения",
+        "value": "Ун/У-0",
+        "unit": null,
+        "page": 62
+      },
+      {
+        "label": "Напряжение ступеней регулирования",
+        "value": "3100-3025-2945-2865-2790-2710-2630-2555-2475-2395-2320-2240-2165-2085-2005-1930-1850-1770-1695-1615-1535-1460-1380-1300-1225",
+        "unit": "В",
+        "page": 62
+      },
+      {
+        "label": "Температура окружающего воздуха",
+        "value": "от -45 до +40",
+        "unit": "°C",
+        "page": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Высота над уровнем моря",
+        "value": "до1000",
+        "unit": "м",
+        "page": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Относительная влажность воздуха",
+        "value": "не более80% при +25°C",
+        "unit": null,
+        "page": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Номинальное напряжение первичной обмотки",
+        "value": "0,38",
+        "unit": "кВ",
+        "page": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ11677",
+        "unit": null,
+        "page": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Переключатель",
+        "value": "без возбуждения",
+        "unit": null,
+        "page": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "value": "тряска, вибрация, воздействие инерционных сил, удары, взрывоопасная и химически агрессивная среда",
+        "unit": null,
+        "page": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-tmpn-p62-r8",
+    "familyId": "tmpn-top",
+    "name": "ТМПНГ-100/3",
+    "sourceDesignation": "ТМПНГ-100/3",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      62,
+      63,
+      66
+    ],
+    "rawSpecs": [
+      {
+        "label": "Pо",
+        "raw": "0,29",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 63
+      },
+      {
+        "label": "Pк",
+        "raw": "1,97",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 63
+      },
+      {
+        "label": "Iо",
+        "raw": "1,5",
+        "unitAsPrinted": "%",
+        "sourcePage": 63
+      },
+      {
+        "label": "Uк",
+        "raw": "5,5",
+        "unitAsPrinted": "%",
+        "sourcePage": 63
+      },
+      {
+        "label": "L",
+        "raw": "1000",
+        "unitAsPrinted": "мм",
+        "sourcePage": 63
+      },
+      {
+        "label": "B",
+        "raw": "800",
+        "unitAsPrinted": "мм",
+        "sourcePage": 63
+      },
+      {
+        "label": "H",
+        "raw": "1450",
+        "unitAsPrinted": "мм",
+        "sourcePage": 63
+      },
+      {
+        "label": "Полная масса",
+        "raw": "635",
+        "unitAsPrinted": "кг",
+        "sourcePage": 63
+      },
+      {
+        "label": "Масса масла",
+        "raw": "204",
+        "unitAsPrinted": "кг",
+        "sourcePage": 63
+      },
+      {
+        "label": "Количество ступеней регулирования",
+        "raw": "25",
+        "unitAsPrinted": null,
+        "sourcePage": 62
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "raw": "380",
+        "unitAsPrinted": "В",
+        "sourcePage": 62
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "raw": "1250",
+        "unitAsPrinted": "В",
+        "sourcePage": 62
+      },
+      {
+        "label": "Схема соединения",
+        "raw": "Ун/У-0",
+        "unitAsPrinted": null,
+        "sourcePage": 62
+      },
+      {
+        "label": "Напряжение ступеней регулирования",
+        "raw": "1690-1646-1602-1558-1514-1470-1426-1382-1338-1294-1250-1206-1162-1118-1074-1030-986-942-898-854-810-766-722-678-634",
+        "unitAsPrinted": "В",
+        "sourcePage": 62
+      },
+      {
+        "label": "Температура окружающего воздуха",
+        "raw": "от -45 до +40",
+        "unitAsPrinted": "°C",
+        "sourcePage": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Высота над уровнем моря",
+        "raw": "до1000",
+        "unitAsPrinted": "м",
+        "sourcePage": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Относительная влажность воздуха",
+        "raw": "не более80% при +25°C",
+        "unitAsPrinted": null,
+        "sourcePage": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Номинальное напряжение первичной обмотки",
+        "raw": "0,38",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Стандарт",
+        "raw": "ГОСТ11677",
+        "unitAsPrinted": null,
+        "sourcePage": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Переключатель",
+        "raw": "без возбуждения",
+        "unitAsPrinted": null,
+        "sourcePage": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "raw": "тряска, вибрация, воздействие инерционных сил, удары, взрывоопасная и химически агрессивная среда",
+        "unitAsPrinted": null,
+        "sourcePage": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      }
+    ],
+    "assetFamilyIds": [
+      "oil-tmpn-top"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Loss header literally says Вт although decimal magnitudes may indicate a source unit error; not converted."
+    ],
+    "series": "ТМПНГ",
+    "context": "верхние выводы по чертежу66",
+    "sourceRow": {
+      "page": 62,
+      "table": "technical",
+      "row": 8
+    },
+    "powerKva": 100,
+    "voltageRaw": "380/1250 В",
+    "commonProseGroupIds": [
+      "common-prose-06-p62"
+    ],
+    "designation": "ТМПНГ-100/3",
+    "execution": "верхние выводы по чертежу66",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "technicalSpecs": [
+      {
+        "label": "Pо",
+        "value": "0,29",
+        "unit": "Вт",
+        "page": 63
+      },
+      {
+        "label": "Pк",
+        "value": "1,97",
+        "unit": "Вт",
+        "page": 63
+      },
+      {
+        "label": "Iо",
+        "value": "1,5",
+        "unit": "%",
+        "page": 63
+      },
+      {
+        "label": "Uк",
+        "value": "5,5",
+        "unit": "%",
+        "page": 63
+      },
+      {
+        "label": "L",
+        "value": "1000",
+        "unit": "мм",
+        "page": 63
+      },
+      {
+        "label": "B",
+        "value": "800",
+        "unit": "мм",
+        "page": 63
+      },
+      {
+        "label": "H",
+        "value": "1450",
+        "unit": "мм",
+        "page": 63
+      },
+      {
+        "label": "Полная масса",
+        "value": "635",
+        "unit": "кг",
+        "page": 63
+      },
+      {
+        "label": "Масса масла",
+        "value": "204",
+        "unit": "кг",
+        "page": 63
+      },
+      {
+        "label": "Количество ступеней регулирования",
+        "value": "25",
+        "unit": null,
+        "page": 62
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "380",
+        "unit": "В",
+        "page": 62
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "1250",
+        "unit": "В",
+        "page": 62
+      },
+      {
+        "label": "Схема соединения",
+        "value": "Ун/У-0",
+        "unit": null,
+        "page": 62
+      },
+      {
+        "label": "Напряжение ступеней регулирования",
+        "value": "1690-1646-1602-1558-1514-1470-1426-1382-1338-1294-1250-1206-1162-1118-1074-1030-986-942-898-854-810-766-722-678-634",
+        "unit": "В",
+        "page": 62
+      },
+      {
+        "label": "Температура окружающего воздуха",
+        "value": "от -45 до +40",
+        "unit": "°C",
+        "page": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Высота над уровнем моря",
+        "value": "до1000",
+        "unit": "м",
+        "page": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Относительная влажность воздуха",
+        "value": "не более80% при +25°C",
+        "unit": null,
+        "page": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Номинальное напряжение первичной обмотки",
+        "value": "0,38",
+        "unit": "кВ",
+        "page": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ11677",
+        "unit": null,
+        "page": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Переключатель",
+        "value": "без возбуждения",
+        "unit": null,
+        "page": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "value": "тряска, вибрация, воздействие инерционных сил, удары, взрывоопасная и химически агрессивная среда",
+        "unit": null,
+        "page": 62,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-06-p62"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-tmpn-p64-r1",
+    "familyId": "tmpn-top",
+    "name": "ТМПНГ-160/3",
+    "sourceDesignation": "ТМПНГ-160/3",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      64,
+      65,
+      66
+    ],
+    "rawSpecs": [
+      {
+        "label": "Pо",
+        "raw": "0,45",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 65
+      },
+      {
+        "label": "Pк",
+        "raw": "3,1",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 65
+      },
+      {
+        "label": "Iо",
+        "raw": "1,2",
+        "unitAsPrinted": "%",
+        "sourcePage": 65
+      },
+      {
+        "label": "Uк",
+        "raw": "5,5",
+        "unitAsPrinted": "%",
+        "sourcePage": 65
+      },
+      {
+        "label": "L",
+        "raw": "1230",
+        "unitAsPrinted": "мм",
+        "sourcePage": 65
+      },
+      {
+        "label": "B",
+        "raw": "950",
+        "unitAsPrinted": "мм",
+        "sourcePage": 65
+      },
+      {
+        "label": "H",
+        "raw": "1395",
+        "unitAsPrinted": "мм",
+        "sourcePage": 65
+      },
+      {
+        "label": "Полная масса",
+        "raw": "1130",
+        "unitAsPrinted": "кг",
+        "sourcePage": 65
+      },
+      {
+        "label": "Масса масла",
+        "raw": "350",
+        "unitAsPrinted": "кг",
+        "sourcePage": 65
+      },
+      {
+        "label": "Количество ступеней регулирования",
+        "raw": "25",
+        "unitAsPrinted": null,
+        "sourcePage": 64
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "raw": "380",
+        "unitAsPrinted": "В",
+        "sourcePage": 64
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "raw": "1900",
+        "unitAsPrinted": "В",
+        "sourcePage": 64
+      },
+      {
+        "label": "Схема соединения",
+        "raw": "Ун/У-0",
+        "unitAsPrinted": null,
+        "sourcePage": 64
+      },
+      {
+        "label": "Напряжение ступеней регулирования",
+        "raw": "2136-2077-2018-1959-1900-1841-1782-1723-1664-1605-1546-1487-1428-1369-1310-1251-1192-1133-1074-1015-956-897-838-779-720",
+        "unitAsPrinted": "В",
+        "sourcePage": 64
+      },
+      {
+        "label": "Температура окружающего воздуха",
+        "raw": "от -60 до +40",
+        "unitAsPrinted": "°C",
+        "sourcePage": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Высота над уровнем моря",
+        "raw": "до1000",
+        "unitAsPrinted": "м",
+        "sourcePage": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Относительная влажность воздуха",
+        "raw": "не более80% при +25°C",
+        "unitAsPrinted": null,
+        "sourcePage": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Номинальное напряжение первичной обмотки",
+        "raw": "0,38",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Стандарт",
+        "raw": "ГОСТ11677",
+        "unitAsPrinted": null,
+        "sourcePage": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Переключатель",
+        "raw": "без возбуждения",
+        "unitAsPrinted": null,
+        "sourcePage": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "raw": "тряска, вибрация, воздействие инерционных сил, удары, взрывоопасная и химически агрессивная среда",
+        "unitAsPrinted": null,
+        "sourcePage": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      }
+    ],
+    "assetFamilyIds": [
+      "oil-tmpn-top"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Loss header literally says Вт although decimal magnitudes may indicate a source unit error; not converted."
+    ],
+    "series": "ТМПНГ",
+    "context": "верхние выводы по чертежу66",
+    "sourceRow": {
+      "page": 64,
+      "table": "technical",
+      "row": 1
+    },
+    "powerKva": 160,
+    "voltageRaw": "380/1900 В",
+    "commonProseGroupIds": [
+      "common-prose-07-p64"
+    ],
+    "designation": "ТМПНГ-160/3",
+    "execution": "верхние выводы по чертежу66",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "technicalSpecs": [
+      {
+        "label": "Pо",
+        "value": "0,45",
+        "unit": "Вт",
+        "page": 65
+      },
+      {
+        "label": "Pк",
+        "value": "3,1",
+        "unit": "Вт",
+        "page": 65
+      },
+      {
+        "label": "Iо",
+        "value": "1,2",
+        "unit": "%",
+        "page": 65
+      },
+      {
+        "label": "Uк",
+        "value": "5,5",
+        "unit": "%",
+        "page": 65
+      },
+      {
+        "label": "L",
+        "value": "1230",
+        "unit": "мм",
+        "page": 65
+      },
+      {
+        "label": "B",
+        "value": "950",
+        "unit": "мм",
+        "page": 65
+      },
+      {
+        "label": "H",
+        "value": "1395",
+        "unit": "мм",
+        "page": 65
+      },
+      {
+        "label": "Полная масса",
+        "value": "1130",
+        "unit": "кг",
+        "page": 65
+      },
+      {
+        "label": "Масса масла",
+        "value": "350",
+        "unit": "кг",
+        "page": 65
+      },
+      {
+        "label": "Количество ступеней регулирования",
+        "value": "25",
+        "unit": null,
+        "page": 64
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "380",
+        "unit": "В",
+        "page": 64
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "1900",
+        "unit": "В",
+        "page": 64
+      },
+      {
+        "label": "Схема соединения",
+        "value": "Ун/У-0",
+        "unit": null,
+        "page": 64
+      },
+      {
+        "label": "Напряжение ступеней регулирования",
+        "value": "2136-2077-2018-1959-1900-1841-1782-1723-1664-1605-1546-1487-1428-1369-1310-1251-1192-1133-1074-1015-956-897-838-779-720",
+        "unit": "В",
+        "page": 64
+      },
+      {
+        "label": "Температура окружающего воздуха",
+        "value": "от -60 до +40",
+        "unit": "°C",
+        "page": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Высота над уровнем моря",
+        "value": "до1000",
+        "unit": "м",
+        "page": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Относительная влажность воздуха",
+        "value": "не более80% при +25°C",
+        "unit": null,
+        "page": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Номинальное напряжение первичной обмотки",
+        "value": "0,38",
+        "unit": "кВ",
+        "page": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ11677",
+        "unit": null,
+        "page": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Переключатель",
+        "value": "без возбуждения",
+        "unit": null,
+        "page": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "value": "тряска, вибрация, воздействие инерционных сил, удары, взрывоопасная и химически агрессивная среда",
+        "unit": null,
+        "page": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-tmpn-p64-r2",
+    "familyId": "tmpn-top",
+    "name": "ТМПНГ-160/3",
+    "sourceDesignation": "ТМПНГ-160/3",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      64,
+      65,
+      66
+    ],
+    "rawSpecs": [
+      {
+        "label": "Pо",
+        "raw": "0,45",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 65
+      },
+      {
+        "label": "Pк",
+        "raw": "3,1",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 65
+      },
+      {
+        "label": "Iо",
+        "raw": "1,2",
+        "unitAsPrinted": "%",
+        "sourcePage": 65
+      },
+      {
+        "label": "Uк",
+        "raw": "5,5",
+        "unitAsPrinted": "%",
+        "sourcePage": 65
+      },
+      {
+        "label": "L",
+        "raw": "1230",
+        "unitAsPrinted": "мм",
+        "sourcePage": 65
+      },
+      {
+        "label": "B",
+        "raw": "950",
+        "unitAsPrinted": "мм",
+        "sourcePage": 65
+      },
+      {
+        "label": "H",
+        "raw": "1395",
+        "unitAsPrinted": "мм",
+        "sourcePage": 65
+      },
+      {
+        "label": "Полная масса",
+        "raw": "1130",
+        "unitAsPrinted": "кг",
+        "sourcePage": 65
+      },
+      {
+        "label": "Масса масла",
+        "raw": "350",
+        "unitAsPrinted": "кг",
+        "sourcePage": 65
+      },
+      {
+        "label": "Количество ступеней регулирования",
+        "raw": "25",
+        "unitAsPrinted": null,
+        "sourcePage": 64
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "raw": "380",
+        "unitAsPrinted": "В",
+        "sourcePage": 64
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "raw": "1902",
+        "unitAsPrinted": "В",
+        "sourcePage": 64
+      },
+      {
+        "label": "Схема соединения",
+        "raw": "Ун/У-0",
+        "unitAsPrinted": null,
+        "sourcePage": 64
+      },
+      {
+        "label": "Напряжение ступеней регулирования",
+        "raw": "2402-2362-2316-2270-2224-2178-2132-2086-2040-1994-1948-1902-1856-1810-1764-1718-1672-1626-1580-1534-1488-1442-1396-1350-1304",
+        "unitAsPrinted": "В",
+        "sourcePage": 64
+      },
+      {
+        "label": "Температура окружающего воздуха",
+        "raw": "от -60 до +40",
+        "unitAsPrinted": "°C",
+        "sourcePage": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Высота над уровнем моря",
+        "raw": "до1000",
+        "unitAsPrinted": "м",
+        "sourcePage": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Относительная влажность воздуха",
+        "raw": "не более80% при +25°C",
+        "unitAsPrinted": null,
+        "sourcePage": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Номинальное напряжение первичной обмотки",
+        "raw": "0,38",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Стандарт",
+        "raw": "ГОСТ11677",
+        "unitAsPrinted": null,
+        "sourcePage": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Переключатель",
+        "raw": "без возбуждения",
+        "unitAsPrinted": null,
+        "sourcePage": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "raw": "тряска, вибрация, воздействие инерционных сил, удары, взрывоопасная и химически агрессивная среда",
+        "unitAsPrinted": null,
+        "sourcePage": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      }
+    ],
+    "assetFamilyIds": [
+      "oil-tmpn-top"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Loss header literally says Вт although decimal magnitudes may indicate a source unit error; not converted."
+    ],
+    "series": "ТМПНГ",
+    "context": "верхние выводы по чертежу66",
+    "sourceRow": {
+      "page": 64,
+      "table": "technical",
+      "row": 2
+    },
+    "powerKva": 160,
+    "voltageRaw": "380/1902 В",
+    "commonProseGroupIds": [
+      "common-prose-07-p64"
+    ],
+    "designation": "ТМПНГ-160/3",
+    "execution": "верхние выводы по чертежу66",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "technicalSpecs": [
+      {
+        "label": "Pо",
+        "value": "0,45",
+        "unit": "Вт",
+        "page": 65
+      },
+      {
+        "label": "Pк",
+        "value": "3,1",
+        "unit": "Вт",
+        "page": 65
+      },
+      {
+        "label": "Iо",
+        "value": "1,2",
+        "unit": "%",
+        "page": 65
+      },
+      {
+        "label": "Uк",
+        "value": "5,5",
+        "unit": "%",
+        "page": 65
+      },
+      {
+        "label": "L",
+        "value": "1230",
+        "unit": "мм",
+        "page": 65
+      },
+      {
+        "label": "B",
+        "value": "950",
+        "unit": "мм",
+        "page": 65
+      },
+      {
+        "label": "H",
+        "value": "1395",
+        "unit": "мм",
+        "page": 65
+      },
+      {
+        "label": "Полная масса",
+        "value": "1130",
+        "unit": "кг",
+        "page": 65
+      },
+      {
+        "label": "Масса масла",
+        "value": "350",
+        "unit": "кг",
+        "page": 65
+      },
+      {
+        "label": "Количество ступеней регулирования",
+        "value": "25",
+        "unit": null,
+        "page": 64
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "380",
+        "unit": "В",
+        "page": 64
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "1902",
+        "unit": "В",
+        "page": 64
+      },
+      {
+        "label": "Схема соединения",
+        "value": "Ун/У-0",
+        "unit": null,
+        "page": 64
+      },
+      {
+        "label": "Напряжение ступеней регулирования",
+        "value": "2402-2362-2316-2270-2224-2178-2132-2086-2040-1994-1948-1902-1856-1810-1764-1718-1672-1626-1580-1534-1488-1442-1396-1350-1304",
+        "unit": "В",
+        "page": 64
+      },
+      {
+        "label": "Температура окружающего воздуха",
+        "value": "от -60 до +40",
+        "unit": "°C",
+        "page": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Высота над уровнем моря",
+        "value": "до1000",
+        "unit": "м",
+        "page": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Относительная влажность воздуха",
+        "value": "не более80% при +25°C",
+        "unit": null,
+        "page": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Номинальное напряжение первичной обмотки",
+        "value": "0,38",
+        "unit": "кВ",
+        "page": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ11677",
+        "unit": null,
+        "page": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Переключатель",
+        "value": "без возбуждения",
+        "unit": null,
+        "page": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "value": "тряска, вибрация, воздействие инерционных сил, удары, взрывоопасная и химически агрессивная среда",
+        "unit": null,
+        "page": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-tmpn-p64-r3",
+    "familyId": "tmpn-top",
+    "name": "ТМПНГ-250/3",
+    "sourceDesignation": "ТМПНГ-250/3",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      64,
+      65,
+      66
+    ],
+    "rawSpecs": [
+      {
+        "label": "Pо",
+        "raw": "0,54",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 65
+      },
+      {
+        "label": "Pк",
+        "raw": "4,2",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 65
+      },
+      {
+        "label": "Iо",
+        "raw": "0,6",
+        "unitAsPrinted": "%",
+        "sourcePage": 65
+      },
+      {
+        "label": "Uк",
+        "raw": "5,5",
+        "unitAsPrinted": "%",
+        "sourcePage": 65
+      },
+      {
+        "label": "L",
+        "raw": "1300",
+        "unitAsPrinted": "мм",
+        "sourcePage": 65
+      },
+      {
+        "label": "B",
+        "raw": "950",
+        "unitAsPrinted": "мм",
+        "sourcePage": 65
+      },
+      {
+        "label": "H",
+        "raw": "1530",
+        "unitAsPrinted": "мм",
+        "sourcePage": 65
+      },
+      {
+        "label": "Полная масса",
+        "raw": "1375",
+        "unitAsPrinted": "кг",
+        "sourcePage": 65
+      },
+      {
+        "label": "Масса масла",
+        "raw": "370",
+        "unitAsPrinted": "кг",
+        "sourcePage": 65
+      },
+      {
+        "label": "Количество ступеней регулирования",
+        "raw": "25",
+        "unitAsPrinted": null,
+        "sourcePage": 64
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "raw": "380",
+        "unitAsPrinted": "В",
+        "sourcePage": 64
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "raw": "2247",
+        "unitAsPrinted": "В",
+        "sourcePage": 64
+      },
+      {
+        "label": "Схема соединения",
+        "raw": "Ун/У-0",
+        "unitAsPrinted": null,
+        "sourcePage": 64
+      },
+      {
+        "label": "Напряжение ступеней регулирования",
+        "raw": "2947-2897-2847-2797-2747-2697-2647-2597-2547-2497-2447-2397-2347-2297-2247-2197-2147-2097-2047-1997-1947-1897-1847-1797-1747",
+        "unitAsPrinted": "В",
+        "sourcePage": 64
+      },
+      {
+        "label": "Температура окружающего воздуха",
+        "raw": "от -60 до +40",
+        "unitAsPrinted": "°C",
+        "sourcePage": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Высота над уровнем моря",
+        "raw": "до1000",
+        "unitAsPrinted": "м",
+        "sourcePage": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Относительная влажность воздуха",
+        "raw": "не более80% при +25°C",
+        "unitAsPrinted": null,
+        "sourcePage": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Номинальное напряжение первичной обмотки",
+        "raw": "0,38",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Стандарт",
+        "raw": "ГОСТ11677",
+        "unitAsPrinted": null,
+        "sourcePage": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Переключатель",
+        "raw": "без возбуждения",
+        "unitAsPrinted": null,
+        "sourcePage": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "raw": "тряска, вибрация, воздействие инерционных сил, удары, взрывоопасная и химически агрессивная среда",
+        "unitAsPrinted": null,
+        "sourcePage": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      }
+    ],
+    "assetFamilyIds": [
+      "oil-tmpn-top"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Loss header literally says Вт although decimal magnitudes may indicate a source unit error; not converted."
+    ],
+    "series": "ТМПНГ",
+    "context": "верхние выводы по чертежу66",
+    "sourceRow": {
+      "page": 64,
+      "table": "technical",
+      "row": 3
+    },
+    "powerKva": 250,
+    "voltageRaw": "380/2247 В",
+    "commonProseGroupIds": [
+      "common-prose-07-p64"
+    ],
+    "designation": "ТМПНГ-250/3",
+    "execution": "верхние выводы по чертежу66",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "technicalSpecs": [
+      {
+        "label": "Pо",
+        "value": "0,54",
+        "unit": "Вт",
+        "page": 65
+      },
+      {
+        "label": "Pк",
+        "value": "4,2",
+        "unit": "Вт",
+        "page": 65
+      },
+      {
+        "label": "Iо",
+        "value": "0,6",
+        "unit": "%",
+        "page": 65
+      },
+      {
+        "label": "Uк",
+        "value": "5,5",
+        "unit": "%",
+        "page": 65
+      },
+      {
+        "label": "L",
+        "value": "1300",
+        "unit": "мм",
+        "page": 65
+      },
+      {
+        "label": "B",
+        "value": "950",
+        "unit": "мм",
+        "page": 65
+      },
+      {
+        "label": "H",
+        "value": "1530",
+        "unit": "мм",
+        "page": 65
+      },
+      {
+        "label": "Полная масса",
+        "value": "1375",
+        "unit": "кг",
+        "page": 65
+      },
+      {
+        "label": "Масса масла",
+        "value": "370",
+        "unit": "кг",
+        "page": 65
+      },
+      {
+        "label": "Количество ступеней регулирования",
+        "value": "25",
+        "unit": null,
+        "page": 64
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "380",
+        "unit": "В",
+        "page": 64
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "2247",
+        "unit": "В",
+        "page": 64
+      },
+      {
+        "label": "Схема соединения",
+        "value": "Ун/У-0",
+        "unit": null,
+        "page": 64
+      },
+      {
+        "label": "Напряжение ступеней регулирования",
+        "value": "2947-2897-2847-2797-2747-2697-2647-2597-2547-2497-2447-2397-2347-2297-2247-2197-2147-2097-2047-1997-1947-1897-1847-1797-1747",
+        "unit": "В",
+        "page": 64
+      },
+      {
+        "label": "Температура окружающего воздуха",
+        "value": "от -60 до +40",
+        "unit": "°C",
+        "page": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Высота над уровнем моря",
+        "value": "до1000",
+        "unit": "м",
+        "page": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Относительная влажность воздуха",
+        "value": "не более80% при +25°C",
+        "unit": null,
+        "page": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Номинальное напряжение первичной обмотки",
+        "value": "0,38",
+        "unit": "кВ",
+        "page": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ11677",
+        "unit": null,
+        "page": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Переключатель",
+        "value": "без возбуждения",
+        "unit": null,
+        "page": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "value": "тряска, вибрация, воздействие инерционных сил, удары, взрывоопасная и химически агрессивная среда",
+        "unit": null,
+        "page": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      }
+    ]
+  }
+]

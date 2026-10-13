@@ -1,0 +1,2138 @@
+// Generated from independently reviewed source records.
+const records = [
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ОМП",
+    "execution": "",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      72,
+      73,
+      74
+    ],
+    "sourceRow": null,
+    "sourceFamilyId": "omp",
+    "sourceRecordType": "family",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": null,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-072.webp",
+    "imageSourcePage": 72,
+    "imageCaption": "Страница 72 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [],
+    "id": "tr2026-family-omp",
+    "name": "ОМП — однофазный масляный",
+    "recordKind": "family",
+    "recordType": "catalog-family",
+    "series": "ОМП",
+    "subtype": "",
+    "description": "",
+    "variantIds": [
+      "alageum-2026-om-4-p",
+      "alageum-2026-om-10-p"
+    ],
+    "configurations": [
+      {
+        "id": "alageum-2026-om-4-p-voltage-options",
+        "designation": "explicit-voltage-options",
+        "kind": "configuration",
+        "sourceKind": "explicit-voltage-options",
+        "modelId": "alageum-2026-om-4-p",
+        "page": 72,
+        "sourcePages": [
+          72
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-om-4-p-voltage-options",
+          "modelId": "alageum-2026-om-4-p",
+          "familyId": "omp",
+          "kind": "explicit-voltage-options",
+          "highVoltageOptionsKv": [
+            "6",
+            "10"
+          ],
+          "lowVoltageOptionsKv": [
+            "0,23",
+            "0,4"
+          ],
+          "sourcePages": [
+            72
+          ],
+          "sku": null,
+          "note": "Source choices retained as choices, not Cartesian-expanded SKU list."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-om-10-p-voltage-options",
+        "designation": "explicit-voltage-options",
+        "kind": "configuration",
+        "sourceKind": "explicit-voltage-options",
+        "modelId": "alageum-2026-om-10-p",
+        "page": 72,
+        "sourcePages": [
+          72
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-om-10-p-voltage-options",
+          "modelId": "alageum-2026-om-10-p",
+          "familyId": "omp",
+          "kind": "explicit-voltage-options",
+          "highVoltageOptionsKv": [
+            "6",
+            "10"
+          ],
+          "lowVoltageOptionsKv": [
+            "0,23",
+            "0,4"
+          ],
+          "sourcePages": [
+            72
+          ],
+          "sku": null,
+          "note": "Source choices retained as choices, not Cartesian-expanded SKU list."
+        },
+        "notes": []
+      }
+    ]
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ОМП-4",
+    "execution": "однофазный масляный",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      72,
+      73,
+      74
+    ],
+    "sourceRow": {
+      "page": 72,
+      "designation": "ОМП-4",
+      "execution": "однофазный масляный",
+      "kind": "explicit-model-row"
+    },
+    "sourceFamilyId": "omp",
+    "sourceRecordType": "explicit-model-row",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": 4,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "4",
+        "unit": "кВА",
+        "page": 72
+      },
+      {
+        "label": "ВН options",
+        "value": "6;10",
+        "unit": "кВ",
+        "page": 72
+      },
+      {
+        "label": "НН options",
+        "value": "0,23;0,4",
+        "unit": "кВ",
+        "page": 72
+      },
+      {
+        "label": "Напряжение ступеней регулирования при6кВ",
+        "value": "6,3-6,0-5,7-5,4",
+        "unit": "",
+        "page": 72,
+        "inferredUnit": "кВ",
+        "unitInferenceNote": "Tap-voltage column does not print a unit; кВ inferred from adjacent nominal-voltage header and values. No numerical conversion.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Напряжение ступеней регулирования при10кВ",
+        "value": "10,5-10,0-9,5-9,0",
+        "unit": "",
+        "page": 72,
+        "inferredUnit": "кВ",
+        "unitInferenceNote": "Tap-voltage column does not print a unit; кВ inferred from adjacent nominal-voltage header and values. No numerical conversion.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "1/1-0",
+        "unit": "",
+        "page": 72,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Ток х.х",
+        "value": "10",
+        "unit": "%",
+        "page": 72
+      },
+      {
+        "label": "Потери Х.Х",
+        "value": "39",
+        "unit": "Вт",
+        "page": 72
+      },
+      {
+        "label": "Потери К.З",
+        "value": "165",
+        "unit": "Вт",
+        "page": 72
+      },
+      {
+        "label": "Напряжение к.з",
+        "value": "4,7",
+        "unit": "%",
+        "page": 73
+      },
+      {
+        "label": "Полная масса (first printed column)",
+        "value": "112",
+        "unit": "кг",
+        "page": 73
+      },
+      {
+        "label": "L",
+        "value": "520",
+        "unit": "мм",
+        "page": 73
+      },
+      {
+        "label": "B",
+        "value": "654",
+        "unit": "мм",
+        "page": 73
+      },
+      {
+        "label": "H",
+        "value": "550",
+        "unit": "мм",
+        "page": 73
+      },
+      {
+        "label": "Полная масса (last printed column)",
+        "value": "98",
+        "unit": "кг",
+        "page": 73
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ11677-85",
+        "unit": "",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Высота установки над уровнем моря",
+        "value": "не более1000",
+        "unit": "м",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Температура окружающего воздуха",
+        "value": "от -45 до +40 для У1",
+        "unit": "°C",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Относительная влажность воздуха",
+        "value": "не более80% при +25°C",
+        "unit": "",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Условие среды (как напечатано)",
+        "value": "Не взрывоопасной и химически активной среде",
+        "unit": "",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "notes": [
+      "Page73 prints two different columns both labeled Полная масса, кг. Neither is silently relabeled oil mass; drawings74/75 also differ from table dimensions.",
+      "Page72 environmental condition literally says Не взрывоопасной и химически активной среде. Odd wording preserved without adding a missing не."
+    ],
+    "image": "/catalog-source/transformers-2026/page-072.webp",
+    "imageSourcePage": 72,
+    "imageCaption": "Страница 72 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "raw": "4",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 72
+      },
+      {
+        "label": "ВН options",
+        "raw": "6;10",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 72
+      },
+      {
+        "label": "НН options",
+        "raw": "0,23;0,4",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 72
+      },
+      {
+        "label": "Напряжение ступеней регулирования при6кВ",
+        "raw": "6,3-6,0-5,7-5,4",
+        "unitAsPrinted": null,
+        "sourcePage": 72,
+        "inferredUnit": "кВ",
+        "unitInferenceNote": "Tap-voltage column does not print a unit; кВ inferred from adjacent nominal-voltage header and values. No numerical conversion."
+      },
+      {
+        "label": "Напряжение ступеней регулирования при10кВ",
+        "raw": "10,5-10,0-9,5-9,0",
+        "unitAsPrinted": null,
+        "sourcePage": 72,
+        "inferredUnit": "кВ",
+        "unitInferenceNote": "Tap-voltage column does not print a unit; кВ inferred from adjacent nominal-voltage header and values. No numerical conversion."
+      },
+      {
+        "label": "Схема и группа соединения",
+        "raw": "1/1-0",
+        "unitAsPrinted": null,
+        "sourcePage": 72
+      },
+      {
+        "label": "Ток х.х",
+        "raw": "10",
+        "unitAsPrinted": "%",
+        "sourcePage": 72
+      },
+      {
+        "label": "Потери Х.Х",
+        "raw": "39",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 72
+      },
+      {
+        "label": "Потери К.З",
+        "raw": "165",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 72
+      },
+      {
+        "label": "Напряжение к.з",
+        "raw": "4,7",
+        "unitAsPrinted": "%",
+        "sourcePage": 73
+      },
+      {
+        "label": "Полная масса (first printed column)",
+        "raw": "112",
+        "unitAsPrinted": "кг",
+        "sourcePage": 73
+      },
+      {
+        "label": "L",
+        "raw": "520",
+        "unitAsPrinted": "мм",
+        "sourcePage": 73
+      },
+      {
+        "label": "B",
+        "raw": "654",
+        "unitAsPrinted": "мм",
+        "sourcePage": 73
+      },
+      {
+        "label": "H",
+        "raw": "550",
+        "unitAsPrinted": "мм",
+        "sourcePage": 73
+      },
+      {
+        "label": "Полная масса (last printed column)",
+        "raw": "98",
+        "unitAsPrinted": "кг",
+        "sourcePage": 73
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Стандарт",
+        "raw": "ГОСТ11677-85",
+        "unitAsPrinted": null,
+        "sourcePage": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Высота установки над уровнем моря",
+        "raw": "не более1000",
+        "unitAsPrinted": "м",
+        "sourcePage": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Температура окружающего воздуха",
+        "raw": "от -45 до +40 для У1",
+        "unitAsPrinted": "°C",
+        "sourcePage": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Относительная влажность воздуха",
+        "raw": "не более80% при +25°C",
+        "unitAsPrinted": null,
+        "sourcePage": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Условие среды (как напечатано)",
+        "raw": "Не взрывоопасной и химически активной среде",
+        "unitAsPrinted": null,
+        "sourcePage": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      }
+    ],
+    "id": "alageum-2026-om-4-p",
+    "name": "ОМП-4",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-omp",
+    "familyName": "ОМП — однофазный масляный",
+    "series": "ОМП",
+    "subtype": "однофазный масляный",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "4",
+        "unit": "кВА",
+        "page": 72
+      },
+      {
+        "label": "ВН options",
+        "value": "6;10",
+        "unit": "кВ",
+        "page": 72
+      },
+      {
+        "label": "НН options",
+        "value": "0,23;0,4",
+        "unit": "кВ",
+        "page": 72
+      },
+      {
+        "label": "Напряжение ступеней регулирования при6кВ",
+        "value": "6,3-6,0-5,7-5,4",
+        "unit": "",
+        "page": 72,
+        "inferredUnit": "кВ",
+        "unitInferenceNote": "Tap-voltage column does not print a unit; кВ inferred from adjacent nominal-voltage header and values. No numerical conversion.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Напряжение ступеней регулирования при10кВ",
+        "value": "10,5-10,0-9,5-9,0",
+        "unit": "",
+        "page": 72,
+        "inferredUnit": "кВ",
+        "unitInferenceNote": "Tap-voltage column does not print a unit; кВ inferred from adjacent nominal-voltage header and values. No numerical conversion.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "1/1-0",
+        "unit": "",
+        "page": 72,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Ток х.х",
+        "value": "10",
+        "unit": "%",
+        "page": 72
+      },
+      {
+        "label": "Потери Х.Х",
+        "value": "39",
+        "unit": "Вт",
+        "page": 72
+      },
+      {
+        "label": "Потери К.З",
+        "value": "165",
+        "unit": "Вт",
+        "page": 72
+      },
+      {
+        "label": "Напряжение к.з",
+        "value": "4,7",
+        "unit": "%",
+        "page": 73
+      },
+      {
+        "label": "Полная масса (first printed column)",
+        "value": "112",
+        "unit": "кг",
+        "page": 73
+      },
+      {
+        "label": "L",
+        "value": "520",
+        "unit": "мм",
+        "page": 73
+      },
+      {
+        "label": "B",
+        "value": "654",
+        "unit": "мм",
+        "page": 73
+      },
+      {
+        "label": "H",
+        "value": "550",
+        "unit": "мм",
+        "page": 73
+      },
+      {
+        "label": "Полная масса (last printed column)",
+        "value": "98",
+        "unit": "кг",
+        "page": 73
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ11677-85",
+        "unit": "",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Высота установки над уровнем моря",
+        "value": "не более1000",
+        "unit": "м",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Температура окружающего воздуха",
+        "value": "от -45 до +40 для У1",
+        "unit": "°C",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Относительная влажность воздуха",
+        "value": "не более80% при +25°C",
+        "unit": "",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Условие среды (как напечатано)",
+        "value": "Не взрывоопасной и химически активной среде",
+        "unit": "",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "configurations": [
+      {
+        "id": "alageum-2026-om-4-p-voltage-options",
+        "designation": "explicit-voltage-options",
+        "kind": "configuration",
+        "sourceKind": "explicit-voltage-options",
+        "modelId": "alageum-2026-om-4-p",
+        "page": 72,
+        "sourcePages": [
+          72
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-om-4-p-voltage-options",
+          "modelId": "alageum-2026-om-4-p",
+          "familyId": "omp",
+          "kind": "explicit-voltage-options",
+          "highVoltageOptionsKv": [
+            "6",
+            "10"
+          ],
+          "lowVoltageOptionsKv": [
+            "0,23",
+            "0,4"
+          ],
+          "sourcePages": [
+            72
+          ],
+          "sku": null,
+          "note": "Source choices retained as choices, not Cartesian-expanded SKU list."
+        },
+        "notes": []
+      }
+    ]
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ОМП-10",
+    "execution": "однофазный масляный",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      72,
+      73,
+      74
+    ],
+    "sourceRow": {
+      "page": 72,
+      "designation": "ОМП-10",
+      "execution": "однофазный масляный",
+      "kind": "explicit-model-row"
+    },
+    "sourceFamilyId": "omp",
+    "sourceRecordType": "explicit-model-row",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": 10,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "10",
+        "unit": "кВА",
+        "page": 72
+      },
+      {
+        "label": "ВН options",
+        "value": "6;10",
+        "unit": "кВ",
+        "page": 72
+      },
+      {
+        "label": "НН options",
+        "value": "0,23;0,4",
+        "unit": "кВ",
+        "page": 72
+      },
+      {
+        "label": "Напряжение ступеней регулирования при6кВ",
+        "value": "6,3-6,0-5,7-5,4",
+        "unit": "",
+        "page": 72,
+        "inferredUnit": "кВ",
+        "unitInferenceNote": "Tap-voltage column does not print a unit; кВ inferred from adjacent nominal-voltage header and values. No numerical conversion.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Напряжение ступеней регулирования при10кВ",
+        "value": "10,5-10,0-9,5-9,0",
+        "unit": "",
+        "page": 72,
+        "inferredUnit": "кВ",
+        "unitInferenceNote": "Tap-voltage column does not print a unit; кВ inferred from adjacent nominal-voltage header and values. No numerical conversion.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "1/1-0",
+        "unit": "",
+        "page": 72,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Ток х.х",
+        "value": "6,0",
+        "unit": "%",
+        "page": 72
+      },
+      {
+        "label": "Потери Х.Х",
+        "value": "70",
+        "unit": "Вт",
+        "page": 72
+      },
+      {
+        "label": "Потери К.З",
+        "value": "318",
+        "unit": "Вт",
+        "page": 72
+      },
+      {
+        "label": "Напряжение к.з",
+        "value": "3,5",
+        "unit": "%",
+        "page": 73
+      },
+      {
+        "label": "Полная масса (first printed column)",
+        "value": "116",
+        "unit": "кг",
+        "page": 73
+      },
+      {
+        "label": "L",
+        "value": "520",
+        "unit": "мм",
+        "page": 73
+      },
+      {
+        "label": "B",
+        "value": "654",
+        "unit": "мм",
+        "page": 73
+      },
+      {
+        "label": "H",
+        "value": "580",
+        "unit": "мм",
+        "page": 73
+      },
+      {
+        "label": "Полная масса (last printed column)",
+        "value": "105",
+        "unit": "кг",
+        "page": 73
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ11677-85",
+        "unit": "",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Высота установки над уровнем моря",
+        "value": "не более1000",
+        "unit": "м",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Температура окружающего воздуха",
+        "value": "от -45 до +40 для У1",
+        "unit": "°C",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Относительная влажность воздуха",
+        "value": "не более80% при +25°C",
+        "unit": "",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Условие среды (как напечатано)",
+        "value": "Не взрывоопасной и химически активной среде",
+        "unit": "",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "notes": [
+      "Page73 prints two different columns both labeled Полная масса, кг. Neither is silently relabeled oil mass; drawings74/75 also differ from table dimensions.",
+      "Page72 environmental condition literally says Не взрывоопасной и химически активной среде. Odd wording preserved without adding a missing не."
+    ],
+    "image": "/catalog-source/transformers-2026/page-072.webp",
+    "imageSourcePage": 72,
+    "imageCaption": "Страница 72 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "raw": "10",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 72
+      },
+      {
+        "label": "ВН options",
+        "raw": "6;10",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 72
+      },
+      {
+        "label": "НН options",
+        "raw": "0,23;0,4",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 72
+      },
+      {
+        "label": "Напряжение ступеней регулирования при6кВ",
+        "raw": "6,3-6,0-5,7-5,4",
+        "unitAsPrinted": null,
+        "sourcePage": 72,
+        "inferredUnit": "кВ",
+        "unitInferenceNote": "Tap-voltage column does not print a unit; кВ inferred from adjacent nominal-voltage header and values. No numerical conversion."
+      },
+      {
+        "label": "Напряжение ступеней регулирования при10кВ",
+        "raw": "10,5-10,0-9,5-9,0",
+        "unitAsPrinted": null,
+        "sourcePage": 72,
+        "inferredUnit": "кВ",
+        "unitInferenceNote": "Tap-voltage column does not print a unit; кВ inferred from adjacent nominal-voltage header and values. No numerical conversion."
+      },
+      {
+        "label": "Схема и группа соединения",
+        "raw": "1/1-0",
+        "unitAsPrinted": null,
+        "sourcePage": 72
+      },
+      {
+        "label": "Ток х.х",
+        "raw": "6,0",
+        "unitAsPrinted": "%",
+        "sourcePage": 72
+      },
+      {
+        "label": "Потери Х.Х",
+        "raw": "70",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 72
+      },
+      {
+        "label": "Потери К.З",
+        "raw": "318",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 72
+      },
+      {
+        "label": "Напряжение к.з",
+        "raw": "3,5",
+        "unitAsPrinted": "%",
+        "sourcePage": 73
+      },
+      {
+        "label": "Полная масса (first printed column)",
+        "raw": "116",
+        "unitAsPrinted": "кг",
+        "sourcePage": 73
+      },
+      {
+        "label": "L",
+        "raw": "520",
+        "unitAsPrinted": "мм",
+        "sourcePage": 73
+      },
+      {
+        "label": "B",
+        "raw": "654",
+        "unitAsPrinted": "мм",
+        "sourcePage": 73
+      },
+      {
+        "label": "H",
+        "raw": "580",
+        "unitAsPrinted": "мм",
+        "sourcePage": 73
+      },
+      {
+        "label": "Полная масса (last printed column)",
+        "raw": "105",
+        "unitAsPrinted": "кг",
+        "sourcePage": 73
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Стандарт",
+        "raw": "ГОСТ11677-85",
+        "unitAsPrinted": null,
+        "sourcePage": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Высота установки над уровнем моря",
+        "raw": "не более1000",
+        "unitAsPrinted": "м",
+        "sourcePage": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Температура окружающего воздуха",
+        "raw": "от -45 до +40 для У1",
+        "unitAsPrinted": "°C",
+        "sourcePage": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Относительная влажность воздуха",
+        "raw": "не более80% при +25°C",
+        "unitAsPrinted": null,
+        "sourcePage": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Условие среды (как напечатано)",
+        "raw": "Не взрывоопасной и химически активной среде",
+        "unitAsPrinted": null,
+        "sourcePage": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      }
+    ],
+    "id": "alageum-2026-om-10-p",
+    "name": "ОМП-10",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-omp",
+    "familyName": "ОМП — однофазный масляный",
+    "series": "ОМП",
+    "subtype": "однофазный масляный",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "10",
+        "unit": "кВА",
+        "page": 72
+      },
+      {
+        "label": "ВН options",
+        "value": "6;10",
+        "unit": "кВ",
+        "page": 72
+      },
+      {
+        "label": "НН options",
+        "value": "0,23;0,4",
+        "unit": "кВ",
+        "page": 72
+      },
+      {
+        "label": "Напряжение ступеней регулирования при6кВ",
+        "value": "6,3-6,0-5,7-5,4",
+        "unit": "",
+        "page": 72,
+        "inferredUnit": "кВ",
+        "unitInferenceNote": "Tap-voltage column does not print a unit; кВ inferred from adjacent nominal-voltage header and values. No numerical conversion.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Напряжение ступеней регулирования при10кВ",
+        "value": "10,5-10,0-9,5-9,0",
+        "unit": "",
+        "page": 72,
+        "inferredUnit": "кВ",
+        "unitInferenceNote": "Tap-voltage column does not print a unit; кВ inferred from adjacent nominal-voltage header and values. No numerical conversion.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "1/1-0",
+        "unit": "",
+        "page": 72,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Ток х.х",
+        "value": "6,0",
+        "unit": "%",
+        "page": 72
+      },
+      {
+        "label": "Потери Х.Х",
+        "value": "70",
+        "unit": "Вт",
+        "page": 72
+      },
+      {
+        "label": "Потери К.З",
+        "value": "318",
+        "unit": "Вт",
+        "page": 72
+      },
+      {
+        "label": "Напряжение к.з",
+        "value": "3,5",
+        "unit": "%",
+        "page": 73
+      },
+      {
+        "label": "Полная масса (first printed column)",
+        "value": "116",
+        "unit": "кг",
+        "page": 73
+      },
+      {
+        "label": "L",
+        "value": "520",
+        "unit": "мм",
+        "page": 73
+      },
+      {
+        "label": "B",
+        "value": "654",
+        "unit": "мм",
+        "page": 73
+      },
+      {
+        "label": "H",
+        "value": "580",
+        "unit": "мм",
+        "page": 73
+      },
+      {
+        "label": "Полная масса (last printed column)",
+        "value": "105",
+        "unit": "кг",
+        "page": 73
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ11677-85",
+        "unit": "",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Высота установки над уровнем моря",
+        "value": "не более1000",
+        "unit": "м",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Температура окружающего воздуха",
+        "value": "от -45 до +40 для У1",
+        "unit": "°C",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Относительная влажность воздуха",
+        "value": "не более80% при +25°C",
+        "unit": "",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Условие среды (как напечатано)",
+        "value": "Не взрывоопасной и химически активной среде",
+        "unit": "",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "configurations": [
+      {
+        "id": "alageum-2026-om-10-p-voltage-options",
+        "designation": "explicit-voltage-options",
+        "kind": "configuration",
+        "sourceKind": "explicit-voltage-options",
+        "modelId": "alageum-2026-om-10-p",
+        "page": 72,
+        "sourcePages": [
+          72
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-om-10-p-voltage-options",
+          "modelId": "alageum-2026-om-10-p",
+          "familyId": "omp",
+          "kind": "explicit-voltage-options",
+          "highVoltageOptionsKv": [
+            "6",
+            "10"
+          ],
+          "lowVoltageOptionsKv": [
+            "0,23",
+            "0,4"
+          ],
+          "sourcePages": [
+            72
+          ],
+          "sku": null,
+          "note": "Source choices retained as choices, not Cartesian-expanded SKU list."
+        },
+        "notes": []
+      }
+    ]
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТСЛ(З)",
+    "execution": "",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      77,
+      78,
+      80,
+      81
+    ],
+    "sourceRow": null,
+    "sourceFamilyId": "tsl-loss-C",
+    "sourceRecordType": "family",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": null,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-077.webp",
+    "imageSourcePage": 77,
+    "imageCaption": "Страница 77 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [],
+    "id": "tr2026-family-tsl-loss-c",
+    "name": "ТСЛ(З) — с уровнем потерь С (стандарный)",
+    "recordKind": "family",
+    "recordType": "catalog-family",
+    "series": "ТСЛ(З)",
+    "subtype": "",
+    "description": "",
+    "variantIds": [
+      "alageum-2026-tsl-c-25",
+      "alageum-2026-tsl-c-40",
+      "alageum-2026-tsl-c-63",
+      "alageum-2026-tsl-c-100",
+      "alageum-2026-tsl-c-160",
+      "alageum-2026-tsl-c-250",
+      "alageum-2026-tsl-c-400",
+      "alageum-2026-tsl-c-1000",
+      "alageum-2026-tsl-c-1250",
+      "alageum-2026-tsl-c-2000",
+      "alageum-2026-tsl-c-2500",
+      "alageum-2026-tsl-c-3150",
+      "alageum-2026-tsl-c-4000"
+    ],
+    "configurations": [
+      {
+        "id": "alageum-2026-tsl-c-25-execution-1",
+        "designation": "ТСЛ без кожуха (IP00)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-25",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-25-execution-1",
+          "modelId": "alageum-2026-tsl-c-25",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛ без кожуха (IP00)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsl-c-25-execution-2",
+        "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-25",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-25-execution-2",
+          "modelId": "alageum-2026-tsl-c-25",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsl-c-40-execution-1",
+        "designation": "ТСЛ без кожуха (IP00)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-40",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-40-execution-1",
+          "modelId": "alageum-2026-tsl-c-40",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛ без кожуха (IP00)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsl-c-40-execution-2",
+        "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-40",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-40-execution-2",
+          "modelId": "alageum-2026-tsl-c-40",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsl-c-63-execution-1",
+        "designation": "ТСЛ без кожуха (IP00)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-63",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-63-execution-1",
+          "modelId": "alageum-2026-tsl-c-63",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛ без кожуха (IP00)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsl-c-63-execution-2",
+        "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-63",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-63-execution-2",
+          "modelId": "alageum-2026-tsl-c-63",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsl-c-100-execution-1",
+        "designation": "ТСЛ без кожуха (IP00)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-100",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-100-execution-1",
+          "modelId": "alageum-2026-tsl-c-100",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛ без кожуха (IP00)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsl-c-100-execution-2",
+        "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-100",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-100-execution-2",
+          "modelId": "alageum-2026-tsl-c-100",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsl-c-160-execution-1",
+        "designation": "ТСЛ без кожуха (IP00)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-160",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-160-execution-1",
+          "modelId": "alageum-2026-tsl-c-160",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛ без кожуха (IP00)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsl-c-160-execution-2",
+        "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-160",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-160-execution-2",
+          "modelId": "alageum-2026-tsl-c-160",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsl-c-250-execution-1",
+        "designation": "ТСЛ без кожуха (IP00)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-250",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-250-execution-1",
+          "modelId": "alageum-2026-tsl-c-250",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛ без кожуха (IP00)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsl-c-250-execution-2",
+        "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-250",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-250-execution-2",
+          "modelId": "alageum-2026-tsl-c-250",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsl-c-400-execution-1",
+        "designation": "ТСЛ без кожуха (IP00)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-400",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-400-execution-1",
+          "modelId": "alageum-2026-tsl-c-400",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛ без кожуха (IP00)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsl-c-400-execution-2",
+        "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-400",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-400-execution-2",
+          "modelId": "alageum-2026-tsl-c-400",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsl-c-1000-execution-1",
+        "designation": "ТСЛ без кожуха (IP00)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-1000",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-1000-execution-1",
+          "modelId": "alageum-2026-tsl-c-1000",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛ без кожуха (IP00)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsl-c-1000-execution-2",
+        "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-1000",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-1000-execution-2",
+          "modelId": "alageum-2026-tsl-c-1000",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsl-c-1250-execution-1",
+        "designation": "ТСЛ без кожуха (IP00)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-1250",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-1250-execution-1",
+          "modelId": "alageum-2026-tsl-c-1250",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛ без кожуха (IP00)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsl-c-1250-execution-2",
+        "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-1250",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-1250-execution-2",
+          "modelId": "alageum-2026-tsl-c-1250",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsl-c-2000-execution-1",
+        "designation": "ТСЛ без кожуха (IP00)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-2000",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-2000-execution-1",
+          "modelId": "alageum-2026-tsl-c-2000",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛ без кожуха (IP00)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsl-c-2000-execution-2",
+        "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-2000",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-2000-execution-2",
+          "modelId": "alageum-2026-tsl-c-2000",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsl-c-2500-execution-1",
+        "designation": "ТСЛ без кожуха (IP00)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-2500",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-2500-execution-1",
+          "modelId": "alageum-2026-tsl-c-2500",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛ без кожуха (IP00)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsl-c-2500-execution-2",
+        "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-2500",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-2500-execution-2",
+          "modelId": "alageum-2026-tsl-c-2500",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsl-c-3150-execution-1",
+        "designation": "ТСЛ без кожуха (IP00)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-3150",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-3150-execution-1",
+          "modelId": "alageum-2026-tsl-c-3150",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛ без кожуха (IP00)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsl-c-3150-execution-2",
+        "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-3150",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-3150-execution-2",
+          "modelId": "alageum-2026-tsl-c-3150",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsl-c-4000-execution-1",
+        "designation": "ТСЛ без кожуха (IP00)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-4000",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-4000-execution-1",
+          "modelId": "alageum-2026-tsl-c-4000",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛ без кожуха (IP00)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsl-c-4000-execution-2",
+        "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-4000",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-4000-execution-2",
+          "modelId": "alageum-2026-tsl-c-4000",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      }
+    ]
+  }
+];
+export default records;

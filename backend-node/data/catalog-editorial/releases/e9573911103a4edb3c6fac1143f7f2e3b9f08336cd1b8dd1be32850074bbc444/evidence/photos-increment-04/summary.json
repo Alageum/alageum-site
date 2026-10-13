@@ -1,0 +1,110 @@
+{
+  "status": "complete_reviewed_public_source_pass_coverage_partial",
+  "researchPass": "increment-04-all-remaining-families",
+  "catalogRecords": 843,
+  "catalogFamilies": 175,
+  "baselineImageCandidates": 163,
+  "addedImageCandidates": 44,
+  "combinedImageCandidates": 207,
+  "newVideoFrames": 2,
+  "mediaKinds": {
+    "photo": 203,
+    "photo_collage": 2,
+    "video_frame": 2
+  },
+  "assetResolutionOrAttributionUpgrades": 6,
+  "existingImageMappingChanges": 63,
+  "catalogRecordsWithExactOrSeriesPhoto": 249,
+  "catalogRecordsWithTwoExactOrSeriesPhotos": 88,
+  "catalogRecordsWithThreeExactOrSeriesPhotos": 57,
+  "catalogRecordsWithExactModelPhoto": 3,
+  "strictCoverageStatuses": {
+    "two_or_more_exact_or_series_photos": 88,
+    "no_confirmed_visual": 335,
+    "type_level_only": 250,
+    "one_exact_or_series_photo": 161,
+    "video_frames_only": 9
+  },
+  "frameInclusiveCoverage": {
+    "atLeastOne": 258,
+    "atLeastTwo": 97,
+    "atLeastThree": 57
+  },
+  "remainingRecordsNeedingTwoExactOrSeriesPhotos": 755,
+  "missingGroupFiles": [],
+  "sourceGroups": {
+    "distribution": {
+      "candidatesPresent": true,
+      "queryLedgerPresent": true,
+      "queryLedgerFamilies": 28,
+      "assignedFamilies": 28,
+      "missingQueryLedgerFamilies": [],
+      "unexpectedQueryLedgerFamilies": [],
+      "sourceRowsStillMarkedInProgress": 0
+    },
+    "dry": {
+      "candidatesPresent": true,
+      "queryLedgerPresent": true,
+      "queryLedgerFamilies": 10,
+      "assignedFamilies": 10,
+      "missingQueryLedgerFamilies": [],
+      "unexpectedQueryLedgerFamilies": [],
+      "sourceRowsStillMarkedInProgress": 0
+    },
+    "power_medium": {
+      "candidatesPresent": true,
+      "queryLedgerPresent": true,
+      "queryLedgerFamilies": 19,
+      "assignedFamilies": 19,
+      "missingQueryLedgerFamilies": [],
+      "unexpectedQueryLedgerFamilies": [],
+      "sourceRowsStillMarkedInProgress": 0
+    },
+    "power_asia": {
+      "candidatesPresent": true,
+      "queryLedgerPresent": true,
+      "queryLedgerFamilies": 20,
+      "assignedFamilies": 20,
+      "missingQueryLedgerFamilies": [],
+      "unexpectedQueryLedgerFamilies": [],
+      "sourceRowsStillMarkedInProgress": 0
+    },
+    "substations": {
+      "candidatesPresent": true,
+      "queryLedgerPresent": true,
+      "queryLedgerFamilies": 36,
+      "assignedFamilies": 36,
+      "missingQueryLedgerFamilies": [],
+      "unexpectedQueryLedgerFamilies": [],
+      "sourceRowsStillMarkedInProgress": 0
+    },
+    "switchgear": {
+      "candidatesPresent": true,
+      "queryLedgerPresent": true,
+      "queryLedgerFamilies": 47,
+      "assignedFamilies": 47,
+      "missingQueryLedgerFamilies": [],
+      "unexpectedQueryLedgerFamilies": [],
+      "sourceRowsStillMarkedInProgress": 0
+    }
+  },
+  "siteChanged": false,
+  "applicationTestsRun": false,
+  "rights": "Publication/reuse permissions remain unconfirmed.",
+  "countingPolicy": "Original photographs, photographic collages, and video frames are separately identified. exactOrSeriesPhotoCount keeps the prior still-image convention but excludes video frames; exactOrSeriesOriginalPhotoCount excludes the collage too. Same-shot resolution upgrades and mapping upgrades do not add distinct images.",
+  "addedDistinctOriginalPhotoCandidates": 41,
+  "recoveredPreviouslyHeldPhotoCandidates": 3,
+  "existingImageSeriesMappingUpgrades": 59,
+  "existingImageMappingDowngrades": 4,
+  "recordsWithExistingImageMappingChanges": 36,
+  "assignedRemainingFamilies": 160,
+  "assignedRemainingRecords": 771,
+  "allAssignedFamilyQueryLedgersPresent": true,
+  "addedCandidateOrigins": {
+    "newly_selected_source_image": 39,
+    "recovered_held_photo_with_new_identification": 3,
+    "new_distinct_shot": 2
+  },
+  "finalizedAt": "2026-10-12T20:02:46.217911+00:00",
+  "addedPhotoCollages": 1
+}

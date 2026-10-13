@@ -1,0 +1,4 @@
+import LocaleElement from "@/components/locale/LocaleElement";import Link from "@/components/locale/LocaleLink";
+export default function PageIntro({ label, title, description, eyebrow, parent }) {
+  return <><LocaleElement as="nav" aria-label="Хлебные крошки" className="site-breadcrumbs"><Link href="/">Главная</Link><LocaleElement as="span" aria-hidden="true">/</LocaleElement>{parent && <><Link href={parent.href}>{parent.label}</Link><LocaleElement as="span" aria-hidden="true">/</LocaleElement></>}<LocaleElement as="span" aria-current="page">{label}</LocaleElement></LocaleElement><LocaleElement as="header" className="site-page-heading"><LocaleElement as="p" className="site-eyebrow">ALAGEUM ELECTRIC / {eyebrow || label}</LocaleElement><LocaleElement as="h1">{title}</LocaleElement><LocaleElement as="p">{description}</LocaleElement></LocaleElement></>;
+}

@@ -1,0 +1,254 @@
+{
+  "format": "alageum-source-asset-completion-v1",
+  "sourceId": "transformers-2026",
+  "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+  "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+  "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+  "inventorySha256": "c3948d7152a6130aa4672b9f6d3d5a8f08144b5965df7bebabca067ba5bc8438",
+  "records": {
+    "alageum-2026-relay-tr100": {
+      "sourceRecordId": "alageum-2026-relay-tr100",
+      "sourceFamilyId": "tr2026-family-dry-accessories",
+      "type": "tr26-accessory-relay-tr100",
+      "sourcePages": [
+        85
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-085.webp",
+      "record_shape_sha256": "9a48501b498148b015ccca5682cb661c4d090ecf7f0c3b2dd0a3f0350157809d",
+      "database_id": "a6ededdf-d94f-541c-9444-0482ffdb265a",
+      "rawSourceMedia": "/catalog-source/transformers-2026/page-085.webp",
+      "reason": "Задняя сторона показана условно; число и назначение клемм не установлены. Дисплей — неподвижная иллюстрация. Иллюстративная внешняя форма по фото на стр. 85; не CAD, не размеры и не все исполнения изделия. Скрытые поверхности условные.",
+      "evidenceBasis": "source-photo-visible-exterior",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false,
+      "inherit": false
+    },
+    "alageum-2026-sensor-pt100": {
+      "sourceRecordId": "alageum-2026-sensor-pt100",
+      "sourceFamilyId": "tr2026-family-dry-accessories",
+      "type": "tr26-accessory-probe-pt100",
+      "sourcePages": [
+        85
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-085.webp",
+      "record_shape_sha256": "bcd940c03b71e8f106651cb4101a984db871b715134a5c84f39e486e8208c5ce",
+      "database_id": "ed26969e-ad46-57a1-aed2-ab21725856d0",
+      "rawSourceMedia": "/catalog-source/transformers-2026/page-085.webp",
+      "reason": "Показан датчик с кабелем из каталога, а не все исполнения pt-100. Число витков и положение кабеля условны; длина и назначение жил не заданы. Иллюстративная внешняя форма по фото на стр. 85; не CAD, не размеры и не все исполнения изделия. Скрытые поверхности условные.",
+      "evidenceBasis": "source-photo-visible-exterior",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false,
+      "inherit": false
+    },
+    "alageum-2026-damper-ek290": {
+      "sourceRecordId": "alageum-2026-damper-ek290",
+      "sourceFamilyId": "tr2026-family-dry-accessories",
+      "type": "tr26-accessory-damper-ek290",
+      "sourcePages": [
+        85
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-085.webp",
+      "record_shape_sha256": "d5084a77bf62a153b3377311496e85f65e610e304aacc17995ca7d3bd3bc3992",
+      "database_id": "a459c4e4-89db-5215-b1fa-2096a0dc41f8",
+      "rawSourceMedia": "/catalog-source/transformers-2026/page-085.webp",
+      "reason": "Показано только видимое на фото монтажное отверстие. Кривизна седла условная; скрытые слои и крепления не восстановлены. Иллюстративная внешняя форма по фото на стр. 85; не CAD, не размеры и не все исполнения изделия. Скрытые поверхности условные.",
+      "evidenceBasis": "source-photo-visible-exterior",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false,
+      "inherit": false
+    },
+    "alageum-tmgi-x4k3-63": {
+      "sourceRecordId": "alageum-tmgi-x4k3-63",
+      "sourceFamilyId": "tr2026-family-tmgi-x4k3",
+      "type": "tr26-corrugated-small",
+      "sourcePages": [
+        30
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-030.webp",
+      "record_shape_sha256": "47592b557480d5a0f37c883795f4f550f6baf11760957e2b78295c7994cadfc9",
+      "database_id": "80dd15af-a580-531b-a4fc-280f36e3607c",
+      "rawSourceMedia": "/catalog-source/transformers-2026/page-028.webp",
+      "reason": "Представительная внешняя компоновка Х4К3 по чертежу на стр. 30. В таблице серия обозначена ТМГи, в подписи чертежа — ТМГвэ; подпись прямо включает Х4К3. Применение иллюстрации основано на разделе каталога и диапазоне мощности. Точное соответствие серии и комплектации не подтверждено. Не CAD; размеры условные.",
+      "evidenceBasis": "representative-subsection-inference-with-caption-discrepancy",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false,
+      "inherit": false,
+      "captionDiscrepancy": "В таблице серия обозначена ТМГи, в подписи чертежа — ТМГвэ; подпись прямо включает Х4К3. Применение иллюстрации основано на разделе каталога и диапазоне мощности. Точное соответствие серии и комплектации не подтверждено. Не CAD; размеры условные."
+    },
+    "alageum-tmgi-x4k3-100": {
+      "sourceRecordId": "alageum-tmgi-x4k3-100",
+      "sourceFamilyId": "tr2026-family-tmgi-x4k3",
+      "type": "tr26-corrugated-small",
+      "sourcePages": [
+        30
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-030.webp",
+      "record_shape_sha256": "fb9044a6467a30ee7489dd6127157b35eabc8cfec2d2bfe42a0e2b22e6b631b2",
+      "database_id": "14036757-862f-500a-8edf-7a35a4da1d42",
+      "rawSourceMedia": "/catalog-source/transformers-2026/page-028.webp",
+      "reason": "Представительная внешняя компоновка Х4К3 по чертежу на стр. 30. В таблице серия обозначена ТМГи, в подписи чертежа — ТМГвэ; подпись прямо включает Х4К3. Применение иллюстрации основано на разделе каталога и диапазоне мощности. Точное соответствие серии и комплектации не подтверждено. Не CAD; размеры условные.",
+      "evidenceBasis": "representative-subsection-inference-with-caption-discrepancy",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false,
+      "inherit": false,
+      "captionDiscrepancy": "В таблице серия обозначена ТМГи, в подписи чертежа — ТМГвэ; подпись прямо включает Х4К3. Применение иллюстрации основано на разделе каталога и диапазоне мощности. Точное соответствие серии и комплектации не подтверждено. Не CAD; размеры условные."
+    },
+    "alageum-tmgi-x4k3-160": {
+      "sourceRecordId": "alageum-tmgi-x4k3-160",
+      "sourceFamilyId": "tr2026-family-tmgi-x4k3",
+      "type": "tr26-corrugated-small",
+      "sourcePages": [
+        30
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-030.webp",
+      "record_shape_sha256": "c04d0a4ad5abb8af66ec8a5fa3f9501b733a3f5996453a1c32ed060d77ad8e04",
+      "database_id": "11122355-9d25-5957-911f-6d71f5e237f6",
+      "rawSourceMedia": "/catalog-source/transformers-2026/page-028.webp",
+      "reason": "Представительная внешняя компоновка Х4К3 по чертежу на стр. 30. В таблице серия обозначена ТМГи, в подписи чертежа — ТМГвэ; подпись прямо включает Х4К3. Применение иллюстрации основано на разделе каталога и диапазоне мощности. Точное соответствие серии и комплектации не подтверждено. Не CAD; размеры условные.",
+      "evidenceBasis": "representative-subsection-inference-with-caption-discrepancy",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false,
+      "inherit": false,
+      "captionDiscrepancy": "В таблице серия обозначена ТМГи, в подписи чертежа — ТМГвэ; подпись прямо включает Х4К3. Применение иллюстрации основано на разделе каталога и диапазоне мощности. Точное соответствие серии и комплектации не подтверждено. Не CAD; размеры условные."
+    },
+    "alageum-tmgi-x4k3-250": {
+      "sourceRecordId": "alageum-tmgi-x4k3-250",
+      "sourceFamilyId": "tr2026-family-tmgi-x4k3",
+      "type": "tr26-corrugated-small",
+      "sourcePages": [
+        30
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-030.webp",
+      "record_shape_sha256": "75768ec094b63bcaa00ac9c546c3b8304b1b1781ba2313f094e2da85b9f162ce",
+      "database_id": "b0eae5f8-32c8-5718-8b58-8ad5eda3a548",
+      "rawSourceMedia": "/catalog-source/transformers-2026/page-028.webp",
+      "reason": "Представительная внешняя компоновка Х4К3 по чертежу на стр. 30. В таблице серия обозначена ТМГи, в подписи чертежа — ТМГвэ; подпись прямо включает Х4К3. Применение иллюстрации основано на разделе каталога и диапазоне мощности. Точное соответствие серии и комплектации не подтверждено. Не CAD; размеры условные.",
+      "evidenceBasis": "representative-subsection-inference-with-caption-discrepancy",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false,
+      "inherit": false,
+      "captionDiscrepancy": "В таблице серия обозначена ТМГи, в подписи чертежа — ТМГвэ; подпись прямо включает Х4К3. Применение иллюстрации основано на разделе каталога и диапазоне мощности. Точное соответствие серии и комплектации не подтверждено. Не CAD; размеры условные."
+    },
+    "alageum-tmgi-x4k3-400": {
+      "sourceRecordId": "alageum-tmgi-x4k3-400",
+      "sourceFamilyId": "tr2026-family-tmgi-x4k3",
+      "type": "tr26-corrugated-small",
+      "sourcePages": [
+        30
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-030.webp",
+      "record_shape_sha256": "812c52db7d7c072fd6f7af97cc74212155fe0695ff6aeaf981b23ffaa7ac428f",
+      "database_id": "2ae6c200-e8c2-5a7b-bf42-c0519ca4b187",
+      "rawSourceMedia": "/catalog-source/transformers-2026/page-028.webp",
+      "reason": "Представительная внешняя компоновка Х4К3 по чертежу на стр. 30. В таблице серия обозначена ТМГи, в подписи чертежа — ТМГвэ; подпись прямо включает Х4К3. Применение иллюстрации основано на разделе каталога и диапазоне мощности. Точное соответствие серии и комплектации не подтверждено. Не CAD; размеры условные.",
+      "evidenceBasis": "representative-subsection-inference-with-caption-discrepancy",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false,
+      "inherit": false,
+      "captionDiscrepancy": "В таблице серия обозначена ТМГи, в подписи чертежа — ТМГвэ; подпись прямо включает Х4К3. Применение иллюстрации основано на разделе каталога и диапазоне мощности. Точное соответствие серии и комплектации не подтверждено. Не CAD; размеры условные."
+    },
+    "alageum-tmgi-x4k3-630": {
+      "sourceRecordId": "alageum-tmgi-x4k3-630",
+      "sourceFamilyId": "tr2026-family-tmgi-x4k3",
+      "type": "tr26-corrugated-small",
+      "sourcePages": [
+        30
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-030.webp",
+      "record_shape_sha256": "6c1e16e331692a6924b6776354405dd41f95470604586801ac41cd9e0b99e761",
+      "database_id": "ae9c11e3-60c7-564e-b339-71b4b6076fe0",
+      "rawSourceMedia": "/catalog-source/transformers-2026/page-028.webp",
+      "reason": "Представительная внешняя компоновка Х4К3 по чертежу на стр. 30. В таблице серия обозначена ТМГи, в подписи чертежа — ТМГвэ; подпись прямо включает Х4К3. Применение иллюстрации основано на разделе каталога и диапазоне мощности. Точное соответствие серии и комплектации не подтверждено. Не CAD; размеры условные.",
+      "evidenceBasis": "representative-subsection-inference-with-caption-discrepancy",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false,
+      "inherit": false,
+      "captionDiscrepancy": "В таблице серия обозначена ТМГи, в подписи чертежа — ТМГвэ; подпись прямо включает Х4К3. Применение иллюстрации основано на разделе каталога и диапазоне мощности. Точное соответствие серии и комплектации не подтверждено. Не CAD; размеры условные."
+    },
+    "alageum-tmgi-x4k3-1000": {
+      "sourceRecordId": "alageum-tmgi-x4k3-1000",
+      "sourceFamilyId": "tr2026-family-tmgi-x4k3",
+      "type": "tr26-corrugated-large",
+      "sourcePages": [
+        31
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-031.webp",
+      "record_shape_sha256": "2e6f8075e33c1d337acd909b8d59a083bce53ea03c9661864f1132e37a93b9bd",
+      "database_id": "37948b85-f07a-5dca-af3c-9a4ef4150183",
+      "rawSourceMedia": "/catalog-source/transformers-2026/page-028.webp",
+      "reason": "Представительная внешняя компоновка Х4К3 по чертежу на стр. 31. В таблице серия обозначена ТМГи, в подписи чертежа — ТМГвэ; подпись прямо включает Х4К3. Применение иллюстрации основано на разделе каталога и диапазоне мощности. Точное соответствие серии и комплектации не подтверждено. Не CAD; размеры условные.",
+      "evidenceBasis": "representative-subsection-inference-with-caption-discrepancy",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false,
+      "inherit": false,
+      "captionDiscrepancy": "В таблице серия обозначена ТМГи, в подписи чертежа — ТМГвэ; подпись прямо включает Х4К3. Применение иллюстрации основано на разделе каталога и диапазоне мощности. Точное соответствие серии и комплектации не подтверждено. Не CAD; размеры условные."
+    },
+    "alageum-tmgi-x4k3-1250": {
+      "sourceRecordId": "alageum-tmgi-x4k3-1250",
+      "sourceFamilyId": "tr2026-family-tmgi-x4k3",
+      "type": "tr26-corrugated-large",
+      "sourcePages": [
+        31
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-031.webp",
+      "record_shape_sha256": "13be3efe9f72d57dfdfe146f022c147200125ab67938232bd151beab85161481",
+      "database_id": "c33f7055-52b9-5dfa-a662-e815909d1fc1",
+      "rawSourceMedia": "/catalog-source/transformers-2026/page-028.webp",
+      "reason": "Представительная внешняя компоновка Х4К3 по чертежу на стр. 31. В таблице серия обозначена ТМГи, в подписи чертежа — ТМГвэ; подпись прямо включает Х4К3. Применение иллюстрации основано на разделе каталога и диапазоне мощности. Точное соответствие серии и комплектации не подтверждено. Не CAD; размеры условные.",
+      "evidenceBasis": "representative-subsection-inference-with-caption-discrepancy",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false,
+      "inherit": false,
+      "captionDiscrepancy": "В таблице серия обозначена ТМГи, в подписи чертежа — ТМГвэ; подпись прямо включает Х4К3. Применение иллюстрации основано на разделе каталога и диапазоне мощности. Точное соответствие серии и комплектации не подтверждено. Не CAD; размеры условные."
+    },
+    "alageum-tmgi-x4k3-1600": {
+      "sourceRecordId": "alageum-tmgi-x4k3-1600",
+      "sourceFamilyId": "tr2026-family-tmgi-x4k3",
+      "type": "tr26-corrugated-large",
+      "sourcePages": [
+        31
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-031.webp",
+      "record_shape_sha256": "14eb637764b32442256facf09ab28410c7236490f9c53de1da67cc5d63ff42a0",
+      "database_id": "e1931e6a-1837-5af3-88bf-44ed6a6e0ebe",
+      "rawSourceMedia": "/catalog-source/transformers-2026/page-028.webp",
+      "reason": "Представительная внешняя компоновка Х4К3 по чертежу на стр. 31. В таблице серия обозначена ТМГи, в подписи чертежа — ТМГвэ; подпись прямо включает Х4К3. Применение иллюстрации основано на разделе каталога и диапазоне мощности. Точное соответствие серии и комплектации не подтверждено. Не CAD; размеры условные.",
+      "evidenceBasis": "representative-subsection-inference-with-caption-discrepancy",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false,
+      "inherit": false,
+      "captionDiscrepancy": "В таблице серия обозначена ТМГи, в подписи чертежа — ТМГвэ; подпись прямо включает Х4К3. Применение иллюстрации основано на разделе каталога и диапазоне мощности. Точное соответствие серии и комплектации не подтверждено. Не CAD; размеры условные."
+    },
+    "alageum-tmgi-x4k3-2500": {
+      "sourceRecordId": "alageum-tmgi-x4k3-2500",
+      "sourceFamilyId": "tr2026-family-tmgi-x4k3",
+      "type": "tr26-corrugated-large",
+      "sourcePages": [
+        31
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-031.webp",
+      "record_shape_sha256": "b93ced98377916313699b1d47ce0e2bd450d01ba2b3018907f8e9691b91ee37c",
+      "database_id": "16f40794-5d04-5f57-bb0e-b30e5b0f16c5",
+      "rawSourceMedia": "/catalog-source/transformers-2026/page-028.webp",
+      "reason": "Представительная внешняя компоновка Х4К3 по чертежу на стр. 31. В таблице серия обозначена ТМГи, в подписи чертежа — ТМГвэ; подпись прямо включает Х4К3. Применение иллюстрации основано на разделе каталога и диапазоне мощности. Точное соответствие серии и комплектации не подтверждено. Не CAD; размеры условные.",
+      "evidenceBasis": "representative-subsection-inference-with-caption-discrepancy",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false,
+      "inherit": false,
+      "captionDiscrepancy": "В таблице серия обозначена ТМГи, в подписи чертежа — ТМГвэ; подпись прямо включает Х4К3. Применение иллюстрации основано на разделе каталога и диапазоне мощности. Точное соответствие серии и комплектации не подтверждено. Не CAD; размеры условные."
+    }
+  }
+}

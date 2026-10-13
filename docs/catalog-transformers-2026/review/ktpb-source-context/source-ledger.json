@@ -1,0 +1,445 @@
+{
+  "format": "alageum-ktpb-source-context-prototype-ledger-v1",
+  "status": "local-candidate-awaiting-independent-successor-review",
+  "source": {
+    "id": "substations",
+    "title": "Шкафные конструкции · 02.09.2024",
+    "source_file_id": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+    "source_sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+    "source_bytes": 182693789,
+    "page_count": 104,
+    "page_path_prefix": "/catalog-source/",
+    "source_url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "package_assets": 61,
+    "package_bytes": 1539242,
+    "originalPdfBytesAvailable": false,
+    "originalPdfShaVerification": "Full source SHA is the existing provenance-ledger value; unavailable original PDF was not rehashed. Published page image hashes were recomputed and match.",
+    "provenanceLedgers": [
+      "backend-node/data/catalog-sources.json",
+      "frontend/lib/catalog/sources-manifest.json",
+      "docs/catalog-import/extracted-54-74.json"
+    ],
+    "sourceIdentityRewritten": false
+  },
+  "sourceReviewSha256": "905589c06422d49e02088dc66896bcb3ae15649c4db97abf4091dbfd994ac897",
+  "inspectedOriginalPages": [
+    54,
+    55,
+    56,
+    57,
+    58,
+    59
+  ],
+  "assets": [
+    {
+      "path": "/catalog-source/page-054.webp",
+      "sha256": "0dff7b60c905d7def0833d8cd3888d0372ac44a03a693baca97b70a48340e012",
+      "bytes": 288238,
+      "sourcePage": 54,
+      "representation": "complete original published page"
+    },
+    {
+      "path": "/catalog-source/page-055.webp",
+      "sha256": "a871865df7f4a10b3642994f4c29506a44a32ee78c86116fa0880bc627c430d4",
+      "bytes": 122172,
+      "sourcePage": 55,
+      "representation": "complete original published page"
+    },
+    {
+      "path": "/catalog-source/page-056.webp",
+      "sha256": "4e6ea1db177c66bc84a8dc0031cfcee685fef53df029e28ec132cf1b681e0721",
+      "bytes": 114140,
+      "sourcePage": 56,
+      "representation": "complete original published page"
+    },
+    {
+      "path": "/catalog-source/page-057.webp",
+      "sha256": "3ee8d48ba4ac073b3a7c25dc8760f9d83e3b06717c022f3b8e4001597dd7df12",
+      "bytes": 84898,
+      "sourcePage": 57,
+      "representation": "complete original published page"
+    },
+    {
+      "path": "/catalog-source/page-058.webp",
+      "sha256": "b9f532d52f43d583a9fd3b04bb0a790c99242a9b00934b764c965ce025607402",
+      "bytes": 74404,
+      "sourcePage": 58,
+      "representation": "complete original published page"
+    },
+    {
+      "path": "/catalog-source/page-059.webp",
+      "sha256": "1111ccc4e1bc40fe01807d04bc3823c171ab3d7dc8dd187c1c2d1e668f1025be",
+      "bytes": 86570,
+      "sourcePage": 59,
+      "representation": "complete original published page"
+    },
+    {
+      "path": "/catalog-products/cat-ktpb-k.webp",
+      "sha256": "607f86f4c884ca4da6256b62016015af188179b94725c00290f94801f786e63d",
+      "bytes": 67258,
+      "sourcePage": 55,
+      "representation": "unchanged published page-55 crop"
+    }
+  ],
+  "figure": {
+    "key": "substations-p056-figure26-2ktpb-110-4n",
+    "assetKey": "substations-page-056",
+    "pdfPage": 56,
+    "printedPage": 56,
+    "pageHeading": "ПРИМЕР ОБЩЕГО ВИДА КТПБ(К) 35/10(6)",
+    "embeddedCaption": "Рис. 26 Общий вид и габаритно-установочные размеры 2КТПБ(К), (схема 110-4Н).",
+    "viewKind": "2d-orthographic-engineering-drawing",
+    "isAxonometric": false,
+    "isPerspective": false,
+    "isPlanOnly": false,
+    "views": [
+      "Plan with two labelled transformer positions and long KRU/OPU block",
+      "Longitudinal orthographic elevation/section A–A",
+      "Transverse view Б at the incoming bridging equipment"
+    ],
+    "visibleConstruction": [
+      "Two parallel transformer bays labelled Трансформатор №1 and Трансформатор №2",
+      "H-shaped incoming switchyard arrangement with transverse bridge",
+      "Repeated outdoor apparatus support frames and conductors",
+      "Long rectangular KRU/OPU block at the opposite end",
+      "Cable-route lines through the centre of the plan"
+    ],
+    "componentRows": [
+      {
+        "position": 1,
+        "name": "Блок разъединителя 110кВ",
+        "quantity": 4,
+        "typeCode": null,
+        "typeCodeNote": "Small type-code column was not certified; do not infer exact module executions."
+      },
+      {
+        "position": 2,
+        "name": "Блок разъединителя 110кВ",
+        "quantity": 2,
+        "typeCode": null,
+        "typeCodeNote": "Small type-code column was not certified; do not infer exact module executions."
+      },
+      {
+        "position": 3,
+        "name": "Блок трансформатора напряжения 110кВ",
+        "quantity": 2,
+        "typeCode": null,
+        "typeCodeNote": "Small type-code column was not certified; do not infer exact module executions."
+      },
+      {
+        "position": 4,
+        "name": "Блок трансформатора тока 110кВ",
+        "quantity": 2,
+        "typeCode": null,
+        "typeCodeNote": "Small type-code column was not certified; do not infer exact module executions."
+      },
+      {
+        "position": 5,
+        "name": "Блок выключателя 110кВ",
+        "quantity": 2,
+        "typeCode": null,
+        "typeCodeNote": "Small type-code column was not certified; do not infer exact module executions."
+      },
+      {
+        "position": 6,
+        "name": "Блок ограничителя перенапряжения 110кВ",
+        "quantity": 2,
+        "typeCode": null,
+        "typeCodeNote": "Small type-code column was not certified; do not infer exact module executions."
+      },
+      {
+        "position": 7,
+        "name": "Блок опорных изоляторов",
+        "quantity": 4,
+        "typeCode": null,
+        "typeCodeNote": "Small type-code column was not certified; do not infer exact module executions."
+      },
+      {
+        "position": 8,
+        "name": "Силовой трансформатор",
+        "quantity": 2,
+        "typeCode": null,
+        "typeCodeNote": "Small type-code column was not certified; do not infer exact module executions."
+      },
+      {
+        "position": 9,
+        "name": "ТСН",
+        "quantity": 2,
+        "typeCode": null,
+        "typeCodeNote": "Small type-code column was not certified; do not infer exact module executions."
+      },
+      {
+        "position": 10,
+        "name": "КРУ-6кВ совмещенный с ОПУ",
+        "quantity": 1,
+        "typeCode": null,
+        "typeCodeNote": "Small type-code column was not certified; do not infer exact module executions."
+      },
+      {
+        "position": 11,
+        "name": "Ошиновка ОРУ-110кВ",
+        "quantity": 2,
+        "typeCode": null,
+        "typeCodeNote": "Small type-code column was not certified; do not infer exact module executions."
+      },
+      {
+        "position": 12,
+        "name": "Раскладка кабельных конструкций",
+        "quantity": 2,
+        "typeCode": null,
+        "typeCodeNote": "Small type-code column was not certified; do not infer exact module executions."
+      }
+    ],
+    "componentRows13to14": "Шина rows and quantities are visible; exact bus material/section/shape are not certified in this review.",
+    "axisEvidence": {
+      "planLongitudinal": true,
+      "planTransverse": true,
+      "elevationVertical": true,
+      "allComponentAxesFullyDimensioned": false,
+      "note": "The sheet contains all three global directions but only partial per-component metric and shape information. It is neither axonometric nor merely a plan."
+    },
+    "dimensionExamples": [
+      {
+        "raw": "6750",
+        "location": "KRU/OPU block plan width and elevation horizontal span",
+        "scope": "This source example only"
+      },
+      {
+        "raw": "10×2250=22500",
+        "location": "KRU/OPU block plan length chain",
+        "scope": "This source example only"
+      },
+      {
+        "raw": "2865",
+        "location": "KRU/OPU elevation vertical dimension",
+        "scope": "Endpoint-specific vertical dimension; do not call it total installed height"
+      },
+      {
+        "raw": "1000",
+        "location": "KRU/OPU support/plinth vertical dimension",
+        "scope": "This source example only"
+      },
+      {
+        "raw": "7100 + 7100",
+        "location": "Transverse transformer-bay axes in the plan",
+        "scope": "Source plan layout; do not promote to product specifications"
+      }
+    ],
+    "dimensionUnitPolicy": "The inspected figure does not independently certify a printed global unit statement. Keep numbers as source-drawing readings; no normalized product dimensions or automatic extrusion are approved.",
+    "missingForDefensibleFull3d": [
+      "Exact power-transformer identity, rating, body height/depth-to-elevation correspondence, radiator geometry, bushings and concealed parts",
+      "Complete heights, cross sections, foundations and back-side geometry for every switching module and support",
+      "Full enclosure roof, back elevation, opening layout and internal construction of the KRU/OPU block",
+      "Fully bound conductor/bus cross sections, sag and connection routes; projected curves alone do not fix spatial geometry",
+      "Exact configuration relation to the existing 110/35/10(6) row, including evidence for a 35 kV tertiary stage",
+      "Confirmed source type-code readings for component-level reuse"
+    ],
+    "futureIllustrationDecision": {
+      "rasterOrVector2dContext": "Eligible: use source image or faithful 2D figure tracing, retaining source-specific caption and contradiction notice. New asset would require its own visual/hash review.",
+      "contextOnlyIcon": "Possible later: topology-based 2D figure icon for this source example, preserving paired bays and long KRU/OPU block. Never inherit as a generic category icon.",
+      "sourceExample3d": "Not approved by this review. Partial orthographic evidence could support a constrained later study of documented envelopes, but no full 3D mesh may be certified without a per-part evidence/omission ledger.",
+      "defaultProduct3d": "Not approved; exact execution construction remains unresolved."
+    }
+  },
+  "contradictionsAndLimits": [
+    {
+      "id": "page-heading-vs-drawing",
+      "pages": [
+        56
+      ],
+      "evidence": "Outer heading says 35/10(6); embedded caption says 110-4Н; component rows 1–6 say 110кВ and row 11 says ОРУ-110кВ.",
+      "resolution": "Treat as a source contradiction. Do not silently correct the source or bind the sheet to v001."
+    },
+    {
+      "id": "source-example-vs-existing110-row",
+      "pages": [
+        54,
+        56
+      ],
+      "evidence": "Page 54 explicitly lists КТПБ(К)110/35/10(6). Page 56 identifies 2КТПБ(К), scheme 110-4Н, with KRU 6кВ and does not show/identify a 35 kV tertiary stage.",
+      "resolution": "Related 110 kV source context is defensible; exact 110/35/10(6) construction mapping is not."
+    },
+    {
+      "id": "two-transformer-example-vs-family",
+      "pages": [
+        54,
+        56
+      ],
+      "evidence": "Two transformers are specific to the captioned 2КТПБ(К) example. Broad KTPB family comprises configurations.",
+      "resolution": "Do not assert that all family records have two transformers or add new saleable products for the example."
+    },
+    {
+      "id": "220-schematic-is-not-construction",
+      "pages": [
+        59
+      ],
+      "evidence": "Page 59 contains 110(220) electrical schematics; no 220 kV spatial general arrangement appears in the inspected pp54–59.",
+      "resolution": "Keep v003 unmapped. Electrical topology does not establish physical form."
+    }
+  ],
+  "perId": [
+    {
+      "id": "cat-ktpb-k",
+      "databaseId": "e86a4f18-ce3b-5529-a91f-feacb8f348fa",
+      "databaseIdMethod": "Existing repository importedProductId: UUIDv5(namespace, product:<id>); derived identity, not live database read",
+      "recordShapeSha256": "7d70ffb8999429a347ef69cfa2222c661a6250b86447cc5854c7a6f784ab605f",
+      "recordShapeMethod": "Existing transformerRecordShape + recordShapeDigest, evaluated from unchanged raw row",
+      "recordKind": "family",
+      "sku": "КТПБ(К)",
+      "voltage": "35/10(6); 110/35/10(6); 220/35/10(6)",
+      "familyId": null,
+      "sourceId": "substations",
+      "sourceFileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sourceSha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "sourcePages": [
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "designationEvidencePage": 54,
+      "imageSourcePage": 55,
+      "currentRawImage": "/catalog-products/cat-ktpb-k.webp",
+      "currentDefault3dEvidencePage": 55,
+      "currentIconConfidence": "source-based",
+      "page56Decision": "Eligible for separately labelled source-example context; family only, no inheritance.",
+      "sourceContextCandidate": true,
+      "candidateFigureKey": "substations-p056-figure26-2ktpb-110-4n",
+      "defaultProduct3dApproved": false,
+      "defaultIconUpgradeApproved": false,
+      "exactExecutionConstructionResolved": null,
+      "gapCountDelta": 0,
+      "newRecordApproved": false,
+      "preserveIdAndRawRecord": true
+    },
+    {
+      "id": "cat-ktpb-k-v001",
+      "databaseId": "33274d30-865c-56a1-9e6b-ec9bdbcfa684",
+      "databaseIdMethod": "Existing repository importedProductId: UUIDv5(namespace, product:<id>); derived identity, not live database read",
+      "recordShapeSha256": "dac754f367f6568c98057182e0f4bd0d76e7221c517e3db61fa62049df54018a",
+      "recordShapeMethod": "Existing transformerRecordShape + recordShapeDigest, evaluated from unchanged raw row",
+      "recordKind": "variant",
+      "sku": "КТПБ(К) 35/10(6)",
+      "voltage": "35/10(6)",
+      "familyId": "cat-ktpb-k",
+      "sourceId": "substations",
+      "sourceFileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sourceSha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "sourcePages": [
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "designationEvidencePage": 54,
+      "imageSourcePage": 55,
+      "currentRawImage": "/catalog-products/cat-ktpb-k.webp",
+      "currentDefault3dEvidencePage": 55,
+      "currentIconConfidence": "source-based",
+      "page56Decision": "Do not map page56 as the 35 kV execution merely because its page heading says 35/10(6); preserve existing p55 evidence.",
+      "sourceContextCandidate": false,
+      "candidateFigureKey": null,
+      "defaultProduct3dApproved": false,
+      "defaultIconUpgradeApproved": false,
+      "exactExecutionConstructionResolved": null,
+      "gapCountDelta": 0,
+      "newRecordApproved": false,
+      "preserveIdAndRawRecord": true
+    },
+    {
+      "id": "cat-ktpb-k-v002",
+      "databaseId": "d6960329-c1c6-5b02-a32f-16c6fe496a43",
+      "databaseIdMethod": "Existing repository importedProductId: UUIDv5(namespace, product:<id>); derived identity, not live database read",
+      "recordShapeSha256": "5b2c69390d60f397258e6fef04c07880a884222cb9ae8625a3bf588a47b288da",
+      "recordShapeMethod": "Existing transformerRecordShape + recordShapeDigest, evaluated from unchanged raw row",
+      "recordKind": "variant",
+      "sku": "КТПБ(К) 110/35/10(6)",
+      "voltage": "110/35/10(6)",
+      "familyId": "cat-ktpb-k",
+      "sourceId": "substations",
+      "sourceFileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sourceSha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "sourcePages": [
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "designationEvidencePage": 54,
+      "imageSourcePage": 55,
+      "currentRawImage": "/catalog-products/cat-ktpb-k.webp",
+      "currentDefault3dEvidencePage": null,
+      "currentIconConfidence": "typical",
+      "page56Decision": "Eligible for separately labelled related 110 kV source-example context; exact construction remains unverified.",
+      "sourceContextCandidate": true,
+      "candidateFigureKey": "substations-p056-figure26-2ktpb-110-4n",
+      "defaultProduct3dApproved": false,
+      "defaultIconUpgradeApproved": false,
+      "exactExecutionConstructionResolved": false,
+      "gapCountDelta": 0,
+      "newRecordApproved": false,
+      "preserveIdAndRawRecord": true
+    },
+    {
+      "id": "cat-ktpb-k-v003",
+      "databaseId": "66741f3d-23cd-5a5d-95e9-2402f119c98e",
+      "databaseIdMethod": "Existing repository importedProductId: UUIDv5(namespace, product:<id>); derived identity, not live database read",
+      "recordShapeSha256": "fcbc264942ba4719a7cf4b806fc2c800a077a0bdb7d10fb66dcbf3e481a7159f",
+      "recordShapeMethod": "Existing transformerRecordShape + recordShapeDigest, evaluated from unchanged raw row",
+      "recordKind": "variant",
+      "sku": "КТПБ(К) 220/35/10(6)",
+      "voltage": "220/35/10(6)",
+      "familyId": "cat-ktpb-k",
+      "sourceId": "substations",
+      "sourceFileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sourceSha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "sourcePages": [
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "designationEvidencePage": 54,
+      "imageSourcePage": 55,
+      "currentRawImage": "/catalog-products/cat-ktpb-k.webp",
+      "currentDefault3dEvidencePage": null,
+      "currentIconConfidence": "typical",
+      "page56Decision": "Do not map page56 example, 110 kV evidence does not establish 220 kV construction.",
+      "sourceContextCandidate": false,
+      "candidateFigureKey": null,
+      "defaultProduct3dApproved": false,
+      "defaultIconUpgradeApproved": false,
+      "exactExecutionConstructionResolved": false,
+      "gapCountDelta": 0,
+      "newRecordApproved": false,
+      "preserveIdAndRawRecord": true
+    }
+  ],
+  "renderedContextIds": [
+    "cat-ktpb-k",
+    "cat-ktpb-k-v002"
+  ],
+  "excludedIds": [
+    "cat-ktpb-k-v001",
+    "cat-ktpb-k-v003"
+  ],
+  "newAssets": 0,
+  "modifiedAssets": 0,
+  "defaultGeometryChanges": 0,
+  "defaultIconChanges": 0,
+  "gapClosures": 0,
+  "sourceContextRecordsBefore": 24,
+  "sourceContextRecordsAfter": 26
+}

@@ -1,0 +1,582 @@
+{
+  "format": "alageum-protection-context-independent-review-v1",
+  "status": "approved-bounded-protection-context",
+  "reviewedAtUtc": "2026-10-06T16:02:00Z",
+  "baselineCommit": "5de8251ffd15d8799c8f187cf445107c295811e4",
+  "baselineTree": "911b4fe4db506ab426bce0a522daa1ea17addb71",
+  "candidateTree": "be06047538278d82d6fc3f02797659ddbfe6379a",
+  "candidateManifest": {
+    "path": "/workspace/shared/alageum-protection-context-integration-candidate/candidate-files.json",
+    "sha256": "512ce2486bfa973c5c0c9e9f5d0ec5069f6857e817970f3f6ddd0fa5fa7cfa57"
+  },
+  "candidatePatch": {
+    "path": "/workspace/shared/alageum-protection-context-integration-candidate/candidate.patch",
+    "sha256": "5d584670a1f828f8dcecb41be017a012f9df0726e0d1e05c3b4c731965bd8961"
+  },
+  "approvedDependenciesSha256": "341dabfd44ffdc3e655fe79e550548ec6b409094074bbabb29188db3d1ee94d9",
+  "approvedBindingsSha256": "c105e2ba300caf852a237bcc4893e00aa5f92ecb3f2f8f2e6833ce8d2653fa35",
+  "approvedContextManifestSha256": "4ccb97d612b48f368a0ae298164f2ea80671fb12ce8b73724342a5747cc19ce3",
+  "approvedBaselineOutputsSha256": "edc00fd04790d5493d14c0965cc3fc3363af2d7ad2ca0c5b702887bd2e8a0b0b",
+  "refinedModelIds": [
+    "cat-ptm-tded-v012",
+    "cat-ptm-tded-v013"
+  ],
+  "refinedIconIds": [
+    "cat-ptm-tded",
+    "cat-ptm-tded-v012",
+    "cat-ptm-tded-v013"
+  ],
+  "contextRecordIds": [
+    "cat-ptm-tded-v001",
+    "cat-ptm-tded-v003",
+    "cat-ptm-tded-v004",
+    "cat-ptm-tded-v007",
+    "cat-ptm-tded-v010",
+    "cat-ptm-tded-v011",
+    "cat-shnn-v001",
+    "cat-shnn-v002",
+    "cat-shnn-v003",
+    "cat-shnn-v004",
+    "cat-shnn-v005",
+    "cat-shnn-v006",
+    "cat-shnn-v007",
+    "cat-shnn-v008",
+    "cat-shnn-v009",
+    "cat-shnn-v010",
+    "cat-shnn-v011",
+    "cat-shnn-v012",
+    "cat-shnn-v013",
+    "cat-shnn-v014",
+    "cat-shnn-v015",
+    "cat-shnn-v016",
+    "cat-shnn-v017",
+    "cat-shnn-v018"
+  ],
+  "counts": {
+    "productBodies": 843,
+    "legacyRecords": 238,
+    "oldModelTypes": 126,
+    "oldIconTypes": 136,
+    "newModelTypes": 2,
+    "newIconTypes": 3,
+    "choiceRecords": 36,
+    "choices": 74,
+    "ntmiSourcePreviews": 2,
+    "sourceGroundedDefault3D": 464,
+    "sourceBasedIcons": 465,
+    "explicitConstructionGaps": 243,
+    "constructionGapFamilies": 29,
+    "sourceContextRecords": 24,
+    "newProducts": 0,
+    "confidencePromotions": 0,
+    "apiSummaryCorrections": 23,
+    "comparisonCellCorrections": 3
+  },
+  "decision": "Approve only the exact bounded local integration and presentation deltas enumerated here. This review supplies new integration authority; it does not inherit authority from the offline prototype approvals.",
+  "approvalLimits": {
+    "publicationPerformed": false,
+    "publicationAuthorizedByThisReport": false,
+    "browserLaunched": false,
+    "hostedAcceptanceVerified": false,
+    "wholeWebsiteGreen": false,
+    "backendWorkflowDependencySecurityDeploymentChanges": false
+  },
+  "exactScope": {
+    "changedOrAddedFiles": 72,
+    "explicitHistoricalAmendments": 27,
+    "rawDependencyPins": 308,
+    "sourceContextIsDisplayOnly": true,
+    "contextDoesNotCreateConstructionChoicesOrDefaults": true,
+    "familyPairedIconOnly": true,
+    "otherElevenProtectionRowIconsPreserved": true,
+    "apiNormalization": "Two explicit additions: sanitized display variantSpecs and original sourceVariantSpecs. Every former normalized field remains identical; raw source facts and display facts are separately guarded.",
+    "apiCurrentCorrectionIds": [
+      "cat-shnn-v001",
+      "cat-shnn-v002",
+      "cat-shnn-v003",
+      "cat-shnn-v004",
+      "cat-shnn-v005",
+      "cat-shnn-v006",
+      "cat-shnn-v007",
+      "cat-shnn-v008",
+      "cat-shnn-v009",
+      "cat-shnn-v010",
+      "cat-shnn-v011",
+      "cat-shnn-v012",
+      "cat-shnn-v013",
+      "cat-shnn-v014",
+      "cat-yatp-v001",
+      "cat-yatp-v002",
+      "cat-yatp-v003",
+      "cat-yatp-v004",
+      "cat-yatp-v005",
+      "cat-yatp-v006",
+      "cat-yatp-v007",
+      "cat-yatp-v008",
+      "cat-yatp-v009"
+    ],
+    "comparisonCorrectionIds": [
+      "alageum-2026-tmg-20kv-copper-25",
+      "alageum-2026-tmg-20kv-copper-40",
+      "alageum-2026-tmg-20kv-copper-63"
+    ]
+  },
+  "sourceReview": {
+    "actualPage35AndPage69PixelsInspected": true,
+    "allFourCropPixelsInspected": true,
+    "allFourCropsDecodedPixelIdentical": true,
+    "preexistingSourceMediaFilesByteIdentical": 350,
+    "twoPrototypeGeometrySheetsAndIconSheetInspected": true,
+    "protectionPrototypeManifestSha256": "8858d862a2ed387f0c2e22c1b7ff35763a15b4c6c9fea4acb0f90ecc475a4ba3",
+    "protectionPrototypeReviewSha256": "0e87f37c9f7baacf4d30c34e9d647f4fdbffc5f1f701d0c91000255d5eecaaa7",
+    "contextPrototypeManifestSha256": "b54ab998e961096555aae2b58a4d7eea9f357686ded60a8f2b9dff9008fbbc9d",
+    "contextPrototypeReviewSha256": "0251ea10a873797e0fa7d45139f5e2c21b5b1f7f0ef0997fe6b6c1b624657824",
+    "presentation": "The complete simplification/CAD caveat, example-specific omissions and both page-69 links remain outside collapsed controls. Family text identifies two separately labelled examples, not one family body. SHNN contexts leave matching to individual rows unconfirmed; PTM/TDE contexts do not transfer climate, dimensions or equipment."
+  },
+  "independentChecks": {
+    "baselineSnapshotRecreatedByteExactly": true,
+    "baselineClientConsumersRecreatedIndependently": true,
+    "all843BodiesAndRawMediaIdsUnchanged": true,
+    "oldModelAndSvgNamesOutputsUnchanged": true,
+    "unaffectedBindings": 840,
+    "choiceManifestAndBothNtmiPreviewsUnchanged": true,
+    "fullSuite": {
+      "command": "node --test --test-concurrency=2 tests/*.test.mjs",
+      "passed": 517,
+      "failed": 0,
+      "skipped": 0,
+      "durationMs": 101030.370253,
+      "inputTree": "be06047538278d82d6fc3f02797659ddbfe6379a",
+      "testOnlySyntheticApproval": true,
+      "all2410OtherTrackedFixtureFilesMatchTree": true,
+      "generatedProofAbsent": true,
+      "nextOutputsAbsent": true
+    },
+    "lint": {
+      "command": "node node_modules/eslint/bin/eslint.js .",
+      "exitCode": 0,
+      "cleanTrackedTree": true,
+      "generatedProofAbsent": true
+    },
+    "productionBuild": {
+      "command": "NEXT_TELEMETRY_DISABLED=1 node node_modules/next/dist/bin/next build",
+      "exitCode": 0,
+      "proofAbsentAtStart": true,
+      "freshValidProofAssets": 10,
+      "sourceGateInvokedByActualNextConfig": true,
+      "dependencyVersionsUnchanged": true
+    },
+    "previewBuild": {
+      "command": "npm run build:preview",
+      "exitCode": 0,
+      "actualStagedConfigGateAndStagedSourceAssets": true,
+      "trackedFileDrift": false
+    },
+    "realClientBoundary": {
+      "actualNextVersion": "16.3.8",
+      "buildSucceeded": true,
+      "mandatoryGateUsed": true,
+      "candidateProductVisualUnmodified": true,
+      "actualClientBoundaryAndRscProps": true,
+      "routes": [
+        {
+          "route": "static",
+          "contexts": 24,
+          "figures": 42,
+          "captions": 42,
+          "sourceImages": 42,
+          "defaultModels": 2,
+          "protectionDisclosures": 3,
+          "constructionControlsWithinContexts": 0,
+          "hiddenContexts": 0,
+          "htmlSha256": "0acf956fedbe5dee753f776421b9552798afedb1da91a040a8a4be4cde6e92b3"
+        },
+        {
+          "route": "api",
+          "contexts": 24,
+          "figures": 42,
+          "captions": 42,
+          "sourceImages": 42,
+          "defaultModels": 2,
+          "protectionDisclosures": 3,
+          "constructionControlsWithinContexts": 0,
+          "hiddenContexts": 0,
+          "htmlSha256": "ccc97201102fda5ec27be2de2e79df74a3b38db004d8637ea09261ba97ec57d6"
+        },
+        {
+          "route": "invalid",
+          "contexts": 0,
+          "figures": 0,
+          "captions": 0,
+          "sourceImages": 0,
+          "defaultModels": 0,
+          "protectionDisclosures": 0,
+          "constructionControlsWithinContexts": 0,
+          "hiddenContexts": 0,
+          "htmlSha256": "716db77eb8264641e80fe7e8998f2256d6d5fa284bf015da31ce309301a853ac"
+        }
+      ],
+      "browserLaunched": false,
+      "hydrationAndPixelsVerified": false,
+      "inputHashes": {
+        "components/catalog/ProductVisual.js": "99e847f8ce2476e6417866c76c377120cbb0cc3cc7787217eb22f467113be7dc",
+        "components/catalog/EquipmentModel.js": "a558d1b02a4eb8944a38e4f874899a349f0234816a173a9e78c92f5c95529275",
+        "components/catalog/FamilyProductVisual.js": "f1fb238c78542b7a5e2223d6cd7e1ce585743ea328d01aa9b00c85dda251e971",
+        "components/catalog/source-context/CatalogSourceContext.js": "d7da62a8ec6fa2529a8ac01e01b10e2acf84d79d413bb0d366279af73c983319",
+        "components/catalog/source-context/SourceContextImage.js": "cbea5c72c693cbe1192f1a7721f062716f9434a94a026f20770ffe519677c3d0",
+        "lib/catalog/source-context/sourceContextBuildProof.js": "40d11f4c2ce21bbbe01a9b918ffc823fd60d16daaaac8197105a2cdb44049444",
+        "lib/catalog/source-context/sourceContexts.js": "5ed607db069ed54243f6a012c1a3b0941355c643a2e9ec4c1975d3bd83eec7b2",
+        "lib/catalog/models/protectionExampleRuntime.js": "c78b0ecf1c8ef42e098b43e36d80493c0083b0cbb6638764f7e5531bad8740eb",
+        "lib/catalog/apiData.js": "4179669b9bf1bc6b48982bbcec762dc102545ffb0a3caf9af936fa8efcd9f75b",
+        "next.config.mjs": "9dd452eecb3c984fcf669037361700ad1d1e8a518081daa67899a4bcf40447fc",
+        "scripts/verify-source-context-build.mjs": "2ef26988e5cc9974583d3857ce86fb6b71168822f81caad46c62c7cd42d9b33d"
+      }
+    },
+    "sourceGuardTests": {
+      "all843StaticAndApiRecordsEnumerated": true,
+      "matches": {
+        "context": {
+          "official": [
+            "cat-ptm-tded-v001",
+            "cat-ptm-tded-v003",
+            "cat-ptm-tded-v004",
+            "cat-ptm-tded-v007",
+            "cat-ptm-tded-v010",
+            "cat-ptm-tded-v011",
+            "cat-shnn-v001",
+            "cat-shnn-v002",
+            "cat-shnn-v003",
+            "cat-shnn-v004",
+            "cat-shnn-v005",
+            "cat-shnn-v006",
+            "cat-shnn-v007",
+            "cat-shnn-v008",
+            "cat-shnn-v009",
+            "cat-shnn-v010",
+            "cat-shnn-v011",
+            "cat-shnn-v012",
+            "cat-shnn-v013",
+            "cat-shnn-v014",
+            "cat-shnn-v015",
+            "cat-shnn-v016",
+            "cat-shnn-v017",
+            "cat-shnn-v018"
+          ],
+          "api": [
+            "cat-ptm-tded-v001",
+            "cat-ptm-tded-v003",
+            "cat-ptm-tded-v004",
+            "cat-ptm-tded-v007",
+            "cat-ptm-tded-v010",
+            "cat-ptm-tded-v011",
+            "cat-shnn-v001",
+            "cat-shnn-v002",
+            "cat-shnn-v003",
+            "cat-shnn-v004",
+            "cat-shnn-v005",
+            "cat-shnn-v006",
+            "cat-shnn-v007",
+            "cat-shnn-v008",
+            "cat-shnn-v009",
+            "cat-shnn-v010",
+            "cat-shnn-v011",
+            "cat-shnn-v012",
+            "cat-shnn-v013",
+            "cat-shnn-v014",
+            "cat-shnn-v015",
+            "cat-shnn-v016",
+            "cat-shnn-v017",
+            "cat-shnn-v018"
+          ]
+        },
+        "protection": {
+          "official": [
+            "cat-ptm-tded",
+            "cat-ptm-tded-v012",
+            "cat-ptm-tded-v013"
+          ],
+          "api": [
+            "cat-ptm-tded",
+            "cat-ptm-tded-v012",
+            "cat-ptm-tded-v013"
+          ]
+        }
+      },
+      "mutations": 810,
+      "ownGetters": 270,
+      "inheritedCases": 54,
+      "serializationCases": 108,
+      "cycles": 54,
+      "allGetterCalls": 0,
+      "proofMutationsRejected": 5,
+      "proofSerializable": true,
+      "uuidNamespaceDerivedFromActualImporter": "541788ee-fbf0-4d85-9d33-e593b82f303c"
+    },
+    "fullPublicResolverRejections": {
+      "reservedConsumers": 3,
+      "staticAndApi": true,
+      "fullPublicResolversChecked": true,
+      "mutationCases": 187,
+      "allGetterAndCoercionCalls": 0,
+      "historicalDefaultAndIconFallbackBlocked": true,
+      "variantClimateStaticAndRawApiBound": true,
+      "cyclicProxyPrototypeTerminates": true
+    },
+    "sourceBuildGate": "Actual Next CLI rejects missing and same-size-corrupt crops before compilation and removes a planted stale proof. The final complete suite additionally verifies all 10 assets, registry/manifest changes and dev/build config paths.",
+    "warmMutationTests": {
+      "everyTopLevelCallReadsFreshBytes": true,
+      "noPersistentCacheAccepted": true,
+      "results": [
+        {
+          "file": "frontend/components/catalog/ProductVisual.js",
+          "sameSize": true,
+          "mtimeRestored": true,
+          "warmSuccessThenMutationRejected": true,
+          "restoredSuccess": true
+        },
+        {
+          "file": "frontend/lib/catalog/apiData.js",
+          "sameSize": true,
+          "mtimeRestored": true,
+          "warmSuccessThenMutationRejected": true,
+          "restoredSuccess": true
+        },
+        {
+          "file": "frontend/components/catalog/source-context/CatalogSourceContext.module.css",
+          "sameSize": true,
+          "mtimeRestored": true,
+          "warmSuccessThenMutationRejected": true,
+          "restoredSuccess": true
+        },
+        {
+          "file": "frontend/components/catalog/models/createEquipmentViewer.js",
+          "sameSize": true,
+          "mtimeRestored": true,
+          "warmSuccessThenMutationRejected": true,
+          "restoredSuccess": true
+        },
+        {
+          "file": "frontend/public/catalog-source-context/source-tde.png",
+          "sameSize": true,
+          "mtimeRestored": true,
+          "warmSuccessThenMutationRejected": true,
+          "restoredSuccess": true
+        },
+        {
+          "file": "frontend/public/catalog-source/page-035.webp",
+          "sameSize": true,
+          "mtimeRestored": true,
+          "warmSuccessThenMutationRejected": true,
+          "restoredSuccess": true
+        },
+        {
+          "file": "frontend/scripts/verify-source-context-build.mjs",
+          "sameSize": true,
+          "mtimeRestored": true,
+          "warmSuccessThenMutationRejected": true,
+          "restoredSuccess": true
+        },
+        {
+          "file": "frontend/next.config.mjs",
+          "sameSize": true,
+          "mtimeRestored": true,
+          "warmSuccessThenMutationRejected": true,
+          "restoredSuccess": true
+        },
+        {
+          "file": "scripts/catalog/protection-context-reviewed-dependencies.mjs",
+          "sameSize": true,
+          "mtimeRestored": true,
+          "warmSuccessThenMutationRejected": true,
+          "restoredSuccess": true
+        },
+        {
+          "file": "scripts/catalog/source-asset-reviewed-dependencies.mjs",
+          "sameSize": true,
+          "mtimeRestored": true,
+          "warmSuccessThenMutationRejected": true,
+          "restoredSuccess": true
+        },
+        {
+          "file": "docs/catalog-transformers-2026/review/measurement-column-completion/clearance.json",
+          "sameSize": true,
+          "mtimeRestored": true,
+          "warmSuccessThenMutationRejected": true,
+          "restoredSuccess": true
+        },
+        {
+          "file": "docs/catalog-transformers-2026/review/protection-context-integration/independent-review.json",
+          "sameSize": true,
+          "mtimeRestored": true,
+          "warmSuccessThenMutationRejected": true,
+          "restoredSuccess": true
+        }
+      ],
+      "pendingApprovalRejectedAfterWarmSuccess": true,
+      "restoredApprovalSucceeded": true
+    },
+    "historicalFixtures": {
+      "portableHistoricalInputsEqualRealGitObjects": true,
+      "counts": {
+        "1c705309c561130d34f79a367cd51c7ee864e59c": {
+          "files": 202,
+          "archivedChangedFiles": 17
+        },
+        "5de8251ffd15d8799c8f187cf445107c295811e4": {
+          "files": 238,
+          "archivedChangedFiles": 20
+        }
+      }
+    },
+    "summariesAndConsumers": {
+      "summaryChanges": [
+        "cat-shnn-v001",
+        "cat-shnn-v002",
+        "cat-shnn-v003",
+        "cat-shnn-v004",
+        "cat-shnn-v005",
+        "cat-shnn-v006",
+        "cat-shnn-v007",
+        "cat-shnn-v008",
+        "cat-shnn-v009",
+        "cat-shnn-v010",
+        "cat-shnn-v011",
+        "cat-shnn-v012",
+        "cat-shnn-v013",
+        "cat-shnn-v014",
+        "cat-yatp-v001",
+        "cat-yatp-v002",
+        "cat-yatp-v003",
+        "cat-yatp-v004",
+        "cat-yatp-v005",
+        "cat-yatp-v006",
+        "cat-yatp-v007",
+        "cat-yatp-v008",
+        "cat-yatp-v009"
+      ],
+      "facetChanges": [
+        "cat-shnn-v001",
+        "cat-shnn-v002",
+        "cat-shnn-v003",
+        "cat-shnn-v004",
+        "cat-shnn-v005",
+        "cat-shnn-v006",
+        "cat-shnn-v007",
+        "cat-shnn-v008",
+        "cat-shnn-v009",
+        "cat-shnn-v010",
+        "cat-shnn-v011",
+        "cat-shnn-v012",
+        "cat-shnn-v013",
+        "cat-shnn-v014",
+        "cat-yatp-v001",
+        "cat-yatp-v002",
+        "cat-yatp-v003",
+        "cat-yatp-v004",
+        "cat-yatp-v005",
+        "cat-yatp-v006",
+        "cat-yatp-v007",
+        "cat-yatp-v008",
+        "cat-yatp-v009"
+      ],
+      "all843VisibleSummaryAndFacetParityRestored": true,
+      "preexistingNonDisplayedSourceRowProvenanceNormalizationExcluded": true,
+      "recordsCompared": 843,
+      "allPreviousNormalizedFieldsIdentical": true,
+      "newRawVariantFactsRecords": 687,
+      "selectionCsvUnchanged": true,
+      "inquiryPayloadsUnchanged": true,
+      "quotePayloadsUnchanged": true,
+      "selectionFingerprintsUnchanged": true,
+      "independentlyRecreatedFrozenClientBaseline": true
+    },
+    "comparisonCells": {
+      "products": 843,
+      "cellsChecked": 23484,
+      "unchangedCells": 23478,
+      "changes": [
+        {
+          "id": "alageum-2026-tmg-20kv-copper-25",
+          "mode": "static",
+          "label": "Обмотки",
+          "unit": "",
+          "before": "медные",
+          "after": "медные · трехфазные, двухобмоточные"
+        },
+        {
+          "id": "alageum-2026-tmg-20kv-copper-25",
+          "mode": "api",
+          "label": "Обмотки",
+          "unit": "",
+          "before": "медные",
+          "after": "медные · трехфазные, двухобмоточные"
+        },
+        {
+          "id": "alageum-2026-tmg-20kv-copper-40",
+          "mode": "static",
+          "label": "Обмотки",
+          "unit": "",
+          "before": "медные",
+          "after": "медные · трехфазные, двухобмоточные"
+        },
+        {
+          "id": "alageum-2026-tmg-20kv-copper-40",
+          "mode": "api",
+          "label": "Обмотки",
+          "unit": "",
+          "before": "медные",
+          "after": "медные · трехфазные, двухобмоточные"
+        },
+        {
+          "id": "alageum-2026-tmg-20kv-copper-63",
+          "mode": "static",
+          "label": "Обмотки",
+          "unit": "",
+          "before": "медные",
+          "after": "медные · трехфазные, двухобмоточные"
+        },
+        {
+          "id": "alageum-2026-tmg-20kv-copper-63",
+          "mode": "api",
+          "label": "Обмотки",
+          "unit": "",
+          "before": "медные",
+          "after": "медные · трехфазные, двухобмоточные"
+        }
+      ],
+      "rawSourceRecordsModified": false,
+      "identicalRepeatDeduplication": true
+    },
+    "preparedHostedCases": 254,
+    "hostedCaseCoverage": "Desktop/mobile, explicit 320px tall-panel reachability, real WebGL canvas pixels/rotation/disposal, visible omissions, source PNG decoding/bytes, popup links, focus, source image failures, static/API family selection/reset, exact API mutations, all 23 current summaries and six winding renderings."
+  },
+  "resolvedFindings": [
+    "Bound source and displayed climate facts; reject altered or missing variant facts, including raw API transport mutations.",
+    "Blocked historical source-matched/default-icon fallback for rejected reserved IDs through the full public resolvers.",
+    "Rejected accessor IDs, coercing ID objects and cyclic proxy prototypes without invoking getters or walking adversarial prototype chains.",
+    "Moved API popup fixtures to context-scoped routing and retained exact DTO identities.",
+    "Added package/config/helper, sourcegate, viewer/style and importer pins; preserved historical proof documents and snapshots.",
+    "Removed historical git-show test dependencies; portable fixture bytes independently equal their precise Git predecessor blobs.",
+    "Bound the only two former immutable presentation-input refinements to exact predecessor/current hashes and full independent approval.",
+    "Batched predecessor validation with invocation-local work only; fresh raw-byte checks reject warm same-size/restored-timestamp tampering.",
+    "Updated two exact corruption-test diagnostics while preserving the rejection assertions; the final complete suite passes."
+  ],
+  "integrityBoundary": {
+    "buildProofSerializable": true,
+    "proofIsRuntimeByteVerifier": false,
+    "mandatoryFreshBuildPreflight": true,
+    "sourceGateAndConfigPinned": true,
+    "immutableAtomicCodeProofAssetDeploymentRequired": true,
+    "noOriginalPdfFetch": true,
+    "noRuntimeFetchOrBlobUrlAdded": true,
+    "imageFailureKeepsHonestCaptionsAndLinks": true
+  },
+  "remainingAcceptance": [
+    "Run and review the prepared hosted desktop/mobile cases on the published exact successor, including WebGL/caveat/source-gallery pixels and actual 320px scrolling/focus/navigation.",
+    "Verify publication and broader site CI separately. This local approval makes no whole-site-green or deployment claim."
+  ],
+  "evidenceManifest": {
+    "path": "/workspace/shared/alageum-protection-context-integration-review/evidence-manifest.json",
+    "sha256": "aa9b49cba7b6770e300e646067ea6a25589958fd426191eb6bbecec078436253"
+  }
+}

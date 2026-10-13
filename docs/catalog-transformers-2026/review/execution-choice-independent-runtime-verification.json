@@ -1,0 +1,43 @@
+{
+  "format": "alageum-transformer-execution-choice-independent-runtime-verification-v1",
+  "checkedAt": "2026-10-06T07:47:47Z",
+  "status": "passed",
+  "commands": [
+    {
+      "cwd": "frontend",
+      "command": "node --test tests/transformer-execution-choices.test.mjs",
+      "exitCode": 0,
+      "tests": 8,
+      "passed": 8,
+      "failed": 0
+    },
+    {
+      "cwd": ".",
+      "command": "node scripts/approve-transformer-execution-choices.mjs docs/catalog-transformers-2026/review/execution-choice-clearance.json --check",
+      "exitCode": 0
+    }
+  ],
+  "verifiedCounts": {
+    "records": 32,
+    "choices": 66,
+    "geometryTypes": 7,
+    "defaultGeometry": 251,
+    "defaultIcons": 257
+  },
+  "files": {
+    "frontend/lib/catalog/models/transformerExecutionChoicesManifest.json": "28ffbaf5282a63e0e691393763d00c48abec96519c70d965771fa72391fd6666",
+    "frontend/lib/catalog/models/transformerExecutionChoices.js": "8ca1d3c87406e4732b80c2e881a67e4531200f6b0adf3ca935318452f14c5fd1",
+    "scripts/approve-transformer-execution-choices.mjs": "c74e7bcb2f281a3e784630f3a5eb008563c716df23e2429303c7fe5b00e57e55",
+    "frontend/tests/transformer-execution-choices.test.mjs": "08c8ffd13b96b7a144a8d5816375444115571695bedd0c3207721ca911192c63",
+    "docs/catalog-transformers-2026/review/execution-choice-clearance.json": "c31d103704e35d2a61916898133512f248296dd608d775613635f62594eb2be7",
+    "docs/catalog-transformers-2026/review/execution-choice-independent-review.json": "13803a03daf7ab2dfe942924c79d242f91d1cabde034188c71c3c43466def4a7"
+  },
+  "pending": [
+    "Application build and browser interaction QA by the owning implementation task."
+  ],
+  "limits": [
+    "Display-only explicit choices, no default activation.",
+    "No CAD, dimensions or source identity changed.",
+    "No publication by this research/review task."
+  ]
+}

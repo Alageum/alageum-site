@@ -1,0 +1,37 @@
+{
+  "reviewScope": "Independent source-grounded topology and closed row binding review; not source-table or electrical certification",
+  "sourcePdfBytes": 844084378,
+  "sourcePdfSha256Verified": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+  "sourceRegistryScanHashesChecked": 187,
+  "sourceRegistryScanHashMismatches": 0,
+  "proposalRows": 540,
+  "topologyProposalRows": 254,
+  "stagedAdapterRowsCompared": 585,
+  "missingTopologyRows": 0,
+  "designationFamilySourceRowDrawingPageMismatches": 0,
+  "rowChoiceToGroupAllowlistMismatches": 0,
+  "focusedTestsPassedBeforeExpandedRepairs": 11,
+  "reviewResolverHasRuntimeAuthority": false,
+  "reviewResolverIdOnlyIsNotSufficientForActivation": true,
+  "requiredRuntimeGuards": [
+    "sourceId",
+    "sourceFileId",
+    "sourceSha256",
+    "exact approved record/type/group/pages channel allowlist",
+    "reviewed record-shape SHA256",
+    "reviewed library and source registry/image hashes at generation",
+    "deterministic backend UUID for API records"
+  ],
+  "nonRuntimeStatuses": [
+    "execution-choice-required",
+    "execution-binding-unverified",
+    "old-identity-hold",
+    "source-evidence-needed"
+  ],
+  "sourceGeometryLimitations": [
+    "arbitrary scene units",
+    "no engineering dimensions or CAD equivalence",
+    "no hidden internals",
+    "CPU rasterizer is not WebGL/browser validation"
+  ]
+}

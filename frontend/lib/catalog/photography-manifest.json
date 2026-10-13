@@ -1,0 +1,668 @@
+{
+  "format": "alageum-product-photography-v1",
+  "checkedAt": "2026-10-12",
+  "policy": "Bounded editorial examples. No exact execution or construction authority; unmatched or changed records retain technical/CMS visuals.",
+  "photos": {
+    "distribution-transformers": {
+      "path": "/photography/equipment/category-transformers.webp",
+      "width": 1000,
+      "height": 600,
+      "alt": "Трансформаторы КТЗ на площадке готовой продукции",
+      "caption": "Распределительные трансформаторы на площадке КТЗ",
+      "sourcePage": "https://alageum.com/ru/predpriyatiya/ao-ktz",
+      "sourceImage": "https://alageum.com/images/zavodi/ktz/1.jpg",
+      "sourceSha256": "f985a693be2319840d25d5f17026673a114be6776d63c14453345a0d8d5bee9e",
+      "sha256": "fef82a3f9756394a69f501dfd0b8dfbaa0dde3e05bfd754f56c7f1f01a61896b",
+      "kind": "equipment-context-photo",
+      "fit": "cover",
+      "objectPosition": "50% 50%",
+      "checkedAt": "2026-10-12",
+      "historical": true,
+      "shortCaption": "Продукция КТЗ",
+      "disclaimer": "Производственное фото группы оборудования. Внешний вид и комплектация конкретного исполнения могут отличаться.",
+      "representation": "manufacturer-context"
+    },
+    "dry-transformers": {
+      "path": "/photography/equipment/dry-transformers.webp",
+      "width": 465,
+      "height": 203,
+      "alt": "Сухой трансформатор на фотографии из официального каталога Alageum",
+      "caption": "Сухой трансформатор с литой изоляцией",
+      "sourcePage": "https://alageum.com/ru/katalog/transformatory",
+      "sourceImage": "https://alageum.com/media/k2/categories/10.png",
+      "sourceSha256": "c5dfb6d69317507e1e55c0df3f14114d77d81a9197190dd97872dbb1bb9b2a16",
+      "sha256": "bece60f9bd48c7ae5d60afe12087a13d10d8c544282aae109679f0fc2fcd7037",
+      "kind": "equipment-context-photo",
+      "fit": "contain",
+      "objectPosition": "50% 50%",
+      "checkedAt": "2026-10-12",
+      "historical": true,
+      "shortCaption": "Фото типа",
+      "disclaimer": "Фото типа оборудования из официального каталога. Мощность, класс потерь и исполнение конкретной записи этим фото не подтверждаются.",
+      "representation": "equipment-type"
+    },
+    "aodctn-167000": {
+      "path": "/photography/projects/nura.webp",
+      "width": 900,
+      "height": 601,
+      "alt": "Автотрансформатор в производственном цехе Asia Trafo",
+      "caption": "Автотрансформатор Asia Trafo 167 МВА для ПС «Нура»",
+      "sourcePage": "https://alageum.com/ru/novosti/asia-trafo-izgotovil-avtotransformator-dlya-kegoc",
+      "sourceImage": "https://alageum.com/media/k2/items/cache/f9a9b7c9f33a923e5475b478a62125ae_XL.jpg",
+      "sourceSha256": "3135a5aa3b8a624e827e227e87e9f6edfb0dda9dbb60e36ae8504d0cae1249a4",
+      "sha256": "10903e16e60b9a08d4c4dd958bc55c9d82b8b7541daeb67e09279de224fc5ea2",
+      "kind": "project-equipment-photo",
+      "fit": "contain",
+      "objectPosition": "50% 50%",
+      "checkedAt": "2026-10-12",
+      "historical": true,
+      "shortCaption": "Пример серии",
+      "disclaimer": "Фото изготовленного оборудования из новости производителя. Приведено как пример серии; состав обмоток и комплектация выбранной записи уточняются отдельно.",
+      "representation": "series-example"
+    },
+    "aemz-kso2-10-series": {
+      "path": "/photography/equipment/kso-two-ten.webp",
+      "width": 1355,
+      "height": 900,
+      "alt": "Камеры КСО2-10 с синими дверями в цехе Алматинского электромеханического завода",
+      "caption": "КСО2-10 · фото серии, АЭМЗ",
+      "sourcePage": "https://aemz.kz/catalog/visok/nivelir-bosch-pll-360/",
+      "sourceImage": "https://aemz.kz/upload/iblock/bc5/bc5b61ef2f8d1a542c4b19fed5ed91cc.JPG",
+      "sourceSha256": "1c0fef8c0f5555058bdf7ae44fc976e463485e74bbbd17c8537c95071b2f2312",
+      "sha256": "7b344fff5797b2d307c32e40ac49514e53ab25a54ede6eacdd48cef74377bdb8",
+      "kind": "series-photo",
+      "fit": "contain",
+      "objectPosition": "50% 50%",
+      "checkedAt": "2026-10-12",
+      "historical": true,
+      "shortCaption": "Фото серии",
+      "disclaimer": "Фото серии из каталога АЭМЗ. Мощность, схема и комплектация выбранного исполнения уточняются отдельно.",
+      "representation": "series-example"
+    },
+    "aemz-tm-series": {
+      "path": "/photography/equipment/tm-series.webp",
+      "width": 600,
+      "height": 707,
+      "alt": "Масляный трансформатор с расширителем и радиаторами из каталога АЭМЗ",
+      "caption": "Масляный трансформатор ТМ · фото серии из каталога АЭМЗ",
+      "sourcePage": "https://aemz.kz/catalog/transformatory/modulnaya-sistema-milano-modern/",
+      "sourceImage": "https://aemz.kz/upload/iblock/cc7/cc78fa6d28be62bf575faba491fc13a9.jpeg",
+      "sourceSha256": "c9596c15ee4ef1b2924f87c9fbcdc686f3a6ba4ae8f468fefcfcf4629a6e3240",
+      "sha256": "3b5d68762c9215f3e42f72c51fc8cf86ad21609e2b63b6528d5e0014ba1f9a4b",
+      "kind": "series-photo",
+      "fit": "contain",
+      "objectPosition": "50% 50%",
+      "checkedAt": "2026-10-12",
+      "historical": true,
+      "shortCaption": "Фото серии",
+      "disclaimer": "Фото серии из каталога АЭМЗ. Мощность, схема и комплектация выбранного исполнения уточняются отдельно.",
+      "representation": "series-example"
+    }
+  },
+  "records": {
+    "tmg-400": {
+      "photoId": "distribution-transformers",
+      "databaseId": "e0654f4f-cd5b-5333-810c-ce336dc1737e",
+      "recordSha256": "ad87fa8488ac27879b575a07299903fe0f5f7afbf55dfb8ff9f3abaf502403e2",
+      "variantSpecsSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+    },
+    "tmg-630": {
+      "photoId": "distribution-transformers",
+      "databaseId": "adf62541-79c0-5274-a712-c53a3a9bf12e",
+      "recordSha256": "9e0f76e6db5a6cb55cc0a5411e80b79174c124bb3d14f002beac52892fcccf11",
+      "variantSpecsSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+    },
+    "tmg-1000": {
+      "photoId": "distribution-transformers",
+      "databaseId": "5ef9865c-95ef-5ab5-92a0-f08a41fb7ee6",
+      "recordSha256": "b8fcc78abb10be49f3687cf32ad57325bb29785fe323c935e142b8f8a3c60b68",
+      "variantSpecsSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+    },
+    "tmg-2500": {
+      "photoId": "distribution-transformers",
+      "databaseId": "ef313e95-ffab-5859-bdfa-b2220ed668a4",
+      "recordSha256": "73c585a4ab3dd96899e87b2ad2b0233c3ad551fb90fbfcccd4a6676be2c701eb",
+      "variantSpecsSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+    },
+    "tsl-630": {
+      "photoId": "dry-transformers",
+      "databaseId": "f0729a6c-57fb-53df-b649-fd65aaca3811",
+      "recordSha256": "11fc4d7e71f68435ec4d576a17ba219abf9cd37afa92ec8fd8da6cef59d35363",
+      "variantSpecsSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+    },
+    "tsl-1600": {
+      "photoId": "dry-transformers",
+      "databaseId": "0da0d84c-f539-5ed8-8244-bec39989e93a",
+      "recordSha256": "af80f48fbc8c1b9411adb164b1cf0157c3e4b5057ad180e5dc379bce7ab5ff5c",
+      "variantSpecsSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+    },
+    "kso-2-10": {
+      "photoId": "aemz-kso2-10-series",
+      "databaseId": "010ebf94-68d3-524b-8106-769b72079b06",
+      "recordSha256": "f0ab3c5e5e52f19d877fe7f97b8633e7c667e9a350765382b89a47d998870eba",
+      "variantSpecsSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+    },
+    "tr2026-family-tmg-standard": {
+      "photoId": "distribution-transformers",
+      "databaseId": "a74c9389-0544-5ffb-af32-e175bd1bdbfe",
+      "recordSha256": "43db10c04dae9d35eafa8f0d30e69315d4664f163e91750e59a1d54fb29ebbf7",
+      "variantSpecsSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+    },
+    "alageum-tmg-standard-16": {
+      "photoId": "distribution-transformers",
+      "databaseId": "f8489e8b-3202-5d45-b7d4-d2974bd67960",
+      "recordSha256": "77f0073c9f3c7f695d0f738173cadb963d33f345ee30b3ff6010b091ab18dc90",
+      "variantSpecsSha256": "e1676051883aef6cc10df723e9cd60f89d557670ab712bdeaf3744d3da739a14"
+    },
+    "alageum-tmg-standard-25": {
+      "photoId": "distribution-transformers",
+      "databaseId": "92eed7d0-5ec8-5c92-a04f-3622f9d00a20",
+      "recordSha256": "d401bccb57d786de0ed15db4a78168631dba7ff3806dcdf246333916268cd07c",
+      "variantSpecsSha256": "a0b9dce2be47f8c76284a3dfd5edb53ffb1f850f485895c5e457103c3756b5ff"
+    },
+    "alageum-tmg-standard-40": {
+      "photoId": "distribution-transformers",
+      "databaseId": "bdbc90ac-7eda-5066-a515-5283992cb1e5",
+      "recordSha256": "2dc2a94afe5f0f83f440d7b1c5fa8d3bb24ef2936ae47a3c21fcdf10d0cf287f",
+      "variantSpecsSha256": "fa1a965024dd872d9345b12a536a49ff2e87295d00400f6f50fbbcc94e2d9614"
+    },
+    "alageum-tmg-standard-63": {
+      "photoId": "distribution-transformers",
+      "databaseId": "4145b109-d243-5e85-a6cc-b291f8e4ee91",
+      "recordSha256": "7819f246ba188972564598f83deccb63c568dc6c3ae563fd129a8cae74b04976",
+      "variantSpecsSha256": "43258e84842163947fc67a7778e38b2baaf5eeae454b6222b9a0fa5329ed43ad"
+    },
+    "alageum-tmg-standard-100": {
+      "photoId": "distribution-transformers",
+      "databaseId": "73e04abe-e13b-593d-9e63-2ecb53a85646",
+      "recordSha256": "1839215da900424a36c62763673a84f64bdaa8cc75489682da9b6906578e6c6d",
+      "variantSpecsSha256": "d3028fb472566f2f91bf87b4982c53f68a2b9e5cc2431e9819d4b414526fda29"
+    },
+    "alageum-tmg-standard-160": {
+      "photoId": "distribution-transformers",
+      "databaseId": "d568719d-5bc6-50db-b421-6ff14ce90e8d",
+      "recordSha256": "4d59fbb29c855673d2344b94c443275e67d0d89fda29a78a5eff82f860abdc6d",
+      "variantSpecsSha256": "0ab579822e70442bc859775013720142c3df494797700ef7e01daf67d5f1fbb1"
+    },
+    "alageum-tmg-standard-250": {
+      "photoId": "distribution-transformers",
+      "databaseId": "3de84618-a2f3-5305-b754-feb477054702",
+      "recordSha256": "d3ab2cbf9ae6a36818b3405151fd65eed6d407e4c04e9ac4286d88279388f6df",
+      "variantSpecsSha256": "50f50e08eb32d78df8c0fb069162d8d0fb599884c159b738f77b0a3c0e0588a7"
+    },
+    "alageum-tmg-standard-1250": {
+      "photoId": "distribution-transformers",
+      "databaseId": "ea1311b0-aab9-576e-bb8f-cf1dd6f14607",
+      "recordSha256": "ec83ebbc605f23772b7f6447be9fc90875df4909e392a505002c5641f9f62f8d",
+      "variantSpecsSha256": "447bfb7d87e24805a4f9835467036af2edfa2ac09da98e89d0b9483cbbeedbd4"
+    },
+    "alageum-tmg-standard-1600": {
+      "photoId": "distribution-transformers",
+      "databaseId": "e8efb6da-76fb-5dbf-a60d-d27971175b02",
+      "recordSha256": "04882b31c429da97b4a0d01532da3f4d5612e1fc9c411d223e5bb1b1f21156e1",
+      "variantSpecsSha256": "d7b0bbd8ff2f4b0b969a97040c91dc16db665b7ae346f8e04fb5b46603459d6e"
+    },
+    "alageum-tmg-standard-2000": {
+      "photoId": "distribution-transformers",
+      "databaseId": "878338b8-fe9e-5c7b-ab7a-54f55767d39b",
+      "recordSha256": "ce8d203faedf3805873ad3616ca6efc7f1009c667e746ecfa876f6f57eef3872",
+      "variantSpecsSha256": "1164767f2ece1a499e430e318fb805d40b76a2a6b488fc9ce8610ecf90f358d1"
+    },
+    "alageum-tmg-standard-3200": {
+      "photoId": "distribution-transformers",
+      "databaseId": "20a418ff-9891-5db4-af71-d7f5f1c6efc7",
+      "recordSha256": "62afd9c14cb292dd33404261a602226791fe6c1cd3d4fdcb0bf0b88ffba73707",
+      "variantSpecsSha256": "d89fdd0b7d649b50947c1e2491d96474ecddd55e2cf324de4ce82ae691933272"
+    },
+    "tr2026-family-tm-standard": {
+      "photoId": "aemz-tm-series",
+      "databaseId": "faca0b25-14fa-569a-b976-bac01765a3f6",
+      "recordSha256": "d4a4821a4e2d93a65db9baad0d1071bd75d94c5c121254fce1cd14b5e0b83c09",
+      "variantSpecsSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+    },
+    "alageum-tm-standard-16": {
+      "photoId": "aemz-tm-series",
+      "databaseId": "1df952a8-592f-5755-9a08-563afceaa466",
+      "recordSha256": "157a1cfb8631e492914f8488c1a3c15ef15137058e03b62164a2160ba4bb5127",
+      "variantSpecsSha256": "c4bf66a63dabdbf4d599bfc176b0008e3925a317dd4079a4c231d535cc5f4fbc"
+    },
+    "alageum-tm-standard-25": {
+      "photoId": "aemz-tm-series",
+      "databaseId": "625372d1-7a62-5d09-b060-d04860ab2f40",
+      "recordSha256": "7a1dff5325e9135ee5fea2c8c29a3298ce88515442c8e40715dae9c17240ef43",
+      "variantSpecsSha256": "95a5395eaf2a653a0ad5adcefe1e82e8ff51516332502f5d030d6d00fbdbd1f9"
+    },
+    "alageum-tm-standard-40": {
+      "photoId": "aemz-tm-series",
+      "databaseId": "2bfa1df1-9cae-5318-9bb9-7739a9a87470",
+      "recordSha256": "14c588f9c2888a0b771e975eaebf4b5fcf077ebe08182e0204ddebb9c321eb11",
+      "variantSpecsSha256": "e5cc70a82a54116a80f28d66b330620f8c3235cdb11b7425f67cdb13a40c301b"
+    },
+    "alageum-tm-standard-63": {
+      "photoId": "aemz-tm-series",
+      "databaseId": "f14bf3a7-083e-58b9-b101-f1eca74dea05",
+      "recordSha256": "b6794580a003b0aef1290058e1a18a376373a5541ab5bd4707152991900a07a4",
+      "variantSpecsSha256": "512e1c9e4ae2f4cc9a92c290a91c8ed85019d293c2e1a686106f1d9b2629053b"
+    },
+    "alageum-tm-standard-100": {
+      "photoId": "aemz-tm-series",
+      "databaseId": "05101038-e439-5d46-bd6b-cf6510b8b7e0",
+      "recordSha256": "6ba60d4803e4a109d0eb52c2349a9c730c7c15e0bc79acde3e5313f946f3fb97",
+      "variantSpecsSha256": "ee9a640e75338bf31c707e059c6521e91a24fccc7f2a79ce33670b1c8954d5f9"
+    },
+    "alageum-tm-standard-160": {
+      "photoId": "aemz-tm-series",
+      "databaseId": "329a362d-bc4f-5ce4-aa2c-e499b29498c5",
+      "recordSha256": "d2e9c545335b340c8621946109bb236df37b34ce45d956397308b5420fbbfe6a",
+      "variantSpecsSha256": "884c9c699b995e1393e39bae219812be482918759cf8a2ab0d4f07e353f6254a"
+    },
+    "alageum-tm-standard-250": {
+      "photoId": "aemz-tm-series",
+      "databaseId": "7e1c15d5-c835-5f8d-92ed-254819178153",
+      "recordSha256": "2ef84648fc141562dd70da3d15546232cfffefcc6468be62fd001c623120f9fe",
+      "variantSpecsSha256": "a19ca9768e265f261a05992dc89e6f4d791239295d4b100e938dcbf0c2e3932b"
+    },
+    "alageum-tm-standard-400": {
+      "photoId": "aemz-tm-series",
+      "databaseId": "f1f7e3e4-bd50-5f04-a1f1-b9cb6d87cddc",
+      "recordSha256": "82252053e496724232d102030f95bb9eaa8b0708eed9fb8aee22a02b306966fd",
+      "variantSpecsSha256": "7d8b2e8b9f49a1ae96d136a626b65d069145517dc90e5d0a49e428a6cc639322"
+    },
+    "alageum-tm-standard-630": {
+      "photoId": "aemz-tm-series",
+      "databaseId": "ad917f15-a0b0-5bb9-9e94-78f533f2e295",
+      "recordSha256": "1d7af4af38765e7679f7304fc98b8034dd1bdc21eb03ec912d36448bf60497cf",
+      "variantSpecsSha256": "6a8429c0e7383e1f9264c32e5ca19803a4c3a2045f8e3002584f5f9149092e7a"
+    },
+    "alageum-tm-standard-1000": {
+      "photoId": "aemz-tm-series",
+      "databaseId": "b0a97d43-7427-5350-9d8a-4e36fbd36500",
+      "recordSha256": "6ecea4a647b27376507ec5b3c92b9dbe3e3e5f14e97c0e675f52e6200be28004",
+      "variantSpecsSha256": "10f1d5160437ca787d663ed4ed9d13592b44d4947b999fd21b79b4be857e7999"
+    },
+    "alageum-tm-standard-1250": {
+      "photoId": "aemz-tm-series",
+      "databaseId": "6bc597d5-9db7-5b60-90d6-b97331f4c006",
+      "recordSha256": "95759481c8a026f96b1e1bdeab234dcce3f86599aa42aa57c57d531a8e679c59",
+      "variantSpecsSha256": "41c8c912b08f09177d00a778960044f1f1439ccd88cc8e5418a2ddc0c1a0aeb8"
+    },
+    "alageum-tm-standard-1600": {
+      "photoId": "aemz-tm-series",
+      "databaseId": "6f23b181-e0fb-536c-b554-e23f099133fa",
+      "recordSha256": "328e643a3d0628a63a450ad6753f72ec06630e67272962e8b3b982dd20aa435c",
+      "variantSpecsSha256": "a19c3097a046d3d86e03793bc896a4faf05b96683bf0a2dcccf6c13a47b4509b"
+    },
+    "alageum-tm-standard-2000": {
+      "photoId": "aemz-tm-series",
+      "databaseId": "3c7506af-3279-5b25-af8c-51e739aae0d4",
+      "recordSha256": "4fe6a1728e65e7d18b272949517c15d9a72a926ca216f9be8146f9ec31aee53e",
+      "variantSpecsSha256": "7307eeda34875377af96dfd63998b01a2156a2299cb7633639c59350c841473f"
+    },
+    "alageum-tm-standard-2500": {
+      "photoId": "aemz-tm-series",
+      "databaseId": "a71c38a3-450e-53c8-baa0-03b441bcce42",
+      "recordSha256": "f9eef550752ca5f14369ece0865c332cfad61357494ab290c5496b3a99c07b7e",
+      "variantSpecsSha256": "09d06a8eb9b3c3af13936e7f4899c2a9227ea6647867331b980176e8db72ff7b"
+    },
+    "tr2026-family-tmg-copper": {
+      "photoId": "distribution-transformers",
+      "databaseId": "eb009253-7bac-5076-82f4-7d805216017f",
+      "recordSha256": "c15f20f2161f62011e87eb52ea224643e8bf91a32397ce652b49c68097aff030",
+      "variantSpecsSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+    },
+    "alageum-tmg-copper-25": {
+      "photoId": "distribution-transformers",
+      "databaseId": "aca1d25f-b6f8-5843-8279-abf1dd2d89f4",
+      "recordSha256": "c4ba4c4d8a723f76542820c259c809cab0330d0c42e39d3b42a505e6c9e3418b",
+      "variantSpecsSha256": "6f946a9aec73218d361f7c9102c6420800e9d8d337a526fabfded6a740ceb777"
+    },
+    "alageum-tmg-copper-40": {
+      "photoId": "distribution-transformers",
+      "databaseId": "d127e91b-88d7-55a4-b190-42f7122d2a2b",
+      "recordSha256": "dd427e29b4682195942e715d1378d2af7c248923140f37d1f9a4dd3ba7f3b26b",
+      "variantSpecsSha256": "b493a9e8963a65a78f096369d6670c1998f176f04ae5ed1692b9d3c9c7b9e9a1"
+    },
+    "alageum-tmg-copper-63": {
+      "photoId": "distribution-transformers",
+      "databaseId": "6f309d57-df53-5032-9bb6-a846ccb9a166",
+      "recordSha256": "5cfb56f6a315ff96c82d795104323d81a0e72a1b264194128ff49a518badf70c",
+      "variantSpecsSha256": "562ada3b162c7c6ff1e0f2f7ecbe03c7d0e9c5dc623597e8512d62d4cbb20f61"
+    },
+    "alageum-tmg-copper-100": {
+      "photoId": "distribution-transformers",
+      "databaseId": "804b3ffb-cbed-5e6e-b201-1b83f1ef60ba",
+      "recordSha256": "d859733af15d57167352bbf037ed5c631903b78f972f97b587d8005802568ba5",
+      "variantSpecsSha256": "df5b84d29969b2adf825e93144dbe3fb4afe4dff58b9199494885449019d0426"
+    },
+    "alageum-tmg-copper-160": {
+      "photoId": "distribution-transformers",
+      "databaseId": "9387f64a-6779-5fb8-9555-f11f613095f6",
+      "recordSha256": "e45afae9e8cd75ecdc5039843abcc40c397f0c95994fe34e48189668252aab57",
+      "variantSpecsSha256": "0ef6b8e05ebb73a47722a528874b574e50ea116c7b846c4b3fd32828fcd1d966"
+    },
+    "alageum-tmg-copper-250": {
+      "photoId": "distribution-transformers",
+      "databaseId": "28cd57fd-77c6-5057-9452-4a83d54db37e",
+      "recordSha256": "19733eff6db2e82bc7cae1844b5db99737f87fd64244e1a6e43ce99fbd0fd099",
+      "variantSpecsSha256": "4668fb166a2f2103d10bd7d6440854d890e1d674917416830103f1b2a3544666"
+    },
+    "alageum-tmg-copper-1250": {
+      "photoId": "distribution-transformers",
+      "databaseId": "cca5ef07-ab4c-529b-86c6-23f047ac992d",
+      "recordSha256": "4087d729572133ee3b7cf8360f14cfb2bf082273d25f82b095407fb7546a6f1f",
+      "variantSpecsSha256": "e52aacb49ad249e717b26d227145543cee1e589bbd749a6307e0c6d52eb41c38"
+    },
+    "alageum-tmg-copper-1600": {
+      "photoId": "distribution-transformers",
+      "databaseId": "e857ab4e-9d49-5a56-9457-2baf4536f23c",
+      "recordSha256": "408b61d3d7e9d5cf4a4170d4991684c2304dbf0d1bae209191eebf5e90be90d1",
+      "variantSpecsSha256": "51c8208af5444cedd0f4a73b342b1a6822f60896178c5fa56730e7ff2021a1a3"
+    },
+    "alageum-tmg-copper-2000": {
+      "photoId": "distribution-transformers",
+      "databaseId": "5ccb78e0-53b7-5505-a6dd-840a9eeb9360",
+      "recordSha256": "cf5bbbd5441fe5dcc8371df9fd7fff717e7f52df70e759853028e5ca158b40c1",
+      "variantSpecsSha256": "2d13030799f1ba08afd841fa6084f0c642a325696ac5abe721d4feabdb4f31be"
+    },
+    "tr2026-family-tmg-switch-6-10": {
+      "photoId": "distribution-transformers",
+      "databaseId": "de72edff-ed2b-5594-b46b-a9eeb480bb43",
+      "recordSha256": "979b2af39b98bce6831d7413c91a19d1e9d1712ed998265d7ad3a270e6b0218e",
+      "variantSpecsSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+    },
+    "alageum-tmg-switch-6-10-25": {
+      "photoId": "distribution-transformers",
+      "databaseId": "17cf610d-5f1b-588a-a6a4-f7cdad468638",
+      "recordSha256": "dae17f00349d9bd8c63de95df30b60cb881640f9850732264c1ac747fbe4e2ae",
+      "variantSpecsSha256": "8b2f1efe94e8677846e4f4cce326ee3228b21a862b40c7ed667efc7f4f16b7df"
+    },
+    "alageum-tmg-switch-6-10-40": {
+      "photoId": "distribution-transformers",
+      "databaseId": "190faa44-b9fd-5379-bddf-0b173b380a62",
+      "recordSha256": "e4476a8e26c95ee07f97d00e92c298729114f5ef44ee2d87b860ebbd6861ef17",
+      "variantSpecsSha256": "2dcd44431529af9391db7e27479e5d5a643a9518f0534077e280bacae8b644ad"
+    },
+    "alageum-tmg-switch-6-10-63": {
+      "photoId": "distribution-transformers",
+      "databaseId": "cdd574a2-cf7b-5941-834f-244b228d539a",
+      "recordSha256": "c567f70545a639ad6f12da2849291d4a7b5691eda835e4881ded61e9bb1bb729",
+      "variantSpecsSha256": "4e9646410730226438f34591b0569d8bb54b82689442beaa66f39b65c9135f1a"
+    },
+    "alageum-tmg-switch-6-10-100": {
+      "photoId": "distribution-transformers",
+      "databaseId": "6206e2bd-db12-5626-b3cf-f3866f94e795",
+      "recordSha256": "5e9a271248d538884e860ef444422223f0365403d749d9a2ebc5ff9a804aa306",
+      "variantSpecsSha256": "883623affb2e8efb02351f410ea98b848623bd95ca86df31e36c11fa894c04b8"
+    },
+    "alageum-tmg-switch-6-10-160": {
+      "photoId": "distribution-transformers",
+      "databaseId": "9f933ba0-63ff-53e1-a5c7-e61734c4d38f",
+      "recordSha256": "246e47ff3c04468f751b38de54748355b0e4c1b93928e8eb0a3b0aca69807fb5",
+      "variantSpecsSha256": "b0b1bffc5f1d32d8f840e8e6fa9f56854f08ad17d3608c44b50d39d77b93019e"
+    },
+    "alageum-tmg-switch-6-10-250": {
+      "photoId": "distribution-transformers",
+      "databaseId": "22113c0d-5574-52cd-9996-6071e30b86d3",
+      "recordSha256": "0428d53f2426748b5c54a681ca76b387a0796960f3a3af7e31ccf0d9b7b904c8",
+      "variantSpecsSha256": "a8f5bd2ebccc7a1b09e41bec88fbe685fbe6c37996803ad47e4345313190925c"
+    },
+    "alageum-tmg-switch-6-10-1250": {
+      "photoId": "distribution-transformers",
+      "databaseId": "395273c4-f20b-5f9e-a68e-a55307892c5e",
+      "recordSha256": "3295190da16dfd6ea14ffd18c8f47e1e6b6085d29c1e9cee085c95d64568db0e",
+      "variantSpecsSha256": "d9a63ffdb007bd9a6faa076c6a1d7cdd432972addb4999470c20cd2fbf10f1ad"
+    },
+    "alageum-tmg-switch-6-10-1600": {
+      "photoId": "distribution-transformers",
+      "databaseId": "0daa2c56-14f0-5ec9-aaf1-eb4939dcccc7",
+      "recordSha256": "2d1c7664338a4b95d83543b6c26821ce589d8715cdff86790138f5dcf66cf6af",
+      "variantSpecsSha256": "e477e936f459d9de6a896a4d2fea41b443f4e506224b86419590a774e59fb24b"
+    },
+    "alageum-tmg-switch-6-10-2000": {
+      "photoId": "distribution-transformers",
+      "databaseId": "8fc61430-0f2a-50b2-b787-bbe30034a441",
+      "recordSha256": "1dcacaab982b6b5bfd172e2dea00bb1242300f666415fc3cf684c017c5e52e3b",
+      "variantSpecsSha256": "182d0c45c4d4a23f1810cc542fb2dda8d122abff915c2c696e7537c297d8bc76"
+    },
+    "tr2026-family-tsl-loss-c": {
+      "photoId": "dry-transformers",
+      "databaseId": "24b02d9b-df19-520c-962b-137818734f51",
+      "recordSha256": "b7e9e3e65ff4de88e7a062967456c3e5b7cc4520cff323dc9285789e94de8b6d",
+      "variantSpecsSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+    },
+    "alageum-2026-tsl-c-25": {
+      "photoId": "dry-transformers",
+      "databaseId": "bde520ff-6168-5cc0-a13f-b22460bde27d",
+      "recordSha256": "a504364d0487a78936978b2067732f7054d0483a93da27ff5b789543289fb043",
+      "variantSpecsSha256": "6095174d0ccbac32bafe02525ad4a11a58d0809058b8d190fb5c6bc46dd7f49f"
+    },
+    "alageum-2026-tsl-c-40": {
+      "photoId": "dry-transformers",
+      "databaseId": "60dd96fb-487c-514e-b911-233ad79efd82",
+      "recordSha256": "845fe971374d384591cbdceb53623cb08b6050bbf19cfa983d8b51fae974957d",
+      "variantSpecsSha256": "5c4dc91ec8f6d334a0c327524086843254a93a4ac96685953098d0306f23b1e5"
+    },
+    "alageum-2026-tsl-c-63": {
+      "photoId": "dry-transformers",
+      "databaseId": "2260df65-2c2e-5fd1-afe7-433a999fbed8",
+      "recordSha256": "5f4dd66e7121b1be85712cfe89a82cefd7e85c5660f8897b6671076d90bb0a89",
+      "variantSpecsSha256": "3914abc7aa6e1213645bcd9182f9360beb1f23460762b888e37572fd4f1a4c21"
+    },
+    "alageum-2026-tsl-c-100": {
+      "photoId": "dry-transformers",
+      "databaseId": "32e40f4e-f37b-5a87-bd45-6d8da7a75b23",
+      "recordSha256": "fae0e5a4d0128271e0a39e1e7438cbf03e8c4fd595b08d646a2af559dac4b303",
+      "variantSpecsSha256": "91444246c3e776c6a388f8edee7d030f431325e7ce4d7de3d343b6baff599958"
+    },
+    "alageum-2026-tsl-c-160": {
+      "photoId": "dry-transformers",
+      "databaseId": "e9452421-4dd7-584c-a204-665b7b66618e",
+      "recordSha256": "87aed603e7c0bc70d74487c3736ee7b6898913e313e1559cf0c63056cdedd80d",
+      "variantSpecsSha256": "14732dbbdfb64d466edc96c46b4dd4a48b0a6ca9012fee1b8aa440392b5267dc"
+    },
+    "alageum-2026-tsl-c-250": {
+      "photoId": "dry-transformers",
+      "databaseId": "164ca42f-8deb-5714-890a-820d9fab6540",
+      "recordSha256": "1994085486d1a1bf76a17b03c2d7d977286c3fb59e8a747158b65249e4c81454",
+      "variantSpecsSha256": "5ff6654d9283038f65fc539f7d5d62e54d0949b3288ee38d55d88526431bb0dd"
+    },
+    "alageum-2026-tsl-c-400": {
+      "photoId": "dry-transformers",
+      "databaseId": "f2be7412-03ea-53d7-a3b4-fe6242197fe4",
+      "recordSha256": "1afc15d671ff0bf19868be6ab9b8dd4da30089846c999b6381f3118a4664ce0d",
+      "variantSpecsSha256": "59926554cff3bc5fd2b9a35f4962a4e6526da4afc5574bdf315ec8616672e3a7"
+    },
+    "alageum-2026-tsl-c-1000": {
+      "photoId": "dry-transformers",
+      "databaseId": "cd567672-19e0-50d7-9b6c-d6bf81bfd5ea",
+      "recordSha256": "2b845a2e5433e4110dc3e43c03f94e3d54295886e2f8f9d7f9bdb34017d14b8f",
+      "variantSpecsSha256": "eddf8464e6df168d311ce369f83e6522b229d969d80961649506869416a6c395"
+    },
+    "alageum-2026-tsl-c-1250": {
+      "photoId": "dry-transformers",
+      "databaseId": "495efcf3-16a0-5eee-b8ff-60e7dccbb032",
+      "recordSha256": "7f29726391717d1dee308b6f1035f45e130adac006e25b856306ec60504efe50",
+      "variantSpecsSha256": "678377980adb3de08dad11b44f95049064396f722275cd452372a608c61af28f"
+    },
+    "alageum-2026-tsl-c-2000": {
+      "photoId": "dry-transformers",
+      "databaseId": "e16f200a-eb2b-5687-88fa-4f08ba4e83ad",
+      "recordSha256": "7cce49c21216fc805b49a79aee8d3505421e8b8c61c100d8d0650da4714224fe",
+      "variantSpecsSha256": "f97ce5729dfdbcd28db8cc3874fc998b53a64a23bf5c65efeb6f0330dadacbf9"
+    },
+    "alageum-2026-tsl-c-2500": {
+      "photoId": "dry-transformers",
+      "databaseId": "8aaeb2bb-9a65-58c1-8d8f-1ed921b94d67",
+      "recordSha256": "205c8f56f9dea6c3b9a2272a8c187383d2f558ca40ee591d08048c9f6c31e0ca",
+      "variantSpecsSha256": "8b303736b58d11079874cb5d98b1bb0dd643bf98e4740337628fb52c8825e4c4"
+    },
+    "alageum-2026-tsl-c-3150": {
+      "photoId": "dry-transformers",
+      "databaseId": "0b4500df-16c5-523c-be2b-48c98f710924",
+      "recordSha256": "6b4b557a678bde2c857632db0ffbbffce9fa69479b925d313988b2b02d8ab992",
+      "variantSpecsSha256": "82137fc6b2b3eba6c3205d57f026ef997cb6c7ec478028ce54adf039608a88b5"
+    },
+    "alageum-2026-tsl-c-4000": {
+      "photoId": "dry-transformers",
+      "databaseId": "5c9792f9-a59d-534e-9f7f-bae295fce198",
+      "recordSha256": "f717a22a0985d508c2b8780f1b73485682a0384e4480f2274428b1fa412c5de2",
+      "variantSpecsSha256": "44678244af12395b674e9857aaab15841d1916cd3fc5d59cd772d533c2ca864c"
+    },
+    "tr2026-family-tsl-loss-a": {
+      "photoId": "dry-transformers",
+      "databaseId": "80676ed4-689f-5329-8fed-ee76cb79a352",
+      "recordSha256": "b365eb908ba6285de26cf945098e17b08af205c24a745a4c62f9c36d20c1dab9",
+      "variantSpecsSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+    },
+    "alageum-2026-tsl-a-63": {
+      "photoId": "dry-transformers",
+      "databaseId": "30bf0582-5b0d-5df5-b5f4-81559c209c1c",
+      "recordSha256": "17c2793c9decff91a17b1d72d49ce036d8075a4284bbad58c653d5bc9683c3ed",
+      "variantSpecsSha256": "6be15abb8d548432d28e388f677de4654bfe6e2153430c050cb736a0d776b9f3"
+    },
+    "alageum-2026-tsl-a-100": {
+      "photoId": "dry-transformers",
+      "databaseId": "5aee36bf-474e-5915-baf7-0d5cb0afa172",
+      "recordSha256": "aaec0acc7124e87bb1df11a97b04350fa6361c5b27c608f2b7c57def44cd9a84",
+      "variantSpecsSha256": "210012551a41d6584121e39ea91cc7fde8afe2fc9680deb5e8c038f34ddb2fbe"
+    },
+    "alageum-2026-tsl-a-160": {
+      "photoId": "dry-transformers",
+      "databaseId": "8292282c-eb34-58fb-9e18-853445a5573f",
+      "recordSha256": "6871d0ef22ce2d90269524526aa0a67123061faa18d524d2292f1fd5293b1129",
+      "variantSpecsSha256": "cd648eec8c1c6254a12e6f3a2bc442c33a776d9d2a9ea2e9364245c120ed4621"
+    },
+    "alageum-2026-tsl-a-250": {
+      "photoId": "dry-transformers",
+      "databaseId": "e2a74a2a-029e-566e-8c2c-7f65f0d5a90f",
+      "recordSha256": "74f8c49d01d676166bba39c364e23e33f6a74d573fc6a0bcf5c9412f23b25f6d",
+      "variantSpecsSha256": "ea7da4cb4492f94d926c6a261b2eb926e788f8a8c6878457fd3f9bb7de7345a0"
+    },
+    "alageum-2026-tsl-a-400": {
+      "photoId": "dry-transformers",
+      "databaseId": "90faaeb9-e0bc-5c3b-9f76-7408fb8d578b",
+      "recordSha256": "710eb2421c71ab644953bccda7baca53a9368cfc9656e7378cbd3d5f8812bd59",
+      "variantSpecsSha256": "3c7314da7cc2c66a56f6657216358305b8c4b6e49a227062a06254e6bd0372d3"
+    },
+    "alageum-2026-tsl-a-1000": {
+      "photoId": "dry-transformers",
+      "databaseId": "98363e5e-0636-51ce-a8ad-40a6d72354b6",
+      "recordSha256": "6d7160338f657d99c6b9907567a52e2bfd317200e5e0a8c5aa47947d3dc0bc5b",
+      "variantSpecsSha256": "670d15ac67a6fcf7eca38c29be1b48fd991f7b85aeeafcce2e0dc5717235295a"
+    },
+    "alageum-2026-tsl-a-1250": {
+      "photoId": "dry-transformers",
+      "databaseId": "61b1c848-5426-50d2-974d-0681f04d3419",
+      "recordSha256": "a9bf114c905d57897b9d268550170b5793ebc5173425aaea49100c57191ffca0",
+      "variantSpecsSha256": "39870c60573a86d097d6e9062f9e4c5bceaf1d8e35eab00b1eb7816287858c22"
+    },
+    "alageum-2026-tsl-a-2000": {
+      "photoId": "dry-transformers",
+      "databaseId": "4fb15549-1ec6-5349-b03f-8ca8eb7e1c1b",
+      "recordSha256": "69af87008ea90cb2b9cfc7b4071e63948fef03522de920d224be2f250933be2a",
+      "variantSpecsSha256": "3cb9ee19562fc49a756052391076196d90618252d762c303f52b514a482cff5a"
+    },
+    "alageum-2026-tsl-a-2500": {
+      "photoId": "dry-transformers",
+      "databaseId": "7840e8e3-ae20-57b7-aa7b-1897a807c2e0",
+      "recordSha256": "1c0585e0e5b1c4602a287650ea29f4478c157ee66116910b0f373bd043bccdd2",
+      "variantSpecsSha256": "ad83392e982752e97dc6a8713dfc41f7f36f907cae6765beda306f16c88ee8e5"
+    },
+    "alageum-aodctn-167000-500-167000-50000-kva-9ba56f4a": {
+      "photoId": "aodctn-167000",
+      "databaseId": "f2f0dc49-003f-5350-b045-c8872b5803c3",
+      "recordSha256": "df244eb1f4309961ae73406ea0c88bbebba3beba2e3f44ce42ad3f8c5298ae21",
+      "variantSpecsSha256": "cbf41363d31a4a15a85d53c18a5574cb860cbfc82e58ab89e9fb34575e82dca8"
+    },
+    "alageum-aodctn-167000-500-167000-67000-kva-9c1ecac6": {
+      "photoId": "aodctn-167000",
+      "databaseId": "70f070b3-1212-537f-b1de-c21fd5ec728a",
+      "recordSha256": "ce13f94fc1c12b89bf5354f9bc6b9e5d69c12f9f0bdb10e0c3b00a709dba9077",
+      "variantSpecsSha256": "aa38373f62a1f9bc105fc725035504ff42f47e2d1bc3deb6588fbef0715857b7"
+    },
+    "alageum-aodctn-167000-500-167000-83000-kva-0928bbe8": {
+      "photoId": "aodctn-167000",
+      "databaseId": "9c60fa41-9f10-53b0-98af-41aa00262e48",
+      "recordSha256": "48b7bc6dd1199eeb1b44f67b6f45e606e30aaefcddc3a090483389ac5253a594",
+      "variantSpecsSha256": "256abaf5a43335bedc48ebd95e7b41d000837a93097cfe93aa4962469c04e6a4"
+    },
+    "alageum-aodctn-167000-500-167000-33000-kva-586755a3": {
+      "photoId": "aodctn-167000",
+      "databaseId": "34830f9e-586d-54a9-ab08-c47ec0904679",
+      "recordSha256": "7968c8563dc031110af23f526695745b48c74f552133bda05543e14f45e7bd27",
+      "variantSpecsSha256": "ea0b47b8e25086ae8430a85c544fb82106a78efa71f8cbaf7a3181766b9922a0"
+    },
+    "alageum-2026-tsl-a-1600": {
+      "photoId": "dry-transformers",
+      "databaseId": "83d92428-3821-5ca0-89e7-41cef73b9df2",
+      "recordSha256": "c549fa70b524391abf3d9f0dbd6dce0e28538ca4e328982de9aa8553357a70be",
+      "variantSpecsSha256": "2d0df7ecb44c0fd9904318c914b6600b79383c60a9007575ab5148a93ccf58e6"
+    },
+    "alageum-2026-tsl-a-630": {
+      "photoId": "dry-transformers",
+      "databaseId": "8fd77a66-60f0-5bfe-a314-48ca99bfcede",
+      "recordSha256": "780dbf2376b6129a96b5f4846461f7c4c54261370f46238bf57624363f45bcbe",
+      "variantSpecsSha256": "9e0e70335e54c09f6627c489b46be3f7c810d9aa7499d40ba55249f3a785a809"
+    },
+    "alageum-2026-tsl-c-1600": {
+      "photoId": "dry-transformers",
+      "databaseId": "653a65d1-4ad0-545f-ae2c-fd745f24b3e0",
+      "recordSha256": "a7f9d9611a4d7b12bc6e556d74499b5e7b494abd38562cde3295971904a6cc20",
+      "variantSpecsSha256": "5d8b7168df8c13eaa52d8a3bc5138ddb419e69b35832e580a103f226e777c872"
+    },
+    "alageum-2026-tsl-c-630": {
+      "photoId": "dry-transformers",
+      "databaseId": "fb80f98f-39e1-5da7-97c8-ea388ddf6720",
+      "recordSha256": "1037bad9d47697c2b2cfede41cd0506c9fb7c25f7f8adcaa0c90a4732fb686d9",
+      "variantSpecsSha256": "382fa45639e4aefeed6210b95eb3e6cd3cbb4ed43a7ad341b3458c9b5c23e444"
+    },
+    "alageum-tmg-copper-1000": {
+      "photoId": "distribution-transformers",
+      "databaseId": "bf6f6b5f-698f-5cda-b315-f31dec6b9b8e",
+      "recordSha256": "776d4af25674d0a4c50ee608ab43e8d7eeef0af6c0797500c44ed09953c137bb",
+      "variantSpecsSha256": "59960b5ab2d73583f482c736a2058252c0b4db64e8ac015301941da45fa31b22"
+    },
+    "alageum-tmg-copper-2500": {
+      "photoId": "distribution-transformers",
+      "databaseId": "f8067eab-dfe6-5a94-ac90-22280388efca",
+      "recordSha256": "36c75586ca0d75cc50fe90abdd5dbded2d70a3e0ea79b4b72703589f4d80fd33",
+      "variantSpecsSha256": "694bcbd4402598176fd341a61ec65b8def157f82f6123c1ecd8b310c306adb35"
+    },
+    "alageum-tmg-copper-400": {
+      "photoId": "distribution-transformers",
+      "databaseId": "9bc3c214-f14d-586c-8707-6e7e7ccfabbd",
+      "recordSha256": "9d636c85fac290d88e0e135462b4572ac221d0ab6cfc4ed1764bdf56c4c84b5e",
+      "variantSpecsSha256": "a3b4a790ccbf71d0361a843cc483abb6149bdaf87d020751b169194bb4c67e2b"
+    },
+    "alageum-tmg-copper-630": {
+      "photoId": "distribution-transformers",
+      "databaseId": "9c631c18-0db4-58a4-9263-56be9706282b",
+      "recordSha256": "8ce63a6610b481c568358616cd2a3f924ed16d3ffce6c83cb5f002d63c75afb4",
+      "variantSpecsSha256": "310d09b74c9356b2f9129e254d10e82b82816d335d34c802e8231644254d40c1"
+    },
+    "alageum-tmg-switch-6-10-1000": {
+      "photoId": "distribution-transformers",
+      "databaseId": "093bab41-57dd-59f3-9c89-e23ca2f16e9e",
+      "recordSha256": "8b9edd651c01af403df58c9bf08517c169f12f8317a3c727cc0222f19f7f5bb1",
+      "variantSpecsSha256": "d26db4fd5e26c28618ea2295855a2fac6cec10de5e49c5fba728b1378f99f57d"
+    },
+    "alageum-tmg-switch-6-10-2500": {
+      "photoId": "distribution-transformers",
+      "databaseId": "382c4f80-4953-5df9-82aa-d434cd4ec503",
+      "recordSha256": "cea9b08e0d3a7ab1ed7ec9d7d9d81a412b2d40dc0dd1932d38858348dd2bf59b",
+      "variantSpecsSha256": "8c781dd7d96048b0525606ce61374cee3c12d65f3aa90e662fb2c6070b5bca99"
+    },
+    "alageum-tmg-switch-6-10-400": {
+      "photoId": "distribution-transformers",
+      "databaseId": "e1131f33-afef-50af-9959-5638e30024b7",
+      "recordSha256": "74c515d1fe76a23030fe9f954fb5a9a0e5ef5f42cd87cfcc86319e89032b621e",
+      "variantSpecsSha256": "fe4f93536cd608afb06e4149375d63ea8295d144456e47608f530a23d0c41ed9"
+    },
+    "alageum-tmg-switch-6-10-630": {
+      "photoId": "distribution-transformers",
+      "databaseId": "0e6d13db-94c7-5de9-995e-bce02ade76c0",
+      "recordSha256": "8ccb190e5753627501c4b03b0cd7b1e4ce642651cf60afa8f3645443d49877e1",
+      "variantSpecsSha256": "ebe776cb36d6574846121edfba051fc374b5475d75f8cc0138974d61229e101f"
+    }
+  }
+}

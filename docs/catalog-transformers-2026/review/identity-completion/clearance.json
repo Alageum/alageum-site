@@ -1,0 +1,254 @@
+{
+  "format": "alageum-identity-completion-clearance-v1",
+  "status": "approved-bounded-identity-representation",
+  "reviewedAt": "2026-10-06",
+  "baselineCommit": "c7a17f62645f86fd51ee7ae2605e741d1b4e01df",
+  "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+  "inventorySha256": "c3948d7152a6130aa4672b9f6d3d5a8f08144b5965df7bebabca067ba5bc8438",
+  "approvedScope": {
+    "baselineRecordCount": 823,
+    "executionAdmissions": 20,
+    "aliases": 2,
+    "sourceComparisons": 10,
+    "newFamilyCards": 0,
+    "resultRecordCount": 843
+  },
+  "evidenceSha256": {
+    "held-source-records.json": "fc25f05ef30d0398a6eb11c0db4e6f9969ebcc679060862237708250d6ef1096",
+    "overlap-findings.json": "2211556b81a4eda5b3c2fee9de1375e21bf8a76bbbd691ae6e647373ef56031e",
+    "research-recommendations.json": "7c6835de1f7d3594069338fc9d0ca8335aa9913ea4536b6d16b145497a34a104",
+    "legacy-dimension-unit-evidence.json": "ee0eaad34e04b27d1867bc70bca2321344b1cf67452a2c7559d680c9290f5e82"
+  },
+  "actions": [
+    {
+      "sourceRecordId": "alageum-2026-ntmi-10",
+      "mode": "alias",
+      "canonicalId": "ntmi-10",
+      "legacyId": "ntmi-10",
+      "relation": "same_catalog_model"
+    },
+    {
+      "sourceRecordId": "alageum-2026-ntmi-6",
+      "mode": "alias",
+      "canonicalId": "ntmi-6",
+      "legacyId": "ntmi-6",
+      "relation": "same_catalog_model"
+    },
+    {
+      "sourceRecordId": "alageum-2026-thermal-cabinet",
+      "mode": "source-comparison",
+      "canonicalId": "cat-shtz",
+      "legacyId": "cat-shtz",
+      "relation": "related_thermal_protection_accessory"
+    },
+    {
+      "sourceRecordId": "alageum-2026-tmeg-250",
+      "mode": "source-comparison",
+      "canonicalId": "tmeg-250",
+      "legacyId": "tmeg-250",
+      "relation": "same_designation_lineage_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-a-1600",
+      "mode": "execution",
+      "canonicalId": "alageum-2026-tsl-a-1600",
+      "legacyId": "tsl-1600",
+      "relation": "execution_candidate_of_legacy_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-a-630",
+      "mode": "execution",
+      "canonicalId": "alageum-2026-tsl-a-630",
+      "legacyId": "tsl-630",
+      "relation": "execution_candidate_of_legacy_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-1600",
+      "mode": "execution",
+      "canonicalId": "alageum-2026-tsl-c-1600",
+      "legacyId": "tsl-1600",
+      "relation": "execution_candidate_of_legacy_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-630",
+      "mode": "execution",
+      "canonicalId": "alageum-2026-tsl-c-630",
+      "legacyId": "tsl-630",
+      "relation": "execution_candidate_of_legacy_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-01-1000",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-01-1000",
+      "legacyId": "tmg-1000",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-01-2500",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-01-2500",
+      "legacyId": "tmg-2500",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-01-400",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-01-400",
+      "legacyId": "tmg-400",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-01-630",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-01-630",
+      "legacyId": "tmg-630",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-1000",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-copper-1000",
+      "legacyId": "tmg-1000",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-2500",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-copper-2500",
+      "legacyId": "tmg-2500",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-400",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-copper-400",
+      "legacyId": "tmg-400",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-630",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-copper-630",
+      "legacyId": "tmg-630",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-standard-1000",
+      "mode": "source-comparison",
+      "canonicalId": "tmg-1000",
+      "legacyId": "tmg-1000",
+      "relation": "same_designation_lineage_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-standard-2500",
+      "mode": "source-comparison",
+      "canonicalId": "tmg-2500",
+      "legacyId": "tmg-2500",
+      "relation": "same_designation_lineage_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-standard-400",
+      "mode": "source-comparison",
+      "canonicalId": "tmg-400",
+      "legacyId": "tmg-400",
+      "relation": "same_designation_lineage_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-standard-630",
+      "mode": "source-comparison",
+      "canonicalId": "tmg-630",
+      "legacyId": "tmg-630",
+      "relation": "same_designation_lineage_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-switch-6-10-1000",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-switch-6-10-1000",
+      "legacyId": "tmg-1000",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-switch-6-10-2500",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-switch-6-10-2500",
+      "legacyId": "tmg-2500",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-switch-6-10-400",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-switch-6-10-400",
+      "legacyId": "tmg-400",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-switch-6-10-630",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-switch-6-10-630",
+      "legacyId": "tmg-630",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-x1k1-1000",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-x1k1-1000",
+      "legacyId": "tmg-1000",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-x1k1-2500",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-x1k1-2500",
+      "legacyId": "tmg-2500",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-x1k1-400",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-x1k1-400",
+      "legacyId": "tmg-400",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-x1k1-630",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-x1k1-630",
+      "legacyId": "tmg-630",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmgf-1600",
+      "mode": "source-comparison",
+      "canonicalId": "tmgf-1600",
+      "legacyId": "tmgf-1600",
+      "relation": "same_designation_lineage_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmgf-630",
+      "mode": "source-comparison",
+      "canonicalId": "tmgf-630",
+      "legacyId": "tmgf-630",
+      "relation": "same_designation_lineage_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmgs-pole-160",
+      "mode": "source-comparison",
+      "canonicalId": "tmgs-160",
+      "legacyId": "tmgs-160",
+      "relation": "same_designation_lineage_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmgs-pole-63",
+      "mode": "source-comparison",
+      "canonicalId": "tmgs-63",
+      "legacyId": "tmgs-63",
+      "relation": "same_designation_lineage_not_equivalent"
+    }
+  ],
+  "limitations": [
+    "Read-only aliases; existing database records and historical snapshots are never rewritten.",
+    "Ten source conflicts are represented on existing reference pages, not as duplicate product cards.",
+    "Raw source units remain unchanged; measurement-transformer generic kVA power remains null.",
+    "New source entries do not inherit geometry or icon authority; separate asset review is required."
+  ]
+}

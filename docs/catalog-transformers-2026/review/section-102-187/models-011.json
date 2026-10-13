@@ -1,0 +1,2123 @@
+[
+  {
+    "id": "alageum-tdn-10000-10-11-96820c70",
+    "proposedStableId": "alageum-tdn-10000-10-11-96820c70",
+    "familyId": "tdn-10-11",
+    "designation": "ТДН-10000/10/11",
+    "name": "ТДН-10000/10/11",
+    "sku": "ТДН-10000/10/11",
+    "execution": "РПН ±5х1,5%; У1(УХЛ1)",
+    "sourcePages": [
+      157,
+      158
+    ],
+    "sourceRow": {
+      "pdfPage": 157,
+      "printedPage": 157,
+      "designation": "ТДН-10000/10/11",
+      "variant": null,
+      "tableModelIndexOnPage": 1
+    },
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "10000",
+        "unit": "кВА",
+        "page": 157
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "10",
+        "unit": "кВ",
+        "page": 157
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "11",
+        "unit": "кВ",
+        "page": 157
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Д/Д-0",
+        "unit": null,
+        "page": 157
+      },
+      {
+        "label": "Потери Х.Х.",
+        "value": "8,0",
+        "unit": "кВт",
+        "page": 157
+      },
+      {
+        "label": "Потери К.З.",
+        "value": "70",
+        "unit": "кВт",
+        "page": 157
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "8",
+        "unit": "%",
+        "page": 157
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,15",
+        "unit": "%",
+        "page": 157
+      },
+      {
+        "label": "Полная масса",
+        "value": "20750",
+        "unit": "кг",
+        "page": 157
+      },
+      {
+        "label": "Масса масла",
+        "value": "7660",
+        "unit": "кг",
+        "page": 157
+      },
+      {
+        "label": "Транспортная масса",
+        "value": "17750",
+        "unit": "кг",
+        "page": 157
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": null,
+        "page": 157
+      },
+      {
+        "label": "Количество обмоток",
+        "value": "2",
+        "unit": null,
+        "page": 157
+      },
+      {
+        "label": "Охлаждение",
+        "value": "естественная циркуляция масла и принудительная циркуляция воздуха",
+        "unit": null,
+        "page": 157
+      },
+      {
+        "label": "РПН со стороны ВН",
+        "value": "±5х1,5%",
+        "unit": null,
+        "page": 157
+      }
+    ],
+    "manufacturer": null,
+    "manufacturerEvidencePages": [],
+    "candidateOldIds": [],
+    "recordType": "model",
+    "uncertainties": [],
+    "drawingPages": [
+      158
+    ],
+    "assetFamilyId": "drawing-tdn158",
+    "configurationLabel": null,
+    "brand": "Alageum Electric",
+    "productKind": "transformer",
+    "sourceDocument": "ALAGEUM transformer technical catalog, 2026-03-18",
+    "sourceEvidence": [
+      {
+        "pdfPage": 157,
+        "printedPage": 157,
+        "localAssetPath": "alageum-catalog-assets-next/frontend/public/catalog-source/transformers-2026/page-157.webp",
+        "appAssetPath": "/catalog-source/transformers-2026/page-157.webp"
+      },
+      {
+        "pdfPage": 158,
+        "printedPage": 158,
+        "localAssetPath": "alageum-catalog-assets-next/frontend/public/catalog-source/transformers-2026/page-158.webp",
+        "appAssetPath": "/catalog-source/transformers-2026/page-158.webp"
+      }
+    ],
+    "technicalSpecCoverage": "All tabulated electrical characteristics and readable tabulated dimensional/mass fields; untranscribed numeric drawing callouts remain available in source drawing assets.",
+    "rawSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "10000",
+        "unit": "кВА",
+        "page": 157
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "10",
+        "unit": "кВ",
+        "page": 157
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "11",
+        "unit": "кВ",
+        "page": 157
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Д/Д-0",
+        "unit": null,
+        "page": 157
+      },
+      {
+        "label": "Потери Х.Х.",
+        "value": "8,0",
+        "unit": "кВт",
+        "page": 157
+      },
+      {
+        "label": "Потери К.З.",
+        "value": "70",
+        "unit": "кВт",
+        "page": 157
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "8",
+        "unit": "%",
+        "page": 157
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,15",
+        "unit": "%",
+        "page": 157
+      },
+      {
+        "label": "Полная масса",
+        "value": "20750",
+        "unit": "кг",
+        "page": 157
+      },
+      {
+        "label": "Масса масла",
+        "value": "7660",
+        "unit": "кг",
+        "page": 157
+      },
+      {
+        "label": "Транспортная масса",
+        "value": "17750",
+        "unit": "кг",
+        "page": 157
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": null,
+        "page": 157
+      },
+      {
+        "label": "Количество обмоток",
+        "value": "2",
+        "unit": null,
+        "page": 157
+      },
+      {
+        "label": "Охлаждение",
+        "value": "естественная циркуляция масла и принудительная циркуляция воздуха",
+        "unit": null,
+        "page": 157
+      },
+      {
+        "label": "РПН со стороны ВН",
+        "value": "±5х1,5%",
+        "unit": null,
+        "page": 157
+      }
+    ],
+    "manufacturerStatus": "unknown within assigned pages; Alageum logo alone is not factory attribution"
+  },
+  {
+    "id": "alageum-tds-10000-10-5-3-15-c5a29a24",
+    "proposedStableId": "alageum-tds-10000-10-5-3-15-c5a29a24",
+    "familyId": "tds-10000",
+    "designation": "ТДС-10000/10,5/3,15",
+    "name": "ТДС-10000/10,5/3,15",
+    "sku": "ТДС-10000/10,5/3,15",
+    "execution": "ПБВ ±2х2,5%; У1(УХЛ1)",
+    "sourcePages": [
+      159,
+      160
+    ],
+    "sourceRow": {
+      "pdfPage": 159,
+      "printedPage": 159,
+      "designation": "ТДС-10000/10,5/3,15",
+      "variant": null,
+      "tableModelIndexOnPage": 1
+    },
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "10000",
+        "unit": "кВА",
+        "page": 159
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "10,5",
+        "unit": "кВ",
+        "page": 159
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "3,15",
+        "unit": "кВ",
+        "page": 159
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-11",
+        "unit": null,
+        "page": 159
+      },
+      {
+        "label": "Потери Х.Х.",
+        "value": "10,5",
+        "unit": "Вт",
+        "page": 159
+      },
+      {
+        "label": "Потери К.З.",
+        "value": "60",
+        "unit": "Вт",
+        "page": 159
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "14",
+        "unit": "%",
+        "page": 159
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,15",
+        "unit": "%",
+        "page": 159
+      },
+      {
+        "label": "L",
+        "value": "4140",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "B",
+        "value": "3170",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "H",
+        "value": "4180",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "Полная масса",
+        "value": "20400",
+        "unit": "кг",
+        "page": 159
+      },
+      {
+        "label": "Масса масла",
+        "value": "7200",
+        "unit": "кг",
+        "page": 159
+      },
+      {
+        "label": "Транспортная масса",
+        "value": "17400",
+        "unit": "кг",
+        "page": 159
+      },
+      {
+        "label": "H1",
+        "value": "2615",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "H2",
+        "value": "275",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "H3",
+        "value": "690",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "M",
+        "value": "440",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "N",
+        "value": "510",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "K",
+        "value": "260",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "A",
+        "value": "1524",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "b",
+        "value": "365",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "b1",
+        "value": "365",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": null,
+        "page": 159
+      },
+      {
+        "label": "Количество обмоток",
+        "value": "2",
+        "unit": null,
+        "page": 159
+      },
+      {
+        "label": "Охлаждение",
+        "value": "естественная циркуляция масла и принудительная циркуляция воздуха",
+        "unit": null,
+        "page": 159
+      },
+      {
+        "label": "ПБВ со стороны ВН",
+        "value": "±2х2,5%",
+        "unit": null,
+        "page": 159
+      }
+    ],
+    "manufacturer": null,
+    "manufacturerEvidencePages": [],
+    "candidateOldIds": [],
+    "recordType": "model",
+    "uncertainties": [
+      "Drawing title on page 160 is ТДС-10000-6,3; broad family geometry only, not exact fit for each voltage arrangement.",
+      "Loss table header explicitly says Вт despite numerical scale likely intended as кВт; raw unit is preserved without correction."
+    ],
+    "drawingPages": [
+      160
+    ],
+    "assetFamilyId": "drawing-tds160",
+    "configurationLabel": null,
+    "brand": "Alageum Electric",
+    "productKind": "transformer",
+    "sourceDocument": "ALAGEUM transformer technical catalog, 2026-03-18",
+    "sourceEvidence": [
+      {
+        "pdfPage": 159,
+        "printedPage": 159,
+        "localAssetPath": "alageum-catalog-assets-next/frontend/public/catalog-source/transformers-2026/page-159.webp",
+        "appAssetPath": "/catalog-source/transformers-2026/page-159.webp"
+      },
+      {
+        "pdfPage": 160,
+        "printedPage": 160,
+        "localAssetPath": "alageum-catalog-assets-next/frontend/public/catalog-source/transformers-2026/page-160.webp",
+        "appAssetPath": "/catalog-source/transformers-2026/page-160.webp"
+      }
+    ],
+    "technicalSpecCoverage": "All tabulated electrical characteristics and readable tabulated dimensional/mass fields; untranscribed numeric drawing callouts remain available in source drawing assets.",
+    "rawSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "10000",
+        "unit": "кВА",
+        "page": 159
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "10,5",
+        "unit": "кВ",
+        "page": 159
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "3,15",
+        "unit": "кВ",
+        "page": 159
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-11",
+        "unit": null,
+        "page": 159
+      },
+      {
+        "label": "Потери Х.Х.",
+        "value": "10,5",
+        "unit": "Вт",
+        "page": 159
+      },
+      {
+        "label": "Потери К.З.",
+        "value": "60",
+        "unit": "Вт",
+        "page": 159
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "14",
+        "unit": "%",
+        "page": 159
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,15",
+        "unit": "%",
+        "page": 159
+      },
+      {
+        "label": "L",
+        "value": "4140",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "B",
+        "value": "3170",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "H",
+        "value": "4180",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "Полная масса",
+        "value": "20400",
+        "unit": "кг",
+        "page": 159
+      },
+      {
+        "label": "Масса масла",
+        "value": "7200",
+        "unit": "кг",
+        "page": 159
+      },
+      {
+        "label": "Транспортная масса",
+        "value": "17400",
+        "unit": "кг",
+        "page": 159
+      },
+      {
+        "label": "H1",
+        "value": "2615",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "H2",
+        "value": "275",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "H3",
+        "value": "690",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "M",
+        "value": "440",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "N",
+        "value": "510",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "K",
+        "value": "260",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "A",
+        "value": "1524",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "b",
+        "value": "365",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "b1",
+        "value": "365",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": null,
+        "page": 159
+      },
+      {
+        "label": "Количество обмоток",
+        "value": "2",
+        "unit": null,
+        "page": 159
+      },
+      {
+        "label": "Охлаждение",
+        "value": "естественная циркуляция масла и принудительная циркуляция воздуха",
+        "unit": null,
+        "page": 159
+      },
+      {
+        "label": "ПБВ со стороны ВН",
+        "value": "±2х2,5%",
+        "unit": null,
+        "page": 159
+      }
+    ],
+    "manufacturerStatus": "unknown within assigned pages; Alageum logo alone is not factory attribution"
+  },
+  {
+    "id": "alageum-tds-10000-11-6-3-e0817d26",
+    "proposedStableId": "alageum-tds-10000-11-6-3-e0817d26",
+    "familyId": "tds-10000",
+    "designation": "ТДС-10000/11/6,3",
+    "name": "ТДС-10000/11/6,3",
+    "sku": "ТДС-10000/11/6,3",
+    "execution": "ПБВ ±2х2,5%; У1(УХЛ1)",
+    "sourcePages": [
+      159,
+      160
+    ],
+    "sourceRow": {
+      "pdfPage": 159,
+      "printedPage": 159,
+      "designation": "ТДС-10000/11/6,3",
+      "variant": null,
+      "tableModelIndexOnPage": 2
+    },
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "10000",
+        "unit": "кВА",
+        "page": 159
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "11",
+        "unit": "кВ",
+        "page": 159
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6,3",
+        "unit": "кВ",
+        "page": 159
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "У/Д-11",
+        "unit": null,
+        "page": 159
+      },
+      {
+        "label": "Потери Х.Х.",
+        "value": "8,6",
+        "unit": "Вт",
+        "page": 159
+      },
+      {
+        "label": "Потери К.З.",
+        "value": "72",
+        "unit": "Вт",
+        "page": 159
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "8,0",
+        "unit": "%",
+        "page": 159
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,15",
+        "unit": "%",
+        "page": 159
+      },
+      {
+        "label": "L",
+        "value": "3870",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "B",
+        "value": "2900",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "H",
+        "value": "4420",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "Полная масса",
+        "value": "21000",
+        "unit": "кг",
+        "page": 159
+      },
+      {
+        "label": "Масса масла",
+        "value": "7200",
+        "unit": "кг",
+        "page": 159
+      },
+      {
+        "label": "Транспортная масса",
+        "value": "18000",
+        "unit": "кг",
+        "page": 159
+      },
+      {
+        "label": "H1",
+        "value": "2850",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "H2",
+        "value": "275",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "H3",
+        "value": "485",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "M",
+        "value": "440",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "N",
+        "value": "-",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "K",
+        "value": "260",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "A",
+        "value": "1524",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "b",
+        "value": "365",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "b1",
+        "value": "365",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": null,
+        "page": 159
+      },
+      {
+        "label": "Количество обмоток",
+        "value": "2",
+        "unit": null,
+        "page": 159
+      },
+      {
+        "label": "Охлаждение",
+        "value": "естественная циркуляция масла и принудительная циркуляция воздуха",
+        "unit": null,
+        "page": 159
+      },
+      {
+        "label": "ПБВ со стороны ВН",
+        "value": "±2х2,5%",
+        "unit": null,
+        "page": 159
+      }
+    ],
+    "manufacturer": null,
+    "manufacturerEvidencePages": [],
+    "candidateOldIds": [],
+    "recordType": "model",
+    "uncertainties": [
+      "Drawing title on page 160 is ТДС-10000-6,3; broad family geometry only, not exact fit for each voltage arrangement.",
+      "Loss table header explicitly says Вт despite numerical scale likely intended as кВт; raw unit is preserved without correction."
+    ],
+    "drawingPages": [
+      160
+    ],
+    "assetFamilyId": "drawing-tds160",
+    "configurationLabel": null,
+    "brand": "Alageum Electric",
+    "productKind": "transformer",
+    "sourceDocument": "ALAGEUM transformer technical catalog, 2026-03-18",
+    "sourceEvidence": [
+      {
+        "pdfPage": 159,
+        "printedPage": 159,
+        "localAssetPath": "alageum-catalog-assets-next/frontend/public/catalog-source/transformers-2026/page-159.webp",
+        "appAssetPath": "/catalog-source/transformers-2026/page-159.webp"
+      },
+      {
+        "pdfPage": 160,
+        "printedPage": 160,
+        "localAssetPath": "alageum-catalog-assets-next/frontend/public/catalog-source/transformers-2026/page-160.webp",
+        "appAssetPath": "/catalog-source/transformers-2026/page-160.webp"
+      }
+    ],
+    "technicalSpecCoverage": "All tabulated electrical characteristics and readable tabulated dimensional/mass fields; untranscribed numeric drawing callouts remain available in source drawing assets.",
+    "rawSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "10000",
+        "unit": "кВА",
+        "page": 159
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "11",
+        "unit": "кВ",
+        "page": 159
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6,3",
+        "unit": "кВ",
+        "page": 159
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "У/Д-11",
+        "unit": null,
+        "page": 159
+      },
+      {
+        "label": "Потери Х.Х.",
+        "value": "8,6",
+        "unit": "Вт",
+        "page": 159
+      },
+      {
+        "label": "Потери К.З.",
+        "value": "72",
+        "unit": "Вт",
+        "page": 159
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "8,0",
+        "unit": "%",
+        "page": 159
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,15",
+        "unit": "%",
+        "page": 159
+      },
+      {
+        "label": "L",
+        "value": "3870",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "B",
+        "value": "2900",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "H",
+        "value": "4420",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "Полная масса",
+        "value": "21000",
+        "unit": "кг",
+        "page": 159
+      },
+      {
+        "label": "Масса масла",
+        "value": "7200",
+        "unit": "кг",
+        "page": 159
+      },
+      {
+        "label": "Транспортная масса",
+        "value": "18000",
+        "unit": "кг",
+        "page": 159
+      },
+      {
+        "label": "H1",
+        "value": "2850",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "H2",
+        "value": "275",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "H3",
+        "value": "485",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "M",
+        "value": "440",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "N",
+        "value": "-",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "K",
+        "value": "260",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "A",
+        "value": "1524",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "b",
+        "value": "365",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "b1",
+        "value": "365",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": null,
+        "page": 159
+      },
+      {
+        "label": "Количество обмоток",
+        "value": "2",
+        "unit": null,
+        "page": 159
+      },
+      {
+        "label": "Охлаждение",
+        "value": "естественная циркуляция масла и принудительная циркуляция воздуха",
+        "unit": null,
+        "page": 159
+      },
+      {
+        "label": "ПБВ со стороны ВН",
+        "value": "±2х2,5%",
+        "unit": null,
+        "page": 159
+      }
+    ],
+    "manufacturerStatus": "unknown within assigned pages; Alageum logo alone is not factory attribution"
+  },
+  {
+    "id": "alageum-tds-10000-6-3-6-3-f47b1777",
+    "proposedStableId": "alageum-tds-10000-6-3-6-3-f47b1777",
+    "familyId": "tds-10000",
+    "designation": "ТДС-10000/6,3/6,3",
+    "name": "ТДС-10000/6,3/6,3",
+    "sku": "ТДС-10000/6,3/6,3",
+    "execution": "ПБВ ±2х2,5%; У1(УХЛ1)",
+    "sourcePages": [
+      159,
+      160
+    ],
+    "sourceRow": {
+      "pdfPage": 159,
+      "printedPage": 159,
+      "designation": "ТДС-10000/6,3/6,3",
+      "variant": null,
+      "tableModelIndexOnPage": 3
+    },
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "10000",
+        "unit": "кВА",
+        "page": 159
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "6,3",
+        "unit": "кВ",
+        "page": 159
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6,3",
+        "unit": "кВ",
+        "page": 159
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Д/Д-0",
+        "unit": null,
+        "page": 159
+      },
+      {
+        "label": "Потери Х.Х.",
+        "value": "9,5",
+        "unit": "Вт",
+        "page": 159
+      },
+      {
+        "label": "Потери К.З.",
+        "value": "74",
+        "unit": "Вт",
+        "page": 159
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "8,0",
+        "unit": "%",
+        "page": 159
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,15",
+        "unit": "%",
+        "page": 159
+      },
+      {
+        "label": "L",
+        "value": "3870",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "B",
+        "value": "2900",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "H",
+        "value": "4420",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "Полная масса",
+        "value": "21500",
+        "unit": "кг",
+        "page": 159
+      },
+      {
+        "label": "Масса масла",
+        "value": "7200",
+        "unit": "кг",
+        "page": 159
+      },
+      {
+        "label": "Транспортная масса",
+        "value": "18500",
+        "unit": "кг",
+        "page": 159
+      },
+      {
+        "label": "H1",
+        "value": "2850",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "H2",
+        "value": "555",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "H3",
+        "value": "555",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "M",
+        "value": "260",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "N",
+        "value": "-",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "K",
+        "value": "260",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "A",
+        "value": "1524",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "b",
+        "value": "365",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "b1",
+        "value": "365",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": null,
+        "page": 159
+      },
+      {
+        "label": "Количество обмоток",
+        "value": "2",
+        "unit": null,
+        "page": 159
+      },
+      {
+        "label": "Охлаждение",
+        "value": "естественная циркуляция масла и принудительная циркуляция воздуха",
+        "unit": null,
+        "page": 159
+      },
+      {
+        "label": "ПБВ со стороны ВН",
+        "value": "±2х2,5%",
+        "unit": null,
+        "page": 159
+      }
+    ],
+    "manufacturer": null,
+    "manufacturerEvidencePages": [],
+    "candidateOldIds": [],
+    "recordType": "model",
+    "uncertainties": [
+      "Drawing title on page 160 is ТДС-10000-6,3; broad family geometry only, not exact fit for each voltage arrangement.",
+      "Loss table header explicitly says Вт despite numerical scale likely intended as кВт; raw unit is preserved without correction."
+    ],
+    "drawingPages": [
+      160
+    ],
+    "assetFamilyId": "drawing-tds160",
+    "configurationLabel": null,
+    "brand": "Alageum Electric",
+    "productKind": "transformer",
+    "sourceDocument": "ALAGEUM transformer technical catalog, 2026-03-18",
+    "sourceEvidence": [
+      {
+        "pdfPage": 159,
+        "printedPage": 159,
+        "localAssetPath": "alageum-catalog-assets-next/frontend/public/catalog-source/transformers-2026/page-159.webp",
+        "appAssetPath": "/catalog-source/transformers-2026/page-159.webp"
+      },
+      {
+        "pdfPage": 160,
+        "printedPage": 160,
+        "localAssetPath": "alageum-catalog-assets-next/frontend/public/catalog-source/transformers-2026/page-160.webp",
+        "appAssetPath": "/catalog-source/transformers-2026/page-160.webp"
+      }
+    ],
+    "technicalSpecCoverage": "All tabulated electrical characteristics and readable tabulated dimensional/mass fields; untranscribed numeric drawing callouts remain available in source drawing assets.",
+    "rawSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "10000",
+        "unit": "кВА",
+        "page": 159
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "6,3",
+        "unit": "кВ",
+        "page": 159
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6,3",
+        "unit": "кВ",
+        "page": 159
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Д/Д-0",
+        "unit": null,
+        "page": 159
+      },
+      {
+        "label": "Потери Х.Х.",
+        "value": "9,5",
+        "unit": "Вт",
+        "page": 159
+      },
+      {
+        "label": "Потери К.З.",
+        "value": "74",
+        "unit": "Вт",
+        "page": 159
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "8,0",
+        "unit": "%",
+        "page": 159
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,15",
+        "unit": "%",
+        "page": 159
+      },
+      {
+        "label": "L",
+        "value": "3870",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "B",
+        "value": "2900",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "H",
+        "value": "4420",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "Полная масса",
+        "value": "21500",
+        "unit": "кг",
+        "page": 159
+      },
+      {
+        "label": "Масса масла",
+        "value": "7200",
+        "unit": "кг",
+        "page": 159
+      },
+      {
+        "label": "Транспортная масса",
+        "value": "18500",
+        "unit": "кг",
+        "page": 159
+      },
+      {
+        "label": "H1",
+        "value": "2850",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "H2",
+        "value": "555",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "H3",
+        "value": "555",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "M",
+        "value": "260",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "N",
+        "value": "-",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "K",
+        "value": "260",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "A",
+        "value": "1524",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "b",
+        "value": "365",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "b1",
+        "value": "365",
+        "unit": "мм",
+        "page": 159
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": null,
+        "page": 159
+      },
+      {
+        "label": "Количество обмоток",
+        "value": "2",
+        "unit": null,
+        "page": 159
+      },
+      {
+        "label": "Охлаждение",
+        "value": "естественная циркуляция масла и принудительная циркуляция воздуха",
+        "unit": null,
+        "page": 159
+      },
+      {
+        "label": "ПБВ со стороны ВН",
+        "value": "±2х2,5%",
+        "unit": null,
+        "page": 159
+      }
+    ],
+    "manufacturerStatus": "unknown within assigned pages; Alageum logo alone is not factory attribution"
+  },
+  {
+    "id": "alageum-tm-4000-10-3-15-165b9408",
+    "proposedStableId": "alageum-tm-4000-10-3-15-165b9408",
+    "familyId": "tm-4000-6300-10",
+    "designation": "ТМ-4000-10-3,15",
+    "name": "ТМ-4000-10-3,15",
+    "sku": "ТМ-4000-10-3,15",
+    "execution": "ПБВ ±2х2,5%; У1(УХЛ1)",
+    "sourcePages": [
+      161,
+      162,
+      163
+    ],
+    "sourceRow": {
+      "pdfPage": 161,
+      "printedPage": 161,
+      "designation": "ТМ-4000-10-3,15",
+      "variant": null,
+      "tableModelIndexOnPage": 1
+    },
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "4000",
+        "unit": "кВА",
+        "page": 161
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "10",
+        "unit": "кВ",
+        "page": 161
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "3,15",
+        "unit": "кВ",
+        "page": 161
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "У/Д-11",
+        "unit": null,
+        "page": 161
+      },
+      {
+        "label": "Потери Х.Х.",
+        "value": "5,6",
+        "unit": "Вт",
+        "page": 161
+      },
+      {
+        "label": "Потери К.З.",
+        "value": "34,4",
+        "unit": "Вт",
+        "page": 161
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "6,6",
+        "unit": "%",
+        "page": 161
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,15",
+        "unit": "%",
+        "page": 161
+      },
+      {
+        "label": "L",
+        "value": "2770",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "B",
+        "value": "3080",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "H",
+        "value": "3280",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "Полная масса",
+        "value": "10280",
+        "unit": "кг",
+        "page": 162
+      },
+      {
+        "label": "Масса масла",
+        "value": "2360",
+        "unit": "кг",
+        "page": 162
+      },
+      {
+        "label": "Транспортная масса",
+        "value": "6920",
+        "unit": "кг",
+        "page": 162
+      },
+      {
+        "label": "H1",
+        "value": "2140",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "H2-ВН",
+        "value": "280",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "H3-НН",
+        "value": "485",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "M",
+        "value": "300",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "A",
+        "value": "1594",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "K",
+        "value": "240",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "b",
+        "value": "230",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "b1",
+        "value": "285",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": null,
+        "page": 161
+      },
+      {
+        "label": "Количество обмоток",
+        "value": "2",
+        "unit": null,
+        "page": 161
+      },
+      {
+        "label": "Охлаждение",
+        "value": "естественная циркуляция масла и воздуха",
+        "unit": null,
+        "page": 161
+      },
+      {
+        "label": "ПБВ со стороны ВН",
+        "value": "±2х2.5%",
+        "unit": null,
+        "page": 161
+      }
+    ],
+    "manufacturer": null,
+    "manufacturerEvidencePages": [],
+    "candidateOldIds": [],
+    "recordType": "model",
+    "uncertainties": [
+      "Loss table header explicitly says Вт despite numerical scale likely intended as кВт; raw unit is preserved without correction."
+    ],
+    "drawingPages": [
+      163
+    ],
+    "assetFamilyId": "drawing-tm-163",
+    "configurationLabel": null,
+    "brand": "Alageum Electric",
+    "productKind": "transformer",
+    "sourceDocument": "ALAGEUM transformer technical catalog, 2026-03-18",
+    "sourceEvidence": [
+      {
+        "pdfPage": 161,
+        "printedPage": 161,
+        "localAssetPath": "alageum-catalog-assets-next/frontend/public/catalog-source/transformers-2026/page-161.webp",
+        "appAssetPath": "/catalog-source/transformers-2026/page-161.webp"
+      },
+      {
+        "pdfPage": 162,
+        "printedPage": 162,
+        "localAssetPath": "alageum-catalog-assets-next/frontend/public/catalog-source/transformers-2026/page-162.webp",
+        "appAssetPath": "/catalog-source/transformers-2026/page-162.webp"
+      },
+      {
+        "pdfPage": 163,
+        "printedPage": 163,
+        "localAssetPath": "alageum-catalog-assets-next/frontend/public/catalog-source/transformers-2026/page-163.webp",
+        "appAssetPath": "/catalog-source/transformers-2026/page-163.webp"
+      }
+    ],
+    "technicalSpecCoverage": "All tabulated electrical characteristics and readable tabulated dimensional/mass fields; untranscribed numeric drawing callouts remain available in source drawing assets.",
+    "rawSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "4000",
+        "unit": "кВА",
+        "page": 161
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "10",
+        "unit": "кВ",
+        "page": 161
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "3,15",
+        "unit": "кВ",
+        "page": 161
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "У/Д-11",
+        "unit": null,
+        "page": 161
+      },
+      {
+        "label": "Потери Х.Х.",
+        "value": "5,6",
+        "unit": "Вт",
+        "page": 161
+      },
+      {
+        "label": "Потери К.З.",
+        "value": "34,4",
+        "unit": "Вт",
+        "page": 161
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "6,6",
+        "unit": "%",
+        "page": 161
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,15",
+        "unit": "%",
+        "page": 161
+      },
+      {
+        "label": "L",
+        "value": "2770",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "B",
+        "value": "3080",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "H",
+        "value": "3280",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "Полная масса",
+        "value": "10280",
+        "unit": "кг",
+        "page": 162
+      },
+      {
+        "label": "Масса масла",
+        "value": "2360",
+        "unit": "кг",
+        "page": 162
+      },
+      {
+        "label": "Транспортная масса",
+        "value": "6920",
+        "unit": "кг",
+        "page": 162
+      },
+      {
+        "label": "H1",
+        "value": "2140",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "H2-ВН",
+        "value": "280",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "H3-НН",
+        "value": "485",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "M",
+        "value": "300",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "A",
+        "value": "1594",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "K",
+        "value": "240",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "b",
+        "value": "230",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "b1",
+        "value": "285",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": null,
+        "page": 161
+      },
+      {
+        "label": "Количество обмоток",
+        "value": "2",
+        "unit": null,
+        "page": 161
+      },
+      {
+        "label": "Охлаждение",
+        "value": "естественная циркуляция масла и воздуха",
+        "unit": null,
+        "page": 161
+      },
+      {
+        "label": "ПБВ со стороны ВН",
+        "value": "±2х2.5%",
+        "unit": null,
+        "page": 161
+      }
+    ],
+    "manufacturerStatus": "unknown within assigned pages; Alageum logo alone is not factory attribution"
+  },
+  {
+    "id": "alageum-tm-4000-10-6-3-a16e98c8",
+    "proposedStableId": "alageum-tm-4000-10-6-3-a16e98c8",
+    "familyId": "tm-4000-6300-10",
+    "designation": "ТМ-4000-10-6,3",
+    "name": "ТМ-4000-10-6,3",
+    "sku": "ТМ-4000-10-6,3",
+    "execution": "ПБВ ±2х2,5%; У1(УХЛ1)",
+    "sourcePages": [
+      161,
+      162,
+      163
+    ],
+    "sourceRow": {
+      "pdfPage": 161,
+      "printedPage": 161,
+      "designation": "ТМ-4000-10-6,3",
+      "variant": null,
+      "tableModelIndexOnPage": 2
+    },
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "4000",
+        "unit": "кВА",
+        "page": 161
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "10",
+        "unit": "кВ",
+        "page": 161
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6,3",
+        "unit": "кВ",
+        "page": 161
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "У/Д-11",
+        "unit": null,
+        "page": 161
+      },
+      {
+        "label": "Потери Х.Х.",
+        "value": "5,6",
+        "unit": "Вт",
+        "page": 161
+      },
+      {
+        "label": "Потери К.З.",
+        "value": "33,5",
+        "unit": "Вт",
+        "page": 161
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "7,5",
+        "unit": "%",
+        "page": 161
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,15",
+        "unit": "%",
+        "page": 161
+      },
+      {
+        "label": "L",
+        "value": "2770",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "B",
+        "value": "3080",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "H",
+        "value": "3280",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "Полная масса",
+        "value": "10280",
+        "unit": "кг",
+        "page": 162
+      },
+      {
+        "label": "Масса масла",
+        "value": "2360",
+        "unit": "кг",
+        "page": 162
+      },
+      {
+        "label": "Транспортная масса",
+        "value": "6920",
+        "unit": "кг",
+        "page": 162
+      },
+      {
+        "label": "H1",
+        "value": "2140",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "H2-ВН",
+        "value": "280",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "H3-НН",
+        "value": "280",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "M",
+        "value": "300",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "A",
+        "value": "1594",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "K",
+        "value": "240",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "b",
+        "value": "230",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "b1",
+        "value": "285",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": null,
+        "page": 161
+      },
+      {
+        "label": "Количество обмоток",
+        "value": "2",
+        "unit": null,
+        "page": 161
+      },
+      {
+        "label": "Охлаждение",
+        "value": "естественная циркуляция масла и воздуха",
+        "unit": null,
+        "page": 161
+      },
+      {
+        "label": "ПБВ со стороны ВН",
+        "value": "±2х2.5%",
+        "unit": null,
+        "page": 161
+      }
+    ],
+    "manufacturer": null,
+    "manufacturerEvidencePages": [],
+    "candidateOldIds": [],
+    "recordType": "model",
+    "uncertainties": [
+      "Loss table header explicitly says Вт despite numerical scale likely intended as кВт; raw unit is preserved without correction."
+    ],
+    "drawingPages": [
+      163
+    ],
+    "assetFamilyId": "drawing-tm-163",
+    "configurationLabel": null,
+    "brand": "Alageum Electric",
+    "productKind": "transformer",
+    "sourceDocument": "ALAGEUM transformer technical catalog, 2026-03-18",
+    "sourceEvidence": [
+      {
+        "pdfPage": 161,
+        "printedPage": 161,
+        "localAssetPath": "alageum-catalog-assets-next/frontend/public/catalog-source/transformers-2026/page-161.webp",
+        "appAssetPath": "/catalog-source/transformers-2026/page-161.webp"
+      },
+      {
+        "pdfPage": 162,
+        "printedPage": 162,
+        "localAssetPath": "alageum-catalog-assets-next/frontend/public/catalog-source/transformers-2026/page-162.webp",
+        "appAssetPath": "/catalog-source/transformers-2026/page-162.webp"
+      },
+      {
+        "pdfPage": 163,
+        "printedPage": 163,
+        "localAssetPath": "alageum-catalog-assets-next/frontend/public/catalog-source/transformers-2026/page-163.webp",
+        "appAssetPath": "/catalog-source/transformers-2026/page-163.webp"
+      }
+    ],
+    "technicalSpecCoverage": "All tabulated electrical characteristics and readable tabulated dimensional/mass fields; untranscribed numeric drawing callouts remain available in source drawing assets.",
+    "rawSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "4000",
+        "unit": "кВА",
+        "page": 161
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "10",
+        "unit": "кВ",
+        "page": 161
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6,3",
+        "unit": "кВ",
+        "page": 161
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "У/Д-11",
+        "unit": null,
+        "page": 161
+      },
+      {
+        "label": "Потери Х.Х.",
+        "value": "5,6",
+        "unit": "Вт",
+        "page": 161
+      },
+      {
+        "label": "Потери К.З.",
+        "value": "33,5",
+        "unit": "Вт",
+        "page": 161
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "7,5",
+        "unit": "%",
+        "page": 161
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,15",
+        "unit": "%",
+        "page": 161
+      },
+      {
+        "label": "L",
+        "value": "2770",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "B",
+        "value": "3080",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "H",
+        "value": "3280",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "Полная масса",
+        "value": "10280",
+        "unit": "кг",
+        "page": 162
+      },
+      {
+        "label": "Масса масла",
+        "value": "2360",
+        "unit": "кг",
+        "page": 162
+      },
+      {
+        "label": "Транспортная масса",
+        "value": "6920",
+        "unit": "кг",
+        "page": 162
+      },
+      {
+        "label": "H1",
+        "value": "2140",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "H2-ВН",
+        "value": "280",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "H3-НН",
+        "value": "280",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "M",
+        "value": "300",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "A",
+        "value": "1594",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "K",
+        "value": "240",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "b",
+        "value": "230",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "b1",
+        "value": "285",
+        "unit": "мм",
+        "page": 162
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": null,
+        "page": 161
+      },
+      {
+        "label": "Количество обмоток",
+        "value": "2",
+        "unit": null,
+        "page": 161
+      },
+      {
+        "label": "Охлаждение",
+        "value": "естественная циркуляция масла и воздуха",
+        "unit": null,
+        "page": 161
+      },
+      {
+        "label": "ПБВ со стороны ВН",
+        "value": "±2х2.5%",
+        "unit": null,
+        "page": 161
+      }
+    ],
+    "manufacturerStatus": "unknown within assigned pages; Alageum logo alone is not factory attribution"
+  }
+]

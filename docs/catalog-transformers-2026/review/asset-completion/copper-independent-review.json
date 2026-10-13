@@ -1,0 +1,378 @@
+{
+  "format": "alageum-copper-independent-review-v1",
+  "reviewedAt": "2026-10-06T08:36:04.372Z",
+  "status": "approved-representative-subsection-inference",
+  "reviewScope": "Source applicability and broad visible exterior only, independently reviewed from actual source pixels; this report does not activate a runtime binding.",
+  "sourceId": "transformers-2026",
+  "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+  "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+  "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+  "inventorySha256": "c3948d7152a6130aa4672b9f6d3d5a8f08144b5965df7bebabca067ba5bc8438",
+  "reviewedSourceImageHashes": {
+    "frontend/public/catalog-source/transformers-2026/page-004.webp": "680652a645312435c454419a413339f99b6101f0c1d753c3d3d3dbe1a383c609",
+    "frontend/public/catalog-source/transformers-2026/page-039.webp": "3e3a770f9313a9700aa0237688a62d420c9ddad897c40bf5cc5efadec13298c6",
+    "frontend/public/catalog-source/transformers-2026/page-040.webp": "4afd58a783a727ee986d0297b4210d2a4589fd0bf8f037574b3e878af7d2b94e",
+    "frontend/public/catalog-source/transformers-2026/page-041.webp": "d866589a249a70938337f5b20f0aeb9773f147d903ad431603efa971bb8a6739",
+    "frontend/public/catalog-source/transformers-2026/page-042.webp": "c88905d6c6db278efb81cd89c573db3bf08ace15b4654631d53ddfe5564b045a",
+    "frontend/public/catalog-source/transformers-2026/page-043.webp": "5c1229ae24db96a3f09a1b2c685faa086e296f6c73c9a75e9cf0e13bfcb4948e",
+    "frontend/public/catalog-source/transformers-2026/page-044.webp": "c30590b3a49e02be71cc3583ee3101d5cfbc5bdab8c7b2281cf90ba4e4973723"
+  },
+  "reviewedExistingPreviewHashes": {
+    "docs/catalog-transformers-2026/assets/qa/tr26-corrugated-small-perspective.png": "a74ce8a268760ae3ecb2e414261229f2e83f609cdb50bd00c286545e2391ed09",
+    "docs/catalog-transformers-2026/assets/qa/tr26-corrugated-large-perspective.png": "b10822d9638a5dc2bb14c949e3ccd10c54841a2fc82c1fb40ee784732292d2b4"
+  },
+  "counts": {
+    "sourceRows": 13,
+    "smallExterior": 8,
+    "largeExterior": 5
+  },
+  "observations": [
+    {
+      "pages": [
+        4
+      ],
+      "finding": "Contents gives only broad oil-transformer section starting page 6; it does not print a copper-specific chapter range."
+    },
+    {
+      "pages": [
+        39
+      ],
+      "finding": "Preceding subsection ends with an explicitly captioned ТМГФ construction and distinct terminal arrangement."
+    },
+    {
+      "pages": [
+        40,
+        41
+      ],
+      "finding": "Page 40 explicitly begins ТМГ with copper windings, describes a sealed oil-filled corrugated tank without conservator or gas cushion, and starts a table continued on page 41. Its 13 actual rows are preserved."
+    },
+    {
+      "pages": [
+        42
+      ],
+      "finding": "Within that subsection, the caption ТМГ-25-630 and front/side/plan projections show the smaller sealed corrugated exterior with three HV and four LV lid terminals; its dimensional symbol system corresponds to the preceding table."
+    },
+    {
+      "pages": [
+        43
+      ],
+      "finding": "The complementary ТМГ1000-2500 drawing has the larger sealed corrugated exterior, three HV and four LV terminals with contact plates, and the same table symbols."
+    },
+    {
+      "pages": [
+        44
+      ],
+      "finding": "A new explicit heading begins switchable 6/10 kV TMG execution, bounding the copper subsection at page 43."
+    }
+  ],
+  "conclusion": "The bounded subsection, continued table, complementary capacity ranges and matching dimensional symbols jointly support a representative exterior preview for each of the 13 copper rows. This is an inference from publisher structure; neither the generic TMG figure captions nor the contents alone explicitly identify copper.",
+  "limits": [
+    "No exact CAD, dimensions, rib count, clearances, internal winding material depiction or row-specific geometry equality is established.",
+    "Drawings and shared geometry show an illustrative family exterior only. All source values, unknown units and independent row identities must remain unchanged.",
+    "Page 42 fuse (12) and transport rollers (15) are order options. Page 43 fuse (11) is optional; thermometer (6) and manovacuummeter (15) are limited to KShP execution. The preview must not promise those accessories in every order.",
+    "No equivalence or merge with legacy standard TMG is established. The four newly admitted copper rows require their own exact source-shape and UUID guards.",
+    "No relaxation of X3K2 missing construction evidence or X4K3 TMGi/TMGve caption disagreement is supported.",
+    "Historical original asset clearance must remain intact. Runtime admission needs a separate additive hash-bound authority supplement; this report does not alter existing 251/257 defaults."
+  ],
+  "records": [
+    {
+      "sourceRecordId": "alageum-tmg-copper-25",
+      "designation": "ТМГ-25",
+      "execution": "с медными обмотками",
+      "sourceFamilyId": "tmg-copper",
+      "sourcePages": [
+        40,
+        41,
+        42
+      ],
+      "record_shape_sha256": "c4ba4c4d8a723f76542820c259c809cab0330d0c42e39d3b42a505e6c9e3418b",
+      "database_id": "aca1d25f-b6f8-5843-8279-abf1dd2d89f4",
+      "groupId": "sealed-corrugated-small",
+      "geometryType": "tr26-corrugated-small",
+      "iconType": "tr26-corrugated-small",
+      "drawingPages": [
+        42
+      ],
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false,
+      "defaultBindingCurrentlyApprovedByThisArtifact": false
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-40",
+      "designation": "ТМГ-40",
+      "execution": "с медными обмотками",
+      "sourceFamilyId": "tmg-copper",
+      "sourcePages": [
+        40,
+        41,
+        42
+      ],
+      "record_shape_sha256": "dd427e29b4682195942e715d1378d2af7c248923140f37d1f9a4dd3ba7f3b26b",
+      "database_id": "d127e91b-88d7-55a4-b190-42f7122d2a2b",
+      "groupId": "sealed-corrugated-small",
+      "geometryType": "tr26-corrugated-small",
+      "iconType": "tr26-corrugated-small",
+      "drawingPages": [
+        42
+      ],
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false,
+      "defaultBindingCurrentlyApprovedByThisArtifact": false
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-63",
+      "designation": "ТМГ-63",
+      "execution": "с медными обмотками",
+      "sourceFamilyId": "tmg-copper",
+      "sourcePages": [
+        40,
+        41,
+        42
+      ],
+      "record_shape_sha256": "5cfb56f6a315ff96c82d795104323d81a0e72a1b264194128ff49a518badf70c",
+      "database_id": "6f309d57-df53-5032-9bb6-a846ccb9a166",
+      "groupId": "sealed-corrugated-small",
+      "geometryType": "tr26-corrugated-small",
+      "iconType": "tr26-corrugated-small",
+      "drawingPages": [
+        42
+      ],
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false,
+      "defaultBindingCurrentlyApprovedByThisArtifact": false
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-100",
+      "designation": "ТМГ-100",
+      "execution": "с медными обмотками",
+      "sourceFamilyId": "tmg-copper",
+      "sourcePages": [
+        40,
+        41,
+        42
+      ],
+      "record_shape_sha256": "d859733af15d57167352bbf037ed5c631903b78f972f97b587d8005802568ba5",
+      "database_id": "804b3ffb-cbed-5e6e-b201-1b83f1ef60ba",
+      "groupId": "sealed-corrugated-small",
+      "geometryType": "tr26-corrugated-small",
+      "iconType": "tr26-corrugated-small",
+      "drawingPages": [
+        42
+      ],
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false,
+      "defaultBindingCurrentlyApprovedByThisArtifact": false
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-160",
+      "designation": "ТМГ-160",
+      "execution": "с медными обмотками",
+      "sourceFamilyId": "tmg-copper",
+      "sourcePages": [
+        40,
+        41,
+        42
+      ],
+      "record_shape_sha256": "e45afae9e8cd75ecdc5039843abcc40c397f0c95994fe34e48189668252aab57",
+      "database_id": "9387f64a-6779-5fb8-9555-f11f613095f6",
+      "groupId": "sealed-corrugated-small",
+      "geometryType": "tr26-corrugated-small",
+      "iconType": "tr26-corrugated-small",
+      "drawingPages": [
+        42
+      ],
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false,
+      "defaultBindingCurrentlyApprovedByThisArtifact": false
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-250",
+      "designation": "ТМГ-250",
+      "execution": "с медными обмотками",
+      "sourceFamilyId": "tmg-copper",
+      "sourcePages": [
+        40,
+        41,
+        42
+      ],
+      "record_shape_sha256": "19733eff6db2e82bc7cae1844b5db99737f87fd64244e1a6e43ce99fbd0fd099",
+      "database_id": "28cd57fd-77c6-5057-9452-4a83d54db37e",
+      "groupId": "sealed-corrugated-small",
+      "geometryType": "tr26-corrugated-small",
+      "iconType": "tr26-corrugated-small",
+      "drawingPages": [
+        42
+      ],
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false,
+      "defaultBindingCurrentlyApprovedByThisArtifact": false
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-400",
+      "designation": "ТМГ-400",
+      "execution": "с медными обмотками",
+      "sourceFamilyId": "tmg-copper",
+      "sourcePages": [
+        40,
+        41,
+        42
+      ],
+      "record_shape_sha256": "9d636c85fac290d88e0e135462b4572ac221d0ab6cfc4ed1764bdf56c4c84b5e",
+      "database_id": "9bc3c214-f14d-586c-8707-6e7e7ccfabbd",
+      "groupId": "sealed-corrugated-small",
+      "geometryType": "tr26-corrugated-small",
+      "iconType": "tr26-corrugated-small",
+      "drawingPages": [
+        42
+      ],
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false,
+      "defaultBindingCurrentlyApprovedByThisArtifact": false
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-630",
+      "designation": "ТМГ-630",
+      "execution": "с медными обмотками",
+      "sourceFamilyId": "tmg-copper",
+      "sourcePages": [
+        40,
+        41,
+        42
+      ],
+      "record_shape_sha256": "8ce63a6610b481c568358616cd2a3f924ed16d3ffce6c83cb5f002d63c75afb4",
+      "database_id": "9c631c18-0db4-58a4-9263-56be9706282b",
+      "groupId": "sealed-corrugated-small",
+      "geometryType": "tr26-corrugated-small",
+      "iconType": "tr26-corrugated-small",
+      "drawingPages": [
+        42
+      ],
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false,
+      "defaultBindingCurrentlyApprovedByThisArtifact": false
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-1000",
+      "designation": "ТМГ-1000",
+      "execution": "с медными обмотками",
+      "sourceFamilyId": "tmg-copper",
+      "sourcePages": [
+        40,
+        41,
+        43
+      ],
+      "record_shape_sha256": "776d4af25674d0a4c50ee608ab43e8d7eeef0af6c0797500c44ed09953c137bb",
+      "database_id": "bf6f6b5f-698f-5cda-b315-f31dec6b9b8e",
+      "groupId": "sealed-corrugated-large",
+      "geometryType": "tr26-corrugated-large",
+      "iconType": "tr26-corrugated-large",
+      "drawingPages": [
+        43
+      ],
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false,
+      "defaultBindingCurrentlyApprovedByThisArtifact": false
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-1250",
+      "designation": "ТМГ-1250",
+      "execution": "с медными обмотками",
+      "sourceFamilyId": "tmg-copper",
+      "sourcePages": [
+        40,
+        41,
+        43
+      ],
+      "record_shape_sha256": "4087d729572133ee3b7cf8360f14cfb2bf082273d25f82b095407fb7546a6f1f",
+      "database_id": "cca5ef07-ab4c-529b-86c6-23f047ac992d",
+      "groupId": "sealed-corrugated-large",
+      "geometryType": "tr26-corrugated-large",
+      "iconType": "tr26-corrugated-large",
+      "drawingPages": [
+        43
+      ],
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false,
+      "defaultBindingCurrentlyApprovedByThisArtifact": false
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-1600",
+      "designation": "ТМГ-1600",
+      "execution": "с медными обмотками",
+      "sourceFamilyId": "tmg-copper",
+      "sourcePages": [
+        40,
+        41,
+        43
+      ],
+      "record_shape_sha256": "408b61d3d7e9d5cf4a4170d4991684c2304dbf0d1bae209191eebf5e90be90d1",
+      "database_id": "e857ab4e-9d49-5a56-9457-2baf4536f23c",
+      "groupId": "sealed-corrugated-large",
+      "geometryType": "tr26-corrugated-large",
+      "iconType": "tr26-corrugated-large",
+      "drawingPages": [
+        43
+      ],
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false,
+      "defaultBindingCurrentlyApprovedByThisArtifact": false
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-2000",
+      "designation": "ТМГ-2000",
+      "execution": "с медными обмотками",
+      "sourceFamilyId": "tmg-copper",
+      "sourcePages": [
+        40,
+        41,
+        43
+      ],
+      "record_shape_sha256": "cf5bbbd5441fe5dcc8371df9fd7fff717e7f52df70e759853028e5ca158b40c1",
+      "database_id": "5ccb78e0-53b7-5505-a6dd-840a9eeb9360",
+      "groupId": "sealed-corrugated-large",
+      "geometryType": "tr26-corrugated-large",
+      "iconType": "tr26-corrugated-large",
+      "drawingPages": [
+        43
+      ],
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false,
+      "defaultBindingCurrentlyApprovedByThisArtifact": false
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-2500",
+      "designation": "ТМГ-2500",
+      "execution": "с медными обмотками",
+      "sourceFamilyId": "tmg-copper",
+      "sourcePages": [
+        40,
+        41,
+        43
+      ],
+      "record_shape_sha256": "36c75586ca0d75cc50fe90abdd5dbded2d70a3e0ea79b4b72703589f4d80fd33",
+      "database_id": "f8067eab-dfe6-5a94-ac90-22280388efca",
+      "groupId": "sealed-corrugated-large",
+      "geometryType": "tr26-corrugated-large",
+      "iconType": "tr26-corrugated-large",
+      "drawingPages": [
+        43
+      ],
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false,
+      "defaultBindingCurrentlyApprovedByThisArtifact": false
+    }
+  ]
+}

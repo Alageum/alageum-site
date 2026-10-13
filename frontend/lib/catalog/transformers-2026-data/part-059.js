@@ -1,0 +1,2262 @@
+// Generated from independently reviewed source records.
+const records = [
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "НАМИ",
+    "execution": "",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      98
+    ],
+    "sourceRow": null,
+    "sourceFamilyId": "nami",
+    "sourceRecordType": "family",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": null,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-098.webp",
+    "imageSourcePage": 98,
+    "imageCaption": "Страница 98 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [],
+    "id": "tr2026-family-nami",
+    "name": "НАМИ — трехфазный измерительный",
+    "recordKind": "family",
+    "recordType": "catalog-family",
+    "series": "НАМИ",
+    "subtype": "",
+    "description": "",
+    "variantIds": [
+      "alageum-2026-nami-6",
+      "alageum-2026-nami-10"
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "НАМИ-6",
+    "execution": "трехфазный измерительный",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      98
+    ],
+    "sourceRow": {
+      "page": 98,
+      "designation": "НАМИ-6",
+      "execution": "трехфазный измерительный",
+      "kind": "explicit-model-row"
+    },
+    "sourceFamilyId": "nami",
+    "sourceRecordType": "explicit-model-row",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": null,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "ВН",
+        "value": "6",
+        "unit": "кВ",
+        "page": 98
+      },
+      {
+        "label": "НН основная",
+        "value": "0,1",
+        "unit": "кВ",
+        "page": 98
+      },
+      {
+        "label": "НН дополнительная",
+        "value": "0,1",
+        "unit": "кВ",
+        "page": 98
+      },
+      {
+        "label": "Мощность основная",
+        "value": "75",
+        "unit": "ВА",
+        "page": 98
+      },
+      {
+        "label": "Мощность дополнительная",
+        "value": "30",
+        "unit": "ВА",
+        "page": 98
+      },
+      {
+        "label": "Класс точности в номинальном режиме",
+        "value": "0,2",
+        "unit": "",
+        "page": 98,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "555",
+        "unit": "мм",
+        "page": 98
+      },
+      {
+        "label": "Масса",
+        "value": "106",
+        "unit": "кг",
+        "page": 98
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 98,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-17-p98"
+      },
+      {
+        "label": "Нейтраль сети",
+        "value": "изолированная или заземленная через дугогасящий реактор",
+        "unit": "",
+        "page": 98,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-17-p98",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "value": "тряска, вибрация, удары, взрывоопасная и агрессивная среда",
+        "unit": "",
+        "page": 98,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-17-p98",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-098.webp",
+    "imageSourcePage": 98,
+    "imageCaption": "Страница 98 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "ВН",
+        "raw": "6",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 98
+      },
+      {
+        "label": "НН основная",
+        "raw": "0,1",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 98
+      },
+      {
+        "label": "НН дополнительная",
+        "raw": "0,1",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 98
+      },
+      {
+        "label": "Мощность основная",
+        "raw": "75",
+        "unitAsPrinted": "ВА",
+        "sourcePage": 98
+      },
+      {
+        "label": "Мощность дополнительная",
+        "raw": "30",
+        "unitAsPrinted": "ВА",
+        "sourcePage": 98
+      },
+      {
+        "label": "Класс точности в номинальном режиме",
+        "raw": "0,2",
+        "unitAsPrinted": null,
+        "sourcePage": 98
+      },
+      {
+        "label": "H",
+        "raw": "555",
+        "unitAsPrinted": "мм",
+        "sourcePage": 98
+      },
+      {
+        "label": "Масса",
+        "raw": "106",
+        "unitAsPrinted": "кг",
+        "sourcePage": 98
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 98,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-17-p98"
+      },
+      {
+        "label": "Нейтраль сети",
+        "raw": "изолированная или заземленная через дугогасящий реактор",
+        "unitAsPrinted": null,
+        "sourcePage": 98,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-17-p98"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "raw": "тряска, вибрация, удары, взрывоопасная и агрессивная среда",
+        "unitAsPrinted": null,
+        "sourcePage": 98,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-17-p98"
+      }
+    ],
+    "id": "alageum-2026-nami-6",
+    "name": "НАМИ-6",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-nami",
+    "familyName": "НАМИ — трехфазный измерительный",
+    "series": "НАМИ",
+    "subtype": "трехфазный измерительный",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "ВН",
+        "value": "6",
+        "unit": "кВ",
+        "page": 98
+      },
+      {
+        "label": "НН основная",
+        "value": "0,1",
+        "unit": "кВ",
+        "page": 98
+      },
+      {
+        "label": "НН дополнительная",
+        "value": "0,1",
+        "unit": "кВ",
+        "page": 98
+      },
+      {
+        "label": "Мощность основная",
+        "value": "75",
+        "unit": "ВА",
+        "page": 98
+      },
+      {
+        "label": "Мощность дополнительная",
+        "value": "30",
+        "unit": "ВА",
+        "page": 98
+      },
+      {
+        "label": "Класс точности в номинальном режиме",
+        "value": "0,2",
+        "unit": "",
+        "page": 98,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "555",
+        "unit": "мм",
+        "page": 98
+      },
+      {
+        "label": "Масса",
+        "value": "106",
+        "unit": "кг",
+        "page": 98
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 98,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-17-p98"
+      },
+      {
+        "label": "Нейтраль сети",
+        "value": "изолированная или заземленная через дугогасящий реактор",
+        "unit": "",
+        "page": 98,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-17-p98",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "value": "тряска, вибрация, удары, взрывоопасная и агрессивная среда",
+        "unit": "",
+        "page": 98,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-17-p98",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "НАМИ-10",
+    "execution": "трехфазный измерительный",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      98
+    ],
+    "sourceRow": {
+      "page": 98,
+      "designation": "НАМИ-10",
+      "execution": "трехфазный измерительный",
+      "kind": "explicit-model-row"
+    },
+    "sourceFamilyId": "nami",
+    "sourceRecordType": "explicit-model-row",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": null,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "ВН",
+        "value": "10",
+        "unit": "кВ",
+        "page": 98
+      },
+      {
+        "label": "НН основная",
+        "value": "0,1",
+        "unit": "кВ",
+        "page": 98
+      },
+      {
+        "label": "НН дополнительная",
+        "value": "0,1",
+        "unit": "кВ",
+        "page": 98
+      },
+      {
+        "label": "Мощность основная",
+        "value": "75",
+        "unit": "ВА",
+        "page": 98
+      },
+      {
+        "label": "Мощность дополнительная",
+        "value": "30",
+        "unit": "ВА",
+        "page": 98
+      },
+      {
+        "label": "Класс точности в номинальном режиме",
+        "value": "0,2",
+        "unit": "",
+        "page": 98,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "615",
+        "unit": "мм",
+        "page": 98
+      },
+      {
+        "label": "Масса",
+        "value": "115",
+        "unit": "кг",
+        "page": 98
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 98,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-17-p98"
+      },
+      {
+        "label": "Нейтраль сети",
+        "value": "изолированная или заземленная через дугогасящий реактор",
+        "unit": "",
+        "page": 98,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-17-p98",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "value": "тряска, вибрация, удары, взрывоопасная и агрессивная среда",
+        "unit": "",
+        "page": 98,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-17-p98",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-098.webp",
+    "imageSourcePage": 98,
+    "imageCaption": "Страница 98 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "ВН",
+        "raw": "10",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 98
+      },
+      {
+        "label": "НН основная",
+        "raw": "0,1",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 98
+      },
+      {
+        "label": "НН дополнительная",
+        "raw": "0,1",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 98
+      },
+      {
+        "label": "Мощность основная",
+        "raw": "75",
+        "unitAsPrinted": "ВА",
+        "sourcePage": 98
+      },
+      {
+        "label": "Мощность дополнительная",
+        "raw": "30",
+        "unitAsPrinted": "ВА",
+        "sourcePage": 98
+      },
+      {
+        "label": "Класс точности в номинальном режиме",
+        "raw": "0,2",
+        "unitAsPrinted": null,
+        "sourcePage": 98
+      },
+      {
+        "label": "H",
+        "raw": "615",
+        "unitAsPrinted": "мм",
+        "sourcePage": 98
+      },
+      {
+        "label": "Масса",
+        "raw": "115",
+        "unitAsPrinted": "кг",
+        "sourcePage": 98
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 98,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-17-p98"
+      },
+      {
+        "label": "Нейтраль сети",
+        "raw": "изолированная или заземленная через дугогасящий реактор",
+        "unitAsPrinted": null,
+        "sourcePage": 98,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-17-p98"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "raw": "тряска, вибрация, удары, взрывоопасная и агрессивная среда",
+        "unitAsPrinted": null,
+        "sourcePage": 98,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-17-p98"
+      }
+    ],
+    "id": "alageum-2026-nami-10",
+    "name": "НАМИ-10",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-nami",
+    "familyName": "НАМИ — трехфазный измерительный",
+    "series": "НАМИ",
+    "subtype": "трехфазный измерительный",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "ВН",
+        "value": "10",
+        "unit": "кВ",
+        "page": 98
+      },
+      {
+        "label": "НН основная",
+        "value": "0,1",
+        "unit": "кВ",
+        "page": 98
+      },
+      {
+        "label": "НН дополнительная",
+        "value": "0,1",
+        "unit": "кВ",
+        "page": 98
+      },
+      {
+        "label": "Мощность основная",
+        "value": "75",
+        "unit": "ВА",
+        "page": 98
+      },
+      {
+        "label": "Мощность дополнительная",
+        "value": "30",
+        "unit": "ВА",
+        "page": 98
+      },
+      {
+        "label": "Класс точности в номинальном режиме",
+        "value": "0,2",
+        "unit": "",
+        "page": 98,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "615",
+        "unit": "мм",
+        "page": 98
+      },
+      {
+        "label": "Масса",
+        "value": "115",
+        "unit": "кг",
+        "page": 98
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 98,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-17-p98"
+      },
+      {
+        "label": "Нейтраль сети",
+        "value": "изолированная или заземленная через дугогасящий реактор",
+        "unit": "",
+        "page": 98,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-17-p98",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "value": "тряска, вибрация, удары, взрывоопасная и агрессивная среда",
+        "unit": "",
+        "page": 98,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-17-p98",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ЗОМ",
+    "execution": "",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      99
+    ],
+    "sourceRow": null,
+    "sourceFamilyId": "zom",
+    "sourceRecordType": "family",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": null,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-099.webp",
+    "imageSourcePage": 99,
+    "imageCaption": "Страница 99 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [],
+    "id": "tr2026-family-zom",
+    "name": "ЗОМ — измерительный, railway",
+    "recordKind": "family",
+    "recordType": "catalog-family",
+    "series": "ЗОМ",
+    "subtype": "",
+    "description": "",
+    "variantIds": [
+      "alageum-2026-zom-1p25-35"
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ЗОМ-1,25/35",
+    "execution": "измерительный, railway",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      99
+    ],
+    "sourceRow": {
+      "page": 99,
+      "designation": "ЗОМ-1,25/35",
+      "execution": "измерительный, railway",
+      "kind": "explicit-model-row"
+    },
+    "sourceFamilyId": "zom",
+    "sourceRecordType": "explicit-model-row",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": null,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "1,25",
+        "unit": "кВ",
+        "page": 99
+      },
+      {
+        "label": "ВН",
+        "value": "27,5",
+        "unit": "кВ",
+        "page": 99
+      },
+      {
+        "label": "НН",
+        "value": "0,23",
+        "unit": "кВ",
+        "page": 99
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "1/1-0",
+        "unit": "",
+        "page": 99,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Масса не более полная",
+        "value": "20",
+        "unit": "кг",
+        "page": 99
+      },
+      {
+        "label": "Масса не более масла",
+        "value": "80",
+        "unit": "кг",
+        "page": 99
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 99,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-18-p99"
+      },
+      {
+        "label": "Охлаждение",
+        "value": "естественное",
+        "unit": "",
+        "page": 99,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-18-p99",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Применение",
+        "value": "измерительные приборы, автоматика, сигнализация и релейная защита электрифицированных участков железных дорог",
+        "unit": "",
+        "page": 99,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-18-p99",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "value": "тряска, вибрация, удары, взрывоопасная и агрессивная среда",
+        "unit": "",
+        "page": 99,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-18-p99",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "notes": [
+      "Power column unit printed кВ (not кВА).",
+      "Mass cells literally full20kg/oil80kg, inconsistent; preserved and require confirmation.",
+      "Drawing title uses ЗОМ-1,25-35 whereas table designation uses slash."
+    ],
+    "image": "/catalog-source/transformers-2026/page-099.webp",
+    "imageSourcePage": 99,
+    "imageCaption": "Страница 99 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "raw": "1,25",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 99
+      },
+      {
+        "label": "ВН",
+        "raw": "27,5",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 99
+      },
+      {
+        "label": "НН",
+        "raw": "0,23",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 99
+      },
+      {
+        "label": "Схема и группа соединения",
+        "raw": "1/1-0",
+        "unitAsPrinted": null,
+        "sourcePage": 99
+      },
+      {
+        "label": "Масса не более полная",
+        "raw": "20",
+        "unitAsPrinted": "кг",
+        "sourcePage": 99
+      },
+      {
+        "label": "Масса не более масла",
+        "raw": "80",
+        "unitAsPrinted": "кг",
+        "sourcePage": 99
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 99,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-18-p99"
+      },
+      {
+        "label": "Охлаждение",
+        "raw": "естественное",
+        "unitAsPrinted": null,
+        "sourcePage": 99,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-18-p99"
+      },
+      {
+        "label": "Применение",
+        "raw": "измерительные приборы, автоматика, сигнализация и релейная защита электрифицированных участков железных дорог",
+        "unitAsPrinted": null,
+        "sourcePage": 99,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-18-p99"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "raw": "тряска, вибрация, удары, взрывоопасная и агрессивная среда",
+        "unitAsPrinted": null,
+        "sourcePage": 99,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-18-p99"
+      }
+    ],
+    "id": "alageum-2026-zom-1p25-35",
+    "name": "ЗОМ-1,25/35",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-zom",
+    "familyName": "ЗОМ — измерительный, railway",
+    "series": "ЗОМ",
+    "subtype": "измерительный, railway",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "1,25",
+        "unit": "кВ",
+        "page": 99
+      },
+      {
+        "label": "ВН",
+        "value": "27,5",
+        "unit": "кВ",
+        "page": 99
+      },
+      {
+        "label": "НН",
+        "value": "0,23",
+        "unit": "кВ",
+        "page": 99
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "1/1-0",
+        "unit": "",
+        "page": 99,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Масса не более полная",
+        "value": "20",
+        "unit": "кг",
+        "page": 99
+      },
+      {
+        "label": "Масса не более масла",
+        "value": "80",
+        "unit": "кг",
+        "page": 99
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 99,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-18-p99"
+      },
+      {
+        "label": "Охлаждение",
+        "value": "естественное",
+        "unit": "",
+        "page": 99,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-18-p99",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Применение",
+        "value": "измерительные приборы, автоматика, сигнализация и релейная защита электрифицированных участков железных дорог",
+        "unit": "",
+        "page": 99,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-18-p99",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "value": "тряска, вибрация, удары, взрывоопасная и агрессивная среда",
+        "unit": "",
+        "page": 99,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-18-p99",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ЗНОМ",
+    "execution": "",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      100
+    ],
+    "sourceRow": null,
+    "sourceFamilyId": "znom",
+    "sourceRecordType": "family",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": null,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-100.webp",
+    "imageSourcePage": 100,
+    "imageCaption": "Страница 100 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [],
+    "id": "tr2026-family-znom",
+    "name": "ЗНОМ — nominal-winding-voltage option1",
+    "recordKind": "family",
+    "recordType": "catalog-family",
+    "series": "ЗНОМ",
+    "subtype": "",
+    "description": "",
+    "variantIds": [
+      "alageum-2026-znom35-config1",
+      "alageum-2026-znom35-config2"
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ЗНОМ-35",
+    "execution": "nominal-winding-voltage option1",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      100
+    ],
+    "sourceRow": {
+      "page": 100,
+      "table": "technical",
+      "row": 1,
+      "voltageSubrow": 1
+    },
+    "sourceFamilyId": "znom",
+    "sourceRecordType": "explicit-model-row",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": null,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Предельная мощность",
+        "value": "1,0",
+        "unit": "кВА",
+        "page": 100
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "1/1/1-0-0",
+        "unit": "",
+        "page": 100,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Мощность в классе0,5",
+        "value": "0,15",
+        "unit": "кВА",
+        "page": 100
+      },
+      {
+        "label": "Мощность в классе1",
+        "value": "0,25",
+        "unit": "кВА",
+        "page": 100
+      },
+      {
+        "label": "Мощность в классе3",
+        "value": "0,6",
+        "unit": "кВА",
+        "page": 100
+      },
+      {
+        "label": "ВН",
+        "value": "27,5",
+        "unit": "кВ",
+        "page": 100
+      },
+      {
+        "label": "НН основная",
+        "value": "0,1",
+        "unit": "кВ",
+        "page": 100
+      },
+      {
+        "label": "НН дополнительная",
+        "value": "0,127",
+        "unit": "кВ",
+        "page": 100
+      },
+      {
+        "label": "Масса не более полная",
+        "value": "80",
+        "unit": "кг",
+        "page": 100
+      },
+      {
+        "label": "Масса не более масла",
+        "value": "20",
+        "unit": "кг",
+        "page": 100
+      },
+      {
+        "label": "Частота",
+        "value": "50 и60",
+        "unit": "Гц",
+        "page": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100"
+      },
+      {
+        "label": "Охлаждение",
+        "value": "естественное",
+        "unit": "",
+        "page": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Нейтраль сети",
+        "value": "изолированная",
+        "unit": "",
+        "page": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Применение",
+        "value": "измерительные приборы, защита и сигнализация; релейная защита электрифицированных участков железной дороги",
+        "unit": "",
+        "page": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-100.webp",
+    "imageSourcePage": 100,
+    "imageCaption": "Страница 100 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Предельная мощность",
+        "raw": "1,0",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 100
+      },
+      {
+        "label": "Схема и группа соединения",
+        "raw": "1/1/1-0-0",
+        "unitAsPrinted": null,
+        "sourcePage": 100
+      },
+      {
+        "label": "Мощность в классе0,5",
+        "raw": "0,15",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 100
+      },
+      {
+        "label": "Мощность в классе1",
+        "raw": "0,25",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 100
+      },
+      {
+        "label": "Мощность в классе3",
+        "raw": "0,6",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 100
+      },
+      {
+        "label": "ВН",
+        "raw": "27,5",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 100
+      },
+      {
+        "label": "НН основная",
+        "raw": "0,1",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 100
+      },
+      {
+        "label": "НН дополнительная",
+        "raw": "0,127",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 100
+      },
+      {
+        "label": "Масса не более полная",
+        "raw": "80",
+        "unitAsPrinted": "кг",
+        "sourcePage": 100
+      },
+      {
+        "label": "Масса не более масла",
+        "raw": "20",
+        "unitAsPrinted": "кг",
+        "sourcePage": 100
+      },
+      {
+        "label": "Частота",
+        "raw": "50 и60",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100"
+      },
+      {
+        "label": "Охлаждение",
+        "raw": "естественное",
+        "unitAsPrinted": null,
+        "sourcePage": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100"
+      },
+      {
+        "label": "Нейтраль сети",
+        "raw": "изолированная",
+        "unitAsPrinted": null,
+        "sourcePage": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100"
+      },
+      {
+        "label": "Применение",
+        "raw": "измерительные приборы, защита и сигнализация; релейная защита электрифицированных участков железной дороги",
+        "unitAsPrinted": null,
+        "sourcePage": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100"
+      }
+    ],
+    "id": "alageum-2026-znom35-config1",
+    "name": "ЗНОМ-35",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-znom",
+    "familyName": "ЗНОМ — nominal-winding-voltage option1",
+    "series": "ЗНОМ",
+    "subtype": "nominal-winding-voltage option1",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Предельная мощность",
+        "value": "1,0",
+        "unit": "кВА",
+        "page": 100
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "1/1/1-0-0",
+        "unit": "",
+        "page": 100,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Мощность в классе0,5",
+        "value": "0,15",
+        "unit": "кВА",
+        "page": 100
+      },
+      {
+        "label": "Мощность в классе1",
+        "value": "0,25",
+        "unit": "кВА",
+        "page": 100
+      },
+      {
+        "label": "Мощность в классе3",
+        "value": "0,6",
+        "unit": "кВА",
+        "page": 100
+      },
+      {
+        "label": "ВН",
+        "value": "27,5",
+        "unit": "кВ",
+        "page": 100
+      },
+      {
+        "label": "НН основная",
+        "value": "0,1",
+        "unit": "кВ",
+        "page": 100
+      },
+      {
+        "label": "НН дополнительная",
+        "value": "0,127",
+        "unit": "кВ",
+        "page": 100
+      },
+      {
+        "label": "Масса не более полная",
+        "value": "80",
+        "unit": "кг",
+        "page": 100
+      },
+      {
+        "label": "Масса не более масла",
+        "value": "20",
+        "unit": "кг",
+        "page": 100
+      },
+      {
+        "label": "Частота",
+        "value": "50 и60",
+        "unit": "Гц",
+        "page": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100"
+      },
+      {
+        "label": "Охлаждение",
+        "value": "естественное",
+        "unit": "",
+        "page": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Нейтраль сети",
+        "value": "изолированная",
+        "unit": "",
+        "page": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Применение",
+        "value": "измерительные приборы, защита и сигнализация; релейная защита электрифицированных участков железной дороги",
+        "unit": "",
+        "page": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ЗНОМ-35",
+    "execution": "nominal-winding-voltage option2",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      100
+    ],
+    "sourceRow": {
+      "page": 100,
+      "table": "technical",
+      "row": 1,
+      "voltageSubrow": 2
+    },
+    "sourceFamilyId": "znom",
+    "sourceRecordType": "explicit-model-row",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": null,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Предельная мощность",
+        "value": "1,0",
+        "unit": "кВА",
+        "page": 100
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "1/1/1-0-0",
+        "unit": "",
+        "page": 100,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Мощность в классе0,5",
+        "value": "0,15",
+        "unit": "кВА",
+        "page": 100
+      },
+      {
+        "label": "Мощность в классе1",
+        "value": "0,25",
+        "unit": "кВА",
+        "page": 100
+      },
+      {
+        "label": "Мощность в классе3",
+        "value": "0,6",
+        "unit": "кВА",
+        "page": 100
+      },
+      {
+        "label": "ВН",
+        "value": "35/√3",
+        "unit": "кВ",
+        "page": 100
+      },
+      {
+        "label": "НН основная",
+        "value": "0,1/√3",
+        "unit": "кВ",
+        "page": 100
+      },
+      {
+        "label": "НН дополнительная",
+        "value": "0,1/3",
+        "unit": "кВ",
+        "page": 100
+      },
+      {
+        "label": "Масса не более полная",
+        "value": "80",
+        "unit": "кг",
+        "page": 100
+      },
+      {
+        "label": "Масса не более масла",
+        "value": "20",
+        "unit": "кг",
+        "page": 100
+      },
+      {
+        "label": "Частота",
+        "value": "50 и60",
+        "unit": "Гц",
+        "page": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100"
+      },
+      {
+        "label": "Охлаждение",
+        "value": "естественное",
+        "unit": "",
+        "page": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Нейтраль сети",
+        "value": "изолированная",
+        "unit": "",
+        "page": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Применение",
+        "value": "измерительные приборы, защита и сигнализация; релейная защита электрифицированных участков железной дороги",
+        "unit": "",
+        "page": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-100.webp",
+    "imageSourcePage": 100,
+    "imageCaption": "Страница 100 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Предельная мощность",
+        "raw": "1,0",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 100
+      },
+      {
+        "label": "Схема и группа соединения",
+        "raw": "1/1/1-0-0",
+        "unitAsPrinted": null,
+        "sourcePage": 100
+      },
+      {
+        "label": "Мощность в классе0,5",
+        "raw": "0,15",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 100
+      },
+      {
+        "label": "Мощность в классе1",
+        "raw": "0,25",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 100
+      },
+      {
+        "label": "Мощность в классе3",
+        "raw": "0,6",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 100
+      },
+      {
+        "label": "ВН",
+        "raw": "35/√3",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 100
+      },
+      {
+        "label": "НН основная",
+        "raw": "0,1/√3",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 100
+      },
+      {
+        "label": "НН дополнительная",
+        "raw": "0,1/3",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 100
+      },
+      {
+        "label": "Масса не более полная",
+        "raw": "80",
+        "unitAsPrinted": "кг",
+        "sourcePage": 100
+      },
+      {
+        "label": "Масса не более масла",
+        "raw": "20",
+        "unitAsPrinted": "кг",
+        "sourcePage": 100
+      },
+      {
+        "label": "Частота",
+        "raw": "50 и60",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100"
+      },
+      {
+        "label": "Охлаждение",
+        "raw": "естественное",
+        "unitAsPrinted": null,
+        "sourcePage": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100"
+      },
+      {
+        "label": "Нейтраль сети",
+        "raw": "изолированная",
+        "unitAsPrinted": null,
+        "sourcePage": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100"
+      },
+      {
+        "label": "Применение",
+        "raw": "измерительные приборы, защита и сигнализация; релейная защита электрифицированных участков железной дороги",
+        "unitAsPrinted": null,
+        "sourcePage": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100"
+      }
+    ],
+    "id": "alageum-2026-znom35-config2",
+    "name": "ЗНОМ-35",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-znom",
+    "familyName": "ЗНОМ — nominal-winding-voltage option1",
+    "series": "ЗНОМ",
+    "subtype": "nominal-winding-voltage option2",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Предельная мощность",
+        "value": "1,0",
+        "unit": "кВА",
+        "page": 100
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "1/1/1-0-0",
+        "unit": "",
+        "page": 100,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Мощность в классе0,5",
+        "value": "0,15",
+        "unit": "кВА",
+        "page": 100
+      },
+      {
+        "label": "Мощность в классе1",
+        "value": "0,25",
+        "unit": "кВА",
+        "page": 100
+      },
+      {
+        "label": "Мощность в классе3",
+        "value": "0,6",
+        "unit": "кВА",
+        "page": 100
+      },
+      {
+        "label": "ВН",
+        "value": "35/√3",
+        "unit": "кВ",
+        "page": 100
+      },
+      {
+        "label": "НН основная",
+        "value": "0,1/√3",
+        "unit": "кВ",
+        "page": 100
+      },
+      {
+        "label": "НН дополнительная",
+        "value": "0,1/3",
+        "unit": "кВ",
+        "page": 100
+      },
+      {
+        "label": "Масса не более полная",
+        "value": "80",
+        "unit": "кг",
+        "page": 100
+      },
+      {
+        "label": "Масса не более масла",
+        "value": "20",
+        "unit": "кг",
+        "page": 100
+      },
+      {
+        "label": "Частота",
+        "value": "50 и60",
+        "unit": "Гц",
+        "page": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100"
+      },
+      {
+        "label": "Охлаждение",
+        "value": "естественное",
+        "unit": "",
+        "page": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Нейтраль сети",
+        "value": "изолированная",
+        "unit": "",
+        "page": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Применение",
+        "value": "измерительные приборы, защита и сигнализация; релейная защита электрифицированных участков железной дороги",
+        "unit": "",
+        "page": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "Трансформаторы ОМЖ-2,5–10 кВА напряжением 27,5 кВ",
+    "execution": "однофазный масляный; естественное охлаждение",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      102
+    ],
+    "sourceRow": null,
+    "sourceFamilyId": "omzh-27-5",
+    "sourceRecordType": "family",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": null,
+    "isOrderableSku": false,
+    "power": null,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 102
+      },
+      {
+        "label": "Климат",
+        "value": "умеренный",
+        "unit": "",
+        "page": 102,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Высота установки над уровнем моря",
+        "value": "не более 1000",
+        "unit": "м",
+        "page": 102
+      },
+      {
+        "label": "Температура окружающего воздуха",
+        "value": "−45 … +40",
+        "unit": "°C",
+        "page": 102
+      },
+      {
+        "label": "Относительная влажность воздуха",
+        "value": "не более 80% при +25 °C",
+        "unit": "",
+        "page": 102,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ 11677-85",
+        "unit": "",
+        "page": 102,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Условия среды (дословно)",
+        "value": "Не взрывоопасной и химически активной среде.",
+        "unit": "",
+        "page": 102,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-102.webp",
+    "imageSourcePage": 102,
+    "imageCaption": "Страница 102 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 102
+      },
+      {
+        "label": "Климат",
+        "value": "умеренный",
+        "unit": null,
+        "page": 102
+      },
+      {
+        "label": "Высота установки над уровнем моря",
+        "value": "не более 1000",
+        "unit": "м",
+        "page": 102
+      },
+      {
+        "label": "Температура окружающего воздуха",
+        "value": "−45 … +40",
+        "unit": "°C",
+        "page": 102
+      },
+      {
+        "label": "Относительная влажность воздуха",
+        "value": "не более 80% при +25 °C",
+        "unit": null,
+        "page": 102
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ 11677-85",
+        "unit": null,
+        "page": 102
+      },
+      {
+        "label": "Условия среды (дословно)",
+        "value": "Не взрывоопасной и химически активной среде.",
+        "unit": null,
+        "page": 102
+      }
+    ],
+    "id": "tr2026-family-omzh-27-5",
+    "name": "Трансформаторы ОМЖ-2,5–10 кВА напряжением 27,5 кВ",
+    "recordKind": "family",
+    "recordType": "catalog-family",
+    "series": "Трансформаторы ОМЖ-2,5–10 кВА напряжением 27,5 кВ",
+    "subtype": "однофазный масляный; естественное охлаждение",
+    "description": "",
+    "variantIds": [
+      "alageum-om-2-5-27-5-5c844db4",
+      "alageum-om-4-27-5-dc449b1f",
+      "alageum-om-10-27-5-4afd1689"
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ОМЖ-2,5/27,5",
+    "execution": "однофазный масляный; естественное охлаждение",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      102
+    ],
+    "sourceRow": {
+      "pdfPage": 102,
+      "printedPage": 102,
+      "designation": "ОМЖ-2,5/27,5",
+      "variant": null,
+      "tableModelIndexOnPage": 1
+    },
+    "sourceFamilyId": "omzh-27-5",
+    "sourceRecordType": "model",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum Electric",
+    "isOrderableSku": false,
+    "power": 2.5,
+    "voltage": "27,5/0,23",
+    "voltageUnit": "кВ",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "2,5",
+        "unit": "кВА",
+        "page": 102,
+        "valueBasis": "Power value parsed from explicit model designation; row label occupies the nominal-power column."
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "27,5/0,23",
+        "unit": "кВ",
+        "page": 102
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "1/1-0",
+        "unit": "",
+        "page": 102,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "P0",
+        "value": "24",
+        "unit": "Вт",
+        "page": 102
+      },
+      {
+        "label": "Pk",
+        "value": "136",
+        "unit": "Вт",
+        "page": 102
+      },
+      {
+        "label": "Uk",
+        "value": "5,5",
+        "unit": "%",
+        "page": 102
+      },
+      {
+        "label": "I0",
+        "value": "5,4",
+        "unit": "%",
+        "page": 102
+      },
+      {
+        "label": "L",
+        "value": "730",
+        "unit": "мм",
+        "page": 102
+      },
+      {
+        "label": "B",
+        "value": "560",
+        "unit": "мм",
+        "page": 102
+      },
+      {
+        "label": "H",
+        "value": "1045",
+        "unit": "мм",
+        "page": 102
+      },
+      {
+        "label": "Полная масса",
+        "value": "150",
+        "unit": "кг",
+        "page": 102
+      },
+      {
+        "label": "Масса масла",
+        "value": "53,8",
+        "unit": "кг",
+        "page": 102
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 102
+      },
+      {
+        "label": "Климат",
+        "value": "умеренный",
+        "unit": "",
+        "page": 102,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Высота установки над уровнем моря",
+        "value": "не более 1000",
+        "unit": "м",
+        "page": 102
+      },
+      {
+        "label": "Температура окружающего воздуха",
+        "value": "−45 … +40",
+        "unit": "°C",
+        "page": 102
+      },
+      {
+        "label": "Относительная влажность воздуха",
+        "value": "не более 80% при +25 °C",
+        "unit": "",
+        "page": 102,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ 11677-85",
+        "unit": "",
+        "page": 102,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Условия среды (дословно)",
+        "value": "Не взрывоопасной и химически активной среде.",
+        "unit": "",
+        "page": 102,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "notes": [
+      "The printed environment wording says chemically active, not chemically inactive. Preserve verbatim and flag source ambiguity; do not silently correct."
+    ],
+    "image": "/catalog-source/transformers-2026/page-102.webp",
+    "imageSourcePage": 102,
+    "imageCaption": "Страница 102 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "2,5",
+        "unit": "кВА",
+        "page": 102,
+        "valueBasis": "Power value parsed from explicit model designation; row label occupies the nominal-power column."
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "27,5/0,23",
+        "unit": "кВ",
+        "page": 102
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "1/1-0",
+        "unit": null,
+        "page": 102
+      },
+      {
+        "label": "P0",
+        "value": "24",
+        "unit": "Вт",
+        "page": 102
+      },
+      {
+        "label": "Pk",
+        "value": "136",
+        "unit": "Вт",
+        "page": 102
+      },
+      {
+        "label": "Uk",
+        "value": "5,5",
+        "unit": "%",
+        "page": 102
+      },
+      {
+        "label": "I0",
+        "value": "5,4",
+        "unit": "%",
+        "page": 102
+      },
+      {
+        "label": "L",
+        "value": "730",
+        "unit": "мм",
+        "page": 102
+      },
+      {
+        "label": "B",
+        "value": "560",
+        "unit": "мм",
+        "page": 102
+      },
+      {
+        "label": "H",
+        "value": "1045",
+        "unit": "мм",
+        "page": 102
+      },
+      {
+        "label": "Полная масса",
+        "value": "150",
+        "unit": "кг",
+        "page": 102
+      },
+      {
+        "label": "Масса масла",
+        "value": "53,8",
+        "unit": "кг",
+        "page": 102
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 102
+      },
+      {
+        "label": "Климат",
+        "value": "умеренный",
+        "unit": null,
+        "page": 102
+      },
+      {
+        "label": "Высота установки над уровнем моря",
+        "value": "не более 1000",
+        "unit": "м",
+        "page": 102
+      },
+      {
+        "label": "Температура окружающего воздуха",
+        "value": "−45 … +40",
+        "unit": "°C",
+        "page": 102
+      },
+      {
+        "label": "Относительная влажность воздуха",
+        "value": "не более 80% при +25 °C",
+        "unit": null,
+        "page": 102
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ 11677-85",
+        "unit": null,
+        "page": 102
+      },
+      {
+        "label": "Условия среды (дословно)",
+        "value": "Не взрывоопасной и химически активной среде.",
+        "unit": null,
+        "page": 102
+      }
+    ],
+    "id": "alageum-om-2-5-27-5-5c844db4",
+    "name": "ОМЖ-2,5/27,5",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-omzh-27-5",
+    "familyName": "Трансформаторы ОМЖ-2,5–10 кВА напряжением 27,5 кВ",
+    "series": "Трансформаторы ОМЖ-2,5–10 кВА напряжением 27,5 кВ",
+    "subtype": "однофазный масляный; естественное охлаждение",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "2,5",
+        "unit": "кВА",
+        "page": 102,
+        "valueBasis": "Power value parsed from explicit model designation; row label occupies the nominal-power column."
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "27,5/0,23",
+        "unit": "кВ",
+        "page": 102
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "1/1-0",
+        "unit": "",
+        "page": 102,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "P0",
+        "value": "24",
+        "unit": "Вт",
+        "page": 102
+      },
+      {
+        "label": "Pk",
+        "value": "136",
+        "unit": "Вт",
+        "page": 102
+      },
+      {
+        "label": "Uk",
+        "value": "5,5",
+        "unit": "%",
+        "page": 102
+      },
+      {
+        "label": "I0",
+        "value": "5,4",
+        "unit": "%",
+        "page": 102
+      },
+      {
+        "label": "L",
+        "value": "730",
+        "unit": "мм",
+        "page": 102
+      },
+      {
+        "label": "B",
+        "value": "560",
+        "unit": "мм",
+        "page": 102
+      },
+      {
+        "label": "H",
+        "value": "1045",
+        "unit": "мм",
+        "page": 102
+      },
+      {
+        "label": "Полная масса",
+        "value": "150",
+        "unit": "кг",
+        "page": 102
+      },
+      {
+        "label": "Масса масла",
+        "value": "53,8",
+        "unit": "кг",
+        "page": 102
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 102
+      },
+      {
+        "label": "Климат",
+        "value": "умеренный",
+        "unit": "",
+        "page": 102,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Высота установки над уровнем моря",
+        "value": "не более 1000",
+        "unit": "м",
+        "page": 102
+      },
+      {
+        "label": "Температура окружающего воздуха",
+        "value": "−45 … +40",
+        "unit": "°C",
+        "page": 102
+      },
+      {
+        "label": "Относительная влажность воздуха",
+        "value": "не более 80% при +25 °C",
+        "unit": "",
+        "page": 102,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ 11677-85",
+        "unit": "",
+        "page": 102,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Условия среды (дословно)",
+        "value": "Не взрывоопасной и химически активной среде.",
+        "unit": "",
+        "page": 102,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "configurations": []
+  }
+];
+export default records;

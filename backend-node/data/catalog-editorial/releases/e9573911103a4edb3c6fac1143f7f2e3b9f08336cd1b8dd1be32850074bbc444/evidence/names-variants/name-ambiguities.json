@@ -1,0 +1,3345 @@
+[
+  {
+    "productId": "tsl-630",
+    "displayLabel": "ТСЛ-630 · 6–10 → 0,4",
+    "flags": [
+      "legacy_reference_voltage_unit_not_explicit"
+    ],
+    "notes": [
+      "The legacy reference has no explicit voltageUnit or row-level unit evidence. The label retains the original voltage string without appending an assumed unit; reference scope must remain visible."
+    ],
+    "sourceNotes": [],
+    "sourceUrl": "https://alageum.com/ru/katalog/transformatory/tsl-z",
+    "sourcePages": []
+  },
+  {
+    "productId": "tsl-1600",
+    "displayLabel": "ТСЛ-1600 · 6–10 → 0,4",
+    "flags": [
+      "legacy_reference_voltage_unit_not_explicit"
+    ],
+    "notes": [
+      "The legacy reference has no explicit voltageUnit or row-level unit evidence. The label retains the original voltage string without appending an assumed unit; reference scope must remain visible."
+    ],
+    "sourceNotes": [],
+    "sourceUrl": "https://alageum.com/ru/katalog/transformatory/tsl-z",
+    "sourcePages": []
+  },
+  {
+    "productId": "rlnd",
+    "displayLabel": "РЛНД",
+    "flags": [
+      "record_scope_requires_visible_evidence_kind"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://alageum.com/ru/katalog/elektrotekhnicheskoe-oborudovanie/rlnd",
+    "sourcePages": []
+  },
+  {
+    "productId": "kso-292",
+    "displayLabel": "КСО-292",
+    "flags": [
+      "source_conflict_or_missing_identity_evidence"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "В общей строке времени термической стойкости напечатано «220» с единицей «с», ниже даны 2 и 3 с; вероятная ошибка исходника сохранена и помечена.",
+      "В строке времени для нижних номиналов напечатано «400 и 600 А», хотя номинальный ток выше дан «400;630;1000 А».",
+      "Схемы основных исполнений не имеют точных модельных обозначений. Номиналы не развернуты в произвольные комбинации.",
+      "Время термической стойкости: общая строка 220 с противоречит подстрокам 2/3 с. Также «400 и 600 А» в подстроке при 630 А в перечне номинальных токов."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      28
+    ]
+  },
+  {
+    "productId": "kso-2-10",
+    "displayLabel": "КСО-2-10",
+    "flags": [
+      "source_conflict_or_missing_identity_evidence"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "В строке номинального тока камер с выключателями нагрузки и др. визуально напечатано «ИЗО»; это не преобразовано в догадку о числовом значении.",
+      "* — в соответствии с техническими параметрами выключателей. ** — термическая и электродинамическая стойкость трансформаторов тока по их техническим параметрам.",
+      "На высотах свыше 1000 м следует учитывать снижение диэлектрической прочности изоляции и охлаждающего действия воздуха.",
+      "Номиналы токов и напряжений являются вариантами характеристики семейства; их декартово произведение в модели не развернуто.",
+      "Нечисловая печатная ячейка «ИЗО» в строке номинального тока камер с выключателями нагрузки и др.; требуется уточнение. Размеры на малоконтрастном чертеже не перенесены без надежной проверки."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      25
+    ]
+  },
+  {
+    "productId": "cat-ktp-25-250",
+    "displayLabel": "КТП 25-250/6(10)/0,4кВ У1",
+    "flags": [
+      "source_conflict_or_missing_identity_evidence"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Варианты обозначены точными значениями мощности; отдельные полные обозначения каждого исполнения не напечатаны. Токи сопоставлены с мощностями по порядку последовательных перечней.",
+      "На чертеже строповки указана масса без трансформатора не более 200 кг, что противоречит техническим данным 305–375 кг.",
+      "Масса: в технических данных 305–375 кг, на чертеже строповки не более 200 кг. Требуется уточнение производителя."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      6,
+      7
+    ]
+  },
+  {
+    "productId": "cat-ktpn-25-3150",
+    "displayLabel": "КТПН 25-3150/6(10)/0,4кВ",
+    "flags": [
+      "source_conflict_or_missing_identity_evidence"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Строки диапазонов КТПН-25...63, КТПН-100...250 и КТПН-400...630 являются напечатанными размерными группами и не развернуты в неуказанные модели.",
+      "В описании указан диапазон 25–2500 кВА, в заголовке и таблице — до 3150 кВА.",
+      "Диапазон мощности в описании заканчивается 2500 кВА; заголовок и отдельная строка таблицы включают 3150 кВА."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      8,
+      9
+    ]
+  },
+  {
+    "productId": "cat-ktpg-25-3150",
+    "displayLabel": "КТПГ 25-3150/10(6) У1",
+    "flags": [
+      "source_conflict_or_missing_identity_evidence"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Заголовок страницы 11 охватывает КТПГ (2КТПГ); обозначения в столбцах таблицы даны как КТПГ. Не создано искусственное дублирование всех мощностей для 2КТПГ.",
+      "Для КТПГ-40 в строке «Линия №3» напечатано 400, единица в строках линий не указана; не исправлено догадкой."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      11,
+      12
+    ]
+  },
+  {
+    "productId": "cat-ktpp-2ktpp-250-6300",
+    "displayLabel": "КТПП, 2КТПП 250-6300/6(10)/0,4КВ",
+    "flags": [
+      "source_conflict_or_missing_identity_evidence"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Звездочкой помечены исполнения по специальному заказу.",
+      "Заголовок серии указывает 250–6300 кВА; таблица характеристик заканчивается «до 4000 кВА», таблица габаритов перечисляет 250, 400, 630, 1000, 1600, 2000, 2500, 4000 кВА. Модель 6300 не добавлена по одному диапазону.",
+      "Заголовки страниц 15–16 говорят о КТПП/2КТПП 250–2500/10(6), несмотря на строки таблицы до 4000 кВА.",
+      "Варианты с обозначениями мощностей сохранены как напечатанные табличные метки, без изготовления полных кодов. На чертеже габарит L — часть компоновки, не общая длина подстанции.",
+      "В описании страницы 14 употреблено обозначение «КТПНА»; это внутреннее несоответствие текста каталога.",
+      "Изображение — вертикально расположенный на странице габаритный чертеж; для показа можно повернуть вырезку на 90° по часовой стрелке.",
+      "Заголовок 250–6300 кВА, техническая таблица до 4000 кВА, заголовки чертежей 250–2500 и текст «КТПНА» не согласованы."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      14,
+      15,
+      16
+    ]
+  },
+  {
+    "productId": "cat-ktpto-80",
+    "displayLabel": "КТПТО 80/0,38 У1",
+    "flags": [
+      "record_scope_requires_visible_evidence_kind"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      18
+    ]
+  },
+  {
+    "productId": "cat-kso-366m",
+    "displayLabel": "КСО-3М",
+    "flags": [
+      "source_conflict_or_missing_identity_evidence"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Схемы главных цепей показаны без обозначений конкретных моделей; комплектующие не выделены в самостоятельные товары.",
+      "Заголовок страницы: КСО-3М; основной текст и структура обозначения: КСО-366М. Обозначения сохранены как вариант написания в источнике; требуется уточнение производителя.",
+      "Заголовок «КСО-3М», текст и условное обозначение «КСО-366М»."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      24
+    ]
+  },
+  {
+    "productId": "cat-rmu-ae",
+    "displayLabel": "RMU AE 6/10/20 КВ",
+    "flags": [
+      "source_conflict_or_missing_identity_evidence"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "В заголовках таблицы сохранены формулировки и единицы каталога (в том числе «изоляционная жидкость», «пкА»).",
+      "Значения давления 40,000 и 30,000 сохранены буквально, без изменения десятичного разделителя.",
+      "Продолжение семейства со страницы 29: габаритные чертежи, план расположения оборудования и однолинейная схема соединений. Подписи вариантов над чертежами недостаточно чёткие для надёжной транскрипции.",
+      "Подписи вариантов над чертежами мелкие и дефектные в исходном PDF; модели по этим подписям не выдуманы."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      29,
+      30
+    ]
+  },
+  {
+    "productId": "cat-bktp-concrete",
+    "displayLabel": "БКТП",
+    "flags": [
+      "source_conflict_or_missing_identity_evidence"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Значения могут уточняться в зависимости от типа встраиваемой аппаратуры. Для габаритных вариантов модулей ниже используются описательные названия по таблице: заводских кодов модулей каталог не приводит."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      40,
+      41
+    ]
+  },
+  {
+    "productId": "cat-krun07-ktz",
+    "displayLabel": "КРУН-07 КТЗ",
+    "flags": [
+      "source_conflict_or_missing_identity_evidence"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "По индивидуальному заказу допускается номинальный ток главных цепей 4000 А. При коэффициенте трансформации трансформаторов тока менее 600/5 стойкость КРУ определяется стойкостью трансформатора тока.",
+      "Типы ячеек по габаритным чертежам названы описательно; диапазоны номинального тока не развёрнуты в комбинации исполнений.",
+      "Нижний чертёж страницы 43 озаглавлен повторно «К-07 КТЗ (линейная ячейка)», но изображает наружный модуль; связь с КРУН-07 КТЗ следует из описания на странице 42."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      42,
+      43
+    ]
+  },
+  {
+    "productId": "cat-kru-kerneu-6-10",
+    "displayLabel": "КРУ KERNEU 6(10) кВ",
+    "flags": [
+      "source_conflict_or_missing_identity_evidence"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "На странице 45 таблица габаритов в разделе KERNEU напечатана с обозначением «Тип КРУ К-07-К10(3)»; обозначение сохранено как в источнике, соответствие требует подтверждения изготовителем. 4000 А явно присутствует как размерный вариант на странице 45, хотя список тока главных цепей страницы 44 заканчивается 3150 А.",
+      "Раздел KERNEU; таблица размеров подписана «Тип КРУ К-07-К10(3)». Сохранить атрибуцию и уточнить у изготовителя."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      44,
+      45
+    ]
+  },
+  {
+    "productId": "cat-kru-kerneu-35",
+    "displayLabel": "КРУ KERNEU 35 кВ / КРУ К-07-К35 АЕ",
+    "flags": [
+      "source_conflict_or_missing_identity_evidence"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Заголовок на странице 46: KERNEU 35 кВ; в описании: КРУ К-07-К35 АЕ; в условиях эксплуатации: К-07 АЕ / КРУН-07 АЕ. Все обозначения сохранены без выдуманного унифицированного кода.",
+      "Источник противоречив по обслуживанию: текст указывает доступ только со стороны фасада (одностороннее), таблица — двухстороннее. Перед техническим подбором требуется подтверждение изготовителем.",
+      "Изображение страницы 47 повёрнуто в самом PDF; перед публикацией желательно повернуть иллюстрацию для удобства чтения.",
+      "Текст: одностороннее обслуживание; таблица: двухстороннее."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      46,
+      47
+    ]
+  },
+  {
+    "productId": "cat-k8m",
+    "displayLabel": "К-8М",
+    "flags": [
+      "source_conflict_or_missing_identity_evidence"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "* В соответствии с техническими параметрами выключателей. ** Термическая и динамическая стойкость трансформаторов тока определяется их техническими параметрами.",
+      "Окружающая среда невзрывоопасная, без токопроводящей пыли и агрессивных газов/паров, разрушающих металл и изоляцию.",
+      "В исходной таблице страницы 48 значение наибольшего рабочего напряжения напечатано «690» при единице «кВ». Оно противоречит номинальному 6/10 кВ; не использовать для технического подбора без подтверждения изготовителем.",
+      "Наибольшее рабочее напряжение напечатано 690 кВ; явно требует проверки, не нормализовано молча."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      48,
+      49
+    ]
+  },
+  {
+    "productId": "cat-km7m",
+    "displayLabel": "КМ-7М",
+    "flags": [
+      "source_conflict_or_missing_identity_evidence"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "* В соответствии с техническими параметрами выключателей. ** Термическая и динамическая стойкость трансформаторов тока определяется их техническими параметрами.",
+      "Окружающая среда невзрывоопасная, без токопроводящей пыли и агрессивных газов/паров, разрушающих металл и изоляцию.",
+      "На странице 52 условия эксплуатации указывают У1, при этом заголовок и строка «Род установки» определяют внутреннюю установку; сохранено без исправления источника.",
+      "Внутренняя установка по заголовку и таблице; в условиях эксплуатации напечатано климатическое исполнение У1."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      52,
+      53
+    ]
+  },
+  {
+    "productId": "cat-pr-shr11",
+    "displayLabel": "ПР и ШР11",
+    "flags": [
+      "source_conflict_or_missing_identity_evidence"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Заголовок страницы напечатан «ПРИ И ШР11», а схема подписана ПР-11. Обозначения источника различаются и требуют уточнения."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      64
+    ]
+  },
+  {
+    "productId": "cat-pr-shr11-v003",
+    "displayLabel": "ПР-11",
+    "flags": [
+      "record_scope_requires_visible_evidence_kind"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Заголовок страницы напечатан «ПРИ И ШР11», а схема подписана ПР-11. Обозначения источника различаются и требуют уточнения."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      64
+    ]
+  },
+  {
+    "productId": "cat-yatp",
+    "displayLabel": "ЯТП-0,25; ЯТП-0,4; ЯТП-0,63",
+    "flags": [
+      "source_conflict_or_missing_identity_evidence"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Мощность в заголовке таблицы ошибочно дана в кВ; единица кВА подтверждена текстом конструкции.",
+      "Таблица дает 270×170×280 мм, но чертеж показывает 400×200×300 мм; оба значения сохранены без исправления.",
+      "В общей таблице вводной автомат 6,3 А, в строках вариантов QF1 — 6 А. По заказу допускается нетиповое вторичное напряжение.",
+      "Противоречие габаритов: таблица 270×170×280 мм (Ш×Г×В), чертеж 400×200×300 мм. Общая таблица вводного автомата 6,3 А, строковая QF1 6 А. В шапке мощности ошибочная единица «кВ», в тексте «кВА»."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      65
+    ]
+  },
+  {
+    "productId": "cat-ya5000-rusm5000",
+    "displayLabel": "Я 5000-5435 и РУСМ 5000",
+    "flags": [
+      "source_conflict_or_missing_identity_evidence"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Типы ящиков и типовые индексы перечислены независимо, без изготовления комбинаций обозначений.",
+      "В каталоге для индекса 22xx* диапазон теплового реле напечатан 0,95–0,6 А; сохранено без исправления.",
+      "Последняя группа типов повторяет Я5434; повтор одного обозначения не создан как второй товар.",
+      "Для индекса 22xx* предел регулировки реле напечатан 0,95–0,6 А. Последняя группа повторяет Я5434; в списке сохранен один экземпляр. Диапазоны типовых индексов и визуальная группировка строк не дают однозначной полной матрицы моделей; комбинации не созданы."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      66
+    ]
+  },
+  {
+    "productId": "cat-ptm-tded",
+    "displayLabel": "ПТМ(Д), ТДЕ(Д)-9",
+    "flags": [
+      "source_conflict_or_missing_identity_evidence"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "На странице 68 есть явные ошибки набора в обозначениях и мощности; спорные строки сохранены буквально.",
+      "КПД исполнения 5,0 кВт в таблице не заполнен.",
+      "Страница 69 содержит схему и размерные чертежи ПТМ(Д)-У1 и ТДЕ(Д)-9-У3, это технические иллюстрации.",
+      "В заголовках таблицы буквально напечатаны «ТДЕД-9-го» и «ТДЕД-?-3,0», а выходная мощность колонки 3,0 дана «,03». Сохранены как напечатано; не исправлять без производителя. Строка напряжения режима 2 для колонки 2,0 содержит 96 В, несмотря на ток 42 А; не исправлена.",
+      "КПД исполнения 5,0 кВт отсутствует; не выдуман."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      68,
+      69
+    ]
+  },
+  {
+    "productId": "cat-ptm-tded-v009",
+    "displayLabel": "ТДЕД-?-3,0",
+    "flags": [
+      "source_designation_contains_unresolved_character",
+      "source_notes_must_remain_available"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "На странице 68 есть явные ошибки набора в обозначениях и мощности; спорные строки сохранены буквально.",
+      "КПД исполнения 5,0 кВт в таблице не заполнен.",
+      "Страница 69 содержит схему и размерные чертежи ПТМ(Д)-У1 и ТДЕ(Д)-9-У3, это технические иллюстрации.",
+      "В заголовках таблицы буквально напечатаны «ТДЕД-9-го» и «ТДЕД-?-3,0», а выходная мощность колонки 3,0 дана «,03». Сохранены как напечатано; не исправлять без производителя. Строка напряжения режима 2 для колонки 2,0 содержит 96 В, несмотря на ток 42 А; не исправлена.",
+      "КПД исполнения 5,0 кВт отсутствует; не выдуман."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      68,
+      69
+    ]
+  },
+  {
+    "productId": "cat-ptm-tded-v012",
+    "displayLabel": "ПТМ(Д)-У1",
+    "flags": [
+      "record_scope_requires_visible_evidence_kind"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "На странице 68 есть явные ошибки набора в обозначениях и мощности; спорные строки сохранены буквально.",
+      "КПД исполнения 5,0 кВт в таблице не заполнен.",
+      "Страница 69 содержит схему и размерные чертежи ПТМ(Д)-У1 и ТДЕ(Д)-9-У3, это технические иллюстрации.",
+      "В заголовках таблицы буквально напечатаны «ТДЕД-9-го» и «ТДЕД-?-3,0», а выходная мощность колонки 3,0 дана «,03». Сохранены как напечатано; не исправлять без производителя. Строка напряжения режима 2 для колонки 2,0 содержит 96 В, несмотря на ток 42 А; не исправлена.",
+      "КПД исполнения 5,0 кВт отсутствует; не выдуман."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      68,
+      69
+    ]
+  },
+  {
+    "productId": "cat-ptm-tded-v013",
+    "displayLabel": "ТДЕ(Д)-9-У3",
+    "flags": [
+      "record_scope_requires_visible_evidence_kind"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "На странице 68 есть явные ошибки набора в обозначениях и мощности; спорные строки сохранены буквально.",
+      "КПД исполнения 5,0 кВт в таблице не заполнен.",
+      "Страница 69 содержит схему и размерные чертежи ПТМ(Д)-У1 и ТДЕ(Д)-9-У3, это технические иллюстрации.",
+      "В заголовках таблицы буквально напечатаны «ТДЕД-9-го» и «ТДЕД-?-3,0», а выходная мощность колонки 3,0 дана «,03». Сохранены как напечатано; не исправлять без производителя. Строка напряжения режима 2 для колонки 2,0 содержит 96 В, несмотря на ток 42 А; не исправлена.",
+      "КПД исполнения 5,0 кВт отсутствует; не выдуман."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      68,
+      69
+    ]
+  },
+  {
+    "productId": "cat-bdrm",
+    "displayLabel": "БДРМ",
+    "flags": [
+      "source_conflict_or_missing_identity_evidence"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Строки с двумя исполнениями и двумя массами разнесены в порядке перечисления каталога. Числа в кодах не развернуты в дополнительные варианты.",
+      "Страница 71 отдельно называет схему БДРМ-25-4-41-УХЛ1; эта модель добавлена без выдуманных габаритов.",
+      "Обозначение БДРМ-25-2-22-УХЛ1 в заголовке схемы отличается по формату от размерной таблицы БДРМ-25-2-20-22 УХЛ1; обе точные записи сохранены, их идентичность не предполагается."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      70,
+      71
+    ]
+  },
+  {
+    "productId": "cat-bdrm-v010",
+    "displayLabel": "БДРМ-25-2-22-УХЛ1",
+    "flags": [
+      "record_scope_requires_visible_evidence_kind"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Строки с двумя исполнениями и двумя массами разнесены в порядке перечисления каталога. Числа в кодах не развернуты в дополнительные варианты.",
+      "Страница 71 отдельно называет схему БДРМ-25-4-41-УХЛ1; эта модель добавлена без выдуманных габаритов.",
+      "Обозначение БДРМ-25-2-22-УХЛ1 в заголовке схемы отличается по формату от размерной таблицы БДРМ-25-2-20-22 УХЛ1; обе точные записи сохранены, их идентичность не предполагается."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      70,
+      71
+    ]
+  },
+  {
+    "productId": "cat-bdrm-v011",
+    "displayLabel": "БДРМ-25-4-41-УХЛ1",
+    "flags": [
+      "record_scope_requires_visible_evidence_kind"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Строки с двумя исполнениями и двумя массами разнесены в порядке перечисления каталога. Числа в кодах не развернуты в дополнительные варианты.",
+      "Страница 71 отдельно называет схему БДРМ-25-4-41-УХЛ1; эта модель добавлена без выдуманных габаритов.",
+      "Обозначение БДРМ-25-2-22-УХЛ1 в заголовке схемы отличается по формату от размерной таблицы БДРМ-25-2-20-22 УХЛ1; обе точные записи сохранены, их идентичность не предполагается."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      70,
+      71
+    ]
+  },
+  {
+    "productId": "cat-pusk-3m",
+    "displayLabel": "ПУСК-3М",
+    "flags": [
+      "source_conflict_or_missing_identity_evidence"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Перечисленные аппараты — состав шкафа, не отдельные продаваемые варианты этого семейства. Номиналы тока приведены списком, индивидуальных обозначений для них каталог не дает."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      72
+    ]
+  },
+  {
+    "productId": "cat-shueng",
+    "displayLabel": "ШУЭНГ",
+    "flags": [
+      "source_conflict_or_missing_identity_evidence"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Заголовки на стр. 72 и 73 описывают одно семейство ШУЭНГ, объединены без дублирования."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      72,
+      73
+    ]
+  },
+  {
+    "productId": "cat-yakno-6-10",
+    "displayLabel": "ЯКНО 6(10) кВ",
+    "flags": [
+      "source_conflict_or_missing_identity_evidence"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Заголовок коэффициента трансформации в таблице напечатан с единицей А; сохранено без исправления."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      90
+    ]
+  },
+  {
+    "productId": "cat-yakno-20",
+    "displayLabel": "ЯКНО-20 кВ У1",
+    "flags": [
+      "source_conflict_or_missing_identity_evidence"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "В строке тока отключения источник печатает 25 А, а не кА. Значение требует проверки; не исправлено предположением. Фраза о шкафе ШТЗ в тексте страницы выглядит несогласованной с заголовком."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      91
+    ]
+  },
+  {
+    "productId": "cat-ktpshg",
+    "displayLabel": "КТПШГ 100–1000/6(10)/0,4 кВ У1",
+    "flags": [
+      "source_conflict_or_missing_identity_evidence"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Заголовок заявляет 100–1000 кВА, 6(10) кВ; таблица перечисляет только 100, 250, 400, 630 кВА и 6000 В. Другие сочетания не созданы. Полные обозначения вариантов не напечатаны."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      92
+    ]
+  },
+  {
+    "productId": "cat-bueskn",
+    "displayLabel": "БУЭСКН",
+    "flags": [
+      "source_conflict_or_missing_identity_evidence"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Варианты обозначены мощностью из таблицы; полные индивидуальные обозначения заказа не напечатаны."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      95
+    ]
+  },
+  {
+    "productId": "cat-bushk-2m",
+    "displayLabel": "БУШК-2М",
+    "flags": [
+      "source_conflict_or_missing_identity_evidence"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Варианты обозначены мощностью из таблицы; полные индивидуальные обозначения заказа не напечатаны."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      96
+    ]
+  },
+  {
+    "productId": "cat-ktpnd",
+    "displayLabel": "КТПНД 25–400/6(10)/0,4 кВ У1",
+    "flags": [
+      "source_conflict_or_missing_identity_evidence"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "В заголовке диапазон до 400 кВА, но таблица содержит только 25–250 кВА. Модель 400 не выдумана. В ячейке тока при 10 кВ для 40 кВА напечатано «2,3,1»; значение не исправлено."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      97
+    ]
+  },
+  {
+    "productId": "cat-modular-oil",
+    "displayLabel": "Модульный блок контейнерного типа для нефтеперерабатывающей промышленности",
+    "flags": [
+      "no_explicit_designation_in_record",
+      "family_not_individual_model"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+    "sourcePages": [
+      98
+    ]
+  },
+  {
+    "productId": "alageum-tmg-standard-25",
+    "displayLabel": "ТМГ-25 · 6(10)/0,4 кВ · стандартный",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "Standard is the source execution, not proof of aluminum windings. Do not label Al."
+    ],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      6,
+      7,
+      12
+    ]
+  },
+  {
+    "productId": "alageum-tmg-standard-40",
+    "displayLabel": "ТМГ-40 · 6(10)/0,4 кВ · стандартный",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "Standard is the source execution, not proof of aluminum windings. Do not label Al."
+    ],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      6,
+      7,
+      12
+    ]
+  },
+  {
+    "productId": "alageum-tmg-standard-63",
+    "displayLabel": "ТМГ-63 · 6(10)/0,4 кВ · стандартный",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "Standard is the source execution, not proof of aluminum windings. Do not label Al."
+    ],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      6,
+      7,
+      12
+    ]
+  },
+  {
+    "productId": "alageum-tmg-standard-100",
+    "displayLabel": "ТМГ-100 · 6(10)/0,4 кВ · стандартный",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "Standard is the source execution, not proof of aluminum windings. Do not label Al."
+    ],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      6,
+      7,
+      12
+    ]
+  },
+  {
+    "productId": "alageum-tmg-standard-160",
+    "displayLabel": "ТМГ-160 · 6(10)/0,4 кВ · стандартный",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "Standard is the source execution, not proof of aluminum windings. Do not label Al."
+    ],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      6,
+      7,
+      12
+    ]
+  },
+  {
+    "productId": "alageum-tmg-standard-250",
+    "displayLabel": "ТМГ-250 · 6(10)/0,4 кВ · стандартный",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "Standard is the source execution, not proof of aluminum windings. Do not label Al."
+    ],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      6,
+      7,
+      12
+    ]
+  },
+  {
+    "productId": "alageum-tmg-standard-1250",
+    "displayLabel": "ТМГ-1250 · 6(10)/0,4 кВ · стандартный",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "Standard is the source execution, not proof of aluminum windings. Do not label Al."
+    ],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      6,
+      7,
+      13
+    ]
+  },
+  {
+    "productId": "alageum-tmg-standard-1600",
+    "displayLabel": "ТМГ-1600 · 6(10)/0,4 кВ · стандартный",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "Standard is the source execution, not proof of aluminum windings. Do not label Al."
+    ],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      6,
+      7,
+      13
+    ]
+  },
+  {
+    "productId": "alageum-tmg-standard-2000",
+    "displayLabel": "ТМГ-2000 · 6(10)/0,4 кВ · стандартный",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "Standard is the source execution, not proof of aluminum windings. Do not label Al."
+    ],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      6,
+      7,
+      13
+    ]
+  },
+  {
+    "productId": "alageum-tmg-standard-3200",
+    "displayLabel": "ТМГ-3200 · 6(10)/0,4 кВ · стандартный",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "Standard is the source execution, not proof of aluminum windings. Do not label Al."
+    ],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      6,
+      7,
+      13
+    ]
+  },
+  {
+    "productId": "alageum-tm-standard-100",
+    "displayLabel": "ТМ-100 · 6(10)/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed.",
+      "Heading and table include 16 кВА, but body states Диапазон мощности – 25–2500 кВА. Both preserved; not corrected."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      14,
+      15,
+      16
+    ]
+  },
+  {
+    "productId": "alageum-tm-standard-160",
+    "displayLabel": "ТМ-160 · 6(10)/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed.",
+      "Heading and table include 16 кВА, but body states Диапазон мощности – 25–2500 кВА. Both preserved; not corrected."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      14,
+      15,
+      16
+    ]
+  },
+  {
+    "productId": "alageum-tm-standard-250",
+    "displayLabel": "ТМ-250 · 6(10)/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed.",
+      "Heading and table include 16 кВА, but body states Диапазон мощности – 25–2500 кВА. Both preserved; not corrected."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      14,
+      15,
+      16
+    ]
+  },
+  {
+    "productId": "alageum-tm-standard-400",
+    "displayLabel": "ТМ-400 · 6(10)/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed.",
+      "Heading and table include 16 кВА, but body states Диапазон мощности – 25–2500 кВА. Both preserved; not corrected."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      14,
+      15,
+      16
+    ]
+  },
+  {
+    "productId": "alageum-tm-standard-630",
+    "displayLabel": "ТМ-630 · 6(10)/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed.",
+      "Heading and table include 16 кВА, but body states Диапазон мощности – 25–2500 кВА. Both preserved; not corrected."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      14,
+      15,
+      17
+    ]
+  },
+  {
+    "productId": "alageum-tm-standard-1000",
+    "displayLabel": "ТМ-1000 · 6(10)/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed.",
+      "Heading and table include 16 кВА, but body states Диапазон мощности – 25–2500 кВА. Both preserved; not corrected."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      14,
+      15,
+      17
+    ]
+  },
+  {
+    "productId": "alageum-tm-standard-1250",
+    "displayLabel": "ТМ-1250 · 6(10)/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed.",
+      "Heading and table include 16 кВА, but body states Диапазон мощности – 25–2500 кВА. Both preserved; not corrected."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      14,
+      15,
+      17
+    ]
+  },
+  {
+    "productId": "alageum-tm-standard-1600",
+    "displayLabel": "ТМ-1600 · 6(10)/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed.",
+      "Heading and table include 16 кВА, but body states Диапазон мощности – 25–2500 кВА. Both preserved; not corrected."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      14,
+      15,
+      17
+    ]
+  },
+  {
+    "productId": "alageum-tm-standard-2000",
+    "displayLabel": "ТМ-2000 · 6(10)/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed.",
+      "Heading and table include 16 кВА, but body states Диапазон мощности – 25–2500 кВА. Both preserved; not corrected."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      14,
+      15,
+      17
+    ]
+  },
+  {
+    "productId": "alageum-tm-standard-2500",
+    "displayLabel": "ТМ-2500 · 6(10)/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed.",
+      "Heading and table include 16 кВА, but body states Диапазон мощности – 25–2500 кВА. Both preserved; not corrected."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      14,
+      15,
+      17
+    ]
+  },
+  {
+    "productId": "alageum-tmg-switch-6-10-25",
+    "displayLabel": "ТМГ-25 · ВН 6↔10 кВ · 2-этажный переключатель",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "6↔10 denotes source-confirmed switching, unlike the alternative nominal voltage notation 6(10). Do not infer winding material."
+    ],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed.",
+      "Drawings on pages 46–47 verified by neighboring section worker, outside assigned visual inspection range."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      44,
+      45,
+      46
+    ]
+  },
+  {
+    "productId": "alageum-tmg-switch-6-10-40",
+    "displayLabel": "ТМГ-40 · ВН 6↔10 кВ · 2-этажный переключатель",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "6↔10 denotes source-confirmed switching, unlike the alternative nominal voltage notation 6(10). Do not infer winding material."
+    ],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed.",
+      "Drawings on pages 46–47 verified by neighboring section worker, outside assigned visual inspection range."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      44,
+      45,
+      46
+    ]
+  },
+  {
+    "productId": "alageum-tmg-switch-6-10-63",
+    "displayLabel": "ТМГ-63 · ВН 6↔10 кВ · 2-этажный переключатель",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "6↔10 denotes source-confirmed switching, unlike the alternative nominal voltage notation 6(10). Do not infer winding material."
+    ],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed.",
+      "Drawings on pages 46–47 verified by neighboring section worker, outside assigned visual inspection range."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      44,
+      45,
+      46
+    ]
+  },
+  {
+    "productId": "alageum-tmg-switch-6-10-100",
+    "displayLabel": "ТМГ-100 · ВН 6↔10 кВ · 2-этажный переключатель",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "6↔10 denotes source-confirmed switching, unlike the alternative nominal voltage notation 6(10). Do not infer winding material."
+    ],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed.",
+      "Drawings on pages 46–47 verified by neighboring section worker, outside assigned visual inspection range."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      44,
+      45,
+      46
+    ]
+  },
+  {
+    "productId": "alageum-tmg-switch-6-10-160",
+    "displayLabel": "ТМГ-160 · ВН 6↔10 кВ · 2-этажный переключатель",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "6↔10 denotes source-confirmed switching, unlike the alternative nominal voltage notation 6(10). Do not infer winding material."
+    ],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed.",
+      "Drawings on pages 46–47 verified by neighboring section worker, outside assigned visual inspection range."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      44,
+      45,
+      46
+    ]
+  },
+  {
+    "productId": "alageum-tmg-switch-6-10-250",
+    "displayLabel": "ТМГ-250 · ВН 6↔10 кВ · 2-этажный переключатель",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "6↔10 denotes source-confirmed switching, unlike the alternative nominal voltage notation 6(10). Do not infer winding material."
+    ],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed.",
+      "Drawings on pages 46–47 verified by neighboring section worker, outside assigned visual inspection range."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      44,
+      45,
+      46
+    ]
+  },
+  {
+    "productId": "alageum-tmg-switch-6-10-1250",
+    "displayLabel": "ТМГ-1250 · ВН 6↔10 кВ · 2-этажный переключатель",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "6↔10 denotes source-confirmed switching, unlike the alternative nominal voltage notation 6(10). Do not infer winding material."
+    ],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed.",
+      "Drawings on pages 46–47 verified by neighboring section worker, outside assigned visual inspection range."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      44,
+      45,
+      47
+    ]
+  },
+  {
+    "productId": "alageum-tmg-switch-6-10-1600",
+    "displayLabel": "ТМГ-1600 · ВН 6↔10 кВ · 2-этажный переключатель",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "6↔10 denotes source-confirmed switching, unlike the alternative nominal voltage notation 6(10). Do not infer winding material."
+    ],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed.",
+      "Drawings on pages 46–47 verified by neighboring section worker, outside assigned visual inspection range."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      44,
+      45,
+      47
+    ]
+  },
+  {
+    "productId": "alageum-tmg-switch-6-10-2000",
+    "displayLabel": "ТМГ-2000 · ВН 6↔10 кВ · 2-этажный переключатель",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "6↔10 denotes source-confirmed switching, unlike the alternative nominal voltage notation 6(10). Do not infer winding material."
+    ],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed.",
+      "Drawings on pages 46–47 verified by neighboring section worker, outside assigned visual inspection range."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      44,
+      45,
+      47
+    ]
+  },
+  {
+    "productId": "alageum-2026-isolating-tmg-630",
+    "displayLabel": "ТМГ-630 · разделительный",
+    "flags": [
+      "lv_voltage_missing"
+    ],
+    "notes": [
+      "The source row states HV 6-10 kV but does not provide LV. Do not infer a 1:1 ratio or 0.4 kV."
+    ],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      48,
+      49
+    ]
+  },
+  {
+    "productId": "alageum-2026-isolating-tmg-1000",
+    "displayLabel": "ТМГ-1000 · разделительный",
+    "flags": [
+      "lv_voltage_missing"
+    ],
+    "notes": [
+      "The source row states HV 6-10 kV but does not provide LV. Do not infer a 1:1 ratio or 0.4 kV."
+    ],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      48,
+      49
+    ]
+  },
+  {
+    "productId": "alageum-2026-isolating-tmg-1250",
+    "displayLabel": "ТМГ-1250 · разделительный",
+    "flags": [
+      "lv_voltage_missing"
+    ],
+    "notes": [
+      "The source row states HV 6-10 kV but does not provide LV. Do not infer a 1:1 ratio or 0.4 kV."
+    ],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      48,
+      49
+    ]
+  },
+  {
+    "productId": "alageum-2026-isolating-tmg-1600",
+    "displayLabel": "ТМГ-1600 · разделительный",
+    "flags": [
+      "lv_voltage_missing"
+    ],
+    "notes": [
+      "The source row states HV 6-10 kV but does not provide LV. Do not infer a 1:1 ratio or 0.4 kV."
+    ],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      48,
+      49
+    ]
+  },
+  {
+    "productId": "alageum-2026-isolating-tmg-2000",
+    "displayLabel": "ТМГ-2000 · разделительный",
+    "flags": [
+      "lv_voltage_missing"
+    ],
+    "notes": [
+      "The source row states HV 6-10 kV but does not provide LV. Do not infer a 1:1 ratio or 0.4 kV."
+    ],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      48,
+      49
+    ]
+  },
+  {
+    "productId": "alageum-2026-isolating-tmg-2500",
+    "displayLabel": "ТМГ-2500 · разделительный",
+    "flags": [
+      "lv_voltage_missing"
+    ],
+    "notes": [
+      "The source row states HV 6-10 kV but does not provide LV. Do not infer a 1:1 ratio or 0.4 kV."
+    ],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      48,
+      49
+    ]
+  },
+  {
+    "productId": "alageum-2026-isolating-tmg-3200",
+    "displayLabel": "ТМГ-3200 · разделительный",
+    "flags": [
+      "lv_voltage_missing"
+    ],
+    "notes": [
+      "The source row states HV 6-10 kV but does not provide LV. Do not infer a 1:1 ratio or 0.4 kV."
+    ],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      48,
+      49
+    ]
+  },
+  {
+    "productId": "alageum-2026-tm-20kv-100",
+    "displayLabel": "ТМ-100 · 20/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      50,
+      51,
+      52
+    ]
+  },
+  {
+    "productId": "alageum-2026-tm-20kv-160",
+    "displayLabel": "ТМ-160 · 20/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      50,
+      51,
+      52
+    ]
+  },
+  {
+    "productId": "alageum-2026-tm-20kv-250",
+    "displayLabel": "ТМ-250 · 20/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      50,
+      51,
+      52
+    ]
+  },
+  {
+    "productId": "alageum-2026-tm-20kv-400",
+    "displayLabel": "ТМ-400 · 20/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      50,
+      51,
+      52
+    ]
+  },
+  {
+    "productId": "alageum-2026-tm-20kv-630",
+    "displayLabel": "ТМ-630 · 20/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      50,
+      51,
+      53
+    ]
+  },
+  {
+    "productId": "alageum-2026-tm-20kv-1000",
+    "displayLabel": "ТМ-1000 · 20/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      50,
+      51,
+      53
+    ]
+  },
+  {
+    "productId": "alageum-2026-tm-20kv-1250",
+    "displayLabel": "ТМ-1250 · 20/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      50,
+      51,
+      53
+    ]
+  },
+  {
+    "productId": "alageum-2026-tm-20kv-1600",
+    "displayLabel": "ТМ-1600 · 20/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      50,
+      51,
+      53
+    ]
+  },
+  {
+    "productId": "alageum-2026-tm-20kv-2000",
+    "displayLabel": "ТМ-2000 · 20/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      50,
+      51,
+      53
+    ]
+  },
+  {
+    "productId": "alageum-2026-tm-20kv-2500",
+    "displayLabel": "ТМ-2500 · 20/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      50,
+      51,
+      53
+    ]
+  },
+  {
+    "productId": "tr2026-family-tmg-20kv",
+    "displayLabel": "ТМГ · 20 кВ · серия",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      54,
+      55,
+      56,
+      57
+    ]
+  },
+  {
+    "productId": "alageum-2026-tmg-20kv-100",
+    "displayLabel": "ТМГ-100 · 20/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "20 kV alone is the source execution. Do not add Al, Cu, or standard."
+    ],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      54,
+      55,
+      56
+    ]
+  },
+  {
+    "productId": "alageum-2026-tmg-20kv-160",
+    "displayLabel": "ТМГ-160 · 20/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "20 kV alone is the source execution. Do not add Al, Cu, or standard."
+    ],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      54,
+      55,
+      56
+    ]
+  },
+  {
+    "productId": "alageum-2026-tmg-20kv-250",
+    "displayLabel": "ТМГ-250 · 20/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "20 kV alone is the source execution. Do not add Al, Cu, or standard."
+    ],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      54,
+      55,
+      56
+    ]
+  },
+  {
+    "productId": "alageum-2026-tmg-20kv-400",
+    "displayLabel": "ТМГ-400 · 20/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "20 kV alone is the source execution. Do not add Al, Cu, or standard."
+    ],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      54,
+      55,
+      56
+    ]
+  },
+  {
+    "productId": "alageum-2026-tmg-20kv-630",
+    "displayLabel": "ТМГ-630 · 20/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "20 kV alone is the source execution. Do not add Al, Cu, or standard."
+    ],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      54,
+      55,
+      56
+    ]
+  },
+  {
+    "productId": "alageum-2026-tmg-20kv-1000",
+    "displayLabel": "ТМГ-1000 · 20/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "20 kV alone is the source execution. Do not add Al, Cu, or standard."
+    ],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      54,
+      55,
+      57
+    ]
+  },
+  {
+    "productId": "alageum-2026-tmg-20kv-1250",
+    "displayLabel": "ТМГ-1250 · 20/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "20 kV alone is the source execution. Do not add Al, Cu, or standard."
+    ],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      54,
+      55,
+      57
+    ]
+  },
+  {
+    "productId": "alageum-2026-tmg-20kv-1600",
+    "displayLabel": "ТМГ-1600 · 20/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "20 kV alone is the source execution. Do not add Al, Cu, or standard."
+    ],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      54,
+      55,
+      57
+    ]
+  },
+  {
+    "productId": "alageum-2026-tmg-20kv-2000",
+    "displayLabel": "ТМГ-2000 · 20/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "20 kV alone is the source execution. Do not add Al, Cu, or standard."
+    ],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      54,
+      55,
+      57
+    ]
+  },
+  {
+    "productId": "alageum-2026-tmg-20kv-2500",
+    "displayLabel": "ТМГ-2500 · 20/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "20 kV alone is the source execution. Do not add Al, Cu, or standard."
+    ],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      54,
+      55,
+      57
+    ]
+  },
+  {
+    "productId": "alageum-2026-tmpn-p62-r3",
+    "displayLabel": "ТМПН-160/3 · ВН 1250 В",
+    "flags": [
+      "unresolved_source_loss_unit_or_value"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Loss header literally says Вт although decimal magnitudes may indicate a source unit error; not converted."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      62,
+      63,
+      66
+    ]
+  },
+  {
+    "productId": "alageum-2026-tmpn-p62-r4",
+    "displayLabel": "ТМПН-160/3 · ВН 1900 В",
+    "flags": [
+      "unresolved_source_loss_unit_or_value"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Loss header literally says Вт although decimal magnitudes may indicate a source unit error; not converted."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      62,
+      63,
+      66
+    ]
+  },
+  {
+    "productId": "alageum-2026-tmpn-p62-r5",
+    "displayLabel": "ТМПН-160/3 · ВН 1902 В",
+    "flags": [
+      "unresolved_source_loss_unit_or_value"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Loss header literally says Вт although decimal magnitudes may indicate a source unit error; not converted."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      62,
+      63,
+      66
+    ]
+  },
+  {
+    "productId": "alageum-2026-tmpn-p62-r6",
+    "displayLabel": "ТМПН-250/3 · ВН 2247 В",
+    "flags": [
+      "unresolved_source_loss_unit_or_value"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Loss header literally says Вт although decimal magnitudes may indicate a source unit error; not converted."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      62,
+      63,
+      66
+    ]
+  },
+  {
+    "productId": "alageum-2026-tmpn-p62-r7",
+    "displayLabel": "ТМПН-250/3 · ВН 2005 В",
+    "flags": [
+      "unresolved_source_loss_unit_or_value"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Loss header literally says Вт although decimal magnitudes may indicate a source unit error; not converted."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      62,
+      63,
+      66
+    ]
+  },
+  {
+    "productId": "alageum-2026-tmpn-p62-r8",
+    "displayLabel": "ТМПНГ-100/3 · верхние выводы",
+    "flags": [
+      "unresolved_source_loss_unit_or_value"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Loss header literally says Вт although decimal magnitudes may indicate a source unit error; not converted."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      62,
+      63,
+      66
+    ]
+  },
+  {
+    "productId": "alageum-2026-tmpn-p64-r1",
+    "displayLabel": "ТМПНГ-160/3 · ВН 1900 В · верхние выводы",
+    "flags": [
+      "unresolved_source_loss_unit_or_value"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Loss header literally says Вт although decimal magnitudes may indicate a source unit error; not converted."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      64,
+      65,
+      66
+    ]
+  },
+  {
+    "productId": "alageum-2026-tmpn-p64-r2",
+    "displayLabel": "ТМПНГ-160/3 · ВН 1902 В · верхние выводы",
+    "flags": [
+      "unresolved_source_loss_unit_or_value"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Loss header literally says Вт although decimal magnitudes may indicate a source unit error; not converted."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      64,
+      65,
+      66
+    ]
+  },
+  {
+    "productId": "alageum-2026-tmpn-p64-r3",
+    "displayLabel": "ТМПНГ-250/3 · ВН 2247 В · верхние выводы",
+    "flags": [
+      "unresolved_source_loss_unit_or_value"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Loss header literally says Вт although decimal magnitudes may indicate a source unit error; not converted."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      64,
+      65,
+      66
+    ]
+  },
+  {
+    "productId": "alageum-2026-tmpn-p64-r7",
+    "displayLabel": "ТМПНГ-100/3 · боковой вывод",
+    "flags": [
+      "unresolved_source_loss_unit_or_value"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Loss header literally says Вт although decimal magnitudes may indicate a source unit error; not converted."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      64,
+      65,
+      67
+    ]
+  },
+  {
+    "productId": "alageum-2026-tmpn-p64-r8",
+    "displayLabel": "ТМПНГ-160/3 · ВН 1360 В · боковой вывод",
+    "flags": [
+      "nominal_voltage_absent_from_printed_tap_list",
+      "unresolved_source_loss_unit_or_value"
+    ],
+    "notes": [
+      "Nominal HV is 1360 V, while the printed tap list contains 1362 V and no 1360 V. Preserve both raw values; do not silently replace nominal HV."
+    ],
+    "sourceNotes": [
+      "Loss header literally says Вт although decimal magnitudes may indicate a source unit error; not converted."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      64,
+      65,
+      67
+    ]
+  },
+  {
+    "productId": "alageum-2026-tmpn-p64-r9",
+    "displayLabel": "ТМПНГ-250/3 · ВН 2000 В · боковой вывод",
+    "flags": [
+      "nominal_voltage_absent_from_printed_tap_list",
+      "unresolved_source_loss_unit_or_value"
+    ],
+    "notes": [
+      "Nominal HV is 2000 V, while the printed tap list contains 2010 V and no 2000 V. Preserve both raw values; do not silently replace nominal HV."
+    ],
+    "sourceNotes": [
+      "Loss header literally says Вт although decimal magnitudes may indicate a source unit error; not converted."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      64,
+      65,
+      67
+    ]
+  },
+  {
+    "productId": "alageum-2026-tmto80-original",
+    "displayLabel": "ТМТО-80 · 3 обмотки",
+    "flags": [
+      "source_tertiary_power_voltage_current_inconsistency"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Source states25кВА,42В,34,4А for tertiary; retain incompatible-looking combination."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      68,
+      69
+    ]
+  },
+  {
+    "productId": "alageum-2026-om-2p0-drawing",
+    "displayLabel": "ОМ 2,0",
+    "flags": [
+      "record_scope_requires_visible_evidence_kind"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "ОМ2,0 present only in drawing75; absent electrical72 and dimension73 tables. No full SKU or electrical values inferred."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      75
+    ]
+  },
+  {
+    "productId": "alageum-2026-tsl-c-63",
+    "displayLabel": "ТСЛ(З)-63 · потери С",
+    "flags": [
+      "unresolved_source_loss_unit_or_value",
+      "dimension_slash_pairs_not_mapped_to_executions"
+    ],
+    "notes": [
+      "Loss-level letter is retained as printed. ТСЛ and ТСЛЗ enclosure choices remain configurations of this record, not invented separate full SKUs."
+    ],
+    "sourceNotes": [
+      "Loss unit printed кВт with magnitudes190 etc; retained without silently converting to watts.",
+      "Dimension slash-pairs retained verbatim; likely open/enclosed order from headings, but pair mapping not explicitly labeled in table.",
+      "Merged l/b cells show a single value spanning columns; repeated in extraction only as shared cell, not two independent measurements."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      77,
+      78,
+      80,
+      81
+    ]
+  },
+  {
+    "productId": "alageum-2026-tsl-c-100",
+    "displayLabel": "ТСЛ(З)-100 · потери С",
+    "flags": [
+      "unresolved_source_loss_unit_or_value",
+      "dimension_slash_pairs_not_mapped_to_executions"
+    ],
+    "notes": [
+      "Loss-level letter is retained as printed. ТСЛ and ТСЛЗ enclosure choices remain configurations of this record, not invented separate full SKUs."
+    ],
+    "sourceNotes": [
+      "Loss unit printed кВт with magnitudes190 etc; retained without silently converting to watts.",
+      "Dimension slash-pairs retained verbatim; likely open/enclosed order from headings, but pair mapping not explicitly labeled in table.",
+      "Merged l/b cells show a single value spanning columns; repeated in extraction only as shared cell, not two independent measurements."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      77,
+      78,
+      80,
+      81
+    ]
+  },
+  {
+    "productId": "alageum-2026-tsl-c-160",
+    "displayLabel": "ТСЛ(З)-160 · потери С",
+    "flags": [
+      "unresolved_source_loss_unit_or_value",
+      "dimension_slash_pairs_not_mapped_to_executions"
+    ],
+    "notes": [
+      "Loss-level letter is retained as printed. ТСЛ and ТСЛЗ enclosure choices remain configurations of this record, not invented separate full SKUs."
+    ],
+    "sourceNotes": [
+      "Loss unit printed кВт with magnitudes190 etc; retained without silently converting to watts.",
+      "Dimension slash-pairs retained verbatim; likely open/enclosed order from headings, but pair mapping not explicitly labeled in table.",
+      "Merged l/b cells show a single value spanning columns; repeated in extraction only as shared cell, not two independent measurements."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      77,
+      78,
+      80,
+      81
+    ]
+  },
+  {
+    "productId": "alageum-2026-tsl-c-250",
+    "displayLabel": "ТСЛ(З)-250 · потери С",
+    "flags": [
+      "unresolved_source_loss_unit_or_value",
+      "dimension_slash_pairs_not_mapped_to_executions"
+    ],
+    "notes": [
+      "Loss-level letter is retained as printed. ТСЛ and ТСЛЗ enclosure choices remain configurations of this record, not invented separate full SKUs."
+    ],
+    "sourceNotes": [
+      "Loss unit printed кВт with magnitudes190 etc; retained without silently converting to watts.",
+      "Dimension slash-pairs retained verbatim; likely open/enclosed order from headings, but pair mapping not explicitly labeled in table.",
+      "Merged l/b cells show a single value spanning columns; repeated in extraction only as shared cell, not two independent measurements."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      77,
+      78,
+      80,
+      81
+    ]
+  },
+  {
+    "productId": "alageum-2026-tsl-c-400",
+    "displayLabel": "ТСЛ(З)-400 · потери С",
+    "flags": [
+      "unresolved_source_loss_unit_or_value",
+      "dimension_slash_pairs_not_mapped_to_executions"
+    ],
+    "notes": [
+      "Loss-level letter is retained as printed. ТСЛ and ТСЛЗ enclosure choices remain configurations of this record, not invented separate full SKUs."
+    ],
+    "sourceNotes": [
+      "Loss unit printed кВт with magnitudes190 etc; retained without silently converting to watts.",
+      "Dimension slash-pairs retained verbatim; likely open/enclosed order from headings, but pair mapping not explicitly labeled in table.",
+      "Merged l/b cells show a single value spanning columns; repeated in extraction only as shared cell, not two independent measurements."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      77,
+      78,
+      80,
+      81
+    ]
+  },
+  {
+    "productId": "alageum-2026-tsl-c-1000",
+    "displayLabel": "ТСЛ(З)-1000 · потери С",
+    "flags": [
+      "unresolved_source_loss_unit_or_value",
+      "dimension_slash_pairs_not_mapped_to_executions"
+    ],
+    "notes": [
+      "Loss-level letter is retained as printed. ТСЛ and ТСЛЗ enclosure choices remain configurations of this record, not invented separate full SKUs."
+    ],
+    "sourceNotes": [
+      "Loss unit printed кВт with magnitudes190 etc; retained without silently converting to watts.",
+      "Dimension slash-pairs retained verbatim; likely open/enclosed order from headings, but pair mapping not explicitly labeled in table.",
+      "Merged l/b cells show a single value spanning columns; repeated in extraction only as shared cell, not two independent measurements."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      77,
+      78,
+      80,
+      81
+    ]
+  },
+  {
+    "productId": "alageum-2026-tsl-c-1250",
+    "displayLabel": "ТСЛ(З)-1250 · потери С",
+    "flags": [
+      "unresolved_source_loss_unit_or_value",
+      "dimension_slash_pairs_not_mapped_to_executions"
+    ],
+    "notes": [
+      "Loss-level letter is retained as printed. ТСЛ and ТСЛЗ enclosure choices remain configurations of this record, not invented separate full SKUs."
+    ],
+    "sourceNotes": [
+      "Loss unit printed кВт with magnitudes190 etc; retained without silently converting to watts.",
+      "Dimension slash-pairs retained verbatim; likely open/enclosed order from headings, but pair mapping not explicitly labeled in table.",
+      "Merged l/b cells show a single value spanning columns; repeated in extraction only as shared cell, not two independent measurements."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      77,
+      78,
+      80,
+      81
+    ]
+  },
+  {
+    "productId": "alageum-2026-tsl-c-2000",
+    "displayLabel": "ТСЛ(З)-2000 · потери С",
+    "flags": [
+      "unresolved_source_loss_unit_or_value",
+      "dimension_slash_pairs_not_mapped_to_executions"
+    ],
+    "notes": [
+      "Loss-level letter is retained as printed. ТСЛ and ТСЛЗ enclosure choices remain configurations of this record, not invented separate full SKUs."
+    ],
+    "sourceNotes": [
+      "Loss unit printed кВт with magnitudes190 etc; retained without silently converting to watts.",
+      "Dimension slash-pairs retained verbatim; likely open/enclosed order from headings, but pair mapping not explicitly labeled in table.",
+      "Merged l/b cells show a single value spanning columns; repeated in extraction only as shared cell, not two independent measurements."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      77,
+      78,
+      80,
+      81
+    ]
+  },
+  {
+    "productId": "alageum-2026-tsl-c-2500",
+    "displayLabel": "ТСЛ(З)-2500 · потери С",
+    "flags": [
+      "unresolved_source_loss_unit_or_value",
+      "dimension_slash_pairs_not_mapped_to_executions"
+    ],
+    "notes": [
+      "Loss-level letter is retained as printed. ТСЛ and ТСЛЗ enclosure choices remain configurations of this record, not invented separate full SKUs."
+    ],
+    "sourceNotes": [
+      "Loss unit printed кВт with magnitudes190 etc; retained without silently converting to watts.",
+      "Dimension slash-pairs retained verbatim; likely open/enclosed order from headings, but pair mapping not explicitly labeled in table.",
+      "Merged l/b cells show a single value spanning columns; repeated in extraction only as shared cell, not two independent measurements."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      77,
+      78,
+      80,
+      81
+    ]
+  },
+  {
+    "productId": "alageum-2026-tsl-a-63",
+    "displayLabel": "ТСЛ(З)-63 · потери А",
+    "flags": [
+      "unresolved_source_loss_unit_or_value",
+      "dimension_slash_pairs_not_mapped_to_executions"
+    ],
+    "notes": [
+      "Loss-level letter is retained as printed. ТСЛ and ТСЛЗ enclosure choices remain configurations of this record, not invented separate full SKUs."
+    ],
+    "sourceNotes": [
+      "Loss unit printed кВт with magnitudes190 etc; retained without silently converting to watts.",
+      "Dimension slash-pairs retained verbatim; likely open/enclosed order from headings, but pair mapping not explicitly labeled in table.",
+      "Merged l/b cells show a single value spanning columns; repeated in extraction only as shared cell, not two independent measurements.",
+      "Energy-efficient63 has electrical row but no dimensional row on79; standard-class dimensions not substituted."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      78,
+      79,
+      80,
+      81
+    ]
+  },
+  {
+    "productId": "alageum-2026-tsl-a-100",
+    "displayLabel": "ТСЛ(З)-100 · потери А",
+    "flags": [
+      "unresolved_source_loss_unit_or_value",
+      "dimension_slash_pairs_not_mapped_to_executions"
+    ],
+    "notes": [
+      "Loss-level letter is retained as printed. ТСЛ and ТСЛЗ enclosure choices remain configurations of this record, not invented separate full SKUs."
+    ],
+    "sourceNotes": [
+      "Loss unit printed кВт with magnitudes190 etc; retained without silently converting to watts.",
+      "Dimension slash-pairs retained verbatim; likely open/enclosed order from headings, but pair mapping not explicitly labeled in table.",
+      "Merged l/b cells show a single value spanning columns; repeated in extraction only as shared cell, not two independent measurements."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      78,
+      79,
+      80,
+      81
+    ]
+  },
+  {
+    "productId": "alageum-2026-tsl-a-160",
+    "displayLabel": "ТСЛ(З)-160 · потери А",
+    "flags": [
+      "unresolved_source_loss_unit_or_value",
+      "dimension_slash_pairs_not_mapped_to_executions"
+    ],
+    "notes": [
+      "Loss-level letter is retained as printed. ТСЛ and ТСЛЗ enclosure choices remain configurations of this record, not invented separate full SKUs."
+    ],
+    "sourceNotes": [
+      "Loss unit printed кВт with magnitudes190 etc; retained without silently converting to watts.",
+      "Dimension slash-pairs retained verbatim; likely open/enclosed order from headings, but pair mapping not explicitly labeled in table.",
+      "Merged l/b cells show a single value spanning columns; repeated in extraction only as shared cell, not two independent measurements."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      78,
+      79,
+      80,
+      81
+    ]
+  },
+  {
+    "productId": "alageum-2026-tsl-a-250",
+    "displayLabel": "ТСЛ(З)-250 · потери А",
+    "flags": [
+      "unresolved_source_loss_unit_or_value",
+      "dimension_slash_pairs_not_mapped_to_executions"
+    ],
+    "notes": [
+      "Loss-level letter is retained as printed. ТСЛ and ТСЛЗ enclosure choices remain configurations of this record, not invented separate full SKUs."
+    ],
+    "sourceNotes": [
+      "Loss unit printed кВт with magnitudes190 etc; retained without silently converting to watts.",
+      "Dimension slash-pairs retained verbatim; likely open/enclosed order from headings, but pair mapping not explicitly labeled in table.",
+      "Merged l/b cells show a single value spanning columns; repeated in extraction only as shared cell, not two independent measurements."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      78,
+      79,
+      80,
+      81
+    ]
+  },
+  {
+    "productId": "alageum-2026-tsl-a-400",
+    "displayLabel": "ТСЛ(З)-400 · потери А",
+    "flags": [
+      "unresolved_source_loss_unit_or_value",
+      "dimension_slash_pairs_not_mapped_to_executions"
+    ],
+    "notes": [
+      "Loss-level letter is retained as printed. ТСЛ and ТСЛЗ enclosure choices remain configurations of this record, not invented separate full SKUs."
+    ],
+    "sourceNotes": [
+      "Loss unit printed кВт with magnitudes190 etc; retained without silently converting to watts.",
+      "Dimension slash-pairs retained verbatim; likely open/enclosed order from headings, but pair mapping not explicitly labeled in table.",
+      "Merged l/b cells show a single value spanning columns; repeated in extraction only as shared cell, not two independent measurements."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      78,
+      79,
+      80,
+      81
+    ]
+  },
+  {
+    "productId": "alageum-2026-tsl-a-1000",
+    "displayLabel": "ТСЛ(З)-1000 · потери А",
+    "flags": [
+      "unresolved_source_loss_unit_or_value",
+      "dimension_slash_pairs_not_mapped_to_executions"
+    ],
+    "notes": [
+      "Loss-level letter is retained as printed. ТСЛ and ТСЛЗ enclosure choices remain configurations of this record, not invented separate full SKUs."
+    ],
+    "sourceNotes": [
+      "Loss unit printed кВт with magnitudes190 etc; retained without silently converting to watts.",
+      "Dimension slash-pairs retained verbatim; likely open/enclosed order from headings, but pair mapping not explicitly labeled in table.",
+      "Merged l/b cells show a single value spanning columns; repeated in extraction only as shared cell, not two independent measurements."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      78,
+      79,
+      80,
+      81
+    ]
+  },
+  {
+    "productId": "alageum-2026-tsl-a-1250",
+    "displayLabel": "ТСЛ(З)-1250 · потери А",
+    "flags": [
+      "unresolved_source_loss_unit_or_value",
+      "dimension_slash_pairs_not_mapped_to_executions"
+    ],
+    "notes": [
+      "Loss-level letter is retained as printed. ТСЛ and ТСЛЗ enclosure choices remain configurations of this record, not invented separate full SKUs."
+    ],
+    "sourceNotes": [
+      "Loss unit printed кВт with magnitudes190 etc; retained without silently converting to watts.",
+      "Dimension slash-pairs retained verbatim; likely open/enclosed order from headings, but pair mapping not explicitly labeled in table.",
+      "Merged l/b cells show a single value spanning columns; repeated in extraction only as shared cell, not two independent measurements."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      78,
+      79,
+      80,
+      81
+    ]
+  },
+  {
+    "productId": "alageum-2026-tsl-a-2000",
+    "displayLabel": "ТСЛ(З)-2000 · потери А",
+    "flags": [
+      "unresolved_source_loss_unit_or_value",
+      "dimension_slash_pairs_not_mapped_to_executions"
+    ],
+    "notes": [
+      "Loss-level letter is retained as printed. ТСЛ and ТСЛЗ enclosure choices remain configurations of this record, not invented separate full SKUs."
+    ],
+    "sourceNotes": [
+      "Loss unit printed кВт with magnitudes190 etc; retained without silently converting to watts.",
+      "Dimension slash-pairs retained verbatim; likely open/enclosed order from headings, but pair mapping not explicitly labeled in table.",
+      "Merged l/b cells show a single value spanning columns; repeated in extraction only as shared cell, not two independent measurements."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      78,
+      79,
+      80,
+      81
+    ]
+  },
+  {
+    "productId": "alageum-2026-tsl-a-2500",
+    "displayLabel": "ТСЛ(З)-2500 · потери А",
+    "flags": [
+      "unresolved_source_loss_unit_or_value",
+      "dimension_slash_pairs_not_mapped_to_executions"
+    ],
+    "notes": [
+      "Loss-level letter is retained as printed. ТСЛ and ТСЛЗ enclosure choices remain configurations of this record, not invented separate full SKUs."
+    ],
+    "sourceNotes": [
+      "Loss unit printed кВт with magnitudes190 etc; retained without silently converting to watts.",
+      "Dimension slash-pairs retained verbatim; likely open/enclosed order from headings, but pair mapping not explicitly labeled in table.",
+      "Merged l/b cells show a single value spanning columns; repeated in extraction only as shared cell, not two independent measurements."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      78,
+      79,
+      80,
+      81
+    ]
+  },
+  {
+    "productId": "alageum-2026-tsl-20kv-630",
+    "displayLabel": "ТСЛ-630 · 20/0,4 кВ",
+    "flags": [
+      "unresolved_source_loss_unit_or_value"
+    ],
+    "notes": [
+      "20 kV explicit model row; do not attach ТСЛЗ enclosure dimensions to the ТСЛ row. Keep the reference and model records separate."
+    ],
+    "sourceNotes": [
+      "Loss unit printed кВт with magnitudes600 etc; preserve source.",
+      "Purpose mentions ТСЛЗ enclosure option, but explicit table rows/dimensions name ТСЛ and drawing84 is IP00; do not apply these dimensions to enclosure."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      82,
+      83,
+      84
+    ]
+  },
+  {
+    "productId": "alageum-2026-tsl-20kv-1600",
+    "displayLabel": "ТСЛ-1600 · 20/0,4 кВ",
+    "flags": [
+      "unresolved_source_loss_unit_or_value"
+    ],
+    "notes": [
+      "20 kV explicit model row; do not attach ТСЛЗ enclosure dimensions to the ТСЛ row. Keep the reference and model records separate."
+    ],
+    "sourceNotes": [
+      "Loss unit printed кВт with magnitudes600 etc; preserve source.",
+      "Purpose mentions ТСЛЗ enclosure option, but explicit table rows/dimensions name ТСЛ and drawing84 is IP00; do not apply these dimensions to enclosure."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      82,
+      83,
+      84
+    ]
+  },
+  {
+    "productId": "tr2026-family-dry-accessories",
+    "displayLabel": "Комплектность и дополнительное оснащение сухих трансформаторов",
+    "flags": [
+      "no_explicit_designation_in_record",
+      "family_not_individual_model"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      85,
+      86
+    ]
+  },
+  {
+    "productId": "alageum-2026-ts-10",
+    "displayLabel": "ТС(З) · 10 кВА",
+    "flags": [
+      "source_voltage_unit_conflicts_with_voltage_class",
+      "dimension_slash_pairs_not_mapped_to_executions"
+    ],
+    "notes": [
+      "The source marks the row ТС(З); power is a separate characteristic. Do not fabricate designation ТС(З)-10. The printed 380/220 кВ conflicts with class 0.66 кВ, so these voltage values are not used in the short label."
+    ],
+    "sourceNotes": [
+      "Voltage header literally кВ while values380/220 appear inconsistent with0,66кВ class; retained without correction.",
+      "Slash dimension/mass pairs not explicitly mapped to executions; retain raw."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      86,
+      87,
+      88
+    ]
+  },
+  {
+    "productId": "alageum-2026-ts-16",
+    "displayLabel": "ТС(З) · 16 кВА",
+    "flags": [
+      "source_voltage_unit_conflicts_with_voltage_class",
+      "dimension_slash_pairs_not_mapped_to_executions"
+    ],
+    "notes": [
+      "The source marks the row ТС(З); power is a separate characteristic. Do not fabricate designation ТС(З)-16. The printed 380/220 кВ conflicts with class 0.66 кВ, so these voltage values are not used in the short label."
+    ],
+    "sourceNotes": [
+      "Voltage header literally кВ while values380/220 appear inconsistent with0,66кВ class; retained without correction.",
+      "Slash dimension/mass pairs not explicitly mapped to executions; retain raw."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      86,
+      87,
+      88
+    ]
+  },
+  {
+    "productId": "alageum-2026-ts-25",
+    "displayLabel": "ТС(З) · 25 кВА",
+    "flags": [
+      "source_voltage_unit_conflicts_with_voltage_class",
+      "dimension_slash_pairs_not_mapped_to_executions"
+    ],
+    "notes": [
+      "The source marks the row ТС(З); power is a separate characteristic. Do not fabricate designation ТС(З)-25. The printed 380/220 кВ conflicts with class 0.66 кВ, so these voltage values are not used in the short label."
+    ],
+    "sourceNotes": [
+      "Voltage header literally кВ while values380/220 appear inconsistent with0,66кВ class; retained without correction.",
+      "Slash dimension/mass pairs not explicitly mapped to executions; retain raw."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      86,
+      87,
+      88
+    ]
+  },
+  {
+    "productId": "alageum-2026-ts-40",
+    "displayLabel": "ТС(З) · 40 кВА",
+    "flags": [
+      "source_voltage_unit_conflicts_with_voltage_class",
+      "dimension_slash_pairs_not_mapped_to_executions"
+    ],
+    "notes": [
+      "The source marks the row ТС(З); power is a separate characteristic. Do not fabricate designation ТС(З)-40. The printed 380/220 кВ conflicts with class 0.66 кВ, so these voltage values are not used in the short label."
+    ],
+    "sourceNotes": [
+      "Voltage header literally кВ while values380/220 appear inconsistent with0,66кВ class; retained without correction.",
+      "Slash dimension/mass pairs not explicitly mapped to executions; retain raw."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      86,
+      87,
+      88
+    ]
+  },
+  {
+    "productId": "alageum-2026-ts-63",
+    "displayLabel": "ТС(З) · 63 кВА",
+    "flags": [
+      "source_voltage_unit_conflicts_with_voltage_class",
+      "dimension_slash_pairs_not_mapped_to_executions"
+    ],
+    "notes": [
+      "The source marks the row ТС(З); power is a separate characteristic. Do not fabricate designation ТС(З)-63. The printed 380/220 кВ conflicts with class 0.66 кВ, so these voltage values are not used in the short label."
+    ],
+    "sourceNotes": [
+      "Voltage header literally кВ while values380/220 appear inconsistent with0,66кВ class; retained without correction.",
+      "Slash dimension/mass pairs not explicitly mapped to executions; retain raw."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      86,
+      87,
+      88
+    ]
+  },
+  {
+    "productId": "alageum-2026-ts-100",
+    "displayLabel": "ТС(З) · 100 кВА",
+    "flags": [
+      "source_voltage_unit_conflicts_with_voltage_class",
+      "dimension_slash_pairs_not_mapped_to_executions"
+    ],
+    "notes": [
+      "The source marks the row ТС(З); power is a separate characteristic. Do not fabricate designation ТС(З)-100. The printed 380/220 кВ conflicts with class 0.66 кВ, so these voltage values are not used in the short label."
+    ],
+    "sourceNotes": [
+      "Voltage header literally кВ while values380/220 appear inconsistent with0,66кВ class; retained without correction.",
+      "Slash dimension/mass pairs not explicitly mapped to executions; retain raw."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      86,
+      87,
+      88
+    ]
+  },
+  {
+    "productId": "alageum-2026-nom-3-drawing",
+    "displayLabel": "НОМ-3",
+    "flags": [
+      "record_scope_requires_visible_evidence_kind"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "НОМ-3 explicitly present in dimension-table row; absent from electrical table. Do not infer voltage or mass from6kV variant. Drawing table does not print units."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      97
+    ]
+  },
+  {
+    "productId": "tr2026-family-tmg-35",
+    "displayLabel": "ТМГ-25–2500 · 35 кВ · серия",
+    "flags": [
+      "typography_normalized_range_collision"
+    ],
+    "notes": [
+      "The source en dash in 25–2500 differs typographically from 25-2500 in the copper/switch family titles. It is not a substantive difference; voltage context is used to distinguish the family."
+    ],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      105,
+      106,
+      107,
+      108
+    ]
+  },
+  {
+    "productId": "alageum-tmg-25-35-kv-a5ee05cb",
+    "displayLabel": "ТМГ-25 · 35/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated",
+      "unresolved_source_loss_unit_or_value"
+    ],
+    "notes": [],
+    "sourceNotes": [
+      "Source Pk cell reads 0,61 under Вт header; preserved without correcting likely unit/value error."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      105,
+      106,
+      107
+    ]
+  },
+  {
+    "productId": "alageum-tmg-40-35-kv-cac6b2ce",
+    "displayLabel": "ТМГ-40 · 35/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      105,
+      106,
+      107
+    ]
+  },
+  {
+    "productId": "alageum-tmg-63-35-kv-256cf341",
+    "displayLabel": "ТМГ-63 · 35/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      105,
+      106,
+      107
+    ]
+  },
+  {
+    "productId": "alageum-tmg-100-35-kv-d09c147c",
+    "displayLabel": "ТМГ-100 · 35/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      105,
+      106,
+      107
+    ]
+  },
+  {
+    "productId": "alageum-tmg-160-35-kv-61b8771f",
+    "displayLabel": "ТМГ-160 · 35/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      105,
+      106,
+      107
+    ]
+  },
+  {
+    "productId": "alageum-tmg-250-35-kv-a39056bb",
+    "displayLabel": "ТМГ-250 · 35/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      105,
+      106,
+      107
+    ]
+  },
+  {
+    "productId": "alageum-tmg-400-35-kv-14cfad3c",
+    "displayLabel": "ТМГ-400 · 35/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      105,
+      106,
+      107
+    ]
+  },
+  {
+    "productId": "alageum-tmg-630-35-kv-e447452b",
+    "displayLabel": "ТМГ-630 · 35/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      105,
+      106,
+      108
+    ]
+  },
+  {
+    "productId": "alageum-tmg-1000-35-kv-3495071a",
+    "displayLabel": "ТМГ-1000 · 35/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      105,
+      106,
+      108
+    ]
+  },
+  {
+    "productId": "alageum-tmg-1600-35-kv-a742f975",
+    "displayLabel": "ТМГ-1600 · 35/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      105,
+      106,
+      108
+    ]
+  },
+  {
+    "productId": "alageum-tmg-2500-35-kv-04053493",
+    "displayLabel": "ТМГ-2500 · 35/0,4 кВ",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      105,
+      106,
+      108
+    ]
+  },
+  {
+    "productId": "tr2026-family-asia-two-winding-110-pbv",
+    "displayLabel": "Двухобмоточные трансформаторы класса напряжения 110 кВ с ПБВ и без ПБВ, без регулирования напряжения",
+    "flags": [
+      "no_explicit_designation_in_record",
+      "family_not_individual_model"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      166,
+      167
+    ]
+  },
+  {
+    "productId": "tr2026-family-asia-two-winding-110-rpn",
+    "displayLabel": "Двухобмоточные трансформаторы класса напряжения 110 кВ с РПН",
+    "flags": [
+      "no_explicit_designation_in_record",
+      "family_not_individual_model"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      166,
+      167
+    ]
+  },
+  {
+    "productId": "tr2026-family-asia-split-110-rpn",
+    "displayLabel": "Двухобмоточные трансформаторы с расщепленными обмотками НН класса напряжения 110 кВ с РПН",
+    "flags": [
+      "no_explicit_designation_in_record",
+      "family_not_individual_model"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      166,
+      168
+    ]
+  },
+  {
+    "productId": "tr2026-family-asia-three-winding-110",
+    "displayLabel": "Трехобмоточные трансформаторы класса напряжения 110 кВ с РПН",
+    "flags": [
+      "no_explicit_designation_in_record",
+      "family_not_individual_model"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      166,
+      168
+    ]
+  },
+  {
+    "productId": "tr2026-family-asia-two-winding-220-pbv",
+    "displayLabel": "Двухобмоточные трансформаторы класса напряжения 220 кВ с ПБВ и без ПБВ, без регулирования напряжения",
+    "flags": [
+      "no_explicit_designation_in_record",
+      "family_not_individual_model"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      166,
+      169
+    ]
+  },
+  {
+    "productId": "tr2026-family-asia-two-winding-220-rpn",
+    "displayLabel": "Двухобмоточные трансформаторы класса напряжения 220 кВ с РПН",
+    "flags": [
+      "no_explicit_designation_in_record",
+      "family_not_individual_model"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      166,
+      169
+    ]
+  },
+  {
+    "productId": "tr2026-family-asia-split-220-rpn",
+    "displayLabel": "Двухобмоточные трансформаторы класса напряжения 220 кВ с РПН (расщепленные НН по схеме)",
+    "flags": [
+      "no_explicit_designation_in_record",
+      "family_not_individual_model"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      166,
+      170
+    ]
+  },
+  {
+    "productId": "tr2026-family-asia-three-winding-220",
+    "displayLabel": "Трехобмоточные трансформаторы класса напряжения 220 кВ с РПН",
+    "flags": [
+      "no_explicit_designation_in_record",
+      "family_not_individual_model"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      166,
+      170
+    ]
+  },
+  {
+    "productId": "tr2026-family-asia-autotransformer-220",
+    "displayLabel": "Трехобмоточные автотрансформаторы класса напряжения 220 кВ с РПН",
+    "flags": [
+      "no_explicit_designation_in_record",
+      "family_not_individual_model"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      166,
+      171
+    ]
+  },
+  {
+    "productId": "tr2026-family-asia-autotransformer-330",
+    "displayLabel": "АТДТЦН и АОДТЦН · 330 кВ · серия",
+    "flags": [
+      "family_heading_and_model_row_spelling_differ"
+    ],
+    "notes": [
+      "330/500 kV denotes the family voltage section, evidenced by linked three-phase model rows. Single-phase members retain their separate phase-voltage √3 values. Keep family heading АТДТЦН / АОДТЦН; explicit models use АТДЦТН / АОДЦТН."
+    ],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      166,
+      173
+    ]
+  },
+  {
+    "productId": "tr2026-family-asia-autotransformer-500",
+    "displayLabel": "АТДТЦН и АОДТЦН · 500 кВ · серия",
+    "flags": [
+      "family_heading_and_model_row_spelling_differ"
+    ],
+    "notes": [
+      "330/500 kV denotes the family voltage section, evidenced by linked three-phase model rows. Single-phase members retain their separate phase-voltage √3 values. Keep family heading АТДТЦН / АОДТЦН; explicit models use АТДЦТН / АОДЦТН."
+    ],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      166,
+      174
+    ]
+  },
+  {
+    "productId": "alageum-aodctn-167000-500-167000-50000-kva-9ba56f4a",
+    "displayLabel": "АОДЦТН-167000/500 · 167000/50000 кВА",
+    "flags": [
+      "family_heading_and_model_row_spelling_differ"
+    ],
+    "notes": [
+      "The full printed nominal-power pair uniquely separates every colliding model. Do not manufacture a new designation or assign the second power to a winding without the source header. MV/LV alternatives are kept in separate attributes."
+    ],
+    "sourceNotes": [
+      "Section heading spells АТДТЦН / АОДТЦН while the model rows spell АТДЦТН / АОДЦТН. Record designation follows the explicit table row."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      166,
+      174
+    ]
+  },
+  {
+    "productId": "alageum-aodctn-167000-500-167000-67000-kva-9c1ecac6",
+    "displayLabel": "АОДЦТН-167000/500 · 167000/67000 кВА",
+    "flags": [
+      "family_heading_and_model_row_spelling_differ"
+    ],
+    "notes": [
+      "The full printed nominal-power pair uniquely separates every colliding model. Do not manufacture a new designation or assign the second power to a winding without the source header. MV/LV alternatives are kept in separate attributes."
+    ],
+    "sourceNotes": [
+      "Section heading spells АТДТЦН / АОДТЦН while the model rows spell АТДЦТН / АОДЦТН. Record designation follows the explicit table row."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      166,
+      174
+    ]
+  },
+  {
+    "productId": "alageum-aodctn-167000-500-167000-83000-kva-0928bbe8",
+    "displayLabel": "АОДЦТН-167000/500 · 167000/83000 кВА",
+    "flags": [
+      "family_heading_and_model_row_spelling_differ"
+    ],
+    "notes": [
+      "The full printed nominal-power pair uniquely separates every colliding model. Do not manufacture a new designation or assign the second power to a winding without the source header. MV/LV alternatives are kept in separate attributes."
+    ],
+    "sourceNotes": [
+      "Section heading spells АТДТЦН / АОДТЦН while the model rows spell АТДЦТН / АОДЦТН. Record designation follows the explicit table row."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      166,
+      174
+    ]
+  },
+  {
+    "productId": "alageum-aodctn-267000-500-267000-67000-kva-294a89be",
+    "displayLabel": "АОДЦТН-267000/500 · 267000/67000 кВА",
+    "flags": [
+      "family_heading_and_model_row_spelling_differ"
+    ],
+    "notes": [
+      "The full printed nominal-power pair uniquely separates every colliding model. Do not manufacture a new designation or assign the second power to a winding without the source header. MV/LV alternatives are kept in separate attributes."
+    ],
+    "sourceNotes": [
+      "Section heading spells АТДТЦН / АОДТЦН while the model rows spell АТДЦТН / АОДЦТН. Record designation follows the explicit table row."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      166,
+      174
+    ]
+  },
+  {
+    "productId": "alageum-aodctn-267000-500-267000-83000-kva-51543798",
+    "displayLabel": "АОДЦТН-267000/500 · 267000/83000 кВА",
+    "flags": [
+      "family_heading_and_model_row_spelling_differ"
+    ],
+    "notes": [
+      "The full printed nominal-power pair uniquely separates every colliding model. Do not manufacture a new designation or assign the second power to a winding without the source header. MV/LV alternatives are kept in separate attributes."
+    ],
+    "sourceNotes": [
+      "Section heading spells АТДТЦН / АОДТЦН while the model rows spell АТДЦТН / АОДЦТН. Record designation follows the explicit table row."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      166,
+      174
+    ]
+  },
+  {
+    "productId": "alageum-aodctn-267000-500-267000-120000-kva-efdbbcda",
+    "displayLabel": "АОДЦТН-267000/500 · 267000/120000 кВА",
+    "flags": [
+      "family_heading_and_model_row_spelling_differ"
+    ],
+    "notes": [
+      "The full printed nominal-power pair uniquely separates every colliding model. Do not manufacture a new designation or assign the second power to a winding without the source header. MV/LV alternatives are kept in separate attributes."
+    ],
+    "sourceNotes": [
+      "Section heading spells АТДТЦН / АОДТЦН while the model rows spell АТДЦТН / АОДЦТН. Record designation follows the explicit table row."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      166,
+      174
+    ]
+  },
+  {
+    "productId": "alageum-aodctn-167000-500-167000-33000-kva-586755a3",
+    "displayLabel": "АОДЦТН-167000/500 · 167000/33000 кВА",
+    "flags": [
+      "family_heading_and_model_row_spelling_differ"
+    ],
+    "notes": [
+      "The full printed nominal-power pair uniquely separates every colliding model. Do not manufacture a new designation or assign the second power to a winding without the source header. MV/LV alternatives are kept in separate attributes."
+    ],
+    "sourceNotes": [
+      "Section heading spells АТДТЦН / АОДТЦН while the model rows spell АТДЦТН / АОДЦТН. Record designation follows the explicit table row."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      166,
+      174
+    ]
+  },
+  {
+    "productId": "tr2026-family-asia-three-phase-railway-rpn",
+    "displayLabel": "Трехобмоточные трехфазные трансформаторы с РПН",
+    "flags": [
+      "no_explicit_designation_in_record",
+      "family_not_individual_model"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      166,
+      175
+    ]
+  },
+  {
+    "productId": "alageum-tdtn-u-25000-110-sn-27-5-kv-nn-6-6-11-0-kv-8f6526a5",
+    "displayLabel": "ТДТНЖУ-25000/110 · СН 27,5 кВ · НН 6,6; 11,0 кВ",
+    "flags": [
+      "source_contains_unspecified_asterisk"
+    ],
+    "notes": [
+      "The two source rows differ in both СН/НН voltages and connection group. The short label uses voltage branches; the connection group remains in the attributes."
+    ],
+    "sourceNotes": [
+      "Source uses an asterisk for unspecified characteristic; no numeric value inferred."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      166,
+      175
+    ]
+  },
+  {
+    "productId": "alageum-tdtn-u-25000-110-sn-38-5-kv-nn-27-5-kv-78feff46",
+    "displayLabel": "ТДТНЖУ-25000/110 · СН 38,5 кВ · НН 27,5 кВ",
+    "flags": [
+      "source_contains_unspecified_asterisk"
+    ],
+    "notes": [
+      "The two source rows differ in both СН/НН voltages and connection group. The short label uses voltage branches; the connection group remains in the attributes."
+    ],
+    "sourceNotes": [
+      "Source uses an asterisk for unspecified characteristic; no numeric value inferred."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      166,
+      175
+    ]
+  },
+  {
+    "productId": "alageum-tdtn-u-25000-220-sn-27-5-kv-nn-6-6-11-0-kv-e8f1cd34",
+    "displayLabel": "ТДТНЖУ-25000/220 · СН 27,5 кВ · НН 6,6; 11,0 кВ",
+    "flags": [
+      "source_contains_unspecified_asterisk"
+    ],
+    "notes": [
+      "The two source rows differ in both СН/НН voltages and connection group. The short label uses voltage branches; the connection group remains in the attributes."
+    ],
+    "sourceNotes": [
+      "Source uses an asterisk for unspecified characteristic; no numeric value inferred."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      166,
+      175
+    ]
+  },
+  {
+    "productId": "alageum-tdtn-u-25000-220-sn-38-5-kv-nn-27-5-kv-7dc1df41",
+    "displayLabel": "ТДТНЖУ-25000/220 · СН 38,5 кВ · НН 27,5 кВ",
+    "flags": [
+      "source_contains_unspecified_asterisk"
+    ],
+    "notes": [
+      "The two source rows differ in both СН/НН voltages and connection group. The short label uses voltage branches; the connection group remains in the attributes."
+    ],
+    "sourceNotes": [
+      "Source uses an asterisk for unspecified characteristic; no numeric value inferred."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      166,
+      175
+    ]
+  },
+  {
+    "productId": "alageum-tdtn-u-40000-220-sn-27-5-kv-nn-6-6-11-0-kv-487a3a73",
+    "displayLabel": "ТДТНЖУ-40000/220 · СН 27,5 кВ · НН 6,6; 11,0 кВ",
+    "flags": [
+      "source_contains_unspecified_asterisk"
+    ],
+    "notes": [
+      "The two source rows differ in both СН/НН voltages and connection group. The short label uses voltage branches; the connection group remains in the attributes."
+    ],
+    "sourceNotes": [
+      "Source uses an asterisk for unspecified characteristic; no numeric value inferred."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      166,
+      175
+    ]
+  },
+  {
+    "productId": "alageum-tdtn-u-40000-220-sn-38-5-kv-nn-27-5-kv-9a790e6f",
+    "displayLabel": "ТДТНЖУ-40000/220 · СН 38,5 кВ · НН 27,5 кВ",
+    "flags": [
+      "source_contains_unspecified_asterisk"
+    ],
+    "notes": [
+      "The two source rows differ in both СН/НН voltages and connection group. The short label uses voltage branches; the connection group remains in the attributes."
+    ],
+    "sourceNotes": [
+      "Source uses an asterisk for unspecified characteristic; no numeric value inferred."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      166,
+      175
+    ]
+  },
+  {
+    "productId": "tr2026-family-asia-single-phase-railway-rpn",
+    "displayLabel": "Двухобмоточные однофазные трансформаторы с РПН",
+    "flags": [
+      "no_explicit_designation_in_record",
+      "family_not_individual_model"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      166,
+      175
+    ]
+  },
+  {
+    "productId": "tr2026-family-asia-shunt-reactor-configurations",
+    "displayLabel": "Шунтирующие реакторы",
+    "flags": [
+      "no_explicit_designation_in_record",
+      "family_not_individual_model",
+      "record_scope_requires_visible_evidence_kind"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      166,
+      176
+    ]
+  },
+  {
+    "productId": "tr2026-family-asia-single-phase-shunt",
+    "displayLabel": "Шунтирующие реакторы. Однофазные",
+    "flags": [
+      "no_explicit_designation_in_record",
+      "family_not_individual_model"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      166,
+      176
+    ]
+  },
+  {
+    "productId": "tr2026-family-asia-three-phase-shunt",
+    "displayLabel": "Шунтирующие реакторы. Трехфазные",
+    "flags": [
+      "no_explicit_designation_in_record",
+      "family_not_individual_model"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      166,
+      177
+    ]
+  },
+  {
+    "productId": "tr2026-family-asia-controlled-shunt",
+    "displayLabel": "Управляемые шунтирующие реакторы. Трехфазное исполнение электромагнитной части",
+    "flags": [
+      "no_explicit_designation_in_record",
+      "family_not_individual_model"
+    ],
+    "notes": [],
+    "sourceNotes": [],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      166,
+      177
+    ]
+  },
+  {
+    "productId": "alageum-2026-tsl-a-1600",
+    "displayLabel": "ТСЛ(З)-1600 · потери А",
+    "flags": [
+      "unresolved_source_loss_unit_or_value",
+      "dimension_slash_pairs_not_mapped_to_executions"
+    ],
+    "notes": [
+      "Loss-level letter is retained as printed. ТСЛ and ТСЛЗ enclosure choices remain configurations of this record, not invented separate full SKUs."
+    ],
+    "sourceNotes": [
+      "Loss unit printed кВт with magnitudes190 etc; retained without silently converting to watts.",
+      "Dimension slash-pairs retained verbatim; likely open/enclosed order from headings, but pair mapping not explicitly labeled in table.",
+      "Merged l/b cells show a single value spanning columns; repeated in extraction only as shared cell, not two independent measurements."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      78,
+      79,
+      80,
+      81
+    ]
+  },
+  {
+    "productId": "alageum-2026-tsl-a-630",
+    "displayLabel": "ТСЛ(З)-630 · потери А",
+    "flags": [
+      "unresolved_source_loss_unit_or_value",
+      "dimension_slash_pairs_not_mapped_to_executions"
+    ],
+    "notes": [
+      "Loss-level letter is retained as printed. ТСЛ and ТСЛЗ enclosure choices remain configurations of this record, not invented separate full SKUs."
+    ],
+    "sourceNotes": [
+      "Loss unit printed кВт with magnitudes190 etc; retained without silently converting to watts.",
+      "Dimension slash-pairs retained verbatim; likely open/enclosed order from headings, but pair mapping not explicitly labeled in table.",
+      "Merged l/b cells show a single value spanning columns; repeated in extraction only as shared cell, not two independent measurements."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      78,
+      79,
+      80,
+      81
+    ]
+  },
+  {
+    "productId": "alageum-2026-tsl-c-1600",
+    "displayLabel": "ТСЛ(З)-1600 · потери С",
+    "flags": [
+      "unresolved_source_loss_unit_or_value",
+      "dimension_slash_pairs_not_mapped_to_executions"
+    ],
+    "notes": [
+      "Loss-level letter is retained as printed. ТСЛ and ТСЛЗ enclosure choices remain configurations of this record, not invented separate full SKUs."
+    ],
+    "sourceNotes": [
+      "Loss unit printed кВт with magnitudes190 etc; retained without silently converting to watts.",
+      "Dimension slash-pairs retained verbatim; likely open/enclosed order from headings, but pair mapping not explicitly labeled in table.",
+      "Merged l/b cells show a single value spanning columns; repeated in extraction only as shared cell, not two independent measurements."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      77,
+      78,
+      80,
+      81
+    ]
+  },
+  {
+    "productId": "alageum-2026-tsl-c-630",
+    "displayLabel": "ТСЛ(З)-630 · потери С",
+    "flags": [
+      "unresolved_source_loss_unit_or_value",
+      "dimension_slash_pairs_not_mapped_to_executions"
+    ],
+    "notes": [
+      "Loss-level letter is retained as printed. ТСЛ and ТСЛЗ enclosure choices remain configurations of this record, not invented separate full SKUs."
+    ],
+    "sourceNotes": [
+      "Loss unit printed кВт with magnitudes190 etc; retained without silently converting to watts.",
+      "Dimension slash-pairs retained verbatim; likely open/enclosed order from headings, but pair mapping not explicitly labeled in table.",
+      "Merged l/b cells show a single value spanning columns; repeated in extraction only as shared cell, not two independent measurements."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      77,
+      78,
+      80,
+      81
+    ]
+  },
+  {
+    "productId": "alageum-tmg-switch-6-10-1000",
+    "displayLabel": "ТМГ-1000 · ВН 6↔10 кВ · 2-этажный переключатель",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "6↔10 denotes source-confirmed switching, unlike the alternative nominal voltage notation 6(10). Do not infer winding material."
+    ],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed.",
+      "Drawings on pages 46–47 verified by neighboring section worker, outside assigned visual inspection range."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      44,
+      45,
+      47
+    ]
+  },
+  {
+    "productId": "alageum-tmg-switch-6-10-2500",
+    "displayLabel": "ТМГ-2500 · ВН 6↔10 кВ · 2-этажный переключатель",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "6↔10 denotes source-confirmed switching, unlike the alternative nominal voltage notation 6(10). Do not infer winding material."
+    ],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed.",
+      "Drawings on pages 46–47 verified by neighboring section worker, outside assigned visual inspection range."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      44,
+      45,
+      47
+    ]
+  },
+  {
+    "productId": "alageum-tmg-switch-6-10-400",
+    "displayLabel": "ТМГ-400 · ВН 6↔10 кВ · 2-этажный переключатель",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "6↔10 denotes source-confirmed switching, unlike the alternative nominal voltage notation 6(10). Do not infer winding material."
+    ],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed.",
+      "Drawings on pages 46–47 verified by neighboring section worker, outside assigned visual inspection range."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      44,
+      45,
+      46
+    ]
+  },
+  {
+    "productId": "alageum-tmg-switch-6-10-630",
+    "displayLabel": "ТМГ-630 · ВН 6↔10 кВ · 2-этажный переключатель",
+    "flags": [
+      "winding_material_not_stated"
+    ],
+    "notes": [
+      "6↔10 denotes source-confirmed switching, unlike the alternative nominal voltage notation 6(10). Do not infer winding material."
+    ],
+    "sourceNotes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed.",
+      "Drawings on pages 46–47 verified by neighboring section worker, outside assigned visual inspection range."
+    ],
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourcePages": [
+      44,
+      45,
+      46
+    ]
+  }
+]

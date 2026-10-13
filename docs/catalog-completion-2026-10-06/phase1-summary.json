@@ -1,0 +1,30 @@
+{
+  "scope": "First bounded presentation and explicit-construction-choice checkpoint",
+  "baseCommit": "c7a17f62645f86fd51ee7ae2605e741d1b4e01df",
+  "sourceRecordsUnchanged": 823,
+  "legacyRecordsUnchanged": 238,
+  "defaultNewGeometry": 251,
+  "defaultNewIcons": 257,
+  "filledDescriptionDisplays": 450,
+  "familyOverviews": 77,
+  "technicalDocumentPreviews": 20,
+  "explicitChoiceRecords": 32,
+  "explicitChoices": 66,
+  "reusedConstructionTypes": 7,
+  "rawSourceValuesUnitsAndWarningsPreserved": true,
+  "identityHoldsUnchanged": 32,
+  "validation": {
+    "frontendUnitTests": 401,
+    "lint": "passed",
+    "productionBuild": "passed",
+    "independentRenderedCatalogCategories": 8,
+    "localBrowser": "blocked before page creation, including supported escalation",
+    "hostedBrowser": "pending exact-head workflow"
+  },
+  "boundaries": [
+    "No default construction for mixed rows",
+    "No generated orderable SKU or cross-product configuration",
+    "No source record, price, stock, or quote snapshot rewrite",
+    "No merge, deployment, dependency upgrade, or security-gate change"
+  ]
+}

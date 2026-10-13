@@ -1,0 +1,981 @@
+{
+  "format": "alageum-transformer-asset-completion-v1",
+  "sourceId": "transformers-2026",
+  "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+  "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+  "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+  "inventorySha256": "c3948d7152a6130aa4672b9f6d3d5a8f08144b5965df7bebabca067ba5bc8438",
+  "reviewedAt": "2026-10-06T08:54:06.043Z",
+  "reviewReport": "docs/catalog-transformers-2026/review/asset-completion/independent-review.json",
+  "reviewReportSha256": "3bd09401943303fbf830ca896155822bba9044ed4e555e72e1c0ac2e7ba666e3",
+  "counts": {
+    "defaultRecords": 25,
+    "copperRecords": 13,
+    "newlyAdmittedDefaults": 16,
+    "explicitChoiceRecords": 4,
+    "explicitChoices": 8
+  },
+  "dependencies": {
+    "reviewedFileHashes": {
+      "docs/catalog-transformers-2026/review/identity-completion/clearance.json": "b3c25f4ce022666331b50034fef0d5e52ba2edabf59faca3ebd7f2bcebc5ce56",
+      "docs/catalog-transformers-2026/review/asset-completion/copper-independent-review.json": "96eb2f42bf9e0a3ebcb7de94a8cc8668d9eaec6d344e18db5279a53b7e5a4d5c",
+      "docs/catalog-transformers-2026/review/assets-clearance.json": "930def10e4d3ac298b2551480432dab987198bc6e56fa404c8a00f6960a28f29",
+      "docs/catalog-transformers-2026/review/execution-choice-clearance.json": "c31d103704e35d2a61916898133512f248296dd608d775613635f62594eb2be7",
+      "backend-node/data/catalog-sources.json": "23d30c3d87a43abe24c9843453b3e0c69e32af3f7674629e4d9a8b7b6ae06f9c",
+      "frontend/lib/catalog/models/transformer2026RuntimeManifest.json": "65d8feb3ede6d17c06bc99fed0a087bb2a2c4f0f758470c3b82bb605429adc77",
+      "frontend/lib/catalog/models/transformerExecutionChoicesManifest.json": "28ffbaf5282a63e0e691393763d00c48abec96519c70d965771fa72391fd6666",
+      "frontend/lib/catalog/models/transformer2026AssetEvidence.json": "6d54c9e8e83409384de5dce6233f306ceeb1bcdcdac384ef57f778251edb519d",
+      "frontend/lib/catalog/models/transformer2026Bindings.js": "ec767070298a5aa4bbd5dcf4b77581e05b171febd9fb585964fd2c55da232712",
+      "frontend/lib/catalog/models/transformer2026Geometry.js": "32f91701425584f0bfa4e7b138525329fb6527588344fc5a574ed8dea7f0ef09",
+      "frontend/lib/catalog/models/transformer2026GroupMap.js": "057a7978bdd7f6f26761c4664904a5f93e48805c1c8ffee591c3eccf5bd39b0b",
+      "frontend/lib/catalog/models/transformer2026Icons.js": "9e49caab2b69cbb165c4a1b56f12a317d06cc910091cbae39c355bab63cca405",
+      "frontend/lib/catalog/models/transformer2026PowerLayouts.js": "efd30d083dfe7d0cc5c609508301877774b05e855b9b501056bc25fdff9ff265",
+      "frontend/lib/catalog/models/transformer2026Types.js": "56ee5e7de958abeae364b565d8799430fc33b7fb25ca5f2cb665d17db020b9a8",
+      "frontend/lib/catalog/models/transformer2026Shape.js": "ed07fb7f8c239623277338e2f8fcace52d77dbd12145e1c65cf8603c4100fb96",
+      "frontend/lib/catalog/models/transformer2026Runtime.js": "3265ac03cb44939adc5019a7336bc1a7b7f5c39424b42a1ce1f5f7275ca06eb9",
+      "frontend/lib/catalog/models/visualMap.js": "37b74cf55a159c05988a2063b8a8faa5732051ac164c664bedc3baa374515fda",
+      "frontend/lib/catalog/models/iconMap.js": "1811dc6241c9c9bdf297ac062218134f19efde73bb077419a43dca3981628cfd",
+      "frontend/components/catalog/ProductVisual.js": "fd20795177a9a79ca0f7e0700eb56ad1e90698502442a2584ed791122f48c939",
+      "frontend/lib/catalog/models/transformerExecutionChoices.js": "66bdec2d75d1a02b2338c4ac486051cc6860d8be053b8363cdb8a1b3e323b97e",
+      "scripts/approve-transformer-execution-choices.mjs": "4d6a98c04ed7c2b8057354857ea7f4c37bb1e065268fa44e081d300781a17d23",
+      "scripts/approve-transformer-assets.mjs": "2bc733ea783679df478f723107644dd0be6c8fdcb42510ac161bc2233d106f27",
+      "scripts/catalog/transformer-reviewed-dependencies.mjs": "a566088c2a32c79dd4ce771ae5e152820edf65341a6169dd8aea3bc9786e4e1a",
+      "frontend/lib/catalog/models/legacyAssetCompletion.js": "5e689f89ce7cc939efc0b92ddccaf31734674be64fc26bd2d0c05b8839f40831",
+      "docs/catalog-completion-2026-10-06/shr11-independent-review.json": "9e4a40dadb63fa7bad590f83a89c53b8199b85028c44bca2a9452e0483c60332"
+    },
+    "reviewedSourceImageHashes": {
+      "/catalog-source/transformers-2026/page-004.webp": "680652a645312435c454419a413339f99b6101f0c1d753c3d3d3dbe1a383c609",
+      "/catalog-source/transformers-2026/page-008.webp": "c0d86fa6beff9d683b41ecbbaa01d08bdf1c4e7f57ef90d3537a5c1b7e2bf5a7",
+      "/catalog-source/transformers-2026/page-009.webp": "30b939f34253febf5f347e5fdeb5986ec9834f1fd1d79f152f621cbb503479e2",
+      "/catalog-source/transformers-2026/page-010.webp": "3db90047fd29e19195b72c4d6e586b1663b05cd4a8c5799a46906d8a1893f93a",
+      "/catalog-source/transformers-2026/page-011.webp": "9d62b9b1b8886c07eea00e104fb017c4f76d47e69759cde1ea4484ce92905783",
+      "/catalog-source/transformers-2026/page-012.webp": "4012efb16d72716f53960c075ad98ed3796e3c8c1d8487b1bb1781e782455b77",
+      "/catalog-source/transformers-2026/page-013.webp": "ead1a8bf62eb02c0612691a90e783554425fde0cb122391fa5e37118a60f9955",
+      "/catalog-source/transformers-2026/page-039.webp": "3e3a770f9313a9700aa0237688a62d420c9ddad897c40bf5cc5efadec13298c6",
+      "/catalog-source/transformers-2026/page-040.webp": "4afd58a783a727ee986d0297b4210d2a4589fd0bf8f037574b3e878af7d2b94e",
+      "/catalog-source/transformers-2026/page-041.webp": "d866589a249a70938337f5b20f0aeb9773f147d903ad431603efa971bb8a6739",
+      "/catalog-source/transformers-2026/page-042.webp": "c88905d6c6db278efb81cd89c573db3bf08ace15b4654631d53ddfe5564b045a",
+      "/catalog-source/transformers-2026/page-043.webp": "5c1229ae24db96a3f09a1b2c685faa086e296f6c73c9a75e9cf0e13bfcb4948e",
+      "/catalog-source/transformers-2026/page-044.webp": "c30590b3a49e02be71cc3583ee3101d5cfbc5bdab8c7b2281cf90ba4e4973723",
+      "/catalog-source/transformers-2026/page-045.webp": "df7cde6ecb20c67318703bd9dc51821ead68e23fca1ea72d574d01b3cdffa957",
+      "/catalog-source/transformers-2026/page-046.webp": "e2b822816bc79dc8c016acb5103629f0d05039f496906aea32c23724b46f9c47",
+      "/catalog-source/transformers-2026/page-047.webp": "0fd957cbda45d99b589e82bbe0c7f87e162b325f3ff82b71ef82fdbc4c045d1a",
+      "/catalog-source/transformers-2026/page-077.webp": "6fc797584352485c95b69e504e23e422ac3a9302f8ee35143cfe56b9e970b1cf",
+      "/catalog-source/transformers-2026/page-078.webp": "15d0f08386aae0a94c210a1049f71628a5c0794faa52506da41bf53aa5fd44ad",
+      "/catalog-source/transformers-2026/page-079.webp": "d140e145d7f5ac083395e493a1890f082f05f0fdf5023529df3192777c778547",
+      "/catalog-source/transformers-2026/page-080.webp": "5142c148f3295a44eda17477166b99bd27bc89730cdac5cde1362f45b4b909e5",
+      "/catalog-source/transformers-2026/page-081.webp": "da78a8813f1f2e59b709346c8c33d10a6f8674af2dcf8131909a2fec172d09c6"
+    },
+    "reviewedIntegrationAmendments": {
+      "frontend/lib/catalog/models/transformer2026Runtime.js": {
+        "historicalSha256": "b39571ef6fbd6983025cfdbcedce732acf8e40211dcd8995195fce59c66aaf24",
+        "reviewedSha256": "3265ac03cb44939adc5019a7336bc1a7b7f5c39424b42a1ce1f5f7275ca06eb9"
+      },
+      "frontend/lib/catalog/models/visualMap.js": {
+        "historicalSha256": "620615a601d9570c2cc527c346dc6609fe97b96665704b87fe288c7312813a2b",
+        "reviewedSha256": "37b74cf55a159c05988a2063b8a8faa5732051ac164c664bedc3baa374515fda"
+      },
+      "frontend/lib/catalog/models/iconMap.js": {
+        "historicalSha256": "56b7a0a45344696f24727720769c716f17ae460d57df136e9c24d3b170d9e47c",
+        "reviewedSha256": "1811dc6241c9c9bdf297ac062218134f19efde73bb077419a43dca3981628cfd"
+      },
+      "frontend/components/catalog/ProductVisual.js": {
+        "historicalSha256": "81f49623d6e39b121c553fb31268ac4a8341f2b26c9dad8ed8dc3e0e7924ff9f",
+        "reviewedSha256": "fd20795177a9a79ca0f7e0700eb56ad1e90698502442a2584ed791122f48c939"
+      },
+      "frontend/lib/catalog/models/transformerExecutionChoices.js": {
+        "historicalSha256": "8ca1d3c87406e4732b80c2e881a67e4531200f6b0adf3ca935318452f14c5fd1",
+        "reviewedSha256": "66bdec2d75d1a02b2338c4ac486051cc6860d8be053b8363cdb8a1b3e323b97e"
+      },
+      "scripts/approve-transformer-execution-choices.mjs": {
+        "historicalSha256": "c74e7bcb2f281a3e784630f3a5eb008563c716df23e2429303c7fe5b00e57e55",
+        "reviewedSha256": "4d6a98c04ed7c2b8057354857ea7f4c37bb1e065268fa44e081d300781a17d23"
+      }
+    }
+  },
+  "geometry": {
+    "alageum-tmg-01-1000": {
+      "type": "tr26-corrugated-large",
+      "groupId": "sealed-corrugated-large",
+      "sourcePages": [
+        13
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-013.webp",
+      "record_shape_sha256": "5db14f76bb21a32b044d3cb95ef85db749a75aaaadcf3257f81da2c7e2181e33",
+      "database_id": "6573bac6-3d06-59a0-8324-4a9937628124",
+      "evidenceBasis": "explicit-source-caption",
+      "reason": "Иллюстративный внешний вид по явно подписанному чертежу этого исполнения; не CAD и не размерная модель. Внутреннее устройство и состав заказных принадлежностей не определяются по общей форме.",
+      "sourceCaption": "ТМГ1000-3200 стандартный, ТМГ X1K1 и ТМГ(01)",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-01-2500": {
+      "type": "tr26-corrugated-large",
+      "groupId": "sealed-corrugated-large",
+      "sourcePages": [
+        13
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-013.webp",
+      "record_shape_sha256": "9e9e2301910f45317fd446b1468e43fc5455aab15f4945d362fe8d7262e91334",
+      "database_id": "a15e8c08-321c-5f95-afe8-18bfe2337e3a",
+      "evidenceBasis": "explicit-source-caption",
+      "reason": "Иллюстративный внешний вид по явно подписанному чертежу этого исполнения; не CAD и не размерная модель. Внутреннее устройство и состав заказных принадлежностей не определяются по общей форме.",
+      "sourceCaption": "ТМГ1000-3200 стандартный, ТМГ X1K1 и ТМГ(01)",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-01-400": {
+      "type": "tr26-corrugated-small",
+      "groupId": "sealed-corrugated-small",
+      "sourcePages": [
+        12
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-012.webp",
+      "record_shape_sha256": "66da6817b66af6869668f9c2909c4f8fe4d6fa6938e6124e6a9f32277189f8da",
+      "database_id": "57d3956c-fe95-505c-a646-a56890ad8ba0",
+      "evidenceBasis": "explicit-source-caption",
+      "reason": "Иллюстративный внешний вид по явно подписанному чертежу этого исполнения; не CAD и не размерная модель. Внутреннее устройство и состав заказных принадлежностей не определяются по общей форме.",
+      "sourceCaption": "ТМГ16-630 стандартный, ТМГ X1K1 и ТМГ(01)",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-01-630": {
+      "type": "tr26-corrugated-small",
+      "groupId": "sealed-corrugated-small",
+      "sourcePages": [
+        12
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-012.webp",
+      "record_shape_sha256": "d5f7979e1218ddd84b782078966ee25f81ea4cacb3ee01d0502076529746aaaa",
+      "database_id": "b413e0be-025c-5c98-a3e3-edb594d35f12",
+      "evidenceBasis": "explicit-source-caption",
+      "reason": "Иллюстративный внешний вид по явно подписанному чертежу этого исполнения; не CAD и не размерная модель. Внутреннее устройство и состав заказных принадлежностей не определяются по общей форме.",
+      "sourceCaption": "ТМГ16-630 стандартный, ТМГ X1K1 и ТМГ(01)",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-copper-100": {
+      "type": "tr26-corrugated-small",
+      "groupId": "sealed-corrugated-small",
+      "sourcePages": [
+        42
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-042.webp",
+      "record_shape_sha256": "d859733af15d57167352bbf037ed5c631903b78f972f97b587d8005802568ba5",
+      "database_id": "804b3ffb-cbed-5e6e-b201-1b83f1ef60ba",
+      "evidenceBasis": "representative-subsection-inference",
+      "reason": "Представительный внешний вид по чертежу подраздела ТМГ с медными обмотками (стр. 40–43). Связь установлена по структуре подраздела и таблице, а не по прямой подписи «медные обмотки» у рисунка. Не CAD; размеры, внутренний материал и точная комплектация не моделируются. Ролики и предохранитель могут быть заказными; приборы КШП не обещаются для каждого исполнения.",
+      "sourceCaption": "ТМГ-25-630",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-copper-1000": {
+      "type": "tr26-corrugated-large",
+      "groupId": "sealed-corrugated-large",
+      "sourcePages": [
+        43
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-043.webp",
+      "record_shape_sha256": "776d4af25674d0a4c50ee608ab43e8d7eeef0af6c0797500c44ed09953c137bb",
+      "database_id": "bf6f6b5f-698f-5cda-b315-f31dec6b9b8e",
+      "evidenceBasis": "representative-subsection-inference",
+      "reason": "Представительный внешний вид по чертежу подраздела ТМГ с медными обмотками (стр. 40–43). Связь установлена по структуре подраздела и таблице, а не по прямой подписи «медные обмотки» у рисунка. Не CAD; размеры, внутренний материал и точная комплектация не моделируются. Ролики и предохранитель могут быть заказными; приборы КШП не обещаются для каждого исполнения.",
+      "sourceCaption": "ТМГ1000-2500",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-copper-1250": {
+      "type": "tr26-corrugated-large",
+      "groupId": "sealed-corrugated-large",
+      "sourcePages": [
+        43
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-043.webp",
+      "record_shape_sha256": "4087d729572133ee3b7cf8360f14cfb2bf082273d25f82b095407fb7546a6f1f",
+      "database_id": "cca5ef07-ab4c-529b-86c6-23f047ac992d",
+      "evidenceBasis": "representative-subsection-inference",
+      "reason": "Представительный внешний вид по чертежу подраздела ТМГ с медными обмотками (стр. 40–43). Связь установлена по структуре подраздела и таблице, а не по прямой подписи «медные обмотки» у рисунка. Не CAD; размеры, внутренний материал и точная комплектация не моделируются. Ролики и предохранитель могут быть заказными; приборы КШП не обещаются для каждого исполнения.",
+      "sourceCaption": "ТМГ1000-2500",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-copper-160": {
+      "type": "tr26-corrugated-small",
+      "groupId": "sealed-corrugated-small",
+      "sourcePages": [
+        42
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-042.webp",
+      "record_shape_sha256": "e45afae9e8cd75ecdc5039843abcc40c397f0c95994fe34e48189668252aab57",
+      "database_id": "9387f64a-6779-5fb8-9555-f11f613095f6",
+      "evidenceBasis": "representative-subsection-inference",
+      "reason": "Представительный внешний вид по чертежу подраздела ТМГ с медными обмотками (стр. 40–43). Связь установлена по структуре подраздела и таблице, а не по прямой подписи «медные обмотки» у рисунка. Не CAD; размеры, внутренний материал и точная комплектация не моделируются. Ролики и предохранитель могут быть заказными; приборы КШП не обещаются для каждого исполнения.",
+      "sourceCaption": "ТМГ-25-630",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-copper-1600": {
+      "type": "tr26-corrugated-large",
+      "groupId": "sealed-corrugated-large",
+      "sourcePages": [
+        43
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-043.webp",
+      "record_shape_sha256": "408b61d3d7e9d5cf4a4170d4991684c2304dbf0d1bae209191eebf5e90be90d1",
+      "database_id": "e857ab4e-9d49-5a56-9457-2baf4536f23c",
+      "evidenceBasis": "representative-subsection-inference",
+      "reason": "Представительный внешний вид по чертежу подраздела ТМГ с медными обмотками (стр. 40–43). Связь установлена по структуре подраздела и таблице, а не по прямой подписи «медные обмотки» у рисунка. Не CAD; размеры, внутренний материал и точная комплектация не моделируются. Ролики и предохранитель могут быть заказными; приборы КШП не обещаются для каждого исполнения.",
+      "sourceCaption": "ТМГ1000-2500",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-copper-2000": {
+      "type": "tr26-corrugated-large",
+      "groupId": "sealed-corrugated-large",
+      "sourcePages": [
+        43
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-043.webp",
+      "record_shape_sha256": "cf5bbbd5441fe5dcc8371df9fd7fff717e7f52df70e759853028e5ca158b40c1",
+      "database_id": "5ccb78e0-53b7-5505-a6dd-840a9eeb9360",
+      "evidenceBasis": "representative-subsection-inference",
+      "reason": "Представительный внешний вид по чертежу подраздела ТМГ с медными обмотками (стр. 40–43). Связь установлена по структуре подраздела и таблице, а не по прямой подписи «медные обмотки» у рисунка. Не CAD; размеры, внутренний материал и точная комплектация не моделируются. Ролики и предохранитель могут быть заказными; приборы КШП не обещаются для каждого исполнения.",
+      "sourceCaption": "ТМГ1000-2500",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-copper-25": {
+      "type": "tr26-corrugated-small",
+      "groupId": "sealed-corrugated-small",
+      "sourcePages": [
+        42
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-042.webp",
+      "record_shape_sha256": "c4ba4c4d8a723f76542820c259c809cab0330d0c42e39d3b42a505e6c9e3418b",
+      "database_id": "aca1d25f-b6f8-5843-8279-abf1dd2d89f4",
+      "evidenceBasis": "representative-subsection-inference",
+      "reason": "Представительный внешний вид по чертежу подраздела ТМГ с медными обмотками (стр. 40–43). Связь установлена по структуре подраздела и таблице, а не по прямой подписи «медные обмотки» у рисунка. Не CAD; размеры, внутренний материал и точная комплектация не моделируются. Ролики и предохранитель могут быть заказными; приборы КШП не обещаются для каждого исполнения.",
+      "sourceCaption": "ТМГ-25-630",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-copper-250": {
+      "type": "tr26-corrugated-small",
+      "groupId": "sealed-corrugated-small",
+      "sourcePages": [
+        42
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-042.webp",
+      "record_shape_sha256": "19733eff6db2e82bc7cae1844b5db99737f87fd64244e1a6e43ce99fbd0fd099",
+      "database_id": "28cd57fd-77c6-5057-9452-4a83d54db37e",
+      "evidenceBasis": "representative-subsection-inference",
+      "reason": "Представительный внешний вид по чертежу подраздела ТМГ с медными обмотками (стр. 40–43). Связь установлена по структуре подраздела и таблице, а не по прямой подписи «медные обмотки» у рисунка. Не CAD; размеры, внутренний материал и точная комплектация не моделируются. Ролики и предохранитель могут быть заказными; приборы КШП не обещаются для каждого исполнения.",
+      "sourceCaption": "ТМГ-25-630",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-copper-2500": {
+      "type": "tr26-corrugated-large",
+      "groupId": "sealed-corrugated-large",
+      "sourcePages": [
+        43
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-043.webp",
+      "record_shape_sha256": "36c75586ca0d75cc50fe90abdd5dbded2d70a3e0ea79b4b72703589f4d80fd33",
+      "database_id": "f8067eab-dfe6-5a94-ac90-22280388efca",
+      "evidenceBasis": "representative-subsection-inference",
+      "reason": "Представительный внешний вид по чертежу подраздела ТМГ с медными обмотками (стр. 40–43). Связь установлена по структуре подраздела и таблице, а не по прямой подписи «медные обмотки» у рисунка. Не CAD; размеры, внутренний материал и точная комплектация не моделируются. Ролики и предохранитель могут быть заказными; приборы КШП не обещаются для каждого исполнения.",
+      "sourceCaption": "ТМГ1000-2500",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-copper-40": {
+      "type": "tr26-corrugated-small",
+      "groupId": "sealed-corrugated-small",
+      "sourcePages": [
+        42
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-042.webp",
+      "record_shape_sha256": "dd427e29b4682195942e715d1378d2af7c248923140f37d1f9a4dd3ba7f3b26b",
+      "database_id": "d127e91b-88d7-55a4-b190-42f7122d2a2b",
+      "evidenceBasis": "representative-subsection-inference",
+      "reason": "Представительный внешний вид по чертежу подраздела ТМГ с медными обмотками (стр. 40–43). Связь установлена по структуре подраздела и таблице, а не по прямой подписи «медные обмотки» у рисунка. Не CAD; размеры, внутренний материал и точная комплектация не моделируются. Ролики и предохранитель могут быть заказными; приборы КШП не обещаются для каждого исполнения.",
+      "sourceCaption": "ТМГ-25-630",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-copper-400": {
+      "type": "tr26-corrugated-small",
+      "groupId": "sealed-corrugated-small",
+      "sourcePages": [
+        42
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-042.webp",
+      "record_shape_sha256": "9d636c85fac290d88e0e135462b4572ac221d0ab6cfc4ed1764bdf56c4c84b5e",
+      "database_id": "9bc3c214-f14d-586c-8707-6e7e7ccfabbd",
+      "evidenceBasis": "representative-subsection-inference",
+      "reason": "Представительный внешний вид по чертежу подраздела ТМГ с медными обмотками (стр. 40–43). Связь установлена по структуре подраздела и таблице, а не по прямой подписи «медные обмотки» у рисунка. Не CAD; размеры, внутренний материал и точная комплектация не моделируются. Ролики и предохранитель могут быть заказными; приборы КШП не обещаются для каждого исполнения.",
+      "sourceCaption": "ТМГ-25-630",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-copper-63": {
+      "type": "tr26-corrugated-small",
+      "groupId": "sealed-corrugated-small",
+      "sourcePages": [
+        42
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-042.webp",
+      "record_shape_sha256": "5cfb56f6a315ff96c82d795104323d81a0e72a1b264194128ff49a518badf70c",
+      "database_id": "6f309d57-df53-5032-9bb6-a846ccb9a166",
+      "evidenceBasis": "representative-subsection-inference",
+      "reason": "Представительный внешний вид по чертежу подраздела ТМГ с медными обмотками (стр. 40–43). Связь установлена по структуре подраздела и таблице, а не по прямой подписи «медные обмотки» у рисунка. Не CAD; размеры, внутренний материал и точная комплектация не моделируются. Ролики и предохранитель могут быть заказными; приборы КШП не обещаются для каждого исполнения.",
+      "sourceCaption": "ТМГ-25-630",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-copper-630": {
+      "type": "tr26-corrugated-small",
+      "groupId": "sealed-corrugated-small",
+      "sourcePages": [
+        42
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-042.webp",
+      "record_shape_sha256": "8ce63a6610b481c568358616cd2a3f924ed16d3ffce6c83cb5f002d63c75afb4",
+      "database_id": "9c631c18-0db4-58a4-9263-56be9706282b",
+      "evidenceBasis": "representative-subsection-inference",
+      "reason": "Представительный внешний вид по чертежу подраздела ТМГ с медными обмотками (стр. 40–43). Связь установлена по структуре подраздела и таблице, а не по прямой подписи «медные обмотки» у рисунка. Не CAD; размеры, внутренний материал и точная комплектация не моделируются. Ролики и предохранитель могут быть заказными; приборы КШП не обещаются для каждого исполнения.",
+      "sourceCaption": "ТМГ-25-630",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-switch-6-10-1000": {
+      "type": "tr26-corrugated-large",
+      "groupId": "tmg-switch-large",
+      "sourcePages": [
+        47
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-047.webp",
+      "record_shape_sha256": "8b9edd651c01af403df58c9bf08517c169f12f8317a3c727cc0222f19f7f5bb1",
+      "database_id": "093bab41-57dd-59f3-9c89-e23ca2f16e9e",
+      "evidenceBasis": "explicit-source-caption",
+      "reason": "Иллюстративный внешний вид по явно подписанному чертежу этого исполнения; не CAD и не размерная модель. Внутреннее устройство и состав заказных принадлежностей не определяются по общей форме.",
+      "sourceCaption": "ТМГ1000-2500 с 2-х этажным переключателем",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-switch-6-10-2500": {
+      "type": "tr26-corrugated-large",
+      "groupId": "tmg-switch-large",
+      "sourcePages": [
+        47
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-047.webp",
+      "record_shape_sha256": "cea9b08e0d3a7ab1ed7ec9d7d9d81a412b2d40dc0dd1932d38858348dd2bf59b",
+      "database_id": "382c4f80-4953-5df9-82aa-d434cd4ec503",
+      "evidenceBasis": "explicit-source-caption",
+      "reason": "Иллюстративный внешний вид по явно подписанному чертежу этого исполнения; не CAD и не размерная модель. Внутреннее устройство и состав заказных принадлежностей не определяются по общей форме.",
+      "sourceCaption": "ТМГ1000-2500 с 2-х этажным переключателем",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-switch-6-10-400": {
+      "type": "tr26-corrugated-small",
+      "groupId": "tmg-switch-small",
+      "sourcePages": [
+        46
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-046.webp",
+      "record_shape_sha256": "74c515d1fe76a23030fe9f954fb5a9a0e5ef5f42cd87cfcc86319e89032b621e",
+      "database_id": "e1131f33-afef-50af-9959-5638e30024b7",
+      "evidenceBasis": "explicit-source-caption",
+      "reason": "Иллюстративный внешний вид по явно подписанному чертежу этого исполнения; не CAD и не размерная модель. Внутреннее устройство и состав заказных принадлежностей не определяются по общей форме.",
+      "sourceCaption": "ТМГ-25-630 с 2-х этажным переключателем",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-switch-6-10-630": {
+      "type": "tr26-corrugated-small",
+      "groupId": "tmg-switch-small",
+      "sourcePages": [
+        46
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-046.webp",
+      "record_shape_sha256": "8ccb190e5753627501c4b03b0cd7b1e4ce642651cf60afa8f3645443d49877e1",
+      "database_id": "0e6d13db-94c7-5de9-995e-bce02ade76c0",
+      "evidenceBasis": "explicit-source-caption",
+      "reason": "Иллюстративный внешний вид по явно подписанному чертежу этого исполнения; не CAD и не размерная модель. Внутреннее устройство и состав заказных принадлежностей не определяются по общей форме.",
+      "sourceCaption": "ТМГ-25-630 с 2-х этажным переключателем",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-x1k1-1000": {
+      "type": "tr26-corrugated-large",
+      "groupId": "sealed-corrugated-large",
+      "sourcePages": [
+        13
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-013.webp",
+      "record_shape_sha256": "c08da1c39fa9336ffae364e1d01d684c16ac199bfef24585ee17c498ed499639",
+      "database_id": "cb0cd8b1-1e7b-5e60-bf0a-4e44d32b4378",
+      "evidenceBasis": "explicit-source-caption",
+      "reason": "Иллюстративный внешний вид по явно подписанному чертежу этого исполнения; не CAD и не размерная модель. Внутреннее устройство и состав заказных принадлежностей не определяются по общей форме.",
+      "sourceCaption": "ТМГ1000-3200 стандартный, ТМГ X1K1 и ТМГ(01)",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-x1k1-2500": {
+      "type": "tr26-corrugated-large",
+      "groupId": "sealed-corrugated-large",
+      "sourcePages": [
+        13
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-013.webp",
+      "record_shape_sha256": "70b5cfe40a26732f64d79b40de567451b12f271b0f528eaeb51fbecb29836edc",
+      "database_id": "4b38edeb-ace8-5e22-86b9-29a49568008b",
+      "evidenceBasis": "explicit-source-caption",
+      "reason": "Иллюстративный внешний вид по явно подписанному чертежу этого исполнения; не CAD и не размерная модель. Внутреннее устройство и состав заказных принадлежностей не определяются по общей форме.",
+      "sourceCaption": "ТМГ1000-3200 стандартный, ТМГ X1K1 и ТМГ(01)",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-x1k1-400": {
+      "type": "tr26-corrugated-small",
+      "groupId": "sealed-corrugated-small",
+      "sourcePages": [
+        12
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-012.webp",
+      "record_shape_sha256": "d8a8008afe0bf9037da705e8731bdb59754788b37183a1f663264fa964a5223b",
+      "database_id": "d455916a-9a59-57eb-8adc-313e8cf70bde",
+      "evidenceBasis": "explicit-source-caption",
+      "reason": "Иллюстративный внешний вид по явно подписанному чертежу этого исполнения; не CAD и не размерная модель. Внутреннее устройство и состав заказных принадлежностей не определяются по общей форме.",
+      "sourceCaption": "ТМГ16-630 стандартный, ТМГ X1K1 и ТМГ(01)",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-x1k1-630": {
+      "type": "tr26-corrugated-small",
+      "groupId": "sealed-corrugated-small",
+      "sourcePages": [
+        12
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-012.webp",
+      "record_shape_sha256": "01e18d028e95b4f4b450ebb944b848d1c4a70171a51b9b7fcd11b16b30af64cd",
+      "database_id": "4d9516a8-392e-5a7e-91d8-fd267a1848e3",
+      "evidenceBasis": "explicit-source-caption",
+      "reason": "Иллюстративный внешний вид по явно подписанному чертежу этого исполнения; не CAD и не размерная модель. Внутреннее устройство и состав заказных принадлежностей не определяются по общей форме.",
+      "sourceCaption": "ТМГ16-630 стандартный, ТМГ X1K1 и ТМГ(01)",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    }
+  },
+  "icons": {
+    "alageum-tmg-01-1000": {
+      "type": "tr26-corrugated-large",
+      "groupId": "sealed-corrugated-large",
+      "sourcePages": [
+        13
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-013.webp",
+      "record_shape_sha256": "5db14f76bb21a32b044d3cb95ef85db749a75aaaadcf3257f81da2c7e2181e33",
+      "database_id": "6573bac6-3d06-59a0-8324-4a9937628124",
+      "evidenceBasis": "explicit-source-caption",
+      "reason": "Иллюстративный внешний вид по явно подписанному чертежу этого исполнения; не CAD и не размерная модель. Внутреннее устройство и состав заказных принадлежностей не определяются по общей форме.",
+      "sourceCaption": "ТМГ1000-3200 стандартный, ТМГ X1K1 и ТМГ(01)",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-01-2500": {
+      "type": "tr26-corrugated-large",
+      "groupId": "sealed-corrugated-large",
+      "sourcePages": [
+        13
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-013.webp",
+      "record_shape_sha256": "9e9e2301910f45317fd446b1468e43fc5455aab15f4945d362fe8d7262e91334",
+      "database_id": "a15e8c08-321c-5f95-afe8-18bfe2337e3a",
+      "evidenceBasis": "explicit-source-caption",
+      "reason": "Иллюстративный внешний вид по явно подписанному чертежу этого исполнения; не CAD и не размерная модель. Внутреннее устройство и состав заказных принадлежностей не определяются по общей форме.",
+      "sourceCaption": "ТМГ1000-3200 стандартный, ТМГ X1K1 и ТМГ(01)",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-01-400": {
+      "type": "tr26-corrugated-small",
+      "groupId": "sealed-corrugated-small",
+      "sourcePages": [
+        12
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-012.webp",
+      "record_shape_sha256": "66da6817b66af6869668f9c2909c4f8fe4d6fa6938e6124e6a9f32277189f8da",
+      "database_id": "57d3956c-fe95-505c-a646-a56890ad8ba0",
+      "evidenceBasis": "explicit-source-caption",
+      "reason": "Иллюстративный внешний вид по явно подписанному чертежу этого исполнения; не CAD и не размерная модель. Внутреннее устройство и состав заказных принадлежностей не определяются по общей форме.",
+      "sourceCaption": "ТМГ16-630 стандартный, ТМГ X1K1 и ТМГ(01)",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-01-630": {
+      "type": "tr26-corrugated-small",
+      "groupId": "sealed-corrugated-small",
+      "sourcePages": [
+        12
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-012.webp",
+      "record_shape_sha256": "d5f7979e1218ddd84b782078966ee25f81ea4cacb3ee01d0502076529746aaaa",
+      "database_id": "b413e0be-025c-5c98-a3e3-edb594d35f12",
+      "evidenceBasis": "explicit-source-caption",
+      "reason": "Иллюстративный внешний вид по явно подписанному чертежу этого исполнения; не CAD и не размерная модель. Внутреннее устройство и состав заказных принадлежностей не определяются по общей форме.",
+      "sourceCaption": "ТМГ16-630 стандартный, ТМГ X1K1 и ТМГ(01)",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-copper-100": {
+      "type": "tr26-corrugated-small",
+      "groupId": "sealed-corrugated-small",
+      "sourcePages": [
+        42
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-042.webp",
+      "record_shape_sha256": "d859733af15d57167352bbf037ed5c631903b78f972f97b587d8005802568ba5",
+      "database_id": "804b3ffb-cbed-5e6e-b201-1b83f1ef60ba",
+      "evidenceBasis": "representative-subsection-inference",
+      "reason": "Представительный внешний вид по чертежу подраздела ТМГ с медными обмотками (стр. 40–43). Связь установлена по структуре подраздела и таблице, а не по прямой подписи «медные обмотки» у рисунка. Не CAD; размеры, внутренний материал и точная комплектация не моделируются. Ролики и предохранитель могут быть заказными; приборы КШП не обещаются для каждого исполнения.",
+      "sourceCaption": "ТМГ-25-630",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-copper-1000": {
+      "type": "tr26-corrugated-large",
+      "groupId": "sealed-corrugated-large",
+      "sourcePages": [
+        43
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-043.webp",
+      "record_shape_sha256": "776d4af25674d0a4c50ee608ab43e8d7eeef0af6c0797500c44ed09953c137bb",
+      "database_id": "bf6f6b5f-698f-5cda-b315-f31dec6b9b8e",
+      "evidenceBasis": "representative-subsection-inference",
+      "reason": "Представительный внешний вид по чертежу подраздела ТМГ с медными обмотками (стр. 40–43). Связь установлена по структуре подраздела и таблице, а не по прямой подписи «медные обмотки» у рисунка. Не CAD; размеры, внутренний материал и точная комплектация не моделируются. Ролики и предохранитель могут быть заказными; приборы КШП не обещаются для каждого исполнения.",
+      "sourceCaption": "ТМГ1000-2500",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-copper-1250": {
+      "type": "tr26-corrugated-large",
+      "groupId": "sealed-corrugated-large",
+      "sourcePages": [
+        43
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-043.webp",
+      "record_shape_sha256": "4087d729572133ee3b7cf8360f14cfb2bf082273d25f82b095407fb7546a6f1f",
+      "database_id": "cca5ef07-ab4c-529b-86c6-23f047ac992d",
+      "evidenceBasis": "representative-subsection-inference",
+      "reason": "Представительный внешний вид по чертежу подраздела ТМГ с медными обмотками (стр. 40–43). Связь установлена по структуре подраздела и таблице, а не по прямой подписи «медные обмотки» у рисунка. Не CAD; размеры, внутренний материал и точная комплектация не моделируются. Ролики и предохранитель могут быть заказными; приборы КШП не обещаются для каждого исполнения.",
+      "sourceCaption": "ТМГ1000-2500",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-copper-160": {
+      "type": "tr26-corrugated-small",
+      "groupId": "sealed-corrugated-small",
+      "sourcePages": [
+        42
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-042.webp",
+      "record_shape_sha256": "e45afae9e8cd75ecdc5039843abcc40c397f0c95994fe34e48189668252aab57",
+      "database_id": "9387f64a-6779-5fb8-9555-f11f613095f6",
+      "evidenceBasis": "representative-subsection-inference",
+      "reason": "Представительный внешний вид по чертежу подраздела ТМГ с медными обмотками (стр. 40–43). Связь установлена по структуре подраздела и таблице, а не по прямой подписи «медные обмотки» у рисунка. Не CAD; размеры, внутренний материал и точная комплектация не моделируются. Ролики и предохранитель могут быть заказными; приборы КШП не обещаются для каждого исполнения.",
+      "sourceCaption": "ТМГ-25-630",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-copper-1600": {
+      "type": "tr26-corrugated-large",
+      "groupId": "sealed-corrugated-large",
+      "sourcePages": [
+        43
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-043.webp",
+      "record_shape_sha256": "408b61d3d7e9d5cf4a4170d4991684c2304dbf0d1bae209191eebf5e90be90d1",
+      "database_id": "e857ab4e-9d49-5a56-9457-2baf4536f23c",
+      "evidenceBasis": "representative-subsection-inference",
+      "reason": "Представительный внешний вид по чертежу подраздела ТМГ с медными обмотками (стр. 40–43). Связь установлена по структуре подраздела и таблице, а не по прямой подписи «медные обмотки» у рисунка. Не CAD; размеры, внутренний материал и точная комплектация не моделируются. Ролики и предохранитель могут быть заказными; приборы КШП не обещаются для каждого исполнения.",
+      "sourceCaption": "ТМГ1000-2500",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-copper-2000": {
+      "type": "tr26-corrugated-large",
+      "groupId": "sealed-corrugated-large",
+      "sourcePages": [
+        43
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-043.webp",
+      "record_shape_sha256": "cf5bbbd5441fe5dcc8371df9fd7fff717e7f52df70e759853028e5ca158b40c1",
+      "database_id": "5ccb78e0-53b7-5505-a6dd-840a9eeb9360",
+      "evidenceBasis": "representative-subsection-inference",
+      "reason": "Представительный внешний вид по чертежу подраздела ТМГ с медными обмотками (стр. 40–43). Связь установлена по структуре подраздела и таблице, а не по прямой подписи «медные обмотки» у рисунка. Не CAD; размеры, внутренний материал и точная комплектация не моделируются. Ролики и предохранитель могут быть заказными; приборы КШП не обещаются для каждого исполнения.",
+      "sourceCaption": "ТМГ1000-2500",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-copper-25": {
+      "type": "tr26-corrugated-small",
+      "groupId": "sealed-corrugated-small",
+      "sourcePages": [
+        42
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-042.webp",
+      "record_shape_sha256": "c4ba4c4d8a723f76542820c259c809cab0330d0c42e39d3b42a505e6c9e3418b",
+      "database_id": "aca1d25f-b6f8-5843-8279-abf1dd2d89f4",
+      "evidenceBasis": "representative-subsection-inference",
+      "reason": "Представительный внешний вид по чертежу подраздела ТМГ с медными обмотками (стр. 40–43). Связь установлена по структуре подраздела и таблице, а не по прямой подписи «медные обмотки» у рисунка. Не CAD; размеры, внутренний материал и точная комплектация не моделируются. Ролики и предохранитель могут быть заказными; приборы КШП не обещаются для каждого исполнения.",
+      "sourceCaption": "ТМГ-25-630",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-copper-250": {
+      "type": "tr26-corrugated-small",
+      "groupId": "sealed-corrugated-small",
+      "sourcePages": [
+        42
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-042.webp",
+      "record_shape_sha256": "19733eff6db2e82bc7cae1844b5db99737f87fd64244e1a6e43ce99fbd0fd099",
+      "database_id": "28cd57fd-77c6-5057-9452-4a83d54db37e",
+      "evidenceBasis": "representative-subsection-inference",
+      "reason": "Представительный внешний вид по чертежу подраздела ТМГ с медными обмотками (стр. 40–43). Связь установлена по структуре подраздела и таблице, а не по прямой подписи «медные обмотки» у рисунка. Не CAD; размеры, внутренний материал и точная комплектация не моделируются. Ролики и предохранитель могут быть заказными; приборы КШП не обещаются для каждого исполнения.",
+      "sourceCaption": "ТМГ-25-630",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-copper-2500": {
+      "type": "tr26-corrugated-large",
+      "groupId": "sealed-corrugated-large",
+      "sourcePages": [
+        43
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-043.webp",
+      "record_shape_sha256": "36c75586ca0d75cc50fe90abdd5dbded2d70a3e0ea79b4b72703589f4d80fd33",
+      "database_id": "f8067eab-dfe6-5a94-ac90-22280388efca",
+      "evidenceBasis": "representative-subsection-inference",
+      "reason": "Представительный внешний вид по чертежу подраздела ТМГ с медными обмотками (стр. 40–43). Связь установлена по структуре подраздела и таблице, а не по прямой подписи «медные обмотки» у рисунка. Не CAD; размеры, внутренний материал и точная комплектация не моделируются. Ролики и предохранитель могут быть заказными; приборы КШП не обещаются для каждого исполнения.",
+      "sourceCaption": "ТМГ1000-2500",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-copper-40": {
+      "type": "tr26-corrugated-small",
+      "groupId": "sealed-corrugated-small",
+      "sourcePages": [
+        42
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-042.webp",
+      "record_shape_sha256": "dd427e29b4682195942e715d1378d2af7c248923140f37d1f9a4dd3ba7f3b26b",
+      "database_id": "d127e91b-88d7-55a4-b190-42f7122d2a2b",
+      "evidenceBasis": "representative-subsection-inference",
+      "reason": "Представительный внешний вид по чертежу подраздела ТМГ с медными обмотками (стр. 40–43). Связь установлена по структуре подраздела и таблице, а не по прямой подписи «медные обмотки» у рисунка. Не CAD; размеры, внутренний материал и точная комплектация не моделируются. Ролики и предохранитель могут быть заказными; приборы КШП не обещаются для каждого исполнения.",
+      "sourceCaption": "ТМГ-25-630",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-copper-400": {
+      "type": "tr26-corrugated-small",
+      "groupId": "sealed-corrugated-small",
+      "sourcePages": [
+        42
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-042.webp",
+      "record_shape_sha256": "9d636c85fac290d88e0e135462b4572ac221d0ab6cfc4ed1764bdf56c4c84b5e",
+      "database_id": "9bc3c214-f14d-586c-8707-6e7e7ccfabbd",
+      "evidenceBasis": "representative-subsection-inference",
+      "reason": "Представительный внешний вид по чертежу подраздела ТМГ с медными обмотками (стр. 40–43). Связь установлена по структуре подраздела и таблице, а не по прямой подписи «медные обмотки» у рисунка. Не CAD; размеры, внутренний материал и точная комплектация не моделируются. Ролики и предохранитель могут быть заказными; приборы КШП не обещаются для каждого исполнения.",
+      "sourceCaption": "ТМГ-25-630",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-copper-63": {
+      "type": "tr26-corrugated-small",
+      "groupId": "sealed-corrugated-small",
+      "sourcePages": [
+        42
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-042.webp",
+      "record_shape_sha256": "5cfb56f6a315ff96c82d795104323d81a0e72a1b264194128ff49a518badf70c",
+      "database_id": "6f309d57-df53-5032-9bb6-a846ccb9a166",
+      "evidenceBasis": "representative-subsection-inference",
+      "reason": "Представительный внешний вид по чертежу подраздела ТМГ с медными обмотками (стр. 40–43). Связь установлена по структуре подраздела и таблице, а не по прямой подписи «медные обмотки» у рисунка. Не CAD; размеры, внутренний материал и точная комплектация не моделируются. Ролики и предохранитель могут быть заказными; приборы КШП не обещаются для каждого исполнения.",
+      "sourceCaption": "ТМГ-25-630",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-copper-630": {
+      "type": "tr26-corrugated-small",
+      "groupId": "sealed-corrugated-small",
+      "sourcePages": [
+        42
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-042.webp",
+      "record_shape_sha256": "8ce63a6610b481c568358616cd2a3f924ed16d3ffce6c83cb5f002d63c75afb4",
+      "database_id": "9c631c18-0db4-58a4-9263-56be9706282b",
+      "evidenceBasis": "representative-subsection-inference",
+      "reason": "Представительный внешний вид по чертежу подраздела ТМГ с медными обмотками (стр. 40–43). Связь установлена по структуре подраздела и таблице, а не по прямой подписи «медные обмотки» у рисунка. Не CAD; размеры, внутренний материал и точная комплектация не моделируются. Ролики и предохранитель могут быть заказными; приборы КШП не обещаются для каждого исполнения.",
+      "sourceCaption": "ТМГ-25-630",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-switch-6-10-1000": {
+      "type": "tr26-corrugated-large",
+      "groupId": "tmg-switch-large",
+      "sourcePages": [
+        47
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-047.webp",
+      "record_shape_sha256": "8b9edd651c01af403df58c9bf08517c169f12f8317a3c727cc0222f19f7f5bb1",
+      "database_id": "093bab41-57dd-59f3-9c89-e23ca2f16e9e",
+      "evidenceBasis": "explicit-source-caption",
+      "reason": "Иллюстративный внешний вид по явно подписанному чертежу этого исполнения; не CAD и не размерная модель. Внутреннее устройство и состав заказных принадлежностей не определяются по общей форме.",
+      "sourceCaption": "ТМГ1000-2500 с 2-х этажным переключателем",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-switch-6-10-2500": {
+      "type": "tr26-corrugated-large",
+      "groupId": "tmg-switch-large",
+      "sourcePages": [
+        47
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-047.webp",
+      "record_shape_sha256": "cea9b08e0d3a7ab1ed7ec9d7d9d81a412b2d40dc0dd1932d38858348dd2bf59b",
+      "database_id": "382c4f80-4953-5df9-82aa-d434cd4ec503",
+      "evidenceBasis": "explicit-source-caption",
+      "reason": "Иллюстративный внешний вид по явно подписанному чертежу этого исполнения; не CAD и не размерная модель. Внутреннее устройство и состав заказных принадлежностей не определяются по общей форме.",
+      "sourceCaption": "ТМГ1000-2500 с 2-х этажным переключателем",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-switch-6-10-400": {
+      "type": "tr26-corrugated-small",
+      "groupId": "tmg-switch-small",
+      "sourcePages": [
+        46
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-046.webp",
+      "record_shape_sha256": "74c515d1fe76a23030fe9f954fb5a9a0e5ef5f42cd87cfcc86319e89032b621e",
+      "database_id": "e1131f33-afef-50af-9959-5638e30024b7",
+      "evidenceBasis": "explicit-source-caption",
+      "reason": "Иллюстративный внешний вид по явно подписанному чертежу этого исполнения; не CAD и не размерная модель. Внутреннее устройство и состав заказных принадлежностей не определяются по общей форме.",
+      "sourceCaption": "ТМГ-25-630 с 2-х этажным переключателем",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-switch-6-10-630": {
+      "type": "tr26-corrugated-small",
+      "groupId": "tmg-switch-small",
+      "sourcePages": [
+        46
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-046.webp",
+      "record_shape_sha256": "8ccb190e5753627501c4b03b0cd7b1e4ce642651cf60afa8f3645443d49877e1",
+      "database_id": "0e6d13db-94c7-5de9-995e-bce02ade76c0",
+      "evidenceBasis": "explicit-source-caption",
+      "reason": "Иллюстративный внешний вид по явно подписанному чертежу этого исполнения; не CAD и не размерная модель. Внутреннее устройство и состав заказных принадлежностей не определяются по общей форме.",
+      "sourceCaption": "ТМГ-25-630 с 2-х этажным переключателем",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-x1k1-1000": {
+      "type": "tr26-corrugated-large",
+      "groupId": "sealed-corrugated-large",
+      "sourcePages": [
+        13
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-013.webp",
+      "record_shape_sha256": "c08da1c39fa9336ffae364e1d01d684c16ac199bfef24585ee17c498ed499639",
+      "database_id": "cb0cd8b1-1e7b-5e60-bf0a-4e44d32b4378",
+      "evidenceBasis": "explicit-source-caption",
+      "reason": "Иллюстративный внешний вид по явно подписанному чертежу этого исполнения; не CAD и не размерная модель. Внутреннее устройство и состав заказных принадлежностей не определяются по общей форме.",
+      "sourceCaption": "ТМГ1000-3200 стандартный, ТМГ X1K1 и ТМГ(01)",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-x1k1-2500": {
+      "type": "tr26-corrugated-large",
+      "groupId": "sealed-corrugated-large",
+      "sourcePages": [
+        13
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-013.webp",
+      "record_shape_sha256": "70b5cfe40a26732f64d79b40de567451b12f271b0f528eaeb51fbecb29836edc",
+      "database_id": "4b38edeb-ace8-5e22-86b9-29a49568008b",
+      "evidenceBasis": "explicit-source-caption",
+      "reason": "Иллюстративный внешний вид по явно подписанному чертежу этого исполнения; не CAD и не размерная модель. Внутреннее устройство и состав заказных принадлежностей не определяются по общей форме.",
+      "sourceCaption": "ТМГ1000-3200 стандартный, ТМГ X1K1 и ТМГ(01)",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-x1k1-400": {
+      "type": "tr26-corrugated-small",
+      "groupId": "sealed-corrugated-small",
+      "sourcePages": [
+        12
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-012.webp",
+      "record_shape_sha256": "d8a8008afe0bf9037da705e8731bdb59754788b37183a1f663264fa964a5223b",
+      "database_id": "d455916a-9a59-57eb-8adc-313e8cf70bde",
+      "evidenceBasis": "explicit-source-caption",
+      "reason": "Иллюстративный внешний вид по явно подписанному чертежу этого исполнения; не CAD и не размерная модель. Внутреннее устройство и состав заказных принадлежностей не определяются по общей форме.",
+      "sourceCaption": "ТМГ16-630 стандартный, ТМГ X1K1 и ТМГ(01)",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    },
+    "alageum-tmg-x1k1-630": {
+      "type": "tr26-corrugated-small",
+      "groupId": "sealed-corrugated-small",
+      "sourcePages": [
+        12
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-012.webp",
+      "record_shape_sha256": "01e18d028e95b4f4b450ebb944b848d1c4a70171a51b9b7fcd11b16b30af64cd",
+      "database_id": "4d9516a8-392e-5a7e-91d8-fd267a1848e3",
+      "evidenceBasis": "explicit-source-caption",
+      "reason": "Иллюстративный внешний вид по явно подписанному чертежу этого исполнения; не CAD и не размерная модель. Внутреннее устройство и состав заказных принадлежностей не определяются по общей форме.",
+      "sourceCaption": "ТМГ16-630 стандартный, ТМГ X1K1 и ТМГ(01)",
+      "representativeOnly": true,
+      "dimensionAccurate": false,
+      "exactMeshReuseAllowed": false
+    }
+  },
+  "executionChoices": {
+    "selectionMode": "explicit-only",
+    "records": {
+      "alageum-2026-tsl-a-1600": {
+        "sourceFamilyId": "tsl-loss-A",
+        "record_shape_sha256": "c549fa70b524391abf3d9f0dbd6dce0e28538ca4e328982de9aa8553357a70be",
+        "database_id": "83d92428-3821-5ca0-89e7-41cef73b9df2",
+        "choiceIds": [
+          "dry-tsl-open-6-10",
+          "dry-tslz-enclosed-6-10"
+        ]
+      },
+      "alageum-2026-tsl-a-630": {
+        "sourceFamilyId": "tsl-loss-A",
+        "record_shape_sha256": "780dbf2376b6129a96b5f4846461f7c4c54261370f46238bf57624363f45bcbe",
+        "database_id": "8fd77a66-60f0-5bfe-a314-48ca99bfcede",
+        "choiceIds": [
+          "dry-tsl-open-6-10",
+          "dry-tslz-enclosed-6-10"
+        ]
+      },
+      "alageum-2026-tsl-c-1600": {
+        "sourceFamilyId": "tsl-loss-C",
+        "record_shape_sha256": "a7f9d9611a4d7b12bc6e556d74499b5e7b494abd38562cde3295971904a6cc20",
+        "database_id": "653a65d1-4ad0-545f-ae2c-fd745f24b3e0",
+        "choiceIds": [
+          "dry-tsl-open-6-10",
+          "dry-tslz-enclosed-6-10"
+        ]
+      },
+      "alageum-2026-tsl-c-630": {
+        "sourceFamilyId": "tsl-loss-C",
+        "record_shape_sha256": "1037bad9d47697c2b2cfede41cd0506c9fb7c25f7f8adcaa0c90a4732fb686d9",
+        "database_id": "fb80f98f-39e1-5da7-97c8-ea388ddf6720",
+        "choiceIds": [
+          "dry-tsl-open-6-10",
+          "dry-tslz-enclosed-6-10"
+        ]
+      }
+    },
+    "choices": {
+      "dry-tsl-open-6-10": {
+        "id": "dry-tsl-open-6-10",
+        "label": "Без кожуха · ТСЛ",
+        "geometryType": "tr26-dry-cast-open",
+        "iconType": "tr26-dry-cast-open",
+        "reason": "Три катушки, верхняя и нижняя стяжные балки, видимые диагональные связи и катки; корпус отсутствует.",
+        "sourceCaption": "Чертеж трансформатора без кожуха ТСЛ (IP00)",
+        "sourcePages": [
+          80
+        ],
+        "fallbackImage": "/catalog-source/transformers-2026/page-080.webp",
+        "sourceImages": [
+          "/catalog-source/transformers-2026/page-080.webp"
+        ],
+        "viewMode": "illustrative-topology",
+        "disclosure": "Иллюстративная компоновка по источнику; не CAD, не размеры и не точная модель исполнения",
+        "dimensionAccurate": false,
+        "exactMeshReuseAllowed": false
+      },
+      "dry-tslz-enclosed-6-10": {
+        "id": "dry-tslz-enclosed-6-10",
+        "label": "С кожухом · ТСЛЗ",
+        "geometryType": "tr26-dry-mesh-cutaway",
+        "iconType": "tr26-dry-mesh-cutaway",
+        "reason": "Сохранен характер источника: верхняя сетка, средняя панель и раскрытый нижний фрагмент с видимыми катушками. Это иллюстративный разрез, не утверждение о постоянно открытом фасаде. Подпись источника перечисляет IP21 и IP31; выбор вида не определяет степень защиты и не подтверждает одинаковую геометрию этих исполнений.",
+        "sourceCaption": "Чертеж трансформатора с кожухом ТСЛЗ (IP21, IP31,)",
+        "sourcePages": [
+          81
+        ],
+        "fallbackImage": "/catalog-source/transformers-2026/page-081.webp",
+        "sourceImages": [
+          "/catalog-source/transformers-2026/page-081.webp"
+        ],
+        "viewMode": "illustrative-cutaway",
+        "disclosure": "Иллюстративная компоновка по источнику; не CAD, не размеры и не точная модель исполнения",
+        "dimensionAccurate": false,
+        "exactMeshReuseAllowed": false
+      }
+    }
+  }
+}

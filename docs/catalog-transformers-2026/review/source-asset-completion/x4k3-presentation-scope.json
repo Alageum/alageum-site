@@ -1,0 +1,19 @@
+{
+  "format": "alageum-x4k3-presentation-scope-v1",
+  "reviewedAt": "2026-10-06T11:56:15.458748+00:00",
+  "sourceDecisionSha256": "018c7438a538ad2edf0a6a0052883cccc31377ce921d922336e425e9ee3731b0",
+  "sourceDecisionUnchanged": true,
+  "scope": "Presentation of the ten existing X4K3 representative-illustration candidates only; no runtime or clearance approval",
+  "decision": {
+    "detailAndInteractivePreview": "The full TMGi/TMGve discrepancy, representative/non-CAD limitation and correct drawing link must be persistently visible beside the detail or interactive 3D preview.",
+    "listingAndComparisonTypeIcons": "Small representative type icons do not require an additional persistent discrepancy caption. Their accessible title/tooltip must retain the same qualified reason.",
+    "rawProductNames": "Retain the original TMGi names and all source values.",
+    "forbiddenIconClaims": [
+      "Exact model",
+      "Verified execution",
+      "Proven TMGi/TMGve equivalence"
+    ],
+    "largerPreviewElsewhere": "A larger or interactive construction preview outside the detail page must also show the discrepancy persistently."
+  },
+  "rationale": "The drawing explicitly includes X4K3 and supports a shared representative type symbol. A small navigation icon does not claim exact execution identity; the detailed construction preview must expose the nomenclature limitation clearly."
+}

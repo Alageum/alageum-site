@@ -1,0 +1,71 @@
+{
+  "status": "pass",
+  "deterministicRegeneration": true,
+  "sourceProseGroups": 19,
+  "addedModelProseSpecs": 597,
+  "newModelTechnicalSpecCount": 2564,
+  "countsPreserved": {
+    "models": 135,
+    "configurations": 82,
+    "families": 24,
+    "assetFamilies": 34
+  },
+  "existingNumericValuesChanged": 0,
+  "printedUnitAttributionCorrections": 12,
+  "voltageValueSourcePageCorrections": 10,
+  "familyLabelCorrections": [
+    "tmpn-top:ТМПН(Г)",
+    "ts-low-voltage:Трансформаторы серии ТС(З)"
+  ],
+  "sourceScopedTemperatureGroups": {
+    "page62": {
+      "rows": 8,
+      "value": "от -45 до +40°C"
+    },
+    "page64": {
+      "rows": 10,
+      "value": "от -60 до +40°C"
+    }
+  },
+  "fanConfigurationUnchanged": true,
+  "candidateOldIdsUnchanged": true,
+  "drawingOnlyProseInheritance": false,
+  "files": {
+    "inventory.json": {
+      "bytes": 1202201,
+      "sha256": "72d9f9f3c49eab6a4350e40700eb3820114fc15b1ece703d48e66af199d3d666"
+    },
+    "page-ledger.json": {
+      "bytes": 71580,
+      "sha256": "a0187902a462015c935abaeaca728336ebc2029cf16e9b3f34d000e23611d74e"
+    },
+    "asset-families.json": {
+      "bytes": 29116,
+      "sha256": "491b0ae1c5e276cab67ae817779d8f678d3bc7785cb0043f06db37f373c1e82e"
+    },
+    "notes.md": {
+      "bytes": 2685,
+      "sha256": "7b284d9653e5309f6fdafba4fd000f6ea12beb3a72040e40df7804652f0d61e1"
+    },
+    "build_inventory.py": {
+      "bytes": 61063,
+      "sha256": "7b0b3c9d33664a7d22fc118c2c2a6aed2cc4105da29e2b11e93b0364c923c59e"
+    },
+    "apply_source_review.py": {
+      "bytes": 6231,
+      "sha256": "0b2f94353ccd4605bb1bb3676d1745ea0e514cd24a5ebf0ffc5c3179e3b9c9c3"
+    },
+    "source-scoped-additions.json": {
+      "bytes": 29296,
+      "sha256": "439276418ce426b049d551689cad847ce023ad6151d06bb9be23124d590ff816"
+    },
+    "validate_inventory.py": {
+      "bytes": 6246,
+      "sha256": "1f7a0fa7bd6e1e09088f09988baf73c53e288b4160463e6662e92e0b11b1bb3c"
+    },
+    "final-review-validation.json": {
+      "bytes": 3870,
+      "sha256": "694049c0731421e72b06f9952e39053e5fbada8b5da876eaf59b20728dc1c54c"
+    }
+  }
+}

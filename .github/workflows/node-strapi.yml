@@ -1,0 +1,1469 @@
+name: Node Strapi migration foundation
+on:
+  pull_request:
+    paths:
+      - 'backend-node/**'
+      - 'frontend/**'
+      - 'docs/catalog-import/**'
+      - 'docs/node-strapi-migration.md'
+      - 'docs/node-strapi-cms-media.md'
+      - 'docs/company-profile.md'
+      - 'docs/organization-selection.md'
+      - 'docs/quote-print.md'
+      - 'docs/node-support-tickets.md'
+      - 'docs/node-customer-orders.md'
+      - 'docs/node-invoice-metadata.md'
+      - 'docs/node-document-metadata.md'
+      - 'docs/node-organization-members.md'
+      - 'docs/node-session-read-invalidation.md'
+      - 'docs/node-legacy-read-compatibility.md'
+      - 'docs/node-system-reads.md'
+      - 'docs/node-quote-throttle.md'
+      - 'docs/native-page-fast-save.md'
+      - 'scripts/generate-catalog-media.mjs'
+      - 'docker-compose.node.yml'
+      - '.github/workflows/node-strapi.yml'
+  push:
+    paths:
+      - 'backend-node/**'
+      - 'frontend/**'
+      - 'docs/catalog-import/**'
+      - 'docs/node-strapi-migration.md'
+      - 'docs/node-strapi-cms-media.md'
+      - 'docs/company-profile.md'
+      - 'docs/organization-selection.md'
+      - 'docs/quote-print.md'
+      - 'docs/node-support-tickets.md'
+      - 'docs/node-customer-orders.md'
+      - 'docs/node-invoice-metadata.md'
+      - 'docs/node-document-metadata.md'
+      - 'docs/node-organization-members.md'
+      - 'docs/node-session-read-invalidation.md'
+      - 'docs/node-legacy-read-compatibility.md'
+      - 'docs/node-system-reads.md'
+      - 'docs/node-quote-throttle.md'
+      - 'docs/native-page-fast-save.md'
+      - 'scripts/generate-catalog-media.mjs'
+      - 'docker-compose.node.yml'
+      - '.github/workflows/node-strapi.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: node-strapi-${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  native-quote-storage:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: backend-node/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12.14'
+      - name: Install locked backend dependencies
+        working-directory: backend-node
+        run: npm ci
+      - name: Verify preinstalled PostgreSQL 16 and prepare an owned evidence parent
+        shell: bash
+        run: |
+          set -euo pipefail
+          for command in initdb pg_ctl psql createdb; do test -x "/usr/lib/postgresql/16/bin/$command"; done
+          mkdir -p "$RUNNER_TEMP/native-quote-storage"
+          printf 'PG_BIN=/usr/lib/postgresql/16/bin\n' >> "$GITHUB_ENV"
+      - name: Prove fresh-store constraints native restart refusal and FK races
+        timeout-minutes: 24
+        shell: bash
+        run: |
+          set -euo pipefail
+          timeout --signal=INT --kill-after=75s 1250s python backend-node/scripts/run-native-generic-quote-storage.py \
+            --postgres-major 16 --evidence-dir "$RUNNER_TEMP/native-quote-storage/evidence"
+          node - <<'NODE'
+          const assert = require('node:assert/strict');
+          const fs = require('node:fs');
+          const path = require('node:path');
+          const directory = path.join(process.env.RUNNER_TEMP, 'native-quote-storage/evidence');
+          const lifecycle = JSON.parse(fs.readFileSync(path.join(directory, 'lifecycle.json')));
+          assert.equal(lifecycle.status, 'passed');
+          const serverVersion = Number(lifecycle.server_identity.version);
+          assert.ok(serverVersion >= 160000 && serverVersion < 170000);
+          for (const key of ['owned_process_group_stopped_verified', 'postgres_stopped_verified',
+            'http_ports_closed_verified', 'source_and_dependency_hashes_unchanged', 'owned_fixture_removed']) {
+            assert.equal(lifecycle[key], true, key);
+          }
+          const results = JSON.parse(fs.readFileSync(path.join(directory, 'results.json')));
+          assert.equal(results.status, 'passed');
+          assert.ok(results.checks.length > 0 && results.checks.every(result => result.status === 'passed'));
+          const release = JSON.parse(fs.readFileSync('backend-node/data/catalog-release.json'));
+          assert.equal(release.format, 'alageum-catalog-release-v1');
+          assert.equal(results.fresh.source_products.count, release.recordCount);
+          assert.deepEqual(results.restart.source_products, results.fresh.source_products);
+          assert.equal(results.restart.schema_sha256, results.fresh.schema_sha256);
+          assert.equal(results.fresh.races.length, 4);
+          assert.equal(results.rejected_starts.length, 27);
+          assert.ok(results.rejected_starts.every(result => result.status === 'passed' &&
+            result.sync_calls === 0 && result.mutating_statements.length === 0 && result.unchanged_schema_and_data));
+          NODE
+      - name: Retain sanitized native storage reports only
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: native-quote-storage-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/native-quote-storage/evidence/*.json
+          if-no-files-found: error
+          retention-days: 14
+
+  quote-throttle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: backend-node/package-lock.json
+      - name: Install locked backend dependencies
+        working-directory: backend-node
+        run: npm ci
+      - name: Prepare isolated quote throttle runtime and PostgreSQL tools
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/quote-throttle"
+          printf 'TMPDIR=%s\n' "$RUNNER_TEMP/quote-throttle" >> "$GITHUB_ENV"
+          pg_bin=$(pg_config --bindir)
+          for command in initdb pg_ctl createdb; do test -x "$pg_bin/$command"; done
+          printf 'PG_BIN=%s\n' "$pg_bin" >> "$GITHUB_ENV"
+      - name: Verify actual quote quotas socket identity expiry and persistence
+        timeout-minutes: 7
+        shell: bash
+        run: |
+          set -euo pipefail
+          timeout --signal=TERM --kill-after=45s 340s bash backend-node/scripts/run-quote-limit-tests.sh
+          node - <<'NODE'
+          const assert = require('node:assert/strict');
+          const fs = require('node:fs');
+          const path = require('node:path');
+          const runs = fs.readdirSync(process.env.TMPDIR).filter(name => name.startsWith('alageum-quote-limit-tests.'));
+          assert.equal(runs.length, 1);
+          const directory = path.join(process.env.TMPDIR, runs[0], 'evidence');
+          const report = JSON.parse(fs.readFileSync(path.join(directory, 'results.json')));
+          assert.equal(report.kind, 'isolated-catalog-quote-throttle');
+          assert.equal(report.status, 'passed');
+          assert.equal(report.backendChecks, 11);
+          assert.equal(report.checks.length, 11);
+          assert.ok(report.checks.every(check => check.status === 'passed'));
+          for (const key of ['cleanup', 'clusterCleanup', 'privateFixtureCleanup']) assert.equal(report[key], 'passed');
+          assert.ok(report.realWindowElapsedMs >= 60000);
+          assert.equal(report.createdQuotes, 14);
+          assert.equal(report.quoteAuditEvents, 14);
+          assert.equal(report.httpRequests, report.generatedRequestIds);
+          assert.deepEqual(fs.readdirSync(directory).sort(), ['results.json', 'strapi.log']);
+          assert.equal(Object.hasOwn(report, 'evidence'), false);
+          NODE
+      - name: Retain sanitized quote throttle evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: quote-throttle-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/quote-throttle/alageum-quote-limit-tests.*/evidence/
+          retention-days: 14
+
+  system-reads:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: backend-node/package-lock.json
+      - name: Install locked backend dependencies
+        working-directory: backend-node
+        run: npm ci
+      - name: Prepare isolated system runtime and PostgreSQL tools
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/system-reads"
+          printf 'TMPDIR=%s\n' "$RUNNER_TEMP/system-reads" >> "$GITHUB_ENV"
+          pg_bin=$(pg_config --bindir)
+          for command in initdb pg_ctl createdb; do test -x "$pg_bin/$command"; done
+          printf 'PG_BIN=%s\n' "$pg_bin" >> "$GITHUB_ENV"
+      - name: Verify real system reads database outage recovery and unchanged state
+        timeout-minutes: 10
+        shell: bash
+        run: |
+          set -euo pipefail
+          timeout --signal=TERM --kill-after=45s 520s bash backend-node/scripts/run-system-tests.sh
+          node - <<'NODE'
+          const assert = require('node:assert/strict');
+          const fs = require('node:fs');
+          const path = require('node:path');
+          const runs = fs.readdirSync(process.env.TMPDIR).filter(name => name.startsWith('alageum-system-tests.'));
+          assert.equal(runs.length, 1, 'one complete isolated system run is required');
+          const directory = path.join(process.env.TMPDIR, runs[0], 'evidence');
+          const report = JSON.parse(fs.readFileSync(path.join(directory, 'results.json')));
+          assert.equal(report.kind, 'isolated-system-reads');
+          assert.equal(report.status, 'passed');
+          assert.equal(report.backendChecks, 23);
+          assert.equal(report.checks.length, 23);
+          assert.ok(report.checks.every(check => check.status === 'passed'));
+          for (const key of ['cleanup', 'clusterCleanup', 'privateFixtureCleanup']) assert.equal(report[key], 'passed');
+          assert.equal(report.outage.stopped, true);
+          assert.equal(report.outage.restored, true);
+          assert.equal(report.outage.readinessStatus, 500);
+          assert.equal(report.outage.recoveryStatus, 200);
+          assert.equal(report.readOnlyFingerprint.tables, 62);
+          assert.match(report.readOnlyFingerprint.digest, /^[0-9a-f]{64}$/);
+          assert.equal(report.browser, 'not-applicable: system JSON routes only');
+          assert.deepEqual(fs.readdirSync(directory).sort(), ['results.json', 'strapi.log']);
+          assert.equal(Object.hasOwn(report, 'evidence'), false, 'withheld or failed publication is not acceptance');
+          NODE
+      - name: Retain sanitized system verification evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: system-reads-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/system-reads/alageum-system-tests.*/evidence/
+          retention-days: 14
+
+  dependency-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: backend-node/package-lock.json
+      - name: Install locked backend dependency tree
+        working-directory: backend-node
+        run: npm ci
+      - name: Gate high-severity backend dependency advisories
+        working-directory: backend-node
+        run: npm audit --audit-level=high --json > dependency-audit.json
+      - name: Save complete dependency audit evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: node-strapi-dependency-audit-${{ github.run_id }}-${{ github.run_attempt }}
+          path: backend-node/dependency-audit.json
+          retention-days: 14
+
+  webpack-compatibility:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      APP_ENV: test
+      STRAPI_TELEMETRY_DISABLED: 'true'
+      STRAPI_HIDE_UPDATE_MESSAGE: 'true'
+      NEXT_TELEMETRY_DISABLED: '1'
+      WEBPACK_COMPAT_HEAP_MB: '2048'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: |
+            backend-node/package-lock.json
+            frontend/package-lock.json
+      - name: Prepare isolated compatibility evidence and PostgreSQL tools
+        shell: bash
+        run: |
+          set -euo pipefail
+          compat_root="$RUNNER_TEMP/webpack-compatibility"
+          compat_temp="$RUNNER_TEMP/webpack-compatibility-tmp"
+          mkdir -p "$compat_temp" "$compat_root" webpack-compatibility-evidence
+          printf 'WEBPACK_COMPAT_WORK_ROOT=%s\nTMPDIR=%s\n' "$compat_root" "$compat_temp" >> "$GITHUB_ENV"
+          pg_bin=$(pg_config --bindir)
+          for command in initdb pg_ctl createdb; do test -x "$pg_bin/$command"; done
+          printf 'PG_BIN=%s\n' "$pg_bin" >> "$GITHUB_ENV"
+      - name: Install locked candidate and verify both patched formats
+        timeout-minutes: 6
+        shell: bash
+        env:
+          NODE_OPTIONS: --max-old-space-size=768
+        run: |
+          set -euo pipefail
+          npm ci --prefix backend-node
+          npm ci --prefix frontend
+          npm run check --prefix backend-node
+          node backend-node/scripts/strapi-webpack-patch.js --apply
+          node backend-node/scripts/strapi-webpack-patch.js --check
+      - name: Verify all 42 middleware protocol and cleanup cases
+        timeout-minutes: 3
+        shell: bash
+        run: |
+          set -euo pipefail
+          timeout --signal=TERM --kill-after=10s 150s node backend-node/scripts/probe-webpack-middleware.js --with-head-cleanup --write-results 2>&1 | tee webpack-compatibility-evidence/protocol.log
+          node - <<'NODE'
+          const assert = require('node:assert/strict');
+          const report = require('./backend-node/docs/webpack-protocol-head-cleanup-results.json');
+          assert.equal(report.passed, true);
+          assert.equal(report.checksPassed, 42);
+          assert.equal(report.checksFailed, 0);
+          assert.equal(report.fixtureRemoved, true);
+          NODE
+      - name: Install bounded official Chromium for compatibility acceptance
+        timeout-minutes: 5
+        working-directory: frontend
+        shell: bash
+        env:
+          PLAYWRIGHT_DOWNLOAD_CONNECTION_TIMEOUT: '60000'
+        run: |
+          set -euo pipefail
+          timeout --signal=TERM --kill-after=10s 270s npx --no-install playwright install --with-deps chromium 2>&1 | tee ../webpack-compatibility-evidence/chromium-install.log
+      - name: Verify compiled polyfill equivalence in a real browser
+        timeout-minutes: 3
+        shell: bash
+        run: |
+          set -euo pipefail
+          timeout --signal=TERM --kill-after=10s 150s node backend-node/scripts/probe-webpack-browser-polyfills.js --write-report 2>&1 | tee webpack-compatibility-evidence/compiled-browser.log
+          node - <<'NODE'
+          const assert = require('node:assert/strict');
+          const report = require('./backend-node/docs/webpack-browser-polyfill-results.json');
+          assert.equal(report.status, 'passed');
+          assert.equal(report.chromium.accepted, true);
+          assert.equal(report.comparisons.micromatchPatternFilePairs, 3024);
+          assert.equal(report.comparisons.uploadAllowedDecisions, 112);
+          assert.equal(report.compilation.generatorFunction.moduleSyncWrapperAbsent, true);
+          assert.equal(report.cleanup.fixturesRemoved, true);
+          assert.equal(report.cleanup.portReleased, true);
+          NODE
+      - name: Verify actual webpack cold warm HMR and four scoped native CMS cases
+        timeout-minutes: 10
+        shell: bash
+        run: |
+          set -euo pipefail
+          # Reserve 60 seconds for bounded app/PG shutdown and evidence staging.
+          timeout --signal=TERM --kill-after=60s 520s bash backend-node/scripts/run-webpack-compat.sh --browser
+          node - <<'NODE'
+          const assert = require('node:assert/strict');
+          const fs = require('node:fs');
+          const path = require('node:path');
+          const root = process.env.WEBPACK_COMPAT_WORK_ROOT;
+          const runs = fs.readdirSync(root).filter(name => name.startsWith('run.'));
+          assert.equal(runs.length, 1, 'one complete isolated webpack run is required');
+          const directory = path.join(root, runs[0]);
+          const report = JSON.parse(fs.readFileSync(path.join(directory, 'acceptance.json')));
+          assert.deepEqual(report, { mode: '--browser', cold: true, warm: true, browserCases: 4 });
+          assert.ok(fs.existsSync(path.join(directory, 'publishable/sanitized.ok')));
+          NODE
+      - name: Retain compatibility JSON and sanitized logs and PNGs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: webpack-compatibility-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            webpack-compatibility-evidence/
+            backend-node/docs/webpack-protocol-head-cleanup-results.json
+            backend-node/docs/webpack-browser-polyfill-results.json
+            ${{ runner.temp }}/webpack-compatibility/run.*/publishable/
+            frontend/playwright-report/cms-results/**/*.png
+          retention-days: 14
+
+  node-strapi:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_DB: alageum_strapi_ci
+          POSTGRES_USER: alageum_strapi_ci
+          # Disposable CI service only, never copied into deployment examples.
+          POSTGRES_PASSWORD: disposable-node-strapi-ci
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U alageum_strapi_ci -d alageum_strapi_ci"
+          --health-interval 5s --health-timeout 3s --health-retries 20
+    env:
+      APP_ENV: test
+      DATABASE_URL: postgresql://alageum_strapi_ci:disposable-node-strapi-ci@127.0.0.1:5432/alageum_strapi_ci
+      ALAGEUM_DOMAIN_TEST_DATABASE_URL: postgresql://alageum_strapi_ci:disposable-node-strapi-ci@127.0.0.1:5432/alageum_strapi_domain_test
+      ALAGEUM_CMS_BROWSER_DATABASE_URL: postgresql://alageum_strapi_ci:disposable-node-strapi-ci@127.0.0.1:5432/alageum_strapi_browser_test
+      HOST: 127.0.0.1
+      PORT: '8016'
+      ALAGEUM_SEED_DEMO: '1'
+      ALAGEUM_IMPORT_CATALOG: '1'
+      ALAGEUM_TEST_ADMIN_FIXTURES: '1'
+      CORS_ORIGINS: http://127.0.0.1:3141
+      STRAPI_TELEMETRY_DISABLED: 'true'
+      STRAPI_HIDE_UPDATE_MESSAGE: 'true'
+      NEXT_TELEMETRY_DISABLED: '1'
+      NEXT_PUBLIC_API_URL: http://127.0.0.1:8016/api/v1
+      NEXT_PUBLIC_CATALOG_SOURCE: api
+      E2E_API_URL: http://127.0.0.1:8016/api/v1
+      E2E_BASE_URL: http://127.0.0.1:3141
+      E2E_QUOTES_BASE_URL: http://127.0.0.1:3141
+      E2E_CMS_BASE_URL: http://127.0.0.1:8016/cms
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: |
+            backend-node/package-lock.json
+            frontend/package-lock.json
+      - name: Generate disposable application keys
+        run: |
+          node <<'NODE'
+          const { randomBytes } = require('node:crypto');
+          const { appendFileSync } = require('node:fs');
+          for (const key of ['APP_KEYS', 'ADMIN_JWT_SECRET', 'API_TOKEN_SALT', 'TRANSFER_TOKEN_SALT', 'ENCRYPTION_KEY', 'ALAGEUM_JWT_SECRET']) {
+            const value = Array.from({ length: key === 'APP_KEYS' ? 2 : 1 }, () => randomBytes(32).toString('hex')).join(',');
+            console.log(`::add-mask::${value}`);
+            appendFileSync(process.env.GITHUB_ENV, `${key}=${value}\n`);
+          }
+          for (const key of ['E2E_CMS_EDITOR_PASSWORD', 'E2E_CMS_DENIED_PASSWORD']) {
+            const value = 'Aa1!' + randomBytes(24).toString('hex');
+            console.log(`::add-mask::${value}`);
+            appendFileSync(process.env.GITHUB_ENV, `${key}=${value}\n`);
+          }
+          NODE
+      - name: Install locked Node backend dependencies
+        working-directory: backend-node
+        run: npm ci
+      - name: Install locked frontend dependencies
+        working-directory: frontend
+        run: npm ci
+      - name: Create separate destructive-domain-test database
+        working-directory: backend-node
+        run: |
+          node <<'NODE'
+          const { Client } = require('pg');
+          (async () => {
+            const db = new Client({ connectionString: process.env.DATABASE_URL });
+            await db.connect();
+            try {
+              await db.query('CREATE DATABASE alageum_strapi_domain_test');
+              await db.query('CREATE DATABASE alageum_strapi_browser_test');
+            }
+            finally { await db.end(); }
+          })().catch(error => { console.error(error); process.exitCode = 1; });
+          NODE
+      - name: Check backend syntax and unit tests
+        working-directory: backend-node
+        run: |
+          npm run check
+      - name: Verify PostgreSQL integration contracts
+        working-directory: backend-node
+        run: npm run test:integration
+      - name: Build Strapi CMS administration
+        working-directory: backend-node
+        run: npm run build
+        env:
+          NODE_ENV: production
+      - name: Check frontend lint and unit tests
+        working-directory: frontend
+        run: |
+          npm run lint
+          NEXT_PUBLIC_CATALOG_SOURCE=static npm run test:unit
+          mkdir -p playwright-report
+          npx --no-install playwright test --list > playwright-report/legacy-discovery.log
+          node - <<'NODE'
+          const assert = require('node:assert/strict');
+          const fs = require('node:fs');
+          const discovery = fs.readFileSync('playwright-report/legacy-discovery.log', 'utf8');
+          assert.match(discovery, /Total: [1-9]\d* tests/);
+          assert.doesNotMatch(discovery, /node-quote-throttle\.spec\.js/);
+          assert.doesNotMatch(discovery, /node-page-fast-save\.spec\.js/);
+          NODE
+      - name: Build frontend against Node API
+        working-directory: frontend
+        run: npm run build
+      - name: Build isolated production frontend for interruption cases
+        timeout-minutes: 6
+        working-directory: frontend
+        run: npm run build
+        env:
+          ALAGEUM_QUOTES_BUILD: '1'
+          NEXT_PUBLIC_CATALOG_SOURCE: static
+      - name: Install Chromium
+        timeout-minutes: 5
+        env:
+          PLAYWRIGHT_DOWNLOAD_CONNECTION_TIMEOUT: 60000
+        working-directory: frontend
+        run: npx playwright install --with-deps chromium
+      - name: Prepare bounded PDF text verification tools
+        timeout-minutes: 4
+        shell: bash
+        run: |
+          set -euo pipefail
+          if ! command -v pdftotext >/dev/null; then
+            sudo apt-get update
+            sudo apt-get install --yes --no-install-recommends poppler-utils
+          fi
+          command -v pdftotext
+      - name: Verify CMS health, catalog administration and RFQ browser flows
+        timeout-minutes: 12
+        shell: bash
+        run: |
+          (cd backend-node && DATABASE_URL="$ALAGEUM_CMS_BROWSER_DATABASE_URL" node scripts/seed-test-cms-admins.js) > node-strapi-fixtures.log 2>&1
+          DATABASE_URL="$ALAGEUM_CMS_BROWSER_DATABASE_URL" setsid bash -c 'cd backend-node && exec npm run start' > node-strapi-api.log 2>&1 &
+          api_pid=$!
+          setsid bash -c 'cd frontend && exec npm run start -- --hostname 127.0.0.1 --port 3141' > node-strapi-frontend.log 2>&1 &
+          web_pid=$!
+          cleanup() {
+            kill -- -"${api_pid}" -"${web_pid}" 2>/dev/null || true
+            wait "${api_pid}" "${web_pid}" 2>/dev/null || true
+          }
+          trap cleanup EXIT
+          deadline=$((SECONDS + 150))
+          until curl --fail --silent --connect-timeout 2 --max-time 5 "${E2E_API_URL}/readiness" > /dev/null \
+            && curl --fail --silent --connect-timeout 2 --max-time 5 "${E2E_BASE_URL}/inquiry?source=api" > /dev/null; do
+            if ! kill -0 "${api_pid}" || ! kill -0 "${web_pid}" || (( SECONDS >= deadline )); then
+              tail -100 node-strapi-api.log node-strapi-frontend.log
+              exit 1
+            fi
+            sleep 2
+          done
+          curl --fail --silent --max-time 10 http://127.0.0.1:8016/_health > /dev/null
+          curl --location --fail --silent --max-time 10 http://127.0.0.1:8016/cms > /dev/null
+          cd frontend
+          npx playwright test --config=playwright.cms.config.js
+          # The existing suite uses all five native editor logins. Pinned Strapi
+          # permits five per email/path/IP in five minutes. Let that real window
+          # expire before the HTTP companion and daily suite use three more.
+          # Do not disable, reset, or raise the native authentication throttle.
+          echo 'Waiting 301 seconds for the native login quota window to expire.'
+          sleep 301
+          DATABASE_URL="$ALAGEUM_CMS_BROWSER_DATABASE_URL" node scripts/verify-native-cms-daily-http.mjs | tee playwright-report/cms-daily-http.log
+          PLAYWRIGHT_JSON_OUTPUT_NAME=playwright-report/cms-daily-cases.json npx --no-install playwright test --config=playwright.cms-daily.config.js --max-failures=1 --reporter=github,json
+          node - <<'NODE'
+          const assert = require('node:assert/strict');
+          const fs = require('node:fs');
+          const report = JSON.parse(fs.readFileSync('playwright-report/cms-daily-cases.json'));
+          const cases = [];
+          function visit(suite) {
+            for (const spec of suite.specs || []) for (const test of spec.tests || []) cases.push(test);
+            for (const child of suite.suites || []) visit(child);
+          }
+          for (const suite of report.suites) visit(suite);
+          assert.equal(cases.length, 2);
+          assert.equal(report.stats.expected, 2);
+          for (const field of ['unexpected', 'skipped', 'flaky']) assert.equal(report.stats[field], 0);
+          assert.ok(cases.every(test => test.expectedStatus === 'passed' && test.results.length === 1 && test.results[0].status === 'passed' && test.results[0].retry === 0));
+          NODE
+          npm run test:e2e:admin -- --max-failures=1
+          PLAYWRIGHT_JSON_OUTPUT_NAME=playwright-report/node-rfq-cases.json npx playwright test --config=playwright.node.config.js --max-failures=1 --reporter=github,json
+          node - <<'NODE'
+          const assert = require('node:assert/strict');
+          const fs = require('node:fs');
+          const report = JSON.parse(fs.readFileSync('playwright-report/node-rfq-cases.json'));
+          const cases = [];
+          function visit(suite) {
+            for (const spec of suite.specs || []) for (const test of spec.tests || []) cases.push(test);
+            for (const child of suite.suites || []) visit(child);
+          }
+          for (const suite of report.suites) visit(suite);
+          assert.equal(cases.length, 4);
+          assert.equal(report.stats.expected, 4);
+          for (const field of ['unexpected', 'skipped', 'flaky']) assert.equal(report.stats[field], 0);
+          assert.ok(cases.every(test => test.expectedStatus === 'passed' && test.results.length === 1 && test.results[0].status === 'passed' && test.results[0].retry === 0));
+          NODE
+          npx --no-install playwright test --config=playwright.quote-throttle.config.js --max-failures=1
+          node - <<'NODE'
+          const assert = require('node:assert/strict');
+          const fs = require('node:fs');
+          const report = JSON.parse(fs.readFileSync('playwright-report/quote-throttle-cases.json'));
+          const cases = [];
+          function visit(suite) {
+            for (const spec of suite.specs || []) for (const test of spec.tests || []) cases.push(test);
+            for (const child of suite.suites || []) visit(child);
+          }
+          for (const suite of report.suites) visit(suite);
+          assert.equal(cases.length, 1);
+          assert.equal(report.stats.expected, 1);
+          for (const field of ['unexpected', 'skipped', 'flaky']) assert.equal(report.stats[field], 0);
+          const test = cases[0];
+          assert.equal(test.expectedStatus, 'passed');
+          assert.equal(test.results.length, 1);
+          const result = test.results[0];
+          assert.equal(result.status, 'passed');
+          assert.equal(result.retry, 0);
+          assert.deepEqual(result.attachments.map(item => item.name).sort(), ['node-quote-throttle-evidence', 'node-quote-throttle-mobile-error', 'node-quote-throttle-safe-error', 'node-quote-throttle-saved']);
+          const evidence = JSON.parse(fs.readFileSync(result.attachments.find(item => item.name === 'node-quote-throttle-evidence').path));
+          assert.equal(evidence.status, 'passed');
+          assert.equal(evidence.realWindowMs, 60000);
+          assert.ok(evidence.elapsedMs >= 60000);
+          assert.equal(evidence.loginStatus, 200);
+          assert.equal(evidence.rejectedStatus, 429);
+          assert.equal(evidence.explicitRetryStatus, 201);
+          assert.equal(evidence.replayStatus, 200);
+          assert.equal(evidence.browserQuotePosts, 2);
+          assert.equal(evidence.newOwnQuotes, 1);
+          NODE
+          # The legacy interruption suite intentionally tests both demo and API
+          # source modes. The live API-default build disallows static overrides.
+          # Its config starts the separate static-default production build;
+          # development Fast Refresh must not reload an in-flight RFQ.
+          env -u E2E_QUOTES_BASE_URL E2E_QUOTES_PRODUCTION=1 NEXT_PUBLIC_CATALOG_SOURCE=static NODE_ENV=production \
+            npm run test:e2e:quotes -- --max-failures=3
+          env -u E2E_QUOTES_BASE_URL E2E_QUOTES_PRODUCTION=1 NEXT_PUBLIC_CATALOG_SOURCE=static NODE_ENV=production \
+            npm run test:e2e:quote-print -- --max-failures=3 | tee quote-print-playwright.log
+          node - <<'NODE'
+          const assert = require('node:assert/strict');
+          const fs = require('node:fs');
+          const log = fs.readFileSync('quote-print-playwright.log', 'utf8');
+          assert.match(log, /\b54 passed\b/);
+          assert.doesNotMatch(log, /\b[1-9]\d* (?:failed|flaky|skipped|did not run)\b/);
+          NODE
+        env:
+          NODE_ENV: production
+      - name: Verify isolated real PostgreSQL own-request printing
+        timeout-minutes: 15
+        shell: bash
+        run: |
+          set -euo pipefail
+          quote_print_temp="$RUNNER_TEMP/quote-print-tmp"
+          mkdir -p "$quote_print_temp"
+          export TMPDIR="$quote_print_temp"
+          export PG_BIN="$(pg_config --bindir)"
+          for command in initdb pg_ctl createdb; do test -x "$PG_BIN/$command"; done
+          # Prior baseline API/Next process groups have completed their trap.
+          # This creates its own exact test database, ignores caller DATABASE_URL,
+          # reuses the static production build and writes sanitized evidence only.
+          timeout --signal=TERM --kill-after=20s 840s bash backend-node/scripts/run-quote-print-tests.sh --browser
+          node - <<'NODE'
+          const assert = require('node:assert/strict');
+          const fs = require('node:fs');
+          const path = require('node:path');
+          const root = process.env.TMPDIR;
+          const runs = fs.readdirSync(root).filter(name => name.startsWith('alageum-quote-print-tests.'));
+          assert.equal(runs.length, 1, 'one isolated quote print run is required');
+          const report = JSON.parse(fs.readFileSync(path.join(root, runs[0], 'evidence', 'quote-print-results.json')));
+          assert.equal(report.status, 'passed');
+          assert.equal(report.browser, 'passed');
+          assert.equal(report.expectedBackendChecks, 7);
+          assert.equal(report.expectedBrowserTests, 5);
+          assert.equal(report.browserTests, 5);
+          assert.equal(report.checks.length, 8);
+          assert.equal(report.checks.filter(check => check.group === 'backend').length, 7);
+          assert.ok(report.checks.every(check => check.status === 'passed'));
+          NODE
+      - name: Save browser and server evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: node-strapi-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            frontend/test-results/
+            frontend/playwright-report/
+            node-strapi-api.log
+            node-strapi-frontend.log
+            node-strapi-fixtures.log
+            frontend/quote-print-playwright.log
+            ${{ runner.temp }}/quote-print-tmp/alageum-quote-print-tests.*/evidence/
+          retention-days: 7
+
+  company-profile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      APP_ENV: test
+      STRAPI_TELEMETRY_DISABLED: 'true'
+      STRAPI_HIDE_UPDATE_MESSAGE: 'true'
+      NEXT_TELEMETRY_DISABLED: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: |
+            backend-node/package-lock.json
+            frontend/package-lock.json
+      - name: Prepare isolated profile evidence and PostgreSQL tools
+        shell: bash
+        run: |
+          set -euo pipefail
+          profile_temp="$RUNNER_TEMP/company-profile-tmp"
+          mkdir -p "$profile_temp" company-profile-evidence
+          printf 'TMPDIR=%s\n' "$profile_temp" >> "$GITHUB_ENV"
+          pg_bin=$(pg_config --bindir)
+          for command in initdb pg_ctl createdb; do test -x "$pg_bin/$command"; done
+          printf 'PG_BIN=%s\n' "$pg_bin" >> "$GITHUB_ENV"
+      - name: Install locked profile dependencies
+        timeout-minutes: 8
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm ci --prefix backend-node
+          npm ci --prefix frontend
+      - name: Install bounded Chromium for profile acceptance
+        timeout-minutes: 5
+        working-directory: frontend
+        shell: bash
+        env:
+          PLAYWRIGHT_DOWNLOAD_CONNECTION_TIMEOUT: '60000'
+        run: |
+          set -euo pipefail
+          timeout --signal=TERM --kill-after=10s 270s npx --no-install playwright install --with-deps chromium 2>&1 | tee ../company-profile-evidence/chromium-install.log
+      - name: Verify isolated real HTTP and all seventeen profile browser cases
+        timeout-minutes: 17
+        shell: bash
+        run: |
+          set -euo pipefail
+          # The runner generates ephemeral credentials, respects the login
+          # limiter and stages only sanitized evidence outside its database.
+          timeout --signal=TERM --kill-after=20s 960s bash backend-node/scripts/run-profile-tests.sh --browser
+          node - <<'NODE'
+          const assert = require('node:assert/strict');
+          const fs = require('node:fs');
+          const path = require('node:path');
+          const root = process.env.TMPDIR;
+          const runs = fs.readdirSync(root).filter(name => name.startsWith('alageum-profile-tests.'));
+          assert.equal(runs.length, 1, 'one isolated profile run is required');
+          const evidence = path.join(root, runs[0], 'evidence');
+          const report = JSON.parse(fs.readFileSync(path.join(evidence, 'results.json')));
+          assert.equal(report.status, 'passed');
+          assert.equal(report.browser, 'passed');
+          assert.equal(report.checks.length, 6);
+          assert.ok(report.checks.every(check => check.status === 'passed'));
+          const log = fs.readFileSync(path.join(evidence, 'playwright.log'), 'utf8');
+          assert.match(log, /\b17 passed\b/);
+          assert.doesNotMatch(log, /\b[1-9]\d* (?:failed|flaky|skipped|did not run)\b/);
+          NODE
+      - name: Retain sanitized profile evidence and successful screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: company-profile-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            company-profile-evidence/
+            ${{ runner.temp }}/company-profile-tmp/alageum-profile-tests.*/evidence/
+          retention-days: 14
+
+  organization-selection:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      APP_ENV: test
+      STRAPI_TELEMETRY_DISABLED: 'true'
+      STRAPI_HIDE_UPDATE_MESSAGE: 'true'
+      NEXT_TELEMETRY_DISABLED: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: |
+            backend-node/package-lock.json
+            frontend/package-lock.json
+      - name: Prepare isolated organization evidence and PostgreSQL tools
+        shell: bash
+        run: |
+          set -euo pipefail
+          organization_temp="$RUNNER_TEMP/organization-selection-tmp"
+          mkdir -p "$organization_temp" organization-selection-evidence
+          printf 'TMPDIR=%s\n' "$organization_temp" >> "$GITHUB_ENV"
+          pg_bin=$(pg_config --bindir)
+          for command in initdb pg_ctl createdb; do test -x "$pg_bin/$command"; done
+          printf 'PG_BIN=%s\n' "$pg_bin" >> "$GITHUB_ENV"
+      - name: Install locked organization dependencies
+        timeout-minutes: 8
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm ci --prefix backend-node
+          npm ci --prefix frontend
+      - name: Install bounded Chromium for organization acceptance
+        timeout-minutes: 5
+        working-directory: frontend
+        shell: bash
+        env:
+          PLAYWRIGHT_DOWNLOAD_CONNECTION_TIMEOUT: '60000'
+        run: |
+          set -euo pipefail
+          timeout --signal=TERM --kill-after=10s 270s npx --no-install playwright install --with-deps chromium 2>&1 | tee ../organization-selection-evidence/chromium-install.log
+      - name: Verify isolated real HTTP and all nineteen organization browser cases
+        timeout-minutes: 17
+        shell: bash
+        run: |
+          set -euo pipefail
+          # The runner generates ephemeral credentials, respects the login
+          # limiter and stages only sanitized evidence outside its database.
+          timeout --signal=TERM --kill-after=20s 960s bash backend-node/scripts/run-organization-tests.sh --browser
+          node - <<'NODE'
+          const assert = require('node:assert/strict');
+          const fs = require('node:fs');
+          const path = require('node:path');
+          const root = process.env.TMPDIR;
+          const runs = fs.readdirSync(root).filter(name => name.startsWith('alageum-organization-tests.'));
+          assert.equal(runs.length, 1, 'one isolated organization run is required');
+          const evidence = path.join(root, runs[0], 'evidence');
+          const report = JSON.parse(fs.readFileSync(path.join(evidence, 'results.json')));
+          assert.equal(report.status, 'passed');
+          assert.equal(report.browser, 'passed');
+          assert.equal(report.checks.length, 9);
+          assert.ok(report.checks.every(check => check.status === 'passed'));
+          const log = fs.readFileSync(path.join(evidence, 'playwright.log'), 'utf8');
+          assert.match(log, /\b19 passed\b/);
+          assert.doesNotMatch(log, /\b[1-9]\d* (?:failed|flaky|skipped|did not run)\b/);
+          NODE
+      - name: Retain sanitized organization evidence and successful screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: organization-selection-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            organization-selection-evidence/
+            ${{ runner.temp }}/organization-selection-tmp/alageum-organization-tests.*/evidence/
+          retention-days: 14
+
+  support-tickets:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      APP_ENV: test
+      STRAPI_TELEMETRY_DISABLED: 'true'
+      STRAPI_HIDE_UPDATE_MESSAGE: 'true'
+      NEXT_TELEMETRY_DISABLED: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: |
+            backend-node/package-lock.json
+            frontend/package-lock.json
+      - name: Prepare isolated support evidence and PostgreSQL tools
+        shell: bash
+        run: |
+          set -euo pipefail
+          support_temp="$RUNNER_TEMP/support-tickets-tmp"
+          mkdir -p "$support_temp" support-tickets-evidence
+          printf 'TMPDIR=%s\n' "$support_temp" >> "$GITHUB_ENV"
+          pg_bin=$(pg_config --bindir)
+          for command in initdb pg_ctl createdb; do test -x "$pg_bin/$command"; done
+          printf 'PG_BIN=%s\n' "$pg_bin" >> "$GITHUB_ENV"
+      - name: Install locked support dependencies
+        timeout-minutes: 8
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm ci --prefix backend-node
+          npm ci --prefix frontend
+      - name: Install bounded Chromium for support acceptance
+        timeout-minutes: 5
+        working-directory: frontend
+        shell: bash
+        env:
+          PLAYWRIGHT_DOWNLOAD_CONNECTION_TIMEOUT: '60000'
+        run: |
+          set -euo pipefail
+          timeout --signal=TERM --kill-after=10s 270s npx --no-install playwright install --with-deps chromium 2>&1 | tee ../support-tickets-evidence/chromium-install.log
+      - name: Verify isolated real HTTP and all twenty support browser cases
+        timeout-minutes: 17
+        shell: bash
+        run: |
+          set -euo pipefail
+          # The runner generates ephemeral credentials, respects the login
+          # limiter and stages only sanitized evidence outside its database.
+          timeout --signal=TERM --kill-after=20s 960s bash backend-node/scripts/run-support-tests.sh --browser
+          node - <<'NODE'
+          const assert = require('node:assert/strict');
+          const fs = require('node:fs');
+          const path = require('node:path');
+          const root = process.env.TMPDIR;
+          const runs = fs.readdirSync(root).filter(name => name.startsWith('alageum-support-tests.'));
+          assert.equal(runs.length, 1, 'one isolated support run is required');
+          const evidence = path.join(root, runs[0], 'evidence');
+          const report = JSON.parse(fs.readFileSync(path.join(evidence, 'results.json')));
+          assert.equal(report.status, 'passed');
+          assert.equal(report.browser, 'passed');
+          assert.equal(report.checks.length, 23);
+          assert.ok(report.checks.every(check => check.status === 'passed'));
+          assert.equal(report.cleanup, 'passed');
+          assert.equal(report.browserTests, 20);
+          assert.equal(report.screenshots.length, 4);
+          for (const project of ['support-desktop', 'support-mobile']) {
+            for (const name of ['saved-fictitious-ticket', 'fictitious-ticket-validation']) {
+              assert.ok(report.screenshots.some(shot => shot.project === project && shot.name === name));
+            }
+          }
+          const log = fs.readFileSync(path.join(evidence, 'playwright.log'), 'utf8');
+          assert.match(log, /\b20 passed\b/);
+          assert.doesNotMatch(log, /\b[1-9]\d* (?:failed|flaky|skipped|did not run)\b/);
+          NODE
+      - name: Retain sanitized support evidence and successful screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: support-tickets-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            support-tickets-evidence/
+            ${{ runner.temp }}/support-tickets-tmp/alageum-support-tests.*/evidence/
+          retention-days: 14
+
+  customer-orders:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      APP_ENV: test
+      STRAPI_TELEMETRY_DISABLED: 'true'
+      STRAPI_HIDE_UPDATE_MESSAGE: 'true'
+      NEXT_TELEMETRY_DISABLED: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: |
+            backend-node/package-lock.json
+            frontend/package-lock.json
+      - name: Prepare isolated customer order evidence and PostgreSQL tools
+        shell: bash
+        run: |
+          set -euo pipefail
+          orders_temp="$RUNNER_TEMP/customer-orders-tmp"
+          mkdir -p "$orders_temp" customer-orders-evidence
+          printf 'TMPDIR=%s\n' "$orders_temp" >> "$GITHUB_ENV"
+          pg_bin=$(pg_config --bindir)
+          for command in initdb pg_ctl createdb; do test -x "$pg_bin/$command"; done
+          printf 'PG_BIN=%s\n' "$pg_bin" >> "$GITHUB_ENV"
+      - name: Install locked customer order dependencies
+        timeout-minutes: 8
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm ci --prefix backend-node
+          npm ci --prefix frontend
+      - name: Install bounded Chromium for customer order acceptance
+        timeout-minutes: 5
+        working-directory: frontend
+        shell: bash
+        env:
+          PLAYWRIGHT_DOWNLOAD_CONNECTION_TIMEOUT: '60000'
+        run: |
+          set -euo pipefail
+          timeout --signal=TERM --kill-after=10s 270s npx --no-install playwright install --with-deps chromium 2>&1 | tee ../customer-orders-evidence/chromium-install.log
+      - name: Verify isolated real HTTP and all fourteen customer order browser cases
+        timeout-minutes: 17
+        shell: bash
+        run: |
+          set -euo pipefail
+          # The runner generates ephemeral credentials, respects the login
+          # limiter and stages only sanitized evidence outside its database.
+          timeout --signal=TERM --kill-after=20s 960s bash backend-node/scripts/run-orders-tests.sh --browser
+          node - <<'NODE'
+          const assert = require('node:assert/strict');
+          const fs = require('node:fs');
+          const path = require('node:path');
+          const root = process.env.TMPDIR;
+          const runs = fs.readdirSync(root).filter(name => name.startsWith('alageum-orders-tests.'));
+          assert.equal(runs.length, 1, 'one isolated orders run is required');
+          const evidence = path.join(root, runs[0], 'evidence');
+          const report = JSON.parse(fs.readFileSync(path.join(evidence, 'results.json')));
+          assert.equal(report.status, 'passed');
+          assert.equal(report.browser, 'passed');
+          assert.equal(report.checks.length, 22);
+          assert.ok(report.checks.every(check => check.status === 'passed'));
+          assert.equal(report.cleanup, 'passed');
+          assert.equal(report.browserTests, 14);
+          assert.equal(report.screenshots.length, 8);
+          for (const project of ['orders-desktop', 'orders-mobile']) {
+            for (const name of ['orders-list', 'orders-detail', 'orders-empty', 'orders-retry']) {
+              assert.ok(report.screenshots.some(shot => shot.project === project && shot.name === name));
+            }
+          }
+          const log = fs.readFileSync(path.join(evidence, 'playwright.log'), 'utf8');
+          assert.match(log, /\b14 passed\b/);
+          assert.doesNotMatch(log, /\b[1-9]\d* (?:failed|flaky|skipped|did not run)\b/);
+          NODE
+      - name: Retain sanitized customer order evidence and successful screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: customer-orders-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            customer-orders-evidence/
+            ${{ runner.temp }}/customer-orders-tmp/alageum-orders-tests.*/evidence/
+          retention-days: 14
+
+  invoice-metadata:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      APP_ENV: test
+      STRAPI_TELEMETRY_DISABLED: 'true'
+      STRAPI_HIDE_UPDATE_MESSAGE: 'true'
+      NEXT_TELEMETRY_DISABLED: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: |
+            backend-node/package-lock.json
+            frontend/package-lock.json
+      - name: Prepare isolated invoice metadata evidence and PostgreSQL tools
+        shell: bash
+        run: |
+          set -euo pipefail
+          invoice_temp="$RUNNER_TEMP/invoice-metadata-tmp"
+          mkdir -p "$invoice_temp" invoice-metadata-evidence
+          printf 'TMPDIR=%s\n' "$invoice_temp" >> "$GITHUB_ENV"
+          pg_bin=$(pg_config --bindir)
+          for command in initdb pg_ctl createdb; do test -x "$pg_bin/$command"; done
+          printf 'PG_BIN=%s\n' "$pg_bin" >> "$GITHUB_ENV"
+      - name: Install locked invoice metadata dependencies
+        timeout-minutes: 8
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm ci --prefix backend-node
+          npm ci --prefix frontend
+      - name: Install bounded Chromium for invoice metadata acceptance
+        timeout-minutes: 5
+        working-directory: frontend
+        shell: bash
+        env:
+          PLAYWRIGHT_DOWNLOAD_CONNECTION_TIMEOUT: '60000'
+        run: |
+          set -euo pipefail
+          timeout --signal=TERM --kill-after=10s 270s npx --no-install playwright install --with-deps chromium 2>&1 | tee ../invoice-metadata-evidence/chromium-install.log
+      - name: Verify isolated real HTTP and all twenty-eight invoice metadata browser cases
+        timeout-minutes: 17
+        shell: bash
+        run: |
+          set -euo pipefail
+          # The runner generates ephemeral credentials, respects the login
+          # limiter and stages only sanitized evidence outside its database.
+          timeout --signal=TERM --kill-after=20s 960s bash backend-node/scripts/run-invoice-tests.sh --browser
+          node - <<'NODE'
+          const assert = require('node:assert/strict');
+          const fs = require('node:fs');
+          const path = require('node:path');
+          const root = process.env.TMPDIR;
+          const runs = fs.readdirSync(root).filter(name => name.startsWith('alageum-invoice-tests.'));
+          assert.equal(runs.length, 1, 'one isolated invoice run is required');
+          const evidence = path.join(root, runs[0], 'evidence');
+          const report = JSON.parse(fs.readFileSync(path.join(evidence, 'results.json')));
+          assert.equal(report.status, 'passed');
+          assert.equal(report.browser, 'passed');
+          assert.equal(report.checks.length, 21);
+          assert.ok(report.checks.every(check => check.status === 'passed'));
+          assert.equal(report.cleanup, 'passed');
+          assert.equal(report.browserTests, 28);
+          assert.equal(report.screenshots.length, 6);
+          for (const project of ['invoices-desktop', 'invoices-mobile']) {
+            for (const name of ['invoices-list', 'invoices-empty', 'invoices-retry']) {
+              assert.ok(report.screenshots.some(shot => shot.project === project && shot.name === name));
+            }
+          }
+          const log = fs.readFileSync(path.join(evidence, 'playwright.log'), 'utf8');
+          assert.match(log, /\b28 passed\b/);
+          assert.doesNotMatch(log, /\b[1-9]\d* (?:failed|flaky|skipped|did not run)\b/);
+          NODE
+      - name: Retain sanitized invoice metadata evidence and successful screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: invoice-metadata-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            invoice-metadata-evidence/
+            ${{ runner.temp }}/invoice-metadata-tmp/alageum-invoice-tests.*/evidence/
+          retention-days: 14
+
+  document-metadata:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      APP_ENV: test
+      STRAPI_TELEMETRY_DISABLED: 'true'
+      STRAPI_HIDE_UPDATE_MESSAGE: 'true'
+      NEXT_TELEMETRY_DISABLED: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: |
+            backend-node/package-lock.json
+            frontend/package-lock.json
+      - name: Prepare isolated document metadata evidence and PostgreSQL tools
+        shell: bash
+        run: |
+          set -euo pipefail
+          document_temp="$RUNNER_TEMP/document-metadata-tmp"
+          mkdir -p "$document_temp" document-metadata-evidence
+          printf 'TMPDIR=%s\n' "$document_temp" >> "$GITHUB_ENV"
+          pg_bin=$(pg_config --bindir)
+          for command in initdb pg_ctl createdb; do test -x "$pg_bin/$command"; done
+          printf 'PG_BIN=%s\n' "$pg_bin" >> "$GITHUB_ENV"
+      - name: Install locked document metadata dependencies
+        timeout-minutes: 8
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm ci --prefix backend-node
+          npm ci --prefix frontend
+      - name: Install bounded Chromium for document metadata acceptance
+        timeout-minutes: 5
+        working-directory: frontend
+        shell: bash
+        env:
+          PLAYWRIGHT_DOWNLOAD_CONNECTION_TIMEOUT: '60000'
+        run: |
+          set -euo pipefail
+          timeout --signal=TERM --kill-after=10s 270s npx --no-install playwright install --with-deps chromium 2>&1 | tee ../document-metadata-evidence/chromium-install.log
+      - name: Verify isolated real HTTP and all twenty-six document metadata browser cases
+        timeout-minutes: 17
+        shell: bash
+        run: |
+          set -euo pipefail
+          # The runner generates ephemeral credentials, respects the login
+          # limiter and stages only sanitized evidence outside its database.
+          timeout --signal=TERM --kill-after=20s 960s bash backend-node/scripts/run-document-tests.sh --browser
+          node - <<'NODE'
+          const assert = require('node:assert/strict');
+          const fs = require('node:fs');
+          const path = require('node:path');
+          const root = process.env.TMPDIR;
+          const runs = fs.readdirSync(root).filter(name => name.startsWith('alageum-document-tests.'));
+          assert.equal(runs.length, 1, 'one isolated document run is required');
+          const evidence = path.join(root, runs[0], 'evidence');
+          const report = JSON.parse(fs.readFileSync(path.join(evidence, 'results.json')));
+          assert.equal(report.status, 'passed');
+          assert.equal(report.browser, 'passed');
+          assert.equal(report.checks.length, 26);
+          assert.ok(report.checks.every(check => check.status === 'passed'));
+          assert.equal(report.cleanup, 'passed');
+          assert.equal(report.browserTests, 26);
+          assert.equal(report.screenshots.length, 6);
+          for (const project of ['documents-desktop', 'documents-mobile']) {
+            for (const name of ['documents-list', 'documents-empty', 'documents-retry']) {
+              assert.ok(report.screenshots.some(shot => shot.project === project && shot.name === name));
+            }
+          }
+          const log = fs.readFileSync(path.join(evidence, 'playwright.log'), 'utf8');
+          assert.match(log, /\b26 passed\b/);
+          assert.doesNotMatch(log, /\b[1-9]\d* (?:failed|flaky|skipped|did not run)\b/);
+          NODE
+      - name: Retain sanitized document metadata evidence and successful screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: document-metadata-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            document-metadata-evidence/
+            ${{ runner.temp }}/document-metadata-tmp/alageum-document-tests.*/evidence/
+          retention-days: 14
+
+  organization-members:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      APP_ENV: test
+      STRAPI_TELEMETRY_DISABLED: 'true'
+      STRAPI_HIDE_UPDATE_MESSAGE: 'true'
+      NEXT_TELEMETRY_DISABLED: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: |
+            backend-node/package-lock.json
+            frontend/package-lock.json
+      - name: Prepare isolated member metadata evidence and PostgreSQL tools
+        shell: bash
+        run: |
+          set -euo pipefail
+          member_temp="$RUNNER_TEMP/organization-members-tmp"
+          mkdir -p "$member_temp" organization-members-evidence
+          printf 'TMPDIR=%s\n' "$member_temp" >> "$GITHUB_ENV"
+          pg_bin=$(pg_config --bindir)
+          for command in initdb pg_ctl createdb; do test -x "$pg_bin/$command"; done
+          printf 'PG_BIN=%s\n' "$pg_bin" >> "$GITHUB_ENV"
+      - name: Install locked member metadata dependencies
+        timeout-minutes: 8
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm ci --prefix backend-node
+          npm ci --prefix frontend
+      - name: Install bounded Chromium for member metadata acceptance
+        timeout-minutes: 5
+        working-directory: frontend
+        shell: bash
+        env:
+          PLAYWRIGHT_DOWNLOAD_CONNECTION_TIMEOUT: '60000'
+        run: |
+          set -euo pipefail
+          timeout --signal=TERM --kill-after=10s 270s npx --no-install playwright install --with-deps chromium 2>&1 | tee ../organization-members-evidence/chromium-install.log
+      - name: Verify isolated real HTTP and all nineteen member metadata browser cases
+        timeout-minutes: 17
+        shell: bash
+        run: |
+          set -euo pipefail
+          # The runner generates ephemeral credentials, respects the login
+          # limiter and stages only sanitized evidence outside its database.
+          timeout --signal=TERM --kill-after=20s 960s bash backend-node/scripts/run-member-tests.sh --browser
+          node - <<'NODE'
+          const assert = require('node:assert/strict');
+          const fs = require('node:fs');
+          const path = require('node:path');
+          const root = process.env.TMPDIR;
+          const runs = fs.readdirSync(root).filter(name => name.startsWith('alageum-member-tests.'));
+          assert.equal(runs.length, 1, 'one isolated member run is required');
+          const evidence = path.join(root, runs[0], 'evidence');
+          const report = JSON.parse(fs.readFileSync(path.join(evidence, 'results.json')));
+          assert.equal(report.status, 'passed');
+          assert.equal(report.browser, 'passed');
+          assert.equal(report.checks.length, 23);
+          assert.ok(report.checks.every(check => check.status === 'passed'));
+          assert.equal(report.cleanup, 'passed');
+          assert.equal(report.clusterCleanup, 'passed');
+          assert.equal(report.browserTests, 19);
+          assert.equal(report.screenshots.length, 8);
+          for (const project of ['member-desktop', 'member-mobile']) {
+            for (const name of ['members-list-viewport', 'members-page-two', 'members-empty', 'members-error']) {
+              assert.ok(report.screenshots.some(shot => shot.project === project && shot.name === name));
+            }
+          }
+          const log = fs.readFileSync(path.join(evidence, 'playwright.log'), 'utf8');
+          assert.match(log, /\b19 passed\b/);
+          assert.doesNotMatch(log, /\b[1-9]\d* (?:failed|flaky|skipped|did not run)\b/);
+          NODE
+      - name: Retain sanitized member metadata evidence and successful screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: organization-members-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            organization-members-evidence/
+            ${{ runner.temp }}/organization-members-tmp/alageum-member-tests.*/evidence/
+          retention-days: 14
+
+  # Reimplemented acceptance has dedicated databases and independent failures.
+  # These jobs deliberately do not change the catalog/RFQ or audit jobs above.
+  page-contracts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_DB: alageum_strapi_pages_test
+          POSTGRES_USER: alageum_pages_ci
+          POSTGRES_PASSWORD: disposable-page-contracts-ci
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U alageum_pages_ci -d alageum_strapi_pages_test"
+          --health-interval 5s --health-timeout 3s --health-retries 20
+    env:
+      APP_ENV: test
+      ALAGEUM_TEST_PAGE_FIXTURES: '1'
+      DATABASE_URL: postgresql://alageum_pages_ci:disposable-page-contracts-ci@127.0.0.1:5432/alageum_strapi_pages_test
+      STRAPI_TELEMETRY_DISABLED: 'true'
+      STRAPI_HIDE_UPDATE_MESSAGE: 'true'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: backend-node/package-lock.json
+      - name: Install locked Page contract dependencies
+        timeout-minutes: 6
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p page-delivery-evidence
+          npm ci --prefix backend-node 2>&1 | tee page-delivery-evidence/contracts-install.log
+      - name: Run isolated PostgreSQL Page contracts explicitly
+        timeout-minutes: 7
+        working-directory: backend-node
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --test --test-concurrency=1 tests/pages.integration.cjs 2>&1 | tee ../page-delivery-evidence/page-contracts.log
+      - name: Retain Page contract evidence on success or failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: page-contracts-${{ github.run_id }}-${{ github.run_attempt }}
+          path: page-delivery-evidence/
+          retention-days: 14
+
+  page-delivery:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_DB: alageum_strapi_pages_test
+          POSTGRES_USER: alageum_pages_ci
+          POSTGRES_PASSWORD: disposable-page-delivery-ci
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U alageum_pages_ci -d alageum_strapi_pages_test"
+          --health-interval 5s --health-timeout 3s --health-retries 20
+    env:
+      APP_ENV: test
+      ALAGEUM_TEST_PAGE_FIXTURES: '1'
+      DATABASE_URL: postgresql://alageum_pages_ci:disposable-page-delivery-ci@127.0.0.1:5432/alageum_strapi_pages_test
+      HOST: 127.0.0.1
+      PORT: '8019'
+      STRAPI_TELEMETRY_DISABLED: 'true'
+      STRAPI_HIDE_UPDATE_MESSAGE: 'true'
+      NEXT_TELEMETRY_DISABLED: '1'
+      NEXT_PUBLIC_CATALOG_SOURCE: static
+      API_INTERNAL_BASE_URL: http://127.0.0.1:8019/api/v1
+      COMPANY_SOURCE: cms
+      PAGES_SOURCE: api
+      PAGES_STATIC_PREVIEW: '0'
+      PAGES_SITE_ORIGIN: http://127.0.0.1:3142
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: |
+            backend-node/package-lock.json
+            frontend/package-lock.json
+      - name: Generate disposable application keys for CMS build
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p page-delivery-evidence
+          node <<'NODE'
+          const { randomBytes } = require('node:crypto');
+          const { appendFileSync } = require('node:fs');
+          for (const key of ['APP_KEYS', 'ADMIN_JWT_SECRET', 'API_TOKEN_SALT', 'TRANSFER_TOKEN_SALT', 'ENCRYPTION_KEY', 'ALAGEUM_JWT_SECRET']) {
+            const value = process.env[key] || Array.from({ length: key === 'APP_KEYS' ? 2 : 1 }, () => randomBytes(32).toString('hex')).join(',');
+            // This step has no tee/artifact stream. Never write mask commands
+            // into logs retained by the browser/native acceptance harness.
+            console.log(`::add-mask::${value}`);
+            appendFileSync(process.env.GITHUB_ENV, `${key}=${value}\n`);
+          }
+          NODE
+      - name: Install locked Page backend dependencies
+        timeout-minutes: 6
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm ci --prefix backend-node 2>&1 | tee page-delivery-evidence/backend-install.log
+      - name: Install locked Page frontend dependencies
+        timeout-minutes: 5
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm ci --prefix frontend 2>&1 | tee page-delivery-evidence/frontend-install.log
+      - name: Build the actual Strapi CMS
+        timeout-minutes: 6
+        shell: bash
+        env:
+          NODE_ENV: production
+        run: |
+          set -euo pipefail
+          npm run build --prefix backend-node 2>&1 | tee page-delivery-evidence/cms-build.log
+      - name: Build production Next with live Page delivery
+        timeout-minutes: 6
+        shell: bash
+        env:
+          NODE_ENV: production
+        run: |
+          set -euo pipefail
+          npm run build --prefix frontend 2>&1 | tee page-delivery-evidence/next-build.log
+      - name: Verify production HTTP fault matrix with disposable API fixtures
+        timeout-minutes: 6
+        shell: bash
+        run: |
+          set -euo pipefail
+          timeout --signal=TERM --kill-after=10s 310s node frontend/scripts/verify-editorial-http.mjs 2>&1 | tee page-delivery-evidence/fault-matrix.log
+      - name: Install bounded Chromium for Page acceptance
+        timeout-minutes: 5
+        working-directory: frontend
+        shell: bash
+        env:
+          PLAYWRIGHT_DOWNLOAD_CONNECTION_TIMEOUT: '60000'
+        run: |
+          set -euo pipefail
+          timeout --signal=TERM --kill-after=10s 270s npx --no-install playwright install --with-deps chromium 2>&1 | tee ../page-delivery-evidence/chromium-install.log
+      - name: Verify native Page publication, fast saves and input lifecycle
+        timeout-minutes: 14
+        shell: bash
+        env:
+          NODE_ENV: production
+          ALAGEUM_TEST_PAGE_FAST_SAVE: '1'
+        run: |
+          set -euo pipefail
+          timeout --signal=TERM --kill-after=15s 800s node backend-node/scripts/run-page-delivery.js --fast-save-probe 2>&1 | tee page-delivery-evidence/native-delivery.log
+      - name: Build explicit disposable static Page preview
+        timeout-minutes: 6
+        shell: bash
+        env:
+          COMPANY_SOURCE: static
+          PAGES_SOURCE: static
+          PAGES_STATIC_PREVIEW: '1'
+          NODE_ENV: production
+        run: |
+          set -euo pipefail
+          npm run build:preview --prefix frontend 2>&1 | tee page-delivery-evidence/static-preview-build.log
+      - name: Retain Page logs, JSON and successful desktop/mobile screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: page-delivery-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            page-delivery-evidence/
+            frontend/playwright-report/pages-results/
+            frontend/playwright-report/page-fast-save-results/**/fast-save-*.png
+            frontend/playwright-report/page-sync-results/**/page-sync-*.png
+          retention-days: 14

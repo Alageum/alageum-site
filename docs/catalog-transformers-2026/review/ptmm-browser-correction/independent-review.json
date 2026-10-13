@@ -1,0 +1,133 @@
+{
+  "format": "alageum-ptmm-browser-correction-independent-review-v1",
+  "status": "approved-bounded-ptmm-browser-correction",
+  "baselineCommit": "683134b3d7ef8e0424da752939308e7882a9937a",
+  "baselineTree": "620682e2539c6deee70901b44110c1702dc4bb90",
+  "approvedDependenciesSha256": "f017f1cedb146702bdf49262eb7819c2a3054861a7fedddf159f50826f09e1fb",
+  "sourceUiChanges": 0,
+  "recordChanges": 0,
+  "geometryMaterialChanges": 0,
+  "pageChanges": 0,
+  "thresholdChanges": 0,
+  "workflowChanges": 0,
+  "priorApprovalChanges": 0,
+  "existingCatalogCases": 254,
+  "separateBrowserCases": 16,
+  "evidence": {
+    "readability": "non-whitespace-ranges-with-bounded-geometry",
+    "linkFallback": "resolved-auth-null-guard",
+    "console": "unchanged-bounded-page-events"
+  },
+  "reviewDate": "2026-10-06",
+  "reviewerRole": "Independent reviewer; authored no candidate implementation, harness, test or verifier code",
+  "implementationFilesEditedByReviewer": 0,
+  "historicalApprovalsEdited": 0,
+  "reviewedPendingManifestSha256": "e53ae0be2a0330a5878e97fb71fa582b0ba504309b3c78693fa2edea2d5fbc65",
+  "reviewedPendingPatchSha256": "06ce1de061aee1ac5b4b0dd12dd5c74dd1f7b783335936ca8697375ff3fa165a",
+  "reviewedScope": {
+    "pendingCandidateFiles": 18,
+    "exactPredecessorFiles": 9,
+    "dependencyFiles": 553,
+    "fixedDependencyFiles": 536,
+    "frozenQualificationSourceUiFiles": 8,
+    "cmsPageFiles": 15,
+    "publishedHistoricalApprovalFiles": 21,
+    "rawProductsPreserved": 843,
+    "dimensionQualificationIds": [
+      "cat-ptm-tded-v002",
+      "cat-ptm-tded-v005",
+      "cat-ptm-tded-v008"
+    ],
+    "dimensionCellsPerMode": 6,
+    "runtimeCorrectionFiles": [
+      "frontend/components/catalog/ProductVisual.js"
+    ],
+    "sourceUiChangesMeaning": "The separate eight-file PTMM dimension qualification source/UI freeze is unchanged. ProductVisual is outside that freeze and separately reviewed here."
+  },
+  "sourceInspection": {
+    "method": "Independently opened both current committed source-page images and reread the table dimensions, headers, introduction and drawing labels",
+    "pages": {
+      "frontend/public/catalog-source/page-068.webp": "68538d5278821dcc15fe6064621c8271c0397e1c0fc18a60dfcfa885093a9c77",
+      "frontend/public/catalog-source/page-069.webp": "4f0833448f3519f9519a2e09fa62b4c28016665b4cd8e95c7341b17042ff5885"
+    },
+    "findings": [
+      "Page68 groups PTMM names in column headers while dimension rows themselves are labelled PTM and TDE. PTMM applicability remains unconfirmed.",
+      "Neither dimension row nor its surrounding page68 header/introduction prints a dimension unit. Page69 does not establish a millimetre unit for those rows.",
+      "The source values, stored unit, identities and adjacent applicability/unit caveats remain byte-identical."
+    ]
+  },
+  "findings": [
+    {
+      "area": "Production null source link",
+      "result": "Proved application defect with actual production Next App Router Link. The malformed source URL makes the authoritative URL resolver return null while visual audit provenance still supplies page69. Both ProductVisual provenance branches now preserve a valid Link or render the existing page label in a span for an unresolved URL. No destination is invented.",
+      "controls": "Independent original-PR41 execution and individual removal of either guard reproduce auth-from-null. Exact frozen code passes six valid, eighteen changed-source/media and six restored render cases. Source/model/media authorities and OriginalImage asset provenance are unchanged.",
+      "canonicalProductVisualRenders": 1686,
+      "renderMethod": "SSR ProductVisual with actual provenance resolvers and production Link; unrelated image/model/context subcomponents are doubles",
+      "canonicalRenderedMarkupDigest": "f4eb3dec3beacd271ebbc422a9b0e268a05996431525932bf1ec56e786ecb687",
+      "canonicalSnapshotFileSha256": "f411c06532483241c453d5946ce70b2264f7d0671b6fb43811be2202f07dc911"
+    },
+    {
+      "area": "Readability measurement",
+      "result": "Every text run excluding ASCII layout whitespace is measured at its original DOM offsets, with all preexisting one-pixel cell/ancestor/viewport/scroll bounds retained. Missing word geometry, real word or middle-fragment overflow, hidden/clipped targets and traversal limits fail closed. Full-content and rendered-unit assertions remain intact.",
+      "diagnostics": "Failure evidence retains target/cell/word bounds and at most eight offending/raw-overflow fragments. At most six successful full-Range/word-difference witnesses per case are retained, plus a truncation marker.",
+      "causeStatus": "Hanging pre-wrap whitespace is plausible, not proved by retained hosted traces. Screenshots show complete visible content, while the old traces omit raw coordinates. Fresh exact-commit hosted evidence must confirm or refute the hypothesis."
+    },
+    {
+      "area": "Exact-byte authority chain",
+      "result": "The new leaf checks raw bytes, exact predecessor hashes, complete required keys, the immutable fixed map, independent report identity/hash, dependency binding and bounded scope. It invokes no old verifier, imports no historical test reader and caches no authority. Existing PTMM forwarding and the exact ProductVisual protection partition reach it; previous published clearances/reports remain untouched. Historical fixture snapshots are test-only and verified against exact PR41 git bytes."
+    }
+  ],
+  "validation": {
+    "independentRuntimeHarness": {
+      "passed": 23,
+      "failed": 0
+    },
+    "independentGateControls": {
+      "passed": 623,
+      "failed": 0,
+      "allClosureFilesMutated": 553,
+      "actualDefaultReaderEntrypoints": 7,
+      "warmSameSizeRestoredTimeFiles": 25,
+      "syntheticApprovalOnlyInDeletedTemporaryTree": true,
+      "negativeReviewSha256": "1bccc6fa8bf71b75c408825fdd2fd5a3c69150e448a5b35a65034d8558014f5c"
+    },
+    "pendingRealDefaultReaders": "All seven rejected pending correction approval before review",
+    "publishedPr41DefaultReaders": "All six historical entrypoints passed on the unchanged published checkout",
+    "suppliedFocusedChecks": {
+      "newGateTests": 10,
+      "historicalTests": 12,
+      "priorPtmmSyntheticTests": 5,
+      "lint": "passed",
+      "sixteenCaseCollection": "passed"
+    },
+    "fullFrontendSuite": "pending parent validation on approved bytes",
+    "productionBuild": "pending parent validation on approved bytes",
+    "correctedHostedBrowser": "not run; pending exact-commit hosted evidence"
+  },
+  "retainedHostedEvidence": {
+    "commit": "683134b3d7ef8e0424da752939308e7882a9937a",
+    "artifactId": 11447473732,
+    "artifactSha256": "7a59faaa76bb4f2950a79ed798b47ebdf922c3930ee119941a26f7cd2f579789",
+    "passed": 9,
+    "failed": 7,
+    "geometryFailures": 6,
+    "consoleLinkFailure": 1
+  },
+  "preserved": [
+    "All eight separately reviewed PTMM source/UI files",
+    "All fifteen CMS/Page files",
+    "All twenty-one published historical clearance/review files",
+    "All raw records, prices, UUID/public-key identities, quote/CSV code and source/model/media authorities",
+    "Existing254case catalogue specification/configuration/diagnostic exporter",
+    "Entire PR41 workflow, qualification configuration, budgets, event caps, dependencies, security and permissions"
+  ],
+  "limitations": [
+    "This approves only the exact bounded code, harness and gate successor, with final full checks and hosted verification still pending.",
+    "No local browser execution, build, publication, merge, deployment or external metadata mutation was performed by this reviewer.",
+    "The prior nine-pass/seven-fail hosted result remains the only hosted PTMM result until a corrected exact-commit run is verified."
+  ],
+  "references": [
+    "https://drafts.csswg.org/css-text-3/#white-space-property",
+    "https://drafts.csswg.org/cssom-view/#dom-range-getclientrects"
+  ]
+}

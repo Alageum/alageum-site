@@ -1,0 +1,18 @@
+{
+  "scope": "Data file/reference/hash sanity only; no application tests or website activity.",
+  "checks": {
+    "recordCount843": true,
+    "uniqueProductIds843": true,
+    "familyCount175": true,
+    "candidateIdsUnique": true,
+    "allCandidateReferencesResolve": true,
+    "allFilesExist": true,
+    "allSourcePagesHavePublicURLs": true,
+    "allImagesHaveImageOrPdfSource": true,
+    "assetHashesMatch": true,
+    "noDuplicateAssetHashes": true,
+    "countsAgree": true,
+    "noSourcePathsInDeliveredData": true
+  },
+  "allPassed": true
+}

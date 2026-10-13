@@ -1,0 +1,834 @@
+{
+  "format": "alageum-identity-completion-v1",
+  "sourceId": "transformers-2026",
+  "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+  "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+  "inventorySha256": "c3948d7152a6130aa4672b9f6d3d5a8f08144b5965df7bebabca067ba5bc8438",
+  "approvalSha256": "5f70c5601559ae2eaa94b4ac11b67d2076073b3e1cc9465b52e532a10d54d6cb",
+  "baselineRecordsSha256": "c3848aaf0bed0634558cacbc31afe5fee470ae054ff7b744a87bd4e41737f068",
+  "recordsSha256": "fd1e1167541b1dc1077aaa73b49e81e159ac976eeb202b4a38812bc4e1b05979",
+  "panelsSha256": "62f51282c86e4fc4686d8cd14f929fe365e2415e517b28ea602c638b806abdf3",
+  "counts": {
+    "baselineRecordCount": 823,
+    "executionAdmissions": 20,
+    "aliases": 2,
+    "sourceComparisons": 10,
+    "sourcePanels": 12,
+    "newFamilyCards": 0,
+    "resultRecordCount": 843,
+    "admissionConfigurations": 40,
+    "panelConfigurations": 18
+  },
+  "aliases": {
+    "alageum-2026-ntmi-10": "ntmi-10",
+    "alageum-2026-ntmi-6": "ntmi-6"
+  },
+  "actions": [
+    {
+      "sourceRecordId": "alageum-2026-ntmi-10",
+      "mode": "alias",
+      "canonicalId": "ntmi-10",
+      "legacyId": "ntmi-10",
+      "relation": "same_catalog_model"
+    },
+    {
+      "sourceRecordId": "alageum-2026-ntmi-6",
+      "mode": "alias",
+      "canonicalId": "ntmi-6",
+      "legacyId": "ntmi-6",
+      "relation": "same_catalog_model"
+    },
+    {
+      "sourceRecordId": "alageum-2026-thermal-cabinet",
+      "mode": "source-comparison",
+      "canonicalId": "cat-shtz",
+      "legacyId": "cat-shtz",
+      "relation": "related_thermal_protection_accessory"
+    },
+    {
+      "sourceRecordId": "alageum-2026-tmeg-250",
+      "mode": "source-comparison",
+      "canonicalId": "tmeg-250",
+      "legacyId": "tmeg-250",
+      "relation": "same_designation_lineage_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-a-1600",
+      "mode": "execution",
+      "canonicalId": "alageum-2026-tsl-a-1600",
+      "legacyId": "tsl-1600",
+      "relation": "execution_candidate_of_legacy_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-a-630",
+      "mode": "execution",
+      "canonicalId": "alageum-2026-tsl-a-630",
+      "legacyId": "tsl-630",
+      "relation": "execution_candidate_of_legacy_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-1600",
+      "mode": "execution",
+      "canonicalId": "alageum-2026-tsl-c-1600",
+      "legacyId": "tsl-1600",
+      "relation": "execution_candidate_of_legacy_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-630",
+      "mode": "execution",
+      "canonicalId": "alageum-2026-tsl-c-630",
+      "legacyId": "tsl-630",
+      "relation": "execution_candidate_of_legacy_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-01-1000",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-01-1000",
+      "legacyId": "tmg-1000",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-01-2500",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-01-2500",
+      "legacyId": "tmg-2500",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-01-400",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-01-400",
+      "legacyId": "tmg-400",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-01-630",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-01-630",
+      "legacyId": "tmg-630",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-1000",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-copper-1000",
+      "legacyId": "tmg-1000",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-2500",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-copper-2500",
+      "legacyId": "tmg-2500",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-400",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-copper-400",
+      "legacyId": "tmg-400",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-630",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-copper-630",
+      "legacyId": "tmg-630",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-standard-1000",
+      "mode": "source-comparison",
+      "canonicalId": "tmg-1000",
+      "legacyId": "tmg-1000",
+      "relation": "same_designation_lineage_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-standard-2500",
+      "mode": "source-comparison",
+      "canonicalId": "tmg-2500",
+      "legacyId": "tmg-2500",
+      "relation": "same_designation_lineage_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-standard-400",
+      "mode": "source-comparison",
+      "canonicalId": "tmg-400",
+      "legacyId": "tmg-400",
+      "relation": "same_designation_lineage_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-standard-630",
+      "mode": "source-comparison",
+      "canonicalId": "tmg-630",
+      "legacyId": "tmg-630",
+      "relation": "same_designation_lineage_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-switch-6-10-1000",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-switch-6-10-1000",
+      "legacyId": "tmg-1000",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-switch-6-10-2500",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-switch-6-10-2500",
+      "legacyId": "tmg-2500",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-switch-6-10-400",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-switch-6-10-400",
+      "legacyId": "tmg-400",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-switch-6-10-630",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-switch-6-10-630",
+      "legacyId": "tmg-630",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-x1k1-1000",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-x1k1-1000",
+      "legacyId": "tmg-1000",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-x1k1-2500",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-x1k1-2500",
+      "legacyId": "tmg-2500",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-x1k1-400",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-x1k1-400",
+      "legacyId": "tmg-400",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmg-x1k1-630",
+      "mode": "execution",
+      "canonicalId": "alageum-tmg-x1k1-630",
+      "legacyId": "tmg-630",
+      "relation": "related_catalog_reference_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmgf-1600",
+      "mode": "source-comparison",
+      "canonicalId": "tmgf-1600",
+      "legacyId": "tmgf-1600",
+      "relation": "same_designation_lineage_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmgf-630",
+      "mode": "source-comparison",
+      "canonicalId": "tmgf-630",
+      "legacyId": "tmgf-630",
+      "relation": "same_designation_lineage_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmgs-pole-160",
+      "mode": "source-comparison",
+      "canonicalId": "tmgs-160",
+      "legacyId": "tmgs-160",
+      "relation": "same_designation_lineage_not_equivalent"
+    },
+    {
+      "sourceRecordId": "alageum-tmgs-pole-63",
+      "mode": "source-comparison",
+      "canonicalId": "tmgs-63",
+      "legacyId": "tmgs-63",
+      "relation": "same_designation_lineage_not_equivalent"
+    }
+  ],
+  "familyMembers": {
+    "tr2026-family-tsl-loss-a": [
+      "alageum-2026-tsl-a-1600",
+      "alageum-2026-tsl-a-630"
+    ],
+    "tr2026-family-tsl-loss-c": [
+      "alageum-2026-tsl-c-1600",
+      "alageum-2026-tsl-c-630"
+    ],
+    "tr2026-family-tmg-01": [
+      "alageum-tmg-01-1000",
+      "alageum-tmg-01-2500",
+      "alageum-tmg-01-400",
+      "alageum-tmg-01-630"
+    ],
+    "tr2026-family-tmg-copper": [
+      "alageum-tmg-copper-1000",
+      "alageum-tmg-copper-2500",
+      "alageum-tmg-copper-400",
+      "alageum-tmg-copper-630"
+    ],
+    "tr2026-family-tmg-switch-6-10": [
+      "alageum-tmg-switch-6-10-1000",
+      "alageum-tmg-switch-6-10-2500",
+      "alageum-tmg-switch-6-10-400",
+      "alageum-tmg-switch-6-10-630"
+    ],
+    "tr2026-family-tmg-x1k1": [
+      "alageum-tmg-x1k1-1000",
+      "alageum-tmg-x1k1-2500",
+      "alageum-tmg-x1k1-400",
+      "alageum-tmg-x1k1-630"
+    ]
+  },
+  "guards": {
+    "ntmi-10": {
+      "recordShapeSha256": "e5c437cfb92550a8c7e944419066cae37580cd147b367e294b401849517ba0b7",
+      "databaseId": "b6ec37f7-5d18-57c4-bc9a-6cc668d50ac6",
+      "comparisonIds": [
+        "alageum-2026-ntmi-10"
+      ],
+      "relatedReferences": []
+    },
+    "ntmi-6": {
+      "recordShapeSha256": "87564c5c2dcc8037a9d1923a2b543f9815110adec025719a675780724af590fe",
+      "databaseId": "0c075190-b471-518f-9803-e1ead0d5aade",
+      "comparisonIds": [
+        "alageum-2026-ntmi-6"
+      ],
+      "relatedReferences": []
+    },
+    "cat-shtz": {
+      "recordShapeSha256": "8d6ede7524412d6675813f629a2b3278316564513c767c179e3fd3ded3355cce",
+      "databaseId": "86531fb8-56fd-57c4-bd02-11093032c920",
+      "comparisonIds": [
+        "alageum-2026-thermal-cabinet"
+      ],
+      "relatedReferences": []
+    },
+    "tmeg-250": {
+      "recordShapeSha256": "b204685d3b05f4ce4094e8e15b512a0ee8ed45c6a962f6e4d75534c30366ac45",
+      "databaseId": "e19a0d7b-1dce-5c2d-9229-b7845fe22468",
+      "comparisonIds": [
+        "alageum-2026-tmeg-250"
+      ],
+      "relatedReferences": []
+    },
+    "alageum-2026-tsl-a-1600": {
+      "recordShapeSha256": "c549fa70b524391abf3d9f0dbd6dce0e28538ca4e328982de9aa8553357a70be",
+      "databaseId": "83d92428-3821-5ca0-89e7-41cef73b9df2",
+      "comparisonIds": [],
+      "relatedReferences": [
+        {
+          "id": "tsl-1600",
+          "name": "ТСЛ-1600",
+          "relation": "execution_candidate_of_legacy_reference_not_equivalent",
+          "sourceUrl": "https://alageum.com/ru/katalog/transformatory/tsl-z"
+        }
+      ]
+    },
+    "tsl-1600": {
+      "recordShapeSha256": "af80f48fbc8c1b9411adb164b1cf0157c3e4b5057ad180e5dc379bce7ab5ff5c",
+      "databaseId": "0da0d84c-f539-5ed8-8244-bec39989e93a",
+      "comparisonIds": [],
+      "relatedReferences": [
+        {
+          "id": "alageum-2026-tsl-a-1600",
+          "name": "ТСЛ(З)-1600 · с уровнем потерь А (энергоэффективный)",
+          "relation": "execution_candidate_of_legacy_reference_not_equivalent",
+          "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view"
+        },
+        {
+          "id": "alageum-2026-tsl-c-1600",
+          "name": "ТСЛ(З)-1600 · с уровнем потерь С (стандарный)",
+          "relation": "execution_candidate_of_legacy_reference_not_equivalent",
+          "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view"
+        }
+      ]
+    },
+    "alageum-2026-tsl-a-630": {
+      "recordShapeSha256": "780dbf2376b6129a96b5f4846461f7c4c54261370f46238bf57624363f45bcbe",
+      "databaseId": "8fd77a66-60f0-5bfe-a314-48ca99bfcede",
+      "comparisonIds": [],
+      "relatedReferences": [
+        {
+          "id": "tsl-630",
+          "name": "ТСЛ-630",
+          "relation": "execution_candidate_of_legacy_reference_not_equivalent",
+          "sourceUrl": "https://alageum.com/ru/katalog/transformatory/tsl-z"
+        }
+      ]
+    },
+    "tsl-630": {
+      "recordShapeSha256": "11fc4d7e71f68435ec4d576a17ba219abf9cd37afa92ec8fd8da6cef59d35363",
+      "databaseId": "f0729a6c-57fb-53df-b649-fd65aaca3811",
+      "comparisonIds": [],
+      "relatedReferences": [
+        {
+          "id": "alageum-2026-tsl-a-630",
+          "name": "ТСЛ(З)-630 · с уровнем потерь А (энергоэффективный)",
+          "relation": "execution_candidate_of_legacy_reference_not_equivalent",
+          "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view"
+        },
+        {
+          "id": "alageum-2026-tsl-c-630",
+          "name": "ТСЛ(З)-630 · с уровнем потерь С (стандарный)",
+          "relation": "execution_candidate_of_legacy_reference_not_equivalent",
+          "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view"
+        }
+      ]
+    },
+    "alageum-2026-tsl-c-1600": {
+      "recordShapeSha256": "a7f9d9611a4d7b12bc6e556d74499b5e7b494abd38562cde3295971904a6cc20",
+      "databaseId": "653a65d1-4ad0-545f-ae2c-fd745f24b3e0",
+      "comparisonIds": [],
+      "relatedReferences": [
+        {
+          "id": "tsl-1600",
+          "name": "ТСЛ-1600",
+          "relation": "execution_candidate_of_legacy_reference_not_equivalent",
+          "sourceUrl": "https://alageum.com/ru/katalog/transformatory/tsl-z"
+        }
+      ]
+    },
+    "alageum-2026-tsl-c-630": {
+      "recordShapeSha256": "1037bad9d47697c2b2cfede41cd0506c9fb7c25f7f8adcaa0c90a4732fb686d9",
+      "databaseId": "fb80f98f-39e1-5da7-97c8-ea388ddf6720",
+      "comparisonIds": [],
+      "relatedReferences": [
+        {
+          "id": "tsl-630",
+          "name": "ТСЛ-630",
+          "relation": "execution_candidate_of_legacy_reference_not_equivalent",
+          "sourceUrl": "https://alageum.com/ru/katalog/transformatory/tsl-z"
+        }
+      ]
+    },
+    "alageum-tmg-01-1000": {
+      "recordShapeSha256": "5db14f76bb21a32b044d3cb95ef85db749a75aaaadcf3257f81da2c7e2181e33",
+      "databaseId": "6573bac6-3d06-59a0-8324-4a9937628124",
+      "comparisonIds": [],
+      "relatedReferences": [
+        {
+          "id": "tmg-1000",
+          "name": "ТМГ-1000/10(6)-0,4",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://alageum.com/ru/katalog/transformatory/tmg-25-2500-6-10-kv-2-2"
+        }
+      ]
+    },
+    "tmg-1000": {
+      "recordShapeSha256": "b8fcc78abb10be49f3687cf32ad57325bb29785fe323c935e142b8f8a3c60b68",
+      "databaseId": "5ef9865c-95ef-5ab5-92a0-f08a41fb7ee6",
+      "comparisonIds": [
+        "alageum-tmg-standard-1000"
+      ],
+      "relatedReferences": [
+        {
+          "id": "alageum-tmg-01-1000",
+          "name": "ТМГ-1000 (01)",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view"
+        },
+        {
+          "id": "alageum-tmg-copper-1000",
+          "name": "ТМГ-1000 (с медными обмотками)",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view"
+        },
+        {
+          "id": "alageum-tmg-switch-6-10-1000",
+          "name": "ТМГ-1000 (6↔10 кВ, с 2-х этажным переключателем) · с возможностью переключения на стороне ВН 6 кВ на 10 кВ с 2-х этажным переключателем",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view"
+        },
+        {
+          "id": "alageum-tmg-x1k1-1000",
+          "name": "ТМГ-1000 (Х1К1)",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view"
+        }
+      ]
+    },
+    "alageum-tmg-01-2500": {
+      "recordShapeSha256": "9e9e2301910f45317fd446b1468e43fc5455aab15f4945d362fe8d7262e91334",
+      "databaseId": "a15e8c08-321c-5f95-afe8-18bfe2337e3a",
+      "comparisonIds": [],
+      "relatedReferences": [
+        {
+          "id": "tmg-2500",
+          "name": "ТМГ-2500/10(6)-0,4",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://alageum.com/ru/katalog/transformatory/tmg-25-2500-6-10-kv-2-2"
+        }
+      ]
+    },
+    "tmg-2500": {
+      "recordShapeSha256": "73c585a4ab3dd96899e87b2ad2b0233c3ad551fb90fbfcccd4a6676be2c701eb",
+      "databaseId": "ef313e95-ffab-5859-bdfa-b2220ed668a4",
+      "comparisonIds": [
+        "alageum-tmg-standard-2500"
+      ],
+      "relatedReferences": [
+        {
+          "id": "alageum-tmg-01-2500",
+          "name": "ТМГ-2500 (01)",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view"
+        },
+        {
+          "id": "alageum-tmg-copper-2500",
+          "name": "ТМГ-2500 (с медными обмотками)",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view"
+        },
+        {
+          "id": "alageum-tmg-switch-6-10-2500",
+          "name": "ТМГ-2500 (6↔10 кВ, с 2-х этажным переключателем) · с возможностью переключения на стороне ВН 6 кВ на 10 кВ с 2-х этажным переключателем",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view"
+        },
+        {
+          "id": "alageum-tmg-x1k1-2500",
+          "name": "ТМГ-2500 (Х1К1)",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view"
+        }
+      ]
+    },
+    "alageum-tmg-01-400": {
+      "recordShapeSha256": "66da6817b66af6869668f9c2909c4f8fe4d6fa6938e6124e6a9f32277189f8da",
+      "databaseId": "57d3956c-fe95-505c-a646-a56890ad8ba0",
+      "comparisonIds": [],
+      "relatedReferences": [
+        {
+          "id": "tmg-400",
+          "name": "ТМГ-400/10(6)-0,4",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://alageum.com/ru/katalog/transformatory/tmg-25-2500-6-10-kv-2-2"
+        }
+      ]
+    },
+    "tmg-400": {
+      "recordShapeSha256": "ad87fa8488ac27879b575a07299903fe0f5f7afbf55dfb8ff9f3abaf502403e2",
+      "databaseId": "e0654f4f-cd5b-5333-810c-ce336dc1737e",
+      "comparisonIds": [
+        "alageum-tmg-standard-400"
+      ],
+      "relatedReferences": [
+        {
+          "id": "alageum-tmg-01-400",
+          "name": "ТМГ-400 (01)",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view"
+        },
+        {
+          "id": "alageum-tmg-copper-400",
+          "name": "ТМГ-400 (с медными обмотками)",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view"
+        },
+        {
+          "id": "alageum-tmg-switch-6-10-400",
+          "name": "ТМГ-400 (6↔10 кВ, с 2-х этажным переключателем) · с возможностью переключения на стороне ВН 6 кВ на 10 кВ с 2-х этажным переключателем",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view"
+        },
+        {
+          "id": "alageum-tmg-x1k1-400",
+          "name": "ТМГ-400 (Х1К1)",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view"
+        }
+      ]
+    },
+    "alageum-tmg-01-630": {
+      "recordShapeSha256": "d5f7979e1218ddd84b782078966ee25f81ea4cacb3ee01d0502076529746aaaa",
+      "databaseId": "b413e0be-025c-5c98-a3e3-edb594d35f12",
+      "comparisonIds": [],
+      "relatedReferences": [
+        {
+          "id": "tmg-630",
+          "name": "ТМГ-630/10(6)-0,4",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://alageum.com/ru/katalog/transformatory/tmg-25-2500-6-10-kv-2-2"
+        }
+      ]
+    },
+    "tmg-630": {
+      "recordShapeSha256": "9e0f76e6db5a6cb55cc0a5411e80b79174c124bb3d14f002beac52892fcccf11",
+      "databaseId": "adf62541-79c0-5274-a712-c53a3a9bf12e",
+      "comparisonIds": [
+        "alageum-tmg-standard-630"
+      ],
+      "relatedReferences": [
+        {
+          "id": "alageum-tmg-01-630",
+          "name": "ТМГ-630 (01)",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view"
+        },
+        {
+          "id": "alageum-tmg-copper-630",
+          "name": "ТМГ-630 (с медными обмотками)",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view"
+        },
+        {
+          "id": "alageum-tmg-switch-6-10-630",
+          "name": "ТМГ-630 (6↔10 кВ, с 2-х этажным переключателем) · с возможностью переключения на стороне ВН 6 кВ на 10 кВ с 2-х этажным переключателем",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view"
+        },
+        {
+          "id": "alageum-tmg-x1k1-630",
+          "name": "ТМГ-630 (Х1К1)",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view"
+        }
+      ]
+    },
+    "alageum-tmg-copper-1000": {
+      "recordShapeSha256": "776d4af25674d0a4c50ee608ab43e8d7eeef0af6c0797500c44ed09953c137bb",
+      "databaseId": "bf6f6b5f-698f-5cda-b315-f31dec6b9b8e",
+      "comparisonIds": [],
+      "relatedReferences": [
+        {
+          "id": "tmg-1000",
+          "name": "ТМГ-1000/10(6)-0,4",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://alageum.com/ru/katalog/transformatory/tmg-25-2500-6-10-kv-2-2"
+        }
+      ]
+    },
+    "alageum-tmg-copper-2500": {
+      "recordShapeSha256": "36c75586ca0d75cc50fe90abdd5dbded2d70a3e0ea79b4b72703589f4d80fd33",
+      "databaseId": "f8067eab-dfe6-5a94-ac90-22280388efca",
+      "comparisonIds": [],
+      "relatedReferences": [
+        {
+          "id": "tmg-2500",
+          "name": "ТМГ-2500/10(6)-0,4",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://alageum.com/ru/katalog/transformatory/tmg-25-2500-6-10-kv-2-2"
+        }
+      ]
+    },
+    "alageum-tmg-copper-400": {
+      "recordShapeSha256": "9d636c85fac290d88e0e135462b4572ac221d0ab6cfc4ed1764bdf56c4c84b5e",
+      "databaseId": "9bc3c214-f14d-586c-8707-6e7e7ccfabbd",
+      "comparisonIds": [],
+      "relatedReferences": [
+        {
+          "id": "tmg-400",
+          "name": "ТМГ-400/10(6)-0,4",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://alageum.com/ru/katalog/transformatory/tmg-25-2500-6-10-kv-2-2"
+        }
+      ]
+    },
+    "alageum-tmg-copper-630": {
+      "recordShapeSha256": "8ce63a6610b481c568358616cd2a3f924ed16d3ffce6c83cb5f002d63c75afb4",
+      "databaseId": "9c631c18-0db4-58a4-9263-56be9706282b",
+      "comparisonIds": [],
+      "relatedReferences": [
+        {
+          "id": "tmg-630",
+          "name": "ТМГ-630/10(6)-0,4",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://alageum.com/ru/katalog/transformatory/tmg-25-2500-6-10-kv-2-2"
+        }
+      ]
+    },
+    "alageum-tmg-switch-6-10-1000": {
+      "recordShapeSha256": "8b9edd651c01af403df58c9bf08517c169f12f8317a3c727cc0222f19f7f5bb1",
+      "databaseId": "093bab41-57dd-59f3-9c89-e23ca2f16e9e",
+      "comparisonIds": [],
+      "relatedReferences": [
+        {
+          "id": "tmg-1000",
+          "name": "ТМГ-1000/10(6)-0,4",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://alageum.com/ru/katalog/transformatory/tmg-25-2500-6-10-kv-2-2"
+        }
+      ]
+    },
+    "alageum-tmg-switch-6-10-2500": {
+      "recordShapeSha256": "cea9b08e0d3a7ab1ed7ec9d7d9d81a412b2d40dc0dd1932d38858348dd2bf59b",
+      "databaseId": "382c4f80-4953-5df9-82aa-d434cd4ec503",
+      "comparisonIds": [],
+      "relatedReferences": [
+        {
+          "id": "tmg-2500",
+          "name": "ТМГ-2500/10(6)-0,4",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://alageum.com/ru/katalog/transformatory/tmg-25-2500-6-10-kv-2-2"
+        }
+      ]
+    },
+    "alageum-tmg-switch-6-10-400": {
+      "recordShapeSha256": "74c515d1fe76a23030fe9f954fb5a9a0e5ef5f42cd87cfcc86319e89032b621e",
+      "databaseId": "e1131f33-afef-50af-9959-5638e30024b7",
+      "comparisonIds": [],
+      "relatedReferences": [
+        {
+          "id": "tmg-400",
+          "name": "ТМГ-400/10(6)-0,4",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://alageum.com/ru/katalog/transformatory/tmg-25-2500-6-10-kv-2-2"
+        }
+      ]
+    },
+    "alageum-tmg-switch-6-10-630": {
+      "recordShapeSha256": "8ccb190e5753627501c4b03b0cd7b1e4ce642651cf60afa8f3645443d49877e1",
+      "databaseId": "0e6d13db-94c7-5de9-995e-bce02ade76c0",
+      "comparisonIds": [],
+      "relatedReferences": [
+        {
+          "id": "tmg-630",
+          "name": "ТМГ-630/10(6)-0,4",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://alageum.com/ru/katalog/transformatory/tmg-25-2500-6-10-kv-2-2"
+        }
+      ]
+    },
+    "alageum-tmg-x1k1-1000": {
+      "recordShapeSha256": "c08da1c39fa9336ffae364e1d01d684c16ac199bfef24585ee17c498ed499639",
+      "databaseId": "cb0cd8b1-1e7b-5e60-bf0a-4e44d32b4378",
+      "comparisonIds": [],
+      "relatedReferences": [
+        {
+          "id": "tmg-1000",
+          "name": "ТМГ-1000/10(6)-0,4",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://alageum.com/ru/katalog/transformatory/tmg-25-2500-6-10-kv-2-2"
+        }
+      ]
+    },
+    "alageum-tmg-x1k1-2500": {
+      "recordShapeSha256": "70b5cfe40a26732f64d79b40de567451b12f271b0f528eaeb51fbecb29836edc",
+      "databaseId": "4b38edeb-ace8-5e22-86b9-29a49568008b",
+      "comparisonIds": [],
+      "relatedReferences": [
+        {
+          "id": "tmg-2500",
+          "name": "ТМГ-2500/10(6)-0,4",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://alageum.com/ru/katalog/transformatory/tmg-25-2500-6-10-kv-2-2"
+        }
+      ]
+    },
+    "alageum-tmg-x1k1-400": {
+      "recordShapeSha256": "d8a8008afe0bf9037da705e8731bdb59754788b37183a1f663264fa964a5223b",
+      "databaseId": "d455916a-9a59-57eb-8adc-313e8cf70bde",
+      "comparisonIds": [],
+      "relatedReferences": [
+        {
+          "id": "tmg-400",
+          "name": "ТМГ-400/10(6)-0,4",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://alageum.com/ru/katalog/transformatory/tmg-25-2500-6-10-kv-2-2"
+        }
+      ]
+    },
+    "alageum-tmg-x1k1-630": {
+      "recordShapeSha256": "01e18d028e95b4f4b450ebb944b848d1c4a70171a51b9b7fcd11b16b30af64cd",
+      "databaseId": "4d9516a8-392e-5a7e-91d8-fd267a1848e3",
+      "comparisonIds": [],
+      "relatedReferences": [
+        {
+          "id": "tmg-630",
+          "name": "ТМГ-630/10(6)-0,4",
+          "relation": "related_catalog_reference_not_equivalent",
+          "sourceUrl": "https://alageum.com/ru/katalog/transformatory/tmg-25-2500-6-10-kv-2-2"
+        }
+      ]
+    },
+    "tmgf-1600": {
+      "recordShapeSha256": "9301f7e5dbd2a2f6947607657e5d1c6007a04933effcf8a063477885843ef7ce",
+      "databaseId": "abfa9e67-ac7c-572d-8a77-e9ec9af1ee5c",
+      "comparisonIds": [
+        "alageum-tmgf-1600"
+      ],
+      "relatedReferences": []
+    },
+    "tmgf-630": {
+      "recordShapeSha256": "2f3522e98a7fcaff9d507ce7a5d084d92914837f051f903dfe9831c132a8396e",
+      "databaseId": "3d8050d4-59a5-5f94-83c2-4bb5d9bd1d77",
+      "comparisonIds": [
+        "alageum-tmgf-630"
+      ],
+      "relatedReferences": []
+    },
+    "tmgs-160": {
+      "recordShapeSha256": "c59aecba7fb20ac3a0a47efac0403d105998fe5f147e29942a2102516e1eaab7",
+      "databaseId": "6a53dff5-41d5-5cb7-82c6-2be835516379",
+      "comparisonIds": [
+        "alageum-tmgs-pole-160"
+      ],
+      "relatedReferences": []
+    },
+    "tmgs-63": {
+      "recordShapeSha256": "77f079cb7eaa85e0e7f86f0bcf6ba286f8b3f1027de65b45f44dccfe31c9f8d7",
+      "databaseId": "d2c69803-3641-5f48-ac7d-4b1afaead7ad",
+      "comparisonIds": [
+        "alageum-tmgs-pole-63"
+      ],
+      "relatedReferences": []
+    }
+  },
+  "recordChunks": [
+    {
+      "path": "records-001.json",
+      "recordCount": 4,
+      "bytes": 65319,
+      "sha256": "c931d50f510dd472f2717fe1ffe71c218ae0dfbdbe0e03531ca19ea197e39795"
+    },
+    {
+      "path": "records-002.json",
+      "recordCount": 4,
+      "bytes": 61264,
+      "sha256": "e20d24fd2ec3ca3a2dfed902d8d5c3605be10cc83d7fbb4d1101d6184c47e7d4"
+    },
+    {
+      "path": "records-003.json",
+      "recordCount": 4,
+      "bytes": 66390,
+      "sha256": "64d6ed5f258cf1ca393f2f99cbbda3d699718fac72406127e92b209b0e636b6d"
+    },
+    {
+      "path": "records-004.json",
+      "recordCount": 4,
+      "bytes": 62437,
+      "sha256": "94d562b3274028b090335e7a84864b6cbf1f11c62c873e659b75f42f5ec0144a"
+    },
+    {
+      "path": "records-005.json",
+      "recordCount": 4,
+      "bytes": 58433,
+      "sha256": "812d394ed51d1d5058195e3dfad55ad470dfc57ab5552b335925c65ec2bc3bf3"
+    }
+  ],
+  "panelChunks": [
+    {
+      "path": "panels-001.json",
+      "recordCount": 6,
+      "bytes": 73638,
+      "sha256": "5ba1b5d2d12107613a44280b43e2af3b7f0c5f6f6053d427a73dd930c32794dc"
+    },
+    {
+      "path": "panels-002.json",
+      "recordCount": 4,
+      "bytes": 64935,
+      "sha256": "2df42556ae1cca2d7578671fb5e28aa27729d3df6c6949f6805e6daa2e28a037"
+    },
+    {
+      "path": "panels-003.json",
+      "recordCount": 2,
+      "bytes": 33622,
+      "sha256": "25b7abbbc7d88cab991b8c57ce0dd8d59489a6fe158927eb8f8be6090c4e7609"
+    }
+  ]
+}

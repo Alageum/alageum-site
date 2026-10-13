@@ -1,0 +1,1891 @@
+[
+  {
+    "id": "cat-ptm-tded-v011",
+    "name": "ТДЕД-9-5,0",
+    "designation": "ТДЕД-9-5,0",
+    "cohort": "legacy",
+    "category": "protection",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ptm-tded",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        68,
+        69
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "7f08aafbda88e69365a5ddb674d7ca4067a00275c346c47134c441fc2225bf47",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        69
+      ],
+      "sourceImage": "/catalog-products/cat-ptm-tded.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-only",
+      "reason": "Страница 69 содержит разные корпуса ПТМ(Д)-У1 и ТДЕ(Д)-9-У3; наследование одного корпуса всем обозначениям запрещено."
+    },
+    "icon": {
+      "type": "indoor-protection-enclosure",
+      "confidence": "typical",
+      "sourcePages": [
+        68,
+        69
+      ],
+      "sourceImage": "/catalog-products/cat-ptm-tded.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": true,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "approximate-generic",
+      "reason": "Типовая иконка ТДЕД-9-5,0: на странице 69 показан родственный корпус, но механический вид этого конкретного обозначения не подтверждён. Смешанное семейство ПТМ/ТДЕ не наследуется автоматически."
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ptm-tded.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        69
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ptm-tded-v012",
+    "name": "ПТМ(Д), ТДЕ(Д)-9 · ПТМ(Д)-У1",
+    "designation": "ПТМ(Д)-У1",
+    "cohort": "legacy",
+    "category": "protection",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ptm-tded",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        68,
+        69
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "4aaf3b63c4256aa190223ea160112a635149a461a687844282ac39e9ac543c6a",
+    "geometry": {
+      "type": "protection-cabinet",
+      "confidence": "source-matched",
+      "sourcePages": [
+        69
+      ],
+      "sourceImage": "/catalog-products/cat-ptm-tded.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "На странице 69 этот корпус с козырьком прямо подписан ПТМ(Д)-У1; совпадение не распространяется на ТДЕ(Д)-9-У3."
+    },
+    "icon": {
+      "type": "protection-cabinet",
+      "confidence": "source-based",
+      "sourcePages": [
+        69
+      ],
+      "sourceImage": "/catalog-products/cat-ptm-tded.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "На странице 69 корпус с наружным козырьком прямо подписан ПТМ(Д)-У1. Сопоставление не распространяется на ТДЕ(Д)-9-У3."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ptm-tded.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        69
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ptm-tded-v013",
+    "name": "ПТМ(Д), ТДЕ(Д)-9 · ТДЕ(Д)-9-У3",
+    "designation": "ТДЕ(Д)-9-У3",
+    "cohort": "legacy",
+    "category": "protection",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ptm-tded",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        68,
+        69
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "17bb4d265e3d965a381fb6adf4a3d63e46ba5f54b174c210a82fa785c02e4898",
+    "geometry": {
+      "type": "indoor-protection-enclosure",
+      "confidence": "source-matched",
+      "sourcePages": [
+        69
+      ],
+      "sourceImage": "/catalog-products/cat-ptm-tded.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "На странице 69 прямоугольный корпус без козырька прямо подписан ТДЕ(Д)-9-У3. Не наследует наружный корпус ПТМ(Д)-У1. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "indoor-protection-enclosure",
+      "confidence": "source-based",
+      "sourcePages": [
+        69
+      ],
+      "sourceImage": "/catalog-products/cat-ptm-tded.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "На странице 69 прямоугольный корпус без козырька прямо подписан ТДЕ(Д)-9-У3. Не наследует наружный корпус ПТМ(Д)-У1."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ptm-tded.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        69
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-bdrm",
+    "name": "Блоки диодно-резисторные",
+    "designation": "БДРМ",
+    "cohort": "legacy",
+    "category": "protection",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [
+      "cat-bdrm-v001",
+      "cat-bdrm-v002",
+      "cat-bdrm-v003",
+      "cat-bdrm-v004",
+      "cat-bdrm-v005",
+      "cat-bdrm-v006",
+      "cat-bdrm-v007",
+      "cat-bdrm-v008",
+      "cat-bdrm-v009",
+      "cat-bdrm-v010",
+      "cat-bdrm-v011"
+    ],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        70,
+        71
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "db5b0095677da89a2a8bf3fa238f8b3496e81979113808c0fa453abe2c3926f2",
+    "geometry": {
+      "type": "wall-canopy-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        70
+      ],
+      "sourceImage": "/catalog-products/cat-bdrm.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Наружный навесной блок с козырьком, передней дверью и задними крепёжными планками. Общий чертёж страницы 70 связан с размерной таблицей; два обозначения только из схем отдельно исключены."
+    },
+    "icon": {
+      "type": "wall-canopy-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        70
+      ],
+      "sourceImage": "/catalog-products/cat-bdrm.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По размерному чертежу БДРМ на странице 70: навесной блок с козырьком, дверью и задними крепёжными планками. Обозначения, встречающиеся только на схемах, отдельно отмечены как типовые."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-bdrm.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        70
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-bdrm-v001",
+    "name": "БДРМ-50-1",
+    "designation": "БДРМ-50-1",
+    "cohort": "legacy",
+    "category": "protection",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-bdrm",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        70,
+        71
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "8086e9a33bca4fb0f91894b002e55c1062306b48ccd6000e74c696b6f8d03506",
+    "geometry": {
+      "type": "wall-canopy-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        70
+      ],
+      "sourceImage": "/catalog-products/cat-bdrm.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Наружный навесной блок с козырьком, передней дверью и задними крепёжными планками. Общий чертёж страницы 70 связан с размерной таблицей; два обозначения только из схем отдельно исключены."
+    },
+    "icon": {
+      "type": "wall-canopy-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        70
+      ],
+      "sourceImage": "/catalog-products/cat-bdrm.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По размерному чертежу БДРМ на странице 70: навесной блок с козырьком, дверью и задними крепёжными планками. Обозначения, встречающиеся только на схемах, отдельно отмечены как типовые."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-bdrm.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        70
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-bdrm-v002",
+    "name": "БДРМ-25-4-30-32УХЛ1",
+    "designation": "БДРМ-25-4-30-32УХЛ1",
+    "cohort": "legacy",
+    "category": "protection",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-bdrm",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        70,
+        71
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "4099cfc7a6fa5ea18eb1eca4871b4c6f0e8d6c439872e22638a16f650580d5ca",
+    "geometry": {
+      "type": "wall-canopy-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        70
+      ],
+      "sourceImage": "/catalog-products/cat-bdrm.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Наружный навесной блок с козырьком, передней дверью и задними крепёжными планками. Общий чертёж страницы 70 связан с размерной таблицей; два обозначения только из схем отдельно исключены."
+    },
+    "icon": {
+      "type": "wall-canopy-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        70
+      ],
+      "sourceImage": "/catalog-products/cat-bdrm.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По размерному чертежу БДРМ на странице 70: навесной блок с козырьком, дверью и задними крепёжными планками. Обозначения, встречающиеся только на схемах, отдельно отмечены как типовые."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-bdrm.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        70
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-bdrm-v003",
+    "name": "БДРМ-25-4-33-44 УХЛ1",
+    "designation": "БДРМ-25-4-33-44 УХЛ1",
+    "cohort": "legacy",
+    "category": "protection",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-bdrm",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        70,
+        71
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "43d360b5191a54ac81e34c15cd434bf7113008daa8ad30536c9fda0ca049730b",
+    "geometry": {
+      "type": "wall-canopy-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        70
+      ],
+      "sourceImage": "/catalog-products/cat-bdrm.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Наружный навесной блок с козырьком, передней дверью и задними крепёжными планками. Общий чертёж страницы 70 связан с размерной таблицей; два обозначения только из схем отдельно исключены."
+    },
+    "icon": {
+      "type": "wall-canopy-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        70
+      ],
+      "sourceImage": "/catalog-products/cat-bdrm.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По размерному чертежу БДРМ на странице 70: навесной блок с козырьком, дверью и задними крепёжными планками. Обозначения, встречающиеся только на схемах, отдельно отмечены как типовые."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-bdrm.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        70
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-bdrm-v004",
+    "name": "БДРМ-25-2-10-11 УХЛ1",
+    "designation": "БДРМ-25-2-10-11 УХЛ1",
+    "cohort": "legacy",
+    "category": "protection",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-bdrm",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        70,
+        71
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "0d5954ecce70c72696b5c8cc69198eeebab3dae4796db0dc1ef2cca1b6762b03",
+    "geometry": {
+      "type": "wall-canopy-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        70
+      ],
+      "sourceImage": "/catalog-products/cat-bdrm.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Наружный навесной блок с козырьком, передней дверью и задними крепёжными планками. Общий чертёж страницы 70 связан с размерной таблицей; два обозначения только из схем отдельно исключены."
+    },
+    "icon": {
+      "type": "wall-canopy-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        70
+      ],
+      "sourceImage": "/catalog-products/cat-bdrm.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По размерному чертежу БДРМ на странице 70: навесной блок с козырьком, дверью и задними крепёжными планками. Обозначения, встречающиеся только на схемах, отдельно отмечены как типовые."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-bdrm.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        70
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-bdrm-v005",
+    "name": "БДРМ-25-2-20-22 УХЛ1",
+    "designation": "БДРМ-25-2-20-22 УХЛ1",
+    "cohort": "legacy",
+    "category": "protection",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-bdrm",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        70,
+        71
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "6157e9db6b8ad47a9f8889cb7bf5b676985f525e18ef33f0363f001ffeb20fcc",
+    "geometry": {
+      "type": "wall-canopy-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        70
+      ],
+      "sourceImage": "/catalog-products/cat-bdrm.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Наружный навесной блок с козырьком, передней дверью и задними крепёжными планками. Общий чертёж страницы 70 связан с размерной таблицей; два обозначения только из схем отдельно исключены."
+    },
+    "icon": {
+      "type": "wall-canopy-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        70
+      ],
+      "sourceImage": "/catalog-products/cat-bdrm.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По размерному чертежу БДРМ на странице 70: навесной блок с козырьком, дверью и задними крепёжными планками. Обозначения, встречающиеся только на схемах, отдельно отмечены как типовые."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-bdrm.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        70
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-bdrm-v006",
+    "name": "БДРМ-10-4-30-33 УХЛ1",
+    "designation": "БДРМ-10-4-30-33 УХЛ1",
+    "cohort": "legacy",
+    "category": "protection",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-bdrm",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        70,
+        71
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "dc102951a36005f482e7ab40de4cb5794a60248a15e3115153242726fccf7936",
+    "geometry": {
+      "type": "wall-canopy-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        70
+      ],
+      "sourceImage": "/catalog-products/cat-bdrm.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Наружный навесной блок с козырьком, передней дверью и задними крепёжными планками. Общий чертёж страницы 70 связан с размерной таблицей; два обозначения только из схем отдельно исключены."
+    },
+    "icon": {
+      "type": "wall-canopy-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        70
+      ],
+      "sourceImage": "/catalog-products/cat-bdrm.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По размерному чертежу БДРМ на странице 70: навесной блок с козырьком, дверью и задними крепёжными планками. Обозначения, встречающиеся только на схемах, отдельно отмечены как типовые."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-bdrm.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        70
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-bdrm-v007",
+    "name": "БДРМ-10-4-40-44УХЛ1",
+    "designation": "БДРМ-10-4-40-44УХЛ1",
+    "cohort": "legacy",
+    "category": "protection",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-bdrm",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        70,
+        71
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "c074c1c544b82ba9bfea5494803da7e223e0d803d884459670ac2a46e722268d",
+    "geometry": {
+      "type": "wall-canopy-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        70
+      ],
+      "sourceImage": "/catalog-products/cat-bdrm.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Наружный навесной блок с козырьком, передней дверью и задними крепёжными планками. Общий чертёж страницы 70 связан с размерной таблицей; два обозначения только из схем отдельно исключены."
+    },
+    "icon": {
+      "type": "wall-canopy-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        70
+      ],
+      "sourceImage": "/catalog-products/cat-bdrm.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По размерному чертежу БДРМ на странице 70: навесной блок с козырьком, дверью и задними крепёжными планками. Обозначения, встречающиеся только на схемах, отдельно отмечены как типовые."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-bdrm.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        70
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-bdrm-v008",
+    "name": "БДРМ-10-2-10-11 УХЛ1",
+    "designation": "БДРМ-10-2-10-11 УХЛ1",
+    "cohort": "legacy",
+    "category": "protection",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-bdrm",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        70,
+        71
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "a5777052b4f8db539b650682bd67ac1b3386dd5b0cccf4b5d981a4cc4ffa8364",
+    "geometry": {
+      "type": "wall-canopy-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        70
+      ],
+      "sourceImage": "/catalog-products/cat-bdrm.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Наружный навесной блок с козырьком, передней дверью и задними крепёжными планками. Общий чертёж страницы 70 связан с размерной таблицей; два обозначения только из схем отдельно исключены."
+    },
+    "icon": {
+      "type": "wall-canopy-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        70
+      ],
+      "sourceImage": "/catalog-products/cat-bdrm.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По размерному чертежу БДРМ на странице 70: навесной блок с козырьком, дверью и задними крепёжными планками. Обозначения, встречающиеся только на схемах, отдельно отмечены как типовые."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-bdrm.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        70
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-bdrm-v009",
+    "name": "БДРМ-10-2-20-22 УХЛ1",
+    "designation": "БДРМ-10-2-20-22 УХЛ1",
+    "cohort": "legacy",
+    "category": "protection",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-bdrm",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        70,
+        71
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "af8a2be56a2fc2da527ab1452f64383a295042f76c49d9470cd49fde5aaf7b55",
+    "geometry": {
+      "type": "wall-canopy-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        70
+      ],
+      "sourceImage": "/catalog-products/cat-bdrm.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Наружный навесной блок с козырьком, передней дверью и задними крепёжными планками. Общий чертёж страницы 70 связан с размерной таблицей; два обозначения только из схем отдельно исключены."
+    },
+    "icon": {
+      "type": "wall-canopy-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        70
+      ],
+      "sourceImage": "/catalog-products/cat-bdrm.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По размерному чертежу БДРМ на странице 70: навесной блок с козырьком, дверью и задними крепёжными планками. Обозначения, встречающиеся только на схемах, отдельно отмечены как типовые."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-bdrm.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        70
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-bdrm-v010",
+    "name": "БДРМ-25-2-22-УХЛ1",
+    "designation": "БДРМ-25-2-22-УХЛ1",
+    "cohort": "legacy",
+    "category": "protection",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-bdrm",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        70,
+        71
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "97f2adf2d096ef70c270a95942bf459c93b4317a4ed40724594415b1e080ecec",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        70,
+        71
+      ],
+      "sourceImage": "/catalog-products/cat-bdrm.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-only",
+      "reason": "Обозначение БДРМ-25-2-22 приведено только на принципиальной схеме и отличается от размерной таблицы; одинаковый корпус не утверждается."
+    },
+    "icon": {
+      "type": "wall-canopy-box",
+      "confidence": "typical",
+      "sourcePages": [
+        70,
+        71
+      ],
+      "sourceImage": "/catalog-products/cat-bdrm.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": true,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "approximate-generic",
+      "reason": "Обозначение БДРМ-25-2-22-УХЛ1 встречается только на принципиальной схеме и не подтверждено размерным чертежом. Показана типовая схема навесного дренажного блока; совпадение корпуса с другими БДРМ не утверждается."
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-bdrm.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        70
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-bdrm-v011",
+    "name": "БДРМ-25-4-41-УХЛ1",
+    "designation": "БДРМ-25-4-41-УХЛ1",
+    "cohort": "legacy",
+    "category": "protection",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-bdrm",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        70,
+        71
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "3e4874bb74f825ffc5523d597cfeaa8a4c6037ee111728760e9726369d6303ed",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        70,
+        71
+      ],
+      "sourceImage": "/catalog-products/cat-bdrm.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-only",
+      "reason": "Обозначение БДРМ-25-4-41 приведено только на принципиальной схеме; его механическое исполнение отдельно не подтверждено."
+    },
+    "icon": {
+      "type": "wall-canopy-box",
+      "confidence": "typical",
+      "sourcePages": [
+        70,
+        71
+      ],
+      "sourceImage": "/catalog-products/cat-bdrm.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": true,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "approximate-generic",
+      "reason": "Обозначение БДРМ-25-4-41-УХЛ1 встречается только на принципиальной схеме и не подтверждено размерным чертежом. Показана типовая схема навесного дренажного блока; совпадение корпуса с другими БДРМ не утверждается."
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-bdrm.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        70
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-pusk-3m",
+    "name": "Шкафы управления плавным пуском асинхронных электродвигателей",
+    "designation": "ПУСК-3М",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        72
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "5d1d648ffd1b6d4001e1f30ca6c6fbd5792efa0ceedbed0d832ee7201055848b",
+    "geometry": {
+      "type": "control-cabinet",
+      "confidence": "source-matched",
+      "sourcePages": [
+        72
+      ],
+      "sourceImage": "/catalog-products/cat-pusk-3m.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Напольный шкаф на ножках с отделённой верхней приборной панелью и передней дверью."
+    },
+    "icon": {
+      "type": "control-cabinet",
+      "confidence": "source-based",
+      "sourcePages": [
+        72
+      ],
+      "sourceImage": "/catalog-products/cat-pusk-3m.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По габаритному чертежу ПУСК-3М на странице 72: напольный шкаф на ножках с верхней приборной панелью и передней дверью."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-pusk-3m.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        72
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-shueng",
+    "name": "Шкаф управления электроприводом насоса групповой насосной станции",
+    "designation": "ШУЭНГ",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        72,
+        73
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "4e32faf776062b7169fdbd0d0da3201512d33e33b53336c914fff2900e6bd92c",
+    "geometry": {
+      "type": null,
+      "confidence": "unverified",
+      "sourcePages": [
+        72,
+        73
+      ],
+      "sourceImage": null,
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "unverified",
+      "reason": "Даны текст и габариты, но отсутствует проверенный чертёж внешней конструкции."
+    },
+    "icon": {
+      "type": "control-cabinet",
+      "confidence": "typical",
+      "sourcePages": [
+        72,
+        73
+      ],
+      "sourceImage": null,
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": true,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "approximate-generic",
+      "reason": "Типовая схема шкафа управления насосом по описанию ШУЭНГ: дверь и приборные органы управления. На страницах 72–73 нет подтверждённого чертежа ШУЭНГ; соседний чертёж ПУСК-3М не считается его изображением."
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": null,
+      "representation": null,
+      "sourceId": null,
+      "physicalPages": []
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-kik",
+    "name": "Контрольно-измерительная колонка",
+    "designation": "КИК",
+    "cohort": "legacy",
+    "category": "protection",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [
+      "cat-kik-v001",
+      "cat-kik-v002",
+      "cat-kik-v003"
+    ],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        74
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "7396131f3f73eb6faf51b43f13513bd153d69503cd702b8c7f1eeba682bd1941",
+    "geometry": {
+      "type": "metering-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        74
+      ],
+      "sourceImage": "/catalog-products/cat-kik.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Квадратная стойка с небольшой дверцей и двускатным козырьком; отдельная от СКИП форма."
+    },
+    "icon": {
+      "type": "metering-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        74
+      ],
+      "sourceImage": "/catalog-products/cat-kik.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По чертежу КИК на странице 74: квадратная стойка с дверцей и двускатным козырьком. Не заменяется круглой трубчатой стойкой СКИП."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-kik.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        74
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-kik-v001",
+    "name": "КИК 1-1",
+    "designation": "КИК 1-1",
+    "cohort": "legacy",
+    "category": "protection",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-kik",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        74
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "20f5d6738672d2bbeced80dee5013853fda5d79da0065f7cc480a2973ec1f870",
+    "geometry": {
+      "type": "metering-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        74
+      ],
+      "sourceImage": "/catalog-products/cat-kik.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Квадратная стойка с небольшой дверцей и двускатным козырьком; отдельная от СКИП форма."
+    },
+    "icon": {
+      "type": "metering-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        74
+      ],
+      "sourceImage": "/catalog-products/cat-kik.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По чертежу КИК на странице 74: квадратная стойка с дверцей и двускатным козырьком. Не заменяется круглой трубчатой стойкой СКИП."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-kik.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        74
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-kik-v002",
+    "name": "КИК 1-2",
+    "designation": "КИК 1-2",
+    "cohort": "legacy",
+    "category": "protection",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-kik",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        74
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "22ed7efe9211ac4a75833d5635c901aba6842d793e69942fe7d1a3d044885fc7",
+    "geometry": {
+      "type": "metering-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        74
+      ],
+      "sourceImage": "/catalog-products/cat-kik.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Квадратная стойка с небольшой дверцей и двускатным козырьком; отдельная от СКИП форма."
+    },
+    "icon": {
+      "type": "metering-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        74
+      ],
+      "sourceImage": "/catalog-products/cat-kik.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По чертежу КИК на странице 74: квадратная стойка с дверцей и двускатным козырьком. Не заменяется круглой трубчатой стойкой СКИП."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-kik.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        74
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-kik-v003",
+    "name": "КИК 1-3",
+    "designation": "КИК 1-3",
+    "cohort": "legacy",
+    "category": "protection",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-kik",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        74
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "68fc86536569d2b4b4cbd83663664f3e6626bc3f2bd292ffb576b39904224c07",
+    "geometry": {
+      "type": "metering-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        74
+      ],
+      "sourceImage": "/catalog-products/cat-kik.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Квадратная стойка с небольшой дверцей и двускатным козырьком; отдельная от СКИП форма."
+    },
+    "icon": {
+      "type": "metering-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        74
+      ],
+      "sourceImage": "/catalog-products/cat-kik.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По чертежу КИК на странице 74: квадратная стойка с дверцей и двускатным козырьком. Не заменяется круглой трубчатой стойкой СКИП."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-kik.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        74
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-skip",
+    "name": "Стойки контрольно-измерительного пункта",
+    "designation": "СКИП",
+    "cohort": "legacy",
+    "category": "protection",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [
+      "cat-skip-v001",
+      "cat-skip-v002"
+    ],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        74
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "7e40e62e0127020c8c4de87b7d77b9a67657f7c900e5dc7cd14051ad28b04339",
+    "geometry": {
+      "type": "round-metering-post",
+      "confidence": "source-matched",
+      "sourcePages": [
+        74
+      ],
+      "sourceImage": "/catalog-products/cat-skip.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "По отдельному чертежу СКИП на странице 74: круглая трубчатая стойка, прямоугольная головка с дверцей и треугольная крыша. Общий вид серии не задаёт размеры СКИП-1 или СКИП-2. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "round-metering-post",
+      "confidence": "source-based",
+      "sourcePages": [
+        74
+      ],
+      "sourceImage": "/catalog-products/cat-skip.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По отдельному чертежу СКИП на странице 74: круглая трубчатая стойка, прямоугольная головка с дверцей и треугольная крыша. Общий вид серии не задаёт размеры СКИП-1 или СКИП-2."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-skip.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        74
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-skip-v001",
+    "name": "СКИП-1",
+    "designation": "СКИП-1",
+    "cohort": "legacy",
+    "category": "protection",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-skip",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        74
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "cc4ac046d254880593eaba6ea37fafbbae531e3b88fb999f8d6b1f26e2efe456",
+    "geometry": {
+      "type": "round-metering-post",
+      "confidence": "source-matched",
+      "sourcePages": [
+        74
+      ],
+      "sourceImage": "/catalog-products/cat-skip.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "По отдельному чертежу СКИП на странице 74: круглая трубчатая стойка, прямоугольная головка с дверцей и треугольная крыша. Общий вид серии не задаёт размеры СКИП-1 или СКИП-2. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "round-metering-post",
+      "confidence": "source-based",
+      "sourcePages": [
+        74
+      ],
+      "sourceImage": "/catalog-products/cat-skip.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По отдельному чертежу СКИП на странице 74: круглая трубчатая стойка, прямоугольная головка с дверцей и треугольная крыша. Общий вид серии не задаёт размеры СКИП-1 или СКИП-2."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-skip.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        74
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-skip-v002",
+    "name": "СКИП-2",
+    "designation": "СКИП-2",
+    "cohort": "legacy",
+    "category": "protection",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-skip",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        74
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "a464bb387f59fcb2b31f594e80daf0a1f18acf3cfbc8b55c11d7c4eb25d175d5",
+    "geometry": {
+      "type": "round-metering-post",
+      "confidence": "source-matched",
+      "sourcePages": [
+        74
+      ],
+      "sourceImage": "/catalog-products/cat-skip.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "По отдельному чертежу СКИП на странице 74: круглая трубчатая стойка, прямоугольная головка с дверцей и треугольная крыша. Общий вид серии не задаёт размеры СКИП-1 или СКИП-2. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "round-metering-post",
+      "confidence": "source-based",
+      "sourcePages": [
+        74
+      ],
+      "sourceImage": "/catalog-products/cat-skip.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По отдельному чертежу СКИП на странице 74: круглая трубчатая стойка, прямоугольная головка с дверцей и треугольная крыша. Общий вид серии не задаёт размеры СКИП-1 или СКИП-2."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-skip.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        74
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ktpzh-2-4",
+    "name": "Однофазная трансформаторная подстанция КТПЖ 2–4/27,5 У1",
+    "designation": "КТПЖ 2–4/27,5 У1",
+    "cohort": "legacy",
+    "category": "substations",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [
+      "cat-ktpzh-2-4-v001",
+      "cat-ktpzh-2-4-v002"
+    ],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        75
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "4663e2e9149dd7b918ed0a61675c9f4fea5c08422e3219f0f8fac5e698f6b8d5",
+    "geometry": {
+      "type": "railway-pole-single-phase",
+      "confidence": "source-matched",
+      "sourcePages": [
+        75
+      ],
+      "sourceImage": "/catalog-products/cat-ktpzh-2-4.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "По двум видам страницы 75: одна опора, верхняя траверса, боковой однофазный трансформатор с арматурой и отдельный нижний щиток. Трёхфазная мачтовая КТП не подставляется. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "railway-pole-single-phase",
+      "confidence": "source-based",
+      "sourcePages": [
+        75
+      ],
+      "sourceImage": "/catalog-products/cat-ktpzh-2-4.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По двум видам страницы 75: одна опора, верхняя траверса, боковой однофазный трансформатор с арматурой и отдельный нижний щиток. Трёхфазная мачтовая КТП не подставляется."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ktpzh-2-4.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        75
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ktpzh-2-4-v001",
+    "name": "КТПЖ-2/27,5/0,23-У1",
+    "designation": "КТПЖ-2/27,5/0,23-У1",
+    "cohort": "legacy",
+    "category": "substations",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ktpzh-2-4",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        75
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "62b68240bac39745f3f8170b1d0f4b906b7ac47435883f49b2300028836e7164",
+    "geometry": {
+      "type": "railway-pole-single-phase",
+      "confidence": "source-matched",
+      "sourcePages": [
+        75
+      ],
+      "sourceImage": "/catalog-products/cat-ktpzh-2-4.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "По двум видам страницы 75: одна опора, верхняя траверса, боковой однофазный трансформатор с арматурой и отдельный нижний щиток. Трёхфазная мачтовая КТП не подставляется. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "railway-pole-single-phase",
+      "confidence": "source-based",
+      "sourcePages": [
+        75
+      ],
+      "sourceImage": "/catalog-products/cat-ktpzh-2-4.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По двум видам страницы 75: одна опора, верхняя траверса, боковой однофазный трансформатор с арматурой и отдельный нижний щиток. Трёхфазная мачтовая КТП не подставляется."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ktpzh-2-4.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        75
+      ]
+    },
+    "proposalEvidence": null
+  }
+]

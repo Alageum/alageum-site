@@ -1,0 +1,1821 @@
+[
+  {
+    "id": "cat-shnn-v018",
+    "name": "ШНН-Л-12-У3",
+    "designation": "ШНН-Л-12-У3",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-shnn",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        34,
+        35
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "3693dbefc59e5595938c01ce62687b383bdad632a08c4142c93ca4a6b09447bb",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-only",
+      "reason": "По левому примеру на стр. 35 показана приборная лицевая панель в открытой боковой раме. На той же странице есть другая линейная панель; один фасад не наследуется всем вводным, секционным и линейным обозначениям. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "open-sided-feeder-panel",
+      "confidence": "typical",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": true,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "approximate-generic",
+      "reason": "Условный силуэт линейной панели по правому примеру с отходящими линиями на стр. 35. Этот пример не подписан конкретным обозначением ШНН-Л; число приборов и линий данного исполнения не утверждается."
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-shnn.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        35
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-shchsu-04",
+    "name": "ЩСУ-0,4кВ",
+    "designation": "ЩСУ-0,4кВ У3",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        36
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "ba733ef8ccb2db5dec707d3b2a862923a059b3bd941e72be9eaf87f8b8dda320",
+    "geometry": {
+      "type": "plain-floor-cabinet",
+      "confidence": "source-matched",
+      "sourcePages": [
+        36
+      ],
+      "sourceImage": "/catalog-products/cat-shchsu-04.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Высокий напольный однодверный корпус без верхних вводов и внешних приборных панелей."
+    },
+    "icon": {
+      "type": "plain-floor-cabinet",
+      "confidence": "source-based",
+      "sourcePages": [
+        36
+      ],
+      "sourceImage": "/catalog-products/cat-shchsu-04.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Высокий напольный однодверный корпус без верхних вводов и внешних приборных панелей. Значок передаёт общий внешний контур семейства, не точное исполнение."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-shchsu-04.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        36
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-bktp-modular",
+    "name": "Комплектная трансформаторная подстанция в блочно-модульном здании",
+    "designation": "БКТП (2БКТП) 100-3150/6(10)/0,4кВ УХЛ1",
+    "cohort": "legacy",
+    "category": "substations",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [
+      "cat-bktp-modular-v001",
+      "cat-bktp-modular-v002"
+    ],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        37,
+        38,
+        39
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "62749fa2de6101eb945c53fa8ed39a46f70839fbd53457438ff03ca5b76df601",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        38,
+        39
+      ],
+      "sourceImage": "/catalog-products/cat-bktp-modular.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-only",
+      "reason": "Страницы 38 и 39 показывают разные здания БКТП и 2БКТП; общий значок не подтверждает конкретную компоновку."
+    },
+    "icon": {
+      "type": "single-modular-building",
+      "confidence": "typical",
+      "sourcePages": [
+        38,
+        39
+      ],
+      "sourceImage": "/catalog-products/cat-bktp-modular.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": true,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "approximate-generic",
+      "reason": "Общая запись объединяет разные БКТП и 2БКТП. Здесь условно показано однотрансформаторное здание по стр. 38; два конкретно подписанных обозначения имеют отдельные значки по стр. 38 и 39."
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-bktp-modular.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        39
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-bktp-modular-v001",
+    "name": "БКТП-2500/10-0,4 УХЛ1",
+    "designation": "БКТП-2500/10-0,4 УХЛ1",
+    "cohort": "legacy",
+    "category": "substations",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-bktp-modular",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        37,
+        38,
+        39
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "236488914ec3013e59f232783c075ebc04f4f646f9eff731875f0cae35931840",
+    "geometry": {
+      "type": "single-modular-building",
+      "confidence": "source-matched",
+      "sourcePages": [
+        38
+      ],
+      "sourceImage": "/catalog-source/page-038.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Здание с большими парными воротами слева и отдельной дверью справа прямо подписано БКТП-2500/10-0,4 УХЛ1 на стр. 38; конструкция 2БКТП не наследуется. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "single-modular-building",
+      "confidence": "source-based",
+      "sourcePages": [
+        38
+      ],
+      "sourceImage": "/catalog-source/page-038.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Здание с большими парными воротами слева и отдельной дверью справа прямо подписано БКТП-2500/10-0,4 УХЛ1 на стр. 38; конструкция 2БКТП не наследуется."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/page-038.webp",
+      "representation": "source-scan",
+      "sourceId": "substations",
+      "physicalPages": [
+        38
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-bktp-modular-v002",
+    "name": "2БКТП-2500/10-0,4 УХЛ1",
+    "designation": "2БКТП-2500/10-0,4 УХЛ1",
+    "cohort": "legacy",
+    "category": "substations",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-bktp-modular",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        37,
+        38,
+        39
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "3abcce69624578e70ded996f70c34133a0076b12e1ab94649c888dea12082758",
+    "geometry": {
+      "type": "double-modular-building",
+      "confidence": "source-matched",
+      "sourcePages": [
+        39
+      ],
+      "sourceImage": "/catalog-products/cat-bktp-modular.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Трёхмодульное здание с центральным дверным проёмом соответствует прямо подписанной 2БКТП-2500/10-0,4 УХЛ1 на стр. 39; не однотрансформаторная БКТП. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "double-modular-building",
+      "confidence": "source-based",
+      "sourcePages": [
+        39
+      ],
+      "sourceImage": "/catalog-products/cat-bktp-modular.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Трёхмодульное здание с центральным дверным проёмом соответствует прямо подписанной 2БКТП-2500/10-0,4 УХЛ1 на стр. 39; не однотрансформаторная БКТП."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-bktp-modular.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        39
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-bktp-concrete",
+    "name": "Комплектная трансформаторная подстанция в бетонном здании",
+    "designation": "БКТП в бетонном здании",
+    "cohort": "legacy",
+    "category": "substations",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        40,
+        41
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "b0d8bad408d9bf24a05169619572b5d1353a45330c4904d00e5d3d440b8092d3",
+    "geometry": {
+      "type": "concrete-substation-building",
+      "confidence": "source-matched",
+      "sourcePages": [
+        41
+      ],
+      "sourceImage": "/catalog-products/cat-bktp-concrete.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Бетонный блок с плоской плитой кровли, центральными парными и двумя крайними дверями по иллюстрации верхнего модуля на стр. 41; скрытый подземный цоколь не подменяет внешний вид здания. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "concrete-substation-building",
+      "confidence": "source-based",
+      "sourcePages": [
+        41
+      ],
+      "sourceImage": "/catalog-products/cat-bktp-concrete.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Бетонный блок с плоской плитой кровли, центральными парными и двумя крайними дверями по иллюстрации верхнего модуля на стр. 41; скрытый подземный цоколь не подменяет внешний вид здания."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-bktp-concrete.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        41
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-kru-k07-ktz",
+    "name": "Комплектное распределительное устройство серии КРУ К-07 КТЗ",
+    "designation": "КРУ К-07 КТЗ",
+    "cohort": "legacy",
+    "category": "switchgear",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        42,
+        43
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "3f9743ca56f69c329611cf8b00e935156ab81e41ef90aa29c2481a23c5ded6d2",
+    "geometry": {
+      "type": "switchgear",
+      "confidence": "source-matched",
+      "sourcePages": [
+        43
+      ],
+      "sourceImage": "/catalog-products/cat-kru-k07-ktz.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Внутренняя выкатная ячейка с верхней релейной панелью и нижним силовым отсеком; общая конструкция, не схема аппаратов."
+    },
+    "icon": {
+      "type": "switchgear",
+      "confidence": "source-based",
+      "sourcePages": [
+        43
+      ],
+      "sourceImage": "/catalog-products/cat-kru-k07-ktz.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Внутренняя выкатная ячейка с верхней релейной панелью и нижним силовым отсеком; общая конструкция, не схема аппаратов. Значок передаёт общий внешний контур семейства, не точное исполнение."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-kru-k07-ktz.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        43
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-krun07-ktz",
+    "name": "Комплектное распределительное устройство наружной установки КРУН-07 КТЗ",
+    "designation": "КРУН-07 КТЗ",
+    "cohort": "legacy",
+    "category": "switchgear",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        42,
+        43
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "ac0716e35aee2d36eead05f535fac8986c330043587a5e17a3eb455e61442cd8",
+    "geometry": {
+      "type": "outdoor-switchgear-shelter",
+      "confidence": "source-matched",
+      "sourcePages": [
+        43
+      ],
+      "sourceImage": "/catalog-products/cat-krun07-ktz.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Наружная сборка ячеек под общей двускатной кровлей на опорах."
+    },
+    "icon": {
+      "type": "outdoor-switchgear-shelter",
+      "confidence": "source-based",
+      "sourcePages": [
+        43
+      ],
+      "sourceImage": "/catalog-products/cat-krun07-ktz.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Наружная сборка ячеек под общей двускатной кровлей на опорах. Значок передаёт общий внешний контур семейства, не точное исполнение."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-krun07-ktz.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        43
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-kru-kerneu-6-10",
+    "name": "Комплектное распределительное устройство KERNEU кассетного исполнения 6(10) кВ",
+    "designation": "КРУ KERNEU 6(10) кВ",
+    "cohort": "legacy",
+    "category": "switchgear",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        44,
+        45
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "09eb364729bc92c3567cca54a590763a1f41dccd56852617edcfc51a401d0618",
+    "geometry": {
+      "type": "switchgear",
+      "confidence": "source-matched",
+      "sourcePages": [
+        45
+      ],
+      "sourceImage": "/catalog-products/cat-kru-kerneu-6-10.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Глубокая трёхсекционная ячейка с верхними приборами и выкатным силовым отсеком; исходная основа этого визуального типа."
+    },
+    "icon": {
+      "type": "switchgear",
+      "confidence": "source-based",
+      "sourcePages": [
+        45
+      ],
+      "sourceImage": "/catalog-products/cat-kru-kerneu-6-10.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Глубокая трёхсекционная ячейка с верхними приборами и выкатным силовым отсеком; исходная основа этого визуального типа. Значок передаёт общий внешний контур семейства, не точное исполнение."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-kru-kerneu-6-10.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        45
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-kru-kerneu-35",
+    "name": "Комплектное распределительное устройство KERNEU кассетного исполнения 35 кВ",
+    "designation": "КРУ KERNEU 35 кВ / КРУ К-07-К35 АЕ",
+    "cohort": "legacy",
+    "category": "switchgear",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        46,
+        47
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "1dbc862d69273220288aacaccf77234970590fee725011f53373ec280a4d9ba3",
+    "geometry": {
+      "type": "deep-35kv-switchgear",
+      "confidence": "source-matched",
+      "sourcePages": [
+        47
+      ],
+      "sourceImage": "/catalog-products/cat-kru-kerneu-35.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Глубокий корпус 35 кВ с верхним релейным и большим нижним выкатным отсеком по фронтальной и боковой проекциям стр. 47. Фасад ячейки 6–10 кВ не наследуется. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "deep-35kv-switchgear",
+      "confidence": "source-based",
+      "sourcePages": [
+        47
+      ],
+      "sourceImage": "/catalog-products/cat-kru-kerneu-35.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Глубокий корпус 35 кВ с верхним релейным и большим нижним выкатным отсеком по фронтальной и боковой проекциям стр. 47. Фасад ячейки 6–10 кВ не наследуется."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-kru-kerneu-35.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        47
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-k8m",
+    "name": "Комплектное распределительное устройство наружной установки серии К-8М",
+    "designation": "К-8М",
+    "cohort": "legacy",
+    "category": "switchgear",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        48,
+        49
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "ff751567d33732dc3ea74a9417c8811793b9dd6a9f1f455a66c0417c78e10ea3",
+    "geometry": {
+      "type": "outdoor-switchgear-shelter",
+      "confidence": "source-matched",
+      "sourcePages": [
+        49
+      ],
+      "sourceImage": "/catalog-products/cat-k8m.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Глубокая наружная камера в укрытии с двускатной крышей и опорными стойками; визуализируется внешний корпус."
+    },
+    "icon": {
+      "type": "outdoor-switchgear-shelter",
+      "confidence": "source-based",
+      "sourcePages": [
+        49
+      ],
+      "sourceImage": "/catalog-products/cat-k8m.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Глубокая наружная камера в укрытии с двускатной крышей и опорными стойками; визуализируется внешний корпус. Значок передаёт общий внешний контур семейства, не точное исполнение."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-k8m.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        49
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-k59",
+    "name": "Комплектное распределительное устройство наружной установки серии К-59",
+    "designation": "К-59",
+    "cohort": "legacy",
+    "category": "switchgear",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        50,
+        51
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "098c7628e3fa14474e36ee0a86665b792df6b0ca7aa41855793f14a9f44afa3e",
+    "geometry": {
+      "type": "outdoor-switchgear-shelter",
+      "confidence": "source-matched",
+      "sourcePages": [
+        51
+      ],
+      "sourceImage": "/catalog-products/cat-k59.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Наружная камера под крышей на опорных стойках; общий внешний контур с К-8М, без переноса внутренней аппаратуры."
+    },
+    "icon": {
+      "type": "outdoor-switchgear-shelter",
+      "confidence": "source-based",
+      "sourcePages": [
+        51
+      ],
+      "sourceImage": "/catalog-products/cat-k59.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Наружная камера под крышей на опорных стойках; общий внешний контур с К-8М, без переноса внутренней аппаратуры. Значок передаёт общий внешний контур семейства, не точное исполнение."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-k59.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        51
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-km7m",
+    "name": "Комплектное распределительное устройство внутренней установки КРУ-10кВ серии КМ-7М",
+    "designation": "КМ-7М",
+    "cohort": "legacy",
+    "category": "switchgear",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        52,
+        53
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "71c3a6c44a4b9b5d2271c51c057308a3d4330bb5667e0b6d0d89ffebe36b4a1a",
+    "geometry": {
+      "type": "open-drawout-switchgear",
+      "confidence": "source-matched",
+      "sourcePages": [
+        53
+      ],
+      "sourceImage": "/catalog-products/cat-km7m.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Релейный шкаф над открытым выкатным силовым отсеком по стр. 53. В источнике прямо указано отсутствие двери отсека выкатного элемента, поэтому сплошная нижняя дверь не добавлена. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "open-drawout-switchgear",
+      "confidence": "source-based",
+      "sourcePages": [
+        53
+      ],
+      "sourceImage": "/catalog-products/cat-km7m.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Релейный шкаф над открытым выкатным силовым отсеком по стр. 53. В источнике прямо указано отсутствие двери отсека выкатного элемента, поэтому сплошная нижняя дверь не добавлена."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-km7m.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        53
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ktpb-k",
+    "name": "Комплектные трансформаторные подстанции блочные",
+    "designation": "КТПБ(К)",
+    "cohort": "legacy",
+    "category": "substations",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [
+      "cat-ktpb-k-v001",
+      "cat-ktpb-k-v002",
+      "cat-ktpb-k-v003"
+    ],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "966131c7a1ac5c22a4ee97ec218c20e5a79a8cacf533fc4ca3e40fb218cf7c2a",
+    "geometry": {
+      "type": "outdoor-switchyard-substation",
+      "confidence": "source-matched",
+      "sourcePages": [
+        55
+      ],
+      "sourceImage": "/catalog-products/cat-ktpb-k.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Силуэт открытой площадки с аппаратными рамами, трансформатором и отдельным РУ по примеру КТПБ(К) 35/10(6) на стр. 55. Это пример площадки 35 кВ, а не модульное здание и не подтверждённая компоновка исполнений 110/220 кВ. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "outdoor-switchyard-substation",
+      "confidence": "source-based",
+      "sourcePages": [
+        55
+      ],
+      "sourceImage": "/catalog-products/cat-ktpb-k.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Силуэт открытой площадки с аппаратными рамами, трансформатором и отдельным РУ по примеру КТПБ(К) 35/10(6) на стр. 55. Это пример площадки 35 кВ, а не модульное здание и не подтверждённая компоновка исполнений 110/220 кВ."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ktpb-k.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        55
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ktpb-k-v001",
+    "name": "КТПБ(К) 35/10(6)",
+    "designation": "КТПБ(К) 35/10(6)",
+    "cohort": "legacy",
+    "category": "substations",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ktpb-k",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "c12e3f81075c2111ded7a23217f0b3135fae5ba31c121909f9e42fb45a6fd510",
+    "geometry": {
+      "type": "outdoor-switchyard-substation",
+      "confidence": "source-matched",
+      "sourcePages": [
+        55
+      ],
+      "sourceImage": "/catalog-products/cat-ktpb-k.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Исполнение КТПБ(К) 35/10(6) прямо указано в подписи примера общего вида открытой площадки на стр. 55; число аппаратов и размеры площадки условны. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "outdoor-switchyard-substation",
+      "confidence": "source-based",
+      "sourcePages": [
+        55
+      ],
+      "sourceImage": "/catalog-products/cat-ktpb-k.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Исполнение КТПБ(К) 35/10(6) прямо указано в подписи примера общего вида открытой площадки на стр. 55; число аппаратов и размеры площадки условны."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ktpb-k.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        55
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ktpb-k-v002",
+    "name": "КТПБ(К) 110/35/10(6)",
+    "designation": "КТПБ(К) 110/35/10(6)",
+    "cohort": "legacy",
+    "category": "substations",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ktpb-k",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "682adc2c52031b6e5a59c59e4d7d28f01f7c5455d9c451440fe02e79abfd522a",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        55
+      ],
+      "sourceImage": "/catalog-products/cat-ktpb-k.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-only",
+      "reason": "Силуэт открытой площадки с аппаратными рамами, трансформатором и отдельным РУ по примеру КТПБ(К) 35/10(6) на стр. 55. Это пример площадки 35 кВ, а не модульное здание и не подтверждённая компоновка исполнений 110/220 кВ. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "outdoor-switchyard-substation",
+      "confidence": "typical",
+      "sourcePages": [
+        55
+      ],
+      "sourceImage": "/catalog-products/cat-ktpb-k.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": true,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "approximate-generic",
+      "reason": "Типовой символ открытой подстанции; использован контур примера 35 кВ со стр. 55. Конструкция исполнения 110/35/10(6) этим просмотренным общим видом не подтверждается."
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ktpb-k.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        55
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ktpb-k-v003",
+    "name": "КТПБ(К) 220/35/10(6)",
+    "designation": "КТПБ(К) 220/35/10(6)",
+    "cohort": "legacy",
+    "category": "substations",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ktpb-k",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "68733914681bd2cc41e5446812bfc8f6a75491f0acdedce329698e24f468d120",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        55
+      ],
+      "sourceImage": "/catalog-products/cat-ktpb-k.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-only",
+      "reason": "Силуэт открытой площадки с аппаратными рамами, трансформатором и отдельным РУ по примеру КТПБ(К) 35/10(6) на стр. 55. Это пример площадки 35 кВ, а не модульное здание и не подтверждённая компоновка исполнений 110/220 кВ. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "outdoor-switchyard-substation",
+      "confidence": "typical",
+      "sourcePages": [
+        55
+      ],
+      "sourceImage": "/catalog-products/cat-ktpb-k.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": true,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "approximate-generic",
+      "reason": "Типовой символ открытой подстанции; использован контур примера 35 кВ со стр. 55. Конструкция исполнения 220/35/10(6) этим просмотренным общим видом не подтверждается."
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ktpb-k.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        55
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-vru",
+    "name": "Вводно-распределительное устройство",
+    "designation": "ВРУ",
+    "cohort": "legacy",
+    "category": "switchgear",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        60
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "858c3b280d4717586bdfb767d1ffa3f778f34b03f4cca34e9f728ad026f34a6d",
+    "geometry": {
+      "type": null,
+      "confidence": "unverified",
+      "sourcePages": [
+        60
+      ],
+      "sourceImage": null,
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "unverified",
+      "reason": "Проверенного изображения конструкции нет; назначение ВРУ не определяет число и вид шкафов."
+    },
+    "icon": {
+      "type": "distribution-cabinet",
+      "confidence": "typical",
+      "sourcePages": [
+        60
+      ],
+      "sourceImage": null,
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": true,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "approximate-generic",
+      "reason": "Типовая схема напольного вводно-распределительного шкафа по описанию ВРУ. На странице 60 нет подтверждённого чертежа; число секций, фасад и приборы условные."
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": null,
+      "representation": null,
+      "sourceId": null,
+      "physicalPages": []
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-shsn-04",
+    "name": "Шкаф собственных нужд",
+    "designation": "ШСН-0,4кВ",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        61
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "8b8e9d57aaa5433134dee4f966a41ea0074ff657fc98ab2f253d9e45dc72928c",
+    "geometry": {
+      "type": null,
+      "confidence": "unverified",
+      "sourcePages": [
+        61
+      ],
+      "sourceImage": null,
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "unverified",
+      "reason": "Проверенного изображения конструкции нет; данные не подтверждают конкретный фасад шкафа."
+    },
+    "icon": {
+      "type": "distribution-cabinet",
+      "confidence": "typical",
+      "sourcePages": [
+        61
+      ],
+      "sourceImage": null,
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": true,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "approximate-generic",
+      "reason": "Типовая схема шкафа собственных нужд по назначению ШСН. На странице 61 нет подтверждённого чертежа; конкретная компоновка и приборы не установлены."
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": null,
+      "representation": null,
+      "sourceId": null,
+      "physicalPages": []
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-shuot",
+    "name": "Шкаф управления оперативным током",
+    "designation": "ШУОТ",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        62
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "8d04b37ada0950065fc388b400caeb7ac7c70a3f352d6daa3a1220cb76997ff6",
+    "geometry": {
+      "type": "battery-control-rack",
+      "confidence": "source-matched",
+      "sourcePages": [
+        62
+      ],
+      "sourceImage": "/catalog-products/cat-shuot.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "По изображению ШУОТ на странице 62: приборный шкаф и расположенная рядом открытая многоярусная батарейная стойка. Показана конструкция серии, не размеры исполнения. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "battery-control-rack",
+      "confidence": "source-based",
+      "sourcePages": [
+        62
+      ],
+      "sourceImage": "/catalog-products/cat-shuot.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По изображению ШУОТ на странице 62: приборный шкаф и расположенная рядом открытая многоярусная батарейная стойка. Показана конструкция серии, не размеры исполнения."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-shuot.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        62
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-shtz",
+    "name": "Шкаф тепловой защиты и управления обдувом",
+    "designation": "ШТЗ",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        63
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "1c8e9c258717858416f9420ccd591591c509734506638ea780eb7a94fde86b15",
+    "geometry": {
+      "type": "wall-control-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        63
+      ],
+      "sourceImage": "/catalog-products/cat-shtz.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Неглубокий навесной ящик с верхними креплениями, дверными приборами и кнопками; не напольный шкаф."
+    },
+    "icon": {
+      "type": "wall-control-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        63
+      ],
+      "sourceImage": "/catalog-products/cat-shtz.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Габаритный чертёж ШТЗ на странице 63 показывает навесной корпус с приборами и кнопками на двери; используется общая форма ящика."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-shtz.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        63
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-pr-shr11",
+    "name": "Пункты распределительные типа ПР и ШР11",
+    "designation": "ПР и ШР11",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [
+      "cat-pr-shr11-v001",
+      "cat-pr-shr11-v002",
+      "cat-pr-shr11-v003"
+    ],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        64
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "d99f4b40ed2ea7779abd8511939a825eace0507946cc1ce0c2f4d9c3cc9d8755",
+    "geometry": {
+      "type": "open-distribution-panel",
+      "confidence": "source-matched",
+      "sourcePages": [
+        64
+      ],
+      "sourceImage": "/catalog-products/cat-pr-shr11.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "По открытому фронтальному виду страницы 64: рама панели, центральный аппарат и боковые коммутационные группы. Иллюстрация общая для страницы ПР/ШР11; конкретное исполнение не подписано. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "open-distribution-panel",
+      "confidence": "source-based",
+      "sourcePages": [
+        64
+      ],
+      "sourceImage": "/catalog-products/cat-pr-shr11.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По открытому фронтальному виду страницы 64: рама панели, центральный аппарат и боковые коммутационные группы. Иллюстрация общая для страницы ПР/ШР11; конкретное исполнение не подписано."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-pr-shr11.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        64
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-pr-shr11-v001",
+    "name": "ПР и ШР11 · ПР",
+    "designation": "ПР",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-pr-shr11",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        64
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "f9b2a92fa560ad7f160c1678ae204c8c3816589f022b0679950a867c419663d8",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        64
+      ],
+      "sourceImage": "/catalog-products/cat-pr-shr11.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-only",
+      "reason": "По открытому фронтальному виду страницы 64: рама панели, центральный аппарат и боковые коммутационные группы. Иллюстрация общая для страницы ПР/ШР11; конкретное исполнение не подписано. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "open-distribution-panel",
+      "confidence": "typical",
+      "sourcePages": [
+        64
+      ],
+      "sourceImage": "/catalog-products/cat-pr-shr11.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": true,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "approximate-generic",
+      "reason": "Типовая иконка распределительной панели ПР по общей открытой иллюстрации страницы 64; рисунок не подписан как конкретное исполнение ПР, фасад двери не подтверждён."
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-pr-shr11.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        64
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-pr-shr11-v002",
+    "name": "ШР11",
+    "designation": "ШР11",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-pr-shr11",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        64
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "ff9d551313f708f142d12419ba0eb78b70e185fb057a4257e11db1ac16e42c94",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        64
+      ],
+      "sourceImage": "/catalog-products/cat-pr-shr11.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-only",
+      "reason": "По открытому фронтальному виду страницы 64: рама панели, центральный аппарат и боковые коммутационные группы. Иллюстрация общая для страницы ПР/ШР11; конкретное исполнение не подписано. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "open-distribution-panel",
+      "confidence": "typical",
+      "sourcePages": [
+        64
+      ],
+      "sourceImage": "/catalog-products/cat-pr-shr11.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": true,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "approximate-generic",
+      "reason": "Типовая иконка распределительной панели ШР11 по общей открытой иллюстрации страницы 64; отдельный корпус ШР11 и фасад двери не подтверждены."
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-pr-shr11.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        64
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-pr-shr11-v003",
+    "name": "ПР-11",
+    "designation": "ПР-11",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-pr-shr11",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        64
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "40240828e93fdfa5f3343fb5a0af1e2b4228fc0ecaca23258cc19fccaeef58d7",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        64
+      ],
+      "sourceImage": "/catalog-products/cat-pr-shr11.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-only",
+      "reason": "По открытому фронтальному виду страницы 64: рама панели, центральный аппарат и боковые коммутационные группы. Иллюстрация общая для страницы ПР/ШР11; конкретное исполнение не подписано. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "open-distribution-panel",
+      "confidence": "typical",
+      "sourcePages": [
+        64
+      ],
+      "sourceImage": "/catalog-products/cat-pr-shr11.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": true,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "approximate-generic",
+      "reason": "Типовая иконка распределительной панели ПР-11 по общей открытой иллюстрации страницы 64; отдельный корпус ПР-11 и фасад двери не подтверждены."
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-pr-shr11.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        64
+      ]
+    },
+    "proposalEvidence": null
+  }
+]

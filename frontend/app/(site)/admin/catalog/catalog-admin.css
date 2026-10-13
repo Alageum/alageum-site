@@ -1,0 +1,19 @@
+.admin-catalog { max-width: 1280px; }
+.admin-boundary { max-width: 850px; color: #52616c; line-height: 1.7; }
+.admin-toolbar,.admin-form-grid { display:grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap:20px; }
+.admin-toolbar { grid-template-columns: 2fr 1fr auto auto; align-items:end; margin:28px 0; }
+.admin-catalog label { display:flex; flex-direction:column; gap:8px; font-size:14px; font-weight:600; }
+.admin-catalog input,.admin-catalog select,.admin-catalog textarea { border:1px solid #b8c5c5; border-radius:4px; background:#fff; padding:12px; color:#173138; font:inherit; width:100%; }
+.admin-catalog input:disabled { background:#f0f4f4; }
+.admin-catalog textarea { resize:vertical; font-weight:400; }
+.admin-catalog :focus-visible { outline:3px solid #0a7778; outline-offset:3px; }
+.admin-editor { padding:28px; border:1px solid #cbd7d7; background:#f8fbfb; margin:24px 0; }
+.admin-editor-title { display:flex; justify-content:space-between; gap:20px; align-items:center; margin-bottom:24px; }
+.admin-product-form fieldset { border:0; padding:0; margin:0; display:grid; gap:24px; }
+.admin-product-form details { border-top:1px solid #cbd7d7; padding:20px 0; }
+.admin-product-form details label { margin:16px 0; }
+.admin-product-form summary { cursor:pointer; font-weight:600; }
+.admin-product-form .inline-actions { margin-top:24px; flex-wrap:wrap; }
+.admin-error { border:1px solid #b94d42; background:#fff1ef; color:#842a23; padding:16px; line-height:1.6; overflow-wrap:anywhere; }
+.admin-catalog .catalog-table th,.admin-catalog .catalog-table td { padding:18px 14px; }
+@media(max-width:760px) { .admin-toolbar,.admin-form-grid { grid-template-columns:1fr; } .admin-editor { padding:16px; } }

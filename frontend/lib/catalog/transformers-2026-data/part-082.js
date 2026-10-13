@@ -1,0 +1,2383 @@
+// Generated from independently reviewed source records.
+const records = [
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТЦН-250000/220",
+    "execution": "У1, УХЛ1; РПН в нейтрали ВН ±12х1%",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      166,
+      169
+    ],
+    "sourceRow": {
+      "pdfPage": 169,
+      "printedPage": 169,
+      "designation": "ТЦН-250000/220",
+      "variant": null,
+      "tableModelIndexOnPage": 33
+    },
+    "sourceFamilyId": "asia-two-winding-220-rpn",
+    "sourceRecordType": "model",
+    "manufacturer": "ТОО «Asia Trafo»",
+    "manufacturers": [
+      "ТОО «Asia Trafo»"
+    ],
+    "manufacturerEvidencePages": [
+      166
+    ],
+    "brand": "Alageum Electric",
+    "isOrderableSku": false,
+    "power": 250000,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "250000",
+        "unit": "кВА",
+        "page": 169
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 169
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 169
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-11",
+        "unit": "",
+        "page": 169,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 169
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "12,5",
+        "unit": "%",
+        "page": 169
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "*",
+        "unit": "%",
+        "page": 169
+      }
+    ],
+    "notes": [
+      "Source uses an asterisk for unspecified characteristic; no numeric value inferred."
+    ],
+    "image": "/catalog-source/transformers-2026/page-169.webp",
+    "imageSourcePage": 169,
+    "imageCaption": "Страница 169 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "250000",
+        "unit": "кВА",
+        "page": 169
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 169
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 169
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-11",
+        "unit": null,
+        "page": 169
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 169
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "12,5",
+        "unit": "%",
+        "page": 169
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "*",
+        "unit": "%",
+        "page": 169
+      }
+    ],
+    "id": "alageum-tcn-250000-220-a156fbc8",
+    "name": "ТЦН-250000/220",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-asia-two-winding-220-rpn",
+    "familyName": "Двухобмоточные трансформаторы класса напряжения 220 кВ с РПН",
+    "series": "Двухобмоточные трансформаторы класса напряжения 220 кВ с РПН",
+    "subtype": "У1, УХЛ1; РПН в нейтрали ВН ±12х1%",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "250000",
+        "unit": "кВА",
+        "page": 169
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 169
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 169
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-11",
+        "unit": "",
+        "page": 169,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 169
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "12,5",
+        "unit": "%",
+        "page": 169
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "*",
+        "unit": "%",
+        "page": 169
+      }
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТДЦН-250000/220",
+    "execution": "У1, УХЛ1; РПН в нейтрали ВН ±12х1%",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      166,
+      169
+    ],
+    "sourceRow": {
+      "pdfPage": 169,
+      "printedPage": 169,
+      "designation": "ТДЦН-250000/220",
+      "variant": null,
+      "tableModelIndexOnPage": 34
+    },
+    "sourceFamilyId": "asia-two-winding-220-rpn",
+    "sourceRecordType": "model",
+    "manufacturer": "ТОО «Asia Trafo»",
+    "manufacturers": [
+      "ТОО «Asia Trafo»"
+    ],
+    "manufacturerEvidencePages": [
+      166
+    ],
+    "brand": "Alageum Electric",
+    "isOrderableSku": false,
+    "power": 250000,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "250000",
+        "unit": "кВА",
+        "page": 169
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 169
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 169
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-11",
+        "unit": "",
+        "page": 169,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 169
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "12,5",
+        "unit": "%",
+        "page": 169
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "*",
+        "unit": "%",
+        "page": 169
+      }
+    ],
+    "notes": [
+      "Source uses an asterisk for unspecified characteristic; no numeric value inferred."
+    ],
+    "image": "/catalog-source/transformers-2026/page-169.webp",
+    "imageSourcePage": 169,
+    "imageCaption": "Страница 169 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "250000",
+        "unit": "кВА",
+        "page": 169
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 169
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 169
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-11",
+        "unit": null,
+        "page": 169
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 169
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "12,5",
+        "unit": "%",
+        "page": 169
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "*",
+        "unit": "%",
+        "page": 169
+      }
+    ],
+    "id": "alageum-tdcn-250000-220-a6d0cff6",
+    "name": "ТДЦН-250000/220",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-asia-two-winding-220-rpn",
+    "familyName": "Двухобмоточные трансформаторы класса напряжения 220 кВ с РПН",
+    "series": "Двухобмоточные трансформаторы класса напряжения 220 кВ с РПН",
+    "subtype": "У1, УХЛ1; РПН в нейтрали ВН ±12х1%",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "250000",
+        "unit": "кВА",
+        "page": 169
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 169
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 169
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-11",
+        "unit": "",
+        "page": 169,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 169
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "12,5",
+        "unit": "%",
+        "page": 169
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "*",
+        "unit": "%",
+        "page": 169
+      }
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "Двухобмоточные трансформаторы класса напряжения 220 кВ с РПН (расщепленные НН по схеме)",
+    "execution": "У1, УХЛ1; РПН в нейтрали ВН ±12х1%",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      166,
+      170
+    ],
+    "sourceRow": null,
+    "sourceFamilyId": "asia-split-220-rpn",
+    "sourceRecordType": "family",
+    "manufacturer": "ТОО «Asia Trafo»",
+    "manufacturers": [
+      "ТОО «Asia Trafo»"
+    ],
+    "manufacturerEvidencePages": [
+      166
+    ],
+    "brand": null,
+    "isOrderableSku": false,
+    "power": null,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-166.webp",
+    "imageSourcePage": 166,
+    "imageCaption": "Страница 166 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [],
+    "id": "tr2026-family-asia-split-220-rpn",
+    "name": "Двухобмоточные трансформаторы класса напряжения 220 кВ с РПН (расщепленные НН по схеме)",
+    "recordKind": "family",
+    "recordType": "catalog-family",
+    "series": "Двухобмоточные трансформаторы класса напряжения 220 кВ с РПН (расщепленные НН по схеме)",
+    "subtype": "У1, УХЛ1; РПН в нейтрали ВН ±12х1%",
+    "description": "",
+    "variantIds": [
+      "alageum-trdn-32000-220-e6f20d76",
+      "alageum-trdns-32000-220-b79b35f0",
+      "alageum-trdn-40000-220-a1c7d270",
+      "alageum-trdns-40000-220-a60a3ff8",
+      "alageum-trdcn-40000-220-4362a95c",
+      "alageum-trdn-63000-220-9cdd9f88",
+      "alageum-trdcn-63000-220-87e84efa",
+      "alageum-trdn-80000-220-7904acc3",
+      "alageum-trdcn-80000-220-c3395751",
+      "alageum-trdn-125000-220-dfb98af6",
+      "alageum-trdcn-125000-220-388a10ad",
+      "alageum-trdn-160000-220-ff6318de",
+      "alageum-trdcn-160000-220-a61a8e6a",
+      "alageum-trdn-200000-220-c07f50aa",
+      "alageum-trdcn-200000-220-fc60ae1c",
+      "alageum-trdn-280000-220-6953ec4d",
+      "alageum-trdcn-280000-220-8933dd8c"
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТРДН-32000/220",
+    "execution": "У1, УХЛ1; РПН в нейтрали ВН ±12х1%",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      166,
+      170
+    ],
+    "sourceRow": {
+      "pdfPage": 170,
+      "printedPage": 170,
+      "designation": "ТРДН-32000/220",
+      "variant": null,
+      "tableModelIndexOnPage": 1
+    },
+    "sourceFamilyId": "asia-split-220-rpn",
+    "sourceRecordType": "model",
+    "manufacturer": "ТОО «Asia Trafo»",
+    "manufacturers": [
+      "ТОО «Asia Trafo»"
+    ],
+    "manufacturerEvidencePages": [
+      166
+    ],
+    "brand": "Alageum Electric",
+    "isOrderableSku": false,
+    "power": 32000,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "32000",
+        "unit": "кВА",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": "",
+        "page": 170,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "11.5 / 21 / 28",
+        "unit": "%",
+        "page": 170
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,45",
+        "unit": "%",
+        "page": 170
+      }
+    ],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-170.webp",
+    "imageSourcePage": 170,
+    "imageCaption": "Страница 170 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "32000",
+        "unit": "кВА",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": null,
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "11.5 / 21 / 28",
+        "unit": "%",
+        "page": 170
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,45",
+        "unit": "%",
+        "page": 170
+      }
+    ],
+    "id": "alageum-trdn-32000-220-e6f20d76",
+    "name": "ТРДН-32000/220",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-asia-split-220-rpn",
+    "familyName": "Двухобмоточные трансформаторы класса напряжения 220 кВ с РПН (расщепленные НН по схеме)",
+    "series": "Двухобмоточные трансформаторы класса напряжения 220 кВ с РПН (расщепленные НН по схеме)",
+    "subtype": "У1, УХЛ1; РПН в нейтрали ВН ±12х1%",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "32000",
+        "unit": "кВА",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": "",
+        "page": 170,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "11.5 / 21 / 28",
+        "unit": "%",
+        "page": 170
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,45",
+        "unit": "%",
+        "page": 170
+      }
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТРДНС-32000/220",
+    "execution": "У1, УХЛ1; РПН в нейтрали ВН ±12х1%",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      166,
+      170
+    ],
+    "sourceRow": {
+      "pdfPage": 170,
+      "printedPage": 170,
+      "designation": "ТРДНС-32000/220",
+      "variant": null,
+      "tableModelIndexOnPage": 2
+    },
+    "sourceFamilyId": "asia-split-220-rpn",
+    "sourceRecordType": "model",
+    "manufacturer": "ТОО «Asia Trafo»",
+    "manufacturers": [
+      "ТОО «Asia Trafo»"
+    ],
+    "manufacturerEvidencePages": [
+      166
+    ],
+    "brand": "Alageum Electric",
+    "isOrderableSku": false,
+    "power": 32000,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "32000",
+        "unit": "кВА",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": "",
+        "page": 170,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "11.5 / 21 / 28",
+        "unit": "%",
+        "page": 170
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,45",
+        "unit": "%",
+        "page": 170
+      }
+    ],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-170.webp",
+    "imageSourcePage": 170,
+    "imageCaption": "Страница 170 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "32000",
+        "unit": "кВА",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": null,
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "11.5 / 21 / 28",
+        "unit": "%",
+        "page": 170
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,45",
+        "unit": "%",
+        "page": 170
+      }
+    ],
+    "id": "alageum-trdns-32000-220-b79b35f0",
+    "name": "ТРДНС-32000/220",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-asia-split-220-rpn",
+    "familyName": "Двухобмоточные трансформаторы класса напряжения 220 кВ с РПН (расщепленные НН по схеме)",
+    "series": "Двухобмоточные трансформаторы класса напряжения 220 кВ с РПН (расщепленные НН по схеме)",
+    "subtype": "У1, УХЛ1; РПН в нейтрали ВН ±12х1%",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "32000",
+        "unit": "кВА",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": "",
+        "page": 170,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "11.5 / 21 / 28",
+        "unit": "%",
+        "page": 170
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,45",
+        "unit": "%",
+        "page": 170
+      }
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТРДН-40000/220",
+    "execution": "У1, УХЛ1; РПН в нейтрали ВН ±12х1%",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      166,
+      170
+    ],
+    "sourceRow": {
+      "pdfPage": 170,
+      "printedPage": 170,
+      "designation": "ТРДН-40000/220",
+      "variant": null,
+      "tableModelIndexOnPage": 3
+    },
+    "sourceFamilyId": "asia-split-220-rpn",
+    "sourceRecordType": "model",
+    "manufacturer": "ТОО «Asia Trafo»",
+    "manufacturers": [
+      "ТОО «Asia Trafo»"
+    ],
+    "manufacturerEvidencePages": [
+      166
+    ],
+    "brand": "Alageum Electric",
+    "isOrderableSku": false,
+    "power": 40000,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "40000",
+        "unit": "кВА",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": "",
+        "page": 170,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "11.5 / 21 / 28",
+        "unit": "%",
+        "page": 170
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,4",
+        "unit": "%",
+        "page": 170
+      }
+    ],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-170.webp",
+    "imageSourcePage": 170,
+    "imageCaption": "Страница 170 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "40000",
+        "unit": "кВА",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": null,
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "11.5 / 21 / 28",
+        "unit": "%",
+        "page": 170
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,4",
+        "unit": "%",
+        "page": 170
+      }
+    ],
+    "id": "alageum-trdn-40000-220-a1c7d270",
+    "name": "ТРДН-40000/220",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-asia-split-220-rpn",
+    "familyName": "Двухобмоточные трансформаторы класса напряжения 220 кВ с РПН (расщепленные НН по схеме)",
+    "series": "Двухобмоточные трансформаторы класса напряжения 220 кВ с РПН (расщепленные НН по схеме)",
+    "subtype": "У1, УХЛ1; РПН в нейтрали ВН ±12х1%",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "40000",
+        "unit": "кВА",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": "",
+        "page": 170,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "11.5 / 21 / 28",
+        "unit": "%",
+        "page": 170
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,4",
+        "unit": "%",
+        "page": 170
+      }
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТРДНС-40000/220",
+    "execution": "У1, УХЛ1; РПН в нейтрали ВН ±12х1%",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      166,
+      170
+    ],
+    "sourceRow": {
+      "pdfPage": 170,
+      "printedPage": 170,
+      "designation": "ТРДНС-40000/220",
+      "variant": null,
+      "tableModelIndexOnPage": 4
+    },
+    "sourceFamilyId": "asia-split-220-rpn",
+    "sourceRecordType": "model",
+    "manufacturer": "ТОО «Asia Trafo»",
+    "manufacturers": [
+      "ТОО «Asia Trafo»"
+    ],
+    "manufacturerEvidencePages": [
+      166
+    ],
+    "brand": "Alageum Electric",
+    "isOrderableSku": false,
+    "power": 40000,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "40000",
+        "unit": "кВА",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": "",
+        "page": 170,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "11.5 / 21 / 28",
+        "unit": "%",
+        "page": 170
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,4",
+        "unit": "%",
+        "page": 170
+      }
+    ],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-170.webp",
+    "imageSourcePage": 170,
+    "imageCaption": "Страница 170 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "40000",
+        "unit": "кВА",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": null,
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "11.5 / 21 / 28",
+        "unit": "%",
+        "page": 170
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,4",
+        "unit": "%",
+        "page": 170
+      }
+    ],
+    "id": "alageum-trdns-40000-220-a60a3ff8",
+    "name": "ТРДНС-40000/220",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-asia-split-220-rpn",
+    "familyName": "Двухобмоточные трансформаторы класса напряжения 220 кВ с РПН (расщепленные НН по схеме)",
+    "series": "Двухобмоточные трансформаторы класса напряжения 220 кВ с РПН (расщепленные НН по схеме)",
+    "subtype": "У1, УХЛ1; РПН в нейтрали ВН ±12х1%",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "40000",
+        "unit": "кВА",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": "",
+        "page": 170,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "11.5 / 21 / 28",
+        "unit": "%",
+        "page": 170
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,4",
+        "unit": "%",
+        "page": 170
+      }
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТРДЦН-40000/220",
+    "execution": "У1, УХЛ1; РПН в нейтрали ВН ±12х1%",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      166,
+      170
+    ],
+    "sourceRow": {
+      "pdfPage": 170,
+      "printedPage": 170,
+      "designation": "ТРДЦН-40000/220",
+      "variant": null,
+      "tableModelIndexOnPage": 5
+    },
+    "sourceFamilyId": "asia-split-220-rpn",
+    "sourceRecordType": "model",
+    "manufacturer": "ТОО «Asia Trafo»",
+    "manufacturers": [
+      "ТОО «Asia Trafo»"
+    ],
+    "manufacturerEvidencePages": [
+      166
+    ],
+    "brand": "Alageum Electric",
+    "isOrderableSku": false,
+    "power": 40000,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "40000",
+        "unit": "кВА",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": "",
+        "page": 170,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "11.5 / 21 / 28",
+        "unit": "%",
+        "page": 170
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,4",
+        "unit": "%",
+        "page": 170
+      }
+    ],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-170.webp",
+    "imageSourcePage": 170,
+    "imageCaption": "Страница 170 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "40000",
+        "unit": "кВА",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": null,
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "11.5 / 21 / 28",
+        "unit": "%",
+        "page": 170
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,4",
+        "unit": "%",
+        "page": 170
+      }
+    ],
+    "id": "alageum-trdcn-40000-220-4362a95c",
+    "name": "ТРДЦН-40000/220",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-asia-split-220-rpn",
+    "familyName": "Двухобмоточные трансформаторы класса напряжения 220 кВ с РПН (расщепленные НН по схеме)",
+    "series": "Двухобмоточные трансформаторы класса напряжения 220 кВ с РПН (расщепленные НН по схеме)",
+    "subtype": "У1, УХЛ1; РПН в нейтрали ВН ±12х1%",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "40000",
+        "unit": "кВА",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": "",
+        "page": 170,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "11.5 / 21 / 28",
+        "unit": "%",
+        "page": 170
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,4",
+        "unit": "%",
+        "page": 170
+      }
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТРДН-63000/220",
+    "execution": "У1, УХЛ1; РПН в нейтрали ВН ±12х1%",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      166,
+      170
+    ],
+    "sourceRow": {
+      "pdfPage": 170,
+      "printedPage": 170,
+      "designation": "ТРДН-63000/220",
+      "variant": null,
+      "tableModelIndexOnPage": 6
+    },
+    "sourceFamilyId": "asia-split-220-rpn",
+    "sourceRecordType": "model",
+    "manufacturer": "ТОО «Asia Trafo»",
+    "manufacturers": [
+      "ТОО «Asia Trafo»"
+    ],
+    "manufacturerEvidencePages": [
+      166
+    ],
+    "brand": "Alageum Electric",
+    "isOrderableSku": false,
+    "power": 63000,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "63000",
+        "unit": "кВА",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": "",
+        "page": 170,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "11.5 / 21 / 28",
+        "unit": "%",
+        "page": 170
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,4",
+        "unit": "%",
+        "page": 170
+      }
+    ],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-170.webp",
+    "imageSourcePage": 170,
+    "imageCaption": "Страница 170 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "63000",
+        "unit": "кВА",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": null,
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "11.5 / 21 / 28",
+        "unit": "%",
+        "page": 170
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,4",
+        "unit": "%",
+        "page": 170
+      }
+    ],
+    "id": "alageum-trdn-63000-220-9cdd9f88",
+    "name": "ТРДН-63000/220",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-asia-split-220-rpn",
+    "familyName": "Двухобмоточные трансформаторы класса напряжения 220 кВ с РПН (расщепленные НН по схеме)",
+    "series": "Двухобмоточные трансформаторы класса напряжения 220 кВ с РПН (расщепленные НН по схеме)",
+    "subtype": "У1, УХЛ1; РПН в нейтрали ВН ±12х1%",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "63000",
+        "unit": "кВА",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": "",
+        "page": 170,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "11.5 / 21 / 28",
+        "unit": "%",
+        "page": 170
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,4",
+        "unit": "%",
+        "page": 170
+      }
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТРДЦН-63000/220",
+    "execution": "У1, УХЛ1; РПН в нейтрали ВН ±12х1%",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      166,
+      170
+    ],
+    "sourceRow": {
+      "pdfPage": 170,
+      "printedPage": 170,
+      "designation": "ТРДЦН-63000/220",
+      "variant": null,
+      "tableModelIndexOnPage": 7
+    },
+    "sourceFamilyId": "asia-split-220-rpn",
+    "sourceRecordType": "model",
+    "manufacturer": "ТОО «Asia Trafo»",
+    "manufacturers": [
+      "ТОО «Asia Trafo»"
+    ],
+    "manufacturerEvidencePages": [
+      166
+    ],
+    "brand": "Alageum Electric",
+    "isOrderableSku": false,
+    "power": 63000,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "63000",
+        "unit": "кВА",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": "",
+        "page": 170,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "11.5 / 21 / 28",
+        "unit": "%",
+        "page": 170
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,4",
+        "unit": "%",
+        "page": 170
+      }
+    ],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-170.webp",
+    "imageSourcePage": 170,
+    "imageCaption": "Страница 170 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "63000",
+        "unit": "кВА",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": null,
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "11.5 / 21 / 28",
+        "unit": "%",
+        "page": 170
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,4",
+        "unit": "%",
+        "page": 170
+      }
+    ],
+    "id": "alageum-trdcn-63000-220-87e84efa",
+    "name": "ТРДЦН-63000/220",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-asia-split-220-rpn",
+    "familyName": "Двухобмоточные трансформаторы класса напряжения 220 кВ с РПН (расщепленные НН по схеме)",
+    "series": "Двухобмоточные трансформаторы класса напряжения 220 кВ с РПН (расщепленные НН по схеме)",
+    "subtype": "У1, УХЛ1; РПН в нейтрали ВН ±12х1%",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "63000",
+        "unit": "кВА",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": "",
+        "page": 170,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "11.5 / 21 / 28",
+        "unit": "%",
+        "page": 170
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,4",
+        "unit": "%",
+        "page": 170
+      }
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТРДН-80000/220",
+    "execution": "У1, УХЛ1; РПН в нейтрали ВН ±12х1%",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      166,
+      170
+    ],
+    "sourceRow": {
+      "pdfPage": 170,
+      "printedPage": 170,
+      "designation": "ТРДН-80000/220",
+      "variant": null,
+      "tableModelIndexOnPage": 8
+    },
+    "sourceFamilyId": "asia-split-220-rpn",
+    "sourceRecordType": "model",
+    "manufacturer": "ТОО «Asia Trafo»",
+    "manufacturers": [
+      "ТОО «Asia Trafo»"
+    ],
+    "manufacturerEvidencePages": [
+      166
+    ],
+    "brand": "Alageum Electric",
+    "isOrderableSku": false,
+    "power": 80000,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "80000",
+        "unit": "кВА",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": "",
+        "page": 170,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "12 / 22.5 / 38",
+        "unit": "%",
+        "page": 170
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,3",
+        "unit": "%",
+        "page": 170
+      }
+    ],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-170.webp",
+    "imageSourcePage": 170,
+    "imageCaption": "Страница 170 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "80000",
+        "unit": "кВА",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": null,
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "12 / 22.5 / 38",
+        "unit": "%",
+        "page": 170
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,3",
+        "unit": "%",
+        "page": 170
+      }
+    ],
+    "id": "alageum-trdn-80000-220-7904acc3",
+    "name": "ТРДН-80000/220",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-asia-split-220-rpn",
+    "familyName": "Двухобмоточные трансформаторы класса напряжения 220 кВ с РПН (расщепленные НН по схеме)",
+    "series": "Двухобмоточные трансформаторы класса напряжения 220 кВ с РПН (расщепленные НН по схеме)",
+    "subtype": "У1, УХЛ1; РПН в нейтрали ВН ±12х1%",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "80000",
+        "unit": "кВА",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": "",
+        "page": 170,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "12 / 22.5 / 38",
+        "unit": "%",
+        "page": 170
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,3",
+        "unit": "%",
+        "page": 170
+      }
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТРДЦН-80000/220",
+    "execution": "У1, УХЛ1; РПН в нейтрали ВН ±12х1%",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      166,
+      170
+    ],
+    "sourceRow": {
+      "pdfPage": 170,
+      "printedPage": 170,
+      "designation": "ТРДЦН-80000/220",
+      "variant": null,
+      "tableModelIndexOnPage": 9
+    },
+    "sourceFamilyId": "asia-split-220-rpn",
+    "sourceRecordType": "model",
+    "manufacturer": "ТОО «Asia Trafo»",
+    "manufacturers": [
+      "ТОО «Asia Trafo»"
+    ],
+    "manufacturerEvidencePages": [
+      166
+    ],
+    "brand": "Alageum Electric",
+    "isOrderableSku": false,
+    "power": 80000,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "80000",
+        "unit": "кВА",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": "",
+        "page": 170,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "12 / 22.5 / 38",
+        "unit": "%",
+        "page": 170
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,3",
+        "unit": "%",
+        "page": 170
+      }
+    ],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-170.webp",
+    "imageSourcePage": 170,
+    "imageCaption": "Страница 170 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "80000",
+        "unit": "кВА",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": null,
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "12 / 22.5 / 38",
+        "unit": "%",
+        "page": 170
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,3",
+        "unit": "%",
+        "page": 170
+      }
+    ],
+    "id": "alageum-trdcn-80000-220-c3395751",
+    "name": "ТРДЦН-80000/220",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-asia-split-220-rpn",
+    "familyName": "Двухобмоточные трансформаторы класса напряжения 220 кВ с РПН (расщепленные НН по схеме)",
+    "series": "Двухобмоточные трансформаторы класса напряжения 220 кВ с РПН (расщепленные НН по схеме)",
+    "subtype": "У1, УХЛ1; РПН в нейтрали ВН ±12х1%",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "80000",
+        "unit": "кВА",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": "",
+        "page": 170,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "12 / 22.5 / 38",
+        "unit": "%",
+        "page": 170
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,3",
+        "unit": "%",
+        "page": 170
+      }
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТРДН-125000/220",
+    "execution": "У1, УХЛ1; РПН в нейтрали ВН ±12х1%",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      166,
+      170
+    ],
+    "sourceRow": {
+      "pdfPage": 170,
+      "printedPage": 170,
+      "designation": "ТРДН-125000/220",
+      "variant": null,
+      "tableModelIndexOnPage": 10
+    },
+    "sourceFamilyId": "asia-split-220-rpn",
+    "sourceRecordType": "model",
+    "manufacturer": "ТОО «Asia Trafo»",
+    "manufacturers": [
+      "ТОО «Asia Trafo»"
+    ],
+    "manufacturerEvidencePages": [
+      166
+    ],
+    "brand": "Alageum Electric",
+    "isOrderableSku": false,
+    "power": 125000,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "125000",
+        "unit": "кВА",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": "",
+        "page": 170,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "12.5 / * / *",
+        "unit": "%",
+        "page": 170
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,25",
+        "unit": "%",
+        "page": 170
+      }
+    ],
+    "notes": [
+      "Source uses an asterisk for unspecified characteristic; no numeric value inferred."
+    ],
+    "image": "/catalog-source/transformers-2026/page-170.webp",
+    "imageSourcePage": 170,
+    "imageCaption": "Страница 170 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "125000",
+        "unit": "кВА",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": null,
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "12.5 / * / *",
+        "unit": "%",
+        "page": 170
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,25",
+        "unit": "%",
+        "page": 170
+      }
+    ],
+    "id": "alageum-trdn-125000-220-dfb98af6",
+    "name": "ТРДН-125000/220",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-asia-split-220-rpn",
+    "familyName": "Двухобмоточные трансформаторы класса напряжения 220 кВ с РПН (расщепленные НН по схеме)",
+    "series": "Двухобмоточные трансформаторы класса напряжения 220 кВ с РПН (расщепленные НН по схеме)",
+    "subtype": "У1, УХЛ1; РПН в нейтрали ВН ±12х1%",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "125000",
+        "unit": "кВА",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "230",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6.3; 6.6; 10.5; 11; 22; 15.75; 38.5",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": "",
+        "page": 170,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "—",
+        "unit": "кВ",
+        "page": 170
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "12.5 / * / *",
+        "unit": "%",
+        "page": 170
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,25",
+        "unit": "%",
+        "page": 170
+      }
+    ],
+    "configurations": []
+  }
+];
+export default records;

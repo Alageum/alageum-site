@@ -1,0 +1,300 @@
+{
+  "format": "alageum-identity-completion-change-manifest-v1",
+  "baselineCommit": "c7a17f62645f86fd51ee7ae2605e741d1b4e01df",
+  "records": 843,
+  "unchangedOriginalRecords": 823,
+  "admissions": 20,
+  "aliases": 2,
+  "sourceComparisons": 10,
+  "sourcePanels": 12,
+  "newFamilyCards": 0,
+  "sourceInventorySha256": "c3948d7152a6130aa4672b9f6d3d5a8f08144b5965df7bebabca067ba5bc8438",
+  "sourcePdfSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+  "verification": {
+    "frontendUnit": {
+      "passed": 385,
+      "failed": 0
+    },
+    "backendAggregate": {
+      "passed": 577,
+      "failed": 0
+    },
+    "frontendLint": "passed, no warnings",
+    "frontendProductionBuild": "passed",
+    "staticProductRoutes": 845,
+    "completionReproducibility": "passed",
+    "originalImportReproducibility": "passed",
+    "assetApprovalReproducibility": "passed,251geometry/257icons",
+    "mediaReproducibility": "passed,843associations/248rasters/21968700bytes",
+    "postgresIntegration": "not run locally: PostgreSQL binaries unavailable; two transactional/idempotence tests and alias HTTP assertions added to existing hosted suite",
+    "originalMediaAndAssetBindings": "823media associations and251/257channel entries deep-equal baseline"
+  },
+  "files": [
+    {
+      "path": "backend-node/data/catalog-media-manifest.json",
+      "bytes": 956753,
+      "sha256": "e61331cfcd54b81c9c040730ffc9ef0bafd6a4c0f9cfc26d6b0b640f0f8ad5c5"
+    },
+    {
+      "path": "backend-node/data/catalog-release.json",
+      "bytes": 871,
+      "sha256": "10dda07b1e793f39f06b0072b79c99148574fff9f771d80dc451be7eb3f87926"
+    },
+    {
+      "path": "backend-node/src/domain/catalog-identity.js",
+      "bytes": 553,
+      "sha256": "60e7d4d44176ff9eea8a0b4e9a37929014bd212fe6efb938924c9fcb465a159b"
+    },
+    {
+      "path": "backend-node/src/domain/catalog-source.js",
+      "bytes": 4840,
+      "sha256": "249b5b87fac21056364b7c7d1578ee8f24dfede5b95ae1d5d002b0c8f0ee191f"
+    },
+    {
+      "path": "backend-node/src/domain/catalog.js",
+      "bytes": 19150,
+      "sha256": "f9db357fb5a811807315f883b33f861654b2f2d89659bd58777ebfd11febeabb"
+    },
+    {
+      "path": "backend-node/tests/catalog.integration.js",
+      "bytes": 26214,
+      "sha256": "7d0309ba7bf7187454f1f73df312100146f10d95a7c8884e6a491b2b5c2c8d58"
+    },
+    {
+      "path": "docs/catalog-transformers-2026/IMPORT.md",
+      "bytes": 7802,
+      "sha256": "6a0f9690dd62cf84c4ef138b9b9dee6c3abf50171533039d4fd218822a9f8877"
+    },
+    {
+      "path": "frontend/app/(site)/catalog/[slug]/page.js",
+      "bytes": 988,
+      "sha256": "def72f4b2098f66fd8fda57b69514153c074b297e1e33056eead66ff3d55c99e"
+    },
+    {
+      "path": "frontend/lib/catalog/data.js",
+      "bytes": 5682,
+      "sha256": "265d0ed324c8681d7d309c7c4b9bdc9ca21fa35e80d8bf08ab586c29a7ebd662"
+    },
+    {
+      "path": "frontend/lib/catalog/models/transformer2026RuntimeManifest.json",
+      "bytes": 224436,
+      "sha256": "65d8feb3ede6d17c06bc99fed0a087bb2a2c4f0f758470c3b82bb605429adc77"
+    },
+    {
+      "path": "frontend/tests/transformer-import.test.mjs",
+      "bytes": 10520,
+      "sha256": "7a8741059f583b6e4beb3ab05cd78102fe5d719108d4e1a1f7e5859210a4bb70"
+    },
+    {
+      "path": "scripts/approve-transformer-assets.mjs",
+      "bytes": 4830,
+      "sha256": "6f6a570a07bdc013a94bb29077ebd8ecb9a2c009ab760a348aa6c49bf261171a"
+    },
+    {
+      "path": "scripts/catalog/transformer-adapter.mjs",
+      "bytes": 12549,
+      "sha256": "b81ebde346448bc953ea04146b7990f86befec194f0062ab396380d3c2c2857e"
+    },
+    {
+      "path": "scripts/import-transformers-2026.mjs",
+      "bytes": 7029,
+      "sha256": "72af2c6a1d7cddf8cee650fa972d79d152b4f940cf525019f057d320952d86a3"
+    },
+    {
+      "path": "backend-node/data/catalog-identity-completion/manifest.json",
+      "bytes": 31166,
+      "sha256": "fbff5fdd78ed7b7c2b90430cce1f8b23e5ca0c86a63d7edc83f4832b94d2b85d"
+    },
+    {
+      "path": "backend-node/data/catalog-identity-completion/panels-001.json",
+      "bytes": 73602,
+      "sha256": "c9866257a031e10d8306da9d423d7ddb3681277a39a604786498a8b0f1c216d1"
+    },
+    {
+      "path": "backend-node/data/catalog-identity-completion/panels-002.json",
+      "bytes": 64887,
+      "sha256": "e892e9e9b097ef4ce9d87da78d8683cb47fc2ce6fe17de07a451d89a67d94d5d"
+    },
+    {
+      "path": "backend-node/data/catalog-identity-completion/panels-003.json",
+      "bytes": 33598,
+      "sha256": "f1655ec545b9b3cfb21712721820381c613a96cc52f7f8ca7c10ddbe50eb1beb"
+    },
+    {
+      "path": "backend-node/data/catalog-identity-completion/records-001.json",
+      "bytes": 65319,
+      "sha256": "c931d50f510dd472f2717fe1ffe71c218ae0dfbdbe0e03531ca19ea197e39795"
+    },
+    {
+      "path": "backend-node/data/catalog-identity-completion/records-002.json",
+      "bytes": 61264,
+      "sha256": "e20d24fd2ec3ca3a2dfed902d8d5c3605be10cc83d7fbb4d1101d6184c47e7d4"
+    },
+    {
+      "path": "backend-node/data/catalog-identity-completion/records-003.json",
+      "bytes": 66390,
+      "sha256": "64d6ed5f258cf1ca393f2f99cbbda3d699718fac72406127e92b209b0e636b6d"
+    },
+    {
+      "path": "backend-node/data/catalog-identity-completion/records-004.json",
+      "bytes": 62437,
+      "sha256": "94d562b3274028b090335e7a84864b6cbf1f11c62c873e659b75f42f5ec0144a"
+    },
+    {
+      "path": "backend-node/data/catalog-identity-completion/records-005.json",
+      "bytes": 58433,
+      "sha256": "812d394ed51d1d5058195e3dfad55ad470dfc57ab5552b335925c65ec2bc3bf3"
+    },
+    {
+      "path": "backend-node/src/domain/catalog-completion-source.js",
+      "bytes": 2606,
+      "sha256": "3a3b463bb50ac2b531fe831afd25ce82fe33f7033ad0ecb002a71642a2decaf2"
+    },
+    {
+      "path": "backend-node/tests/catalog-identity-completion.test.js",
+      "bytes": 7306,
+      "sha256": "5d352ef57c63e16804888aea012a944e53bb8582f45e7db854abfffbfd294284"
+    },
+    {
+      "path": "docs/catalog-transformers-2026/IDENTITY-COMPLETION.md",
+      "bytes": 8075,
+      "sha256": "a5b0cfbb7da20bf77136399211f47dad81276662e0bbf011d17ea85db9b2fefb"
+    },
+    {
+      "path": "docs/catalog-transformers-2026/completion/manifest.json",
+      "bytes": 31166,
+      "sha256": "fbff5fdd78ed7b7c2b90430cce1f8b23e5ca0c86a63d7edc83f4832b94d2b85d"
+    },
+    {
+      "path": "docs/catalog-transformers-2026/completion/panels-001.json",
+      "bytes": 73602,
+      "sha256": "c9866257a031e10d8306da9d423d7ddb3681277a39a604786498a8b0f1c216d1"
+    },
+    {
+      "path": "docs/catalog-transformers-2026/completion/panels-002.json",
+      "bytes": 64887,
+      "sha256": "e892e9e9b097ef4ce9d87da78d8683cb47fc2ce6fe17de07a451d89a67d94d5d"
+    },
+    {
+      "path": "docs/catalog-transformers-2026/completion/panels-003.json",
+      "bytes": 33598,
+      "sha256": "f1655ec545b9b3cfb21712721820381c613a96cc52f7f8ca7c10ddbe50eb1beb"
+    },
+    {
+      "path": "docs/catalog-transformers-2026/completion/records-001.json",
+      "bytes": 65319,
+      "sha256": "c931d50f510dd472f2717fe1ffe71c218ae0dfbdbe0e03531ca19ea197e39795"
+    },
+    {
+      "path": "docs/catalog-transformers-2026/completion/records-002.json",
+      "bytes": 61264,
+      "sha256": "e20d24fd2ec3ca3a2dfed902d8d5c3605be10cc83d7fbb4d1101d6184c47e7d4"
+    },
+    {
+      "path": "docs/catalog-transformers-2026/completion/records-003.json",
+      "bytes": 66390,
+      "sha256": "64d6ed5f258cf1ca393f2f99cbbda3d699718fac72406127e92b209b0e636b6d"
+    },
+    {
+      "path": "docs/catalog-transformers-2026/completion/records-004.json",
+      "bytes": 62437,
+      "sha256": "94d562b3274028b090335e7a84864b6cbf1f11c62c873e659b75f42f5ec0144a"
+    },
+    {
+      "path": "docs/catalog-transformers-2026/completion/records-005.json",
+      "bytes": 58433,
+      "sha256": "812d394ed51d1d5058195e3dfad55ad470dfc57ab5552b335925c65ec2bc3bf3"
+    },
+    {
+      "path": "docs/catalog-transformers-2026/review/identity-completion/clearance.json",
+      "bytes": 8536,
+      "sha256": "76c113689133f881eb0882d6047b7f2c659913cf7d2a61d669d49a0bb483c6b9"
+    },
+    {
+      "path": "docs/catalog-transformers-2026/review/identity-completion/held-source-records.json",
+      "bytes": 259948,
+      "sha256": "fc25f05ef30d0398a6eb11c0db4e6f9969ebcc679060862237708250d6ef1096"
+    },
+    {
+      "path": "docs/catalog-transformers-2026/review/identity-completion/overlap-findings.json",
+      "bytes": 237248,
+      "sha256": "2211556b81a4eda5b3c2fee9de1375e21bf8a76bbbd691ae6e647373ef56031e"
+    },
+    {
+      "path": "docs/catalog-transformers-2026/review/identity-completion/research-recommendations.json",
+      "bytes": 24225,
+      "sha256": "7c6835de1f7d3594069338fc9d0ca8335aa9913ea4536b6d16b145497a34a104"
+    },
+    {
+      "path": "frontend/lib/catalog/identity-completion-data/manifest.json",
+      "bytes": 31166,
+      "sha256": "fbff5fdd78ed7b7c2b90430cce1f8b23e5ca0c86a63d7edc83f4832b94d2b85d"
+    },
+    {
+      "path": "frontend/lib/catalog/identity-completion-data/panels-001.js",
+      "bytes": 73694,
+      "sha256": "3ae0bebbec9747d8c4b970869951acd355b027ae6634e6e9ff2b0075fb2bd167"
+    },
+    {
+      "path": "frontend/lib/catalog/identity-completion-data/panels-002.js",
+      "bytes": 64979,
+      "sha256": "637b34681e5d3c36c1a876b9afb6c6f11fe4dcdbab7c189efd9af2189d79557f"
+    },
+    {
+      "path": "frontend/lib/catalog/identity-completion-data/panels-003.js",
+      "bytes": 33690,
+      "sha256": "bd18ff768b18495c3b17ab97c2c9eab3c7811653db4530df6c5a752361e90910"
+    },
+    {
+      "path": "frontend/lib/catalog/identity-completion-data/records-001.js",
+      "bytes": 65411,
+      "sha256": "44be9bc553236719929cb5dd5865284c3cb5f6e9624dd776f3e7b0c3554c17f8"
+    },
+    {
+      "path": "frontend/lib/catalog/identity-completion-data/records-002.js",
+      "bytes": 61356,
+      "sha256": "6028111dd2955e477b7a089677171194ec7a447f63f57e6819fb73756a5351f1"
+    },
+    {
+      "path": "frontend/lib/catalog/identity-completion-data/records-003.js",
+      "bytes": 66482,
+      "sha256": "1e7b17309ac71961745a3ad242bbd5f363235e67717627a480e16b7d44fb8a5a"
+    },
+    {
+      "path": "frontend/lib/catalog/identity-completion-data/records-004.js",
+      "bytes": 62529,
+      "sha256": "d0c4776d14a60c08cab52591b65147c1ea3c5b797310ac59b4ef3789ca623054"
+    },
+    {
+      "path": "frontend/lib/catalog/identity-completion-data/records-005.js",
+      "bytes": 58525,
+      "sha256": "bb82e496665d2e056db56f17eb3ea6d9ddb5c6053f1ec74a437f20a1e700370d"
+    },
+    {
+      "path": "frontend/lib/catalog/identityCompletion.js",
+      "bytes": 2802,
+      "sha256": "ee28aeebf1612bbd7e5c81d7a22346f216a938e6c056b3b1573d51fbc5211fe1"
+    },
+    {
+      "path": "frontend/lib/catalog/identityCompletionData.js",
+      "bytes": 718,
+      "sha256": "e55ebdb1d15a77746114917e8586ee09bcced65fc2b3ed7bb9ba8543674fb767"
+    },
+    {
+      "path": "frontend/tests/catalog-identity-completion.test.mjs",
+      "bytes": 11201,
+      "sha256": "8180701df1f0cb5f9d8c88b715fa5c266c46fb505479430790fb9e5850317e3c"
+    },
+    {
+      "path": "scripts/complete-catalog-identities.mjs",
+      "bytes": 14862,
+      "sha256": "14efdd6914cd12856aa1568ac9be57259cb6d7bc61c0c6893b1d9968ce5f87a8"
+    }
+  ],
+  "recordsSha256": "fd1e1167541b1dc1077aaa73b49e81e159ac976eeb202b4a38812bc4e1b05979",
+  "panelsSha256": "94f961cb7d0b8ea1dbe81886e724f8bb1fb33bcdbab4b6dab1e4f89232a70296",
+  "status": "historical-isolated-identity-checkpoint",
+  "isolatedImplementationCommit": "d6578f2131370c2cbcc081604ac162fcb5201425",
+  "currentCombinedCoverage": "docs/catalog-completion-2026-10-06/coverage.json",
+  "note": "File hashes and checks below describe the isolated identity checkpoint before source-unit, UI and asset completion. They are not the final combined release manifest."
+}

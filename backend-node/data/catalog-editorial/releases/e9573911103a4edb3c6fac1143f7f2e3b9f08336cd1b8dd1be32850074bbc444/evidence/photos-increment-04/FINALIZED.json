@@ -1,0 +1,373 @@
+{
+  "status": "frozen_after_visual_and_data_QA",
+  "finalizedAt": "2026-10-12T20:02:46.217911+00:00",
+  "files": [
+    {
+      "path": "README-RU.txt",
+      "bytes": 5139,
+      "sha256": "a8f45ee5e2a390a41a70a5642bf3f59f9043d420363ee8853ecd84fee8f57b91"
+    },
+    {
+      "path": "asset-alternatives/dry4-resolution-dry-instrument-shared-aemz.webp",
+      "bytes": 58340,
+      "sha256": "2e57dabd525487817a3064ae613581ace4d0d0c3c0439b7ae092ebfa368173de"
+    },
+    {
+      "path": "asset-alternatives/dry4-resolution-dry-nom-suet-cylinder.jpg",
+      "bytes": 189937,
+      "sha256": "2d98acc176e3497bc9566e16cca5621dfeb87163b95c1afddde0d3f7a27ce36b"
+    },
+    {
+      "path": "asset-alternatives/dry4-resolution-dry2-nami-td-oblique.jpg",
+      "bytes": 94677,
+      "sha256": "dd41894f62271469afcbda23d9149b84aa38beee402920954785250c866f1872"
+    },
+    {
+      "path": "asset-alternatives/inc02-power-ktz-omzh27-catalog-power_medium.webp",
+      "bytes": 60538,
+      "sha256": "ff33c82ed748b8de30fe849ac2a62c2d7ff4a0f30613dca87b0d90ee0413d842"
+    },
+    {
+      "path": "asset-alternatives/inc04-resolution-ktz-catalog-om.webp",
+      "bytes": 47946,
+      "sha256": "2d948a7799dfed20dda11dbd7767356c12b4d27f22edeb5686622284962ea85c"
+    },
+    {
+      "path": "asset-alternatives/inc04-resolution-ktz-catalog-omp.jpg",
+      "bytes": 190999,
+      "sha256": "f5d03df456d24abb8de749bf60bf2ef865947b7df86dbaf61406d0ba83fa347a"
+    },
+    {
+      "path": "asset-upgrades.json",
+      "bytes": 7428,
+      "sha256": "58a0232567e5e516072fd2bb7d1790907deed45916911e4f2ba7ba00ec0e97f7"
+    },
+    {
+      "path": "contact-sheets/new-visuals-01.jpg",
+      "bytes": 647238,
+      "sha256": "fe3a987b421f154175a5fe7c20d23c8341d19f77b442631fcba1501e9e4aa11e"
+    },
+    {
+      "path": "contact-sheets/new-visuals-02.jpg",
+      "bytes": 672402,
+      "sha256": "5f83b82650f94c802ca26e643d30a5b40d482e0fe6473855003d815fa8c090df"
+    },
+    {
+      "path": "contact-sheets/new-visuals-03.jpg",
+      "bytes": 479618,
+      "sha256": "da0e492f99df69aa2964aef7fc3c7f9f6b4950bb696fbd47badba653d7b9ef4a"
+    },
+    {
+      "path": "contact-sheets/new-visuals-04.jpg",
+      "bytes": 293820,
+      "sha256": "11cc770ca16d5ad16280781466a226d2542d972ade388648edf0aa72c99fec7f"
+    },
+    {
+      "path": "data-sanity.json",
+      "bytes": 1647,
+      "sha256": "e935d758780318227ab6af54f473c6d98024fdae45cdfa3d0a3e99b103eeefbf"
+    },
+    {
+      "path": "family-query-ledgers.json",
+      "bytes": 671172,
+      "sha256": "d9ae36e8f5ab8061aae1028150af954445366821fb8b59ad3f39e11f4d5b67c5"
+    },
+    {
+      "path": "input-source-digests.json",
+      "bytes": 5496,
+      "sha256": "8eb309cf40d32affefba367013b438ac8ccc113b57cebb97552d9e260eb187fc"
+    },
+    {
+      "path": "mapping-corrections.json",
+      "bytes": 4964,
+      "sha256": "1fcd1056910bcbcba333d3e660524f2965ef0eea4fa0edc7c83c2620fb17d25d"
+    },
+    {
+      "path": "mapping-upgrades-applied.json",
+      "bytes": 92704,
+      "sha256": "5af01f7abead7f900a204219485fb0787c2ccd74b8129e4ca4dcac2615fe58c2"
+    },
+    {
+      "path": "merge-audit.json",
+      "bytes": 6243,
+      "sha256": "f54580ae84f44370d79a7312af8918273bcc0bd6c86303da073cb2708e1baa21"
+    },
+    {
+      "path": "photo-candidates-added.json",
+      "bytes": 141963,
+      "sha256": "a103bbb2d24e9764ca76053bf937eba12bf8debf385a04fd6429d612b53294ff"
+    },
+    {
+      "path": "photo-candidates-combined.json",
+      "bytes": 685715,
+      "sha256": "c82e37d4eb098fe16299a05345eed3ee688077426be1243b3542abe00b04ad2d"
+    },
+    {
+      "path": "photo-family-coverage-updated.json",
+      "bytes": 77254,
+      "sha256": "f7d1f13fa8d7be2a1401f9f73bffe620bd38536d4905b922a9612412a2c4b56d"
+    },
+    {
+      "path": "photo-record-coverage-updated.json",
+      "bytes": 1731404,
+      "sha256": "016b6717892c86b1b65429a1611b47ab209064bcbbd150e43a6078998a8dc6ef"
+    },
+    {
+      "path": "qa-review.json",
+      "bytes": 584,
+      "sha256": "501e46e92e10a3a75a69b30134cedeec0adf372d99e3298fc11ee92b22a63ebb"
+    },
+    {
+      "path": "remaining-exact-or-series-photo-needs.json",
+      "bytes": 206653,
+      "sha256": "78c26751e5c9b2e2423dd1c73048da725f5c75238a9e08c772cc36b158a8fb54"
+    },
+    {
+      "path": "remaining-source-request.csv",
+      "bytes": 1568109,
+      "sha256": "de41785dc34ad51df051c71ab59629985d006daa2c2c51cbb420dccb0e1c6b9d"
+    },
+    {
+      "path": "remaining-source-request.json",
+      "bytes": 1959875,
+      "sha256": "2a29cb6166e02a83c44a18d81cf9b195c13ba9128583df4c020de429b4c87736"
+    },
+    {
+      "path": "review-stage-checks.json",
+      "bytes": 166,
+      "sha256": "1ad52f2aecf95213af9b06db01b95d6408f115a6e16c7867631c489c00ac0b12"
+    },
+    {
+      "path": "selected-images/dry4-nami-promsist-front.webp",
+      "bytes": 21348,
+      "sha256": "8ed019f3c33c4bc753fac636f17ea1b63f903af3a0adc43e9f4db1bde443d559"
+    },
+    {
+      "path": "selected-images/dry4-pt100-novatek-probe.jpg",
+      "bytes": 78048,
+      "sha256": "b9e4db59929b6816f2a2ebffae39141d07b71ee9750bfa2471ba1b190d196c10"
+    },
+    {
+      "path": "selected-images/dry4-tsl-baq-factory-frame.jpg",
+      "bytes": 250597,
+      "sha256": "b9d8581a4ec21522ac5adad9e95fba83a077d9841ae156cee2d1468dd9bbce6b"
+    },
+    {
+      "path": "selected-images/dry4-tsl-rst-terminal-side.jpg",
+      "bytes": 250345,
+      "sha256": "0834424ff53ccc5f38b8a438f144aff62ef702f244dfda4c89e0fea6d11d6338"
+    },
+    {
+      "path": "selected-images/dry4-tslz-rst-front.jpg",
+      "bytes": 252561,
+      "sha256": "d2911c12d4c9c33e5fd8bb5322b19cdacca1e7a74781e751565045a94ca243ef"
+    },
+    {
+      "path": "selected-images/dry4-tslz-rst-oblique.jpg",
+      "bytes": 215688,
+      "sha256": "f273a7a5f3b5d473908ce63946ab70e9ba8a713e72bc8b7caf8b7a43e3a44aca"
+    },
+    {
+      "path": "selected-images/dry4-znom-rst-rear.jpg",
+      "bytes": 154533,
+      "sha256": "966ff69c17a71da560ca7c473966f795c3a21b9090bcf98693654f74713acb75"
+    },
+    {
+      "path": "selected-images/inc04-aesh-control-1044-74.jpg",
+      "bytes": 11866,
+      "sha256": "c37b70a51b49a39febb07ed4ba9e3f94c532ee57c83e0573bf0e4d5089eadedb"
+    },
+    {
+      "path": "selected-images/inc04-aesh-mtpo-pole.jpg",
+      "bytes": 15018,
+      "sha256": "a3a9412cd6bd166d013e12e29c536ef8b1311169990fd8d87b36433ea19cbe54"
+    },
+    {
+      "path": "selected-images/inc04-asia-at250000-500-inform-bushing-front.jpg",
+      "bytes": 73954,
+      "sha256": "7b61259e42c64e5c1c4c00c0178543c8d66ef8db54fd54e41ef3957a80570147"
+    },
+    {
+      "path": "selected-images/inc04-asia-trdcn80000-110-installed.jpg",
+      "bytes": 336067,
+      "sha256": "45a65463b4de6e0acd8ea1d4f5072d1266838b794527e5872588b03197d9c94a"
+    },
+    {
+      "path": "selected-images/inc04-asia-trdn280000-220-installation-frame.jpg",
+      "bytes": 48791,
+      "sha256": "5cb312088949ef2d848fd1b9249f867225e0e13a7371f0e928bfa5ae4484c4ba"
+    },
+    {
+      "path": "selected-images/inc04-asia-trdn280000-220-installed-frame.jpg",
+      "bytes": 52335,
+      "sha256": "e06e745be5d1a53e4579e4e583da018647d484a4cad6ba870f45e89d33e566d6"
+    },
+    {
+      "path": "selected-images/inc04-bb-bushk2m-blue.jpg",
+      "bytes": 10099,
+      "sha256": "bff99bd92bc0d7f7a87c6d815ce896da2656a5811d0a9b7fb39b0040ed6469ab"
+    },
+    {
+      "path": "selected-images/inc04-distribution-baq-tmg-factory-row.jpg",
+      "bytes": 284503,
+      "sha256": "89a8ef75ccc74bdc83b2a16a1b0854366e2125685786de96d61c82f3c885f18f"
+    },
+    {
+      "path": "selected-images/inc04-distribution-baq-tmg-passport-detail.jpg",
+      "bytes": 256033,
+      "sha256": "5eebfb6a1139479439389acc19f305be8f9f15a1dd6836c70dda58c7852f206c"
+    },
+    {
+      "path": "selected-images/inc04-distribution-tmpng-side-type.jpg",
+      "bytes": 26620,
+      "sha256": "d8c2c9c9213d9613c8fcf886eb8cb2c51ba5aaf90258b6ea252f3cc39e198cb2"
+    },
+    {
+      "path": "selected-images/inc04-ekt-psk275.jpg",
+      "bytes": 232858,
+      "sha256": "bdc99ee61b7edc8a28a6e3550c7ff0973183b75b9defc4a7908a139088a00aa0"
+    },
+    {
+      "path": "selected-images/inc04-iicom-shsn.png",
+      "bytes": 733585,
+      "sha256": "1f1ddb8472120a73a4957e324e80da91d45d1dc1091a4d7ef134c00b59aa0655"
+    },
+    {
+      "path": "selected-images/inc04-iicom-shuot.png",
+      "bytes": 316287,
+      "sha256": "4a2d9a0918390f94449f3fee5e57bf994157fd24e24a2cb1644a97cbde780fa5"
+    },
+    {
+      "path": "selected-images/inc04-kaztransformator-ktpshg.jpg",
+      "bytes": 22417,
+      "sha256": "0d1e64909774255fca7a25bfa3a9b289a1d74d000d026d268063aa93df4d1b65"
+    },
+    {
+      "path": "selected-images/inc04-kemont-kso3m.jpg",
+      "bytes": 171571,
+      "sha256": "666c9ac290f79bb969786f5524213b04ab6efc52756dfeabce6c65e82840ebac"
+    },
+    {
+      "path": "selected-images/inc04-kurgan-k59-20.jpg",
+      "bytes": 284567,
+      "sha256": "81a83f32d00761dc29ed88a461adbb05e8ead1fc16df2efd7da2d55b83a577ad"
+    },
+    {
+      "path": "selected-images/inc04-kurgan-k59-22.jpg",
+      "bytes": 229103,
+      "sha256": "0d4a7b602370f8ff9d392cfd72f2b7c1f33b5a2b51b7137797e9081c17fd0cc3"
+    },
+    {
+      "path": "selected-images/inc04-kurgan-k59-24.jpg",
+      "bytes": 503278,
+      "sha256": "0f5ae8832ac0b673792f03742d9e3f346c2a32e3618d4c9e7ba02a516955b4ba"
+    },
+    {
+      "path": "selected-images/inc04-kvazar-skip-4.gif",
+      "bytes": 181335,
+      "sha256": "9c968c8c7642a23de33f60353eb5fdedc82abfca06bfe7d5930a226fb36e37c4"
+    },
+    {
+      "path": "selected-images/inc04-medium-snab-tmn1600-035-front-type.jpg",
+      "bytes": 154631,
+      "sha256": "78b20438ab492c6d9fd3a12da41946065293a794d97df3d471b60eeb11875be2"
+    },
+    {
+      "path": "selected-images/inc04-medium-snab-tmn1600-035-rear-type.jpg",
+      "bytes": 127226,
+      "sha256": "a08ddc6d29446ae81a695bcc3298cf78f5ee8713d74c2242f6527e4ee35da7e6"
+    },
+    {
+      "path": "selected-images/inc04-medium-snab-tmn1600-035-side-type.jpg",
+      "bytes": 107404,
+      "sha256": "58703ef3dee949cd972f0237f5ea2a2a998504238a66f4e6af737139ce4abf3c"
+    },
+    {
+      "path": "selected-images/inc04-medium-snab-tmn6300-giaginskaya-front.jpg",
+      "bytes": 140982,
+      "sha256": "9a95147d25a55dc169136af78017d2f0c69d82a45a4180c69b68594e4fd1a536"
+    },
+    {
+      "path": "selected-images/inc04-medium-snab-tmn6300-giaginskaya-rear.jpg",
+      "bytes": 186003,
+      "sha256": "12efd58cce4a901956390924ce5d9e3bd133e25055a4739d8e00dddab1301a23"
+    },
+    {
+      "path": "selected-images/inc04-medium-snab-tmn6300-izobilny-front.jpg",
+      "bytes": 180734,
+      "sha256": "11c189fce37787bcebaa829950bab9a66a617257a77dc4050651caf87eb869e7"
+    },
+    {
+      "path": "selected-images/inc04-medium-snab-tmn6300-izobilny-side.jpg",
+      "bytes": 116474,
+      "sha256": "072d1034555b55ba73358b51a3ae547b7588256537965d9bc8a9b29709ce9ae5"
+    },
+    {
+      "path": "selected-images/inc04-medium-tmn35-workshop-type.jpg",
+      "bytes": 30231,
+      "sha256": "7e1bfceff2e202f71c3c4b83f47552b8404d19c41b1f9e4953a835ba86830116"
+    },
+    {
+      "path": "selected-images/inc04-medium-tmzh27-supplier-type.jpg",
+      "bytes": 31512,
+      "sha256": "1263447c3ab26a2e3441e6f659fd204dfa2a8ddbb50983805eb436bf15565736"
+    },
+    {
+      "path": "selected-images/inc04-melem-kso20-1.jpg",
+      "bytes": 222856,
+      "sha256": "97649c55fc009140ad6b30995bb52e42544c70ef99056500da3a1e33beaf20bd"
+    },
+    {
+      "path": "selected-images/inc04-pss-bdrm-419.jpg",
+      "bytes": 34901,
+      "sha256": "650e7ffc254e78a6b4a23dc5eeaf9118aa23264bf77e2af8f100bc9b712e01f8"
+    },
+    {
+      "path": "selected-images/inc04-pss-bdrm-420.jpg",
+      "bytes": 27228,
+      "sha256": "369bc233334b560e091f6d792b83298be771ed0bced7dae3df7ab4458ce13bf6"
+    },
+    {
+      "path": "selected-images/inc04-pss-bdrm-422.jpg",
+      "bytes": 19317,
+      "sha256": "e78324c1706753535b97df2cde1e7a5360193879a33f2e914e01e90b6e645293"
+    },
+    {
+      "path": "selected-images/inc04-sales-ktpnd-open.png",
+      "bytes": 154443,
+      "sha256": "587cf5774a4eb69a815115435385bd728310560d1146f9eaa32616cdc0559201"
+    },
+    {
+      "path": "selected-images/inc04-sales-rural-ktp-open.png",
+      "bytes": 342728,
+      "sha256": "7bec09f9b6469faeafb6abef54e7ed84ecabd9ac9c54e48897ef009d9d215cb5"
+    },
+    {
+      "path": "selected-images/inc04-sotis-shuot-8.png",
+      "bytes": 183125,
+      "sha256": "f2ca5ee11eb53cae2d733b8c3cfdac5edfc68827d927e4ccf0551d3138d90083"
+    },
+    {
+      "path": "selected-images/inc04-yakno-nsk-18.jpg",
+      "bytes": 110400,
+      "sha256": "ca1ab430d312b4da436147725861fea6e4f2a1640413be889c4505cec757aa48"
+    },
+    {
+      "path": "selected-images/inc04-zem-shtz-front.png",
+      "bytes": 319233,
+      "sha256": "8e555e3f091dc723a7926cf8c71268521aefeebc204f19bcc55359423983df3b"
+    },
+    {
+      "path": "source-audit.json",
+      "bytes": 264336,
+      "sha256": "809bb048d48ec34f44f9f3094043aac57fd6237e2ba61f623eedb2cafaee34c7"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 3810,
+      "sha256": "36b2c67b5e0dfc9faf9ab88d99ce263ee4e64b54a2ae0a7cc2106a5891d30f90"
+    }
+  ],
+  "fileCount": 73,
+  "noFurtherChangesPlanned": true
+}

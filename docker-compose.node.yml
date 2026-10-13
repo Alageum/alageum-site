@@ -1,0 +1,72 @@
+# Standalone opt-in topology: do NOT merge with docker-compose.yml.
+# docker compose --env-file /private/path/alageum-node.env -f docker-compose.node.yml up --build
+name: alageum-node-dev
+services:
+  postgres-node:
+    image: postgres:16-alpine@sha256:16bc17c64a573ef34162af9298258d1aec548232985b33ed7b1eac33ba35c229
+    environment:
+      POSTGRES_DB: alageum_strapi
+      POSTGRES_USER: alageum_strapi
+      POSTGRES_PASSWORD: ${NODE_POSTGRES_PASSWORD:?Set a unique local database password}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U alageum_strapi -d alageum_strapi"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    volumes:
+      - node_postgres_data:/var/lib/postgresql/data
+
+  backend-node:
+    build:
+      context: ./backend-node
+      secrets:
+        - strapi_build_env
+    init: true
+    environment:
+      # Local HTTP CMS login needs development cookies; image assets are built.
+      NODE_ENV: development
+      APP_ENV: ${APP_ENV:-development}
+      HOST: 0.0.0.0
+      PORT: 8000
+      # Intentionally fixed to this dedicated database; never use legacy DATABASE_URL.
+      DATABASE_URL: postgresql://alageum_strapi:${NODE_POSTGRES_PASSWORD:?Set a unique local database password}@postgres-node:5432/alageum_strapi
+      APP_KEYS: ${APP_KEYS:?Set Strapi application keys}
+      ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET:?Set the Strapi admin JWT secret}
+      API_TOKEN_SALT: ${API_TOKEN_SALT:?Set the Strapi API token salt}
+      TRANSFER_TOKEN_SALT: ${TRANSFER_TOKEN_SALT:?Set the Strapi transfer token salt}
+      ENCRYPTION_KEY: ${ENCRYPTION_KEY:?Set the Strapi encryption key}
+      ALAGEUM_JWT_SECRET: ${ALAGEUM_JWT_SECRET:?Set the separate B2B JWT secret}
+      ALAGEUM_SEED_DEMO: ${ALAGEUM_SEED_DEMO:-0}
+      ALAGEUM_IMPORT_CATALOG: ${ALAGEUM_IMPORT_CATALOG:-0}
+      CORS_ORIGINS: http://localhost:${NODE_FRONTEND_PORT:-3000},http://127.0.0.1:${NODE_FRONTEND_PORT:-3000}
+    ports: ["127.0.0.1:${NODE_API_PORT:-8000}:8000"]
+    depends_on:
+      postgres-node:
+        condition: service_healthy
+    volumes:
+      - node_uploads:/app/public/uploads
+
+  frontend-node:
+    build:
+      context: ./frontend
+      args:
+        NEXT_PUBLIC_API_URL: http://localhost:${NODE_API_PORT:-8000}/api/v1
+        NEXT_PUBLIC_CATALOG_SOURCE: api
+    init: true
+    ports: ["127.0.0.1:${NODE_FRONTEND_PORT:-3000}:3000"]
+    depends_on:
+      backend-node:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+secrets:
+  strapi_build_env:
+    file: ${NODE_ENV_FILE:?Set NODE_ENV_FILE to the same private env file used by --env-file}
+
+volumes:
+  node_postgres_data:
+  node_uploads:

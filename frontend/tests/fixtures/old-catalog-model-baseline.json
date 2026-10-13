@@ -1,0 +1,1671 @@
+{
+  "baseline": "PR27 4ce6d0fffd19c047ee2427750d965c5447417050",
+  "records": [
+    {
+      "id": "tmg-400",
+      "type": "oil-transformer",
+      "confidence": "generic",
+      "iconType": "oil-transformer",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "tmg-630",
+      "type": "oil-transformer",
+      "confidence": "generic",
+      "iconType": "oil-transformer",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "tmg-1000",
+      "type": "oil-transformer",
+      "confidence": "generic",
+      "iconType": "oil-transformer",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "tmg-2500",
+      "type": "oil-transformer",
+      "confidence": "generic",
+      "iconType": "oil-transformer",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "tmgs-63",
+      "type": "oil-transformer",
+      "confidence": "generic",
+      "iconType": "oil-transformer",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "tmgs-160",
+      "type": "oil-transformer",
+      "confidence": "generic",
+      "iconType": "oil-transformer",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "tmgf-630",
+      "type": "oil-transformer",
+      "confidence": "generic",
+      "iconType": "oil-transformer",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "tmgf-1600",
+      "type": "oil-transformer",
+      "confidence": "generic",
+      "iconType": "oil-transformer",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "tmeg-250",
+      "type": "oil-transformer",
+      "confidence": "generic",
+      "iconType": "oil-transformer",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "tsl-630",
+      "type": "dry-transformer",
+      "confidence": "generic",
+      "iconType": "dry-transformer",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "tsl-1600",
+      "type": "dry-transformer",
+      "confidence": "generic",
+      "iconType": "dry-transformer",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "ntmi-6",
+      "type": "instrument-transformer",
+      "confidence": "generic",
+      "iconType": "instrument-transformer",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "ntmi-10",
+      "type": "instrument-transformer",
+      "confidence": "generic",
+      "iconType": "instrument-transformer",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "pktp-400",
+      "type": "mining-skid-substation",
+      "confidence": "source-matched",
+      "iconType": "mining-skid-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "pktp-1000",
+      "type": "mining-skid-substation",
+      "confidence": "source-matched",
+      "iconType": "mining-skid-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "rlnd",
+      "type": "disconnector",
+      "confidence": "generic",
+      "iconType": "disconnector",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "kso-366",
+      "type": "single-door-switchgear",
+      "confidence": "source-matched",
+      "iconType": "single-door-switchgear",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "kso-292",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "mesh-top-relay-switchgear",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "kso-2-10",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "relay-panel-switchgear",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktp-25-250",
+      "type": "substation",
+      "confidence": "source-matched",
+      "iconType": "substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpn-25-3150",
+      "type": "compact-substation",
+      "confidence": "source-matched",
+      "iconType": "compact-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpn-25-3150-v004",
+      "type": "compact-substation",
+      "confidence": "source-matched",
+      "iconType": "compact-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpn-25-3150-v005",
+      "type": "compact-substation",
+      "confidence": "source-matched",
+      "iconType": "compact-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpn-25-3150-v006",
+      "type": "compact-substation",
+      "confidence": "source-matched",
+      "iconType": "compact-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpn-25-3150-v007",
+      "type": "compact-substation",
+      "confidence": "source-matched",
+      "iconType": "compact-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-2ktpn-25-3150",
+      "type": "double-compact-substation",
+      "confidence": "source-matched",
+      "iconType": "double-compact-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpg-25-3150",
+      "type": "kiosk-substation",
+      "confidence": "source-matched",
+      "iconType": "kiosk-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpg-25-3150-v001",
+      "type": "kiosk-substation",
+      "confidence": "source-matched",
+      "iconType": "kiosk-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpg-25-3150-v002",
+      "type": "kiosk-substation",
+      "confidence": "source-matched",
+      "iconType": "kiosk-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpg-25-3150-v003",
+      "type": "kiosk-substation",
+      "confidence": "source-matched",
+      "iconType": "kiosk-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpg-25-3150-v004",
+      "type": "kiosk-substation",
+      "confidence": "source-matched",
+      "iconType": "kiosk-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpg-25-3150-v005",
+      "type": "kiosk-substation",
+      "confidence": "source-matched",
+      "iconType": "kiosk-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpg-25-3150-v006",
+      "type": "kiosk-substation",
+      "confidence": "source-matched",
+      "iconType": "kiosk-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpg-25-3150-v007",
+      "type": "kiosk-substation",
+      "confidence": "source-matched",
+      "iconType": "kiosk-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpg-25-3150-v008",
+      "type": "kiosk-substation",
+      "confidence": "source-matched",
+      "iconType": "kiosk-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpg-25-3150-v009",
+      "type": "kiosk-substation",
+      "confidence": "source-matched",
+      "iconType": "kiosk-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpg-25-3150-v010",
+      "type": "kiosk-substation",
+      "confidence": "source-matched",
+      "iconType": "kiosk-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpg-25-3150-v011",
+      "type": "kiosk-substation",
+      "confidence": "source-matched",
+      "iconType": "kiosk-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpg-25-3150-v012",
+      "type": "kiosk-substation",
+      "confidence": "source-matched",
+      "iconType": "kiosk-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-2ktpg-25-3150",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "double-kiosk-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpp-2ktpp-250-6300",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "indoor-transformer-lineup",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-ktpo-4-10",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "tall-single-phase-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpo-4-10-v001",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "tall-single-phase-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpo-4-10-v002",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "tall-single-phase-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpo-4-10-v003",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "tall-single-phase-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpo-4-10-v004",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "tall-single-phase-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpto-80",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "heating-transformer-assembly",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktps-100-1600",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "raised-outdoor-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktps-100-1600-v007",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "raised-outdoor-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-mtp-25-100",
+      "type": "pole-substation",
+      "confidence": "source-matched",
+      "iconType": "pole-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-mtp-25-100-v001",
+      "type": "pole-substation",
+      "confidence": "source-matched",
+      "iconType": "pole-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-mtp-25-100-v002",
+      "type": "pole-substation",
+      "confidence": "source-matched",
+      "iconType": "pole-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-mtp-25-100-v003",
+      "type": "pole-substation",
+      "confidence": "source-matched",
+      "iconType": "pole-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-mtp-25-100-v004",
+      "type": "pole-substation",
+      "confidence": "source-matched",
+      "iconType": "pole-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-mtpo-4-10",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "single-phase-pole-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-kso-366m",
+      "type": "single-door-switchgear",
+      "confidence": "source-matched",
+      "iconType": "single-door-switchgear",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-kso-2-20",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "open-vacuum-switchgear",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-rmu-ae",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "rmu-three-cell-lineup",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-krn-iv",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "outdoor-roof-input-switchgear",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-grsh-04",
+      "type": null,
+      "confidence": "unverified",
+      "iconType": "main-distribution-lineup",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-shcho-70",
+      "type": "distribution-cabinet",
+      "confidence": "source-matched",
+      "iconType": "distribution-cabinet",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-shnn",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "open-sided-distribution-panel",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-shnn-v001",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "open-sided-distribution-panel",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-shnn-v002",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "open-sided-distribution-panel",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-shnn-v003",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "open-sided-distribution-panel",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-shnn-v004",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "open-sided-distribution-panel",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-shnn-v005",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "open-sided-distribution-panel",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-shnn-v006",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "open-sided-distribution-panel",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-shnn-v007",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "open-sided-distribution-panel",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-shnn-v008",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "open-sided-distribution-panel",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-shnn-v009",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "open-sided-distribution-panel",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-shnn-v010",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "open-sided-distribution-panel",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-shnn-v011",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "open-sided-distribution-panel",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-shnn-v012",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "open-sided-distribution-panel",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-shnn-v013",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "open-sided-distribution-panel",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-shnn-v014",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "open-sided-distribution-panel",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-shnn-v015",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "open-sided-feeder-panel",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-shnn-v016",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "open-sided-feeder-panel",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-shnn-v017",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "open-sided-feeder-panel",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-shnn-v018",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "open-sided-feeder-panel",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-shchsu-04",
+      "type": "plain-floor-cabinet",
+      "confidence": "source-matched",
+      "iconType": "plain-floor-cabinet",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-bktp-modular",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "single-modular-building",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-bktp-modular-v001",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "single-modular-building",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-bktp-modular-v002",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "double-modular-building",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-bktp-concrete",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "concrete-substation-building",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-kru-k07-ktz",
+      "type": "switchgear",
+      "confidence": "source-matched",
+      "iconType": "switchgear",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-krun07-ktz",
+      "type": "outdoor-switchgear-shelter",
+      "confidence": "source-matched",
+      "iconType": "outdoor-switchgear-shelter",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-kru-kerneu-6-10",
+      "type": "switchgear",
+      "confidence": "source-matched",
+      "iconType": "switchgear",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-kru-kerneu-35",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "deep-35kv-switchgear",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-k8m",
+      "type": "outdoor-switchgear-shelter",
+      "confidence": "source-matched",
+      "iconType": "outdoor-switchgear-shelter",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-k59",
+      "type": "outdoor-switchgear-shelter",
+      "confidence": "source-matched",
+      "iconType": "outdoor-switchgear-shelter",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-km7m",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "open-drawout-switchgear",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpb-k",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "outdoor-switchyard-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpb-k-v001",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "outdoor-switchyard-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpb-k-v002",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "outdoor-switchyard-substation",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-ktpb-k-v003",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "outdoor-switchyard-substation",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-vru",
+      "type": null,
+      "confidence": "unverified",
+      "iconType": "distribution-cabinet",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-shsn-04",
+      "type": null,
+      "confidence": "unverified",
+      "iconType": "distribution-cabinet",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-shuot",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "battery-control-rack",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-shtz",
+      "type": "wall-control-box",
+      "confidence": "source-matched",
+      "iconType": "wall-control-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-pr-shr11",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "open-distribution-panel",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-pr-shr11-v001",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "open-distribution-panel",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-pr-shr11-v002",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "open-distribution-panel",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-pr-shr11-v003",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "open-distribution-panel",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-yatp",
+      "type": "wall-control-box",
+      "confidence": "source-matched",
+      "iconType": "wall-control-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-yatp-v001",
+      "type": "wall-control-box",
+      "confidence": "source-matched",
+      "iconType": "wall-control-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-yatp-v002",
+      "type": "wall-control-box",
+      "confidence": "source-matched",
+      "iconType": "wall-control-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-yatp-v003",
+      "type": "wall-control-box",
+      "confidence": "source-matched",
+      "iconType": "wall-control-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-yatp-v004",
+      "type": "wall-control-box",
+      "confidence": "source-matched",
+      "iconType": "wall-control-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-yatp-v005",
+      "type": "wall-control-box",
+      "confidence": "source-matched",
+      "iconType": "wall-control-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-yatp-v006",
+      "type": "wall-control-box",
+      "confidence": "source-matched",
+      "iconType": "wall-control-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-yatp-v007",
+      "type": "wall-control-box",
+      "confidence": "source-matched",
+      "iconType": "wall-control-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-yatp-v008",
+      "type": "wall-control-box",
+      "confidence": "source-matched",
+      "iconType": "wall-control-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-yatp-v009",
+      "type": "wall-control-box",
+      "confidence": "source-matched",
+      "iconType": "wall-control-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ya5000-rusm5000",
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "iconType": "wall-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v001",
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "iconType": "wall-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v002",
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "iconType": "wall-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v003",
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "iconType": "wall-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v004",
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "iconType": "wall-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v005",
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "iconType": "wall-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v006",
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "iconType": "wall-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v007",
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "iconType": "wall-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v008",
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "iconType": "wall-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v009",
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "iconType": "wall-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v010",
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "iconType": "wall-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v011",
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "iconType": "wall-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v012",
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "iconType": "wall-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v013",
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "iconType": "wall-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v014",
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "iconType": "wall-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v015",
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "iconType": "wall-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v016",
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "iconType": "wall-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v017",
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "iconType": "wall-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v018",
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "iconType": "wall-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v019",
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "iconType": "wall-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v020",
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "iconType": "wall-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v021",
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "iconType": "wall-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v022",
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "iconType": "wall-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v023",
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "iconType": "wall-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v024",
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "iconType": "wall-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v025",
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "iconType": "wall-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-yauo",
+      "type": null,
+      "confidence": "unverified",
+      "iconType": "wall-control-box",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-yauo-v001",
+      "type": null,
+      "confidence": "unverified",
+      "iconType": "wall-control-box",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-yauo-v002",
+      "type": null,
+      "confidence": "unverified",
+      "iconType": "wall-control-box",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-rusm-5100-5400",
+      "type": null,
+      "confidence": "unverified",
+      "iconType": "wall-control-box",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-rusm-5100-5400-v001",
+      "type": null,
+      "confidence": "unverified",
+      "iconType": "wall-control-box",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-rusm-5100-5400-v002",
+      "type": null,
+      "confidence": "unverified",
+      "iconType": "wall-control-box",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-ptm-tded",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "paired-protection-enclosures",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ptm-tded-v001",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "protection-cabinet",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-ptm-tded-v002",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "protection-cabinet",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-ptm-tded-v003",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "indoor-protection-enclosure",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-ptm-tded-v004",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "protection-cabinet",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-ptm-tded-v005",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "protection-cabinet",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-ptm-tded-v006",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "indoor-protection-enclosure",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-ptm-tded-v007",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "protection-cabinet",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-ptm-tded-v008",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "protection-cabinet",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-ptm-tded-v009",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "indoor-protection-enclosure",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-ptm-tded-v010",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "protection-cabinet",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-ptm-tded-v011",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "indoor-protection-enclosure",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-ptm-tded-v012",
+      "type": "protection-cabinet",
+      "confidence": "source-matched",
+      "iconType": "protection-cabinet",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ptm-tded-v013",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "indoor-protection-enclosure",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-bdrm",
+      "type": "wall-canopy-box",
+      "confidence": "source-matched",
+      "iconType": "wall-canopy-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-bdrm-v001",
+      "type": "wall-canopy-box",
+      "confidence": "source-matched",
+      "iconType": "wall-canopy-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-bdrm-v002",
+      "type": "wall-canopy-box",
+      "confidence": "source-matched",
+      "iconType": "wall-canopy-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-bdrm-v003",
+      "type": "wall-canopy-box",
+      "confidence": "source-matched",
+      "iconType": "wall-canopy-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-bdrm-v004",
+      "type": "wall-canopy-box",
+      "confidence": "source-matched",
+      "iconType": "wall-canopy-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-bdrm-v005",
+      "type": "wall-canopy-box",
+      "confidence": "source-matched",
+      "iconType": "wall-canopy-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-bdrm-v006",
+      "type": "wall-canopy-box",
+      "confidence": "source-matched",
+      "iconType": "wall-canopy-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-bdrm-v007",
+      "type": "wall-canopy-box",
+      "confidence": "source-matched",
+      "iconType": "wall-canopy-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-bdrm-v008",
+      "type": "wall-canopy-box",
+      "confidence": "source-matched",
+      "iconType": "wall-canopy-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-bdrm-v009",
+      "type": "wall-canopy-box",
+      "confidence": "source-matched",
+      "iconType": "wall-canopy-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-bdrm-v010",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "wall-canopy-box",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-bdrm-v011",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "wall-canopy-box",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-pusk-3m",
+      "type": "control-cabinet",
+      "confidence": "source-matched",
+      "iconType": "control-cabinet",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-shueng",
+      "type": null,
+      "confidence": "unverified",
+      "iconType": "control-cabinet",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-kik",
+      "type": "metering-box",
+      "confidence": "source-matched",
+      "iconType": "metering-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-kik-v001",
+      "type": "metering-box",
+      "confidence": "source-matched",
+      "iconType": "metering-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-kik-v002",
+      "type": "metering-box",
+      "confidence": "source-matched",
+      "iconType": "metering-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-kik-v003",
+      "type": "metering-box",
+      "confidence": "source-matched",
+      "iconType": "metering-box",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-skip",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "round-metering-post",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-skip-v001",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "round-metering-post",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-skip-v002",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "round-metering-post",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpzh-2-4",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "railway-pole-single-phase",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpzh-2-4-v001",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "railway-pole-single-phase",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpzh-2-4-v002",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "railway-pole-single-phase",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpzh-25-1000",
+      "type": "railway-frame-substation",
+      "confidence": "source-matched",
+      "iconType": "railway-frame-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpzh-25-1000-v001",
+      "type": "railway-frame-substation",
+      "confidence": "source-matched",
+      "iconType": "railway-frame-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpzh-25-1000-v002",
+      "type": "railway-frame-substation",
+      "confidence": "source-matched",
+      "iconType": "railway-frame-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpzh-25-1000-v003",
+      "type": "railway-frame-substation",
+      "confidence": "source-matched",
+      "iconType": "railway-frame-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpzh-25-1000-v004",
+      "type": "railway-frame-substation",
+      "confidence": "source-matched",
+      "iconType": "railway-frame-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpzh-25-1000-v005",
+      "type": "railway-frame-substation",
+      "confidence": "source-matched",
+      "iconType": "railway-frame-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpzh-25-1000-v006",
+      "type": "railway-frame-substation",
+      "confidence": "source-matched",
+      "iconType": "railway-frame-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpzh-25-1000-v007",
+      "type": "railway-frame-substation",
+      "confidence": "source-matched",
+      "iconType": "railway-frame-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpzh-25-1000-v008",
+      "type": "railway-frame-substation",
+      "confidence": "source-matched",
+      "iconType": "railway-frame-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpzh-25-1000-v009",
+      "type": "railway-frame-substation",
+      "confidence": "source-matched",
+      "iconType": "railway-frame-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-mtpzh-1-25-2-5",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "railway-pole-mini-transformer",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-mtpzh-1-25-2-5-v001",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "railway-pole-mini-transformer",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-mtpzh-1-25-2-5-v002",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "railway-pole-mini-transformer",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-mtpzh-10",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "railway-backboard-transformer",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-mtpzh-10-v001",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "railway-backboard-transformer",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-atp-2x25",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "railway-modular-building",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-psk-27-5",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "railway-sectioning-post",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-psk-27-5-v001",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "railway-sectioning-post",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-kru-27-5",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "railway-side-input-switchgear",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-pktp",
+      "type": "mining-skid-substation",
+      "confidence": "source-matched",
+      "iconType": "mining-skid-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-pktp-v001",
+      "type": "mining-skid-substation",
+      "confidence": "source-matched",
+      "iconType": "mining-skid-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-pktp-v002",
+      "type": "mining-skid-substation",
+      "confidence": "source-matched",
+      "iconType": "mining-skid-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-pktp-v003",
+      "type": "mining-skid-substation",
+      "confidence": "source-matched",
+      "iconType": "mining-skid-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-pktp-v004",
+      "type": "mining-skid-substation",
+      "confidence": "source-matched",
+      "iconType": "mining-skid-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-pktp-v005",
+      "type": "mining-skid-substation",
+      "confidence": "source-matched",
+      "iconType": "mining-skid-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-pktp-v006",
+      "type": "mining-skid-substation",
+      "confidence": "source-matched",
+      "iconType": "mining-skid-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-pktp-v008",
+      "type": "mining-skid-substation",
+      "confidence": "source-matched",
+      "iconType": "mining-skid-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-kru-rn",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "mine-switchgear-window",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-yakno-6-10",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "mine-fenced-switchgear",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-yakno-20",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "mine-fenced-double-switchgear",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpshg",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "mine-low-skid-substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ukzv",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "upper-input-protection",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ukzv-v001",
+      "type": "upper-input-protection",
+      "confidence": "source-matched",
+      "iconType": "upper-input-protection",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ukzv-v002",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "cable-protection-cabinet",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-ukzv-v003",
+      "type": "upper-input-protection",
+      "confidence": "source-matched",
+      "iconType": "upper-input-protection",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ukzv-v004",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "cable-protection-cabinet",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-ukzv-v005",
+      "type": "upper-input-protection",
+      "confidence": "source-matched",
+      "iconType": "upper-input-protection",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ukzv-v006",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "cable-protection-cabinet",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-ukzv-v007",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "cable-protection-cabinet",
+      "iconConfidence": "typical"
+    },
+    {
+      "id": "cat-ukzn",
+      "type": "outdoor-floor-cabinet",
+      "confidence": "source-matched",
+      "iconType": "outdoor-floor-cabinet",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ukzn-v001",
+      "type": "outdoor-floor-cabinet",
+      "confidence": "source-matched",
+      "iconType": "outdoor-floor-cabinet",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ukzn-v002",
+      "type": "outdoor-floor-cabinet",
+      "confidence": "source-matched",
+      "iconType": "outdoor-floor-cabinet",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ukzn-v003",
+      "type": "outdoor-floor-cabinet",
+      "confidence": "source-matched",
+      "iconType": "outdoor-floor-cabinet",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ukzn-v004",
+      "type": "outdoor-floor-cabinet",
+      "confidence": "source-matched",
+      "iconType": "outdoor-floor-cabinet",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-bueskn",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "wall-canopy-control",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-bushk-2m",
+      "type": "plain-floor-cabinet",
+      "confidence": "source-matched",
+      "iconType": "plain-floor-cabinet",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpnd",
+      "type": "substation",
+      "confidence": "source-matched",
+      "iconType": "substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpnd-v001",
+      "type": "substation",
+      "confidence": "source-matched",
+      "iconType": "substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpnd-v002",
+      "type": "substation",
+      "confidence": "source-matched",
+      "iconType": "substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpnd-v003",
+      "type": "substation",
+      "confidence": "source-matched",
+      "iconType": "substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpnd-v004",
+      "type": "substation",
+      "confidence": "source-matched",
+      "iconType": "substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpnd-v005",
+      "type": "substation",
+      "confidence": "source-matched",
+      "iconType": "substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-ktpnd-v006",
+      "type": "substation",
+      "confidence": "source-matched",
+      "iconType": "substation",
+      "iconConfidence": "source-based"
+    },
+    {
+      "id": "cat-modular-oil",
+      "type": null,
+      "confidence": "source-only",
+      "iconType": "long-service-container",
+      "iconConfidence": "source-based"
+    }
+  ]
+}

@@ -1,0 +1,2177 @@
+// Generated from independently reviewed source records.
+const records = [
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТМГ-2000",
+    "execution": "с медными обмотками",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      40,
+      41,
+      43
+    ],
+    "sourceRow": {
+      "designation": "ТМГ-2000",
+      "electricalTablePage": 41,
+      "dimensionsTablePage": 41
+    },
+    "sourceFamilyId": "tmg-copper",
+    "sourceRecordType": "explicit-model-row",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": 2000,
+    "voltage": "6(10)/0,4",
+    "voltageUnit": "кВ",
+    "cooling": null,
+    "installation": "наружной или внутренней",
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "2000",
+        "unit": "кВА",
+        "page": 41
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "page": 41
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nД/Ун-11",
+        "unit": "",
+        "page": 41,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Р о",
+        "value": "2400",
+        "unit": "Вт",
+        "page": 41
+      },
+      {
+        "label": "Рк",
+        "value": "20000",
+        "unit": "Вт",
+        "page": 41
+      },
+      {
+        "label": "U к",
+        "value": "6,0",
+        "unit": "%",
+        "page": 41
+      },
+      {
+        "label": "I о",
+        "value": "0,4",
+        "unit": "%",
+        "page": 41
+      },
+      {
+        "label": "L",
+        "value": "2100",
+        "unit": "",
+        "page": 41,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "B",
+        "value": "1270",
+        "unit": "",
+        "page": 41,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "1950",
+        "unit": "",
+        "page": 41,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A",
+        "value": "1070",
+        "unit": "",
+        "page": 41,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A1",
+        "value": "1070",
+        "unit": "",
+        "page": 41,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "M",
+        "value": "210",
+        "unit": "",
+        "page": 41,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "K",
+        "value": "250",
+        "unit": "",
+        "page": 41,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h",
+        "value": "180",
+        "unit": "",
+        "page": 41,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h1",
+        "value": "160",
+        "unit": "",
+        "page": 41,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Полная масса",
+        "value": "4810",
+        "unit": "кг",
+        "page": 41
+      },
+      {
+        "label": "Масса масла",
+        "value": "970",
+        "unit": "кг",
+        "page": 41
+      },
+      {
+        "label": "Температура умеренного климата",
+        "value": "от +40°C до -45°C",
+        "unit": "°C",
+        "page": 40
+      },
+      {
+        "label": "Температура холодного климата",
+        "value": "от +40°C до -60°C",
+        "unit": "°C",
+        "page": 40
+      },
+      {
+        "label": "Установка",
+        "value": "наружной или внутренней",
+        "unit": "",
+        "page": 40,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Высота установки над уровнем моря",
+        "value": "не более 1000",
+        "unit": "м",
+        "page": 40
+      },
+      {
+        "label": "Исполнение",
+        "value": "герметичное; внутренний объем не имеет сообщения с окружающей средой",
+        "unit": "",
+        "page": 40,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Заполнение",
+        "value": "полностью заполнены трансформаторным маслом",
+        "unit": "",
+        "page": 40,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Стенки",
+        "value": "гофрированные, для увеличения поверхности охлаждения и компенсации температурного расширения масла",
+        "unit": "",
+        "page": 40,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Расширитель / газовая подушка",
+        "value": "Расширитель и воздушная или газовая «подушка» отсутствуют",
+        "unit": "",
+        "page": 40,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Подготовка масла",
+        "value": "перед заливкой в трансформатор дегазируется",
+        "unit": "",
+        "page": 40,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "value": "тряска, вибрация, удары, химически активная среда",
+        "unit": "",
+        "page": 40,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Материал обмоток",
+        "value": "медные",
+        "unit": "",
+        "page": 40,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "notes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed."
+    ],
+    "image": "/catalog-source/transformers-2026/page-041.webp",
+    "imageSourcePage": 41,
+    "imageCaption": "Страница 41 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "2000",
+        "unit": "кВА",
+        "pdfPage": 41,
+        "printedPage": "41",
+        "table": "electrical"
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "pdfPage": 41,
+        "printedPage": "41",
+        "table": "electrical"
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nД/Ун-11",
+        "unit": null,
+        "pdfPage": 41,
+        "printedPage": "41",
+        "table": "electrical"
+      },
+      {
+        "label": "Р о",
+        "value": "2400",
+        "unit": "Вт",
+        "pdfPage": 41,
+        "printedPage": "41",
+        "table": "electrical"
+      },
+      {
+        "label": "Рк",
+        "value": "20000",
+        "unit": "Вт",
+        "pdfPage": 41,
+        "printedPage": "41",
+        "table": "electrical"
+      },
+      {
+        "label": "U к",
+        "value": "6,0",
+        "unit": "%",
+        "pdfPage": 41,
+        "printedPage": "41",
+        "table": "electrical"
+      },
+      {
+        "label": "I о",
+        "value": "0,4",
+        "unit": "%",
+        "pdfPage": 41,
+        "printedPage": "41",
+        "table": "electrical"
+      },
+      {
+        "label": "L",
+        "value": "2100",
+        "unit": null,
+        "pdfPage": 41,
+        "printedPage": "41",
+        "table": "electrical"
+      },
+      {
+        "label": "B",
+        "value": "1270",
+        "unit": null,
+        "pdfPage": 41,
+        "printedPage": "41",
+        "table": "electrical"
+      },
+      {
+        "label": "H",
+        "value": "1950",
+        "unit": null,
+        "pdfPage": 41,
+        "printedPage": "41",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A",
+        "value": "1070",
+        "unit": null,
+        "pdfPage": 41,
+        "printedPage": "41",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A1",
+        "value": "1070",
+        "unit": null,
+        "pdfPage": 41,
+        "printedPage": "41",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "M",
+        "value": "210",
+        "unit": null,
+        "pdfPage": 41,
+        "printedPage": "41",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "K",
+        "value": "250",
+        "unit": null,
+        "pdfPage": 41,
+        "printedPage": "41",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h",
+        "value": "180",
+        "unit": null,
+        "pdfPage": 41,
+        "printedPage": "41",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h1",
+        "value": "160",
+        "unit": null,
+        "pdfPage": 41,
+        "printedPage": "41",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Полная масса",
+        "value": "4810",
+        "unit": "кг",
+        "pdfPage": 41,
+        "printedPage": "41",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Масса масла",
+        "value": "970",
+        "unit": "кг",
+        "pdfPage": 41,
+        "printedPage": "41",
+        "table": "dimensions-and-masses"
+      }
+    ],
+    "id": "alageum-tmg-copper-2000",
+    "name": "ТМГ-2000 (с медными обмотками)",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-tmg-copper",
+    "familyName": "Трансформаторы ТМГ-25-2500 кВА с медными обмотками",
+    "series": "ТМГ",
+    "subtype": "с медными обмотками",
+    "description": "Медные обмотки; герметичное исполнение; полностью заполнен трансформаторным маслом; гофрированные стенки; без расширителя и газовой подушки.",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "2000",
+        "unit": "кВА",
+        "page": 41
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "page": 41
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nД/Ун-11",
+        "unit": "",
+        "page": 41,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Р о",
+        "value": "2400",
+        "unit": "Вт",
+        "page": 41
+      },
+      {
+        "label": "Рк",
+        "value": "20000",
+        "unit": "Вт",
+        "page": 41
+      },
+      {
+        "label": "U к",
+        "value": "6,0",
+        "unit": "%",
+        "page": 41
+      },
+      {
+        "label": "I о",
+        "value": "0,4",
+        "unit": "%",
+        "page": 41
+      },
+      {
+        "label": "L",
+        "value": "2100",
+        "unit": "",
+        "page": 41,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "B",
+        "value": "1270",
+        "unit": "",
+        "page": 41,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "1950",
+        "unit": "",
+        "page": 41,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A",
+        "value": "1070",
+        "unit": "",
+        "page": 41,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A1",
+        "value": "1070",
+        "unit": "",
+        "page": 41,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "M",
+        "value": "210",
+        "unit": "",
+        "page": 41,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "K",
+        "value": "250",
+        "unit": "",
+        "page": 41,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h",
+        "value": "180",
+        "unit": "",
+        "page": 41,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h1",
+        "value": "160",
+        "unit": "",
+        "page": 41,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Полная масса",
+        "value": "4810",
+        "unit": "кг",
+        "page": 41
+      },
+      {
+        "label": "Масса масла",
+        "value": "970",
+        "unit": "кг",
+        "page": 41
+      }
+    ],
+    "configurations": [
+      {
+        "id": "alageum-tmg-copper-2000-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-copper-2000",
+        "page": 41,
+        "sourcePages": [
+          41
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 41,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "20000",
+            "unit": "Вт",
+            "page": 41
+          },
+          {
+            "label": "U к",
+            "value": "6,0",
+            "unit": "%",
+            "page": 41
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-copper-2000-connection-1",
+          "modelId": "alageum-tmg-copper-2000",
+          "familyId": "tmg-copper",
+          "page": 41,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "20000",
+          "UkPercentRaw": "6,0",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmg-copper-2000-connection-2",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-copper-2000",
+        "page": 41,
+        "sourcePages": [
+          41
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 41,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "20000",
+            "unit": "Вт",
+            "page": 41
+          },
+          {
+            "label": "U к",
+            "value": "6,0",
+            "unit": "%",
+            "page": 41
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-copper-2000-connection-2",
+          "modelId": "alageum-tmg-copper-2000",
+          "familyId": "tmg-copper",
+          "page": 41,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "20000",
+          "UkPercentRaw": "6,0",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      }
+    ]
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "Трансформаторы ТМГ-25-2500 кВА с возможностью переключения на стороне ВН 6 кВ на 10 кВ с 2-х этажным переключателем",
+    "execution": "6↔10 кВ, с 2-х этажным переключателем",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      44,
+      45,
+      46,
+      47
+    ],
+    "sourceRow": null,
+    "sourceFamilyId": "tmg-switch-6-10",
+    "sourceRecordType": "family",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": null,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": "наружной или внутренней",
+    "technicalSpecs": [
+      {
+        "label": "Температура умеренного климата",
+        "value": "от +40°C до -45°C",
+        "unit": "°C",
+        "page": 44
+      },
+      {
+        "label": "Температура холодного климата",
+        "value": "от +40°C до -60°C",
+        "unit": "°C",
+        "page": 44
+      },
+      {
+        "label": "Установка",
+        "value": "наружной или внутренней",
+        "unit": "",
+        "page": 44,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Длительность переключения",
+        "value": "15–20",
+        "unit": "минут",
+        "page": 44
+      },
+      {
+        "label": "Переключение ВН",
+        "value": "с 6 кВ на 10 кВ и наоборот с 10 на 6 кВ",
+        "unit": "кВ",
+        "page": 44
+      }
+    ],
+    "notes": [
+      "Drawings on pages 46–47 verified by neighboring section worker, outside assigned visual inspection range."
+    ],
+    "image": "/catalog-source/transformers-2026/page-044.webp",
+    "imageSourcePage": 44,
+    "imageCaption": "Страница 44 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Температура умеренного климата",
+        "value": "от +40°C до -45°C",
+        "unit": "°C",
+        "page": 44
+      },
+      {
+        "label": "Температура холодного климата",
+        "value": "от +40°C до -60°C",
+        "unit": "°C",
+        "page": 44
+      },
+      {
+        "label": "Установка",
+        "value": "наружной или внутренней",
+        "unit": null,
+        "page": 44
+      },
+      {
+        "label": "Длительность переключения",
+        "value": "15–20",
+        "unit": "минут",
+        "page": 44
+      },
+      {
+        "label": "Переключение ВН",
+        "value": "с 6 кВ на 10 кВ и наоборот с 10 на 6 кВ",
+        "unit": "кВ",
+        "page": 44
+      }
+    ],
+    "id": "tr2026-family-tmg-switch-6-10",
+    "name": "Трансформаторы ТМГ-25-2500 кВА с возможностью переключения на стороне ВН 6 кВ на 10 кВ с 2-х этажным переключателем",
+    "recordKind": "family",
+    "recordType": "catalog-family",
+    "series": "ТМГ",
+    "subtype": "6↔10 кВ, с 2-х этажным переключателем",
+    "description": "Переключение со стороны ВН 6 на 10 кВ и обратно; при 10 кВ У/Ун-0, при 6 кВ Д/Ун-11; переключение 15–20 минут; передвижные и перемещаемые установки.",
+    "variantIds": [
+      "alageum-tmg-switch-6-10-25",
+      "alageum-tmg-switch-6-10-40",
+      "alageum-tmg-switch-6-10-63",
+      "alageum-tmg-switch-6-10-100",
+      "alageum-tmg-switch-6-10-160",
+      "alageum-tmg-switch-6-10-250",
+      "alageum-tmg-switch-6-10-1250",
+      "alageum-tmg-switch-6-10-1600",
+      "alageum-tmg-switch-6-10-2000"
+    ],
+    "configurations": [
+      {
+        "id": "alageum-tmg-switch-6-10-25-connection-1",
+        "designation": "При 10 кВ - У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-switch-6-10-25",
+        "page": 44,
+        "sourcePages": [
+          44
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "При 10 кВ - У/Ун-0",
+            "unit": "",
+            "page": 44,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "690",
+            "unit": "Вт",
+            "page": 44
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 44
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-switch-6-10-25-connection-1",
+          "modelId": "alageum-tmg-switch-6-10-25",
+          "familyId": "tmg-switch-6-10",
+          "page": 44,
+          "connectionGroupRaw": "При 10 кВ - У/Ун-0",
+          "PkWRaw": "690",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmg-switch-6-10-25-connection-2",
+        "designation": "При 6 кВ Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-switch-6-10-25",
+        "page": 44,
+        "sourcePages": [
+          44
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "При 6 кВ Д/Ун-11",
+            "unit": "",
+            "page": 44,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "690",
+            "unit": "Вт",
+            "page": 44
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 44
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-switch-6-10-25-connection-2",
+          "modelId": "alageum-tmg-switch-6-10-25",
+          "familyId": "tmg-switch-6-10",
+          "page": 44,
+          "connectionGroupRaw": "При 6 кВ Д/Ун-11",
+          "PkWRaw": "690",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmg-switch-6-10-40-connection-1",
+        "designation": "При 10 кВ - У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-switch-6-10-40",
+        "page": 44,
+        "sourcePages": [
+          44
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "При 10 кВ - У/Ун-0",
+            "unit": "",
+            "page": 44,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "1000",
+            "unit": "Вт",
+            "page": 44
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 44
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-switch-6-10-40-connection-1",
+          "modelId": "alageum-tmg-switch-6-10-40",
+          "familyId": "tmg-switch-6-10",
+          "page": 44,
+          "connectionGroupRaw": "При 10 кВ - У/Ун-0",
+          "PkWRaw": "1000",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmg-switch-6-10-40-connection-2",
+        "designation": "При 6 кВ Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-switch-6-10-40",
+        "page": 44,
+        "sourcePages": [
+          44
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "При 6 кВ Д/Ун-11",
+            "unit": "",
+            "page": 44,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "1000",
+            "unit": "Вт",
+            "page": 44
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 44
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-switch-6-10-40-connection-2",
+          "modelId": "alageum-tmg-switch-6-10-40",
+          "familyId": "tmg-switch-6-10",
+          "page": 44,
+          "connectionGroupRaw": "При 6 кВ Д/Ун-11",
+          "PkWRaw": "1000",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmg-switch-6-10-63-connection-1",
+        "designation": "При 10 кВ - У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-switch-6-10-63",
+        "page": 44,
+        "sourcePages": [
+          44
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "При 10 кВ - У/Ун-0",
+            "unit": "",
+            "page": 44,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "1470",
+            "unit": "Вт",
+            "page": 44
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 44
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-switch-6-10-63-connection-1",
+          "modelId": "alageum-tmg-switch-6-10-63",
+          "familyId": "tmg-switch-6-10",
+          "page": 44,
+          "connectionGroupRaw": "При 10 кВ - У/Ун-0",
+          "PkWRaw": "1470",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmg-switch-6-10-63-connection-2",
+        "designation": "При 6 кВ Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-switch-6-10-63",
+        "page": 44,
+        "sourcePages": [
+          44
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "При 6 кВ Д/Ун-11",
+            "unit": "",
+            "page": 44,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "1470",
+            "unit": "Вт",
+            "page": 44
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 44
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-switch-6-10-63-connection-2",
+          "modelId": "alageum-tmg-switch-6-10-63",
+          "familyId": "tmg-switch-6-10",
+          "page": 44,
+          "connectionGroupRaw": "При 6 кВ Д/Ун-11",
+          "PkWRaw": "1470",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmg-switch-6-10-100-connection-1",
+        "designation": "При 10 кВ - У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-switch-6-10-100",
+        "page": 44,
+        "sourcePages": [
+          44
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "При 10 кВ - У/Ун-0",
+            "unit": "",
+            "page": 44,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "2270",
+            "unit": "Вт",
+            "page": 44
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 44
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-switch-6-10-100-connection-1",
+          "modelId": "alageum-tmg-switch-6-10-100",
+          "familyId": "tmg-switch-6-10",
+          "page": 44,
+          "connectionGroupRaw": "При 10 кВ - У/Ун-0",
+          "PkWRaw": "2270",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmg-switch-6-10-100-connection-2",
+        "designation": "При 6 кВ Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-switch-6-10-100",
+        "page": 44,
+        "sourcePages": [
+          44
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "При 6 кВ Д/Ун-11",
+            "unit": "",
+            "page": 44,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "2270",
+            "unit": "Вт",
+            "page": 44
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 44
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-switch-6-10-100-connection-2",
+          "modelId": "alageum-tmg-switch-6-10-100",
+          "familyId": "tmg-switch-6-10",
+          "page": 44,
+          "connectionGroupRaw": "При 6 кВ Д/Ун-11",
+          "PkWRaw": "2270",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmg-switch-6-10-160-connection-1",
+        "designation": "При 10 кВ - У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-switch-6-10-160",
+        "page": 44,
+        "sourcePages": [
+          44
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "При 10 кВ - У/Ун-0",
+            "unit": "",
+            "page": 44,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "3100",
+            "unit": "Вт",
+            "page": 44
+          },
+          {
+            "label": "U к",
+            "value": "5,0",
+            "unit": "%",
+            "page": 44
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-switch-6-10-160-connection-1",
+          "modelId": "alageum-tmg-switch-6-10-160",
+          "familyId": "tmg-switch-6-10",
+          "page": 44,
+          "connectionGroupRaw": "При 10 кВ - У/Ун-0",
+          "PkWRaw": "3100",
+          "UkPercentRaw": "5,0",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmg-switch-6-10-160-connection-2",
+        "designation": "При 6 кВ Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-switch-6-10-160",
+        "page": 44,
+        "sourcePages": [
+          44
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "При 6 кВ Д/Ун-11",
+            "unit": "",
+            "page": 44,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "3100",
+            "unit": "Вт",
+            "page": 44
+          },
+          {
+            "label": "U к",
+            "value": "5,0",
+            "unit": "%",
+            "page": 44
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-switch-6-10-160-connection-2",
+          "modelId": "alageum-tmg-switch-6-10-160",
+          "familyId": "tmg-switch-6-10",
+          "page": 44,
+          "connectionGroupRaw": "При 6 кВ Д/Ун-11",
+          "PkWRaw": "3100",
+          "UkPercentRaw": "5,0",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmg-switch-6-10-250-connection-1",
+        "designation": "При 10 кВ - У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-switch-6-10-250",
+        "page": 44,
+        "sourcePages": [
+          44
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "При 10 кВ - У/Ун-0",
+            "unit": "",
+            "page": 44,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "4200",
+            "unit": "Вт",
+            "page": 44
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 44
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-switch-6-10-250-connection-1",
+          "modelId": "alageum-tmg-switch-6-10-250",
+          "familyId": "tmg-switch-6-10",
+          "page": 44,
+          "connectionGroupRaw": "При 10 кВ - У/Ун-0",
+          "PkWRaw": "4200",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmg-switch-6-10-250-connection-2",
+        "designation": "При 6 кВ Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-switch-6-10-250",
+        "page": 44,
+        "sourcePages": [
+          44
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "При 6 кВ Д/Ун-11",
+            "unit": "",
+            "page": 44,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "4200",
+            "unit": "Вт",
+            "page": 44
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 44
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-switch-6-10-250-connection-2",
+          "modelId": "alageum-tmg-switch-6-10-250",
+          "familyId": "tmg-switch-6-10",
+          "page": 44,
+          "connectionGroupRaw": "При 6 кВ Д/Ун-11",
+          "PkWRaw": "4200",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmg-switch-6-10-1250-connection-1",
+        "designation": "При 10 кВ - У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-switch-6-10-1250",
+        "page": 44,
+        "sourcePages": [
+          44
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "При 10 кВ - У/Ун-0",
+            "unit": "",
+            "page": 44,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "15000",
+            "unit": "Вт",
+            "page": 44
+          },
+          {
+            "label": "U к",
+            "value": "6,0",
+            "unit": "%",
+            "page": 44
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-switch-6-10-1250-connection-1",
+          "modelId": "alageum-tmg-switch-6-10-1250",
+          "familyId": "tmg-switch-6-10",
+          "page": 44,
+          "connectionGroupRaw": "При 10 кВ - У/Ун-0",
+          "PkWRaw": "15000",
+          "UkPercentRaw": "6,0",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmg-switch-6-10-1250-connection-2",
+        "designation": "При 6 кВ Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-switch-6-10-1250",
+        "page": 44,
+        "sourcePages": [
+          44
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "При 6 кВ Д/Ун-11",
+            "unit": "",
+            "page": 44,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "15000",
+            "unit": "Вт",
+            "page": 44
+          },
+          {
+            "label": "U к",
+            "value": "6,0",
+            "unit": "%",
+            "page": 44
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-switch-6-10-1250-connection-2",
+          "modelId": "alageum-tmg-switch-6-10-1250",
+          "familyId": "tmg-switch-6-10",
+          "page": 44,
+          "connectionGroupRaw": "При 6 кВ Д/Ун-11",
+          "PkWRaw": "15000",
+          "UkPercentRaw": "6,0",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmg-switch-6-10-1600-connection-1",
+        "designation": "При 10 кВ - У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-switch-6-10-1600",
+        "page": 45,
+        "sourcePages": [
+          45
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "При 10 кВ - У/Ун-0",
+            "unit": "",
+            "page": 45,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "18000",
+            "unit": "Вт",
+            "page": 45
+          },
+          {
+            "label": "U к",
+            "value": "6,5",
+            "unit": "%",
+            "page": 45
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-switch-6-10-1600-connection-1",
+          "modelId": "alageum-tmg-switch-6-10-1600",
+          "familyId": "tmg-switch-6-10",
+          "page": 45,
+          "connectionGroupRaw": "При 10 кВ - У/Ун-0",
+          "PkWRaw": "18000",
+          "UkPercentRaw": "6,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmg-switch-6-10-1600-connection-2",
+        "designation": "При 6 кВ Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-switch-6-10-1600",
+        "page": 45,
+        "sourcePages": [
+          45
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "При 6 кВ Д/Ун-11",
+            "unit": "",
+            "page": 45,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "18000",
+            "unit": "Вт",
+            "page": 45
+          },
+          {
+            "label": "U к",
+            "value": "6,5",
+            "unit": "%",
+            "page": 45
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-switch-6-10-1600-connection-2",
+          "modelId": "alageum-tmg-switch-6-10-1600",
+          "familyId": "tmg-switch-6-10",
+          "page": 45,
+          "connectionGroupRaw": "При 6 кВ Д/Ун-11",
+          "PkWRaw": "18000",
+          "UkPercentRaw": "6,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmg-switch-6-10-2000-connection-1",
+        "designation": "При 10 кВ - У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-switch-6-10-2000",
+        "page": 45,
+        "sourcePages": [
+          45
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "При 10 кВ - У/Ун-0",
+            "unit": "",
+            "page": 45,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "25000",
+            "unit": "Вт",
+            "page": 45
+          },
+          {
+            "label": "U к",
+            "value": "6,0",
+            "unit": "%",
+            "page": 45
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-switch-6-10-2000-connection-1",
+          "modelId": "alageum-tmg-switch-6-10-2000",
+          "familyId": "tmg-switch-6-10",
+          "page": 45,
+          "connectionGroupRaw": "При 10 кВ - У/Ун-0",
+          "PkWRaw": "25000",
+          "UkPercentRaw": "6,0",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmg-switch-6-10-2000-connection-2",
+        "designation": "При 6 кВ Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-switch-6-10-2000",
+        "page": 45,
+        "sourcePages": [
+          45
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "При 6 кВ Д/Ун-11",
+            "unit": "",
+            "page": 45,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "25000",
+            "unit": "Вт",
+            "page": 45
+          },
+          {
+            "label": "U к",
+            "value": "6,0",
+            "unit": "%",
+            "page": 45
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-switch-6-10-2000-connection-2",
+          "modelId": "alageum-tmg-switch-6-10-2000",
+          "familyId": "tmg-switch-6-10",
+          "page": 45,
+          "connectionGroupRaw": "При 6 кВ Д/Ун-11",
+          "PkWRaw": "25000",
+          "UkPercentRaw": "6,0",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      }
+    ]
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТМГ-25",
+    "execution": "с возможностью переключения на стороне ВН 6 кВ на 10 кВ с 2-х этажным переключателем",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      44,
+      45,
+      46
+    ],
+    "sourceRow": {
+      "designation": "ТМГ-25",
+      "electricalTablePage": 44,
+      "dimensionsTablePage": 45
+    },
+    "sourceFamilyId": "tmg-switch-6-10",
+    "sourceRecordType": "explicit-model-row",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": 25,
+    "voltage": "6(10)/0,4",
+    "voltageUnit": "кВ",
+    "cooling": null,
+    "installation": "наружной или внутренней",
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "25",
+        "unit": "кВА",
+        "page": 44
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "page": 44
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "При 10 кВ - У/Ун-0\nПри 6 кВ Д/Ун-11",
+        "unit": "",
+        "page": 44,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Р о",
+        "value": "120",
+        "unit": "Вт",
+        "page": 44
+      },
+      {
+        "label": "Рк",
+        "value": "690",
+        "unit": "Вт",
+        "page": 44
+      },
+      {
+        "label": "U к",
+        "value": "4,5",
+        "unit": "%",
+        "page": 44
+      },
+      {
+        "label": "I о",
+        "value": "2,8",
+        "unit": "%",
+        "page": 44
+      },
+      {
+        "label": "L",
+        "value": "890",
+        "unit": "",
+        "page": 44,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "B",
+        "value": "520",
+        "unit": "",
+        "page": 44,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "980",
+        "unit": "",
+        "page": 45,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A",
+        "value": "450",
+        "unit": "",
+        "page": 45,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A1",
+        "value": "400",
+        "unit": "",
+        "page": 45,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "M",
+        "value": "105",
+        "unit": "",
+        "page": 45,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": "",
+        "page": 45,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h",
+        "value": "90",
+        "unit": "",
+        "page": 45,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h1",
+        "value": "100",
+        "unit": "",
+        "page": 45,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Полная масса",
+        "value": "490",
+        "unit": "кг",
+        "page": 45
+      },
+      {
+        "label": "Масса масла",
+        "value": "95",
+        "unit": "кг",
+        "page": 45
+      },
+      {
+        "label": "Температура умеренного климата",
+        "value": "от +40°C до -45°C",
+        "unit": "°C",
+        "page": 44
+      },
+      {
+        "label": "Температура холодного климата",
+        "value": "от +40°C до -60°C",
+        "unit": "°C",
+        "page": 44
+      },
+      {
+        "label": "Установка",
+        "value": "наружной или внутренней",
+        "unit": "",
+        "page": 44,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Длительность переключения",
+        "value": "15–20",
+        "unit": "минут",
+        "page": 44
+      },
+      {
+        "label": "Переключение ВН",
+        "value": "с 6 кВ на 10 кВ и наоборот с 10 на 6 кВ",
+        "unit": "кВ",
+        "page": 44
+      }
+    ],
+    "notes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed.",
+      "Drawings on pages 46–47 verified by neighboring section worker, outside assigned visual inspection range."
+    ],
+    "image": "/catalog-source/transformers-2026/page-044.webp",
+    "imageSourcePage": 44,
+    "imageCaption": "Страница 44 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "25",
+        "unit": "кВА",
+        "pdfPage": 44,
+        "printedPage": "44",
+        "table": "electrical"
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "pdfPage": 44,
+        "printedPage": "44",
+        "table": "electrical"
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "При 10 кВ - У/Ун-0\nПри 6 кВ Д/Ун-11",
+        "unit": null,
+        "pdfPage": 44,
+        "printedPage": "44",
+        "table": "electrical"
+      },
+      {
+        "label": "Р о",
+        "value": "120",
+        "unit": "Вт",
+        "pdfPage": 44,
+        "printedPage": "44",
+        "table": "electrical"
+      },
+      {
+        "label": "Рк",
+        "value": "690",
+        "unit": "Вт",
+        "pdfPage": 44,
+        "printedPage": "44",
+        "table": "electrical"
+      },
+      {
+        "label": "U к",
+        "value": "4,5",
+        "unit": "%",
+        "pdfPage": 44,
+        "printedPage": "44",
+        "table": "electrical"
+      },
+      {
+        "label": "I о",
+        "value": "2,8",
+        "unit": "%",
+        "pdfPage": 44,
+        "printedPage": "44",
+        "table": "electrical"
+      },
+      {
+        "label": "L",
+        "value": "890",
+        "unit": null,
+        "pdfPage": 44,
+        "printedPage": "44",
+        "table": "electrical"
+      },
+      {
+        "label": "B",
+        "value": "520",
+        "unit": null,
+        "pdfPage": 44,
+        "printedPage": "44",
+        "table": "electrical"
+      },
+      {
+        "label": "H",
+        "value": "980",
+        "unit": null,
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A",
+        "value": "450",
+        "unit": null,
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A1",
+        "value": "400",
+        "unit": null,
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "M",
+        "value": "105",
+        "unit": null,
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": null,
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h",
+        "value": "90",
+        "unit": null,
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h1",
+        "value": "100",
+        "unit": null,
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Полная масса",
+        "value": "490",
+        "unit": "кг",
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Масса масла",
+        "value": "95",
+        "unit": "кг",
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "dimensions-and-masses"
+      }
+    ],
+    "id": "alageum-tmg-switch-6-10-25",
+    "name": "ТМГ-25 (6↔10 кВ, с 2-х этажным переключателем)",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-tmg-switch-6-10",
+    "familyName": "Трансформаторы ТМГ-25-2500 кВА с возможностью переключения на стороне ВН 6 кВ на 10 кВ с 2-х этажным переключателем",
+    "series": "ТМГ",
+    "subtype": "с возможностью переключения на стороне ВН 6 кВ на 10 кВ с 2-х этажным переключателем",
+    "description": "Переключение со стороны ВН 6 на 10 кВ и обратно; при 10 кВ У/Ун-0, при 6 кВ Д/Ун-11; переключение 15–20 минут; передвижные и перемещаемые установки.",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "25",
+        "unit": "кВА",
+        "page": 44
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "page": 44
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "При 10 кВ - У/Ун-0\nПри 6 кВ Д/Ун-11",
+        "unit": "",
+        "page": 44,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Р о",
+        "value": "120",
+        "unit": "Вт",
+        "page": 44
+      },
+      {
+        "label": "Рк",
+        "value": "690",
+        "unit": "Вт",
+        "page": 44
+      },
+      {
+        "label": "U к",
+        "value": "4,5",
+        "unit": "%",
+        "page": 44
+      },
+      {
+        "label": "I о",
+        "value": "2,8",
+        "unit": "%",
+        "page": 44
+      },
+      {
+        "label": "L",
+        "value": "890",
+        "unit": "",
+        "page": 44,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "B",
+        "value": "520",
+        "unit": "",
+        "page": 44,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "980",
+        "unit": "",
+        "page": 45,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A",
+        "value": "450",
+        "unit": "",
+        "page": 45,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A1",
+        "value": "400",
+        "unit": "",
+        "page": 45,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "M",
+        "value": "105",
+        "unit": "",
+        "page": 45,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": "",
+        "page": 45,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h",
+        "value": "90",
+        "unit": "",
+        "page": 45,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h1",
+        "value": "100",
+        "unit": "",
+        "page": 45,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Полная масса",
+        "value": "490",
+        "unit": "кг",
+        "page": 45
+      },
+      {
+        "label": "Масса масла",
+        "value": "95",
+        "unit": "кг",
+        "page": 45
+      }
+    ],
+    "configurations": [
+      {
+        "id": "alageum-tmg-switch-6-10-25-connection-1",
+        "designation": "При 10 кВ - У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-switch-6-10-25",
+        "page": 44,
+        "sourcePages": [
+          44
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "При 10 кВ - У/Ун-0",
+            "unit": "",
+            "page": 44,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "690",
+            "unit": "Вт",
+            "page": 44
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 44
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-switch-6-10-25-connection-1",
+          "modelId": "alageum-tmg-switch-6-10-25",
+          "familyId": "tmg-switch-6-10",
+          "page": 44,
+          "connectionGroupRaw": "При 10 кВ - У/Ун-0",
+          "PkWRaw": "690",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmg-switch-6-10-25-connection-2",
+        "designation": "При 6 кВ Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-switch-6-10-25",
+        "page": 44,
+        "sourcePages": [
+          44
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "При 6 кВ Д/Ун-11",
+            "unit": "",
+            "page": 44,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "690",
+            "unit": "Вт",
+            "page": 44
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 44
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-switch-6-10-25-connection-2",
+          "modelId": "alageum-tmg-switch-6-10-25",
+          "familyId": "tmg-switch-6-10",
+          "page": 44,
+          "connectionGroupRaw": "При 6 кВ Д/Ун-11",
+          "PkWRaw": "690",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      }
+    ]
+  }
+];
+export default records;

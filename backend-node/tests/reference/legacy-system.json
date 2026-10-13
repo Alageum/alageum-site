@@ -1,0 +1,1357 @@
+{
+  "evidence": "system DTO/metrics reference; not full legacy endpoint execution",
+  "source_revision": "74b92855d1dcc2997c471823f83686ac66972649",
+  "source_sha256": {
+    "backend/app/api/system.py": "d323369d9b7f23cbad18360228f455be20ff2f3f35dcb7f6645c952f84f7acf6",
+    "backend/app/core/metrics.py": "f295284890abc1626ec0649af9f52aea61effb062719ea7e49f072e2022049a8",
+    "backend/uv.lock": "80d93e2751be39e87ef0480761caa00369657f022bab5db4c51edeae36e7935e"
+  },
+  "runtime_versions": {
+    "fastapi": "0.141.1",
+    "starlette": "1.6.0",
+    "pydantic": "2.13.4",
+    "pydantic-core": "2.46.4",
+    "httpx": "0.28.1"
+  },
+  "python_requirement": ">=3.12",
+  "limits": [
+    "Only frozen HealthResponse, ReadinessResponse, VersionResponse, MetricsRecorder, and MemoryMetricsRecorder class ASTs execute.",
+    "No legacy app, endpoint body, middleware, database, settings loader, or SQLAlchemy import executes.",
+    "Timestamp vectors cover Date-representable milliseconds, rendered as UTC with the frozen Pydantic zero/six-digit fractional shape.",
+    "Metrics steps reproduce literal HTTP increment/observe/error calls; middleware scope and safe-500 behavior are separately approved Node adaptations.",
+    "Boundary integer vectors seed isolated recorder internals to test exact integer output without executing quadrillions of requests.",
+    "Node version intentionally uses the checked-in package version, constant ALAGEUM API name, and guarded application mode; configurable legacy metadata is not reproduced."
+  ],
+  "dto_cases": [
+    {
+      "kind": "health",
+      "input_timestamp": "2026-10-03T12:34:56.123000+00:00",
+      "ignored_extras": {
+        "password": "fixture-secret",
+        "database_url": "fixture-database-secret",
+        "backend": "unapproved",
+        "migration": "unapproved",
+        "APP_VERSION": "spoofed"
+      },
+      "field_allowlist": [
+        "status",
+        "timestamp"
+      ],
+      "expected": {
+        "status": "ok",
+        "timestamp": "2026-10-03T12:34:56.123000Z"
+      }
+    },
+    {
+      "kind": "readiness",
+      "input_timestamp": "2026-10-03T12:34:56.123000+00:00",
+      "ignored_extras": {
+        "password": "fixture-secret",
+        "database_url": "fixture-database-secret",
+        "backend": "unapproved",
+        "migration": "unapproved",
+        "APP_VERSION": "spoofed"
+      },
+      "field_allowlist": [
+        "status",
+        "timestamp",
+        "database"
+      ],
+      "expected": {
+        "status": "ok",
+        "timestamp": "2026-10-03T12:34:56.123000Z",
+        "database": "ok"
+      }
+    },
+    {
+      "kind": "version",
+      "input_timestamp": "2026-10-03T12:34:56.123000+00:00",
+      "ignored_extras": {
+        "password": "fixture-secret",
+        "database_url": "fixture-database-secret",
+        "backend": "unapproved",
+        "migration": "unapproved",
+        "APP_VERSION": "spoofed"
+      },
+      "field_allowlist": [
+        "name",
+        "version",
+        "environment"
+      ],
+      "expected": {
+        "name": "ALAGEUM API",
+        "version": "0.1.0",
+        "environment": "test"
+      }
+    }
+  ],
+  "timestamp_cases": [
+    {
+      "input": "2026-10-03T12:34:56.000Z",
+      "expected": "2026-10-03T12:34:56Z"
+    },
+    {
+      "input": "2026-10-03T12:34:56.001Z",
+      "expected": "2026-10-03T12:34:56.001000Z"
+    },
+    {
+      "input": "2026-10-03T12:34:56.010Z",
+      "expected": "2026-10-03T12:34:56.010000Z"
+    },
+    {
+      "input": "2026-10-03T12:34:56.100Z",
+      "expected": "2026-10-03T12:34:56.100000Z"
+    },
+    {
+      "input": "2026-10-03T12:34:56.123Z",
+      "expected": "2026-10-03T12:34:56.123000Z"
+    },
+    {
+      "input": "2026-10-03T12:34:56.999Z",
+      "expected": "2026-10-03T12:34:56.999000Z"
+    },
+    {
+      "input": "1970-01-01T00:00:00.000Z",
+      "expected": "1970-01-01T00:00:00Z"
+    },
+    {
+      "input": "1969-12-31T23:59:59.999Z",
+      "expected": "1969-12-31T23:59:59.999000Z"
+    },
+    {
+      "input": "2000-02-29T23:59:59.001Z",
+      "expected": "2000-02-29T23:59:59.001000Z"
+    },
+    {
+      "input": "0001-01-01T00:00:00.001Z",
+      "expected": "0001-01-01T00:00:00.001000Z"
+    },
+    {
+      "input": "9999-12-31T23:59:59.999Z",
+      "expected": "9999-12-31T23:59:59.999000Z"
+    },
+    {
+      "input": "2026-10-03T15:04:56.120+02:30",
+      "expected": "2026-10-03T12:34:56.120000Z"
+    }
+  ],
+  "metric_steps": [
+    {
+      "status": 200,
+      "duration_seconds": 0.0078125,
+      "before": {},
+      "after": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.007812,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "status": 200,
+      "duration_seconds": 0.1,
+      "before": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.007812,
+        "http_request_duration_seconds_count": 1
+      },
+      "after": {
+        "http_requests_total": 2,
+        "http_request_duration_seconds_sum": 0.107813,
+        "http_request_duration_seconds_count": 2
+      }
+    },
+    {
+      "status": 399,
+      "duration_seconds": 0.2,
+      "before": {
+        "http_requests_total": 2,
+        "http_request_duration_seconds_sum": 0.107813,
+        "http_request_duration_seconds_count": 2
+      },
+      "after": {
+        "http_requests_total": 3,
+        "http_request_duration_seconds_sum": 0.307813,
+        "http_request_duration_seconds_count": 3
+      }
+    },
+    {
+      "status": 400,
+      "duration_seconds": 0.0,
+      "before": {
+        "http_requests_total": 3,
+        "http_request_duration_seconds_sum": 0.307813,
+        "http_request_duration_seconds_count": 3
+      },
+      "after": {
+        "http_requests_total": 4,
+        "http_errors_total": 1,
+        "http_request_duration_seconds_sum": 0.307813,
+        "http_request_duration_seconds_count": 4
+      }
+    },
+    {
+      "status": 429,
+      "duration_seconds": 0.0234375,
+      "before": {
+        "http_requests_total": 4,
+        "http_errors_total": 1,
+        "http_request_duration_seconds_sum": 0.307813,
+        "http_request_duration_seconds_count": 4
+      },
+      "after": {
+        "http_requests_total": 5,
+        "http_errors_total": 2,
+        "http_request_duration_seconds_sum": 0.33125,
+        "http_request_duration_seconds_count": 5
+      }
+    },
+    {
+      "status": 500,
+      "duration_seconds": 1.1234565,
+      "before": {
+        "http_requests_total": 5,
+        "http_errors_total": 2,
+        "http_request_duration_seconds_sum": 0.33125,
+        "http_request_duration_seconds_count": 5
+      },
+      "after": {
+        "http_requests_total": 6,
+        "http_errors_total": 3,
+        "http_request_duration_seconds_sum": 1.454707,
+        "http_request_duration_seconds_count": 6
+      }
+    }
+  ],
+  "rounding_cases": [
+    {
+      "id": "zero",
+      "samples": [
+        0.0
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "negative-zero",
+      "samples": [
+        -0.0
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "decimal-addition",
+      "samples": [
+        0.1,
+        0.2
+      ],
+      "expected": {
+        "http_requests_total": 2,
+        "http_request_duration_seconds_sum": 0.3,
+        "http_request_duration_seconds_count": 2
+      }
+    },
+    {
+      "id": "accumulated-unrounded",
+      "samples": [
+        4e-07,
+        4e-07
+      ],
+      "expected": {
+        "http_requests_total": 2,
+        "http_request_duration_seconds_sum": 1e-06,
+        "http_request_duration_seconds_count": 2
+      }
+    },
+    {
+      "id": "tiny-sample-after-large",
+      "samples": [
+        1e+16,
+        0.1
+      ],
+      "expected": {
+        "http_requests_total": 2,
+        "http_request_duration_seconds_sum": 1e+16,
+        "http_request_duration_seconds_count": 2
+      }
+    },
+    {
+      "id": "binary-tie-even-down-below",
+      "samples": [
+        0.007812499999999999
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.007812,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary-tie-even-down-at",
+      "samples": [
+        0.0078125
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.007812,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary-tie-even-down-above",
+      "samples": [
+        0.007812500000000002
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.007813,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary-tie-even-up-below",
+      "samples": [
+        0.023437499999999997
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.023437,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary-tie-even-up-at",
+      "samples": [
+        0.0234375
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.023438,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary-tie-even-up-above",
+      "samples": [
+        0.023437500000000003
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.023438,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary-tie-second-down-below",
+      "samples": [
+        0.03906249999999999
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.039062,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary-tie-second-down-at",
+      "samples": [
+        0.0390625
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.039062,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary-tie-second-down-above",
+      "samples": [
+        0.03906250000000001
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.039063,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "decimal-half-micro-below",
+      "samples": [
+        4.999999999999999e-07
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "decimal-half-micro-at",
+      "samples": [
+        5e-07
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "decimal-half-micro-above",
+      "samples": [
+        5.000000000000001e-07
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 1e-06,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "decimal-one-and-half-micro-below",
+      "samples": [
+        1.4999999999999998e-06
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 1e-06,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "decimal-one-and-half-micro-at",
+      "samples": [
+        1.5e-06
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 2e-06,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "decimal-one-and-half-micro-above",
+      "samples": [
+        1.5000000000000002e-06
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 2e-06,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "decimal-six-digits-below",
+      "samples": [
+        1.2345674999999998
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 1.234567,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "decimal-six-digits-at",
+      "samples": [
+        1.2345675
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 1.234568,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "decimal-six-digits-above",
+      "samples": [
+        1.2345675000000003
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 1.234568,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "decimal-carry-below",
+      "samples": [
+        0.9999994999999999
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.999999,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "decimal-carry-at",
+      "samples": [
+        0.9999995
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 1.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "decimal-carry-above",
+      "samples": [
+        0.9999995000000002
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 1.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "large-decimal-below",
+      "samples": [
+        123456789.12345648
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 123456789.123456,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "large-decimal-at",
+      "samples": [
+        123456789.1234565
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 123456789.123456,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "large-decimal-above",
+      "samples": [
+        123456789.12345651
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 123456789.123457,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-0000000000000001",
+      "samples": [
+        5e-324
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-000fffffffffffff",
+      "samples": [
+        2.225073858507201e-308
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-0010000000000000",
+      "samples": [
+        2.2250738585072014e-308
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-3fffffffffffffff",
+      "samples": [
+        1.9999999999999998
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 2.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-4340000000000000",
+      "samples": [
+        9007199254740992.0
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 9007199254740992.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-7fefffffffffffff",
+      "samples": [
+        1.7976931348623157e+308
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 1.7976931348623157e+308,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-2ce32d2335df4552",
+      "samples": [
+        1.838639451725799e-92
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-4a08dd5ae3c45eb9",
+      "samples": [
+        4.5424691455839706e+48
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 4.5424691455839706e+48,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-060f53667996eed4",
+      "samples": [
+        1.7257423766123035e-279
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-620299d828cea893",
+      "samples": [
+        1.3389454584793822e+164
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 1.3389454584793822e+164,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-460c9ae76aeb1026",
+      "samples": [
+        2.832911260854019e+29
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 2.832911260854019e+29,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-044096810dda31fd",
+      "samples": [
+        3.404283677272497e-288
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-7740ba5cd9cfcdc8",
+      "samples": [
+        2.6969299244639813e+266
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 2.6969299244639813e+266,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-584091117d6ce577",
+      "samples": [
+        1.3055203142772916e+117
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 1.3055203142772916e+117,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-0c01bf36eba4e03a",
+      "samples": [
+        7.74598943303156e-251
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-0de922c6e861b181",
+      "samples": [
+        1.1780047045992423e-241
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-63efaef9e3b7b3fc",
+      "samples": [
+        2.4488415317447682e+173
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 2.4488415317447682e+173,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-38641c0ab2a8289b",
+      "samples": [
+        4.727729718970044e-37
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-76097f2e7152898e",
+      "samples": [
+        3.920233946420565e+260
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 3.920233946420565e+260,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-38c0dcb70ccd2145",
+      "samples": [
+        2.5371370712753487e-35
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-7f2c0d6bd4209570",
+      "samples": [
+        3.8474773167913083e+304
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 3.8474773167913083e+304,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-3cc17db3a57455ff",
+      "samples": [
+        4.85473395791945e-16
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-132bb33884ef2022",
+      "samples": [
+        2.5110431046370852e-216
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-5b647112c22b0549",
+      "samples": [
+        1.8136979596815955e+132
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 1.8136979596815955e+132,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-4107f48f3013a624",
+      "samples": [
+        196241.89847497747
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 196241.898475,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-6d8dd69a8d3b91a3",
+      "samples": [
+        5.2664852351984844e+219
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 5.2664852351984844e+219,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-3427b9497ffef7f6",
+      "samples": [
+        1.8897079234047594e-57
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-26a1c32b4e6a218d",
+      "samples": [
+        1.3434853015780348e-122
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-0ac2b586c9c55a18",
+      "samples": [
+        7.78764819182409e-257
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-018eff1de6c23f87",
+      "samples": [
+        3.6159940528351842e-301
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-50c9f9e0f2a3a50a",
+      "samples": [
+        1.5400066962468436e+81
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 1.5400066962468436e+81,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-6d6e5968d3dd7a11",
+      "samples": [
+        1.3391675311500755e+219
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 1.3391675311500755e+219,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-7826ed292cc9654c",
+      "samples": [
+        6.05594838659739e+270
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 6.05594838659739e+270,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-45c6b29a454b03ab",
+      "samples": [
+        1.40491750692601e+28
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 1.40491750692601e+28,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-49a3a3cc42effb5e",
+      "samples": [
+        5.60618198984852e+46
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 5.60618198984852e+46,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-7920976eff0052d5",
+      "samples": [
+        2.872186791538027e+275
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 2.872186791538027e+275,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-308541bb6586bbc0",
+      "samples": [
+        5.874464367299725e-75
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-396618b5edfac20f",
+      "samples": [
+        3.4045088911561996e-32
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-0d4d71bb997c0ef2",
+      "samples": [
+        1.3475792265250815e-244
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-502efccc087a2fd9",
+      "samples": [
+        1.7940530051359035e+78
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 1.7940530051359035e+78,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-5284960857eb9174",
+      "samples": [
+        3.2761370805218615e+89
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 3.2761370805218615e+89,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-09663b42617c9eb3",
+      "samples": [
+        2.206288038115092e-263
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-408512a36f3933c6",
+      "samples": [
+        674.3298019856381
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 674.329802,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-44aa5fdecf62d51d",
+      "samples": [
+        6.227501220073862e+22
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 6.227501220073862e+22,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-2b64046f19615a68",
+      "samples": [
+        1.1439772319857551e-99
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-7100116637e5fd97",
+      "samples": [
+        2.0435605821657462e+236
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 2.0435605821657462e+236,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-20a98fe25085fdda",
+      "samples": [
+        2.440325844232788e-151
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-7e4118e50fc646a1",
+      "samples": [
+        1.4312379214151e+300
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 1.4312379214151e+300,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-73ae68420200ca9c",
+      "samples": [
+        1.7008408542188001e+249
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 1.7008408542188001e+249,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-7fc6421ff2da82bb",
+      "samples": [
+        3.1260619608985153e+307
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 3.1260619608985153e+307,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-6a4c6373a982412e",
+      "samples": [
+        1.1125749487419232e+204
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 1.1125749487419232e+204,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-35c0f92af968c865",
+      "samples": [
+        9.073133857428734e-50
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-53cc5d036905d610",
+      "samples": [
+        4.733102515223168e+95
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 4.733102515223168e+95,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-184e42f4a9f0121f",
+      "samples": [
+        1.3265507788409725e-191
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-4ee08a5dafa311c2",
+      "samples": [
+        9.132662438776619e+71
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 9.132662438776619e+71,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-3c86f261aacade69",
+      "samples": [
+        3.9806357485521514e-17
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-072758f44083b0c4",
+      "samples": [
+        3.37173873222265e-274
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-40c6d203b552cfc3",
+      "samples": [
+        11684.028971053549
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 11684.028971,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-742cbd41bc86c396",
+      "samples": [
+        4.115308009961346e+251
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 4.115308009961346e+251,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-58627272546d4cad",
+      "samples": [
+        5.814808444531666e+117
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 5.814808444531666e+117,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-40ae46440458ceb8",
+      "samples": [
+        3875.1328456642477
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 3875.132846,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-02002f02baa91fa7",
+      "samples": [
+        4.833151400895739e-299
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-11edafc3ae08eaaa",
+      "samples": [
+        2.5664533534510914e-222
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-5083acf808551731",
+      "samples": [
+        7.29051437134529e+79
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 7.29051437134529e+79,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-0f20d340b062e3ec",
+      "samples": [
+        8.268253616637114e-236
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-21a6bb13c037a5cb",
+      "samples": [
+        1.4221528314323274e-146
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-788b309e1f965afe",
+      "samples": [
+        4.5965703101435727e+272
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 4.5965703101435727e+272,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-058a952279cf81f5",
+      "samples": [
+        5.72045838247068e-282
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-5e64a968b1f2e460",
+      "samples": [
+        5.16006399043785e+146
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 5.16006399043785e+146,
+        "http_request_duration_seconds_count": 1
+      }
+    },
+    {
+      "id": "binary64-490386392a45462f",
+      "samples": [
+        5.442583217114e+43
+      ],
+      "expected": {
+        "http_requests_total": 1,
+        "http_request_duration_seconds_sum": 5.442583217114e+43,
+        "http_request_duration_seconds_count": 1
+      }
+    }
+  ],
+  "integer_cases": [
+    {
+      "seed": "9007199254740991",
+      "expected": {
+        "http_requests_total": 9007199254740992,
+        "http_errors_total": 9007199254740992,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 9007199254740992
+      }
+    },
+    {
+      "seed": "9007199254740992",
+      "expected": {
+        "http_requests_total": 9007199254740993,
+        "http_errors_total": 9007199254740993,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 9007199254740993
+      }
+    },
+    {
+      "seed": "9007199254740993",
+      "expected": {
+        "http_requests_total": 9007199254740994,
+        "http_errors_total": 9007199254740994,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 9007199254740994
+      }
+    },
+    {
+      "seed": "1000000000000000000000000000000",
+      "expected": {
+        "http_requests_total": 1000000000000000000000000000001,
+        "http_errors_total": 1000000000000000000000000000001,
+        "http_request_duration_seconds_sum": 0.0,
+        "http_request_duration_seconds_count": 1000000000000000000000000000001
+      }
+    }
+  ]
+}

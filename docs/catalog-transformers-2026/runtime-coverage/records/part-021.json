@@ -1,0 +1,2207 @@
+[
+  {
+    "id": "tr2026-family-omp",
+    "name": "ОМП — однофазный масляный",
+    "designation": "ОМП",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "family",
+    "sourceRecordType": "family",
+    "familyId": null,
+    "sourceFamilyId": "omp",
+    "variantIds": [
+      "alageum-2026-om-4-p",
+      "alageum-2026-om-10-p"
+    ],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        72,
+        73,
+        74
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "458366851a648ddfac973cd064bd536334e71c5a9bced17b8ef813363d61c826",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        72,
+        73,
+        74
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-072.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        72,
+        73,
+        74
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-072.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-072.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        72
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "alageum-2026-om-4-p",
+    "name": "ОМП-4",
+    "designation": "ОМП-4",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-omp",
+    "sourceFamilyId": "omp",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        72,
+        73,
+        74
+      ],
+      "sourceRow": {
+        "page": 72,
+        "designation": "ОМП-4",
+        "execution": "однофазный масляный",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "bd0c554f3e7736761fc35c1bac122c69a613b0b3ce5b4d8f9397e2a32719d207",
+    "geometry": {
+      "type": "tr26-single-side-bushings",
+      "confidence": "source-matched",
+      "sourcePages": [
+        74
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-074.webp",
+      "approval": {
+        "recordShapeSha256": "fa2b8e3684ea1fb6344a03af27f50803b613d401e155768c295dfb6bec10fb8c",
+        "databaseId": "26446558-afda-535e-a8f0-95219d43809f",
+        "groupId": "oil-omp",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-single-side-bushings",
+      "confidence": "source-based",
+      "sourcePages": [
+        74
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-074.webp",
+      "approval": {
+        "recordShapeSha256": "fa2b8e3684ea1fb6344a03af27f50803b613d401e155768c295dfb6bec10fb8c",
+        "databaseId": "26446558-afda-535e-a8f0-95219d43809f",
+        "groupId": "oil-omp",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-074.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        74
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-omp"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-omp",
+          "geometryType": "tr26-single-side-bushings",
+          "iconType": "tr26-single-side-bushings",
+          "sourcePages": [
+            74
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-om-10-p",
+    "name": "ОМП-10",
+    "designation": "ОМП-10",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-omp",
+    "sourceFamilyId": "omp",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        72,
+        73,
+        74
+      ],
+      "sourceRow": {
+        "page": 72,
+        "designation": "ОМП-10",
+        "execution": "однофазный масляный",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "d272385466520306c3ee678ae318f5920eb06baaf1d72702928e6c1f4e09b380",
+    "geometry": {
+      "type": "tr26-single-side-bushings",
+      "confidence": "source-matched",
+      "sourcePages": [
+        74
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-074.webp",
+      "approval": {
+        "recordShapeSha256": "e3a7170c990ab17a1ce764e4a931eef7efbffd3f3414011a4b6d3622b6cd1324",
+        "databaseId": "0f9856cf-8f65-58c7-8066-db846a6a687e",
+        "groupId": "oil-omp",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-single-side-bushings",
+      "confidence": "source-based",
+      "sourcePages": [
+        74
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-074.webp",
+      "approval": {
+        "recordShapeSha256": "e3a7170c990ab17a1ce764e4a931eef7efbffd3f3414011a4b6d3622b6cd1324",
+        "databaseId": "0f9856cf-8f65-58c7-8066-db846a6a687e",
+        "groupId": "oil-omp",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-074.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        74
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-omp"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-omp",
+          "geometryType": "tr26-single-side-bushings",
+          "iconType": "tr26-single-side-bushings",
+          "sourcePages": [
+            74
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "tr2026-family-tsl-loss-c",
+    "name": "ТСЛ(З) — с уровнем потерь С (стандарный)",
+    "designation": "ТСЛ(З)",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "family",
+    "sourceRecordType": "family",
+    "familyId": null,
+    "sourceFamilyId": "tsl-loss-C",
+    "variantIds": [
+      "alageum-2026-tsl-c-25",
+      "alageum-2026-tsl-c-40",
+      "alageum-2026-tsl-c-63",
+      "alageum-2026-tsl-c-100",
+      "alageum-2026-tsl-c-160",
+      "alageum-2026-tsl-c-250",
+      "alageum-2026-tsl-c-400",
+      "alageum-2026-tsl-c-1000",
+      "alageum-2026-tsl-c-1250",
+      "alageum-2026-tsl-c-2000",
+      "alageum-2026-tsl-c-2500",
+      "alageum-2026-tsl-c-3150",
+      "alageum-2026-tsl-c-4000"
+    ],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "338757f8cc8508c30fcc85de039e933e85b8b3378bf3d42613f39b1b69344b8e",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-077.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-077.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-077.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        77
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "alageum-2026-tsl-c-25",
+    "name": "ТСЛ(З)-25",
+    "designation": "ТСЛ(З)-25",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tsl-loss-c",
+    "sourceFamilyId": "tsl-loss-C",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceRow": {
+        "page": 77,
+        "designation": "ТСЛ(З)-25",
+        "execution": "с уровнем потерь С (стандарный)",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "76cf54fc0a5d9a21654a6631e844ce8f522f1967502f07c75113eaf0a99e2360",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-077.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "execution-choice-required",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-077.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "execution-choice-required",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-077.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        77
+      ]
+    },
+    "proposalEvidence": {
+      "status": "execution-choice-required",
+      "evidenceGroupIds": [
+        "dry-tsl-open-6-10",
+        "dry-tslz-enclosed-6-10"
+      ],
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology"
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway"
+        }
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-tsl-c-40",
+    "name": "ТСЛ(З)-40",
+    "designation": "ТСЛ(З)-40",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tsl-loss-c",
+    "sourceFamilyId": "tsl-loss-C",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceRow": {
+        "page": 77,
+        "designation": "ТСЛ(З)-40",
+        "execution": "с уровнем потерь С (стандарный)",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "5abca6c56d351b22ce6fef6e6afc93480e340218fed24819a2203da8ad607a47",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-077.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "execution-choice-required",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-077.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "execution-choice-required",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-077.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        77
+      ]
+    },
+    "proposalEvidence": {
+      "status": "execution-choice-required",
+      "evidenceGroupIds": [
+        "dry-tsl-open-6-10",
+        "dry-tslz-enclosed-6-10"
+      ],
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology"
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway"
+        }
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-tsl-c-63",
+    "name": "ТСЛ(З)-63",
+    "designation": "ТСЛ(З)-63",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tsl-loss-c",
+    "sourceFamilyId": "tsl-loss-C",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceRow": {
+        "page": 77,
+        "designation": "ТСЛ(З)-63",
+        "execution": "с уровнем потерь С (стандарный)",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "4484bd7f3c92e85eef7ab8ab5d8deeb196d269b1ffd9c87161816eaca00cdfca",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-077.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "execution-choice-required",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-077.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "execution-choice-required",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-077.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        77
+      ]
+    },
+    "proposalEvidence": {
+      "status": "execution-choice-required",
+      "evidenceGroupIds": [
+        "dry-tsl-open-6-10",
+        "dry-tslz-enclosed-6-10"
+      ],
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology"
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway"
+        }
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-tsl-c-100",
+    "name": "ТСЛ(З)-100",
+    "designation": "ТСЛ(З)-100",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tsl-loss-c",
+    "sourceFamilyId": "tsl-loss-C",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceRow": {
+        "page": 77,
+        "designation": "ТСЛ(З)-100",
+        "execution": "с уровнем потерь С (стандарный)",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "f30b4ef48546f7907140ea8e4564092905b012528d0012c4bb2473819364ad89",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-077.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "execution-choice-required",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-077.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "execution-choice-required",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-077.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        77
+      ]
+    },
+    "proposalEvidence": {
+      "status": "execution-choice-required",
+      "evidenceGroupIds": [
+        "dry-tsl-open-6-10",
+        "dry-tslz-enclosed-6-10"
+      ],
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology"
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway"
+        }
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-tsl-c-160",
+    "name": "ТСЛ(З)-160",
+    "designation": "ТСЛ(З)-160",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tsl-loss-c",
+    "sourceFamilyId": "tsl-loss-C",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceRow": {
+        "page": 77,
+        "designation": "ТСЛ(З)-160",
+        "execution": "с уровнем потерь С (стандарный)",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "7e5f694aa7608aab40f21b8bd8091951529c88e8d71357eae7252404fdedaee5",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-077.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "execution-choice-required",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-077.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "execution-choice-required",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-077.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        77
+      ]
+    },
+    "proposalEvidence": {
+      "status": "execution-choice-required",
+      "evidenceGroupIds": [
+        "dry-tsl-open-6-10",
+        "dry-tslz-enclosed-6-10"
+      ],
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology"
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway"
+        }
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-tsl-c-250",
+    "name": "ТСЛ(З)-250",
+    "designation": "ТСЛ(З)-250",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tsl-loss-c",
+    "sourceFamilyId": "tsl-loss-C",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceRow": {
+        "page": 77,
+        "designation": "ТСЛ(З)-250",
+        "execution": "с уровнем потерь С (стандарный)",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "db79ca8b33556e360389154bd6ad7b9d26820f646088d8f99df56b584024ead5",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-077.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "execution-choice-required",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-077.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "execution-choice-required",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-077.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        77
+      ]
+    },
+    "proposalEvidence": {
+      "status": "execution-choice-required",
+      "evidenceGroupIds": [
+        "dry-tsl-open-6-10",
+        "dry-tslz-enclosed-6-10"
+      ],
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology"
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway"
+        }
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-tsl-c-400",
+    "name": "ТСЛ(З)-400",
+    "designation": "ТСЛ(З)-400",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tsl-loss-c",
+    "sourceFamilyId": "tsl-loss-C",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceRow": {
+        "page": 77,
+        "designation": "ТСЛ(З)-400",
+        "execution": "с уровнем потерь С (стандарный)",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "73e45b1a119a728b96f81a16542af26e2fc50632d7715e0de30a61ebc9b9393d",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-077.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "execution-choice-required",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-077.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "execution-choice-required",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-077.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        77
+      ]
+    },
+    "proposalEvidence": {
+      "status": "execution-choice-required",
+      "evidenceGroupIds": [
+        "dry-tsl-open-6-10",
+        "dry-tslz-enclosed-6-10"
+      ],
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology"
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway"
+        }
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-tsl-c-1000",
+    "name": "ТСЛ(З)-1000",
+    "designation": "ТСЛ(З)-1000",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tsl-loss-c",
+    "sourceFamilyId": "tsl-loss-C",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceRow": {
+        "page": 77,
+        "designation": "ТСЛ(З)-1000",
+        "execution": "с уровнем потерь С (стандарный)",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "5bfa883419cd21170d64b23d2aaf10255b5e848f98ce24a799ab99aa1705593f",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-077.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "execution-choice-required",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-077.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "execution-choice-required",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-077.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        77
+      ]
+    },
+    "proposalEvidence": {
+      "status": "execution-choice-required",
+      "evidenceGroupIds": [
+        "dry-tsl-open-6-10",
+        "dry-tslz-enclosed-6-10"
+      ],
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology"
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway"
+        }
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-tsl-c-1250",
+    "name": "ТСЛ(З)-1250",
+    "designation": "ТСЛ(З)-1250",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tsl-loss-c",
+    "sourceFamilyId": "tsl-loss-C",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceRow": {
+        "page": 77,
+        "designation": "ТСЛ(З)-1250",
+        "execution": "с уровнем потерь С (стандарный)",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "65fe9494b243eb8116c4aba78c37fd483d9fa3fb12ec2a3e6d75b17c961316c8",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-077.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "execution-choice-required",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-077.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "execution-choice-required",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-077.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        77
+      ]
+    },
+    "proposalEvidence": {
+      "status": "execution-choice-required",
+      "evidenceGroupIds": [
+        "dry-tsl-open-6-10",
+        "dry-tslz-enclosed-6-10"
+      ],
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology"
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway"
+        }
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-tsl-c-2000",
+    "name": "ТСЛ(З)-2000",
+    "designation": "ТСЛ(З)-2000",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tsl-loss-c",
+    "sourceFamilyId": "tsl-loss-C",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceRow": {
+        "page": 77,
+        "designation": "ТСЛ(З)-2000",
+        "execution": "с уровнем потерь С (стандарный)",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "bc026f4d2688bd961d301123451a502f2cb91e4cb3fd120e04583a3336de4241",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-077.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "execution-choice-required",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-077.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "execution-choice-required",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-077.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        77
+      ]
+    },
+    "proposalEvidence": {
+      "status": "execution-choice-required",
+      "evidenceGroupIds": [
+        "dry-tsl-open-6-10",
+        "dry-tslz-enclosed-6-10"
+      ],
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology"
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway"
+        }
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-tsl-c-2500",
+    "name": "ТСЛ(З)-2500",
+    "designation": "ТСЛ(З)-2500",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tsl-loss-c",
+    "sourceFamilyId": "tsl-loss-C",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceRow": {
+        "page": 77,
+        "designation": "ТСЛ(З)-2500",
+        "execution": "с уровнем потерь С (стандарный)",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "548f8a9b8d1b9f574dead018a2c9865ab37fcb47ed337eb3081f5c8c42d07fa3",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-077.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "execution-choice-required",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-077.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "execution-choice-required",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-077.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        77
+      ]
+    },
+    "proposalEvidence": {
+      "status": "execution-choice-required",
+      "evidenceGroupIds": [
+        "dry-tsl-open-6-10",
+        "dry-tslz-enclosed-6-10"
+      ],
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology"
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway"
+        }
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-tsl-c-3150",
+    "name": "ТСЛ(З)-3150",
+    "designation": "ТСЛ(З)-3150",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tsl-loss-c",
+    "sourceFamilyId": "tsl-loss-C",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceRow": {
+        "page": 77,
+        "designation": "ТСЛ(З)-3150",
+        "execution": "с уровнем потерь С (стандарный)",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "bec6f5b222ea02af5796b3b91bc3cb95037be60a8eeb03e2e664064ef14b78a3",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-077.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "execution-choice-required",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-077.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "execution-choice-required",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-077.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        77
+      ]
+    },
+    "proposalEvidence": {
+      "status": "execution-choice-required",
+      "evidenceGroupIds": [
+        "dry-tsl-open-6-10",
+        "dry-tslz-enclosed-6-10"
+      ],
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology"
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway"
+        }
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-tsl-c-4000",
+    "name": "ТСЛ(З)-4000",
+    "designation": "ТСЛ(З)-4000",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tsl-loss-c",
+    "sourceFamilyId": "tsl-loss-C",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceRow": {
+        "page": 77,
+        "designation": "ТСЛ(З)-4000",
+        "execution": "с уровнем потерь С (стандарный)",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "9f8e85009914346e7f00e4e8dd39e3960bb5e4ec7c6e71b69639d3209e27b7fc",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-077.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "execution-choice-required",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-077.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "execution-choice-required",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-077.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        77
+      ]
+    },
+    "proposalEvidence": {
+      "status": "execution-choice-required",
+      "evidenceGroupIds": [
+        "dry-tsl-open-6-10",
+        "dry-tslz-enclosed-6-10"
+      ],
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology"
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway"
+        }
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "tr2026-family-tsl-loss-a",
+    "name": "ТСЛ(З) — с уровнем потерь А (энергоэффективный)",
+    "designation": "ТСЛ(З)",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "family",
+    "sourceRecordType": "family",
+    "familyId": null,
+    "sourceFamilyId": "tsl-loss-A",
+    "variantIds": [
+      "alageum-2026-tsl-a-63",
+      "alageum-2026-tsl-a-100",
+      "alageum-2026-tsl-a-160",
+      "alageum-2026-tsl-a-250",
+      "alageum-2026-tsl-a-400",
+      "alageum-2026-tsl-a-1000",
+      "alageum-2026-tsl-a-1250",
+      "alageum-2026-tsl-a-2000",
+      "alageum-2026-tsl-a-2500"
+    ],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        78,
+        79,
+        80,
+        81
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "c2f86811d9f0d91136a7fa36a3a2e799cb624a44068e2714252a15d78cc5ca77",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        78,
+        79,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-078.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        78,
+        79,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-078.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-078.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        78
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "alageum-2026-tsl-a-63",
+    "name": "ТСЛ(З)-63",
+    "designation": "ТСЛ(З)-63",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tsl-loss-a",
+    "sourceFamilyId": "tsl-loss-A",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        78,
+        79,
+        80,
+        81
+      ],
+      "sourceRow": {
+        "page": 79,
+        "designation": "ТСЛ(З)-63",
+        "execution": "с уровнем потерь А (энергоэффективный)",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "d35a9d6d935ba453117b16f6f7bb89bf00a768bcce22ee995022dfc203886095",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        78,
+        79,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-078.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "execution-choice-required",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        78,
+        79,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-078.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "execution-choice-required",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-078.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        78
+      ]
+    },
+    "proposalEvidence": {
+      "status": "execution-choice-required",
+      "evidenceGroupIds": [
+        "dry-tsl-open-6-10",
+        "dry-tslz-enclosed-6-10"
+      ],
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology"
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway"
+        }
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-tsl-a-100",
+    "name": "ТСЛ(З)-100",
+    "designation": "ТСЛ(З)-100",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tsl-loss-a",
+    "sourceFamilyId": "tsl-loss-A",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        78,
+        79,
+        80,
+        81
+      ],
+      "sourceRow": {
+        "page": 79,
+        "designation": "ТСЛ(З)-100",
+        "execution": "с уровнем потерь А (энергоэффективный)",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "4589d534a9057d0b4774fe283fc878709e51d646c36d7480a09d57132a2f67b8",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        78,
+        79,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-078.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "execution-choice-required",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        78,
+        79,
+        80,
+        81
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-078.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "execution-choice-required",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-078.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        78
+      ]
+    },
+    "proposalEvidence": {
+      "status": "execution-choice-required",
+      "evidenceGroupIds": [
+        "dry-tsl-open-6-10",
+        "dry-tslz-enclosed-6-10"
+      ],
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology"
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway"
+        }
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ],
+      "authoritativeForRuntime": false
+    }
+  }
+]

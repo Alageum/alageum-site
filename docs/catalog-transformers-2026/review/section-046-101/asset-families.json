@@ -1,0 +1,720 @@
+{
+  "families": [
+    {
+      "id": "oil-tmg-twostage-small",
+      "evidencePages": [
+        46
+      ],
+      "evidenceType": "dimensioned-orthographic-drawing",
+      "description": "ТМГ-25-630 с 2-х этажным переключателем: three views of compact corrugated hermetic tank, top bushings, switch, optional wheels.",
+      "reusableType": "shared-construction-parametric",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [
+        "Product rows on preceding section44–45; no duplicate rows here."
+      ],
+      "productIds": [],
+      "sameConstructionTemplateCandidate": "corrugated-hermetic-small-top-bushings",
+      "sameConstructionEvidence": "Pages46,56,59 repeat the same three-view arrangement and20-item legend: corrugated tank, three largeHV bushings, LV terminal row, talloil tube, channel/wheelbase. Shared parametric template is defensible with row-specific dimensions and electrical terminal details retained."
+    },
+    {
+      "id": "oil-tmg-twostage-large",
+      "evidencePages": [
+        47
+      ],
+      "evidenceType": "dimensioned-orthographic-drawing",
+      "description": "ТМГ-1000-2500 с 2-х этажным переключателем: large corrugated tank, top terminal layout and wheels.",
+      "reusableType": "shared-construction-parametric",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [
+        "Rows belong to preceding section."
+      ],
+      "productIds": [],
+      "sameConstructionTemplateCandidate": "corrugated-hermetic-large-top-bushings",
+      "sameConstructionEvidence": "Pages47/57 share the same three orthographic views and terminal/tank layout; preserve size-specific dimensions and switch execution."
+    },
+    {
+      "id": "oil-isolating-tmg",
+      "evidencePages": [
+        49
+      ],
+      "evidenceType": "dimensioned-orthographic-drawing",
+      "description": "Isolating ТМГ: corrugated rectangular tank, HV and LV top bushings, wheels; three views. Separate electrical family from distribution TMG.",
+      "reusableType": "shared-construction-parametric",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [],
+      "productIds": [
+        "alageum-2026-isolating-tmg-630",
+        "alageum-2026-isolating-tmg-1000",
+        "alageum-2026-isolating-tmg-1250",
+        "alageum-2026-isolating-tmg-1600",
+        "alageum-2026-isolating-tmg-2000",
+        "alageum-2026-isolating-tmg-2500",
+        "alageum-2026-isolating-tmg-3200",
+        "alageum-2026-isolating-tmg-4000",
+        "alageum-2026-isolating-tmg-4500"
+      ]
+    },
+    {
+      "id": "oil-tm-20kv-small",
+      "evidencePages": [
+        52
+      ],
+      "evidenceType": "dimensioned-orthographic-drawing",
+      "description": "ТМ-100-40020кВ: rectangular corrugated tank and horizontal cylindrical conservator; top bushings and optional wheels, three views.",
+      "reusableType": "shared-construction-parametric",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [],
+      "productIds": [
+        "alageum-2026-tm-20kv-100",
+        "alageum-2026-tm-20kv-160",
+        "alageum-2026-tm-20kv-250",
+        "alageum-2026-tm-20kv-400"
+      ]
+    },
+    {
+      "id": "oil-tm-20kv-large",
+      "evidencePages": [
+        53
+      ],
+      "evidenceType": "dimensioned-orthographic-drawing",
+      "description": "ТМ-630-2500 20кВ: larger corrugated tank, overhead conservator, top bushings, breather and wheels; three views.",
+      "reusableType": "shared-construction-parametric",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [],
+      "productIds": [
+        "alageum-2026-tm-20kv-630",
+        "alageum-2026-tm-20kv-1000",
+        "alageum-2026-tm-20kv-1250",
+        "alageum-2026-tm-20kv-1600",
+        "alageum-2026-tm-20kv-2000",
+        "alageum-2026-tm-20kv-2500"
+      ]
+    },
+    {
+      "id": "oil-tmg-20kv-small",
+      "evidencePages": [
+        56
+      ],
+      "evidenceType": "dimensioned-orthographic-drawing",
+      "description": "ТМГ-25-630: compact corrugated hermetic rectangular tank, top bushings, oil tube, wheels, three views.",
+      "reusableType": "shared-construction-parametric",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [],
+      "productIds": [
+        "alageum-2026-tmg-20kv-copper-25",
+        "alageum-2026-tmg-20kv-copper-40",
+        "alageum-2026-tmg-20kv-copper-63",
+        "alageum-2026-tmg-20kv-100",
+        "alageum-2026-tmg-20kv-160",
+        "alageum-2026-tmg-20kv-250",
+        "alageum-2026-tmg-20kv-400",
+        "alageum-2026-tmg-20kv-630"
+      ],
+      "sameConstructionTemplateCandidate": "corrugated-hermetic-small-top-bushings",
+      "sameConstructionEvidence": "Pages46,56,59 repeat the same three-view arrangement and20-item legend: corrugated tank, three largeHV bushings, LV terminal row, talloil tube, channel/wheelbase. Shared parametric template is defensible with row-specific dimensions and electrical terminal details retained."
+    },
+    {
+      "id": "oil-tmg-20kv-large",
+      "evidencePages": [
+        57
+      ],
+      "evidenceType": "dimensioned-orthographic-drawing",
+      "description": "ТМГ-1000-2500: larger corrugated hermetic tank, top bushings and terminal layout, wheels, three views.",
+      "reusableType": "shared-construction-parametric",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [],
+      "productIds": [
+        "alageum-2026-tmg-20kv-1000",
+        "alageum-2026-tmg-20kv-1250",
+        "alageum-2026-tmg-20kv-1600",
+        "alageum-2026-tmg-20kv-2000",
+        "alageum-2026-tmg-20kv-2500"
+      ],
+      "sameConstructionTemplateCandidate": "corrugated-hermetic-large-top-bushings",
+      "sameConstructionEvidence": "Pages47/57 share the same three orthographic views and terminal/tank layout; preserve size-specific dimensions and switch execution."
+    },
+    {
+      "id": "oil-tmgsu",
+      "evidencePages": [
+        59
+      ],
+      "evidenceType": "dimensioned-orthographic-drawing",
+      "description": "ТМГСУ-63-250: compact corrugated tank, top bushings, oil tube and optional wheels; three views. Distinct balancing-device series.",
+      "reusableType": "shared-construction-parametric",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [],
+      "productIds": [
+        "alageum-2026-tmgsu-63",
+        "alageum-2026-tmgsu-100",
+        "alageum-2026-tmgsu-160",
+        "alageum-2026-tmgsu-250"
+      ],
+      "sameConstructionTemplateCandidate": "corrugated-hermetic-small-top-bushings",
+      "sameConstructionEvidence": "Pages46,56,59 repeat the same three-view arrangement and20-item legend: corrugated tank, three largeHV bushings, LV terminal row, talloil tube, channel/wheelbase. Shared parametric template is defensible with row-specific dimensions and electrical terminal details retained."
+    },
+    {
+      "id": "oil-tmeg",
+      "evidencePages": [
+        61
+      ],
+      "evidenceType": "dimensioned-orthographic-drawing",
+      "description": "ТМЭГ-40-250: corrugated tank, top bushings under protective hood, oil tube and wheels; three views. Hood is critical difference from regular TMG.",
+      "reusableType": "shared-construction-parametric",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [],
+      "productIds": [
+        "alageum-2026-tmeg-40",
+        "alageum-2026-tmeg-63",
+        "alageum-2026-tmeg-100",
+        "alageum-2026-tmeg-160",
+        "alageum-2026-tmeg-250"
+      ]
+    },
+    {
+      "id": "oil-tmpn-top",
+      "evidencePages": [
+        66
+      ],
+      "evidenceType": "dimensioned-orthographic-drawing",
+      "description": "ТМПН(Г)-25-665 drawing: tall corrugated tank, top terminals under hood, channel base, three views. Header25–665 differs from data section63–665; no25kVA model generated.",
+      "reusableType": "shared-construction-parametric",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [],
+      "productIds": [
+        "alageum-2026-tmpn-p62-r1",
+        "alageum-2026-tmpn-p62-r2",
+        "alageum-2026-tmpn-p62-r3",
+        "alageum-2026-tmpn-p62-r4",
+        "alageum-2026-tmpn-p62-r5",
+        "alageum-2026-tmpn-p62-r6",
+        "alageum-2026-tmpn-p62-r7",
+        "alageum-2026-tmpn-p62-r8",
+        "alageum-2026-tmpn-p64-r1",
+        "alageum-2026-tmpn-p64-r2",
+        "alageum-2026-tmpn-p64-r3",
+        "alageum-2026-tmpn-p64-r4",
+        "alageum-2026-tmpn-p64-r5",
+        "alageum-2026-tmpn-p64-r6"
+      ]
+    },
+    {
+      "id": "oil-tmpng-side",
+      "evidencePages": [
+        67
+      ],
+      "evidenceType": "dimensioned-orthographic-drawing",
+      "description": "ТМПНГ(с боковыми выводами)-100-630: corrugated tank with prominent side terminal box, three views; not reusable with top-terminal hood variant.",
+      "reusableType": "shared-construction-parametric",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [],
+      "productIds": [
+        "alageum-2026-tmpn-p64-r7",
+        "alageum-2026-tmpn-p64-r8",
+        "alageum-2026-tmpn-p64-r9",
+        "alageum-2026-tmpn-p64-r10"
+      ]
+    },
+    {
+      "id": "oil-tmto-three-winding",
+      "evidencePages": [
+        69
+      ],
+      "evidenceType": "dimensioned-orthographic-drawing",
+      "description": "ТМТО-80 three-winding version; flat steel tank, top terminals, height1060,length910,width500,base500x400 as dimensioned.",
+      "reusableType": "model-specific",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [],
+      "productIds": [
+        "alageum-2026-tmto80-original"
+      ]
+    },
+    {
+      "id": "oil-tmto-modern",
+      "evidencePages": [
+        71
+      ],
+      "evidenceType": "dimensioned-orthographic-drawing",
+      "description": "ТМТО-80 modern two-winding version; flat steel tank, top terminals, height995,length890,width490,base500x400 as dimensioned.",
+      "reusableType": "model-specific",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [],
+      "productIds": [
+        "alageum-2026-tmto80-modern"
+      ]
+    },
+    {
+      "id": "oil-omp",
+      "evidencePages": [
+        74
+      ],
+      "evidenceType": "dimensioned-orthographic-drawing",
+      "description": "ОМП-4-10: rectangular tank with side HV bushings, cover LV connections; dimensioned views show580h,630overall horizontal,520tankwidth,270x350base. Source73 dimensions differ; keep conflict.",
+      "reusableType": "shared-construction-representative",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [],
+      "productIds": [
+        "alageum-2026-om-4-p",
+        "alageum-2026-om-10-p"
+      ]
+    },
+    {
+      "id": "oil-om",
+      "evidencePages": [
+        75
+      ],
+      "evidenceType": "dimensioned-orthographic-drawing",
+      "description": "ОМ-0,63-2,5: cylindrical tank, top HV bushing, small LV bushing, pole-mount bracket; three views and small dimensional table.",
+      "reusableType": "shared-construction-parametric",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [],
+      "productIds": [
+        "alageum-2026-om-0p63",
+        "alageum-2026-om-1p25",
+        "alageum-2026-om-2p5",
+        "alageum-2026-om-2p0-drawing"
+      ]
+    },
+    {
+      "id": "dry-tsl-open-6-10",
+      "evidencePages": [
+        80
+      ],
+      "evidenceType": "dimensioned-orthographic-drawing",
+      "description": "ТСЛ IP00: open three cast coils and laminated core, upper/lower clamping beams, wheel base; three orthographic views plus size-specific LV busbar layouts. Do not reuse enclosure geometry.",
+      "reusableType": "shared-construction-parametric",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [],
+      "productIds": [
+        "alageum-2026-tsl-c-25",
+        "alageum-2026-tsl-c-40",
+        "alageum-2026-tsl-c-63",
+        "alageum-2026-tsl-c-100",
+        "alageum-2026-tsl-c-160",
+        "alageum-2026-tsl-c-250",
+        "alageum-2026-tsl-c-400",
+        "alageum-2026-tsl-c-630",
+        "alageum-2026-tsl-c-1000",
+        "alageum-2026-tsl-c-1250",
+        "alageum-2026-tsl-c-1600",
+        "alageum-2026-tsl-c-2000",
+        "alageum-2026-tsl-c-2500",
+        "alageum-2026-tsl-c-3150",
+        "alageum-2026-tsl-c-4000",
+        "alageum-2026-tsl-a-63",
+        "alageum-2026-tsl-a-100",
+        "alageum-2026-tsl-a-160",
+        "alageum-2026-tsl-a-250",
+        "alageum-2026-tsl-a-400",
+        "alageum-2026-tsl-a-630",
+        "alageum-2026-tsl-a-1000",
+        "alageum-2026-tsl-a-1250",
+        "alageum-2026-tsl-a-1600",
+        "alageum-2026-tsl-a-2000",
+        "alageum-2026-tsl-a-2500"
+      ]
+    },
+    {
+      "id": "dry-tslz-enclosed-6-10",
+      "evidencePages": [
+        81
+      ],
+      "evidenceType": "dimensioned-orthographic-drawing",
+      "description": "ТСЛЗ IP21/IP31: rectangular wheeled enclosure with mesh upper/lower vents, side terminal opening; front/side plus size-specific terminal drawings.",
+      "reusableType": "shared-construction-parametric",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [
+        "Exact IP31 punctuation in heading is printed IP31,); no geometry equivalence implied between different enclosure/IP options."
+      ],
+      "productIds": [
+        "alageum-2026-tsl-c-25",
+        "alageum-2026-tsl-c-40",
+        "alageum-2026-tsl-c-63",
+        "alageum-2026-tsl-c-100",
+        "alageum-2026-tsl-c-160",
+        "alageum-2026-tsl-c-250",
+        "alageum-2026-tsl-c-400",
+        "alageum-2026-tsl-c-630",
+        "alageum-2026-tsl-c-1000",
+        "alageum-2026-tsl-c-1250",
+        "alageum-2026-tsl-c-1600",
+        "alageum-2026-tsl-c-2000",
+        "alageum-2026-tsl-c-2500",
+        "alageum-2026-tsl-c-3150",
+        "alageum-2026-tsl-c-4000",
+        "alageum-2026-tsl-a-63",
+        "alageum-2026-tsl-a-100",
+        "alageum-2026-tsl-a-160",
+        "alageum-2026-tsl-a-250",
+        "alageum-2026-tsl-a-400",
+        "alageum-2026-tsl-a-630",
+        "alageum-2026-tsl-a-1000",
+        "alageum-2026-tsl-a-1250",
+        "alageum-2026-tsl-a-1600",
+        "alageum-2026-tsl-a-2000",
+        "alageum-2026-tsl-a-2500"
+      ]
+    },
+    {
+      "id": "dry-tsl-open-20",
+      "evidencePages": [
+        84
+      ],
+      "evidenceType": "dimensioned-orthographic-drawing",
+      "description": "ТСЛ20кВ IP00: open three cast coils and core, clamping beams/wheel base; three views and size-specific LV busbar layouts. Keep separate electrical/dimensional family from6–10kV.",
+      "reusableType": "shared-construction-parametric",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [],
+      "productIds": [
+        "alageum-2026-tsl-20kv-100",
+        "alageum-2026-tsl-20kv-160",
+        "alageum-2026-tsl-20kv-250",
+        "alageum-2026-tsl-20kv-400",
+        "alageum-2026-tsl-20kv-630",
+        "alageum-2026-tsl-20kv-1000",
+        "alageum-2026-tsl-20kv-1250",
+        "alageum-2026-tsl-20kv-1600",
+        "alageum-2026-tsl-20kv-2000",
+        "alageum-2026-tsl-20kv-2500",
+        "alageum-2026-tsl-20kv-3150",
+        "alageum-2026-tsl-20kv-4000"
+      ]
+    },
+    {
+      "id": "accessory-relay-tr100",
+      "evidencePages": [
+        85
+      ],
+      "evidenceType": "photograph",
+      "description": "Цифровое температурное реле ТР-100 product photograph only; no dimensioned reconstruction evidence.",
+      "reusableType": "photo-reference-only",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [],
+      "productIds": [
+        "alageum-2026-relay-tr100"
+      ]
+    },
+    {
+      "id": "accessory-sensor-pt100",
+      "evidencePages": [
+        85
+      ],
+      "evidenceType": "photograph",
+      "description": "Датчики сопротивления pt-100 product photograph only; no dimensioned reconstruction evidence.",
+      "reusableType": "photo-reference-only",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [],
+      "productIds": [
+        "alageum-2026-sensor-pt100"
+      ]
+    },
+    {
+      "id": "accessory-damper-ek290",
+      "evidencePages": [
+        85
+      ],
+      "evidenceType": "photograph",
+      "description": "Виброопора ЕК-290 product photograph only; no dimensioned reconstruction evidence.",
+      "reusableType": "photo-reference-only",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [],
+      "productIds": [
+        "alageum-2026-damper-ek290"
+      ]
+    },
+    {
+      "id": "accessory-thermal-cabinet",
+      "evidencePages": [
+        86
+      ],
+      "evidenceType": "photograph",
+      "description": "Шкаф тепловой защиты (ШТЗ) product photograph only; no dimensioned reconstruction evidence.",
+      "reusableType": "photo-reference-only",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [],
+      "productIds": [
+        "alageum-2026-thermal-cabinet"
+      ],
+      "oldAssetCandidate": {
+        "oldId": "cat-shtz",
+        "oldPage": 63,
+        "newPage": 86,
+        "type": "representative-family-only",
+        "reason": "Same thermal-protection/fan-control purpose and similar front control arrangement. Newphoto does not verify old dimensions or all controls."
+      }
+    },
+    {
+      "id": "accessory-cooling-fans",
+      "evidencePages": [
+        86
+      ],
+      "evidenceType": "photograph",
+      "description": "Вентиляторы для охлаждения обмоток product photograph only; no dimensioned reconstruction evidence.",
+      "reusableType": "photo-reference-only",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [],
+      "productIds": [],
+      "configurationIds": [
+        "alageum-2026-cooling-fans"
+      ]
+    },
+    {
+      "id": "dry-ts-open",
+      "evidencePages": [
+        88
+      ],
+      "evidenceType": "dimensioned-orthographic-drawing",
+      "description": "ТС open dry core-and-three-coil construction with clamping beams and mounting base; three views and HV/LV bus arrangement with54±1 and45±1 spacings.",
+      "reusableType": "shared-construction-parametric",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [],
+      "productIds": [
+        "alageum-2026-ts-10",
+        "alageum-2026-ts-16",
+        "alageum-2026-ts-25",
+        "alageum-2026-ts-40",
+        "alageum-2026-ts-63",
+        "alageum-2026-ts-100"
+      ]
+    },
+    {
+      "id": "dry-tsz-enclosed",
+      "evidencePages": [
+        87
+      ],
+      "evidenceType": "dimensioned-orthographic-drawing",
+      "description": "ТСЗ compact ventilated rectangular enclosure with lifting eyes, side terminal area and base; three views.",
+      "reusableType": "shared-construction-parametric",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [],
+      "productIds": [
+        "alageum-2026-ts-10",
+        "alageum-2026-ts-16",
+        "alageum-2026-ts-25",
+        "alageum-2026-ts-40",
+        "alageum-2026-ts-63",
+        "alageum-2026-ts-100"
+      ]
+    },
+    {
+      "id": "dry-tsi-unproven",
+      "evidencePages": [
+        89
+      ],
+      "evidenceType": "named-table-only",
+      "description": "ТСИ open variants are named in89 but no unambiguous matching geometry drawing on89–90. Do not reuse ТС/ТСН drawings solely by category.",
+      "reusableType": "insufficient-evidence",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [],
+      "productIds": [
+        "alageum-2026-tsi-1p6-open",
+        "alageum-2026-tsi-2p5-open",
+        "alageum-2026-tsi-4p0-open"
+      ]
+    },
+    {
+      "id": "dry-tszi-top-bushing",
+      "evidencePages": [
+        90
+      ],
+      "evidenceType": "dimensioned-orthographic-drawing",
+      "description": "ТСЗИ explicitly named in90 prose: rectangular louvered enclosure, three prominent HV top bushings and LV terminals, base rails; three views.",
+      "reusableType": "shared-construction-representative",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [
+        "Table89 lists small0.38kV tool transformers while drawings89/90 resemble larger HV enclosures;90 prose explicitly saysТСЗИ but do not claim dimensionally faithful3D without resolving this conflict."
+      ],
+      "productIds": [
+        "alageum-2026-tsi-1p6-enclosed",
+        "alageum-2026-tsi-2p5-enclosed",
+        "alageum-2026-tsi-4p0-enclosed"
+      ]
+    },
+    {
+      "id": "dry-tsn-open",
+      "evidencePages": [
+        92
+      ],
+      "evidenceType": "dimensioned-orthographic-drawing",
+      "description": "ТСН open three-coil Nomex transformer, upper/lower clamps and wheel base, front/side/top-detail; HV/LV busbar details.",
+      "reusableType": "shared-construction-parametric",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [],
+      "productIds": [
+        "alageum-2026-tsn-160",
+        "alageum-2026-tsn-250",
+        "alageum-2026-tsn-400",
+        "alageum-2026-tsn-630"
+      ]
+    },
+    {
+      "id": "dry-tsnz-mesh",
+      "evidencePages": [
+        93
+      ],
+      "evidenceType": "dimensioned-orthographic-drawing",
+      "description": "ТСНЗ-400,630 mesh-vent enclosure with wheels and side terminal opening; front/side and400/630busbar details.",
+      "reusableType": "shared-construction-parametric",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [
+        "Page89 repeats same TSNЗ-labeled geometry under unrelated TSI heading;93 is authoritative matching heading."
+      ],
+      "productIds": [
+        "alageum-2026-tsn-400",
+        "alageum-2026-tsn-630"
+      ]
+    },
+    {
+      "id": "dry-tsnz-top-bushing",
+      "evidencePages": [
+        94
+      ],
+      "evidenceType": "dimensioned-orthographic-drawing",
+      "description": "ТСНЗ-160,250(400,630): louvered enclosure with HV top bushings, LV top terminals and base rails. This is a separate construction option from mesh enclosure93.",
+      "reusableType": "shared-construction-parametric",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [],
+      "productIds": [
+        "alageum-2026-tsn-160",
+        "alageum-2026-tsn-250",
+        "alageum-2026-tsn-400",
+        "alageum-2026-tsn-630"
+      ]
+    },
+    {
+      "id": "measurement-ntmi",
+      "evidencePages": [
+        96
+      ],
+      "evidenceType": "dimensioned-orthographic-drawing",
+      "description": "НТМИ-6-10: rounded polygonal/cylindrical tank with three HV top bushings and several LV terminals; front and top plus344×270 mounting layout, diameter456,diagonal495. Height varies396/486.",
+      "reusableType": "shared-construction-parametric",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [],
+      "productIds": [
+        "alageum-2026-ntmi-6",
+        "alageum-2026-ntmi-10"
+      ]
+    },
+    {
+      "id": "measurement-nom",
+      "evidencePages": [
+        97
+      ],
+      "evidenceType": "dimensioned-orthographic-drawing",
+      "description": "НОМ-6-10: round tank with two HV top bushings, small LV terminal group; front/side/top and dimension table. Diagram table also explicitly includes НОМ-3.",
+      "reusableType": "shared-construction-parametric",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [],
+      "productIds": [
+        "alageum-2026-nom-6",
+        "alageum-2026-nom-10",
+        "alageum-2026-nom-3-drawing"
+      ]
+    },
+    {
+      "id": "measurement-nami",
+      "evidencePages": [
+        98
+      ],
+      "evidenceType": "dimensioned-orthographic-drawing",
+      "description": "НАМИ-6-10: rectangular oil tank with three top HV bushings and LV terminal row; front/side/top, footprint labels404/290 and overall top515×335; height555/615.",
+      "reusableType": "shared-construction-parametric",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [],
+      "productIds": [
+        "alageum-2026-nami-6",
+        "alageum-2026-nami-10"
+      ]
+    },
+    {
+      "id": "measurement-zom-znom",
+      "evidencePages": [
+        99,
+        100
+      ],
+      "evidenceType": "dimensioned-orthographic-drawing",
+      "description": "ЗОМ1,25/35 andЗНОМ35 drawings show same tall single porcelain-column arrangement on rectangular oil tank, cylindrical top conservator. Exact shared dimension callouts948height,458×318baseoutline,420×160mounting,4holesØ11.",
+      "reusableType": "shared-construction-parametric",
+      "reuseConditions": [
+        "Use row-specific dimensions, terminals and electrical context; schematic construction is not proof of identical dimensions."
+      ],
+      "exclusions": [
+        "Electrical winding/spec differences retained as separate models. No source proof of equal internal construction."
+      ],
+      "productIds": [
+        "alageum-2026-zom-1p25-35",
+        "alageum-2026-znom35-config1",
+        "alageum-2026-znom35-config2"
+      ]
+    }
+  ],
+  "notes": [
+    "Construction evidence only; no generated3D/icon assets or site edits."
+  ]
+}

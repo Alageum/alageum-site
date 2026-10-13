@@ -1,0 +1,102 @@
+{
+  "kind": "collectionType",
+  "collectionName": "alageum_products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": false
+    },
+    "content-type-builder": {
+      "visible": true
+    }
+  },
+  "attributes": {
+    "transport_id": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "column": {
+        "unique": true
+      }
+    },
+    "public_key": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "translations": {
+      "type": "json",
+      "required": true
+    },
+    "sort_order": {
+      "type": "integer",
+      "default": 0
+    },
+    "category_id": {
+      "type": "string",
+      "required": true
+    },
+    "sku": {
+      "type": "string",
+      "unique": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "draft",
+        "published",
+        "hidden"
+      ],
+      "default": "draft"
+    },
+    "comparable": {
+      "type": "boolean",
+      "default": true
+    },
+    "price": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "price_mode": {
+      "type": "enumeration",
+      "enum": [
+        "on_request",
+        "fixed"
+      ],
+      "default": "on_request"
+    },
+    "version": {
+      "type": "integer",
+      "default": 1
+    },
+    "specs": {
+      "type": "json"
+    },
+    "provenance": {
+      "type": "json"
+    },
+    "media": {
+      "type": "json"
+    },
+    "source_data": {
+      "type": "json"
+    },
+    "attributes_data": {
+      "type": "json"
+    }
+  }
+}

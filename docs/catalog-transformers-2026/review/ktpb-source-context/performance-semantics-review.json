@@ -1,0 +1,297 @@
+{
+  "format": "alageum-proof-invocation-performance-review-v1",
+  "status": "approved-bounded-proof-invocation",
+  "baselineCommit": "c3241426715e8ab556df48242e405c9b382660ee",
+  "baselineTree": "93520988b0e0222d5a4d283ff3cc436bc8e321b3",
+  "observationContract": {
+    "scope": "one-synchronous-public-invocation",
+    "cacheAcrossInvocations": false,
+    "intermediateObservationsReduced": true,
+    "transientMutationRestorationDetection": "not-guaranteed",
+    "atomicFilesystemSnapshot": false,
+    "finalRecheck": "all-consumed-paths-fresh-raw-reader",
+    "customReader": "uncached-admission-equivalent",
+    "limits": "retained-bytes-and-work-not-transient-allocation",
+    "callerInputs": "bounded-hook-free-plain-data-classification-retain-original-identity"
+  },
+  "predecessors": {
+    "frontend/components/catalog/source-context/SourceContextImage.js": "cbea5c72c693cbe1192f1a7721f062716f9434a94a026f20770ffe519677c3d0",
+    "frontend/lib/catalog/source-context/sourceContextManifest.json": "4ccb97d612b48f368a0ae298164f2ea80671fb12ce8b73724342a5747cc19ce3",
+    "frontend/lib/catalog/source-context/sourceContexts.js": "5ed607db069ed54243f6a012c1a3b0941355c643a2e9ec4c1975d3bd83eec7b2",
+    "frontend/tests/catalog-source-context-render.test.mjs": "c769aa9fe19dcb7eaace693efcc7b1e9d21378a5e3de9713bc354d5c4da118f6",
+    "frontend/tests/catalog-source-context.test.mjs": "8921f0e96cb9f5fc4b4f4d86bd912de242769bdd97a242086f8c4fdaa2ab4e7d",
+    "scripts/catalog/frontend-security-reviewed-dependencies.mjs": "7c854365c6106ba05b872a5bfce0b5587d3de123158cb1693fafc9147579dcfc",
+    "scripts/catalog/protection-context-reviewed-dependencies.mjs": "b007b1c7c9ce73769a948da44fdee31eab13e83d53f1193b3c5f5cc2508a4162",
+    "scripts/check-protection-context-integration.mjs": "3ad8625f48b1fbd15f1d658459e3e854f7bca286d916a37ec220db1985da4788",
+    "frontend/tests/helpers/frontend-security-historical-bytes.mjs": "811309ef9755c326ac3618284102eb9e7c4f5a88f36ace00b2bbb99a6184513e",
+    "frontend/tests/frontend-security-amendment.test.mjs": "23ff789aa393343539f908fa8e6b20bb4138d745a2797efcc642d328fd9a3d07",
+    "frontend/tests/protection-context-integration.test.mjs": "3f30f7a07294bb99b01cfb55bd96c40ad8dfe6b12c0be2ddce8a5a88f04a1359",
+    "frontend/tests/transformer-asset-completion.test.mjs": "c048b4a21dbac150f3cce848ad4590a8264f026362a189cce57702bef5fca8b5",
+    "scripts/catalog/source-asset-reviewed-dependencies.mjs": "5e1f3f131a4d72bba1348a8bd4da2de8f1525d328ecfa67bbd0b3dced17be2bb",
+    "scripts/catalog/measurement-column-reviewed-dependencies.mjs": "df77d0b7b9638cc0fa4700a9b937a616bc859aabe3684ff9907c30b5dbe8c76d",
+    "scripts/catalog/catalog-browser-reviewed-dependencies.mjs": "952df324b4acbd63536c3e85752bf3b6f3e8f70e6349be246112fb40177294b8",
+    "scripts/catalog/visual-presentation-reviewed-dependencies.mjs": "5eb73dc41decc5683afc0ce632bea873a27ffbafd1a5e81a7fd20c1c9f2b3758",
+    "scripts/catalog/ptmm-qualification-reviewed-dependencies.mjs": "768682490a120a62b027c9be790af5781ca8cec45cba7dfd89bacce06f79b4e5",
+    "scripts/catalog/ptmm-browser-correction-reviewed-dependencies.mjs": "f1e52c7899f13ecb4a87bd291adcc7bf2ca46d00ba82a4385ab169748f88deaa",
+    "scripts/catalog/transformer-reviewed-dependencies.mjs": "126aa41598561e47d877387acb7a9b5a0369aa77f90b4bebd7d5ed40e639ba27",
+    "scripts/check-ntmi-source-previews.mjs": "89d2cc91671da44808f9c9a0613eec7a3dbd80268d6e867f6395f3877a6583c7"
+  },
+  "reviewedImplementationHashes": {
+    "scripts/catalog/source-asset-reviewed-dependencies.mjs": "5992687d0c535252cec379427123172e292542e4d046fbc1f69af0850b189f36",
+    "scripts/catalog/measurement-column-reviewed-dependencies.mjs": "1c1c78f02fd0fdbf822e234eb5bdda693516151fbc35e74a1465d88bd7df6a5c",
+    "scripts/catalog/protection-context-reviewed-dependencies.mjs": "6583a90543b73c620b07baba5b81f0ce8db7cd8a84a3bf171f3864cfa2c34746",
+    "scripts/catalog/catalog-browser-reviewed-dependencies.mjs": "077680e71a703697b952e1d245a942b490560d5686aa2bbdcd33669dd10d69b0",
+    "scripts/catalog/visual-presentation-reviewed-dependencies.mjs": "2792bf97cd7a89ff448420fb6f7a3d08713324afd746415bdf4816c75deea08e",
+    "scripts/catalog/ptmm-qualification-reviewed-dependencies.mjs": "51b448c09d08fd0d78fa1c6ccef95b1e822f041d864c3e4edca70af41ff3f038",
+    "scripts/catalog/ptmm-browser-correction-reviewed-dependencies.mjs": "73a3ed20b0e67227830a305dc020ba9a3eb24ed3c0e1dbb24be1213c67d77013",
+    "scripts/catalog/frontend-security-reviewed-dependencies.mjs": "a4c8efd7f2a25235b1c16be466b7fedf2bc2e96f586cd8b8c32f3e4892e28676",
+    "scripts/catalog/ktpb-source-context-reviewed-dependencies.mjs": "f0b30d5b050f62f5022acc984d6e2d127f818a57552394494f39d8dc0b8fe06c",
+    "scripts/catalog/transformer-reviewed-dependencies.mjs": "e01f94e72e8c6f10fa117433f9fdcdfb37f10c55b130c1cd4443faad05bd5a01",
+    "scripts/check-ntmi-source-previews.mjs": "6cdcd2d0acbe096cc816f90a611ab52b869e2480c059b1366f6c537c611e5370",
+    "scripts/catalog/proof-invocation.mjs": "d96db95ad2098ac574f975ffdacd247a571fee3f8e62074bc1af029e7914f030"
+  },
+  "reviewedTestHashes": {
+    "frontend/tests/catalog-proof-invocation.test.mjs": "adc3d23c05bf84884197601d32d0d9162f835e639f9146fed80ffc8f3b2773cc",
+    "frontend/tests/catalog-proof-parity.test.mjs": "23801d58e967dcbd1371705231ed58248895fd2c874a7c1aa04265e1869578a7",
+    "frontend/tests/ktpb-source-context-amendment.test.mjs": "2a9f0bc1245158c61fc98e4757cf2dad2cd5c2935c596b1698cdc48f9f94dfc1",
+    "frontend/tests/helpers/ktpb-source-context-historical-bytes.mjs": "9fcdf3b59f98f248655509091c17a8c16b3c67837bc0a744a2939f07911cf875"
+  },
+  "authorityNote": "New independent approval of the exact corrected local implementation/test hashes, including legacy lazy invalid-reader behavior and the explicitly reduced observation contract. Approved592895 was archived before correction and does not authorize these changed bytes. This review follows exact source/test diff inspection, 105 direct frozen-reference comparisons, 38 utility controls, 3 public fallback controls, lint, and fresh serial default-reader measurements. It is not a full suite/build/browser qualification or publication/merge/deployment permission.",
+  "validation": {
+    "priorScopedControls": {
+      "command": "node --test frontend/tests/catalog-proof-invocation.test.mjs frontend/tests/catalog-proof-parity.test.mjs frontend/tests/ktpb-source-context-amendment.test.mjs",
+      "tests": 54,
+      "pass": 54,
+      "fail": 0,
+      "durationMs": 129848.006612,
+      "evidence": {
+        "file": "focused-controls-v2.log",
+        "sha256": "3b8eb9ebb7a6f4040ee01d76ef68a11be574ebaad021effd4891f41a919f6840"
+      },
+      "scope": "54 controls passed before the final invalid-reader correction; retained as earlier scoped evidence, not a new58-test aggregate run"
+    },
+    "correctedUtilityControls": {
+      "tests": 38,
+      "pass": 38,
+      "fail": 0,
+      "durationMs": 633.11483,
+      "evidence": {
+        "file": "invalid-reader-utility-controls.log",
+        "sha256": "dfe819ffce51ce685a993f5f01990ac6810ca6474d7b00f8f3fa2045927bf866"
+      }
+    },
+    "correctedPublicFallbackControls": {
+      "tests": 3,
+      "pass": 3,
+      "fail": 0,
+      "durationMs": 1088.698682,
+      "coverage": [
+        "explicit/default/undefined reader routes",
+        "opaque supplied caller returns",
+        "invalid-reader no-read success and first-error order"
+      ],
+      "evidence": {
+        "file": "invalid-reader-public-controls.log",
+        "sha256": "99416ace5e855ce92a3bb4fc1c7c48401e789a977ef768ee4ef8cf2b827c5fa1"
+      }
+    },
+    "independentLegacyComparison": {
+      "cases": 105,
+      "matching": 105,
+      "baselineTree": "41c37dcfbfcca270f37275527e3618e07b64fd52",
+      "coverage": "Nine empty-map adapters; malformed clearances; null, number, object, string and boolean readers; actual-read native errors; named amendment/required-file readers; accessor/error traces",
+      "evidence": {
+        "file": "invalid-reader-parity-after.json",
+        "sha256": "96bde7a4692fb6212f1cedacdaee10ddf194e2b2e0f798554568462d4142ef82"
+      }
+    },
+    "lint": {
+      "passed": true,
+      "evidence": {
+        "file": "frontend-lint-invalid-reader-fix.log",
+        "sha256": "19e32b8090f1837baecd6fee88dbab2996e3ba194175018567be013075fd6369"
+      }
+    },
+    "mutationAndFinalRecheck": {
+      "earlierExhaustiveTerminalPathControls": 597,
+      "optimizedReadPathUnchangedByFinalCorrection": true,
+      "currentUtilityMutationAndLifecycleControls": "passed within38 utility controls",
+      "currentExtraInputControls": {
+        "path": "docs/catalog-transformers-2026/review/catalog-browser-assertions/README.md",
+        "sourceAndNoArgumentNtmiPersistentMutationAndDeletionRejected": true,
+        "readAttemptsEach": 2,
+        "evidence": {
+          "file": "extra-input-probes-v3.json",
+          "sha256": "5f4c13e80a42cb09cd10ac23b927e2ad887d890528b5ca838fcee64b46b6f050"
+        }
+      }
+    },
+    "measuredPerformance": {
+      "syntheticAuthority": true,
+      "actualDefaultReaders": true,
+      "serial": true,
+      "repetitions": 3,
+      "untimedWarmupsPerGroup": 1,
+      "instrumentation": "fs.readFileSync observation and V8 precise coverage; peak RSS is process cumulative high-water mark",
+      "interpretation": "Fresh instrumented serial measurements use the corrected frozen implementation in a labeled synthetic fixture. These are not production latency, physical disk I/O, a controlled old/new same-fixture speed ratio, or aggregate-suite evidence. Peak RSS is process cumulative high-water mark; retained-byte limits do not cap total process memory.",
+      "groups": [
+        {
+          "label": "source",
+          "wallMs": [
+            170.40455400000008,
+            182.27482600000008,
+            174.8624830000001
+          ],
+          "medianWallMs": 174.8624830000001,
+          "rawReads": [
+            1196,
+            1196,
+            1196
+          ],
+          "returnedBytes": [
+            59490814,
+            59490814,
+            59490814
+          ],
+          "uniquePaths": [
+            598,
+            598,
+            598
+          ],
+          "uniqueBytes": [
+            29745407,
+            29745407,
+            29745407
+          ],
+          "peakRssKiB": [
+            251140,
+            251268,
+            251268
+          ]
+        },
+        {
+          "label": "ten-routes",
+          "wallMs": [
+            1416.7809419999999,
+            1431.236684,
+            1391.0828230000006
+          ],
+          "medianWallMs": 1416.7809419999999,
+          "rawReads": [
+            11950,
+            11950,
+            11950
+          ],
+          "returnedBytes": [
+            594890200,
+            594890200,
+            594890200
+          ],
+          "uniquePaths": [
+            598,
+            598,
+            598
+          ],
+          "uniqueBytes": [
+            29745407,
+            29745407,
+            29745407
+          ],
+          "peakRssKiB": [
+            283856,
+            285136,
+            288840
+          ]
+        },
+        {
+          "label": "NTMI-clearance",
+          "wallMs": [
+            163.12301399999978,
+            172.67545099999916,
+            169.9204380000001
+          ],
+          "medianWallMs": 169.9204380000001,
+          "rawReads": [
+            1196,
+            1196,
+            1196
+          ],
+          "returnedBytes": [
+            59490814,
+            59490814,
+            59490814
+          ],
+          "uniquePaths": [
+            598,
+            598,
+            598
+          ],
+          "uniqueBytes": [
+            29745407,
+            29745407,
+            29745407
+          ],
+          "peakRssKiB": [
+            292296,
+            305608,
+            305736
+          ]
+        }
+      ],
+      "eachCanonicalEvaluatorOncePerOwner": true,
+      "evidence": {
+        "file": "synthetic-benchmarks-invalid-reader.json",
+        "sha256": "9093bbbf70e7a9dfb46b17a09f101523c05da287bd7cfbab47db1d23cc40bcfb"
+      }
+    },
+    "finalCorrection": {
+      "implementationChange": "Guard the existing reader type assertion with omittedReader===true; no other implementation change from approved592895",
+      "regressionTestsAdded": {
+        "utility": 3,
+        "public": 1
+      },
+      "scopeGrowth": false,
+      "archivedPriorApprovedCandidate": {
+        "file": "approved-592895-archive.json",
+        "sha256": "2bc9c5dfcb77f2e39a8b5bfc0b0d197b4e8e0865e2ca50a61040eae4b1dfcc95"
+      }
+    },
+    "fullSuite": "not-run-for-this-candidate",
+    "build": "not-run-for-this-candidate",
+    "browser": "not-run-for-this-candidate",
+    "publication": "not-authorized-by-this-review"
+  },
+  "resourceLimits": {
+    "paths": 1024,
+    "retainedBytes": 67108864,
+    "proofs": 32,
+    "inputDepth": 64,
+    "inputProperties": 65536,
+    "inputBytes": 8388608
+  },
+  "reviewedAt": "2026-10-07T13:50:05Z",
+  "reviewerRole": "independent local implementation and performance reviewer; separate from implementation author",
+  "scope": {
+    "pr43DeltaPaths": 46,
+    "predecessorPairs": 20,
+    "unchangedBaselinePaths": 571,
+    "immutableBaselinePaths": 551,
+    "flatReviewedDependencies": 595,
+    "implementationPaths": 12,
+    "testAndHelperPaths": 4,
+    "newRecursiveProofLayers": 0
+  },
+  "findings": [
+    "Private fixed-path canonical parses, private guard identity/mode/digest keys, stable evaluator identity, independent mutable result copies, and per-edge predecessor/successor assertions were verified. Supplied values never gain canonical memo eligibility.",
+    "Inherited-prototype hook classification and custom-reader this-binding findings were corrected before the reviewed v2 freeze. Independent probes confirm opaque fallback parity and no owner-state disclosure.",
+    "All supported wrappers finalize; internal helpers are trusted implementation, not a hostile same-process-importer sandbox. No application/package re-export or supported callback/context API was added.",
+    "Every consumed input is finally reread. The terminal uses 597 paths; source/NTMI also consume an older browser README, making 598 paths. Independent post-capture mutation and deletion probes cover that extra input.",
+    "Sequential observations are non-atomic. Mutate/restore between first and final reads, or mutation after a path final read, can evade detection. Tests demonstrate both limits; no release lock is claimed.",
+    "All prior assertions and exact historical branches remain, apart from accepted exact PR43 terminal forwarding and the NTMI owner-bound initial read. Published approvals, immutable source/UI evidence, dependencies, workflows, budgets, and audit policy remain unchanged.",
+    "The supplied-invalid-reader contract is now preserved: only omitted built-in reader configuration receives an eager callability check. Explicit invalid readers retain no-read success and original predicate/accessor error order; an actual legacy read raises the original native TypeError. All105 independently compared outcomes/traces matched frozen41c37d. Optimized default-reader semantics and all admission predicates are unchanged."
+  ],
+  "reviewedCheckpoint": {
+    "file": "review-input-manifest-v3.json",
+    "sha256": "beee77c0efba0aed752f3c925c12226365a42229efe950246390be9bb09cae70"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "format": "alageum-shr11-independent-source-review-v1",
+  "status": "approved-bounded-representative-cutaway",
+  "reviewedAt": "2026-10-06T08:49:14.337Z",
+  "scope": "Only unchanged cat-pr-shr11-v002 (ШР11), not sibling ПР or ПР-11 designations.",
+  "recordId": "cat-pr-shr11-v002",
+  "designation": "ШР11",
+  "recordSha256": "ff9d551313f708f142d12419ba0eb78b70e185fb057a4257e11db1ac16e42c94",
+  "record_shape_sha256": "61886bb30411408e112bb2fc173c30e6530a6c78c76738399a340caafe356f7c",
+  "database_id": "3ed86cce-9191-5c02-ac5a-81359077ae48",
+  "geometryType": "open-distribution-panel",
+  "iconType": "open-distribution-panel",
+  "viewMode": "illustrative-cutaway",
+  "representativeOnly": true,
+  "dimensionAccurate": false,
+  "exactProductModel": false,
+  "inherit": false,
+  "sourceEvidence": [
+    {
+      "url": "https://alageum.com/ru/katalog/shkafy-upravleniya/shr11",
+      "localPath": "/workspace/shared/alageum-oct6-old-source-review/shr11.html",
+      "sha256": "e1d0e795dd88a0e6f6f8ec6c43dc56a73fd29b0752dc093b88b10ca804fa2889",
+      "finding": "Retained primary HTML explicitly has ШР11 product heading and directly embeds /images/oborudovanie/shkafi/shr11.jpg."
+    },
+    {
+      "url": "https://alageum.com/images/oborudovanie/shkafi/shr11.jpg",
+      "localPath": "/workspace/shared/alageum-oct6-old-source-review/shr11.jpg",
+      "sha256": "c7a04b0e52b6e6eaaa9aabccdc463c673911639a848a72b52d5480ca911fbdab",
+      "actualPixelsInspected": true,
+      "finding": "Front and side open-panel drawing shows the large central breaker, vertical busbar routes, two flanking breaker groups, bottom crossbar and frame. It matches the previously reviewed page-64 family illustration topology."
+    },
+    {
+      "localPath": "frontend/public/catalog-source/page-064.webp",
+      "sha256": "2a153ebf804b1c2547b77dc9316e3dc6cae570eddce56613ee4f7aaba459b5c7",
+      "physicalPage": 64,
+      "actualPixelsInspected": true,
+      "finding": "Original mixed ПР/ШР11 page contains the same representative open-front structure; official specifically scoped ШР11 page now supplies the missing designation link."
+    },
+    {
+      "localPath": "frontend/public/catalog-products/cat-pr-shr11.webp",
+      "sha256": "d2c1d3d5b6ce0c38020aac35fc38e0259a855ecc8b41ffb9ca766d22f319b860",
+      "finding": "Existing family raster can remain; no new raster or record body is required."
+    }
+  ],
+  "limits": [
+    "Only this exact broad ШР11 designation gains representative applicability. Other 237 original record mappings, including ПР/ПР-11 siblings, are not cleared by this finding.",
+    "The illustration exposes a panel/interior view; do not invent a closed door facade or claim the panel is normally operated open.",
+    "No dimensions, electrical schematic accuracy, conductor rating, hidden wiring, exact breaker count for an order, IP rating, accessories or orderability is established by the image.",
+    "Require original source record shape and, for API records, original database UUID and raw source media before applying the dispatch.",
+    "Keep all legacy row bodies, URLs, quote identifiers and default family mappings unchanged.",
+    "Independent web tool re-fetch of the product page returned a cache miss; this finding uses the retained primary HTML and JPG retrieved by the parent, whose exact hashes and page-to-image relationship were verified."
+  ]
+}

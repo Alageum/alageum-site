@@ -1,0 +1,18 @@
+{
+  "strapiVersion": "5.56.0",
+  "middlewareVersion": "7.4.6",
+  "files": [
+    {
+      "format": "cjs",
+      "path": "dist/src/node/webpack/watch.js",
+      "originalSha256": "8d79ad12f061685a04f7418086b2949479a8de0382e9d13705cf259bfc7a63de",
+      "patchedSha256": "85f26c0b38e9e3ceb1cc9c571c3b5a34fb399c9bd5f991117d40f31ce61f0813"
+    },
+    {
+      "format": "esm",
+      "path": "dist/src/node/webpack/watch.mjs",
+      "originalSha256": "1498117a8f13af295aa578fa78402438b725572de03bef288f489875126e3f98",
+      "patchedSha256": "663072deae42cd3064298c78fde886fda61241eabb3175e40d61fa46460ead12"
+    }
+  ]
+}

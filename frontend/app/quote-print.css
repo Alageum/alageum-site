@@ -1,0 +1,58 @@
+/* Printed private RFQ content is opt-in for one freshly authorized invocation.
+   Normal Ctrl+P (including saved list/detail) must not print cached private data. */
+[data-quote-print-paper],[data-quote-native-print-fallback]{display:none}
+.quote-print-page{max-width:900px;margin-inline:auto}
+.quote-print-controls{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:20px}
+.quote-print-controls .quote-back{margin:0}
+.quote-print-controls .button{min-height:44px}
+.quote-print-help{font-size:14px;color:var(--muted);line-height:1.6;margin-bottom:28px}
+.quote-print-document{min-width:0;background:#fff;color:#172b3b;font-family:Arial,sans-serif;line-height:1.5;overflow-wrap:anywhere}
+.quote-print-document h1{font-size:30px;line-height:1.2;margin:8px 0 20px;letter-spacing:0}
+.quote-print-document h2{font-size:19px;line-height:1.35;margin:0 0 12px;letter-spacing:0}
+.quote-print-document h3{font-size:17px;line-height:1.5;margin:0 0 14px;white-space:pre-wrap;letter-spacing:0}
+.quote-print-document p{margin:0 0 10px}
+.quote-print-heading{padding-bottom:16px;border-bottom:2px solid #244c68}
+.quote-print-eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.08em}
+.quote-print-id,.quote-print-product-id,.quote-print-end{font-size:12px}
+.quote-print-notice{margin:20px 0!important;padding:16px;border-left:3px solid #244c68;background:#f2f5f8;font-size:14px}
+.quote-print-document .quote-print-comment{margin:24px 0}
+.quote-print-comment p{white-space:pre-wrap;overflow-wrap:anywhere}
+.quote-print-explanation,.quote-print-missing{font-size:13px;color:#435460}
+.quote-print-items ol{list-style:none;padding:0;margin:20px 0 0}
+.quote-print-item{padding:20px 0;border-top:1px solid #abb8c1;min-width:0}
+.quote-print-item dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 24px;margin:16px 0}
+.quote-print-item dl>div{min-width:0}
+.quote-print-item dt{font-size:12px;color:#435460}
+.quote-print-item dd{margin:4px 0 0;white-space:pre-wrap;font-size:15px}
+.quote-print-end{border-top:2px solid #244c68;margin-top:24px;padding-top:12px}
+@media(max-width:600px){
+  .quote-print-document h1{font-size:25px}
+  .quote-print-item dl{grid-template-columns:1fr}
+  .quote-print-controls .button{width:100%}
+}
+@media print{
+  .quotes-page{display:none!important}
+  @page quote-request{size:A4;margin:16mm 14mm}
+  body:has(.quotes-page){background:#fff!important;margin:0!important;padding:0!important}
+  body:has(.quotes-page)>*{display:none!important}
+  body:has(.quotes-page)>[data-quote-print-paper]{display:block!important;margin:0!important;padding:0!important;page:quote-request}
+  body:has(.quotes-page):not(:has([data-quote-print-paper]))>[data-quote-native-print-fallback]{display:block!important;color:#000;font:12pt/1.5 Arial,sans-serif}
+  [data-quote-print-paper] [data-quote-print-document]{display:none!important}
+  [data-quote-print-paper][data-authorized="true"] [data-quote-print-document]{display:block!important}
+  [data-quote-print-paper][data-authorized="true"] [data-quote-print-fallback]{display:none!important}
+  [data-quote-print-fallback]{color:#000;font:12pt/1.5 Arial,sans-serif}
+  .quote-print-document{font-size:10pt;color:#000;line-height:1.45;overflow:visible}
+  .quote-print-document h1{font-size:21pt}
+  .quote-print-document h2{font-size:14pt;break-after:avoid}
+  .quote-print-document h3{font-size:12pt;orphans:3;widows:3;break-after:avoid}
+  .quote-print-document p{orphans:3;widows:3}
+  .quote-print-heading,.quote-print-notice{break-inside:avoid}
+  .quote-print-comment{break-inside:auto;overflow:visible}
+  /* Keep short lines whole; oversized blocks can still fragment at page limits. */
+  .quote-print-item{padding:5mm 0;break-inside:avoid;overflow:visible}
+  .quote-print-item dl{display:block;break-inside:avoid;break-after:avoid}
+  .quote-print-item dl>div{display:inline-block;vertical-align:top;width:47%;margin:0 2% 3mm 0}
+  .quote-print-item dd{font-size:10pt}
+  .quote-print-product-id,.quote-print-end{font-size:8pt}
+  .quote-print-end{break-inside:avoid;break-before:avoid}
+}

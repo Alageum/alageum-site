@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "alageum_categories",
+  "info": {
+    "singularName": "category",
+    "pluralName": "categories",
+    "displayName": "Category"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": false
+    },
+    "content-type-builder": {
+      "visible": true
+    }
+  },
+  "attributes": {
+    "transport_id": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "column": {
+        "unique": true
+      }
+    },
+    "public_key": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "translations": {
+      "type": "json",
+      "required": true
+    },
+    "sort_order": {
+      "type": "integer",
+      "default": 0
+    },
+    "parent_id": {
+      "type": "string"
+    },
+    "is_published": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

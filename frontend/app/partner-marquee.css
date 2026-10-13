@@ -1,0 +1,54 @@
+.partner-section{padding:74px 0 38px;background:#f4f4f1;border-top:1px solid #e3e3df;isolation:isolate}
+.partner-heading{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:30px}
+.brand-experience .partner-heading h2{font-size:clamp(28px,3.2vw,48px);line-height:1.12;letter-spacing:-.045em;margin:12px 0 0;max-width:700px}
+.partner-pause{background:transparent;border:1px solid #d3d3ce;border-radius:30px;padding:10px 18px;font:inherit;font-size:12px;cursor:pointer;color:#646464;white-space:nowrap}
+.partner-window{overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.partner-track{display:flex;width:max-content;animation:partner-drift 64s linear infinite;will-change:transform}
+.partner-group{display:flex;flex-shrink:0;gap:16px;padding-right:16px}
+.partner-logo{position:relative;display:flex;align-items:center;justify-content:center;width:210px;height:124px;flex:none;border:1px solid transparent;border-radius:12px;background:transparent;cursor:pointer;transition:background .25s,border-color .25s,opacity .25s}
+.partner-logo img{width:160px;height:78px;object-fit:contain;filter:grayscale(1);opacity:.66;mix-blend-mode:multiply;transition:filter .3s,opacity .3s,transform .3s}
+.partner-experience.is-paused .partner-track{animation-play-state:paused}
+.partner-logo:focus-visible,.partner-pause:focus-visible,.partner-close:focus-visible{outline:2px solid #ad292f;outline-offset:-3px}
+.partner-preview-layer{position:fixed;inset:0;z-index:1100;isolation:isolate}
+.partner-page-backdrop{position:absolute;inset:0;background:rgba(70,76,82,.12);backdrop-filter:blur(5px) saturate(.85);animation:partner-fade-in .18s ease-out}
+.partner-spotlight{position:fixed;display:flex;align-items:center;justify-content:center;background:#fff;border:1px solid #deded8;border-radius:12px;box-shadow:0 10px 35px #20202012;z-index:1}
+.partner-spotlight img{width:160px;height:78px;object-fit:contain;mix-blend-mode:multiply}
+.partner-detail{position:fixed;z-index:2;display:flex;flex-direction:column;gap:20px;padding:28px;background:#fff;border:1px solid #e2e2e2;border-radius:12px;box-shadow:0 16px 55px #20202024;animation:partner-detail-in .2s ease-out;color:#262626;font-family:var(--site-font);box-sizing:border-box}
+.partner-detail-copy>span{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:#8b3d3c;display:block;padding-right:12px}
+.partner-detail h3{font-size:24px;line-height:1.16;margin:12px 0;letter-spacing:-.035em;font-weight:500}
+.partner-detail p{font-size:14px;line-height:1.6;color:#6a6a6a;margin:0}
+.partner-detail>a{display:flex;align-items:center;gap:12px;font-size:12px;color:#2a2a2a;text-decoration:none;border-top:1px solid #ededed;padding-top:16px}
+.partner-detail>a svg{width:18px}
+.partner-close{position:absolute;right:9px;top:7px;border:0;background:transparent;font-size:23px;color:#8a8a8a;cursor:pointer;padding:4px 8px}
+@keyframes partner-fade-in{from{opacity:0}to{opacity:1}}
+@keyframes partner-drift{to{transform:translateX(-50%)}}
+@keyframes partner-detail-in{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:760px){.partner-section{padding:44px 0 24px}.partner-heading{gap:14px;align-items:flex-start}.partner-pause{font-size:11px;padding:8px 12px;margin-top:5px}.partner-logo{width:164px;height:102px}.partner-logo img{width:128px;height:68px}.partner-group{gap:8px;padding-right:8px}.partner-spotlight img{width:128px;height:68px}.partner-detail{gap:16px;padding:24px}.partner-detail h3{font-size:22px}}
+@media(prefers-reduced-motion:reduce){.partner-track{animation:none;width:100%}.partner-window{overflow-x:auto;mask-image:none}.partner-group:nth-child(2){display:none}.partner-detail,.partner-page-backdrop{animation:none}.partner-logo,.partner-logo img,.partner-detail{transition:none}}
+/* Encyclopedic preview: gallery, facts and a readable company profile. */
+.partner-detail{max-height:calc(100dvh - 32px);overflow-y:auto;overscroll-behavior:contain;gap:18px;scrollbar-width:thin;scrollbar-color:#d3d3d3 transparent}
+.partner-detail h3{margin-bottom:0;padding-right:8px}
+.partner-gallery{margin:0}
+.partner-gallery>img{display:block;width:100%;height:176px;object-fit:cover;border-radius:7px}
+.partner-gallery figcaption{font-size:10px;color:#7e7e7e;line-height:1.4;margin:7px 0 10px}
+.partner-gallery-controls{display:flex;align-items:center;gap:8px}
+.partner-gallery-controls button{padding:2px;border:1px solid transparent;background:transparent;border-radius:5px;cursor:pointer;opacity:.55}
+.partner-gallery-controls button[aria-pressed="true"]{border-color:#9a413d;opacity:1}
+.partner-gallery-controls img{display:block;width:56px;height:34px;object-fit:cover;border-radius:3px}
+.partner-gallery-controls>span{margin-left:auto;font-size:10px;color:#7b7b7b}
+.partner-facts{margin:0;border-top:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;padding:8px 0}
+.partner-facts>div{display:grid;grid-template-columns:98px 1fr;gap:12px;padding:5px 0;font-size:12px;line-height:1.5}
+.partner-facts dt{color:#878787}.partner-facts dd{margin:0;color:#3c3c3c}
+.partner-article{display:grid;gap:12px}.partner-article p{font-size:13px;line-height:1.7;color:#585858}
+.partner-sources{display:flex;flex-direction:column;gap:12px;border-top:1px solid #e9e9e9;padding-top:15px}
+.partner-sources a{font-size:12px;display:flex;align-items:center;gap:10px;text-decoration:none;color:#353535}
+.partner-sources a:last-child{font-size:10px;color:#848484}
+.partner-sources svg{width:16px;height:16px}
+@media(max-width:760px){.partner-gallery>img{height:150px}.partner-facts>div{grid-template-columns:86px 1fr;gap:8px}}
+
+/* Keep the entire logo strip reachable while a preview is open. */
+.partner-preview-layer,.partner-page-backdrop,.partner-spotlight{pointer-events:none}
+.partner-detail{pointer-events:auto}
+.partner-logo:hover img,.partner-logo[aria-expanded="true"] img{filter:none;opacity:1}
+.partner-window{overflow-x:auto;scrollbar-width:thin;scrollbar-color:#aaa transparent}
+.partner-window:hover .partner-track,.partner-window:focus-within .partner-track{animation-play-state:paused}

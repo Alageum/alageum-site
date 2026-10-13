@@ -1,0 +1,368 @@
+{
+  "format": "alageum-measurement-column-completion-independent-review-v1",
+  "status": "approved-bounded-measurement-columns",
+  "date": "2026-10-06",
+  "independentOfIntegrator": true,
+  "baselineCommit": "1c705309c561130d34f79a367cd51c7ee864e59c",
+  "baselineTree": "5c59297893d4d1b52bf14c642c1ccc922073c89c",
+  "approvedDependenciesSha256": "2b831cf70394e021ec157e338407c212214288f86e137578152c37bdc7ef7bfd",
+  "approvedBindingsSha256": "df460b14dedf3865079513c3009bef6886f8ae6f9902debfb269ed1b84f3a3e6",
+  "approvedBaselineOutputsSha256": "dda99f863f2a27a114e2b36ad597d338395868ef8b36655827f6a52540d69c2f",
+  "approvedRecordIds": [
+    "alageum-2026-zom-1p25-35",
+    "alageum-2026-znom35-config1",
+    "alageum-2026-znom35-config2"
+  ],
+  "counts": {
+    "addedBindings": 3,
+    "newModelTypes": 1,
+    "newIconTypes": 1,
+    "newProducts": 0
+  },
+  "unchangedCounts": {
+    "productBodies": 843,
+    "unaffectedRecords": 840,
+    "legacyRecords": 238,
+    "choiceRecords": 36,
+    "choices": 74,
+    "sourcePreviews": 2,
+    "oldModelTypes": 125,
+    "oldIconTypes": 135
+  },
+  "resultingCoverage": {
+    "sourceGroundedDefault3D": 464,
+    "sourceBasedIcons": 465,
+    "explicitConstructionGaps": 243,
+    "constructionGapFamilies": 29
+  },
+  "scope": "Independent narrow second harness successor review relative to public PR33 commit9004d1b1e9872e3f6d1696eea4a31306113b1d1d. Only the premature page.unroute call and its comments change in frontend/e2e/catalog.spec.js. Runtime, assets, source records, media, CSS, workflows, dependencies and unit tests are byte-identical. Exact a68 and9004 review/clearance checkpoints and their150/154 and152/154 hosted outcomes are retained separately. This candidate has not been browser-revalidated and this report does not authorize publication, merge or deployment.",
+  "reviewInputs": {
+    "prototypeIndependentReviewSha256": "d5c865c6381d1f70bd570bd3b2f6b39fb50bd4203811476c508eb355936b8eff",
+    "sourceDecisionSha256": "09369c076e66a8f117ca50dc96b3bddf97bf626d22dfb6649c30c04356d7367b",
+    "frozenPrototypeManifestSha256": "7ef8917962df26f4b547809621e157142dc83842c19c4aedba1789913a0d7701",
+    "acceptedPrototypeFilesVerified": 6,
+    "sourcePagesInspected": [
+      99,
+      100
+    ]
+  },
+  "architecture": {
+    "rawByteHashingRetained": true,
+    "closedAmendments": 14,
+    "exactPinnedDependencies": 238,
+    "unchangedUiLifecyclePinsAddedAfterIndependentReview": 14,
+    "historicalApprovalsByteIdentical": true,
+    "baselineReproducedIndependentlyFromGitArchive": true,
+    "baselineCommitAndTreeVerified": true,
+    "all202HistoricalHashesVerifiedAgainstGit": true,
+    "all14AmendmentPriorHashesVerifiedAgainstGit": true,
+    "leafVerifierHasNoApprovalAdapterRecursion": true,
+    "verifierAndBindingAndSnapshotSelfPinsPresent": true,
+    "historical13RecordGateComposesDistinctSuccessor": true,
+    "old122Model132IconSnapshotUnmodified": true,
+    "current125Model135IconBaselineIncludesAllThreePriorAccessoryDefinitions": true
+  },
+  "authority": {
+    "exactStaticAndNormalizedApiRecordsOnly": true,
+    "guards": [
+      "own id/source/sourceId/sourceFileId/sourceSha256",
+      "plain or null record prototype",
+      "exact canonical source record shape including page, family, source URL, row and electrical values",
+      "separate exact API database UUID",
+      "exact raw source media rather than display image",
+      "invalid channel/foreign id/modified source/cyclic shape fail closed"
+    ],
+    "prototypeRuntimeEligibleRemainsFalse": true,
+    "typeVocabularyCannotBindRecords": true,
+    "sourceAnomaliesPreserved": [
+      "page99 printed power unit кВ",
+      "page99 full/oil masses20/80",
+      "separate voltage rows and API UUIDs"
+    ],
+    "noFamilyOrNameInheritance": true
+  },
+  "geometryAndIcon": {
+    "acceptedPrototypeBytesUnchanged": true,
+    "oldInstrumentColumnUnchanged": true,
+    "fiveElectricallyNeutralCoverFittings": true,
+    "fourLeftOneRightLayout": true,
+    "fiveSheds": true,
+    "taperedLowerTank": true,
+    "centralTopContactAndDistinctRoundPlug": true,
+    "orderedOpaqueIconLayers": true,
+    "strokeWidth": 1.1,
+    "surfaceColoursReviewed": {
+      "staticThumbnail": "#f3f5f7",
+      "apiNormalComparisonFamily": "#ffffff",
+      "apiHover": "#f2f3f4",
+      "selectedStaticRowVariantHover": "#fff1f3",
+      "newViewerIdleAndFallback": "#f3f4f1"
+    },
+    "viewerSolidBackgroundLimitedToNewType": true,
+    "otherModelAndSvgOutputsUnchanged": true,
+    "pixelsInspected": [
+      "source99 drawing",
+      "source100 drawing",
+      "accepted six-view geometry contact sheet",
+      "accepted icon contact sheet",
+      "45 actual EquipmentIcon SVGs rasterized at nine sizes across five source-inspected surface colours"
+    ],
+    "rasterSurfaceEvidenceIsNotBrowserComputedStyleEvidence": true
+  },
+  "visibleContext": {
+    "actualComponentSsrStaticAndApiCases": 6,
+    "realProductVisualEquipmentModelEquipmentIconAndNextImageLink": true,
+    "pageSpecificMainDisclosurePersistent": true,
+    "omittedSmallDetailNotePersistent": true,
+    "page99ReusedDrawingCaveatPersistent": true,
+    "page100SharedSubrowCaveatPersistent": true,
+    "wordingOutsideCollapsedSourceDetails": true,
+    "correctSourcePageFallbackRetained": true,
+    "forbiddenClaimsNotIntroduced": [
+      "CAD or dimensions",
+      "all five fittings are LV",
+      "verified material or finish",
+      "exact delivered configuration",
+      "mechanical/internal equality across records"
+    ]
+  },
+  "verification": {
+    "focusedNodeTests": {
+      "independentlyRun": true,
+      "passed": 18,
+      "failed": 0
+    },
+    "dependencyMutations": {
+      "absent": 238,
+      "oneByte": 238,
+      "allRejected": true,
+      "scopeWrongDigestsMissingPinsWrongStatusesCoveredByFocusedTests": true
+    },
+    "candidateScopeAndPreservation": {
+      "passed": true
+    },
+    "historicalCandidateComposition": {
+      "passed": true
+    },
+    "componentLifecycle": {
+      "passed": true,
+      "controlledReactEffectAndImportHarness": true,
+      "actualGeometryAndDisposal": true,
+      "created": 2,
+      "disposed": 2,
+      "cases": [
+        "idle allocates no model/import",
+        "close cancels pending lazy import",
+        "activation creates one viewer",
+        "rotation/zoom/reset dispatch",
+        "close disposes and focuses activation",
+        "late callback ignored",
+        "import failure retains real icon and no canvas",
+        "retry allocates fresh viewer",
+        "viewer failure disposes",
+        "unmount cancels pending retry"
+      ],
+      "notHostedWebgl": true
+    },
+    "fullFrontendSuiteAfterApproval": {
+      "independentlyRun": true,
+      "command": "npm run test:unit",
+      "cwd": "frontend",
+      "passed": 475,
+      "failed": 0
+    },
+    "sourceLegacyReleaseGatesAfterApproval": {
+      "measurementColumn": true,
+      "sourceAssetCompletion": true,
+      "ntmiPreview": true,
+      "legacyCompletionTests": true,
+      "originalTransformerAssets": true,
+      "supplementalTransformerAssets": true,
+      "executionChoices": true
+    },
+    "lint": {
+      "independentlyRun": true,
+      "passed": true
+    },
+    "productionBuild": "builder-reported-pass-894-pages",
+    "hostedBrowserWebgl": "a68 catalogue150/154;9004 catalogue152/154 with both API rapid-close cases passing and both static rapid-close cases failing in interceptor cleanup. Second successor hosted validation has not run.",
+    "localChromium": "restricted-before-assertions-not-retried-or-bypassed",
+    "testInvocationNotes": [
+      "An initial full-suite run from repository root had two corporate-page ENOENT/asset failures because those tests require frontend cwd; the canonical frontend invocation passed all475 tests.",
+      "Original transformer asset --check initially stopped before assertions because uuid was absent in this checkout. Re-run passed with NODE_PATH referencing an existing installation whose backend package and lock hashes exactly match this checkout; no package or lock was changed."
+    ],
+    "successorChecks": "See current successorReview and exact predecessor checkpoint reports. Earlier source/runtime/full-suite results remain predecessor evidence; none is presented as browser revalidation of this candidate."
+  },
+  "resolvedReviewFinding": "Fourteen actual UI/lifecycle/routing/surface dependencies lacked explicit byte pins. They now have fixed unchanged PR32 hashes and are in the exact reviewed closure; the amendment allowlist remains fourteen files.",
+  "remainingLimitations": [
+    "Second successor hosted catalogue CI must verify all154 cases, especially static rapid-close desktop/mobile.",
+    "Existing audit failures and native Page race are outside this change. The later natural Page pass does not establish a race fix."
+  ],
+  "evidenceSha256": {
+    "pr32-outputs.json": "dda99f863f2a27a114e2b36ad597d338395868ef8b36655827f6a52540d69c2f",
+    "focused-tests-final.log": "8feaaf98226b0712c0c9dd4137348a5f10bb53517368b0172d0986cc88282ce2",
+    "candidate-check.log": "c92020b28da3aa93c9f4edcd299657d99d9e8d7d575495c68b94ac5066a19f7a",
+    "source-candidate-check.log": "77ab49cada25b58869612e552bf665d16f1bb886ca48a2df2d4b1b29d8a7e858",
+    "independent-dependency-evidence.json": "5387ff1e0b9474ca42e71d4fff65ced01e437b78582e0aa373550083787c8a18",
+    "real-component-ssr-evidence.json": "eab3cad2be001fe5f856c99e7d04a52586bb50f0defa63dd834dc75f8e912463",
+    "component-lifecycle-evidence.json": "79fc71a1ef67e8935b3a0af9e6970e797300625be23b55a429e0454bbd595097",
+    "audit-components.mjs": "89e54a3857c8630a1d59c759f086fca04ada516846df1a5ada1e2c80367dbafd",
+    "audit-components.log": "7f038534f4e9fc0b2caad5879eac1b734f28728ff7f2f62cfea66fd91e62c4a1",
+    "actual-component-icon-surfaces.svg": "fb5f0955fa78259c09d881ab3ecb90d529ee2c47139e49c052e971ea8a1b744c",
+    "actual-component-icon-surfaces.png": "88f979e828456c3d23ad15ad805de2b329cecd7ca1fd0708e364525d2a5f3bb3",
+    "full-frontend-tests-valid-cwd.log": "25d06fae9697ac1476334b3c8eefdb7da8171b0a21493fc227e5c2496904a476",
+    "lint.log": "88b58c7f9297b027c4b27d1e0785d6940c92309503535f2fe04e5efac3262a2d",
+    "measurement-release.log": "f6dd022b63c158fd82468e3b80f101d22da7f8c451dedbf05f6d0160ec2e8086",
+    "source-release.log": "eb7aa968871c2ad1fc0da2c51e86d01f8480829e9bc6a249df9b68013094f78e",
+    "ntmi-release.log": "a244736568bf519a2efc129fee30e225d06665d8c7085fb505a884d00722bbbf",
+    "legacy-release.log": "732c021151ef2ad39990d54a6ee12e12662758acd6a7ea64c94bd3624af684f1",
+    "transformer-original-release-resolved.log": "8a935829303d4994f5afe547b5de9c6188dcecddcca82b032527838f97f1a849",
+    "transformer-supplement-release.log": "c2c6898c510f45c59ff7fd8eb2c1772dce875431b5192f29ff7c57054628711f",
+    "execution-choices-release.log": "c3944afc4380c536c7a79eb0c89b3a8e323d86f82669c6cdf044032df73c3eb9",
+    "release-gates-evidence.json": "d12fb2ab2d827d68b6103cb3d556a662b5c68701ca0af6edccbf654982865fe0"
+  },
+  "published": false,
+  "merged": false,
+  "deployed": false,
+  "derivedCurrentReports": {
+    "historicalApprovalsUnchanged": true,
+    "scope": "Only expected three-record binding deltas and corresponding coverage/gap totals; remaining families31 to29.",
+    "files": {
+      "docs/catalog-completion-2026-10-06/coverage.json": "9cb19061264de7b5e02fcceb0eed6080a3f48c0fa5dbda89e9e2b51de62b36d7",
+      "docs/catalog-completion-2026-10-06/remaining-source-gaps.json": "ef27d661ab9ab9a3b8d0400b54d7467e18f6fdd25edf0215901d9214c1a029ed"
+    }
+  },
+  "reviewRevision": "pr33-released-interceptor-lifetime-successor",
+  "successorReview": {
+    "date": "2026-10-06",
+    "independentOfIntegrator": true,
+    "baselineCommit": "9004d1b1e9872e3f6d1696eea4a31306113b1d1d",
+    "baselineTree": "52ddfcfa0c4ffd9011dbef13b0c0f75eea30859a",
+    "priorReview": {
+      "path": "docs/catalog-transformers-2026/review/measurement-column-completion/checkpoints/pr33-9004d1b1/independent-review.json",
+      "sha256": "9d20fe90c6da8a407bf3ac453c1aabafd92675e865827672dd472a4b26dd349a"
+    },
+    "priorClearance": {
+      "path": "docs/catalog-transformers-2026/review/measurement-column-completion/checkpoints/pr33-9004d1b1/clearance.json",
+      "sha256": "6c598b261d7a8eb3c62030fe40e1bf9f955cd53ec5d4ecb52d2034e42f5c4533"
+    },
+    "soleChangedImplementationFile": "frontend/e2e/catalog.spec.js",
+    "priorTestSha256": "39ab2d6e94b7aba5f6932820dbd4bc64abd3596679d2dad3d214fb80162d6d7d",
+    "reviewedTestSha256": "e3665bac73428628567b86010e0c589ad7988182dd61b3c45592d739e0069e03",
+    "changes": [
+      "Remove the premature page.unroute call after releasing the import gate.",
+      "Keep the released chunk interceptor for the isolated per-test page/context lifetime; replace the earlier fixed-request-set comment with the actual fixture-lifetime rationale."
+    ],
+    "reviewCorrection": "The previous independent review checked client-side handler removal but omitted the installed server Route.removeHandler auto-continuation behavior. The9004 hosted trace establishes removal-before-explicit-continue ordering. This review executes the installed server Route implementation to reproduce that failure and validate the retained-interceptor path.",
+    "installedApiReview": {
+      "version": "1.62.1",
+      "serverChain": [
+        "PageDispatcher.setNetworkInterceptionPatterns with no patterns removes the page interceptor",
+        "Page.removeRequestInterceptor notifies routes in flight",
+        "BrowserContext.notifyRoutesInFlightAboutRemovedHandler invokes Route.removeHandler",
+        "Route.removeHandler auto-continues its current handler with isFallback:true",
+        "A later explicit Route.continue fails _startHandling with Route is already handled"
+      ],
+      "actualInstalledServerRouteClassExecuted": true,
+      "traceOrderingIndependentlyRead": true,
+      "fixtureSourceInspected": true,
+      "contextScope": "test",
+      "defaultContextReuse": false,
+      "catalogueConfigHasNoReuseOverride": true,
+      "pageCreatedPerTestAndContextClosedAtTeardown": true
+    },
+    "preservation": {
+      "runtimeAssetsSourceDataMediaCssWorkflowsDependenciesAndUnitTestsByteIdentical": true,
+      "supportedResponseFinishedSuccessAndErrorAssertionsByteIdentical": true,
+      "focusNoResurrectionZeroContextReopenAndDisposalAssertionsByteIdentical": true,
+      "separateCaveatAndExistingPanelCanvasContextAttachmentsUnchanged": true,
+      "timeBoundsUnchanged": true,
+      "noSleepAdded": true,
+      "noFailuresSwallowed": true,
+      "dependencyPathsUnchanged": 238,
+      "changedDependencyPins": 1,
+      "amendmentAllowlistUnchanged": 14,
+      "a68And9004ProofCheckpointsPreserved": true
+    },
+    "validation": {
+      "exactSingleBlockReconstruction": true,
+      "independentActualServerAndFixtureProofCases": 5,
+      "builderExtractedClientServerProofCases": 10,
+      "builderProofInspected": true,
+      "playwrightDiscoveredCases": 154,
+      "e2eEslint": "passed",
+      "pendingReleaseRefused": true,
+      "oneByteTestMutationRejected": true,
+      "approvedReleaseGates": {
+        "measurementCompletion": "passed",
+        "sourceAssetComposition": "passed",
+        "amendmentNodeTests": {
+          "passed": 3,
+          "failed": 0
+        }
+      },
+      "localChromiumLaunched": false,
+      "successorHostedValidation": "not-run-required"
+    },
+    "evidenceSha256": {
+      "independent-route-proof.mjs": "729920199a8e66f30be948cb59996890f7627db79d9f7864723ae089d914cfff",
+      "independent-route-proof-evidence.json": "f5a5bd914563d01a24db156568872c81d5345a552d8f450862aba7595b9d3e49",
+      "hosted-second-run-evidence.json": "27da1e4b1d00f8ff619be3705e4f96c7fb27e4bf408b287db7df5da431b72e74",
+      "successor-boundary-evidence.json": "fc1b131bebeb05b4f6fb1ab61b14f8788e35e2c51b41b0bfd492500ec34c8627",
+      "playwright-list.log": "20c8a5e7d2aa7734398ba5e2f6a34b4c921295b48236c7169bb7dc12edfa197e",
+      "e2e-lint.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "measurement-release.log": "47489666b4cf85d8237985789b338759c810fbb3a793f4c6a5a2288393da2631",
+      "source-release.log": "efab8bb453b4f48cb23a9dcec016083131497ccc599cee7ad446f1e4d516b6cd",
+      "amendment-tests.log": "b9896ee634b3680b00d72adcd13ab5d24601c9f19ba546167505928ad23d3663",
+      "approved-gates-evidence.json": "9ed471770ac4254b1c90af2431c80b95e849c756fe379706049557739ce361e7"
+    }
+  },
+  "initialHostedOutcome": {
+    "commit": "a68a0fe2f234d7375338671cca20940257ab695b",
+    "tree": "48e8af658763f78c7a1efc7df54d9ab4388bea96",
+    "runUrl": "https://github.com/StiveMan1/Alageum_Temp/actions/runs/37473153931",
+    "jobUrl": "https://github.com/StiveMan1/Alageum_Temp/actions/runs/37473153931/job/112301614797",
+    "artifactUrl": "https://github.com/StiveMan1/Alageum_Temp/actions/runs/37473153931/artifacts/11419040284",
+    "artifactSha256": "e508186ab373140589582ffd46e7bb24cff0c922a4a8460e2f63472c5d66bfbf",
+    "inventorySha256": "a348eb46e3191ca7f1749664cfc4d5d6c8bdf6e4a6afb9d8257289deaa5c03fa",
+    "passed": 150,
+    "failed": 4,
+    "skipped": 0,
+    "flaky": 0,
+    "failureCases": "static/API rapid close on desktop/mobile",
+    "failure": "TypeError: request.finished is not a function at catalog.spec.js:1360:52",
+    "failedAttemptsIncludingExistingAutomaticRetry": 8,
+    "preservedWithoutReclassification": true,
+    "pixelEvidenceLimit": "Some desktop open/rotated full-panel captures omitted lowest caveat/link beyond the viewport; this is an evidence-capture limitation, not established runtime clipping. Separate provenance screenshot is added for successor verification."
+  },
+  "secondHostedOutcome": {
+    "commit": "9004d1b1e9872e3f6d1696eea4a31306113b1d1d",
+    "tree": "52ddfcfa0c4ffd9011dbef13b0c0f75eea30859a",
+    "runUrl": "https://github.com/StiveMan1/Alageum_Temp/actions/runs/37475799192",
+    "jobUrl": "https://github.com/StiveMan1/Alageum_Temp/actions/runs/37475799192/job/112310744245",
+    "artifactUrl": "https://github.com/StiveMan1/Alageum_Temp/actions/runs/37475799192/artifacts/11418389869",
+    "artifactSha256": "1ba90b88a6fb1ef8644576865122153f33a648d51120ca67925d4d8082825c3d",
+    "cases": 154,
+    "passed": 152,
+    "failed": 2,
+    "failedCases": [
+      {
+        "project": "catalog-desktop",
+        "title": "measurement column completion: static rapid close cancels lazy activation without resurrecting a canvas"
+      },
+      {
+        "project": "catalog-mobile",
+        "title": "measurement column completion: static rapid close cancels lazy activation without resurrecting a canvas"
+      }
+    ],
+    "apiRapidClosePassed": true,
+    "inventorySha256": "18d1e02a1efd7d2a9c8367b520a3008d34c6aa7189f3fa336f0381d9548b2f75",
+    "desktopTraceSha256": "7c6ce6c03584d75118d104dd516eda0a998e807ee9dc235720696142b689a413",
+    "removeInterceptionStartMs": 126918.548,
+    "explicitContinueStartMs": 126921.72,
+    "continueFailure": "Route is already handled!",
+    "successorBrowserNotRun": true,
+    "preservedWithoutReclassification": true,
+    "standaloneSourceCaveatScreenshots": "CI evidence reviewer verified72 new standalone caveat PNGs; this second successor leaves the attachment logic unchanged."
+  }
+}

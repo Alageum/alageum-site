@@ -1,0 +1,1740 @@
+[
+  {
+    "id": "alageum-2026-nom-6",
+    "familyId": "nom",
+    "name": "НОМ-6",
+    "sourceDesignation": "НОМ-6",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      97
+    ],
+    "rawSpecs": [
+      {
+        "label": "Первичная обмотка",
+        "raw": "6000",
+        "unitAsPrinted": "В",
+        "sourcePage": 97
+      },
+      {
+        "label": "Вторичная обмотка",
+        "raw": "100",
+        "unitAsPrinted": "В",
+        "sourcePage": 97
+      },
+      {
+        "label": "Мощность в классе0,5",
+        "raw": "50",
+        "unitAsPrinted": "В.А",
+        "sourcePage": 97
+      },
+      {
+        "label": "Мощность в классе1,0",
+        "raw": "75",
+        "unitAsPrinted": "В.А",
+        "sourcePage": 97
+      },
+      {
+        "label": "Мощность в классе3,0",
+        "raw": "200",
+        "unitAsPrinted": "В.А",
+        "sourcePage": 97
+      },
+      {
+        "label": "Макс.(предельная) мощность",
+        "raw": "400",
+        "unitAsPrinted": "ВА",
+        "sourcePage": 97
+      },
+      {
+        "label": "Схема и группа соединения",
+        "raw": "1/1-0",
+        "unitAsPrinted": null,
+        "sourcePage": 97
+      },
+      {
+        "label": "H",
+        "raw": "440",
+        "unitAsPrinted": "мм",
+        "sourcePage": 97
+      },
+      {
+        "label": "H1",
+        "raw": "155",
+        "unitAsPrinted": "мм",
+        "sourcePage": 97
+      },
+      {
+        "label": "Масса",
+        "raw": "325",
+        "unitAsPrinted": "кг",
+        "sourcePage": 97
+      },
+      {
+        "label": "Drawing L",
+        "raw": "286",
+        "unitAsPrinted": null,
+        "sourcePage": 97
+      },
+      {
+        "label": "Drawing L1",
+        "raw": "272",
+        "unitAsPrinted": null,
+        "sourcePage": 97
+      },
+      {
+        "label": "Drawing A",
+        "raw": "250",
+        "unitAsPrinted": null,
+        "sourcePage": 97
+      },
+      {
+        "label": "Drawing A1",
+        "raw": "152",
+        "unitAsPrinted": null,
+        "sourcePage": 97
+      },
+      {
+        "label": "Drawing h",
+        "raw": "155",
+        "unitAsPrinted": null,
+        "sourcePage": 97
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 97,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-16-p97"
+      },
+      {
+        "label": "Сеть",
+        "raw": "переменный ток с изолированной нейтралью",
+        "unitAsPrinted": null,
+        "sourcePage": 97,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-16-p97"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "raw": "тряска, вибрация, удары, взрывоопасная и агрессивная среда",
+        "unitAsPrinted": null,
+        "sourcePage": 97,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-16-p97"
+      }
+    ],
+    "assetFamilyIds": [
+      "measurement-nom"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Mass325/340kg preserved exactly despite unexpectedly large values for shown dimensions; no inferred decimal correction."
+    ],
+    "series": "НОМ",
+    "context": "однофазный измерительный",
+    "voltageRaw": "6000/100 В",
+    "commonProseGroupIds": [
+      "common-prose-16-p97"
+    ],
+    "designation": "НОМ-6",
+    "execution": "однофазный измерительный",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 97,
+      "designation": "НОМ-6",
+      "execution": "однофазный измерительный",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Первичная обмотка",
+        "value": "6000",
+        "unit": "В",
+        "page": 97
+      },
+      {
+        "label": "Вторичная обмотка",
+        "value": "100",
+        "unit": "В",
+        "page": 97
+      },
+      {
+        "label": "Мощность в классе0,5",
+        "value": "50",
+        "unit": "В.А",
+        "page": 97
+      },
+      {
+        "label": "Мощность в классе1,0",
+        "value": "75",
+        "unit": "В.А",
+        "page": 97
+      },
+      {
+        "label": "Мощность в классе3,0",
+        "value": "200",
+        "unit": "В.А",
+        "page": 97
+      },
+      {
+        "label": "Макс.(предельная) мощность",
+        "value": "400",
+        "unit": "ВА",
+        "page": 97
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "1/1-0",
+        "unit": null,
+        "page": 97
+      },
+      {
+        "label": "H",
+        "value": "440",
+        "unit": "мм",
+        "page": 97
+      },
+      {
+        "label": "H1",
+        "value": "155",
+        "unit": "мм",
+        "page": 97
+      },
+      {
+        "label": "Масса",
+        "value": "325",
+        "unit": "кг",
+        "page": 97
+      },
+      {
+        "label": "Drawing L",
+        "value": "286",
+        "unit": null,
+        "page": 97
+      },
+      {
+        "label": "Drawing L1",
+        "value": "272",
+        "unit": null,
+        "page": 97
+      },
+      {
+        "label": "Drawing A",
+        "value": "250",
+        "unit": null,
+        "page": 97
+      },
+      {
+        "label": "Drawing A1",
+        "value": "152",
+        "unit": null,
+        "page": 97
+      },
+      {
+        "label": "Drawing h",
+        "value": "155",
+        "unit": null,
+        "page": 97
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 97,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-16-p97"
+      },
+      {
+        "label": "Сеть",
+        "value": "переменный ток с изолированной нейтралью",
+        "unit": null,
+        "page": 97,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-16-p97"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "value": "тряска, вибрация, удары, взрывоопасная и агрессивная среда",
+        "unit": null,
+        "page": 97,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-16-p97"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-nom-10",
+    "familyId": "nom",
+    "name": "НОМ-10",
+    "sourceDesignation": "НОМ-10",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      97
+    ],
+    "rawSpecs": [
+      {
+        "label": "Первичная обмотка",
+        "raw": "10000",
+        "unitAsPrinted": "В",
+        "sourcePage": 97
+      },
+      {
+        "label": "Вторичная обмотка",
+        "raw": "100",
+        "unitAsPrinted": "В",
+        "sourcePage": 97
+      },
+      {
+        "label": "Мощность в классе0,5",
+        "raw": "75",
+        "unitAsPrinted": "В.А",
+        "sourcePage": 97
+      },
+      {
+        "label": "Мощность в классе1,0",
+        "raw": "150",
+        "unitAsPrinted": "В.А",
+        "sourcePage": 97
+      },
+      {
+        "label": "Мощность в классе3,0",
+        "raw": "300",
+        "unitAsPrinted": "В.А",
+        "sourcePage": 97
+      },
+      {
+        "label": "Макс.(предельная) мощность",
+        "raw": "720",
+        "unitAsPrinted": "ВА",
+        "sourcePage": 97
+      },
+      {
+        "label": "Схема и группа соединения",
+        "raw": "1/1-0",
+        "unitAsPrinted": null,
+        "sourcePage": 97
+      },
+      {
+        "label": "H",
+        "raw": "495",
+        "unitAsPrinted": "мм",
+        "sourcePage": 97
+      },
+      {
+        "label": "H1",
+        "raw": "215",
+        "unitAsPrinted": "мм",
+        "sourcePage": 97
+      },
+      {
+        "label": "Масса",
+        "raw": "340",
+        "unitAsPrinted": "кг",
+        "sourcePage": 97
+      },
+      {
+        "label": "Drawing L",
+        "raw": "286",
+        "unitAsPrinted": null,
+        "sourcePage": 97
+      },
+      {
+        "label": "Drawing L1",
+        "raw": "272",
+        "unitAsPrinted": null,
+        "sourcePage": 97
+      },
+      {
+        "label": "Drawing A",
+        "raw": "250",
+        "unitAsPrinted": null,
+        "sourcePage": 97
+      },
+      {
+        "label": "Drawing A1",
+        "raw": "152",
+        "unitAsPrinted": null,
+        "sourcePage": 97
+      },
+      {
+        "label": "Drawing h",
+        "raw": "215",
+        "unitAsPrinted": null,
+        "sourcePage": 97
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 97,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-16-p97"
+      },
+      {
+        "label": "Сеть",
+        "raw": "переменный ток с изолированной нейтралью",
+        "unitAsPrinted": null,
+        "sourcePage": 97,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-16-p97"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "raw": "тряска, вибрация, удары, взрывоопасная и агрессивная среда",
+        "unitAsPrinted": null,
+        "sourcePage": 97,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-16-p97"
+      }
+    ],
+    "assetFamilyIds": [
+      "measurement-nom"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Mass325/340kg preserved exactly despite unexpectedly large values for shown dimensions; no inferred decimal correction."
+    ],
+    "series": "НОМ",
+    "context": "однофазный измерительный",
+    "voltageRaw": "10000/100 В",
+    "commonProseGroupIds": [
+      "common-prose-16-p97"
+    ],
+    "designation": "НОМ-10",
+    "execution": "однофазный измерительный",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 97,
+      "designation": "НОМ-10",
+      "execution": "однофазный измерительный",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Первичная обмотка",
+        "value": "10000",
+        "unit": "В",
+        "page": 97
+      },
+      {
+        "label": "Вторичная обмотка",
+        "value": "100",
+        "unit": "В",
+        "page": 97
+      },
+      {
+        "label": "Мощность в классе0,5",
+        "value": "75",
+        "unit": "В.А",
+        "page": 97
+      },
+      {
+        "label": "Мощность в классе1,0",
+        "value": "150",
+        "unit": "В.А",
+        "page": 97
+      },
+      {
+        "label": "Мощность в классе3,0",
+        "value": "300",
+        "unit": "В.А",
+        "page": 97
+      },
+      {
+        "label": "Макс.(предельная) мощность",
+        "value": "720",
+        "unit": "ВА",
+        "page": 97
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "1/1-0",
+        "unit": null,
+        "page": 97
+      },
+      {
+        "label": "H",
+        "value": "495",
+        "unit": "мм",
+        "page": 97
+      },
+      {
+        "label": "H1",
+        "value": "215",
+        "unit": "мм",
+        "page": 97
+      },
+      {
+        "label": "Масса",
+        "value": "340",
+        "unit": "кг",
+        "page": 97
+      },
+      {
+        "label": "Drawing L",
+        "value": "286",
+        "unit": null,
+        "page": 97
+      },
+      {
+        "label": "Drawing L1",
+        "value": "272",
+        "unit": null,
+        "page": 97
+      },
+      {
+        "label": "Drawing A",
+        "value": "250",
+        "unit": null,
+        "page": 97
+      },
+      {
+        "label": "Drawing A1",
+        "value": "152",
+        "unit": null,
+        "page": 97
+      },
+      {
+        "label": "Drawing h",
+        "value": "215",
+        "unit": null,
+        "page": 97
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 97,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-16-p97"
+      },
+      {
+        "label": "Сеть",
+        "value": "переменный ток с изолированной нейтралью",
+        "unit": null,
+        "page": 97,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-16-p97"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "value": "тряска, вибрация, удары, взрывоопасная и агрессивная среда",
+        "unit": null,
+        "page": 97,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-16-p97"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-nom-3-drawing",
+    "familyId": "nom",
+    "name": "НОМ-3",
+    "sourceDesignation": "НОМ-3",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      97
+    ],
+    "rawSpecs": [
+      {
+        "label": "H",
+        "raw": "440",
+        "unitAsPrinted": null,
+        "sourcePage": 97
+      },
+      {
+        "label": "L",
+        "raw": "286",
+        "unitAsPrinted": null,
+        "sourcePage": 97
+      },
+      {
+        "label": "L1",
+        "raw": "272",
+        "unitAsPrinted": null,
+        "sourcePage": 97
+      },
+      {
+        "label": "A",
+        "raw": "250",
+        "unitAsPrinted": null,
+        "sourcePage": 97
+      },
+      {
+        "label": "A1",
+        "raw": "152",
+        "unitAsPrinted": null,
+        "sourcePage": 97
+      },
+      {
+        "label": "h",
+        "raw": "155",
+        "unitAsPrinted": null,
+        "sourcePage": 97
+      }
+    ],
+    "assetFamilyIds": [
+      "measurement-nom"
+    ],
+    "recordType": "drawing-only-model",
+    "uncertainties": [
+      "НОМ-3 explicitly present in dimension-table row; absent from electrical table. Do not infer voltage or mass from6kV variant. Drawing table does not print units."
+    ],
+    "series": "НОМ",
+    "context": "named only in small drawing table shared with НОМ-6",
+    "designation": "НОМ-3",
+    "execution": "named only in small drawing table shared with НОМ-6",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 97,
+      "designation": "НОМ-3",
+      "execution": "named only in small drawing table shared with НОМ-6",
+      "kind": "drawing-only-model"
+    },
+    "technicalSpecs": [
+      {
+        "label": "H",
+        "value": "440",
+        "unit": null,
+        "page": 97
+      },
+      {
+        "label": "L",
+        "value": "286",
+        "unit": null,
+        "page": 97
+      },
+      {
+        "label": "L1",
+        "value": "272",
+        "unit": null,
+        "page": 97
+      },
+      {
+        "label": "A",
+        "value": "250",
+        "unit": null,
+        "page": 97
+      },
+      {
+        "label": "A1",
+        "value": "152",
+        "unit": null,
+        "page": 97
+      },
+      {
+        "label": "h",
+        "value": "155",
+        "unit": null,
+        "page": 97
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-nami-6",
+    "familyId": "nami",
+    "name": "НАМИ-6",
+    "sourceDesignation": "НАМИ-6",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      98
+    ],
+    "rawSpecs": [
+      {
+        "label": "ВН",
+        "raw": "6",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 98
+      },
+      {
+        "label": "НН основная",
+        "raw": "0,1",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 98
+      },
+      {
+        "label": "НН дополнительная",
+        "raw": "0,1",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 98
+      },
+      {
+        "label": "Мощность основная",
+        "raw": "75",
+        "unitAsPrinted": "ВА",
+        "sourcePage": 98
+      },
+      {
+        "label": "Мощность дополнительная",
+        "raw": "30",
+        "unitAsPrinted": "ВА",
+        "sourcePage": 98
+      },
+      {
+        "label": "Класс точности в номинальном режиме",
+        "raw": "0,2",
+        "unitAsPrinted": null,
+        "sourcePage": 98
+      },
+      {
+        "label": "H",
+        "raw": "555",
+        "unitAsPrinted": "мм",
+        "sourcePage": 98
+      },
+      {
+        "label": "Масса",
+        "raw": "106",
+        "unitAsPrinted": "кг",
+        "sourcePage": 98
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 98,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-17-p98"
+      },
+      {
+        "label": "Нейтраль сети",
+        "raw": "изолированная или заземленная через дугогасящий реактор",
+        "unitAsPrinted": null,
+        "sourcePage": 98,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-17-p98"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "raw": "тряска, вибрация, удары, взрывоопасная и агрессивная среда",
+        "unitAsPrinted": null,
+        "sourcePage": 98,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-17-p98"
+      }
+    ],
+    "assetFamilyIds": [
+      "measurement-nami"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [],
+    "series": "НАМИ",
+    "context": "трехфазный измерительный",
+    "voltageRaw": "6/0,1;0,1 кВ",
+    "commonProseGroupIds": [
+      "common-prose-17-p98"
+    ],
+    "designation": "НАМИ-6",
+    "execution": "трехфазный измерительный",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 98,
+      "designation": "НАМИ-6",
+      "execution": "трехфазный измерительный",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "ВН",
+        "value": "6",
+        "unit": "кВ",
+        "page": 98
+      },
+      {
+        "label": "НН основная",
+        "value": "0,1",
+        "unit": "кВ",
+        "page": 98
+      },
+      {
+        "label": "НН дополнительная",
+        "value": "0,1",
+        "unit": "кВ",
+        "page": 98
+      },
+      {
+        "label": "Мощность основная",
+        "value": "75",
+        "unit": "ВА",
+        "page": 98
+      },
+      {
+        "label": "Мощность дополнительная",
+        "value": "30",
+        "unit": "ВА",
+        "page": 98
+      },
+      {
+        "label": "Класс точности в номинальном режиме",
+        "value": "0,2",
+        "unit": null,
+        "page": 98
+      },
+      {
+        "label": "H",
+        "value": "555",
+        "unit": "мм",
+        "page": 98
+      },
+      {
+        "label": "Масса",
+        "value": "106",
+        "unit": "кг",
+        "page": 98
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 98,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-17-p98"
+      },
+      {
+        "label": "Нейтраль сети",
+        "value": "изолированная или заземленная через дугогасящий реактор",
+        "unit": null,
+        "page": 98,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-17-p98"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "value": "тряска, вибрация, удары, взрывоопасная и агрессивная среда",
+        "unit": null,
+        "page": 98,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-17-p98"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-nami-10",
+    "familyId": "nami",
+    "name": "НАМИ-10",
+    "sourceDesignation": "НАМИ-10",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      98
+    ],
+    "rawSpecs": [
+      {
+        "label": "ВН",
+        "raw": "10",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 98
+      },
+      {
+        "label": "НН основная",
+        "raw": "0,1",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 98
+      },
+      {
+        "label": "НН дополнительная",
+        "raw": "0,1",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 98
+      },
+      {
+        "label": "Мощность основная",
+        "raw": "75",
+        "unitAsPrinted": "ВА",
+        "sourcePage": 98
+      },
+      {
+        "label": "Мощность дополнительная",
+        "raw": "30",
+        "unitAsPrinted": "ВА",
+        "sourcePage": 98
+      },
+      {
+        "label": "Класс точности в номинальном режиме",
+        "raw": "0,2",
+        "unitAsPrinted": null,
+        "sourcePage": 98
+      },
+      {
+        "label": "H",
+        "raw": "615",
+        "unitAsPrinted": "мм",
+        "sourcePage": 98
+      },
+      {
+        "label": "Масса",
+        "raw": "115",
+        "unitAsPrinted": "кг",
+        "sourcePage": 98
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 98,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-17-p98"
+      },
+      {
+        "label": "Нейтраль сети",
+        "raw": "изолированная или заземленная через дугогасящий реактор",
+        "unitAsPrinted": null,
+        "sourcePage": 98,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-17-p98"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "raw": "тряска, вибрация, удары, взрывоопасная и агрессивная среда",
+        "unitAsPrinted": null,
+        "sourcePage": 98,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-17-p98"
+      }
+    ],
+    "assetFamilyIds": [
+      "measurement-nami"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [],
+    "series": "НАМИ",
+    "context": "трехфазный измерительный",
+    "voltageRaw": "10/0,1;0,1 кВ",
+    "commonProseGroupIds": [
+      "common-prose-17-p98"
+    ],
+    "designation": "НАМИ-10",
+    "execution": "трехфазный измерительный",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 98,
+      "designation": "НАМИ-10",
+      "execution": "трехфазный измерительный",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "ВН",
+        "value": "10",
+        "unit": "кВ",
+        "page": 98
+      },
+      {
+        "label": "НН основная",
+        "value": "0,1",
+        "unit": "кВ",
+        "page": 98
+      },
+      {
+        "label": "НН дополнительная",
+        "value": "0,1",
+        "unit": "кВ",
+        "page": 98
+      },
+      {
+        "label": "Мощность основная",
+        "value": "75",
+        "unit": "ВА",
+        "page": 98
+      },
+      {
+        "label": "Мощность дополнительная",
+        "value": "30",
+        "unit": "ВА",
+        "page": 98
+      },
+      {
+        "label": "Класс точности в номинальном режиме",
+        "value": "0,2",
+        "unit": null,
+        "page": 98
+      },
+      {
+        "label": "H",
+        "value": "615",
+        "unit": "мм",
+        "page": 98
+      },
+      {
+        "label": "Масса",
+        "value": "115",
+        "unit": "кг",
+        "page": 98
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 98,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-17-p98"
+      },
+      {
+        "label": "Нейтраль сети",
+        "value": "изолированная или заземленная через дугогасящий реактор",
+        "unit": null,
+        "page": 98,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-17-p98"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "value": "тряска, вибрация, удары, взрывоопасная и агрессивная среда",
+        "unit": null,
+        "page": 98,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-17-p98"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-zom-1p25-35",
+    "familyId": "zom",
+    "name": "ЗОМ-1,25/35",
+    "sourceDesignation": "ЗОМ-1,25/35",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      99
+    ],
+    "rawSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "raw": "1,25",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 99
+      },
+      {
+        "label": "ВН",
+        "raw": "27,5",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 99
+      },
+      {
+        "label": "НН",
+        "raw": "0,23",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 99
+      },
+      {
+        "label": "Схема и группа соединения",
+        "raw": "1/1-0",
+        "unitAsPrinted": null,
+        "sourcePage": 99
+      },
+      {
+        "label": "Масса не более полная",
+        "raw": "20",
+        "unitAsPrinted": "кг",
+        "sourcePage": 99
+      },
+      {
+        "label": "Масса не более масла",
+        "raw": "80",
+        "unitAsPrinted": "кг",
+        "sourcePage": 99
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 99,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-18-p99"
+      },
+      {
+        "label": "Охлаждение",
+        "raw": "естественное",
+        "unitAsPrinted": null,
+        "sourcePage": 99,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-18-p99"
+      },
+      {
+        "label": "Применение",
+        "raw": "измерительные приборы, автоматика, сигнализация и релейная защита электрифицированных участков железных дорог",
+        "unitAsPrinted": null,
+        "sourcePage": 99,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-18-p99"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "raw": "тряска, вибрация, удары, взрывоопасная и агрессивная среда",
+        "unitAsPrinted": null,
+        "sourcePage": 99,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-18-p99"
+      }
+    ],
+    "assetFamilyIds": [
+      "measurement-zom-znom"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Power column unit printed кВ (not кВА).",
+      "Mass cells literally full20kg/oil80kg, inconsistent; preserved and require confirmation.",
+      "Drawing title uses ЗОМ-1,25-35 whereas table designation uses slash."
+    ],
+    "series": "ЗОМ",
+    "context": "измерительный, railway",
+    "voltageRaw": "27,5/0,23кВ",
+    "sourceAliases": [
+      "ЗОМ-1,25-35"
+    ],
+    "commonProseGroupIds": [
+      "common-prose-18-p99"
+    ],
+    "designation": "ЗОМ-1,25/35",
+    "execution": "измерительный, railway",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 99,
+      "designation": "ЗОМ-1,25/35",
+      "execution": "измерительный, railway",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "1,25",
+        "unit": "кВ",
+        "page": 99
+      },
+      {
+        "label": "ВН",
+        "value": "27,5",
+        "unit": "кВ",
+        "page": 99
+      },
+      {
+        "label": "НН",
+        "value": "0,23",
+        "unit": "кВ",
+        "page": 99
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "1/1-0",
+        "unit": null,
+        "page": 99
+      },
+      {
+        "label": "Масса не более полная",
+        "value": "20",
+        "unit": "кг",
+        "page": 99
+      },
+      {
+        "label": "Масса не более масла",
+        "value": "80",
+        "unit": "кг",
+        "page": 99
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 99,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-18-p99"
+      },
+      {
+        "label": "Охлаждение",
+        "value": "естественное",
+        "unit": null,
+        "page": 99,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-18-p99"
+      },
+      {
+        "label": "Применение",
+        "value": "измерительные приборы, автоматика, сигнализация и релейная защита электрифицированных участков железных дорог",
+        "unit": null,
+        "page": 99,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-18-p99"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "value": "тряска, вибрация, удары, взрывоопасная и агрессивная среда",
+        "unit": null,
+        "page": 99,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-18-p99"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-znom35-config1",
+    "familyId": "znom",
+    "name": "ЗНОМ-35",
+    "sourceDesignation": "ЗНОМ-35",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      100
+    ],
+    "rawSpecs": [
+      {
+        "label": "Предельная мощность",
+        "raw": "1,0",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 100
+      },
+      {
+        "label": "Схема и группа соединения",
+        "raw": "1/1/1-0-0",
+        "unitAsPrinted": null,
+        "sourcePage": 100
+      },
+      {
+        "label": "Мощность в классе0,5",
+        "raw": "0,15",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 100
+      },
+      {
+        "label": "Мощность в классе1",
+        "raw": "0,25",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 100
+      },
+      {
+        "label": "Мощность в классе3",
+        "raw": "0,6",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 100
+      },
+      {
+        "label": "ВН",
+        "raw": "27,5",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 100
+      },
+      {
+        "label": "НН основная",
+        "raw": "0,1",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 100
+      },
+      {
+        "label": "НН дополнительная",
+        "raw": "0,127",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 100
+      },
+      {
+        "label": "Масса не более полная",
+        "raw": "80",
+        "unitAsPrinted": "кг",
+        "sourcePage": 100
+      },
+      {
+        "label": "Масса не более масла",
+        "raw": "20",
+        "unitAsPrinted": "кг",
+        "sourcePage": 100
+      },
+      {
+        "label": "Частота",
+        "raw": "50 и60",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100"
+      },
+      {
+        "label": "Охлаждение",
+        "raw": "естественное",
+        "unitAsPrinted": null,
+        "sourcePage": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100"
+      },
+      {
+        "label": "Нейтраль сети",
+        "raw": "изолированная",
+        "unitAsPrinted": null,
+        "sourcePage": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100"
+      },
+      {
+        "label": "Применение",
+        "raw": "измерительные приборы, защита и сигнализация; релейная защита электрифицированных участков железной дороги",
+        "unitAsPrinted": null,
+        "sourcePage": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100"
+      }
+    ],
+    "assetFamilyIds": [
+      "measurement-zom-znom"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [],
+    "series": "ЗНОМ",
+    "context": "nominal-winding-voltage option1",
+    "sourceRow": {
+      "page": 100,
+      "table": "technical",
+      "row": 1,
+      "voltageSubrow": 1
+    },
+    "voltageRaw": "27,5/0,1;0,127 кВ",
+    "commonProseGroupIds": [
+      "common-prose-19-p100"
+    ],
+    "designation": "ЗНОМ-35",
+    "execution": "nominal-winding-voltage option1",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "technicalSpecs": [
+      {
+        "label": "Предельная мощность",
+        "value": "1,0",
+        "unit": "кВА",
+        "page": 100
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "1/1/1-0-0",
+        "unit": null,
+        "page": 100
+      },
+      {
+        "label": "Мощность в классе0,5",
+        "value": "0,15",
+        "unit": "кВА",
+        "page": 100
+      },
+      {
+        "label": "Мощность в классе1",
+        "value": "0,25",
+        "unit": "кВА",
+        "page": 100
+      },
+      {
+        "label": "Мощность в классе3",
+        "value": "0,6",
+        "unit": "кВА",
+        "page": 100
+      },
+      {
+        "label": "ВН",
+        "value": "27,5",
+        "unit": "кВ",
+        "page": 100
+      },
+      {
+        "label": "НН основная",
+        "value": "0,1",
+        "unit": "кВ",
+        "page": 100
+      },
+      {
+        "label": "НН дополнительная",
+        "value": "0,127",
+        "unit": "кВ",
+        "page": 100
+      },
+      {
+        "label": "Масса не более полная",
+        "value": "80",
+        "unit": "кг",
+        "page": 100
+      },
+      {
+        "label": "Масса не более масла",
+        "value": "20",
+        "unit": "кг",
+        "page": 100
+      },
+      {
+        "label": "Частота",
+        "value": "50 и60",
+        "unit": "Гц",
+        "page": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100"
+      },
+      {
+        "label": "Охлаждение",
+        "value": "естественное",
+        "unit": null,
+        "page": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100"
+      },
+      {
+        "label": "Нейтраль сети",
+        "value": "изолированная",
+        "unit": null,
+        "page": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100"
+      },
+      {
+        "label": "Применение",
+        "value": "измерительные приборы, защита и сигнализация; релейная защита электрифицированных участков железной дороги",
+        "unit": null,
+        "page": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-znom35-config2",
+    "familyId": "znom",
+    "name": "ЗНОМ-35",
+    "sourceDesignation": "ЗНОМ-35",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      100
+    ],
+    "rawSpecs": [
+      {
+        "label": "Предельная мощность",
+        "raw": "1,0",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 100
+      },
+      {
+        "label": "Схема и группа соединения",
+        "raw": "1/1/1-0-0",
+        "unitAsPrinted": null,
+        "sourcePage": 100
+      },
+      {
+        "label": "Мощность в классе0,5",
+        "raw": "0,15",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 100
+      },
+      {
+        "label": "Мощность в классе1",
+        "raw": "0,25",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 100
+      },
+      {
+        "label": "Мощность в классе3",
+        "raw": "0,6",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 100
+      },
+      {
+        "label": "ВН",
+        "raw": "35/√3",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 100
+      },
+      {
+        "label": "НН основная",
+        "raw": "0,1/√3",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 100
+      },
+      {
+        "label": "НН дополнительная",
+        "raw": "0,1/3",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 100
+      },
+      {
+        "label": "Масса не более полная",
+        "raw": "80",
+        "unitAsPrinted": "кг",
+        "sourcePage": 100
+      },
+      {
+        "label": "Масса не более масла",
+        "raw": "20",
+        "unitAsPrinted": "кг",
+        "sourcePage": 100
+      },
+      {
+        "label": "Частота",
+        "raw": "50 и60",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100"
+      },
+      {
+        "label": "Охлаждение",
+        "raw": "естественное",
+        "unitAsPrinted": null,
+        "sourcePage": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100"
+      },
+      {
+        "label": "Нейтраль сети",
+        "raw": "изолированная",
+        "unitAsPrinted": null,
+        "sourcePage": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100"
+      },
+      {
+        "label": "Применение",
+        "raw": "измерительные приборы, защита и сигнализация; релейная защита электрифицированных участков железной дороги",
+        "unitAsPrinted": null,
+        "sourcePage": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100"
+      }
+    ],
+    "assetFamilyIds": [
+      "measurement-zom-znom"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [],
+    "series": "ЗНОМ",
+    "context": "nominal-winding-voltage option2",
+    "sourceRow": {
+      "page": 100,
+      "table": "technical",
+      "row": 1,
+      "voltageSubrow": 2
+    },
+    "voltageRaw": "35/√3/0,1/√3;0,1/3 кВ",
+    "commonProseGroupIds": [
+      "common-prose-19-p100"
+    ],
+    "designation": "ЗНОМ-35",
+    "execution": "nominal-winding-voltage option2",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "technicalSpecs": [
+      {
+        "label": "Предельная мощность",
+        "value": "1,0",
+        "unit": "кВА",
+        "page": 100
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "1/1/1-0-0",
+        "unit": null,
+        "page": 100
+      },
+      {
+        "label": "Мощность в классе0,5",
+        "value": "0,15",
+        "unit": "кВА",
+        "page": 100
+      },
+      {
+        "label": "Мощность в классе1",
+        "value": "0,25",
+        "unit": "кВА",
+        "page": 100
+      },
+      {
+        "label": "Мощность в классе3",
+        "value": "0,6",
+        "unit": "кВА",
+        "page": 100
+      },
+      {
+        "label": "ВН",
+        "value": "35/√3",
+        "unit": "кВ",
+        "page": 100
+      },
+      {
+        "label": "НН основная",
+        "value": "0,1/√3",
+        "unit": "кВ",
+        "page": 100
+      },
+      {
+        "label": "НН дополнительная",
+        "value": "0,1/3",
+        "unit": "кВ",
+        "page": 100
+      },
+      {
+        "label": "Масса не более полная",
+        "value": "80",
+        "unit": "кг",
+        "page": 100
+      },
+      {
+        "label": "Масса не более масла",
+        "value": "20",
+        "unit": "кг",
+        "page": 100
+      },
+      {
+        "label": "Частота",
+        "value": "50 и60",
+        "unit": "Гц",
+        "page": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100"
+      },
+      {
+        "label": "Охлаждение",
+        "value": "естественное",
+        "unit": null,
+        "page": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100"
+      },
+      {
+        "label": "Нейтраль сети",
+        "value": "изолированная",
+        "unit": null,
+        "page": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100"
+      },
+      {
+        "label": "Применение",
+        "value": "измерительные приборы, защита и сигнализация; релейная защита электрифицированных участков железной дороги",
+        "unit": null,
+        "page": 100,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-19-p100"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-om-2p0-drawing",
+    "familyId": "om",
+    "name": "ОМ 2,0",
+    "sourceDesignation": "ОМ 2,0",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      75
+    ],
+    "rawSpecs": [
+      {
+        "label": "Drawing grouped designation",
+        "raw": "ОМ 2,0; 2,5/6–10",
+        "unitAsPrinted": null,
+        "sourcePage": 75
+      },
+      {
+        "label": "H",
+        "raw": "680",
+        "unitAsPrinted": null,
+        "sourcePage": 75
+      },
+      {
+        "label": "H1",
+        "raw": "430",
+        "unitAsPrinted": null,
+        "sourcePage": 75
+      },
+      {
+        "label": "B",
+        "raw": "360",
+        "unitAsPrinted": null,
+        "sourcePage": 75
+      },
+      {
+        "label": "L",
+        "raw": "470",
+        "unitAsPrinted": null,
+        "sourcePage": 75
+      }
+    ],
+    "assetFamilyIds": [
+      "oil-om"
+    ],
+    "recordType": "drawing-only-model",
+    "uncertainties": [
+      "ОМ2,0 present only in drawing75; absent electrical72 and dimension73 tables. No full SKU or electrical values inferred."
+    ],
+    "series": "ОМ",
+    "context": "drawing-only row",
+    "designation": "ОМ 2,0",
+    "execution": "drawing-only row",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 75,
+      "designation": "ОМ 2,0",
+      "execution": "drawing-only row",
+      "kind": "drawing-only-model"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Drawing grouped designation",
+        "value": "ОМ 2,0; 2,5/6–10",
+        "unit": null,
+        "page": 75
+      },
+      {
+        "label": "H",
+        "value": "680",
+        "unit": null,
+        "page": 75
+      },
+      {
+        "label": "H1",
+        "value": "430",
+        "unit": null,
+        "page": 75
+      },
+      {
+        "label": "B",
+        "value": "360",
+        "unit": null,
+        "page": 75
+      },
+      {
+        "label": "L",
+        "value": "470",
+        "unit": null,
+        "page": 75
+      }
+    ]
+  }
+]

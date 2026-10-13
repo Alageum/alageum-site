@@ -1,0 +1,4 @@
+.workspace { min-width: 0; display: grid; gap: 16px; overflow-wrap: anywhere; }
+.workspace > a { justify-self: start; }
+.workspace h1, .workspace h2 { margin: 0; }
+.workspace :global(.grid) { grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); }

@@ -1,0 +1,60 @@
+{
+  "format": "alageum-combined-eds-auth-independent-review-v1",
+  "status": "approved-bounded-combined-eds-auth",
+  "baselineCommit": "a32f7878d25a7d4e26d063ec6914b72d2f814383",
+  "baselineTree": "0cc608e2020f82aaec678032bc772ec2276c7946",
+  "candidateCommit": "7316cef4c92c084aa1b8e30756772d0b428dbc10",
+  "candidateTree": "e553a93b6ef0b43682a419b98be4357de03ee77a",
+  "priorAuthority": {
+    "commit": "d800465c1d34b5b8709e3a68a09617c4939d7326",
+    "applicationCommit": "b364925821149eca9424f6738a908727be095a8a",
+    "applicationTree": "204e86c3be6713ea6b87773e9c916326fcf6ccc8",
+    "files": {
+      "docs/catalog-transformers-2026/review/combined-eds-auth/clearance.json": "cbde66c16dd10f4f9ac7a13eddac9df16bbb0855e517f43bb41e10063c754f53",
+      "docs/catalog-transformers-2026/review/combined-eds-auth/independent-review.json": "267018dd18d2a686b0d0e08521c0946cf402948c1045b11f6432f60bf5d8360b"
+    }
+  },
+  "boundaries": {
+    "historicalApprovalChanges": 0,
+    "coordinatorChanges": 0,
+    "packageChanges": 0,
+    "lockfileChanges": 0,
+    "workflowChanges": 0,
+    "auditGateChanges": 0,
+    "catalogRecordChanges": 0,
+    "catalogSourceUiChanges": 0,
+    "geometryChanges": 0,
+    "rfqContractChanges": 0,
+    "cmsContractChanges": 0,
+    "cryptographicSigning": "unavailable",
+    "signingFlags": "off-by-default",
+    "googleLiveProvider": "not-verified",
+    "egovProvider": "unavailable",
+    "releaseApproval": false,
+    "securityWaiver": false
+  },
+  "approvedDependenciesSha256": "1afd07ab0d14af71e0b59dca2de232f27d3566cef2e0bf8688146adeb466025d",
+  "reviewedVerifierSha256": "ffddce775c83ea7ce195d18eb784139f7cb1a62e44974000ffed9e7e45309935",
+  "reviewedFixedFilesSha256": "ebf476859db2700692f9c3ee79d0856cc6aecd14c148d635f315f71eb08c735a",
+  "reviewer": "Independent read-only proof reviewer, 2026-10-12",
+  "outcome": "Approved bounded current-byte browser-locator proof revision; no blocking proof finding. This approves the proof revision and narrow selector correction only. Full aggregate/browser acceptance, live providers, real EDS, production readiness and release/security waivers are not established.",
+  "authorityNote": "Genuine fresh independent review of the exact browser-locator proof revision. Prior PR45/d800 approvals remain unchanged at their original scope. Proof-only approval does not establish final aggregate/browser acceptance, live provider or real EDS validity, and grants no release, security waiver, publication, deployment or provider-registration authority.",
+  "independentVerification": {
+    "sourceCommit": "7316cef4c92c084aa1b8e30756772d0b428dbc10",
+    "sourceTree": "e553a93b6ef0b43682a419b98be4357de03ee77a",
+    "correctedSpecSha256": "44e60311e0f51fc2d2c56f006051bbc20b15f8e9f18dedc8dbd99e5bcd433f34",
+    "selectedRevisionTestsPassed": 7,
+    "routesInstrumented": 11,
+    "consumedPathsPerRoute": 675,
+    "inOwnerReadsPerPath": 2,
+    "suppliedInputOuterReads": 3,
+    "additionalNestedMutationChecksPassed": 44,
+    "additionalWrongPredecessorChecksPassed": 36,
+    "baselinePathsVerifiedAgainstPR45": 617,
+    "predecessorPairsUnchanged": 12,
+    "sourceMapEntriesVerifiedAgainstSourceCommitAndCurrentBytes": 48,
+    "priorD800ReviewArtifactsByteIdentical": true,
+    "pendingNewAuthorityRejectsDespiteRetainedPriorApproval": true,
+    "scope": "Exact closure, deletion/mutation/reattestation attacks, stale and superseded authority, historical immutability, current default-reader and explicit-reader behavior; unchanged sequential-observation limits."
+  }
+}

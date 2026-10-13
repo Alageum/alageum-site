@@ -1,0 +1,2420 @@
+// Generated from independently reviewed source records.
+const records = [
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТСЛ(З)-160",
+    "execution": "с уровнем потерь С (стандарный)",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      77,
+      78,
+      80,
+      81
+    ],
+    "sourceRow": {
+      "page": 77,
+      "designation": "ТСЛ(З)-160",
+      "execution": "с уровнем потерь С (стандарный)",
+      "kind": "explicit-model-row"
+    },
+    "sourceFamilyId": "tsl-loss-C",
+    "sourceRecordType": "explicit-model-row",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": 160,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Pо",
+        "value": "600",
+        "unit": "кВт",
+        "page": 77
+      },
+      {
+        "label": "Pк",
+        "value": "2700",
+        "unit": "кВт",
+        "page": 77
+      },
+      {
+        "label": "Iо",
+        "value": "1,4",
+        "unit": "%",
+        "page": 77
+      },
+      {
+        "label": "Uк",
+        "value": "4,5",
+        "unit": "%",
+        "page": 77
+      },
+      {
+        "label": "Номинальная мощность",
+        "value": "160",
+        "unit": "кВА",
+        "page": 77
+      },
+      {
+        "label": "ВН",
+        "value": "6-10",
+        "unit": "кВ",
+        "page": 77
+      },
+      {
+        "label": "НН",
+        "value": "0,23;0,4;0,69;0,72",
+        "unit": "кВ",
+        "page": 77
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "У/Ун-0;Д/Ун-11;У/Zн-11",
+        "unit": "",
+        "page": 77,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "L",
+        "value": "1125/1315",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "B",
+        "value": "670/795",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "H",
+        "value": "1170/1525",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "МО",
+        "value": "385",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "h",
+        "value": "1170",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "h1",
+        "value": "-",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "c",
+        "value": "-",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "Масса",
+        "value": "780/940",
+        "unit": "кг",
+        "page": 78
+      },
+      {
+        "label": "l / b (merged source cell)",
+        "value": "520",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "value": "F",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "value": "У3, УХЛ3, У1",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "value": "У, УХЛ, Т",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Категория размещения",
+        "value": "1;2;3",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "value": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "notes": [
+      "Loss unit printed кВт with magnitudes190 etc; retained without silently converting to watts.",
+      "Dimension slash-pairs retained verbatim; likely open/enclosed order from headings, but pair mapping not explicitly labeled in table.",
+      "Merged l/b cells show a single value spanning columns; repeated in extraction only as shared cell, not two independent measurements."
+    ],
+    "image": "/catalog-source/transformers-2026/page-077.webp",
+    "imageSourcePage": 77,
+    "imageCaption": "Страница 77 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Pо",
+        "raw": "600",
+        "unitAsPrinted": "кВт",
+        "sourcePage": 77
+      },
+      {
+        "label": "Pк",
+        "raw": "2700",
+        "unitAsPrinted": "кВт",
+        "sourcePage": 77
+      },
+      {
+        "label": "Iо",
+        "raw": "1,4",
+        "unitAsPrinted": "%",
+        "sourcePage": 77
+      },
+      {
+        "label": "Uк",
+        "raw": "4,5",
+        "unitAsPrinted": "%",
+        "sourcePage": 77
+      },
+      {
+        "label": "Номинальная мощность",
+        "raw": "160",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 77
+      },
+      {
+        "label": "ВН",
+        "raw": "6-10",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 77
+      },
+      {
+        "label": "НН",
+        "raw": "0,23;0,4;0,69;0,72",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 77
+      },
+      {
+        "label": "Схема и группа соединения",
+        "raw": "У/Ун-0;Д/Ун-11;У/Zн-11",
+        "unitAsPrinted": null,
+        "sourcePage": 77
+      },
+      {
+        "label": "L",
+        "raw": "1125/1315",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "B",
+        "raw": "670/795",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "H",
+        "raw": "1170/1525",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "МО",
+        "raw": "385",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "h",
+        "raw": "1170",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "h1",
+        "raw": "-",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "c",
+        "raw": "-",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "Масса",
+        "raw": "780/940",
+        "unitAsPrinted": "кг",
+        "sourcePage": 78
+      },
+      {
+        "label": "l / b (merged source cell)",
+        "raw": "520",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "raw": "F",
+        "unitAsPrinted": null,
+        "sourcePage": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "raw": "У3, УХЛ3, У1",
+        "unitAsPrinted": null,
+        "sourcePage": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "raw": "У, УХЛ, Т",
+        "unitAsPrinted": null,
+        "sourcePage": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      },
+      {
+        "label": "Категория размещения",
+        "raw": "1;2;3",
+        "unitAsPrinted": null,
+        "sourcePage": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "raw": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unitAsPrinted": null,
+        "sourcePage": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      }
+    ],
+    "id": "alageum-2026-tsl-c-160",
+    "name": "ТСЛ(З)-160",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-tsl-loss-c",
+    "familyName": "ТСЛ(З) — с уровнем потерь С (стандарный)",
+    "series": "ТСЛ(З)",
+    "subtype": "с уровнем потерь С (стандарный)",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Pо",
+        "value": "600",
+        "unit": "кВт",
+        "page": 77
+      },
+      {
+        "label": "Pк",
+        "value": "2700",
+        "unit": "кВт",
+        "page": 77
+      },
+      {
+        "label": "Iо",
+        "value": "1,4",
+        "unit": "%",
+        "page": 77
+      },
+      {
+        "label": "Uк",
+        "value": "4,5",
+        "unit": "%",
+        "page": 77
+      },
+      {
+        "label": "Номинальная мощность",
+        "value": "160",
+        "unit": "кВА",
+        "page": 77
+      },
+      {
+        "label": "ВН",
+        "value": "6-10",
+        "unit": "кВ",
+        "page": 77
+      },
+      {
+        "label": "НН",
+        "value": "0,23;0,4;0,69;0,72",
+        "unit": "кВ",
+        "page": 77
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "У/Ун-0;Д/Ун-11;У/Zн-11",
+        "unit": "",
+        "page": 77,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "L",
+        "value": "1125/1315",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "B",
+        "value": "670/795",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "H",
+        "value": "1170/1525",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "МО",
+        "value": "385",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "h",
+        "value": "1170",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "h1",
+        "value": "-",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "c",
+        "value": "-",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "Масса",
+        "value": "780/940",
+        "unit": "кг",
+        "page": 78
+      },
+      {
+        "label": "l / b (merged source cell)",
+        "value": "520",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "value": "F",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "value": "У3, УХЛ3, У1",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "value": "У, УХЛ, Т",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Категория размещения",
+        "value": "1;2;3",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "value": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "configurations": [
+      {
+        "id": "alageum-2026-tsl-c-160-execution-1",
+        "designation": "ТСЛ без кожуха (IP00)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-160",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-160-execution-1",
+          "modelId": "alageum-2026-tsl-c-160",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛ без кожуха (IP00)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsl-c-160-execution-2",
+        "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-160",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-160-execution-2",
+          "modelId": "alageum-2026-tsl-c-160",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      }
+    ]
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТСЛ(З)-250",
+    "execution": "с уровнем потерь С (стандарный)",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      77,
+      78,
+      80,
+      81
+    ],
+    "sourceRow": {
+      "page": 77,
+      "designation": "ТСЛ(З)-250",
+      "execution": "с уровнем потерь С (стандарный)",
+      "kind": "explicit-model-row"
+    },
+    "sourceFamilyId": "tsl-loss-C",
+    "sourceRecordType": "explicit-model-row",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": 250,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Pо",
+        "value": "800",
+        "unit": "кВт",
+        "page": 77
+      },
+      {
+        "label": "Pк",
+        "value": "3200",
+        "unit": "кВт",
+        "page": 77
+      },
+      {
+        "label": "Iо",
+        "value": "1,2",
+        "unit": "%",
+        "page": 77
+      },
+      {
+        "label": "Uк",
+        "value": "4,0",
+        "unit": "%",
+        "page": 77
+      },
+      {
+        "label": "Номинальная мощность",
+        "value": "250",
+        "unit": "кВА",
+        "page": 77
+      },
+      {
+        "label": "ВН",
+        "value": "6-10",
+        "unit": "кВ",
+        "page": 77
+      },
+      {
+        "label": "НН",
+        "value": "0,23;0,4;0,69;0,72",
+        "unit": "кВ",
+        "page": 77
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "У/Ун-0;Д/Ун-11;У/Zн-11",
+        "unit": "",
+        "page": 77,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "L",
+        "value": "1212/1525",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "B",
+        "value": "730/855",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "H",
+        "value": "1215/1554",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "МО",
+        "value": "405",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "h",
+        "value": "905",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "h1",
+        "value": "1270",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "c",
+        "value": "110",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "Масса",
+        "value": "1030/1200",
+        "unit": "кг",
+        "page": 78
+      },
+      {
+        "label": "l / b (merged source cell)",
+        "value": "550",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "value": "F",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "value": "У3, УХЛ3, У1",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "value": "У, УХЛ, Т",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Категория размещения",
+        "value": "1;2;3",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "value": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "notes": [
+      "Loss unit printed кВт with magnitudes190 etc; retained without silently converting to watts.",
+      "Dimension slash-pairs retained verbatim; likely open/enclosed order from headings, but pair mapping not explicitly labeled in table.",
+      "Merged l/b cells show a single value spanning columns; repeated in extraction only as shared cell, not two independent measurements."
+    ],
+    "image": "/catalog-source/transformers-2026/page-077.webp",
+    "imageSourcePage": 77,
+    "imageCaption": "Страница 77 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Pо",
+        "raw": "800",
+        "unitAsPrinted": "кВт",
+        "sourcePage": 77
+      },
+      {
+        "label": "Pк",
+        "raw": "3200",
+        "unitAsPrinted": "кВт",
+        "sourcePage": 77
+      },
+      {
+        "label": "Iо",
+        "raw": "1,2",
+        "unitAsPrinted": "%",
+        "sourcePage": 77
+      },
+      {
+        "label": "Uк",
+        "raw": "4,0",
+        "unitAsPrinted": "%",
+        "sourcePage": 77
+      },
+      {
+        "label": "Номинальная мощность",
+        "raw": "250",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 77
+      },
+      {
+        "label": "ВН",
+        "raw": "6-10",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 77
+      },
+      {
+        "label": "НН",
+        "raw": "0,23;0,4;0,69;0,72",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 77
+      },
+      {
+        "label": "Схема и группа соединения",
+        "raw": "У/Ун-0;Д/Ун-11;У/Zн-11",
+        "unitAsPrinted": null,
+        "sourcePage": 77
+      },
+      {
+        "label": "L",
+        "raw": "1212/1525",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "B",
+        "raw": "730/855",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "H",
+        "raw": "1215/1554",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "МО",
+        "raw": "405",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "h",
+        "raw": "905",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "h1",
+        "raw": "1270",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "c",
+        "raw": "110",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "Масса",
+        "raw": "1030/1200",
+        "unitAsPrinted": "кг",
+        "sourcePage": 78
+      },
+      {
+        "label": "l / b (merged source cell)",
+        "raw": "550",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "raw": "F",
+        "unitAsPrinted": null,
+        "sourcePage": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "raw": "У3, УХЛ3, У1",
+        "unitAsPrinted": null,
+        "sourcePage": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "raw": "У, УХЛ, Т",
+        "unitAsPrinted": null,
+        "sourcePage": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      },
+      {
+        "label": "Категория размещения",
+        "raw": "1;2;3",
+        "unitAsPrinted": null,
+        "sourcePage": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "raw": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unitAsPrinted": null,
+        "sourcePage": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      }
+    ],
+    "id": "alageum-2026-tsl-c-250",
+    "name": "ТСЛ(З)-250",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-tsl-loss-c",
+    "familyName": "ТСЛ(З) — с уровнем потерь С (стандарный)",
+    "series": "ТСЛ(З)",
+    "subtype": "с уровнем потерь С (стандарный)",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Pо",
+        "value": "800",
+        "unit": "кВт",
+        "page": 77
+      },
+      {
+        "label": "Pк",
+        "value": "3200",
+        "unit": "кВт",
+        "page": 77
+      },
+      {
+        "label": "Iо",
+        "value": "1,2",
+        "unit": "%",
+        "page": 77
+      },
+      {
+        "label": "Uк",
+        "value": "4,0",
+        "unit": "%",
+        "page": 77
+      },
+      {
+        "label": "Номинальная мощность",
+        "value": "250",
+        "unit": "кВА",
+        "page": 77
+      },
+      {
+        "label": "ВН",
+        "value": "6-10",
+        "unit": "кВ",
+        "page": 77
+      },
+      {
+        "label": "НН",
+        "value": "0,23;0,4;0,69;0,72",
+        "unit": "кВ",
+        "page": 77
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "У/Ун-0;Д/Ун-11;У/Zн-11",
+        "unit": "",
+        "page": 77,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "L",
+        "value": "1212/1525",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "B",
+        "value": "730/855",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "H",
+        "value": "1215/1554",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "МО",
+        "value": "405",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "h",
+        "value": "905",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "h1",
+        "value": "1270",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "c",
+        "value": "110",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "Масса",
+        "value": "1030/1200",
+        "unit": "кг",
+        "page": 78
+      },
+      {
+        "label": "l / b (merged source cell)",
+        "value": "550",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "value": "F",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "value": "У3, УХЛ3, У1",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "value": "У, УХЛ, Т",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Категория размещения",
+        "value": "1;2;3",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "value": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "configurations": [
+      {
+        "id": "alageum-2026-tsl-c-250-execution-1",
+        "designation": "ТСЛ без кожуха (IP00)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-250",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-250-execution-1",
+          "modelId": "alageum-2026-tsl-c-250",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛ без кожуха (IP00)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsl-c-250-execution-2",
+        "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-250",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-250-execution-2",
+          "modelId": "alageum-2026-tsl-c-250",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      }
+    ]
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТСЛ(З)-400",
+    "execution": "с уровнем потерь С (стандарный)",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      77,
+      78,
+      80,
+      81
+    ],
+    "sourceRow": {
+      "page": 77,
+      "designation": "ТСЛ(З)-400",
+      "execution": "с уровнем потерь С (стандарный)",
+      "kind": "explicit-model-row"
+    },
+    "sourceFamilyId": "tsl-loss-C",
+    "sourceRecordType": "explicit-model-row",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": 400,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Pо",
+        "value": "1150",
+        "unit": "кВт",
+        "page": 77
+      },
+      {
+        "label": "Pк",
+        "value": "4400",
+        "unit": "кВт",
+        "page": 77
+      },
+      {
+        "label": "Iо",
+        "value": "0,8",
+        "unit": "%",
+        "page": 77
+      },
+      {
+        "label": "Uк",
+        "value": "4,0",
+        "unit": "%",
+        "page": 77
+      },
+      {
+        "label": "Номинальная мощность",
+        "value": "400",
+        "unit": "кВА",
+        "page": 77
+      },
+      {
+        "label": "ВН",
+        "value": "6-10",
+        "unit": "кВ",
+        "page": 77
+      },
+      {
+        "label": "НН",
+        "value": "0,23;0,4;0,69;0,72",
+        "unit": "кВ",
+        "page": 77
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "У/Ун-0;Д/Ун-11",
+        "unit": "",
+        "page": 77,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "L",
+        "value": "1352/1740",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "B",
+        "value": "850/910",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "H",
+        "value": "1360/1590",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "МО",
+        "value": "450",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "h",
+        "value": "1005",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "h1",
+        "value": "1390",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "c",
+        "value": "110",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "Масса",
+        "value": "1470/1790",
+        "unit": "кг",
+        "page": 78
+      },
+      {
+        "label": "l / b (merged source cell)",
+        "value": "670",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "value": "F",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "value": "У3, УХЛ3, У1",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "value": "У, УХЛ, Т",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Категория размещения",
+        "value": "1;2;3",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "value": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "notes": [
+      "Loss unit printed кВт with magnitudes190 etc; retained without silently converting to watts.",
+      "Dimension slash-pairs retained verbatim; likely open/enclosed order from headings, but pair mapping not explicitly labeled in table.",
+      "Merged l/b cells show a single value spanning columns; repeated in extraction only as shared cell, not two independent measurements."
+    ],
+    "image": "/catalog-source/transformers-2026/page-077.webp",
+    "imageSourcePage": 77,
+    "imageCaption": "Страница 77 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Pо",
+        "raw": "1150",
+        "unitAsPrinted": "кВт",
+        "sourcePage": 77
+      },
+      {
+        "label": "Pк",
+        "raw": "4400",
+        "unitAsPrinted": "кВт",
+        "sourcePage": 77
+      },
+      {
+        "label": "Iо",
+        "raw": "0,8",
+        "unitAsPrinted": "%",
+        "sourcePage": 77
+      },
+      {
+        "label": "Uк",
+        "raw": "4,0",
+        "unitAsPrinted": "%",
+        "sourcePage": 77
+      },
+      {
+        "label": "Номинальная мощность",
+        "raw": "400",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 77
+      },
+      {
+        "label": "ВН",
+        "raw": "6-10",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 77
+      },
+      {
+        "label": "НН",
+        "raw": "0,23;0,4;0,69;0,72",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 77
+      },
+      {
+        "label": "Схема и группа соединения",
+        "raw": "У/Ун-0;Д/Ун-11",
+        "unitAsPrinted": null,
+        "sourcePage": 77
+      },
+      {
+        "label": "L",
+        "raw": "1352/1740",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "B",
+        "raw": "850/910",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "H",
+        "raw": "1360/1590",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "МО",
+        "raw": "450",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "h",
+        "raw": "1005",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "h1",
+        "raw": "1390",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "c",
+        "raw": "110",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "Масса",
+        "raw": "1470/1790",
+        "unitAsPrinted": "кг",
+        "sourcePage": 78
+      },
+      {
+        "label": "l / b (merged source cell)",
+        "raw": "670",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "raw": "F",
+        "unitAsPrinted": null,
+        "sourcePage": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "raw": "У3, УХЛ3, У1",
+        "unitAsPrinted": null,
+        "sourcePage": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "raw": "У, УХЛ, Т",
+        "unitAsPrinted": null,
+        "sourcePage": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      },
+      {
+        "label": "Категория размещения",
+        "raw": "1;2;3",
+        "unitAsPrinted": null,
+        "sourcePage": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "raw": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unitAsPrinted": null,
+        "sourcePage": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      }
+    ],
+    "id": "alageum-2026-tsl-c-400",
+    "name": "ТСЛ(З)-400",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-tsl-loss-c",
+    "familyName": "ТСЛ(З) — с уровнем потерь С (стандарный)",
+    "series": "ТСЛ(З)",
+    "subtype": "с уровнем потерь С (стандарный)",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Pо",
+        "value": "1150",
+        "unit": "кВт",
+        "page": 77
+      },
+      {
+        "label": "Pк",
+        "value": "4400",
+        "unit": "кВт",
+        "page": 77
+      },
+      {
+        "label": "Iо",
+        "value": "0,8",
+        "unit": "%",
+        "page": 77
+      },
+      {
+        "label": "Uк",
+        "value": "4,0",
+        "unit": "%",
+        "page": 77
+      },
+      {
+        "label": "Номинальная мощность",
+        "value": "400",
+        "unit": "кВА",
+        "page": 77
+      },
+      {
+        "label": "ВН",
+        "value": "6-10",
+        "unit": "кВ",
+        "page": 77
+      },
+      {
+        "label": "НН",
+        "value": "0,23;0,4;0,69;0,72",
+        "unit": "кВ",
+        "page": 77
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "У/Ун-0;Д/Ун-11",
+        "unit": "",
+        "page": 77,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "L",
+        "value": "1352/1740",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "B",
+        "value": "850/910",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "H",
+        "value": "1360/1590",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "МО",
+        "value": "450",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "h",
+        "value": "1005",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "h1",
+        "value": "1390",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "c",
+        "value": "110",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "Масса",
+        "value": "1470/1790",
+        "unit": "кг",
+        "page": 78
+      },
+      {
+        "label": "l / b (merged source cell)",
+        "value": "670",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "value": "F",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "value": "У3, УХЛ3, У1",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "value": "У, УХЛ, Т",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Категория размещения",
+        "value": "1;2;3",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "value": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "configurations": [
+      {
+        "id": "alageum-2026-tsl-c-400-execution-1",
+        "designation": "ТСЛ без кожуха (IP00)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-400",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-400-execution-1",
+          "modelId": "alageum-2026-tsl-c-400",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛ без кожуха (IP00)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsl-c-400-execution-2",
+        "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-400",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-400-execution-2",
+          "modelId": "alageum-2026-tsl-c-400",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      }
+    ]
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТСЛ(З)-1000",
+    "execution": "с уровнем потерь С (стандарный)",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      77,
+      78,
+      80,
+      81
+    ],
+    "sourceRow": {
+      "page": 77,
+      "designation": "ТСЛ(З)-1000",
+      "execution": "с уровнем потерь С (стандарный)",
+      "kind": "explicit-model-row"
+    },
+    "sourceFamilyId": "tsl-loss-C",
+    "sourceRecordType": "explicit-model-row",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": 1000,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Pо",
+        "value": "2000",
+        "unit": "кВт",
+        "page": 77
+      },
+      {
+        "label": "Pк",
+        "value": "9400",
+        "unit": "кВт",
+        "page": 77
+      },
+      {
+        "label": "Iо",
+        "value": "0,5",
+        "unit": "%",
+        "page": 77
+      },
+      {
+        "label": "Uк",
+        "value": "6,0",
+        "unit": "%",
+        "page": 77
+      },
+      {
+        "label": "Номинальная мощность",
+        "value": "1000",
+        "unit": "кВА",
+        "page": 77
+      },
+      {
+        "label": "ВН",
+        "value": "6-10",
+        "unit": "кВ",
+        "page": 77
+      },
+      {
+        "label": "НН",
+        "value": "0,23;0,4;0,69;0,72",
+        "unit": "кВ",
+        "page": 77
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "У/Ун-0;Д/Ун-11",
+        "unit": "",
+        "page": 77,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "L",
+        "value": "1627/1955",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "B",
+        "value": "1000/1015",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "H",
+        "value": "1615/1980",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "МО",
+        "value": "550",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "h",
+        "value": "1170",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "h1",
+        "value": "1685",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "c",
+        "value": "130",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "Масса",
+        "value": "2560/2840",
+        "unit": "кг",
+        "page": 78
+      },
+      {
+        "label": "l / b (merged source cell)",
+        "value": "820",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "value": "F",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "value": "У3, УХЛ3, У1",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "value": "У, УХЛ, Т",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Категория размещения",
+        "value": "1;2;3",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "value": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "notes": [
+      "Loss unit printed кВт with magnitudes190 etc; retained without silently converting to watts.",
+      "Dimension slash-pairs retained verbatim; likely open/enclosed order from headings, but pair mapping not explicitly labeled in table.",
+      "Merged l/b cells show a single value spanning columns; repeated in extraction only as shared cell, not two independent measurements."
+    ],
+    "image": "/catalog-source/transformers-2026/page-077.webp",
+    "imageSourcePage": 77,
+    "imageCaption": "Страница 77 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Pо",
+        "raw": "2000",
+        "unitAsPrinted": "кВт",
+        "sourcePage": 77
+      },
+      {
+        "label": "Pк",
+        "raw": "9400",
+        "unitAsPrinted": "кВт",
+        "sourcePage": 77
+      },
+      {
+        "label": "Iо",
+        "raw": "0,5",
+        "unitAsPrinted": "%",
+        "sourcePage": 77
+      },
+      {
+        "label": "Uк",
+        "raw": "6,0",
+        "unitAsPrinted": "%",
+        "sourcePage": 77
+      },
+      {
+        "label": "Номинальная мощность",
+        "raw": "1000",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 77
+      },
+      {
+        "label": "ВН",
+        "raw": "6-10",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 77
+      },
+      {
+        "label": "НН",
+        "raw": "0,23;0,4;0,69;0,72",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 77
+      },
+      {
+        "label": "Схема и группа соединения",
+        "raw": "У/Ун-0;Д/Ун-11",
+        "unitAsPrinted": null,
+        "sourcePage": 77
+      },
+      {
+        "label": "L",
+        "raw": "1627/1955",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "B",
+        "raw": "1000/1015",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "H",
+        "raw": "1615/1980",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "МО",
+        "raw": "550",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "h",
+        "raw": "1170",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "h1",
+        "raw": "1685",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "c",
+        "raw": "130",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "Масса",
+        "raw": "2560/2840",
+        "unitAsPrinted": "кг",
+        "sourcePage": 78
+      },
+      {
+        "label": "l / b (merged source cell)",
+        "raw": "820",
+        "unitAsPrinted": "мм",
+        "sourcePage": 78
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "raw": "F",
+        "unitAsPrinted": null,
+        "sourcePage": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "raw": "У3, УХЛ3, У1",
+        "unitAsPrinted": null,
+        "sourcePage": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "raw": "У, УХЛ, Т",
+        "unitAsPrinted": null,
+        "sourcePage": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      },
+      {
+        "label": "Категория размещения",
+        "raw": "1;2;3",
+        "unitAsPrinted": null,
+        "sourcePage": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "raw": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unitAsPrinted": null,
+        "sourcePage": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      }
+    ],
+    "id": "alageum-2026-tsl-c-1000",
+    "name": "ТСЛ(З)-1000",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-tsl-loss-c",
+    "familyName": "ТСЛ(З) — с уровнем потерь С (стандарный)",
+    "series": "ТСЛ(З)",
+    "subtype": "с уровнем потерь С (стандарный)",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Pо",
+        "value": "2000",
+        "unit": "кВт",
+        "page": 77
+      },
+      {
+        "label": "Pк",
+        "value": "9400",
+        "unit": "кВт",
+        "page": 77
+      },
+      {
+        "label": "Iо",
+        "value": "0,5",
+        "unit": "%",
+        "page": 77
+      },
+      {
+        "label": "Uк",
+        "value": "6,0",
+        "unit": "%",
+        "page": 77
+      },
+      {
+        "label": "Номинальная мощность",
+        "value": "1000",
+        "unit": "кВА",
+        "page": 77
+      },
+      {
+        "label": "ВН",
+        "value": "6-10",
+        "unit": "кВ",
+        "page": 77
+      },
+      {
+        "label": "НН",
+        "value": "0,23;0,4;0,69;0,72",
+        "unit": "кВ",
+        "page": 77
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "У/Ун-0;Д/Ун-11",
+        "unit": "",
+        "page": 77,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "L",
+        "value": "1627/1955",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "B",
+        "value": "1000/1015",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "H",
+        "value": "1615/1980",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "МО",
+        "value": "550",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "h",
+        "value": "1170",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "h1",
+        "value": "1685",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "c",
+        "value": "130",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "Масса",
+        "value": "2560/2840",
+        "unit": "кг",
+        "page": 78
+      },
+      {
+        "label": "l / b (merged source cell)",
+        "value": "820",
+        "unit": "мм",
+        "page": 78
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "value": "F",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "value": "У3, УХЛ3, У1",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "value": "У, УХЛ, Т",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Категория размещения",
+        "value": "1;2;3",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "value": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unit": "",
+        "page": 77,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-09-p77",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "configurations": [
+      {
+        "id": "alageum-2026-tsl-c-1000-execution-1",
+        "designation": "ТСЛ без кожуха (IP00)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-1000",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-1000-execution-1",
+          "modelId": "alageum-2026-tsl-c-1000",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛ без кожуха (IP00)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsl-c-1000-execution-2",
+        "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsl-c-1000",
+        "page": 77,
+        "sourcePages": [
+          77,
+          78,
+          80,
+          81
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsl-c-1000-execution-2",
+          "modelId": "alageum-2026-tsl-c-1000",
+          "familyId": "tsl-loss-C",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЛЗ с кожухом (IP21, IP31)",
+          "sourcePages": [
+            77,
+            78,
+            80,
+            81
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      }
+    ]
+  }
+];
+export default records;

@@ -1,0 +1,658 @@
+[
+  {
+    "id": "alageum-tmg-switch-6-10-2000",
+    "familyId": "tmg-switch-6-10",
+    "name": "ТМГ-2000 (6↔10 кВ, с 2-х этажным переключателем)",
+    "modelDesignationRaw": "ТМГ-2000",
+    "sku": null,
+    "skuStatus": "No complete orderable SKU specified; designation is exact table row identifier",
+    "series": "ТМГ",
+    "variantLabel": "6↔10 кВ, с 2-х этажным переключателем",
+    "nominalPowerKva": 2000,
+    "manufacturer": null,
+    "brand": "Alageum electric",
+    "sourceId": "alageum-technical-catalog-2026-03-18",
+    "sourcePages": [
+      45,
+      47
+    ],
+    "dataPages": [
+      45
+    ],
+    "sourceTableRow": "ТМГ-2000",
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "2000",
+        "unit": "кВА",
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "electrical"
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "electrical"
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "При 10 кВ - У/Ун-0\nПри 6 кВ Д/Ун-11",
+        "unit": null,
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "electrical"
+      },
+      {
+        "label": "Р о",
+        "value": "2600",
+        "unit": "Вт",
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "electrical"
+      },
+      {
+        "label": "Рк",
+        "value": "25000",
+        "unit": "Вт",
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "electrical"
+      },
+      {
+        "label": "U к",
+        "value": "6,0",
+        "unit": "%",
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "electrical"
+      },
+      {
+        "label": "I о",
+        "value": "0,5",
+        "unit": "%",
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "electrical"
+      },
+      {
+        "label": "L",
+        "value": "2040",
+        "unit": null,
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "electrical"
+      },
+      {
+        "label": "B",
+        "value": "1250",
+        "unit": null,
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "electrical"
+      },
+      {
+        "label": "H",
+        "value": "1940",
+        "unit": null,
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A",
+        "value": "1070",
+        "unit": null,
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A1",
+        "value": "1070",
+        "unit": null,
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "M",
+        "value": "230",
+        "unit": null,
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "K",
+        "value": "230",
+        "unit": null,
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h",
+        "value": "200",
+        "unit": null,
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h1",
+        "value": "170",
+        "unit": null,
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Полная масса",
+        "value": "5440",
+        "unit": "кг",
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Масса масла",
+        "value": "1310",
+        "unit": "кг",
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "dimensions-and-masses"
+      }
+    ],
+    "configurations": [
+      {
+        "connectionGroupRaw": "При 10 кВ - У/Ун-0",
+        "PkWRaw": "25000",
+        "UkPercentRaw": "6,0",
+        "scope": "Printed connection option; no synthetic SKU generated"
+      },
+      {
+        "connectionGroupRaw": "При 6 кВ Д/Ун-11",
+        "PkWRaw": "25000",
+        "UkPercentRaw": "6,0",
+        "scope": "Printed connection option; no synthetic SKU generated"
+      }
+    ],
+    "assetMapping": {
+      "assetFamilyId": "tmg-switch-large",
+      "evidencePages": [
+        47
+      ],
+      "basis": "explicit continuation drawing confirmed by section 046–101 source review",
+      "reuseLevel": "construction topology and source illustration only",
+      "geometryVerified": false,
+      "exactMeshReuseAllowed": false,
+      "dimensionalUnitsVerified": false,
+      "dimensionAccurateMeshAuthorizedByEvidence": false,
+      "executionBinding": "explicit continuation caption verified by neighboring section worker",
+      "executionBindingUncertain": false
+    },
+    "reconciliation": [],
+    "notes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed."
+    ],
+    "designation": "ТМГ-2000",
+    "execution": "с возможностью переключения на стороне ВН 6 кВ на 10 кВ с 2-х этажным переключателем",
+    "sourceRow": {
+      "designation": "ТМГ-2000",
+      "electricalTablePage": 45,
+      "dimensionsTablePage": 45
+    },
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "2000",
+        "unit": "кВА",
+        "page": 45
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "page": 45
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "При 10 кВ - У/Ун-0\nПри 6 кВ Д/Ун-11",
+        "unit": null,
+        "page": 45
+      },
+      {
+        "label": "Р о",
+        "value": "2600",
+        "unit": "Вт",
+        "page": 45
+      },
+      {
+        "label": "Рк",
+        "value": "25000",
+        "unit": "Вт",
+        "page": 45
+      },
+      {
+        "label": "U к",
+        "value": "6,0",
+        "unit": "%",
+        "page": 45
+      },
+      {
+        "label": "I о",
+        "value": "0,5",
+        "unit": "%",
+        "page": 45
+      },
+      {
+        "label": "L",
+        "value": "2040",
+        "unit": null,
+        "page": 45
+      },
+      {
+        "label": "B",
+        "value": "1250",
+        "unit": null,
+        "page": 45
+      },
+      {
+        "label": "H",
+        "value": "1940",
+        "unit": null,
+        "page": 45
+      },
+      {
+        "label": "A",
+        "value": "1070",
+        "unit": null,
+        "page": 45
+      },
+      {
+        "label": "A1",
+        "value": "1070",
+        "unit": null,
+        "page": 45
+      },
+      {
+        "label": "M",
+        "value": "230",
+        "unit": null,
+        "page": 45
+      },
+      {
+        "label": "K",
+        "value": "230",
+        "unit": null,
+        "page": 45
+      },
+      {
+        "label": "h",
+        "value": "200",
+        "unit": null,
+        "page": 45
+      },
+      {
+        "label": "h1",
+        "value": "170",
+        "unit": null,
+        "page": 45
+      },
+      {
+        "label": "Полная масса",
+        "value": "5440",
+        "unit": "кг",
+        "page": 45
+      },
+      {
+        "label": "Масса масла",
+        "value": "1310",
+        "unit": "кг",
+        "page": 45
+      }
+    ],
+    "candidateOldIds": []
+  },
+  {
+    "id": "alageum-tmg-switch-6-10-2500",
+    "familyId": "tmg-switch-6-10",
+    "name": "ТМГ-2500 (6↔10 кВ, с 2-х этажным переключателем)",
+    "modelDesignationRaw": "ТМГ-2500",
+    "sku": null,
+    "skuStatus": "No complete orderable SKU specified; designation is exact table row identifier",
+    "series": "ТМГ",
+    "variantLabel": "6↔10 кВ, с 2-х этажным переключателем",
+    "nominalPowerKva": 2500,
+    "manufacturer": null,
+    "brand": "Alageum electric",
+    "sourceId": "alageum-technical-catalog-2026-03-18",
+    "sourcePages": [
+      45,
+      47
+    ],
+    "dataPages": [
+      45
+    ],
+    "sourceTableRow": "ТМГ-2500",
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "2500",
+        "unit": "кВА",
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "electrical"
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "electrical"
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "При 10 кВ - У/Ун-0\nПри 6 кВ Д/Ун-11",
+        "unit": null,
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "electrical"
+      },
+      {
+        "label": "Р о",
+        "value": "2800",
+        "unit": "Вт",
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "electrical"
+      },
+      {
+        "label": "Рк",
+        "value": "28000",
+        "unit": "Вт",
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "electrical"
+      },
+      {
+        "label": "U к",
+        "value": "6,5",
+        "unit": "%",
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "electrical"
+      },
+      {
+        "label": "I о",
+        "value": "0,5",
+        "unit": "%",
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "electrical"
+      },
+      {
+        "label": "L",
+        "value": "2370",
+        "unit": null,
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "electrical"
+      },
+      {
+        "label": "B",
+        "value": "1480",
+        "unit": null,
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "electrical"
+      },
+      {
+        "label": "H",
+        "value": "2196",
+        "unit": null,
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A",
+        "value": "1070",
+        "unit": null,
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A1",
+        "value": "1070",
+        "unit": null,
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "M",
+        "value": "145",
+        "unit": null,
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "K",
+        "value": "260",
+        "unit": null,
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h",
+        "value": "250",
+        "unit": null,
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h1",
+        "value": "170",
+        "unit": null,
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Полная масса",
+        "value": "6065",
+        "unit": "кг",
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Масса масла",
+        "value": "1695",
+        "unit": "кг",
+        "pdfPage": 45,
+        "printedPage": "45",
+        "table": "dimensions-and-masses"
+      }
+    ],
+    "configurations": [
+      {
+        "connectionGroupRaw": "При 10 кВ - У/Ун-0",
+        "PkWRaw": "28000",
+        "UkPercentRaw": "6,5",
+        "scope": "Printed connection option; no synthetic SKU generated"
+      },
+      {
+        "connectionGroupRaw": "При 6 кВ Д/Ун-11",
+        "PkWRaw": "28000",
+        "UkPercentRaw": "6,5",
+        "scope": "Printed connection option; no synthetic SKU generated"
+      }
+    ],
+    "assetMapping": {
+      "assetFamilyId": "tmg-switch-large",
+      "evidencePages": [
+        47
+      ],
+      "basis": "explicit continuation drawing confirmed by section 046–101 source review",
+      "reuseLevel": "construction topology and source illustration only",
+      "geometryVerified": false,
+      "exactMeshReuseAllowed": false,
+      "dimensionalUnitsVerified": false,
+      "dimensionAccurateMeshAuthorizedByEvidence": false,
+      "executionBinding": "explicit continuation caption verified by neighboring section worker",
+      "executionBindingUncertain": false
+    },
+    "reconciliation": [
+      {
+        "oldId": "tmg-2500",
+        "status": "ambiguous-generic-reference",
+        "matchedEvidence": [
+          "Same named series",
+          "Same nominal power",
+          "Equivalent 6/10-to-0.4-kV voltage choices",
+          "Both sourced to Alageum catalog/website"
+        ],
+        "differencesOrGaps": [
+          "Old record has a broad multi-manufacturer claim; new source does not assign legal manufacturer for this family",
+          "Old record lacks electrical losses and dimensions to establish exact execution",
+          "Old generic designation can match standard, 01, Х1К1, copper-winding, or switchable variants; these are separate new-source records"
+        ],
+        "automaticMergeAllowed": false,
+        "recommendedAction": "Retain source-specific variant; review old identity before enrichment or merge"
+      }
+    ],
+    "notes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed."
+    ],
+    "designation": "ТМГ-2500",
+    "execution": "с возможностью переключения на стороне ВН 6 кВ на 10 кВ с 2-х этажным переключателем",
+    "sourceRow": {
+      "designation": "ТМГ-2500",
+      "electricalTablePage": 45,
+      "dimensionsTablePage": 45
+    },
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "2500",
+        "unit": "кВА",
+        "page": 45
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "page": 45
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "При 10 кВ - У/Ун-0\nПри 6 кВ Д/Ун-11",
+        "unit": null,
+        "page": 45
+      },
+      {
+        "label": "Р о",
+        "value": "2800",
+        "unit": "Вт",
+        "page": 45
+      },
+      {
+        "label": "Рк",
+        "value": "28000",
+        "unit": "Вт",
+        "page": 45
+      },
+      {
+        "label": "U к",
+        "value": "6,5",
+        "unit": "%",
+        "page": 45
+      },
+      {
+        "label": "I о",
+        "value": "0,5",
+        "unit": "%",
+        "page": 45
+      },
+      {
+        "label": "L",
+        "value": "2370",
+        "unit": null,
+        "page": 45
+      },
+      {
+        "label": "B",
+        "value": "1480",
+        "unit": null,
+        "page": 45
+      },
+      {
+        "label": "H",
+        "value": "2196",
+        "unit": null,
+        "page": 45
+      },
+      {
+        "label": "A",
+        "value": "1070",
+        "unit": null,
+        "page": 45
+      },
+      {
+        "label": "A1",
+        "value": "1070",
+        "unit": null,
+        "page": 45
+      },
+      {
+        "label": "M",
+        "value": "145",
+        "unit": null,
+        "page": 45
+      },
+      {
+        "label": "K",
+        "value": "260",
+        "unit": null,
+        "page": 45
+      },
+      {
+        "label": "h",
+        "value": "250",
+        "unit": null,
+        "page": 45
+      },
+      {
+        "label": "h1",
+        "value": "170",
+        "unit": null,
+        "page": 45
+      },
+      {
+        "label": "Полная масса",
+        "value": "6065",
+        "unit": "кг",
+        "page": 45
+      },
+      {
+        "label": "Масса масла",
+        "value": "1695",
+        "unit": "кг",
+        "page": 45
+      }
+    ],
+    "candidateOldIds": [
+      "tmg-2500"
+    ]
+  }
+]

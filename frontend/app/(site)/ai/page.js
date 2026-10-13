@@ -1,0 +1,7 @@
+'use client';
+import {useMemo,useState} from 'react';
+import E from '@/components/locale/LocaleElement';
+import Link from '@/components/locale/LocaleLink';
+import {categories,officialProducts} from '@/lib/catalog/data';
+import {filterProducts} from '@/lib/catalog/query';
+export default function SelectionAssistant(){const [category,setCategory]=useState('transformers');const [q,setQ]=useState('');const found=useMemo(()=>filterProducts(officialProducts,{category,q}).length,[category,q]);return <E as="section" className="eco-container selection-assistant"><E as="p" className="site-eyebrow">ALAGEUM ELECTRIC / ПОМОЩНИК ПОДБОРА</E><E as="h1">Начните с вашей задачи.</E><E as="p">Выберите направление оборудования и укажите известные параметры. Каталог покажет совпадения; инженер подтвердит применимость исполнения.</E><div className="eco-form"><E as="label">Категория оборудования<E as="select" value={category} onChange={event=>setCategory(event.target.value)}>{categories.map(item=><E as="option" key={item.id} value={item.id}>{item.name}</E>)}</E></E><E as="label">Параметры или обозначение<E as="input" value={q} onChange={event=>setQ(event.target.value)} placeholder="Например: 630 кВА, 10 кВ или ТМГ"/></E><E as="p" role="status">Найдено позиций: {found}</E><Link className="site-button site-button-primary" href={`/catalog?category=${category}${q.trim()?`&q=${encodeURIComponent(q.trim())}`:''}`}>Открыть подходящие позиции →</Link><Link className="site-text-link" href="/inquiry?intent=consultation">Уточнить задачу с инженером →</Link></div></E>;}

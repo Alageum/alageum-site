@@ -1,0 +1,447 @@
+{
+  "sourceId": "alageum-technical-catalog-2026-03-18",
+  "assetFamilies": [
+    {
+      "id": "sealed-corrugated-small",
+      "title": "Small sealed corrugated-tank transformer, upper HV/LV bushings",
+      "evidencePages": [
+        12,
+        22,
+        30,
+        42
+      ],
+      "reuseType": "parameterized construction template; source drawing illustration",
+      "scope": "Table models through 630 кВА under headings expressly linked to these drawings",
+      "observedFeatures": [
+        "Rectangular corrugated tank",
+        "HV/LV bushings on lid",
+        "Side oil-fill pipe and safety valve",
+        "Base channels, optional transport rollers",
+        "No conservator shown"
+      ],
+      "limit": "Do not assume identical fin count, proportions, bushing spacing, or optional parts across powers. Use each model’s table measurements; lettered dimension units remain unspecified in source tables.",
+      "modelIds": [
+        "alageum-tmg-standard-16",
+        "alageum-tmg-standard-25",
+        "alageum-tmg-standard-40",
+        "alageum-tmg-standard-63",
+        "alageum-tmg-standard-100",
+        "alageum-tmg-standard-160",
+        "alageum-tmg-standard-250",
+        "alageum-tmg-standard-400",
+        "alageum-tmg-standard-630",
+        "alageum-tmg-01-63",
+        "alageum-tmg-01-100",
+        "alageum-tmg-01-160",
+        "alageum-tmg-01-250",
+        "alageum-tmg-01-400",
+        "alageum-tmg-01-630",
+        "alageum-tmg-x1k1-63",
+        "alageum-tmg-x1k1-100",
+        "alageum-tmg-x1k1-160",
+        "alageum-tmg-x1k1-250",
+        "alageum-tmg-x1k1-400",
+        "alageum-tmg-x1k1-630",
+        "alageum-tmge-x2k1-63",
+        "alageum-tmge-x2k1-100",
+        "alageum-tmge-x2k1-160",
+        "alageum-tmge-x2k1-250",
+        "alageum-tmge-x2k1-400",
+        "alageum-tmge-x2k1-630",
+        "alageum-tmge-x2k2-40",
+        "alageum-tmge-x2k2-63",
+        "alageum-tmge-x2k2-100",
+        "alageum-tmge-x2k2-160",
+        "alageum-tmge-x2k2-250",
+        "alageum-tmge-x2k2-400",
+        "alageum-tmge-x2k2-630",
+        "alageum-tmgve-x3k3-63",
+        "alageum-tmgve-x3k3-100",
+        "alageum-tmgve-x3k3-160",
+        "alageum-tmgve-x3k3-250",
+        "alageum-tmgve-x3k3-400",
+        "alageum-tmgve-x3k3-630",
+        "alageum-tmgi-x4k3-63",
+        "alageum-tmgi-x4k3-100",
+        "alageum-tmgi-x4k3-160",
+        "alageum-tmgi-x4k3-250",
+        "alageum-tmgi-x4k3-400",
+        "alageum-tmgi-x4k3-630",
+        "alageum-tmg-copper-25",
+        "alageum-tmg-copper-40",
+        "alageum-tmg-copper-63",
+        "alageum-tmg-copper-100",
+        "alageum-tmg-copper-160",
+        "alageum-tmg-copper-250",
+        "alageum-tmg-copper-400",
+        "alageum-tmg-copper-630"
+      ],
+      "modelCount": 54,
+      "familyIds": [
+        "tmg-01",
+        "tmg-copper",
+        "tmg-standard",
+        "tmg-x1k1",
+        "tmge-x2k1",
+        "tmge-x2k2",
+        "tmgi-x4k3",
+        "tmgve-x3k3"
+      ],
+      "sourcePhotoEvidence": false,
+      "sourceDrawingEvidence": true,
+      "exactMeshClaim": false,
+      "dimensionAccurateMeshAllowed": false,
+      "perModelExecutionBindingMustBeChecked": true
+    },
+    {
+      "id": "sealed-corrugated-large",
+      "title": "Large sealed corrugated-tank transformer, upper HV/LV bushings",
+      "evidencePages": [
+        13,
+        23,
+        31,
+        43
+      ],
+      "reuseType": "parameterized construction template; source drawing illustration",
+      "scope": "Models 1000 кВА and above expressly associated with these drawings",
+      "observedFeatures": [
+        "Tall corrugated tank",
+        "Top-mounted HV and LV bushings",
+        "Base rollers/channels",
+        "Top instruments and optional protective equipment"
+      ],
+      "limit": "A reusable topology, not one exact mesh. Drawing captions span different power ranges and variants; retain model-specific dimensions.",
+      "modelIds": [
+        "alageum-tmg-standard-1000",
+        "alageum-tmg-standard-1250",
+        "alageum-tmg-standard-1600",
+        "alageum-tmg-standard-2000",
+        "alageum-tmg-standard-2500",
+        "alageum-tmg-standard-3200",
+        "alageum-tmg-01-1000",
+        "alageum-tmg-01-1250",
+        "alageum-tmg-01-1600",
+        "alageum-tmg-01-2000",
+        "alageum-tmg-01-2500",
+        "alageum-tmg-x1k1-1000",
+        "alageum-tmg-x1k1-1250",
+        "alageum-tmg-x1k1-1600",
+        "alageum-tmg-x1k1-2500",
+        "alageum-tmge-x2k1-1000",
+        "alageum-tmge-x2k1-1250",
+        "alageum-tmge-x2k1-1600",
+        "alageum-tmge-x2k1-2500",
+        "alageum-tmge-x2k2-1000",
+        "alageum-tmge-x2k2-1250",
+        "alageum-tmge-x2k2-1600",
+        "alageum-tmge-x2k2-2500",
+        "alageum-tmgve-x3k3-1000",
+        "alageum-tmgve-x3k3-1250",
+        "alageum-tmgve-x3k3-1600",
+        "alageum-tmgve-x3k3-2500",
+        "alageum-tmgi-x4k3-1000",
+        "alageum-tmgi-x4k3-1250",
+        "alageum-tmgi-x4k3-1600",
+        "alageum-tmgi-x4k3-2500",
+        "alageum-tmg-copper-1000",
+        "alageum-tmg-copper-1250",
+        "alageum-tmg-copper-1600",
+        "alageum-tmg-copper-2000",
+        "alageum-tmg-copper-2500"
+      ],
+      "modelCount": 36,
+      "familyIds": [
+        "tmg-01",
+        "tmg-copper",
+        "tmg-standard",
+        "tmg-x1k1",
+        "tmge-x2k1",
+        "tmge-x2k2",
+        "tmgi-x4k3",
+        "tmgve-x3k3"
+      ],
+      "sourcePhotoEvidence": false,
+      "sourceDrawingEvidence": true,
+      "exactMeshClaim": false,
+      "dimensionAccurateMeshAllowed": false,
+      "perModelExecutionBindingMustBeChecked": true
+    },
+    {
+      "id": "tm-conservator-small",
+      "title": "ТМ small corrugated tank with conservator",
+      "evidencePages": [
+        16
+      ],
+      "reuseType": "parameterized construction template; source drawing illustration",
+      "scope": "ТМ-16–400 table models",
+      "observedFeatures": [
+        "Cylindrical conservator above lid",
+        "Corrugated tank",
+        "Upper bushings",
+        "Transport rollers"
+      ],
+      "limit": "Do not reuse sealed ТМГ image as exact TM: conservator is a source-grounded distinguishing feature.",
+      "modelIds": [
+        "alageum-tm-standard-16",
+        "alageum-tm-standard-25",
+        "alageum-tm-standard-40",
+        "alageum-tm-standard-63",
+        "alageum-tm-standard-100",
+        "alageum-tm-standard-160",
+        "alageum-tm-standard-250",
+        "alageum-tm-standard-400"
+      ],
+      "modelCount": 8,
+      "familyIds": [
+        "tm-standard"
+      ],
+      "sourcePhotoEvidence": false,
+      "sourceDrawingEvidence": true,
+      "exactMeshClaim": false,
+      "dimensionAccurateMeshAllowed": false,
+      "perModelExecutionBindingMustBeChecked": true
+    },
+    {
+      "id": "tm-conservator-large",
+      "title": "ТМ large corrugated tank with conservator",
+      "evidencePages": [
+        17
+      ],
+      "reuseType": "parameterized construction template; source drawing illustration",
+      "scope": "ТМ-630–2500 table models",
+      "observedFeatures": [
+        "Large elevated conservator",
+        "Corrugated tank",
+        "Breather and optional gas relay",
+        "Transport rollers"
+      ],
+      "limit": "Distinct from small ТМ drawing; use source-specific attachments rather than invent geometry.",
+      "modelIds": [
+        "alageum-tm-standard-630",
+        "alageum-tm-standard-1000",
+        "alageum-tm-standard-1250",
+        "alageum-tm-standard-1600",
+        "alageum-tm-standard-2000",
+        "alageum-tm-standard-2500"
+      ],
+      "modelCount": 6,
+      "familyIds": [
+        "tm-standard"
+      ],
+      "sourcePhotoEvidence": false,
+      "sourceDrawingEvidence": true,
+      "exactMeshClaim": false,
+      "dimensionAccurateMeshAllowed": false,
+      "perModelExecutionBindingMustBeChecked": true
+    },
+    {
+      "id": "tmgin-rpn-630",
+      "title": "ТМГиН-630 with on-load tap changer",
+      "evidencePages": [
+        33
+      ],
+      "reuseType": "single-source model illustration / construction template",
+      "scope": "ТМГиН-630, РПН Х4К3",
+      "observedFeatures": [
+        "Corrugated sealed tank",
+        "РПН identified in top view",
+        "Side-mounted box shown",
+        "Upper bushings and transport rollers"
+      ],
+      "limit": "Do not merge with ordinary 630 кВА body without retaining РПН layout.",
+      "modelIds": [
+        "alageum-tmgin-x4k3-630"
+      ],
+      "modelCount": 1,
+      "familyIds": [
+        "tmgin-x4k3"
+      ],
+      "sourcePhotoEvidence": false,
+      "sourceDrawingEvidence": true,
+      "exactMeshClaim": false,
+      "dimensionAccurateMeshAllowed": false,
+      "perModelExecutionBindingMustBeChecked": true
+    },
+    {
+      "id": "tmgs-pole-mount",
+      "title": "ТМГС with pole-mounting bracket",
+      "evidencePages": [
+        35
+      ],
+      "reuseType": "parameterized construction template; source drawing illustration",
+      "scope": "ТМГС-25–160 столбовой table models",
+      "observedFeatures": [
+        "Mounting bracket identified as item 21",
+        "Corrugated sealed tank",
+        "Upper bushings",
+        "Side mounting structure visible in front and plan views"
+      ],
+      "limit": "Pole bracket distinguishes this construction from standard ТМГ.",
+      "modelIds": [
+        "alageum-tmgs-pole-25",
+        "alageum-tmgs-pole-40",
+        "alageum-tmgs-pole-63",
+        "alageum-tmgs-pole-100",
+        "alageum-tmgs-pole-160"
+      ],
+      "modelCount": 5,
+      "familyIds": [
+        "tmgs-pole"
+      ],
+      "sourcePhotoEvidence": false,
+      "sourceDrawingEvidence": true,
+      "exactMeshClaim": false,
+      "dimensionAccurateMeshAllowed": false,
+      "perModelExecutionBindingMustBeChecked": true
+    },
+    {
+      "id": "tmz-panel-radiator",
+      "title": "ТМЗ nitrogen-cushion tank with panel radiators",
+      "evidencePages": [
+        37
+      ],
+      "reuseType": "parameterized construction template; source drawing illustration",
+      "scope": "ТМЗ-400–2500 table models",
+      "observedFeatures": [
+        "Panel radiators identified as item 20",
+        "Side-mounted HV/LV bushings",
+        "Oil indicator, nitrogen filling plug, manovacuummeter",
+        "Transport wheels"
+      ],
+      "limit": "Separate topology from corrugated-tank ТМГ. No dimensions beyond source table values should be inferred.",
+      "modelIds": [
+        "alageum-tmz-panel-400",
+        "alageum-tmz-panel-630",
+        "alageum-tmz-panel-1000",
+        "alageum-tmz-panel-1600",
+        "alageum-tmz-panel-2500"
+      ],
+      "modelCount": 5,
+      "familyIds": [
+        "tmz-panel"
+      ],
+      "sourcePhotoEvidence": false,
+      "sourceDrawingEvidence": true,
+      "exactMeshClaim": false,
+      "dimensionAccurateMeshAllowed": false,
+      "perModelExecutionBindingMustBeChecked": true
+    },
+    {
+      "id": "tmgf-separated-bushings",
+      "title": "ТМГФ tank with HV/LV groups on opposite ends of lid",
+      "evidencePages": [
+        39
+      ],
+      "reuseType": "parameterized construction template; source drawing illustration",
+      "scope": "ТМГФ-400–2500 table models",
+      "observedFeatures": [
+        "Corrugated tank",
+        "HV and LV bushings on opposed short ends in plan",
+        "Top instrument group",
+        "Transport rollers"
+      ],
+      "limit": "Do not label as flange configuration beyond literal series name; prose does not define Ф. Distinct terminal layout is visually explicit.",
+      "modelIds": [
+        "alageum-tmgf-400",
+        "alageum-tmgf-630",
+        "alageum-tmgf-1000",
+        "alageum-tmgf-1250",
+        "alageum-tmgf-1600",
+        "alageum-tmgf-2500"
+      ],
+      "modelCount": 6,
+      "familyIds": [
+        "tmgf"
+      ],
+      "sourcePhotoEvidence": false,
+      "sourceDrawingEvidence": true,
+      "exactMeshClaim": false,
+      "dimensionAccurateMeshAllowed": false,
+      "perModelExecutionBindingMustBeChecked": true
+    },
+    {
+      "id": "tmg-switch-small",
+      "title": "ТМГ 6↔10 kV, two-level switch, small construction",
+      "evidencePages": [
+        46
+      ],
+      "reuseType": "parameterized construction template; source drawing illustration",
+      "scope": "ТМГ-25–630 с 2-х этажным переключателем",
+      "observedFeatures": [
+        "Three orthogonal views of small corrugated-tank construction"
+      ],
+      "limit": "Page evidence supplied by neighboring section 046–101; this worker did not visually review page 46. Retain distinct switch configuration.",
+      "modelIds": [
+        "alageum-tmg-switch-6-10-25",
+        "alageum-tmg-switch-6-10-40",
+        "alageum-tmg-switch-6-10-63",
+        "alageum-tmg-switch-6-10-100",
+        "alageum-tmg-switch-6-10-160",
+        "alageum-tmg-switch-6-10-250",
+        "alageum-tmg-switch-6-10-400",
+        "alageum-tmg-switch-6-10-630"
+      ],
+      "modelCount": 8,
+      "familyIds": [
+        "tmg-switch-6-10"
+      ],
+      "sourcePhotoEvidence": false,
+      "sourceDrawingEvidence": true,
+      "exactMeshClaim": false,
+      "dimensionAccurateMeshAllowed": false,
+      "perModelExecutionBindingMustBeChecked": true
+    },
+    {
+      "id": "tmg-switch-large",
+      "title": "ТМГ 6↔10 kV, two-level switch, large construction",
+      "evidencePages": [
+        47
+      ],
+      "reuseType": "parameterized construction template; source drawing illustration",
+      "scope": "ТМГ-1000–2500 с 2-х этажным переключателем",
+      "observedFeatures": [
+        "Three orthogonal views of larger corrugated-tank construction"
+      ],
+      "limit": "Page evidence supplied by neighboring section 046–101; this worker did not visually review page 47. Retain distinct switch configuration.",
+      "modelIds": [
+        "alageum-tmg-switch-6-10-1000",
+        "alageum-tmg-switch-6-10-1250",
+        "alageum-tmg-switch-6-10-1600",
+        "alageum-tmg-switch-6-10-2000",
+        "alageum-tmg-switch-6-10-2500"
+      ],
+      "modelCount": 5,
+      "familyIds": [
+        "tmg-switch-6-10"
+      ],
+      "sourcePhotoEvidence": false,
+      "sourceDrawingEvidence": true,
+      "exactMeshClaim": false,
+      "dimensionAccurateMeshAllowed": false,
+      "perModelExecutionBindingMustBeChecked": true
+    }
+  ],
+  "unresolved": [
+    {
+      "familyId": "tmgve-x3k2",
+      "reason": "No explicitly labelled Х3К2 construction drawing in assigned pages",
+      "modelIds": [
+        "alageum-tmgve-x3k2-63",
+        "alageum-tmgve-x3k2-100",
+        "alageum-tmgve-x3k2-160",
+        "alageum-tmgve-x3k2-250",
+        "alageum-tmgve-x3k2-400",
+        "alageum-tmgve-x3k2-630",
+        "alageum-tmgve-x3k2-1000",
+        "alageum-tmgve-x3k2-1250",
+        "alageum-tmgve-x3k2-1600",
+        "alageum-tmgve-x3k2-2500"
+      ]
+    }
+  ],
+  "rules": [
+    "Use source dimensions only; do not derive dimensions or detailed geometry from page scale",
+    "No complete SKU generated",
+    "Construction template reuse does not mean exact mesh reuse"
+  ]
+}

@@ -1,0 +1,1816 @@
+[
+  {
+    "id": "cat-ktpzh-2-4-v002",
+    "name": "КТПЖ-4/27,5/0,23-У1",
+    "designation": "КТПЖ-4/27,5/0,23-У1",
+    "cohort": "legacy",
+    "category": "substations",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ktpzh-2-4",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        75
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "7e6d64f7db340ac7d6770189fbe6020888772f89dab4f94c3c619964adaeaf3b",
+    "geometry": {
+      "type": "railway-pole-single-phase",
+      "confidence": "source-matched",
+      "sourcePages": [
+        75
+      ],
+      "sourceImage": "/catalog-products/cat-ktpzh-2-4.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "По двум видам страницы 75: одна опора, верхняя траверса, боковой однофазный трансформатор с арматурой и отдельный нижний щиток. Трёхфазная мачтовая КТП не подставляется. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "railway-pole-single-phase",
+      "confidence": "source-based",
+      "sourcePages": [
+        75
+      ],
+      "sourceImage": "/catalog-products/cat-ktpzh-2-4.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По двум видам страницы 75: одна опора, верхняя траверса, боковой однофазный трансформатор с арматурой и отдельный нижний щиток. Трёхфазная мачтовая КТП не подставляется."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ktpzh-2-4.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        75
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ktpzh-25-1000",
+    "name": "Подстанция для железной дороги КТПЖ 25–1000/27,5/0,4",
+    "designation": "КТПЖ 25–1000/27,5/0,4 У1, Т1",
+    "cohort": "legacy",
+    "category": "substations",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [
+      "cat-ktpzh-25-1000-v001",
+      "cat-ktpzh-25-1000-v002",
+      "cat-ktpzh-25-1000-v003",
+      "cat-ktpzh-25-1000-v004",
+      "cat-ktpzh-25-1000-v005",
+      "cat-ktpzh-25-1000-v006",
+      "cat-ktpzh-25-1000-v007",
+      "cat-ktpzh-25-1000-v008",
+      "cat-ktpzh-25-1000-v009"
+    ],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        76
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "08ee96cce5afb9167c711b4ba189a416563007936f09c9d5fce547420d4b50c4",
+    "geometry": {
+      "type": "railway-frame-substation",
+      "confidence": "source-matched",
+      "sourcePages": [
+        76
+      ],
+      "sourceImage": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Повторяемая наружная сборка на общей платформе: высокая вводная рама, открытый трансформатор и шкафы НН. Общий вид серии со страницы 76, не чертёж отдельной мощности."
+    },
+    "icon": {
+      "type": "railway-frame-substation",
+      "confidence": "source-based",
+      "sourcePages": [
+        76
+      ],
+      "sourceImage": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему виду серии на странице 76: высокая вводная рама, открытый трансформатор и шкафы на общей платформе. Размеры и компоновка конкретной мощности не утверждаются."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        76
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ktpzh-25-1000-v001",
+    "name": "КТПЖ-25/27,5-0,4-У1",
+    "designation": "КТПЖ-25/27,5-0,4-У1",
+    "cohort": "legacy",
+    "category": "substations",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ktpzh-25-1000",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        76
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "40a4318218c563e3fccb0b1556134d629aac34fb131a8c92a500c001f00d4f99",
+    "geometry": {
+      "type": "railway-frame-substation",
+      "confidence": "source-matched",
+      "sourcePages": [
+        76
+      ],
+      "sourceImage": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Повторяемая наружная сборка на общей платформе: высокая вводная рама, открытый трансформатор и шкафы НН. Общий вид серии со страницы 76, не чертёж отдельной мощности."
+    },
+    "icon": {
+      "type": "railway-frame-substation",
+      "confidence": "source-based",
+      "sourcePages": [
+        76
+      ],
+      "sourceImage": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему виду серии на странице 76: высокая вводная рама, открытый трансформатор и шкафы на общей платформе. Размеры и компоновка конкретной мощности не утверждаются."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        76
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ktpzh-25-1000-v002",
+    "name": "КТПЖ-40/27,5-0,4-У1",
+    "designation": "КТПЖ-40/27,5-0,4-У1",
+    "cohort": "legacy",
+    "category": "substations",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ktpzh-25-1000",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        76
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "c6fe9c523741ca842bd0f0ff1423c3182adb5288dfc7ea28c19a0a3dbf780f8c",
+    "geometry": {
+      "type": "railway-frame-substation",
+      "confidence": "source-matched",
+      "sourcePages": [
+        76
+      ],
+      "sourceImage": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Повторяемая наружная сборка на общей платформе: высокая вводная рама, открытый трансформатор и шкафы НН. Общий вид серии со страницы 76, не чертёж отдельной мощности."
+    },
+    "icon": {
+      "type": "railway-frame-substation",
+      "confidence": "source-based",
+      "sourcePages": [
+        76
+      ],
+      "sourceImage": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему виду серии на странице 76: высокая вводная рама, открытый трансформатор и шкафы на общей платформе. Размеры и компоновка конкретной мощности не утверждаются."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        76
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ktpzh-25-1000-v003",
+    "name": "КТПЖ-63/27,5-0,4-У1",
+    "designation": "КТПЖ-63/27,5-0,4-У1",
+    "cohort": "legacy",
+    "category": "substations",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ktpzh-25-1000",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        76
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "f9cc0a67a85c76b770f988b273ad93372afc3572b254b3b36e66b26bb0e08489",
+    "geometry": {
+      "type": "railway-frame-substation",
+      "confidence": "source-matched",
+      "sourcePages": [
+        76
+      ],
+      "sourceImage": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Повторяемая наружная сборка на общей платформе: высокая вводная рама, открытый трансформатор и шкафы НН. Общий вид серии со страницы 76, не чертёж отдельной мощности."
+    },
+    "icon": {
+      "type": "railway-frame-substation",
+      "confidence": "source-based",
+      "sourcePages": [
+        76
+      ],
+      "sourceImage": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему виду серии на странице 76: высокая вводная рама, открытый трансформатор и шкафы на общей платформе. Размеры и компоновка конкретной мощности не утверждаются."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        76
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ktpzh-25-1000-v004",
+    "name": "КТПЖ-100/27,5-0,4-У1",
+    "designation": "КТПЖ-100/27,5-0,4-У1",
+    "cohort": "legacy",
+    "category": "substations",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ktpzh-25-1000",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        76
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "d3a458c626668a06fee431a0f62c1d9571f8b8547b159942836bbe2fb6b6dcb5",
+    "geometry": {
+      "type": "railway-frame-substation",
+      "confidence": "source-matched",
+      "sourcePages": [
+        76
+      ],
+      "sourceImage": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Повторяемая наружная сборка на общей платформе: высокая вводная рама, открытый трансформатор и шкафы НН. Общий вид серии со страницы 76, не чертёж отдельной мощности."
+    },
+    "icon": {
+      "type": "railway-frame-substation",
+      "confidence": "source-based",
+      "sourcePages": [
+        76
+      ],
+      "sourceImage": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему виду серии на странице 76: высокая вводная рама, открытый трансформатор и шкафы на общей платформе. Размеры и компоновка конкретной мощности не утверждаются."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        76
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ktpzh-25-1000-v005",
+    "name": "КТПЖ-160/27,5-0,4-У1",
+    "designation": "КТПЖ-160/27,5-0,4-У1",
+    "cohort": "legacy",
+    "category": "substations",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ktpzh-25-1000",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        76
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "8fe559d31800ce8d1ca27a8dde67fd45425d3a79a1ec5c71d2d5cf67d92f542a",
+    "geometry": {
+      "type": "railway-frame-substation",
+      "confidence": "source-matched",
+      "sourcePages": [
+        76
+      ],
+      "sourceImage": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Повторяемая наружная сборка на общей платформе: высокая вводная рама, открытый трансформатор и шкафы НН. Общий вид серии со страницы 76, не чертёж отдельной мощности."
+    },
+    "icon": {
+      "type": "railway-frame-substation",
+      "confidence": "source-based",
+      "sourcePages": [
+        76
+      ],
+      "sourceImage": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему виду серии на странице 76: высокая вводная рама, открытый трансформатор и шкафы на общей платформе. Размеры и компоновка конкретной мощности не утверждаются."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        76
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ktpzh-25-1000-v006",
+    "name": "КТПЖ-250/27,5-0,4-У1",
+    "designation": "КТПЖ-250/27,5-0,4-У1",
+    "cohort": "legacy",
+    "category": "substations",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ktpzh-25-1000",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        76
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "da3bde11fb9f9c21c4549fa71ae0ace0b37e94f83591916835dd063d909e462d",
+    "geometry": {
+      "type": "railway-frame-substation",
+      "confidence": "source-matched",
+      "sourcePages": [
+        76
+      ],
+      "sourceImage": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Повторяемая наружная сборка на общей платформе: высокая вводная рама, открытый трансформатор и шкафы НН. Общий вид серии со страницы 76, не чертёж отдельной мощности."
+    },
+    "icon": {
+      "type": "railway-frame-substation",
+      "confidence": "source-based",
+      "sourcePages": [
+        76
+      ],
+      "sourceImage": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему виду серии на странице 76: высокая вводная рама, открытый трансформатор и шкафы на общей платформе. Размеры и компоновка конкретной мощности не утверждаются."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        76
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ktpzh-25-1000-v007",
+    "name": "КТПЖ-400/27,5-0,4-У1",
+    "designation": "КТПЖ-400/27,5-0,4-У1",
+    "cohort": "legacy",
+    "category": "substations",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ktpzh-25-1000",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        76
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "a945c741bf8b31c914fb26e1eb2257a4e710b1d8ef6401abbe296a83e2f11e43",
+    "geometry": {
+      "type": "railway-frame-substation",
+      "confidence": "source-matched",
+      "sourcePages": [
+        76
+      ],
+      "sourceImage": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Повторяемая наружная сборка на общей платформе: высокая вводная рама, открытый трансформатор и шкафы НН. Общий вид серии со страницы 76, не чертёж отдельной мощности."
+    },
+    "icon": {
+      "type": "railway-frame-substation",
+      "confidence": "source-based",
+      "sourcePages": [
+        76
+      ],
+      "sourceImage": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему виду серии на странице 76: высокая вводная рама, открытый трансформатор и шкафы на общей платформе. Размеры и компоновка конкретной мощности не утверждаются."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        76
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ktpzh-25-1000-v008",
+    "name": "КТПЖ-630/27,5-0,4-У1",
+    "designation": "КТПЖ-630/27,5-0,4-У1",
+    "cohort": "legacy",
+    "category": "substations",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ktpzh-25-1000",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        76
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "765079482769c689a62e56f2dc6bd85c9fa583649d223b2dcbc4c0648a495304",
+    "geometry": {
+      "type": "railway-frame-substation",
+      "confidence": "source-matched",
+      "sourcePages": [
+        76
+      ],
+      "sourceImage": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Повторяемая наружная сборка на общей платформе: высокая вводная рама, открытый трансформатор и шкафы НН. Общий вид серии со страницы 76, не чертёж отдельной мощности."
+    },
+    "icon": {
+      "type": "railway-frame-substation",
+      "confidence": "source-based",
+      "sourcePages": [
+        76
+      ],
+      "sourceImage": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему виду серии на странице 76: высокая вводная рама, открытый трансформатор и шкафы на общей платформе. Размеры и компоновка конкретной мощности не утверждаются."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        76
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ktpzh-25-1000-v009",
+    "name": "КТПЖ-1000/27,5-0,4-У1",
+    "designation": "КТПЖ-1000/27,5-0,4-У1",
+    "cohort": "legacy",
+    "category": "substations",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ktpzh-25-1000",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        76
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "1c74f3f1734a881510cf4cab4fa80f5c767486d73642d76baaa00bd38bd5bc08",
+    "geometry": {
+      "type": "railway-frame-substation",
+      "confidence": "source-matched",
+      "sourcePages": [
+        76
+      ],
+      "sourceImage": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Повторяемая наружная сборка на общей платформе: высокая вводная рама, открытый трансформатор и шкафы НН. Общий вид серии со страницы 76, не чертёж отдельной мощности."
+    },
+    "icon": {
+      "type": "railway-frame-substation",
+      "confidence": "source-based",
+      "sourcePages": [
+        76
+      ],
+      "sourceImage": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему виду серии на странице 76: высокая вводная рама, открытый трансформатор и шкафы на общей платформе. Размеры и компоновка конкретной мощности не утверждаются."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        76
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-mtpzh-1-25-2-5",
+    "name": "Мачтовая подстанция МТПЖ 1,25–2,5/10(6)/0,23 У1",
+    "designation": "МТПЖ 1,25–2,5/10(6)/0,23 У1",
+    "cohort": "legacy",
+    "category": "substations",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [
+      "cat-mtpzh-1-25-2-5-v001",
+      "cat-mtpzh-1-25-2-5-v002"
+    ],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        77
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "8b50950e2432e59e3585655e2a385b5019d9aaab2e0b4c4ace4a5e6268536443",
+    "geometry": {
+      "type": "railway-pole-mini-transformer",
+      "confidence": "source-matched",
+      "sourcePages": [
+        77
+      ],
+      "sourceImage": "/catalog-products/cat-mtpzh-1-25-2-5.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "По чертежу страницы 77: одна опора, верхняя консоль с раскосом и одиночный боковой трансформатор. Сохранён однофазный силуэт без трёхфазного бака. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "railway-pole-mini-transformer",
+      "confidence": "source-based",
+      "sourcePages": [
+        77
+      ],
+      "sourceImage": "/catalog-products/cat-mtpzh-1-25-2-5.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По чертежу страницы 77: одна опора, верхняя консоль с раскосом и одиночный боковой трансформатор. Сохранён однофазный силуэт без трёхфазного бака."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-mtpzh-1-25-2-5.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        77
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-mtpzh-1-25-2-5-v001",
+    "name": "МТПЖ-1,25/10-0,23У1",
+    "designation": "МТПЖ-1,25/10-0,23У1",
+    "cohort": "legacy",
+    "category": "substations",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-mtpzh-1-25-2-5",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        77
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "8b682fc063f9e1f4d4083dbbe4a51b3cb289465380544cd061bb6f4490cbbae8",
+    "geometry": {
+      "type": "railway-pole-mini-transformer",
+      "confidence": "source-matched",
+      "sourcePages": [
+        77
+      ],
+      "sourceImage": "/catalog-products/cat-mtpzh-1-25-2-5.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "По чертежу страницы 77: одна опора, верхняя консоль с раскосом и одиночный боковой трансформатор. Сохранён однофазный силуэт без трёхфазного бака. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "railway-pole-mini-transformer",
+      "confidence": "source-based",
+      "sourcePages": [
+        77
+      ],
+      "sourceImage": "/catalog-products/cat-mtpzh-1-25-2-5.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По чертежу страницы 77: одна опора, верхняя консоль с раскосом и одиночный боковой трансформатор. Сохранён однофазный силуэт без трёхфазного бака."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-mtpzh-1-25-2-5.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        77
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-mtpzh-1-25-2-5-v002",
+    "name": "МТПЖ-2,5/10-0,23У1",
+    "designation": "МТПЖ-2,5/10-0,23У1",
+    "cohort": "legacy",
+    "category": "substations",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-mtpzh-1-25-2-5",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        77
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "67e3ca7518332455fff547e7f372c2a0e1e2418324704e56acf6fb890ab8cffe",
+    "geometry": {
+      "type": "railway-pole-mini-transformer",
+      "confidence": "source-matched",
+      "sourcePages": [
+        77
+      ],
+      "sourceImage": "/catalog-products/cat-mtpzh-1-25-2-5.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "По чертежу страницы 77: одна опора, верхняя консоль с раскосом и одиночный боковой трансформатор. Сохранён однофазный силуэт без трёхфазного бака. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "railway-pole-mini-transformer",
+      "confidence": "source-based",
+      "sourcePages": [
+        77
+      ],
+      "sourceImage": "/catalog-products/cat-mtpzh-1-25-2-5.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По чертежу страницы 77: одна опора, верхняя консоль с раскосом и одиночный боковой трансформатор. Сохранён однофазный силуэт без трёхфазного бака."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-mtpzh-1-25-2-5.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        77
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-mtpzh-10",
+    "name": "Мачтовая подстанция МТПЖ 10/27,5",
+    "designation": "МТПЖ 10/27,5",
+    "cohort": "legacy",
+    "category": "substations",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [
+      "cat-mtpzh-10-v001"
+    ],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        78
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "34c2bb9de2ba7328c280b44185bf925a3d65e218c1d243a03b611dbfd5799787",
+    "geometry": {
+      "type": "railway-backboard-transformer",
+      "confidence": "source-matched",
+      "sourcePages": [
+        78
+      ],
+      "sourceImage": "/catalog-products/cat-mtpzh-10.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "По боковому виду МТПЖ-10 страницы 78: высокий шкаф или щит за отдельным низким трансформатором на общей раме. Мачта не дорисовывается из названия. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "railway-backboard-transformer",
+      "confidence": "source-based",
+      "sourcePages": [
+        78
+      ],
+      "sourceImage": "/catalog-products/cat-mtpzh-10.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По боковому виду МТПЖ-10 страницы 78: высокий шкаф или щит за отдельным низким трансформатором на общей раме. Мачта не дорисовывается из названия."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-mtpzh-10.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        78
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-mtpzh-10-v001",
+    "name": "МТПЖ10/27,5-0,23У1",
+    "designation": "МТПЖ10/27,5-0,23У1",
+    "cohort": "legacy",
+    "category": "substations",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-mtpzh-10",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        78
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "e0cc3e3cf3b2ddfa8edd57263a9b3302e923feed0d5f2806c2d4e5de447ce542",
+    "geometry": {
+      "type": "railway-backboard-transformer",
+      "confidence": "source-matched",
+      "sourcePages": [
+        78
+      ],
+      "sourceImage": "/catalog-products/cat-mtpzh-10.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "По боковому виду МТПЖ-10 страницы 78: высокий шкаф или щит за отдельным низким трансформатором на общей раме. Мачта не дорисовывается из названия. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "railway-backboard-transformer",
+      "confidence": "source-based",
+      "sourcePages": [
+        78
+      ],
+      "sourceImage": "/catalog-products/cat-mtpzh-10.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По боковому виду МТПЖ-10 страницы 78: высокий шкаф или щит за отдельным низким трансформатором на общей раме. Мачта не дорисовывается из названия."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-mtpzh-10.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        78
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-atp-2x25",
+    "name": "Распределительное устройство автотрансформаторного пункта АТП-2×25 У1",
+    "designation": "АТП-2×25 У1",
+    "cohort": "legacy",
+    "category": "switchgear",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        79,
+        80,
+        81
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "d35b4a6fabd1793c9aa2d1decee1def47cd887107d1a64c609850463bddf4563",
+    "geometry": {
+      "type": "railway-modular-building",
+      "confidence": "source-matched",
+      "sourcePages": [
+        81
+      ],
+      "sourceImage": "/catalog-products/cat-atp-2x25.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "По наружному фасаду АТП-2×25 в блочно-модульном здании на странице 81: длинный закрытый корпус, две двери, цоколь и боковые вводы. Вид прочитан после поворота исходного чертежа; внутренние аппараты не выносятся наружу. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "railway-modular-building",
+      "confidence": "source-based",
+      "sourcePages": [
+        81
+      ],
+      "sourceImage": "/catalog-products/cat-atp-2x25.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По наружному фасаду АТП-2×25 в блочно-модульном здании на странице 81: длинный закрытый корпус, две двери, цоколь и боковые вводы. Вид прочитан после поворота исходного чертежа; внутренние аппараты не выносятся наружу."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-atp-2x25.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        81
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-psk-27-5",
+    "name": "Пост секционирования контактной сети ПСК-27,5 кВ",
+    "designation": "ПСК-27,5 кВ",
+    "cohort": "legacy",
+    "category": "switchgear",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [
+      "cat-psk-27-5-v001"
+    ],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        82,
+        83,
+        84
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "8428c2664073ab12c23e04750148b7ba1614a5e3dd75572ee5f9e149898d0653",
+    "geometry": {
+      "type": "railway-sectioning-post",
+      "confidence": "source-matched",
+      "sourcePages": [
+        84
+      ],
+      "sourceImage": "/catalog-products/cat-psk-27-5.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "По видам ПСК-27,5-5 У1 на странице 84: закрытый модуль на основании и высокая наружная контактная группа с защитной сеткой. Другие проекции не считаются отдельными вариантами. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "railway-sectioning-post",
+      "confidence": "source-based",
+      "sourcePages": [
+        84
+      ],
+      "sourceImage": "/catalog-products/cat-psk-27-5.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По видам ПСК-27,5-5 У1 на странице 84: закрытый модуль на основании и высокая наружная контактная группа с защитной сеткой. Другие проекции не считаются отдельными вариантами."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-psk-27-5.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        84
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-psk-27-5-v001",
+    "name": "ПСК-27,5-5 У1",
+    "designation": "ПСК-27,5-5 У1",
+    "cohort": "legacy",
+    "category": "switchgear",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-psk-27-5",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        82,
+        83,
+        84
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "16287e79c9fcbfed9387401dc194e9fd54a5c4a2cc91c36c37096d323e4e6582",
+    "geometry": {
+      "type": "railway-sectioning-post",
+      "confidence": "source-matched",
+      "sourcePages": [
+        84
+      ],
+      "sourceImage": "/catalog-products/cat-psk-27-5.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "По видам ПСК-27,5-5 У1 на странице 84: закрытый модуль на основании и высокая наружная контактная группа с защитной сеткой. Другие проекции не считаются отдельными вариантами. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "railway-sectioning-post",
+      "confidence": "source-based",
+      "sourcePages": [
+        84
+      ],
+      "sourceImage": "/catalog-products/cat-psk-27-5.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По видам ПСК-27,5-5 У1 на странице 84: закрытый модуль на основании и высокая наружная контактная группа с защитной сеткой. Другие проекции не считаются отдельными вариантами."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-psk-27-5.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        84
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-kru-27-5",
+    "name": "Распределительное устройство КРУ-27,5 кВ для электрифицированных железных дорог",
+    "designation": "КРУ-27,5 кВ",
+    "cohort": "legacy",
+    "category": "switchgear",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        85,
+        86
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "cffd28fda4d2939f091a13c09e9960aec709b778e52a55601817788ebd88ca9e",
+    "geometry": {
+      "type": "railway-side-input-switchgear",
+      "confidence": "source-matched",
+      "sourcePages": [
+        86
+      ],
+      "sourceImage": "/catalog-products/cat-kru-27-5.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "По фасаду однополюсной КРУ-27,5 на странице 86: два яруса дверей, окно нижнего отсека, верхний и два боковых ввода. Вид разреза не используется как внешний фасад. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "railway-side-input-switchgear",
+      "confidence": "source-based",
+      "sourcePages": [
+        86
+      ],
+      "sourceImage": "/catalog-products/cat-kru-27-5.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По фасаду однополюсной КРУ-27,5 на странице 86: два яруса дверей, окно нижнего отсека, верхний и два боковых ввода. Вид разреза не используется как внешний фасад."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-kru-27-5.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        86
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-pktp",
+    "name": "Перевозимые комплектные трансформаторные подстанции ПКТП",
+    "designation": "ПКТП 25–1000/6(10)/0,4 кВ У1",
+    "cohort": "legacy",
+    "category": "substations",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [
+      "cat-pktp-v001",
+      "cat-pktp-v002",
+      "cat-pktp-v003",
+      "cat-pktp-v004",
+      "cat-pktp-v005",
+      "cat-pktp-v006",
+      "pktp-400",
+      "cat-pktp-v008",
+      "pktp-1000"
+    ],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        87,
+        88
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "4605f7b5cc00c7f7114296a9c28a4e85d72d0e888f5c5a111c30a5bf28bec5bd",
+    "geometry": {
+      "type": "mining-skid-substation",
+      "confidence": "source-matched",
+      "sourcePages": [
+        87
+      ],
+      "sourceImage": "/catalog-products/cat-pktp.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Повторяемая передвижная сборка на полозьях: боковой шкаф, трансформатор и верхняя сетчатая зона вводов. Контур общего вида серии со страницы 87; размеры исполнения не переносятся."
+    },
+    "icon": {
+      "type": "mining-skid-substation",
+      "confidence": "source-based",
+      "sourcePages": [
+        87
+      ],
+      "sourceImage": "/catalog-products/cat-pktp.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему виду ПКТП на странице 87: передвижная сборка на полозьях, шкаф, трансформатор и верхняя сетчатая зона вводов. Общая форма серии, не размерный чертёж каждой мощности."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-pktp.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        87
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-pktp-v001",
+    "name": "ПКТП-25",
+    "designation": "ПКТП-25",
+    "cohort": "legacy",
+    "category": "substations",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-pktp",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        87,
+        88
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "8b0d8e0e4e388a8a7a1d059c527136fd94c64c32e235c3c84dd34a2414216ead",
+    "geometry": {
+      "type": "mining-skid-substation",
+      "confidence": "source-matched",
+      "sourcePages": [
+        87
+      ],
+      "sourceImage": "/catalog-products/cat-pktp.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Повторяемая передвижная сборка на полозьях: боковой шкаф, трансформатор и верхняя сетчатая зона вводов. Контур общего вида серии со страницы 87; размеры исполнения не переносятся."
+    },
+    "icon": {
+      "type": "mining-skid-substation",
+      "confidence": "source-based",
+      "sourcePages": [
+        87
+      ],
+      "sourceImage": "/catalog-products/cat-pktp.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему виду ПКТП на странице 87: передвижная сборка на полозьях, шкаф, трансформатор и верхняя сетчатая зона вводов. Общая форма серии, не размерный чертёж каждой мощности."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-pktp.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        87
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-pktp-v002",
+    "name": "ПКТП-40",
+    "designation": "ПКТП-40",
+    "cohort": "legacy",
+    "category": "substations",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-pktp",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        87,
+        88
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "d30156d75e054077d5a728d78d7f4b3ab8248001299384762ecf47753cfc6022",
+    "geometry": {
+      "type": "mining-skid-substation",
+      "confidence": "source-matched",
+      "sourcePages": [
+        87
+      ],
+      "sourceImage": "/catalog-products/cat-pktp.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Повторяемая передвижная сборка на полозьях: боковой шкаф, трансформатор и верхняя сетчатая зона вводов. Контур общего вида серии со страницы 87; размеры исполнения не переносятся."
+    },
+    "icon": {
+      "type": "mining-skid-substation",
+      "confidence": "source-based",
+      "sourcePages": [
+        87
+      ],
+      "sourceImage": "/catalog-products/cat-pktp.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему виду ПКТП на странице 87: передвижная сборка на полозьях, шкаф, трансформатор и верхняя сетчатая зона вводов. Общая форма серии, не размерный чертёж каждой мощности."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-pktp.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        87
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-pktp-v003",
+    "name": "ПКТП-63",
+    "designation": "ПКТП-63",
+    "cohort": "legacy",
+    "category": "substations",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-pktp",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        87,
+        88
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "39ba96b887305e068cf42933f55a4fe74ce4a73ca32847c81ef038281abcebd7",
+    "geometry": {
+      "type": "mining-skid-substation",
+      "confidence": "source-matched",
+      "sourcePages": [
+        87
+      ],
+      "sourceImage": "/catalog-products/cat-pktp.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Повторяемая передвижная сборка на полозьях: боковой шкаф, трансформатор и верхняя сетчатая зона вводов. Контур общего вида серии со страницы 87; размеры исполнения не переносятся."
+    },
+    "icon": {
+      "type": "mining-skid-substation",
+      "confidence": "source-based",
+      "sourcePages": [
+        87
+      ],
+      "sourceImage": "/catalog-products/cat-pktp.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему виду ПКТП на странице 87: передвижная сборка на полозьях, шкаф, трансформатор и верхняя сетчатая зона вводов. Общая форма серии, не размерный чертёж каждой мощности."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-pktp.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        87
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-pktp-v004",
+    "name": "ПКТП-100",
+    "designation": "ПКТП-100",
+    "cohort": "legacy",
+    "category": "substations",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-pktp",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        87,
+        88
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "29ca300617c59414291c9c7eef86c93e244de1a480b4bcd2bbd7952e29a59ef5",
+    "geometry": {
+      "type": "mining-skid-substation",
+      "confidence": "source-matched",
+      "sourcePages": [
+        87
+      ],
+      "sourceImage": "/catalog-products/cat-pktp.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Повторяемая передвижная сборка на полозьях: боковой шкаф, трансформатор и верхняя сетчатая зона вводов. Контур общего вида серии со страницы 87; размеры исполнения не переносятся."
+    },
+    "icon": {
+      "type": "mining-skid-substation",
+      "confidence": "source-based",
+      "sourcePages": [
+        87
+      ],
+      "sourceImage": "/catalog-products/cat-pktp.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему виду ПКТП на странице 87: передвижная сборка на полозьях, шкаф, трансформатор и верхняя сетчатая зона вводов. Общая форма серии, не размерный чертёж каждой мощности."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-pktp.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        87
+      ]
+    },
+    "proposalEvidence": null
+  }
+]

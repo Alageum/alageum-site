@@ -1,0 +1,1411 @@
+[
+  {
+    "id": "isolating-tmg",
+    "designation": "ТМГ",
+    "title": "ТМГ — Разделительные",
+    "sourcePages": [
+      48,
+      49
+    ],
+    "modelIds": [
+      "alageum-2026-isolating-tmg-630",
+      "alageum-2026-isolating-tmg-1000",
+      "alageum-2026-isolating-tmg-1250",
+      "alageum-2026-isolating-tmg-1600",
+      "alageum-2026-isolating-tmg-2000",
+      "alageum-2026-isolating-tmg-2500",
+      "alageum-2026-isolating-tmg-3200",
+      "alageum-2026-isolating-tmg-4000",
+      "alageum-2026-isolating-tmg-4500"
+    ],
+    "manufacturer": null,
+    "brand": "Alageum electric"
+  },
+  {
+    "id": "tm-20kv",
+    "designation": "ТМ",
+    "title": "ТМ — 20 кВ",
+    "sourcePages": [
+      50,
+      51,
+      52,
+      53
+    ],
+    "modelIds": [
+      "alageum-2026-tm-20kv-100",
+      "alageum-2026-tm-20kv-160",
+      "alageum-2026-tm-20kv-250",
+      "alageum-2026-tm-20kv-400",
+      "alageum-2026-tm-20kv-630",
+      "alageum-2026-tm-20kv-1000",
+      "alageum-2026-tm-20kv-1250",
+      "alageum-2026-tm-20kv-1600",
+      "alageum-2026-tm-20kv-2000",
+      "alageum-2026-tm-20kv-2500"
+    ],
+    "manufacturer": null,
+    "brand": "Alageum electric",
+    "sourceScopedCommonSpecs": [
+      {
+        "id": "common-prose-01-p50",
+        "sourcePage": 50,
+        "appliesToModelIds": [
+          "alageum-2026-tm-20kv-100",
+          "alageum-2026-tm-20kv-160",
+          "alageum-2026-tm-20kv-250",
+          "alageum-2026-tm-20kv-400",
+          "alageum-2026-tm-20kv-630",
+          "alageum-2026-tm-20kv-1000",
+          "alageum-2026-tm-20kv-1250",
+          "alageum-2026-tm-20kv-1600",
+          "alageum-2026-tm-20kv-2000",
+          "alageum-2026-tm-20kv-2500"
+        ],
+        "appliesToConfigurationIds": [],
+        "technicalSpecs": [
+          {
+            "label": "Установка",
+            "value": "наружной или внутренней",
+            "unit": null,
+            "page": 50
+          },
+          {
+            "label": "Температура умеренного климата",
+            "value": "от +40°C до -45°C",
+            "unit": "°C",
+            "page": 50
+          },
+          {
+            "label": "Температура холодного климата",
+            "value": "от +40°C до -60°C",
+            "unit": "°C",
+            "page": 50
+          },
+          {
+            "label": "Высота установки над уровнем моря",
+            "value": "не более1000",
+            "unit": "м",
+            "page": 50
+          },
+          {
+            "label": "Исключенные условия работы",
+            "value": "тряска, вибрация, удары, химически активная среда",
+            "unit": null,
+            "page": 50
+          },
+          {
+            "label": "Регулирование напряжения ПБВ со стороны ВН",
+            "value": "±2x2,5",
+            "unit": "%",
+            "page": 50
+          },
+          {
+            "label": "Климатическое исполнение",
+            "value": "У1",
+            "unit": null,
+            "page": 50
+          },
+          {
+            "label": "Маслорасширитель",
+            "value": "установлен на крышке бака; вентиляционное отверстие соединенное через воздухоочиститель",
+            "unit": null,
+            "page": 50
+          },
+          {
+            "label": "Диапазон мощности (текст)",
+            "value": "40–2500",
+            "unit": "кВА",
+            "page": 50
+          }
+        ],
+        "scopePolicy": "Only listed model/configuration IDs; no inheritance to other family records or drawing-only models.",
+        "note": "Heading/table start at100kVA while prose starts at40. Preserve disagreement; no40/63kVA TM20kV records may be invented."
+      }
+    ]
+  },
+  {
+    "id": "tmg-20kv-copper",
+    "designation": "ТМГ",
+    "title": "ТМГ — 20кВ, с медными обмотками",
+    "sourcePages": [
+      51,
+      56
+    ],
+    "modelIds": [
+      "alageum-2026-tmg-20kv-copper-25",
+      "alageum-2026-tmg-20kv-copper-40",
+      "alageum-2026-tmg-20kv-copper-63"
+    ],
+    "manufacturer": null,
+    "brand": "Alageum electric",
+    "sourceScopedCommonSpecs": [
+      {
+        "id": "common-prose-02-p51",
+        "sourcePage": 51,
+        "appliesToModelIds": [
+          "alageum-2026-tmg-20kv-copper-25",
+          "alageum-2026-tmg-20kv-copper-40",
+          "alageum-2026-tmg-20kv-copper-63"
+        ],
+        "appliesToConfigurationIds": [],
+        "technicalSpecs": [
+          {
+            "label": "Обмотки",
+            "value": "трехфазные, двухобмоточные",
+            "unit": null,
+            "page": 51
+          },
+          {
+            "label": "Охлаждение",
+            "value": "естественное охлаждение масла",
+            "unit": null,
+            "page": 51
+          },
+          {
+            "label": "Исполнение",
+            "value": "герметичное; полное заполнение маслом под вакуум",
+            "unit": null,
+            "page": 51
+          },
+          {
+            "label": "Компенсация изменения объема масла",
+            "value": "изменение объема гофрированных стенок бака за счет пластичной их деформации",
+            "unit": null,
+            "page": 51
+          }
+        ],
+        "scopePolicy": "Only listed model/configuration IDs; no inheritance to other family records or drawing-only models."
+      }
+    ]
+  },
+  {
+    "id": "tmg-20kv",
+    "designation": "ТМГ",
+    "title": "ТМГ — 20кВ",
+    "sourcePages": [
+      54,
+      55,
+      56,
+      57
+    ],
+    "modelIds": [
+      "alageum-2026-tmg-20kv-100",
+      "alageum-2026-tmg-20kv-160",
+      "alageum-2026-tmg-20kv-250",
+      "alageum-2026-tmg-20kv-400",
+      "alageum-2026-tmg-20kv-630",
+      "alageum-2026-tmg-20kv-1000",
+      "alageum-2026-tmg-20kv-1250",
+      "alageum-2026-tmg-20kv-1600",
+      "alageum-2026-tmg-20kv-2000",
+      "alageum-2026-tmg-20kv-2500"
+    ],
+    "manufacturer": null,
+    "brand": "Alageum electric",
+    "sourceScopedCommonSpecs": [
+      {
+        "id": "common-prose-03-p54",
+        "sourcePage": 54,
+        "appliesToModelIds": [
+          "alageum-2026-tmg-20kv-100",
+          "alageum-2026-tmg-20kv-160",
+          "alageum-2026-tmg-20kv-250",
+          "alageum-2026-tmg-20kv-400",
+          "alageum-2026-tmg-20kv-630",
+          "alageum-2026-tmg-20kv-1000",
+          "alageum-2026-tmg-20kv-1250",
+          "alageum-2026-tmg-20kv-1600",
+          "alageum-2026-tmg-20kv-2000",
+          "alageum-2026-tmg-20kv-2500"
+        ],
+        "appliesToConfigurationIds": [],
+        "technicalSpecs": [
+          {
+            "label": "Обмотки",
+            "value": "трехфазные, двухобмоточные",
+            "unit": null,
+            "page": 54
+          },
+          {
+            "label": "Охлаждение",
+            "value": "естественное охлаждение масла",
+            "unit": null,
+            "page": 54
+          },
+          {
+            "label": "Исполнение",
+            "value": "герметичное; полное заполнение маслом под вакуум",
+            "unit": null,
+            "page": 54
+          },
+          {
+            "label": "Компенсация изменения объема масла",
+            "value": "изменение объема гофрированных стенок бака за счет пластичной их деформации",
+            "unit": null,
+            "page": 54
+          }
+        ],
+        "scopePolicy": "Only listed model/configuration IDs; no inheritance to other family records or drawing-only models."
+      }
+    ]
+  },
+  {
+    "id": "tmgsu",
+    "designation": "ТМГСУ",
+    "title": "ТМГСУ — с симметрирующим устройством",
+    "sourcePages": [
+      58,
+      59
+    ],
+    "modelIds": [
+      "alageum-2026-tmgsu-63",
+      "alageum-2026-tmgsu-100",
+      "alageum-2026-tmgsu-160",
+      "alageum-2026-tmgsu-250"
+    ],
+    "manufacturer": null,
+    "brand": "Alageum electric",
+    "sourceScopedCommonSpecs": [
+      {
+        "id": "common-prose-04-p58",
+        "sourcePage": 58,
+        "appliesToModelIds": [
+          "alageum-2026-tmgsu-63",
+          "alageum-2026-tmgsu-100",
+          "alageum-2026-tmgsu-160",
+          "alageum-2026-tmgsu-250"
+        ],
+        "appliesToConfigurationIds": [],
+        "technicalSpecs": [
+          {
+            "label": "Установка",
+            "value": "наружной или внутренней",
+            "unit": null,
+            "page": 58
+          },
+          {
+            "label": "Температура умеренного климата",
+            "value": "от +40 до -45",
+            "unit": "°C",
+            "page": 58
+          },
+          {
+            "label": "Температура холодного климата",
+            "value": "от +40 до -60",
+            "unit": "°C",
+            "page": 58
+          },
+          {
+            "label": "Окружающая среда",
+            "value": "невзрывоопасная, не содержащая пыли в концентрациях, снижающих параметры изделий в недопустимых пределах",
+            "unit": null,
+            "page": 58
+          },
+          {
+            "label": "Назначение симметрирующего устройства",
+            "value": "поддержание симметричности фазных напряжений при неравномерной пофазной нагрузке",
+            "unit": null,
+            "page": 58
+          }
+        ],
+        "scopePolicy": "Only listed model/configuration IDs; no inheritance to other family records or drawing-only models."
+      }
+    ]
+  },
+  {
+    "id": "tmeg",
+    "designation": "ТМЭГ",
+    "title": "ТМЭГ — для питания электрооборудования экскаваторов",
+    "sourcePages": [
+      60,
+      61
+    ],
+    "modelIds": [
+      "alageum-2026-tmeg-40",
+      "alageum-2026-tmeg-63",
+      "alageum-2026-tmeg-100",
+      "alageum-2026-tmeg-160",
+      "alageum-2026-tmeg-250"
+    ],
+    "manufacturer": null,
+    "brand": "Alageum electric",
+    "sourceScopedCommonSpecs": [
+      {
+        "id": "common-prose-05-p60",
+        "sourcePage": 60,
+        "appliesToModelIds": [
+          "alageum-2026-tmeg-40",
+          "alageum-2026-tmeg-63",
+          "alageum-2026-tmeg-100",
+          "alageum-2026-tmeg-160",
+          "alageum-2026-tmeg-250"
+        ],
+        "appliesToConfigurationIds": [],
+        "technicalSpecs": [
+          {
+            "label": "Охлаждение",
+            "value": "естественное масляное",
+            "unit": null,
+            "page": 60
+          },
+          {
+            "label": "Переключатель",
+            "value": "без возбуждения",
+            "unit": null,
+            "page": 60
+          },
+          {
+            "label": "Стандарт",
+            "value": "ГОСТ11677",
+            "unit": null,
+            "page": 60
+          }
+        ],
+        "scopePolicy": "Only listed model/configuration IDs; no inheritance to other family records or drawing-only models."
+      }
+    ]
+  },
+  {
+    "id": "tmpn-top",
+    "designation": "ТМПН(Г)",
+    "title": "ТМПН(Г) — верхние выводы по чертежу66",
+    "sourcePages": [
+      62,
+      63,
+      64,
+      65,
+      66
+    ],
+    "modelIds": [
+      "alageum-2026-tmpn-p62-r1",
+      "alageum-2026-tmpn-p62-r2",
+      "alageum-2026-tmpn-p62-r3",
+      "alageum-2026-tmpn-p62-r4",
+      "alageum-2026-tmpn-p62-r5",
+      "alageum-2026-tmpn-p62-r6",
+      "alageum-2026-tmpn-p62-r7",
+      "alageum-2026-tmpn-p62-r8",
+      "alageum-2026-tmpn-p64-r1",
+      "alageum-2026-tmpn-p64-r2",
+      "alageum-2026-tmpn-p64-r3",
+      "alageum-2026-tmpn-p64-r4",
+      "alageum-2026-tmpn-p64-r5",
+      "alageum-2026-tmpn-p64-r6"
+    ],
+    "manufacturer": null,
+    "brand": "Alageum electric",
+    "sourceScopedCommonSpecs": [
+      {
+        "id": "common-prose-06-p62",
+        "sourcePage": 62,
+        "appliesToModelIds": [
+          "alageum-2026-tmpn-p62-r1",
+          "alageum-2026-tmpn-p62-r2",
+          "alageum-2026-tmpn-p62-r3",
+          "alageum-2026-tmpn-p62-r4",
+          "alageum-2026-tmpn-p62-r5",
+          "alageum-2026-tmpn-p62-r6",
+          "alageum-2026-tmpn-p62-r7",
+          "alageum-2026-tmpn-p62-r8"
+        ],
+        "appliesToConfigurationIds": [],
+        "technicalSpecs": [
+          {
+            "label": "Температура окружающего воздуха",
+            "value": "от -45 до +40",
+            "unit": "°C",
+            "page": 62
+          },
+          {
+            "label": "Высота над уровнем моря",
+            "value": "до1000",
+            "unit": "м",
+            "page": 62
+          },
+          {
+            "label": "Относительная влажность воздуха",
+            "value": "не более80% при +25°C",
+            "unit": null,
+            "page": 62
+          },
+          {
+            "label": "Номинальное напряжение первичной обмотки",
+            "value": "0,38",
+            "unit": "кВ",
+            "page": 62
+          },
+          {
+            "label": "Стандарт",
+            "value": "ГОСТ11677",
+            "unit": null,
+            "page": 62
+          },
+          {
+            "label": "Переключатель",
+            "value": "без возбуждения",
+            "unit": null,
+            "page": 62
+          },
+          {
+            "label": "Исключенные условия работы",
+            "value": "тряска, вибрация, воздействие инерционных сил, удары, взрывоопасная и химически агрессивная среда",
+            "unit": null,
+            "page": 62
+          }
+        ],
+        "scopePolicy": "Only listed model/configuration IDs; no inheritance to other family records or drawing-only models.",
+        "note": "Apply only to the indicated page-scoped rows;62 and64 print different lower temperature limits. Do not flatten the mixed tmpn-top family into one temperature."
+      },
+      {
+        "id": "common-prose-07-p64",
+        "sourcePage": 64,
+        "appliesToModelIds": [
+          "alageum-2026-tmpn-p64-r1",
+          "alageum-2026-tmpn-p64-r2",
+          "alageum-2026-tmpn-p64-r3",
+          "alageum-2026-tmpn-p64-r4",
+          "alageum-2026-tmpn-p64-r5",
+          "alageum-2026-tmpn-p64-r6"
+        ],
+        "appliesToConfigurationIds": [],
+        "technicalSpecs": [
+          {
+            "label": "Температура окружающего воздуха",
+            "value": "от -60 до +40",
+            "unit": "°C",
+            "page": 64
+          },
+          {
+            "label": "Высота над уровнем моря",
+            "value": "до1000",
+            "unit": "м",
+            "page": 64
+          },
+          {
+            "label": "Относительная влажность воздуха",
+            "value": "не более80% при +25°C",
+            "unit": null,
+            "page": 64
+          },
+          {
+            "label": "Номинальное напряжение первичной обмотки",
+            "value": "0,38",
+            "unit": "кВ",
+            "page": 64
+          },
+          {
+            "label": "Стандарт",
+            "value": "ГОСТ11677",
+            "unit": null,
+            "page": 64
+          },
+          {
+            "label": "Переключатель",
+            "value": "без возбуждения",
+            "unit": null,
+            "page": 64
+          },
+          {
+            "label": "Исключенные условия работы",
+            "value": "тряска, вибрация, воздействие инерционных сил, удары, взрывоопасная и химически агрессивная среда",
+            "unit": null,
+            "page": 64
+          }
+        ],
+        "scopePolicy": "Only listed model/configuration IDs; no inheritance to other family records or drawing-only models.",
+        "note": "Apply only to the indicated page-scoped rows;62 and64 print different lower temperature limits. Do not flatten the mixed tmpn-top family into one temperature."
+      }
+    ]
+  },
+  {
+    "id": "tmpng-side",
+    "designation": "ТМПНГ",
+    "title": "ТМПНГ — боковой вывод",
+    "sourcePages": [
+      64,
+      65,
+      67
+    ],
+    "modelIds": [
+      "alageum-2026-tmpn-p64-r7",
+      "alageum-2026-tmpn-p64-r8",
+      "alageum-2026-tmpn-p64-r9",
+      "alageum-2026-tmpn-p64-r10"
+    ],
+    "manufacturer": null,
+    "brand": "Alageum electric",
+    "sourceScopedCommonSpecs": [
+      {
+        "id": "common-prose-07-p64",
+        "sourcePage": 64,
+        "appliesToModelIds": [
+          "alageum-2026-tmpn-p64-r7",
+          "alageum-2026-tmpn-p64-r8",
+          "alageum-2026-tmpn-p64-r9",
+          "alageum-2026-tmpn-p64-r10"
+        ],
+        "appliesToConfigurationIds": [],
+        "technicalSpecs": [
+          {
+            "label": "Температура окружающего воздуха",
+            "value": "от -60 до +40",
+            "unit": "°C",
+            "page": 64
+          },
+          {
+            "label": "Высота над уровнем моря",
+            "value": "до1000",
+            "unit": "м",
+            "page": 64
+          },
+          {
+            "label": "Относительная влажность воздуха",
+            "value": "не более80% при +25°C",
+            "unit": null,
+            "page": 64
+          },
+          {
+            "label": "Номинальное напряжение первичной обмотки",
+            "value": "0,38",
+            "unit": "кВ",
+            "page": 64
+          },
+          {
+            "label": "Стандарт",
+            "value": "ГОСТ11677",
+            "unit": null,
+            "page": 64
+          },
+          {
+            "label": "Переключатель",
+            "value": "без возбуждения",
+            "unit": null,
+            "page": 64
+          },
+          {
+            "label": "Исключенные условия работы",
+            "value": "тряска, вибрация, воздействие инерционных сил, удары, взрывоопасная и химически агрессивная среда",
+            "unit": null,
+            "page": 64
+          }
+        ],
+        "scopePolicy": "Only listed model/configuration IDs; no inheritance to other family records or drawing-only models.",
+        "note": "Apply only to the indicated page-scoped rows;62 and64 print different lower temperature limits. Do not flatten the mixed tmpn-top family into one temperature."
+      }
+    ]
+  },
+  {
+    "id": "tmto-original",
+    "designation": "ТМТО",
+    "title": "ТМТО — трехобмоточный",
+    "sourcePages": [
+      68,
+      69
+    ],
+    "modelIds": [
+      "alageum-2026-tmto80-original"
+    ],
+    "manufacturer": null,
+    "brand": "Alageum electric"
+  },
+  {
+    "id": "tmto-modern",
+    "designation": "ТМТО",
+    "title": "ТМТО — модернизированный",
+    "sourcePages": [
+      70,
+      71
+    ],
+    "modelIds": [
+      "alageum-2026-tmto80-modern"
+    ],
+    "manufacturer": null,
+    "brand": "Alageum electric"
+  },
+  {
+    "id": "om",
+    "designation": "ОМ",
+    "title": "ОМ — однофазный масляный",
+    "sourcePages": [
+      72,
+      73,
+      75
+    ],
+    "modelIds": [
+      "alageum-2026-om-0p63",
+      "alageum-2026-om-1p25",
+      "alageum-2026-om-2p5",
+      "alageum-2026-om-2p0-drawing"
+    ],
+    "manufacturer": null,
+    "brand": "Alageum electric",
+    "sourceScopedCommonSpecs": [
+      {
+        "id": "common-prose-08-p72",
+        "sourcePage": 72,
+        "appliesToModelIds": [
+          "alageum-2026-om-0p63",
+          "alageum-2026-om-1p25",
+          "alageum-2026-om-2p5"
+        ],
+        "appliesToConfigurationIds": [],
+        "technicalSpecs": [
+          {
+            "label": "Частота",
+            "value": "50",
+            "unit": "Гц",
+            "page": 72
+          },
+          {
+            "label": "Стандарт",
+            "value": "ГОСТ11677-85",
+            "unit": null,
+            "page": 72
+          },
+          {
+            "label": "Высота установки над уровнем моря",
+            "value": "не более1000",
+            "unit": "м",
+            "page": 72
+          },
+          {
+            "label": "Температура окружающего воздуха",
+            "value": "от -45 до +40 для У1",
+            "unit": "°C",
+            "page": 72
+          },
+          {
+            "label": "Относительная влажность воздуха",
+            "value": "не более80% при +25°C",
+            "unit": null,
+            "page": 72
+          },
+          {
+            "label": "Условие среды (как напечатано)",
+            "value": "Не взрывоопасной и химически активной среде",
+            "unit": null,
+            "page": 72
+          }
+        ],
+        "scopePolicy": "Only listed model/configuration IDs; no inheritance to other family records or drawing-only models.",
+        "note": "The environmental bullet has odd printed wording. Retain verbatim with warning rather than silently inserting a second не. Do not infer missing electrical specs for drawing-only ОМ2,0."
+      }
+    ]
+  },
+  {
+    "id": "omp",
+    "designation": "ОМП",
+    "title": "ОМП — однофазный масляный",
+    "sourcePages": [
+      72,
+      73,
+      74
+    ],
+    "modelIds": [
+      "alageum-2026-om-4-p",
+      "alageum-2026-om-10-p"
+    ],
+    "manufacturer": null,
+    "brand": "Alageum electric",
+    "sourceScopedCommonSpecs": [
+      {
+        "id": "common-prose-08-p72",
+        "sourcePage": 72,
+        "appliesToModelIds": [
+          "alageum-2026-om-4-p",
+          "alageum-2026-om-10-p"
+        ],
+        "appliesToConfigurationIds": [],
+        "technicalSpecs": [
+          {
+            "label": "Частота",
+            "value": "50",
+            "unit": "Гц",
+            "page": 72
+          },
+          {
+            "label": "Стандарт",
+            "value": "ГОСТ11677-85",
+            "unit": null,
+            "page": 72
+          },
+          {
+            "label": "Высота установки над уровнем моря",
+            "value": "не более1000",
+            "unit": "м",
+            "page": 72
+          },
+          {
+            "label": "Температура окружающего воздуха",
+            "value": "от -45 до +40 для У1",
+            "unit": "°C",
+            "page": 72
+          },
+          {
+            "label": "Относительная влажность воздуха",
+            "value": "не более80% при +25°C",
+            "unit": null,
+            "page": 72
+          },
+          {
+            "label": "Условие среды (как напечатано)",
+            "value": "Не взрывоопасной и химически активной среде",
+            "unit": null,
+            "page": 72
+          }
+        ],
+        "scopePolicy": "Only listed model/configuration IDs; no inheritance to other family records or drawing-only models.",
+        "note": "The environmental bullet has odd printed wording. Retain verbatim with warning rather than silently inserting a second не. Do not infer missing electrical specs for drawing-only ОМ2,0."
+      }
+    ]
+  },
+  {
+    "id": "tsl-loss-C",
+    "designation": "ТСЛ(З)",
+    "title": "ТСЛ(З) — с уровнем потерь С (стандарный)",
+    "sourcePages": [
+      77,
+      78,
+      80,
+      81
+    ],
+    "modelIds": [
+      "alageum-2026-tsl-c-25",
+      "alageum-2026-tsl-c-40",
+      "alageum-2026-tsl-c-63",
+      "alageum-2026-tsl-c-100",
+      "alageum-2026-tsl-c-160",
+      "alageum-2026-tsl-c-250",
+      "alageum-2026-tsl-c-400",
+      "alageum-2026-tsl-c-630",
+      "alageum-2026-tsl-c-1000",
+      "alageum-2026-tsl-c-1250",
+      "alageum-2026-tsl-c-1600",
+      "alageum-2026-tsl-c-2000",
+      "alageum-2026-tsl-c-2500",
+      "alageum-2026-tsl-c-3150",
+      "alageum-2026-tsl-c-4000"
+    ],
+    "manufacturer": null,
+    "brand": "Alageum electric",
+    "sourceScopedCommonSpecs": [
+      {
+        "id": "common-prose-09-p77",
+        "sourcePage": 77,
+        "appliesToModelIds": [
+          "alageum-2026-tsl-c-25",
+          "alageum-2026-tsl-c-40",
+          "alageum-2026-tsl-c-63",
+          "alageum-2026-tsl-c-100",
+          "alageum-2026-tsl-c-160",
+          "alageum-2026-tsl-c-250",
+          "alageum-2026-tsl-c-400",
+          "alageum-2026-tsl-c-630",
+          "alageum-2026-tsl-c-1000",
+          "alageum-2026-tsl-c-1250",
+          "alageum-2026-tsl-c-1600",
+          "alageum-2026-tsl-c-2000",
+          "alageum-2026-tsl-c-2500",
+          "alageum-2026-tsl-c-3150",
+          "alageum-2026-tsl-c-4000"
+        ],
+        "appliesToConfigurationIds": [],
+        "technicalSpecs": [
+          {
+            "label": "Частота",
+            "value": "50",
+            "unit": "Гц",
+            "page": 77
+          },
+          {
+            "label": "Класс нагревостойкости",
+            "value": "F",
+            "unit": null,
+            "page": 77
+          },
+          {
+            "label": "Климатическое исполнение (первая строка)",
+            "value": "У3, УХЛ3, У1",
+            "unit": null,
+            "page": 77
+          },
+          {
+            "label": "Климатическое исполнение (вторая строка)",
+            "value": "У, УХЛ, Т",
+            "unit": null,
+            "page": 77
+          },
+          {
+            "label": "Категория размещения",
+            "value": "1;2;3",
+            "unit": null,
+            "page": 77
+          },
+          {
+            "label": "Изоляция обмоток ВН",
+            "value": "заливка эпоксидной смолой в вакуум-заливочной машине",
+            "unit": null,
+            "page": 77
+          }
+        ],
+        "scopePolicy": "Only listed model/configuration IDs; no inheritance to other family records or drawing-only models.",
+        "note": "Keep printed choices as choices; no climate/category Cartesian expansion. Page78 heading25–4000 is broader than the eleven actual classA rows63–2500."
+      }
+    ]
+  },
+  {
+    "id": "tsl-loss-A",
+    "designation": "ТСЛ(З)",
+    "title": "ТСЛ(З) — с уровнем потерь А (энергоэффективный)",
+    "sourcePages": [
+      78,
+      79,
+      80,
+      81
+    ],
+    "modelIds": [
+      "alageum-2026-tsl-a-63",
+      "alageum-2026-tsl-a-100",
+      "alageum-2026-tsl-a-160",
+      "alageum-2026-tsl-a-250",
+      "alageum-2026-tsl-a-400",
+      "alageum-2026-tsl-a-630",
+      "alageum-2026-tsl-a-1000",
+      "alageum-2026-tsl-a-1250",
+      "alageum-2026-tsl-a-1600",
+      "alageum-2026-tsl-a-2000",
+      "alageum-2026-tsl-a-2500"
+    ],
+    "manufacturer": null,
+    "brand": "Alageum electric",
+    "sourceScopedCommonSpecs": [
+      {
+        "id": "common-prose-10-p78",
+        "sourcePage": 78,
+        "appliesToModelIds": [
+          "alageum-2026-tsl-a-63",
+          "alageum-2026-tsl-a-100",
+          "alageum-2026-tsl-a-160",
+          "alageum-2026-tsl-a-250",
+          "alageum-2026-tsl-a-400",
+          "alageum-2026-tsl-a-630",
+          "alageum-2026-tsl-a-1000",
+          "alageum-2026-tsl-a-1250",
+          "alageum-2026-tsl-a-1600",
+          "alageum-2026-tsl-a-2000",
+          "alageum-2026-tsl-a-2500"
+        ],
+        "appliesToConfigurationIds": [],
+        "technicalSpecs": [
+          {
+            "label": "Частота",
+            "value": "50",
+            "unit": "Гц",
+            "page": 78
+          },
+          {
+            "label": "Класс нагревостойкости",
+            "value": "F",
+            "unit": null,
+            "page": 78
+          },
+          {
+            "label": "Климатическое исполнение (первая строка)",
+            "value": "У3, УХЛ3, У1",
+            "unit": null,
+            "page": 78
+          },
+          {
+            "label": "Климатическое исполнение (вторая строка)",
+            "value": "У, УХЛ, Т",
+            "unit": null,
+            "page": 78
+          },
+          {
+            "label": "Категория размещения",
+            "value": "1;2;3",
+            "unit": null,
+            "page": 78
+          },
+          {
+            "label": "Изоляция обмоток ВН",
+            "value": "заливка эпоксидной смолой в вакуум-заливочной машине",
+            "unit": null,
+            "page": 78
+          }
+        ],
+        "scopePolicy": "Only listed model/configuration IDs; no inheritance to other family records or drawing-only models.",
+        "note": "Keep printed choices as choices; no climate/category Cartesian expansion. Page78 heading25–4000 is broader than the eleven actual classA rows63–2500."
+      }
+    ]
+  },
+  {
+    "id": "tsl-20kv",
+    "designation": "ТСЛ",
+    "title": "ТСЛ — класса напряжения20кВ",
+    "sourcePages": [
+      82,
+      83,
+      84
+    ],
+    "modelIds": [
+      "alageum-2026-tsl-20kv-100",
+      "alageum-2026-tsl-20kv-160",
+      "alageum-2026-tsl-20kv-250",
+      "alageum-2026-tsl-20kv-400",
+      "alageum-2026-tsl-20kv-630",
+      "alageum-2026-tsl-20kv-1000",
+      "alageum-2026-tsl-20kv-1250",
+      "alageum-2026-tsl-20kv-1600",
+      "alageum-2026-tsl-20kv-2000",
+      "alageum-2026-tsl-20kv-2500",
+      "alageum-2026-tsl-20kv-3150",
+      "alageum-2026-tsl-20kv-4000"
+    ],
+    "manufacturer": null,
+    "brand": "Alageum electric",
+    "sourceScopedCommonSpecs": [
+      {
+        "id": "common-prose-11-p82",
+        "sourcePage": 82,
+        "appliesToModelIds": [
+          "alageum-2026-tsl-20kv-100",
+          "alageum-2026-tsl-20kv-160",
+          "alageum-2026-tsl-20kv-250",
+          "alageum-2026-tsl-20kv-400",
+          "alageum-2026-tsl-20kv-630",
+          "alageum-2026-tsl-20kv-1000",
+          "alageum-2026-tsl-20kv-1250",
+          "alageum-2026-tsl-20kv-1600",
+          "alageum-2026-tsl-20kv-2000",
+          "alageum-2026-tsl-20kv-2500",
+          "alageum-2026-tsl-20kv-3150",
+          "alageum-2026-tsl-20kv-4000"
+        ],
+        "appliesToConfigurationIds": [],
+        "technicalSpecs": [
+          {
+            "label": "Частота",
+            "value": "50",
+            "unit": "Гц",
+            "page": 82
+          },
+          {
+            "label": "Класс нагревостойкости",
+            "value": "F",
+            "unit": null,
+            "page": 82
+          },
+          {
+            "label": "Климатическое исполнение (первая строка)",
+            "value": "У3, УХЛ3, У1",
+            "unit": null,
+            "page": 82
+          },
+          {
+            "label": "Климатическое исполнение (вторая строка)",
+            "value": "У, УХЛ, Т",
+            "unit": null,
+            "page": 82
+          },
+          {
+            "label": "Категория размещения",
+            "value": "1;2;3",
+            "unit": null,
+            "page": 82
+          },
+          {
+            "label": "Изоляция обмоток ВН",
+            "value": "заливка эпоксидной смолой в вакуум-заливочной машине",
+            "unit": null,
+            "page": 82
+          }
+        ],
+        "scopePolicy": "Only listed model/configuration IDs; no inheritance to other family records or drawing-only models.",
+        "note": "Keep printed choices as choices; no climate/category Cartesian expansion. Page78 heading25–4000 is broader than the eleven actual classA rows63–2500."
+      }
+    ]
+  },
+  {
+    "id": "dry-accessories",
+    "designation": "Комплектность и дополнительное оснащение сухих трансформаторов",
+    "title": "Комплектность и дополнительное оснащение сухих трансформаторов",
+    "sourcePages": [
+      85,
+      86
+    ],
+    "modelIds": [
+      "alageum-2026-relay-tr100",
+      "alageum-2026-sensor-pt100",
+      "alageum-2026-damper-ek290",
+      "alageum-2026-thermal-cabinet"
+    ],
+    "manufacturer": null,
+    "brand": "Alageum electric",
+    "sourceScopedCommonSpecs": [
+      {
+        "id": "common-prose-12-p85",
+        "sourcePage": 85,
+        "appliesToModelIds": [
+          "alageum-2026-relay-tr100",
+          "alageum-2026-sensor-pt100"
+        ],
+        "appliesToConfigurationIds": [],
+        "technicalSpecs": [
+          {
+            "label": "Контроль температуры для трансформаторов с литой изоляцией",
+            "value": "обязателен",
+            "unit": null,
+            "page": 85
+          },
+          {
+            "label": "Четвертый датчик",
+            "value": "по желанию клиента для контроля температуры магнитопровода",
+            "unit": null,
+            "page": 85
+          }
+        ],
+        "scopePolicy": "Only listed model/configuration IDs; no inheritance to other family records or drawing-only models.",
+        "note": "Scope mandatory temperature-control statement to the cast-insulation transformer equipment context, with relay/sensor facts on those accessories; do not apply to damper or every accessory."
+      },
+      {
+        "id": "common-prose-13-p86",
+        "sourcePage": 86,
+        "appliesToModelIds": [],
+        "appliesToConfigurationIds": [
+          "alageum-2026-cooling-fans"
+        ],
+        "technicalSpecs": [],
+        "scopePolicy": "Only listed model/configuration IDs; no inheritance to other family records or drawing-only models.",
+        "status": "verified-existing-configuration-without-duplicating-fields",
+        "referencesConfigurationSpecs": [
+          {
+            "configurationId": "alageum-2026-cooling-fans",
+            "labels": [
+              "Количество",
+              "Увеличение мощности трансформатора"
+            ]
+          }
+        ],
+        "note": "Apply only to existing optional fan configuration. No fan model/count product rows; no fan properties on other accessories."
+      }
+    ]
+  },
+  {
+    "id": "ts-low-voltage",
+    "designation": "ТС(З)",
+    "title": "Трансформаторы серии ТС(З)",
+    "sourcePages": [
+      86,
+      87,
+      88
+    ],
+    "modelIds": [
+      "alageum-2026-ts-10",
+      "alageum-2026-ts-16",
+      "alageum-2026-ts-25",
+      "alageum-2026-ts-40",
+      "alageum-2026-ts-63",
+      "alageum-2026-ts-100"
+    ],
+    "manufacturer": null,
+    "brand": "Alageum electric"
+  },
+  {
+    "id": "tsi-tools",
+    "designation": "ТСИ / ТСЗИ",
+    "title": "ТСИ — для питания электроинструмента",
+    "sourcePages": [
+      89,
+      90
+    ],
+    "modelIds": [
+      "alageum-2026-tsi-1p6-open",
+      "alageum-2026-tsi-2p5-open",
+      "alageum-2026-tsi-4p0-open",
+      "alageum-2026-tsi-1p6-enclosed",
+      "alageum-2026-tsi-2p5-enclosed",
+      "alageum-2026-tsi-4p0-enclosed"
+    ],
+    "manufacturer": null,
+    "brand": "Alageum electric"
+  },
+  {
+    "id": "tsn-nomex",
+    "designation": "ТСН(З)",
+    "title": "ТСН(З) — с изоляцией Номекс",
+    "sourcePages": [
+      91,
+      92,
+      93,
+      94
+    ],
+    "modelIds": [
+      "alageum-2026-tsn-160",
+      "alageum-2026-tsn-250",
+      "alageum-2026-tsn-400",
+      "alageum-2026-tsn-630"
+    ],
+    "manufacturer": null,
+    "brand": "Alageum electric",
+    "sourceScopedCommonSpecs": [
+      {
+        "id": "common-prose-14-p91",
+        "sourcePage": 91,
+        "appliesToModelIds": [
+          "alageum-2026-tsn-160",
+          "alageum-2026-tsn-250",
+          "alageum-2026-tsn-400",
+          "alageum-2026-tsn-630"
+        ],
+        "appliesToConfigurationIds": [],
+        "technicalSpecs": [
+          {
+            "label": "Свойства изоляции (заявление каталога)",
+            "value": "не поддерживает горения и не выделяет токсичного дыма или опасных частиц",
+            "unit": null,
+            "page": 91
+          }
+        ],
+        "scopePolicy": "Only listed model/configuration IDs; no inheritance to other family records or drawing-only models.",
+        "note": "180°C and133% are already in model rawSpecs. Present this statement as source claim, not an independent safety certification."
+      }
+    ]
+  },
+  {
+    "id": "ntmi",
+    "designation": "НТМИ",
+    "title": "НТМИ — измерительный",
+    "sourcePages": [
+      96
+    ],
+    "modelIds": [
+      "alageum-2026-ntmi-6",
+      "alageum-2026-ntmi-10"
+    ],
+    "manufacturer": null,
+    "brand": "Alageum electric",
+    "sourceScopedCommonSpecs": [
+      {
+        "id": "common-prose-15-p96",
+        "sourcePage": 96,
+        "appliesToModelIds": [
+          "alageum-2026-ntmi-6",
+          "alageum-2026-ntmi-10"
+        ],
+        "appliesToConfigurationIds": [],
+        "technicalSpecs": [
+          {
+            "label": "Сеть",
+            "value": "переменный ток с изолированной нейтралью",
+            "unit": null,
+            "page": 96
+          },
+          {
+            "label": "Исключенные условия работы",
+            "value": "тряска, вибрация, удары, взрывоопасная и агрессивная среда",
+            "unit": null,
+            "page": 96
+          }
+        ],
+        "scopePolicy": "Only listed model/configuration IDs; no inheritance to other family records or drawing-only models."
+      }
+    ]
+  },
+  {
+    "id": "nom",
+    "designation": "НОМ",
+    "title": "НОМ — однофазный измерительный",
+    "sourcePages": [
+      97
+    ],
+    "modelIds": [
+      "alageum-2026-nom-6",
+      "alageum-2026-nom-10",
+      "alageum-2026-nom-3-drawing"
+    ],
+    "manufacturer": null,
+    "brand": "Alageum electric",
+    "sourceScopedCommonSpecs": [
+      {
+        "id": "common-prose-16-p97",
+        "sourcePage": 97,
+        "appliesToModelIds": [
+          "alageum-2026-nom-6",
+          "alageum-2026-nom-10"
+        ],
+        "appliesToConfigurationIds": [],
+        "technicalSpecs": [
+          {
+            "label": "Частота",
+            "value": "50",
+            "unit": "Гц",
+            "page": 97
+          },
+          {
+            "label": "Сеть",
+            "value": "переменный ток с изолированной нейтралью",
+            "unit": null,
+            "page": 97
+          },
+          {
+            "label": "Исключенные условия работы",
+            "value": "тряска, вибрация, удары, взрывоопасная и агрессивная среда",
+            "unit": null,
+            "page": 97
+          }
+        ],
+        "scopePolicy": "Only listed model/configuration IDs; no inheritance to other family records or drawing-only models.",
+        "note": "Electrical rows only. Do not attach p97 prose as electrical/operating evidence to drawing-only НОМ3."
+      }
+    ]
+  },
+  {
+    "id": "nami",
+    "designation": "НАМИ",
+    "title": "НАМИ — трехфазный измерительный",
+    "sourcePages": [
+      98
+    ],
+    "modelIds": [
+      "alageum-2026-nami-6",
+      "alageum-2026-nami-10"
+    ],
+    "manufacturer": null,
+    "brand": "Alageum electric",
+    "sourceScopedCommonSpecs": [
+      {
+        "id": "common-prose-17-p98",
+        "sourcePage": 98,
+        "appliesToModelIds": [
+          "alageum-2026-nami-6",
+          "alageum-2026-nami-10"
+        ],
+        "appliesToConfigurationIds": [],
+        "technicalSpecs": [
+          {
+            "label": "Частота",
+            "value": "50",
+            "unit": "Гц",
+            "page": 98
+          },
+          {
+            "label": "Нейтраль сети",
+            "value": "изолированная или заземленная через дугогасящий реактор",
+            "unit": null,
+            "page": 98
+          },
+          {
+            "label": "Исключенные условия работы",
+            "value": "тряска, вибрация, удары, взрывоопасная и агрессивная среда",
+            "unit": null,
+            "page": 98
+          }
+        ],
+        "scopePolicy": "Only listed model/configuration IDs; no inheritance to other family records or drawing-only models."
+      }
+    ]
+  },
+  {
+    "id": "zom",
+    "designation": "ЗОМ",
+    "title": "ЗОМ — измерительный, railway",
+    "sourcePages": [
+      99
+    ],
+    "modelIds": [
+      "alageum-2026-zom-1p25-35"
+    ],
+    "manufacturer": null,
+    "brand": "Alageum electric",
+    "sourceScopedCommonSpecs": [
+      {
+        "id": "common-prose-18-p99",
+        "sourcePage": 99,
+        "appliesToModelIds": [
+          "alageum-2026-zom-1p25-35"
+        ],
+        "appliesToConfigurationIds": [],
+        "technicalSpecs": [
+          {
+            "label": "Частота",
+            "value": "50",
+            "unit": "Гц",
+            "page": 99
+          },
+          {
+            "label": "Охлаждение",
+            "value": "естественное",
+            "unit": null,
+            "page": 99
+          },
+          {
+            "label": "Применение",
+            "value": "измерительные приборы, автоматика, сигнализация и релейная защита электрифицированных участков железных дорог",
+            "unit": null,
+            "page": 99
+          },
+          {
+            "label": "Исключенные условия работы",
+            "value": "тряска, вибрация, удары, взрывоопасная и агрессивная среда",
+            "unit": null,
+            "page": 99
+          }
+        ],
+        "scopePolicy": "Only listed model/configuration IDs; no inheritance to other family records or drawing-only models."
+      }
+    ]
+  },
+  {
+    "id": "znom",
+    "designation": "ЗНОМ",
+    "title": "ЗНОМ — nominal-winding-voltage option1",
+    "sourcePages": [
+      100
+    ],
+    "modelIds": [
+      "alageum-2026-znom35-config1",
+      "alageum-2026-znom35-config2"
+    ],
+    "manufacturer": null,
+    "brand": "Alageum electric",
+    "sourceScopedCommonSpecs": [
+      {
+        "id": "common-prose-19-p100",
+        "sourcePage": 100,
+        "appliesToModelIds": [
+          "alageum-2026-znom35-config1",
+          "alageum-2026-znom35-config2"
+        ],
+        "appliesToConfigurationIds": [],
+        "technicalSpecs": [
+          {
+            "label": "Частота",
+            "value": "50 и60",
+            "unit": "Гц",
+            "page": 100
+          },
+          {
+            "label": "Охлаждение",
+            "value": "естественное",
+            "unit": null,
+            "page": 100
+          },
+          {
+            "label": "Нейтраль сети",
+            "value": "изолированная",
+            "unit": null,
+            "page": 100
+          },
+          {
+            "label": "Применение",
+            "value": "измерительные приборы, защита и сигнализация; релейная защита электрифицированных участков железной дороги",
+            "unit": null,
+            "page": 100
+          }
+        ],
+        "scopePolicy": "Only listed model/configuration IDs; no inheritance to other family records or drawing-only models."
+      }
+    ]
+  }
+]

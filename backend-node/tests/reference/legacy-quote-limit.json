@@ -1,0 +1,768 @@
+{
+  "evidence": "quote limiter/client-key/error AST reference; not full legacy endpoint execution",
+  "source_revision": "8def4eb6b95588d11313f5df19f67bd80d1564a0",
+  "source_sha256": {
+    "backend/app/core/rate_limit.py": "d507548c315462875bda0bcff4c1cd7e742be431dae901555fc563ce1a313186",
+    "backend/app/core/errors.py": "31679dcc464399df31fad605749cbabd86d31b6d51a069e9250e9f57a93a890d",
+    "backend/app/core/config.py": "9a04a04b490af73a7309b0d62966dfe4a409942f2a02ed4027b2e2c8c0e1fc14",
+    "backend/app/commerce/router.py": "5bec87d8dc0bea983c188f6e22f2d6830cf35d6148289ed648230f0e974d0e5b"
+  },
+  "python_requirement": ">=3.12",
+  "runtime_dependencies": "Python standard library only",
+  "settings": {
+    "policy": "quote_create",
+    "requests": 10,
+    "window_seconds": 60,
+    "max_keys": 10000,
+    "trusted_proxy_ips": []
+  },
+  "quote_policy_routes": [
+    {
+      "function": "create_quote",
+      "path_suffix": "/catalog",
+      "policy": "quote_create"
+    },
+    {
+      "function": "create_legacy_quote",
+      "path_suffix": "",
+      "policy": "quote_create"
+    }
+  ],
+  "denial": {
+    "code": "rate_limit_exceeded",
+    "message": "Too many requests",
+    "status": 429,
+    "details": null
+  },
+  "limits": [
+    "Only frozen RateLimitPolicy, RateLimit, RateLimiter, MemoryRateLimiter, client_key, and AppError AST definitions execute.",
+    "No legacy app, HTTP endpoint, authentication, permission, settings loader, middleware, database, or dependency injection executes.",
+    "Client-key vectors use request attribute stand-ins and the frozen default empty trusted_proxy_ips; configured trusted-proxy parity is not claimed.",
+    "Quote route declarations establish shared policy only; the generic Node quote-create route remains unregistered.",
+    "Injected monotonic seconds and small capacities are isolated test scaffolding; actual application defaults remain 10 requests, 60 seconds, and 10000 keys.",
+    "In-memory limits are per application process; eviction can discard an active bucket and this is not distributed protection."
+  ],
+  "client_key_cases": [
+    {
+      "id": "plain-ipv4",
+      "peer": "198.51.100.10",
+      "headers": {},
+      "expected": "198.51.100.10"
+    },
+    {
+      "id": "untrusted-forwarded-for",
+      "peer": "198.51.100.10",
+      "headers": {
+        "X-Forwarded-For": "203.0.113.9"
+      },
+      "expected": "198.51.100.10"
+    },
+    {
+      "id": "untrusted-proxy-chain",
+      "peer": "198.51.100.10",
+      "headers": {
+        "X-Forwarded-For": "203.0.113.9, 127.0.0.1"
+      },
+      "expected": "198.51.100.10"
+    },
+    {
+      "id": "malformed-forwarded-for",
+      "peer": "198.51.100.10",
+      "headers": {
+        "X-Forwarded-For": "not-an-ip, unknown"
+      },
+      "expected": "198.51.100.10"
+    },
+    {
+      "id": "all-forwarding-headers",
+      "peer": "198.51.100.10",
+      "headers": {
+        "X-Forwarded-For": "203.0.113.9",
+        "X-Real-IP": "203.0.113.8",
+        "Forwarded": "for=203.0.113.7",
+        "CF-Connecting-IP": "203.0.113.6"
+      },
+      "expected": "198.51.100.10"
+    },
+    {
+      "id": "loopback-is-untrusted",
+      "peer": "127.0.0.1",
+      "headers": {
+        "X-Forwarded-For": "203.0.113.9"
+      },
+      "expected": "127.0.0.1"
+    },
+    {
+      "id": "plain-ipv6",
+      "peer": "2001:db8::1",
+      "headers": {
+        "X-Forwarded-For": "203.0.113.9"
+      },
+      "expected": "2001:db8::1"
+    },
+    {
+      "id": "ipv4-mapped-peer-verbatim",
+      "peer": "::ffff:198.51.100.10",
+      "headers": {
+        "X-Real-IP": "198.51.100.10"
+      },
+      "expected": "::ffff:198.51.100.10"
+    },
+    {
+      "id": "missing-peer",
+      "peer": null,
+      "headers": {
+        "X-Forwarded-For": "203.0.113.9"
+      },
+      "expected": "unknown"
+    }
+  ],
+  "cases": [
+    {
+      "id": "ten-attempts-and-exact-cutoff",
+      "steps": [
+        {
+          "at_seconds": 0,
+          "key": "a",
+          "repeat": 10,
+          "expected_key": "a",
+          "expected_accepted": 10,
+          "expected_denied": 0
+        },
+        {
+          "at_seconds": 0,
+          "key": "a",
+          "repeat": 2,
+          "expected_key": "a",
+          "expected_accepted": 0,
+          "expected_denied": 2
+        },
+        {
+          "at_seconds": 59.999,
+          "key": "a",
+          "repeat": 1,
+          "expected_key": "a",
+          "expected_accepted": 0,
+          "expected_denied": 1
+        },
+        {
+          "at_seconds": 60,
+          "key": "a",
+          "repeat": 10,
+          "expected_key": "a",
+          "expected_accepted": 10,
+          "expected_denied": 0
+        },
+        {
+          "at_seconds": 60,
+          "key": "a",
+          "repeat": 1,
+          "expected_key": "a",
+          "expected_accepted": 0,
+          "expected_denied": 1
+        }
+      ]
+    },
+    {
+      "id": "sliding-window-not-fixed-window",
+      "steps": [
+        {
+          "at_seconds": 0,
+          "key": "a",
+          "repeat": 1,
+          "expected_key": "a",
+          "expected_accepted": 1,
+          "expected_denied": 0
+        },
+        {
+          "at_seconds": 10,
+          "key": "a",
+          "repeat": 4,
+          "expected_key": "a",
+          "expected_accepted": 4,
+          "expected_denied": 0
+        },
+        {
+          "at_seconds": 59,
+          "key": "a",
+          "repeat": 5,
+          "expected_key": "a",
+          "expected_accepted": 5,
+          "expected_denied": 0
+        },
+        {
+          "at_seconds": 60,
+          "key": "a",
+          "repeat": 2,
+          "expected_key": "a",
+          "expected_accepted": 1,
+          "expected_denied": 1
+        },
+        {
+          "at_seconds": 69.999,
+          "key": "a",
+          "repeat": 1,
+          "expected_key": "a",
+          "expected_accepted": 0,
+          "expected_denied": 1
+        },
+        {
+          "at_seconds": 70,
+          "key": "a",
+          "repeat": 5,
+          "expected_key": "a",
+          "expected_accepted": 4,
+          "expected_denied": 1
+        },
+        {
+          "at_seconds": 119,
+          "key": "a",
+          "repeat": 6,
+          "expected_key": "a",
+          "expected_accepted": 5,
+          "expected_denied": 1
+        }
+      ]
+    },
+    {
+      "id": "denied-attempts-never-append",
+      "steps": [
+        {
+          "at_seconds": 0,
+          "key": "a",
+          "repeat": 10,
+          "expected_key": "a",
+          "expected_accepted": 10,
+          "expected_denied": 0
+        },
+        {
+          "at_seconds": 30,
+          "key": "a",
+          "repeat": 7,
+          "expected_key": "a",
+          "expected_accepted": 0,
+          "expected_denied": 7
+        },
+        {
+          "at_seconds": 59.5,
+          "key": "a",
+          "repeat": 3,
+          "expected_key": "a",
+          "expected_accepted": 0,
+          "expected_denied": 3
+        },
+        {
+          "at_seconds": 60,
+          "key": "a",
+          "repeat": 10,
+          "expected_key": "a",
+          "expected_accepted": 10,
+          "expected_denied": 0
+        },
+        {
+          "at_seconds": 60,
+          "key": "a",
+          "repeat": 1,
+          "expected_key": "a",
+          "expected_accepted": 0,
+          "expected_denied": 1
+        }
+      ]
+    },
+    {
+      "id": "independent-keys",
+      "steps": [
+        {
+          "at_seconds": 0,
+          "key": "a",
+          "repeat": 10,
+          "expected_key": "a",
+          "expected_accepted": 10,
+          "expected_denied": 0
+        },
+        {
+          "at_seconds": 0,
+          "key": "b",
+          "repeat": 10,
+          "expected_key": "b",
+          "expected_accepted": 10,
+          "expected_denied": 0
+        },
+        {
+          "at_seconds": 0,
+          "key": "a",
+          "repeat": 1,
+          "expected_key": "a",
+          "expected_accepted": 0,
+          "expected_denied": 1
+        },
+        {
+          "at_seconds": 0,
+          "key": "b",
+          "repeat": 1,
+          "expected_key": "b",
+          "expected_accepted": 0,
+          "expected_denied": 1
+        },
+        {
+          "at_seconds": 0,
+          "key": "__proto__",
+          "repeat": 10,
+          "expected_key": "__proto__",
+          "expected_accepted": 10,
+          "expected_denied": 0
+        },
+        {
+          "at_seconds": 0,
+          "key": "__proto__",
+          "repeat": 1,
+          "expected_key": "__proto__",
+          "expected_accepted": 0,
+          "expected_denied": 1
+        },
+        {
+          "at_seconds": 0,
+          "key": "constructor",
+          "repeat": 1,
+          "expected_key": "constructor",
+          "expected_accepted": 1,
+          "expected_denied": 0
+        }
+      ]
+    },
+    {
+      "id": "accepted-access-refreshes-lru",
+      "max_keys": 2,
+      "steps": [
+        {
+          "at_seconds": 0,
+          "key": "a",
+          "repeat": 9,
+          "expected_key": "a",
+          "expected_accepted": 9,
+          "expected_denied": 0
+        },
+        {
+          "at_seconds": 0,
+          "key": "b",
+          "repeat": 10,
+          "expected_key": "b",
+          "expected_accepted": 10,
+          "expected_denied": 0
+        },
+        {
+          "at_seconds": 1,
+          "key": "a",
+          "repeat": 1,
+          "expected_key": "a",
+          "expected_accepted": 1,
+          "expected_denied": 0
+        },
+        {
+          "at_seconds": 2,
+          "key": "c",
+          "repeat": 1,
+          "expected_key": "c",
+          "expected_accepted": 1,
+          "expected_denied": 0
+        },
+        {
+          "at_seconds": 3,
+          "key": "a",
+          "repeat": 1,
+          "expected_key": "a",
+          "expected_accepted": 0,
+          "expected_denied": 1
+        },
+        {
+          "at_seconds": 4,
+          "key": "b",
+          "repeat": 1,
+          "expected_key": "b",
+          "expected_accepted": 1,
+          "expected_denied": 0
+        }
+      ]
+    },
+    {
+      "id": "denied-access-refreshes-lru",
+      "max_keys": 2,
+      "steps": [
+        {
+          "at_seconds": 0,
+          "key": "a",
+          "repeat": 10,
+          "expected_key": "a",
+          "expected_accepted": 10,
+          "expected_denied": 0
+        },
+        {
+          "at_seconds": 0,
+          "key": "b",
+          "repeat": 10,
+          "expected_key": "b",
+          "expected_accepted": 10,
+          "expected_denied": 0
+        },
+        {
+          "at_seconds": 1,
+          "key": "a",
+          "repeat": 1,
+          "expected_key": "a",
+          "expected_accepted": 0,
+          "expected_denied": 1
+        },
+        {
+          "at_seconds": 2,
+          "key": "c",
+          "repeat": 1,
+          "expected_key": "c",
+          "expected_accepted": 1,
+          "expected_denied": 0
+        },
+        {
+          "at_seconds": 3,
+          "key": "a",
+          "repeat": 1,
+          "expected_key": "a",
+          "expected_accepted": 0,
+          "expected_denied": 1
+        },
+        {
+          "at_seconds": 4,
+          "key": "b",
+          "repeat": 1,
+          "expected_key": "b",
+          "expected_accepted": 1,
+          "expected_denied": 0
+        }
+      ]
+    },
+    {
+      "id": "expired-key-keeps-lru-position-until-access",
+      "max_keys": 2,
+      "steps": [
+        {
+          "at_seconds": 0,
+          "key": "a",
+          "repeat": 10,
+          "expected_key": "a",
+          "expected_accepted": 10,
+          "expected_denied": 0
+        },
+        {
+          "at_seconds": 30,
+          "key": "b",
+          "repeat": 10,
+          "expected_key": "b",
+          "expected_accepted": 10,
+          "expected_denied": 0
+        },
+        {
+          "at_seconds": 31,
+          "key": "a",
+          "repeat": 1,
+          "expected_key": "a",
+          "expected_accepted": 0,
+          "expected_denied": 1
+        },
+        {
+          "at_seconds": 61,
+          "key": "c",
+          "repeat": 1,
+          "expected_key": "c",
+          "expected_accepted": 1,
+          "expected_denied": 0
+        },
+        {
+          "at_seconds": 61,
+          "key": "b",
+          "repeat": 1,
+          "expected_key": "b",
+          "expected_accepted": 1,
+          "expected_denied": 0
+        },
+        {
+          "at_seconds": 61,
+          "key": "a",
+          "repeat": 1,
+          "expected_key": "a",
+          "expected_accepted": 1,
+          "expected_denied": 0
+        }
+      ]
+    },
+    {
+      "id": "capacity-one-evicts-instead-of-rejecting-new-key",
+      "max_keys": 1,
+      "steps": [
+        {
+          "at_seconds": 0,
+          "key": "a",
+          "repeat": 10,
+          "expected_key": "a",
+          "expected_accepted": 10,
+          "expected_denied": 0
+        },
+        {
+          "at_seconds": 0,
+          "key": "a",
+          "repeat": 1,
+          "expected_key": "a",
+          "expected_accepted": 0,
+          "expected_denied": 1
+        },
+        {
+          "at_seconds": 0,
+          "key": "b",
+          "repeat": 10,
+          "expected_key": "b",
+          "expected_accepted": 10,
+          "expected_denied": 0
+        },
+        {
+          "at_seconds": 0,
+          "key": "b",
+          "repeat": 1,
+          "expected_key": "b",
+          "expected_accepted": 0,
+          "expected_denied": 1
+        },
+        {
+          "at_seconds": 0,
+          "key": "a",
+          "repeat": 1,
+          "expected_key": "a",
+          "expected_accepted": 1,
+          "expected_denied": 0
+        }
+      ]
+    },
+    {
+      "id": "fractional-monotonic-seconds",
+      "steps": [
+        {
+          "at_seconds": 1000.125,
+          "key": "a",
+          "repeat": 10,
+          "expected_key": "a",
+          "expected_accepted": 10,
+          "expected_denied": 0
+        },
+        {
+          "at_seconds": 1060.124,
+          "key": "a",
+          "repeat": 1,
+          "expected_key": "a",
+          "expected_accepted": 0,
+          "expected_denied": 1
+        },
+        {
+          "at_seconds": 1060.125,
+          "key": "a",
+          "repeat": 1,
+          "expected_key": "a",
+          "expected_accepted": 1,
+          "expected_denied": 0
+        },
+        {
+          "at_seconds": 1060.25,
+          "key": "a",
+          "repeat": 9,
+          "expected_key": "a",
+          "expected_accepted": 9,
+          "expected_denied": 0
+        },
+        {
+          "at_seconds": 1120.125,
+          "key": "a",
+          "repeat": 2,
+          "expected_key": "a",
+          "expected_accepted": 1,
+          "expected_denied": 1
+        },
+        {
+          "at_seconds": 1120.25,
+          "key": "a",
+          "repeat": 10,
+          "expected_key": "a",
+          "expected_accepted": 9,
+          "expected_denied": 1
+        }
+      ]
+    },
+    {
+      "id": "application-instance-isolation",
+      "steps": [
+        {
+          "at_seconds": 0,
+          "key": "a",
+          "repeat": 10,
+          "instance": "first",
+          "expected_key": "a",
+          "expected_accepted": 10,
+          "expected_denied": 0
+        },
+        {
+          "at_seconds": 0,
+          "key": "a",
+          "repeat": 1,
+          "instance": "first",
+          "expected_key": "a",
+          "expected_accepted": 0,
+          "expected_denied": 1
+        },
+        {
+          "at_seconds": 0,
+          "key": "a",
+          "repeat": 10,
+          "instance": "second",
+          "expected_key": "a",
+          "expected_accepted": 10,
+          "expected_denied": 0
+        },
+        {
+          "at_seconds": 0,
+          "key": "a",
+          "repeat": 1,
+          "instance": "second",
+          "expected_key": "a",
+          "expected_accepted": 0,
+          "expected_denied": 1
+        },
+        {
+          "at_seconds": 0,
+          "key": "a",
+          "repeat": 1,
+          "instance": "first",
+          "expected_key": "a",
+          "expected_accepted": 0,
+          "expected_denied": 1
+        }
+      ]
+    },
+    {
+      "id": "peer-shared-across-users-tenants-and-idempotency-keys",
+      "steps": [
+        {
+          "at_seconds": 0,
+          "key": "a",
+          "repeat": 5,
+          "request": {
+            "peer": "198.51.100.10",
+            "user": "user-a",
+            "organization": "tenant-a",
+            "idempotency_key": "same-key"
+          },
+          "expected_key": "198.51.100.10",
+          "expected_accepted": 5,
+          "expected_denied": 0
+        },
+        {
+          "at_seconds": 0,
+          "key": "a",
+          "repeat": 5,
+          "request": {
+            "peer": "198.51.100.10",
+            "user": "user-b",
+            "organization": "tenant-b",
+            "idempotency_key": "different-key"
+          },
+          "expected_key": "198.51.100.10",
+          "expected_accepted": 5,
+          "expected_denied": 0
+        },
+        {
+          "at_seconds": 0,
+          "key": "a",
+          "repeat": 1,
+          "request": {
+            "peer": "198.51.100.10",
+            "user": "user-c",
+            "organization": "tenant-c",
+            "idempotency_key": "third-key"
+          },
+          "expected_key": "198.51.100.10",
+          "expected_accepted": 0,
+          "expected_denied": 1
+        },
+        {
+          "at_seconds": 0,
+          "key": "a",
+          "repeat": 1,
+          "request": {
+            "peer": "198.51.100.11",
+            "user": "user-a",
+            "organization": "tenant-a",
+            "idempotency_key": "same-key"
+          },
+          "expected_key": "198.51.100.11",
+          "expected_accepted": 1,
+          "expected_denied": 0
+        }
+      ]
+    },
+    {
+      "id": "spoofing-forwarded-headers-cannot-open-a-bucket",
+      "steps": [
+        {
+          "at_seconds": 0,
+          "key": "a",
+          "repeat": 10,
+          "request": {
+            "peer": "198.51.100.10",
+            "headers": {
+              "X-Forwarded-For": "203.0.113.1"
+            }
+          },
+          "expected_key": "198.51.100.10",
+          "expected_accepted": 10,
+          "expected_denied": 0
+        },
+        {
+          "at_seconds": 0,
+          "key": "a",
+          "repeat": 1,
+          "request": {
+            "peer": "198.51.100.10",
+            "headers": {
+              "X-Forwarded-For": "203.0.113.2"
+            }
+          },
+          "expected_key": "198.51.100.10",
+          "expected_accepted": 0,
+          "expected_denied": 1
+        },
+        {
+          "at_seconds": 0,
+          "key": "a",
+          "repeat": 1,
+          "request": {
+            "peer": "198.51.100.10",
+            "headers": {
+              "X-Real-IP": "203.0.113.3",
+              "Forwarded": "for=203.0.113.4"
+            }
+          },
+          "expected_key": "198.51.100.10",
+          "expected_accepted": 0,
+          "expected_denied": 1
+        },
+        {
+          "at_seconds": 0,
+          "key": "a",
+          "repeat": 1,
+          "request": {
+            "peer": "198.51.100.11",
+            "headers": {
+              "X-Forwarded-For": "203.0.113.1"
+            }
+          },
+          "expected_key": "198.51.100.11",
+          "expected_accepted": 1,
+          "expected_denied": 0
+        }
+      ]
+    }
+  ]
+}

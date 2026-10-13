@@ -1,0 +1,158 @@
+{
+  "date": "2026-10-06",
+  "reviewKind": "independent-source-presentation-and-focused-implementation-review",
+  "decision": "accepted-for-normal-source-grounded-representative-illustration-with-required-display-context",
+  "independentOfBuilder": true,
+  "reviewerPreviouslyReadSources": true,
+  "frozenManifestSha256": "7ef8917962df26f4b547809621e157142dc83842c19c4aedba1789913a0d7701",
+  "patchSha256": "acd522663014f5f9fd8a1bb3818604548a8bb997b749a4b0295a3489a8feccd7",
+  "sourceDecisionSha256": "09369c076e66a8f117ca50dc96b3bddf97bf626d22dfb6649c30c04356d7367b",
+  "sourcePdfSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+  "acceptedFiles": [
+    {
+      "path": "frontend/lib/catalog/models/measurementColumn2026Geometry.js",
+      "sha256": "3a65925a638d9c8b53075af517ec76404bd1cb7421dd3fc96fbfdce2b35f1693",
+      "bytes": 8102
+    },
+    {
+      "path": "frontend/lib/catalog/models/measurementColumn2026Icons.js",
+      "sha256": "ca7ff851804e4664fb3b843dafa81432fa0e87bb272af3e4a772948b214991cd",
+      "bytes": 3563
+    },
+    {
+      "path": "frontend/lib/catalog/models/measurementColumn2026SourceReview.md",
+      "sha256": "393038181dc30e931f52b1ee07fdf5afe0a036c7b388efc0b1e6217170ce782d",
+      "bytes": 6083
+    },
+    {
+      "path": "frontend/lib/catalog/models/measurementColumn2026Types.js",
+      "sha256": "9e1c4ef72dad3d453ee237838c36af3435b9a7b5e5af6e27b29e7eaa8d492800",
+      "bytes": 3296
+    },
+    {
+      "path": "frontend/scripts/render-measurement-column-prototype.mjs",
+      "sha256": "7da766f320185e2876fc6e16cf9d65f1b12c57f255a6d6d988249975bd240db0",
+      "bytes": 6672
+    },
+    {
+      "path": "frontend/tests/measurement-column2026-prototype.test.mjs",
+      "sha256": "b02437385c942f12e55807879c9508e503ce9830be3abe6ad7a867fea2bbfa8e",
+      "bytes": 13040
+    }
+  ],
+  "records": [
+    {
+      "id": "alageum-2026-zom-1p25-35",
+      "sourcePage": 99,
+      "normalSourceGroundedIllustrationEligible": true,
+      "separateSourceContextPreviewRequired": false,
+      "sourceTopologyHoldRequired": false,
+      "deliveredConfigurationVerified": false,
+      "sharedRepresentativeAssetReuseAllowed": true,
+      "exactProductGeometryEquivalenceClaimAllowed": false,
+      "reason": "Explicit page-99 drawing caption associates the exterior with the record; repeated drawing under different electrical context limits configuration claims.",
+      "requiredMainVisibleWording": "Иллюстративный внешний вид по рисунку каталога, стр. 99. Пропорции условные; назначение выводов и комплектность конкретного исполнения не подтверждены. Не CAD и не размерная модель.",
+      "requiredSourceContextCaveat": "На стр. 99 повторено расположение элементов рисунка со стр. 100 при другом табличном контексте; комплектность конкретного ЗОМ не подтверждена."
+    },
+    {
+      "id": "alageum-2026-znom35-config1",
+      "sourcePage": 100,
+      "normalSourceGroundedIllustrationEligible": true,
+      "separateSourceContextPreviewRequired": false,
+      "sourceTopologyHoldRequired": false,
+      "deliveredConfigurationVerified": false,
+      "sharedRepresentativeAssetReuseAllowed": true,
+      "exactProductGeometryEquivalenceClaimAllowed": false,
+      "reason": "Explicit page-100 ZNOM-35 caption and one drawing under the table support a common representative illustration of both voltage subrows, while records remain distinct.",
+      "requiredMainVisibleWording": "Иллюстративный внешний вид по рисунку каталога, стр. 100. Пропорции условные; назначение выводов и комплектность конкретного исполнения не подтверждены. Не CAD и не размерная модель.",
+      "requiredSourceContextCaveat": "Один рисунок на стр. 100 сопровождает две строки напряжений; механические различия и одинаковая комплектность исполнений не подтверждены."
+    },
+    {
+      "id": "alageum-2026-znom35-config2",
+      "sourcePage": 100,
+      "normalSourceGroundedIllustrationEligible": true,
+      "separateSourceContextPreviewRequired": false,
+      "sourceTopologyHoldRequired": false,
+      "deliveredConfigurationVerified": false,
+      "sharedRepresentativeAssetReuseAllowed": true,
+      "exactProductGeometryEquivalenceClaimAllowed": false,
+      "reason": "Explicit page-100 ZNOM-35 caption and one drawing under the table support a common representative illustration of both voltage subrows, while records remain distinct.",
+      "requiredMainVisibleWording": "Иллюстративный внешний вид по рисунку каталога, стр. 100. Пропорции условные; назначение выводов и комплектность конкретного исполнения не подтверждены. Не CAD и не размерная модель.",
+      "requiredSourceContextCaveat": "Один рисунок на стр. 100 сопровождает две строки напряжений; механические различия и одинаковая комплектность исполнений не подтверждены."
+    }
+  ],
+  "requiredVisibleSimplificationNote": "Мелкий крепёж, монтажные отверстия, сливной и заземляющий узлы не показаны; отдельные детали упрощены.",
+  "acceptedIconContext": {
+    "sizesPixels": [
+      28,
+      32,
+      40,
+      48,
+      56,
+      64,
+      96,
+      148
+    ],
+    "role": "stylised product-list illustration, never a terminal schedule",
+    "backgroundRequirement": "Set --equipment-icon-surface to actual surface colour on non-white backgrounds",
+    "suggestedAccessibleLabel": "Условный значок по каталогу"
+  },
+  "requiredPrototypeGeometryCorrections": [],
+  "requiredPrototypeIconCorrections": [],
+  "requiredIntegrationWork": [
+    "Use page-specific main visible disclosure",
+    "Show visible omitted-small-detail note",
+    "Preserve page-99 repeated-drawing and page-100 shared-subrow caveats in source context",
+    "Keep five cover fittings electrically neutral",
+    "Preserve distinct source records, values, anomalies, IDs and API UUIDs",
+    "Set icon surface fill to actual background",
+    "Review subsequent integration diff and actual viewer operation separately"
+  ],
+  "forbiddenClaims": [
+    "CAD or dimensional accuracy",
+    "installation/clearance correctness",
+    "exact manufactured or delivered configuration",
+    "verified terminal schedule",
+    "all five cover bushings are LV",
+    "complete fittings",
+    "identical internal construction or configuration across records",
+    "verified material or finish"
+  ],
+  "verification": {
+    "focusedTests": {
+      "independentlyRun": true,
+      "passed": 8,
+      "failed": 0,
+      "log": "focused-tests.log"
+    },
+    "mesh": {
+      "meshes": 37,
+      "triangles": 12964,
+      "neutralCoverBushingGroups": 5,
+      "artifact": "independent-mesh-audit.json"
+    },
+    "cpuRender": {
+      "independentlyRun": true,
+      "views": 6,
+      "allFilesExactlyReproduced": true,
+      "inspectedPixels": true
+    },
+    "frozenFilesMatchCheckoutAndBundle": true,
+    "baselineCommit": "a8f4f88845823105b242499bbe7b804368fcd0c8",
+    "gitExistingFilesChanged": false,
+    "onlyDeclaredSixAddedFiles": true,
+    "fullUnitSuite": "builder-reported-451-pass-not-independently-rerun",
+    "lint": "builder-reported-pass-not-independently-rerun",
+    "productionBuild": "builder-reported-894-pages-pass-not-independently-rerun",
+    "browserWebgl": "not-run-subsequent-operational-gate",
+    "rendererWarnings": "nonfatal module-type and font-cache warnings; output complete and byte-identical"
+  },
+  "sourceAnomaliesPreserved": true,
+  "recordsMerged": false,
+  "idsOrApiUuidsChanged": false,
+  "runtimeBindingsChanged": false,
+  "clearancesChanged": false,
+  "published": false,
+  "independentBatchDoesNotBlockAccessoryX4K3Publication": true,
+  "report": "review.md"
+}

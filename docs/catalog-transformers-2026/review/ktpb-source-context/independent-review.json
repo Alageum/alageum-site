@@ -1,0 +1,135 @@
+{
+  "format": "alageum-ktpb-source-context-independent-review-v1",
+  "baselineCommit": "c3241426715e8ab556df48242e405c9b382660ee",
+  "baselineTree": "93520988b0e0222d5a4d283ff3cc436bc8e321b3",
+  "sourceUiReviewSha256": "ca02eb62d85143f34359bb7af98a0f103df3f110c9caa93788aaeb13cfd12295",
+  "addedContextIds": [
+    "cat-ktpb-k",
+    "cat-ktpb-k-v002"
+  ],
+  "preservedCounts": {
+    "records": 843,
+    "defaultIllustrations": 464,
+    "sourceBasedIcons": 465,
+    "choiceRows": 36,
+    "choices": 74,
+    "constructionGaps": 243,
+    "gapFamilies": 29,
+    "legacyContextRecords": 24
+  },
+  "sourceContextRecords": 26,
+  "familyGeometryException": {
+    "id": "cat-ktpb-k",
+    "type": "outdoor-switchyard-substation",
+    "sourcePages": [
+      55
+    ],
+    "confidence": "source-matched",
+    "iconConfidence": "source-based"
+  },
+  "browserScope": {
+    "newCases": 16,
+    "existingCatalogCases": 254,
+    "existingPtmmCases": 16,
+    "workers": 2,
+    "retries": 0,
+    "jobTimeoutMinutes": 15,
+    "buildTimeoutMinutes": 5,
+    "testTimeoutMinutes": 6,
+    "permissions": {
+      "contents": "read"
+    }
+  },
+  "recordChanges": 0,
+  "sourceAssetChanges": 0,
+  "geometryMaterialChanges": 0,
+  "defaultIconChanges": 0,
+  "confidencePromotions": 0,
+  "gapClosures": 0,
+  "priorApprovalChanges": 0,
+  "dependencyChanges": 0,
+  "cms15Changes": 0,
+  "existingWorkflowChanges": 0,
+  "existingBrowserCaseChanges": 0,
+  "auditGateChanges": 0,
+  "releasePathChanges": 0,
+  "status": "approved-bounded-ktpb-source-context",
+  "approvedDependenciesSha256": "a649f01c7dc4f73158c0b5bd4a731edd709e4db28601cde85d4cd1edfb41ea41",
+  "performanceReviewSha256": "d1c182a9cb3943384f7c791f41a864da5062b65596de9a72364d74a90ca050b1",
+  "authorityNote": "New independent local approval after the verified invalid-reader fallback correction. Exactly three implementation/test paths changed from archived approved592895: one guarded reader-validation condition and regressions in the two existing test files. The 46-path scope, 20 predecessor pairs, 595 flat dependencies and source/UI evidence remain fixed. Prior authority does not transfer to changed bytes. No publication, merge, deployment, full-suite/build/browser qualification, dependency, workflow, budget or broader source authorization is implied.",
+  "candidateScope": {
+    "exactPredecessorFiles": 20,
+    "baselineClosureFiles": 571,
+    "immutableBaselineFiles": 551,
+    "currentReviewedFiles": 595,
+    "newDependencyFiles": 24,
+    "changedOrNewPr43Files": 46,
+    "sourceUiFrozenFiles": 6
+  },
+  "observationContract": {
+    "scope": "one-synchronous-public-invocation",
+    "cacheAcrossInvocations": false,
+    "intermediateObservationsReduced": true,
+    "transientMutationRestorationDetection": "not-guaranteed",
+    "atomicFilesystemSnapshot": false,
+    "finalRecheck": "all-consumed-paths-fresh-raw-reader",
+    "customReader": "uncached-admission-equivalent",
+    "limits": "retained-bytes-and-work-not-transient-allocation",
+    "callerInputs": "bounded-hook-free-plain-data-classification-retain-original-identity"
+  },
+  "validation": {
+    "independentCodeAndEvidenceReview": "passed-for-exact-corrected-implementation-and-tests",
+    "priorScopedControls": {
+      "tests": 54,
+      "pass": 54,
+      "scope": "before-final-invalid-reader-correction"
+    },
+    "currentUtilityControls": {
+      "tests": 38,
+      "pass": 38,
+      "fail": 0,
+      "evidence": {
+        "file": "invalid-reader-utility-controls.log",
+        "sha256": "dfe819ffce51ce685a993f5f01990ac6810ca6474d7b00f8f3fa2045927bf866"
+      }
+    },
+    "currentPublicFallbackControls": {
+      "tests": 3,
+      "pass": 3,
+      "fail": 0,
+      "evidence": {
+        "file": "invalid-reader-public-controls.log",
+        "sha256": "99416ace5e855ce92a3bb4fc1c7c48401e789a977ef768ee4ef8cf2b827c5fa1"
+      }
+    },
+    "independentFrozenReferenceParity": {
+      "cases": 105,
+      "matched": 105,
+      "evidence": {
+        "file": "invalid-reader-parity-after.json",
+        "sha256": "96bde7a4692fb6212f1cedacdaee10ddf194e2b2e0f798554568462d4142ef82"
+      }
+    },
+    "lint": "passed",
+    "syntheticDefaultReaderRoutesAndNtmi": "fresh corrected-byte serial measurements passed; each path exactly2 reads and each complete evaluator once per owner",
+    "independentAdditionalInputControls": "source and no-argument NTMI reject post-capture mutation/deletion of their 598th consumed browser README",
+    "actualCandidateDefaultRoutes": "post-binding results recorded separately against final document hashes",
+    "fullSuite": "not-run-for-this-candidate",
+    "build": "not-run-for-this-candidate",
+    "browser": "not-run-for-this-candidate",
+    "publication": "not-authorized-by-this-review"
+  },
+  "reviewedAt": "2026-10-07T13:50:05Z",
+  "reviewerRole": "independent local implementation and performance reviewer; separate from implementation author",
+  "findings": {
+    "scope": "46 exact PR43 delta paths; 20 exact predecessor pairs; unchanged 571-entry baseline; 551 immutable baseline pins and bytes; 595 flat reviewed dependencies; no new recursive layer",
+    "source": "Six fixed source/UI files and the original independent source/UI review remain byte-exact. Existing 24 context identities and source/model/icon outputs remain exact, with only the two authorized KTPB contexts added.",
+    "proof": "All historical per-edge assertions remain; only exact PR43 forwarding is added. Canonical memo and complete final rereads follow the explicitly approved reduced-observation contract.",
+    "correctedReviewFindings": [
+      "Inherited prototype hooks must select opaque uncached fallback",
+      "Custom readers must retain undefined this without owner-state disclosure",
+      "Explicit non-callable readers retain original no-read outcomes and predicate/read failure order"
+    ],
+    "bindings": "Performance review binds exact 12 implementation and four test/helper hashes. Its raw bytes are bound here and in the flat clearance map without self-referential hashes."
+  }
+}

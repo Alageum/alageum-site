@@ -1,0 +1,84 @@
+{
+  "format": "alageum-catalog-completion-phase2-v1",
+  "basePublicHead": "f834fe9fc32ed9a309736f96b52060c7ec3d6369",
+  "cmsFixPreserved": "c7a17f62645f86fd51ee7ae2605e741d1b4e01df",
+  "records": 843,
+  "sourceRepresentation": {
+    "baselineRecordCount": 823,
+    "executionAdmissions": 20,
+    "aliases": 2,
+    "sourceComparisons": 10,
+    "sourcePanels": 12,
+    "newFamilyCards": 0,
+    "resultRecordCount": 843,
+    "admissionConfigurations": 40,
+    "panelConfigurations": 18
+  },
+  "coverage": {
+    "records": 843,
+    "roles": {
+      "explicit-source-entry": 687,
+      "family-overview": 142,
+      "legacy-reference": 14
+    },
+    "sourceGroundedDefault3D": 448,
+    "genericDefault3D": 14,
+    "noDefault3D": 381,
+    "explicitChoiceRecords": 36,
+    "explicitChoices": 74,
+    "noDefaultOrChoice3D": 345,
+    "icons": {
+      "source-based": 455,
+      "source-only": 323,
+      "typical": 65
+    },
+    "familySelectors": 102,
+    "blankVisibleDescriptions": 0
+  },
+  "explicitEntries": {
+    "records": 687,
+    "roles": {
+      "explicit-source-entry": 687
+    },
+    "sourceGroundedDefault3D": 392,
+    "genericDefault3D": 0,
+    "noDefault3D": 295,
+    "explicitChoiceRecords": 36,
+    "explicitChoices": 74,
+    "noDefaultOrChoice3D": 259,
+    "icons": {
+      "source-based": 398,
+      "source-only": 246,
+      "typical": 43
+    },
+    "familySelectors": 0,
+    "blankVisibleDescriptions": 0
+  },
+  "verification": {
+    "frontendUnitPassed": 432,
+    "frontendLint": "passed",
+    "frontendProductionBuild": "passed,894pages",
+    "backendAggregatePassed": 577,
+    "sourceGenerators": "passed",
+    "mediaGenerator": "passed,843associations248rasters21968700bytes",
+    "assetFocusedPassed": 51,
+    "hostedCatalogCasesExpected": 90,
+    "exactPublishedHeadCI": "pending publication",
+    "localBrowser": "not run:previousprocess-socketrestrictionverified",
+    "independentSourceIdentityUiReview": "passed;see adjacent review artifacts"
+  },
+  "knownLimits": {
+    "familySourceLinks": "10sourcepanels need direct links from5sourcefamilyoverviews;separate boundedfollowup",
+    "unmappedExplicitEntries": 259,
+    "illustrativeOnly": true,
+    "exactCAD": false,
+    "auditPreflight": {
+      "head": "f834fe9fc32ed9a309736f96b52060c7ec3d6369",
+      "frontendHigh": 6,
+      "nodeHigh": 29,
+      "nodeModerate": 3,
+      "enforced": true
+    }
+  },
+  "deployed": false
+}

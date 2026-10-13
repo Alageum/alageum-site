@@ -1,0 +1,3 @@
+import LocaleElement from "@/components/locale/LocaleElement";import { leaders } from '@/lib/ecosystem/leadership';
+import { EcoCard, EcoSource } from './Parts';
+export default function Leadership() {return <><LocaleElement as="div" className="eco-grid leadership-grid">{leaders.map((person) => <EcoCard key={person.source} title={person.name} text={person.role} photo={person.photo} href={person.source} link="Профиль руководителя" />)}</LocaleElement><EcoSource href="https://alageum.com/ru/kompaniya/rukovodstvo" note="Должности приведены по официальной странице, проверенной 12 октября 2026 года. Перед публикацией изменений их необходимо сверить с компанией." /></>;}

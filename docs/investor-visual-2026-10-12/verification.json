@@ -1,0 +1,90 @@
+{
+  "baseCommit": "a32f7878d25a7d4e26d063ec6914b72d2f814383",
+  "scope": "Corporate visual/copy revision and approved shared palette; product-component photography excluded",
+  "frozenEngineeringFiles": [
+    {
+      "path": "frontend/app/globals.css",
+      "unchanged": true,
+      "sha256": "3227280397fa44e6137cdf3a9964829fd5ca1956e9a4bbb6ba090af2d3435937"
+    },
+    {
+      "path": "frontend/app/catalog.css",
+      "unchanged": true,
+      "sha256": "e0733807e2326ce761337a2916d1721241eea39522651a9df28ee523ab9436b6"
+    },
+    {
+      "path": "frontend/lib/public/content.js",
+      "unchanged": true,
+      "sha256": "63b95a93162bf51d56df12baa77a510395721523c4ca84cbfb1ede56569a13bf"
+    },
+    {
+      "path": "frontend/lib/public/solutions.js",
+      "unchanged": true,
+      "sha256": "95d2b23c22a9ced03aae83ec1fcbd4f3c34c2a7a9f0a329eea85901e0f0cfecd"
+    },
+    {
+      "path": "frontend/components/SiteHeader.js",
+      "unchanged": true,
+      "sha256": "562a8596b7fe25ab28822bcbc1592cdfbfe7aefa2c816ed3bd26de7623fb3d4c"
+    },
+    {
+      "path": "frontend/components/SiteFooter.js",
+      "unchanged": true,
+      "sha256": "df564ac455b40f3fb7a874a9e8474d1a0838e719d31e85fc48115022d09357f3"
+    },
+    {
+      "path": "frontend/components/catalog/ProductDetails.js",
+      "unchanged": true,
+      "sha256": "2abb9a7ed3a00f40f4218f6f0c5cd59849e945213f9b5305ad3725ce8a7d94ea"
+    }
+  ],
+  "publicAudit": {
+    "views": 108,
+    "routes": 27,
+    "widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "allHttp200": true,
+    "imagesLoaded": true,
+    "noOverflow": true,
+    "noPageErrors": true,
+    "oneMainH1": true
+  },
+  "checks": {
+    "lint": "passed",
+    "productionBuild": "passed; CIRCLE_NODE_TOTAL=2; NODE_OPTIONS=--max-old-space-size=768",
+    "companyBrowserTests": "20/20 passed with all four added regression bodies preserved as explicit steps in existing cases. The same assertions previously passed as 28 separate cases; regrouping preserves the unchanged 170-test general collection contract.",
+    "designPanel": "desktop/mobile passed with explicit photo decode and expected shared colors",
+    "fullUnitAggregate": "713/713 passed; zero failed, cancelled or skipped; 627.116 seconds. CIRCLE_NODE_TOTAL=2 NODE_OPTIONS=--max-old-space-size=768 node --test --test-concurrency=2 tests/*.test.mjs",
+    "catalogGeometry": "All six measured catalog regions are exactly equal to the PR45 baseline on both 1440px desktop and 390px mobile; final production-render comparison.",
+    "paletteContrast": "Seven representative foreground/background pairs meet normal-text WCAG AA; see palette-contrast.json. This is not a claim of a comprehensive accessibility audit."
+  },
+  "publication": "No push, merge or public deploy",
+  "limitations": [
+    "Official photo reuse rights require owner confirmation before production publication.",
+    "Nur-Esil has no verified project photograph; a labeled reference panel is shown.",
+    "Protection category has no verified photo; existing equipment icon is shown.",
+    "CMS-authored content is not rewritten by the presentation wrapper. Static company copy and its disposable preview fixture were updated.",
+    "Final auth/EDS/product-photo integration needs its own combined regression and proof review."
+  ],
+  "independentReview": {
+    "result": "Approved for visual, copy and palette scope; no substantive defects remain in corrected renders.",
+    "verified": [
+      "Readable contacts on desktop/mobile",
+      "Home photos, SVG arrows and graphite surfaces",
+      "Solutions layout at 320px",
+      "Design panel photo and approved tokens on desktop/mobile",
+      "108 clean final audit entries"
+    ],
+    "excludes": [
+      "Authentication/EDS integration",
+      "Production photo reuse-rights clearance"
+    ],
+    "testCorrection": "Approved: all four added regression bodies are identical apart from indentation, all 68 expect calls remain, and all steps are reachable. Independently confirmed general collection: 170 tests in 7 files."
+  },
+  "verifiedSourceCommit": "8b7e2817246d104ae8266bbf29f361a7509d7ef5",
+  "completedAt": "2026-10-12T14:31:45Z"
+}

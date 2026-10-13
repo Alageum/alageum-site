@@ -1,0 +1,1 @@
+import LocaleElement from "@/components/locale/LocaleElement";export default function Loading() {return <LocaleElement as="div" className="site-container public-loading" role="status"><LocaleElement as="span" className="public-loading-bar" /><LocaleElement as="p" className="site-metadata">Загружаем страницу…</LocaleElement></LocaleElement>;}

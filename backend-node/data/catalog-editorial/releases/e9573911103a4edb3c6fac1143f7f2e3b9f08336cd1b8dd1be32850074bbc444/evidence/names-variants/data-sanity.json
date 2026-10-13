@@ -1,0 +1,74 @@
+{
+  "allPassed": true,
+  "checks": [
+    {
+      "check": "exactly_843_original_stable_ids",
+      "passed": true
+    },
+    {
+      "check": "843_unique_normalized_display_labels",
+      "passed": true
+    },
+    {
+      "check": "only_175_targeted_display_labels_changed",
+      "passed": true
+    },
+    {
+      "check": "genuine_markings_unchanged",
+      "passed": true
+    },
+    {
+      "check": "original_full_names_unchanged",
+      "passed": true
+    },
+    {
+      "check": "no_made_up_name_suffixes",
+      "passed": true
+    },
+    {
+      "check": "all_canonical_attribute_values_match_exact_source_fields",
+      "passed": true
+    },
+    {
+      "check": "all_label_attribute_evidence_resolves",
+      "passed": true
+    },
+    {
+      "check": "149_navigation_families",
+      "passed": true
+    },
+    {
+      "check": "every_record_has_valid_family_and_model_group",
+      "passed": true
+    },
+    {
+      "check": "all_687_confirmed_parent_child_links_present",
+      "passed": true
+    },
+    {
+      "check": "501_config_objects_1351_occurrences_preserved",
+      "passed": true
+    },
+    {
+      "check": "nested_source_config_objects_unchanged",
+      "passed": true
+    },
+    {
+      "check": "19_nested_configuration_labels_updated",
+      "passed": true
+    },
+    {
+      "check": "six_TS_Z_ratings_stay_distinct_without_new_codes",
+      "passed": true
+    },
+    {
+      "check": "unknown_orderability_remains_unknown_for_14_legacy_references",
+      "passed": true
+    },
+    {
+      "check": "no_record_merge_or_synthetic_product",
+      "passed": true
+    }
+  ],
+  "scope": "Data-only checks of IDs, labels, evidence and hierarchy. No website/application tests."
+}

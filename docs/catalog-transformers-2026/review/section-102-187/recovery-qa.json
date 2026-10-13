@@ -1,0 +1,61 @@
+{
+  "counts": {
+    "families": 39,
+    "models": 261,
+    "configurations": 15,
+    "assets": 43,
+    "pages": 86
+  },
+  "uniqueIds": 276,
+  "specValues": 2806,
+  "pageSequence": true,
+  "modelFamilyLinks": true,
+  "assetModelLinks": true,
+  "allDrawingModelsMapped": true,
+  "noQuestionnaireProducts": true,
+  "genericConfigurationSkuNull": true,
+  "reactorKinds": true,
+  "earlierManufacturerUnknown": true,
+  "laterManufacturerExplicit": true,
+  "typeCounts": {
+    "transformer": 215,
+    "autotransformer": 26,
+    "reactor": 35
+  },
+  "missingSourceAssets": [],
+  "recoveryMethod": "Exact retained generator content restored, including previously applied source-correction patches; not reconstructed from counts.",
+  "revalidatedSourcePages": [
+    103,
+    109,
+    121,
+    142,
+    154,
+    159,
+    166,
+    174,
+    175,
+    177
+  ],
+  "sourcePdfPath": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+  "sourceSha256VerifiedByParent": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+  "recoveryArtifactSha256": {
+    "build_inventory.py": "303042a893f232e8d5ddfa5977319b24cb106c0821f4059aecbe2bfa2fbe8764",
+    "inventory.json": "9e5eeaa4133c72387d310b7cc9fd301c89f1a2e3cf7ae20eae13fb7930dc6782",
+    "page-ledger.json": "fdf4dfff0aae72854a8d507f6c7f1b70a904cc03fbf28852b638e1821193d4fc",
+    "asset-families.json": "9406862a53ce6ffb821632eceab20513087e553d616c02de3afe3814ceb6b322",
+    "notes.md": "bba26fe0ab277ad9acfa6bc9706da66125b986f476b7e39646b8276536962337"
+  },
+  "sourceRevalidationCorrections": [
+    {
+      "pdfPage": 174,
+      "modelId": "alageum-aodctn-267000-500-267000-83000-kva-51543798",
+      "designation": "АОДЦТН-267000/500",
+      "configuration": "267000/83000 кВА",
+      "label": "Номинальное напряжение НН",
+      "previousExtractionValue": "13,8",
+      "correctedSourceValue": "15,75",
+      "unit": "кВ",
+      "basis": "Fresh visual review of exact restored PDF page174; explicit table cell"
+    }
+  ]
+}

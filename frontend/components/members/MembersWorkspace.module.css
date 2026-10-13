@@ -1,0 +1,18 @@
+.workspace { display: grid; gap: 16px; min-width: 0; }
+.workspace > p { margin: 0; }
+.list { display: grid; gap: 12px; padding: 0; margin: 0; list-style: none; min-width: 0; }
+.member { min-width: 0; padding: 18px; }
+.member dl { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr) minmax(0, 1fr); gap: 16px; margin: 0; }
+.member dl > div { min-width: 0; }
+.member dt { color: var(--muted); font-size: 13px; margin-bottom: 5px; }
+.member dd { margin: 0; min-height: 1.4em; overflow-wrap: anywhere; white-space: pre-wrap; }
+.pagination { min-width: 0; }
+.pagination p { margin: 0 0 12px; overflow-wrap: anywhere; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.actions button { min-height: 44px; }
+.actions button:disabled { cursor: default; opacity: .5; }
+@media (max-width: 640px) {
+  .member dl { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .member { padding: 16px; }
+  .actions > button { flex: 1 1 140px; }
+}

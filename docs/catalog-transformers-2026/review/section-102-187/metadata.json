@@ -1,0 +1,256 @@
+{
+  "source": {
+    "title": "ALAGEUM transformer technical catalog",
+    "date": "2026-03-18",
+    "physicalPageRange": [
+      102,
+      187
+    ],
+    "pageCountReviewed": 86
+  },
+  "notes": [
+    "All 86 physical PDF pages 102–187 inspected visually. Tables were manually transcribed from enlarged renders; OCR was not authoritative.",
+    "Physical page 166 is printed as 168; physical page 177 has reactors. Blank questionnaires start at page 178.",
+    "The manufacturer for physical pages 102–164 remains unknown within this assigned range. Generic Alageum branding is not factory evidence. The explicitly named Asia Trafo section begins on page 166.",
+    "List-valued nominal voltages and climate choices remain list-valued. No Cartesian expansion into SKUs. Explicit cooling-type designations are separate model records.",
+    "Repeated model designations on page 174 and separate winding-configuration rows on page 175 are retained as separate model variations with configurationLabel; their SKU text is not fabricated.",
+    "Page 176 gives 15 generic shunt-reactor rating configurations without model codes. They are configurations[], not invented models.",
+    "No accepted matches to old baseline. Four overlapping ТМГ power ratings are specifically rejected because new models are 35/0.4 kV while old official references are 6/10 to 0.4 kV.",
+    "Source typos/contradictions are preserved. Examples: ТМГ-25 Pk=0,61 under Вт; pages159/161 losses labeled Вт; page111 ТДТНШ /35 heading versus /110 prose; page174 НН 38,61; numerous Asia Trafo asterisk values.",
+    "Technical line drawings support family illustrations and parameter extraction, not an assertion of a supplied photograph or exact ready-made 3D asset. The high-voltage section contains no model-linked drawings, and page166 states dimensions/drawings supplied upon request."
+  ],
+  "oldBaselineComparison": {
+    "oldRecordCount": 238,
+    "acceptedMatches": [],
+    "rejectedCandidatePairs": [
+      {
+        "newId": "alageum-tmg-400-35-kv-14cfad3c",
+        "newDesignation": "ТМГ-400",
+        "oldId": "tmg-400",
+        "oldDesignation": "ТМГ-400/10(6)-0,4",
+        "decision": "distinct-model-context",
+        "evidence": "New source specifies 35/0,4 кВ on page 105. Old reference specifies 6/10 → 0,4 кВ. Equal power and prefix do not establish identity."
+      },
+      {
+        "newId": "alageum-tmg-630-35-kv-e447452b",
+        "newDesignation": "ТМГ-630",
+        "oldId": "tmg-630",
+        "oldDesignation": "ТМГ-630/10(6)-0,4",
+        "decision": "distinct-model-context",
+        "evidence": "New source specifies 35/0,4 кВ on page 105. Old reference specifies 6/10 → 0,4 кВ. Equal power and prefix do not establish identity."
+      },
+      {
+        "newId": "alageum-tmg-1000-35-kv-3495071a",
+        "newDesignation": "ТМГ-1000",
+        "oldId": "tmg-1000",
+        "oldDesignation": "ТМГ-1000/10(6)-0,4",
+        "decision": "distinct-model-context",
+        "evidence": "New source specifies 35/0,4 кВ on page 105. Old reference specifies 6/10 → 0,4 кВ. Equal power and prefix do not establish identity."
+      },
+      {
+        "newId": "alageum-tmg-2500-35-kv-04053493",
+        "newDesignation": "ТМГ-2500",
+        "oldId": "tmg-2500",
+        "oldDesignation": "ТМГ-2500/10(6)-0,4",
+        "decision": "distinct-model-context",
+        "evidence": "New source specifies 35/0,4 кВ on page 105. Old reference specifies 6/10 → 0,4 кВ. Equal power and prefix do not establish identity."
+      }
+    ]
+  },
+  "counts": {
+    "families": 39,
+    "models": 261,
+    "configurations": 15,
+    "assets": 43,
+    "pages": 86
+  },
+  "models": {
+    "format": "alageum-transformer-review-chunks-v1",
+    "recordCount": 261,
+    "reviewStatus": "source transcription; independent review corrections in progress; runtime inactive",
+    "chunks": [
+      {
+        "path": "models-001.json",
+        "recordCount": 7,
+        "bytes": 57773,
+        "sha256": "cf7e8cbfa33b5fbb9d0c808562aef53008c97b5fb31b2a290054107a7abd0fb2"
+      },
+      {
+        "path": "models-002.json",
+        "recordCount": 6,
+        "bytes": 54785,
+        "sha256": "c276ed90484044b2ce5304958ad2720e66d186eebdf790252eda31ad8e643722"
+      },
+      {
+        "path": "models-003.json",
+        "recordCount": 6,
+        "bytes": 55531,
+        "sha256": "55c3090425e25a80ffb19fa848276ae1c62ee1a145dc987d94c450a0f971df04"
+      },
+      {
+        "path": "models-004.json",
+        "recordCount": 6,
+        "bytes": 53485,
+        "sha256": "3780818162e4df1fc5636ed84797a8ab6dd296fe08163b31420f46f504227ee0"
+      },
+      {
+        "path": "models-005.json",
+        "recordCount": 7,
+        "bytes": 55781,
+        "sha256": "b3dfa4b3a9c71e1d2d265253d4f7380a370d66b72977c48222b8ecb1fdd65b38"
+      },
+      {
+        "path": "models-006.json",
+        "recordCount": 6,
+        "bytes": 53993,
+        "sha256": "12cd34dbaaf6a96bb5998426e8dc8be46e281f844cc1117cc36d04dc261bf1f5"
+      },
+      {
+        "path": "models-007.json",
+        "recordCount": 6,
+        "bytes": 52149,
+        "sha256": "45efb646d80c77aa76cdf7809b429784b7f69ea41accca4e155090e92bfb932c"
+      },
+      {
+        "path": "models-008.json",
+        "recordCount": 6,
+        "bytes": 52160,
+        "sha256": "d1e3a90a0cf2b74b8fe4bc2c50e64f2827a027a4b1d1bd0d69ff14c4ac623b18"
+      },
+      {
+        "path": "models-009.json",
+        "recordCount": 7,
+        "bytes": 56605,
+        "sha256": "a7dd089cce6b9b68e6c67812dc0fe1cf635107e5d1e9bc390e2258a4c4484e15"
+      },
+      {
+        "path": "models-010.json",
+        "recordCount": 7,
+        "bytes": 59216,
+        "sha256": "956319bac35d17bcf4cb01023b054587131571a6960f818fbc77aef402a8a6d5"
+      },
+      {
+        "path": "models-011.json",
+        "recordCount": 6,
+        "bytes": 51816,
+        "sha256": "56cfd45f587225b3fbe1dc9a9b798e504f37de5408eaed409e885a24c973ccb8"
+      },
+      {
+        "path": "models-012.json",
+        "recordCount": 9,
+        "bytes": 57469,
+        "sha256": "2b910bf88c2c514f9e8983ae13e5565067427a280636cfacb7a799016a6339b0"
+      },
+      {
+        "path": "models-013.json",
+        "recordCount": 14,
+        "bytes": 58638,
+        "sha256": "acd35774cd26e41584261c8ada6467bb9d404e2c772421b36ba0cb002919a845"
+      },
+      {
+        "path": "models-014.json",
+        "recordCount": 14,
+        "bytes": 56030,
+        "sha256": "cf5d2a1706c4a37d0402f7b1c4badd761bff0f09044e42abc562e11f5c0130f7"
+      },
+      {
+        "path": "models-015.json",
+        "recordCount": 14,
+        "bytes": 56536,
+        "sha256": "4e64e7ca351991719db6a39052119eebc076e251f771cebd726a40dc6d4b4067"
+      },
+      {
+        "path": "models-016.json",
+        "recordCount": 14,
+        "bytes": 56440,
+        "sha256": "ec43d5137c5f91bb57f0f1e1b9fb51b9b0f2a8d865b49ec2d59fd499114430b1"
+      },
+      {
+        "path": "models-017.json",
+        "recordCount": 14,
+        "bytes": 56718,
+        "sha256": "1a1fbd8214d5f60b5531774b20cd36eaf29f21c0d802d54fffd55e1ef1b63fd0"
+      },
+      {
+        "path": "models-018.json",
+        "recordCount": 14,
+        "bytes": 57145,
+        "sha256": "83b1c6ed424bce1d50e7e31eec38db54ccf930ba1f86b9e4f3f09b3a8b2c3ae0"
+      },
+      {
+        "path": "models-019.json",
+        "recordCount": 14,
+        "bytes": 57421,
+        "sha256": "aa4fe09ea518527d917086db5ac1fce8462e8bffe1ee998aed753a641521ff41"
+      },
+      {
+        "path": "models-020.json",
+        "recordCount": 13,
+        "bytes": 56774,
+        "sha256": "667faace7dea2c65f5c1092c9787a07822820bf058a23771472582e9419f6084"
+      },
+      {
+        "path": "models-021.json",
+        "recordCount": 13,
+        "bytes": 59183,
+        "sha256": "83a84dc0488d3062ab9c25618261220572ef04b855e08f679ea3badf8079fc62"
+      },
+      {
+        "path": "models-022.json",
+        "recordCount": 14,
+        "bytes": 58347,
+        "sha256": "1dde5ed071ab18a9b21a426564bb724148ae56b9026317f41915b2ce49db7957"
+      },
+      {
+        "path": "models-023.json",
+        "recordCount": 14,
+        "bytes": 58158,
+        "sha256": "7ed142de7879fb5a38752997a3697964c83a2ead87c499c616a983e607ce1549"
+      },
+      {
+        "path": "models-024.json",
+        "recordCount": 15,
+        "bytes": 58876,
+        "sha256": "86c1797783be4b1cba96eaca95784b28ac5d10887b87c79a250298c1aff71541"
+      },
+      {
+        "path": "models-025.json",
+        "recordCount": 15,
+        "bytes": 48795,
+        "sha256": "6601c1c0927308efdbea108bedaf97fbeb064cb410e453a897a478d38ddac44a"
+      }
+    ]
+  },
+  "families": {
+    "format": "alageum-transformer-review-chunks-v1",
+    "recordCount": 39,
+    "reviewStatus": "source transcription; independent review corrections in progress; runtime inactive",
+    "chunks": [
+      {
+        "path": "families-001.json",
+        "recordCount": 19,
+        "bytes": 59108,
+        "sha256": "c26b52cfbbc17da28e878c226cce767ac63a6ad767818d5fb809f9a64d683461"
+      },
+      {
+        "path": "families-002.json",
+        "recordCount": 20,
+        "bytes": 25384,
+        "sha256": "2cf5ec9e4a8be5a8ff54147b1b97f9b44701c31d2d2a6ba0bd4002e12597dd36"
+      }
+    ]
+  },
+  "configurations": {
+    "format": "alageum-transformer-review-chunks-v1",
+    "recordCount": 15,
+    "reviewStatus": "source transcription; independent review corrections in progress; runtime inactive",
+    "chunks": [
+      {
+        "path": "configurations-001.json",
+        "recordCount": 15,
+        "bytes": 41685,
+        "sha256": "2ddbd90ffd09bcb5901d4402930d5b9682d74cbe051781c4a3c379b0f1cebab9"
+      }
+    ]
+  }
+}

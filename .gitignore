@@ -1,0 +1,112 @@
+.env
+.idea/
+.vite/
+.venv/
+.vercel/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+.ruff_cache/
+backend/storage/
+backend/test-storage/
+backend/*.db
+frontend/.next/
+frontend/.next-quotes/
+frontend/node_modules/
+frontend/.env.local
+frontend/playwright-report/
+frontend/test-results/
+backups/
+*.dump
+*.dump.metadata
+test-storage/
+test.db
+
+# Disposable static public-preview build
+frontend/.preview-build/
+frontend/preview-dist/
+
+# Isolated Node/Strapi migration workspace
+backend-node/node_modules/
+backend-node/.cache/
+backend-node/.strapi/
+backend-node/build/
+backend-node/dist/
+backend-node/.tmp/
+backend-node/public/uploads/
+backend-node/.env*
+!backend-node/.env.example
+
+!backend-node/public/uploads/
+backend-node/public/uploads/*
+!backend-node/public/uploads/.gitkeep
+
+backend-node/.strapi-updater.json
+backend-node/dependency-audit.json
+
+# Disposable reimplemented Page delivery evidence, never repository fixtures
+page-delivery-evidence/
+
+# Disposable company profile acceptance build and evidence
+frontend/.next-profile/
+profile-delivery-evidence/
+
+# Disposable organization-selection acceptance build and evidence
+frontend/.next-organization/
+organization-delivery-evidence/
+
+# Disposable customer support acceptance build and evidence
+frontend/.next-support/
+support-delivery-evidence/
+
+# Disposable customer order acceptance build and evidence
+frontend/.next-orders/
+orders-delivery-evidence/
+
+# Disposable invoice metadata acceptance build and evidence
+frontend/.next-invoice/
+invoice-metadata-evidence/
+
+# Disposable document metadata acceptance build and evidence
+frontend/.next-document/
+document-metadata-evidence/
+
+# Disposable organization members acceptance build and evidence
+frontend/.next-member/
+member-delivery-evidence/
+
+# Separate bounded PTMM qualification browser evidence
+ptmm-qualification-evidence/
+
+# Clean handoff: never add local secrets, dependencies, backups or builds.
+**/node_modules/
+**/.next*/
+**/dist/
+**/build/
+**/.strapi/
+**/.cache/
+**/__pycache__/
+**/logs/
+**/backups/
+**/backup/
+**/.env
+**/.env.*
+!**/.env.example
+*.log
+*.zip
+*.bundle
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.db
+*.sqlite
+*.sqlite3
+*.pem
+*.key
+*.p12
+*.pfx
+/frontend/public/documents/transformers-2026-original.pdf

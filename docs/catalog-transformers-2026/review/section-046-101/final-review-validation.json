@@ -1,0 +1,148 @@
+{
+  "status": "pass",
+  "commonProseGroups": 19,
+  "newModelProseSpecs": 597,
+  "familyScopedEntries": 21,
+  "unitAttributionChanges": [
+    {
+      "id": "alageum-2026-tmto80-original",
+      "label": "Мощность/положение/напряжение ответвлений",
+      "before": "кВА / — / В",
+      "after": "кВА / — / —"
+    },
+    {
+      "id": "alageum-2026-tmto80-modern",
+      "label": "Мощность/положение/напряжение ответвлений",
+      "before": "кВА / — / В",
+      "after": "кВА / — / —"
+    },
+    {
+      "id": "alageum-2026-om-0p63",
+      "label": "Напряжение ступеней регулирования при6кВ",
+      "before": "кВ",
+      "after": null
+    },
+    {
+      "id": "alageum-2026-om-0p63",
+      "label": "Напряжение ступеней регулирования при10кВ",
+      "before": "кВ",
+      "after": null
+    },
+    {
+      "id": "alageum-2026-om-1p25",
+      "label": "Напряжение ступеней регулирования при6кВ",
+      "before": "кВ",
+      "after": null
+    },
+    {
+      "id": "alageum-2026-om-1p25",
+      "label": "Напряжение ступеней регулирования при10кВ",
+      "before": "кВ",
+      "after": null
+    },
+    {
+      "id": "alageum-2026-om-2p5",
+      "label": "Напряжение ступеней регулирования при6кВ",
+      "before": "кВ",
+      "after": null
+    },
+    {
+      "id": "alageum-2026-om-2p5",
+      "label": "Напряжение ступеней регулирования при10кВ",
+      "before": "кВ",
+      "after": null
+    },
+    {
+      "id": "alageum-2026-om-4-p",
+      "label": "Напряжение ступеней регулирования при6кВ",
+      "before": "кВ",
+      "after": null
+    },
+    {
+      "id": "alageum-2026-om-4-p",
+      "label": "Напряжение ступеней регулирования при10кВ",
+      "before": "кВ",
+      "after": null
+    },
+    {
+      "id": "alageum-2026-om-10-p",
+      "label": "Напряжение ступеней регулирования при6кВ",
+      "before": "кВ",
+      "after": null
+    },
+    {
+      "id": "alageum-2026-om-10-p",
+      "label": "Напряжение ступеней регулирования при10кВ",
+      "before": "кВ",
+      "after": null
+    }
+  ],
+  "numericSourcePageChanges": [
+    {
+      "id": "alageum-2026-ts-16",
+      "label": "ВН",
+      "before": 86,
+      "after": 87
+    },
+    {
+      "id": "alageum-2026-ts-16",
+      "label": "НН",
+      "before": 86,
+      "after": 87
+    },
+    {
+      "id": "alageum-2026-ts-25",
+      "label": "ВН",
+      "before": 86,
+      "after": 87
+    },
+    {
+      "id": "alageum-2026-ts-25",
+      "label": "НН",
+      "before": 86,
+      "after": 87
+    },
+    {
+      "id": "alageum-2026-ts-40",
+      "label": "ВН",
+      "before": 86,
+      "after": 87
+    },
+    {
+      "id": "alageum-2026-ts-40",
+      "label": "НН",
+      "before": 86,
+      "after": 87
+    },
+    {
+      "id": "alageum-2026-ts-63",
+      "label": "ВН",
+      "before": 86,
+      "after": 87
+    },
+    {
+      "id": "alageum-2026-ts-63",
+      "label": "НН",
+      "before": 86,
+      "after": 87
+    },
+    {
+      "id": "alageum-2026-ts-100",
+      "label": "ВН",
+      "before": 86,
+      "after": 87
+    },
+    {
+      "id": "alageum-2026-ts-100",
+      "label": "НН",
+      "before": 86,
+      "after": 87
+    }
+  ],
+  "baseNumericValuesChanged": 0,
+  "candidateOldIdsUnchanged": true,
+  "fanConfigurationUnchanged": true,
+  "recordAndConfigurationIdsUnchanged": true,
+  "drawingOnlyProseInheritance": false,
+  "pumpTemperatureScope": "8 p62 rows at -45…+40°C;10 p64 rows at -60…+40°C"
+}

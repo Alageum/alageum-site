@@ -1,0 +1,541 @@
+{
+  "frozenAt": "2026-10-12T16:55:00Z",
+  "fileCount": 107,
+  "files": [
+    {
+      "path": "README-RU.txt",
+      "bytes": 4161,
+      "sha256": "90ac0f44909bed20f66bfa79e026ad297f561138ff0a1668c45b5804f9c8e6b0"
+    },
+    {
+      "path": "attribution-upgrades.json",
+      "bytes": 15555,
+      "sha256": "9f0d8db25b9b3d57228c0d742bfcfea3caa4d935ba9a46c98402128ad30f0b5c"
+    },
+    {
+      "path": "contact-sheets/new-photos-01.jpg",
+      "bytes": 496313,
+      "sha256": "7aafd50f3becec803ddbe4ba2f8b49fc2d47a6af6c12e4f7b9636fbaec79c380"
+    },
+    {
+      "path": "contact-sheets/new-photos-02.jpg",
+      "bytes": 534826,
+      "sha256": "12e3e3c6c9d90398bbd993f90508c509c80b2bc687cd3143c3afa69334dcfdf0"
+    },
+    {
+      "path": "contact-sheets/new-photos-03.jpg",
+      "bytes": 455386,
+      "sha256": "fb396edf5b225239a6f64692a40d660c8005ed06aa48ab848db45bc2e5acf9c1"
+    },
+    {
+      "path": "contact-sheets/new-photos-04.jpg",
+      "bytes": 332418,
+      "sha256": "3ec21fd541e309cdd5a5459682f8e95a180c8ac2d52dee082f820368bfdaa18c"
+    },
+    {
+      "path": "contact-sheets/new-photos-05.jpg",
+      "bytes": 487969,
+      "sha256": "9105a5b8d1e3b0a80f2c0c0172c5b61026f7ea225ac5f11f612dfd4b9de6cf9d"
+    },
+    {
+      "path": "contact-sheets/new-photos-06.jpg",
+      "bytes": 504041,
+      "sha256": "15271cc2be1704d28a6668d0a76193614e8d904d68a0e68023394171c8b50f14"
+    },
+    {
+      "path": "contact-sheets/new-photos-07.jpg",
+      "bytes": 122383,
+      "sha256": "797fe75eb2cf9531e60b6e701da48b959bf889cc0838a8cd1c9b71e884eeef84"
+    },
+    {
+      "path": "data-sanity.json",
+      "bytes": 357,
+      "sha256": "71ea9a3c84890d101e655da208d9a552f913014938082cf840d098eaaa6e7d6b"
+    },
+    {
+      "path": "final-review.json",
+      "bytes": 984,
+      "sha256": "e893624c7607bdda2fde44c61cc217440abdb76d173b2391f1ca346521412a45"
+    },
+    {
+      "path": "first-pass-lead-audit.json",
+      "bytes": 160793,
+      "sha256": "2b58bba161e5a8c57bfd74c3c6ff328272cb5615d41dd4070588491b79019a06"
+    },
+    {
+      "path": "mapping-corrections.json",
+      "bytes": 1116,
+      "sha256": "9aad49a150e607f7cd698acec8fb15d1f9564d0594450a4fac1a5ce14a0240af"
+    },
+    {
+      "path": "merge-audit.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "photo-candidates-added.json",
+      "bytes": 194957,
+      "sha256": "8143b7fdb5a2a10ca08a65c790f0666614e2ee58734582dd7afb89be6bec9fe2"
+    },
+    {
+      "path": "photo-candidates-combined.json",
+      "bytes": 369566,
+      "sha256": "1b0e7a8009ca352bf22dff1c1c3b5d5c2eda7d29216f56ef781e0e38e512d201"
+    },
+    {
+      "path": "photo-family-coverage-updated.json",
+      "bytes": 75367,
+      "sha256": "d2b078245f5ce30d1a8d0f0f06846d310a3d104f746528bfb8d7209546086cd3"
+    },
+    {
+      "path": "photo-record-coverage-updated.json",
+      "bytes": 1102906,
+      "sha256": "06325d1c0bfb1015ae4737bf07b22df88e6a0219027e649da4098e03eb04e942"
+    },
+    {
+      "path": "photo-unverified-leads-updated.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "remaining-photo-needs.json",
+      "bytes": 343205,
+      "sha256": "aaece8886d02f335935943f6052c160027cd5bfc6dae46a938baf396c62c4a4d"
+    },
+    {
+      "path": "selected-images/aemz-2ktpp1600-entrance.png",
+      "bytes": 228777,
+      "sha256": "cd45d9e532e7f4419b1f381b9996ca4a5f36d4e3f59f61c5f5fdc748f1e6a9e0"
+    },
+    {
+      "path": "selected-images/aemz-2ktpp1600-exterior-rear.png",
+      "bytes": 355421,
+      "sha256": "6c5fcb67c8eb93477be9e8e8675a9d20fdf04e2ceafe410aa0723c7bb12d6f1d"
+    },
+    {
+      "path": "selected-images/aemz-2ktpp1600-exterior-side.png",
+      "bytes": 351289,
+      "sha256": "809064e29a12b7e14947eccde97b652f27546ac1c42e4dcdd9238a10a4befa9c"
+    },
+    {
+      "path": "selected-images/aemz-k8mk-site-close.png",
+      "bytes": 364038,
+      "sha256": "5dbdd66382c8be74d85744fdc7b36cc655e866e82b920b030aa0a41b4922edf6"
+    },
+    {
+      "path": "selected-images/aemz-k8mk-site-wide.png",
+      "bytes": 15635,
+      "sha256": "d1a3329a917e3349d5a0336e222eaf63e2013965fea5779e561778859c170c19"
+    },
+    {
+      "path": "selected-images/aemz-kso292-mega-project.png",
+      "bytes": 288924,
+      "sha256": "fc81d7a9018d5c5fb98f8c5782819a36b593ec2604a6c824f6b8a39c63974bfb"
+    },
+    {
+      "path": "selected-images/aemz-kso366-astana-project.png",
+      "bytes": 289479,
+      "sha256": "30477c47a9ebd5389173e816a019c21306e9dcc9d2b4e28505ae892d913612e2"
+    },
+    {
+      "path": "selected-images/aemz-lv-shnv-astana-reference.png",
+      "bytes": 524607,
+      "sha256": "a8025bb1aa053a42db039b0802855fabdcb597d531539f52da63610b7146b4e6"
+    },
+    {
+      "path": "selected-images/aemz-ptm-cathodic-photo-higher-resolution.png",
+      "bytes": 76367,
+      "sha256": "a427c4760034ac58e2d4bcb37bfb314e19ac2fe3294a48ea6a14024bd942149c"
+    },
+    {
+      "path": "selected-images/aemz-rlnd-brown-insulator.jpg",
+      "bytes": 130582,
+      "sha256": "8f9d772750324cfdad564709d644c587357bec76e4a89ddb2c414c3d94807767"
+    },
+    {
+      "path": "selected-images/aemz-shcho70-mega-project.png",
+      "bytes": 339609,
+      "sha256": "d362f890d7b0aa4c023e39a3c9f885c96c14e1ea9c4476fa088461fb1b1700aa"
+    },
+    {
+      "path": "selected-images/aemz-shueng-photo-higher-resolution.png",
+      "bytes": 76376,
+      "sha256": "00e623b33fe45a5615ca27ac5dd5bbeef318c6a3252ce49b91b46936d8d0ea51"
+    },
+    {
+      "path": "selected-images/aemz-substations-0-higher-resolution.png",
+      "bytes": 408373,
+      "sha256": "9ef09eb3897b10a5bcd88821b2e6f68791c87ad9c03af94bc68fb6bc0f0d495b"
+    },
+    {
+      "path": "selected-images/aemz-yashchiki-i-shkafy-upravleniya-rus-m-ya-5000-0-higher-resolution.png",
+      "bytes": 133554,
+      "sha256": "479ab6fd0bf07a20b71c4b0a9c85d5e640697166d9c890d3e085565ecf0ed790"
+    },
+    {
+      "path": "selected-images/alageum-k07-sazdinskaya.jpg",
+      "bytes": 86758,
+      "sha256": "5537e7cb04f46e69198645a1ece60a46d01eba78484424337a8293489d035d46"
+    },
+    {
+      "path": "selected-images/dry-instrument-shared-aemz.jpg",
+      "bytes": 35243,
+      "sha256": "dcea228a361c5a006b0f6b75d7276f57f3d54a77deab7ccc30a329657998952a"
+    },
+    {
+      "path": "selected-images/dry-nom-suet-cylinder-higher-resolution.jpg",
+      "bytes": 35555,
+      "sha256": "95e4f3548835425fee5f321554ea8c9146f58d01f454cf36e0ab5414aeedb40a"
+    },
+    {
+      "path": "selected-images/dry-ntmi-alelectro-green-higher-resolution.jpg",
+      "bytes": 18469,
+      "sha256": "800bd307259c6bb1c436e66d1edd1ba54da3d88ea51c9d9ca180f99d335ef112"
+    },
+    {
+      "path": "selected-images/dry-tsl-suet-oblique-higher-resolution.jpg",
+      "bytes": 17917,
+      "sha256": "0ffe11a8dd239ab67dce9384816ce516be1c180b75a8611720cb0d4271e39725"
+    },
+    {
+      "path": "selected-images/dry-tslz-aemz-enclosed-higher-resolution.jpg",
+      "bytes": 37916,
+      "sha256": "7d3a9ca44027a4fba7a6f63b6936fb59015d48fba871c6be002cf4d72ace362f"
+    },
+    {
+      "path": "selected-images/dry-tsz-aemz-enclosed-higher-resolution.jpg",
+      "bytes": 9469,
+      "sha256": "d889b853996312bf64b92f22468832546dd8dfab18aba4090a00a933b4ab950d"
+    },
+    {
+      "path": "selected-images/dry2-nami-td-oblique.png",
+      "bytes": 102269,
+      "sha256": "3707a8b75bba8214341eded7792f249420142d15491c85fb15a721ef354013cf"
+    },
+    {
+      "path": "selected-images/dry2-ntmi10-td-front.png",
+      "bytes": 738971,
+      "sha256": "04ebba6b6129cfb255aa9a7d83a5da0fe130be39ca356b5ee259ecf6b037491f"
+    },
+    {
+      "path": "selected-images/dry2-ntmi10-td-top.png",
+      "bytes": 817369,
+      "sha256": "acbe2632dca80a3079777093ea0a2c623b9a6e68e9fb2e2e2f1a85235865a61d"
+    },
+    {
+      "path": "selected-images/dry2-ntmi6-td-front.png",
+      "bytes": 842453,
+      "sha256": "29ae72279fdc5578c54efe825fc263f7e3753771840a4a0142efe920796c6c05"
+    },
+    {
+      "path": "selected-images/dry2-ntmi6-td-top.png",
+      "bytes": 1030423,
+      "sha256": "ed82fc49cbc9a927b1fc29263fff8621509dc436da29f3fbc6e25fae1d58d8d5"
+    },
+    {
+      "path": "selected-images/dry2-tsl-ktz-factory.jpg",
+      "bytes": 43169,
+      "sha256": "ed537df64d719ab6fce73e0c61176a491614a39d3f9f498c012c31aef5d35453"
+    },
+    {
+      "path": "selected-images/dry2-znom-td-oblique.png",
+      "bytes": 71200,
+      "sha256": "dcdb61fe3b5c7f8101a93672323c171386d37ba129414b3233356c54df72860e"
+    },
+    {
+      "path": "selected-images/gis-7127.jpg",
+      "bytes": 7075,
+      "sha256": "686e56683885083f182cd6a73c2944b886916e854add09430a492da26fbf41e8"
+    },
+    {
+      "path": "selected-images/gis-7128.jpg",
+      "bytes": 5958,
+      "sha256": "980b81602f4e3af9a00940ea1a6de430ac30fe9f10107f069d227b488eb62e5d"
+    },
+    {
+      "path": "selected-images/gis-7142.jpg",
+      "bytes": 7820,
+      "sha256": "549438bab4b6110f6312312ab7625cd41141c2a34a521ed91cab9356ff38732d"
+    },
+    {
+      "path": "selected-images/gisprofi-ukzv-historical-photo-higher-resolution.png",
+      "bytes": 356001,
+      "sha256": "e7d9705b7630682429a0ad7880bf4725d668b79aced547cd958b00ddd05b88cb"
+    },
+    {
+      "path": "selected-images/inc02-power-asia-rom60000-official.png",
+      "bytes": 575326,
+      "sha256": "27791b95160af847d8cf41933888b151b68b32333ef900ee625c40c3d7e2fe4b"
+    },
+    {
+      "path": "selected-images/inc02-power-atdctn250000-220-batys.jpg",
+      "bytes": 189854,
+      "sha256": "b6a38de2de51596add4c0c7c8fac3d8d8b076d5f6c2d4ec20e6240fc09985980"
+    },
+    {
+      "path": "selected-images/inc02-power-epr-rom-group-2020.jpg",
+      "bytes": 187344,
+      "sha256": "d46d38de09e8fbc8c6fc77610dff52334935d579e7159853b0df7d2c31742a05"
+    },
+    {
+      "path": "selected-images/inc02-power-ktz-omzh27-catalog.jpg",
+      "bytes": 14425,
+      "sha256": "ea0d0165314c2be22a66f1ccd63866c7c5a7d06097e84120cfa91e3580c0b709"
+    },
+    {
+      "path": "selected-images/inc02-power-ktz-tdn110-catalog.jpg",
+      "bytes": 33038,
+      "sha256": "55a338d95729ea600534eb15180232951ec739b042b7f77969dba3a9b6c9897b"
+    },
+    {
+      "path": "selected-images/inc02-power-ktz-tdns35-catalog.jpg",
+      "bytes": 33347,
+      "sha256": "13f1fb816b1ec2ea8020b60eb26622b609fa7792f5cbb850c88a06528f97be45"
+    },
+    {
+      "path": "selected-images/inc02-power-ktz-tdtn110-catalog.jpg",
+      "bytes": 32838,
+      "sha256": "3005001da15f7087c6d3a9db0f54975eaa85ba56ab982de464cb0d0c6e328ae9"
+    },
+    {
+      "path": "selected-images/inc02-power-ktz-tmn110-catalog.jpg",
+      "bytes": 28413,
+      "sha256": "15440e48e1b936372f9156c229c22d2bccf3f8337e887914eadb9a6a6a8c144b"
+    },
+    {
+      "path": "selected-images/inc02-power-ktz-tmn35-catalog.jpg",
+      "bytes": 44817,
+      "sha256": "ee9c0e2bbbe7c1a1ae20070f2da591ac26fb8cfb693f8924774959aaa081d457"
+    },
+    {
+      "path": "selected-images/inc02-power-ktz-trdns25000-35-catalog.jpg",
+      "bytes": 37873,
+      "sha256": "6e743da45b44d1a8b9a299ce88bca60a4d5b4cbde0e82e0a9defeaadd69ae1b5"
+    },
+    {
+      "path": "selected-images/ktz-catalog-om.jpg",
+      "bytes": 15557,
+      "sha256": "e6820d239bfa931e25d249cba8cb107dd644508ba8e9f0dae3801e008cc7202d"
+    },
+    {
+      "path": "selected-images/ktz-catalog-omp.jpg",
+      "bytes": 17684,
+      "sha256": "5d0fa6c82bd11d04f649d1e02f90ae2d7a6890ac3516bd5ca58527204bfb30da"
+    },
+    {
+      "path": "selected-images/ktz-catalog-tm-green.jpg",
+      "bytes": 32091,
+      "sha256": "9f34a15e7373332f6009b3b423bebc87140961aceddb311c2092b80b55a9b4e4"
+    },
+    {
+      "path": "selected-images/ktz-catalog-tmeg.jpg",
+      "bytes": 18456,
+      "sha256": "4bbd157908efecadda334dc3206016d9215ab83982dbc0967cd2bf4d7999e3a8"
+    },
+    {
+      "path": "selected-images/ktz-catalog-tmg-green.jpg",
+      "bytes": 38892,
+      "sha256": "898cab2f0eb3c77a737a92762b720a3998468ba05bb2231530762c0ac8b8917c"
+    },
+    {
+      "path": "selected-images/ktz-catalog-tmpn-conservator.jpg",
+      "bytes": 19074,
+      "sha256": "a812b1006bab4dcd185a1b037ed869b90e513b1b945fa04e709b18f5f5e51354"
+    },
+    {
+      "path": "selected-images/ktz-catalog-tmto-80.jpg",
+      "bytes": 13640,
+      "sha256": "babd01e225ac9a0932b1fcd0c64bacdb6fea705196be7aecdb6b4fe4d4094bbf"
+    },
+    {
+      "path": "selected-images/ktz-catalog-tmz-oblique.jpg",
+      "bytes": 43034,
+      "sha256": "97c8ab732525eabc5e92b44b5fcaadc57bd30e603910248834558e59ffb99a1b"
+    },
+    {
+      "path": "selected-images/ktz-p107-ktpto-identification.png",
+      "bytes": 339614,
+      "sha256": "fc0b83f0bdd95c654f8b4b2e455f0f9c4c18936e87946ad33ed952b4bfdd6376"
+    },
+    {
+      "path": "selected-images/ktz-p116-mtpzh10.png",
+      "bytes": 150565,
+      "sha256": "c449e3dfc3bd64b0347e2ba0d4838d5ffe84338e5d03acdbce71a8e69d0ac918"
+    },
+    {
+      "path": "selected-images/ktz-p127-ukzn.png",
+      "bytes": 411474,
+      "sha256": "a75d7ba2d2ad97e33fb559be5fae37689214d896739fa8a5b477f3c8afc32f70"
+    },
+    {
+      "path": "selected-images/ktz-p129-ktps.png",
+      "bytes": 351573,
+      "sha256": "6c6d5844c9b69a7d5c2482d0544e9f846cb88a23c5e21f5034da44a8bfe0e683"
+    },
+    {
+      "path": "selected-images/ktz-p132-k07.png",
+      "bytes": 134338,
+      "sha256": "4f26ed1e45d83238c72f827d0f6d87660b05e7d19adb26e86607058a26eb8e3c"
+    },
+    {
+      "path": "selected-images/ktz-p137-kso2.png",
+      "bytes": 322835,
+      "sha256": "036a5271da09025bf3c1b6f7ecd832e353b584c5cdd414f7183434db222fd879"
+    },
+    {
+      "path": "selected-images/ktz-p140-kso292.png",
+      "bytes": 770101,
+      "sha256": "0123185ab26b5224ebcfa0054252d04984eea4e0a63a1179d7b44fb3993425f2"
+    },
+    {
+      "path": "selected-images/ktz-p142-kso366.png",
+      "bytes": 226202,
+      "sha256": "9897c721760cfdd09da0eb5084684c5589acafe8b2522e7cdf6276e78505ce76"
+    },
+    {
+      "path": "selected-images/ktz-p149-shcho70.png",
+      "bytes": 496421,
+      "sha256": "e78584a4ffa020b3832196248e06a99c6df574fb0c0bd44e72d9311b9f52d20b"
+    },
+    {
+      "path": "selected-images/ktz-p154-pr-shr11.png",
+      "bytes": 14578,
+      "sha256": "ef5a64548ed41b3ad02ad199cb97e9c066fe48c6c749bf8e127125071fd62df9"
+    },
+    {
+      "path": "selected-images/ktz-p155-yatp025.png",
+      "bytes": 143038,
+      "sha256": "a02c3e75bd67bc7a558b7e659cc66a37e603345e55644b118a482a4350d3e26c"
+    },
+    {
+      "path": "selected-images/ktz-p157-yauo.png",
+      "bytes": 111094,
+      "sha256": "5c2ef4fb23d97375ed2e7020f00c4e972b760297709a76debd139aca1189159f"
+    },
+    {
+      "path": "selected-images/ktz-p165-bueskn.png",
+      "bytes": 348172,
+      "sha256": "0ecc27819b91b99b68b71fcd07645c2d50a4c372738e34726306675b1228e313"
+    },
+    {
+      "path": "selected-images/ktz-p178-rusm.png",
+      "bytes": 39011,
+      "sha256": "7d47bf504bed004280bc392497f3d15194c82f3e7d4b32373e04edc79247557e"
+    },
+    {
+      "path": "selected-images/ktz-p190-rlnd.png",
+      "bytes": 431626,
+      "sha256": "2c3d8c208595a5956e4ebaea7fb4350674e16534c5568f95f9a7dd746164d197"
+    },
+    {
+      "path": "selected-images/ktz-p53-ktpb110.png",
+      "bytes": 516317,
+      "sha256": "cbc2316876179a18bdd34e11cfef08ccc4666c8a290365b723ab32ed130fc3a7"
+    },
+    {
+      "path": "selected-images/ktz-p53-ktpb35.png",
+      "bytes": 410974,
+      "sha256": "ec0eaa43af78d0de521b490c2f2c0c844b468b063becd873f4326e926ebf065d"
+    },
+    {
+      "path": "selected-images/ktz-p63-ktpn-view2.png",
+      "bytes": 150485,
+      "sha256": "17fea867a41b586c5ae6036a2e5f9338e2211f6dafc071db8ef2577fe7ec82d5"
+    },
+    {
+      "path": "selected-images/ktz-p74-pktp.png",
+      "bytes": 330735,
+      "sha256": "577ada6f267c53730651cb555533511b620f523fa75efc36f41e26cce335d212"
+    },
+    {
+      "path": "selected-images/ktz-p82-ktpg-hl1.png",
+      "bytes": 292949,
+      "sha256": "8f949a6d37aee737e30f541b8069e8fa692b4b148b0bf2f532e4d88ce66a3c6a"
+    },
+    {
+      "path": "selected-images/ktz-p91-bktp.png",
+      "bytes": 607546,
+      "sha256": "ea675bad980bf69a4828622f72d1b46353a0be41acadd612dd62e86aa8c8b63f"
+    },
+    {
+      "path": "selected-images/ktz-p95-ktpp-components.png",
+      "bytes": 400418,
+      "sha256": "89404ea8fae61d4ab8739aa8ebcab8190647b159c6538b57b7f6d089890519f5"
+    },
+    {
+      "path": "selected-images/trade-59128066-2.jpg",
+      "bytes": 172179,
+      "sha256": "2b4869b186bb8e41029e78b7fb86f5ed2fcfa65720b9ab3b8afafa7176ffa0dd"
+    },
+    {
+      "path": "selected-images/trade-59128066-3.jpg",
+      "bytes": 224751,
+      "sha256": "020cb086a9e86831036bb7fc3a7c199705dd2156f926b6c96655c6933cc54013"
+    },
+    {
+      "path": "selected-images/trade-61510634-2.jpg",
+      "bytes": 69736,
+      "sha256": "9ea8317434aeccc051b5f746503bb1204e00dea03f65b9f7d5dee21ab068a3e4"
+    },
+    {
+      "path": "selected-images/trade-61510634-5.jpg",
+      "bytes": 111001,
+      "sha256": "e50c75f76834e2f1aa96f4caf3ea734864df9697ff7b228b36826a38f9121387"
+    },
+    {
+      "path": "selected-images/trade-61510634-6.jpg",
+      "bytes": 85201,
+      "sha256": "e12a8e298917edb0a02a686e7322d825f9b40bd2915cc57b5463e50db62e328a"
+    },
+    {
+      "path": "selected-images/trade-82236307-2.jpg",
+      "bytes": 85052,
+      "sha256": "601432491bbe31218e9383d92403b5cfc236d0978a2c6d733649990be9c1fb7c"
+    },
+    {
+      "path": "selected-images/trade-82236308-2.jpg",
+      "bytes": 43880,
+      "sha256": "557de2e2e0e3a522f577ab1c2b830fc49d6fb9d084a4bd957e865645f469fb5a"
+    },
+    {
+      "path": "selected-images/trade-82236308-3.jpg",
+      "bytes": 32079,
+      "sha256": "63ef838a4e71d857971b7bc45531de49c2ee5c2806ebfc6e0af703dd70b6ac3e"
+    },
+    {
+      "path": "selected-images/trade-tmg-yard-group.jpg",
+      "bytes": 269266,
+      "sha256": "9a94defa30b51a7a5eef015827c18debf0bd64da8faec1f68232caa15c284349"
+    },
+    {
+      "path": "selected-images/vendor-retry-25.jpg",
+      "bytes": 477101,
+      "sha256": "73d24b2223928ebfbb45f57d81eecdc7006978332291467a086d004471ce68b9"
+    },
+    {
+      "path": "selected-images/vendor-retry-26.jpg",
+      "bytes": 31420,
+      "sha256": "d69f56d87b3aeef179f3cc754b446bfa908770d4faacc880d56e6af12f5ad097"
+    },
+    {
+      "path": "selected-images/vendor-retry-31.jpg",
+      "bytes": 102991,
+      "sha256": "98ab8b0024bc7bbcacfbaff8f04a7f3f99c40110537879090cf09b1e8ccc1e09"
+    },
+    {
+      "path": "selected-images/vendor-retry-32.jpg",
+      "bytes": 93974,
+      "sha256": "d0dacafba0995c7d4c0a4d974842fc67a4c2cbf76ac14020c38e3893bc9bb4dc"
+    },
+    {
+      "path": "source-audit.json",
+      "bytes": 450809,
+      "sha256": "9f015982f7eab7282b90a611231e52c5ca1b2cae2891dff4e5e5504d9e1aee7f"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 2355,
+      "sha256": "c3c9fea4e0380fbe6d57a3461c45855bcf474cbc31e489c877656b0f0cc83d1d"
+    }
+  ]
+}

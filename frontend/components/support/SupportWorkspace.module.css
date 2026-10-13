@@ -1,0 +1,12 @@
+.workspace{display:grid;gap:28px;min-width:0}
+.create,.list{min-width:0}
+.create{width:min(600px,100%)}
+.form{width:100%}
+.form label,.form input,.form textarea,.form select{min-width:0;max-width:100%;width:100%}
+.form textarea{resize:vertical}
+.form p{margin:0;overflow-wrap:anywhere}
+.actions{display:flex;flex-wrap:wrap;gap:10px}
+.actions button{max-width:100%;white-space:normal}
+.list>button{margin-top:16px;max-width:100%;white-space:normal}
+.list article{min-width:0;overflow-wrap:anywhere}
+@media(max-width:720px){.create{padding:16px}.actions button{flex:1 1 160px}}

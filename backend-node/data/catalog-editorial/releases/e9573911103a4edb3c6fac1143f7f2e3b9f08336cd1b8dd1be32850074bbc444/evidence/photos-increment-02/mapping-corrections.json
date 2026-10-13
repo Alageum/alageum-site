@@ -1,0 +1,27 @@
+[
+  {
+    "candidateId": "aemz-substations-0",
+    "removeMatchingProductIds": [
+      "cat-ktpp-2ktpp-250-6300"
+    ],
+    "removeTypeReferenceProductIds": [
+      "cat-ktpp-2ktpp-250-6300"
+    ],
+    "addMatchingProductIds": [],
+    "addTypeReferenceProductIds": [
+      "cat-ktpg-25-3150",
+      "cat-ktpg-25-3150-v004",
+      "cat-ktpg-25-3150-v005",
+      "cat-ktpg-25-3150-v006",
+      "cat-ktpg-25-3150-v007",
+      "cat-ktpg-25-3150-v008",
+      "cat-ktpg-25-3150-v009"
+    ],
+    "rationale": "AEMZ group-page copy did not identify an individual product. Manufacturer-authored PDFp77 identifies the underlying kiosk photograph as KTPG100–1000. Remove KTPP/2KTPP mapping. Treat PDF copy as same-shot identification upgrade, never additional view.",
+    "sourcePageUrl": "https://trans-em.ru/upload/iblock/855/%D0%9A%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3%20%D0%9A%D0%B5%D0%BD%D1%82%D0%B0%D1%83.pdf#page=77",
+    "supportingCandidateId": "ktz-p77-ktpg",
+    "sameShotAs": "ktz-p77-ktpg",
+    "updatedReviewStatus": "selected_after_source_identification_correction",
+    "mappingConfidence": "medium_high"
+  }
+]

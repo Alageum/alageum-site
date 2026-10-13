@@ -1,0 +1,224 @@
+{
+  "format": "alageum-backend-security-independent-review-v1",
+  "status": "approved-bounded-backend-security",
+  "reviewDate": "2026-10-08",
+  "baselineCommit": "9dc634a9cc8f1f3341baca3d553703a71cb33d6d",
+  "baselineTree": "2cd6d6ad48632334f3409a2bf43578111cc81164",
+  "approvedDependenciesSha256": "972b0e4c27a965d4656edf3ef090ebae1331eac216b5d3208ba3a321065b0a3b",
+  "packageSha256": "00c062b825c058fe9adf424e9c7ae814fa6ba9e33f3f21de8e48a22b8f2dd097",
+  "lockSha256": "720b62d6df31f9594667617758247d090ca6888241b871575dcb31746d421035",
+  "packageUpdates": {
+    "parent": "@strapi/upload",
+    "sharp": [
+      "0.35.4",
+      "0.35.5"
+    ],
+    "changedLockRecords": 27,
+    "strapi": "5.56.0"
+  },
+  "proofSupport": {
+    "modified": 6,
+    "added": 9,
+    "predecessorPaths": 9,
+    "inheritedPaths": 598
+  },
+  "sourceUiChanges": 0,
+  "recordChanges": 0,
+  "geometryMaterialChanges": 0,
+  "pageAdapterChanges": 0,
+  "workflowChanges": 0,
+  "priorApprovalChanges": 0,
+  "coordinatorChanges": 0,
+  "auditGateChanges": 0,
+  "frontendDependencyChanges": 0,
+  "candidateIdentity": "Separately rebuilt local PR44 successor, 2026-10-08; historical reviews and test counts are not approval of these bytes.",
+  "historicalApprovalTransferred": false,
+  "reviewScope": "Independent acceptance of the exact bounded runtime dependency pair, the fresh native regression review and the generated proof successor identified by this dependency-map digest. The full frontend aggregate, browser acceptance, audit gates and release qualification remain separate.",
+  "authorityDecision": {
+    "approveExactDependencyMap": true,
+    "allowOnlyReportHashAndApprovedStatusBinding": true,
+    "approvePublication": false,
+    "approveMerge": false,
+    "approveDeployment": false,
+    "approveRelease": false,
+    "waiveSecurityAudit": false
+  },
+  "nativeReview": {
+    "path": "backend-node/docs/native-upload-sharp-independent-review.json",
+    "sha256": "bdc4feea530e231b59b1810be73e6c3f6823e4aa2b141fd9db031efd4fa898c8",
+    "status": "approved-bounded-native-upload-regression-scope"
+  },
+  "proofImplementationSha256": "450cc13e228bbd99d458cb0464263ce38109fc48b162def884406a3f2964c2f3",
+  "proofSupportModified": [
+    "frontend/tests/catalog-proof-parity.test.mjs",
+    "frontend/tests/helpers/ktpb-source-context-historical-bytes.mjs",
+    "frontend/tests/ktpb-source-context-amendment.test.mjs",
+    "frontend/tests/transformer-asset-completion.test.mjs",
+    "scripts/catalog/frontend-security-reviewed-dependencies.mjs",
+    "scripts/catalog/ktpb-source-context-reviewed-dependencies.mjs"
+  ],
+  "proofSupportAdded": [
+    "docs/catalog-transformers-2026/review/backend-dependency-security/README.md",
+    "docs/catalog-transformers-2026/review/backend-dependency-security/baseline-dependencies.json",
+    "docs/catalog-transformers-2026/review/backend-dependency-security/clearance.json",
+    "docs/catalog-transformers-2026/review/backend-dependency-security/historical-test-bytes.json",
+    "docs/catalog-transformers-2026/review/backend-dependency-security/independent-review.json",
+    "docs/catalog-transformers-2026/review/backend-dependency-security/lock-package-diff.json",
+    "frontend/tests/backend-security-amendment.test.mjs",
+    "frontend/tests/helpers/backend-security-historical-bytes.mjs",
+    "scripts/catalog/backend-security-reviewed-dependencies.mjs"
+  ],
+  "reviewedSupportFilesSha256": {
+    "docs/catalog-transformers-2026/review/backend-dependency-security/README.md": "8e2b9205e1ff739d6f59b120a5fa0d9301fbcbf314e254d13cdb2dedbd0fa041",
+    "docs/catalog-transformers-2026/review/backend-dependency-security/baseline-dependencies.json": "267ae049632c1c49181c30ea4b31714378ba8c11a6a7c3555e5ca1d1a158fd2b",
+    "docs/catalog-transformers-2026/review/backend-dependency-security/historical-test-bytes.json": "afedbb8983fe8f9db4895450cee7d54bab01a303bb8cc1c0675090eea4c6ac54",
+    "docs/catalog-transformers-2026/review/backend-dependency-security/lock-package-diff.json": "72c1b6fc064fc80d417658a69b8bf3a166fd8473137e5c035cfe2eac9defcf3b",
+    "frontend/tests/backend-security-amendment.test.mjs": "5c32e6ac804bf68adc9f2ea10e827eeee1023e530cf50071f9a72b9cf697fac4",
+    "frontend/tests/catalog-proof-parity.test.mjs": "fe584717a051da4d9387c3be91a178ced8809e577fa39757df7c6caaf34172cd",
+    "frontend/tests/helpers/backend-security-historical-bytes.mjs": "9cb966a0bfd2b0e9170f17fb0c82c2e5c4ccb942bdb5cee4c07edd6973d4b3a0",
+    "frontend/tests/helpers/ktpb-source-context-historical-bytes.mjs": "b41f5dbb4bacf1e4f962f19f64327d6c21fed5c31fefaf4f8ff50a774c3d142b",
+    "frontend/tests/ktpb-source-context-amendment.test.mjs": "0b06dcb27ab07152009ddb370303afdf7f6588cbcdec42ae89e81254e517030d",
+    "frontend/tests/transformer-asset-completion.test.mjs": "48d3a24da9348267a0b709731667f400636f25471d2780fe1c8bf640456ad503",
+    "scripts/catalog/backend-security-reviewed-dependencies.mjs": "450cc13e228bbd99d458cb0464263ce38109fc48b162def884406a3f2964c2f3",
+    "scripts/catalog/frontend-security-reviewed-dependencies.mjs": "3f90bf3ecf3f6636037e3f4572853a460c03125e155d6a02e70d8db0f79b9448",
+    "scripts/catalog/ktpb-source-context-reviewed-dependencies.mjs": "f68102e8a355401394aeaef52ce432976dcef06935befb01282340d9124c2571"
+  },
+  "predecessorPairs": {
+    "backend-node/package.json": "a995e6d55d972ed6cc2ae1167c8a4a4a6556b8ad4e095d66eb2fec240bd85b7e",
+    "backend-node/package-lock.json": "eae762a9730dba640590de7b4fbeb2ec515e6c434f6ea0d0377a0204730c6159",
+    "backend-node/tests/cms-catalog.integration-support.js": "a1a54104d2e7abdbc154bc9bf24459edcafd157e60fdda2f775157a35a795ac9",
+    "scripts/catalog/frontend-security-reviewed-dependencies.mjs": "a4c8efd7f2a25235b1c16be466b7fedf2bc2e96f586cd8b8c32f3e4892e28676",
+    "scripts/catalog/ktpb-source-context-reviewed-dependencies.mjs": "f0b30d5b050f62f5022acc984d6e2d127f818a57552394494f39d8dc0b8fe06c",
+    "frontend/tests/helpers/ktpb-source-context-historical-bytes.mjs": "9fcdf3b59f98f248655509091c17a8c16b3c67837bc0a744a2939f07911cf875",
+    "frontend/tests/ktpb-source-context-amendment.test.mjs": "2a9f0bc1245158c61fc98e4757cf2dad2cd5c2935c596b1698cdc48f9f94dfc1",
+    "frontend/tests/transformer-asset-completion.test.mjs": "d774a768c59b928a0f74806a80a06fc953e92a9cab43f74c09ca5acf53452167",
+    "frontend/tests/catalog-proof-parity.test.mjs": "23801d58e967dcbd1371705231ed58248895fd2c874a7c1aa04265e1869578a7"
+  },
+  "scopeVerification": {
+    "reviewedPaths": 614,
+    "inheritedBaselinePaths": 598,
+    "exactNewClosurePaths": 16,
+    "fixedReplacementPaths": 15,
+    "predecessorPairs": 9,
+    "baselineHashesIndependentlyMatchedPr44GitObjects": true,
+    "all614CurrentFilesIndependentlyMatchedDeclaredHashes": true,
+    "allPredecessorsIndependentlyMatchedBaseline": true,
+    "original27PathScopePreserved": true,
+    "modeChanges": 0,
+    "reviewedPathsAreRegularFiles": true,
+    "noUnexpectedTrackedOrNonignoredUntrackedPaths": true,
+    "originalAmendmentTestSha256": "5c32e6ac804bf68adc9f2ea10e827eeee1023e530cf50071f9a72b9cf697fac4",
+    "amendmentTestIsExactRecoveredSource": true,
+    "leafEqualsRetainedGeneratorWithFreshNativePins": true,
+    "historicalArchiveEntries": 9,
+    "historicalArchiveEntriesMatchedPr44BytesAndHashes": true,
+    "historicalArchiveSha256": "afedbb8983fe8f9db4895450cee7d54bab01a303bb8cc1c0675090eea4c6ac54",
+    "lockDeltaEvidenceExactlyMatchesAll27ChangedRecords": true
+  },
+  "architectureReview": [
+    {
+      "subject": "Terminal leaf",
+      "finding": "The backend leaf imports only the unchanged proof-invocation owner and Node built-ins. It reads current file bytes and invokes no inherited verifier, historical archive or test reader."
+    },
+    {
+      "subject": "Bounded forwarding",
+      "finding": "The frontend-security and KTPB adapters forward only declared backend paths paired with their exact predecessor hashes. Other predecessor routes retain their prior logic; the leaf rejects undeclared paths, wrong predecessor hashes, incomplete/extra closure membership and mixed old/new successor bytes."
+    },
+    {
+      "subject": "Fixed inherited authority",
+      "finding": "Every inherited non-predecessor remains pinned to its PR44 hash. Existing approval documents, fixed maps, native Page/Slate sources, workflows, source/geometry/UI records and frontend dependencies are unchanged. The 15 fixed replacements additionally pin native code/evidence and the baseline/historical/lock-delta data."
+    },
+    {
+      "subject": "Report binding",
+      "finding": "The canonical leaf requires this exact report path/hash, matching approval status/baseline, exact JSON.stringify dependency digest, runtime package hashes, package update scope, support counts and zero unrelated-scope changes."
+    },
+    {
+      "subject": "Invocation ownership",
+      "finding": "Public wrappers create a fresh invocation; internal work shares its active owner. The unchanged coordinator remains responsible for bounded snapshots, failure poisoning, owner lifecycle, private proof identities and final rereads. No cross-invocation approval cache or caller-supplied owner is introduced."
+    },
+    {
+      "subject": "Test-only history",
+      "finding": "Historical PR44 byte substitution is confined to frontend test helpers/fixtures. The original eight-test backend amendment suite exercises the current combined stack separately. The prior parity allowlist adds only the new backend leaf consumer."
+    },
+    {
+      "subject": "Mutation/authority controls",
+      "finding": "Frozen-source probes verify pending approval fails closed. Fresh targeted tests cover pending/missing approval or report, exact predecessor scope, wrong baseline/report bindings, every reviewed path missing/changed, reattestation of protected bytes, warm persistent corruption and rejection of forged internal owners."
+    }
+  ],
+  "verifiedChecks": [
+    {
+      "name": "Fresh original eight-test backend amendment suite",
+      "command": "node --test frontend/tests/backend-security-amendment.test.mjs",
+      "executedBy": "parent qualification task; independently inspected by reviewer",
+      "status": "passed",
+      "tests": 8,
+      "pass": 8,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "durationMs": 250566.208172,
+      "evidenceFile": "proof-amendment.log",
+      "evidenceSha256": "4a86bf045a3608ec592d6a529069cbe03bcf83b4524cb22f7fabb7c3ea6bf4c8",
+      "coverage": [
+        "Ten current explicit-reader inherited gates",
+        "Exact nine predecessor pairs",
+        "Pending/missing authority/report rejection after success",
+        "Wrong baseline, scope and report binding rejection",
+        "Missing/changed bytes for each of 614 required paths",
+        "Protected-package/source/Page/workflow/coordinator/historical-approval reattestation rejection",
+        "No production historical-reader or inherited-verifier import",
+        "Isolated current default-reader stack, twice-read616 path observations, warm same-size timestamp-restored corruption, forged-owner rejection"
+      ]
+    },
+    {
+      "name": "Independent current-byte and original-scope probe",
+      "executedBy": "independent reviewer",
+      "status": "passed",
+      "evidenceFile": "reviewer-proof-scope.json",
+      "evidenceSha256": "c9755d572c0a9a0e23c003820f6bed0033b3258e58f1de92af184fea492f4313",
+      "coverage": [
+        "All598 PR44 git-object baseline hashes",
+        "All614 current dependency hashes",
+        "Nine predecessor hashes and16 closure additions",
+        "Fifteen fixed replacement pins",
+        "Exact recovered leaf generation and original amendment test bytes",
+        "Unchanged coordinator",
+        "Exact original path scope and no mode changes",
+        "Pending default-reader authority rejection"
+      ]
+    },
+    {
+      "name": "Independent reviewer amendment and proof-parity repeat",
+      "executedBy": "independent reviewer",
+      "command": "node --test frontend/tests/backend-security-amendment.test.mjs frontend/tests/catalog-proof-parity.test.mjs",
+      "status": "passed",
+      "tests": 18,
+      "pass": 18,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "durationMs": 253862.680683,
+      "evidenceFile": "reviewer-proof-tests.log",
+      "evidenceSha256": "77656c9bf7ddd9f884561eb6287e2fe54e68989779933dddcca7ce9a71528c61",
+      "note": "Eight exact recovered backend amendment tests plus ten proof-parity tests pass on the frozen sources. The duplicate amendment run had begun before coordination to avoid further repeated work."
+    },
+    {
+      "name": "Full frontend aggregate and build after binding",
+      "status": "pending-not-qualified",
+      "note": "This bounded review does not claim the full frontend aggregate or build is complete."
+    }
+  ],
+  "qualificationLimits": [
+    "Full backend npm audit remains exit 1 with 29 high and 3 moderate affected packages. No sharp finding is present; no audit waiver or production-only replacement is authorized.",
+    "The fresh native report distinguishes independently repeated15 focused/662 backend checks from reviewed110 native integration/12 Page tests and the admin build. Historical743/109/45 counts are not reused.",
+    "Local native qualification used PostgreSQL17.11, not PostgreSQL16 CI parity.",
+    "No browser acceptance or hosted exact-head CI has been established. No local browser attempt was made.",
+    "The unchanged sequential-observation owner is not an atomic filesystem snapshot: transient mutation restored between observations and changes after a final path read remain outside its guarantee.",
+    "Explicit custom-reader routes retain inherited semantics; synthetic approval exists only in test memory or disposable copied filesystems and is not release authority.",
+    "Native HTTP failure tests and synthetic admission/event controls remain separately labeled; no exploit reproducer, hard-crash recovery or general upload-security assessment is claimed.",
+    "Only the reviewed report hash and approval status may be bound into the pending clearance without re-review of the dependency map. Any implementation, dependency-map or reviewed-byte change invalidates this approval.",
+    "This report does not authorize publication, merge, deployment or release."
+  ]
+}

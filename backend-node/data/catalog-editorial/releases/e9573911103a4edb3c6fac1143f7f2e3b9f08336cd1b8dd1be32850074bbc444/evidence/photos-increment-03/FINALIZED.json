@@ -1,0 +1,244 @@
+{
+  "status": "frozen_data_only_increment",
+  "finalizedAt": "2026-10-12T19:03:08.360396+00:00",
+  "summary": {
+    "verifiedAt": "2026-10-12",
+    "researchPass": "increment-03-new-source-avenues",
+    "catalogRecords": 843,
+    "catalogFamilies": 175,
+    "baselineImageCandidates": 141,
+    "addedImageCandidates": 22,
+    "combinedImageCandidates": 163,
+    "mediaKinds": {
+      "photo": 162,
+      "photo_collage": 1
+    },
+    "catalogRecordsWithAtLeastOneVerifiedCandidate": 217,
+    "catalogRecordsWithAtLeastTwoVerifiedCandidates": 73,
+    "catalogRecordsWithAtLeastThreeVerifiedCandidates": 44,
+    "catalogRecordsTypeReferencesOnly": 227,
+    "catalogRecordsWithoutVerifiedOrTypeReference": 399,
+    "catalogRecordsWithExactModelPhoto": 3,
+    "newlyMatchingRecords": 4,
+    "recordsReachingMinimumTwoThisPass": 3,
+    "remainingRecordsNeedingTwoMatchingPhotos": 770,
+    "sourceGroupsAdded": {
+      "dry": 1,
+      "power": 7,
+      "switchgear": 13,
+      "yunimag": 1
+    },
+    "lowResolutionImages": 23,
+    "siteChanged": false,
+    "applicationTestsRun": false,
+    "rights": "Publication/reuse permissions remain unconfirmed.",
+    "countingPolicy": "Legacy mapped-candidate counts include a small number of explicitly type-level selections. Strict exact-or-series metrics are provided separately; type references are never promoted.",
+    "catalogRecordsWithExactOrSeriesPhoto": 213,
+    "catalogRecordsWithTwoExactOrSeriesPhotos": 72,
+    "catalogRecordsWithThreeExactOrSeriesPhotos": 41,
+    "catalogRecordsWithOnlyTypeLevelVisuals": 231,
+    "remainingRecordsNeedingTwoExactOrSeriesPhotos": 771,
+    "previousStrictCoverage": {
+      "atLeastOne": 209,
+      "atLeastTwo": 69,
+      "atLeastThree": 39
+    }
+  },
+  "files": [
+    {
+      "path": "README-RU.txt",
+      "sha256": "aef9f10d3eeeeeade2a8c7d481450beed87c3c07a56b5a850bc7ed1688c670a2",
+      "bytes": 5533
+    },
+    {
+      "path": "contact-sheets/new-photos-01.jpg",
+      "sha256": "6afa555788f4a571ebad33f0bd08ec99ff3d4afe21a24c9ed296df5b351b531c",
+      "bytes": 625813
+    },
+    {
+      "path": "contact-sheets/new-photos-02.jpg",
+      "sha256": "f7e59c85e9804072177e552df5f273dafabc2780482d1b7ff9c6e98f6e9984b4",
+      "bytes": 356894
+    },
+    {
+      "path": "data-sanity.json",
+      "sha256": "7c65b94d6842ca0f5621ba94d62b5e2bc83c6e29ed7137fa51173b43a09c83e9",
+      "bytes": 572
+    },
+    {
+      "path": "merge-audit.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2
+    },
+    {
+      "path": "photo-candidates-added.json",
+      "sha256": "87864e0f49868b6de059d7ae09526d07f3768449aa102ee63017b6eaf62ad228",
+      "bytes": 53754
+    },
+    {
+      "path": "photo-candidates-combined.json",
+      "sha256": "c445acc52a97b2b536e1879e1964335fae38aa653807e78d71c32f0919f6cfec",
+      "bytes": 425273
+    },
+    {
+      "path": "photo-family-coverage-updated.json",
+      "sha256": "560951900f3d29081f51631505d727ded07a44cf2339305208e03d708d138650",
+      "bytes": 91400
+    },
+    {
+      "path": "photo-record-coverage-updated.json",
+      "sha256": "f345cd14cff235d63dfc746228c8d434e02a16339f083b602dc5a77d1e9aa654",
+      "bytes": 1033106
+    },
+    {
+      "path": "photo-request-priority.json",
+      "sha256": "6c3a4fe19e0e29edba01529969230771f51399fd03172a77fc15a405767f35be",
+      "bytes": 171082
+    },
+    {
+      "path": "remaining-exact-or-series-photo-needs.json",
+      "sha256": "8c0f5b54f6fa329e5a42db11888842ce6f27d4bc4eff2b663354e3dad361f60d",
+      "bytes": 216542
+    },
+    {
+      "path": "remaining-photo-needs.json",
+      "sha256": "48355513b1ddedf54e3c31b4742d28c1e9a887e7bae8e4096f27659950a5401a",
+      "bytes": 255429
+    },
+    {
+      "path": "selected-images/dry3-tsl-transtek-factory.jpg",
+      "sha256": "3845f291bf113e9515028c3b37959711e904b54d77dfab982e86df7460503aeb",
+      "bytes": 1268729
+    },
+    {
+      "path": "selected-images/inc03-aesh-kso2-single-turquoise.png",
+      "sha256": "c8bd7796e16bd81b8525edeec1d7b84ac2870bf6661e96ab014370d411216076",
+      "bytes": 30978
+    },
+    {
+      "path": "selected-images/inc03-aesh-kso292-open-blue.jpg",
+      "sha256": "8211160715e352b7e202d30f32b4ec7437f75d1a36b0537471586036df293d91",
+      "bytes": 19539
+    },
+    {
+      "path": "selected-images/inc03-energyland-km7mk-exhibition.jpg",
+      "sha256": "5c8d065a553d5641db37e6d283021dbd1bc0a67d254539349f0ea831730981d8",
+      "bytes": 127372
+    },
+    {
+      "path": "selected-images/inc03-mtk-mtp-pole-installation.jpg",
+      "sha256": "5f451f6a5615421d1f69079597a746a0ab834ee2f239424e3a14c08d65aca6d5",
+      "bytes": 86863
+    },
+    {
+      "path": "selected-images/inc03-power-at250000-500-bushing-side.jpg",
+      "sha256": "7ac88c3f0e11d749bc381b23a316fc88e92e9ed397ddf234a04b411bb6da6807",
+      "bytes": 228897
+    },
+    {
+      "path": "selected-images/inc03-power-at250000-500-end.jpg",
+      "sha256": "c478aafdadb3946da6cef105f9b2f9efe8349128fc2d739b93c8bcb4173a5bc0",
+      "bytes": 237461
+    },
+    {
+      "path": "selected-images/inc03-power-at250000-500-radiator-side.jpg",
+      "sha256": "dab2a90f0b1f5cedb9b17e57d8e4a9f2a1d4446f8a7229eeecc4c7cfaa8e4b90",
+      "bytes": 227029
+    },
+    {
+      "path": "selected-images/inc03-power-ktz-trdn80000-expo.jpg",
+      "sha256": "e6c9cdccfbc4c3268e51c2c771ec9bdce5200023c737d1f00083115635970239",
+      "bytes": 86958
+    },
+    {
+      "path": "selected-images/inc03-power-tdn-trunovskaya-installed.jpg",
+      "sha256": "8c282e6459d25e7c1c02d904165ec84c71780d4542bcdbb4337af34b8aff0c9e",
+      "bytes": 4318396
+    },
+    {
+      "path": "selected-images/inc03-power-tdn62900-110-factory-end.jpg",
+      "sha256": "6a6d2b44d8b7fc423824d00b5124f16e4ea24a8d5f506ff25a3d1b1e8a3d1995",
+      "bytes": 229012
+    },
+    {
+      "path": "selected-images/inc03-power-tdn62900-110-factory-side.jpg",
+      "sha256": "41b90a0a1e7ad95feaa24dfe4db31f49298cb09e775f4ff2ce6ff973d2f52d6a",
+      "bytes": 186643
+    },
+    {
+      "path": "selected-images/inc03-sales-grsh-open.png",
+      "sha256": "93f6c5e4b9479b593cfacec5e233774e3fd7ac32becee6c899cbd1d72a995f0f",
+      "bytes": 106791
+    },
+    {
+      "path": "selected-images/inc03-sales-k07k10-closed.png",
+      "sha256": "5bdc76059e1e0031eec3716615b09da3fea81b51f294c2139bdc27167a4b764d",
+      "bytes": 273302
+    },
+    {
+      "path": "selected-images/inc03-sales-kru-rn-open.png",
+      "sha256": "07976250a73848ad691465effc713b01886a82598d00ff74c31dd04223d7e179",
+      "bytes": 812016
+    },
+    {
+      "path": "selected-images/inc03-sales-kso2-single-white.png",
+      "sha256": "3c14b70c6525e0f0f2c158b82c11c3cb027663426221fcfa146d3b7c373b301d",
+      "bytes": 272263
+    },
+    {
+      "path": "selected-images/inc03-sales-pr11-open.png",
+      "sha256": "b5be9c10daade41fad55bbbbd213ab50bef24f2164a5c6df4c769ba7cf4ab0c9",
+      "bytes": 331376
+    },
+    {
+      "path": "selected-images/inc03-sales-shcho70-three-panels.png",
+      "sha256": "ede4e25f74462efa976248c6e761ca06f53d6318c46cfdb841a45ce89254d2ca",
+      "bytes": 361315
+    },
+    {
+      "path": "selected-images/inc03-sales-shnn-front.png",
+      "sha256": "0bd0602ee08600b9d2d6f0f58f5b9398eb0079bab72461e42c60eb242ce1367b",
+      "bytes": 210324
+    },
+    {
+      "path": "selected-images/inc03-sales-spassk89-open.png",
+      "sha256": "b3bef91bd7a85b37a7b4b914149a5b08052022fb24c54f3bc7a7f8c67284c927",
+      "bytes": 320206
+    },
+    {
+      "path": "selected-images/inc03-sales-yatp-gray-socket.png",
+      "sha256": "35942a5ac2d481ec3b2fc7f94366551cbd325b54ed2ca3cbeac4be9277d073fa",
+      "bytes": 252470
+    },
+    {
+      "path": "selected-images/yunimag-tmgf-flanged-type.jpg",
+      "sha256": "c03716d67270a31e6476cd5518add55ad6166b3878a080d566b350e1b3c3cefb",
+      "bytes": 17990
+    },
+    {
+      "path": "source-audit.json",
+      "sha256": "aebda4f4f19006119b2ec6fe1f432d9dc39a6f648e905783d7dfdb72d886dd35",
+      "bytes": 255117
+    },
+    {
+      "path": "source-frontier.json",
+      "sha256": "565dea10165e380e1bd1bf7824f3fe3bb13f5cd45877d29846ec90e9b9b2d216",
+      "bytes": 1353
+    },
+    {
+      "path": "summary.json",
+      "sha256": "b7b6864d2995ed9b357af76e0af94700d394e72a425e5ae6c5b62e77b45a6227",
+      "bytes": 1542
+    },
+    {
+      "path": "visual-review.json",
+      "sha256": "3679ea00b8df7503481b0f068519b60b0ea4f2855115ecb7ed2ce18faea8eb38",
+      "bytes": 1983
+    }
+  ],
+  "constraints": [
+    "Do not edit frozen photos/ or photos-increment-02/.",
+    "Keep all three photo directories together for relative asset references.",
+    "No rights clearance or full843-photo-set claim."
+  ]
+}

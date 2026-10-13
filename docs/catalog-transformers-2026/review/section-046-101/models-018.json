@@ -1,0 +1,2025 @@
+[
+  {
+    "id": "alageum-2026-tsi-1p6-open",
+    "familyId": "tsi-tools",
+    "name": "ТСИ-1,6",
+    "sourceDesignation": "ТСИ-1,6",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      89
+    ],
+    "rawSpecs": [
+      {
+        "label": "Первичные напряжения",
+        "raw": "380/220",
+        "unitAsPrinted": "В",
+        "sourcePage": 89
+      },
+      {
+        "label": "Вторичные напряжения",
+        "raw": "220/127;42;36;12",
+        "unitAsPrinted": "В",
+        "sourcePage": 89
+      },
+      {
+        "label": "Ток холостого хода",
+        "raw": "20",
+        "unitAsPrinted": "%",
+        "sourcePage": 89
+      },
+      {
+        "label": "L",
+        "raw": "324",
+        "unitAsPrinted": "мм",
+        "sourcePage": 89
+      },
+      {
+        "label": "H",
+        "raw": "278",
+        "unitAsPrinted": "мм",
+        "sourcePage": 89
+      },
+      {
+        "label": "Масса",
+        "raw": "34",
+        "unitAsPrinted": "кг",
+        "sourcePage": 89
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 89
+      }
+    ],
+    "assetFamilyIds": [
+      "dry-tsi-unproven"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Page89 enclosure drawing and terminal details are labeled ТСНЗ-400,630, inconsistent with nearby ТСИ1,6–4,0 table; not assigned as exact TSI geometry. Power inferred from name is not normalized absent explicit power column."
+    ],
+    "series": "ТСИ",
+    "context": "для питания электроинструмента",
+    "powerKva": null,
+    "voltageRaw": "380/220 → 220/127;42;36;12 В",
+    "designation": "ТСИ-1,6",
+    "execution": "для питания электроинструмента",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 89,
+      "designation": "ТСИ-1,6",
+      "execution": "для питания электроинструмента",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Первичные напряжения",
+        "value": "380/220",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Вторичные напряжения",
+        "value": "220/127;42;36;12",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "20",
+        "unit": "%",
+        "page": 89
+      },
+      {
+        "label": "L",
+        "value": "324",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "H",
+        "value": "278",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "Масса",
+        "value": "34",
+        "unit": "кг",
+        "page": 89
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 89
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-tsi-2p5-open",
+    "familyId": "tsi-tools",
+    "name": "ТСИ-2,5",
+    "sourceDesignation": "ТСИ-2,5",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      89
+    ],
+    "rawSpecs": [
+      {
+        "label": "Первичные напряжения",
+        "raw": "380/220",
+        "unitAsPrinted": "В",
+        "sourcePage": 89
+      },
+      {
+        "label": "Вторичные напряжения",
+        "raw": "220/127;42;36;12",
+        "unitAsPrinted": "В",
+        "sourcePage": 89
+      },
+      {
+        "label": "Ток холостого хода",
+        "raw": "15",
+        "unitAsPrinted": "%",
+        "sourcePage": 89
+      },
+      {
+        "label": "L",
+        "raw": "324",
+        "unitAsPrinted": "мм",
+        "sourcePage": 89
+      },
+      {
+        "label": "H",
+        "raw": "306",
+        "unitAsPrinted": "мм",
+        "sourcePage": 89
+      },
+      {
+        "label": "Масса",
+        "raw": "37",
+        "unitAsPrinted": "кг",
+        "sourcePage": 89
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 89
+      }
+    ],
+    "assetFamilyIds": [
+      "dry-tsi-unproven"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Page89 enclosure drawing and terminal details are labeled ТСНЗ-400,630, inconsistent with nearby ТСИ1,6–4,0 table; not assigned as exact TSI geometry. Power inferred from name is not normalized absent explicit power column."
+    ],
+    "series": "ТСИ",
+    "context": "для питания электроинструмента",
+    "powerKva": null,
+    "voltageRaw": "380/220 → 220/127;42;36;12 В",
+    "designation": "ТСИ-2,5",
+    "execution": "для питания электроинструмента",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 89,
+      "designation": "ТСИ-2,5",
+      "execution": "для питания электроинструмента",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Первичные напряжения",
+        "value": "380/220",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Вторичные напряжения",
+        "value": "220/127;42;36;12",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "15",
+        "unit": "%",
+        "page": 89
+      },
+      {
+        "label": "L",
+        "value": "324",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "H",
+        "value": "306",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "Масса",
+        "value": "37",
+        "unit": "кг",
+        "page": 89
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 89
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-tsi-4p0-open",
+    "familyId": "tsi-tools",
+    "name": "ТСИ-4,0",
+    "sourceDesignation": "ТСИ-4,0",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      89
+    ],
+    "rawSpecs": [
+      {
+        "label": "Первичные напряжения",
+        "raw": "380/220",
+        "unitAsPrinted": "В",
+        "sourcePage": 89
+      },
+      {
+        "label": "Вторичные напряжения",
+        "raw": "220/127;42;36;12",
+        "unitAsPrinted": "В",
+        "sourcePage": 89
+      },
+      {
+        "label": "Ток холостого хода",
+        "raw": "10",
+        "unitAsPrinted": "%",
+        "sourcePage": 89
+      },
+      {
+        "label": "L",
+        "raw": "324",
+        "unitAsPrinted": "мм",
+        "sourcePage": 89
+      },
+      {
+        "label": "H",
+        "raw": "387",
+        "unitAsPrinted": "мм",
+        "sourcePage": 89
+      },
+      {
+        "label": "Масса",
+        "raw": "48",
+        "unitAsPrinted": "кг",
+        "sourcePage": 89
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 89
+      }
+    ],
+    "assetFamilyIds": [
+      "dry-tsi-unproven"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Page89 enclosure drawing and terminal details are labeled ТСНЗ-400,630, inconsistent with nearby ТСИ1,6–4,0 table; not assigned as exact TSI geometry. Power inferred from name is not normalized absent explicit power column."
+    ],
+    "series": "ТСИ",
+    "context": "для питания электроинструмента",
+    "powerKva": null,
+    "voltageRaw": "380/220 → 220/127;42;36;12 В",
+    "designation": "ТСИ-4,0",
+    "execution": "для питания электроинструмента",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 89,
+      "designation": "ТСИ-4,0",
+      "execution": "для питания электроинструмента",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Первичные напряжения",
+        "value": "380/220",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Вторичные напряжения",
+        "value": "220/127;42;36;12",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "10",
+        "unit": "%",
+        "page": 89
+      },
+      {
+        "label": "L",
+        "value": "324",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "H",
+        "value": "387",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "Масса",
+        "value": "48",
+        "unit": "кг",
+        "page": 89
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 89
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-tsi-1p6-enclosed",
+    "familyId": "tsi-tools",
+    "name": "ТСЗИ-1,6",
+    "sourceDesignation": "ТСЗИ-1,6",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      89,
+      90
+    ],
+    "rawSpecs": [
+      {
+        "label": "Первичные напряжения",
+        "raw": "380/220",
+        "unitAsPrinted": "В",
+        "sourcePage": 89
+      },
+      {
+        "label": "Вторичные напряжения",
+        "raw": "220/127;42;36;12",
+        "unitAsPrinted": "В",
+        "sourcePage": 89
+      },
+      {
+        "label": "Ток холостого хода",
+        "raw": "20",
+        "unitAsPrinted": "%",
+        "sourcePage": 89
+      },
+      {
+        "label": "L",
+        "raw": "398",
+        "unitAsPrinted": "мм",
+        "sourcePage": 89
+      },
+      {
+        "label": "H",
+        "raw": "407",
+        "unitAsPrinted": "мм",
+        "sourcePage": 89
+      },
+      {
+        "label": "Масса",
+        "raw": "40",
+        "unitAsPrinted": "кг",
+        "sourcePage": 89
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 89
+      }
+    ],
+    "assetFamilyIds": [
+      "dry-tszi-top-bushing"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Page89 enclosure drawing and terminal details are labeled ТСНЗ-400,630, inconsistent with nearby ТСИ1,6–4,0 table; not assigned as exact TSI geometry. Power inferred from name is not normalized absent explicit power column."
+    ],
+    "series": "ТСЗИ",
+    "context": "для питания электроинструмента",
+    "powerKva": null,
+    "voltageRaw": "380/220 → 220/127;42;36;12 В",
+    "designation": "ТСЗИ-1,6",
+    "execution": "для питания электроинструмента",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 89,
+      "designation": "ТСЗИ-1,6",
+      "execution": "для питания электроинструмента",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Первичные напряжения",
+        "value": "380/220",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Вторичные напряжения",
+        "value": "220/127;42;36;12",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "20",
+        "unit": "%",
+        "page": 89
+      },
+      {
+        "label": "L",
+        "value": "398",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "H",
+        "value": "407",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "Масса",
+        "value": "40",
+        "unit": "кг",
+        "page": 89
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 89
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-tsi-2p5-enclosed",
+    "familyId": "tsi-tools",
+    "name": "ТСЗИ-2,5",
+    "sourceDesignation": "ТСЗИ-2,5",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      89,
+      90
+    ],
+    "rawSpecs": [
+      {
+        "label": "Первичные напряжения",
+        "raw": "380/220",
+        "unitAsPrinted": "В",
+        "sourcePage": 89
+      },
+      {
+        "label": "Вторичные напряжения",
+        "raw": "220/127;42;36;12",
+        "unitAsPrinted": "В",
+        "sourcePage": 89
+      },
+      {
+        "label": "Ток холостого хода",
+        "raw": "15",
+        "unitAsPrinted": "%",
+        "sourcePage": 89
+      },
+      {
+        "label": "L",
+        "raw": "398",
+        "unitAsPrinted": "мм",
+        "sourcePage": 89
+      },
+      {
+        "label": "H",
+        "raw": "407",
+        "unitAsPrinted": "мм",
+        "sourcePage": 89
+      },
+      {
+        "label": "Масса",
+        "raw": "43",
+        "unitAsPrinted": "кг",
+        "sourcePage": 89
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 89
+      }
+    ],
+    "assetFamilyIds": [
+      "dry-tszi-top-bushing"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Page89 enclosure drawing and terminal details are labeled ТСНЗ-400,630, inconsistent with nearby ТСИ1,6–4,0 table; not assigned as exact TSI geometry. Power inferred from name is not normalized absent explicit power column."
+    ],
+    "series": "ТСЗИ",
+    "context": "для питания электроинструмента",
+    "powerKva": null,
+    "voltageRaw": "380/220 → 220/127;42;36;12 В",
+    "designation": "ТСЗИ-2,5",
+    "execution": "для питания электроинструмента",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 89,
+      "designation": "ТСЗИ-2,5",
+      "execution": "для питания электроинструмента",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Первичные напряжения",
+        "value": "380/220",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Вторичные напряжения",
+        "value": "220/127;42;36;12",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "15",
+        "unit": "%",
+        "page": 89
+      },
+      {
+        "label": "L",
+        "value": "398",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "H",
+        "value": "407",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "Масса",
+        "value": "43",
+        "unit": "кг",
+        "page": 89
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 89
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-tsi-4p0-enclosed",
+    "familyId": "tsi-tools",
+    "name": "ТСЗИ-4,0",
+    "sourceDesignation": "ТСЗИ-4,0",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      89,
+      90
+    ],
+    "rawSpecs": [
+      {
+        "label": "Первичные напряжения",
+        "raw": "380/220",
+        "unitAsPrinted": "В",
+        "sourcePage": 89
+      },
+      {
+        "label": "Вторичные напряжения",
+        "raw": "220/127;42;36;12",
+        "unitAsPrinted": "В",
+        "sourcePage": 89
+      },
+      {
+        "label": "Ток холостого хода",
+        "raw": "10",
+        "unitAsPrinted": "%",
+        "sourcePage": 89
+      },
+      {
+        "label": "L",
+        "raw": "398",
+        "unitAsPrinted": "мм",
+        "sourcePage": 89
+      },
+      {
+        "label": "H",
+        "raw": "407",
+        "unitAsPrinted": "мм",
+        "sourcePage": 89
+      },
+      {
+        "label": "Масса",
+        "raw": "55",
+        "unitAsPrinted": "кг",
+        "sourcePage": 89
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 89
+      }
+    ],
+    "assetFamilyIds": [
+      "dry-tszi-top-bushing"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Page89 enclosure drawing and terminal details are labeled ТСНЗ-400,630, inconsistent with nearby ТСИ1,6–4,0 table; not assigned as exact TSI geometry. Power inferred from name is not normalized absent explicit power column."
+    ],
+    "series": "ТСЗИ",
+    "context": "для питания электроинструмента",
+    "powerKva": null,
+    "voltageRaw": "380/220 → 220/127;42;36;12 В",
+    "designation": "ТСЗИ-4,0",
+    "execution": "для питания электроинструмента",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 89,
+      "designation": "ТСЗИ-4,0",
+      "execution": "для питания электроинструмента",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Первичные напряжения",
+        "value": "380/220",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Вторичные напряжения",
+        "value": "220/127;42;36;12",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "10",
+        "unit": "%",
+        "page": 89
+      },
+      {
+        "label": "L",
+        "value": "398",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "H",
+        "value": "407",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "Масса",
+        "value": "55",
+        "unit": "кг",
+        "page": 89
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 89
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-tsn-160",
+    "familyId": "tsn-nomex",
+    "name": "ТСН(З)-160",
+    "sourceDesignation": "ТСН(З)-160",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      91,
+      92,
+      94
+    ],
+    "rawSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "raw": "160",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 91
+      },
+      {
+        "label": "ВН",
+        "raw": "6,10",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 91
+      },
+      {
+        "label": "НН",
+        "raw": "0,4",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 91
+      },
+      {
+        "label": "Потери холостого хода",
+        "raw": "670",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 91
+      },
+      {
+        "label": "Потери короткого замыкания",
+        "raw": "1715",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 91
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "raw": "4,0",
+        "unitAsPrinted": "%",
+        "sourcePage": 91
+      },
+      {
+        "label": "L",
+        "raw": "1270/1475",
+        "unitAsPrinted": "мм",
+        "sourcePage": 91
+      },
+      {
+        "label": "B",
+        "raw": "600/880",
+        "unitAsPrinted": "мм",
+        "sourcePage": 91
+      },
+      {
+        "label": "H",
+        "raw": "1250/1450",
+        "unitAsPrinted": "мм",
+        "sourcePage": 91
+      },
+      {
+        "label": "Масса",
+        "raw": "940",
+        "unitAsPrinted": "кг",
+        "sourcePage": 91
+      },
+      {
+        "label": "Изоляция",
+        "raw": "Номекс",
+        "unitAsPrinted": null,
+        "sourcePage": 91
+      },
+      {
+        "label": "Превышение температуры",
+        "raw": "180",
+        "unitAsPrinted": "°C",
+        "sourcePage": 91
+      },
+      {
+        "label": "Нагрузка",
+        "raw": "133 от номинальной",
+        "unitAsPrinted": "%",
+        "sourcePage": 91
+      },
+      {
+        "label": "Свойства изоляции (заявление каталога)",
+        "raw": "не поддерживает горения и не выделяет токсичного дыма или опасных частиц",
+        "unitAsPrinted": null,
+        "sourcePage": 91,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-14-p91"
+      }
+    ],
+    "assetFamilyIds": [
+      "dry-tsn-open",
+      "dry-tsnz-top-bushing"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Dimensions have slash-pairs but mass is single value; mass split across executions not supplied.",
+      "For400/630 two enclosure drawings93/94 exist; retain alternative construction choices, not one universal geometry.",
+      "The non-burning/no-toxic-smoke statement is a catalog claim, not an independently verified safety certification."
+    ],
+    "series": "ТСН(З)",
+    "context": "с изоляцией Номекс",
+    "powerKva": 160,
+    "voltageRaw": "6,10/0,4 кВ",
+    "explicitExecutions": [
+      "ТСН без кожуха",
+      "ТСНЗ с кожухом"
+    ],
+    "commonProseGroupIds": [
+      "common-prose-14-p91"
+    ],
+    "designation": "ТСН(З)-160",
+    "execution": "с изоляцией Номекс",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 91,
+      "designation": "ТСН(З)-160",
+      "execution": "с изоляцией Номекс",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "160",
+        "unit": "кВА",
+        "page": 91
+      },
+      {
+        "label": "ВН",
+        "value": "6,10",
+        "unit": "кВ",
+        "page": 91
+      },
+      {
+        "label": "НН",
+        "value": "0,4",
+        "unit": "кВ",
+        "page": 91
+      },
+      {
+        "label": "Потери холостого хода",
+        "value": "670",
+        "unit": "Вт",
+        "page": 91
+      },
+      {
+        "label": "Потери короткого замыкания",
+        "value": "1715",
+        "unit": "Вт",
+        "page": 91
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "4,0",
+        "unit": "%",
+        "page": 91
+      },
+      {
+        "label": "L",
+        "value": "1270/1475",
+        "unit": "мм",
+        "page": 91
+      },
+      {
+        "label": "B",
+        "value": "600/880",
+        "unit": "мм",
+        "page": 91
+      },
+      {
+        "label": "H",
+        "value": "1250/1450",
+        "unit": "мм",
+        "page": 91
+      },
+      {
+        "label": "Масса",
+        "value": "940",
+        "unit": "кг",
+        "page": 91
+      },
+      {
+        "label": "Изоляция",
+        "value": "Номекс",
+        "unit": null,
+        "page": 91
+      },
+      {
+        "label": "Превышение температуры",
+        "value": "180",
+        "unit": "°C",
+        "page": 91
+      },
+      {
+        "label": "Нагрузка",
+        "value": "133 от номинальной",
+        "unit": "%",
+        "page": 91
+      },
+      {
+        "label": "Свойства изоляции (заявление каталога)",
+        "value": "не поддерживает горения и не выделяет токсичного дыма или опасных частиц",
+        "unit": null,
+        "page": 91,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-14-p91"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-tsn-250",
+    "familyId": "tsn-nomex",
+    "name": "ТСН(З)-250",
+    "sourceDesignation": "ТСН(З)-250",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      91,
+      92,
+      94
+    ],
+    "rawSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "raw": "250",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 91
+      },
+      {
+        "label": "ВН",
+        "raw": "6,10",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 91
+      },
+      {
+        "label": "НН",
+        "raw": "0,4",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 91
+      },
+      {
+        "label": "Потери холостого хода",
+        "raw": "680",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 91
+      },
+      {
+        "label": "Потери короткого замыкания",
+        "raw": "1985",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 91
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "raw": "4,0",
+        "unitAsPrinted": "%",
+        "sourcePage": 91
+      },
+      {
+        "label": "L",
+        "raw": "1430/1720",
+        "unitAsPrinted": "мм",
+        "sourcePage": 91
+      },
+      {
+        "label": "B",
+        "raw": "730/890",
+        "unitAsPrinted": "мм",
+        "sourcePage": 91
+      },
+      {
+        "label": "H",
+        "raw": "1260/1520",
+        "unitAsPrinted": "мм",
+        "sourcePage": 91
+      },
+      {
+        "label": "Масса",
+        "raw": "1185",
+        "unitAsPrinted": "кг",
+        "sourcePage": 91
+      },
+      {
+        "label": "Изоляция",
+        "raw": "Номекс",
+        "unitAsPrinted": null,
+        "sourcePage": 91
+      },
+      {
+        "label": "Превышение температуры",
+        "raw": "180",
+        "unitAsPrinted": "°C",
+        "sourcePage": 91
+      },
+      {
+        "label": "Нагрузка",
+        "raw": "133 от номинальной",
+        "unitAsPrinted": "%",
+        "sourcePage": 91
+      },
+      {
+        "label": "Свойства изоляции (заявление каталога)",
+        "raw": "не поддерживает горения и не выделяет токсичного дыма или опасных частиц",
+        "unitAsPrinted": null,
+        "sourcePage": 91,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-14-p91"
+      }
+    ],
+    "assetFamilyIds": [
+      "dry-tsn-open",
+      "dry-tsnz-top-bushing"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Dimensions have slash-pairs but mass is single value; mass split across executions not supplied.",
+      "For400/630 two enclosure drawings93/94 exist; retain alternative construction choices, not one universal geometry.",
+      "The non-burning/no-toxic-smoke statement is a catalog claim, not an independently verified safety certification."
+    ],
+    "series": "ТСН(З)",
+    "context": "с изоляцией Номекс",
+    "powerKva": 250,
+    "voltageRaw": "6,10/0,4 кВ",
+    "explicitExecutions": [
+      "ТСН без кожуха",
+      "ТСНЗ с кожухом"
+    ],
+    "commonProseGroupIds": [
+      "common-prose-14-p91"
+    ],
+    "designation": "ТСН(З)-250",
+    "execution": "с изоляцией Номекс",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 91,
+      "designation": "ТСН(З)-250",
+      "execution": "с изоляцией Номекс",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "250",
+        "unit": "кВА",
+        "page": 91
+      },
+      {
+        "label": "ВН",
+        "value": "6,10",
+        "unit": "кВ",
+        "page": 91
+      },
+      {
+        "label": "НН",
+        "value": "0,4",
+        "unit": "кВ",
+        "page": 91
+      },
+      {
+        "label": "Потери холостого хода",
+        "value": "680",
+        "unit": "Вт",
+        "page": 91
+      },
+      {
+        "label": "Потери короткого замыкания",
+        "value": "1985",
+        "unit": "Вт",
+        "page": 91
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "4,0",
+        "unit": "%",
+        "page": 91
+      },
+      {
+        "label": "L",
+        "value": "1430/1720",
+        "unit": "мм",
+        "page": 91
+      },
+      {
+        "label": "B",
+        "value": "730/890",
+        "unit": "мм",
+        "page": 91
+      },
+      {
+        "label": "H",
+        "value": "1260/1520",
+        "unit": "мм",
+        "page": 91
+      },
+      {
+        "label": "Масса",
+        "value": "1185",
+        "unit": "кг",
+        "page": 91
+      },
+      {
+        "label": "Изоляция",
+        "value": "Номекс",
+        "unit": null,
+        "page": 91
+      },
+      {
+        "label": "Превышение температуры",
+        "value": "180",
+        "unit": "°C",
+        "page": 91
+      },
+      {
+        "label": "Нагрузка",
+        "value": "133 от номинальной",
+        "unit": "%",
+        "page": 91
+      },
+      {
+        "label": "Свойства изоляции (заявление каталога)",
+        "value": "не поддерживает горения и не выделяет токсичного дыма или опасных частиц",
+        "unit": null,
+        "page": 91,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-14-p91"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-tsn-400",
+    "familyId": "tsn-nomex",
+    "name": "ТСН(З)-400",
+    "sourceDesignation": "ТСН(З)-400",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      91,
+      92,
+      93,
+      94
+    ],
+    "rawSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "raw": "400",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 91
+      },
+      {
+        "label": "ВН",
+        "raw": "6,10",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 91
+      },
+      {
+        "label": "НН",
+        "raw": "0,4",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 91
+      },
+      {
+        "label": "Потери холостого хода",
+        "raw": "1150",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 91
+      },
+      {
+        "label": "Потери короткого замыкания",
+        "raw": "3890",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 91
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "raw": "4,0",
+        "unitAsPrinted": "%",
+        "sourcePage": 91
+      },
+      {
+        "label": "L",
+        "raw": "1560/1730",
+        "unitAsPrinted": "мм",
+        "sourcePage": 91
+      },
+      {
+        "label": "B",
+        "raw": "850/980",
+        "unitAsPrinted": "мм",
+        "sourcePage": 91
+      },
+      {
+        "label": "H",
+        "raw": "1440/1670",
+        "unitAsPrinted": "мм",
+        "sourcePage": 91
+      },
+      {
+        "label": "Масса",
+        "raw": "1820",
+        "unitAsPrinted": "кг",
+        "sourcePage": 91
+      },
+      {
+        "label": "Изоляция",
+        "raw": "Номекс",
+        "unitAsPrinted": null,
+        "sourcePage": 91
+      },
+      {
+        "label": "Превышение температуры",
+        "raw": "180",
+        "unitAsPrinted": "°C",
+        "sourcePage": 91
+      },
+      {
+        "label": "Нагрузка",
+        "raw": "133 от номинальной",
+        "unitAsPrinted": "%",
+        "sourcePage": 91
+      },
+      {
+        "label": "Свойства изоляции (заявление каталога)",
+        "raw": "не поддерживает горения и не выделяет токсичного дыма или опасных частиц",
+        "unitAsPrinted": null,
+        "sourcePage": 91,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-14-p91"
+      }
+    ],
+    "assetFamilyIds": [
+      "dry-tsn-open",
+      "dry-tsnz-top-bushing",
+      "dry-tsnz-mesh"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Dimensions have slash-pairs but mass is single value; mass split across executions not supplied.",
+      "For400/630 two enclosure drawings93/94 exist; retain alternative construction choices, not one universal geometry.",
+      "The non-burning/no-toxic-smoke statement is a catalog claim, not an independently verified safety certification."
+    ],
+    "series": "ТСН(З)",
+    "context": "с изоляцией Номекс",
+    "powerKva": 400,
+    "voltageRaw": "6,10/0,4 кВ",
+    "explicitExecutions": [
+      "ТСН без кожуха",
+      "ТСНЗ с кожухом"
+    ],
+    "commonProseGroupIds": [
+      "common-prose-14-p91"
+    ],
+    "designation": "ТСН(З)-400",
+    "execution": "с изоляцией Номекс",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 91,
+      "designation": "ТСН(З)-400",
+      "execution": "с изоляцией Номекс",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "400",
+        "unit": "кВА",
+        "page": 91
+      },
+      {
+        "label": "ВН",
+        "value": "6,10",
+        "unit": "кВ",
+        "page": 91
+      },
+      {
+        "label": "НН",
+        "value": "0,4",
+        "unit": "кВ",
+        "page": 91
+      },
+      {
+        "label": "Потери холостого хода",
+        "value": "1150",
+        "unit": "Вт",
+        "page": 91
+      },
+      {
+        "label": "Потери короткого замыкания",
+        "value": "3890",
+        "unit": "Вт",
+        "page": 91
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "4,0",
+        "unit": "%",
+        "page": 91
+      },
+      {
+        "label": "L",
+        "value": "1560/1730",
+        "unit": "мм",
+        "page": 91
+      },
+      {
+        "label": "B",
+        "value": "850/980",
+        "unit": "мм",
+        "page": 91
+      },
+      {
+        "label": "H",
+        "value": "1440/1670",
+        "unit": "мм",
+        "page": 91
+      },
+      {
+        "label": "Масса",
+        "value": "1820",
+        "unit": "кг",
+        "page": 91
+      },
+      {
+        "label": "Изоляция",
+        "value": "Номекс",
+        "unit": null,
+        "page": 91
+      },
+      {
+        "label": "Превышение температуры",
+        "value": "180",
+        "unit": "°C",
+        "page": 91
+      },
+      {
+        "label": "Нагрузка",
+        "value": "133 от номинальной",
+        "unit": "%",
+        "page": 91
+      },
+      {
+        "label": "Свойства изоляции (заявление каталога)",
+        "value": "не поддерживает горения и не выделяет токсичного дыма или опасных частиц",
+        "unit": null,
+        "page": 91,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-14-p91"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-tsn-630",
+    "familyId": "tsn-nomex",
+    "name": "ТСН(З)-630",
+    "sourceDesignation": "ТСН(З)-630",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      91,
+      92,
+      93,
+      94
+    ],
+    "rawSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "raw": "630",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 91
+      },
+      {
+        "label": "ВН",
+        "raw": "6,10",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 91
+      },
+      {
+        "label": "НН",
+        "raw": "0,4",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 91
+      },
+      {
+        "label": "Потери холостого хода",
+        "raw": "1500",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 91
+      },
+      {
+        "label": "Потери короткого замыкания",
+        "raw": "6400",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 91
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "raw": "6,0",
+        "unitAsPrinted": "%",
+        "sourcePage": 91
+      },
+      {
+        "label": "L",
+        "raw": "1820/1990",
+        "unitAsPrinted": "мм",
+        "sourcePage": 91
+      },
+      {
+        "label": "B",
+        "raw": "850/980",
+        "unitAsPrinted": "мм",
+        "sourcePage": 91
+      },
+      {
+        "label": "H",
+        "raw": "1460/1725",
+        "unitAsPrinted": "мм",
+        "sourcePage": 91
+      },
+      {
+        "label": "Масса",
+        "raw": "2230",
+        "unitAsPrinted": "кг",
+        "sourcePage": 91
+      },
+      {
+        "label": "Изоляция",
+        "raw": "Номекс",
+        "unitAsPrinted": null,
+        "sourcePage": 91
+      },
+      {
+        "label": "Превышение температуры",
+        "raw": "180",
+        "unitAsPrinted": "°C",
+        "sourcePage": 91
+      },
+      {
+        "label": "Нагрузка",
+        "raw": "133 от номинальной",
+        "unitAsPrinted": "%",
+        "sourcePage": 91
+      },
+      {
+        "label": "Свойства изоляции (заявление каталога)",
+        "raw": "не поддерживает горения и не выделяет токсичного дыма или опасных частиц",
+        "unitAsPrinted": null,
+        "sourcePage": 91,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-14-p91"
+      }
+    ],
+    "assetFamilyIds": [
+      "dry-tsn-open",
+      "dry-tsnz-top-bushing",
+      "dry-tsnz-mesh"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Dimensions have slash-pairs but mass is single value; mass split across executions not supplied.",
+      "For400/630 two enclosure drawings93/94 exist; retain alternative construction choices, not one universal geometry.",
+      "The non-burning/no-toxic-smoke statement is a catalog claim, not an independently verified safety certification."
+    ],
+    "series": "ТСН(З)",
+    "context": "с изоляцией Номекс",
+    "powerKva": 630,
+    "voltageRaw": "6,10/0,4 кВ",
+    "explicitExecutions": [
+      "ТСН без кожуха",
+      "ТСНЗ с кожухом"
+    ],
+    "commonProseGroupIds": [
+      "common-prose-14-p91"
+    ],
+    "designation": "ТСН(З)-630",
+    "execution": "с изоляцией Номекс",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 91,
+      "designation": "ТСН(З)-630",
+      "execution": "с изоляцией Номекс",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "630",
+        "unit": "кВА",
+        "page": 91
+      },
+      {
+        "label": "ВН",
+        "value": "6,10",
+        "unit": "кВ",
+        "page": 91
+      },
+      {
+        "label": "НН",
+        "value": "0,4",
+        "unit": "кВ",
+        "page": 91
+      },
+      {
+        "label": "Потери холостого хода",
+        "value": "1500",
+        "unit": "Вт",
+        "page": 91
+      },
+      {
+        "label": "Потери короткого замыкания",
+        "value": "6400",
+        "unit": "Вт",
+        "page": 91
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "6,0",
+        "unit": "%",
+        "page": 91
+      },
+      {
+        "label": "L",
+        "value": "1820/1990",
+        "unit": "мм",
+        "page": 91
+      },
+      {
+        "label": "B",
+        "value": "850/980",
+        "unit": "мм",
+        "page": 91
+      },
+      {
+        "label": "H",
+        "value": "1460/1725",
+        "unit": "мм",
+        "page": 91
+      },
+      {
+        "label": "Масса",
+        "value": "2230",
+        "unit": "кг",
+        "page": 91
+      },
+      {
+        "label": "Изоляция",
+        "value": "Номекс",
+        "unit": null,
+        "page": 91
+      },
+      {
+        "label": "Превышение температуры",
+        "value": "180",
+        "unit": "°C",
+        "page": 91
+      },
+      {
+        "label": "Нагрузка",
+        "value": "133 от номинальной",
+        "unit": "%",
+        "page": 91
+      },
+      {
+        "label": "Свойства изоляции (заявление каталога)",
+        "value": "не поддерживает горения и не выделяет токсичного дыма или опасных частиц",
+        "unit": null,
+        "page": 91,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-14-p91"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-ntmi-6",
+    "familyId": "ntmi",
+    "name": "НТМИ-6",
+    "sourceDesignation": "НТМИ-6",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      96
+    ],
+    "rawSpecs": [
+      {
+        "label": "ВН",
+        "raw": "6",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 96
+      },
+      {
+        "label": "НН основная",
+        "raw": "0,1",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 96
+      },
+      {
+        "label": "НН дополнительная",
+        "raw": "0,1/3",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 96
+      },
+      {
+        "label": "Мощность в классе0,5",
+        "raw": "75",
+        "unitAsPrinted": "ВА",
+        "sourcePage": 96
+      },
+      {
+        "label": "Мощность в классе1,0",
+        "raw": "150",
+        "unitAsPrinted": "ВА",
+        "sourcePage": 96
+      },
+      {
+        "label": "Мощность в классе3,0",
+        "raw": "300",
+        "unitAsPrinted": "ВА",
+        "sourcePage": 96
+      },
+      {
+        "label": "Максимальная(предельная) мощность",
+        "raw": "630",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 96
+      },
+      {
+        "label": "H",
+        "raw": "396",
+        "unitAsPrinted": "мм",
+        "sourcePage": 96
+      },
+      {
+        "label": "Масса",
+        "raw": "80",
+        "unitAsPrinted": "кг",
+        "sourcePage": 96
+      },
+      {
+        "label": "Сеть",
+        "raw": "переменный ток с изолированной нейтралью",
+        "unitAsPrinted": null,
+        "sourcePage": 96,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-15-p96"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "raw": "тряска, вибрация, удары, взрывоопасная и агрессивная среда",
+        "unitAsPrinted": null,
+        "sourcePage": 96,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-15-p96"
+      }
+    ],
+    "assetFamilyIds": [
+      "measurement-ntmi"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Maximum power unit printed кВА and values630/1000, unlike adjacent rated VA; retain suspected source unit error."
+    ],
+    "series": "НТМИ",
+    "context": "измерительный",
+    "voltageRaw": "6/0,1;0,1/3 кВ",
+    "sourceAliases": [
+      "НТМИ-6-У3"
+    ],
+    "commonProseGroupIds": [
+      "common-prose-15-p96"
+    ],
+    "designation": "НТМИ-6",
+    "execution": "измерительный",
+    "candidateOldIds": [
+      "ntmi-6"
+    ],
+    "overlapAssessment": [
+      {
+        "oldId": "ntmi-6",
+        "status": "strong-model-identity-candidate",
+        "evidence": "Exact model designation; HV6/10 and main secondary0.1kV match old web-reference. PDF adds raw technical/drawing evidence. Manufacturer not stated in product source pages, so legal-entity match remains unverified.",
+        "autoMerge": false
+      }
+    ],
+    "sourceRow": {
+      "page": 96,
+      "designation": "НТМИ-6",
+      "execution": "измерительный",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "ВН",
+        "value": "6",
+        "unit": "кВ",
+        "page": 96
+      },
+      {
+        "label": "НН основная",
+        "value": "0,1",
+        "unit": "кВ",
+        "page": 96
+      },
+      {
+        "label": "НН дополнительная",
+        "value": "0,1/3",
+        "unit": "кВ",
+        "page": 96
+      },
+      {
+        "label": "Мощность в классе0,5",
+        "value": "75",
+        "unit": "ВА",
+        "page": 96
+      },
+      {
+        "label": "Мощность в классе1,0",
+        "value": "150",
+        "unit": "ВА",
+        "page": 96
+      },
+      {
+        "label": "Мощность в классе3,0",
+        "value": "300",
+        "unit": "ВА",
+        "page": 96
+      },
+      {
+        "label": "Максимальная(предельная) мощность",
+        "value": "630",
+        "unit": "кВА",
+        "page": 96
+      },
+      {
+        "label": "H",
+        "value": "396",
+        "unit": "мм",
+        "page": 96
+      },
+      {
+        "label": "Масса",
+        "value": "80",
+        "unit": "кг",
+        "page": 96
+      },
+      {
+        "label": "Сеть",
+        "value": "переменный ток с изолированной нейтралью",
+        "unit": null,
+        "page": 96,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-15-p96"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "value": "тряска, вибрация, удары, взрывоопасная и агрессивная среда",
+        "unit": null,
+        "page": 96,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-15-p96"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-ntmi-10",
+    "familyId": "ntmi",
+    "name": "НТМИ-10",
+    "sourceDesignation": "НТМИ-10",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      96
+    ],
+    "rawSpecs": [
+      {
+        "label": "ВН",
+        "raw": "10",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 96
+      },
+      {
+        "label": "НН основная",
+        "raw": "0,1",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 96
+      },
+      {
+        "label": "НН дополнительная",
+        "raw": "0,1/3",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 96
+      },
+      {
+        "label": "Мощность в классе0,5",
+        "raw": "150",
+        "unitAsPrinted": "ВА",
+        "sourcePage": 96
+      },
+      {
+        "label": "Мощность в классе1,0",
+        "raw": "300",
+        "unitAsPrinted": "ВА",
+        "sourcePage": 96
+      },
+      {
+        "label": "Мощность в классе3,0",
+        "raw": "500",
+        "unitAsPrinted": "ВА",
+        "sourcePage": 96
+      },
+      {
+        "label": "Максимальная(предельная) мощность",
+        "raw": "1000",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 96
+      },
+      {
+        "label": "H",
+        "raw": "486",
+        "unitAsPrinted": "мм",
+        "sourcePage": 96
+      },
+      {
+        "label": "Масса",
+        "raw": "85",
+        "unitAsPrinted": "кг",
+        "sourcePage": 96
+      },
+      {
+        "label": "Сеть",
+        "raw": "переменный ток с изолированной нейтралью",
+        "unitAsPrinted": null,
+        "sourcePage": 96,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-15-p96"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "raw": "тряска, вибрация, удары, взрывоопасная и агрессивная среда",
+        "unitAsPrinted": null,
+        "sourcePage": 96,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-15-p96"
+      }
+    ],
+    "assetFamilyIds": [
+      "measurement-ntmi"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Maximum power unit printed кВА and values630/1000, unlike adjacent rated VA; retain suspected source unit error."
+    ],
+    "series": "НТМИ",
+    "context": "измерительный",
+    "voltageRaw": "10/0,1;0,1/3 кВ",
+    "sourceAliases": [
+      "НТМИ-10-У3"
+    ],
+    "commonProseGroupIds": [
+      "common-prose-15-p96"
+    ],
+    "designation": "НТМИ-10",
+    "execution": "измерительный",
+    "candidateOldIds": [
+      "ntmi-10"
+    ],
+    "overlapAssessment": [
+      {
+        "oldId": "ntmi-10",
+        "status": "strong-model-identity-candidate",
+        "evidence": "Exact model designation; HV6/10 and main secondary0.1kV match old web-reference. PDF adds raw technical/drawing evidence. Manufacturer not stated in product source pages, so legal-entity match remains unverified.",
+        "autoMerge": false
+      }
+    ],
+    "sourceRow": {
+      "page": 96,
+      "designation": "НТМИ-10",
+      "execution": "измерительный",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "ВН",
+        "value": "10",
+        "unit": "кВ",
+        "page": 96
+      },
+      {
+        "label": "НН основная",
+        "value": "0,1",
+        "unit": "кВ",
+        "page": 96
+      },
+      {
+        "label": "НН дополнительная",
+        "value": "0,1/3",
+        "unit": "кВ",
+        "page": 96
+      },
+      {
+        "label": "Мощность в классе0,5",
+        "value": "150",
+        "unit": "ВА",
+        "page": 96
+      },
+      {
+        "label": "Мощность в классе1,0",
+        "value": "300",
+        "unit": "ВА",
+        "page": 96
+      },
+      {
+        "label": "Мощность в классе3,0",
+        "value": "500",
+        "unit": "ВА",
+        "page": 96
+      },
+      {
+        "label": "Максимальная(предельная) мощность",
+        "value": "1000",
+        "unit": "кВА",
+        "page": 96
+      },
+      {
+        "label": "H",
+        "value": "486",
+        "unit": "мм",
+        "page": 96
+      },
+      {
+        "label": "Масса",
+        "value": "85",
+        "unit": "кг",
+        "page": 96
+      },
+      {
+        "label": "Сеть",
+        "value": "переменный ток с изолированной нейтралью",
+        "unit": null,
+        "page": 96,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-15-p96"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "value": "тряска, вибрация, удары, взрывоопасная и агрессивная среда",
+        "unit": null,
+        "page": 96,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-15-p96"
+      }
+    ]
+  }
+]

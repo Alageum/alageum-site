@@ -1,0 +1,185 @@
+{
+  "kind": "final-candidate-default-vite-regressions",
+  "status": "blocked-browser",
+  "startedAt": "2026-10-02T12:11:42.748Z",
+  "finishedAt": "2026-10-02T12:13:41.325Z",
+  "commit": "f8a6e05934ede6901e578c1f292938ab06717d1f",
+  "node": "v24.19.0",
+  "heapMiB": 2560,
+  "workflow": ".github/workflows/node-strapi.yml",
+  "evidence": "backend-node/.tmp/candidate-regressions/run.6g5Vg1",
+  "detailedReport": "backend-node/.tmp/candidate-regressions/run.6g5Vg1/results.json",
+  "dependencyInstalls": 0,
+  "registryRequests": 0,
+  "checks": {
+    "backend-check": {
+      "status": "passed",
+      "tests": 54
+    },
+    "backend-integration": {
+      "status": "passed",
+      "tests": 52
+    },
+    "backend-default-vite-build": {
+      "status": "passed"
+    },
+    "backend-vite-assets": {
+      "status": "passed"
+    },
+    "frontend-lint": {
+      "status": "passed"
+    },
+    "frontend-unit": {
+      "status": "passed",
+      "tests": 150
+    },
+    "frontend-api-build": {
+      "status": "passed"
+    },
+    "frontend-quotes-build": {
+      "status": "passed"
+    },
+    "page-contracts": {
+      "status": "passed",
+      "tests": 12
+    },
+    "frontend-page-build": {
+      "status": "passed"
+    },
+    "page-http-fault-matrix": {
+      "status": "passed"
+    },
+    "page-native-delivery": {
+      "status": "passed"
+    },
+    "frontend-static-preview-build": {
+      "status": "passed"
+    }
+  },
+  "pageHttpFaultCases": 58,
+  "pageNativeChecks": 12,
+  "discoveredBrowserCases": 43,
+  "passedBrowserCases": 0,
+  "testRetries": 0,
+  "browsers": {
+    "cms": {
+      "discovered": 5,
+      "status": "blocked"
+    },
+    "admin": {
+      "discovered": 3,
+      "status": "blocked"
+    },
+    "rfq": {
+      "discovered": 2,
+      "status": "blocked"
+    },
+    "quotes": {
+      "discovered": 28,
+      "status": "blocked"
+    },
+    "pages": {
+      "discovered": 5,
+      "status": "blocked"
+    }
+  },
+  "screenshots": [],
+  "browserBlocker": "This executor rejects Chromium process-singleton Unix socket creation (Operation not permitted), before page creation. Browser cases are discovered but not executed; --http-builds was explicitly selected.",
+  "protectedFilesUnchanged": true,
+  "cleanup": {
+    "status": "passed",
+    "serversStopped": true,
+    "postgresStopped": true,
+    "homePreserved": true,
+    "codexHomePreserved": true
+  },
+  "supplementalChecks": {
+    "physicalLockedInstall": {
+      "status": "passed",
+      "postinstallPatchedFiles": 2,
+      "guardVerifiedFiles": 2
+    },
+    "dependencyAudit": {
+      "status": "passed",
+      "exitCode": 0,
+      "auditLevel": "high",
+      "vulnerabilities": {
+        "info": 0,
+        "low": 0,
+        "moderate": 15,
+        "high": 0,
+        "critical": 0,
+        "total": 15
+      }
+    },
+    "webpackProtocol": {
+      "passed": true,
+      "checksPassed": 42,
+      "checksFailed": 0,
+      "fixtureRemoved": true
+    },
+    "webpackCompiledEquivalence": {
+      "status": "passed-vm-only",
+      "compilation": {
+        "errors": 0,
+        "warnings": 0,
+        "assets": [
+          {
+            "name": "bundle.js",
+            "size": 179674
+          },
+          {
+            "name": "index.html",
+            "size": 193
+          }
+        ],
+        "generatorFunction": {
+          "version": "2.0.1",
+          "declaredDefault": "./index.js",
+          "compiledModules": [
+            "index.js"
+          ],
+          "moduleSyncWrapperAbsent": true
+        }
+      },
+      "comparisons": {
+        "micromatchPatternFilePairs": 3024,
+        "micromatchIgnoreFiles": 56,
+        "uploadAllowedDecisions": 112,
+        "micromatchInvalidInputs": 4,
+        "pathInputs": 19,
+        "pathJoins": 5,
+        "pathRelatives": 4,
+        "util": [
+          "format",
+          "inspect",
+          "types",
+          "inherits",
+          "promisify"
+        ]
+      },
+      "isolatedJavaScript": {
+        "matchedNode": true,
+        "injectedNodeProcess": false,
+        "injectedNodeRequire": false
+      },
+      "cleanup": {
+        "fixturesRemoved": true,
+        "portsOpened": 0,
+        "portReleased": null,
+        "errors": []
+      }
+    },
+    "webpackColdWarmHttp": {
+      "status": "passed",
+      "mode": "--watch",
+      "cold": true,
+      "warm": true,
+      "browserCases": 0,
+      "evidence": "backend-node/.tmp/webpack-compat/run.rDHGkD",
+      "sourceRestored": true,
+      "portsReleased": true,
+      "postgresStopped": true
+    }
+  }
+}

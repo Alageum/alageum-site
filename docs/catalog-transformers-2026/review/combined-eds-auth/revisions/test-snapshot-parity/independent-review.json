@@ -1,0 +1,85 @@
+{
+  "format": "alageum-combined-eds-auth-independent-review-v1",
+  "status": "approved-bounded-combined-eds-auth",
+  "baselineCommit": "a32f7878d25a7d4e26d063ec6914b72d2f814383",
+  "baselineTree": "0cc608e2020f82aaec678032bc772ec2276c7946",
+  "candidateCommit": "7316cef4c92c084aa1b8e30756772d0b428dbc10",
+  "candidateTree": "e553a93b6ef0b43682a419b98be4357de03ee77a",
+  "priorAuthority": {
+    "commit": "40da0115da23eb32f3692eb4cf0580b92913a2bc",
+    "tree": "5eecf2cba689bb5cd2f3a4ae3714198f2324a35f",
+    "applicationCommit": "7316cef4c92c084aa1b8e30756772d0b428dbc10",
+    "applicationTree": "e553a93b6ef0b43682a419b98be4357de03ee77a",
+    "clearancePath": "docs/catalog-transformers-2026/review/combined-eds-auth/revisions/browser-locator/clearance.json",
+    "files": {
+      "docs/catalog-transformers-2026/review/combined-eds-auth/clearance.json": "cbde66c16dd10f4f9ac7a13eddac9df16bbb0855e517f43bb41e10063c754f53",
+      "docs/catalog-transformers-2026/review/combined-eds-auth/independent-review.json": "267018dd18d2a686b0d0e08521c0946cf402948c1045b11f6432f60bf5d8360b",
+      "docs/catalog-transformers-2026/review/combined-eds-auth/revisions/browser-locator/clearance.json": "3c87b271a63c561aeb0a548bfdfa3b60ac90d59dfdc2117f194fef1fbf05d2cf",
+      "docs/catalog-transformers-2026/review/combined-eds-auth/revisions/browser-locator/independent-review.json": "29cbf4517c98855ec22a977b6f7a1a34e109d67c9fa9ea1d2d73a846f9e6f53b"
+    }
+  },
+  "boundaries": {
+    "historicalApprovalChanges": 0,
+    "coordinatorChanges": 0,
+    "packageChanges": 0,
+    "lockfileChanges": 0,
+    "workflowChanges": 0,
+    "auditGateChanges": 0,
+    "catalogRecordChanges": 0,
+    "catalogSourceUiChanges": 0,
+    "geometryChanges": 0,
+    "rfqContractChanges": 0,
+    "cmsContractChanges": 0,
+    "cryptographicSigning": "unavailable",
+    "signingFlags": "off-by-default",
+    "googleLiveProvider": "not-verified",
+    "egovProvider": "unavailable",
+    "releaseApproval": false,
+    "securityWaiver": false
+  },
+  "approvedDependenciesSha256": "2258d80bead8d6f9b3e835e760d34b949ae458dd10a718c56dea767c29e4da0f",
+  "reviewedVerifierSha256": "96e41bb37fdda94042be39c8b1a740d3d479e36f3a022a8f6f6f322fdf1558e4",
+  "reviewedFixedFilesSha256": "e310cc5e3089f602b3921ea58dd8bda05fd97b5b8fb6bc8d4c1f2f0165ef694b",
+  "reviewer": "Independent read-only proof reviewer, 2026-10-12",
+  "outcome": "Approved bounded assertion-preserving proof-test performance revision; no blocking proof finding.",
+  "authorityNote": "This new authority records the independent review of the exact pinned performance revision. All earlier authority artifacts retain their original bytes and scope. This proof-only outcome does not replace application review or final aggregate/browser/build acceptance.",
+  "independentVerification": {
+    "testEquivalence": "All eleven real-checkout routes omit the reader argument. The consolidated synthetic fixture retains one explicit success per gate immediately followed by every original refusal on that same reader; all 55 explicit refusal assertions, predecessor rejection and checkout protection remain.",
+    "unchangedImplementation": "Production evaluation-body and coordinator bytes are unchanged; explicit-reader uncached behavior and same-invocation ownership semantics are preserved.",
+    "preservedPriorArtifacts": 12,
+    "unchangedApplicationFiles": 48,
+    "closurePaths": 678,
+    "allRouteCapture": {
+      "routes": 11,
+      "consumedPathsPerRoute": 680,
+      "completeFinalRereads": true,
+      "additionalNestedMutationChecks": 44,
+      "wrongPredecessorChecks": 36
+    },
+    "completePendingRevisionRun": {
+      "passed": 9,
+      "failed": 0,
+      "skipped": 0,
+      "nodeDurationSeconds": 282.636,
+      "shellElapsedSeconds": 282.698,
+      "explicitSuccessRefusalMatrixSeconds": 221.381,
+      "testSha256": "8be87621adfc0956ed4664a28f04024e380f44648456d37acc8440d071eeafb4",
+      "testedPendingDependenciesSha256": "1c32d835f7fb76ced71d18d8963a7226d7d9f1b8997b2e9685fb94fd078596f7",
+      "scope": "Reviewer checked the complete raw test and timing output. The real-checkout first case exercised pending rejection. The only later changes were measurement wording and its evidence binding."
+    },
+    "finalEvidenceRerun": {
+      "passed": 8,
+      "failed": 0,
+      "scope": "Independent rerun of the eight remaining cases after the evidence-only clarification."
+    },
+    "baselineTimingClarification": "The 221.442-second baseline explicit profile is a sum of completed per-gate measurements across runs. The initial sequential probe stopped source at a 90-second diagnostic budget; a separate source-only probe completed in 128.271 seconds. It is not an observed uninterrupted whole pass.",
+    "approvedCheckoutAcceptance": "Must be verified separately after this exact authority pair is installed; no prior pending-revision success claim is substituted.",
+    "limitations": [
+      "Sequential capture/final-reread observations do not provide a filesystem transaction or detect transient byte changes that are restored between observations.",
+      "Explicit-reader semantics remain uncached and reader-specific.",
+      "Real cryptographic EDS remains unavailable and signing flags remain off by default.",
+      "Live Google OAuth remains unverified; eGov remains unavailable.",
+      "No release approval, security waiver, push, deployment or provider-registration authority."
+    ]
+  }
+}

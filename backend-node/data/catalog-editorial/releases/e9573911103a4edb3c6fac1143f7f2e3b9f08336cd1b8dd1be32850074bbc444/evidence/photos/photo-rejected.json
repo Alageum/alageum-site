@@ -1,0 +1,2145 @@
+[
+  {
+    "candidateId": "dry-instrument-shared-aemz",
+    "sourcePageUrl": "https://aemz.kz/catalog/transformatory/transformatory-napryazheniya-trekhfaznye-maslyanye-tipa-ntmi/",
+    "imageUrl": "https://aemz.kz/upload/iblock/d7a/d7a250456c80e476381ea345dca6372b.jpg",
+    "modelMatch": "type",
+    "familyIds": [
+      "НТМИ",
+      "nami"
+    ],
+    "caption": "Измерительный масляный трансформатор · атрибуция требует уточнения",
+    "visualEvidence": "Real grey rectangular three-phase oil tank, three large white bushings, smaller central terminals and prominent lifting eyes.",
+    "confidence": 0.35,
+    "rightsStatus": "unknown_no_reuse_license_found",
+    "verifiedAt": "2026-10-12T16:00:00Z",
+    "notes": "Held: AEMZ places identical 173×300 bytes on NTMI, NOM, ZNOM and NAMIT pages. al-electro calls the same photo NAMI, SUET calls it NAMIT, and EnCom shows a reversed version for NAMI. It cannot safely establish a particular series. Do not use automatically for any of these model families.",
+    "status": "hold_mapping_conflict",
+    "mappingScope": "ambiguous_instrument_transformer",
+    "width": 173,
+    "height": 300,
+    "sha256": "9d73c1897d16dc2bf7181a65dda6fa0fa0f4172cc25a23fd3bc24bf064a2ce68",
+    "sourceAuthority": "official_manufacturer_with_conflicting_images",
+    "researchGroup": "dry",
+    "visuallyVerified": false,
+    "mediaKind": "photo",
+    "sourceType": "official_manufacturer_with_conflicting_images"
+  },
+  {
+    "candidateId": "dry-instrument-suet-multi-bushing",
+    "sourcePageUrl": "https://suet-trans.ru/p11460409484/ntmi-i-nami-10-6-u-uhl",
+    "imageUrl": "https://suet-trans.ru/fls/product/409484/739d2ed3e06e53f706990e3af670ae9e.jpeg",
+    "modelMatch": "type",
+    "familyIds": [
+      "НТМИ",
+      "nami"
+    ],
+    "caption": "НТМИ / НАМИ · фото из общей карточки КТЗ, требует уточнения",
+    "visualEvidence": "Real grey rectangular multi-bushing oil instrument transformer photographed obliquely, with drain outlet and dark front nameplate area.",
+    "confidence": 0.5,
+    "rightsStatus": "unknown_no_reuse_license_found",
+    "verifiedAt": "2026-10-12T16:00:00Z",
+    "notes": "Held: source page jointly names NTMI and NAMI, without identifying which designation corresponds to this photo. It is a distinct genuine photograph, but must not be assigned to both as an exact series. Do not split the EnCom two-transformer composite into new photos.",
+    "status": "hold_mapping_conflict",
+    "mappingScope": "ambiguous_NTMI_NAMI",
+    "width": 462,
+    "height": 529,
+    "sha256": "ec573c9b5bb816ef0a52b062271af7297d854948e534cf4d2a8c9a1bf85d01fe",
+    "sourceAuthority": "attributable_vendor",
+    "researchGroup": "dry",
+    "visuallyVerified": false,
+    "mediaKind": "photo",
+    "sourceType": "attributable_vendor"
+  },
+  {
+    "candidateId": "dry-znom-zom-suet-shared",
+    "sourcePageUrl": "https://suet-trans.ru/p11460409488/znom-zom-27-5-35-u1-hl1",
+    "imageUrl": "https://suet-trans.ru/fls/product/409488/b141c1016b8d3380d049780cb8ca09e9.jpeg",
+    "modelMatch": "type",
+    "familyIds": [
+      "znom",
+      "zom"
+    ],
+    "caption": "ЗНОМ / ЗОМ · фото из общей карточки КТЗ",
+    "visualEvidence": "Photographed rectangular grey tank with one tall ribbed white high-voltage bushing, top-mounted metallic cap and small secondary terminals.",
+    "confidence": 0.55,
+    "rightsStatus": "unknown_no_reuse_license_found",
+    "verifiedAt": "2026-10-12T16:00:00Z",
+    "notes": "Source jointly names ZNOM and ZOM 27.5(35) without identifying the pictured designation. al-electro repeats this same image. Valid only as a combined type representative; no exact mapping to ZOM-1.25/35 or a specific ZNOM-35 winding configuration. Requires manufacturer confirmation before either specific assignment.",
+    "status": "hold_mapping_conflict",
+    "mappingScope": "ambiguous_ZNOM_ZOM",
+    "width": 297,
+    "height": 567,
+    "sha256": "2d18d91983b68bbb8557bf908303fce415f4a6a54823945e9a74bb02ffce2398",
+    "sourceAuthority": "attributable_vendor",
+    "researchGroup": "dry",
+    "visuallyVerified": false,
+    "mediaKind": "photo",
+    "sourceType": "attributable_vendor"
+  },
+  {
+    "candidateId": "dry-alageum-category-context",
+    "sourcePageUrl": "https://alageum.com/ru/katalog/transformatory",
+    "imageUrl": "https://alageum.com/media/k2/categories/10.png",
+    "modelMatch": "type",
+    "familyIds": [
+      "ТСЛ"
+    ],
+    "caption": "Сухие трансформаторы · официальный снимок категории",
+    "visualEvidence": "Actual exhibition photograph with upper parts of three red-brown resin windings, blue frame and adjacent oil transformer visible.",
+    "confidence": 0.65,
+    "rightsStatus": "unknown_no_reuse_license_found",
+    "verifiedAt": "2026-10-12T16:00:00Z",
+    "notes": "Official category art, 465×203. Product partly cut off and neighboring equipment included. Context only; not a complete isolated product photo, not an extra variant photo, no voltage/power/material/loss-class claim.",
+    "status": "context_only",
+    "mappingScope": "category_context",
+    "width": 465,
+    "height": 203,
+    "sha256": "c5dfb6d69317507e1e55c0df3f14114d77d81a9197190dd97872dbb1bb9b2a16",
+    "sourceAuthority": "official_brand",
+    "researchGroup": "dry",
+    "visuallyVerified": false,
+    "mediaKind": "photo",
+    "sourceType": "official_brand"
+  },
+  {
+    "candidateId": "power-asia-tdc400000-110-outofrange",
+    "sourcePageUrl": "https://asiatrafo.kz/ru/transformers.html",
+    "imageUrl": "https://asiatrafo.kz/images/transformer_slide_6.png",
+    "mimeType": "image/png",
+    "modelMatch": "series",
+    "familyIds": [],
+    "caption": "ТДЦ-400000/110, Asia Trafo, заводской вид",
+    "visualEvidence": "Real large assembled transformer in workshop with multiple angled bushings and round fan coolers.",
+    "confidence": "high",
+    "rightsStatus": "Publicly viewable; reuse license not established. Manufacturer permission required before publication.",
+    "verifiedAt": "2026-10-12T16:04:10.515682+00:00",
+    "notes": "Canonical asia-two-winding-110-pbv records top out at125000kVA;400000kVA is outside listed models. Retain as manufacturer context; do not automatically attach to those SKUs.",
+    "designationEvidence": "Manufacturer project card explicitly labels ТДЦ-400000/110.",
+    "sourceType": "official_manufacturer",
+    "reviewStatus": "context_only",
+    "priority": "context",
+    "width": 730,
+    "height": 424,
+    "sha256": "803341e6e5cfc1b757e8f86f967896483bf99aaab7b9a27bc92814aa345bdb10",
+    "visuallyVerified": true,
+    "countsAsDistinctPhoto": true,
+    "sourceModelMatch": "exact_base_designation",
+    "exactProductIds": [],
+    "familyOverviewIds": [],
+    "photographedBaseModel": null,
+    "sameBaseModelReferenceIds": [],
+    "sameRatingReferenceIds": [],
+    "mappingConstraints": [
+      "Context only. Do not map to catalog model IDs."
+    ],
+    "canonicalCompatibility": "context_only",
+    "mappingRecommendation": "family_overview_only",
+    "researchGroup": "power",
+    "mediaKind": "photo"
+  },
+  {
+    "candidateId": "power-alageum-erg-shipment-context",
+    "sourcePageUrl": "https://alageum.com/ru/novosti/otechestvennye-kompanii-vybirayut-kazakhstanskie-transformatory",
+    "imageUrl": "https://alageum.com/media/k2/items/cache/2d535442c2c0b0669d8f5a051ed00bcc_XL.jpg",
+    "mimeType": "image/jpeg",
+    "modelMatch": "type",
+    "familyIds": [],
+    "caption": "Поставка Asia Trafo для ERG: отгрузка оборудования",
+    "visualEvidence": "Real transformer transport tanks and crates outside branded Alageum factory building.",
+    "confidence": "high",
+    "rightsStatus": "Publicly viewable; reuse license not established. Manufacturer permission required before publication.",
+    "verifiedAt": "2026-10-12T16:04:10.515682+00:00",
+    "notes": "Do not choose one of the article model names for this shared shipment photograph.",
+    "designationEvidence": "Article lists multiple different transformer and autotransformer models; photo has no unambiguous item-specific designation.",
+    "sourceType": "official_manufacturer",
+    "reviewStatus": "context_only",
+    "priority": "context",
+    "width": 900,
+    "height": 601,
+    "sha256": "07e02217fd5e2724c2e33610b676aa6941b609661de6395a19d68f2315ba278a",
+    "visuallyVerified": true,
+    "countsAsDistinctPhoto": true,
+    "sourceModelMatch": "type",
+    "exactProductIds": [],
+    "familyOverviewIds": [],
+    "photographedBaseModel": null,
+    "sameBaseModelReferenceIds": [],
+    "sameRatingReferenceIds": [],
+    "mappingConstraints": [
+      "Context only. Do not map to catalog model IDs."
+    ],
+    "canonicalCompatibility": "context_only",
+    "mappingRecommendation": "family_overview_only",
+    "researchGroup": "power",
+    "mediaKind": "photo"
+  },
+  {
+    "candidateId": "power-alageum-tdn-tests-context",
+    "sourcePageUrl": "https://alageum.com/ru/novosti/na-zavod-too-asia-trafo-pribyli-predstaviteli-too-mangistauenergomunaj",
+    "imageUrl": "https://alageum.com/media/k2/items/cache/11b8145be285a17777ee4d809bfd4d09_XL.jpg",
+    "mimeType": "image/jpeg",
+    "modelMatch": "type",
+    "familyIds": [],
+    "caption": "Asia Trafo: заводские испытания для Мангистауэнергомунай",
+    "visualEvidence": "Real factory photo with three people and internal electrical/coil test equipment, not a clear complete product exterior.",
+    "confidence": "high",
+    "rightsStatus": "Publicly viewable; reuse license not established. Manufacturer permission required before publication.",
+    "verifiedAt": "2026-10-12T16:04:10.515682+00:00",
+    "notes": "Photo is production/process context rather than a reviewable external product photo. Does not count toward requested multiple product photographs.",
+    "designationEvidence": "Article says testing two ТДН-16000/110 units.",
+    "sourceType": "official_manufacturer",
+    "reviewStatus": "context_only",
+    "priority": "context",
+    "width": 900,
+    "height": 601,
+    "sha256": "e769fb2028e6e69b9313e74eaf7f2cdd5b00da1bffbcbcfddc0fa17d6085ea95",
+    "visuallyVerified": true,
+    "countsAsDistinctPhoto": true,
+    "sourceModelMatch": "type",
+    "exactProductIds": [],
+    "familyOverviewIds": [],
+    "photographedBaseModel": null,
+    "sameBaseModelReferenceIds": [],
+    "sameRatingReferenceIds": [],
+    "mappingConstraints": [
+      "Context only. Do not map to catalog model IDs."
+    ],
+    "canonicalCompatibility": "context_only",
+    "mappingRecommendation": "family_overview_only",
+    "researchGroup": "power",
+    "mediaKind": "photo"
+  },
+  {
+    "candidateId": "aemz-yacheyka-yakno-ks-02-0",
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/yacheyka-yakno-ks-02/",
+    "originalImageUrl": "https://aemz.kz/upload/iblock/e94/e9418311262c742d8c03eed36845fdb2.jpg",
+    "sourceTitle": "Ячейка Якно, КС-02",
+    "imageAlt": "Ячейка Якно, КС-02",
+    "familyIds": [],
+    "proposedFamilyIds": [
+      "ЯКНО 6(10) кВ"
+    ],
+    "mappingScope": "source_label_conflict",
+    "mappingConfidence": "low",
+    "reviewStatus": "quarantined",
+    "visualVerified": true,
+    "visualType": "photograph",
+    "mappingEvidence": "Genuine photograph of gray open outdoor cell. Page heading Ya KNO/KS-02, body specifically KS-02-10(6). Do not assign exact Ya KNO without disambiguation.",
+    "width": 469,
+    "height": 469,
+    "sha256": "35bb59ce017b53fa7c4058e1eb7e79c80262dd302721b05fa93b23d93c260857",
+    "copyrightStatus": "Unknown; source is official manufacturer website but no reuse license found. Approval needed before publication.",
+    "distinctPhotoNote": "Separate exposure/view by visual review; crops and alternative resolutions are not counted separately.",
+    "sourceType": "official_manufacturer",
+    "eligibleForPhotoCount": false,
+    "researchGroup": "switchgear",
+    "imageUrl": "https://aemz.kz/upload/iblock/e94/e9418311262c742d8c03eed36845fdb2.jpg",
+    "visuallyVerified": true,
+    "mediaKind": "photo",
+    "confidence": "low",
+    "rightsStatus": "Unknown; source is official manufacturer website but no reuse license found. Approval needed before publication.",
+    "caption": "Ячейка Якно, КС-02",
+    "notes": "Genuine photograph of gray open outdoor cell. Page heading Ya KNO/KS-02, body specifically KS-02-10(6). Do not assign exact Ya KNO without disambiguation.",
+    "verifiedAt": "2026-10-12",
+    "visualEvidence": "Genuine photograph of gray open outdoor cell. Page heading Ya KNO/KS-02, body specifically KS-02-10(6). Do not assign exact Ya KNO without disambiguation.",
+    "modelMatch": "type"
+  },
+  {
+    "candidateId": "aemz-yacheyka-yakno-ks-02-1",
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/yacheyka-yakno-ks-02/",
+    "originalImageUrl": "https://aemz.kz/upload/iblock/b16/b16635a90f4222fcb6411435061174a0.jpg",
+    "sourceTitle": "Ячейка Якно, КС-02",
+    "imageAlt": "Ячейка Якно, КС-02",
+    "familyIds": [],
+    "proposedFamilyIds": [
+      "ЯКНО 6(10) кВ"
+    ],
+    "mappingScope": "source_label_conflict",
+    "mappingConfidence": "low",
+    "reviewStatus": "quarantined",
+    "visualVerified": true,
+    "visualType": "photograph",
+    "mappingEvidence": "Distinct photograph with overhead bushings and open cell; grouped Ya KNO/KS-02 title, body KS-02. Voltage 20k V explicitly not supported.",
+    "width": 813,
+    "height": 700,
+    "sha256": "5d710ffd528e4bafb4810653e07f8c1e182bd5223c2d8e9f8ef89045a23f7a4f",
+    "copyrightStatus": "Unknown; source is official manufacturer website but no reuse license found. Approval needed before publication.",
+    "distinctPhotoNote": "Separate exposure/view by visual review; crops and alternative resolutions are not counted separately.",
+    "sourceType": "official_manufacturer",
+    "eligibleForPhotoCount": false,
+    "researchGroup": "switchgear",
+    "imageUrl": "https://aemz.kz/upload/iblock/b16/b16635a90f4222fcb6411435061174a0.jpg",
+    "visuallyVerified": true,
+    "mediaKind": "photo",
+    "confidence": "low",
+    "rightsStatus": "Unknown; source is official manufacturer website but no reuse license found. Approval needed before publication.",
+    "caption": "Ячейка Якно, КС-02",
+    "notes": "Distinct photograph with overhead bushings and open cell; grouped Ya KNO/KS-02 title, body KS-02. Voltage 20k V explicitly not supported.",
+    "verifiedAt": "2026-10-12",
+    "visualEvidence": "Distinct photograph with overhead bushings and open cell; grouped Ya KNO/KS-02 title, body KS-02. Voltage 20k V explicitly not supported.",
+    "modelMatch": "type"
+  },
+  {
+    "candidateId": "aemz-komplektnoe-raspredelitelnoe-ustroystvo-serii-k-xxvi-0",
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/komplektnoe-raspredelitelnoe-ustroystvo-serii-k-xxvi/",
+    "originalImageUrl": "https://aemz.kz/upload/iblock/927/92734ca0fb6a5c8a0ac2ab7ac8a46731.jpeg",
+    "sourceTitle": "Комплектное распределительное устройство серии К-XXVI",
+    "imageAlt": "Комплектное распределительное устройство серии К-XXVI",
+    "familyIds": [],
+    "proposedFamilyIds": [],
+    "mappingScope": "out_of_catalog",
+    "mappingConfidence": "medium",
+    "reviewStatus": "unmapped",
+    "visualVerified": true,
+    "visualType": "photograph",
+    "mappingEvidence": "Genuine cutout row; source K-XXVI has no exact family in assigned catalog. Do not substitute for K-59 or K-07.",
+    "width": 240,
+    "height": 166,
+    "sha256": "51cdd772af669fa801119874746d2b975e65d54e961f6b7647caeba53f55096b",
+    "copyrightStatus": "Unknown; source is official manufacturer website but no reuse license found. Approval needed before publication.",
+    "distinctPhotoNote": "Separate exposure/view by visual review; crops and alternative resolutions are not counted separately.",
+    "sourceType": "official_manufacturer",
+    "eligibleForPhotoCount": false,
+    "researchGroup": "switchgear",
+    "imageUrl": "https://aemz.kz/upload/iblock/927/92734ca0fb6a5c8a0ac2ab7ac8a46731.jpeg",
+    "visuallyVerified": true,
+    "mediaKind": "photo",
+    "confidence": "medium",
+    "rightsStatus": "Unknown; source is official manufacturer website but no reuse license found. Approval needed before publication.",
+    "caption": "Комплектное распределительное устройство серии К-XXVI",
+    "notes": "Genuine cutout row; source K-XXVI has no exact family in assigned catalog. Do not substitute for K-59 or K-07.",
+    "verifiedAt": "2026-10-12",
+    "visualEvidence": "Genuine cutout row; source K-XXVI has no exact family in assigned catalog. Do not substitute for K-59 or K-07.",
+    "modelMatch": "type"
+  },
+  {
+    "candidateId": "aemz-komplektnoe-raspredelitelnoe-ustroystvo-serii-k-xxvi-1",
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/komplektnoe-raspredelitelnoe-ustroystvo-serii-k-xxvi/",
+    "originalImageUrl": "https://aemz.kz/upload/iblock/ec3/ec3eb4dde6fa1fca8673744a04007a6b.jpg",
+    "sourceTitle": "Комплектное распределительное устройство серии К-XXVI",
+    "imageAlt": "Комплектное распределительное устройство серии К-XXVI",
+    "familyIds": [],
+    "proposedFamilyIds": [],
+    "mappingScope": "out_of_catalog",
+    "mappingConfidence": "high",
+    "reviewStatus": "unmapped",
+    "visualVerified": true,
+    "visualType": "photograph",
+    "mappingEvidence": "Genuine factory photo of K-XXVI; no matching assigned family.",
+    "width": 2816,
+    "height": 2112,
+    "sha256": "10b59705785f6243f20169fc77b6733272e8a58a48498adf2a57c62521c079a4",
+    "copyrightStatus": "Unknown; source is official manufacturer website but no reuse license found. Approval needed before publication.",
+    "distinctPhotoNote": "Separate exposure/view by visual review; crops and alternative resolutions are not counted separately.",
+    "sourceType": "official_manufacturer",
+    "eligibleForPhotoCount": false,
+    "researchGroup": "switchgear",
+    "imageUrl": "https://aemz.kz/upload/iblock/ec3/ec3eb4dde6fa1fca8673744a04007a6b.jpg",
+    "visuallyVerified": true,
+    "mediaKind": "photo",
+    "confidence": "high",
+    "rightsStatus": "Unknown; source is official manufacturer website but no reuse license found. Approval needed before publication.",
+    "caption": "Комплектное распределительное устройство серии К-XXVI",
+    "notes": "Genuine factory photo of K-XXVI; no matching assigned family.",
+    "verifiedAt": "2026-10-12",
+    "visualEvidence": "Genuine factory photo of K-XXVI; no matching assigned family.",
+    "modelMatch": "type"
+  },
+  {
+    "candidateId": "aemz-komplektnoe-raspredelitelnoe-ustroystvo-serii-kru2-10-1",
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/komplektnoe-raspredelitelnoe-ustroystvo-serii-kru2-10/",
+    "originalImageUrl": "https://aemz.kz/upload/iblock/2fa/2fa8cd100df2da7dcdb503dde8c643c0.jpg",
+    "sourceTitle": "Комплектное распределительное устройство серии КРУ2-10",
+    "imageAlt": "Комплектное распределительное устройство серии КРУ2-10",
+    "familyIds": [],
+    "proposedFamilyIds": [],
+    "mappingScope": "out_of_catalog",
+    "mappingConfidence": "high",
+    "reviewStatus": "unmapped",
+    "visualVerified": true,
+    "visualType": "photograph",
+    "mappingEvidence": "Genuine factory photograph of KRU2-10. Not KSO2-10, not K-07; source series absent from assigned keys.",
+    "width": 2112,
+    "height": 2816,
+    "sha256": "cda22fc88eae6115816c531fa7a2dc758bd6221e6aecdca88dd3385760fb2189",
+    "copyrightStatus": "Unknown; source is official manufacturer website but no reuse license found. Approval needed before publication.",
+    "distinctPhotoNote": "Separate exposure/view by visual review; crops and alternative resolutions are not counted separately.",
+    "sourceType": "official_manufacturer",
+    "eligibleForPhotoCount": false,
+    "researchGroup": "switchgear",
+    "imageUrl": "https://aemz.kz/upload/iblock/2fa/2fa8cd100df2da7dcdb503dde8c643c0.jpg",
+    "visuallyVerified": true,
+    "mediaKind": "photo",
+    "confidence": "high",
+    "rightsStatus": "Unknown; source is official manufacturer website but no reuse license found. Approval needed before publication.",
+    "caption": "Комплектное распределительное устройство серии КРУ2-10",
+    "notes": "Genuine factory photograph of KRU2-10. Not KSO2-10, not K-07; source series absent from assigned keys.",
+    "verifiedAt": "2026-10-12",
+    "visualEvidence": "Genuine factory photograph of KRU2-10. Not KSO2-10, not K-07; source series absent from assigned keys.",
+    "modelMatch": "type"
+  },
+  {
+    "candidateId": "aemz-komplektnoe-raspredelitelnoe-ustroystvo-serii-kerneu-10kv-27-5kv-35kv-0",
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/komplektnoe-raspredelitelnoe-ustroystvo-serii-kerneu-10kv-27-5kv-35kv/",
+    "originalImageUrl": "https://aemz.kz/upload/iblock/cb5/cb5436eb002c5b90a8a3e1a3aba648df.png",
+    "sourceTitle": "Комплектное распределительное устройство серии KERNEU 10кВ, 27,5кВ, 35кВ",
+    "imageAlt": "Комплектное распределительное устройство серии KERNEU 10кВ, 27,5кВ, 35кВ",
+    "familyIds": [],
+    "proposedFamilyIds": [
+      "КРУ KERNEU 6(10) кВ",
+      "КРУ KERNEU 35 кВ / КРУ К-07-К35 АЕ",
+      "КМ-7М"
+    ],
+    "mappingScope": "source_label_conflict",
+    "mappingConfidence": "low",
+    "reviewStatus": "quarantined",
+    "visualVerified": true,
+    "visualType": "photograph",
+    "mappingEvidence": "Genuine cutout photo; heading KERNEU but body KM-7M/KM-7MK. Already excluded by prior verified manifest; remains quarantined.",
+    "width": 487,
+    "height": 406,
+    "sha256": "107181edde2ce1195c81bf7e4e565bd2de37ed465b2e487e78231f831b1b15b9",
+    "copyrightStatus": "Unknown; source is official manufacturer website but no reuse license found. Approval needed before publication.",
+    "distinctPhotoNote": "Separate exposure/view by visual review; crops and alternative resolutions are not counted separately.",
+    "sourceType": "official_manufacturer",
+    "eligibleForPhotoCount": false,
+    "researchGroup": "switchgear",
+    "imageUrl": "https://aemz.kz/upload/iblock/cb5/cb5436eb002c5b90a8a3e1a3aba648df.png",
+    "visuallyVerified": true,
+    "mediaKind": "photo",
+    "confidence": "low",
+    "rightsStatus": "Unknown; source is official manufacturer website but no reuse license found. Approval needed before publication.",
+    "caption": "Комплектное распределительное устройство серии KERNEU 10кВ, 27,5кВ, 35кВ",
+    "notes": "Genuine cutout photo; heading KERNEU but body KM-7M/KM-7MK. Already excluded by prior verified manifest; remains quarantined.",
+    "verifiedAt": "2026-10-12",
+    "visualEvidence": "Genuine cutout photo; heading KERNEU but body KM-7M/KM-7MK. Already excluded by prior verified manifest; remains quarantined.",
+    "modelMatch": "type"
+  },
+  {
+    "candidateId": "aemz-komplektnoe-raspredelitelnoe-ustroystvo-serii-km-7m-k-7m-0",
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/komplektnoe-raspredelitelnoe-ustroystvo-serii-km-7m-k-7m/",
+    "originalImageUrl": "https://aemz.kz/upload/iblock/de0/de0b2836713f76e996e408b278e24abf.png",
+    "sourceTitle": "Комплектное распределительное устройство серии КМ-7М, К-7М",
+    "imageAlt": "Комплектное распределительное устройство серии КМ-7М, К-7М",
+    "familyIds": [],
+    "proposedFamilyIds": [
+      "КМ-7М"
+    ],
+    "mappingScope": "ambiguous_series",
+    "mappingConfidence": "low",
+    "reviewStatus": "quarantined",
+    "visualVerified": true,
+    "visualType": "photograph",
+    "mappingEvidence": "Photographic cutout. Page title KM-7M, K-7M, but body only K-7M. Do not treat as exact KM-7M without manufacturer confirmation.",
+    "width": 286,
+    "height": 429,
+    "sha256": "e7c21c582ec9f28c1e58f059d8f75ba272b7cb71320c3aace7b76e73ce944283",
+    "copyrightStatus": "Unknown; source is official manufacturer website but no reuse license found. Approval needed before publication.",
+    "distinctPhotoNote": "Separate exposure/view by visual review; crops and alternative resolutions are not counted separately.",
+    "sourceType": "official_manufacturer",
+    "eligibleForPhotoCount": false,
+    "researchGroup": "switchgear",
+    "imageUrl": "https://aemz.kz/upload/iblock/de0/de0b2836713f76e996e408b278e24abf.png",
+    "visuallyVerified": true,
+    "mediaKind": "photo",
+    "confidence": "low",
+    "rightsStatus": "Unknown; source is official manufacturer website but no reuse license found. Approval needed before publication.",
+    "caption": "Комплектное распределительное устройство серии КМ-7М, К-7М",
+    "notes": "Photographic cutout. Page title KM-7M, K-7M, but body only K-7M. Do not treat as exact KM-7M without manufacturer confirmation.",
+    "verifiedAt": "2026-10-12",
+    "visualEvidence": "Photographic cutout. Page title KM-7M, K-7M, but body only K-7M. Do not treat as exact KM-7M without manufacturer confirmation.",
+    "modelMatch": "type"
+  },
+  {
+    "candidateId": "aemz-f4-1",
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/f4/",
+    "originalImageUrl": "https://aemz.kz/upload/iblock/9b3/9b3aedc41157992c23642dadd8f5370a.jpg",
+    "sourceTitle": "Комплектное распределительное устройство серии К104-КФ",
+    "imageAlt": "Комплектное распределительное устройство серии К104-КФ",
+    "familyIds": [],
+    "proposedFamilyIds": [],
+    "mappingScope": "out_of_catalog",
+    "mappingConfidence": "high",
+    "reviewStatus": "unmapped",
+    "visualVerified": true,
+    "visualType": "photograph",
+    "mappingEvidence": "Genuine factory photo of K104-KF. Text says usable in K-59 assemblies but this is not evidence of complete K-59, so no substitution.",
+    "width": 500,
+    "height": 408,
+    "sha256": "0e2168ee85fe4dd32588d649794b01b80b10527ccc2756f1c60432063598db74",
+    "copyrightStatus": "Unknown; source is official manufacturer website but no reuse license found. Approval needed before publication.",
+    "distinctPhotoNote": "Separate exposure/view by visual review; crops and alternative resolutions are not counted separately.",
+    "sourceType": "official_manufacturer",
+    "eligibleForPhotoCount": false,
+    "researchGroup": "switchgear",
+    "imageUrl": "https://aemz.kz/upload/iblock/9b3/9b3aedc41157992c23642dadd8f5370a.jpg",
+    "visuallyVerified": true,
+    "mediaKind": "photo",
+    "confidence": "high",
+    "rightsStatus": "Unknown; source is official manufacturer website but no reuse license found. Approval needed before publication.",
+    "caption": "Комплектное распределительное устройство серии К104-КФ",
+    "notes": "Genuine factory photo of K104-KF. Text says usable in K-59 assemblies but this is not evidence of complete K-59, so no substitution.",
+    "verifiedAt": "2026-10-12",
+    "visualEvidence": "Genuine factory photo of K104-KF. Text says usable in K-59 assemblies but this is not evidence of complete K-59, so no substitution.",
+    "modelMatch": "type"
+  },
+  {
+    "candidateId": "aemz-f2-0",
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/f2/",
+    "originalImageUrl": "https://aemz.kz/upload/iblock/cc6/cc662f4b5d06c9ebe23a41b31e214d63.png",
+    "sourceTitle": "Камеры сборные одностороннего обслуживания серии КСО-366М",
+    "imageAlt": "Камеры сборные одностороннего обслуживания серии КСО-366М",
+    "familyIds": [],
+    "proposedFamilyIds": [
+      "КСО-366",
+      "КСО-3М"
+    ],
+    "mappingScope": "ambiguous_series",
+    "mappingConfidence": "low",
+    "reviewStatus": "quarantined",
+    "visualVerified": true,
+    "visualType": "photograph",
+    "mappingEvidence": "Genuine factory photograph, single gray camera. Heading says KSO-366M while body says KSO-366 and target family 27 is KSO-3M described as 366M. Quarantine exact assignment; only 133x 200.",
+    "width": 133,
+    "height": 200,
+    "sha256": "45fc2cd56f8a0dbd6504eabaacc7499efd0efdc6b1a53fbf2bd6e43858a7c5f3",
+    "copyrightStatus": "Unknown; source is official manufacturer website but no reuse license found. Approval needed before publication.",
+    "distinctPhotoNote": "Separate exposure/view by visual review; crops and alternative resolutions are not counted separately.",
+    "sourceType": "official_manufacturer",
+    "eligibleForPhotoCount": false,
+    "researchGroup": "switchgear",
+    "imageUrl": "https://aemz.kz/upload/iblock/cc6/cc662f4b5d06c9ebe23a41b31e214d63.png",
+    "visuallyVerified": true,
+    "mediaKind": "photo",
+    "confidence": "low",
+    "rightsStatus": "Unknown; source is official manufacturer website but no reuse license found. Approval needed before publication.",
+    "caption": "Камеры сборные одностороннего обслуживания серии КСО-366М",
+    "notes": "Genuine factory photograph, single gray camera. Heading says KSO-366M while body says KSO-366 and target family 27 is KSO-3M described as 366M. Quarantine exact assignment; only 133x 200.",
+    "verifiedAt": "2026-10-12",
+    "visualEvidence": "Genuine factory photograph, single gray camera. Heading says KSO-366M while body says KSO-366 and target family 27 is KSO-3M described as 366M. Quarantine exact assignment; only 133x 200.",
+    "modelMatch": "type"
+  },
+  {
+    "candidateId": "aemz-f2-1",
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/f2/",
+    "originalImageUrl": "https://aemz.kz/upload/iblock/841/8410a46214fe5576bc124a3c75f2f0a8.png",
+    "sourceTitle": "Камеры сборные одностороннего обслуживания серии КСО-366М",
+    "imageAlt": "Камеры сборные одностороннего обслуживания серии КСО-366М",
+    "familyIds": [],
+    "proposedFamilyIds": [
+      "КСО-366",
+      "КСО-3М"
+    ],
+    "mappingScope": "ambiguous_series",
+    "mappingConfidence": "low",
+    "reviewStatus": "quarantined",
+    "visualVerified": true,
+    "visualType": "photograph",
+    "mappingEvidence": "Genuine gray camera lineup, different shot from single camera. Same 366/366M ambiguity; only 200x 132.",
+    "width": 200,
+    "height": 132,
+    "sha256": "a9e5bb2233784119e95939ecdfbb9ababc6951f7aeb80cfde0b87c4cf4f94cf5",
+    "copyrightStatus": "Unknown; source is official manufacturer website but no reuse license found. Approval needed before publication.",
+    "distinctPhotoNote": "Separate exposure/view by visual review; crops and alternative resolutions are not counted separately.",
+    "sourceType": "official_manufacturer",
+    "eligibleForPhotoCount": false,
+    "researchGroup": "switchgear",
+    "imageUrl": "https://aemz.kz/upload/iblock/841/8410a46214fe5576bc124a3c75f2f0a8.png",
+    "visuallyVerified": true,
+    "mediaKind": "photo",
+    "confidence": "low",
+    "rightsStatus": "Unknown; source is official manufacturer website but no reuse license found. Approval needed before publication.",
+    "caption": "Камеры сборные одностороннего обслуживания серии КСО-366М",
+    "notes": "Genuine gray camera lineup, different shot from single camera. Same 366/366M ambiguity; only 200x 132.",
+    "verifiedAt": "2026-10-12",
+    "visualEvidence": "Genuine gray camera lineup, different shot from single camera. Same 366/366M ambiguity; only 200x 132.",
+    "modelMatch": "type"
+  },
+  {
+    "candidateId": "aemz-shchitki-i-yashchiki-osveshcheniya-0",
+    "sourcePageUrl": "https://aemz.kz/catalog/nizkovoltnoe-oborudovanie/shchitki-i-yashchiki-osveshcheniya/",
+    "originalImageUrl": "https://aemz.kz/upload/iblock/1c9/1c9a56a7f3e176fd1f46eb602d831d8e.png",
+    "sourceTitle": "Щитки и ящики освещения",
+    "imageAlt": "Щитки и ящики освещения",
+    "familyIds": [],
+    "proposedFamilyIds": [
+      "ЯУО 9601; ЯУО 9602",
+      "cat-yauo"
+    ],
+    "mappingScope": "visual_text_conflict",
+    "mappingConfidence": "low",
+    "reviewStatus": "quarantined",
+    "visualVerified": true,
+    "visualType": "photograph",
+    "mappingEvidence": "Photo of a simple horizontal lighting distribution box, while body describes Ya UO9601/9602 controllers; photo exact type unconfirmed. Do not label Ya UO from recycled text.",
+    "width": 200,
+    "height": 200,
+    "sha256": "bcef65f68c421eabb12c822ccbc9fe24f3b58a6704b51df16924aa2572d151e0",
+    "copyrightStatus": "Unknown; source is official manufacturer website but no reuse license found. Approval needed before publication.",
+    "distinctPhotoNote": "Separate exposure/view by visual review; crops and alternative resolutions are not counted separately.",
+    "sourceType": "official_manufacturer",
+    "eligibleForPhotoCount": false,
+    "researchGroup": "switchgear",
+    "imageUrl": "https://aemz.kz/upload/iblock/1c9/1c9a56a7f3e176fd1f46eb602d831d8e.png",
+    "visuallyVerified": true,
+    "mediaKind": "photo",
+    "confidence": "low",
+    "rightsStatus": "Unknown; source is official manufacturer website but no reuse license found. Approval needed before publication.",
+    "caption": "Щитки и ящики освещения",
+    "notes": "Photo of a simple horizontal lighting distribution box, while body describes Ya UO9601/9602 controllers; photo exact type unconfirmed. Do not label Ya UO from recycled text.",
+    "verifiedAt": "2026-10-12",
+    "visualEvidence": "Photo of a simple horizontal lighting distribution box, while body describes Ya UO9601/9602 controllers; photo exact type unconfirmed. Do not label Ya UO from recycled text.",
+    "modelMatch": "type"
+  },
+  {
+    "candidateId": "aemz-shkafy-spetsialnogo-naznacheniya-0",
+    "sourcePageUrl": "https://aemz.kz/catalog/nizkovoltnoe-oborudovanie/shkafy-spetsialnogo-naznacheniya/",
+    "originalImageUrl": "https://aemz.kz/upload/iblock/229/22994a20958de20952ca9dc40584bb10.png",
+    "sourceTitle": "Шкафы специального назначения",
+    "imageAlt": "Шкафы специального назначения",
+    "familyIds": [],
+    "proposedFamilyIds": [
+      "Я 5000-5435 и РУСМ 5000",
+      "ПУСК-3М",
+      "ШУЭНГ",
+      "БУШК-2М"
+    ],
+    "mappingScope": "unmapped_type",
+    "mappingConfidence": "low",
+    "reviewStatus": "quarantined",
+    "visualVerified": true,
+    "visualType": "photograph",
+    "mappingEvidence": "Genuine small control-box photo on multi-type page listing Ya 5000, PR/SHR11, Ya UO, BUSHK, PUSK, SHUENG. No caption ties photo to one type; do not assign.",
+    "width": 147,
+    "height": 200,
+    "sha256": "705849cfd4b08e875640b5beca9773791fd0523a5f2bf41aed10a6cb280e1a7f",
+    "copyrightStatus": "Unknown; source is official manufacturer website but no reuse license found. Approval needed before publication.",
+    "distinctPhotoNote": "Separate exposure/view by visual review; crops and alternative resolutions are not counted separately.",
+    "sourceType": "official_manufacturer",
+    "eligibleForPhotoCount": false,
+    "researchGroup": "switchgear",
+    "imageUrl": "https://aemz.kz/upload/iblock/229/22994a20958de20952ca9dc40584bb10.png",
+    "visuallyVerified": true,
+    "mediaKind": "photo",
+    "confidence": "low",
+    "rightsStatus": "Unknown; source is official manufacturer website but no reuse license found. Approval needed before publication.",
+    "caption": "Шкафы специального назначения",
+    "notes": "Genuine small control-box photo on multi-type page listing Ya 5000, PR/SHR11, Ya UO, BUSHK, PUSK, SHUENG. No caption ties photo to one type; do not assign.",
+    "verifiedAt": "2026-10-12",
+    "visualEvidence": "Genuine small control-box photo on multi-type page listing Ya 5000, PR/SHR11, Ya UO, BUSHK, PUSK, SHUENG. No caption ties photo to one type; do not assign.",
+    "modelMatch": "type"
+  },
+  {
+    "candidateId": "aemz-shkafy-i-yashchiki-silovye-0",
+    "sourcePageUrl": "https://aemz.kz/catalog/nizkovoltnoe-oborudovanie/shkafy-i-yashchiki-silovye/",
+    "originalImageUrl": "https://aemz.kz/upload/iblock/119/119225b66264459b927eec155959181e.png",
+    "sourceTitle": "Шкафы и ящики силовые",
+    "imageAlt": "Шкафы и ящики силовые",
+    "familyIds": [],
+    "proposedFamilyIds": [],
+    "mappingScope": "unmapped_type",
+    "mappingConfidence": "low",
+    "reviewStatus": "unmapped",
+    "visualVerified": true,
+    "visualType": "photograph",
+    "mappingEvidence": "Genuine open LVdistribution-box photograph. Broad power-cabinets page; no precise catalog family supported.",
+    "width": 181,
+    "height": 200,
+    "sha256": "32bb88ba10fd0b7ceb9b346d51f820a58787ee0c129c6a1a3e756bfb678f646f",
+    "copyrightStatus": "Unknown; source is official manufacturer website but no reuse license found. Approval needed before publication.",
+    "distinctPhotoNote": "Separate exposure/view by visual review; crops and alternative resolutions are not counted separately.",
+    "sourceType": "official_manufacturer",
+    "eligibleForPhotoCount": false,
+    "researchGroup": "switchgear",
+    "imageUrl": "https://aemz.kz/upload/iblock/119/119225b66264459b927eec155959181e.png",
+    "visuallyVerified": true,
+    "mediaKind": "photo",
+    "confidence": "low",
+    "rightsStatus": "Unknown; source is official manufacturer website but no reuse license found. Approval needed before publication.",
+    "caption": "Шкафы и ящики силовые",
+    "notes": "Genuine open LVdistribution-box photograph. Broad power-cabinets page; no precise catalog family supported.",
+    "verifiedAt": "2026-10-12",
+    "visualEvidence": "Genuine open LVdistribution-box photograph. Broad power-cabinets page; no precise catalog family supported.",
+    "modelMatch": "type"
+  },
+  {
+    "candidateId": "aemz-shkafy-i-punkty-0",
+    "sourcePageUrl": "https://aemz.kz/catalog/nizkovoltnoe-oborudovanie/shkafy-i-punkty/",
+    "originalImageUrl": "https://aemz.kz/upload/iblock/68e/68ecf2cec53105efa04817995454ef3f.png",
+    "sourceTitle": "шкафы и пункты распределительные (ПР 11, ШР 11)",
+    "imageAlt": "шкафы и пункты распределительные (ПР 11, ШР 11)",
+    "familyIds": [],
+    "proposedFamilyIds": [
+      "ПР и ШР11",
+      "cat-pr-shr11"
+    ],
+    "mappingScope": "source_label_conflict",
+    "mappingConfidence": "low",
+    "reviewStatus": "quarantined",
+    "visualVerified": true,
+    "visualType": "photograph",
+    "mappingEvidence": "Open fused distribution cabinet appears genuine. Heading PR11/SHR11 but body and diagrams KRU-RN. Photo looks LV and cannot support KRU-RN; keep unassigned until source correction.",
+    "width": 155,
+    "height": 200,
+    "sha256": "72f8ec8281f3657b50e73a862e9b57d9c2729e0cf0f68b8122c9a97e6310df95",
+    "copyrightStatus": "Unknown; source is official manufacturer website but no reuse license found. Approval needed before publication.",
+    "distinctPhotoNote": "Separate exposure/view by visual review; crops and alternative resolutions are not counted separately.",
+    "sourceType": "official_manufacturer",
+    "eligibleForPhotoCount": false,
+    "researchGroup": "switchgear",
+    "imageUrl": "https://aemz.kz/upload/iblock/68e/68ecf2cec53105efa04817995454ef3f.png",
+    "visuallyVerified": true,
+    "mediaKind": "photo",
+    "confidence": "low",
+    "rightsStatus": "Unknown; source is official manufacturer website but no reuse license found. Approval needed before publication.",
+    "caption": "шкафы и пункты распределительные (ПР 11, ШР 11)",
+    "notes": "Open fused distribution cabinet appears genuine. Heading PR11/SHR11 but body and diagrams KRU-RN. Photo looks LV and cannot support KRU-RN; keep unassigned until source correction.",
+    "verifiedAt": "2026-10-12",
+    "visualEvidence": "Open fused distribution cabinet appears genuine. Heading PR11/SHR11 but body and diagrams KRU-RN. Photo looks LV and cannot support KRU-RN; keep unassigned until source correction.",
+    "modelMatch": "type"
+  },
+  {
+    "candidateId": "presentation-p6-3",
+    "sourcePageUrl": "https://aemz.kz/upload/medialibrary/2a4/2a428f6f873d90b23ac085c8be9acf5e.pdf#page=6",
+    "originalImageUrl": null,
+    "sourceDocumentUrl": "https://aemz.kz/upload/medialibrary/2a4/2a428f6f873d90b23ac085c8be9acf5e.pdf",
+    "pdfPage": 6,
+    "pdfImageXref": 62,
+    "sourceTitle": "АЭМЗ. Презентация, январь2019",
+    "familyIds": [],
+    "proposedFamilyIds": [
+      "КТПН 25-3150/6(10)/0,4кВ",
+      "cat-ktpn-25-3150",
+      "БКТП (2БКТП) 100-3150/6(10)/0,4кВ УХЛ1",
+      "cat-bktp-modular",
+      "К-8М"
+    ],
+    "mappingScope": "category_context",
+    "mappingConfidence": "low",
+    "reviewStatus": "context_only",
+    "visualVerified": true,
+    "visualType": "photograph",
+    "mappingEvidence": "Genuine project/category photograph; no one-to-one exact family identification. p 6:general KTP/PKTP/BMZ assortment; p 19:K-8MK project differs from K-8M target; p 20:K-7M and KTPN jointly listed, pictured module not individually identified.",
+    "width": 1728,
+    "height": 1152,
+    "sha256": "5d4af5878c9da9976497705d0ebbf04b5bb75e5010b722d835a8cc921ffc41bd",
+    "copyrightStatus": "Unknown; official manufacturer PDF, no reuse license found.",
+    "distinctPhotoNote": "Original embedded photograph extracted; not screenshot or generated image.",
+    "sourceType": "official_manufacturer",
+    "eligibleForPhotoCount": false,
+    "researchGroup": "switchgear",
+    "imageUrl": null,
+    "visuallyVerified": true,
+    "mediaKind": "photo",
+    "confidence": "low",
+    "rightsStatus": "Unknown; official manufacturer PDF, no reuse license found.",
+    "caption": "АЭМЗ. Презентация, январь2019",
+    "assetOrigin": "embedded_pdf_photo",
+    "sourceLocation": "PDF page 6, embedded image xref 62",
+    "notes": "Genuine project/category photograph; no one-to-one exact family identification. p 6:general KTP/PKTP/BMZ assortment; p 19:K-8MK project differs from K-8M target; p 20:K-7M and KTPN jointly listed, pictured module not individually identified.",
+    "verifiedAt": "2026-10-12",
+    "visualEvidence": "Genuine project/category photograph; no one-to-one exact family identification. p 6:general KTP/PKTP/BMZ assortment; p 19:K-8MK project differs from K-8M target; p 20:K-7M and KTPN jointly listed, pictured module not individually identified.",
+    "modelMatch": "type"
+  },
+  {
+    "candidateId": "presentation-p19-2",
+    "sourcePageUrl": "https://aemz.kz/upload/medialibrary/2a4/2a428f6f873d90b23ac085c8be9acf5e.pdf#page=19",
+    "originalImageUrl": null,
+    "sourceDocumentUrl": "https://aemz.kz/upload/medialibrary/2a4/2a428f6f873d90b23ac085c8be9acf5e.pdf",
+    "pdfPage": 19,
+    "pdfImageXref": 130,
+    "sourceTitle": "АЭМЗ. Презентация, январь2019",
+    "familyIds": [],
+    "proposedFamilyIds": [
+      "КТПН 25-3150/6(10)/0,4кВ",
+      "cat-ktpn-25-3150",
+      "БКТП (2БКТП) 100-3150/6(10)/0,4кВ УХЛ1",
+      "cat-bktp-modular",
+      "К-8М"
+    ],
+    "mappingScope": "category_context",
+    "mappingConfidence": "low",
+    "reviewStatus": "context_only",
+    "visualVerified": true,
+    "visualType": "photograph",
+    "mappingEvidence": "Genuine project/category photograph; no one-to-one exact family identification. p 6:general KTP/PKTP/BMZ assortment; p 19:K-8MK project differs from K-8M target; p 20:K-7M and KTPN jointly listed, pictured module not individually identified.",
+    "width": 928,
+    "height": 696,
+    "sha256": "47f1aa42db189d5fd92fc2b44aa92fa0d86ea6675b612f0875e165a809a14f2f",
+    "copyrightStatus": "Unknown; official manufacturer PDF, no reuse license found.",
+    "distinctPhotoNote": "Original embedded photograph extracted; not screenshot or generated image.",
+    "sourceType": "official_manufacturer",
+    "eligibleForPhotoCount": false,
+    "researchGroup": "switchgear",
+    "imageUrl": null,
+    "visuallyVerified": true,
+    "mediaKind": "photo",
+    "confidence": "low",
+    "rightsStatus": "Unknown; official manufacturer PDF, no reuse license found.",
+    "caption": "АЭМЗ. Презентация, январь2019",
+    "assetOrigin": "embedded_pdf_photo",
+    "sourceLocation": "PDF page 19, embedded image xref 130",
+    "notes": "Genuine project/category photograph; no one-to-one exact family identification. p 6:general KTP/PKTP/BMZ assortment; p 19:K-8MK project differs from K-8M target; p 20:K-7M and KTPN jointly listed, pictured module not individually identified.",
+    "verifiedAt": "2026-10-12",
+    "visualEvidence": "Genuine project/category photograph; no one-to-one exact family identification. p 6:general KTP/PKTP/BMZ assortment; p 19:K-8MK project differs from K-8M target; p 20:K-7M and KTPN jointly listed, pictured module not individually identified.",
+    "modelMatch": "type"
+  },
+  {
+    "candidateId": "presentation-p20-1",
+    "sourcePageUrl": "https://aemz.kz/upload/medialibrary/2a4/2a428f6f873d90b23ac085c8be9acf5e.pdf#page=20",
+    "originalImageUrl": null,
+    "sourceDocumentUrl": "https://aemz.kz/upload/medialibrary/2a4/2a428f6f873d90b23ac085c8be9acf5e.pdf",
+    "pdfPage": 20,
+    "pdfImageXref": 133,
+    "sourceTitle": "АЭМЗ. Презентация, январь2019",
+    "familyIds": [],
+    "proposedFamilyIds": [
+      "КТПН 25-3150/6(10)/0,4кВ",
+      "cat-ktpn-25-3150",
+      "БКТП (2БКТП) 100-3150/6(10)/0,4кВ УХЛ1",
+      "cat-bktp-modular",
+      "К-8М"
+    ],
+    "mappingScope": "category_context",
+    "mappingConfidence": "low",
+    "reviewStatus": "context_only",
+    "visualVerified": true,
+    "visualType": "photograph",
+    "mappingEvidence": "Genuine project/category photograph; no one-to-one exact family identification. p 6:general KTP/PKTP/BMZ assortment; p 19:K-8MK project differs from K-8M target; p 20:K-7M and KTPN jointly listed, pictured module not individually identified.",
+    "width": 880,
+    "height": 576,
+    "sha256": "3750e5b20aefbce1f27abe777674908a71176d283412fa163105493310be8287",
+    "copyrightStatus": "Unknown; official manufacturer PDF, no reuse license found.",
+    "distinctPhotoNote": "Original embedded photograph extracted; not screenshot or generated image.",
+    "sourceType": "official_manufacturer",
+    "eligibleForPhotoCount": false,
+    "researchGroup": "switchgear",
+    "imageUrl": null,
+    "visuallyVerified": true,
+    "mediaKind": "photo",
+    "confidence": "low",
+    "rightsStatus": "Unknown; official manufacturer PDF, no reuse license found.",
+    "caption": "АЭМЗ. Презентация, январь2019",
+    "assetOrigin": "embedded_pdf_photo",
+    "sourceLocation": "PDF page 20, embedded image xref 133",
+    "notes": "Genuine project/category photograph; no one-to-one exact family identification. p 6:general KTP/PKTP/BMZ assortment; p 19:K-8MK project differs from K-8M target; p 20:K-7M and KTPN jointly listed, pictured module not individually identified.",
+    "verifiedAt": "2026-10-12",
+    "visualEvidence": "Genuine project/category photograph; no one-to-one exact family identification. p 6:general KTP/PKTP/BMZ assortment; p 19:K-8MK project differs from K-8M target; p 20:K-7M and KTPN jointly listed, pictured module not individually identified.",
+    "modelMatch": "type"
+  },
+  {
+    "candidateId": "review-6721ad63a6aa",
+    "sourcePageUrl": "https://aemz.kz/catalog/izmeritelnoe-oborudovanie/komplektnaya-transformatornaya-podstantsiya-dlya-neftedobychi-tipa-ktpnd-25-250-10-6-u1/",
+    "originalImageUrl": "https://aemz.kz/upload/iblock/651/6518ad6a1ae8c4f9d8d7fbd551c79298.jpg",
+    "sourceTitle": "Комплектная трансформаторная подстанция для нефтедобычи типа КТПНД 25-250/10(6) У1",
+    "familyIds": [],
+    "proposedFamilyIds": [
+      "КТПНД 25–400/6(10)/0,4 кВ У1",
+      "cat-ktpnd"
+    ],
+    "mappingScope": "unresolved",
+    "mappingConfidence": "low",
+    "reviewStatus": "quarantined",
+    "visualVerified": true,
+    "visualType": "photograph-unresolved",
+    "mappingEvidence": "Official AEMZ page heading says KTPND, but body and diagrams describe KTPSK. First main photo resembles the separate Alageum KTPND drawing, yet no rating/nameplate is legible. Retain for manufacturer verification; do not silently treat source heading as exact proof.",
+    "width": 373,
+    "height": 343,
+    "sha256": "774a6ee24dc26c21e2099ce3504c9eb18a83c594a4a012f54c48a4d4b15a7333",
+    "copyrightStatus": "Unknown; no reuse license acquired.",
+    "eligibleForPhotoCount": false,
+    "sourceType": "official_manufacturer",
+    "researchGroup": "switchgear",
+    "imageUrl": "https://aemz.kz/upload/iblock/651/6518ad6a1ae8c4f9d8d7fbd551c79298.jpg",
+    "visuallyVerified": true,
+    "mediaKind": "photo",
+    "confidence": "low",
+    "rightsStatus": "Unknown; no reuse license acquired.",
+    "caption": "Комплектная трансформаторная подстанция для нефтедобычи типа КТПНД 25-250/10(6) У1",
+    "notes": "Official AEMZ page heading says KTPND, but body and diagrams describe KTPSK. First main photo resembles the separate Alageum KTPND drawing, yet no rating/nameplate is legible. Retain for manufacturer verification; do not silently treat source heading as exact proof.",
+    "verifiedAt": "2026-10-12",
+    "visualEvidence": "Official AEMZ page heading says KTPND, but body and diagrams describe KTPSK. First main photo resembles the separate Alageum KTPND drawing, yet no rating/nameplate is legible. Retain for manufacturer verification; do not silently treat source heading as exact proof.",
+    "modelMatch": "type"
+  },
+  {
+    "candidateId": "review-c465c89a40fd",
+    "sourcePageUrl": "https://aemz.kz/catalog/izmeritelnoe-oborudovanie/komplektnaya-transformatornaya-podstantsiya-dlya-neftedobychi-tipa-ktpnd-25-250-10-6-u1/",
+    "originalImageUrl": "https://aemz.kz/upload/iblock/431/431ce976254c0a98b125bb28ac260108.jpg",
+    "sourceTitle": "Комплектная трансформаторная подстанция для нефтедобычи типа КТПНД 25-250/10(6) У1",
+    "familyIds": [],
+    "proposedFamilyIds": [
+      "КТПНД 25–400/6(10)/0,4 кВ У1",
+      "cat-ktpnd"
+    ],
+    "mappingScope": "unresolved",
+    "mappingConfidence": "low",
+    "reviewStatus": "quarantined",
+    "visualVerified": true,
+    "visualType": "photograph-unresolved",
+    "mappingEvidence": "Official AEMZ page heading says KTPND, but body and diagrams describe KTPSK. First main photo resembles the separate Alageum KTPND drawing, yet no rating/nameplate is legible. Retain for manufacturer verification; do not silently treat source heading as exact proof.",
+    "width": 226,
+    "height": 304,
+    "sha256": "532f5ccabd4bae233b827986040a54c4d7b4599a6ca82cb817b9fa7068a35052",
+    "copyrightStatus": "Unknown; no reuse license acquired.",
+    "eligibleForPhotoCount": false,
+    "sourceType": "official_manufacturer",
+    "researchGroup": "switchgear",
+    "imageUrl": "https://aemz.kz/upload/iblock/431/431ce976254c0a98b125bb28ac260108.jpg",
+    "visuallyVerified": true,
+    "mediaKind": "photo",
+    "confidence": "low",
+    "rightsStatus": "Unknown; no reuse license acquired.",
+    "caption": "Комплектная трансформаторная подстанция для нефтедобычи типа КТПНД 25-250/10(6) У1",
+    "notes": "Official AEMZ page heading says KTPND, but body and diagrams describe KTPSK. First main photo resembles the separate Alageum KTPND drawing, yet no rating/nameplate is legible. Retain for manufacturer verification; do not silently treat source heading as exact proof.",
+    "verifiedAt": "2026-10-12",
+    "visualEvidence": "Official AEMZ page heading says KTPND, but body and diagrams describe KTPSK. First main photo resembles the separate Alageum KTPND drawing, yet no rating/nameplate is legible. Retain for manufacturer verification; do not silently treat source heading as exact proof.",
+    "modelMatch": "type"
+  },
+  {
+    "candidateId": "review-ff633e66ca79",
+    "sourcePageUrl": "https://aemz.kz/catalog/izmeritelnoe-oborudovanie/komplektnaya-transformatornaya-podstantsiya-dlya-neftedobychi-tipa-ktpnd-25-250-10-6-u1/",
+    "originalImageUrl": "https://aemz.kz/upload/iblock/d7d/d7de3f0445d9dacf95737f640cf27c5d.jpg",
+    "sourceTitle": "Комплектная трансформаторная подстанция для нефтедобычи типа КТПНД 25-250/10(6) У1",
+    "familyIds": [],
+    "proposedFamilyIds": [
+      "КТПНД 25–400/6(10)/0,4 кВ У1",
+      "cat-ktpnd"
+    ],
+    "mappingScope": "unresolved",
+    "mappingConfidence": "low",
+    "reviewStatus": "quarantined",
+    "visualVerified": true,
+    "visualType": "photograph-unresolved",
+    "mappingEvidence": "Official AEMZ page heading says KTPND, but body and diagrams describe KTPSK. First main photo resembles the separate Alageum KTPND drawing, yet no rating/nameplate is legible. Retain for manufacturer verification; do not silently treat source heading as exact proof.",
+    "width": 200,
+    "height": 250,
+    "sha256": "9124a41593aff34e65eb2456dcce0f0e0ed619084b0c8c4a6c65fdc3f022254f",
+    "copyrightStatus": "Unknown; no reuse license acquired.",
+    "eligibleForPhotoCount": false,
+    "sourceType": "official_manufacturer",
+    "researchGroup": "switchgear",
+    "imageUrl": "https://aemz.kz/upload/iblock/d7d/d7de3f0445d9dacf95737f640cf27c5d.jpg",
+    "visuallyVerified": true,
+    "mediaKind": "photo",
+    "confidence": "low",
+    "rightsStatus": "Unknown; no reuse license acquired.",
+    "caption": "Комплектная трансформаторная подстанция для нефтедобычи типа КТПНД 25-250/10(6) У1",
+    "notes": "Official AEMZ page heading says KTPND, but body and diagrams describe KTPSK. First main photo resembles the separate Alageum KTPND drawing, yet no rating/nameplate is legible. Retain for manufacturer verification; do not silently treat source heading as exact proof.",
+    "verifiedAt": "2026-10-12",
+    "visualEvidence": "Official AEMZ page heading says KTPND, but body and diagrams describe KTPSK. First main photo resembles the separate Alageum KTPND drawing, yet no rating/nameplate is legible. Retain for manufacturer verification; do not silently treat source heading as exact proof.",
+    "modelMatch": "type"
+  },
+  {
+    "candidateId": "review-675a1b53e90f",
+    "sourcePageUrl": "https://aemz.kz/catalog/izmeritelnoe-oborudovanie/komplektnye-transformatornye-podstantsii-dlya-zheleznoy-dorogi-ktpzh-mtpzh/",
+    "originalImageUrl": "https://aemz.kz/upload/iblock/b94/b944a0aecfd7f07acde9d9d57524cc88.jpg",
+    "sourceTitle": "Комплектные трансформаторные подстанции для железной дороги (КТПЖ, МТПЖ)",
+    "familyIds": [],
+    "proposedFamilyIds": [
+      "КТПЖ 2–4/27,5 У1",
+      "cat-ktpzh-2-4",
+      "КТПЖ 25–1000/27,5/0,4 У1, Т1",
+      "cat-ktpzh-25-1000",
+      "МТПЖ 1,25–2,5/10(6)/0,23 У1",
+      "cat-mtpzh-1-25-2-5",
+      "МТПЖ 10/27,5",
+      "cat-mtpzh-10"
+    ],
+    "mappingScope": "unresolved",
+    "mappingConfidence": "low",
+    "reviewStatus": "quarantined",
+    "visualVerified": true,
+    "visualType": "photograph-unresolved",
+    "mappingEvidence": "Official AEMZ railway title says KTPZH/MTPZH, but body, diagram and table are for KTPTO concrete heating. Photos are genuine open/closed views, but no exact railway family is established. Excluded from named-family count.",
+    "width": 300,
+    "height": 288,
+    "sha256": "9dc89ef1259699a2186ee674f19130e03e04951ae47afc535f151be3425ddc74",
+    "copyrightStatus": "Unknown; no reuse license acquired.",
+    "eligibleForPhotoCount": false,
+    "sourceType": "official_manufacturer",
+    "researchGroup": "switchgear",
+    "imageUrl": "https://aemz.kz/upload/iblock/b94/b944a0aecfd7f07acde9d9d57524cc88.jpg",
+    "visuallyVerified": true,
+    "mediaKind": "photo",
+    "confidence": "low",
+    "rightsStatus": "Unknown; no reuse license acquired.",
+    "caption": "Комплектные трансформаторные подстанции для железной дороги (КТПЖ, МТПЖ)",
+    "notes": "Official AEMZ railway title says KTPZH/MTPZH, but body, diagram and table are for KTPTO concrete heating. Photos are genuine open/closed views, but no exact railway family is established. Excluded from named-family count.",
+    "verifiedAt": "2026-10-12",
+    "visualEvidence": "Official AEMZ railway title says KTPZH/MTPZH, but body, diagram and table are for KTPTO concrete heating. Photos are genuine open/closed views, but no exact railway family is established. Excluded from named-family count.",
+    "modelMatch": "type"
+  },
+  {
+    "candidateId": "review-88e21e736792",
+    "sourcePageUrl": "https://aemz.kz/catalog/izmeritelnoe-oborudovanie/komplektnye-transformatornye-podstantsii-dlya-zheleznoy-dorogi-ktpzh-mtpzh/",
+    "originalImageUrl": "https://aemz.kz/upload/iblock/798/798f232b485c9cdae0b3361d0ad25e66.jpg",
+    "sourceTitle": "Комплектные трансформаторные подстанции для железной дороги (КТПЖ, МТПЖ)",
+    "familyIds": [],
+    "proposedFamilyIds": [
+      "КТПЖ 2–4/27,5 У1",
+      "cat-ktpzh-2-4",
+      "КТПЖ 25–1000/27,5/0,4 У1, Т1",
+      "cat-ktpzh-25-1000",
+      "МТПЖ 1,25–2,5/10(6)/0,23 У1",
+      "cat-mtpzh-1-25-2-5",
+      "МТПЖ 10/27,5",
+      "cat-mtpzh-10"
+    ],
+    "mappingScope": "unresolved",
+    "mappingConfidence": "low",
+    "reviewStatus": "quarantined",
+    "visualVerified": true,
+    "visualType": "photograph-unresolved",
+    "mappingEvidence": "Official AEMZ railway title says KTPZH/MTPZH, but body, diagram and table are for KTPTO concrete heating. Photos are genuine open/closed views, but no exact railway family is established. Excluded from named-family count.",
+    "width": 467,
+    "height": 499,
+    "sha256": "c5197f4d7f190662eaef4704dc73cd537f2af02f5ae1ad11b67b632829655c70",
+    "copyrightStatus": "Unknown; no reuse license acquired.",
+    "eligibleForPhotoCount": false,
+    "sourceType": "official_manufacturer",
+    "researchGroup": "switchgear",
+    "imageUrl": "https://aemz.kz/upload/iblock/798/798f232b485c9cdae0b3361d0ad25e66.jpg",
+    "visuallyVerified": true,
+    "mediaKind": "photo",
+    "confidence": "low",
+    "rightsStatus": "Unknown; no reuse license acquired.",
+    "caption": "Комплектные трансформаторные подстанции для железной дороги (КТПЖ, МТПЖ)",
+    "notes": "Official AEMZ railway title says KTPZH/MTPZH, but body, diagram and table are for KTPTO concrete heating. Photos are genuine open/closed views, but no exact railway family is established. Excluded from named-family count.",
+    "verifiedAt": "2026-10-12",
+    "visualEvidence": "Official AEMZ railway title says KTPZH/MTPZH, but body, diagram and table are for KTPTO concrete heating. Photos are genuine open/closed views, but no exact railway family is established. Excluded from named-family count.",
+    "modelMatch": "type"
+  },
+  {
+    "candidateId": "review-afcf9308dd7e",
+    "sourcePageUrl": "https://aemz.kz/catalog/nizkovoltnoe-oborudovanie/shkafy-spetsialnogo-naznacheniya/",
+    "originalImageUrl": "https://aemz.kz/upload/iblock/74a/74a918ce8f052e54b079f8235aa13f4a.jpg",
+    "sourceTitle": "Шкафы специального назначения",
+    "familyIds": [],
+    "proposedFamilyIds": [
+      "ПУСК-3М",
+      "БУШК-2М"
+    ],
+    "mappingScope": "unresolved",
+    "mappingConfidence": "low",
+    "reviewStatus": "quarantined",
+    "visualVerified": true,
+    "visualType": "photograph-unresolved",
+    "mappingEvidence": "Generic special-purpose cabinet page lists multiple unrelated products (YA5000, PR, YAUO, BUSHK, PUSK, SHUENG). Image is not individually identified, so cannot map to PUSK-3M or BUSHK-2M.",
+    "width": 200,
+    "height": 272,
+    "sha256": "e93cd52fb43dc9b55be345e7ac9dcbc0ba7d150767547c6a20f45e60ac10ff22",
+    "copyrightStatus": "Unknown; no reuse license acquired.",
+    "eligibleForPhotoCount": false,
+    "sourceType": "official_manufacturer",
+    "researchGroup": "switchgear",
+    "imageUrl": "https://aemz.kz/upload/iblock/74a/74a918ce8f052e54b079f8235aa13f4a.jpg",
+    "visuallyVerified": true,
+    "mediaKind": "photo",
+    "confidence": "low",
+    "rightsStatus": "Unknown; no reuse license acquired.",
+    "caption": "Шкафы специального назначения",
+    "notes": "Generic special-purpose cabinet page lists multiple unrelated products (YA5000, PR, YAUO, BUSHK, PUSK, SHUENG). Image is not individually identified, so cannot map to PUSK-3M or BUSHK-2M.",
+    "verifiedAt": "2026-10-12",
+    "visualEvidence": "Generic special-purpose cabinet page lists multiple unrelated products (YA5000, PR, YAUO, BUSHK, PUSK, SHUENG). Image is not individually identified, so cannot map to PUSK-3M or BUSHK-2M.",
+    "modelMatch": "type"
+  },
+  {
+    "candidateId": "review-dc378ab55463",
+    "sourcePageUrl": "https://aemz.kz/catalog/podstantsii-konteynernogo-tipa/tselnosvarnoy-konteyner/",
+    "originalImageUrl": "https://aemz.kz/upload/iblock/eab/eabb24cd95aeff6a7e89a0dfccb38080.jpg",
+    "sourceTitle": "Цельносварной контейнер",
+    "familyIds": [],
+    "proposedFamilyIds": [
+      "Модульный блок контейнерного типа"
+    ],
+    "mappingScope": "unresolved",
+    "mappingConfidence": "low",
+    "reviewStatus": "quarantined",
+    "visualVerified": true,
+    "visualType": "render-or-uncertain-illustration",
+    "mappingEvidence": "Yellow/grey container is a render or uncertain photorealistic illustration according to visual review. Oil-refining use is also not established. Same image reappears in official presentation p13; not two views.",
+    "width": 600,
+    "height": 423,
+    "sha256": "802cd1dc9d77bef2fc825a5cf1b0c952d48d1613aa3741610d8f4dcd66639142",
+    "copyrightStatus": "Unknown; no reuse license acquired.",
+    "eligibleForPhotoCount": false,
+    "sourceType": "official_manufacturer",
+    "researchGroup": "switchgear",
+    "imageUrl": "https://aemz.kz/upload/iblock/eab/eabb24cd95aeff6a7e89a0dfccb38080.jpg",
+    "visuallyVerified": true,
+    "mediaKind": "photo",
+    "confidence": "low",
+    "rightsStatus": "Unknown; no reuse license acquired.",
+    "caption": "Цельносварной контейнер",
+    "notes": "Yellow/grey container is a render or uncertain photorealistic illustration according to visual review. Oil-refining use is also not established. Same image reappears in official presentation p13; not two views.",
+    "verifiedAt": "2026-10-12",
+    "visualEvidence": "Yellow/grey container is a render or uncertain photorealistic illustration according to visual review. Oil-refining use is also not established. Same image reappears in official presentation p13; not two views.",
+    "modelMatch": "type"
+  },
+  {
+    "candidateId": "review-b97af2691d32",
+    "sourcePageUrl": "https://alageumsales.com/elektromontazh_hhez/",
+    "originalImageUrl": "https://alageumsales.com/upload/landing/144/2fv7qkm5n3quogfecii13s1zjgu83gh7/dizayn_bez_nazvaniya_14_1x.png",
+    "sourceTitle": "НВУ (Низковольтное оборудование) — Alageumsales",
+    "familyIds": [],
+    "proposedFamilyIds": [
+      "ПУСК-3М"
+    ],
+    "mappingScope": "unresolved",
+    "mappingConfidence": "low",
+    "reviewStatus": "quarantined",
+    "visualVerified": true,
+    "visualType": "photograph-or-composite-unresolved",
+    "mappingEvidence": "Modern open cabinet is on PUSK card, but no PUSK-3M nameplate or verifiable manufacturer photo provenance; do not replace exact family with generic photo.",
+    "width": 1080,
+    "height": 1080,
+    "sha256": "1dd69d16a944ec715289cd4a9a4b136fbeb2dc92f86ca47197fd42a539a34681",
+    "copyrightStatus": "Unknown; no reuse license acquired.",
+    "eligibleForPhotoCount": false,
+    "sourceType": "official_manufacturer",
+    "researchGroup": "switchgear",
+    "imageUrl": "https://alageumsales.com/upload/landing/144/2fv7qkm5n3quogfecii13s1zjgu83gh7/dizayn_bez_nazvaniya_14_1x.png",
+    "visuallyVerified": true,
+    "mediaKind": "photo",
+    "confidence": "low",
+    "rightsStatus": "Unknown; no reuse license acquired.",
+    "caption": "НВУ (Низковольтное оборудование) — Alageumsales",
+    "notes": "Modern open cabinet is on PUSK card, but no PUSK-3M nameplate or verifiable manufacturer photo provenance; do not replace exact family with generic photo.",
+    "verifiedAt": "2026-10-12",
+    "visualEvidence": "Modern open cabinet is on PUSK card, but no PUSK-3M nameplate or verifiable manufacturer photo provenance; do not replace exact family with generic photo.",
+    "modelMatch": "type"
+  },
+  {
+    "candidateId": "review-797f52c068d6",
+    "sourcePageUrl": "https://alageumsales.com/elektromontazh_hhez/",
+    "originalImageUrl": "https://alageumsales.com/upload/landing/5a2/27lnvl6ufe4870as8lqstj4n80sv2ja8/dizayn_bez_nazvaniya_16_1x.png",
+    "sourceTitle": "НВУ (Низковольтное оборудование) — Alageumsales",
+    "familyIds": [],
+    "proposedFamilyIds": [
+      "ПТМ(Д), ТДЕ(Д)-9",
+      "cat-ptm-tded"
+    ],
+    "mappingScope": "unresolved",
+    "mappingConfidence": "low",
+    "reviewStatus": "quarantined",
+    "visualVerified": true,
+    "visualType": "photograph-or-composite-unresolved",
+    "mappingEvidence": "PTM/TDE card is a three-image collage with unspecified makers/variants; not three independent usable assets.",
+    "width": 1080,
+    "height": 1080,
+    "sha256": "8644c7c4d954b965a3bb243591ce805ff8e963b21f9cfcaae060254b9af41462",
+    "copyrightStatus": "Unknown; no reuse license acquired.",
+    "eligibleForPhotoCount": false,
+    "sourceType": "official_manufacturer",
+    "researchGroup": "switchgear",
+    "imageUrl": "https://alageumsales.com/upload/landing/5a2/27lnvl6ufe4870as8lqstj4n80sv2ja8/dizayn_bez_nazvaniya_16_1x.png",
+    "visuallyVerified": true,
+    "mediaKind": "photo",
+    "confidence": "low",
+    "rightsStatus": "Unknown; no reuse license acquired.",
+    "caption": "НВУ (Низковольтное оборудование) — Alageumsales",
+    "notes": "PTM/TDE card is a three-image collage with unspecified makers/variants; not three independent usable assets.",
+    "verifiedAt": "2026-10-12",
+    "visualEvidence": "PTM/TDE card is a three-image collage with unspecified makers/variants; not three independent usable assets.",
+    "modelMatch": "type"
+  },
+  {
+    "candidateId": "review-f70024392e12",
+    "sourcePageUrl": "https://alageumsales.com/elektromontazh_hhez/",
+    "originalImageUrl": "https://alageumsales.com/upload/landing/f6a/h13rnwkpqqsh39xsiq0g9bpn5127ol3d/dizayn_bez_nazvaniya_17_1x.png",
+    "sourceTitle": "НВУ (Низковольтное оборудование) — Alageumsales",
+    "familyIds": [],
+    "proposedFamilyIds": [
+      "БДРМ",
+      "cat-bdrm"
+    ],
+    "mappingScope": "unresolved",
+    "mappingConfidence": "low",
+    "reviewStatus": "quarantined",
+    "visualVerified": true,
+    "visualType": "photograph-or-composite-unresolved",
+    "mappingEvidence": "BDRM card shows a box with buttons; exact BDRM product/manufacturer is not established and appearance conflicts with official type drawing.",
+    "width": 1080,
+    "height": 1080,
+    "sha256": "a942e710e6444e00c6ca504ef2abdbf44faeadabd5e0dfe9d65042156244f354",
+    "copyrightStatus": "Unknown; no reuse license acquired.",
+    "eligibleForPhotoCount": false,
+    "sourceType": "official_manufacturer",
+    "researchGroup": "switchgear",
+    "imageUrl": "https://alageumsales.com/upload/landing/f6a/h13rnwkpqqsh39xsiq0g9bpn5127ol3d/dizayn_bez_nazvaniya_17_1x.png",
+    "visuallyVerified": true,
+    "mediaKind": "photo",
+    "confidence": "low",
+    "rightsStatus": "Unknown; no reuse license acquired.",
+    "caption": "НВУ (Низковольтное оборудование) — Alageumsales",
+    "notes": "BDRM card shows a box with buttons; exact BDRM product/manufacturer is not established and appearance conflicts with official type drawing.",
+    "verifiedAt": "2026-10-12",
+    "visualEvidence": "BDRM card shows a box with buttons; exact BDRM product/manufacturer is not established and appearance conflicts with official type drawing.",
+    "modelMatch": "type"
+  },
+  {
+    "candidateId": "review-ec7e104c5e36",
+    "sourcePageUrl": "https://alageumsales.com/elektromontazh_hhez/",
+    "originalImageUrl": "https://alageumsales.com/upload/landing/75f/qzl48qrnl0dlhbk1fw2sba3h48mbm80w/dizayn_bez_nazvaniya_18_1x.png",
+    "sourceTitle": "НВУ (Низковольтное оборудование) — Alageumsales",
+    "familyIds": [],
+    "proposedFamilyIds": [
+      "КИК",
+      "cat-kik",
+      "СКИП",
+      "cat-skip"
+    ],
+    "mappingScope": "unresolved",
+    "mappingConfidence": "low",
+    "reviewStatus": "quarantined",
+    "visualVerified": true,
+    "visualType": "photograph-or-composite-unresolved",
+    "mappingEvidence": "Mixed measurement-column montage with unidentified types/manufacturers; do not count cropped components as distinct photos.",
+    "width": 1080,
+    "height": 1080,
+    "sha256": "f543c99283e6111ce38ad7eae95a7eac6180d36cc825320e78230689d3355ea5",
+    "copyrightStatus": "Unknown; no reuse license acquired.",
+    "eligibleForPhotoCount": false,
+    "sourceType": "official_manufacturer",
+    "researchGroup": "switchgear",
+    "imageUrl": "https://alageumsales.com/upload/landing/75f/qzl48qrnl0dlhbk1fw2sba3h48mbm80w/dizayn_bez_nazvaniya_18_1x.png",
+    "visuallyVerified": true,
+    "mediaKind": "photo",
+    "confidence": "low",
+    "rightsStatus": "Unknown; no reuse license acquired.",
+    "caption": "НВУ (Низковольтное оборудование) — Alageumsales",
+    "notes": "Mixed measurement-column montage with unidentified types/manufacturers; do not count cropped components as distinct photos.",
+    "verifiedAt": "2026-10-12",
+    "visualEvidence": "Mixed measurement-column montage with unidentified types/manufacturers; do not count cropped components as distinct photos.",
+    "modelMatch": "type"
+  },
+  {
+    "candidateId": "review-presentation-container-duplicate",
+    "sourcePageUrl": "https://aemz.kz/upload/medialibrary/2a4/2a428f6f873d90b23ac085c8be9acf5e.pdf#page=13",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/2a4/2a428f6f873d90b23ac085c8be9acf5e.pdf",
+    "sourceTitle": "Подстанции контейнерного типа",
+    "familyIds": [],
+    "proposedFamilyIds": [
+      "Модульный блок контейнерного типа"
+    ],
+    "mappingScope": "unresolved",
+    "mappingConfidence": "low",
+    "reviewStatus": "quarantined",
+    "visualVerified": true,
+    "visualType": "render-or-uncertain-illustration",
+    "mappingEvidence": "Embedded PDF image, xref 106, page13; same render/uncertain illustration as official product page, higher resolution only.",
+    "width": 1306,
+    "height": 1311,
+    "sha256": "2ce0f02bca7a1bc6640b553a2a47d71a27880ad20888affb117e7a606b0c62a8",
+    "copyrightStatus": "Unknown; no reuse license acquired.",
+    "eligibleForPhotoCount": false,
+    "sourceType": "official_manufacturer",
+    "researchGroup": "switchgear",
+    "imageUrl": "https://aemz.kz/upload/medialibrary/2a4/2a428f6f873d90b23ac085c8be9acf5e.pdf",
+    "visuallyVerified": true,
+    "mediaKind": "photo",
+    "confidence": "low",
+    "rightsStatus": "Unknown; no reuse license acquired.",
+    "caption": "Подстанции контейнерного типа",
+    "notes": "Embedded PDF image, xref 106, page13; same render/uncertain illustration as official product page, higher resolution only.",
+    "verifiedAt": "2026-10-12",
+    "visualEvidence": "Embedded PDF image, xref 106, page13; same render/uncertain illustration as official product page, higher resolution only.",
+    "modelMatch": "type"
+  },
+  {
+    "reason": "Одна и та же фотография на страницах ТМПН и ОМ/ОМП; конструктивная принадлежность не доказана.",
+    "imageUrls": [
+      "https://aemz.kz/upload/iblock/702/70285aa0da40463a6dbfbe0eba644efb.png",
+      "https://aemz.kz/upload/iblock/2e8/2e81750eebd3faa79757c2014e25d98b.jpg"
+    ],
+    "proposedFamilyIds": [
+      "tmpn-top",
+      "tmpng-side",
+      "om",
+      "omp"
+    ]
+  },
+  {
+    "reason": "На странице ТМТО показан красный литой измерительный трансформатор, не масляный ТМТО.",
+    "imageUrls": [
+      "https://aemz.kz/upload/iblock/1e1/1e1d6f29e9069372d56f3c12bbb1f984.png"
+    ],
+    "proposedFamilyIds": [
+      "tmto-original",
+      "tmto-modern"
+    ]
+  },
+  {
+    "reason": "3D/иллюстративный вид, не подтверждённая фотография; непригоден для фотоподборки.",
+    "imageUrls": [
+      "https://aemz.kz/upload/iblock/847/8477941d4bc9ba88db448696785b418c.png"
+    ],
+    "proposedFamilyIds": [
+      "om",
+      "omp"
+    ]
+  },
+  {
+    "reason": "Название ТМГ3200 противоречит полю1600кВА; точный экземпляр не установлен.",
+    "sourcePageUrl": "https://kaztransformator.kz/catalog/transformatory-maslyanye/transformator-tmg-1600-10-0-4/",
+    "proposedFamilyIds": [
+      "tmg-standard"
+    ]
+  },
+  {
+    "reason": "Общие cutout/каталожные изображения повторяются между мощностями и типами; изготовитель конкретного изображения не доказан. Сохранены только как исследованные источники.",
+    "sourcePageUrls": [
+      "https://trans-energo.com/transformator-tmpng/",
+      "https://trans-energo.com/transformator-tmto/",
+      "https://trans-energo.com/transformator-tmeg/",
+      "https://trans-energo.com/transformatory-om-omp-omg/"
+    ],
+    "proposedFamilyIds": [
+      "tmpn-top",
+      "tmpng-side",
+      "tmto-original",
+      "tmto-modern",
+      "tmeg",
+      "ТМЭГ",
+      "om",
+      "omp"
+    ]
+  },
+  {
+    "images": [
+      "aemz-78af530c218f2bd774e1a3886254762a.jpg",
+      "aemz-61c2b671d9334ec2069ae5959a556499.jpg",
+      "aemz-15f0120f881508562f567338591ff200.jpg",
+      "aemz-757e257134b6395e1a6b1ae1e37be4b0.jpg",
+      "aemz-0f976308ed2bff87f2fc2c6c6f1eae30.jpg",
+      "aemz-1606d71b60a1c54eb3c8a4a24d937fa4.jpg",
+      "aemz-4f47c4b9cb355a3c244e4b7bc1f6dd52.jpg",
+      "aemz-42bcb28803ff56414d861bb82be8aaa5.jpg",
+      "aemz-98ac47bb60a2957b0e5a1fa49808fd49.jpg",
+      "aemz-5c307362c3e163aa0cd6d5ed7d721f31.jpg"
+    ],
+    "reason": "Byte-identical repeated instrument photo. Wrong/ambiguous family attribution across official NOM, ZNOM, NAMIT and NTMI pages. One representative retained on hold."
+  },
+  {
+    "images": [
+      "aemz-942de3563cc54a564561ba763289ec23.jpg"
+    ],
+    "reason": "Certificate scan, not a product photo."
+  },
+  {
+    "images": [
+      "aemz-f8a82612938ff735b6eb2f166ff42782.png",
+      "vendor-58c00760f7583099ebce13e71de9e4fd.jpg"
+    ],
+    "reason": "Same TSZ cabinet shot as the retained official AEMZ image; resize/watermark is not a distinct photo."
+  },
+  {
+    "images": [
+      "vendor-005c3e3f4f5f59f6a9c7fcca42121921.jpg",
+      "vendor-76aac1cd09f14d90caaa35d0829624c5.jpg",
+      "vendor-3956f2804f7a217c10a52a5da6846e04.jpg",
+      "vendor-ca97bcef5498b667fe101bb2d8b48c5e.jpg"
+    ],
+    "reason": "Exact/crop-resize duplicates of retained TSNZ enclosure photo; count one."
+  },
+  {
+    "images": [
+      "vendor-b57a1b03d66fab405d5b3e7e7898442d.jpg",
+      "vendor-0ed19e9fc570a14683b056f0d5e50114.jpg"
+    ],
+    "reason": "Keaz 3×ZNOLP resin measuring-transformer set, not assigned NTMI/NAMI families."
+  },
+  {
+    "images": [
+      "vendor-5cb7d6669271c27c1e848a08306244f0.jpg",
+      "vendor-8b8138aa1bb4e4b051f6a0bee5b25caa.jpg"
+    ],
+    "reason": "Two-transformer montage made from existing shared photos, not an independent single-product photo. Not cropped into extra candidates."
+  },
+  {
+    "images": [
+      "suet-trans.ru-preview-400x400-d037c0135de6253e5bead6c34e918061.jpeg",
+      "accessory-ek290_0.jpg"
+    ],
+    "reason": "Technical dimensional drawings, not photographs."
+  },
+  {
+    "images": [
+      "accessory-d926a153-e1f8-4ff3-b852-1bdbf036bf55_0.jpg"
+    ],
+    "reason": "Top-view presentation graphic/render-like appearance; not accepted as genuine product photography."
+  },
+  {
+    "images": [
+      "vendor-08750e2aeec32bd42c4e93958560ea16.jpg",
+      "alelectro-08-03-nom-400x300-92e.jpg",
+      "suet-trans.ru-preview-400x400-f5bb743dcda73dd45a9f62811e68c0d7.jpeg"
+    ],
+    "reason": "Same NOM product photograph as retained SUET original; cropped/resized/recoloured/watermarked repeats."
+  },
+  {
+    "images": [
+      "al-electro.ru-08-03-znom-zom-400x300-92e.jpg",
+      "suet-trans.ru-preview-400x400-b141c1016b8d3380d049780cb8ca09e9.jpeg"
+    ],
+    "reason": "Same ZNOM/ZOM shared photograph as retained SUET original."
+  },
+  {
+    "images": [
+      "suet-320d9ee8d132846c7c980321df19a040.jpeg",
+      "suet-trans.ru-preview-400x400-320d9ee8d132846c7c980321df19a040.jpeg"
+    ],
+    "reason": "Same open TSI photograph retained from EnCom; not a second shot."
+  },
+  {
+    "images": [
+      "accessory-35nt12wqf60j6xe8t5v0nx9l9umkfm9a.webp"
+    ],
+    "reason": "Alternate manufacturer relay revision/branding image retained raw, not counted as a second angle of the same accessory."
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/b71/450_450_0/c07119gbzesqhkuhmtuhpd64iy57gdv7.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-td/transformator-td-16000-35-6-10-u1/",
+    "reason": "One shared cutout advertised for different TD35 ratings; manufacturer and real-photo identity insufficiently established.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/281/450_450_0/gqdorumgxdfnwnf65pgoun7e1gabp9de.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-td/transformator-td-10000-35-6-10-u1/",
+    "reason": "One shared cutout advertised for different TD35 ratings; manufacturer and real-photo identity insufficiently established.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/191/450_450_0/vr7od6u9ph67l1q513e0zr03a1vgfrir.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tdn/maslyanyy-transformator-ktz-tdtn-10000-kva-110-38-5-11-kv/",
+    "reason": "Same grey cutout recycled under many TDTN ratings; source says KTZ but photograph is not an exact-model identifier. Quarantined pending manufacturer/photograph attribution.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/49b/450_450_0/72z512pud5g3q6n65obbia6gk1n56lsy.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tdn/maslyanyy-transformator-ktz-tdtn-16000-kva-110-38-5-6-6-kv/",
+    "reason": "Same grey cutout recycled under many TDTN ratings; source says KTZ but photograph is not an exact-model identifier. Quarantined pending manufacturer/photograph attribution.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/b0f/450_450_0/7j6779oolv9ct7ezwbuotijffqjqs735.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tdn/maslyanyy-transformator-ktz-tdtn-16000-kva-110-38-5-11-kv/",
+    "reason": "Same grey cutout recycled under many TDTN ratings; source says KTZ but photograph is not an exact-model identifier. Quarantined pending manufacturer/photograph attribution.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/883/450_450_0/7c6x7n682fkbgslat48byb0l90b63joz.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tdn/maslyanyy-transformator-ktz-tdtn-25000-kva-110-38-5-6-6-kv/",
+    "reason": "Same grey cutout recycled under many TDTN ratings; source says KTZ but photograph is not an exact-model identifier. Quarantined pending manufacturer/photograph attribution.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/bda/450_450_0/gc7844m5t48dr10pobt2ep380lbheb17.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tdn/maslyanyy-transformator-ktz-tdtn-25000-kva-110-38-5-11-kv/",
+    "reason": "Same grey cutout recycled under many TDTN ratings; source says KTZ but photograph is not an exact-model identifier. Quarantined pending manufacturer/photograph attribution.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/e76/450_450_0/erivuymw25vtfhinb9mq6l7q9381w994.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tdn/maslyanyy-transformator-ktz-tdtn-40000-kva-110-38-5-6-6-kv/",
+    "reason": "Same grey cutout recycled under many TDTN ratings; source says KTZ but photograph is not an exact-model identifier. Quarantined pending manufacturer/photograph attribution.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/8c3/450_450_0/z6ephppxvo202nkqykn5ikg4irkee2jx.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tdn/maslyanyy-transformator-ktz-tdtn-40000-kva-110-38-5-11-kv/",
+    "reason": "Same grey cutout recycled under many TDTN ratings; source says KTZ but photograph is not an exact-model identifier. Quarantined pending manufacturer/photograph attribution.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/b75/450_450_0/m3y7mso6jsyavv73eahur7xapzu6qhkk.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tdn/maslyanyy-transformator-ktz-tdtn-63000-kva-110-38-5-6-6-kv/",
+    "reason": "Same grey cutout recycled under many TDTN ratings; source says KTZ but photograph is not an exact-model identifier. Quarantined pending manufacturer/photograph attribution.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/ea3/450_450_0/9ihphzw6scis3l2tlsr1vve3su260y4g.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tdn/maslyanyy-transformator-ktz-tdtn-63000-kva-110-38-5-11-kv/",
+    "reason": "Same grey cutout recycled under many TDTN ratings; source says KTZ but photograph is not an exact-model identifier. Quarantined pending manufacturer/photograph attribution.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/76a/450_450_0/du338fb66ytlru0dqsc0fyr4lxrvlu60.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tdn/maslyanyy-transformator-ktz-tdns-10000-kva-36-75-6-3-kv-al/",
+    "reason": "Same cutout is also used for TDNS35, TDS10 and on another supplier for TD35. Cross-type source labeling conflict; cannot identify exact family or count as different photographs.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/9fe/450_450_0/cnt6q3u3uy5liiawfv1gzvb2hq1noigm.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tdn/maslyanyy-transformator-ktz-tdns-10000-kva-36-75-10-5-kv-al/",
+    "reason": "Same cutout is also used for TDNS35, TDS10 and on another supplier for TD35. Cross-type source labeling conflict; cannot identify exact family or count as different photographs.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/046/450_450_0/8ccqbe8otj5pmh2s6z7viwuqcx03ldf5.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tdn/maslyanyy-transformator-ktz-tdns-10000-kva-36-75-6-3-kv-cu/",
+    "reason": "Same cutout is also used for TDNS35, TDS10 and on another supplier for TD35. Cross-type source labeling conflict; cannot identify exact family or count as different photographs.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/b66/450_450_0/smjx6pxy7y65gty0va050hxcbpspxu6u.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tdn/maslyanyy-transformator-ktz-tdns-10000-kva-36-75-10-5-kv-cu/",
+    "reason": "Same cutout is also used for TDNS35, TDS10 and on another supplier for TD35. Cross-type source labeling conflict; cannot identify exact family or count as different photographs.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/156/450_450_0/cmuautl0xxol8i0ztn7547bt6fm29xmx.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tdn/maslyanyy-transformator-ktz-tdns-16000-kva-36-75-10-5-kv-cu/",
+    "reason": "Same cutout is also used for TDNS35, TDS10 and on another supplier for TD35. Cross-type source labeling conflict; cannot identify exact family or count as different photographs.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/d3c/450_450_0/r2iseji262dmny2u1yz4o47rszd1y83y.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tdn/maslyanyy-transformator-ktz-tdns-16000-kva-36-75-6-3-kv-cu/",
+    "reason": "Same cutout is also used for TDNS35, TDS10 and on another supplier for TD35. Cross-type source labeling conflict; cannot identify exact family or count as different photographs.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/61b/9pmib9yzfkaiotp0gmhaksq13v352kbj.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tdns/transformator-tdns-10000-kva-36-75-6-3-kv-al/",
+    "reason": "Same cutout is also used for TDNS35, TDS10 and on another supplier for TD35. Cross-type source labeling conflict; cannot identify exact family or count as different photographs.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/ce8/ojulw3p9c0xjr7gh6kdk6li1rje6008w.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tdns/transformator-tdns-10000-kva-36-75-6-3-kv-cu/",
+    "reason": "Same cutout is also used for TDNS35, TDS10 and on another supplier for TD35. Cross-type source labeling conflict; cannot identify exact family or count as different photographs.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/43c/uetsk8ad8dw3fm5i27adwn5wjvlcd78y.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tdns/transformator-tdns-10000-kva-36-75-10-5-kv-al/",
+    "reason": "Same cutout is also used for TDNS35, TDS10 and on another supplier for TD35. Cross-type source labeling conflict; cannot identify exact family or count as different photographs.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/8e8/onnlqs78xxiuzjnvw1cxdsx3zs3klsr8.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tdns/transformator-tdns-10000-kva-36-75-10-5-kv-cu/",
+    "reason": "Same cutout is also used for TDNS35, TDS10 and on another supplier for TD35. Cross-type source labeling conflict; cannot identify exact family or count as different photographs.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/c59/4jp3mtnt3ibdrd3762ykig8hdl0q0qpo.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tdns/transformator-tdns-16000-kva-36-75-6-3-kv-cu/",
+    "reason": "Same cutout is also used for TDNS35, TDS10 and on another supplier for TD35. Cross-type source labeling conflict; cannot identify exact family or count as different photographs.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/949/z9yz4l7z2t1xdnhg4mgzlqmmyl4qcjrn.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tdns/transformator-tdns-16000-kva-36-75-10-5-kv-cu/",
+    "reason": "Same cutout is also used for TDNS35, TDS10 and on another supplier for TD35. Cross-type source labeling conflict; cannot identify exact family or count as different photographs.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/7e6/nsmbyy81thdusk72jwm71icpf24z8431.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tdns/transformator-tdns-25000-kva-36-75-10-5-kv/",
+    "reason": "Same cutout is also used for TDNS35, TDS10 and on another supplier for TD35. Cross-type source labeling conflict; cannot identify exact family or count as different photographs.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/73b/74aq1v2k9gvwiw05yxapyt4jyhwk9y23.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tdns/transformator-tdns-25000-kva-36-75-6-3-kv/",
+    "reason": "Same cutout is also used for TDNS35, TDS10 and on another supplier for TD35. Cross-type source labeling conflict; cannot identify exact family or count as different photographs.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/5cd/itjpovwagw4q55dazkif20vevu7g06bb.png",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tds/transformator-tds-10000-kva-11-6-3-kv/",
+    "reason": "Same cutout is also used for TDNS35, TDS10 and on another supplier for TD35. Cross-type source labeling conflict; cannot identify exact family or count as different photographs.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/5b1/m9vhk3r175dsy4cdvrsqhdkqlji7goxl.png",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tds/transformator-tds-10000-kva-10-3-15-kv/",
+    "reason": "Same cutout is also used for TDNS35, TDS10 and on another supplier for TD35. Cross-type source labeling conflict; cannot identify exact family or count as different photographs.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/d4c/mdmjvm8p6bi6ve40aw0817u3ubtkaic4.png",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tds/transformator-tds-10000-kva-6-3-6-3-kv/",
+    "reason": "Same cutout is also used for TDNS35, TDS10 and on another supplier for TD35. Cross-type source labeling conflict; cannot identify exact family or count as different photographs.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/98b/450_450_0/nlak6bdprd5518s5oe2amw89ggutovu0.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tdtn/transformator-tdtn-10000-110-35-6-10-u1/",
+    "reason": "Same cutout repeated for TDTN10000 through80000; image-specific manufacturer attribution not verified.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/4e2/450_450_0/4ur940ocmlbxnx2cvlfmjlqok7xckf7e.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tdtn/transformator-tdtn-40000-110-35-6-10-u1/",
+    "reason": "Same cutout repeated for TDTN10000 through80000; image-specific manufacturer attribution not verified.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/a3d/450_450_0/lmmyn1axxzaggfcr746vcr2lisnv93s0.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tdtn/transformator-tdtn-25000-110-35-6-10-u1/",
+    "reason": "Same cutout repeated for TDTN10000 through80000; image-specific manufacturer attribution not verified.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/9ac/450_450_0/14v38g26gtu7ueziu4ll2t95785jlhjt.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tdtn/transformator-tdtn-16000-110-35-6-10-u1/",
+    "reason": "Same cutout repeated for TDTN10000 through80000; image-specific manufacturer attribution not verified.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/002/450_450_0/3nrqkom4niph343wlc9hac7yg0sjznh4.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tdtn/transformator-tdtn-32000-110-35-6-10-u1/",
+    "reason": "Same cutout repeated for TDTN10000 through80000; image-specific manufacturer attribution not verified.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/68e/450_450_0/aqwvbxjyu9mk4url12kmxs85wg3lxxkt.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tdtn/transformator-tdtn-63000-110-35-6-10-u1/",
+    "reason": "Same cutout repeated for TDTN10000 through80000; image-specific manufacturer attribution not verified.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/fd6/450_450_0/7kjzk64t1np4ynbn10w13id38naxcofk.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tdtn/transformator-tdtn-80000-110-35-6-10-u1/",
+    "reason": "Same cutout repeated for TDTN10000 through80000; image-specific manufacturer attribution not verified.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/1aa/1aa53e20b6a77565de2a703a8e43fc09.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tmn/tmn-6300-kva-110-11-kv/",
+    "reason": "One identical compact TMN cutout reused for both35kV and110kV and many powers. Voltage/family identification unreliable.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/416/41675531daac466a5cecc20722dd41b3.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tmn/tmn-6300-kva-110-6-6-kv/",
+    "reason": "One identical compact TMN cutout reused for both35kV and110kV and many powers. Voltage/family identification unreliable.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/376/376718c67051dc6efb593f6cf5902ebe.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tmn/tmn-6300-kva-35-20-11-kv-s-panelnymi-radiatorami/",
+    "reason": "One identical compact TMN cutout reused for both35kV and110kV and many powers. Voltage/family identification unreliable.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/abe/abe1822a759790840f78c3ba56e45b90.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tmn/tmn-6300-kva-35-20-6-3-kv-s-panelnymi-radiatorami/",
+    "reason": "One identical compact TMN cutout reused for both35kV and110kV and many powers. Voltage/family identification unreliable.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/c4d/c4dbe2735535c05aef6bcc2c001fe3b7.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tmn/tmn-6300-kva-35-11-kv/",
+    "reason": "One identical compact TMN cutout reused for both35kV and110kV and many powers. Voltage/family identification unreliable.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/bb3/bb3dbe1ef65399ee18176f1c6ce411d1.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tmn/tmn-6300-kva-35-20-6-3-kv/",
+    "reason": "One identical compact TMN cutout reused for both35kV and110kV and many powers. Voltage/family identification unreliable.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/d06/d0695aad1c5e3765d9f52f9f2f814fa0.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tmn/tmn-4000-kva-110-11-kv/",
+    "reason": "One identical compact TMN cutout reused for both35kV and110kV and many powers. Voltage/family identification unreliable.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/0e4/0e48849907c2f8032bd071220404fa95.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tmn/tmn-4000-kva-110-6-6-kv/",
+    "reason": "One identical compact TMN cutout reused for both35kV and110kV and many powers. Voltage/family identification unreliable.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/a82/a82bb526026bbd574adf9e07cbb64240.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tmn/tmn-4000-kva-35-20-6-3-kv-s-panelnymi-radiatorami/",
+    "reason": "One identical compact TMN cutout reused for both35kV and110kV and many powers. Voltage/family identification unreliable.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/ff9/ff937480c50c55aea9b6c7cf2f452f40.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tmn/tmn-4000-kva-35-20-11-kv/",
+    "reason": "One identical compact TMN cutout reused for both35kV and110kV and many powers. Voltage/family identification unreliable.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/b0d/b0d414cc0b7d9220b4ef92c3d2d2fab4.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tmn/tmn-2500-kva-110-11-kv/",
+    "reason": "One identical compact TMN cutout reused for both35kV and110kV and many powers. Voltage/family identification unreliable.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/6e5/6e502c0f50ea98a7576684ef652416fa.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tmn/tmn-4000-kva-35-20-6-3-kv/",
+    "reason": "One identical compact TMN cutout reused for both35kV and110kV and many powers. Voltage/family identification unreliable.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/99f/99f6272f22e8b1ff50c466789eeff966.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tmn/tmn-2500-kva-110-6-6-kv/",
+    "reason": "One identical compact TMN cutout reused for both35kV and110kV and many powers. Voltage/family identification unreliable.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/a0d/a0d44a9d4896b509c7db158d8405efb0.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tmn/tmn-2500-kva-35-20-11-kv-s-panelnymi-radiatorami/",
+    "reason": "One identical compact TMN cutout reused for both35kV and110kV and many powers. Voltage/family identification unreliable.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/583/58331c5bdb65c0bfc6fd855d83f8e4ca.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tmn/tmn-2500-kva-35-20-6-3-kv-s-panelnymi-radiatorami/",
+    "reason": "One identical compact TMN cutout reused for both35kV and110kV and many powers. Voltage/family identification unreliable.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/c7e/c7e8c9f62bb6d57baeb38158b578097c.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tmn/tmn-2500-kva-35-20-11-kv/",
+    "reason": "One identical compact TMN cutout reused for both35kV and110kV and many powers. Voltage/family identification unreliable.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/9c2/9c2ce30b0240b05cb96c631c839e4f83.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tmn/tmn-2500-kva-35-20-6-3-kv/",
+    "reason": "One identical compact TMN cutout reused for both35kV and110kV and many powers. Voltage/family identification unreliable.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/671/671f2d8f25bf83a197812ef2d4ca6759.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tmn/tmn-1600-kva-35-20-11/",
+    "reason": "One identical compact TMN cutout reused for both35kV and110kV and many powers. Voltage/family identification unreliable.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/1a0/1a0f95bbd23e4c9257197f683a5a27ac.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tmn/tmn-1600-kva-35-20-6-3-kv/",
+    "reason": "One identical compact TMN cutout reused for both35kV and110kV and many powers. Voltage/family identification unreliable.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/c1f/c1f64f1072bcfc0deae0877acec2d2f8.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tmn/tmn-1000-kva-35-20-11-kv/",
+    "reason": "One identical compact TMN cutout reused for both35kV and110kV and many powers. Voltage/family identification unreliable.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/88e/88e493a3b1e2bc6bfb7300de25109f18.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tmn/tmn-1000-kva-35-20-6-3-kv/",
+    "reason": "One identical compact TMN cutout reused for both35kV and110kV and many powers. Voltage/family identification unreliable.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/b31/itsv6vf26lpqzlj6ne2493hmnp7jzz2f.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-trdns/transformator-tdtn-16000-kva-110-38-5-11-kv/",
+    "reason": "Same grey cutout recycled under many TDTN ratings; source says KTZ but photograph is not an exact-model identifier. Quarantined pending manufacturer/photograph attribution.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/c1d/zgdlbfo3k25bjio9y5hyrv2lxhclnw0m.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-trdns/transformator-tdtn-25000-kva-110-38-5-6-6-kv/",
+    "reason": "Same grey cutout recycled under many TDTN ratings; source says KTZ but photograph is not an exact-model identifier. Quarantined pending manufacturer/photograph attribution.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/d67/0cojzxycm8mtfz413x2uo63nnd9ccht8.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-trdns/transformator-tdtn-25000-kva-110-38-5-11-kv/",
+    "reason": "Same grey cutout recycled under many TDTN ratings; source says KTZ but photograph is not an exact-model identifier. Quarantined pending manufacturer/photograph attribution.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/54c/ms4j2v5i0s774vqhw5f79e8j7zxt80k4.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-trdns/transformator-tdtn-40000-kva-110-38-5-6-6-kv/",
+    "reason": "Same grey cutout recycled under many TDTN ratings; source says KTZ but photograph is not an exact-model identifier. Quarantined pending manufacturer/photograph attribution.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/a7b/8ia2n7860gxuvysmnuurruuhdkwohh2l.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-trdns/transformator-tdtn-40000-kva-110-38-5-11-kv/",
+    "reason": "Same grey cutout recycled under many TDTN ratings; source says KTZ but photograph is not an exact-model identifier. Quarantined pending manufacturer/photograph attribution.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/159/24f193vej2yzeqb3xgxn9l5a4p6i14kx.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-trdns/transformator-tdtn-63000-kva-110-38-5-6-6-kv/",
+    "reason": "Same grey cutout recycled under many TDTN ratings; source says KTZ but photograph is not an exact-model identifier. Quarantined pending manufacturer/photograph attribution.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/73b/frr5szzvuxcdqi8nxsk8w4qzef5gefl4.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-trdns/transformator-tdtn-63000-kva-110-38-5-11-kv/",
+    "reason": "Same grey cutout recycled under many TDTN ratings; source says KTZ but photograph is not an exact-model identifier. Quarantined pending manufacturer/photograph attribution.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/0bf/l7bj1sp90871jqfru6l5x7b9llt7df99.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-trdns/transformator-tdtn-10000-kva-110-38-5-6-6-kv/",
+    "reason": "Same grey cutout recycled under many TDTN ratings; source says KTZ but photograph is not an exact-model identifier. Quarantined pending manufacturer/photograph attribution.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/4a1/9beelub12w1lfc5e351lm30qolieeyqd.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-trdns/transformator-tdtn-10000-kva-110-38-5-11-kv/",
+    "reason": "Same grey cutout recycled under many TDTN ratings; source says KTZ but photograph is not an exact-model identifier. Quarantined pending manufacturer/photograph attribution.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/iblock/da3/ixoaz8zvgvls0irbfnbp9jas606g5142.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-trdns/transformator-tdtn-16000-kva-110-38-5-6-6-kv/",
+    "reason": "Same grey cutout recycled under many TDTN ratings; source says KTZ but photograph is not an exact-model identifier. Quarantined pending manufacturer/photograph attribution.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/563/450_450_0/n70auiuelq0ybeczyz3pjhyo88qy6ac7.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tmzh/transformator-tmzh-2500-27-5-0-4/",
+    "reason": "Same compact TMZh photograph reused for25 through2500kVA; nameplate unreadable. Cannot distinguish two assigned TMZh capacity families.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/7a1/450_450_0/vz7xfmragbsqf62zg5tpp0ylje9wkvju.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tmzh/transformator-tmzh-1600-27-5-0-4/",
+    "reason": "Same compact TMZh photograph reused for25 through2500kVA; nameplate unreadable. Cannot distinguish two assigned TMZh capacity families.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/833/450_450_0/0h7k39j4z8ulttvj1nslnei6wjkm5d51.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tmzh/transformator-tmzh-1000-27-5-0-4/",
+    "reason": "Same compact TMZh photograph reused for25 through2500kVA; nameplate unreadable. Cannot distinguish two assigned TMZh capacity families.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/df2/450_450_0/3osn4u85p5i5cvk7jjw4aby2rc8eaml5.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tmzh/transformator-tmzh-630-27-5-0-4/",
+    "reason": "Same compact TMZh photograph reused for25 through2500kVA; nameplate unreadable. Cannot distinguish two assigned TMZh capacity families.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/c02/450_450_0/h9o4589bfk8kxkws097kzfzxffhn2ang.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tmzh/transformator-tmzh-400-27-5-0-4/",
+    "reason": "Same compact TMZh photograph reused for25 through2500kVA; nameplate unreadable. Cannot distinguish two assigned TMZh capacity families.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/1be/450_450_0/wh35bi3dbjvy9upq10j2x59n6ivot6e8.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tmzh/transformator-tmzh-250-27-5-0-4/",
+    "reason": "Same compact TMZh photograph reused for25 through2500kVA; nameplate unreadable. Cannot distinguish two assigned TMZh capacity families.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/82b/450_450_0/hsfium9eepjvwnob7j3cm18pt9pb6wc9.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tmzh/transformator-tmzh-160-27-5-0-4/",
+    "reason": "Same compact TMZh photograph reused for25 through2500kVA; nameplate unreadable. Cannot distinguish two assigned TMZh capacity families.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/13d/450_450_0/praadq2upjte8sthicg3eqg3ybuc63xl.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tmzh/transformator-tmzh-100-27-5-0-4/",
+    "reason": "Same compact TMZh photograph reused for25 through2500kVA; nameplate unreadable. Cannot distinguish two assigned TMZh capacity families.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://trans-energo.com/upload/resize_cache/iblock/6da/450_450_0/d96opp2ircnbzir3vasq91ezm169swxj.jpg",
+    "sourcePageUrl": "https://trans-energo.com/transformator-tmzh/transformator-tmzh-25-27-5-0-4/",
+    "reason": "Same compact TMZh photograph reused for25 through2500kVA; nameplate unreadable. Cannot distinguish two assigned TMZh capacity families.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://www.eprussia.ru/upload/iblock/20f/o36u8b2z3fji2gu7m07tra34fikl5vqp/pr53.jpg",
+    "sourcePageUrl": "https://www.eprussia.ru/epr/499-500/4576474.htm",
+    "reason": "Factory exterior, no product model.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://www.eprussia.ru/upload/medialibrary/c10/5p5mz9hqvzvz2gm44io95rcr4ahz793n/pr54.jpg",
+    "sourcePageUrl": "https://www.eprussia.ru/epr/499-500/4576474.htm",
+    "reason": "Genuine factory photograph, but web publication lacks an unambiguous model-specific caption.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://www.eprussia.ru/upload/medialibrary/d65/7w6y3jdgz71eslv6pw2in67f5f8lpevs/pr55.jpg",
+    "sourcePageUrl": "https://www.eprussia.ru/epr/499-500/4576474.htm",
+    "reason": "Wide production-floor context, no individual model identity.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://www.eprussia.ru/upload/medialibrary/ebc/wh8ddit8r843bf0wn0k3g07qa059vr84/pr56.jpg",
+    "sourcePageUrl": "https://www.eprussia.ru/epr/499-500/4576474.htm",
+    "reason": "Genuine installed Alageum transformer; adjacent web text discusses several different projects; exact model uncertain without print caption verification.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://alageum.com/media/k2/items/cache/bc61c35998920c79a57e03ad91265e8b_XL.jpg",
+    "sourcePageUrl": "https://alageum.com/ru/novosti/sdelano-v-kazakhstane",
+    "reason": "Promotional typography graphic with only partial background equipment; not suitable as a distinct standalone product photo.",
+    "status": "excluded_or_hold"
+  },
+  {
+    "imageUrl": "https://asiatrafo.kz/images/product_slide_img.png",
+    "sourcePageUrl": "https://asiatrafo.kz/ru/product.html",
+    "reason": "Technical CAD drawing, not a photo; manufacturer project card misleadingly reuses it.",
+    "status": "excluded"
+  },
+  {
+    "imageUrl": "https://asiatrafo.kz/images/production_img_1.png",
+    "sourcePageUrl": "https://asiatrafo.kz/ru/product.html",
+    "reason": "Technical CAD drawing, not a photo.",
+    "status": "excluded"
+  },
+  {
+    "imageUrl": "https://asiatrafo.kz/images/transformer_slide_4.png",
+    "sourcePageUrl": "https://asiatrafo.kz/ru/transformers.html",
+    "reason": "Yassy building exterior, not a transformer product photo.",
+    "status": "excluded"
+  },
+  {
+    "imageUrl": "https://al-electro.ru/assets/cache/images/assets/user_images/139/08-03-e4dfa496a8a512b4fdb4b43d-400x300-92e.jpg",
+    "sourcePageUrl": "https://al-electro.ru/maslyanye-transformatory/110-kv/trdn-25000-80000110-u1-uhl1",
+    "reason": "Dealer illustration retained for research only. No image-specific manufacturer proof; several TD/TDNS cutouts conflict across types. OMZh source says35kV, not assigned27.5kV. Exact identity unresolved.",
+    "status": "hold_for_attribution"
+  },
+  {
+    "imageUrl": "https://al-electro.ru/assets/cache/images/assets/user_images/137/08-03-a6083e0b789a72b543c009c3657d8ed1-400x300-92e.jpg",
+    "sourcePageUrl": "https://al-electro.ru/maslyanye-transformatory/110-kv/tmn-2500-6300110-u1-uhl1",
+    "reason": "Dealer illustration retained for research only. No image-specific manufacturer proof; several TD/TDNS cutouts conflict across types. OMZh source says35kV, not assigned27.5kV. Exact identity unresolved.",
+    "status": "hold_for_attribution"
+  },
+  {
+    "imageUrl": "https://al-electro.ru/assets/cache/images/assets/user_images/141/08-03-distancionnaya-diagnostika-izolyacii-vysokovoltnogo-oborudovaniya-400x300-29a.png",
+    "sourcePageUrl": "https://al-electro.ru/maslyanye-transformatory/110-kv/tdtn-10000-1600011035-u1-uhl1",
+    "reason": "Dealer illustration retained for research only. No image-specific manufacturer proof; several TD/TDNS cutouts conflict across types. OMZh source says35kV, not assigned27.5kV. Exact identity unresolved.",
+    "status": "hold_for_attribution"
+  },
+  {
+    "imageUrl": "https://al-electro.ru/assets/cache/images/assets/user_images/138/08-03-d8d22eb43786c8237c7c7fb6-400x300-92e.jpg",
+    "sourcePageUrl": "https://al-electro.ru/maslyanye-transformatory/110-kv/tdn-10000-80000110-u1-uhl1",
+    "reason": "Dealer illustration retained for research only. No image-specific manufacturer proof; several TD/TDNS cutouts conflict across types. OMZh source says35kV, not assigned27.5kV. Exact identity unresolved.",
+    "status": "hold_for_attribution"
+  },
+  {
+    "imageUrl": "https://al-electro.ru/assets/cache/images/assets/user_images/140/08-03-220-400x300-92e.jpg",
+    "sourcePageUrl": "https://al-electro.ru/maslyanye-transformatory/110-kv/tmtn-6300110-u1-uhl",
+    "reason": "Dealer illustration retained for research only. No image-specific manufacturer proof; several TD/TDNS cutouts conflict across types. OMZh source says35kV, not assigned27.5kV. Exact identity unresolved.",
+    "status": "hold_for_attribution"
+  },
+  {
+    "imageUrl": "https://al-electro.ru/assets/cache/images/assets/user_images/135/08-03-1.1.1-400x300-29a.png",
+    "sourcePageUrl": "https://al-electro.ru/maslyanye-transformatory/35-kv/trdns-25000-35-u1-s-rpn",
+    "reason": "Dealer illustration retained for research only. No image-specific manufacturer proof; several TD/TDNS cutouts conflict across types. OMZh source says35kV, not assigned27.5kV. Exact identity unresolved.",
+    "status": "hold_for_attribution"
+  },
+  {
+    "imageUrl": "https://al-electro.ru/assets/cache/images/assets/user_images/132/08-03-2f8cdb14fa58848756cf005358b8ac8b-400x300-29a.png",
+    "sourcePageUrl": "https://al-electro.ru/maslyanye-transformatory/35-kv/tm-1000-630035-uhl1",
+    "reason": "Dealer illustration retained for research only. No image-specific manufacturer proof; several TD/TDNS cutouts conflict across types. OMZh source says35kV, not assigned27.5kV. Exact identity unresolved.",
+    "status": "hold_for_attribution"
+  },
+  {
+    "imageUrl": "https://al-electro.ru/assets/cache/images/assets/user_images/131/08-03-7040bd1dcb3d61131c0fbb5826e53c8b-200x200-34f.jpg",
+    "sourcePageUrl": "https://al-electro.ru/maslyanye-transformatory/35-kv",
+    "reason": "Dealer illustration retained for research only. No image-specific manufacturer proof; several TD/TDNS cutouts conflict across types. OMZh source says35kV, not assigned27.5kV. Exact identity unresolved.",
+    "status": "hold_for_attribution"
+  },
+  {
+    "imageUrl": "https://al-electro.ru/assets/cache/images/assets/user_images/133/08-03-c867883ce0ea031c995dba7a4d38fa82-200x200-34f.jpg",
+    "sourcePageUrl": "https://al-electro.ru/maslyanye-transformatory/35-kv",
+    "reason": "Dealer illustration retained for research only. No image-specific manufacturer proof; several TD/TDNS cutouts conflict across types. OMZh source says35kV, not assigned27.5kV. Exact identity unresolved.",
+    "status": "hold_for_attribution"
+  },
+  {
+    "imageUrl": "https://al-electro.ru/assets/cache/images/assets/user_images/134/08-03-933630ee88ff00ef43c92a95428a5523-200x200-34f.jpg",
+    "sourcePageUrl": "https://al-electro.ru/maslyanye-transformatory/35-kv",
+    "reason": "Dealer illustration retained for research only. No image-specific manufacturer proof; several TD/TDNS cutouts conflict across types. OMZh source says35kV, not assigned27.5kV. Exact identity unresolved.",
+    "status": "hold_for_attribution"
+  },
+  {
+    "imageUrl": "https://al-electro.ru/assets/cache/images/assets/user_images/136/08-03-2f39c9f2b0e2e05da65eee4f5d88ed11-200x200-34f.jpg",
+    "sourcePageUrl": "https://al-electro.ru/maslyanye-transformatory/35-kv",
+    "reason": "Dealer illustration retained for research only. No image-specific manufacturer proof; several TD/TDNS cutouts conflict across types. OMZh source says35kV, not assigned27.5kV. Exact identity unresolved.",
+    "status": "hold_for_attribution"
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/yacheyka-yakno-ks-02/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/cff/cffbe81a50864ddcbebc90503cc53e78.png",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/yacheyka-yakno-ks-02/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/fc9/fc941c71cf2ff7c90621cfd0e94e91c3.png",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/krn-iii-iv-iv-k-6-k-6u/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/70c/70ce87ac166504f4cf0dea304fa3c188.png",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/krn-iii-iv-iv-k-6-k-6u/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/7df/7df94e9d2e9abb499835459fff59ed31.jpg",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/krn-iii-iv-iv-k-6-k-6u/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/a91/a91e6bf7d95e9da568eb4365b2a8ac9c.png",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/komplektnoe-raspredelitelnoe-ustroystvo-serii-k-xxvi/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/633/633c8337b1a78a01eff864f27400ae34.png",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/komplektnoe-raspredelitelnoe-ustroystvo-serii-kru2-10/",
+    "originalImageUrl": "https://aemz.kz/upload/iblock/f63/f63f24991f5c7d919ffdd8c8ef770b08.jpg",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/komplektnoe-raspredelitelnoe-ustroystvo-serii-kru2-10/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/34d/34dc71ca29dc4708128982755ad9c017.png",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/komplektnoe-raspredelitelnoe-ustroystvo-serii-kru2-10/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/8bd/8bd17a94a446b9f4e293078b1ad88550.png",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/komplektnoe-raspredelitelnoe-ustroystvo-serii-kerneu-10kv-27-5kv-35kv/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/5bc/5bc58385d0badbaf816a03e283dd2352.png",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/komplektnoe-raspredelitelnoe-ustroystvo-serii-kerneu-10kv-27-5kv-35kv/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/de6/de697d6f6dcead4827a425d1d243daa9.png",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/komplektnoe-raspredelitelnoe-ustroystvo-serii-km-7m-k-7m/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/314/31456cc27b58cbc12edfab07ca2a306a.png",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/komplektnoe-raspredelitelnoe-ustroystvo-serii-km-7m-k-7m/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/fdd/fdda0ce71baaa066559f26581c370d10.png",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/f4/",
+    "originalImageUrl": "https://aemz.kz/upload/iblock/d1a/d1a77f776437d61d238cab1acba7df62.jpg",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/f4/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/a71/a718cafa58204f66a2a43bac2efc050e.png",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/f4/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/08b/08b157022d156eeb2b1d36799620924e.png",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/nivelir-bosch-pll-360/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/2cb/2cbe3c1251612b0b25d706ee64ebc3bc.jpg",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/nivelir-bosch-pll-360/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/187/1871d14b2536d4f9931e9be1181b4fef.png",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/nivelir-bosch-pll-360/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/bf6/bf6594b95540c1a27fa7495139941abd.png",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/f1/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/e39/e3949ddd75735bccef67c786e36d2b8a.jpg",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/f1/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/dc0/dc06c1d90694f81f389f576f36ec5869.png",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/f1/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/bc4/bc4284ebb7205dbfdb6f045a2cab500c.png",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/f2/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/c62/c627386b8db454f216404d4406fe5caa.jpg",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/f2/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/63f/63fd930bc4243617747c255674166a9c.jpg",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/visok/f2/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/1cc/1cc7d3c16c88ecc3f318b9d6cc9e29aa.png",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/nizkovoltnoe-oborudovanie/yashchiki-i-shkafy-upravleniya-rus-m-ya-5000/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/d4d/d4dc76734acf765b561fe5bd1009dbc2.jpg",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/nizkovoltnoe-oborudovanie/yashchiki-i-shkafy-upravleniya-rus-m-ya-5000/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/366/366595d96b19e85bd9dae932f00924bb.jpg",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/nizkovoltnoe-oborudovanie/yashchiki-i-shkafy-upravleniya-rus-m-ya-5000/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/2a3/2a3f8c7ce859688417ded75a1b472f00.jpg",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/nizkovoltnoe-oborudovanie/shchitki-i-yashchiki-osveshcheniya/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/c84/c846a2c0edb4809495bae56c62a2995c.jpg",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/nizkovoltnoe-oborudovanie/shchitki-i-yashchiki-osveshcheniya/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/f08/f082543c3ae7393b005fddb5edd479a7.jpg",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/nizkovoltnoe-oborudovanie/shkafy-i-yashchiki-silovye/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/3e4/3e4bf78cec88d3d78a7e95e4cc8312dd.jpg",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/nizkovoltnoe-oborudovanie/shkafy-i-yashchiki-silovye/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/17d/17d64fb340a2f2abf86d4d31686a6d63.jpg",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/nizkovoltnoe-oborudovanie/epson1/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/419/41998cfbf049aebe10afb8ac2026a9fd.png",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/nizkovoltnoe-oborudovanie/shkafy-i-punkty/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/019/0199c4aaa76eecdb8ad83efcb4675156.png",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/nizkovoltnoe-oborudovanie/shkafy-i-punkty/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/ec7/ec701d27f394cb735d4556571dc9ce23.png",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  },
+  {
+    "sourcePageUrl": "https://aemz.kz/catalog/nizkovoltnoe-oborudovanie/shkafy-i-punkty/",
+    "originalImageUrl": "https://aemz.kz/upload/medialibrary/a3c/a3c11fd8a90aec25ba3408f8c1065a1e.png",
+    "reason": "Technical diagram/table or rendered catalog illustration, not a genuine photograph. Visually checked on contact sheet."
+  }
+]

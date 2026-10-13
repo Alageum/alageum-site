@@ -1,0 +1,157 @@
+{
+  "format": "alageum-x4k3-caption-nuance-review-v1",
+  "status": "read-only-source-interpretation-no-binding-clearance",
+  "reviewedAt": "2026-10-06T11:02:28.680Z",
+  "sourceId": "transformers-2026",
+  "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+  "inspectedPhysicalPages": [
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "observations": [
+    "Page 28 is an explicit ТМГи energy-saving transformer subsection with loss class X4K3 and rows 63–2500; page 29 continues those ТМГ и rows with dimensions and masses.",
+    "Page 30 is explicitly captioned ТМГвэ-40-630 X3K3 и X4K3 and shows the small three-HV/four-LV corrugated exterior with optional rollers/fuse.",
+    "Page 31 is explicitly captioned ТМГвэ-1000-2500 X3K3 и X4K3 and shows the large exterior with optional fuse and execution-specific instrumentation.",
+    "Page 32 begins the separate ТМГиН-630 load-regulated X4K3 subsection, bounding the ordinary ТМГи chapter before it."
+  ],
+  "interpretation": "Drawings exist and explicitly include the X4K3 loss class within the bounded ТМГи subsection. The ТМГи versus ТМГвэ prefix mismatch is a genuine nomenclature inconsistency, but is not absence of visual evidence. A separate representative-exterior subsection review could be supported, with the mismatch visible and no claim of exact identity or dimensions.",
+  "currentDisposition": "Keep all current bindings and record/source names unchanged. This note does not approve or implement any binding.",
+  "recommendedGapWording": "Для X4K3 есть чертежи на стр. 30–31 с прямым указанием X4K3, но префиксы таблицы ТМГи и подписи ТМГвэ расходятся. Применимость общей внешней компоновки к этим записям ещё не прошла отдельное ограниченное согласование.",
+  "excluded": [
+    "X3K2 remains held because the loss class itself differs from the X3K3 drawing caption.",
+    "ТМГиН-630 on page 32 is a separate load-regulated construction; this interpretation does not apply to it.",
+    "No source names, values, units, dimensions, default bindings, icons, choices or counts are changed."
+  ],
+  "candidateRows": [
+    {
+      "id": "alageum-tmgi-x4k3-63",
+      "name": "ТМГ и-63 (Х4К3)",
+      "sourcePages": [
+        28,
+        29,
+        30
+      ],
+      "drawingCandidatePages": [
+        30
+      ]
+    },
+    {
+      "id": "alageum-tmgi-x4k3-100",
+      "name": "ТМГ и-100 (Х4К3)",
+      "sourcePages": [
+        28,
+        29,
+        30
+      ],
+      "drawingCandidatePages": [
+        30
+      ]
+    },
+    {
+      "id": "alageum-tmgi-x4k3-160",
+      "name": "ТМГ и-160 (Х4К3)",
+      "sourcePages": [
+        28,
+        29,
+        30
+      ],
+      "drawingCandidatePages": [
+        30
+      ]
+    },
+    {
+      "id": "alageum-tmgi-x4k3-250",
+      "name": "ТМГ и-250 (Х4К3)",
+      "sourcePages": [
+        28,
+        29,
+        30
+      ],
+      "drawingCandidatePages": [
+        30
+      ]
+    },
+    {
+      "id": "alageum-tmgi-x4k3-400",
+      "name": "ТМГ и-400 (Х4К3)",
+      "sourcePages": [
+        28,
+        29,
+        30
+      ],
+      "drawingCandidatePages": [
+        30
+      ]
+    },
+    {
+      "id": "alageum-tmgi-x4k3-630",
+      "name": "ТМГ и-630 (Х4К3)",
+      "sourcePages": [
+        28,
+        29,
+        30
+      ],
+      "drawingCandidatePages": [
+        30
+      ]
+    },
+    {
+      "id": "alageum-tmgi-x4k3-1000",
+      "name": "ТМГ и-1000 (Х4К3)",
+      "sourcePages": [
+        28,
+        29,
+        31
+      ],
+      "drawingCandidatePages": [
+        31
+      ]
+    },
+    {
+      "id": "alageum-tmgi-x4k3-1250",
+      "name": "ТМГ и-1250 (Х4К3)",
+      "sourcePages": [
+        28,
+        29,
+        31
+      ],
+      "drawingCandidatePages": [
+        31
+      ]
+    },
+    {
+      "id": "alageum-tmgi-x4k3-1600",
+      "name": "ТМГ и-1600 (Х4К3)",
+      "sourcePages": [
+        28,
+        29,
+        31
+      ],
+      "drawingCandidatePages": [
+        31
+      ]
+    },
+    {
+      "id": "alageum-tmgi-x4k3-2500",
+      "name": "ТМГ и-2500 (Х4К3)",
+      "sourcePages": [
+        28,
+        29,
+        31
+      ],
+      "drawingCandidatePages": [
+        31
+      ]
+    }
+  ],
+  "sourcePageHashes": {
+    "28": "d883f94283ebe8027f7f6a1ebbaaeb41e7035b00a4e2eacc6c17addcabf35961",
+    "29": "8cd8ec019872d60df2636200672d96d254e14afa8c244f7224982ed5e0a834f8",
+    "30": "270769453d833dfc8eb67007df09d31e1b5ef0b2f8ad5a9df012b158f6fd654d",
+    "31": "15c8eaf316397be33895e0c53989155a7116448d52919176d46cc5b2f18137d1",
+    "32": "5ec20876b2511f18bea11e3fb93fdbeac4a4104f20c98733b92cc90c57a2759e"
+  }
+}

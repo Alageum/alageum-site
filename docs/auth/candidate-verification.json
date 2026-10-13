@@ -1,0 +1,66 @@
+{
+  "format": "alageum-federated-auth-candidate-v1",
+  "baselineCommit": "a32f7878d25a7d4e26d063ec6914b72d2f814383",
+  "scope": "Local Google registration and server-side cookie sessions; research-only unavailable eGov boundary",
+  "independentCodeReview": "No remaining concrete blocker found in bounded Google authentication; not deployment or historical-proof approval",
+  "verification": {
+    "oidcCrypto": {
+      "passed": 19
+    },
+    "frontendFocused": {
+      "passed": 56
+    },
+    "postgresqlIntegration": {
+      "passed": 13
+    },
+    "backendCheck": {
+      "passed": 681
+    },
+    "frontendLint": "passed",
+    "frontendProductionBuild": "passed",
+    "strapiAdminBuild": "passed with local test configuration and writable SWC cache",
+    "frontendFullUnit": {
+      "passed": 680,
+      "failed": 40,
+      "classification": "All failures hit intentional changed backend reviewed bytes / immutable predecessor closure; successor amendment required; historical approvals unchanged"
+    },
+    "browserE2E": "Seven scenarios authored and discovered by Playwright. System Chromium launch fails before page creation with socket() Operation not permitted; zero scenario passes in this shell. No live provider test claimed. Supported cloud-browser execution is being coordinated in the combined candidate.",
+    "strapiHttpSmoke": {
+      "passed": 12,
+      "provider": "local RSA signed fixtures; no live provider contact"
+    }
+  },
+  "reviewedCandidateFiles": {
+    "backend-node/config/alageum.js": "1419f45ca09a0300f7cde02e1a7e75d0c2ced6180503199bbc30b58731bfafde",
+    "backend-node/config/middlewares.js": "dbc0cc4d015b9e2edc76bbb0e3dfbadaed23a32be79d0151d08645109551a3e4",
+    "backend-node/src/api/compat/controllers/compat.js": "b5d8bd41069711ffb20a4be7eeae91ce1b16cf6c895ae913521e9676dd28f9e6",
+    "backend-node/src/api/compat/routes/compat.js": "5a0cad1feace71911b5e06b8c84c4e74d0dc781d3d771fa46b62d5b5beda2e00",
+    "backend-node/src/domain/auth.js": "6233ca1eb6ff29f536b3afc2b62fea788117af558f943605da8e05998e9f41dc",
+    "backend-node/src/domain/federated-auth.js": "cb3a3b6981ab4055e9683285e527ba65fb5112b0eec2b242ca00b0d84b591a86",
+    "backend-node/src/domain/federated-schema.js": "32e8cd906028ce8ae87b287e911fdd4e759b5e428089c96217bc33d2c564981b",
+    "backend-node/src/domain/google-oidc.js": "f67653d9531219282cb5978a801d4fb99a6d0af802ac70cbf63ce8453531303a",
+    "backend-node/src/index.js": "7bc629e8074e31a4b18c371b193cea238022af31ea7694e675d4ebe2ebe1e992",
+    "backend-node/src/middlewares/safe-request-logger.js": "01041f77ac3f0393301b07cb7f8c793bb98d7c45c85470e1517cfe8d8416bf7a",
+    "backend-node/tests/federated-auth.http-auth.js": "2ff599eeb4535692fc377f3d1f41285c4aa9b67aca4d3be6b5bac88b820110c5",
+    "backend-node/tests/federated-auth.integration.js": "ceb1c990297eb59dae425d17167270b94aab0547b301fdbc1bb1fd826aa73d9e",
+    "backend-node/tests/google-oidc.test.js": "60a966ab77ad4c6ab514b3b77636086e42d09e9b8b3e890e8648988e4f50a9e8",
+    "frontend/app/(site)/login/page.js": "0eca0cc28f149c0fb7b320183be44a189d9024924f4c74c30b7f9a45c03bf7aa",
+    "frontend/components/AuthProvider.js": "8a51cdad6d693903b415bb44efcfcda8f32e26459bf2db510066cc38e1158c5d",
+    "frontend/components/FederatedSignIn.js": "3ebd657ab5ed2fd08cebfb9c1725251703d2ce54ac672ab1d8d6512f843ba876",
+    "frontend/federated-e2e/federated-auth.spec.js": "2d9fd2959517f9a9fd5978618fdd40e0462f004fa33d75d5cfdb3e8146871afc",
+    "frontend/lib/api/auth.js": "699cd456b2bde27dcce661335a36f1d1cfe7b4f9ee22e0674b7a282a7d213b74",
+    "frontend/lib/api/client.js": "a36ff1230c279cf8165d88a7851da326d15c939931805c8615c6123dd5c06c38",
+    "frontend/lib/api/federated.js": "7155624c1f6c2954720ab347dcabb60bec3f68eb95f2422ce218cfdb23a3673f",
+    "frontend/lib/api/sessionTransport.js": "e7e3e481c5d36ac32d50b377f47fb0d7703c7b91eb85b2aba2eab03f2a45f4c7",
+    "frontend/playwright.federated.config.js": "f04b944dcb9faeadcbe69561bedcd4c9f7d37dfb2b9a09ea8e2a45bea4c29867",
+    "frontend/tests/federated-auth.test.mjs": "bbeb106725e96eb78e479cf0b9998ca8caacff12908fc7406122ccc47c703835"
+  },
+  "remaining": [
+    "Google client credentials and exact redirect registration",
+    "Live provider end-to-end test",
+    "Same-origin HTTPS and trusted-proxy deployment review",
+    "Independent successor proof for pinned aggregate tests",
+    "Real browser execution of interruption scenarios",
+    "Official eGov product/service choice, approval, contract and technical specification"
+  ]
+}

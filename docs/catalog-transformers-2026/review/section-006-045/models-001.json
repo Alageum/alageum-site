@@ -1,0 +1,2284 @@
+[
+  {
+    "id": "alageum-tmg-standard-16",
+    "familyId": "tmg-standard",
+    "name": "ТМГ-16 (стандартный)",
+    "modelDesignationRaw": "ТМГ-16",
+    "sku": null,
+    "skuStatus": "No complete orderable SKU specified; designation is exact table row identifier",
+    "series": "ТМГ",
+    "variantLabel": "стандартный",
+    "nominalPowerKva": 16,
+    "manufacturer": null,
+    "brand": "Alageum electric",
+    "sourceId": "alageum-technical-catalog-2026-03-18",
+    "sourcePages": [
+      6,
+      7,
+      12
+    ],
+    "dataPages": [
+      6,
+      7
+    ],
+    "sourceTableRow": "ТМГ-16",
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "16",
+        "unit": "кВА",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nУ/Zн-11\nД/Ун-11",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Р о",
+        "value": "90",
+        "unit": "Вт",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Рк",
+        "value": "440\n500\n500",
+        "unit": "Вт",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "U к",
+        "value": "4,5\n4,7\n4,7",
+        "unit": "%",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "I о",
+        "value": "4",
+        "unit": "%",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "L",
+        "value": "767",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "B",
+        "value": "498",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "H",
+        "value": "810",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A",
+        "value": "450",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A1",
+        "value": "400",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "M",
+        "value": "90",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h",
+        "value": "80",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h1",
+        "value": "95",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Полная масса",
+        "value": "225",
+        "unit": "кг",
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Масса масла",
+        "value": "60",
+        "unit": "кг",
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      }
+    ],
+    "configurations": [
+      {
+        "connectionGroupRaw": "У/Ун-0",
+        "PkWRaw": "440",
+        "UkPercentRaw": "4,5",
+        "scope": "Printed connection option; no synthetic SKU generated"
+      },
+      {
+        "connectionGroupRaw": "У/Zн-11",
+        "PkWRaw": "500",
+        "UkPercentRaw": "4,7",
+        "scope": "Printed connection option; no synthetic SKU generated"
+      },
+      {
+        "connectionGroupRaw": "Д/Ун-11",
+        "PkWRaw": "500",
+        "UkPercentRaw": "4,7",
+        "scope": "Printed connection option; no synthetic SKU generated"
+      }
+    ],
+    "assetMapping": {
+      "assetFamilyId": "sealed-corrugated-small",
+      "evidencePages": [
+        12
+      ],
+      "basis": "explicit drawing heading groups this variant",
+      "reuseLevel": "construction topology and source illustration only",
+      "geometryVerified": false,
+      "exactMeshReuseAllowed": false,
+      "dimensionalUnitsVerified": false,
+      "dimensionAccurateMeshAuthorizedByEvidence": false,
+      "executionBinding": "explicit-caption",
+      "executionBindingUncertain": false
+    },
+    "reconciliation": [],
+    "notes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed."
+    ],
+    "designation": "ТМГ-16",
+    "execution": "стандартный",
+    "sourceRow": {
+      "designation": "ТМГ-16",
+      "electricalTablePage": 6,
+      "dimensionsTablePage": 7
+    },
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "16",
+        "unit": "кВА",
+        "page": 6
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "page": 6
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nУ/Zн-11\nД/Ун-11",
+        "unit": null,
+        "page": 6
+      },
+      {
+        "label": "Р о",
+        "value": "90",
+        "unit": "Вт",
+        "page": 6
+      },
+      {
+        "label": "Рк",
+        "value": "440\n500\n500",
+        "unit": "Вт",
+        "page": 6
+      },
+      {
+        "label": "U к",
+        "value": "4,5\n4,7\n4,7",
+        "unit": "%",
+        "page": 6
+      },
+      {
+        "label": "I о",
+        "value": "4",
+        "unit": "%",
+        "page": 6
+      },
+      {
+        "label": "L",
+        "value": "767",
+        "unit": null,
+        "page": 6
+      },
+      {
+        "label": "B",
+        "value": "498",
+        "unit": null,
+        "page": 6
+      },
+      {
+        "label": "H",
+        "value": "810",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "A",
+        "value": "450",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "A1",
+        "value": "400",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "M",
+        "value": "90",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "h",
+        "value": "80",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "h1",
+        "value": "95",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "Полная масса",
+        "value": "225",
+        "unit": "кг",
+        "page": 7
+      },
+      {
+        "label": "Масса масла",
+        "value": "60",
+        "unit": "кг",
+        "page": 7
+      }
+    ],
+    "candidateOldIds": []
+  },
+  {
+    "id": "alageum-tmg-standard-25",
+    "familyId": "tmg-standard",
+    "name": "ТМГ-25 (стандартный)",
+    "modelDesignationRaw": "ТМГ-25",
+    "sku": null,
+    "skuStatus": "No complete orderable SKU specified; designation is exact table row identifier",
+    "series": "ТМГ",
+    "variantLabel": "стандартный",
+    "nominalPowerKva": 25,
+    "manufacturer": null,
+    "brand": "Alageum electric",
+    "sourceId": "alageum-technical-catalog-2026-03-18",
+    "sourcePages": [
+      6,
+      7,
+      12
+    ],
+    "dataPages": [
+      6,
+      7
+    ],
+    "sourceTableRow": "ТМГ-25",
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "25",
+        "unit": "кВА",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nУ/Zн-11\nД/Ун-11",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Р о",
+        "value": "120",
+        "unit": "Вт",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Рк",
+        "value": "600\n690\n690",
+        "unit": "Вт",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "U к",
+        "value": "4,5\n4,7\n4,7",
+        "unit": "%",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "I о",
+        "value": "3,0",
+        "unit": "%",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "L",
+        "value": "836",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "B",
+        "value": "490",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "H",
+        "value": "890",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A",
+        "value": "450",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A1",
+        "value": "400",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "M",
+        "value": "90",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h",
+        "value": "80",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h1",
+        "value": "95",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Полная масса",
+        "value": "275",
+        "unit": "кг",
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Масса масла",
+        "value": "70",
+        "unit": "кг",
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      }
+    ],
+    "configurations": [
+      {
+        "connectionGroupRaw": "У/Ун-0",
+        "PkWRaw": "600",
+        "UkPercentRaw": "4,5",
+        "scope": "Printed connection option; no synthetic SKU generated"
+      },
+      {
+        "connectionGroupRaw": "У/Zн-11",
+        "PkWRaw": "690",
+        "UkPercentRaw": "4,7",
+        "scope": "Printed connection option; no synthetic SKU generated"
+      },
+      {
+        "connectionGroupRaw": "Д/Ун-11",
+        "PkWRaw": "690",
+        "UkPercentRaw": "4,7",
+        "scope": "Printed connection option; no synthetic SKU generated"
+      }
+    ],
+    "assetMapping": {
+      "assetFamilyId": "sealed-corrugated-small",
+      "evidencePages": [
+        12
+      ],
+      "basis": "explicit drawing heading groups this variant",
+      "reuseLevel": "construction topology and source illustration only",
+      "geometryVerified": false,
+      "exactMeshReuseAllowed": false,
+      "dimensionalUnitsVerified": false,
+      "dimensionAccurateMeshAuthorizedByEvidence": false,
+      "executionBinding": "explicit-caption",
+      "executionBindingUncertain": false
+    },
+    "reconciliation": [],
+    "notes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed."
+    ],
+    "designation": "ТМГ-25",
+    "execution": "стандартный",
+    "sourceRow": {
+      "designation": "ТМГ-25",
+      "electricalTablePage": 6,
+      "dimensionsTablePage": 7
+    },
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "25",
+        "unit": "кВА",
+        "page": 6
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "page": 6
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nУ/Zн-11\nД/Ун-11",
+        "unit": null,
+        "page": 6
+      },
+      {
+        "label": "Р о",
+        "value": "120",
+        "unit": "Вт",
+        "page": 6
+      },
+      {
+        "label": "Рк",
+        "value": "600\n690\n690",
+        "unit": "Вт",
+        "page": 6
+      },
+      {
+        "label": "U к",
+        "value": "4,5\n4,7\n4,7",
+        "unit": "%",
+        "page": 6
+      },
+      {
+        "label": "I о",
+        "value": "3,0",
+        "unit": "%",
+        "page": 6
+      },
+      {
+        "label": "L",
+        "value": "836",
+        "unit": null,
+        "page": 6
+      },
+      {
+        "label": "B",
+        "value": "490",
+        "unit": null,
+        "page": 6
+      },
+      {
+        "label": "H",
+        "value": "890",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "A",
+        "value": "450",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "A1",
+        "value": "400",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "M",
+        "value": "90",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "h",
+        "value": "80",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "h1",
+        "value": "95",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "Полная масса",
+        "value": "275",
+        "unit": "кг",
+        "page": 7
+      },
+      {
+        "label": "Масса масла",
+        "value": "70",
+        "unit": "кг",
+        "page": 7
+      }
+    ],
+    "candidateOldIds": []
+  },
+  {
+    "id": "alageum-tmg-standard-40",
+    "familyId": "tmg-standard",
+    "name": "ТМГ-40 (стандартный)",
+    "modelDesignationRaw": "ТМГ-40",
+    "sku": null,
+    "skuStatus": "No complete orderable SKU specified; designation is exact table row identifier",
+    "series": "ТМГ",
+    "variantLabel": "стандартный",
+    "nominalPowerKva": 40,
+    "manufacturer": null,
+    "brand": "Alageum electric",
+    "sourceId": "alageum-technical-catalog-2026-03-18",
+    "sourcePages": [
+      6,
+      7,
+      12
+    ],
+    "dataPages": [
+      6,
+      7
+    ],
+    "sourceTableRow": "ТМГ-40",
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "40",
+        "unit": "кВА",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nУ/Zн-11\nД/Ун-11",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Р о",
+        "value": "160",
+        "unit": "Вт",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Рк",
+        "value": "880\n1000\n1000",
+        "unit": "Вт",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "U к",
+        "value": "4,5\n4,7\n4,7",
+        "unit": "%",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "I о",
+        "value": "2,8",
+        "unit": "%",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "L",
+        "value": "880",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "B",
+        "value": "515",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "H",
+        "value": "895",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A",
+        "value": "450",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A1",
+        "value": "400",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "M",
+        "value": "105",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h",
+        "value": "75",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h1",
+        "value": "95",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Полная масса",
+        "value": "305",
+        "unit": "кг",
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Масса масла",
+        "value": "70",
+        "unit": "кг",
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      }
+    ],
+    "configurations": [
+      {
+        "connectionGroupRaw": "У/Ун-0",
+        "PkWRaw": "880",
+        "UkPercentRaw": "4,5",
+        "scope": "Printed connection option; no synthetic SKU generated"
+      },
+      {
+        "connectionGroupRaw": "У/Zн-11",
+        "PkWRaw": "1000",
+        "UkPercentRaw": "4,7",
+        "scope": "Printed connection option; no synthetic SKU generated"
+      },
+      {
+        "connectionGroupRaw": "Д/Ун-11",
+        "PkWRaw": "1000",
+        "UkPercentRaw": "4,7",
+        "scope": "Printed connection option; no synthetic SKU generated"
+      }
+    ],
+    "assetMapping": {
+      "assetFamilyId": "sealed-corrugated-small",
+      "evidencePages": [
+        12
+      ],
+      "basis": "explicit drawing heading groups this variant",
+      "reuseLevel": "construction topology and source illustration only",
+      "geometryVerified": false,
+      "exactMeshReuseAllowed": false,
+      "dimensionalUnitsVerified": false,
+      "dimensionAccurateMeshAuthorizedByEvidence": false,
+      "executionBinding": "explicit-caption",
+      "executionBindingUncertain": false
+    },
+    "reconciliation": [],
+    "notes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed."
+    ],
+    "designation": "ТМГ-40",
+    "execution": "стандартный",
+    "sourceRow": {
+      "designation": "ТМГ-40",
+      "electricalTablePage": 6,
+      "dimensionsTablePage": 7
+    },
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "40",
+        "unit": "кВА",
+        "page": 6
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "page": 6
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nУ/Zн-11\nД/Ун-11",
+        "unit": null,
+        "page": 6
+      },
+      {
+        "label": "Р о",
+        "value": "160",
+        "unit": "Вт",
+        "page": 6
+      },
+      {
+        "label": "Рк",
+        "value": "880\n1000\n1000",
+        "unit": "Вт",
+        "page": 6
+      },
+      {
+        "label": "U к",
+        "value": "4,5\n4,7\n4,7",
+        "unit": "%",
+        "page": 6
+      },
+      {
+        "label": "I о",
+        "value": "2,8",
+        "unit": "%",
+        "page": 6
+      },
+      {
+        "label": "L",
+        "value": "880",
+        "unit": null,
+        "page": 6
+      },
+      {
+        "label": "B",
+        "value": "515",
+        "unit": null,
+        "page": 6
+      },
+      {
+        "label": "H",
+        "value": "895",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "A",
+        "value": "450",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "A1",
+        "value": "400",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "M",
+        "value": "105",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "h",
+        "value": "75",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "h1",
+        "value": "95",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "Полная масса",
+        "value": "305",
+        "unit": "кг",
+        "page": 7
+      },
+      {
+        "label": "Масса масла",
+        "value": "70",
+        "unit": "кг",
+        "page": 7
+      }
+    ],
+    "candidateOldIds": []
+  },
+  {
+    "id": "alageum-tmg-standard-63",
+    "familyId": "tmg-standard",
+    "name": "ТМГ-63 (стандартный)",
+    "modelDesignationRaw": "ТМГ-63",
+    "sku": null,
+    "skuStatus": "No complete orderable SKU specified; designation is exact table row identifier",
+    "series": "ТМГ",
+    "variantLabel": "стандартный",
+    "nominalPowerKva": 63,
+    "manufacturer": null,
+    "brand": "Alageum electric",
+    "sourceId": "alageum-technical-catalog-2026-03-18",
+    "sourcePages": [
+      6,
+      7,
+      12
+    ],
+    "dataPages": [
+      6,
+      7
+    ],
+    "sourceTableRow": "ТМГ-63",
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "63",
+        "unit": "кВА",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nУ/Zн-11\nД/Ун-11",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Р о",
+        "value": "210",
+        "unit": "Вт",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Рк",
+        "value": "1280\n1470\n1470",
+        "unit": "Вт",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "U к",
+        "value": "4,5\n4,7\n4,7",
+        "unit": "%",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "I о",
+        "value": "2,6",
+        "unit": "%",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "L",
+        "value": "920",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "B",
+        "value": "530",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "H",
+        "value": "935",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A",
+        "value": "450",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A1",
+        "value": "400",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "M",
+        "value": "90",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h",
+        "value": "85",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h1",
+        "value": "110",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Полная масса",
+        "value": "350",
+        "unit": "кг",
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Масса масла",
+        "value": "87",
+        "unit": "кг",
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      }
+    ],
+    "configurations": [
+      {
+        "connectionGroupRaw": "У/Ун-0",
+        "PkWRaw": "1280",
+        "UkPercentRaw": "4,5",
+        "scope": "Printed connection option; no synthetic SKU generated"
+      },
+      {
+        "connectionGroupRaw": "У/Zн-11",
+        "PkWRaw": "1470",
+        "UkPercentRaw": "4,7",
+        "scope": "Printed connection option; no synthetic SKU generated"
+      },
+      {
+        "connectionGroupRaw": "Д/Ун-11",
+        "PkWRaw": "1470",
+        "UkPercentRaw": "4,7",
+        "scope": "Printed connection option; no synthetic SKU generated"
+      }
+    ],
+    "assetMapping": {
+      "assetFamilyId": "sealed-corrugated-small",
+      "evidencePages": [
+        12
+      ],
+      "basis": "explicit drawing heading groups this variant",
+      "reuseLevel": "construction topology and source illustration only",
+      "geometryVerified": false,
+      "exactMeshReuseAllowed": false,
+      "dimensionalUnitsVerified": false,
+      "dimensionAccurateMeshAuthorizedByEvidence": false,
+      "executionBinding": "explicit-caption",
+      "executionBindingUncertain": false
+    },
+    "reconciliation": [],
+    "notes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed."
+    ],
+    "designation": "ТМГ-63",
+    "execution": "стандартный",
+    "sourceRow": {
+      "designation": "ТМГ-63",
+      "electricalTablePage": 6,
+      "dimensionsTablePage": 7
+    },
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "63",
+        "unit": "кВА",
+        "page": 6
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "page": 6
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nУ/Zн-11\nД/Ун-11",
+        "unit": null,
+        "page": 6
+      },
+      {
+        "label": "Р о",
+        "value": "210",
+        "unit": "Вт",
+        "page": 6
+      },
+      {
+        "label": "Рк",
+        "value": "1280\n1470\n1470",
+        "unit": "Вт",
+        "page": 6
+      },
+      {
+        "label": "U к",
+        "value": "4,5\n4,7\n4,7",
+        "unit": "%",
+        "page": 6
+      },
+      {
+        "label": "I о",
+        "value": "2,6",
+        "unit": "%",
+        "page": 6
+      },
+      {
+        "label": "L",
+        "value": "920",
+        "unit": null,
+        "page": 6
+      },
+      {
+        "label": "B",
+        "value": "530",
+        "unit": null,
+        "page": 6
+      },
+      {
+        "label": "H",
+        "value": "935",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "A",
+        "value": "450",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "A1",
+        "value": "400",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "M",
+        "value": "90",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "h",
+        "value": "85",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "h1",
+        "value": "110",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "Полная масса",
+        "value": "350",
+        "unit": "кг",
+        "page": 7
+      },
+      {
+        "label": "Масса масла",
+        "value": "87",
+        "unit": "кг",
+        "page": 7
+      }
+    ],
+    "candidateOldIds": []
+  },
+  {
+    "id": "alageum-tmg-standard-100",
+    "familyId": "tmg-standard",
+    "name": "ТМГ-100 (стандартный)",
+    "modelDesignationRaw": "ТМГ-100",
+    "sku": null,
+    "skuStatus": "No complete orderable SKU specified; designation is exact table row identifier",
+    "series": "ТМГ",
+    "variantLabel": "стандартный",
+    "nominalPowerKva": 100,
+    "manufacturer": null,
+    "brand": "Alageum electric",
+    "sourceId": "alageum-technical-catalog-2026-03-18",
+    "sourcePages": [
+      6,
+      7,
+      12
+    ],
+    "dataPages": [
+      6,
+      7
+    ],
+    "sourceTableRow": "ТМГ-100",
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "100",
+        "unit": "кВА",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nУ/Zн-11\nД/Ун-11",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Р о",
+        "value": "280",
+        "unit": "Вт",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Рк",
+        "value": "1900\n2270\n2270",
+        "unit": "Вт",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "U к",
+        "value": "4,5\n4,7\n4,5",
+        "unit": "%",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "I о",
+        "value": "2,2",
+        "unit": "%",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "L",
+        "value": "962",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "B",
+        "value": "682",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "H",
+        "value": "1005",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A",
+        "value": "550",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A1",
+        "value": "550",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "M",
+        "value": "90",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h",
+        "value": "95",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h1",
+        "value": "110",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Полная масса",
+        "value": "445",
+        "unit": "кг",
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Масса масла",
+        "value": "100",
+        "unit": "кг",
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      }
+    ],
+    "configurations": [
+      {
+        "connectionGroupRaw": "У/Ун-0",
+        "PkWRaw": "1900",
+        "UkPercentRaw": "4,5",
+        "scope": "Printed connection option; no synthetic SKU generated"
+      },
+      {
+        "connectionGroupRaw": "У/Zн-11",
+        "PkWRaw": "2270",
+        "UkPercentRaw": "4,7",
+        "scope": "Printed connection option; no synthetic SKU generated"
+      },
+      {
+        "connectionGroupRaw": "Д/Ун-11",
+        "PkWRaw": "2270",
+        "UkPercentRaw": "4,5",
+        "scope": "Printed connection option; no synthetic SKU generated"
+      }
+    ],
+    "assetMapping": {
+      "assetFamilyId": "sealed-corrugated-small",
+      "evidencePages": [
+        12
+      ],
+      "basis": "explicit drawing heading groups this variant",
+      "reuseLevel": "construction topology and source illustration only",
+      "geometryVerified": false,
+      "exactMeshReuseAllowed": false,
+      "dimensionalUnitsVerified": false,
+      "dimensionAccurateMeshAuthorizedByEvidence": false,
+      "executionBinding": "explicit-caption",
+      "executionBindingUncertain": false
+    },
+    "reconciliation": [],
+    "notes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed."
+    ],
+    "designation": "ТМГ-100",
+    "execution": "стандартный",
+    "sourceRow": {
+      "designation": "ТМГ-100",
+      "electricalTablePage": 6,
+      "dimensionsTablePage": 7
+    },
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "100",
+        "unit": "кВА",
+        "page": 6
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "page": 6
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nУ/Zн-11\nД/Ун-11",
+        "unit": null,
+        "page": 6
+      },
+      {
+        "label": "Р о",
+        "value": "280",
+        "unit": "Вт",
+        "page": 6
+      },
+      {
+        "label": "Рк",
+        "value": "1900\n2270\n2270",
+        "unit": "Вт",
+        "page": 6
+      },
+      {
+        "label": "U к",
+        "value": "4,5\n4,7\n4,5",
+        "unit": "%",
+        "page": 6
+      },
+      {
+        "label": "I о",
+        "value": "2,2",
+        "unit": "%",
+        "page": 6
+      },
+      {
+        "label": "L",
+        "value": "962",
+        "unit": null,
+        "page": 6
+      },
+      {
+        "label": "B",
+        "value": "682",
+        "unit": null,
+        "page": 6
+      },
+      {
+        "label": "H",
+        "value": "1005",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "A",
+        "value": "550",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "A1",
+        "value": "550",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "M",
+        "value": "90",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "h",
+        "value": "95",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "h1",
+        "value": "110",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "Полная масса",
+        "value": "445",
+        "unit": "кг",
+        "page": 7
+      },
+      {
+        "label": "Масса масла",
+        "value": "100",
+        "unit": "кг",
+        "page": 7
+      }
+    ],
+    "candidateOldIds": []
+  },
+  {
+    "id": "alageum-tmg-standard-160",
+    "familyId": "tmg-standard",
+    "name": "ТМГ-160 (стандартный)",
+    "modelDesignationRaw": "ТМГ-160",
+    "sku": null,
+    "skuStatus": "No complete orderable SKU specified; designation is exact table row identifier",
+    "series": "ТМГ",
+    "variantLabel": "стандартный",
+    "nominalPowerKva": 160,
+    "manufacturer": null,
+    "brand": "Alageum electric",
+    "sourceId": "alageum-technical-catalog-2026-03-18",
+    "sourcePages": [
+      6,
+      7,
+      12
+    ],
+    "dataPages": [
+      6,
+      7
+    ],
+    "sourceTableRow": "ТМГ-160",
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "160",
+        "unit": "кВА",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nУ/Zн-11\nД/Ун-11",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Р о",
+        "value": "450",
+        "unit": "Вт",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Рк",
+        "value": "2600\n3100\n3100",
+        "unit": "Вт",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "U к",
+        "value": "5,0\n5,5\n5,0",
+        "unit": "%",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "I о",
+        "value": "1,9",
+        "unit": "%",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "L",
+        "value": "1072",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "B",
+        "value": "692",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "H",
+        "value": "1080",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A",
+        "value": "550",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A1",
+        "value": "550",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "M",
+        "value": "90",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h",
+        "value": "115",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h1",
+        "value": "120",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Полная масса",
+        "value": "630",
+        "unit": "кг",
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Масса масла",
+        "value": "145",
+        "unit": "кг",
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      }
+    ],
+    "configurations": [
+      {
+        "connectionGroupRaw": "У/Ун-0",
+        "PkWRaw": "2600",
+        "UkPercentRaw": "5,0",
+        "scope": "Printed connection option; no synthetic SKU generated"
+      },
+      {
+        "connectionGroupRaw": "У/Zн-11",
+        "PkWRaw": "3100",
+        "UkPercentRaw": "5,5",
+        "scope": "Printed connection option; no synthetic SKU generated"
+      },
+      {
+        "connectionGroupRaw": "Д/Ун-11",
+        "PkWRaw": "3100",
+        "UkPercentRaw": "5,0",
+        "scope": "Printed connection option; no synthetic SKU generated"
+      }
+    ],
+    "assetMapping": {
+      "assetFamilyId": "sealed-corrugated-small",
+      "evidencePages": [
+        12
+      ],
+      "basis": "explicit drawing heading groups this variant",
+      "reuseLevel": "construction topology and source illustration only",
+      "geometryVerified": false,
+      "exactMeshReuseAllowed": false,
+      "dimensionalUnitsVerified": false,
+      "dimensionAccurateMeshAuthorizedByEvidence": false,
+      "executionBinding": "explicit-caption",
+      "executionBindingUncertain": false
+    },
+    "reconciliation": [],
+    "notes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed."
+    ],
+    "designation": "ТМГ-160",
+    "execution": "стандартный",
+    "sourceRow": {
+      "designation": "ТМГ-160",
+      "electricalTablePage": 6,
+      "dimensionsTablePage": 7
+    },
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "160",
+        "unit": "кВА",
+        "page": 6
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "page": 6
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nУ/Zн-11\nД/Ун-11",
+        "unit": null,
+        "page": 6
+      },
+      {
+        "label": "Р о",
+        "value": "450",
+        "unit": "Вт",
+        "page": 6
+      },
+      {
+        "label": "Рк",
+        "value": "2600\n3100\n3100",
+        "unit": "Вт",
+        "page": 6
+      },
+      {
+        "label": "U к",
+        "value": "5,0\n5,5\n5,0",
+        "unit": "%",
+        "page": 6
+      },
+      {
+        "label": "I о",
+        "value": "1,9",
+        "unit": "%",
+        "page": 6
+      },
+      {
+        "label": "L",
+        "value": "1072",
+        "unit": null,
+        "page": 6
+      },
+      {
+        "label": "B",
+        "value": "692",
+        "unit": null,
+        "page": 6
+      },
+      {
+        "label": "H",
+        "value": "1080",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "A",
+        "value": "550",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "A1",
+        "value": "550",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "M",
+        "value": "90",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "h",
+        "value": "115",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "h1",
+        "value": "120",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "Полная масса",
+        "value": "630",
+        "unit": "кг",
+        "page": 7
+      },
+      {
+        "label": "Масса масла",
+        "value": "145",
+        "unit": "кг",
+        "page": 7
+      }
+    ],
+    "candidateOldIds": []
+  },
+  {
+    "id": "alageum-tmg-standard-250",
+    "familyId": "tmg-standard",
+    "name": "ТМГ-250 (стандартный)",
+    "modelDesignationRaw": "ТМГ-250",
+    "sku": null,
+    "skuStatus": "No complete orderable SKU specified; designation is exact table row identifier",
+    "series": "ТМГ",
+    "variantLabel": "стандартный",
+    "nominalPowerKva": 250,
+    "manufacturer": null,
+    "brand": "Alageum electric",
+    "sourceId": "alageum-technical-catalog-2026-03-18",
+    "sourcePages": [
+      6,
+      7,
+      12
+    ],
+    "dataPages": [
+      6,
+      7
+    ],
+    "sourceTableRow": "ТМГ-250",
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "250",
+        "unit": "кВА",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nУ/Zн-11\nД/Ун-11",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Р о",
+        "value": "610",
+        "unit": "Вт",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Рк",
+        "value": "3700\n4200\n4200",
+        "unit": "Вт",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "U к",
+        "value": "4,5\n4,7\n4,5",
+        "unit": "%",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "I о",
+        "value": "1,9",
+        "unit": "%",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "L",
+        "value": "1109",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "B",
+        "value": "786",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "H",
+        "value": "1200",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A",
+        "value": "550",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A1",
+        "value": "550",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "M",
+        "value": "110",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h",
+        "value": "110",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h1",
+        "value": "115",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Полная масса",
+        "value": "865",
+        "unit": "кг",
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Масса масла",
+        "value": "185",
+        "unit": "кг",
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      }
+    ],
+    "configurations": [
+      {
+        "connectionGroupRaw": "У/Ун-0",
+        "PkWRaw": "3700",
+        "UkPercentRaw": "4,5",
+        "scope": "Printed connection option; no synthetic SKU generated"
+      },
+      {
+        "connectionGroupRaw": "У/Zн-11",
+        "PkWRaw": "4200",
+        "UkPercentRaw": "4,7",
+        "scope": "Printed connection option; no synthetic SKU generated"
+      },
+      {
+        "connectionGroupRaw": "Д/Ун-11",
+        "PkWRaw": "4200",
+        "UkPercentRaw": "4,5",
+        "scope": "Printed connection option; no synthetic SKU generated"
+      }
+    ],
+    "assetMapping": {
+      "assetFamilyId": "sealed-corrugated-small",
+      "evidencePages": [
+        12
+      ],
+      "basis": "explicit drawing heading groups this variant",
+      "reuseLevel": "construction topology and source illustration only",
+      "geometryVerified": false,
+      "exactMeshReuseAllowed": false,
+      "dimensionalUnitsVerified": false,
+      "dimensionAccurateMeshAuthorizedByEvidence": false,
+      "executionBinding": "explicit-caption",
+      "executionBindingUncertain": false
+    },
+    "reconciliation": [],
+    "notes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed."
+    ],
+    "designation": "ТМГ-250",
+    "execution": "стандартный",
+    "sourceRow": {
+      "designation": "ТМГ-250",
+      "electricalTablePage": 6,
+      "dimensionsTablePage": 7
+    },
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "250",
+        "unit": "кВА",
+        "page": 6
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "page": 6
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nУ/Zн-11\nД/Ун-11",
+        "unit": null,
+        "page": 6
+      },
+      {
+        "label": "Р о",
+        "value": "610",
+        "unit": "Вт",
+        "page": 6
+      },
+      {
+        "label": "Рк",
+        "value": "3700\n4200\n4200",
+        "unit": "Вт",
+        "page": 6
+      },
+      {
+        "label": "U к",
+        "value": "4,5\n4,7\n4,5",
+        "unit": "%",
+        "page": 6
+      },
+      {
+        "label": "I о",
+        "value": "1,9",
+        "unit": "%",
+        "page": 6
+      },
+      {
+        "label": "L",
+        "value": "1109",
+        "unit": null,
+        "page": 6
+      },
+      {
+        "label": "B",
+        "value": "786",
+        "unit": null,
+        "page": 6
+      },
+      {
+        "label": "H",
+        "value": "1200",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "A",
+        "value": "550",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "A1",
+        "value": "550",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "M",
+        "value": "110",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "h",
+        "value": "110",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "h1",
+        "value": "115",
+        "unit": null,
+        "page": 7
+      },
+      {
+        "label": "Полная масса",
+        "value": "865",
+        "unit": "кг",
+        "page": 7
+      },
+      {
+        "label": "Масса масла",
+        "value": "185",
+        "unit": "кг",
+        "page": 7
+      }
+    ],
+    "candidateOldIds": []
+  }
+]

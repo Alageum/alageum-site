@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "command": "node scripts/probe-webpack-middleware.js --write-results",
+  "versions": {
+    "webpack": "5.109.2",
+    "webpack-dev-middleware": "7.4.6",
+    "koa": "2.16.4"
+  },
+  "startedAt": "2026-10-02T10:51:32.247Z",
+  "scope": "Installed webpack 5 + Koa + webpack-dev-middleware.koaWrapper; loopback HTTP; disposable memory output; no Strapi server",
+  "profiles": [
+    {
+      "name": "slash-defaults",
+      "publicPath": "/assets/",
+      "middlewareOptions": {},
+      "checks": {
+        "streamed GET, MIME, length and next isolation": "pass",
+        "HEAD returns headers with no body": "pass",
+        "binary and zero-byte responses": "pass",
+        "single byte range 206 and unsatisfiable range 416": "pass",
+        "fresh defaults do not add validators": "pass",
+        "missing paths and unsupported methods call only fallback": "pass",
+        "malformed percent URLs fall through; encoded and literal NUL reject": "pass",
+        "sibling traversal cannot escape memory output; healthy before and after": "pass",
+        "client abort destroys stream; subsequent GET succeeds": "pass",
+        "no unexpected Koa application errors": "pass",
+        "bounded watcher/server shutdown and released loopback port": "pass",
+        "response streams are released after middleware shutdown": "FAIL: upstream HEAD response left an open memory-filesystem read stream"
+      },
+      "containment": {
+        "beforeStatus": 200,
+        "afterStatus": 200,
+        "bodyUnchanged": true,
+        "attacks": [
+          {
+            "url": "/assets../sentinel.txt",
+            "status": 404
+          },
+          {
+            "url": "/assets%2e%2e/sentinel.txt",
+            "status": 404
+          },
+          {
+            "url": "/assets..%2fsentinel.txt",
+            "status": 404
+          },
+          {
+            "url": "/assets/../sentinel.txt",
+            "status": 403
+          },
+          {
+            "url": "/assets/%2e%2e/sentinel.txt",
+            "status": 403
+          }
+        ],
+        "sentinelStayedInMemory": true,
+        "sentinelLeaked": false
+      },
+      "validators": {
+        "etagEmitted": false,
+        "lastModifiedEmitted": false,
+        "conditionalStatuses": [
+          200
+        ]
+      },
+      "abort": {
+        "status": 200,
+        "receivedBytes": 45047,
+        "advertisedBytes": 2097152,
+        "fixtureReadPacingMs": 2,
+        "streamDestroyed": true,
+        "responseFinished": false,
+        "after": {
+          "status": 200,
+          "bytes": 118784
+        }
+      },
+      "shutdown": {
+        "elapsedMs": 3,
+        "portRebound": true
+      },
+      "observations": {
+        "streamsCreated": 11,
+        "streamsNotDestroyedAfterShutdown": [
+          {
+            "filename": "text.txt",
+            "method": "HEAD",
+            "url": "/assets/text.txt",
+            "closed": false,
+            "readableEnded": false,
+            "memoryFdOpen": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "non-slash-defaults",
+      "publicPath": "/assets",
+      "middlewareOptions": {},
+      "checks": {
+        "streamed GET, MIME, length and next isolation": "pass",
+        "HEAD returns headers with no body": "pass",
+        "binary and zero-byte responses": "pass",
+        "single byte range 206 and unsatisfiable range 416": "pass",
+        "fresh defaults do not add validators": "pass",
+        "missing paths and unsupported methods call only fallback": "pass",
+        "malformed percent URLs fall through; encoded and literal NUL reject": "pass",
+        "sibling traversal cannot escape memory output; healthy before and after": "pass",
+        "client abort destroys stream; subsequent GET succeeds": "pass",
+        "no unexpected Koa application errors": "pass",
+        "bounded watcher/server shutdown and released loopback port": "pass",
+        "response streams are released after middleware shutdown": "FAIL: upstream HEAD response left an open memory-filesystem read stream"
+      },
+      "containment": {
+        "beforeStatus": 200,
+        "afterStatus": 200,
+        "bodyUnchanged": true,
+        "attacks": [
+          {
+            "url": "/assets../sentinel.txt",
+            "status": 403
+          },
+          {
+            "url": "/assets%2e%2e/sentinel.txt",
+            "status": 403
+          },
+          {
+            "url": "/assets..%2fsentinel.txt",
+            "status": 403
+          },
+          {
+            "url": "/assets/../sentinel.txt",
+            "status": 403
+          },
+          {
+            "url": "/assets/%2e%2e/sentinel.txt",
+            "status": 403
+          }
+        ],
+        "sentinelStayedInMemory": true,
+        "sentinelLeaked": false
+      },
+      "validators": {
+        "etagEmitted": false,
+        "lastModifiedEmitted": false,
+        "conditionalStatuses": [
+          200
+        ]
+      },
+      "abort": {
+        "status": 200,
+        "receivedBytes": 45047,
+        "advertisedBytes": 2097152,
+        "fixtureReadPacingMs": 2,
+        "streamDestroyed": true,
+        "responseFinished": false,
+        "after": {
+          "status": 200,
+          "bytes": 118784
+        }
+      },
+      "shutdown": {
+        "elapsedMs": 0,
+        "portRebound": true
+      },
+      "observations": {
+        "streamsCreated": 11,
+        "streamsNotDestroyedAfterShutdown": [
+          {
+            "filename": "text.txt",
+            "method": "HEAD",
+            "url": "/assets/text.txt",
+            "closed": false,
+            "readableEnded": false,
+            "memoryFdOpen": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "explicit-validators",
+      "publicPath": "/assets/",
+      "middlewareOptions": {
+        "etag": "weak",
+        "lastModified": true
+      },
+      "checks": {
+        "streamed GET, MIME, length and next isolation": "pass",
+        "HEAD returns headers with no body": "pass",
+        "binary and zero-byte responses": "pass",
+        "single byte range 206 and unsatisfiable range 416": "pass",
+        "explicit validators produce conditional 304": "pass",
+        "missing paths and unsupported methods call only fallback": "pass",
+        "malformed percent URLs fall through; encoded and literal NUL reject": "pass",
+        "sibling traversal cannot escape memory output; healthy before and after": "pass",
+        "client abort destroys stream; subsequent GET succeeds": "pass",
+        "no unexpected Koa application errors": "pass",
+        "bounded watcher/server shutdown and released loopback port": "pass",
+        "response streams are released after middleware shutdown": "FAIL: upstream HEAD response left an open memory-filesystem read stream"
+      },
+      "containment": {
+        "beforeStatus": 200,
+        "afterStatus": 200,
+        "bodyUnchanged": true,
+        "attacks": [
+          {
+            "url": "/assets../sentinel.txt",
+            "status": 404
+          },
+          {
+            "url": "/assets%2e%2e/sentinel.txt",
+            "status": 404
+          },
+          {
+            "url": "/assets..%2fsentinel.txt",
+            "status": 404
+          },
+          {
+            "url": "/assets/../sentinel.txt",
+            "status": 403
+          },
+          {
+            "url": "/assets/%2e%2e/sentinel.txt",
+            "status": 403
+          }
+        ],
+        "sentinelStayedInMemory": true,
+        "sentinelLeaked": false
+      },
+      "validators": {
+        "etagEmitted": true,
+        "lastModifiedEmitted": true,
+        "conditionalStatuses": [
+          304,
+          304
+        ]
+      },
+      "abort": {
+        "status": 200,
+        "receivedBytes": 32759,
+        "advertisedBytes": 2097152,
+        "fixtureReadPacingMs": 2,
+        "streamDestroyed": true,
+        "responseFinished": false,
+        "after": {
+          "status": 200,
+          "bytes": 118784
+        }
+      },
+      "shutdown": {
+        "elapsedMs": 1,
+        "portRebound": true
+      },
+      "observations": {
+        "streamsCreated": 10,
+        "streamsNotDestroyedAfterShutdown": [
+          {
+            "filename": "text.txt",
+            "method": "HEAD",
+            "url": "/assets/text.txt",
+            "closed": false,
+            "readableEnded": false,
+            "memoryFdOpen": true
+          }
+        ]
+      }
+    }
+  ],
+  "finishedAt": "2026-10-02T10:51:32.906Z",
+  "passed": false,
+  "checksPassed": 33,
+  "checksFailed": 3,
+  "fixtureRemoved": true,
+  "limitations": [
+    "This does not establish actual Strapi webpack, HMR/SSE, Vite, browser, or production compatibility.",
+    "The abort-only memory stream is paced by 2 ms per read to ensure the client disconnect reaches the server before completion; all other streams are unmodified.",
+    "Middleware 7.4.6 creates a HEAD read stream before its early return, bypassing its later stream cleanup registration (dist/middleware.js:624-650 and 661-677). The harness records the open descriptor before destroying fixture streams itself."
+  ]
+}

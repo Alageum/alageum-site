@@ -1,0 +1,234 @@
+{
+  "format": "alageum-measurement-column-completion-independent-review-v1",
+  "status": "approved-bounded-measurement-columns",
+  "date": "2026-10-06",
+  "independentOfIntegrator": true,
+  "baselineCommit": "1c705309c561130d34f79a367cd51c7ee864e59c",
+  "baselineTree": "5c59297893d4d1b52bf14c642c1ccc922073c89c",
+  "approvedDependenciesSha256": "fdeac7bab904d1b6604ce15be98eb8e9fa055c92a60cd83825a87984d78b8eba",
+  "approvedBindingsSha256": "df460b14dedf3865079513c3009bef6886f8ae6f9902debfb269ed1b84f3a3e6",
+  "approvedBaselineOutputsSha256": "dda99f863f2a27a114e2b36ad597d338395868ef8b36655827f6a52540d69c2f",
+  "approvedRecordIds": [
+    "alageum-2026-zom-1p25-35",
+    "alageum-2026-znom35-config1",
+    "alageum-2026-znom35-config2"
+  ],
+  "counts": {
+    "addedBindings": 3,
+    "newModelTypes": 1,
+    "newIconTypes": 1,
+    "newProducts": 0
+  },
+  "unchangedCounts": {
+    "productBodies": 843,
+    "unaffectedRecords": 840,
+    "legacyRecords": 238,
+    "choiceRecords": 36,
+    "choices": 74,
+    "sourcePreviews": 2,
+    "oldModelTypes": 125,
+    "oldIconTypes": 135
+  },
+  "resultingCoverage": {
+    "sourceGroundedDefault3D": 464,
+    "sourceBasedIcons": 465,
+    "explicitConstructionGaps": 243,
+    "constructionGapFamilies": 29
+  },
+  "scope": "Independent local source, bytes, runtime authority, preservation, component rendering and bounded lifecycle review only. This approval does not claim hosted browser/WebGL verification, approve publication or deployment, or resolve audit findings or the pre-existing Page race.",
+  "reviewInputs": {
+    "prototypeIndependentReviewSha256": "d5c865c6381d1f70bd570bd3b2f6b39fb50bd4203811476c508eb355936b8eff",
+    "sourceDecisionSha256": "09369c076e66a8f117ca50dc96b3bddf97bf626d22dfb6649c30c04356d7367b",
+    "frozenPrototypeManifestSha256": "7ef8917962df26f4b547809621e157142dc83842c19c4aedba1789913a0d7701",
+    "acceptedPrototypeFilesVerified": 6,
+    "sourcePagesInspected": [
+      99,
+      100
+    ]
+  },
+  "architecture": {
+    "rawByteHashingRetained": true,
+    "closedAmendments": 14,
+    "exactPinnedDependencies": 238,
+    "unchangedUiLifecyclePinsAddedAfterIndependentReview": 14,
+    "historicalApprovalsByteIdentical": true,
+    "baselineReproducedIndependentlyFromGitArchive": true,
+    "baselineCommitAndTreeVerified": true,
+    "all202HistoricalHashesVerifiedAgainstGit": true,
+    "all14AmendmentPriorHashesVerifiedAgainstGit": true,
+    "leafVerifierHasNoApprovalAdapterRecursion": true,
+    "verifierAndBindingAndSnapshotSelfPinsPresent": true,
+    "historical13RecordGateComposesDistinctSuccessor": true,
+    "old122Model132IconSnapshotUnmodified": true,
+    "current125Model135IconBaselineIncludesAllThreePriorAccessoryDefinitions": true
+  },
+  "authority": {
+    "exactStaticAndNormalizedApiRecordsOnly": true,
+    "guards": [
+      "own id/source/sourceId/sourceFileId/sourceSha256",
+      "plain or null record prototype",
+      "exact canonical source record shape including page, family, source URL, row and electrical values",
+      "separate exact API database UUID",
+      "exact raw source media rather than display image",
+      "invalid channel/foreign id/modified source/cyclic shape fail closed"
+    ],
+    "prototypeRuntimeEligibleRemainsFalse": true,
+    "typeVocabularyCannotBindRecords": true,
+    "sourceAnomaliesPreserved": [
+      "page99 printed power unit кВ",
+      "page99 full/oil masses20/80",
+      "separate voltage rows and API UUIDs"
+    ],
+    "noFamilyOrNameInheritance": true
+  },
+  "geometryAndIcon": {
+    "acceptedPrototypeBytesUnchanged": true,
+    "oldInstrumentColumnUnchanged": true,
+    "fiveElectricallyNeutralCoverFittings": true,
+    "fourLeftOneRightLayout": true,
+    "fiveSheds": true,
+    "taperedLowerTank": true,
+    "centralTopContactAndDistinctRoundPlug": true,
+    "orderedOpaqueIconLayers": true,
+    "strokeWidth": 1.1,
+    "surfaceColoursReviewed": {
+      "staticThumbnail": "#f3f5f7",
+      "apiNormalComparisonFamily": "#ffffff",
+      "apiHover": "#f2f3f4",
+      "selectedStaticRowVariantHover": "#fff1f3",
+      "newViewerIdleAndFallback": "#f3f4f1"
+    },
+    "viewerSolidBackgroundLimitedToNewType": true,
+    "otherModelAndSvgOutputsUnchanged": true,
+    "pixelsInspected": [
+      "source99 drawing",
+      "source100 drawing",
+      "accepted six-view geometry contact sheet",
+      "accepted icon contact sheet",
+      "45 actual EquipmentIcon SVGs rasterized at nine sizes across five source-inspected surface colours"
+    ],
+    "rasterSurfaceEvidenceIsNotBrowserComputedStyleEvidence": true
+  },
+  "visibleContext": {
+    "actualComponentSsrStaticAndApiCases": 6,
+    "realProductVisualEquipmentModelEquipmentIconAndNextImageLink": true,
+    "pageSpecificMainDisclosurePersistent": true,
+    "omittedSmallDetailNotePersistent": true,
+    "page99ReusedDrawingCaveatPersistent": true,
+    "page100SharedSubrowCaveatPersistent": true,
+    "wordingOutsideCollapsedSourceDetails": true,
+    "correctSourcePageFallbackRetained": true,
+    "forbiddenClaimsNotIntroduced": [
+      "CAD or dimensions",
+      "all five fittings are LV",
+      "verified material or finish",
+      "exact delivered configuration",
+      "mechanical/internal equality across records"
+    ]
+  },
+  "verification": {
+    "focusedNodeTests": {
+      "independentlyRun": true,
+      "passed": 18,
+      "failed": 0
+    },
+    "dependencyMutations": {
+      "absent": 238,
+      "oneByte": 238,
+      "allRejected": true,
+      "scopeWrongDigestsMissingPinsWrongStatusesCoveredByFocusedTests": true
+    },
+    "candidateScopeAndPreservation": {
+      "passed": true
+    },
+    "historicalCandidateComposition": {
+      "passed": true
+    },
+    "componentLifecycle": {
+      "passed": true,
+      "controlledReactEffectAndImportHarness": true,
+      "actualGeometryAndDisposal": true,
+      "created": 2,
+      "disposed": 2,
+      "cases": [
+        "idle allocates no model/import",
+        "close cancels pending lazy import",
+        "activation creates one viewer",
+        "rotation/zoom/reset dispatch",
+        "close disposes and focuses activation",
+        "late callback ignored",
+        "import failure retains real icon and no canvas",
+        "retry allocates fresh viewer",
+        "viewer failure disposes",
+        "unmount cancels pending retry"
+      ],
+      "notHostedWebgl": true
+    },
+    "fullFrontendSuiteAfterApproval": {
+      "independentlyRun": true,
+      "command": "npm run test:unit",
+      "cwd": "frontend",
+      "passed": 475,
+      "failed": 0
+    },
+    "sourceLegacyReleaseGatesAfterApproval": {
+      "measurementColumn": true,
+      "sourceAssetCompletion": true,
+      "ntmiPreview": true,
+      "legacyCompletionTests": true,
+      "originalTransformerAssets": true,
+      "supplementalTransformerAssets": true,
+      "executionChoices": true
+    },
+    "lint": {
+      "independentlyRun": true,
+      "passed": true
+    },
+    "productionBuild": "builder-reported-pass-894-pages",
+    "hostedBrowserWebgl": "not-run-required-at-publication",
+    "localChromium": "restricted-before-assertions-not-retried-or-bypassed",
+    "testInvocationNotes": [
+      "An initial full-suite run from repository root had two corporate-page ENOENT/asset failures because those tests require frontend cwd; the canonical frontend invocation passed all475 tests.",
+      "Original transformer asset --check initially stopped before assertions because uuid was absent in this checkout. Re-run passed with NODE_PATH referencing an existing installation whose backend package and lock hashes exactly match this checkout; no package or lock was changed."
+    ]
+  },
+  "resolvedReviewFinding": "Fourteen actual UI/lifecycle/routing/surface dependencies lacked explicit byte pins. They now have fixed unchanged PR32 hashes and are in the exact reviewed closure; the amendment allowlist remains fourteen files.",
+  "remainingLimitations": [
+    "Hosted desktop/mobile actual WebGL, computed browser icon surfaces, source fallback and navigation screenshots require the publication-time operational gate.",
+    "Existing audit failures and native Page race remain outside this review."
+  ],
+  "evidenceSha256": {
+    "pr32-outputs.json": "dda99f863f2a27a114e2b36ad597d338395868ef8b36655827f6a52540d69c2f",
+    "focused-tests-final.log": "8feaaf98226b0712c0c9dd4137348a5f10bb53517368b0172d0986cc88282ce2",
+    "candidate-check.log": "c92020b28da3aa93c9f4edcd299657d99d9e8d7d575495c68b94ac5066a19f7a",
+    "source-candidate-check.log": "77ab49cada25b58869612e552bf665d16f1bb886ca48a2df2d4b1b29d8a7e858",
+    "independent-dependency-evidence.json": "5387ff1e0b9474ca42e71d4fff65ced01e437b78582e0aa373550083787c8a18",
+    "real-component-ssr-evidence.json": "eab3cad2be001fe5f856c99e7d04a52586bb50f0defa63dd834dc75f8e912463",
+    "component-lifecycle-evidence.json": "79fc71a1ef67e8935b3a0af9e6970e797300625be23b55a429e0454bbd595097",
+    "audit-components.mjs": "89e54a3857c8630a1d59c759f086fca04ada516846df1a5ada1e2c80367dbafd",
+    "audit-components.log": "7f038534f4e9fc0b2caad5879eac1b734f28728ff7f2f62cfea66fd91e62c4a1",
+    "actual-component-icon-surfaces.svg": "fb5f0955fa78259c09d881ab3ecb90d529ee2c47139e49c052e971ea8a1b744c",
+    "actual-component-icon-surfaces.png": "88f979e828456c3d23ad15ad805de2b329cecd7ca1fd0708e364525d2a5f3bb3",
+    "full-frontend-tests-valid-cwd.log": "25d06fae9697ac1476334b3c8eefdb7da8171b0a21493fc227e5c2496904a476",
+    "lint.log": "88b58c7f9297b027c4b27d1e0785d6940c92309503535f2fe04e5efac3262a2d",
+    "measurement-release.log": "f6dd022b63c158fd82468e3b80f101d22da7f8c451dedbf05f6d0160ec2e8086",
+    "source-release.log": "eb7aa968871c2ad1fc0da2c51e86d01f8480829e9bc6a249df9b68013094f78e",
+    "ntmi-release.log": "a244736568bf519a2efc129fee30e225d06665d8c7085fb505a884d00722bbbf",
+    "legacy-release.log": "732c021151ef2ad39990d54a6ee12e12662758acd6a7ea64c94bd3624af684f1",
+    "transformer-original-release-resolved.log": "8a935829303d4994f5afe547b5de9c6188dcecddcca82b032527838f97f1a849",
+    "transformer-supplement-release.log": "c2c6898c510f45c59ff7fd8eb2c1772dce875431b5192f29ff7c57054628711f",
+    "execution-choices-release.log": "c3944afc4380c536c7a79eb0c89b3a8e323d86f82669c6cdf044032df73c3eb9",
+    "release-gates-evidence.json": "d12fb2ab2d827d68b6103cb3d556a662b5c68701ca0af6edccbf654982865fe0"
+  },
+  "published": false,
+  "merged": false,
+  "deployed": false,
+  "derivedCurrentReports": {
+    "historicalApprovalsUnchanged": true,
+    "scope": "Only expected three-record binding deltas and corresponding coverage/gap totals; remaining families31 to29.",
+    "files": {
+      "docs/catalog-completion-2026-10-06/coverage.json": "9cb19061264de7b5e02fcceb0eed6080a3f48c0fa5dbda89e9e2b51de62b36d7",
+      "docs/catalog-completion-2026-10-06/remaining-source-gaps.json": "ef27d661ab9ab9a3b8d0400b54d7467e18f6fdd25edf0215901d9214c1a029ed"
+    }
+  }
+}

@@ -1,0 +1,2002 @@
+[
+  {
+    "id": "alageum-tmg-switch-6-10-1600",
+    "name": "ТМГ-1600 (6↔10 кВ, с 2-х этажным переключателем)",
+    "designation": "ТМГ-1600",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmg-switch-6-10",
+    "sourceFamilyId": "tmg-switch-6-10",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        44,
+        45,
+        47
+      ],
+      "sourceRow": {
+        "designation": "ТМГ-1600",
+        "electricalTablePage": 45,
+        "dimensionsTablePage": 45
+      }
+    },
+    "recordSha256": "fffa854be6c91149efbe748ec34073f32c5dc176f64572ad9538c6e7cdb0f974",
+    "geometry": {
+      "type": "tr26-corrugated-large",
+      "confidence": "source-matched",
+      "sourcePages": [
+        47
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-047.webp",
+      "approval": {
+        "recordShapeSha256": "2d1c7664338a4b95d83543b6c26821ce589d8715cdff86790138f5dcf66cf6af",
+        "databaseId": "0daa2c56-14f0-5ec9-aaf1-eb4939dcccc7",
+        "groupId": "tmg-switch-large",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-corrugated-large",
+      "confidence": "source-based",
+      "sourcePages": [
+        47
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-047.webp",
+      "approval": {
+        "recordShapeSha256": "2d1c7664338a4b95d83543b6c26821ce589d8715cdff86790138f5dcf66cf6af",
+        "databaseId": "0daa2c56-14f0-5ec9-aaf1-eb4939dcccc7",
+        "groupId": "tmg-switch-large",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-047.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        47
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "tmg-switch-large"
+      ],
+      "choices": [
+        {
+          "groupId": "tmg-switch-large",
+          "geometryType": "tr26-corrugated-large",
+          "iconType": "tr26-corrugated-large",
+          "sourcePages": [
+            47
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-tmg-switch-6-10-2000",
+    "name": "ТМГ-2000 (6↔10 кВ, с 2-х этажным переключателем)",
+    "designation": "ТМГ-2000",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmg-switch-6-10",
+    "sourceFamilyId": "tmg-switch-6-10",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        44,
+        45,
+        47
+      ],
+      "sourceRow": {
+        "designation": "ТМГ-2000",
+        "electricalTablePage": 45,
+        "dimensionsTablePage": 45
+      }
+    },
+    "recordSha256": "514a76880d60ef6192566ae242bc6112173ef44080685b074f91a500d8adb89b",
+    "geometry": {
+      "type": "tr26-corrugated-large",
+      "confidence": "source-matched",
+      "sourcePages": [
+        47
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-047.webp",
+      "approval": {
+        "recordShapeSha256": "1dcacaab982b6b5bfd172e2dea00bb1242300f666415fc3cf684c017c5e52e3b",
+        "databaseId": "8fc61430-0f2a-50b2-b787-bbe30034a441",
+        "groupId": "tmg-switch-large",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-corrugated-large",
+      "confidence": "source-based",
+      "sourcePages": [
+        47
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-047.webp",
+      "approval": {
+        "recordShapeSha256": "1dcacaab982b6b5bfd172e2dea00bb1242300f666415fc3cf684c017c5e52e3b",
+        "databaseId": "8fc61430-0f2a-50b2-b787-bbe30034a441",
+        "groupId": "tmg-switch-large",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-047.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        47
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "tmg-switch-large"
+      ],
+      "choices": [
+        {
+          "groupId": "tmg-switch-large",
+          "geometryType": "tr26-corrugated-large",
+          "iconType": "tr26-corrugated-large",
+          "sourcePages": [
+            47
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "tr2026-family-isolating-tmg",
+    "name": "ТМГ — Разделительные",
+    "designation": "ТМГ",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "family",
+    "sourceRecordType": "family",
+    "familyId": null,
+    "sourceFamilyId": "isolating-tmg",
+    "variantIds": [
+      "alageum-2026-isolating-tmg-630",
+      "alageum-2026-isolating-tmg-1000",
+      "alageum-2026-isolating-tmg-1250",
+      "alageum-2026-isolating-tmg-1600",
+      "alageum-2026-isolating-tmg-2000",
+      "alageum-2026-isolating-tmg-2500",
+      "alageum-2026-isolating-tmg-3200",
+      "alageum-2026-isolating-tmg-4000",
+      "alageum-2026-isolating-tmg-4500"
+    ],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        48,
+        49
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "480eb0452e33582e7334e161e3264d4ff317e965d7c871407712bb86446326bb",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        48,
+        49
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-048.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        48,
+        49
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-048.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-048.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        48
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "alageum-2026-isolating-tmg-630",
+    "name": "ТМГ-630",
+    "designation": "ТМГ-630",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-isolating-tmg",
+    "sourceFamilyId": "isolating-tmg",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        48,
+        49
+      ],
+      "sourceRow": {
+        "page": 48,
+        "designation": "ТМГ-630",
+        "execution": "Разделительные",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "a5aa3d8ad4d28362fcde096cb289e90e01c23a741a783c8570746e77a5cb015d",
+    "geometry": {
+      "type": "tr26-isolating",
+      "confidence": "source-matched",
+      "sourcePages": [
+        49
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-049.webp",
+      "approval": {
+        "recordShapeSha256": "91a593ad49a8c17371d477790cefa14bd2b23af73882dc0517227ee326c79a26",
+        "databaseId": "2c4403f8-6eab-5941-a981-1430b9e824a1",
+        "groupId": "oil-isolating-tmg",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-isolating",
+      "confidence": "source-based",
+      "sourcePages": [
+        49
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-049.webp",
+      "approval": {
+        "recordShapeSha256": "91a593ad49a8c17371d477790cefa14bd2b23af73882dc0517227ee326c79a26",
+        "databaseId": "2c4403f8-6eab-5941-a981-1430b9e824a1",
+        "groupId": "oil-isolating-tmg",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-049.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        49
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-isolating-tmg"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-isolating-tmg",
+          "geometryType": "tr26-isolating",
+          "iconType": "tr26-isolating",
+          "sourcePages": [
+            49
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-isolating-tmg-1000",
+    "name": "ТМГ-1000",
+    "designation": "ТМГ-1000",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-isolating-tmg",
+    "sourceFamilyId": "isolating-tmg",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        48,
+        49
+      ],
+      "sourceRow": {
+        "page": 48,
+        "designation": "ТМГ-1000",
+        "execution": "Разделительные",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "6e8131e72b154b0a3aad875de20b045a7c8c9c7ed42828796dfcc54c75171d11",
+    "geometry": {
+      "type": "tr26-isolating",
+      "confidence": "source-matched",
+      "sourcePages": [
+        49
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-049.webp",
+      "approval": {
+        "recordShapeSha256": "b4762968bb6127a14f4386a116bdc97dfcabf409b3e4fe5fb381bae9c5066500",
+        "databaseId": "ca3f6026-f441-5eb6-9af3-d92bc9650887",
+        "groupId": "oil-isolating-tmg",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-isolating",
+      "confidence": "source-based",
+      "sourcePages": [
+        49
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-049.webp",
+      "approval": {
+        "recordShapeSha256": "b4762968bb6127a14f4386a116bdc97dfcabf409b3e4fe5fb381bae9c5066500",
+        "databaseId": "ca3f6026-f441-5eb6-9af3-d92bc9650887",
+        "groupId": "oil-isolating-tmg",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-049.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        49
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-isolating-tmg"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-isolating-tmg",
+          "geometryType": "tr26-isolating",
+          "iconType": "tr26-isolating",
+          "sourcePages": [
+            49
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-isolating-tmg-1250",
+    "name": "ТМГ-1250",
+    "designation": "ТМГ-1250",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-isolating-tmg",
+    "sourceFamilyId": "isolating-tmg",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        48,
+        49
+      ],
+      "sourceRow": {
+        "page": 48,
+        "designation": "ТМГ-1250",
+        "execution": "Разделительные",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "46786cb068119849f53cd9b38e4d11b63afb40759d6e7a13af6f64695864c943",
+    "geometry": {
+      "type": "tr26-isolating",
+      "confidence": "source-matched",
+      "sourcePages": [
+        49
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-049.webp",
+      "approval": {
+        "recordShapeSha256": "a7261f16166ad79ff684ee1429743294013e38716bcb7bd790eb37d06a16ab9f",
+        "databaseId": "330446ef-4f22-566b-bf01-b3db2425ade6",
+        "groupId": "oil-isolating-tmg",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-isolating",
+      "confidence": "source-based",
+      "sourcePages": [
+        49
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-049.webp",
+      "approval": {
+        "recordShapeSha256": "a7261f16166ad79ff684ee1429743294013e38716bcb7bd790eb37d06a16ab9f",
+        "databaseId": "330446ef-4f22-566b-bf01-b3db2425ade6",
+        "groupId": "oil-isolating-tmg",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-049.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        49
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-isolating-tmg"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-isolating-tmg",
+          "geometryType": "tr26-isolating",
+          "iconType": "tr26-isolating",
+          "sourcePages": [
+            49
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-isolating-tmg-1600",
+    "name": "ТМГ-1600",
+    "designation": "ТМГ-1600",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-isolating-tmg",
+    "sourceFamilyId": "isolating-tmg",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        48,
+        49
+      ],
+      "sourceRow": {
+        "page": 48,
+        "designation": "ТМГ-1600",
+        "execution": "Разделительные",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "430647927cde1929192885f4158e54d59e3d893c304db4eee2661f0507dac0b2",
+    "geometry": {
+      "type": "tr26-isolating",
+      "confidence": "source-matched",
+      "sourcePages": [
+        49
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-049.webp",
+      "approval": {
+        "recordShapeSha256": "bb8c0a812c02e439f8184895cfd5008059d74ee495b0c929dc46e63d7fcb310f",
+        "databaseId": "523a8fe9-7ae3-5b5e-9e52-db92490871d5",
+        "groupId": "oil-isolating-tmg",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-isolating",
+      "confidence": "source-based",
+      "sourcePages": [
+        49
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-049.webp",
+      "approval": {
+        "recordShapeSha256": "bb8c0a812c02e439f8184895cfd5008059d74ee495b0c929dc46e63d7fcb310f",
+        "databaseId": "523a8fe9-7ae3-5b5e-9e52-db92490871d5",
+        "groupId": "oil-isolating-tmg",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-049.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        49
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-isolating-tmg"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-isolating-tmg",
+          "geometryType": "tr26-isolating",
+          "iconType": "tr26-isolating",
+          "sourcePages": [
+            49
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-isolating-tmg-2000",
+    "name": "ТМГ-2000",
+    "designation": "ТМГ-2000",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-isolating-tmg",
+    "sourceFamilyId": "isolating-tmg",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        48,
+        49
+      ],
+      "sourceRow": {
+        "page": 48,
+        "designation": "ТМГ-2000",
+        "execution": "Разделительные",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "291b56f596d421c5ef8d37c846e56f69b5d64bee9bc508ebdf5c9e748774e4e6",
+    "geometry": {
+      "type": "tr26-isolating",
+      "confidence": "source-matched",
+      "sourcePages": [
+        49
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-049.webp",
+      "approval": {
+        "recordShapeSha256": "2364388c51d6c5578e5d7918815e86b1184d8d0d7bdba4c3c37d11c0d1ad5fb0",
+        "databaseId": "038eeb82-b1ab-570b-9419-0587fffe0a1e",
+        "groupId": "oil-isolating-tmg",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-isolating",
+      "confidence": "source-based",
+      "sourcePages": [
+        49
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-049.webp",
+      "approval": {
+        "recordShapeSha256": "2364388c51d6c5578e5d7918815e86b1184d8d0d7bdba4c3c37d11c0d1ad5fb0",
+        "databaseId": "038eeb82-b1ab-570b-9419-0587fffe0a1e",
+        "groupId": "oil-isolating-tmg",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-049.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        49
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-isolating-tmg"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-isolating-tmg",
+          "geometryType": "tr26-isolating",
+          "iconType": "tr26-isolating",
+          "sourcePages": [
+            49
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-isolating-tmg-2500",
+    "name": "ТМГ-2500",
+    "designation": "ТМГ-2500",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-isolating-tmg",
+    "sourceFamilyId": "isolating-tmg",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        48,
+        49
+      ],
+      "sourceRow": {
+        "page": 48,
+        "designation": "ТМГ-2500",
+        "execution": "Разделительные",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "8c7e9fde41169088ee2a495f6ea4a5779dd01d51e359f30bf81acb7425904a6c",
+    "geometry": {
+      "type": "tr26-isolating",
+      "confidence": "source-matched",
+      "sourcePages": [
+        49
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-049.webp",
+      "approval": {
+        "recordShapeSha256": "0e35408b580d1153d2a27c50415bc4d810b778fdbb3d7d5508e163839d49792e",
+        "databaseId": "feda7e8d-b87a-5642-b40f-d4dcd0c9551f",
+        "groupId": "oil-isolating-tmg",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-isolating",
+      "confidence": "source-based",
+      "sourcePages": [
+        49
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-049.webp",
+      "approval": {
+        "recordShapeSha256": "0e35408b580d1153d2a27c50415bc4d810b778fdbb3d7d5508e163839d49792e",
+        "databaseId": "feda7e8d-b87a-5642-b40f-d4dcd0c9551f",
+        "groupId": "oil-isolating-tmg",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-049.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        49
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-isolating-tmg"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-isolating-tmg",
+          "geometryType": "tr26-isolating",
+          "iconType": "tr26-isolating",
+          "sourcePages": [
+            49
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-isolating-tmg-3200",
+    "name": "ТМГ-3200",
+    "designation": "ТМГ-3200",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-isolating-tmg",
+    "sourceFamilyId": "isolating-tmg",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        48,
+        49
+      ],
+      "sourceRow": {
+        "page": 48,
+        "designation": "ТМГ-3200",
+        "execution": "Разделительные",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "a153e0056d15725c7a8de36c8b74ac9e8d8ccf07b53dc45b69aa6c9f4a454897",
+    "geometry": {
+      "type": "tr26-isolating",
+      "confidence": "source-matched",
+      "sourcePages": [
+        49
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-049.webp",
+      "approval": {
+        "recordShapeSha256": "fc420d6f12863d523188a2715b30cd0b7662e10ae4af4f197c1119bd4f4ea9c3",
+        "databaseId": "702c1fc6-8750-5418-9110-97968da962d5",
+        "groupId": "oil-isolating-tmg",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-isolating",
+      "confidence": "source-based",
+      "sourcePages": [
+        49
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-049.webp",
+      "approval": {
+        "recordShapeSha256": "fc420d6f12863d523188a2715b30cd0b7662e10ae4af4f197c1119bd4f4ea9c3",
+        "databaseId": "702c1fc6-8750-5418-9110-97968da962d5",
+        "groupId": "oil-isolating-tmg",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-049.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        49
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-isolating-tmg"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-isolating-tmg",
+          "geometryType": "tr26-isolating",
+          "iconType": "tr26-isolating",
+          "sourcePages": [
+            49
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-isolating-tmg-4000",
+    "name": "ТМГ-4000",
+    "designation": "ТМГ-4000",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-isolating-tmg",
+    "sourceFamilyId": "isolating-tmg",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        48,
+        49
+      ],
+      "sourceRow": {
+        "page": 48,
+        "designation": "ТМГ-4000",
+        "execution": "Разделительные",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "c7917fdbf47c4834124f0d99f90737190757f09ef019c9d92acdbb02dd437b7c",
+    "geometry": {
+      "type": "tr26-isolating",
+      "confidence": "source-matched",
+      "sourcePages": [
+        49
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-049.webp",
+      "approval": {
+        "recordShapeSha256": "fb5acc5d2d762421981adaf4a4329ab78877b7b59a20fb8ae20e48a8aa50c01b",
+        "databaseId": "4226f484-3de5-5e57-abb3-ba97372c5ecd",
+        "groupId": "oil-isolating-tmg",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-isolating",
+      "confidence": "source-based",
+      "sourcePages": [
+        49
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-049.webp",
+      "approval": {
+        "recordShapeSha256": "fb5acc5d2d762421981adaf4a4329ab78877b7b59a20fb8ae20e48a8aa50c01b",
+        "databaseId": "4226f484-3de5-5e57-abb3-ba97372c5ecd",
+        "groupId": "oil-isolating-tmg",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-049.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        49
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-isolating-tmg"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-isolating-tmg",
+          "geometryType": "tr26-isolating",
+          "iconType": "tr26-isolating",
+          "sourcePages": [
+            49
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-isolating-tmg-4500",
+    "name": "ТМГ-4500",
+    "designation": "ТМГ-4500",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-isolating-tmg",
+    "sourceFamilyId": "isolating-tmg",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        48,
+        49
+      ],
+      "sourceRow": {
+        "page": 48,
+        "designation": "ТМГ-4500",
+        "execution": "Разделительные",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "63a8a8e9e3074bf9ae235ff81600d69f0cd0784da3b4a6e646f4bd117d79176d",
+    "geometry": {
+      "type": "tr26-isolating",
+      "confidence": "source-matched",
+      "sourcePages": [
+        49
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-049.webp",
+      "approval": {
+        "recordShapeSha256": "7028c6cb35f144d8c9295c7095f4309aba001bd32b3089f5dfdf9478bd4f2d62",
+        "databaseId": "b0702d94-9dae-58b1-b2c4-bfbd3aece76b",
+        "groupId": "oil-isolating-tmg",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-isolating",
+      "confidence": "source-based",
+      "sourcePages": [
+        49
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-049.webp",
+      "approval": {
+        "recordShapeSha256": "7028c6cb35f144d8c9295c7095f4309aba001bd32b3089f5dfdf9478bd4f2d62",
+        "databaseId": "b0702d94-9dae-58b1-b2c4-bfbd3aece76b",
+        "groupId": "oil-isolating-tmg",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-049.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        49
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-isolating-tmg"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-isolating-tmg",
+          "geometryType": "tr26-isolating",
+          "iconType": "tr26-isolating",
+          "sourcePages": [
+            49
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "tr2026-family-tm-20kv",
+    "name": "ТМ — 20 кВ",
+    "designation": "ТМ",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "family",
+    "sourceRecordType": "family",
+    "familyId": null,
+    "sourceFamilyId": "tm-20kv",
+    "variantIds": [
+      "alageum-2026-tm-20kv-100",
+      "alageum-2026-tm-20kv-160",
+      "alageum-2026-tm-20kv-250",
+      "alageum-2026-tm-20kv-400",
+      "alageum-2026-tm-20kv-630",
+      "alageum-2026-tm-20kv-1000",
+      "alageum-2026-tm-20kv-1250",
+      "alageum-2026-tm-20kv-1600",
+      "alageum-2026-tm-20kv-2000",
+      "alageum-2026-tm-20kv-2500"
+    ],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        50,
+        51,
+        52,
+        53
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "00f4c02874096f1836a7debe91b20f25e1977c40d1c853e76d1ce25b1fd2b0fa",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        50,
+        51,
+        52,
+        53
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-050.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        50,
+        51,
+        52,
+        53
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-050.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-050.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        50
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "alageum-2026-tm-20kv-100",
+    "name": "ТМ-100",
+    "designation": "ТМ-100",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tm-20kv",
+    "sourceFamilyId": "tm-20kv",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        50,
+        51,
+        52
+      ],
+      "sourceRow": {
+        "page": 50,
+        "designation": "ТМ-100",
+        "execution": "20 кВ",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "b4681a41adcbd6a53534a0171f46c387d3510c226820eb5bbfde741411f2a437",
+    "geometry": {
+      "type": "tr26-conservator-small",
+      "confidence": "source-matched",
+      "sourcePages": [
+        52
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-052.webp",
+      "approval": {
+        "recordShapeSha256": "03113cb15ebc97b40c8d6c744279287e006bddf85cd3028ef803f0372bb51f3a",
+        "databaseId": "c1ff814b-a6df-5e83-9602-fd4d9d984c04",
+        "groupId": "oil-tm-20kv-small",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-conservator-small",
+      "confidence": "source-based",
+      "sourcePages": [
+        52
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-052.webp",
+      "approval": {
+        "recordShapeSha256": "03113cb15ebc97b40c8d6c744279287e006bddf85cd3028ef803f0372bb51f3a",
+        "databaseId": "c1ff814b-a6df-5e83-9602-fd4d9d984c04",
+        "groupId": "oil-tm-20kv-small",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-052.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        52
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-tm-20kv-small"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-tm-20kv-small",
+          "geometryType": "tr26-conservator-small",
+          "iconType": "tr26-conservator-small",
+          "sourcePages": [
+            52
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-tm-20kv-160",
+    "name": "ТМ-160",
+    "designation": "ТМ-160",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tm-20kv",
+    "sourceFamilyId": "tm-20kv",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        50,
+        51,
+        52
+      ],
+      "sourceRow": {
+        "page": 50,
+        "designation": "ТМ-160",
+        "execution": "20 кВ",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "a6f84755efb286f0b2e6832b1ee965eec19c927c7f3f641408cb958c44523769",
+    "geometry": {
+      "type": "tr26-conservator-small",
+      "confidence": "source-matched",
+      "sourcePages": [
+        52
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-052.webp",
+      "approval": {
+        "recordShapeSha256": "ad7c912435d319d47903c8f8de286c88ade229b750d7207e9fadd7a10dc83344",
+        "databaseId": "d41d7ab8-4ad2-57dd-8077-72833d01142f",
+        "groupId": "oil-tm-20kv-small",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-conservator-small",
+      "confidence": "source-based",
+      "sourcePages": [
+        52
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-052.webp",
+      "approval": {
+        "recordShapeSha256": "ad7c912435d319d47903c8f8de286c88ade229b750d7207e9fadd7a10dc83344",
+        "databaseId": "d41d7ab8-4ad2-57dd-8077-72833d01142f",
+        "groupId": "oil-tm-20kv-small",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-052.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        52
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-tm-20kv-small"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-tm-20kv-small",
+          "geometryType": "tr26-conservator-small",
+          "iconType": "tr26-conservator-small",
+          "sourcePages": [
+            52
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-tm-20kv-250",
+    "name": "ТМ-250",
+    "designation": "ТМ-250",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tm-20kv",
+    "sourceFamilyId": "tm-20kv",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        50,
+        51,
+        52
+      ],
+      "sourceRow": {
+        "page": 50,
+        "designation": "ТМ-250",
+        "execution": "20 кВ",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "90a20619ae7b42ff799ccb260a586f2390d447c56d8899a6b2d0d03a2d86afb8",
+    "geometry": {
+      "type": "tr26-conservator-small",
+      "confidence": "source-matched",
+      "sourcePages": [
+        52
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-052.webp",
+      "approval": {
+        "recordShapeSha256": "dd01600975f909c9a012b87dd8f2c1f9ddad3f75d3a2e3e7b1242ffa9cc9c11b",
+        "databaseId": "2e51372d-55d7-57d0-893b-6de88dcedccb",
+        "groupId": "oil-tm-20kv-small",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-conservator-small",
+      "confidence": "source-based",
+      "sourcePages": [
+        52
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-052.webp",
+      "approval": {
+        "recordShapeSha256": "dd01600975f909c9a012b87dd8f2c1f9ddad3f75d3a2e3e7b1242ffa9cc9c11b",
+        "databaseId": "2e51372d-55d7-57d0-893b-6de88dcedccb",
+        "groupId": "oil-tm-20kv-small",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-052.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        52
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-tm-20kv-small"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-tm-20kv-small",
+          "geometryType": "tr26-conservator-small",
+          "iconType": "tr26-conservator-small",
+          "sourcePages": [
+            52
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-tm-20kv-400",
+    "name": "ТМ-400",
+    "designation": "ТМ-400",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tm-20kv",
+    "sourceFamilyId": "tm-20kv",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        50,
+        51,
+        52
+      ],
+      "sourceRow": {
+        "page": 50,
+        "designation": "ТМ-400",
+        "execution": "20 кВ",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "b5cb9a59ed342d69014aef85487bea481dc066e12d57268e42caae1848b97d07",
+    "geometry": {
+      "type": "tr26-conservator-small",
+      "confidence": "source-matched",
+      "sourcePages": [
+        52
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-052.webp",
+      "approval": {
+        "recordShapeSha256": "6fc7b1505283ee53df684f1902339bae6f3308a04089a3fd1ec3fc7f83a51b42",
+        "databaseId": "b0b451d4-08e8-5321-9a67-bb5234dd8b46",
+        "groupId": "oil-tm-20kv-small",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-conservator-small",
+      "confidence": "source-based",
+      "sourcePages": [
+        52
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-052.webp",
+      "approval": {
+        "recordShapeSha256": "6fc7b1505283ee53df684f1902339bae6f3308a04089a3fd1ec3fc7f83a51b42",
+        "databaseId": "b0b451d4-08e8-5321-9a67-bb5234dd8b46",
+        "groupId": "oil-tm-20kv-small",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-052.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        52
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-tm-20kv-small"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-tm-20kv-small",
+          "geometryType": "tr26-conservator-small",
+          "iconType": "tr26-conservator-small",
+          "sourcePages": [
+            52
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-tm-20kv-630",
+    "name": "ТМ-630",
+    "designation": "ТМ-630",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tm-20kv",
+    "sourceFamilyId": "tm-20kv",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        50,
+        51,
+        53
+      ],
+      "sourceRow": {
+        "page": 50,
+        "designation": "ТМ-630",
+        "execution": "20 кВ",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "4d22b5d1b358451b043a20dbfb2ae61acaa5e0a7d9c299d0b28e3b7939f55b83",
+    "geometry": {
+      "type": "tr26-conservator-large",
+      "confidence": "source-matched",
+      "sourcePages": [
+        53
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-053.webp",
+      "approval": {
+        "recordShapeSha256": "1fd3c81cc4c6fcb5994796326f67a782b7c14ffb3ffae41bd50bd3e7be9385dd",
+        "databaseId": "e80c1a1f-f289-5fdd-af85-956fb9d8cb40",
+        "groupId": "oil-tm-20kv-large",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-conservator-large",
+      "confidence": "source-based",
+      "sourcePages": [
+        53
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-053.webp",
+      "approval": {
+        "recordShapeSha256": "1fd3c81cc4c6fcb5994796326f67a782b7c14ffb3ffae41bd50bd3e7be9385dd",
+        "databaseId": "e80c1a1f-f289-5fdd-af85-956fb9d8cb40",
+        "groupId": "oil-tm-20kv-large",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-053.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        53
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-tm-20kv-large"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-tm-20kv-large",
+          "geometryType": "tr26-conservator-large",
+          "iconType": "tr26-conservator-large",
+          "sourcePages": [
+            53
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-tm-20kv-1000",
+    "name": "ТМ-1000",
+    "designation": "ТМ-1000",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tm-20kv",
+    "sourceFamilyId": "tm-20kv",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        50,
+        51,
+        53
+      ],
+      "sourceRow": {
+        "page": 50,
+        "designation": "ТМ-1000",
+        "execution": "20 кВ",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "40d0b49ba0953ccced25d01db1a0ed7f12d9a132e4d8405e6214aff3ffa504f3",
+    "geometry": {
+      "type": "tr26-conservator-large",
+      "confidence": "source-matched",
+      "sourcePages": [
+        53
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-053.webp",
+      "approval": {
+        "recordShapeSha256": "272f9c812f8b4933b6a1d31ab20f572435ca52a47c2b8cfb9eb74a2fab8a2f6b",
+        "databaseId": "852ce6af-926c-53bf-8cca-ab3584a6c3b5",
+        "groupId": "oil-tm-20kv-large",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-conservator-large",
+      "confidence": "source-based",
+      "sourcePages": [
+        53
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-053.webp",
+      "approval": {
+        "recordShapeSha256": "272f9c812f8b4933b6a1d31ab20f572435ca52a47c2b8cfb9eb74a2fab8a2f6b",
+        "databaseId": "852ce6af-926c-53bf-8cca-ab3584a6c3b5",
+        "groupId": "oil-tm-20kv-large",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-053.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        53
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-tm-20kv-large"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-tm-20kv-large",
+          "geometryType": "tr26-conservator-large",
+          "iconType": "tr26-conservator-large",
+          "sourcePages": [
+            53
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  }
+]

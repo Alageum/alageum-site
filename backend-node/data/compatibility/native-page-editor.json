@@ -1,0 +1,45 @@
+{
+  "package": "@strapi/content-manager",
+  "version": "5.56.0",
+  "package_integrity": "sha512-dDWMlZFMo6bngebPSeWhnaB8XBmDn8Y4aVPDowcVJnW19OIik4+xt7OPQKtuxMtjkA8W32bW/hH+zxAcjgvG0A==",
+  "files": {
+    "dist/admin/pages/EditView/components/FormInputs/BlocksInput/BlocksInput.js": "b5e36116c1c7a410846ce2a537427f6e41202f51a3b51af31491aa34b36bd926",
+    "dist/admin/pages/EditView/components/FormInputs/BlocksInput/BlocksInput.mjs": "34251e869edf0ad82001c647b2dfb22d2fcb69a71643f6bfa929aa3b669d87c3",
+    "dist/admin/pages/EditView/components/FormInputs/BlocksInput/BlocksInput.js.map": "a9eca7ac0eec3de79db514366b7e4027e375fc838c61d005be8cdcb51ec73216",
+    "dist/admin/pages/EditView/components/FormInputs/BlocksInput/BlocksInput.mjs.map": "c438bf4ce87253f44ac20c47be06b58358bb25b57c7f7d6e2a4efca6638b8560",
+    "dist/admin/pages/EditView/components/FormInputs/BlocksInput/BlocksEditor.js": "549a31246687941c8fa67733e9a16603129dd59827f72a4a6b1b030dd327f5a6",
+    "dist/admin/pages/EditView/components/FormInputs/BlocksInput/BlocksEditor.mjs": "7d2e9777c967487d5b74fdd8bdb9b264f1c43795f94d3fef9dfd7eaa0b8f0a42",
+    "dist/admin/pages/EditView/components/FormInputs/BlocksInput/BlocksEditor.js.map": "573a75714f28b833977b6c4c8f958f7585c7682147d49671d9468055c9a27ebb",
+    "dist/admin/pages/EditView/components/FormInputs/BlocksInput/BlocksEditor.mjs.map": "6b6ffd678ccd989386dd8195676d70648ce7e1a32e78e578590a78d33fc01a9c",
+    "dist/admin/pages/EditView/components/FormInputs/BlocksInput/BlocksContent.js": "6dd79d6d707eaaf34e5b3c94828c9352e351dfb3507b7bfdf68ffabc2c44014b",
+    "dist/admin/pages/EditView/components/FormInputs/BlocksInput/BlocksContent.mjs": "12c904f50dc6456f7583bb7ed5c25f9c452396bacc21f81f860b0b2acca81e10",
+    "dist/admin/pages/EditView/components/FormInputs/BlocksInput/BlocksContent.js.map": "ae4764dd94a3225528f870d345d5c945f229c7d175d1a8772ca8480bc1a4c6d5",
+    "dist/admin/pages/EditView/components/FormInputs/BlocksInput/BlocksContent.mjs.map": "8ec3e4572569257e3d44503e71e686eb00a6b0d3074bc4918d856890f09edf39",
+    "dist/admin/pages/EditView/components/DocumentActions.js": "8a32e9e2a94c4aae6c1b199f3c0bc922a86383881d96d1410db55c953cce0a8d",
+    "dist/admin/pages/EditView/components/DocumentActions.mjs": "6236e794bacb0ac6a43c022dd6439ce9e054280205acf3c80008bfc8fbc1e366",
+    "dist/admin/pages/EditView/components/DocumentActions.js.map": "98caeb3f8989630f984e110b14c8b8d483e9771174d832cf4abcbe610d89feda",
+    "dist/admin/pages/EditView/components/DocumentActions.mjs.map": "e427d140290f8909d9ca7d3602fd8103cd1a140535c8558e5451b52ea4ed254d",
+    "dist/admin/content-manager.js": "524a0f2dc08b428366a6828125e46ac20ca03c2295d0f6384be914d9b02ca811",
+    "dist/admin/content-manager.mjs": "6dc60dc72922173652d912d809a49b111e3b5e70889f1646e5e59709a704208b"
+  },
+  "selection_packages": [
+    {
+      "package": "slate",
+      "version": "0.94.1",
+      "package_integrity": "sha512-GH/yizXr1ceBoZ9P9uebIaHe3dC/g6Plpf9nlUwnvoyf6V1UOYrRwkabtOCd3ZfIGxomY4P7lfgLr7FPH8/BKA==",
+      "files": {
+        "dist/index.js": "a4fae528456a609628277a2969210174e68feee6c047951e08ffb003991f5fd0",
+        "dist/index.es.js": "53bf26b09f0d7deacb13e7aa3d2c373586dc1252728daeb213004d05445947cf"
+      }
+    },
+    {
+      "package": "slate-react",
+      "version": "0.98.4",
+      "package_integrity": "sha512-8Of3v9hFuX8rIRc86LuuBhU9t8ps+9ARKL4yyhCrKQYZ93Ep/LFA3GvPGvtf3zYuVadZ8tkhRH8tbHOGNAndLw==",
+      "files": {
+        "dist/index.js": "4dfba6140b63e6583ffc6c30c869057b6c292bc88a670f6392db7bca5edb446a",
+        "dist/index.es.js": "264e8b68279e09895be1614b5c31689d2318bc49bb029757fd39ba98ef6348db"
+      }
+    }
+  ]
+}

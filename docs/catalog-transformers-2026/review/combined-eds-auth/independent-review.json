@@ -1,0 +1,78 @@
+{
+  "format": "alageum-combined-eds-auth-independent-review-v1",
+  "status": "approved-bounded-combined-eds-auth",
+  "baselineCommit": "a32f7878d25a7d4e26d063ec6914b72d2f814383",
+  "baselineTree": "0cc608e2020f82aaec678032bc772ec2276c7946",
+  "candidateCommit": "b364925821149eca9424f6738a908727be095a8a",
+  "candidateTree": "204e86c3be6713ea6b87773e9c916326fcf6ccc8",
+  "boundaries": {
+    "historicalApprovalChanges": 0,
+    "coordinatorChanges": 0,
+    "packageChanges": 0,
+    "lockfileChanges": 0,
+    "workflowChanges": 0,
+    "auditGateChanges": 0,
+    "catalogRecordChanges": 0,
+    "catalogSourceUiChanges": 0,
+    "geometryChanges": 0,
+    "rfqContractChanges": 0,
+    "cmsContractChanges": 0,
+    "cryptographicSigning": "unavailable",
+    "signingFlags": "off-by-default",
+    "googleLiveProvider": "not-verified",
+    "egovProvider": "unavailable",
+    "releaseApproval": false,
+    "securityWaiver": false
+  },
+  "approvedDependenciesSha256": "389566ae85dfa60fb73036a32ce87494784daef038bbad6ee86c39aac458f978",
+  "reviewedVerifierSha256": "172d11ef76f0988eb8a0ff668fa718eab8b40e0ba155524d7d2a3e84e29646cf",
+  "reviewedFixedFilesSha256": "578a1a9d946e27045ea455e1f08cb23328b0e63caea41d95319bf0bf3e4ce6f6",
+  "reviewer": "Independent read-only proof reviewer, 2026-10-12",
+  "outcome": "Approved bounded current-byte proof successor; no blocking proof finding.",
+  "authorityNote": "Genuine independent review of this exact proof implementation and closure. Proof-only approval: not an application-semantic re-review or evidence of completed aggregate/browser acceptance. No release, security waiver, push, deployment or provider-registration authority.",
+  "verifiedScope": {
+    "exactPr45BaselinePaths": 617,
+    "currentDependencyPaths": 668,
+    "exactPredecessorReplacements": 12,
+    "frozenApplicationFiles": 48,
+    "allInheritedRoutes": 11,
+    "consumedPathsPerRoute": 670,
+    "finalRereads": "Every in-owner raw path is read twice; supplied-clearance inputs have one additional outer read.",
+    "historicalArchive": "Exact PR45 test-only bytes verified; no production import or current-proof substitution."
+  },
+  "independentVerification": {
+    "selectedCurrentTests": {
+      "passed": 6,
+      "failed": 0,
+      "coverage": [
+        "Every-file deletion and mutation rejection",
+        "Every immutable/fixed-file reattestation rejection",
+        "Stale predecessor substitution rejection",
+        "Current-byte production import boundary",
+        "Exact scope and boundary rejection",
+        "Complete disk closure and same-invocation reader checks"
+      ]
+    },
+    "finiteConsumerAndForgedOwnerTest": {
+      "passed": 1,
+      "failed": 0
+    },
+    "additionalNestedMidInvocationMutationChecks": {
+      "passed": 44,
+      "failed": 0
+    },
+    "wrongPredecessorChecks": {
+      "passed": 36,
+      "failed": 0
+    },
+    "allRouteCaptureAndFinalRereadTrace": "passed"
+  },
+  "preservedLimitations": [
+    "Sequential observations are not an atomic filesystem snapshot; transient restored changes and changes after final reads are outside the contract.",
+    "Explicit-reader calls retain uncached legacy behavior; no cross-invocation authority cache.",
+    "Actual EDS cryptographic verification remains unavailable and signing flags default off.",
+    "Live Google credentials/provider acceptance remain unverified; eGov remains unavailable.",
+    "Full combined aggregate, production build and browser acceptance remain separate required gates.",
+    "Existing dependency-security, startup/session/cutover, storage and deployment gates are not waived."
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "verifiedAt": "2026-10-12",
+  "catalogRecords": 843,
+  "catalogFamilies": 175,
+  "researchPass": "extended_second_pass",
+  "baselineImageCandidates": 66,
+  "addedImageCandidates": 75,
+  "combinedImageCandidates": 141,
+  "attributionUpgrades": 14,
+  "catalogRecordsWithAtLeastOneVerifiedCandidate": 213,
+  "catalogRecordsWithAtLeastTwoVerifiedCandidates": 70,
+  "catalogRecordsWithAtLeastThreeVerifiedCandidates": 42,
+  "catalogRecordsTypeReferencesOnly": 187,
+  "catalogRecordsWithoutVerifiedOrTypeReference": 443,
+  "catalogRecordsWithExactModelPhoto": 3,
+  "recordCoverageStatuses": {
+    "two_or_more_verified_candidates": 70,
+    "no_verified_candidate_after_extended_research": 443,
+    "one_verified_candidate": 143,
+    "type_reference_only": 187
+  },
+  "lowResolutionImages": 20,
+  "imageFileCountInIncrement": 85,
+  "sourceGroupsAdded": {
+    "distribution": 9,
+    "dry": 8,
+    "power": 10,
+    "switchgear": 48
+  },
+  "firstPass72LeadsReviewed": 72,
+  "firstPassLeadVisualDispositions": {
+    "render_or_duplicate_of_render": 10,
+    "accepted_series_photo": 1,
+    "unattributed": 2,
+    "duplicate": 14,
+    "wrongmodel": 2,
+    "unmapped_photograph": 4,
+    "technical_drawing_or_table": 11,
+    "duplicate_source_upgrade": 1,
+    "quarantined_reused_photo": 3,
+    "new_distinct_shot": 13,
+    "duplicate_conflicting_rating": 1,
+    "duplicate_resolution_alternative": 1,
+    "duplicate_or_retouched_cutout": 1,
+    "duplicate_crop": 2,
+    "duplicate_cutout": 2,
+    "uncertain_photo_or_render": 1,
+    "unmapped_component_photo": 2,
+    "retouched_or_reconstructed_duplicate": 1
+  },
+  "exactByteDuplicates": {},
+  "siteChanged": false,
+  "applicationTestsRun": false,
+  "rights": "Publication/reuse permissions remain unconfirmed. No publication performed.",
+  "mediaKinds": {
+    "photo": 140,
+    "photo_collage": 1
+  },
+  "remainingRecordsNeedingTwoMatchingPhotos": 773,
+  "knownUnvisitedCredibleSourceLeads": 0,
+  "stoppingCondition": "All 72 previous image leads have final visual dispositions. Discovered credible public manufacturer catalogs, product/project galleries and relevant supplier/editorial sources have been reviewed to a source-level stopping disposition. Remaining gaps need labelled manufacturer originals or access to currently inaccessible public sources; this is not a claim of global Internet exhaustion."
+}

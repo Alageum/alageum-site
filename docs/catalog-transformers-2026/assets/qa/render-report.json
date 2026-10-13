@@ -1,0 +1,1764 @@
+{
+  "renderer": "CPU z-buffer rasterization of actual Three.js geometry",
+  "limitation": "No WebGL, interactive controls, GPU shading or browser lifecycle validation. Source pages visually reviewed independently.",
+  "geometryCount": 62,
+  "iconCount": 67,
+  "results": [
+    {
+      "type": "tr26-corrugated-small",
+      "sourcePages": [
+        12,
+        22,
+        30,
+        42,
+        46,
+        56,
+        59
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 26555,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 30441,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 22570,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 18157,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-corrugated-large",
+      "sourcePages": [
+        13,
+        23,
+        31,
+        43,
+        47,
+        57
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 25084,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 29406,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 20526,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 15228,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-isolating",
+      "sourcePages": [
+        49
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 26202,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 29646,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 21807,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 16220,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-conservator-small",
+      "sourcePages": [
+        16,
+        52
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 23765,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 25381,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 19893,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 17333,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-conservator-large",
+      "sourcePages": [
+        17,
+        53
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 24436,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 26891,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 20288,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 16027,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-rpn-corrugated",
+      "sourcePages": [
+        33
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 24858,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 30187,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 20168,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 15949,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-pole-bracket",
+      "sourcePages": [
+        35
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 26041,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 29659,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 22074,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 18174,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-panel-side-terminals",
+      "sourcePages": [
+        37
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 19815,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 17991,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 20916,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 16679,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-flanged-ends",
+      "sourcePages": [
+        39
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 24171,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 26867,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 20505,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 13974,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-hood-small",
+      "sourcePages": [
+        61
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 29291,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 33611,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 24770,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 18157,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-hood-tall",
+      "sourcePages": [
+        66
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 20988,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 23602,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 18980,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 10032,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-side-terminal-box",
+      "sourcePages": [
+        67
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 27695,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 30282,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 28141,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 21846,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-heating-three-row",
+      "sourcePages": [
+        69
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 23183,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 25094,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 16602,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 13120,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-heating-single-row",
+      "sourcePages": [
+        71
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 23394,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 27205,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 16294,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 13776,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-single-side-bushings",
+      "sourcePages": [
+        74
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 20148,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 20541,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 16380,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 17488,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-pole-cylinder",
+      "sourcePages": [
+        75
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 15490,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 15881,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 16448,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 11290,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-dry-cast-open",
+      "sourcePages": [
+        80,
+        84
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 24739,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 27948,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 15276,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 17200,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-dry-mesh-cutaway",
+      "sourcePages": [
+        81
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 25696,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 28993,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 19730,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 15732,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-dry-foil-open",
+      "sourcePages": [
+        88
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 27607,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 29796,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 16583,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 15908,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-dry-compact-louver",
+      "sourcePages": [
+        87
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 25309,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 26898,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 21950,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 15582,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-dry-top-bushings",
+      "sourcePages": [
+        90,
+        94
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 20823,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 23660,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 14556,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 10716,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-dry-nomex-open",
+      "sourcePages": [
+        92
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 26582,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 28882,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 16134,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 15744,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-dry-mesh-closed",
+      "sourcePages": [
+        93
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 26312,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 29672,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 19288,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 15732,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-instrument-three-triangle",
+      "sourcePages": [
+        96
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 16190,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 17820,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 18703,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 11800,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-instrument-two-round",
+      "sourcePages": [
+        97
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 15689,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 16542,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 17546,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 11800,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-instrument-three-rect",
+      "sourcePages": [
+        98
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 17830,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 18558,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 15423,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 10552,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-instrument-column",
+      "sourcePages": [
+        99,
+        100
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 7794,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 7922,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 7030,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 3320,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-rail-single-conservator",
+      "sourcePages": [
+        102
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 18112,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 18030,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 17988,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 12305,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-tilted-conservator",
+      "sourcePages": [
+        104
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 20387,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 23806,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 15784,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 12378,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-tilted-sealed",
+      "sourcePages": [
+        107
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 22440,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 25812,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 18817,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 14946,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-upright-sealed-35",
+      "sourcePages": [
+        108
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 22057,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 25596,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 17518,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 12488,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-rail-power-three",
+      "sourcePages": [
+        110
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 28746,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 25257,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 29315,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 25699,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-power-three-winding-35",
+      "sourcePages": [
+        112
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 23866,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 22184,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 22188,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 20924,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-power-split-16",
+      "sourcePages": [
+        114
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 27075,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 23951,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 25458,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 22835,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-power-split-25",
+      "sourcePages": [
+        115
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 24168,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 22408,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 20760,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 20573,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-power-split-40",
+      "sourcePages": [
+        116
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 24027,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 22339,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 21855,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 23359,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-power-td-35",
+      "sourcePages": [
+        118
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 22899,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 22950,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 22260,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 20978,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-power-tdns-10",
+      "sourcePages": [
+        120
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 25441,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 24717,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 27160,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 20867,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-power-tdns-16",
+      "sourcePages": [
+        121
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 26985,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 24678,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 26099,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 22060,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-power-tdns-25",
+      "sourcePages": [
+        122
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 27317,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 24326,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 26401,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 23954,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-power-tdns-40",
+      "sourcePages": [
+        123
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 25512,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 23308,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 25334,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 19153,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-panel-lv-four",
+      "sourcePages": [
+        125
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 24878,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 25242,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 28041,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 24236,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-panel-lv-four-large",
+      "sourcePages": [
+        127
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 28814,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 25426,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 29534,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 27792,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-panel-conservator",
+      "sourcePages": [
+        130,
+        136
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 25883,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 25059,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 27742,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 24236,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-panel-conservator-large",
+      "sourcePages": [
+        132,
+        138
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 27387,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 25041,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 27869,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 25496,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-panel-rpn-small",
+      "sourcePages": [
+        141
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 20140,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 20737,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 18948,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 19001,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-panel-rpn-large",
+      "sourcePages": [
+        143
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 19635,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 20837,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 19913,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 20001,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-hv-offset-conservator",
+      "sourcePages": [
+        146
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 19862,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 23073,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 19050,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 15761,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-hv-three",
+      "sourcePages": [
+        147
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 19911,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 22050,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 20138,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 16932,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-hv-three-winding",
+      "sourcePages": [
+        150
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 22246,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 21911,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 19971,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 17345,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-hv-tdn-10",
+      "sourcePages": [
+        152
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 21257,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 20346,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 20812,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 15338,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-hv-tdn-16",
+      "sourcePages": [
+        153
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 24120,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 23447,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 20785,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 18583,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-hv-tdtn-10",
+      "sourcePages": [
+        155
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 24244,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 23618,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 22015,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 19900,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-hv-tdtn-16",
+      "sourcePages": [
+        156
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 24907,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 23667,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 21168,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 19506,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-power-low-profile",
+      "sourcePages": [
+        158
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 25425,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 24566,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 27580,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 22097,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-power-tds",
+      "sourcePages": [
+        160
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 22130,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 22871,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 22116,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 22033,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-panel-low-voltage",
+      "sourcePages": [
+        163
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 26833,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 24425,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 27842,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 25496,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-panel-lv-seven",
+      "sourcePages": [
+        126
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 28925,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 25579,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 29536,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 27792,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-panel-conservator-offset",
+      "sourcePages": [
+        131,
+        137
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 26123,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 25919,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 29355,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 25700,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-panel-conservator-balanced",
+      "sourcePages": [
+        133,
+        139
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 28761,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 25422,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 29542,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 27792,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-hv-three-wide",
+      "sourcePages": [
+        148
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 20538,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 22050,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 20765,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 18155,
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "type": "tr26-panel-low-voltage-balanced",
+      "sourcePages": [
+        164
+      ],
+      "views": [
+        {
+          "view": "perspective",
+          "visiblePixels": 28207,
+          "edgePixels": 0
+        },
+        {
+          "view": "front",
+          "visiblePixels": 24806,
+          "edgePixels": 0
+        },
+        {
+          "view": "end",
+          "visiblePixels": 29515,
+          "edgePixels": 0
+        },
+        {
+          "view": "plan",
+          "visiblePixels": 27792,
+          "edgePixels": 0
+        }
+      ]
+    }
+  ]
+}

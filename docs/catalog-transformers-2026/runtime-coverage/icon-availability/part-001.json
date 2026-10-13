@@ -1,0 +1,2502 @@
+[
+  {
+    "type": "oil-transformer",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Масляный трансформатор",
+    "activeRecords": [
+      "tmg-400",
+      "tmg-630",
+      "tmg-1000",
+      "tmg-2500",
+      "tmgs-63",
+      "tmgs-160",
+      "tmgf-630",
+      "tmgf-1600",
+      "tmeg-250"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [],
+    "sourceReference": "/brand/transformer.png",
+    "sourceSpecific": false,
+    "genericApproximation": true,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "dry-transformer",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Сухой трансформатор",
+    "activeRecords": [
+      "tsl-630",
+      "tsl-1600"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [],
+    "sourceReference": null,
+    "sourceSpecific": false,
+    "genericApproximation": true,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "instrument-transformer",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Измерительный трансформатор",
+    "activeRecords": [
+      "ntmi-6",
+      "ntmi-10"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [],
+    "sourceReference": null,
+    "sourceSpecific": false,
+    "genericApproximation": true,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "substation",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Комплектная подстанция",
+    "activeRecords": [
+      "cat-ktp-25-250",
+      "cat-ktpnd",
+      "cat-ktpnd-v001",
+      "cat-ktpnd-v002",
+      "cat-ktpnd-v003",
+      "cat-ktpnd-v004",
+      "cat-ktpnd-v005",
+      "cat-ktpnd-v006"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      6,
+      97
+    ],
+    "sourceReference": "/catalog-products/cat-ktp-25-250.webp",
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "modular-substation",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Блочно-модульная подстанция",
+    "activeRecords": [],
+    "status": "registered-but-unused",
+    "sourcePages": [],
+    "sourceReference": "/catalog-products/cat-bktp-modular.webp",
+    "sourceSpecific": false,
+    "genericApproximation": false,
+    "reason": "Registered legacy preset with no current admitted-record mapping; registration does not imply source applicability"
+  },
+  {
+    "type": "pole-substation",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Мачтовая подстанция",
+    "activeRecords": [
+      "cat-mtp-25-100",
+      "cat-mtp-25-100-v001",
+      "cat-mtp-25-100-v002",
+      "cat-mtp-25-100-v003",
+      "cat-mtp-25-100-v004"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      21
+    ],
+    "sourceReference": "/catalog-products/cat-mtp-25-100.webp",
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "switchgear",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Распределительное устройство",
+    "activeRecords": [
+      "cat-kru-k07-ktz",
+      "cat-kru-kerneu-6-10"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      43,
+      45
+    ],
+    "sourceReference": "/catalog-products/cat-kru-kerneu-6-10.webp",
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "disconnector",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Разъединитель",
+    "activeRecords": [
+      "rlnd"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [],
+    "sourceReference": null,
+    "sourceSpecific": false,
+    "genericApproximation": true,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "distribution-cabinet",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Распределительный шкаф",
+    "activeRecords": [
+      "cat-shcho-70",
+      "cat-vru",
+      "cat-shsn-04"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      33,
+      60,
+      61
+    ],
+    "sourceReference": "/catalog-products/cat-shcho-70.webp",
+    "sourceSpecific": true,
+    "genericApproximation": true,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "control-cabinet",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Шкаф управления",
+    "activeRecords": [
+      "cat-pusk-3m",
+      "cat-shueng"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      72,
+      73
+    ],
+    "sourceReference": "/catalog-products/cat-pusk-3m.webp",
+    "sourceSpecific": true,
+    "genericApproximation": true,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "compensation-cabinet",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Шкаф компенсации",
+    "activeRecords": [],
+    "status": "registered-but-unused",
+    "sourcePages": [],
+    "sourceReference": null,
+    "sourceSpecific": false,
+    "genericApproximation": false,
+    "reason": "Registered legacy preset with no current admitted-record mapping; registration does not imply source applicability"
+  },
+  {
+    "type": "protection-cabinet",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Шкаф электрохимической защиты",
+    "activeRecords": [
+      "cat-ptm-tded-v001",
+      "cat-ptm-tded-v002",
+      "cat-ptm-tded-v004",
+      "cat-ptm-tded-v005",
+      "cat-ptm-tded-v007",
+      "cat-ptm-tded-v008",
+      "cat-ptm-tded-v010",
+      "cat-ptm-tded-v012"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      68,
+      69
+    ],
+    "sourceReference": "/catalog-products/cat-ptm-tded.webp",
+    "sourceSpecific": true,
+    "genericApproximation": true,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "metering-box",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Контрольно-измерительный пункт",
+    "activeRecords": [
+      "cat-kik",
+      "cat-kik-v001",
+      "cat-kik-v002",
+      "cat-kik-v003"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      74
+    ],
+    "sourceReference": "/catalog-products/cat-kik.webp",
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "wall-box",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Навесной ящик",
+    "activeRecords": [
+      "cat-ya5000-rusm5000",
+      "cat-ya5000-rusm5000-v001",
+      "cat-ya5000-rusm5000-v002",
+      "cat-ya5000-rusm5000-v003",
+      "cat-ya5000-rusm5000-v004",
+      "cat-ya5000-rusm5000-v005",
+      "cat-ya5000-rusm5000-v006",
+      "cat-ya5000-rusm5000-v007",
+      "cat-ya5000-rusm5000-v008",
+      "cat-ya5000-rusm5000-v009",
+      "cat-ya5000-rusm5000-v010",
+      "cat-ya5000-rusm5000-v011",
+      "cat-ya5000-rusm5000-v012",
+      "cat-ya5000-rusm5000-v013",
+      "cat-ya5000-rusm5000-v014",
+      "cat-ya5000-rusm5000-v015",
+      "cat-ya5000-rusm5000-v016",
+      "cat-ya5000-rusm5000-v017",
+      "cat-ya5000-rusm5000-v018",
+      "cat-ya5000-rusm5000-v019",
+      "cat-ya5000-rusm5000-v020",
+      "cat-ya5000-rusm5000-v021",
+      "cat-ya5000-rusm5000-v022",
+      "cat-ya5000-rusm5000-v023",
+      "cat-ya5000-rusm5000-v024",
+      "cat-ya5000-rusm5000-v025"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      66
+    ],
+    "sourceReference": "/catalog-products/cat-ya5000-rusm5000.webp",
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "wall-control-box",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Навесной ящик с приборами",
+    "activeRecords": [
+      "cat-shtz",
+      "cat-yatp",
+      "cat-yatp-v001",
+      "cat-yatp-v002",
+      "cat-yatp-v003",
+      "cat-yatp-v004",
+      "cat-yatp-v005",
+      "cat-yatp-v006",
+      "cat-yatp-v007",
+      "cat-yatp-v008",
+      "cat-yatp-v009",
+      "cat-yauo",
+      "cat-yauo-v001",
+      "cat-yauo-v002",
+      "cat-rusm-5100-5400",
+      "cat-rusm-5100-5400-v001",
+      "cat-rusm-5100-5400-v002"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      63,
+      65,
+      67
+    ],
+    "sourceReference": "/catalog-products/cat-shtz.webp",
+    "sourceSpecific": true,
+    "genericApproximation": true,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "plain-floor-cabinet",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Напольный однодверный шкаф",
+    "activeRecords": [
+      "cat-shchsu-04",
+      "cat-bushk-2m"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      36,
+      96
+    ],
+    "sourceReference": "/catalog-products/cat-shchsu-04.webp",
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "single-door-switchgear",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Однодверная камера КСО",
+    "activeRecords": [
+      "kso-366",
+      "cat-kso-366m"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      23,
+      24
+    ],
+    "sourceReference": "/catalog-products/kso-366.webp",
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "compact-substation",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Закрытая КТП с вводами на крыше",
+    "activeRecords": [
+      "cat-ktpn-25-3150",
+      "cat-ktpn-25-3150-v004",
+      "cat-ktpn-25-3150-v005",
+      "cat-ktpn-25-3150-v006",
+      "cat-ktpn-25-3150-v007"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      8
+    ],
+    "sourceReference": "/catalog-products/cat-ktpn-25-3150.webp",
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "double-compact-substation",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Двухтрансформаторная закрытая КТП",
+    "activeRecords": [
+      "cat-2ktpn-25-3150"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      10
+    ],
+    "sourceReference": "/catalog-products/cat-2ktpn-25-3150.webp",
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "kiosk-substation",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "КТП в киоске",
+    "activeRecords": [
+      "cat-ktpg-25-3150",
+      "cat-ktpg-25-3150-v001",
+      "cat-ktpg-25-3150-v002",
+      "cat-ktpg-25-3150-v003",
+      "cat-ktpg-25-3150-v004",
+      "cat-ktpg-25-3150-v005",
+      "cat-ktpg-25-3150-v006",
+      "cat-ktpg-25-3150-v007",
+      "cat-ktpg-25-3150-v008",
+      "cat-ktpg-25-3150-v009",
+      "cat-ktpg-25-3150-v010",
+      "cat-ktpg-25-3150-v011",
+      "cat-ktpg-25-3150-v012"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      12
+    ],
+    "sourceReference": "/catalog-products/cat-ktpg-25-3150.webp",
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "outdoor-switchgear-shelter",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Наружное КРУ в укрытии",
+    "activeRecords": [
+      "cat-krun07-ktz",
+      "cat-k8m",
+      "cat-k59"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      43,
+      49,
+      51
+    ],
+    "sourceReference": "/catalog-products/cat-k8m.webp",
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "wall-canopy-box",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Навесной блок с козырьком",
+    "activeRecords": [
+      "cat-bdrm",
+      "cat-bdrm-v001",
+      "cat-bdrm-v002",
+      "cat-bdrm-v003",
+      "cat-bdrm-v004",
+      "cat-bdrm-v005",
+      "cat-bdrm-v006",
+      "cat-bdrm-v007",
+      "cat-bdrm-v008",
+      "cat-bdrm-v009",
+      "cat-bdrm-v010",
+      "cat-bdrm-v011"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      70,
+      71
+    ],
+    "sourceReference": "/catalog-products/cat-bdrm.webp",
+    "sourceSpecific": true,
+    "genericApproximation": true,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "mining-skid-substation",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Передвижная КТП на полозьях",
+    "activeRecords": [
+      "pktp-400",
+      "pktp-1000",
+      "cat-pktp",
+      "cat-pktp-v001",
+      "cat-pktp-v002",
+      "cat-pktp-v003",
+      "cat-pktp-v004",
+      "cat-pktp-v005",
+      "cat-pktp-v006",
+      "cat-pktp-v008"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      87
+    ],
+    "sourceReference": "/catalog-products/cat-pktp.webp",
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "railway-frame-substation",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Железнодорожная КТП на раме",
+    "activeRecords": [
+      "cat-ktpzh-25-1000",
+      "cat-ktpzh-25-1000-v001",
+      "cat-ktpzh-25-1000-v002",
+      "cat-ktpzh-25-1000-v003",
+      "cat-ktpzh-25-1000-v004",
+      "cat-ktpzh-25-1000-v005",
+      "cat-ktpzh-25-1000-v006",
+      "cat-ktpzh-25-1000-v007",
+      "cat-ktpzh-25-1000-v008",
+      "cat-ktpzh-25-1000-v009"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      76
+    ],
+    "sourceReference": "/catalog-products/cat-ktpzh-25-1000.webp",
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "upper-input-protection",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Установка защиты с воздушным вводом",
+    "activeRecords": [
+      "cat-ukzv",
+      "cat-ukzv-v001",
+      "cat-ukzv-v003",
+      "cat-ukzv-v005"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      93
+    ],
+    "sourceReference": "/catalog-products/cat-ukzv.webp",
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "outdoor-floor-cabinet",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Наружный шкаф с козырьком",
+    "activeRecords": [
+      "cat-ukzn",
+      "cat-ukzn-v001",
+      "cat-ukzn-v002",
+      "cat-ukzn-v003",
+      "cat-ukzn-v004"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      93
+    ],
+    "sourceReference": "/catalog-products/cat-ukzn.webp",
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "mesh-top-relay-switchgear",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Камера с сетчатым верхним отсеком и релейным фасадом",
+    "activeRecords": [
+      "kso-292"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      28
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "relay-panel-switchgear",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Камера КСО с верхней релейной панелью",
+    "activeRecords": [
+      "kso-2-10"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      25
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "double-kiosk-substation",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Два киоска с центральным шкафом АВР",
+    "activeRecords": [
+      "cat-2ktpg-25-3150"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      13
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "tall-single-phase-substation",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Высокая трёхъярусная однофазная подстанция",
+    "activeRecords": [
+      "cat-ktpo-4-10",
+      "cat-ktpo-4-10-v001",
+      "cat-ktpo-4-10-v002",
+      "cat-ktpo-4-10-v003",
+      "cat-ktpo-4-10-v004"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      17
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "heating-transformer-assembly",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Станция прогрева с трансформатором на общей раме",
+    "activeRecords": [
+      "cat-ktpto-80"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      18
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "raised-outdoor-substation",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Открытая подстанция 35 кВ на площадке с лестницей",
+    "activeRecords": [
+      "cat-ktps-100-1600",
+      "cat-ktps-100-1600-v007"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      19,
+      20
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "single-phase-pole-substation",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Однофазная мачтовая подстанция с боковым трансформатором",
+    "activeRecords": [
+      "cat-mtpo-4-10"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      22
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "open-vacuum-switchgear",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Открытый разрез камеры с тремя вакуумными аппаратами",
+    "activeRecords": [
+      "cat-kso-2-20"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      27
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "rmu-three-cell-lineup",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Трёхсекционное распределительное устройство RMU",
+    "activeRecords": [
+      "cat-rmu-ae"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      30
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "outdoor-roof-input-switchgear",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Наружная двухъярусная камера с вводами на кровле",
+    "activeRecords": [
+      "cat-krn-iv"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      31
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "open-sided-distribution-panel",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Низковольтная панель с открытой боковой рамой",
+    "activeRecords": [
+      "cat-shnn",
+      "cat-shnn-v001",
+      "cat-shnn-v002",
+      "cat-shnn-v003",
+      "cat-shnn-v004",
+      "cat-shnn-v005",
+      "cat-shnn-v006",
+      "cat-shnn-v007",
+      "cat-shnn-v008",
+      "cat-shnn-v009",
+      "cat-shnn-v010",
+      "cat-shnn-v011",
+      "cat-shnn-v012",
+      "cat-shnn-v013",
+      "cat-shnn-v014"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      35
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": true,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "single-modular-building",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Однотрансформаторная БКТП: ворота и боковая дверь",
+    "activeRecords": [
+      "cat-bktp-modular",
+      "cat-bktp-modular-v001"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      38,
+      39
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": true,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "double-modular-building",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Двухтрансформаторная 2БКТП с центральным проёмом",
+    "activeRecords": [
+      "cat-bktp-modular-v002"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      39
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "concrete-substation-building",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "БКТП в бетонном здании с плоской плитой кровли",
+    "activeRecords": [
+      "cat-bktp-concrete"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      41
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "deep-35kv-switchgear",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Глубокая камера 35 кВ с релейным и выкатным отсеками",
+    "activeRecords": [
+      "cat-kru-kerneu-35"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      47
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "open-drawout-switchgear",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Выкатная камера с открытым нижним силовым отсеком",
+    "activeRecords": [
+      "cat-km7m"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      53
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "outdoor-switchyard-substation",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Открытая блочная подстанция с аппаратными рамами",
+    "activeRecords": [
+      "cat-ktpb-k",
+      "cat-ktpb-k-v001",
+      "cat-ktpb-k-v002",
+      "cat-ktpb-k-v003"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      55
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": true,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "battery-control-rack",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Шкаф оперативного тока с батарейной стойкой",
+    "activeRecords": [
+      "cat-shuot"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      62
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "open-distribution-panel",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Открытая распределительная панель",
+    "activeRecords": [
+      "cat-pr-shr11",
+      "cat-pr-shr11-v001",
+      "cat-pr-shr11-v002",
+      "cat-pr-shr11-v003"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      64
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": true,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "indoor-protection-enclosure",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Прямоугольный корпус ТДЕ без наружного козырька",
+    "activeRecords": [
+      "cat-ptm-tded-v003",
+      "cat-ptm-tded-v006",
+      "cat-ptm-tded-v009",
+      "cat-ptm-tded-v011",
+      "cat-ptm-tded-v013"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      68,
+      69
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": true,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "round-metering-post",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "СКИП на круглой трубчатой стойке",
+    "activeRecords": [
+      "cat-skip",
+      "cat-skip-v001",
+      "cat-skip-v002"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      74
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "railway-pole-single-phase",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Однофазная КТПЖ с боковой арматурой",
+    "activeRecords": [
+      "cat-ktpzh-2-4",
+      "cat-ktpzh-2-4-v001",
+      "cat-ktpzh-2-4-v002"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      75
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "railway-pole-mini-transformer",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Мачтовая однофазная МТПЖ с боковым трансформатором",
+    "activeRecords": [
+      "cat-mtpzh-1-25-2-5",
+      "cat-mtpzh-1-25-2-5-v001",
+      "cat-mtpzh-1-25-2-5-v002"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      77
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "railway-backboard-transformer",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "МТПЖ с высоким шкафом и низким трансформатором",
+    "activeRecords": [
+      "cat-mtpzh-10",
+      "cat-mtpzh-10-v001"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      78
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "railway-modular-building",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Блочно-модульное здание АТП с боковыми вводами",
+    "activeRecords": [
+      "cat-atp-2x25"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      81
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "railway-sectioning-post",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Пост секционирования с наружной контактной группой",
+    "activeRecords": [
+      "cat-psk-27-5",
+      "cat-psk-27-5-v001"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      84
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "railway-side-input-switchgear",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Железнодорожная ячейка КРУ с боковыми вводами",
+    "activeRecords": [
+      "cat-kru-27-5"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      86
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "mine-switchgear-window",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Рудничная ячейка со смотровым окном",
+    "activeRecords": [
+      "cat-kru-rn"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      89
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "mine-fenced-switchgear",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "ЯКНО с высокой сетчатой камерой на полозьях",
+    "activeRecords": [
+      "cat-yakno-6-10"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      90
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "mine-fenced-double-switchgear",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Широкая ЯКНО-20 с верхним сетчатым отсеком",
+    "activeRecords": [
+      "cat-yakno-20"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      91
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "mine-low-skid-substation",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Низкая шахтная подстанция на полозьях",
+    "activeRecords": [
+      "cat-ktpshg"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      92
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "wall-canopy-control",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Навесной БУЭСКН с козырьком и индикаторами",
+    "activeRecords": [
+      "cat-bueskn"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      95
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "long-service-container",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Длинный служебный контейнер с площадками и лестницами",
+    "activeRecords": [
+      "cat-modular-oil"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      98
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "equipment",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Электрооборудование",
+    "activeRecords": [],
+    "status": "registered-but-unused",
+    "sourcePages": [],
+    "sourceReference": null,
+    "sourceSpecific": false,
+    "genericApproximation": false,
+    "reason": "Registered legacy preset with no current admitted-record mapping; registration does not imply source applicability"
+  },
+  {
+    "type": "indoor-transformer-lineup",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Внутренняя подстанция с линейкой РУНН",
+    "activeRecords": [
+      "cat-ktpp-2ktpp-250-6300"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      15
+    ],
+    "sourceReference": null,
+    "sourceSpecific": false,
+    "genericApproximation": true,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "main-distribution-lineup",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Типовой многопанельный главный распределительный щит",
+    "activeRecords": [
+      "cat-grsh-04"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      32
+    ],
+    "sourceReference": null,
+    "sourceSpecific": false,
+    "genericApproximation": true,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "open-sided-feeder-panel",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Линейная низковольтная панель с открытой рамой",
+    "activeRecords": [
+      "cat-shnn-v015",
+      "cat-shnn-v016",
+      "cat-shnn-v017",
+      "cat-shnn-v018"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      35
+    ],
+    "sourceReference": null,
+    "sourceSpecific": false,
+    "genericApproximation": true,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "paired-protection-enclosures",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Два корпуса семейства ПТМ и ТДЕ",
+    "activeRecords": [
+      "cat-ptm-tded"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      69
+    ],
+    "sourceReference": null,
+    "sourceSpecific": true,
+    "genericApproximation": false,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "cable-protection-cabinet",
+    "cohort": "legacy",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Условный шкаф защиты с кабельным вводом",
+    "activeRecords": [
+      "cat-ukzv-v002",
+      "cat-ukzv-v004",
+      "cat-ukzv-v006",
+      "cat-ukzv-v007"
+    ],
+    "status": "used-by-legacy-records",
+    "sourcePages": [
+      93,
+      94
+    ],
+    "sourceReference": null,
+    "sourceSpecific": false,
+    "genericApproximation": true,
+    "reason": "Existing legacy mapping retained; source-based versus typical/generic is recorded per item"
+  },
+  {
+    "type": "tr26-corrugated-small",
+    "cohort": "new-transformers-2026",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Малый герметичный гофрированный бак",
+    "activeRecords": [
+      "alageum-2026-tmg-20kv-100",
+      "alageum-2026-tmg-20kv-160",
+      "alageum-2026-tmg-20kv-250",
+      "alageum-2026-tmg-20kv-400",
+      "alageum-2026-tmg-20kv-630",
+      "alageum-2026-tmg-20kv-copper-25",
+      "alageum-2026-tmg-20kv-copper-40",
+      "alageum-2026-tmg-20kv-copper-63",
+      "alageum-2026-tmgsu-100",
+      "alageum-2026-tmgsu-160",
+      "alageum-2026-tmgsu-250",
+      "alageum-2026-tmgsu-63",
+      "alageum-tmg-01-100",
+      "alageum-tmg-01-160",
+      "alageum-tmg-01-250",
+      "alageum-tmg-01-63",
+      "alageum-tmg-standard-100",
+      "alageum-tmg-standard-16",
+      "alageum-tmg-standard-160",
+      "alageum-tmg-standard-25",
+      "alageum-tmg-standard-250",
+      "alageum-tmg-standard-40",
+      "alageum-tmg-standard-63",
+      "alageum-tmg-switch-6-10-100",
+      "alageum-tmg-switch-6-10-160",
+      "alageum-tmg-switch-6-10-25",
+      "alageum-tmg-switch-6-10-250",
+      "alageum-tmg-switch-6-10-40",
+      "alageum-tmg-switch-6-10-63",
+      "alageum-tmg-x1k1-100",
+      "alageum-tmg-x1k1-160",
+      "alageum-tmg-x1k1-250",
+      "alageum-tmg-x1k1-63",
+      "alageum-tmge-x2k1-100",
+      "alageum-tmge-x2k1-160",
+      "alageum-tmge-x2k1-250",
+      "alageum-tmge-x2k1-400",
+      "alageum-tmge-x2k1-63",
+      "alageum-tmge-x2k1-630",
+      "alageum-tmge-x2k2-100",
+      "alageum-tmge-x2k2-160",
+      "alageum-tmge-x2k2-250",
+      "alageum-tmge-x2k2-40",
+      "alageum-tmge-x2k2-400",
+      "alageum-tmge-x2k2-63",
+      "alageum-tmge-x2k2-630",
+      "alageum-tmgve-x3k3-100",
+      "alageum-tmgve-x3k3-160",
+      "alageum-tmgve-x3k3-250",
+      "alageum-tmgve-x3k3-400",
+      "alageum-tmgve-x3k3-63",
+      "alageum-tmgve-x3k3-630"
+    ],
+    "status": "used-by-approved-records",
+    "sourcePages": [
+      12,
+      22,
+      30,
+      42,
+      46,
+      56,
+      59
+    ],
+    "proposedSourceRecords": [
+      {
+        "id": "alageum-tmg-standard-16",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-standard-25",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-standard-40",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-standard-63",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-standard-100",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-standard-160",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-standard-250",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-standard-400",
+        "status": "old-identity-hold",
+        "admitted": false
+      },
+      {
+        "id": "alageum-tmg-standard-630",
+        "status": "old-identity-hold",
+        "admitted": false
+      },
+      {
+        "id": "alageum-tmg-01-63",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-01-100",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-01-160",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-01-250",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-01-400",
+        "status": "old-identity-hold",
+        "admitted": false
+      },
+      {
+        "id": "alageum-tmg-01-630",
+        "status": "old-identity-hold",
+        "admitted": false
+      },
+      {
+        "id": "alageum-tmg-x1k1-63",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-x1k1-100",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-x1k1-160",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-x1k1-250",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-x1k1-400",
+        "status": "old-identity-hold",
+        "admitted": false
+      },
+      {
+        "id": "alageum-tmg-x1k1-630",
+        "status": "old-identity-hold",
+        "admitted": false
+      },
+      {
+        "id": "alageum-tmge-x2k1-63",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmge-x2k1-100",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmge-x2k1-160",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmge-x2k1-250",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmge-x2k1-400",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmge-x2k1-630",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmge-x2k2-40",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmge-x2k2-63",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmge-x2k2-100",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmge-x2k2-160",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmge-x2k2-250",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmge-x2k2-400",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmge-x2k2-630",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmgve-x3k3-63",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmgve-x3k3-100",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmgve-x3k3-160",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmgve-x3k3-250",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmgve-x3k3-400",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmgve-x3k3-630",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmgi-x4k3-63",
+        "status": "execution-binding-unverified",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmgi-x4k3-100",
+        "status": "execution-binding-unverified",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmgi-x4k3-160",
+        "status": "execution-binding-unverified",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmgi-x4k3-250",
+        "status": "execution-binding-unverified",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmgi-x4k3-400",
+        "status": "execution-binding-unverified",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmgi-x4k3-630",
+        "status": "execution-binding-unverified",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-copper-25",
+        "status": "execution-binding-unverified",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-copper-40",
+        "status": "execution-binding-unverified",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-copper-63",
+        "status": "execution-binding-unverified",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-copper-100",
+        "status": "execution-binding-unverified",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-copper-160",
+        "status": "execution-binding-unverified",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-copper-250",
+        "status": "execution-binding-unverified",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-copper-400",
+        "status": "old-identity-hold",
+        "admitted": false
+      },
+      {
+        "id": "alageum-tmg-copper-630",
+        "status": "old-identity-hold",
+        "admitted": false
+      },
+      {
+        "id": "alageum-tmg-switch-6-10-25",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-switch-6-10-40",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-switch-6-10-63",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-switch-6-10-100",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-switch-6-10-160",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-switch-6-10-250",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-switch-6-10-400",
+        "status": "old-identity-hold",
+        "admitted": false
+      },
+      {
+        "id": "alageum-tmg-switch-6-10-630",
+        "status": "old-identity-hold",
+        "admitted": false
+      },
+      {
+        "id": "alageum-2026-tmg-20kv-copper-25",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-tmg-20kv-copper-40",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-tmg-20kv-copper-63",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-tmg-20kv-100",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-tmg-20kv-160",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-tmg-20kv-250",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-tmg-20kv-400",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-tmg-20kv-630",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-tmgsu-63",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-tmgsu-100",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-tmgsu-160",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-tmgsu-250",
+        "status": "topology-proposal",
+        "admitted": true
+      }
+    ],
+    "reason": "Exact per-record allowlist references this shared preset"
+  },
+  {
+    "type": "tr26-corrugated-large",
+    "cohort": "new-transformers-2026",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Большой герметичный гофрированный бак",
+    "activeRecords": [
+      "alageum-2026-tmg-20kv-1000",
+      "alageum-2026-tmg-20kv-1250",
+      "alageum-2026-tmg-20kv-1600",
+      "alageum-2026-tmg-20kv-2000",
+      "alageum-2026-tmg-20kv-2500",
+      "alageum-tmg-01-1250",
+      "alageum-tmg-01-1600",
+      "alageum-tmg-01-2000",
+      "alageum-tmg-standard-1250",
+      "alageum-tmg-standard-1600",
+      "alageum-tmg-standard-2000",
+      "alageum-tmg-standard-3200",
+      "alageum-tmg-switch-6-10-1250",
+      "alageum-tmg-switch-6-10-1600",
+      "alageum-tmg-switch-6-10-2000",
+      "alageum-tmg-x1k1-1250",
+      "alageum-tmg-x1k1-1600",
+      "alageum-tmge-x2k1-1000",
+      "alageum-tmge-x2k1-1250",
+      "alageum-tmge-x2k1-1600",
+      "alageum-tmge-x2k1-2500",
+      "alageum-tmge-x2k2-1000",
+      "alageum-tmge-x2k2-1250",
+      "alageum-tmge-x2k2-1600",
+      "alageum-tmge-x2k2-2500",
+      "alageum-tmgve-x3k3-1000",
+      "alageum-tmgve-x3k3-1250",
+      "alageum-tmgve-x3k3-1600",
+      "alageum-tmgve-x3k3-2500"
+    ],
+    "status": "used-by-approved-records",
+    "sourcePages": [
+      13,
+      23,
+      31,
+      43,
+      47,
+      57
+    ],
+    "proposedSourceRecords": [
+      {
+        "id": "alageum-tmg-standard-1000",
+        "status": "old-identity-hold",
+        "admitted": false
+      },
+      {
+        "id": "alageum-tmg-standard-1250",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-standard-1600",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-standard-2000",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-standard-2500",
+        "status": "old-identity-hold",
+        "admitted": false
+      },
+      {
+        "id": "alageum-tmg-standard-3200",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-01-1000",
+        "status": "old-identity-hold",
+        "admitted": false
+      },
+      {
+        "id": "alageum-tmg-01-1250",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-01-1600",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-01-2000",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-01-2500",
+        "status": "old-identity-hold",
+        "admitted": false
+      },
+      {
+        "id": "alageum-tmg-x1k1-1000",
+        "status": "old-identity-hold",
+        "admitted": false
+      },
+      {
+        "id": "alageum-tmg-x1k1-1250",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-x1k1-1600",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-x1k1-2500",
+        "status": "old-identity-hold",
+        "admitted": false
+      },
+      {
+        "id": "alageum-tmge-x2k1-1000",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmge-x2k1-1250",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmge-x2k1-1600",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmge-x2k1-2500",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmge-x2k2-1000",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmge-x2k2-1250",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmge-x2k2-1600",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmge-x2k2-2500",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmgve-x3k3-1000",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmgve-x3k3-1250",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmgve-x3k3-1600",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmgve-x3k3-2500",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmgi-x4k3-1000",
+        "status": "execution-binding-unverified",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmgi-x4k3-1250",
+        "status": "execution-binding-unverified",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmgi-x4k3-1600",
+        "status": "execution-binding-unverified",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmgi-x4k3-2500",
+        "status": "execution-binding-unverified",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-copper-1000",
+        "status": "old-identity-hold",
+        "admitted": false
+      },
+      {
+        "id": "alageum-tmg-copper-1250",
+        "status": "execution-binding-unverified",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-copper-1600",
+        "status": "execution-binding-unverified",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-copper-2000",
+        "status": "execution-binding-unverified",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-copper-2500",
+        "status": "old-identity-hold",
+        "admitted": false
+      },
+      {
+        "id": "alageum-tmg-switch-6-10-1000",
+        "status": "old-identity-hold",
+        "admitted": false
+      },
+      {
+        "id": "alageum-tmg-switch-6-10-1250",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-switch-6-10-1600",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-switch-6-10-2000",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmg-switch-6-10-2500",
+        "status": "old-identity-hold",
+        "admitted": false
+      },
+      {
+        "id": "alageum-2026-tmg-20kv-1000",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-tmg-20kv-1250",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-tmg-20kv-1600",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-tmg-20kv-2000",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-tmg-20kv-2500",
+        "status": "topology-proposal",
+        "admitted": true
+      }
+    ],
+    "reason": "Exact per-record allowlist references this shared preset"
+  },
+  {
+    "type": "tr26-isolating",
+    "cohort": "new-transformers-2026",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Разделительный трансформатор с двумя рядами вводов",
+    "activeRecords": [
+      "alageum-2026-isolating-tmg-1000",
+      "alageum-2026-isolating-tmg-1250",
+      "alageum-2026-isolating-tmg-1600",
+      "alageum-2026-isolating-tmg-2000",
+      "alageum-2026-isolating-tmg-2500",
+      "alageum-2026-isolating-tmg-3200",
+      "alageum-2026-isolating-tmg-4000",
+      "alageum-2026-isolating-tmg-4500",
+      "alageum-2026-isolating-tmg-630"
+    ],
+    "status": "used-by-approved-records",
+    "sourcePages": [
+      49
+    ],
+    "proposedSourceRecords": [
+      {
+        "id": "alageum-2026-isolating-tmg-630",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-isolating-tmg-1000",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-isolating-tmg-1250",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-isolating-tmg-1600",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-isolating-tmg-2000",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-isolating-tmg-2500",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-isolating-tmg-3200",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-isolating-tmg-4000",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-isolating-tmg-4500",
+        "status": "topology-proposal",
+        "admitted": true
+      }
+    ],
+    "reason": "Exact per-record allowlist references this shared preset"
+  },
+  {
+    "type": "tr26-conservator-small",
+    "cohort": "new-transformers-2026",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Малый гофрированный бак с расширителем",
+    "activeRecords": [
+      "alageum-2026-tm-20kv-100",
+      "alageum-2026-tm-20kv-160",
+      "alageum-2026-tm-20kv-250",
+      "alageum-2026-tm-20kv-400",
+      "alageum-tm-standard-100",
+      "alageum-tm-standard-16",
+      "alageum-tm-standard-160",
+      "alageum-tm-standard-25",
+      "alageum-tm-standard-250",
+      "alageum-tm-standard-40",
+      "alageum-tm-standard-400",
+      "alageum-tm-standard-63"
+    ],
+    "status": "used-by-approved-records",
+    "sourcePages": [
+      16,
+      52
+    ],
+    "proposedSourceRecords": [
+      {
+        "id": "alageum-tm-standard-16",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tm-standard-25",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tm-standard-40",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tm-standard-63",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tm-standard-100",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tm-standard-160",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tm-standard-250",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tm-standard-400",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-tm-20kv-100",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-tm-20kv-160",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-tm-20kv-250",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-tm-20kv-400",
+        "status": "topology-proposal",
+        "admitted": true
+      }
+    ],
+    "reason": "Exact per-record allowlist references this shared preset"
+  },
+  {
+    "type": "tr26-conservator-large",
+    "cohort": "new-transformers-2026",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Большой гофрированный бак с расширителем",
+    "activeRecords": [
+      "alageum-2026-tm-20kv-1000",
+      "alageum-2026-tm-20kv-1250",
+      "alageum-2026-tm-20kv-1600",
+      "alageum-2026-tm-20kv-2000",
+      "alageum-2026-tm-20kv-2500",
+      "alageum-2026-tm-20kv-630",
+      "alageum-tm-standard-1000",
+      "alageum-tm-standard-1250",
+      "alageum-tm-standard-1600",
+      "alageum-tm-standard-2000",
+      "alageum-tm-standard-2500",
+      "alageum-tm-standard-630"
+    ],
+    "status": "used-by-approved-records",
+    "sourcePages": [
+      17,
+      53
+    ],
+    "proposedSourceRecords": [
+      {
+        "id": "alageum-tm-standard-630",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tm-standard-1000",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tm-standard-1250",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tm-standard-1600",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tm-standard-2000",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tm-standard-2500",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-tm-20kv-630",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-tm-20kv-1000",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-tm-20kv-1250",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-tm-20kv-1600",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-tm-20kv-2000",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-2026-tm-20kv-2500",
+        "status": "topology-proposal",
+        "admitted": true
+      }
+    ],
+    "reason": "Exact per-record allowlist references this shared preset"
+  },
+  {
+    "type": "tr26-rpn-corrugated",
+    "cohort": "new-transformers-2026",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Гофрированный бак с наружным приводом РПН",
+    "activeRecords": [
+      "alageum-tmgin-x4k3-630"
+    ],
+    "status": "used-by-approved-records",
+    "sourcePages": [
+      33
+    ],
+    "proposedSourceRecords": [
+      {
+        "id": "alageum-tmgin-x4k3-630",
+        "status": "topology-proposal",
+        "admitted": true
+      }
+    ],
+    "reason": "Exact per-record allowlist references this shared preset"
+  },
+  {
+    "type": "tr26-pole-bracket",
+    "cohort": "new-transformers-2026",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Гофрированный бак с мачтовым кронштейном",
+    "activeRecords": [
+      "alageum-tmgs-pole-100",
+      "alageum-tmgs-pole-25",
+      "alageum-tmgs-pole-40"
+    ],
+    "status": "used-by-approved-records",
+    "sourcePages": [
+      35
+    ],
+    "proposedSourceRecords": [
+      {
+        "id": "alageum-tmgs-pole-25",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmgs-pole-40",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmgs-pole-63",
+        "status": "old-identity-hold",
+        "admitted": false
+      },
+      {
+        "id": "alageum-tmgs-pole-100",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmgs-pole-160",
+        "status": "old-identity-hold",
+        "admitted": false
+      }
+    ],
+    "reason": "Exact per-record allowlist references this shared preset"
+  },
+  {
+    "type": "tr26-panel-side-terminals",
+    "cohort": "new-transformers-2026",
+    "representation": "illustrative-icon",
+    "dimensionAccurate": false,
+    "exactProductRepresentation": false,
+    "name": "Бак с панельными радиаторами и боковыми вводами",
+    "activeRecords": [
+      "alageum-tmz-panel-1000",
+      "alageum-tmz-panel-1600",
+      "alageum-tmz-panel-2500",
+      "alageum-tmz-panel-400",
+      "alageum-tmz-panel-630"
+    ],
+    "status": "used-by-approved-records",
+    "sourcePages": [
+      37
+    ],
+    "proposedSourceRecords": [
+      {
+        "id": "alageum-tmz-panel-400",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmz-panel-630",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmz-panel-1000",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmz-panel-1600",
+        "status": "topology-proposal",
+        "admitted": true
+      },
+      {
+        "id": "alageum-tmz-panel-2500",
+        "status": "topology-proposal",
+        "admitted": true
+      }
+    ],
+    "reason": "Exact per-record allowlist references this shared preset"
+  }
+]

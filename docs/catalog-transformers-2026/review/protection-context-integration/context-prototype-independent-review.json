@@ -1,0 +1,312 @@
+{
+  "format": "alageum-source-context-independent-review-v1",
+  "reviewedAtUtc": "2026-10-06T14:31:00Z",
+  "decision": "pass-frozen-offline-prototype-revision-2-with-required-integration-validation",
+  "candidateRevision": 2,
+  "baseline": {
+    "commit": "a68a0fe2f234d7375338671cca20940257ab695b",
+    "tree": "48e8af658763f78c7a1efc7df54d9ab4388bea96"
+  },
+  "reference": {
+    "commit": "9004d1b1e9872e3f6d1696eea4a31306113b1d1d",
+    "tree": "52ddfcfa0c4ffd9011dbef13b0c0f75eea30859a",
+    "onlyFiveReviewAndE2eFilesDifferFromBaseline": true
+  },
+  "candidateManifest": {
+    "path": "/workspace/shared/alageum-source-context-prototype/artifact-manifest.json",
+    "sha256": "b54ab998e961096555aae2b58a4d7eea9f357686ded60a8f2b9dff9008fbbc9d"
+  },
+  "candidateFrozenFileManifest": {
+    "path": "/workspace/shared/alageum-source-context-prototype/prototype-files.json",
+    "sha256": "3fee14821eda198ae60f7d77b2381e5c874cf0a3498ca1c70b2a2ad7ae6d3c56"
+  },
+  "candidatePatch": {
+    "path": "/workspace/shared/alageum-source-context-prototype/source-context-prototype.patch",
+    "sha256": "146e6de78fa161b35ab359432557edc98ae1fb9a0f0aaa1eef0dcf1e23794b4f"
+  },
+  "candidateFiles": {
+    "frontend/components/catalog/source-context/CatalogSourceContext.js": {
+      "sha256": "d7da62a8ec6fa2529a8ac01e01b10e2acf84d79d413bb0d366279af73c983319",
+      "bytes": 2578
+    },
+    "frontend/components/catalog/source-context/CatalogSourceContext.module.css": {
+      "sha256": "0ee83f648f3f6904c4522c1f7cda1b4a0d38f8805f8e1456eaf46d76e8f028c3",
+      "bytes": 2137
+    },
+    "frontend/components/catalog/source-context/SourceContextImage.js": {
+      "sha256": "cbea5c72c693cbe1192f1a7721f062716f9434a94a026f20770ffe519677c3d0",
+      "bytes": 888
+    },
+    "frontend/lib/catalog/source-context/sourceContextManifest.json": {
+      "sha256": "4ccb97d612b48f368a0ae298164f2ea80671fb12ce8b73724342a5747cc19ce3",
+      "bytes": 16570
+    },
+    "frontend/lib/catalog/source-context/sourceContexts.js": {
+      "sha256": "5ed607db069ed54243f6a012c1a3b0941355c643a2e9ec4c1975d3bd83eec7b2",
+      "bytes": 8594
+    },
+    "frontend/public/catalog-source-context/page-035-left-example-native.png": {
+      "sha256": "ea51ffaee32846265f721a227c96d4232df972c8087a00926e076520b2c2bdb0",
+      "bytes": 105263
+    },
+    "frontend/public/catalog-source-context/page-035-right-example-native.png": {
+      "sha256": "6cd424ebf7804951f216d9b0a4f6883b3bf756693db5bc9638c8783f755c0819",
+      "bytes": 144637
+    },
+    "frontend/public/catalog-source-context/source-ptm.png": {
+      "sha256": "da13e87eb4899d6d32d38f5f2d60b624360ec09e3338b70b315240658769f874",
+      "bytes": 27483
+    },
+    "frontend/public/catalog-source-context/source-tde.png": {
+      "sha256": "7c59a4fb95ef6a8bd39f6ae6c7573c508c6f33a6c46b85b30fc15b850fe921a8",
+      "bytes": 28631
+    },
+    "frontend/tests/catalog-source-context-render.test.mjs": {
+      "sha256": "c769aa9fe19dcb7eaace693efcc7b1e9d21378a5e3de9713bc354d5c4da118f6",
+      "bytes": 6445
+    },
+    "frontend/tests/catalog-source-context.test.mjs": {
+      "sha256": "8921f0e96cb9f5fc4b4f4d86bd912de242769bdd97a242086f8c4fdaa2ab4e7d",
+      "bytes": 13681
+    }
+  },
+  "scope": {
+    "shnnRows": 18,
+    "ptmRows": 4,
+    "tdeRows": 2,
+    "totalRows": 24,
+    "sourceFigures": 4,
+    "newProductIds": 0,
+    "newConstructionChoices": 0,
+    "newDefaultBindings": 0,
+    "exactConstructionsResolved": 0,
+    "existingTrackedFilesChanged": 0,
+    "runtimeWiringPresent": false
+  },
+  "independentChecks": {
+    "focusedTestsPassed": 13,
+    "protectedDependencyHashesMatched": 226,
+    "allBundleArtifactHashesMatched": 31,
+    "realNextClientBoundary": {
+      "nextVersion": "16.3.8",
+      "realRscServerToClientHandoff": true,
+      "unmodifiedCandidateCompiledIntoClientBundle": true,
+      "routes": [
+        {
+          "route": "static",
+          "sections": 24,
+          "images": 42,
+          "captions": 42,
+          "constructionControls": 0,
+          "sha256": "e52cca84cbbafa34f3122afffdb6e699b86e11b3e43ba62263a4fcf0c3f569c5"
+        },
+        {
+          "route": "api",
+          "sections": 24,
+          "images": 42,
+          "captions": 42,
+          "constructionControls": 0,
+          "sha256": "3fdb62d4fb288dd1878b1a0757345c5b73c693533fbfb3cec5acdf418f67adac"
+        },
+        {
+          "route": "invalid",
+          "sections": 0,
+          "images": 0,
+          "captions": 0,
+          "constructionControls": 0,
+          "sha256": "09c79752ca92d61b7ab33ac77afce13cb65f8be8f198abdeae6df72c18ba8b0f"
+        }
+      ],
+      "staticAndApiAllowlistedContexts": 48,
+      "browserHydrationTested": false,
+      "browserLaunched": false,
+      "clientReferenceManifests": [
+        ".next/server/app/page_client-reference-manifest.js",
+        ".next/server/app/_not-found/page_client-reference-manifest.js",
+        ".next/server/app/invalid/page_client-reference-manifest.js",
+        ".next/server/app/_global-error/page_client-reference-manifest.js",
+        ".next/server/app/api/page_client-reference-manifest.js"
+      ]
+    },
+    "preservation": {
+      "officialRecords": 843,
+      "uniqueIds": 843,
+      "all843BodiesEqualReference": true,
+      "all843VisualIconChoiceOutputsEqualReference": true,
+      "all843NormalizedApiVisualIconChoiceOutputsEqualReference": true,
+      "bodySha256": "267fd459c39c74bc80cc1371ef34c4e81485c6b2bab8b9f7a34d7be942de5447",
+      "bindingsSha256": "79b0b159b870c77af02cb8e310f9b43db123c205f78bd443fe4c47ced72065b6",
+      "apiBindingsSha256": "79b0b159b870c77af02cb8e310f9b43db123c205f78bd443fe4c47ced72065b6",
+      "choices": 74,
+      "choiceBearingRecords": 36,
+      "staticMatches": [
+        "cat-ptm-tded-v001",
+        "cat-ptm-tded-v003",
+        "cat-ptm-tded-v004",
+        "cat-ptm-tded-v007",
+        "cat-ptm-tded-v010",
+        "cat-ptm-tded-v011",
+        "cat-shnn-v001",
+        "cat-shnn-v002",
+        "cat-shnn-v003",
+        "cat-shnn-v004",
+        "cat-shnn-v005",
+        "cat-shnn-v006",
+        "cat-shnn-v007",
+        "cat-shnn-v008",
+        "cat-shnn-v009",
+        "cat-shnn-v010",
+        "cat-shnn-v011",
+        "cat-shnn-v012",
+        "cat-shnn-v013",
+        "cat-shnn-v014",
+        "cat-shnn-v015",
+        "cat-shnn-v016",
+        "cat-shnn-v017",
+        "cat-shnn-v018"
+      ],
+      "apiMatches": [
+        "cat-ptm-tded-v001",
+        "cat-ptm-tded-v003",
+        "cat-ptm-tded-v004",
+        "cat-ptm-tded-v007",
+        "cat-ptm-tded-v010",
+        "cat-ptm-tded-v011",
+        "cat-shnn-v001",
+        "cat-shnn-v002",
+        "cat-shnn-v003",
+        "cat-shnn-v004",
+        "cat-shnn-v005",
+        "cat-shnn-v006",
+        "cat-shnn-v007",
+        "cat-shnn-v008",
+        "cat-shnn-v009",
+        "cat-shnn-v010",
+        "cat-shnn-v011",
+        "cat-shnn-v012",
+        "cat-shnn-v013",
+        "cat-shnn-v014",
+        "cat-shnn-v015",
+        "cat-shnn-v016",
+        "cat-shnn-v017",
+        "cat-shnn-v018"
+      ],
+      "apiIdsIndependentlyDerivedFromImporter": true,
+      "serializableProofAccepted": true,
+      "all24RemainSourceOnlyNullGeometryTypicalIconsNoChoices": true
+    },
+    "adversarial": {
+      "malformedInputsRejected": 13,
+      "ownAndInheritedGetterCalls": 0,
+      "transparentProxyReadTrapsInvoked": 0,
+      "inheritedOptionalFields": [
+        {
+          "key": "execution",
+          "getterCalls": 0,
+          "acceptedCanonicalOwnData": true
+        },
+        {
+          "key": "sourceId",
+          "getterCalls": 0,
+          "acceptedCanonicalOwnData": true
+        },
+        {
+          "key": "sourceFileId",
+          "getterCalls": 0,
+          "acceptedCanonicalOwnData": true
+        },
+        {
+          "key": "sourceSha256",
+          "getterCalls": 0,
+          "acceptedCanonicalOwnData": true
+        },
+        {
+          "key": "sourceRow",
+          "getterCalls": 0,
+          "acceptedCanonicalOwnData": false
+        },
+        {
+          "key": "label",
+          "getterCalls": 0,
+          "acceptedCanonicalOwnData": true
+        },
+        {
+          "key": "unit",
+          "getterCalls": 0,
+          "acceptedCanonicalOwnData": true
+        },
+        {
+          "key": "page",
+          "getterCalls": 0,
+          "acceptedCanonicalOwnData": true
+        }
+      ],
+      "inheritedSerializerHooksRejectedWithoutCalls": true,
+      "registryMutationsRejected": 13,
+      "proofMutationsRejected": 6,
+      "cachedProofRequiresExplicitInvalidation": true,
+      "invalidationRejectsNewCorruptBytes": true,
+      "proofPortabilityBoundary": "Serialized old proof remains a valid statement about the old build; only a fresh mandatory build gate plus immutable atomic asset deployment prevents mixed deployments."
+    },
+    "gateNegativeCasesPassed": 22,
+    "literalCropsPixelAndPriorByteEqual": 4,
+    "actualPage35Page69AndFourCropPixelsInspected": true,
+    "patchRoundTripAndPublicApplyCheckPassed": true
+  },
+  "builderAggregateLogsReviewed": {
+    "focusedTestsPassed": 13,
+    "fullUnitTestsPassed": 488,
+    "lint": "passed",
+    "productionBuild": "passed on final candidate with NEXT_TELEMETRY_DISABLED=1 and local existing dependencies",
+    "nextClientBoundaryFixture": "passed: actual server-to-client JSON handoff and four source-image prerenders",
+    "sourceBuildGate": "passed: exact current bytes accepted, corrupt same-size crop rejected, stale proof deleted, restored source passes",
+    "literalCropPixelEquality": "passed: all four equal exact decoded source rectangles",
+    "browserRun": false
+  },
+  "resolvedFinding": {
+    "initialCandidateResolverSha256": "43845d9ec489a94ef3ab0b7178c86389a1f89366e8ef71216285e7ddb0768608",
+    "finding": "Inherited optional authority getter evaluated by shared canonical/source helpers",
+    "finalResolverSha256": "5ed607db069ed54243f6a012c1a3b0941355c643a2e9ec4c1975d3bd83eec7b2",
+    "resolution": "Validated own descriptors snapshotted into null-prototype objects before authority reads; inherited serializer hooks rejected; byte gate uses own-only source identity",
+    "independentOriginalReproductionGetterCalls": 0
+  },
+  "integrityBoundary": {
+    "proofIsSerializableBuildStatement": true,
+    "proofIsRuntimeByteVerifier": false,
+    "oldSerializedProofIsIntentionallyStillStructurallyValid": true,
+    "mandatoryFreshBuildGateRequired": true,
+    "immutableAtomicCodeProofAssetDeploymentRequired": true,
+    "originalPdfFetched": false,
+    "runtimeFetchAdded": false,
+    "blobOrDataUrlRequired": false,
+    "cspChangeRequired": false
+  },
+  "integrationRequirements": [
+    "Run the gate in every actual production/preview/test build path and fail on missing/stale/tampered input",
+    "Deploy proof, compiled code and verified assets atomically from one immutable snapshot",
+    "Render one independent section inside ProductVisual with its original actual product prop, covering standalone and selected-family static/API rows",
+    "Never feed source examples through execution/construction choices or confidence promotion",
+    "Reject changed API UUID, canonical shape, source identity or raw media without static fallback",
+    "Preserve all 843 bodies/IDs and visual/icon/choice outputs, all 24 source-only states and 74 choices across 36 rows",
+    "Re-run final integrated lint, unit tests, production build and independent inventory",
+    "Use supported browser validation for hydration, 320px layout, keyboard focus, source/example links, image failure, family selection/reset, navigation and API loading/error/mutation flows"
+  ],
+  "notVerified": [
+    "Browser hydration",
+    "Measured responsive layout at 320px",
+    "Real focus and link navigation",
+    "Runtime standalone or selected-family integration",
+    "Production delivery immutability/headers"
+  ],
+  "authorization": {
+    "thisReviewAuthorizesRuntimeRegistration": false,
+    "thisReviewAuthorizesPublication": false,
+    "externalRepositoryWritesPerformed": false,
+    "browserLaunched": false,
+    "backendWorkflowDependencyEdits": false
+  },
+  "humanReport": {
+    "path": "/workspace/shared/alageum-source-context-prototype-review/review.md",
+    "sha256": "d48ea00691f4c63d79dd1e4effdc358a22c0e31850bd9825746677ac9f135d0e"
+  }
+}

@@ -1,0 +1,2052 @@
+[
+  {
+    "id": "alageum-tmgf-1250",
+    "name": "ТМГФ-1250",
+    "designation": "ТМГФ-1250",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmgf",
+    "sourceFamilyId": "tmgf",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        38,
+        39
+      ],
+      "sourceRow": {
+        "designation": "ТМГФ-1250",
+        "electricalTablePage": 38,
+        "dimensionsTablePage": 38
+      }
+    },
+    "recordSha256": "797548aaf1dd93e938fa590ee9802866571fd30cf14964a4f750c0c668133ca0",
+    "geometry": {
+      "type": "tr26-flanged-ends",
+      "confidence": "source-matched",
+      "sourcePages": [
+        39
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-039.webp",
+      "approval": {
+        "recordShapeSha256": "cbdced24f266cf8cee03dc9e7e1bbe59ccabec99c3afab7459a65cf7006930b2",
+        "databaseId": "ca1998b4-13e5-5b18-88d2-548990f6127c",
+        "groupId": "tmgf-separated-bushings",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-flanged-ends",
+      "confidence": "source-based",
+      "sourcePages": [
+        39
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-039.webp",
+      "approval": {
+        "recordShapeSha256": "cbdced24f266cf8cee03dc9e7e1bbe59ccabec99c3afab7459a65cf7006930b2",
+        "databaseId": "ca1998b4-13e5-5b18-88d2-548990f6127c",
+        "groupId": "tmgf-separated-bushings",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-039.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        39
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "tmgf-separated-bushings"
+      ],
+      "choices": [
+        {
+          "groupId": "tmgf-separated-bushings",
+          "geometryType": "tr26-flanged-ends",
+          "iconType": "tr26-flanged-ends",
+          "sourcePages": [
+            39
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-tmgf-2500",
+    "name": "ТМГФ-2500",
+    "designation": "ТМГФ-2500",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmgf",
+    "sourceFamilyId": "tmgf",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        38,
+        39
+      ],
+      "sourceRow": {
+        "designation": "ТМГФ-2500",
+        "electricalTablePage": 38,
+        "dimensionsTablePage": 38
+      }
+    },
+    "recordSha256": "603da51209c3db95448d2163bd7dd8958b0eafbe6e30b81c72c6273d958ed05d",
+    "geometry": {
+      "type": "tr26-flanged-ends",
+      "confidence": "source-matched",
+      "sourcePages": [
+        39
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-039.webp",
+      "approval": {
+        "recordShapeSha256": "d4406edd25fc93ae04379d12293312be2563424453ade2e369ed6f64769d9326",
+        "databaseId": "440a1496-7645-5c05-96cf-468da0fce14f",
+        "groupId": "tmgf-separated-bushings",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-flanged-ends",
+      "confidence": "source-based",
+      "sourcePages": [
+        39
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-039.webp",
+      "approval": {
+        "recordShapeSha256": "d4406edd25fc93ae04379d12293312be2563424453ade2e369ed6f64769d9326",
+        "databaseId": "440a1496-7645-5c05-96cf-468da0fce14f",
+        "groupId": "tmgf-separated-bushings",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-039.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        39
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "tmgf-separated-bushings"
+      ],
+      "choices": [
+        {
+          "groupId": "tmgf-separated-bushings",
+          "geometryType": "tr26-flanged-ends",
+          "iconType": "tr26-flanged-ends",
+          "sourcePages": [
+            39
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "tr2026-family-tmg-copper",
+    "name": "Трансформаторы ТМГ-25-2500 кВА с медными обмотками",
+    "designation": "Трансформаторы ТМГ-25-2500 кВА с медными обмотками",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "family",
+    "sourceRecordType": "family",
+    "familyId": null,
+    "sourceFamilyId": "tmg-copper",
+    "variantIds": [
+      "alageum-tmg-copper-25",
+      "alageum-tmg-copper-40",
+      "alageum-tmg-copper-63",
+      "alageum-tmg-copper-100",
+      "alageum-tmg-copper-160",
+      "alageum-tmg-copper-250",
+      "alageum-tmg-copper-1250",
+      "alageum-tmg-copper-1600",
+      "alageum-tmg-copper-2000"
+    ],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        40,
+        41,
+        42,
+        43
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "4967c5e07a49a2144948b259fb599769409bea0148a94ce42b7d137d79e25b0a",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        40,
+        41,
+        42,
+        43
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-040.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        40,
+        41,
+        42,
+        43
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-040.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-040.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        40
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "alageum-tmg-copper-25",
+    "name": "ТМГ-25 (с медными обмотками)",
+    "designation": "ТМГ-25",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmg-copper",
+    "sourceFamilyId": "tmg-copper",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        40,
+        41,
+        42
+      ],
+      "sourceRow": {
+        "designation": "ТМГ-25",
+        "electricalTablePage": 40,
+        "dimensionsTablePage": 41
+      }
+    },
+    "recordSha256": "223d59c348439300652b725e7e451a9c782787c1d4b27cf1cd15a39f3d26fb08",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        40,
+        41,
+        42
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-040.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "execution-binding-unverified",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        40,
+        41,
+        42
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-040.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "execution-binding-unverified",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-040.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        40
+      ]
+    },
+    "proposalEvidence": {
+      "status": "execution-binding-unverified",
+      "evidenceGroupIds": [
+        "sealed-corrugated-small"
+      ],
+      "choices": [
+        {
+          "groupId": "sealed-corrugated-small",
+          "geometryType": "tr26-corrugated-small",
+          "iconType": "tr26-corrugated-small",
+          "sourcePages": [
+            42
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: adjacent-family-context; caption names broad ТМГ only"
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-tmg-copper-40",
+    "name": "ТМГ-40 (с медными обмотками)",
+    "designation": "ТМГ-40",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmg-copper",
+    "sourceFamilyId": "tmg-copper",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        40,
+        41,
+        42
+      ],
+      "sourceRow": {
+        "designation": "ТМГ-40",
+        "electricalTablePage": 40,
+        "dimensionsTablePage": 41
+      }
+    },
+    "recordSha256": "b145642df889cf7c51fcd9d787accf567d9660ccb8f54f2639f983dd6e0638df",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        40,
+        41,
+        42
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-040.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "execution-binding-unverified",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        40,
+        41,
+        42
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-040.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "execution-binding-unverified",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-040.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        40
+      ]
+    },
+    "proposalEvidence": {
+      "status": "execution-binding-unverified",
+      "evidenceGroupIds": [
+        "sealed-corrugated-small"
+      ],
+      "choices": [
+        {
+          "groupId": "sealed-corrugated-small",
+          "geometryType": "tr26-corrugated-small",
+          "iconType": "tr26-corrugated-small",
+          "sourcePages": [
+            42
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: adjacent-family-context; caption names broad ТМГ only"
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-tmg-copper-63",
+    "name": "ТМГ-63 (с медными обмотками)",
+    "designation": "ТМГ-63",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmg-copper",
+    "sourceFamilyId": "tmg-copper",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        40,
+        41,
+        42
+      ],
+      "sourceRow": {
+        "designation": "ТМГ-63",
+        "electricalTablePage": 40,
+        "dimensionsTablePage": 41
+      }
+    },
+    "recordSha256": "66eeb4c8c85d0a290d8498375cfbe154f11f2fc747aa0d9a230e908074ef6029",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        40,
+        41,
+        42
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-040.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "execution-binding-unverified",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        40,
+        41,
+        42
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-040.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "execution-binding-unverified",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-040.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        40
+      ]
+    },
+    "proposalEvidence": {
+      "status": "execution-binding-unverified",
+      "evidenceGroupIds": [
+        "sealed-corrugated-small"
+      ],
+      "choices": [
+        {
+          "groupId": "sealed-corrugated-small",
+          "geometryType": "tr26-corrugated-small",
+          "iconType": "tr26-corrugated-small",
+          "sourcePages": [
+            42
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: adjacent-family-context; caption names broad ТМГ only"
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-tmg-copper-100",
+    "name": "ТМГ-100 (с медными обмотками)",
+    "designation": "ТМГ-100",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmg-copper",
+    "sourceFamilyId": "tmg-copper",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        40,
+        41,
+        42
+      ],
+      "sourceRow": {
+        "designation": "ТМГ-100",
+        "electricalTablePage": 40,
+        "dimensionsTablePage": 41
+      }
+    },
+    "recordSha256": "85d8599e78ae420ac30842cf7fb35c7b7447821805de1325b60c1b6179b12ff1",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        40,
+        41,
+        42
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-040.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "execution-binding-unverified",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        40,
+        41,
+        42
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-040.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "execution-binding-unverified",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-040.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        40
+      ]
+    },
+    "proposalEvidence": {
+      "status": "execution-binding-unverified",
+      "evidenceGroupIds": [
+        "sealed-corrugated-small"
+      ],
+      "choices": [
+        {
+          "groupId": "sealed-corrugated-small",
+          "geometryType": "tr26-corrugated-small",
+          "iconType": "tr26-corrugated-small",
+          "sourcePages": [
+            42
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: adjacent-family-context; caption names broad ТМГ only"
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-tmg-copper-160",
+    "name": "ТМГ-160 (с медными обмотками)",
+    "designation": "ТМГ-160",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmg-copper",
+    "sourceFamilyId": "tmg-copper",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        40,
+        41,
+        42
+      ],
+      "sourceRow": {
+        "designation": "ТМГ-160",
+        "electricalTablePage": 40,
+        "dimensionsTablePage": 41
+      }
+    },
+    "recordSha256": "14451801b71d165437f710800f0ad78e2460fc186445625a8f2bccd4cbd078ab",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        40,
+        41,
+        42
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-040.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "execution-binding-unverified",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        40,
+        41,
+        42
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-040.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "execution-binding-unverified",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-040.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        40
+      ]
+    },
+    "proposalEvidence": {
+      "status": "execution-binding-unverified",
+      "evidenceGroupIds": [
+        "sealed-corrugated-small"
+      ],
+      "choices": [
+        {
+          "groupId": "sealed-corrugated-small",
+          "geometryType": "tr26-corrugated-small",
+          "iconType": "tr26-corrugated-small",
+          "sourcePages": [
+            42
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: adjacent-family-context; caption names broad ТМГ only"
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-tmg-copper-250",
+    "name": "ТМГ-250 (с медными обмотками)",
+    "designation": "ТМГ-250",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmg-copper",
+    "sourceFamilyId": "tmg-copper",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        40,
+        41,
+        42
+      ],
+      "sourceRow": {
+        "designation": "ТМГ-250",
+        "electricalTablePage": 40,
+        "dimensionsTablePage": 41
+      }
+    },
+    "recordSha256": "f8239ffa90399a7bc004b80beeb3b0e05d289e271eb69ef2362b7cb6fdb923b2",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        40,
+        41,
+        42
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-040.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "execution-binding-unverified",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        40,
+        41,
+        42
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-040.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "execution-binding-unverified",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-040.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        40
+      ]
+    },
+    "proposalEvidence": {
+      "status": "execution-binding-unverified",
+      "evidenceGroupIds": [
+        "sealed-corrugated-small"
+      ],
+      "choices": [
+        {
+          "groupId": "sealed-corrugated-small",
+          "geometryType": "tr26-corrugated-small",
+          "iconType": "tr26-corrugated-small",
+          "sourcePages": [
+            42
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: adjacent-family-context; caption names broad ТМГ only"
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-tmg-copper-1250",
+    "name": "ТМГ-1250 (с медными обмотками)",
+    "designation": "ТМГ-1250",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmg-copper",
+    "sourceFamilyId": "tmg-copper",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        40,
+        41,
+        43
+      ],
+      "sourceRow": {
+        "designation": "ТМГ-1250",
+        "electricalTablePage": 40,
+        "dimensionsTablePage": 41
+      }
+    },
+    "recordSha256": "ff2504e73c9ad8189cf94d641f3a1d00ce664393ee13cccc76a0a2404cce4c85",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        40,
+        41,
+        43
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-040.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "execution-binding-unverified",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        40,
+        41,
+        43
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-040.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "execution-binding-unverified",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-040.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        40
+      ]
+    },
+    "proposalEvidence": {
+      "status": "execution-binding-unverified",
+      "evidenceGroupIds": [
+        "sealed-corrugated-large"
+      ],
+      "choices": [
+        {
+          "groupId": "sealed-corrugated-large",
+          "geometryType": "tr26-corrugated-large",
+          "iconType": "tr26-corrugated-large",
+          "sourcePages": [
+            43
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: adjacent-family-context; caption names broad ТМГ only"
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-tmg-copper-1600",
+    "name": "ТМГ-1600 (с медными обмотками)",
+    "designation": "ТМГ-1600",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmg-copper",
+    "sourceFamilyId": "tmg-copper",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        40,
+        41,
+        43
+      ],
+      "sourceRow": {
+        "designation": "ТМГ-1600",
+        "electricalTablePage": 41,
+        "dimensionsTablePage": 41
+      }
+    },
+    "recordSha256": "bb3729cb4f4d4907be39748fe049e94d7eda7786020ac7d86fdc18f379a1698c",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        40,
+        41,
+        43
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-041.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "execution-binding-unverified",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        40,
+        41,
+        43
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-041.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "execution-binding-unverified",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-041.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        41
+      ]
+    },
+    "proposalEvidence": {
+      "status": "execution-binding-unverified",
+      "evidenceGroupIds": [
+        "sealed-corrugated-large"
+      ],
+      "choices": [
+        {
+          "groupId": "sealed-corrugated-large",
+          "geometryType": "tr26-corrugated-large",
+          "iconType": "tr26-corrugated-large",
+          "sourcePages": [
+            43
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: adjacent-family-context; caption names broad ТМГ only"
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-tmg-copper-2000",
+    "name": "ТМГ-2000 (с медными обмотками)",
+    "designation": "ТМГ-2000",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmg-copper",
+    "sourceFamilyId": "tmg-copper",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        40,
+        41,
+        43
+      ],
+      "sourceRow": {
+        "designation": "ТМГ-2000",
+        "electricalTablePage": 41,
+        "dimensionsTablePage": 41
+      }
+    },
+    "recordSha256": "e826d0785eee7d511acba581a9768148d5cb1d6615a04bbe5c64158e4fff3399",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        40,
+        41,
+        43
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-041.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "execution-binding-unverified",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        40,
+        41,
+        43
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-041.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "execution-binding-unverified",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-041.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        41
+      ]
+    },
+    "proposalEvidence": {
+      "status": "execution-binding-unverified",
+      "evidenceGroupIds": [
+        "sealed-corrugated-large"
+      ],
+      "choices": [
+        {
+          "groupId": "sealed-corrugated-large",
+          "geometryType": "tr26-corrugated-large",
+          "iconType": "tr26-corrugated-large",
+          "sourcePages": [
+            43
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: adjacent-family-context; caption names broad ТМГ only"
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "tr2026-family-tmg-switch-6-10",
+    "name": "Трансформаторы ТМГ-25-2500 кВА с возможностью переключения на стороне ВН 6 кВ на 10 кВ с 2-х этажным переключателем",
+    "designation": "Трансформаторы ТМГ-25-2500 кВА с возможностью переключения на стороне ВН 6 кВ на 10 кВ с 2-х этажным переключателем",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "family",
+    "sourceRecordType": "family",
+    "familyId": null,
+    "sourceFamilyId": "tmg-switch-6-10",
+    "variantIds": [
+      "alageum-tmg-switch-6-10-25",
+      "alageum-tmg-switch-6-10-40",
+      "alageum-tmg-switch-6-10-63",
+      "alageum-tmg-switch-6-10-100",
+      "alageum-tmg-switch-6-10-160",
+      "alageum-tmg-switch-6-10-250",
+      "alageum-tmg-switch-6-10-1250",
+      "alageum-tmg-switch-6-10-1600",
+      "alageum-tmg-switch-6-10-2000"
+    ],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        44,
+        45,
+        46,
+        47
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "156292c9244afc63c36dd8fcf9ce94ad404abd42fee647940da920928123ed8e",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        44,
+        45,
+        46,
+        47
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-044.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        44,
+        45,
+        46,
+        47
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-044.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-044.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        44
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "alageum-tmg-switch-6-10-25",
+    "name": "ТМГ-25 (6↔10 кВ, с 2-х этажным переключателем)",
+    "designation": "ТМГ-25",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmg-switch-6-10",
+    "sourceFamilyId": "tmg-switch-6-10",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        44,
+        45,
+        46
+      ],
+      "sourceRow": {
+        "designation": "ТМГ-25",
+        "electricalTablePage": 44,
+        "dimensionsTablePage": 45
+      }
+    },
+    "recordSha256": "fb2ea30bd339a46181633e3cc48d5a3458c411b77e4293df41a56eeb1d91e4e9",
+    "geometry": {
+      "type": "tr26-corrugated-small",
+      "confidence": "source-matched",
+      "sourcePages": [
+        46
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-046.webp",
+      "approval": {
+        "recordShapeSha256": "dae17f00349d9bd8c63de95df30b60cb881640f9850732264c1ac747fbe4e2ae",
+        "databaseId": "17cf610d-5f1b-588a-a6a4-f7cdad468638",
+        "groupId": "tmg-switch-small",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-corrugated-small",
+      "confidence": "source-based",
+      "sourcePages": [
+        46
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-046.webp",
+      "approval": {
+        "recordShapeSha256": "dae17f00349d9bd8c63de95df30b60cb881640f9850732264c1ac747fbe4e2ae",
+        "databaseId": "17cf610d-5f1b-588a-a6a4-f7cdad468638",
+        "groupId": "tmg-switch-small",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-046.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        46
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "tmg-switch-small"
+      ],
+      "choices": [
+        {
+          "groupId": "tmg-switch-small",
+          "geometryType": "tr26-corrugated-small",
+          "iconType": "tr26-corrugated-small",
+          "sourcePages": [
+            46
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-tmg-switch-6-10-40",
+    "name": "ТМГ-40 (6↔10 кВ, с 2-х этажным переключателем)",
+    "designation": "ТМГ-40",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmg-switch-6-10",
+    "sourceFamilyId": "tmg-switch-6-10",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        44,
+        45,
+        46
+      ],
+      "sourceRow": {
+        "designation": "ТМГ-40",
+        "electricalTablePage": 44,
+        "dimensionsTablePage": 45
+      }
+    },
+    "recordSha256": "af4ef7711343277a90bd7bcb36c6dbad9d6906b0be9c3c11c5f09face559451f",
+    "geometry": {
+      "type": "tr26-corrugated-small",
+      "confidence": "source-matched",
+      "sourcePages": [
+        46
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-046.webp",
+      "approval": {
+        "recordShapeSha256": "e4476a8e26c95ee07f97d00e92c298729114f5ef44ee2d87b860ebbd6861ef17",
+        "databaseId": "190faa44-b9fd-5379-bddf-0b173b380a62",
+        "groupId": "tmg-switch-small",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-corrugated-small",
+      "confidence": "source-based",
+      "sourcePages": [
+        46
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-046.webp",
+      "approval": {
+        "recordShapeSha256": "e4476a8e26c95ee07f97d00e92c298729114f5ef44ee2d87b860ebbd6861ef17",
+        "databaseId": "190faa44-b9fd-5379-bddf-0b173b380a62",
+        "groupId": "tmg-switch-small",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-046.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        46
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "tmg-switch-small"
+      ],
+      "choices": [
+        {
+          "groupId": "tmg-switch-small",
+          "geometryType": "tr26-corrugated-small",
+          "iconType": "tr26-corrugated-small",
+          "sourcePages": [
+            46
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-tmg-switch-6-10-63",
+    "name": "ТМГ-63 (6↔10 кВ, с 2-х этажным переключателем)",
+    "designation": "ТМГ-63",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmg-switch-6-10",
+    "sourceFamilyId": "tmg-switch-6-10",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        44,
+        45,
+        46
+      ],
+      "sourceRow": {
+        "designation": "ТМГ-63",
+        "electricalTablePage": 44,
+        "dimensionsTablePage": 45
+      }
+    },
+    "recordSha256": "dba873f18773fe656bae67ab01a6efa65411bd93f003af4f58270d0c7a75a0c5",
+    "geometry": {
+      "type": "tr26-corrugated-small",
+      "confidence": "source-matched",
+      "sourcePages": [
+        46
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-046.webp",
+      "approval": {
+        "recordShapeSha256": "c567f70545a639ad6f12da2849291d4a7b5691eda835e4881ded61e9bb1bb729",
+        "databaseId": "cdd574a2-cf7b-5941-834f-244b228d539a",
+        "groupId": "tmg-switch-small",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-corrugated-small",
+      "confidence": "source-based",
+      "sourcePages": [
+        46
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-046.webp",
+      "approval": {
+        "recordShapeSha256": "c567f70545a639ad6f12da2849291d4a7b5691eda835e4881ded61e9bb1bb729",
+        "databaseId": "cdd574a2-cf7b-5941-834f-244b228d539a",
+        "groupId": "tmg-switch-small",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-046.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        46
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "tmg-switch-small"
+      ],
+      "choices": [
+        {
+          "groupId": "tmg-switch-small",
+          "geometryType": "tr26-corrugated-small",
+          "iconType": "tr26-corrugated-small",
+          "sourcePages": [
+            46
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-tmg-switch-6-10-100",
+    "name": "ТМГ-100 (6↔10 кВ, с 2-х этажным переключателем)",
+    "designation": "ТМГ-100",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmg-switch-6-10",
+    "sourceFamilyId": "tmg-switch-6-10",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        44,
+        45,
+        46
+      ],
+      "sourceRow": {
+        "designation": "ТМГ-100",
+        "electricalTablePage": 44,
+        "dimensionsTablePage": 45
+      }
+    },
+    "recordSha256": "125904e87fa16d4ee4a358164bb7b709c55bda2f4d02287dde7624711c0e3bc9",
+    "geometry": {
+      "type": "tr26-corrugated-small",
+      "confidence": "source-matched",
+      "sourcePages": [
+        46
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-046.webp",
+      "approval": {
+        "recordShapeSha256": "5e9a271248d538884e860ef444422223f0365403d749d9a2ebc5ff9a804aa306",
+        "databaseId": "6206e2bd-db12-5626-b3cf-f3866f94e795",
+        "groupId": "tmg-switch-small",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-corrugated-small",
+      "confidence": "source-based",
+      "sourcePages": [
+        46
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-046.webp",
+      "approval": {
+        "recordShapeSha256": "5e9a271248d538884e860ef444422223f0365403d749d9a2ebc5ff9a804aa306",
+        "databaseId": "6206e2bd-db12-5626-b3cf-f3866f94e795",
+        "groupId": "tmg-switch-small",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-046.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        46
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "tmg-switch-small"
+      ],
+      "choices": [
+        {
+          "groupId": "tmg-switch-small",
+          "geometryType": "tr26-corrugated-small",
+          "iconType": "tr26-corrugated-small",
+          "sourcePages": [
+            46
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-tmg-switch-6-10-160",
+    "name": "ТМГ-160 (6↔10 кВ, с 2-х этажным переключателем)",
+    "designation": "ТМГ-160",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmg-switch-6-10",
+    "sourceFamilyId": "tmg-switch-6-10",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        44,
+        45,
+        46
+      ],
+      "sourceRow": {
+        "designation": "ТМГ-160",
+        "electricalTablePage": 44,
+        "dimensionsTablePage": 45
+      }
+    },
+    "recordSha256": "f5fe730ffd49ed5778d75d37ee90f5f4c0ebf8b7af347033582afd1e4e3e4f26",
+    "geometry": {
+      "type": "tr26-corrugated-small",
+      "confidence": "source-matched",
+      "sourcePages": [
+        46
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-046.webp",
+      "approval": {
+        "recordShapeSha256": "246e47ff3c04468f751b38de54748355b0e4c1b93928e8eb0a3b0aca69807fb5",
+        "databaseId": "9f933ba0-63ff-53e1-a5c7-e61734c4d38f",
+        "groupId": "tmg-switch-small",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-corrugated-small",
+      "confidence": "source-based",
+      "sourcePages": [
+        46
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-046.webp",
+      "approval": {
+        "recordShapeSha256": "246e47ff3c04468f751b38de54748355b0e4c1b93928e8eb0a3b0aca69807fb5",
+        "databaseId": "9f933ba0-63ff-53e1-a5c7-e61734c4d38f",
+        "groupId": "tmg-switch-small",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-046.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        46
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "tmg-switch-small"
+      ],
+      "choices": [
+        {
+          "groupId": "tmg-switch-small",
+          "geometryType": "tr26-corrugated-small",
+          "iconType": "tr26-corrugated-small",
+          "sourcePages": [
+            46
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-tmg-switch-6-10-250",
+    "name": "ТМГ-250 (6↔10 кВ, с 2-х этажным переключателем)",
+    "designation": "ТМГ-250",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmg-switch-6-10",
+    "sourceFamilyId": "tmg-switch-6-10",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        44,
+        45,
+        46
+      ],
+      "sourceRow": {
+        "designation": "ТМГ-250",
+        "electricalTablePage": 44,
+        "dimensionsTablePage": 45
+      }
+    },
+    "recordSha256": "b28d38e74e20b95e12dfb1253d42c473f73af50e23a64871fd2a8a966eaa3460",
+    "geometry": {
+      "type": "tr26-corrugated-small",
+      "confidence": "source-matched",
+      "sourcePages": [
+        46
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-046.webp",
+      "approval": {
+        "recordShapeSha256": "0428d53f2426748b5c54a681ca76b387a0796960f3a3af7e31ccf0d9b7b904c8",
+        "databaseId": "22113c0d-5574-52cd-9996-6071e30b86d3",
+        "groupId": "tmg-switch-small",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-corrugated-small",
+      "confidence": "source-based",
+      "sourcePages": [
+        46
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-046.webp",
+      "approval": {
+        "recordShapeSha256": "0428d53f2426748b5c54a681ca76b387a0796960f3a3af7e31ccf0d9b7b904c8",
+        "databaseId": "22113c0d-5574-52cd-9996-6071e30b86d3",
+        "groupId": "tmg-switch-small",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-046.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        46
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "tmg-switch-small"
+      ],
+      "choices": [
+        {
+          "groupId": "tmg-switch-small",
+          "geometryType": "tr26-corrugated-small",
+          "iconType": "tr26-corrugated-small",
+          "sourcePages": [
+            46
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-tmg-switch-6-10-1250",
+    "name": "ТМГ-1250 (6↔10 кВ, с 2-х этажным переключателем)",
+    "designation": "ТМГ-1250",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmg-switch-6-10",
+    "sourceFamilyId": "tmg-switch-6-10",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        44,
+        45,
+        47
+      ],
+      "sourceRow": {
+        "designation": "ТМГ-1250",
+        "electricalTablePage": 44,
+        "dimensionsTablePage": 45
+      }
+    },
+    "recordSha256": "74629165817989171098167c842dd52ad0b02daa9a85e8ba978a553c54ccbad0",
+    "geometry": {
+      "type": "tr26-corrugated-large",
+      "confidence": "source-matched",
+      "sourcePages": [
+        47
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-047.webp",
+      "approval": {
+        "recordShapeSha256": "3295190da16dfd6ea14ffd18c8f47e1e6b6085d29c1e9cee085c95d64568db0e",
+        "databaseId": "395273c4-f20b-5f9e-a68e-a55307892c5e",
+        "groupId": "tmg-switch-large",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-corrugated-large",
+      "confidence": "source-based",
+      "sourcePages": [
+        47
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-047.webp",
+      "approval": {
+        "recordShapeSha256": "3295190da16dfd6ea14ffd18c8f47e1e6b6085d29c1e9cee085c95d64568db0e",
+        "databaseId": "395273c4-f20b-5f9e-a68e-a55307892c5e",
+        "groupId": "tmg-switch-large",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-047.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        47
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "tmg-switch-large"
+      ],
+      "choices": [
+        {
+          "groupId": "tmg-switch-large",
+          "geometryType": "tr26-corrugated-large",
+          "iconType": "tr26-corrugated-large",
+          "sourcePages": [
+            47
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  }
+]

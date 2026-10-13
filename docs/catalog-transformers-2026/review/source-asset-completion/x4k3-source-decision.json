@@ -1,0 +1,675 @@
+{
+  "format": "alageum-x4k3-source-binding-decision-v1",
+  "status": "source-applicability-supported-no-runtime-clearance-amendment",
+  "reviewedAt": "2026-10-06T11:49:26.492Z",
+  "baseCommit": "a8f4f88845823105b242499bbe7b804368fcd0c8",
+  "source": {
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "physicalPages": [
+      28,
+      29,
+      30,
+      31,
+      32
+    ]
+  },
+  "decision": {
+    "representativeRecordIllustrationSupported": true,
+    "limitedToSourceContextPreview": false,
+    "exactSeriesEquivalenceEstablished": false,
+    "manufacturerConfirmationRequiredBeforeThisBoundedRepresentativeInference": false,
+    "runtimeActivationApproved": false,
+    "clearanceAmendmentPerformed": false,
+    "reason": "The shared drawing captions explicitly include X4K3, their power ranges cover all ten table entries, and the drawings immediately follow the TMGi X4K3 tables before the separate TMGiN chapter. This is positive applicability evidence for a representative exterior despite a nomenclature inconsistency. It is stronger than inference from page adjacency alone. The mismatch prevents an exact-identity assertion, not every source-supported illustrative use.",
+    "fallbackIfDisclosureCannotBeShown": "Use an explicitly attributed source-context preview or retain the hold; do not silently render an apparently exact TMGi model."
+  },
+  "counts": {
+    "exactRecords": 10,
+    "small": 6,
+    "large": 4,
+    "newRecords": 0,
+    "runtimeBindingsChanged": 0,
+    "clearancesChanged": 0
+  },
+  "evidence": [
+    {
+      "pages": [
+        28,
+        29
+      ],
+      "finding": "The heading/prose identify TMGi, the innovative X4K3 series; both tables preserve TMG и row names and cover exactly 63,100,160,250,400,630,1000,1250,1600,2500. Row values are not changed or reinterpreted."
+    },
+    {
+      "pages": [
+        30
+      ],
+      "finding": "The small drawing caption expressly names X3K3 and X4K3 and range 40–630. Front/end/plan show a sealed corrugated tank, three HV and four LV upper bushings in separate rows, fill tube and channel base. The six admitted small powers lie within that range; no 40 kVA row is created."
+    },
+    {
+      "pages": [
+        31
+      ],
+      "finding": "The large caption expressly names X3K3 and X4K3 and range 1000–2500. Projections show corrugated walls, three lower HV bushings and four taller LV terminals with flat contact plates, and no conservator. All four large table entries fall within that range."
+    },
+    {
+      "pages": [
+        32
+      ],
+      "finding": "A new chapter starts for TMGiN-630 with on-load regulation. Its external drive and control construction are outside the ordinary TMGi interpretation."
+    },
+    {
+      "pages": [
+        30,
+        31
+      ],
+      "finding": "Previously independently reviewed small/large geometry and icon definitions already cite these exact pages; their arbitrary-unit outer topology matches the source drawings. Reuse does not require a newly invented geometry or a source-name correction."
+    }
+  ],
+  "scopeConditions": [
+    "Only the ten exact IDs below; no family-wide inheritance or additional power entries.",
+    "Preserve raw names, technical values, source units, source pages, IDs, API UUIDs and quote identities.",
+    "Use page 30 only for the six listed 63–630 records and page 31 only for the four listed 1000–2500 records.",
+    "Show representative-exterior wording and the TMGi/TMGve discrepancy visibly with the preview; link the correct drawing page and keep table pages available.",
+    "Retain arbitrary proportions, non-CAD and non-dimensional wording. Never copy table dimensions into the scene or assert precise geometry.",
+    "Do not infer optional rollers, breakdown fuse, KShP instrumentation, switches, nameplates, terminal fastening details, winding/core materials or hidden internals from the reused model.",
+    "A subsequent implementation must obtain its own additive reviewed record/source/shape/UUID pins and pass existing historical hash gates; this report is not a runtime clearance file."
+  ],
+  "allowedWording": {
+    "small": "Представительная внешняя компоновка Х4К3 по чертежу на стр. 30",
+    "large": "Представительная внешняя компоновка Х4К3 по чертежу на стр. 31",
+    "commonDisclosure": "В таблице серия обозначена ТМГи, в подписи чертежа — ТМГвэ; подпись прямо включает Х4К3. Применение иллюстрации основано на разделе каталога и диапазоне мощности. Точное соответствие серии и комплектации не подтверждено. Не CAD; размеры условные."
+  },
+  "forbiddenClaims": [
+    "This is the exact TMGi model, certified CAD, a dimensional assembly or manufacturing drawing.",
+    "TMGi and TMGve are proven identical/interchangeable series or alternative names.",
+    "The drawing establishes the delivered accessories or exact external fittings of each capacity.",
+    "The X4K3 drawing also establishes X3K2 or the load-regulated TMGiN execution.",
+    "Every pictured optional roller, fuse or KShP instrument is fitted to each record.",
+    "The table-name discrepancy may be silently corrected or source records merged."
+  ],
+  "manufacturerQuestions": {
+    "notNeededToState": "The manufacturer catalogue explicitly offers a shared X4K3-labelled illustrative exterior within this subsection and these power ranges.",
+    "neededForStrongerClaims": [
+      "Whether the TMGi versus TMGve caption difference is intentional common-series wording or an editorial error.",
+      "Whether any given ordered TMGi unit uses exactly this mechanical design and which accessories/fittings are fitted.",
+      "Exact dimensioned CAD, mounting dimensions and production revision for a particular execution."
+    ]
+  },
+  "records": [
+    {
+      "id": "alageum-tmgi-x4k3-63",
+      "name": "ТМГ и-63 (Х4К3)",
+      "familyId": "tr2026-family-tmgi-x4k3",
+      "powerAsRecorded": 63,
+      "sourcePages": [
+        28,
+        29,
+        30
+      ],
+      "recordShapeSha256": "47592b557480d5a0f37c883795f4f550f6baf11760957e2b78295c7994cadfc9",
+      "fullRecordSha256": "8af1f77e21ac6fe0f6b4114c0aa311f26eca4d85feb4405d9509eef2d6fdb51b",
+      "databaseId": "80dd15af-a580-531b-a4fc-280f36e3607c",
+      "decision": "representative-exterior-reuse-supported-with-explicit-disclosure",
+      "candidateGeometryType": "tr26-corrugated-small",
+      "candidateIconType": "tr26-corrugated-small",
+      "drawingPage": 30,
+      "drawingCaption": "ТМГвэ-40-630 Х3К3 и Х4К3",
+      "drawingRange": [
+        40,
+        630
+      ],
+      "rowWithinDrawingRange": true,
+      "tableCaptionUses": "ТМГи / ТМГ и",
+      "captionDiscrepancyPreserved": true,
+      "currentVisual": {
+        "type": null,
+        "sourceFamilyId": "tr2026-family-tmgi-x4k3",
+        "sourcePages": [
+          28,
+          29,
+          30
+        ],
+        "confidence": "source-only",
+        "fallbackImage": "/catalog-source/transformers-2026/page-028.webp",
+        "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+      },
+      "currentIcon": {
+        "type": null,
+        "confidence": "source-only",
+        "sourceFamilyId": "tr2026-family-tmgi-x4k3",
+        "sourcePages": [
+          28,
+          29,
+          30
+        ],
+        "sourceImage": "/catalog-source/transformers-2026/page-028.webp",
+        "reason": "Документ источника; изображение конструкции не подтверждено"
+      }
+    },
+    {
+      "id": "alageum-tmgi-x4k3-100",
+      "name": "ТМГ и-100 (Х4К3)",
+      "familyId": "tr2026-family-tmgi-x4k3",
+      "powerAsRecorded": 100,
+      "sourcePages": [
+        28,
+        29,
+        30
+      ],
+      "recordShapeSha256": "fb9044a6467a30ee7489dd6127157b35eabc8cfec2d2bfe42a0e2b22e6b631b2",
+      "fullRecordSha256": "4645c41b728a206d1e636fe4c40748268a743e8dafe53a8732f02fc43ccfb00e",
+      "databaseId": "14036757-862f-500a-8edf-7a35a4da1d42",
+      "decision": "representative-exterior-reuse-supported-with-explicit-disclosure",
+      "candidateGeometryType": "tr26-corrugated-small",
+      "candidateIconType": "tr26-corrugated-small",
+      "drawingPage": 30,
+      "drawingCaption": "ТМГвэ-40-630 Х3К3 и Х4К3",
+      "drawingRange": [
+        40,
+        630
+      ],
+      "rowWithinDrawingRange": true,
+      "tableCaptionUses": "ТМГи / ТМГ и",
+      "captionDiscrepancyPreserved": true,
+      "currentVisual": {
+        "type": null,
+        "sourceFamilyId": "tr2026-family-tmgi-x4k3",
+        "sourcePages": [
+          28,
+          29,
+          30
+        ],
+        "confidence": "source-only",
+        "fallbackImage": "/catalog-source/transformers-2026/page-028.webp",
+        "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+      },
+      "currentIcon": {
+        "type": null,
+        "confidence": "source-only",
+        "sourceFamilyId": "tr2026-family-tmgi-x4k3",
+        "sourcePages": [
+          28,
+          29,
+          30
+        ],
+        "sourceImage": "/catalog-source/transformers-2026/page-028.webp",
+        "reason": "Документ источника; изображение конструкции не подтверждено"
+      }
+    },
+    {
+      "id": "alageum-tmgi-x4k3-160",
+      "name": "ТМГ и-160 (Х4К3)",
+      "familyId": "tr2026-family-tmgi-x4k3",
+      "powerAsRecorded": 160,
+      "sourcePages": [
+        28,
+        29,
+        30
+      ],
+      "recordShapeSha256": "c04d0a4ad5abb8af66ec8a5fa3f9501b733a3f5996453a1c32ed060d77ad8e04",
+      "fullRecordSha256": "c9cc2b8960f23410241d48c19e30892da5388c3ec197b8e9d4e7bf4fb1e09721",
+      "databaseId": "11122355-9d25-5957-911f-6d71f5e237f6",
+      "decision": "representative-exterior-reuse-supported-with-explicit-disclosure",
+      "candidateGeometryType": "tr26-corrugated-small",
+      "candidateIconType": "tr26-corrugated-small",
+      "drawingPage": 30,
+      "drawingCaption": "ТМГвэ-40-630 Х3К3 и Х4К3",
+      "drawingRange": [
+        40,
+        630
+      ],
+      "rowWithinDrawingRange": true,
+      "tableCaptionUses": "ТМГи / ТМГ и",
+      "captionDiscrepancyPreserved": true,
+      "currentVisual": {
+        "type": null,
+        "sourceFamilyId": "tr2026-family-tmgi-x4k3",
+        "sourcePages": [
+          28,
+          29,
+          30
+        ],
+        "confidence": "source-only",
+        "fallbackImage": "/catalog-source/transformers-2026/page-028.webp",
+        "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+      },
+      "currentIcon": {
+        "type": null,
+        "confidence": "source-only",
+        "sourceFamilyId": "tr2026-family-tmgi-x4k3",
+        "sourcePages": [
+          28,
+          29,
+          30
+        ],
+        "sourceImage": "/catalog-source/transformers-2026/page-028.webp",
+        "reason": "Документ источника; изображение конструкции не подтверждено"
+      }
+    },
+    {
+      "id": "alageum-tmgi-x4k3-250",
+      "name": "ТМГ и-250 (Х4К3)",
+      "familyId": "tr2026-family-tmgi-x4k3",
+      "powerAsRecorded": 250,
+      "sourcePages": [
+        28,
+        29,
+        30
+      ],
+      "recordShapeSha256": "75768ec094b63bcaa00ac9c546c3b8304b1b1781ba2313f094e2da85b9f162ce",
+      "fullRecordSha256": "ab566108643c22ce3e694fa7b59ebdfdce92a539354caf63a19b28514b497157",
+      "databaseId": "b0eae5f8-32c8-5718-8b58-8ad5eda3a548",
+      "decision": "representative-exterior-reuse-supported-with-explicit-disclosure",
+      "candidateGeometryType": "tr26-corrugated-small",
+      "candidateIconType": "tr26-corrugated-small",
+      "drawingPage": 30,
+      "drawingCaption": "ТМГвэ-40-630 Х3К3 и Х4К3",
+      "drawingRange": [
+        40,
+        630
+      ],
+      "rowWithinDrawingRange": true,
+      "tableCaptionUses": "ТМГи / ТМГ и",
+      "captionDiscrepancyPreserved": true,
+      "currentVisual": {
+        "type": null,
+        "sourceFamilyId": "tr2026-family-tmgi-x4k3",
+        "sourcePages": [
+          28,
+          29,
+          30
+        ],
+        "confidence": "source-only",
+        "fallbackImage": "/catalog-source/transformers-2026/page-028.webp",
+        "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+      },
+      "currentIcon": {
+        "type": null,
+        "confidence": "source-only",
+        "sourceFamilyId": "tr2026-family-tmgi-x4k3",
+        "sourcePages": [
+          28,
+          29,
+          30
+        ],
+        "sourceImage": "/catalog-source/transformers-2026/page-028.webp",
+        "reason": "Документ источника; изображение конструкции не подтверждено"
+      }
+    },
+    {
+      "id": "alageum-tmgi-x4k3-400",
+      "name": "ТМГ и-400 (Х4К3)",
+      "familyId": "tr2026-family-tmgi-x4k3",
+      "powerAsRecorded": 400,
+      "sourcePages": [
+        28,
+        29,
+        30
+      ],
+      "recordShapeSha256": "812c52db7d7c072fd6f7af97cc74212155fe0695ff6aeaf981b23ffaa7ac428f",
+      "fullRecordSha256": "d5d84e5d46733e0ab46ba4142031b2ac2d5be571c3d06b012c133ecb13d9be86",
+      "databaseId": "2ae6c200-e8c2-5a7b-bf42-c0519ca4b187",
+      "decision": "representative-exterior-reuse-supported-with-explicit-disclosure",
+      "candidateGeometryType": "tr26-corrugated-small",
+      "candidateIconType": "tr26-corrugated-small",
+      "drawingPage": 30,
+      "drawingCaption": "ТМГвэ-40-630 Х3К3 и Х4К3",
+      "drawingRange": [
+        40,
+        630
+      ],
+      "rowWithinDrawingRange": true,
+      "tableCaptionUses": "ТМГи / ТМГ и",
+      "captionDiscrepancyPreserved": true,
+      "currentVisual": {
+        "type": null,
+        "sourceFamilyId": "tr2026-family-tmgi-x4k3",
+        "sourcePages": [
+          28,
+          29,
+          30
+        ],
+        "confidence": "source-only",
+        "fallbackImage": "/catalog-source/transformers-2026/page-028.webp",
+        "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+      },
+      "currentIcon": {
+        "type": null,
+        "confidence": "source-only",
+        "sourceFamilyId": "tr2026-family-tmgi-x4k3",
+        "sourcePages": [
+          28,
+          29,
+          30
+        ],
+        "sourceImage": "/catalog-source/transformers-2026/page-028.webp",
+        "reason": "Документ источника; изображение конструкции не подтверждено"
+      }
+    },
+    {
+      "id": "alageum-tmgi-x4k3-630",
+      "name": "ТМГ и-630 (Х4К3)",
+      "familyId": "tr2026-family-tmgi-x4k3",
+      "powerAsRecorded": 630,
+      "sourcePages": [
+        28,
+        29,
+        30
+      ],
+      "recordShapeSha256": "6c1e16e331692a6924b6776354405dd41f95470604586801ac41cd9e0b99e761",
+      "fullRecordSha256": "5299cbde1a07b74b3faf12ed2081206323167ba904fdda15f6a7ab7bd7132bfe",
+      "databaseId": "ae9c11e3-60c7-564e-b339-71b4b6076fe0",
+      "decision": "representative-exterior-reuse-supported-with-explicit-disclosure",
+      "candidateGeometryType": "tr26-corrugated-small",
+      "candidateIconType": "tr26-corrugated-small",
+      "drawingPage": 30,
+      "drawingCaption": "ТМГвэ-40-630 Х3К3 и Х4К3",
+      "drawingRange": [
+        40,
+        630
+      ],
+      "rowWithinDrawingRange": true,
+      "tableCaptionUses": "ТМГи / ТМГ и",
+      "captionDiscrepancyPreserved": true,
+      "currentVisual": {
+        "type": null,
+        "sourceFamilyId": "tr2026-family-tmgi-x4k3",
+        "sourcePages": [
+          28,
+          29,
+          30
+        ],
+        "confidence": "source-only",
+        "fallbackImage": "/catalog-source/transformers-2026/page-028.webp",
+        "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+      },
+      "currentIcon": {
+        "type": null,
+        "confidence": "source-only",
+        "sourceFamilyId": "tr2026-family-tmgi-x4k3",
+        "sourcePages": [
+          28,
+          29,
+          30
+        ],
+        "sourceImage": "/catalog-source/transformers-2026/page-028.webp",
+        "reason": "Документ источника; изображение конструкции не подтверждено"
+      }
+    },
+    {
+      "id": "alageum-tmgi-x4k3-1000",
+      "name": "ТМГ и-1000 (Х4К3)",
+      "familyId": "tr2026-family-tmgi-x4k3",
+      "powerAsRecorded": 1000,
+      "sourcePages": [
+        28,
+        29,
+        31
+      ],
+      "recordShapeSha256": "2e6f8075e33c1d337acd909b8d59a083bce53ea03c9661864f1132e37a93b9bd",
+      "fullRecordSha256": "9087d246a1786ff8b1f5d37b07bc7162b098c15a861725cdf57681e8c40d6a54",
+      "databaseId": "37948b85-f07a-5dca-af3c-9a4ef4150183",
+      "decision": "representative-exterior-reuse-supported-with-explicit-disclosure",
+      "candidateGeometryType": "tr26-corrugated-large",
+      "candidateIconType": "tr26-corrugated-large",
+      "drawingPage": 31,
+      "drawingCaption": "ТМГвэ-1000-2500 Х3К3 и Х4К3",
+      "drawingRange": [
+        1000,
+        2500
+      ],
+      "rowWithinDrawingRange": true,
+      "tableCaptionUses": "ТМГи / ТМГ и",
+      "captionDiscrepancyPreserved": true,
+      "currentVisual": {
+        "type": null,
+        "sourceFamilyId": "tr2026-family-tmgi-x4k3",
+        "sourcePages": [
+          28,
+          29,
+          31
+        ],
+        "confidence": "source-only",
+        "fallbackImage": "/catalog-source/transformers-2026/page-028.webp",
+        "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+      },
+      "currentIcon": {
+        "type": null,
+        "confidence": "source-only",
+        "sourceFamilyId": "tr2026-family-tmgi-x4k3",
+        "sourcePages": [
+          28,
+          29,
+          31
+        ],
+        "sourceImage": "/catalog-source/transformers-2026/page-028.webp",
+        "reason": "Документ источника; изображение конструкции не подтверждено"
+      }
+    },
+    {
+      "id": "alageum-tmgi-x4k3-1250",
+      "name": "ТМГ и-1250 (Х4К3)",
+      "familyId": "tr2026-family-tmgi-x4k3",
+      "powerAsRecorded": 1250,
+      "sourcePages": [
+        28,
+        29,
+        31
+      ],
+      "recordShapeSha256": "13be3efe9f72d57dfdfe146f022c147200125ab67938232bd151beab85161481",
+      "fullRecordSha256": "ca0a5a89b6ae2dfd64864d873274f7bc04319a5992f2eba940ddcbe86a5f8b59",
+      "databaseId": "c33f7055-52b9-5dfa-a662-e815909d1fc1",
+      "decision": "representative-exterior-reuse-supported-with-explicit-disclosure",
+      "candidateGeometryType": "tr26-corrugated-large",
+      "candidateIconType": "tr26-corrugated-large",
+      "drawingPage": 31,
+      "drawingCaption": "ТМГвэ-1000-2500 Х3К3 и Х4К3",
+      "drawingRange": [
+        1000,
+        2500
+      ],
+      "rowWithinDrawingRange": true,
+      "tableCaptionUses": "ТМГи / ТМГ и",
+      "captionDiscrepancyPreserved": true,
+      "currentVisual": {
+        "type": null,
+        "sourceFamilyId": "tr2026-family-tmgi-x4k3",
+        "sourcePages": [
+          28,
+          29,
+          31
+        ],
+        "confidence": "source-only",
+        "fallbackImage": "/catalog-source/transformers-2026/page-028.webp",
+        "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+      },
+      "currentIcon": {
+        "type": null,
+        "confidence": "source-only",
+        "sourceFamilyId": "tr2026-family-tmgi-x4k3",
+        "sourcePages": [
+          28,
+          29,
+          31
+        ],
+        "sourceImage": "/catalog-source/transformers-2026/page-028.webp",
+        "reason": "Документ источника; изображение конструкции не подтверждено"
+      }
+    },
+    {
+      "id": "alageum-tmgi-x4k3-1600",
+      "name": "ТМГ и-1600 (Х4К3)",
+      "familyId": "tr2026-family-tmgi-x4k3",
+      "powerAsRecorded": 1600,
+      "sourcePages": [
+        28,
+        29,
+        31
+      ],
+      "recordShapeSha256": "14eb637764b32442256facf09ab28410c7236490f9c53de1da67cc5d63ff42a0",
+      "fullRecordSha256": "3a3a359f2974916ee9bc81de894b57346f6d4380cdaf8b7bbd6403f08117d523",
+      "databaseId": "e1931e6a-1837-5af3-88bf-44ed6a6e0ebe",
+      "decision": "representative-exterior-reuse-supported-with-explicit-disclosure",
+      "candidateGeometryType": "tr26-corrugated-large",
+      "candidateIconType": "tr26-corrugated-large",
+      "drawingPage": 31,
+      "drawingCaption": "ТМГвэ-1000-2500 Х3К3 и Х4К3",
+      "drawingRange": [
+        1000,
+        2500
+      ],
+      "rowWithinDrawingRange": true,
+      "tableCaptionUses": "ТМГи / ТМГ и",
+      "captionDiscrepancyPreserved": true,
+      "currentVisual": {
+        "type": null,
+        "sourceFamilyId": "tr2026-family-tmgi-x4k3",
+        "sourcePages": [
+          28,
+          29,
+          31
+        ],
+        "confidence": "source-only",
+        "fallbackImage": "/catalog-source/transformers-2026/page-028.webp",
+        "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+      },
+      "currentIcon": {
+        "type": null,
+        "confidence": "source-only",
+        "sourceFamilyId": "tr2026-family-tmgi-x4k3",
+        "sourcePages": [
+          28,
+          29,
+          31
+        ],
+        "sourceImage": "/catalog-source/transformers-2026/page-028.webp",
+        "reason": "Документ источника; изображение конструкции не подтверждено"
+      }
+    },
+    {
+      "id": "alageum-tmgi-x4k3-2500",
+      "name": "ТМГ и-2500 (Х4К3)",
+      "familyId": "tr2026-family-tmgi-x4k3",
+      "powerAsRecorded": 2500,
+      "sourcePages": [
+        28,
+        29,
+        31
+      ],
+      "recordShapeSha256": "b93ced98377916313699b1d47ce0e2bd450d01ba2b3018907f8e9691b91ee37c",
+      "fullRecordSha256": "0a1f6fd91e3b2d5802af48a2fe5e2126564d01298f13e81a51d1ec1ce98f714b",
+      "databaseId": "16f40794-5d04-5f57-bb0e-b30e5b0f16c5",
+      "decision": "representative-exterior-reuse-supported-with-explicit-disclosure",
+      "candidateGeometryType": "tr26-corrugated-large",
+      "candidateIconType": "tr26-corrugated-large",
+      "drawingPage": 31,
+      "drawingCaption": "ТМГвэ-1000-2500 Х3К3 и Х4К3",
+      "drawingRange": [
+        1000,
+        2500
+      ],
+      "rowWithinDrawingRange": true,
+      "tableCaptionUses": "ТМГи / ТМГ и",
+      "captionDiscrepancyPreserved": true,
+      "currentVisual": {
+        "type": null,
+        "sourceFamilyId": "tr2026-family-tmgi-x4k3",
+        "sourcePages": [
+          28,
+          29,
+          31
+        ],
+        "confidence": "source-only",
+        "fallbackImage": "/catalog-source/transformers-2026/page-028.webp",
+        "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+      },
+      "currentIcon": {
+        "type": null,
+        "confidence": "source-only",
+        "sourceFamilyId": "tr2026-family-tmgi-x4k3",
+        "sourcePages": [
+          28,
+          29,
+          31
+        ],
+        "sourceImage": "/catalog-source/transformers-2026/page-028.webp",
+        "reason": "Документ источника; изображение конструкции не подтверждено"
+      }
+    }
+  ],
+  "excluded": {
+    "families": [
+      "tr2026-family-tmgve-x3k2",
+      "tr2026-family-tmgin-x4k3"
+    ],
+    "allOtherProductIds": "No applicability decision is made for any other record."
+  },
+  "inspectedSourcePages": {
+    "28": {
+      "path": "frontend/public/catalog-source/transformers-2026/page-028.webp",
+      "sha256": "d883f94283ebe8027f7f6a1ebbaaeb41e7035b00a4e2eacc6c17addcabf35961",
+      "pixelsInspected": true
+    },
+    "29": {
+      "path": "frontend/public/catalog-source/transformers-2026/page-029.webp",
+      "sha256": "8cd8ec019872d60df2636200672d96d254e14afa8c244f7224982ed5e0a834f8",
+      "pixelsInspected": true
+    },
+    "30": {
+      "path": "frontend/public/catalog-source/transformers-2026/page-030.webp",
+      "sha256": "270769453d833dfc8eb67007df09d31e1b5ef0b2f8ad5a9df012b158f6fd654d",
+      "pixelsInspected": true
+    },
+    "31": {
+      "path": "frontend/public/catalog-source/transformers-2026/page-031.webp",
+      "sha256": "15c8eaf316397be33895e0c53989155a7116448d52919176d46cc5b2f18137d1",
+      "pixelsInspected": true
+    },
+    "32": {
+      "path": "frontend/public/catalog-source/transformers-2026/page-032.webp",
+      "sha256": "5ec20876b2511f18bea11e3fb93fdbeac4a4104f20c98733b92cc90c57a2759e",
+      "pixelsInspected": true
+    }
+  },
+  "inspectedRenderEvidence": [
+    {
+      "path": "/workspace/shared/transformer-asset-independent-review/final-qa/tr26-corrugated-small-perspective.png",
+      "sha256": "a74ce8a268760ae3ecb2e414261229f2e83f609cdb50bd00c286545e2391ed09",
+      "pixelsInspected": true
+    },
+    {
+      "path": "/workspace/shared/transformer-asset-independent-review/final-qa/tr26-corrugated-small-plan.png",
+      "sha256": "7da6cb126f89503a7423dc9a2d8beff3966c08b186255137779554077ec57405",
+      "pixelsInspected": true
+    },
+    {
+      "path": "/workspace/shared/transformer-asset-independent-review/final-qa/tr26-corrugated-large-perspective.png",
+      "sha256": "b10822d9638a5dc2bb14c949e3ccd10c54841a2fc82c1fb40ee784732292d2b4",
+      "pixelsInspected": true
+    },
+    {
+      "path": "/workspace/shared/transformer-asset-independent-review/final-qa/tr26-corrugated-large-plan.png",
+      "sha256": "be66678ec090525d8d6b240a87e13d57e6190f44282ec7ba6eb21dd6c68fbcb5",
+      "pixelsInspected": true
+    }
+  ],
+  "existingDefinitionAndApprovalHashes": {
+    "frontend/lib/catalog/models/transformer2026Types.js": "56ee5e7de958abeae364b565d8799430fc33b7fb25ca5f2cb665d17db020b9a8",
+    "frontend/lib/catalog/models/transformer2026Geometry.js": "32f91701425584f0bfa4e7b138525329fb6527588344fc5a574ed8dea7f0ef09",
+    "frontend/lib/catalog/models/transformer2026Icons.js": "9e49caab2b69cbb165c4a1b56f12a317d06cc910091cbae39c355bab63cca405",
+    "frontend/lib/catalog/models/transformer2026Shape.js": "ed07fb7f8c239623277338e2f8fcace52d77dbd12145e1c65cf8603c4100fb96",
+    "frontend/lib/catalog/models/transformer2026RuntimeManifest.json": "65d8feb3ede6d17c06bc99fed0a087bb2a2c4f0f758470c3b82bb605429adc77",
+    "docs/catalog-transformers-2026/review/assets-non-power-topology-final.json": "7be91fab9702094d9ef6cebd0034028b324871f2fa51dc4b38b2765ff649d5d7",
+    "docs/catalog-transformers-2026/review/assets-clearance.json": "930def10e4d3ac298b2551480432dab987198bc6e56fa404c8a00f6960a28f29",
+    "docs/catalog-transformers-2026/review/asset-completion/clearance.json": "f07a0ae61d434e7b4b84176a2f1105b1d33ae3a302746fb08be52fcc0d7806be"
+  },
+  "verification": {
+    "allTenSourceRowsRetained": true,
+    "allTenStillUnboundInRuntime": true,
+    "noSourceOrGeometryFilesWritten": true,
+    "geometryOrClearanceChangeAuthorizedByThisArtifact": false
+  }
+}

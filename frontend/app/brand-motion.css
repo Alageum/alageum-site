@@ -1,0 +1,33 @@
+/* Quiet motion: finite entrances, direct feedback, no scroll hijacking. */
+.brand-scroll-progress{position:fixed;z-index:1100;top:0;left:0;width:100%;height:2px;background:var(--site-red);transform:scaleX(0);transform-origin:left;pointer-events:none}
+.brand-experience .site-header{transition:box-shadow 240ms ease,background 240ms ease}
+.brand-experience[data-scrolled=true] .site-header{background:rgba(255,255,255,.98);box-shadow:0 6px 24px #1e1e1e0b}
+.brand-experience .site-button,.brand-experience .brand-header-contact{transition:background 220ms ease,box-shadow 220ms ease,transform 220ms ease}
+.brand-experience .site-button-primary:hover{box-shadow:0 6px 16px #ce17271c}
+.brand-experience .site-button:active,.brand-experience .brand-header-contact:active{transform:translateY(1px)}
+.brand-experience .corp-investor .corp-project-visual,.brand-experience .corp-investor .corp-project-card,.brand-experience .corp-investor .corp-enterprise-card,.brand-experience .corp-investor .corp-company-links>a{transition:transform 280ms cubic-bezier(.22,1,.36,1),box-shadow 280ms ease,border-color 220ms ease}
+.brand-experience .corp-investor .corp-project-visual .corp-photo img,.brand-experience .corp-investor .corp-enterprise-photo img,.brand-experience .corp-investor .corp-project-card>.corp-photo img{transition:transform 700ms cubic-bezier(.22,1,.36,1)}
+.brand-experience .corp-investor .corp-enterprise-bottom svg,.brand-experience .corp-investor .corp-project-top svg,.brand-experience .corp-investor .corp-card-arrow svg,.brand-experience .corp-investor .corp-link-end svg{transition:transform 240ms ease}
+.brand-experience .corp-investor .public-document-type{transition:background 240ms ease,border-color 240ms ease}
+.brand-experience .corp-investor .public-document:focus-within .public-document-type{background:#e4e4e4;border-color:#a4a4a4}
+.brand-experience .corp-investor .public-faq summary{transition:color 180ms ease}
+.brand-experience .corp-investor .public-faq summary:hover{color:var(--site-red)}
+.brand-experience .corp-investor .public-faq details[open]>p{animation:brand-detail-enter 240ms ease both}
+.brand-experience .corp-investor .corp-hero-image>img{animation:brand-hero-settle 1400ms cubic-bezier(.22,1,.36,1) both}
+.brand-experience .corp-investor .corp-hero-copy>.site-eyebrow,.brand-experience .corp-investor .corp-hero-copy>h1,.brand-experience .corp-investor .corp-hero-copy>.corp-lead,.brand-experience .corp-investor .corp-hero-copy>.site-actions{animation:brand-intro-enter 650ms cubic-bezier(.22,1,.36,1) both}
+.brand-experience .corp-investor .corp-hero-copy>h1{animation-delay:50ms}
+.brand-experience .corp-investor .corp-hero-copy>.corp-lead{animation-delay:100ms}
+.brand-experience .corp-investor .corp-hero-copy>.site-actions{animation-delay:150ms}
+@media(hover:hover) and (pointer:fine){
+ .brand-experience .corp-investor .corp-project-visual:hover,.brand-experience .corp-investor .corp-project-card:hover,.brand-experience .corp-investor .corp-enterprise-card:hover,.brand-experience .corp-investor .corp-company-links>a:hover{transform:translateY(-3px);box-shadow:0 12px 24px #1e1e1e09}
+ .brand-experience .corp-investor .corp-project-visual:hover .corp-photo img,.brand-experience .corp-investor .corp-project-card:hover>.corp-photo img,.brand-experience .corp-investor .corp-enterprise-card:hover .corp-enterprise-photo img{transform:scale(1.035)}
+ .brand-experience .corp-investor .corp-enterprise-card:hover .corp-enterprise-bottom svg,.brand-experience .corp-investor .corp-project-visual:hover .corp-project-top svg,.brand-experience .corp-investor .corp-equipment-card:hover .corp-card-arrow svg,.brand-experience .corp-investor .corp-company-links>a:hover .corp-link-end svg{transform:translate(3px,-3px)}
+ .brand-experience .corp-investor .public-document:hover .public-document-type{background:#e4e4e4;border-color:#a4a4a4}
+}
+@keyframes brand-intro-enter{from{opacity:.65;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@keyframes brand-hero-settle{from{transform:scale(1.035)}to{transform:scale(1)}}
+@keyframes brand-detail-enter{from{opacity:.4;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){
+ .brand-experience *,.brand-experience *::before,.brand-experience *::after{animation:none!important;transition:none!important}
+}
+@media print{.brand-scroll-progress{display:none}}

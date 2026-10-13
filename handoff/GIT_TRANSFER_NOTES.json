@@ -1,0 +1,39 @@
+{
+  "remote": "git@github.com:Alageum/alageum-site.git",
+  "privacyCheck": {
+    "authenticatedSshAccess": true,
+    "authenticatedUser": "StiveMan1",
+    "anonymousGithubApiStatus": 404,
+    "anonymousGithubWebStatus": 404,
+    "conclusion": "Repository accessible via authenticated SSH and not anonymously accessible; private/non-public"
+  },
+  "remoteInitiallyEmpty": true,
+  "historyIncluded": false,
+  "excludedFiles": [
+    {
+      "path": "frontend/public/documents/transformers-2026-original.pdf",
+      "bytes": 844084378,
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "reason": "User explicitly requested exclusion from Git; preserved in original working tree and full local ZIP",
+      "restoreTo": "frontend/public/documents/transformers-2026-original.pdf"
+    }
+  ],
+  "excludedGeneratedDirectories": [
+    ".git/",
+    "frontend/.next/",
+    "frontend/node_modules/",
+    "frontend/test-results/",
+    "frontend/output/",
+    "frontend/.next-document/",
+    "frontend/public/documents/transformers-2026-original.pdf",
+    "backend-node/build/",
+    "backend-node/node_modules/",
+    "backend-node/.strapi/",
+    "backend-node/.strapi-updater.json",
+    "docs/investor-visual-2026-10-12/browser-test-result.log",
+    "docs/investor-visual-2026-10-12/unit-test-result.log",
+    "docs/catalog-transformers-2026/review/assets-final-focused-tests.log"
+  ],
+  "sourceUncommittedChangesIncluded": true,
+  "testsOrBuildsRunForTransfer": false
+}

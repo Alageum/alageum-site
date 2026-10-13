@@ -1,0 +1,36 @@
+{
+  "format": "alageum-ntmi-source-preview-v1",
+  "scope": "Two explicit source-panel previews; no products, default bindings or construction choices added",
+  "source": {
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026"
+  },
+  "preview": {
+    "groupId": "measurement-ntmi",
+    "geometryType": "tr26-instrument-three-triangle",
+    "iconType": "tr26-instrument-three-triangle",
+    "caption": "Иллюстративная компоновка НТМИ-6-10 по каталогу 18.03.2026, стр. 96",
+    "reason": "Круглая крышка, три ввода ВН треугольником и шесть малых выводов по чертежу НТМИ-6-10. Общая схема серии не подтверждает размеры или комплектацию конкретного исполнения.",
+    "disclosure": "Иллюстративная компоновка по источнику; не CAD, не размеры и не точная модель исполнения",
+    "sourceImage": "/catalog-source/transformers-2026/page-096.webp",
+    "dimensionAccurate": false,
+    "exactMeshReuseAllowed": false
+  },
+  "records": {
+    "ntmi-6": {
+      "panelId": "alageum-2026-ntmi-6",
+      "databaseId": "0c075190-b471-518f-9803-e1ead0d5aade",
+      "recordShapeSha256": "87564c5c2dcc8037a9d1923a2b543f9815110adec025719a675780724af590fe",
+      "panelSha256": "fe795cc67fa6bd68d3872f38236699ba4398263e643e50b857821b0ce28c64de"
+    },
+    "ntmi-10": {
+      "panelId": "alageum-2026-ntmi-10",
+      "databaseId": "b6ec37f7-5d18-57c4-bc9a-6cc668d50ac6",
+      "recordShapeSha256": "e5c437cfb92550a8c7e944419066cae37580cd147b367e294b401849517ba0b7",
+      "panelSha256": "f76fa18ff7028844a60611e7247d2dc17984ced958790a79276fad6dde8fc531"
+    }
+  }
+}

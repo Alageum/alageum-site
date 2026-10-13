@@ -1,0 +1,38 @@
+{
+  "format": "alageum-transformer-review-binding-v1",
+  "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+  "inventorySha256": "c3948d7152a6130aa4672b9f6d3d5a8f08144b5965df7bebabca067ba5bc8438",
+  "recordsSha256": "e100cde595b863e2a7fbf976c52b4d2b19edce871fc1e37a46c2232ea201085f",
+  "activationAllowed": true,
+  "clearance": {
+    "format": "alageum-transformer-review-clearance-v1",
+    "status": "approved",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "inventorySha256": "c3948d7152a6130aa4672b9f6d3d5a8f08144b5965df7bebabca067ba5bc8438",
+    "approvedBy": "Independent source QA and compiled-staging validation",
+    "approvedAt": "2026-10-05T08:02:13.684060+00:00",
+    "reviewReports": [
+      "docs/catalog-transformers-2026/review/review-006-101.json",
+      "docs/catalog-transformers-2026/review/review-102-187.json",
+      "docs/catalog-transformers-2026/review/full-cell-check-102-187.json",
+      "docs/catalog-transformers-2026/review/final-source-scope-046-101.json",
+      "docs/catalog-transformers-2026/review/compiled-staging-validation.json"
+    ],
+    "scope": {
+      "admittedEntries": 508,
+      "familyParents": 77,
+      "records": 585,
+      "identityHolds": 32,
+      "configurationsAdmitted": 349,
+      "configurationsHeld": 58,
+      "oldStableIdsPreserved": 238
+    },
+    "assetsApproved": false,
+    "limitations": [
+      "This is source-data quality clearance, not manufacturer validation or an orderable-SKU assertion.",
+      "Source mistakes remain raw and visible with warnings.",
+      "Geometry and icon activation requires a separate source/shape-hash-bound allowlist.",
+      "No main merge or deployment authorized by this file."
+    ]
+  }
+}

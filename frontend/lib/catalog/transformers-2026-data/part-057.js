@@ -1,0 +1,2352 @@
+// Generated from independently reviewed source records.
+const records = [
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТС(З)",
+    "execution": "мощность 40кВА, класс0,66кВ",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      86,
+      87,
+      88
+    ],
+    "sourceRow": {
+      "page": 87,
+      "designation": "ТС(З)",
+      "execution": "мощность 40кВА, класс0,66кВ",
+      "kind": "explicit-model-row"
+    },
+    "sourceFamilyId": "ts-low-voltage",
+    "sourceRecordType": "explicit-model-row",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": null,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Мощность",
+        "value": "40",
+        "unit": "кВА",
+        "page": 87
+      },
+      {
+        "label": "ВН",
+        "value": "380",
+        "unit": "кВ",
+        "page": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "НН",
+        "value": "220",
+        "unit": "кВ",
+        "page": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "3,0",
+        "unit": "%",
+        "page": 87
+      },
+      {
+        "label": "H",
+        "value": "580/748",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "L",
+        "value": "345/636",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "B",
+        "value": "600/401",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "Масса",
+        "value": "210/235",
+        "unit": "кг",
+        "page": 87
+      },
+      {
+        "label": "Класс напряжения",
+        "value": "0,66",
+        "unit": "кВ",
+        "page": 86
+      }
+    ],
+    "notes": [
+      "Voltage header literally кВ while values380/220 appear inconsistent with0,66кВ class; retained without correction.",
+      "Slash dimension/mass pairs not explicitly mapped to executions; retain raw."
+    ],
+    "image": "/catalog-source/transformers-2026/page-086.webp",
+    "imageSourcePage": 86,
+    "imageCaption": "Страница 86 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Мощность",
+        "raw": "40",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 87
+      },
+      {
+        "label": "ВН",
+        "raw": "380",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "НН",
+        "raw": "220",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "raw": "3,0",
+        "unitAsPrinted": "%",
+        "sourcePage": 87
+      },
+      {
+        "label": "H",
+        "raw": "580/748",
+        "unitAsPrinted": "мм",
+        "sourcePage": 87
+      },
+      {
+        "label": "L",
+        "raw": "345/636",
+        "unitAsPrinted": "мм",
+        "sourcePage": 87
+      },
+      {
+        "label": "B",
+        "raw": "600/401",
+        "unitAsPrinted": "мм",
+        "sourcePage": 87
+      },
+      {
+        "label": "Масса",
+        "raw": "210/235",
+        "unitAsPrinted": "кг",
+        "sourcePage": 87
+      },
+      {
+        "label": "Класс напряжения",
+        "raw": "0,66",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 86
+      }
+    ],
+    "id": "alageum-2026-ts-40",
+    "name": "ТС(З)",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-ts-low-voltage",
+    "familyName": "Трансформаторы серии ТС(З)",
+    "series": "ТС(З)",
+    "subtype": "мощность 40кВА, класс0,66кВ",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Мощность",
+        "value": "40",
+        "unit": "кВА",
+        "page": 87
+      },
+      {
+        "label": "ВН",
+        "value": "380",
+        "unit": "кВ",
+        "page": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "НН",
+        "value": "220",
+        "unit": "кВ",
+        "page": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "3,0",
+        "unit": "%",
+        "page": 87
+      },
+      {
+        "label": "H",
+        "value": "580/748",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "L",
+        "value": "345/636",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "B",
+        "value": "600/401",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "Масса",
+        "value": "210/235",
+        "unit": "кг",
+        "page": 87
+      },
+      {
+        "label": "Класс напряжения",
+        "value": "0,66",
+        "unit": "кВ",
+        "page": 86
+      }
+    ],
+    "configurations": [
+      {
+        "id": "alageum-2026-ts-40-execution-1",
+        "designation": "ТС без кожуха",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-ts-40",
+        "page": 86,
+        "sourcePages": [
+          86,
+          87,
+          88
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-ts-40-execution-1",
+          "modelId": "alageum-2026-ts-40",
+          "familyId": "ts-low-voltage",
+          "kind": "explicit-construction-execution",
+          "designation": "ТС без кожуха",
+          "sourcePages": [
+            86,
+            87,
+            88
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-ts-40-execution-2",
+        "designation": "ТСЗ с кожухом",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-ts-40",
+        "page": 86,
+        "sourcePages": [
+          86,
+          87,
+          88
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-ts-40-execution-2",
+          "modelId": "alageum-2026-ts-40",
+          "familyId": "ts-low-voltage",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЗ с кожухом",
+          "sourcePages": [
+            86,
+            87,
+            88
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      }
+    ]
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТС(З)",
+    "execution": "мощность 63кВА, класс0,66кВ",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      86,
+      87,
+      88
+    ],
+    "sourceRow": {
+      "page": 87,
+      "designation": "ТС(З)",
+      "execution": "мощность 63кВА, класс0,66кВ",
+      "kind": "explicit-model-row"
+    },
+    "sourceFamilyId": "ts-low-voltage",
+    "sourceRecordType": "explicit-model-row",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": null,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Мощность",
+        "value": "63",
+        "unit": "кВА",
+        "page": 87
+      },
+      {
+        "label": "ВН",
+        "value": "380",
+        "unit": "кВ",
+        "page": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "НН",
+        "value": "220",
+        "unit": "кВ",
+        "page": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "4,0",
+        "unit": "%",
+        "page": 87
+      },
+      {
+        "label": "H",
+        "value": "600/768",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "L",
+        "value": "365/669",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "B",
+        "value": "660/421",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "Масса",
+        "value": "210/315",
+        "unit": "кг",
+        "page": 87
+      },
+      {
+        "label": "Класс напряжения",
+        "value": "0,66",
+        "unit": "кВ",
+        "page": 86
+      }
+    ],
+    "notes": [
+      "Voltage header literally кВ while values380/220 appear inconsistent with0,66кВ class; retained without correction.",
+      "Slash dimension/mass pairs not explicitly mapped to executions; retain raw."
+    ],
+    "image": "/catalog-source/transformers-2026/page-086.webp",
+    "imageSourcePage": 86,
+    "imageCaption": "Страница 86 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Мощность",
+        "raw": "63",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 87
+      },
+      {
+        "label": "ВН",
+        "raw": "380",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "НН",
+        "raw": "220",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "raw": "4,0",
+        "unitAsPrinted": "%",
+        "sourcePage": 87
+      },
+      {
+        "label": "H",
+        "raw": "600/768",
+        "unitAsPrinted": "мм",
+        "sourcePage": 87
+      },
+      {
+        "label": "L",
+        "raw": "365/669",
+        "unitAsPrinted": "мм",
+        "sourcePage": 87
+      },
+      {
+        "label": "B",
+        "raw": "660/421",
+        "unitAsPrinted": "мм",
+        "sourcePage": 87
+      },
+      {
+        "label": "Масса",
+        "raw": "210/315",
+        "unitAsPrinted": "кг",
+        "sourcePage": 87
+      },
+      {
+        "label": "Класс напряжения",
+        "raw": "0,66",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 86
+      }
+    ],
+    "id": "alageum-2026-ts-63",
+    "name": "ТС(З)",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-ts-low-voltage",
+    "familyName": "Трансформаторы серии ТС(З)",
+    "series": "ТС(З)",
+    "subtype": "мощность 63кВА, класс0,66кВ",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Мощность",
+        "value": "63",
+        "unit": "кВА",
+        "page": 87
+      },
+      {
+        "label": "ВН",
+        "value": "380",
+        "unit": "кВ",
+        "page": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "НН",
+        "value": "220",
+        "unit": "кВ",
+        "page": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "4,0",
+        "unit": "%",
+        "page": 87
+      },
+      {
+        "label": "H",
+        "value": "600/768",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "L",
+        "value": "365/669",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "B",
+        "value": "660/421",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "Масса",
+        "value": "210/315",
+        "unit": "кг",
+        "page": 87
+      },
+      {
+        "label": "Класс напряжения",
+        "value": "0,66",
+        "unit": "кВ",
+        "page": 86
+      }
+    ],
+    "configurations": [
+      {
+        "id": "alageum-2026-ts-63-execution-1",
+        "designation": "ТС без кожуха",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-ts-63",
+        "page": 86,
+        "sourcePages": [
+          86,
+          87,
+          88
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-ts-63-execution-1",
+          "modelId": "alageum-2026-ts-63",
+          "familyId": "ts-low-voltage",
+          "kind": "explicit-construction-execution",
+          "designation": "ТС без кожуха",
+          "sourcePages": [
+            86,
+            87,
+            88
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-ts-63-execution-2",
+        "designation": "ТСЗ с кожухом",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-ts-63",
+        "page": 86,
+        "sourcePages": [
+          86,
+          87,
+          88
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-ts-63-execution-2",
+          "modelId": "alageum-2026-ts-63",
+          "familyId": "ts-low-voltage",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЗ с кожухом",
+          "sourcePages": [
+            86,
+            87,
+            88
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      }
+    ]
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТС(З)",
+    "execution": "мощность 100кВА, класс0,66кВ",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      86,
+      87,
+      88
+    ],
+    "sourceRow": {
+      "page": 87,
+      "designation": "ТС(З)",
+      "execution": "мощность 100кВА, класс0,66кВ",
+      "kind": "explicit-model-row"
+    },
+    "sourceFamilyId": "ts-low-voltage",
+    "sourceRecordType": "explicit-model-row",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": null,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Мощность",
+        "value": "100",
+        "unit": "кВА",
+        "page": 87
+      },
+      {
+        "label": "ВН",
+        "value": "380",
+        "unit": "кВ",
+        "page": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "НН",
+        "value": "220",
+        "unit": "кВ",
+        "page": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "4,0",
+        "unit": "%",
+        "page": 87
+      },
+      {
+        "label": "H",
+        "value": "680/848",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "L",
+        "value": "380/776",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "B",
+        "value": "730/436",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "Масса",
+        "value": "400/435",
+        "unit": "кг",
+        "page": 87
+      },
+      {
+        "label": "Класс напряжения",
+        "value": "0,66",
+        "unit": "кВ",
+        "page": 86
+      }
+    ],
+    "notes": [
+      "Voltage header literally кВ while values380/220 appear inconsistent with0,66кВ class; retained without correction.",
+      "Slash dimension/mass pairs not explicitly mapped to executions; retain raw."
+    ],
+    "image": "/catalog-source/transformers-2026/page-086.webp",
+    "imageSourcePage": 86,
+    "imageCaption": "Страница 86 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Мощность",
+        "raw": "100",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 87
+      },
+      {
+        "label": "ВН",
+        "raw": "380",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "НН",
+        "raw": "220",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "raw": "4,0",
+        "unitAsPrinted": "%",
+        "sourcePage": 87
+      },
+      {
+        "label": "H",
+        "raw": "680/848",
+        "unitAsPrinted": "мм",
+        "sourcePage": 87
+      },
+      {
+        "label": "L",
+        "raw": "380/776",
+        "unitAsPrinted": "мм",
+        "sourcePage": 87
+      },
+      {
+        "label": "B",
+        "raw": "730/436",
+        "unitAsPrinted": "мм",
+        "sourcePage": 87
+      },
+      {
+        "label": "Масса",
+        "raw": "400/435",
+        "unitAsPrinted": "кг",
+        "sourcePage": 87
+      },
+      {
+        "label": "Класс напряжения",
+        "raw": "0,66",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 86
+      }
+    ],
+    "id": "alageum-2026-ts-100",
+    "name": "ТС(З)",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-ts-low-voltage",
+    "familyName": "Трансформаторы серии ТС(З)",
+    "series": "ТС(З)",
+    "subtype": "мощность 100кВА, класс0,66кВ",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Мощность",
+        "value": "100",
+        "unit": "кВА",
+        "page": 87
+      },
+      {
+        "label": "ВН",
+        "value": "380",
+        "unit": "кВ",
+        "page": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "НН",
+        "value": "220",
+        "unit": "кВ",
+        "page": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "4,0",
+        "unit": "%",
+        "page": 87
+      },
+      {
+        "label": "H",
+        "value": "680/848",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "L",
+        "value": "380/776",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "B",
+        "value": "730/436",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "Масса",
+        "value": "400/435",
+        "unit": "кг",
+        "page": 87
+      },
+      {
+        "label": "Класс напряжения",
+        "value": "0,66",
+        "unit": "кВ",
+        "page": 86
+      }
+    ],
+    "configurations": [
+      {
+        "id": "alageum-2026-ts-100-execution-1",
+        "designation": "ТС без кожуха",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-ts-100",
+        "page": 86,
+        "sourcePages": [
+          86,
+          87,
+          88
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-ts-100-execution-1",
+          "modelId": "alageum-2026-ts-100",
+          "familyId": "ts-low-voltage",
+          "kind": "explicit-construction-execution",
+          "designation": "ТС без кожуха",
+          "sourcePages": [
+            86,
+            87,
+            88
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-ts-100-execution-2",
+        "designation": "ТСЗ с кожухом",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-ts-100",
+        "page": 86,
+        "sourcePages": [
+          86,
+          87,
+          88
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-ts-100-execution-2",
+          "modelId": "alageum-2026-ts-100",
+          "familyId": "ts-low-voltage",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСЗ с кожухом",
+          "sourcePages": [
+            86,
+            87,
+            88
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      }
+    ]
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТСИ / ТСЗИ",
+    "execution": "",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      89,
+      90
+    ],
+    "sourceRow": null,
+    "sourceFamilyId": "tsi-tools",
+    "sourceRecordType": "family",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": null,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-089.webp",
+    "imageSourcePage": 89,
+    "imageCaption": "Страница 89 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [],
+    "id": "tr2026-family-tsi-tools",
+    "name": "ТСИ — для питания электроинструмента",
+    "recordKind": "family",
+    "recordType": "catalog-family",
+    "series": "ТСИ / ТСЗИ",
+    "subtype": "",
+    "description": "",
+    "variantIds": [
+      "alageum-2026-tsi-1p6-open",
+      "alageum-2026-tsi-2p5-open",
+      "alageum-2026-tsi-4p0-open",
+      "alageum-2026-tsi-1p6-enclosed",
+      "alageum-2026-tsi-2p5-enclosed",
+      "alageum-2026-tsi-4p0-enclosed"
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТСИ-1,6",
+    "execution": "для питания электроинструмента",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      89
+    ],
+    "sourceRow": {
+      "page": 89,
+      "designation": "ТСИ-1,6",
+      "execution": "для питания электроинструмента",
+      "kind": "explicit-model-row"
+    },
+    "sourceFamilyId": "tsi-tools",
+    "sourceRecordType": "explicit-model-row",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": null,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Первичные напряжения",
+        "value": "380/220",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Вторичные напряжения",
+        "value": "220/127;42;36;12",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "20",
+        "unit": "%",
+        "page": 89
+      },
+      {
+        "label": "L",
+        "value": "324",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "H",
+        "value": "278",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "Масса",
+        "value": "34",
+        "unit": "кг",
+        "page": 89
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 89
+      }
+    ],
+    "notes": [
+      "Page89 enclosure drawing and terminal details are labeled ТСНЗ-400,630, inconsistent with nearby ТСИ1,6–4,0 table; not assigned as exact TSI geometry. Power inferred from name is not normalized absent explicit power column."
+    ],
+    "image": "/catalog-source/transformers-2026/page-089.webp",
+    "imageSourcePage": 89,
+    "imageCaption": "Страница 89 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Первичные напряжения",
+        "raw": "380/220",
+        "unitAsPrinted": "В",
+        "sourcePage": 89
+      },
+      {
+        "label": "Вторичные напряжения",
+        "raw": "220/127;42;36;12",
+        "unitAsPrinted": "В",
+        "sourcePage": 89
+      },
+      {
+        "label": "Ток холостого хода",
+        "raw": "20",
+        "unitAsPrinted": "%",
+        "sourcePage": 89
+      },
+      {
+        "label": "L",
+        "raw": "324",
+        "unitAsPrinted": "мм",
+        "sourcePage": 89
+      },
+      {
+        "label": "H",
+        "raw": "278",
+        "unitAsPrinted": "мм",
+        "sourcePage": 89
+      },
+      {
+        "label": "Масса",
+        "raw": "34",
+        "unitAsPrinted": "кг",
+        "sourcePage": 89
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 89
+      }
+    ],
+    "id": "alageum-2026-tsi-1p6-open",
+    "name": "ТСИ-1,6",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-tsi-tools",
+    "familyName": "ТСИ — для питания электроинструмента",
+    "series": "ТСИ",
+    "subtype": "для питания электроинструмента",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Первичные напряжения",
+        "value": "380/220",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Вторичные напряжения",
+        "value": "220/127;42;36;12",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "20",
+        "unit": "%",
+        "page": 89
+      },
+      {
+        "label": "L",
+        "value": "324",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "H",
+        "value": "278",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "Масса",
+        "value": "34",
+        "unit": "кг",
+        "page": 89
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 89
+      }
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТСИ-2,5",
+    "execution": "для питания электроинструмента",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      89
+    ],
+    "sourceRow": {
+      "page": 89,
+      "designation": "ТСИ-2,5",
+      "execution": "для питания электроинструмента",
+      "kind": "explicit-model-row"
+    },
+    "sourceFamilyId": "tsi-tools",
+    "sourceRecordType": "explicit-model-row",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": null,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Первичные напряжения",
+        "value": "380/220",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Вторичные напряжения",
+        "value": "220/127;42;36;12",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "15",
+        "unit": "%",
+        "page": 89
+      },
+      {
+        "label": "L",
+        "value": "324",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "H",
+        "value": "306",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "Масса",
+        "value": "37",
+        "unit": "кг",
+        "page": 89
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 89
+      }
+    ],
+    "notes": [
+      "Page89 enclosure drawing and terminal details are labeled ТСНЗ-400,630, inconsistent with nearby ТСИ1,6–4,0 table; not assigned as exact TSI geometry. Power inferred from name is not normalized absent explicit power column."
+    ],
+    "image": "/catalog-source/transformers-2026/page-089.webp",
+    "imageSourcePage": 89,
+    "imageCaption": "Страница 89 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Первичные напряжения",
+        "raw": "380/220",
+        "unitAsPrinted": "В",
+        "sourcePage": 89
+      },
+      {
+        "label": "Вторичные напряжения",
+        "raw": "220/127;42;36;12",
+        "unitAsPrinted": "В",
+        "sourcePage": 89
+      },
+      {
+        "label": "Ток холостого хода",
+        "raw": "15",
+        "unitAsPrinted": "%",
+        "sourcePage": 89
+      },
+      {
+        "label": "L",
+        "raw": "324",
+        "unitAsPrinted": "мм",
+        "sourcePage": 89
+      },
+      {
+        "label": "H",
+        "raw": "306",
+        "unitAsPrinted": "мм",
+        "sourcePage": 89
+      },
+      {
+        "label": "Масса",
+        "raw": "37",
+        "unitAsPrinted": "кг",
+        "sourcePage": 89
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 89
+      }
+    ],
+    "id": "alageum-2026-tsi-2p5-open",
+    "name": "ТСИ-2,5",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-tsi-tools",
+    "familyName": "ТСИ — для питания электроинструмента",
+    "series": "ТСИ",
+    "subtype": "для питания электроинструмента",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Первичные напряжения",
+        "value": "380/220",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Вторичные напряжения",
+        "value": "220/127;42;36;12",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "15",
+        "unit": "%",
+        "page": 89
+      },
+      {
+        "label": "L",
+        "value": "324",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "H",
+        "value": "306",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "Масса",
+        "value": "37",
+        "unit": "кг",
+        "page": 89
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 89
+      }
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТСИ-4,0",
+    "execution": "для питания электроинструмента",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      89
+    ],
+    "sourceRow": {
+      "page": 89,
+      "designation": "ТСИ-4,0",
+      "execution": "для питания электроинструмента",
+      "kind": "explicit-model-row"
+    },
+    "sourceFamilyId": "tsi-tools",
+    "sourceRecordType": "explicit-model-row",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": null,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Первичные напряжения",
+        "value": "380/220",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Вторичные напряжения",
+        "value": "220/127;42;36;12",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "10",
+        "unit": "%",
+        "page": 89
+      },
+      {
+        "label": "L",
+        "value": "324",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "H",
+        "value": "387",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "Масса",
+        "value": "48",
+        "unit": "кг",
+        "page": 89
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 89
+      }
+    ],
+    "notes": [
+      "Page89 enclosure drawing and terminal details are labeled ТСНЗ-400,630, inconsistent with nearby ТСИ1,6–4,0 table; not assigned as exact TSI geometry. Power inferred from name is not normalized absent explicit power column."
+    ],
+    "image": "/catalog-source/transformers-2026/page-089.webp",
+    "imageSourcePage": 89,
+    "imageCaption": "Страница 89 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Первичные напряжения",
+        "raw": "380/220",
+        "unitAsPrinted": "В",
+        "sourcePage": 89
+      },
+      {
+        "label": "Вторичные напряжения",
+        "raw": "220/127;42;36;12",
+        "unitAsPrinted": "В",
+        "sourcePage": 89
+      },
+      {
+        "label": "Ток холостого хода",
+        "raw": "10",
+        "unitAsPrinted": "%",
+        "sourcePage": 89
+      },
+      {
+        "label": "L",
+        "raw": "324",
+        "unitAsPrinted": "мм",
+        "sourcePage": 89
+      },
+      {
+        "label": "H",
+        "raw": "387",
+        "unitAsPrinted": "мм",
+        "sourcePage": 89
+      },
+      {
+        "label": "Масса",
+        "raw": "48",
+        "unitAsPrinted": "кг",
+        "sourcePage": 89
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 89
+      }
+    ],
+    "id": "alageum-2026-tsi-4p0-open",
+    "name": "ТСИ-4,0",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-tsi-tools",
+    "familyName": "ТСИ — для питания электроинструмента",
+    "series": "ТСИ",
+    "subtype": "для питания электроинструмента",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Первичные напряжения",
+        "value": "380/220",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Вторичные напряжения",
+        "value": "220/127;42;36;12",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "10",
+        "unit": "%",
+        "page": 89
+      },
+      {
+        "label": "L",
+        "value": "324",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "H",
+        "value": "387",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "Масса",
+        "value": "48",
+        "unit": "кг",
+        "page": 89
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 89
+      }
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТСЗИ-1,6",
+    "execution": "для питания электроинструмента",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      89,
+      90
+    ],
+    "sourceRow": {
+      "page": 89,
+      "designation": "ТСЗИ-1,6",
+      "execution": "для питания электроинструмента",
+      "kind": "explicit-model-row"
+    },
+    "sourceFamilyId": "tsi-tools",
+    "sourceRecordType": "explicit-model-row",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": null,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Первичные напряжения",
+        "value": "380/220",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Вторичные напряжения",
+        "value": "220/127;42;36;12",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "20",
+        "unit": "%",
+        "page": 89
+      },
+      {
+        "label": "L",
+        "value": "398",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "H",
+        "value": "407",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "Масса",
+        "value": "40",
+        "unit": "кг",
+        "page": 89
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 89
+      }
+    ],
+    "notes": [
+      "Page89 enclosure drawing and terminal details are labeled ТСНЗ-400,630, inconsistent with nearby ТСИ1,6–4,0 table; not assigned as exact TSI geometry. Power inferred from name is not normalized absent explicit power column."
+    ],
+    "image": "/catalog-source/transformers-2026/page-089.webp",
+    "imageSourcePage": 89,
+    "imageCaption": "Страница 89 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Первичные напряжения",
+        "raw": "380/220",
+        "unitAsPrinted": "В",
+        "sourcePage": 89
+      },
+      {
+        "label": "Вторичные напряжения",
+        "raw": "220/127;42;36;12",
+        "unitAsPrinted": "В",
+        "sourcePage": 89
+      },
+      {
+        "label": "Ток холостого хода",
+        "raw": "20",
+        "unitAsPrinted": "%",
+        "sourcePage": 89
+      },
+      {
+        "label": "L",
+        "raw": "398",
+        "unitAsPrinted": "мм",
+        "sourcePage": 89
+      },
+      {
+        "label": "H",
+        "raw": "407",
+        "unitAsPrinted": "мм",
+        "sourcePage": 89
+      },
+      {
+        "label": "Масса",
+        "raw": "40",
+        "unitAsPrinted": "кг",
+        "sourcePage": 89
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 89
+      }
+    ],
+    "id": "alageum-2026-tsi-1p6-enclosed",
+    "name": "ТСЗИ-1,6",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-tsi-tools",
+    "familyName": "ТСИ — для питания электроинструмента",
+    "series": "ТСЗИ",
+    "subtype": "для питания электроинструмента",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Первичные напряжения",
+        "value": "380/220",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Вторичные напряжения",
+        "value": "220/127;42;36;12",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "20",
+        "unit": "%",
+        "page": 89
+      },
+      {
+        "label": "L",
+        "value": "398",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "H",
+        "value": "407",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "Масса",
+        "value": "40",
+        "unit": "кг",
+        "page": 89
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 89
+      }
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТСЗИ-2,5",
+    "execution": "для питания электроинструмента",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      89,
+      90
+    ],
+    "sourceRow": {
+      "page": 89,
+      "designation": "ТСЗИ-2,5",
+      "execution": "для питания электроинструмента",
+      "kind": "explicit-model-row"
+    },
+    "sourceFamilyId": "tsi-tools",
+    "sourceRecordType": "explicit-model-row",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": null,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Первичные напряжения",
+        "value": "380/220",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Вторичные напряжения",
+        "value": "220/127;42;36;12",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "15",
+        "unit": "%",
+        "page": 89
+      },
+      {
+        "label": "L",
+        "value": "398",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "H",
+        "value": "407",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "Масса",
+        "value": "43",
+        "unit": "кг",
+        "page": 89
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 89
+      }
+    ],
+    "notes": [
+      "Page89 enclosure drawing and terminal details are labeled ТСНЗ-400,630, inconsistent with nearby ТСИ1,6–4,0 table; not assigned as exact TSI geometry. Power inferred from name is not normalized absent explicit power column."
+    ],
+    "image": "/catalog-source/transformers-2026/page-089.webp",
+    "imageSourcePage": 89,
+    "imageCaption": "Страница 89 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Первичные напряжения",
+        "raw": "380/220",
+        "unitAsPrinted": "В",
+        "sourcePage": 89
+      },
+      {
+        "label": "Вторичные напряжения",
+        "raw": "220/127;42;36;12",
+        "unitAsPrinted": "В",
+        "sourcePage": 89
+      },
+      {
+        "label": "Ток холостого хода",
+        "raw": "15",
+        "unitAsPrinted": "%",
+        "sourcePage": 89
+      },
+      {
+        "label": "L",
+        "raw": "398",
+        "unitAsPrinted": "мм",
+        "sourcePage": 89
+      },
+      {
+        "label": "H",
+        "raw": "407",
+        "unitAsPrinted": "мм",
+        "sourcePage": 89
+      },
+      {
+        "label": "Масса",
+        "raw": "43",
+        "unitAsPrinted": "кг",
+        "sourcePage": 89
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 89
+      }
+    ],
+    "id": "alageum-2026-tsi-2p5-enclosed",
+    "name": "ТСЗИ-2,5",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-tsi-tools",
+    "familyName": "ТСИ — для питания электроинструмента",
+    "series": "ТСЗИ",
+    "subtype": "для питания электроинструмента",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Первичные напряжения",
+        "value": "380/220",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Вторичные напряжения",
+        "value": "220/127;42;36;12",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "15",
+        "unit": "%",
+        "page": 89
+      },
+      {
+        "label": "L",
+        "value": "398",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "H",
+        "value": "407",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "Масса",
+        "value": "43",
+        "unit": "кг",
+        "page": 89
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 89
+      }
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТСЗИ-4,0",
+    "execution": "для питания электроинструмента",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      89,
+      90
+    ],
+    "sourceRow": {
+      "page": 89,
+      "designation": "ТСЗИ-4,0",
+      "execution": "для питания электроинструмента",
+      "kind": "explicit-model-row"
+    },
+    "sourceFamilyId": "tsi-tools",
+    "sourceRecordType": "explicit-model-row",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": null,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Первичные напряжения",
+        "value": "380/220",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Вторичные напряжения",
+        "value": "220/127;42;36;12",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "10",
+        "unit": "%",
+        "page": 89
+      },
+      {
+        "label": "L",
+        "value": "398",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "H",
+        "value": "407",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "Масса",
+        "value": "55",
+        "unit": "кг",
+        "page": 89
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 89
+      }
+    ],
+    "notes": [
+      "Page89 enclosure drawing and terminal details are labeled ТСНЗ-400,630, inconsistent with nearby ТСИ1,6–4,0 table; not assigned as exact TSI geometry. Power inferred from name is not normalized absent explicit power column."
+    ],
+    "image": "/catalog-source/transformers-2026/page-089.webp",
+    "imageSourcePage": 89,
+    "imageCaption": "Страница 89 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Первичные напряжения",
+        "raw": "380/220",
+        "unitAsPrinted": "В",
+        "sourcePage": 89
+      },
+      {
+        "label": "Вторичные напряжения",
+        "raw": "220/127;42;36;12",
+        "unitAsPrinted": "В",
+        "sourcePage": 89
+      },
+      {
+        "label": "Ток холостого хода",
+        "raw": "10",
+        "unitAsPrinted": "%",
+        "sourcePage": 89
+      },
+      {
+        "label": "L",
+        "raw": "398",
+        "unitAsPrinted": "мм",
+        "sourcePage": 89
+      },
+      {
+        "label": "H",
+        "raw": "407",
+        "unitAsPrinted": "мм",
+        "sourcePage": 89
+      },
+      {
+        "label": "Масса",
+        "raw": "55",
+        "unitAsPrinted": "кг",
+        "sourcePage": 89
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 89
+      }
+    ],
+    "id": "alageum-2026-tsi-4p0-enclosed",
+    "name": "ТСЗИ-4,0",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-tsi-tools",
+    "familyName": "ТСИ — для питания электроинструмента",
+    "series": "ТСЗИ",
+    "subtype": "для питания электроинструмента",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Первичные напряжения",
+        "value": "380/220",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Вторичные напряжения",
+        "value": "220/127;42;36;12",
+        "unit": "В",
+        "page": 89
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "10",
+        "unit": "%",
+        "page": 89
+      },
+      {
+        "label": "L",
+        "value": "398",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "H",
+        "value": "407",
+        "unit": "мм",
+        "page": 89
+      },
+      {
+        "label": "Масса",
+        "value": "55",
+        "unit": "кг",
+        "page": 89
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 89
+      }
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТСН(З)",
+    "execution": "",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      91,
+      92,
+      93,
+      94
+    ],
+    "sourceRow": null,
+    "sourceFamilyId": "tsn-nomex",
+    "sourceRecordType": "family",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": null,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-091.webp",
+    "imageSourcePage": 91,
+    "imageCaption": "Страница 91 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [],
+    "id": "tr2026-family-tsn-nomex",
+    "name": "ТСН(З) — с изоляцией Номекс",
+    "recordKind": "family",
+    "recordType": "catalog-family",
+    "series": "ТСН(З)",
+    "subtype": "",
+    "description": "",
+    "variantIds": [
+      "alageum-2026-tsn-160",
+      "alageum-2026-tsn-250",
+      "alageum-2026-tsn-400",
+      "alageum-2026-tsn-630"
+    ],
+    "configurations": [
+      {
+        "id": "alageum-2026-tsn-160-execution-1",
+        "designation": "ТСН без кожуха",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsn-160",
+        "page": 91,
+        "sourcePages": [
+          91,
+          92,
+          94
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsn-160-execution-1",
+          "modelId": "alageum-2026-tsn-160",
+          "familyId": "tsn-nomex",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСН без кожуха",
+          "sourcePages": [
+            91,
+            92,
+            94
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsn-160-execution-2",
+        "designation": "ТСНЗ с кожухом",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsn-160",
+        "page": 91,
+        "sourcePages": [
+          91,
+          92,
+          94
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsn-160-execution-2",
+          "modelId": "alageum-2026-tsn-160",
+          "familyId": "tsn-nomex",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСНЗ с кожухом",
+          "sourcePages": [
+            91,
+            92,
+            94
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsn-250-execution-1",
+        "designation": "ТСН без кожуха",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsn-250",
+        "page": 91,
+        "sourcePages": [
+          91,
+          92,
+          94
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsn-250-execution-1",
+          "modelId": "alageum-2026-tsn-250",
+          "familyId": "tsn-nomex",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСН без кожуха",
+          "sourcePages": [
+            91,
+            92,
+            94
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsn-250-execution-2",
+        "designation": "ТСНЗ с кожухом",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsn-250",
+        "page": 91,
+        "sourcePages": [
+          91,
+          92,
+          94
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsn-250-execution-2",
+          "modelId": "alageum-2026-tsn-250",
+          "familyId": "tsn-nomex",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСНЗ с кожухом",
+          "sourcePages": [
+            91,
+            92,
+            94
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsn-400-execution-1",
+        "designation": "ТСН без кожуха",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsn-400",
+        "page": 91,
+        "sourcePages": [
+          91,
+          92,
+          93,
+          94
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsn-400-execution-1",
+          "modelId": "alageum-2026-tsn-400",
+          "familyId": "tsn-nomex",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСН без кожуха",
+          "sourcePages": [
+            91,
+            92,
+            93,
+            94
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsn-400-execution-2",
+        "designation": "ТСНЗ с кожухом",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsn-400",
+        "page": 91,
+        "sourcePages": [
+          91,
+          92,
+          93,
+          94
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsn-400-execution-2",
+          "modelId": "alageum-2026-tsn-400",
+          "familyId": "tsn-nomex",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСНЗ с кожухом",
+          "sourcePages": [
+            91,
+            92,
+            93,
+            94
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsn-630-execution-1",
+        "designation": "ТСН без кожуха",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsn-630",
+        "page": 91,
+        "sourcePages": [
+          91,
+          92,
+          93,
+          94
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsn-630-execution-1",
+          "modelId": "alageum-2026-tsn-630",
+          "familyId": "tsn-nomex",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСН без кожуха",
+          "sourcePages": [
+            91,
+            92,
+            93,
+            94
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-2026-tsn-630-execution-2",
+        "designation": "ТСНЗ с кожухом",
+        "kind": "configuration",
+        "sourceKind": "explicit-construction-execution",
+        "modelId": "alageum-2026-tsn-630",
+        "page": 91,
+        "sourcePages": [
+          91,
+          92,
+          93,
+          94
+        ],
+        "specifications": [],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-2026-tsn-630-execution-2",
+          "modelId": "alageum-2026-tsn-630",
+          "familyId": "tsn-nomex",
+          "kind": "explicit-construction-execution",
+          "designation": "ТСНЗ с кожухом",
+          "sourcePages": [
+            91,
+            92,
+            93,
+            94
+          ],
+          "sku": null,
+          "note": "Named execution, not an invented full order SKU. Raw slash-pair dimensions remain unassigned unless source explicitly maps them."
+        },
+        "notes": []
+      }
+    ]
+  }
+];
+export default records;

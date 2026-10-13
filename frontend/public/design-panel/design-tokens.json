@@ -1,0 +1,482 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "meta": {
+    "name": "ALAGEUM Electric Digital System 2026",
+    "direction": "Industrial Authority Through Precision",
+    "version": "1.14.0",
+    "updated": "2026-10-12"
+  },
+  "color": {
+    "brand": {
+      "red": {
+        "$type": "color",
+        "$value": "#CE1727"
+      },
+      "red-hover": {
+        "$type": "color",
+        "$value": "#B71322"
+      },
+      "red-pressed": {
+        "$type": "color",
+        "$value": "#9D0C1D"
+      },
+      "red-soft": {
+        "$type": "color",
+        "$value": "#FFF1F3"
+      },
+      "surface-hover": {
+        "$type": "color",
+        "$value": "#FCE9EC"
+      },
+      "surface-pressed": {
+        "$type": "color",
+        "$value": "#F7D9DE"
+      },
+      "selected-surface": {
+        "$type": "color",
+        "$value": "#FFF1F3"
+      },
+      "selected-surface-hover": {
+        "$type": "color",
+        "$value": "#FBE4E8"
+      }
+    },
+    "neutral": {
+      "ink": {
+        "$type": "color",
+        "$value": "#1D1D1B"
+      },
+      "graphite": {
+        "$type": "color",
+        "$value": "#222528"
+      },
+      "graphite-2": {
+        "$type": "color",
+        "$value": "#2E3236"
+      },
+      "muted": {
+        "$type": "color",
+        "$value": "#676D73"
+      },
+      "muted-2": {
+        "$type": "color",
+        "$value": "#8A9096"
+      },
+      "white": {
+        "$type": "color",
+        "$value": "#FFFFFF"
+      },
+      "surface-subtle": {
+        "$type": "color",
+        "$value": "#F6F7F8"
+      },
+      "surface-hover": {
+        "$type": "color",
+        "$value": "#F2F3F4"
+      },
+      "surface-soft": {
+        "$type": "color",
+        "$value": "#EFF1F3"
+      },
+      "line": {
+        "$type": "color",
+        "$value": "#C6C6C6"
+      },
+      "line-strong": {
+        "$type": "color",
+        "$value": "#B9BEC4"
+      },
+      "dark": {
+        "$type": "color",
+        "$value": "#17191B"
+      },
+      "dark-2": {
+        "$type": "color",
+        "$value": "#202326"
+      },
+      "dark-line": {
+        "$type": "color",
+        "$value": "#3B3F43"
+      },
+      "dark-text": {
+        "$type": "color",
+        "$value": "#F4F5F6"
+      },
+      "dark-muted": {
+        "$type": "color",
+        "$value": "#B4BAC0"
+      },
+      "dark-hover": {
+        "$type": "color",
+        "$value": "#101214"
+      }
+    },
+    "semantic": {
+      "success": {
+        "$type": "color",
+        "$value": "#286548"
+      },
+      "success-bg": {
+        "$type": "color",
+        "$value": "#F1F7F4"
+      },
+      "warning": {
+        "$type": "color",
+        "$value": "#8A5C13"
+      },
+      "warning-bg": {
+        "$type": "color",
+        "$value": "#FFF8EC"
+      },
+      "danger": {
+        "$type": "color",
+        "$value": "#A61C2C"
+      },
+      "danger-bg": {
+        "$type": "color",
+        "$value": "#FFF2F3"
+      },
+      "info": {
+        "$type": "color",
+        "$value": "#3C596E"
+      },
+      "info-bg": {
+        "$type": "color",
+        "$value": "#F2F6F8"
+      }
+    }
+  },
+  "space": {
+    "4": {
+      "$type": "dimension",
+      "$value": "4px"
+    },
+    "8": {
+      "$type": "dimension",
+      "$value": "8px"
+    },
+    "12": {
+      "$type": "dimension",
+      "$value": "12px"
+    },
+    "16": {
+      "$type": "dimension",
+      "$value": "16px"
+    },
+    "20": {
+      "$type": "dimension",
+      "$value": "20px"
+    },
+    "24": {
+      "$type": "dimension",
+      "$value": "24px"
+    },
+    "32": {
+      "$type": "dimension",
+      "$value": "32px"
+    },
+    "40": {
+      "$type": "dimension",
+      "$value": "40px"
+    },
+    "48": {
+      "$type": "dimension",
+      "$value": "48px"
+    },
+    "64": {
+      "$type": "dimension",
+      "$value": "64px"
+    },
+    "80": {
+      "$type": "dimension",
+      "$value": "80px"
+    },
+    "96": {
+      "$type": "dimension",
+      "$value": "96px"
+    },
+    "120": {
+      "$type": "dimension",
+      "$value": "120px"
+    }
+  },
+  "radius": {
+    "none": {
+      "$type": "dimension",
+      "$value": "0px"
+    },
+    "xs": {
+      "$type": "dimension",
+      "$value": "2px"
+    },
+    "sm": {
+      "$type": "dimension",
+      "$value": "4px"
+    },
+    "overlay": {
+      "$type": "dimension",
+      "$value": "6px"
+    }
+  },
+  "control": {
+    "compact": {
+      "$type": "dimension",
+      "$value": "34px"
+    },
+    "default": {
+      "$type": "dimension",
+      "$value": "42px"
+    },
+    "large": {
+      "$type": "dimension",
+      "$value": "48px"
+    }
+  },
+  "layout": {
+    "desktop": {
+      "$type": "dimension",
+      "$value": "1440px"
+    },
+    "page-max": {
+      "$type": "dimension",
+      "$value": "1600px"
+    },
+    "content-max": {
+      "$type": "dimension",
+      "$value": "1320px"
+    },
+    "gutter": {
+      "$type": "dimension",
+      "$value": "24px"
+    },
+    "tab-fixed": {
+      "$type": "dimension",
+      "$value": "148px"
+    }
+  },
+  "typography": {
+    "metadata-family": {
+      "$type": "fontFamily",
+      "$value": [
+        "Futura",
+        "Futura PT",
+        "Century Gothic",
+        "Trebuchet MS",
+        "sans-serif"
+      ]
+    },
+    "metadata-weight": {
+      "$type": "fontWeight",
+      "$value": 300
+    },
+    "metadata-size": {
+      "$type": "dimension",
+      "$value": "11px"
+    },
+    "metadata-line-height": {
+      "$type": "number",
+      "$value": 1.4
+    }
+  },
+  "selection": {
+    "outer-size": {
+      "$type": "dimension",
+      "$value": "18px"
+    },
+    "inner-size": {
+      "$type": "dimension",
+      "$value": "8px"
+    },
+    "neutral": {
+      "$type": "color",
+      "$value": "#AEB4BA"
+    },
+    "selected-hover-inner": {
+      "$type": "color",
+      "$value": "#AEB4BA"
+    },
+    "pulse-duration": {
+      "$type": "duration",
+      "$value": "430ms"
+    }
+  },
+  "interaction": {
+    "hover-surface": {
+      "$type": "color",
+      "$value": "#F2F3F4"
+    },
+    "select-menu-gap": {
+      "$type": "dimension",
+      "$value": "0px"
+    },
+    "select-divider-inset": {
+      "$type": "dimension",
+      "$value": "12px"
+    },
+    "pressed-surface": {
+      "$type": "color",
+      "$value": "#E3E6E8"
+    },
+    "form-hover-border": {
+      "$type": "color",
+      "$value": "#D65A67"
+    },
+    "tab-selected-glow": {
+      "$type": "color",
+      "$value": "#CE172724"
+    },
+    "tab-selected-glow-soft": {
+      "$type": "color",
+      "$value": "#CE17270E"
+    },
+    "tab-focus-ring": {
+      "$type": "color",
+      "$value": "#CE17276B"
+    },
+    "navigation-focus-divider": {
+      "$type": "color",
+      "$value": "#6F777F57"
+    },
+    "navigation-backdrop-tint": {
+      "$type": "color",
+      "$value": "#464C520E"
+    },
+    "navigation-backdrop-blur": {
+      "$type": "dimension",
+      "$value": "6px"
+    }
+  },
+  "motion": {
+    "micro": {
+      "$type": "duration",
+      "$value": "120ms"
+    },
+    "control": {
+      "$type": "duration",
+      "$value": "220ms"
+    },
+    "component": {
+      "$type": "duration",
+      "$value": "340ms"
+    },
+    "surface": {
+      "$type": "duration",
+      "$value": "460ms"
+    },
+    "enter": {
+      "$type": "duration",
+      "$value": "620ms"
+    },
+    "easing-standard": {
+      "$type": "cubicBezier",
+      "$value": [
+        0.2,
+        0,
+        0,
+        1
+      ]
+    },
+    "easing-out": {
+      "$type": "cubicBezier",
+      "$value": [
+        0.16,
+        1,
+        0.3,
+        1
+      ]
+    },
+    "easing-emphasized": {
+      "$type": "cubicBezier",
+      "$value": [
+        0.22,
+        1,
+        0.36,
+        1
+      ]
+    },
+    "navigation-indicator-duration": {
+      "$type": "duration",
+      "$value": "420ms"
+    },
+    "navigation-stagger": {
+      "$type": "duration",
+      "$value": "42ms"
+    },
+    "selection-pulse": {
+      "$type": "duration",
+      "$value": "520ms"
+    },
+    "tabs": {
+      "committedUnderline": {
+        "height": "4px",
+        "duration": "430ms",
+        "easing": "emphasized"
+      },
+      "previewUnderline": {
+        "height": "2px",
+        "duration": "390ms",
+        "easing": "emphasized"
+      },
+      "scrollbar": "hidden"
+    },
+    "navigationIndicators": {
+      "committed": {
+        "height": "4px",
+        "duration": "430ms",
+        "easing": "cubic-bezier(.22,1,.36,1)"
+      },
+      "preview": {
+        "height": "2px",
+        "duration": "390ms",
+        "easing": "cubic-bezier(.22,1,.36,1)"
+      },
+      "behavior": "Committed line follows selected tab; preview line follows hover/focus and returns on exit."
+    }
+  },
+  "version": "1.14.0",
+  "component": {
+    "navigation": {
+      "megaSectionDivider": {
+        "placement": "bottom",
+        "default": "#C6C6C6",
+        "hover": "#CE1727",
+        "surfaceHover": "transparent"
+      }
+    }
+  },
+  "corporate": {
+    "canvas": {
+      "$type": "color",
+      "$value": "#F2F3F4"
+    },
+    "soft": {
+      "$type": "color",
+      "$value": "#E9ECEF"
+    },
+    "fog": {
+      "$type": "color",
+      "$value": "#EFF1F3"
+    },
+    "section-space-desktop": {
+      "$type": "dimension",
+      "$value": "76px"
+    },
+    "section-space-mobile": {
+      "$type": "dimension",
+      "$value": "48px"
+    },
+    "body-size": {
+      "$type": "dimension",
+      "$value": "15px"
+    },
+    "body-line-height": {
+      "$type": "number",
+      "$value": 1.75
+    },
+    "surface-usage": "Alternate light-gray narrative chapters with white content surfaces. Keep engineering layouts and semantic status colors unchanged. Use actual attributed photography, never invented projects.",
+    "graphite": {
+      "$type": "color",
+      "$value": "#222528"
+    }
+  }
+}

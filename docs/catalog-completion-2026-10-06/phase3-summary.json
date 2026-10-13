@@ -1,0 +1,34 @@
+{
+  "format": "alageum-catalog-completion-phase3-v1",
+  "basePublicHead": "43bea601992c58837b2ecd55f3ddeb69430379d3",
+  "sourceReferenceFamilies": 5,
+  "sourceReferenceLinks": 10,
+  "sourceRecords": 843,
+  "sourceDataChanged": false,
+  "assetBindingsChanged": false,
+  "changes": [
+    "Guarded source-panel links outside family members and specification summaries",
+    "Exact configuration designation and multiline value text nodes retained; units and pages separate",
+    "Missing or out-of-range source page labels suppressed",
+    "Stale transformer category count570 corrected to590 after20admissions",
+    "Bounded successful copper,NTMI and source-panel screenshots retained in existing tests"
+  ],
+  "verification": {
+    "frontendUnitPassed": 437,
+    "frontendLint": "passed",
+    "frontendBuild": "passed,894pages",
+    "nativeCmsAssertions": "unchanged",
+    "sourceAndAssetGenerators": "passed",
+    "coverageReproducibility": "passed",
+    "independentReviewSha256": "dd0245ea9233d764f45feb0c7061281179756884b56ec7c844b449de429ab35c",
+    "hostedBrowserCasesExpected": 94,
+    "exactHeadHostedStatus": "pending publication",
+    "backendCode": "unchanged since43bea601;577unit and104PostgreSQL passed on that head"
+  },
+  "knownLimitations": {
+    "explicitEntriesWithoutSourceGroundedOrSelectable3D": 259,
+    "familiesRequiringConstructionEvidence": 33,
+    "securityAudits": "enforced and failed:frontend6high;Node29high3moderate on43bea601",
+    "deployment": "not merged or deployed"
+  }
+}

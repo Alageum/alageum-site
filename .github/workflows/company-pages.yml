@@ -1,0 +1,56 @@
+name: Company pages browser QA
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  company-pages:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: frontend
+    env:
+      NEXT_TELEMETRY_DISABLED: "1"
+      NEXT_PUBLIC_CATALOG_SOURCE: static
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+      - run: npm run build
+      - run: npx playwright install --with-deps chromium
+      - name: Verify desktop and mobile public-page interactions
+        run: npm run test:e2e:company
+      - name: Capture four viewport sizes and check overflow
+        if: always()
+        shell: bash
+        run: |
+          npm run start -- --hostname 127.0.0.1 --port 3280 > company-preview.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+          deadline=$((SECONDS + 60))
+          until curl --fail --silent http://127.0.0.1:3280 > /dev/null; do
+            if ! kill -0 "$server_pid" 2>/dev/null || (( SECONDS >= deadline )); then
+              cat company-preview.log
+              exit 1
+            fi
+            sleep 1
+          done
+          npm run audit:company
+      - name: Retain reviewable screenshots and failure traces
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: company-pages-visual-qa-${{ github.sha }}
+          path: |
+            artifacts/company-pages/
+            frontend/test-results/company/
+            frontend/company-preview.log
+          retention-days: 14

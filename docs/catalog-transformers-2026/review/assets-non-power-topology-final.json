@@ -1,0 +1,652 @@
+{
+  "format": "independent-transformer-non-power-topology-final-v1",
+  "status": "approved-with-geometry-exclusion",
+  "reviewedAt": "2026-10-05T08:34:57.588762+00:00",
+  "reviewedSourcePages": [
+    12,
+    13,
+    16,
+    17,
+    22,
+    23,
+    30,
+    31,
+    33,
+    35,
+    37,
+    39,
+    42,
+    43,
+    46,
+    47,
+    49,
+    52,
+    53,
+    56,
+    57,
+    59,
+    61,
+    66,
+    67,
+    69,
+    71,
+    74,
+    75,
+    80,
+    81,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    92,
+    93,
+    94,
+    96,
+    97,
+    98,
+    99,
+    100,
+    102,
+    104,
+    107,
+    108,
+    165,
+    166
+  ],
+  "reviewedLibraryHashes": {
+    "frontend/lib/catalog/models/transformer2026AssetEvidence.json": "6d54c9e8e83409384de5dce6233f306ceeb1bcdcdac384ef57f778251edb519d",
+    "frontend/lib/catalog/models/transformer2026Bindings.js": "ec767070298a5aa4bbd5dcf4b77581e05b171febd9fb585964fd2c55da232712",
+    "frontend/lib/catalog/models/transformer2026Geometry.js": "32f91701425584f0bfa4e7b138525329fb6527588344fc5a574ed8dea7f0ef09",
+    "frontend/lib/catalog/models/transformer2026GroupMap.js": "057a7978bdd7f6f26761c4664904a5f93e48805c1c8ffee591c3eccf5bd39b0b",
+    "frontend/lib/catalog/models/transformer2026Icons.js": "9e49caab2b69cbb165c4a1b56f12a317d06cc910091cbae39c355bab63cca405",
+    "frontend/lib/catalog/models/transformer2026PowerLayouts.js": "efd30d083dfe7d0cc5c609508301877774b05e855b9b501056bc25fdff9ff265",
+    "frontend/lib/catalog/models/transformer2026Types.js": "56ee5e7de958abeae364b565d8799430fc33b7fb25ca5f2cb665d17db020b9a8"
+  },
+  "decisions": [
+    {
+      "type": "tr26-corrugated-small",
+      "sourcePages": [
+        12,
+        22,
+        30,
+        42,
+        46,
+        56,
+        59
+      ],
+      "geometryApproved": true,
+      "iconApproved": true,
+      "sourceSupportedConstruction": "Видны гофрированный бак, два ряда верхних вводов, высокий маслозаливной патрубок и швеллерное основание. Катки являются опцией, в модели не добавлены.",
+      "limits": "Illustrative exterior topology only; arbitrary scene proportions, simplified fins/sheds/fittings, no exact execution/CAD/dimensional or hidden-internal claim.",
+      "resolution": "Source-visible part counts, grouping, terminal direction, tank/cooling/enclosure form, and conservative source-visible supports rechecked in final rendered views and mesh code."
+    },
+    {
+      "type": "tr26-corrugated-large",
+      "sourcePages": [
+        13,
+        23,
+        31,
+        43,
+        47,
+        57
+      ],
+      "geometryApproved": true,
+      "iconApproved": true,
+      "sourceSupportedConstruction": "Высокий бак с гофрами на длинных и торцевых стенках, три более низких ввода ВН и четыре более высоких ввода НН с плоскими контактными пластинами по фронтальной и торцевой проекциям. Расширителя нет.",
+      "limits": "Illustrative exterior topology only; arbitrary scene proportions, simplified fins/sheds/fittings, no exact execution/CAD/dimensional or hidden-internal claim.",
+      "resolution": "Source-visible part counts, grouping, terminal direction, tank/cooling/enclosure form, and conservative source-visible supports rechecked in final rendered views and mesh code."
+    },
+    {
+      "type": "tr26-isolating",
+      "sourcePages": [
+        49
+      ],
+      "geometryApproved": true,
+      "iconApproved": true,
+      "sourceSupportedConstruction": "На плане показаны два ряда по три ввода; не используется четырехвыводный ряд обычного ТМГ.",
+      "limits": "Illustrative exterior topology only; arbitrary scene proportions, simplified fins/sheds/fittings, no exact execution/CAD/dimensional or hidden-internal claim.",
+      "resolution": "Source-visible part counts, grouping, terminal direction, tank/cooling/enclosure form, and conservative source-visible supports rechecked in final rendered views and mesh code."
+    },
+    {
+      "type": "tr26-conservator-small",
+      "sourcePages": [
+        16,
+        52
+      ],
+      "geometryApproved": true,
+      "iconApproved": true,
+      "sourceSupportedConstruction": "Расширитель над одним торцом бака, его цилиндрическая форма видна в двух проекциях; три высоких и четыре малых верхних ввода.",
+      "limits": "Illustrative exterior topology only; arbitrary scene proportions, simplified fins/sheds/fittings, no exact execution/CAD/dimensional or hidden-internal claim.",
+      "resolution": "Source-visible part counts, grouping, terminal direction, tank/cooling/enclosure form, and conservative source-visible supports rechecked in final rendered views and mesh code."
+    },
+    {
+      "type": "tr26-conservator-large",
+      "sourcePages": [
+        17,
+        53
+      ],
+      "geometryApproved": true,
+      "iconApproved": true,
+      "sourceSupportedConstruction": "Высокий гофрированный бак и расширитель на торцевой опоре; три более низких ввода ВН и четыре более высоких ввода НН с плоскими контактными пластинами. Высоты условные, иерархия сохранена по источнику.",
+      "limits": "Illustrative exterior topology only; arbitrary scene proportions, simplified fins/sheds/fittings, no exact execution/CAD/dimensional or hidden-internal claim.",
+      "resolution": "Source-visible part counts, grouping, terminal direction, tank/cooling/enclosure form, and conservative source-visible supports rechecked in final rendered views and mesh code."
+    },
+    {
+      "type": "tr26-rpn-corrugated",
+      "sourcePages": [
+        33
+      ],
+      "geometryApproved": true,
+      "iconApproved": true,
+      "sourceSupportedConstruction": "Дополнительный наружный короб и вал привода отличают чертеж ТМГиН от стандартного ТМГ; внутренний переключатель не изображен.",
+      "limits": "Illustrative exterior topology only; arbitrary scene proportions, simplified fins/sheds/fittings, no exact execution/CAD/dimensional or hidden-internal claim.",
+      "resolution": "Source-visible part counts, grouping, terminal direction, tank/cooling/enclosure form, and conservative source-visible supports rechecked in final rendered views and mesh code."
+    },
+    {
+      "type": "tr26-pole-bracket",
+      "sourcePages": [
+        35
+      ],
+      "geometryApproved": true,
+      "iconApproved": true,
+      "sourceSupportedConstruction": "Две вертикальные полосы и поперечина кронштейна на стенке видны в фасаде. Опорный столб в источнике отсутствует и не добавлен.",
+      "limits": "Illustrative exterior topology only; arbitrary scene proportions, simplified fins/sheds/fittings, no exact execution/CAD/dimensional or hidden-internal claim.",
+      "resolution": "Source-visible part counts, grouping, terminal direction, tank/cooling/enclosure form, and conservative source-visible supports rechecked in final rendered views and mesh code."
+    },
+    {
+      "type": "tr26-panel-side-terminals",
+      "sourcePages": [
+        37
+      ],
+      "geometryApproved": true,
+      "iconApproved": true,
+      "sourceSupportedConstruction": "Четыре раздельных радиаторных блока и вводы на противоположных торцах по плану; верхние открытые вводы и расширитель отсутствуют.",
+      "limits": "Illustrative exterior topology only; arbitrary scene proportions, simplified fins/sheds/fittings, no exact execution/CAD/dimensional or hidden-internal claim.",
+      "resolution": "Source-visible part counts, grouping, terminal direction, tank/cooling/enclosure form, and conservative source-visible supports rechecked in final rendered views and mesh code."
+    },
+    {
+      "type": "tr26-flanged-ends",
+      "sourcePages": [
+        39
+      ],
+      "geometryApproved": true,
+      "iconApproved": true,
+      "sourceSupportedConstruction": "ВН и НН размещены на отдельных фланцах противоположных концов крышки, а не в двух продольных рядах.",
+      "limits": "Illustrative exterior topology only; arbitrary scene proportions, simplified fins/sheds/fittings, no exact execution/CAD/dimensional or hidden-internal claim.",
+      "resolution": "Source-visible part counts, grouping, terminal direction, tank/cooling/enclosure form, and conservative source-visible supports rechecked in final rendered views and mesh code."
+    },
+    {
+      "type": "tr26-hood-small",
+      "sourcePages": [
+        61
+      ],
+      "geometryApproved": true,
+      "iconApproved": true,
+      "sourceSupportedConstruction": "Над вводами виден защитный трапециевидный колпак; внутренние соединения колпака не реконструируются.",
+      "limits": "Illustrative exterior topology only; arbitrary scene proportions, simplified fins/sheds/fittings, no exact execution/CAD/dimensional or hidden-internal claim.",
+      "resolution": "Source-visible part counts, grouping, terminal direction, tank/cooling/enclosure form, and conservative source-visible supports rechecked in final rendered views and mesh code."
+    },
+    {
+      "type": "tr26-hood-tall",
+      "sourcePages": [
+        66
+      ],
+      "geometryApproved": true,
+      "iconApproved": true,
+      "sourceSupportedConstruction": "Высокая узкая компоновка ТМПН с колпаком над верхними выводами и швеллерами; не боковая коробка.",
+      "limits": "Illustrative exterior topology only; arbitrary scene proportions, simplified fins/sheds/fittings, no exact execution/CAD/dimensional or hidden-internal claim.",
+      "resolution": "Source-visible part counts, grouping, terminal direction, tank/cooling/enclosure form, and conservative source-visible supports rechecked in final rendered views and mesh code."
+    },
+    {
+      "type": "tr26-side-terminal-box",
+      "sourcePages": [
+        67
+      ],
+      "geometryApproved": true,
+      "iconApproved": true,
+      "sourceSupportedConstruction": "Выступающая закрытая коробка на боковой стенке заменяет верхний колпак; невидимые клеммы остаются скрытыми.",
+      "limits": "Illustrative exterior topology only; arbitrary scene proportions, simplified fins/sheds/fittings, no exact execution/CAD/dimensional or hidden-internal claim.",
+      "resolution": "Source-visible part counts, grouping, terminal direction, tank/cooling/enclosure form, and conservative source-visible supports rechecked in final rendered views and mesh code."
+    },
+    {
+      "type": "tr26-heating-three-row",
+      "sourcePages": [
+        69
+      ],
+      "geometryApproved": true,
+      "iconApproved": true,
+      "sourceSupportedConstruction": "План показывает три ряда вводов вокруг переключателя. Условный разрыв стенки на чертеже не превращен в прозрачный бак.",
+      "limits": "Illustrative exterior topology only; arbitrary scene proportions, simplified fins/sheds/fittings, no exact execution/CAD/dimensional or hidden-internal claim.",
+      "resolution": "Source-visible part counts, grouping, terminal direction, tank/cooling/enclosure form, and conservative source-visible supports rechecked in final rendered views and mesh code."
+    },
+    {
+      "type": "tr26-heating-single-row",
+      "sourcePages": [
+        71
+      ],
+      "geometryApproved": true,
+      "iconApproved": true,
+      "sourceSupportedConstruction": "План показывает шесть вводов в одном ряду. Конструкция не объединена с трехрядным ТМТО страницы 69.",
+      "limits": "Illustrative exterior topology only; arbitrary scene proportions, simplified fins/sheds/fittings, no exact execution/CAD/dimensional or hidden-internal claim.",
+      "resolution": "Source-visible part counts, grouping, terminal direction, tank/cooling/enclosure form, and conservative source-visible supports rechecked in final rendered views and mesh code."
+    },
+    {
+      "type": "tr26-single-side-bushings",
+      "sourcePages": [
+        74
+      ],
+      "geometryApproved": true,
+      "iconApproved": true,
+      "sourceSupportedConstruction": "Два горизонтальных ввода на торце прямоугольного бака; малые выводы на крышке. Конфликт размеров таблицы не разрешается геометрией.",
+      "limits": "Illustrative exterior topology only; arbitrary scene proportions, simplified fins/sheds/fittings, no exact execution/CAD/dimensional or hidden-internal claim.",
+      "resolution": "Source-visible part counts, grouping, terminal direction, tank/cooling/enclosure form, and conservative source-visible supports rechecked in final rendered views and mesh code."
+    },
+    {
+      "type": "tr26-pole-cylinder",
+      "sourcePages": [
+        75
+      ],
+      "geometryApproved": true,
+      "iconApproved": true,
+      "sourceSupportedConstruction": "Цилиндрический бак, два высоких ввода и четыре малых верхних вывода по плану и боковой монтажный кронштейн.",
+      "limits": "Illustrative exterior topology only; arbitrary scene proportions, simplified fins/sheds/fittings, no exact execution/CAD/dimensional or hidden-internal claim.",
+      "resolution": "Source-visible part counts, grouping, terminal direction, tank/cooling/enclosure form, and conservative source-visible supports rechecked in final rendered views and mesh code."
+    },
+    {
+      "type": "tr26-dry-cast-open",
+      "sourcePages": [
+        80,
+        84
+      ],
+      "geometryApproved": true,
+      "iconApproved": true,
+      "sourceSupportedConstruction": "Три катушки, верхняя и нижняя стяжные балки, видимые диагональные связи и катки; корпус отсутствует.",
+      "limits": "Illustrative exterior topology only; arbitrary scene proportions, simplified fins/sheds/fittings, no exact execution/CAD/dimensional or hidden-internal claim.",
+      "resolution": "Source-visible part counts, grouping, terminal direction, tank/cooling/enclosure form, and conservative source-visible supports rechecked in final rendered views and mesh code."
+    },
+    {
+      "type": "tr26-dry-mesh-cutaway",
+      "sourcePages": [
+        81
+      ],
+      "geometryApproved": true,
+      "iconApproved": true,
+      "sourceSupportedConstruction": "Сохранен характер источника: верхняя сетка, средняя панель и раскрытый нижний фрагмент с видимыми катушками. Это иллюстративный разрез, не утверждение о постоянно открытом фасаде.",
+      "limits": "Illustrative exterior topology only; arbitrary scene proportions, simplified fins/sheds/fittings, no exact execution/CAD/dimensional or hidden-internal claim.",
+      "resolution": "Source-visible part counts, grouping, terminal direction, tank/cooling/enclosure form, and conservative source-visible supports rechecked in final rendered views and mesh code."
+    },
+    {
+      "type": "tr26-dry-foil-open",
+      "sourcePages": [
+        88
+      ],
+      "geometryApproved": true,
+      "iconApproved": true,
+      "sourceSupportedConstruction": "Три прямоугольных блока обмоток между открытыми балками и верхними клеммами, основание без кожуха.",
+      "limits": "Illustrative exterior topology only; arbitrary scene proportions, simplified fins/sheds/fittings, no exact execution/CAD/dimensional or hidden-internal claim.",
+      "resolution": "Source-visible part counts, grouping, terminal direction, tank/cooling/enclosure form, and conservative source-visible supports rechecked in final rendered views and mesh code."
+    },
+    {
+      "type": "tr26-dry-compact-louver",
+      "sourcePages": [
+        87
+      ],
+      "geometryApproved": true,
+      "iconApproved": true,
+      "sourceSupportedConstruction": "Компактный закрытый кожух с двумя зонами жалюзи, верхней клеммной областью и проушинами.",
+      "limits": "Illustrative exterior topology only; arbitrary scene proportions, simplified fins/sheds/fittings, no exact execution/CAD/dimensional or hidden-internal claim.",
+      "resolution": "Source-visible part counts, grouping, terminal direction, tank/cooling/enclosure form, and conservative source-visible supports rechecked in final rendered views and mesh code."
+    },
+    {
+      "type": "tr26-dry-top-bushings",
+      "sourcePages": [
+        90,
+        94
+      ],
+      "geometryApproved": true,
+      "iconApproved": true,
+      "sourceSupportedConstruction": "Закрытый кожух с двумя рядами жалюзи, тремя высокими и малыми верхними вводами; не сетчатый ТСНЗ страницы 93.",
+      "limits": "Illustrative exterior topology only; arbitrary scene proportions, simplified fins/sheds/fittings, no exact execution/CAD/dimensional or hidden-internal claim.",
+      "resolution": "Source-visible part counts, grouping, terminal direction, tank/cooling/enclosure form, and conservative source-visible supports rechecked in final rendered views and mesh code."
+    },
+    {
+      "type": "tr26-dry-nomex-open",
+      "sourcePages": [
+        92
+      ],
+      "geometryApproved": true,
+      "iconApproved": true,
+      "sourceSupportedConstruction": "Три блока обмоток, открытые балки, крупные передние клеммные пластины и колесная база; материал Номекс не моделируется геометрически.",
+      "limits": "Illustrative exterior topology only; arbitrary scene proportions, simplified fins/sheds/fittings, no exact execution/CAD/dimensional or hidden-internal claim.",
+      "resolution": "Source-visible part counts, grouping, terminal direction, tank/cooling/enclosure form, and conservative source-visible supports rechecked in final rendered views and mesh code."
+    },
+    {
+      "type": "tr26-dry-mesh-closed",
+      "sourcePages": [
+        93
+      ],
+      "geometryApproved": true,
+      "iconApproved": true,
+      "sourceSupportedConstruction": "Замкнутый фасад с верхней и нижней сетками и средней панелью. Кожух не заменяется открытыми катушками.",
+      "limits": "Illustrative exterior topology only; arbitrary scene proportions, simplified fins/sheds/fittings, no exact execution/CAD/dimensional or hidden-internal claim.",
+      "resolution": "Source-visible part counts, grouping, terminal direction, tank/cooling/enclosure form, and conservative source-visible supports rechecked in final rendered views and mesh code."
+    },
+    {
+      "type": "tr26-instrument-three-triangle",
+      "sourcePages": [
+        96
+      ],
+      "geometryApproved": true,
+      "iconApproved": true,
+      "sourceSupportedConstruction": "Круглая крышка и треугольное размещение трех вводов по плану; шестигранная схема крепления основания не подменяет форму бака. Шесть малых выводов расположены двумя группами.",
+      "limits": "Illustrative exterior topology only; arbitrary scene proportions, simplified fins/sheds/fittings, no exact execution/CAD/dimensional or hidden-internal claim.",
+      "resolution": "Source-visible part counts, grouping, terminal direction, tank/cooling/enclosure form, and conservative source-visible supports rechecked in final rendered views and mesh code."
+    },
+    {
+      "type": "tr26-instrument-two-round",
+      "sourcePages": [
+        97
+      ],
+      "geometryApproved": true,
+      "iconApproved": true,
+      "sourceSupportedConstruction": "Круглый бак на основании и два высоких ввода; трехвводная геометрия НТМИ исключена.",
+      "limits": "Illustrative exterior topology only; arbitrary scene proportions, simplified fins/sheds/fittings, no exact execution/CAD/dimensional or hidden-internal claim.",
+      "resolution": "Source-visible part counts, grouping, terminal direction, tank/cooling/enclosure form, and conservative source-visible supports rechecked in final rendered views and mesh code."
+    },
+    {
+      "type": "tr26-instrument-three-rect",
+      "sourcePages": [
+        98
+      ],
+      "geometryApproved": true,
+      "iconApproved": true,
+      "sourceSupportedConstruction": "Прямоугольный бак, три ввода ВН треугольником и семь малых выводов в одном ряду по трем проекциям НАМИ.",
+      "limits": "Illustrative exterior topology only; arbitrary scene proportions, simplified fins/sheds/fittings, no exact execution/CAD/dimensional or hidden-internal claim.",
+      "resolution": "Source-visible part counts, grouping, terminal direction, tank/cooling/enclosure form, and conservative source-visible supports rechecked in final rendered views and mesh code."
+    },
+    {
+      "type": "tr26-instrument-column",
+      "sourcePages": [
+        99,
+        100
+      ],
+      "geometryApproved": false,
+      "iconApproved": true,
+      "sourceSupportedConstruction": "Прямоугольный нижний бак, один высокий ребристый столб и цилиндрическая верхняя камера по одинаковой наружной схеме ЗОМ/ЗНОМ.",
+      "limits": "Illustrative exterior topology only; arbitrary scene proportions, simplified fins/sheds/fittings, no exact execution/CAD/dimensional or hidden-internal claim.",
+      "resolution": "Secondary symbols cannot be classified versus plugs; geometry remains withheld, primary-column silhouette only."
+    },
+    {
+      "type": "tr26-rail-single-conservator",
+      "sourcePages": [
+        102
+      ],
+      "geometryApproved": true,
+      "iconApproved": true,
+      "sourceSupportedConstruction": "Один высокий верхний ввод и боковой цилиндрический расширитель над небольшим гофрированным баком.",
+      "limits": "Illustrative exterior topology only; arbitrary scene proportions, simplified fins/sheds/fittings, no exact execution/CAD/dimensional or hidden-internal claim.",
+      "resolution": "Source-visible part counts, grouping, terminal direction, tank/cooling/enclosure form, and conservative source-visible supports rechecked in final rendered views and mesh code."
+    },
+    {
+      "type": "tr26-tilted-conservator",
+      "sourcePages": [
+        104
+      ],
+      "geometryApproved": true,
+      "iconApproved": true,
+      "sourceSupportedConstruction": "Три крупных наклонных ввода, ряд малых выводов и отдельный расширитель; компоновка прочитана по плану и двум видам.",
+      "limits": "Illustrative exterior topology only; arbitrary scene proportions, simplified fins/sheds/fittings, no exact execution/CAD/dimensional or hidden-internal claim.",
+      "resolution": "Source-visible part counts, grouping, terminal direction, tank/cooling/enclosure form, and conservative source-visible supports rechecked in final rendered views and mesh code."
+    },
+    {
+      "type": "tr26-tilted-sealed",
+      "sourcePages": [
+        107
+      ],
+      "geometryApproved": true,
+      "iconApproved": true,
+      "sourceSupportedConstruction": "Три наклонных крупных ввода на крышке гофрированного бака; расширитель отсутствует.",
+      "limits": "Illustrative exterior topology only; arbitrary scene proportions, simplified fins/sheds/fittings, no exact execution/CAD/dimensional or hidden-internal claim.",
+      "resolution": "Source-visible part counts, grouping, terminal direction, tank/cooling/enclosure form, and conservative source-visible supports rechecked in final rendered views and mesh code."
+    },
+    {
+      "type": "tr26-upright-sealed-35",
+      "sourcePages": [
+        108
+      ],
+      "geometryApproved": true,
+      "iconApproved": true,
+      "sourceSupportedConstruction": "В крупном исполнении чертеж показывает вертикальные, а не наклонные высокие вводы.",
+      "limits": "Illustrative exterior topology only; arbitrary scene proportions, simplified fins/sheds/fittings, no exact execution/CAD/dimensional or hidden-internal claim.",
+      "resolution": "Source-visible part counts, grouping, terminal direction, tank/cooling/enclosure form, and conservative source-visible supports rechecked in final rendered views and mesh code."
+    }
+  ],
+  "accessoryIconApprovals": [
+    "tr26-icon-temperature-relay",
+    "tr26-icon-temperature-probe",
+    "tr26-icon-vibration-damper"
+  ],
+  "accessoryLimits": "Source-photo exterior silhouettes only; relay controls and damper flange hole positions corrected. No 3D or exact technical/internal layout claim. Thermal-cabinet identity hold and unbound cooling-fan definition receive no runtime clearance.",
+  "renderEvidence": "Independent rerender: docs/catalog-transformers-2026/assets/qa; final perspective, plan/end sheets and large icon tiles inspected. No WebGL/browser validation claimed.",
+  "testEvidence": "docs/catalog-transformers-2026/review/assets-final-focused-tests.log:28passed,0failed; includes238old mapping stability and585record shape checks",
+  "initialFindingsAndCorrections": [
+    {
+      "types": [
+        "tr26-corrugated-large",
+        "tr26-conservator-large"
+      ],
+      "pages": [
+        13,
+        17,
+        23,
+        31,
+        43,
+        47,
+        53,
+        57
+      ],
+      "finding": "Four LV terminals are visibly taller with flat contact plates; three HV terminals shorter. Original mesh reverses this hierarchy."
+    },
+    {
+      "types": [
+        "tr26-isolating"
+      ],
+      "pages": [
+        49
+      ],
+      "finding": "Both three-terminal rows have matching visible heights; original mesh imposes unequal heights."
+    },
+    {
+      "types": [
+        "tr26-rpn-corrugated"
+      ],
+      "pages": [
+        33
+      ],
+      "finding": "Fill tube belongs opposite the visible drive case, not the same end; preserve four LV contact plates independently from three HV bushings."
+    },
+    {
+      "types": [
+        "tr26-pole-bracket",
+        "tr26-side-terminal-box"
+      ],
+      "pages": [
+        35,
+        67
+      ],
+      "finding": "Mounting/terminal-box long wall is smooth. Opposite long wall and short ends are finned. Original shared fin generator puts cooling behind bracket/box while omitting required short-end fins for pole form."
+    },
+    {
+      "types": [
+        "tr26-panel-side-terminals"
+      ],
+      "pages": [
+        37
+      ],
+      "finding": "Right end has three HV contacts; left plan shows two plated contacts, not assumed three. Requires direct source count resolution. Shared panel-leaf orientation also requires power primitive correction."
+    },
+    {
+      "types": [
+        "tr26-flanged-ends"
+      ],
+      "pages": [
+        39
+      ],
+      "finding": "Four plated LV contacts form staggered two-pair layout on opposite-end flange; original puts four porcelain terminals in straight line and reverses terminal-height hierarchy."
+    },
+    {
+      "types": [
+        "tr26-heating-three-row",
+        "tr26-heating-single-row"
+      ],
+      "pages": [
+        69,
+        71
+      ],
+      "finding": "Long walls have visible vertical cooling ribs; original flat tank omits them. Three-row version needs all nine contacts in icon; single-row source supports six contacts."
+    },
+    {
+      "types": [
+        "tr26-single-side-bushings"
+      ],
+      "pages": [
+        74
+      ],
+      "finding": "Two small LV terminals exit upper sidewall perpendicular to wall carrying two horizontal HV bushings; original places LV on roof."
+    },
+    {
+      "types": [
+        "tr26-pole-cylinder"
+      ],
+      "pages": [
+        75
+      ],
+      "finding": "Plan supports two large HV bushings and four small LV contacts, not original one/two. Preserve round tank and two external mounting brackets, without invented pole."
+    },
+    {
+      "types": [
+        "tr26-dry-cast-open"
+      ],
+      "pages": [
+        80,
+        84
+      ],
+      "finding": "Source has three diagonal front links: left-top to right-bottom, left-bottom to middle-top, middle-bottom to right-top. Original two-link inverted-V is incorrect."
+    },
+    {
+      "types": [
+        "tr26-dry-mesh-cutaway",
+        "tr26-dry-mesh-closed"
+      ],
+      "pages": [
+        81,
+        93
+      ],
+      "finding": "Keep cutaway versus closed front distinction. Source side has high terminal panel and lower mesh vent, absent or incomplete in original."
+    },
+    {
+      "types": [
+        "tr26-dry-foil-open"
+      ],
+      "pages": [
+        88
+      ],
+      "finding": "Nine front HV tabs and six rear LV tabs are visible; original three top tabs erase source busbar layout."
+    },
+    {
+      "types": [
+        "tr26-dry-compact-louver"
+      ],
+      "pages": [
+        87
+      ],
+      "finding": "Upper-right front detail is schematic cutaway; source side elevation has vents and no projecting terminal box. Original adds unsupported external box."
+    },
+    {
+      "types": [
+        "tr26-dry-top-bushings"
+      ],
+      "pages": [
+        90,
+        94
+      ],
+      "finding": "Three tall/four short roof contacts supported; side upper/lower vents missing from original. Preserve opaque enclosure and do not borrow mesh/cutaway execution."
+    },
+    {
+      "types": [
+        "tr26-dry-nomex-open"
+      ],
+      "pages": [
+        92
+      ],
+      "finding": "Three front and four rear upper terminal plates plus three front coil plates source-visible; original omits rear row."
+    },
+    {
+      "types": [
+        "tr26-instrument-three-triangle"
+      ],
+      "pages": [
+        96
+      ],
+      "finding": "Three HV triangular plan and six small secondaries supported. Polygon is mounting-hole diagram, not evidence that there is a hexagonal plate under the cylindrical tank; omit invented plate."
+    },
+    {
+      "types": [
+        "tr26-instrument-three-rect"
+      ],
+      "pages": [
+        98
+      ],
+      "finding": "Source plan shows triangular three HV and seven small LV contacts, not original straight-three plus four."
+    },
+    {
+      "types": [
+        "tr26-instrument-column"
+      ],
+      "pages": [
+        99,
+        100
+      ],
+      "finding": "Add source-obvious terminal above upper cylindrical chamber. Five planar small symbols cannot all be reliably classified as secondary bushings versus plugs; do not guess. Geometry withheld pending exact secondary-layout evidence; icon can represent primary exterior silhouette with limitation."
+    },
+    {
+      "types": [
+        "tr26-rail-single-conservator"
+      ],
+      "pages": [
+        102
+      ],
+      "finding": "Plan has three small LV contacts, not two."
+    },
+    {
+      "types": [
+        "tr26-tilted-conservator"
+      ],
+      "pages": [
+        104
+      ],
+      "finding": "Conservator runs along long front side with axis parallel tank long axis, not transverse at short end. Outer HV columns splay outward as well as tilt forward."
+    },
+    {
+      "types": [
+        "tr26-tilted-sealed"
+      ],
+      "pages": [
+        107
+      ],
+      "finding": "Outer HV columns splay outward as well as tilt forward; original three parallel tilts erase visible arrangement."
+    },
+    {
+      "types": [
+        "tr26-upright-sealed-35"
+      ],
+      "pages": [
+        108
+      ],
+      "finding": "Plan shows seven plated LV contacts, not four; retain three upright taller HV columns."
+    }
+  ]
+}

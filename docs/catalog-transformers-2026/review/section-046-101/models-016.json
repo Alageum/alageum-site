@@ -1,0 +1,2165 @@
+[
+  {
+    "id": "alageum-2026-tsl-20kv-250",
+    "familyId": "tsl-20kv",
+    "name": "ТСЛ-250",
+    "sourceDesignation": "ТСЛ-250",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      82,
+      83,
+      84
+    ],
+    "rawSpecs": [
+      {
+        "label": "Pо",
+        "raw": "1050",
+        "unitAsPrinted": "кВт",
+        "sourcePage": 82
+      },
+      {
+        "label": "Pк",
+        "raw": "3600",
+        "unitAsPrinted": "кВт",
+        "sourcePage": 82
+      },
+      {
+        "label": "Iо",
+        "raw": "0,6",
+        "unitAsPrinted": "%",
+        "sourcePage": 82
+      },
+      {
+        "label": "Uк",
+        "raw": "6",
+        "unitAsPrinted": "%",
+        "sourcePage": 82
+      },
+      {
+        "label": "МО",
+        "raw": "510",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "L",
+        "raw": "1502",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "B",
+        "raw": "730",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "H",
+        "raw": "1265",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "h",
+        "raw": "880",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "Масса",
+        "raw": "1250",
+        "unitAsPrinted": "кг",
+        "sourcePage": 83
+      },
+      {
+        "label": "Номинальная мощность",
+        "raw": "250",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 82
+      },
+      {
+        "label": "ВН",
+        "raw": "20",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 82
+      },
+      {
+        "label": "НН",
+        "raw": "0,4",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 82
+      },
+      {
+        "label": "Схема и группа соединения",
+        "raw": "Д/Ун-11",
+        "unitAsPrinted": null,
+        "sourcePage": 82
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "raw": "F",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "raw": "У3, УХЛ3, У1",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "raw": "У, УХЛ, Т",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Категория размещения",
+        "raw": "1;2;3",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "raw": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      }
+    ],
+    "assetFamilyIds": [
+      "dry-tsl-open-20"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Loss unit printed кВт with magnitudes600 etc; preserve source.",
+      "Purpose mentions ТСЛЗ enclosure option, but explicit table rows/dimensions name ТСЛ and drawing84 is IP00; do not apply these dimensions to enclosure."
+    ],
+    "series": "ТСЛ",
+    "context": "класса напряжения20кВ",
+    "powerKva": 250,
+    "voltageRaw": "20/0,4 кВ",
+    "commonProseGroupIds": [
+      "common-prose-11-p82"
+    ],
+    "designation": "ТСЛ-250",
+    "execution": "класса напряжения20кВ",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 82,
+      "designation": "ТСЛ-250",
+      "execution": "класса напряжения20кВ",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Pо",
+        "value": "1050",
+        "unit": "кВт",
+        "page": 82
+      },
+      {
+        "label": "Pк",
+        "value": "3600",
+        "unit": "кВт",
+        "page": 82
+      },
+      {
+        "label": "Iо",
+        "value": "0,6",
+        "unit": "%",
+        "page": 82
+      },
+      {
+        "label": "Uк",
+        "value": "6",
+        "unit": "%",
+        "page": 82
+      },
+      {
+        "label": "МО",
+        "value": "510",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "L",
+        "value": "1502",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "B",
+        "value": "730",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "H",
+        "value": "1265",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "h",
+        "value": "880",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "Масса",
+        "value": "1250",
+        "unit": "кг",
+        "page": 83
+      },
+      {
+        "label": "Номинальная мощность",
+        "value": "250",
+        "unit": "кВА",
+        "page": 82
+      },
+      {
+        "label": "ВН",
+        "value": "20",
+        "unit": "кВ",
+        "page": 82
+      },
+      {
+        "label": "НН",
+        "value": "0,4",
+        "unit": "кВ",
+        "page": 82
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "Д/Ун-11",
+        "unit": null,
+        "page": 82
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "value": "F",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "value": "У3, УХЛ3, У1",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "value": "У, УХЛ, Т",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Категория размещения",
+        "value": "1;2;3",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "value": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-tsl-20kv-400",
+    "familyId": "tsl-20kv",
+    "name": "ТСЛ-400",
+    "sourceDesignation": "ТСЛ-400",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      82,
+      83,
+      84
+    ],
+    "rawSpecs": [
+      {
+        "label": "Pо",
+        "raw": "1500",
+        "unitAsPrinted": "кВт",
+        "sourcePage": 82
+      },
+      {
+        "label": "Pк",
+        "raw": "4500",
+        "unitAsPrinted": "кВт",
+        "sourcePage": 82
+      },
+      {
+        "label": "Iо",
+        "raw": "0,8",
+        "unitAsPrinted": "%",
+        "sourcePage": 82
+      },
+      {
+        "label": "Uк",
+        "raw": "6",
+        "unitAsPrinted": "%",
+        "sourcePage": 82
+      },
+      {
+        "label": "МО",
+        "raw": "515",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "L",
+        "raw": "1532",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "B",
+        "raw": "850",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "H",
+        "raw": "1450",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "h",
+        "raw": "1055",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "Масса",
+        "raw": "1650",
+        "unitAsPrinted": "кг",
+        "sourcePage": 83
+      },
+      {
+        "label": "Номинальная мощность",
+        "raw": "400",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 82
+      },
+      {
+        "label": "ВН",
+        "raw": "20",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 82
+      },
+      {
+        "label": "НН",
+        "raw": "0,4",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 82
+      },
+      {
+        "label": "Схема и группа соединения",
+        "raw": "Д/Ун-11",
+        "unitAsPrinted": null,
+        "sourcePage": 82
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "raw": "F",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "raw": "У3, УХЛ3, У1",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "raw": "У, УХЛ, Т",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Категория размещения",
+        "raw": "1;2;3",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "raw": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      }
+    ],
+    "assetFamilyIds": [
+      "dry-tsl-open-20"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Loss unit printed кВт with magnitudes600 etc; preserve source.",
+      "Purpose mentions ТСЛЗ enclosure option, but explicit table rows/dimensions name ТСЛ and drawing84 is IP00; do not apply these dimensions to enclosure."
+    ],
+    "series": "ТСЛ",
+    "context": "класса напряжения20кВ",
+    "powerKva": 400,
+    "voltageRaw": "20/0,4 кВ",
+    "commonProseGroupIds": [
+      "common-prose-11-p82"
+    ],
+    "designation": "ТСЛ-400",
+    "execution": "класса напряжения20кВ",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 82,
+      "designation": "ТСЛ-400",
+      "execution": "класса напряжения20кВ",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Pо",
+        "value": "1500",
+        "unit": "кВт",
+        "page": 82
+      },
+      {
+        "label": "Pк",
+        "value": "4500",
+        "unit": "кВт",
+        "page": 82
+      },
+      {
+        "label": "Iо",
+        "value": "0,8",
+        "unit": "%",
+        "page": 82
+      },
+      {
+        "label": "Uк",
+        "value": "6",
+        "unit": "%",
+        "page": 82
+      },
+      {
+        "label": "МО",
+        "value": "515",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "L",
+        "value": "1532",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "B",
+        "value": "850",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "H",
+        "value": "1450",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "h",
+        "value": "1055",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "Масса",
+        "value": "1650",
+        "unit": "кг",
+        "page": 83
+      },
+      {
+        "label": "Номинальная мощность",
+        "value": "400",
+        "unit": "кВА",
+        "page": 82
+      },
+      {
+        "label": "ВН",
+        "value": "20",
+        "unit": "кВ",
+        "page": 82
+      },
+      {
+        "label": "НН",
+        "value": "0,4",
+        "unit": "кВ",
+        "page": 82
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "Д/Ун-11",
+        "unit": null,
+        "page": 82
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "value": "F",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "value": "У3, УХЛ3, У1",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "value": "У, УХЛ, Т",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Категория размещения",
+        "value": "1;2;3",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "value": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-tsl-20kv-630",
+    "familyId": "tsl-20kv",
+    "name": "ТСЛ-630",
+    "sourceDesignation": "ТСЛ-630",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      82,
+      83,
+      84
+    ],
+    "rawSpecs": [
+      {
+        "label": "Pо",
+        "raw": "1900",
+        "unitAsPrinted": "кВт",
+        "sourcePage": 82
+      },
+      {
+        "label": "Pк",
+        "raw": "6000",
+        "unitAsPrinted": "кВт",
+        "sourcePage": 82
+      },
+      {
+        "label": "Iо",
+        "raw": "0,8",
+        "unitAsPrinted": "%",
+        "sourcePage": 82
+      },
+      {
+        "label": "Uк",
+        "raw": "6",
+        "unitAsPrinted": "%",
+        "sourcePage": 82
+      },
+      {
+        "label": "МО",
+        "raw": "590",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "L",
+        "raw": "1732",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "B",
+        "raw": "850",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "H",
+        "raw": "1460",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "h",
+        "raw": "1035",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "Масса",
+        "raw": "2330",
+        "unitAsPrinted": "кг",
+        "sourcePage": 83
+      },
+      {
+        "label": "Номинальная мощность",
+        "raw": "630",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 82
+      },
+      {
+        "label": "ВН",
+        "raw": "20",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 82
+      },
+      {
+        "label": "НН",
+        "raw": "0,4",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 82
+      },
+      {
+        "label": "Схема и группа соединения",
+        "raw": "Д/Ун-11",
+        "unitAsPrinted": null,
+        "sourcePage": 82
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "raw": "F",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "raw": "У3, УХЛ3, У1",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "raw": "У, УХЛ, Т",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Категория размещения",
+        "raw": "1;2;3",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "raw": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      }
+    ],
+    "assetFamilyIds": [
+      "dry-tsl-open-20"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Loss unit printed кВт with magnitudes600 etc; preserve source.",
+      "Purpose mentions ТСЛЗ enclosure option, but explicit table rows/dimensions name ТСЛ and drawing84 is IP00; do not apply these dimensions to enclosure."
+    ],
+    "series": "ТСЛ",
+    "context": "класса напряжения20кВ",
+    "powerKva": 630,
+    "voltageRaw": "20/0,4 кВ",
+    "commonProseGroupIds": [
+      "common-prose-11-p82"
+    ],
+    "designation": "ТСЛ-630",
+    "execution": "класса напряжения20кВ",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 82,
+      "designation": "ТСЛ-630",
+      "execution": "класса напряжения20кВ",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Pо",
+        "value": "1900",
+        "unit": "кВт",
+        "page": 82
+      },
+      {
+        "label": "Pк",
+        "value": "6000",
+        "unit": "кВт",
+        "page": 82
+      },
+      {
+        "label": "Iо",
+        "value": "0,8",
+        "unit": "%",
+        "page": 82
+      },
+      {
+        "label": "Uк",
+        "value": "6",
+        "unit": "%",
+        "page": 82
+      },
+      {
+        "label": "МО",
+        "value": "590",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "L",
+        "value": "1732",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "B",
+        "value": "850",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "H",
+        "value": "1460",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "h",
+        "value": "1035",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "Масса",
+        "value": "2330",
+        "unit": "кг",
+        "page": 83
+      },
+      {
+        "label": "Номинальная мощность",
+        "value": "630",
+        "unit": "кВА",
+        "page": 82
+      },
+      {
+        "label": "ВН",
+        "value": "20",
+        "unit": "кВ",
+        "page": 82
+      },
+      {
+        "label": "НН",
+        "value": "0,4",
+        "unit": "кВ",
+        "page": 82
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "Д/Ун-11",
+        "unit": null,
+        "page": 82
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "value": "F",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "value": "У3, УХЛ3, У1",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "value": "У, УХЛ, Т",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Категория размещения",
+        "value": "1;2;3",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "value": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-tsl-20kv-1000",
+    "familyId": "tsl-20kv",
+    "name": "ТСЛ-1000",
+    "sourceDesignation": "ТСЛ-1000",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      82,
+      83,
+      84
+    ],
+    "rawSpecs": [
+      {
+        "label": "Pо",
+        "raw": "2800",
+        "unitAsPrinted": "кВт",
+        "sourcePage": 82
+      },
+      {
+        "label": "Pк",
+        "raw": "8500",
+        "unitAsPrinted": "кВт",
+        "sourcePage": 82
+      },
+      {
+        "label": "Iо",
+        "raw": "0,4",
+        "unitAsPrinted": "%",
+        "sourcePage": 82
+      },
+      {
+        "label": "Uк",
+        "raw": "6",
+        "unitAsPrinted": "%",
+        "sourcePage": 82
+      },
+      {
+        "label": "МО",
+        "raw": "625",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "L",
+        "raw": "1842",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "B",
+        "raw": "1000",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "H",
+        "raw": "1670",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "h",
+        "raw": "1200",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "Масса",
+        "raw": "3130",
+        "unitAsPrinted": "кг",
+        "sourcePage": 83
+      },
+      {
+        "label": "Номинальная мощность",
+        "raw": "1000",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 82
+      },
+      {
+        "label": "ВН",
+        "raw": "20",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 82
+      },
+      {
+        "label": "НН",
+        "raw": "0,4",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 82
+      },
+      {
+        "label": "Схема и группа соединения",
+        "raw": "Д/Ун-11",
+        "unitAsPrinted": null,
+        "sourcePage": 82
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "raw": "F",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "raw": "У3, УХЛ3, У1",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "raw": "У, УХЛ, Т",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Категория размещения",
+        "raw": "1;2;3",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "raw": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      }
+    ],
+    "assetFamilyIds": [
+      "dry-tsl-open-20"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Loss unit printed кВт with magnitudes600 etc; preserve source.",
+      "Purpose mentions ТСЛЗ enclosure option, but explicit table rows/dimensions name ТСЛ and drawing84 is IP00; do not apply these dimensions to enclosure."
+    ],
+    "series": "ТСЛ",
+    "context": "класса напряжения20кВ",
+    "powerKva": 1000,
+    "voltageRaw": "20/0,4 кВ",
+    "commonProseGroupIds": [
+      "common-prose-11-p82"
+    ],
+    "designation": "ТСЛ-1000",
+    "execution": "класса напряжения20кВ",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 82,
+      "designation": "ТСЛ-1000",
+      "execution": "класса напряжения20кВ",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Pо",
+        "value": "2800",
+        "unit": "кВт",
+        "page": 82
+      },
+      {
+        "label": "Pк",
+        "value": "8500",
+        "unit": "кВт",
+        "page": 82
+      },
+      {
+        "label": "Iо",
+        "value": "0,4",
+        "unit": "%",
+        "page": 82
+      },
+      {
+        "label": "Uк",
+        "value": "6",
+        "unit": "%",
+        "page": 82
+      },
+      {
+        "label": "МО",
+        "value": "625",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "L",
+        "value": "1842",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "B",
+        "value": "1000",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "H",
+        "value": "1670",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "h",
+        "value": "1200",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "Масса",
+        "value": "3130",
+        "unit": "кг",
+        "page": 83
+      },
+      {
+        "label": "Номинальная мощность",
+        "value": "1000",
+        "unit": "кВА",
+        "page": 82
+      },
+      {
+        "label": "ВН",
+        "value": "20",
+        "unit": "кВ",
+        "page": 82
+      },
+      {
+        "label": "НН",
+        "value": "0,4",
+        "unit": "кВ",
+        "page": 82
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "Д/Ун-11",
+        "unit": null,
+        "page": 82
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "value": "F",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "value": "У3, УХЛ3, У1",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "value": "У, УХЛ, Т",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Категория размещения",
+        "value": "1;2;3",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "value": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-tsl-20kv-1250",
+    "familyId": "tsl-20kv",
+    "name": "ТСЛ-1250",
+    "sourceDesignation": "ТСЛ-1250",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      82,
+      83,
+      84
+    ],
+    "rawSpecs": [
+      {
+        "label": "Pо",
+        "raw": "3000",
+        "unitAsPrinted": "кВт",
+        "sourcePage": 82
+      },
+      {
+        "label": "Pк",
+        "raw": "11000",
+        "unitAsPrinted": "кВт",
+        "sourcePage": 82
+      },
+      {
+        "label": "Iо",
+        "raw": "0,4",
+        "unitAsPrinted": "%",
+        "sourcePage": 82
+      },
+      {
+        "label": "Uк",
+        "raw": "6",
+        "unitAsPrinted": "%",
+        "sourcePage": 82
+      },
+      {
+        "label": "МО",
+        "raw": "620",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "L",
+        "raw": "1827",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "B",
+        "raw": "1000",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "H",
+        "raw": "1820",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "h",
+        "raw": "1335",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "Масса",
+        "raw": "3380",
+        "unitAsPrinted": "кг",
+        "sourcePage": 83
+      },
+      {
+        "label": "Номинальная мощность",
+        "raw": "1250",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 82
+      },
+      {
+        "label": "ВН",
+        "raw": "20",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 82
+      },
+      {
+        "label": "НН",
+        "raw": "0,4",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 82
+      },
+      {
+        "label": "Схема и группа соединения",
+        "raw": "Д/Ун-11",
+        "unitAsPrinted": null,
+        "sourcePage": 82
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "raw": "F",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "raw": "У3, УХЛ3, У1",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "raw": "У, УХЛ, Т",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Категория размещения",
+        "raw": "1;2;3",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "raw": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      }
+    ],
+    "assetFamilyIds": [
+      "dry-tsl-open-20"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Loss unit printed кВт with magnitudes600 etc; preserve source.",
+      "Purpose mentions ТСЛЗ enclosure option, but explicit table rows/dimensions name ТСЛ and drawing84 is IP00; do not apply these dimensions to enclosure."
+    ],
+    "series": "ТСЛ",
+    "context": "класса напряжения20кВ",
+    "powerKva": 1250,
+    "voltageRaw": "20/0,4 кВ",
+    "commonProseGroupIds": [
+      "common-prose-11-p82"
+    ],
+    "designation": "ТСЛ-1250",
+    "execution": "класса напряжения20кВ",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 82,
+      "designation": "ТСЛ-1250",
+      "execution": "класса напряжения20кВ",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Pо",
+        "value": "3000",
+        "unit": "кВт",
+        "page": 82
+      },
+      {
+        "label": "Pк",
+        "value": "11000",
+        "unit": "кВт",
+        "page": 82
+      },
+      {
+        "label": "Iо",
+        "value": "0,4",
+        "unit": "%",
+        "page": 82
+      },
+      {
+        "label": "Uк",
+        "value": "6",
+        "unit": "%",
+        "page": 82
+      },
+      {
+        "label": "МО",
+        "value": "620",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "L",
+        "value": "1827",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "B",
+        "value": "1000",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "H",
+        "value": "1820",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "h",
+        "value": "1335",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "Масса",
+        "value": "3380",
+        "unit": "кг",
+        "page": 83
+      },
+      {
+        "label": "Номинальная мощность",
+        "value": "1250",
+        "unit": "кВА",
+        "page": 82
+      },
+      {
+        "label": "ВН",
+        "value": "20",
+        "unit": "кВ",
+        "page": 82
+      },
+      {
+        "label": "НН",
+        "value": "0,4",
+        "unit": "кВ",
+        "page": 82
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "Д/Ун-11",
+        "unit": null,
+        "page": 82
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "value": "F",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "value": "У3, УХЛ3, У1",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "value": "У, УХЛ, Т",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Категория размещения",
+        "value": "1;2;3",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "value": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-tsl-20kv-1600",
+    "familyId": "tsl-20kv",
+    "name": "ТСЛ-1600",
+    "sourceDesignation": "ТСЛ-1600",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      82,
+      83,
+      84
+    ],
+    "rawSpecs": [
+      {
+        "label": "Pо",
+        "raw": "3400",
+        "unitAsPrinted": "кВт",
+        "sourcePage": 82
+      },
+      {
+        "label": "Pк",
+        "raw": "12500",
+        "unitAsPrinted": "кВт",
+        "sourcePage": 82
+      },
+      {
+        "label": "Iо",
+        "raw": "0,4",
+        "unitAsPrinted": "%",
+        "sourcePage": 82
+      },
+      {
+        "label": "Uк",
+        "raw": "6",
+        "unitAsPrinted": "%",
+        "sourcePage": 82
+      },
+      {
+        "label": "МО",
+        "raw": "637",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "L",
+        "raw": "1876",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "B",
+        "raw": "1000",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "H",
+        "raw": "2005",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "h",
+        "raw": "1500",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "Масса",
+        "raw": "3975",
+        "unitAsPrinted": "кг",
+        "sourcePage": 83
+      },
+      {
+        "label": "Номинальная мощность",
+        "raw": "1600",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 82
+      },
+      {
+        "label": "ВН",
+        "raw": "20",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 82
+      },
+      {
+        "label": "НН",
+        "raw": "0,4",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 82
+      },
+      {
+        "label": "Схема и группа соединения",
+        "raw": "Д/Ун-11",
+        "unitAsPrinted": null,
+        "sourcePage": 82
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "raw": "F",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "raw": "У3, УХЛ3, У1",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "raw": "У, УХЛ, Т",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Категория размещения",
+        "raw": "1;2;3",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "raw": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      }
+    ],
+    "assetFamilyIds": [
+      "dry-tsl-open-20"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Loss unit printed кВт with magnitudes600 etc; preserve source.",
+      "Purpose mentions ТСЛЗ enclosure option, but explicit table rows/dimensions name ТСЛ and drawing84 is IP00; do not apply these dimensions to enclosure."
+    ],
+    "series": "ТСЛ",
+    "context": "класса напряжения20кВ",
+    "powerKva": 1600,
+    "voltageRaw": "20/0,4 кВ",
+    "commonProseGroupIds": [
+      "common-prose-11-p82"
+    ],
+    "designation": "ТСЛ-1600",
+    "execution": "класса напряжения20кВ",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 82,
+      "designation": "ТСЛ-1600",
+      "execution": "класса напряжения20кВ",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Pо",
+        "value": "3400",
+        "unit": "кВт",
+        "page": 82
+      },
+      {
+        "label": "Pк",
+        "value": "12500",
+        "unit": "кВт",
+        "page": 82
+      },
+      {
+        "label": "Iо",
+        "value": "0,4",
+        "unit": "%",
+        "page": 82
+      },
+      {
+        "label": "Uк",
+        "value": "6",
+        "unit": "%",
+        "page": 82
+      },
+      {
+        "label": "МО",
+        "value": "637",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "L",
+        "value": "1876",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "B",
+        "value": "1000",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "H",
+        "value": "2005",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "h",
+        "value": "1500",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "Масса",
+        "value": "3975",
+        "unit": "кг",
+        "page": 83
+      },
+      {
+        "label": "Номинальная мощность",
+        "value": "1600",
+        "unit": "кВА",
+        "page": 82
+      },
+      {
+        "label": "ВН",
+        "value": "20",
+        "unit": "кВ",
+        "page": 82
+      },
+      {
+        "label": "НН",
+        "value": "0,4",
+        "unit": "кВ",
+        "page": 82
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "Д/Ун-11",
+        "unit": null,
+        "page": 82
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "value": "F",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "value": "У3, УХЛ3, У1",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "value": "У, УХЛ, Т",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Категория размещения",
+        "value": "1;2;3",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "value": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-tsl-20kv-2000",
+    "familyId": "tsl-20kv",
+    "name": "ТСЛ-2000",
+    "sourceDesignation": "ТСЛ-2000",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      82,
+      83,
+      84
+    ],
+    "rawSpecs": [
+      {
+        "label": "Pо",
+        "raw": "4000",
+        "unitAsPrinted": "кВт",
+        "sourcePage": 82
+      },
+      {
+        "label": "Pк",
+        "raw": "15000",
+        "unitAsPrinted": "кВт",
+        "sourcePage": 82
+      },
+      {
+        "label": "Iо",
+        "raw": "0,4",
+        "unitAsPrinted": "%",
+        "sourcePage": 82
+      },
+      {
+        "label": "Uк",
+        "raw": "6",
+        "unitAsPrinted": "%",
+        "sourcePage": 82
+      },
+      {
+        "label": "МО",
+        "raw": "656",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "L",
+        "raw": "1936",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "B",
+        "raw": "1250",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "H",
+        "raw": "2105",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "h",
+        "raw": "1575",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "Масса",
+        "raw": "4630",
+        "unitAsPrinted": "кг",
+        "sourcePage": 83
+      },
+      {
+        "label": "Номинальная мощность",
+        "raw": "2000",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 82
+      },
+      {
+        "label": "ВН",
+        "raw": "20",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 82
+      },
+      {
+        "label": "НН",
+        "raw": "0,4",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 82
+      },
+      {
+        "label": "Схема и группа соединения",
+        "raw": "Д/Ун-11",
+        "unitAsPrinted": null,
+        "sourcePage": 82
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "raw": "F",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "raw": "У3, УХЛ3, У1",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "raw": "У, УХЛ, Т",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Категория размещения",
+        "raw": "1;2;3",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "raw": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      }
+    ],
+    "assetFamilyIds": [
+      "dry-tsl-open-20"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Loss unit printed кВт with magnitudes600 etc; preserve source.",
+      "Purpose mentions ТСЛЗ enclosure option, but explicit table rows/dimensions name ТСЛ and drawing84 is IP00; do not apply these dimensions to enclosure."
+    ],
+    "series": "ТСЛ",
+    "context": "класса напряжения20кВ",
+    "powerKva": 2000,
+    "voltageRaw": "20/0,4 кВ",
+    "commonProseGroupIds": [
+      "common-prose-11-p82"
+    ],
+    "designation": "ТСЛ-2000",
+    "execution": "класса напряжения20кВ",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 82,
+      "designation": "ТСЛ-2000",
+      "execution": "класса напряжения20кВ",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Pо",
+        "value": "4000",
+        "unit": "кВт",
+        "page": 82
+      },
+      {
+        "label": "Pк",
+        "value": "15000",
+        "unit": "кВт",
+        "page": 82
+      },
+      {
+        "label": "Iо",
+        "value": "0,4",
+        "unit": "%",
+        "page": 82
+      },
+      {
+        "label": "Uк",
+        "value": "6",
+        "unit": "%",
+        "page": 82
+      },
+      {
+        "label": "МО",
+        "value": "656",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "L",
+        "value": "1936",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "B",
+        "value": "1250",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "H",
+        "value": "2105",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "h",
+        "value": "1575",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "Масса",
+        "value": "4630",
+        "unit": "кг",
+        "page": 83
+      },
+      {
+        "label": "Номинальная мощность",
+        "value": "2000",
+        "unit": "кВА",
+        "page": 82
+      },
+      {
+        "label": "ВН",
+        "value": "20",
+        "unit": "кВ",
+        "page": 82
+      },
+      {
+        "label": "НН",
+        "value": "0,4",
+        "unit": "кВ",
+        "page": 82
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "Д/Ун-11",
+        "unit": null,
+        "page": 82
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "value": "F",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "value": "У3, УХЛ3, У1",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "value": "У, УХЛ, Т",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Категория размещения",
+        "value": "1;2;3",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "value": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      }
+    ]
+  }
+]

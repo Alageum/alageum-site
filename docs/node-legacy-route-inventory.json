@@ -1,0 +1,381 @@
+{
+  "basis": "Explicit application METHOD/path declarations at the shipped /api/v1 prefix, with parameter names normalized. Excludes generated framework routes, frontend and native CMS.",
+  "claim_limit": "Presence is not parity, migrated production data, workflow completion or production readiness. See node-legacy-read-compatibility.md for known differences and acceptance limits.",
+  "counts": {
+    "legacy": 50,
+    "legacy_business": 46,
+    "legacy_system": 4,
+    "node_compat": 35,
+    "overlap": 33,
+    "overlap_business": 29,
+    "overlap_system": 4,
+    "absent": 17,
+    "absent_business": 17,
+    "absent_system": 0,
+    "node_only": 2
+  },
+  "legacy": [
+    {
+      "method": "GET",
+      "path": "/api/v1/admin/catalog/categories",
+      "source": "backend/app/catalog/admin.py",
+      "class": "business",
+      "presence": "present"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/admin/catalog/products",
+      "source": "backend/app/catalog/admin.py",
+      "class": "business",
+      "presence": "present"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/admin/catalog/products",
+      "source": "backend/app/catalog/admin.py",
+      "class": "business",
+      "presence": "present"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/admin/catalog/products/{param}",
+      "source": "backend/app/catalog/admin.py",
+      "class": "business",
+      "presence": "present"
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/admin/catalog/products/{param}",
+      "source": "backend/app/catalog/admin.py",
+      "class": "business",
+      "presence": "present"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/admin/catalog/products/{param}/hide",
+      "source": "backend/app/catalog/admin.py",
+      "class": "business",
+      "presence": "present"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/admin/catalog/products/{param}/restore",
+      "source": "backend/app/catalog/admin.py",
+      "class": "business",
+      "presence": "present"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/admin/content/pages",
+      "source": "backend/app/content/router.py",
+      "class": "business",
+      "presence": "absent"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/admin/content/pages/{param}/publication",
+      "source": "backend/app/content/router.py",
+      "class": "business",
+      "presence": "absent"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/ai/chat",
+      "source": "backend/app/ai/router.py",
+      "class": "business",
+      "presence": "absent"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/ai/tools/confirm/{param}",
+      "source": "backend/app/ai/router.py",
+      "class": "business",
+      "presence": "absent"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/ai/tools/execute",
+      "source": "backend/app/ai/router.py",
+      "class": "business",
+      "presence": "absent"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/invitations",
+      "source": "backend/app/auth/router.py",
+      "class": "business",
+      "presence": "absent"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/invitations/{param}/accept",
+      "source": "backend/app/auth/router.py",
+      "class": "business",
+      "presence": "absent"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/login",
+      "source": "backend/app/auth/router.py",
+      "class": "business",
+      "presence": "present"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/logout",
+      "source": "backend/app/auth/router.py",
+      "class": "business",
+      "presence": "present"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/auth/me",
+      "source": "backend/app/auth/router.py",
+      "class": "business",
+      "presence": "present"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/password/reset/confirm",
+      "source": "backend/app/auth/router.py",
+      "class": "business",
+      "presence": "absent"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/password/reset/request",
+      "source": "backend/app/auth/router.py",
+      "class": "business",
+      "presence": "absent"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/refresh",
+      "source": "backend/app/auth/router.py",
+      "class": "business",
+      "presence": "present"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/catalog/categories",
+      "source": "backend/app/catalog/router.py",
+      "class": "business",
+      "presence": "present"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/catalog/compare",
+      "source": "backend/app/catalog/router.py",
+      "class": "business",
+      "presence": "present"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/catalog/filters",
+      "source": "backend/app/catalog/router.py",
+      "class": "business",
+      "presence": "present"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/catalog/products",
+      "source": "backend/app/catalog/router.py",
+      "class": "business",
+      "presence": "present"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/catalog/products/{param}",
+      "source": "backend/app/catalog/router.py",
+      "class": "business",
+      "presence": "present"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/content/entries/{param}",
+      "source": "backend/app/content/router.py",
+      "class": "business",
+      "presence": "absent"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/content/pages/{param}",
+      "source": "backend/app/content/router.py",
+      "class": "business",
+      "presence": "absent"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/documents",
+      "source": "backend/app/documents/router.py",
+      "class": "business",
+      "presence": "present"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/documents/{param}",
+      "source": "backend/app/documents/router.py",
+      "class": "business",
+      "presence": "present"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/files",
+      "source": "backend/app/files/router.py",
+      "class": "business",
+      "presence": "absent"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/files/{param}",
+      "source": "backend/app/files/router.py",
+      "class": "business",
+      "presence": "absent"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/finance/invoices",
+      "source": "backend/app/commerce/router.py",
+      "class": "business",
+      "presence": "present"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/finance/payments",
+      "source": "backend/app/commerce/router.py",
+      "class": "business",
+      "presence": "absent"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/health",
+      "source": "backend/app/api/system.py",
+      "class": "system",
+      "presence": "present"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/integrations/status",
+      "source": "backend/app/integrations/router.py",
+      "class": "business",
+      "presence": "absent"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/metrics",
+      "source": "backend/app/api/system.py",
+      "class": "system",
+      "presence": "present"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/orders",
+      "source": "backend/app/commerce/router.py",
+      "class": "business",
+      "presence": "present"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/orders/{param}",
+      "source": "backend/app/commerce/router.py",
+      "class": "business",
+      "presence": "present"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/organizations",
+      "source": "backend/app/identity/router.py",
+      "class": "business",
+      "presence": "present"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/organizations/members",
+      "source": "backend/app/identity/router.py",
+      "class": "business",
+      "presence": "present"
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/organizations/members/{param}/role",
+      "source": "backend/app/identity/router.py",
+      "class": "business",
+      "presence": "absent"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/quotes",
+      "source": "backend/app/commerce/router.py",
+      "class": "business",
+      "presence": "present"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/quotes",
+      "source": "backend/app/commerce/router.py",
+      "class": "business",
+      "presence": "absent"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/quotes/catalog",
+      "source": "backend/app/commerce/router.py",
+      "class": "business",
+      "presence": "present"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/quotes/{param}",
+      "source": "backend/app/commerce/router.py",
+      "class": "business",
+      "presence": "present"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/readiness",
+      "source": "backend/app/api/system.py",
+      "class": "system",
+      "presence": "present"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/support/categories",
+      "source": "backend/app/commerce/router.py",
+      "class": "business",
+      "presence": "present"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/support/tickets",
+      "source": "backend/app/commerce/router.py",
+      "class": "business",
+      "presence": "present"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/support/tickets",
+      "source": "backend/app/commerce/router.py",
+      "class": "business",
+      "presence": "present"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/version",
+      "source": "backend/app/api/system.py",
+      "class": "system",
+      "presence": "present"
+    }
+  ],
+  "node_only": [
+    {
+      "method": "GET",
+      "path": "/api/v1/organizations/current/profile",
+      "source": "backend-node/src/api/compat/routes/compat.js"
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/organizations/current/profile",
+      "source": "backend-node/src/api/compat/routes/compat.js"
+    }
+  ]
+}

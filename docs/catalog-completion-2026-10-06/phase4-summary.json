@@ -1,0 +1,54 @@
+{
+  "format": "alageum-catalog-completion-phase4-v1",
+  "basePublicHead": "a0a7195808d942e5b1ce38c4257851c85f3c512a",
+  "sourceContextPreviewRecords": [
+    "ntmi-6",
+    "ntmi-10"
+  ],
+  "sourcePages": [
+    96
+  ],
+  "newProducts": 0,
+  "newDefaultBindings": 0,
+  "newConstructionChoices": 0,
+  "sourceRecords": 843,
+  "mixedRecords": 36,
+  "constructionChoices": 74,
+  "verification": {
+    "eslint": "passed",
+    "frontendTests": {
+      "passed": 443,
+      "failed": 0,
+      "skipped": 0
+    },
+    "productionBuild": "passed with NEXT_TELEMETRY_DISABLED=1; initial telemetry config write on read-only home failed before compilation",
+    "sourceReproduction": "passed",
+    "independentNegativeCases": 71,
+    "catalogBrowserInventory": 100,
+    "newBrowserCases": 6,
+    "localBrowser": "blocked at Chromium launch by process-singleton socket EPERM, including approved identical retry; no application assertion ran"
+  },
+  "independentReviewSha256": "2e8912b5b5c6d0ca47a863e1b5f61e15018c8d52291d169bad0b7912806307c1",
+  "allPriorCoverageFieldsUnchanged": true,
+  "previousExactHeadQa": {
+    "head": "a0a7195808d942e5b1ce38c4257851c85f3c512a",
+    "catalogBrowserPassed": 94,
+    "functionalNodeJobsPassed": 14,
+    "backendUnitPassed": 577,
+    "postgresPassed": 104,
+    "frontendUnitPassed": 437,
+    "nativeCmsPassed": 5,
+    "printingPassed": 54,
+    "postgresPrintingPassed": 5
+  },
+  "exactHeadHostedStatus": "pending publication;100catalog cases expected",
+  "remainingConstructionBindingGaps": {
+    "explicitEntries": 259,
+    "families": 33,
+    "oldEntries": 43,
+    "newEntries": 216,
+    "note": "This includes unresolved source-to-record bindings; not all cases lack drawings. X4K3 caption discrepancy remains explicitly held."
+  },
+  "securityAudits": "remain enforced and failing; no dependency/workflow/release change",
+  "deployed": false
+}

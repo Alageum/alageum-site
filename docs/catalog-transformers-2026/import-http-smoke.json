@@ -1,0 +1,41 @@
+{
+  "scope": "Final activated production build, same-command HTTP only; no rendered browser/WebGL assertion",
+  "results": [
+    {
+      "path": "/catalog",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "bytes": 25175
+    },
+    {
+      "path": "/catalog/alageum-tmg-standard-16",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "bytes": 26164
+    },
+    {
+      "path": "/catalog/tr2026-family-asia-shunt-reactor-configurations",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "bytes": 25630
+    },
+    {
+      "path": "/catalog/source?source=transformers-2026&page=175",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "bytes": 24902
+    },
+    {
+      "path": "/catalog-source/transformers-2026/page-175.webp",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 133032
+    },
+    {
+      "path": "/catalog-source/transformers-2026/page-012.webp",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 111854
+    }
+  ]
+}

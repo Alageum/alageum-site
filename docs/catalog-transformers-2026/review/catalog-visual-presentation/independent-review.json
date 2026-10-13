@@ -1,0 +1,135 @@
+{
+  "format": "alageum-visual-presentation-independent-review-v1",
+  "status": "approved-bounded-visual-presentation",
+  "reviewedAt": "2026-10-06T19:33:10.056Z",
+  "reviewScope": "Independent source, exact-byte, historical-gate and focused local-test review; fresh hosted acceptance remains required before release",
+  "baselineCommit": "c83265e76c3c671e84e97ed6d8527f788abe46e8",
+  "baselineTree": "bec2becfba7dd142d548d241ce0210900ee3731c",
+  "reviewedPendingCandidateTree": "799292f8f6d06a5bc95f7a6918a3eecce279a1d6",
+  "reviewedPendingCandidateManifestSha256": "d3b5be7270787f2857540454e704cd82aaacfe7193f6542dc9d0286e5f5f3f79",
+  "reviewedPendingCandidatePatchSha256": "12ee0ab1809f5dec8cb9fc1be362b79a05d5e3c8330488bdda10fbe817121b2c",
+  "approvedDependenciesSha256": "6751b2b8a250dad0f8ae4c3b6fcb549c7506964eb45b00052cb2ccac10c6bf1a",
+  "modelTypes": [
+    "source69-ptm-u1-example",
+    "source69-tde9-u3-example"
+  ],
+  "exposure": {
+    "reviewedTypes": 1,
+    "otherTypes": 1.45
+  },
+  "sourceImageMaxHeight": "min(39rem, max(1rem, calc(100svh - 96px - 3rem)))",
+  "hostedCaseCount": 254,
+  "thresholdChanges": 0,
+  "geometryMaterialChanges": 0,
+  "recordChanges": 0,
+  "pageChanges": 0,
+  "reviewedFiles": {
+    "frontend/tests/helpers/historical-reviewed-bytes.mjs": "7df3fddddb7ecd1e3eddaaf25baf58db6de06b93aaa52b621112427e1800e5e5",
+    "frontend/components/catalog/models/createEquipmentViewer.js": "46efdcd611b69deba5a3d1bb30fe4ee95c72b705ce569a140252aba918fafe27",
+    "frontend/components/catalog/source-context/CatalogSourceContext.module.css": "0d13bcc3c0b8131c94427904aad26cd5ee45f8ac2d36a452869d8317512e4218",
+    "scripts/catalog/protection-context-reviewed-dependencies.mjs": "6ad4bdb7c5dace0f3dc2effe5c2c919d79ef5e7ea541d9fa772898719ada40ad",
+    "scripts/catalog/catalog-browser-reviewed-dependencies.mjs": "952df324b4acbd63536c3e85752bf3b6f3e8f70e6349be246112fb40177294b8",
+    "frontend/tests/transformer-asset-completion.test.mjs": "508622cad1f6bcad73c795cdf222da81d73e6a2ee26e7b17f97f6ade5c05cc8d",
+    "frontend/tests/catalog-browser-amendment.test.mjs": "45b33622e525b46cfe7fb016e33a2a24041b9acfbfd624d40ede45bfb2c0aee3",
+    "frontend/tests/protection-context-amendment.test.mjs": "fe457fba4c01d3a0e1b13be79955b5dc1867c9d00fad93eaed47b4fd7fe04ac8",
+    "frontend/tests/equipment-viewer-presentation.test.mjs": "055226cf6f43cc7b49f1f41f0bff55ad07a99b63649325c82b25d0c7d49231a4",
+    "frontend/tests/source-context-viewport.test.mjs": "50b4bd67a6518bc4a5cb0036d9b44d742564f58dfdbfb236a2fd13a0ea5cb863",
+    "frontend/tests/visual-presentation-amendment.test.mjs": "0bcf64814f15b6db3e7c8ba8398aa25aa6d7d6d3a222e0f5a355822e13dd672a",
+    "frontend/tests/helpers/visual-presentation-historical-bytes.mjs": "af06ebe3f20976a5360fad739939ed022e5e60b7bf025b62b60520fc6cae9a33",
+    "scripts/catalog/visual-presentation-reviewed-dependencies.mjs": "eceb99b8fbc1a0a52a6dbb6756f43d49d36a910aecc2b8edb50e3c07c11a3c38",
+    "docs/catalog-transformers-2026/review/catalog-visual-presentation/README.md": "d421f563a47be7183775448578738d85d576b5e2f72e2796acc535da526ad92d",
+    "docs/catalog-transformers-2026/review/catalog-visual-presentation/historical-test-bytes.json": "b614eee30bff041c851590b2ce0695a0e3a7180188adba1680a6e366d9f78b0e"
+  },
+  "findings": [
+    "Only the existing exact two-type protection resolver selects exposure 1.0. The preceding 126 model types, geometry, material definitions, lights, camera, controls and lifecycle remain unchanged.",
+    "The source-context image cap preserves contain scaling, image bytes, captions, full-source links, responsive columns and keyboard focus. The captured 720px/16px geometry gives a 576px image, 600px link and computed centered bottom 708px; browser confirmation remains required.",
+    "The successor leaf fixes the exact two runtime hashes, predecessor map, dependency inventory, historical approval hashes and frozen fixture hash. Separate fixed and reviewed loops prevent map shadowing. It performs fresh raw reads and never calls a historical verifier.",
+    "Historical clearance, prototype and independent-review documents are unchanged. Earlier synthetic contract fixtures read eight exact archived PR36 inputs; their authority assertions are unchanged. The current-reader successor tests and independent probes exercise all actual historical layers.",
+    "Independent byte comparison of all 2421 baseline tracked files found precisely the eight declared predecessor edits. The remaining 2413 files, including Page code, workflow and audit files, source records/assets, geometry/materials, old approvals, E2E tests and configuration are byte-identical."
+  ],
+  "verification": {
+    "frozenCandidateFilesVerified": 17,
+    "exactPredecessorFiles": 8,
+    "archivedHistoricalInputsVerified": 8,
+    "independentFocusedTests": {
+      "passed": 27,
+      "failed": 0,
+      "skipped": 0
+    },
+    "independentContractAndMutationProbes": {
+      "passed": 49,
+      "gateEntryPoints": [
+        "new visual leaf",
+        "protection-context",
+        "measurement-column",
+        "source-asset"
+      ],
+      "syntheticApprovalUsedOnlyInMemory": true
+    },
+    "mutationCoverage": [
+      "Every required dependency and independent report rejects an appended byte",
+      "Missing clearance, report or leaf bytes reject",
+      "Each single old/new runtime mixture and both restored predecessor runtime files reject",
+      "Freshly re-attested alternate runtime or frozen fixture bytes reject",
+      "Wrong predecessor pins, broadened inventories, pending approval and false scope/count claims reject",
+      "Protected geometry, source manifest, catalogue-release records, raw source images and historical approvals reject mutations through inherited gates",
+      "The unchanged hosted ink threshold rejects relaxation",
+      "A warmed same-size disk mutation with restored timestamps rejects; restored exact bytes pass again",
+      "The external scope inventory rejects simulated additions for Page code, catalogue data wrapper, CI, geometry and hosted tests"
+    ],
+    "baselineScope": {
+      "baselineCommit": "c83265e76c3c671e84e97ed6d8527f788abe46e8",
+      "frozenCandidateTree": "799292f8f6d06a5bc95f7a6918a3eecce279a1d6",
+      "trackedBaselineFiles": 2421,
+      "changedBaselineFiles": [
+        "frontend/components/catalog/models/createEquipmentViewer.js",
+        "frontend/components/catalog/source-context/CatalogSourceContext.module.css",
+        "frontend/tests/catalog-browser-amendment.test.mjs",
+        "frontend/tests/helpers/historical-reviewed-bytes.mjs",
+        "frontend/tests/protection-context-amendment.test.mjs",
+        "frontend/tests/transformer-asset-completion.test.mjs",
+        "scripts/catalog/catalog-browser-reviewed-dependencies.mjs",
+        "scripts/catalog/protection-context-reviewed-dependencies.mjs"
+      ],
+      "unchangedBaselineFileCount": 2413,
+      "unchangedInventorySha256": "211d1ced507aab00c50b09186091ee241fbc7d64c96b439adec5e0ccec5620f6",
+      "verifiedCandidateFileCount": 17,
+      "historicalFixtureEntries": 8,
+      "scopeMutationRejections": [
+        "backend-node/src/admin/page-editor-options.mjs",
+        "frontend/lib/catalog/data.js",
+        ".github/workflows/ci.yml",
+        "frontend/lib/catalog/models/protectionExampleGeometry.js",
+        "frontend/e2e/catalog.spec.js"
+      ],
+      "hostedTestsSha256": "cc06ec1299f040b684785837f16dba1c4f1f8faa1e6e0170d8f0df196cc8ad67"
+    },
+    "hostedDiscovery": "Independent Playwright --list discovers 254 tests; no browser launched",
+    "hostedTestsSha256": "cc06ec1299f040b684785837f16dba1c4f1f8faa1e6e0170d8f0df196cc8ad67",
+    "freshHostedDiagnosticInputs": {
+      "desktopPngHashesVerified": 16,
+      "mobilePngHashesVerified": 12,
+      "representativePngSha256": [
+        "4b6bfb34bd4786e0f3954a793b171bf292ae044c191be755d67ad823ec6b634a",
+        "bd04fba718be5972a2d7861bfe5d21ad37755f683671636678da4cdce2975c68"
+      ]
+    },
+    "evidenceArtifacts": {
+      "independent-mutations.mjs": "ac68e346907f937e934f6b91ead43e743c1a5ae1aa2dc8f94c015fa9ed99a038",
+      "independent-mutations-v2.json": "faf37280b895e537e7f7761b435a2a3a96b19176edc9aaddb01c387a747f79af",
+      "independent-scope-v2.json": "72d4e7f227b230e667801f4c46fea3bc7c25530ac308851c93bdaeabc6aac9f4",
+      "independent-focused-tests-v2.log": "c4cddc9c9cd8085c9a90b7ab03b922cbc92134db4ad4e60e0ce79cabe11ce556",
+      "independent-hosted-discovery.log": "5c6ee85b99cd0caa0190ee50d6c357da64d3e66dd4cab17af30fbff64226fdf6"
+    }
+  },
+  "limits": [
+    "No local browser or alternate localhost route was attempted. Existing cloud Chrome ERR_BLOCKED_BY_CLIENT restriction was respected.",
+    "Viewer tests stub browser/GPU edges; CSS tests evaluate the actual expressions without performing browser layout. Shader inversion from quantized hosted pixels is only supporting rationale.",
+    "Fresh hosted execution of all 254 cases, including actual pixels, rotation/reopen, fallback reachability and mobile behavior, remains pending. This review does not establish browser acceptance or authorize publication.",
+    "The catalogue dependency leaf does not claim to hash unrelated Page files or every catalogue wrapper. Their preservation is established by the complete candidate byte comparison; declared protected source mutations were also tested through inherited gates.",
+    "The clearance JSON envelope is validated semantically; harmless whitespace in that envelope is not a self-hashed dependency. Exact delivery hashes are recorded separately after this review.",
+    "The parent reports a separate inherited completion-ledger mismatch for three PR34 PTM/TDE type names; that ledger, existing Page race and unrelated audit issues are outside this candidate and remain unchanged.",
+    "Full frontend suite, lint and production build are integrator checks reported separately; this independent report claims only the verification listed above.",
+    "Any later stack on an upstream CMS diagnostic commit must preserve these exact reviewed catalogue bytes and independently prove the upstream CMS files unchanged."
+  ]
+}

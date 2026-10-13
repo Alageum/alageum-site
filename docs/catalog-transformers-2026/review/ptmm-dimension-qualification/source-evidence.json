@@ -1,0 +1,124 @@
+{
+  "format": "ptmm-current-source-inspection-v2",
+  "inspectionDate": "2026-10-06",
+  "baseCommit": "737651da8df778e6bc1cddecc5b0834008f823e5",
+  "baseTree": "7c7e9e82082c28d81993175464f4cc9eb5d6199d",
+  "method": "Opened both current committed WebP pages with view_image and read the table header, introduction, dimension labels, adjacent drawing headings and notes. Recomputed exact bytes and compared registry entries. No lost prior review bytes are claimed as verified.",
+  "sourcePdf": {
+    "sourceId": "substations",
+    "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+    "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+    "retrievedAgain": false
+  },
+  "pages": [
+    {
+      "page": 68,
+      "committedPath": "frontend/public/catalog-source/page-068.webp",
+      "sha256": "68538d5278821dcc15fe6064621c8271c0397e1c0fc18a60dfcfa885093a9c77",
+      "bytes": 181012,
+      "copiedArtifact": "page-068.webp",
+      "sourceHref": "/catalog/source?page=68"
+    },
+    {
+      "page": 69,
+      "committedPath": "frontend/public/catalog-source/page-069.webp",
+      "sha256": "4f0833448f3519f9519a2e09fa62b4c28016665b4cd8e95c7341b17042ff5885",
+      "bytes": 90574,
+      "copiedArtifact": "page-069.webp",
+      "sourceHref": "/catalog/source?page=69"
+    }
+  ],
+  "page68": {
+    "heading": "СТАНЦИИ КАТОДНОЙ ЗАЩИТЫ ТИПА ПТМ(Д), ТДЕ(Д)-9",
+    "dimensionRows": [
+      {
+        "printedLabel": "Высота-ширина-глубина ПТМ",
+        "cells": [
+          {
+            "columnsOneBased": [
+              1,
+              2
+            ],
+            "printedValue": "800-600-380"
+          },
+          {
+            "columnsOneBased": [
+              3,
+              4,
+              5
+            ],
+            "printedValue": "950-600-410"
+          }
+        ],
+        "printedUnit": null
+      },
+      {
+        "printedLabel": "Высота-ширина-глубина TDE",
+        "cells": [
+          {
+            "columnsOneBased": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "printedValue": "650-700-330"
+          }
+        ],
+        "printedUnit": null
+      }
+    ],
+    "separatePtmmDimensionLabel": null,
+    "tableHeaderProvidesDimensionUnit": false,
+    "introductionProvidesDimensionUnit": false,
+    "columnTargets": [
+      {
+        "id": "cat-ptm-tded-v002",
+        "name": "ПТММ-1,2 (КСЭР)",
+        "columnOneBased": 1
+      },
+      {
+        "id": "cat-ptm-tded-v005",
+        "name": "ПТММ-1,6 (КСЭР)",
+        "columnOneBased": 2
+      },
+      {
+        "id": "cat-ptm-tded-v008",
+        "name": "ПТММ-3,0 (КСЭР)",
+        "columnOneBased": 4
+      }
+    ]
+  },
+  "page69": {
+    "heading": "ГАБАРИТНЫЕ РАЗМЕРЫ",
+    "separateDrawings": [
+      "ПТМ(Д)-У1",
+      "ТДЕ(Д)-9-У3"
+    ],
+    "dimensionAxes": [
+      "В",
+      "Ш",
+      "Г"
+    ],
+    "visibleLocalAnnotations": [
+      "280",
+      "⌀10"
+    ],
+    "explicitDimensionUnitStatement": null,
+    "establishesMillimetresForPage68": false,
+    "drawingsUsedToAssignPtmmGeometry": false
+  },
+  "conclusions": [
+    "Page68 groups PTMM designations in multi-designation column headings, but the dimension rows themselves are labelled ПТМ and TDE. Applicability to PTMM remains unconfirmed rather than disproven.",
+    "No dimension unit is printed on those rows, in the page68 table header/introduction, or in the adjacent page69 drawing heading/notes. Millimetres cannot be newly asserted from drawing conventions.",
+    "Keep stored raw мм unchanged, but state its uncertainty beside each of the same six displayed source values."
+  ],
+  "finalInlineUnitWording": "В исходной строке единица измерения не указана; обозначение „мм“ требует подтверждения.",
+  "outOfScopeUnchanged": [
+    "Ambiguous ТДЕД v006/v009 names/identities",
+    "all climates",
+    "all source geometry/materials",
+    "all raw products/specification values and units"
+  ]
+}

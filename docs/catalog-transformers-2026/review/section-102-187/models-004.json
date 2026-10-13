@@ -1,0 +1,2016 @@
+[
+  {
+    "id": "alageum-tmg-1000-35-kv-3495071a",
+    "proposedStableId": "alageum-tmg-1000-35-kv-3495071a",
+    "familyId": "tmg-35",
+    "designation": "ТМГ-1000",
+    "name": "ТМГ-1000",
+    "sku": "ТМГ-1000",
+    "execution": "",
+    "sourcePages": [
+      105,
+      106,
+      108
+    ],
+    "sourceRow": {
+      "pdfPage": 105,
+      "printedPage": 105,
+      "designation": "ТМГ-1000",
+      "variant": "35 kV",
+      "tableModelIndexOnPage": 9
+    },
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "1000",
+        "unit": "кВА",
+        "page": 105,
+        "valueBasis": "Power value parsed from explicit model designation; row label occupies the nominal-power column."
+      },
+      {
+        "label": "Номинальное напряжение ВН/НН",
+        "value": "35/0,4",
+        "unit": "кВ",
+        "page": 105
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0",
+        "unit": null,
+        "page": 105
+      },
+      {
+        "label": "P0",
+        "value": "2000",
+        "unit": "Вт",
+        "page": 105
+      },
+      {
+        "label": "Pk",
+        "value": "12200",
+        "unit": "Вт",
+        "page": 105
+      },
+      {
+        "label": "Uk",
+        "value": "6,5",
+        "unit": "%",
+        "page": 105
+      },
+      {
+        "label": "I0",
+        "value": "0,5",
+        "unit": "%",
+        "page": 105
+      },
+      {
+        "label": "L",
+        "value": "2182",
+        "unit": null,
+        "page": 105,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "B",
+        "value": "1270",
+        "unit": null,
+        "page": 105,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "H",
+        "value": "2010",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "Полная масса",
+        "value": "3665",
+        "unit": "кг",
+        "page": 106
+      },
+      {
+        "label": "Масса масла",
+        "value": "975",
+        "unit": "кг",
+        "page": 106
+      },
+      {
+        "label": "A",
+        "value": "1070",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "A1",
+        "value": "1070",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "M",
+        "value": "145",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "K",
+        "value": "400",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "h",
+        "value": "215",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "h1",
+        "value": "210",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 105
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": null,
+        "page": 105
+      },
+      {
+        "label": "Тип трансформатора",
+        "value": "масляный",
+        "unit": null,
+        "page": 105
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ 11677",
+        "unit": null,
+        "page": 105
+      }
+    ],
+    "manufacturer": null,
+    "manufacturerEvidencePages": [],
+    "candidateOldIds": [],
+    "recordType": "model",
+    "uncertainties": [],
+    "drawingPages": [
+      108
+    ],
+    "assetFamilyId": "drawing-tmg-35-large-108",
+    "configurationLabel": "35 kV",
+    "brand": "Alageum Electric",
+    "productKind": "transformer",
+    "sourceDocument": "ALAGEUM transformer technical catalog, 2026-03-18",
+    "sourceEvidence": [
+      {
+        "pdfPage": 105,
+        "printedPage": 105,
+        "localAssetPath": "alageum-catalog-assets-next/frontend/public/catalog-source/transformers-2026/page-105.webp",
+        "appAssetPath": "/catalog-source/transformers-2026/page-105.webp"
+      },
+      {
+        "pdfPage": 106,
+        "printedPage": 106,
+        "localAssetPath": "alageum-catalog-assets-next/frontend/public/catalog-source/transformers-2026/page-106.webp",
+        "appAssetPath": "/catalog-source/transformers-2026/page-106.webp"
+      },
+      {
+        "pdfPage": 108,
+        "printedPage": 108,
+        "localAssetPath": "alageum-catalog-assets-next/frontend/public/catalog-source/transformers-2026/page-108.webp",
+        "appAssetPath": "/catalog-source/transformers-2026/page-108.webp"
+      }
+    ],
+    "technicalSpecCoverage": "All tabulated electrical characteristics and readable tabulated dimensional/mass fields; untranscribed numeric drawing callouts remain available in source drawing assets.",
+    "rawSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "1000",
+        "unit": "кВА",
+        "page": 105,
+        "valueBasis": "Power value parsed from explicit model designation; row label occupies the nominal-power column."
+      },
+      {
+        "label": "Номинальное напряжение ВН/НН",
+        "value": "35/0,4",
+        "unit": "кВ",
+        "page": 105
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0",
+        "unit": null,
+        "page": 105
+      },
+      {
+        "label": "P0",
+        "value": "2000",
+        "unit": "Вт",
+        "page": 105
+      },
+      {
+        "label": "Pk",
+        "value": "12200",
+        "unit": "Вт",
+        "page": 105
+      },
+      {
+        "label": "Uk",
+        "value": "6,5",
+        "unit": "%",
+        "page": 105
+      },
+      {
+        "label": "I0",
+        "value": "0,5",
+        "unit": "%",
+        "page": 105
+      },
+      {
+        "label": "L",
+        "value": "2182",
+        "unit": null,
+        "page": 105,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "B",
+        "value": "1270",
+        "unit": null,
+        "page": 105,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "H",
+        "value": "2010",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "Полная масса",
+        "value": "3665",
+        "unit": "кг",
+        "page": 106
+      },
+      {
+        "label": "Масса масла",
+        "value": "975",
+        "unit": "кг",
+        "page": 106
+      },
+      {
+        "label": "A",
+        "value": "1070",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "A1",
+        "value": "1070",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "M",
+        "value": "145",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "K",
+        "value": "400",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "h",
+        "value": "215",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "h1",
+        "value": "210",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 105
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": null,
+        "page": 105
+      },
+      {
+        "label": "Тип трансформатора",
+        "value": "масляный",
+        "unit": null,
+        "page": 105
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ 11677",
+        "unit": null,
+        "page": 105
+      }
+    ],
+    "manufacturerStatus": "unknown within assigned pages; Alageum logo alone is not factory attribution"
+  },
+  {
+    "id": "alageum-tmg-1600-35-kv-a742f975",
+    "proposedStableId": "alageum-tmg-1600-35-kv-a742f975",
+    "familyId": "tmg-35",
+    "designation": "ТМГ-1600",
+    "name": "ТМГ-1600",
+    "sku": "ТМГ-1600",
+    "execution": "",
+    "sourcePages": [
+      105,
+      106,
+      108
+    ],
+    "sourceRow": {
+      "pdfPage": 105,
+      "printedPage": 105,
+      "designation": "ТМГ-1600",
+      "variant": "35 kV",
+      "tableModelIndexOnPage": 10
+    },
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "1600",
+        "unit": "кВА",
+        "page": 105,
+        "valueBasis": "Power value parsed from explicit model designation; row label occupies the nominal-power column."
+      },
+      {
+        "label": "Номинальное напряжение ВН/НН",
+        "value": "35/0,4",
+        "unit": "кВ",
+        "page": 105
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0",
+        "unit": null,
+        "page": 105
+      },
+      {
+        "label": "P0",
+        "value": "2050",
+        "unit": "Вт",
+        "page": 105
+      },
+      {
+        "label": "Pk",
+        "value": "18000",
+        "unit": "Вт",
+        "page": 105
+      },
+      {
+        "label": "Uk",
+        "value": "8,0",
+        "unit": "%",
+        "page": 105
+      },
+      {
+        "label": "I0",
+        "value": "0,5",
+        "unit": "%",
+        "page": 105
+      },
+      {
+        "label": "L",
+        "value": "2130",
+        "unit": null,
+        "page": 105,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "B",
+        "value": "1330",
+        "unit": null,
+        "page": 105,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "H",
+        "value": "2395",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "Полная масса",
+        "value": "4565",
+        "unit": "кг",
+        "page": 106
+      },
+      {
+        "label": "Масса масла",
+        "value": "1200",
+        "unit": "кг",
+        "page": 106
+      },
+      {
+        "label": "A",
+        "value": "1070",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "A1",
+        "value": "1070",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "M",
+        "value": "210",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "K",
+        "value": "400",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "h",
+        "value": "220",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "h1",
+        "value": "220",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 105
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": null,
+        "page": 105
+      },
+      {
+        "label": "Тип трансформатора",
+        "value": "масляный",
+        "unit": null,
+        "page": 105
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ 11677",
+        "unit": null,
+        "page": 105
+      }
+    ],
+    "manufacturer": null,
+    "manufacturerEvidencePages": [],
+    "candidateOldIds": [],
+    "recordType": "model",
+    "uncertainties": [],
+    "drawingPages": [
+      108
+    ],
+    "assetFamilyId": "drawing-tmg-35-large-108",
+    "configurationLabel": "35 kV",
+    "brand": "Alageum Electric",
+    "productKind": "transformer",
+    "sourceDocument": "ALAGEUM transformer technical catalog, 2026-03-18",
+    "sourceEvidence": [
+      {
+        "pdfPage": 105,
+        "printedPage": 105,
+        "localAssetPath": "alageum-catalog-assets-next/frontend/public/catalog-source/transformers-2026/page-105.webp",
+        "appAssetPath": "/catalog-source/transformers-2026/page-105.webp"
+      },
+      {
+        "pdfPage": 106,
+        "printedPage": 106,
+        "localAssetPath": "alageum-catalog-assets-next/frontend/public/catalog-source/transformers-2026/page-106.webp",
+        "appAssetPath": "/catalog-source/transformers-2026/page-106.webp"
+      },
+      {
+        "pdfPage": 108,
+        "printedPage": 108,
+        "localAssetPath": "alageum-catalog-assets-next/frontend/public/catalog-source/transformers-2026/page-108.webp",
+        "appAssetPath": "/catalog-source/transformers-2026/page-108.webp"
+      }
+    ],
+    "technicalSpecCoverage": "All tabulated electrical characteristics and readable tabulated dimensional/mass fields; untranscribed numeric drawing callouts remain available in source drawing assets.",
+    "rawSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "1600",
+        "unit": "кВА",
+        "page": 105,
+        "valueBasis": "Power value parsed from explicit model designation; row label occupies the nominal-power column."
+      },
+      {
+        "label": "Номинальное напряжение ВН/НН",
+        "value": "35/0,4",
+        "unit": "кВ",
+        "page": 105
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0",
+        "unit": null,
+        "page": 105
+      },
+      {
+        "label": "P0",
+        "value": "2050",
+        "unit": "Вт",
+        "page": 105
+      },
+      {
+        "label": "Pk",
+        "value": "18000",
+        "unit": "Вт",
+        "page": 105
+      },
+      {
+        "label": "Uk",
+        "value": "8,0",
+        "unit": "%",
+        "page": 105
+      },
+      {
+        "label": "I0",
+        "value": "0,5",
+        "unit": "%",
+        "page": 105
+      },
+      {
+        "label": "L",
+        "value": "2130",
+        "unit": null,
+        "page": 105,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "B",
+        "value": "1330",
+        "unit": null,
+        "page": 105,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "H",
+        "value": "2395",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "Полная масса",
+        "value": "4565",
+        "unit": "кг",
+        "page": 106
+      },
+      {
+        "label": "Масса масла",
+        "value": "1200",
+        "unit": "кг",
+        "page": 106
+      },
+      {
+        "label": "A",
+        "value": "1070",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "A1",
+        "value": "1070",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "M",
+        "value": "210",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "K",
+        "value": "400",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "h",
+        "value": "220",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "h1",
+        "value": "220",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 105
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": null,
+        "page": 105
+      },
+      {
+        "label": "Тип трансформатора",
+        "value": "масляный",
+        "unit": null,
+        "page": 105
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ 11677",
+        "unit": null,
+        "page": 105
+      }
+    ],
+    "manufacturerStatus": "unknown within assigned pages; Alageum logo alone is not factory attribution"
+  },
+  {
+    "id": "alageum-tmg-2500-35-kv-04053493",
+    "proposedStableId": "alageum-tmg-2500-35-kv-04053493",
+    "familyId": "tmg-35",
+    "designation": "ТМГ-2500",
+    "name": "ТМГ-2500",
+    "sku": "ТМГ-2500",
+    "execution": "",
+    "sourcePages": [
+      105,
+      106,
+      108
+    ],
+    "sourceRow": {
+      "pdfPage": 105,
+      "printedPage": 105,
+      "designation": "ТМГ-2500",
+      "variant": "35 kV",
+      "tableModelIndexOnPage": 11
+    },
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "2500",
+        "unit": "кВА",
+        "page": 105,
+        "valueBasis": "Power value parsed from explicit model designation; row label occupies the nominal-power column."
+      },
+      {
+        "label": "Номинальное напряжение ВН/НН",
+        "value": "35/0,4",
+        "unit": "кВ",
+        "page": 105
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0",
+        "unit": null,
+        "page": 105
+      },
+      {
+        "label": "P0",
+        "value": "3500",
+        "unit": "Вт",
+        "page": 105
+      },
+      {
+        "label": "Pk",
+        "value": "28000",
+        "unit": "Вт",
+        "page": 105
+      },
+      {
+        "label": "Uk",
+        "value": "7,5",
+        "unit": "%",
+        "page": 105
+      },
+      {
+        "label": "I0",
+        "value": "1,0",
+        "unit": "%",
+        "page": 105
+      },
+      {
+        "label": "L",
+        "value": "2434",
+        "unit": null,
+        "page": 105,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "B",
+        "value": "1498",
+        "unit": null,
+        "page": 105,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "H",
+        "value": "2385",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "Полная масса",
+        "value": "7000",
+        "unit": "кг",
+        "page": 106
+      },
+      {
+        "label": "Масса масла",
+        "value": "1780",
+        "unit": "кг",
+        "page": 106
+      },
+      {
+        "label": "A",
+        "value": "1070",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "A1",
+        "value": "1070",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "M",
+        "value": "145",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "K",
+        "value": "400",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "h",
+        "value": "240",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "h1",
+        "value": "190",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 105
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": null,
+        "page": 105
+      },
+      {
+        "label": "Тип трансформатора",
+        "value": "масляный",
+        "unit": null,
+        "page": 105
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ 11677",
+        "unit": null,
+        "page": 105
+      }
+    ],
+    "manufacturer": null,
+    "manufacturerEvidencePages": [],
+    "candidateOldIds": [],
+    "recordType": "model",
+    "uncertainties": [],
+    "drawingPages": [
+      108
+    ],
+    "assetFamilyId": "drawing-tmg-35-large-108",
+    "configurationLabel": "35 kV",
+    "brand": "Alageum Electric",
+    "productKind": "transformer",
+    "sourceDocument": "ALAGEUM transformer technical catalog, 2026-03-18",
+    "sourceEvidence": [
+      {
+        "pdfPage": 105,
+        "printedPage": 105,
+        "localAssetPath": "alageum-catalog-assets-next/frontend/public/catalog-source/transformers-2026/page-105.webp",
+        "appAssetPath": "/catalog-source/transformers-2026/page-105.webp"
+      },
+      {
+        "pdfPage": 106,
+        "printedPage": 106,
+        "localAssetPath": "alageum-catalog-assets-next/frontend/public/catalog-source/transformers-2026/page-106.webp",
+        "appAssetPath": "/catalog-source/transformers-2026/page-106.webp"
+      },
+      {
+        "pdfPage": 108,
+        "printedPage": 108,
+        "localAssetPath": "alageum-catalog-assets-next/frontend/public/catalog-source/transformers-2026/page-108.webp",
+        "appAssetPath": "/catalog-source/transformers-2026/page-108.webp"
+      }
+    ],
+    "technicalSpecCoverage": "All tabulated electrical characteristics and readable tabulated dimensional/mass fields; untranscribed numeric drawing callouts remain available in source drawing assets.",
+    "rawSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "2500",
+        "unit": "кВА",
+        "page": 105,
+        "valueBasis": "Power value parsed from explicit model designation; row label occupies the nominal-power column."
+      },
+      {
+        "label": "Номинальное напряжение ВН/НН",
+        "value": "35/0,4",
+        "unit": "кВ",
+        "page": 105
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0",
+        "unit": null,
+        "page": 105
+      },
+      {
+        "label": "P0",
+        "value": "3500",
+        "unit": "Вт",
+        "page": 105
+      },
+      {
+        "label": "Pk",
+        "value": "28000",
+        "unit": "Вт",
+        "page": 105
+      },
+      {
+        "label": "Uk",
+        "value": "7,5",
+        "unit": "%",
+        "page": 105
+      },
+      {
+        "label": "I0",
+        "value": "1,0",
+        "unit": "%",
+        "page": 105
+      },
+      {
+        "label": "L",
+        "value": "2434",
+        "unit": null,
+        "page": 105,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "B",
+        "value": "1498",
+        "unit": null,
+        "page": 105,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "H",
+        "value": "2385",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "Полная масса",
+        "value": "7000",
+        "unit": "кг",
+        "page": 106
+      },
+      {
+        "label": "Масса масла",
+        "value": "1780",
+        "unit": "кг",
+        "page": 106
+      },
+      {
+        "label": "A",
+        "value": "1070",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "A1",
+        "value": "1070",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "M",
+        "value": "145",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "K",
+        "value": "400",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "h",
+        "value": "240",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "h1",
+        "value": "190",
+        "unit": null,
+        "page": 106,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 105
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": null,
+        "page": 105
+      },
+      {
+        "label": "Тип трансформатора",
+        "value": "масляный",
+        "unit": null,
+        "page": 105
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ 11677",
+        "unit": null,
+        "page": 105
+      }
+    ],
+    "manufacturerStatus": "unknown within assigned pages; Alageum logo alone is not factory attribution"
+  },
+  {
+    "id": "alageum-aom-10000-2h27-5-34f40013",
+    "proposedStableId": "alageum-aom-10000-2h27-5-34f40013",
+    "familyId": "aomzh-27-5x2",
+    "designation": "АОМЖ-10000/2Х27,5",
+    "name": "АОМЖ-10000/2Х27,5",
+    "sku": "АОМЖ-10000/2Х27,5",
+    "execution": "У1(УХЛ1); однофазный; естественное масляное охлаждение; без регулирования напряжения",
+    "sourcePages": [
+      109,
+      110
+    ],
+    "sourceRow": {
+      "pdfPage": 109,
+      "printedPage": 109,
+      "designation": "АОМЖ-10000/2Х27,5",
+      "variant": null,
+      "tableModelIndexOnPage": 1
+    },
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "10000",
+        "unit": "кВА",
+        "page": 109
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "27,5Х2",
+        "unit": "кВ",
+        "page": 109
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "27,5",
+        "unit": "кВ",
+        "page": 109
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "1 авто",
+        "unit": null,
+        "page": 109
+      },
+      {
+        "label": "Потери Х.Х.",
+        "value": "6,5",
+        "unit": "кВт",
+        "page": 109
+      },
+      {
+        "label": "Потери К.З.",
+        "value": "26",
+        "unit": "кВт",
+        "page": 109
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "2,0",
+        "unit": "%",
+        "page": 109
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,35",
+        "unit": "%",
+        "page": 109
+      },
+      {
+        "label": "L",
+        "value": "2770",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "B",
+        "value": "2890",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "H",
+        "value": "3970",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "Полная масса",
+        "value": "12500",
+        "unit": "кг",
+        "page": 109
+      },
+      {
+        "label": "Масса масла",
+        "value": "2350",
+        "unit": "кг",
+        "page": 109
+      },
+      {
+        "label": "Транспортная масса",
+        "value": "9300",
+        "unit": "кг",
+        "page": 109
+      },
+      {
+        "label": "H1",
+        "value": "2512",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "H2",
+        "value": "850",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "A",
+        "value": "1524",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "N",
+        "value": "460",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "b",
+        "value": "330",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "b1",
+        "value": "267",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "Количество обмоток",
+        "value": "2",
+        "unit": null,
+        "page": 109
+      },
+      {
+        "label": "Высота установки над уровнем моря",
+        "value": "не более 1000",
+        "unit": "м",
+        "page": 109
+      },
+      {
+        "label": "Температура эксплуатации — умеренное исполнение",
+        "value": "−45 … +40",
+        "unit": "°C",
+        "page": 109
+      },
+      {
+        "label": "Температура эксплуатации — холодное исполнение",
+        "value": "−60 … +40",
+        "unit": "°C",
+        "page": 109
+      },
+      {
+        "label": "Стандарты климатических условий",
+        "value": "ГОСТ 15543.1-89; ГОСТ 15150-69; ГОСТ 11677-85",
+        "unit": null,
+        "page": 109
+      }
+    ],
+    "manufacturer": null,
+    "manufacturerEvidencePages": [],
+    "candidateOldIds": [],
+    "recordType": "model",
+    "uncertainties": [
+      "Heading uses 27,5х2; table and drawing use 2Х27,5. Both retained in family/title and designation."
+    ],
+    "drawingPages": [
+      110
+    ],
+    "assetFamilyId": "drawing-aomzh-110",
+    "configurationLabel": null,
+    "brand": "Alageum Electric",
+    "productKind": "autotransformer",
+    "sourceDocument": "ALAGEUM transformer technical catalog, 2026-03-18",
+    "sourceEvidence": [
+      {
+        "pdfPage": 109,
+        "printedPage": 109,
+        "localAssetPath": "alageum-catalog-assets-next/frontend/public/catalog-source/transformers-2026/page-109.webp",
+        "appAssetPath": "/catalog-source/transformers-2026/page-109.webp"
+      },
+      {
+        "pdfPage": 110,
+        "printedPage": 110,
+        "localAssetPath": "alageum-catalog-assets-next/frontend/public/catalog-source/transformers-2026/page-110.webp",
+        "appAssetPath": "/catalog-source/transformers-2026/page-110.webp"
+      }
+    ],
+    "technicalSpecCoverage": "All tabulated electrical characteristics and readable tabulated dimensional/mass fields; untranscribed numeric drawing callouts remain available in source drawing assets.",
+    "rawSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "10000",
+        "unit": "кВА",
+        "page": 109
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "27,5Х2",
+        "unit": "кВ",
+        "page": 109
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "27,5",
+        "unit": "кВ",
+        "page": 109
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "1 авто",
+        "unit": null,
+        "page": 109
+      },
+      {
+        "label": "Потери Х.Х.",
+        "value": "6,5",
+        "unit": "кВт",
+        "page": 109
+      },
+      {
+        "label": "Потери К.З.",
+        "value": "26",
+        "unit": "кВт",
+        "page": 109
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "2,0",
+        "unit": "%",
+        "page": 109
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,35",
+        "unit": "%",
+        "page": 109
+      },
+      {
+        "label": "L",
+        "value": "2770",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "B",
+        "value": "2890",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "H",
+        "value": "3970",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "Полная масса",
+        "value": "12500",
+        "unit": "кг",
+        "page": 109
+      },
+      {
+        "label": "Масса масла",
+        "value": "2350",
+        "unit": "кг",
+        "page": 109
+      },
+      {
+        "label": "Транспортная масса",
+        "value": "9300",
+        "unit": "кг",
+        "page": 109
+      },
+      {
+        "label": "H1",
+        "value": "2512",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "H2",
+        "value": "850",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "A",
+        "value": "1524",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "N",
+        "value": "460",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "b",
+        "value": "330",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "b1",
+        "value": "267",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "Количество обмоток",
+        "value": "2",
+        "unit": null,
+        "page": 109
+      },
+      {
+        "label": "Высота установки над уровнем моря",
+        "value": "не более 1000",
+        "unit": "м",
+        "page": 109
+      },
+      {
+        "label": "Температура эксплуатации — умеренное исполнение",
+        "value": "−45 … +40",
+        "unit": "°C",
+        "page": 109
+      },
+      {
+        "label": "Температура эксплуатации — холодное исполнение",
+        "value": "−60 … +40",
+        "unit": "°C",
+        "page": 109
+      },
+      {
+        "label": "Стандарты климатических условий",
+        "value": "ГОСТ 15543.1-89; ГОСТ 15150-69; ГОСТ 11677-85",
+        "unit": null,
+        "page": 109
+      }
+    ],
+    "manufacturerStatus": "unknown within assigned pages; Alageum logo alone is not factory attribution"
+  },
+  {
+    "id": "alageum-aom-16000-2h27-5-5c7dfe11",
+    "proposedStableId": "alageum-aom-16000-2h27-5-5c7dfe11",
+    "familyId": "aomzh-27-5x2",
+    "designation": "АОМЖ-16000/2Х27,5",
+    "name": "АОМЖ-16000/2Х27,5",
+    "sku": "АОМЖ-16000/2Х27,5",
+    "execution": "У1(УХЛ1); однофазный; естественное масляное охлаждение; без регулирования напряжения",
+    "sourcePages": [
+      109,
+      110
+    ],
+    "sourceRow": {
+      "pdfPage": 109,
+      "printedPage": 109,
+      "designation": "АОМЖ-16000/2Х27,5",
+      "variant": null,
+      "tableModelIndexOnPage": 2
+    },
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "16000",
+        "unit": "кВА",
+        "page": 109
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "27,5Х2",
+        "unit": "кВ",
+        "page": 109
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "27,5",
+        "unit": "кВ",
+        "page": 109
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "1 авто",
+        "unit": null,
+        "page": 109
+      },
+      {
+        "label": "Потери Х.Х.",
+        "value": "9,0",
+        "unit": "кВт",
+        "page": 109
+      },
+      {
+        "label": "Потери К.З.",
+        "value": "33,5",
+        "unit": "кВт",
+        "page": 109
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "2,0",
+        "unit": "%",
+        "page": 109
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,35",
+        "unit": "%",
+        "page": 109
+      },
+      {
+        "label": "L",
+        "value": "2920",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "B",
+        "value": "3980",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "H",
+        "value": "4200",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "Полная масса",
+        "value": "16500",
+        "unit": "кг",
+        "page": 109
+      },
+      {
+        "label": "Масса масла",
+        "value": "3700",
+        "unit": "кг",
+        "page": 109
+      },
+      {
+        "label": "Транспортная масса",
+        "value": "13200",
+        "unit": "кг",
+        "page": 109
+      },
+      {
+        "label": "H1",
+        "value": "2717",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "H2",
+        "value": "850",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "A",
+        "value": "1524",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "N",
+        "value": "484",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "b",
+        "value": "318",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "b1",
+        "value": "318",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "Количество обмоток",
+        "value": "2",
+        "unit": null,
+        "page": 109
+      },
+      {
+        "label": "Высота установки над уровнем моря",
+        "value": "не более 1000",
+        "unit": "м",
+        "page": 109
+      },
+      {
+        "label": "Температура эксплуатации — умеренное исполнение",
+        "value": "−45 … +40",
+        "unit": "°C",
+        "page": 109
+      },
+      {
+        "label": "Температура эксплуатации — холодное исполнение",
+        "value": "−60 … +40",
+        "unit": "°C",
+        "page": 109
+      },
+      {
+        "label": "Стандарты климатических условий",
+        "value": "ГОСТ 15543.1-89; ГОСТ 15150-69; ГОСТ 11677-85",
+        "unit": null,
+        "page": 109
+      }
+    ],
+    "manufacturer": null,
+    "manufacturerEvidencePages": [],
+    "candidateOldIds": [],
+    "recordType": "model",
+    "uncertainties": [
+      "Heading uses 27,5х2; table and drawing use 2Х27,5. Both retained in family/title and designation."
+    ],
+    "drawingPages": [
+      110
+    ],
+    "assetFamilyId": "drawing-aomzh-110",
+    "configurationLabel": null,
+    "brand": "Alageum Electric",
+    "productKind": "autotransformer",
+    "sourceDocument": "ALAGEUM transformer technical catalog, 2026-03-18",
+    "sourceEvidence": [
+      {
+        "pdfPage": 109,
+        "printedPage": 109,
+        "localAssetPath": "alageum-catalog-assets-next/frontend/public/catalog-source/transformers-2026/page-109.webp",
+        "appAssetPath": "/catalog-source/transformers-2026/page-109.webp"
+      },
+      {
+        "pdfPage": 110,
+        "printedPage": 110,
+        "localAssetPath": "alageum-catalog-assets-next/frontend/public/catalog-source/transformers-2026/page-110.webp",
+        "appAssetPath": "/catalog-source/transformers-2026/page-110.webp"
+      }
+    ],
+    "technicalSpecCoverage": "All tabulated electrical characteristics and readable tabulated dimensional/mass fields; untranscribed numeric drawing callouts remain available in source drawing assets.",
+    "rawSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "16000",
+        "unit": "кВА",
+        "page": 109
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "27,5Х2",
+        "unit": "кВ",
+        "page": 109
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "27,5",
+        "unit": "кВ",
+        "page": 109
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "1 авто",
+        "unit": null,
+        "page": 109
+      },
+      {
+        "label": "Потери Х.Х.",
+        "value": "9,0",
+        "unit": "кВт",
+        "page": 109
+      },
+      {
+        "label": "Потери К.З.",
+        "value": "33,5",
+        "unit": "кВт",
+        "page": 109
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "2,0",
+        "unit": "%",
+        "page": 109
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,35",
+        "unit": "%",
+        "page": 109
+      },
+      {
+        "label": "L",
+        "value": "2920",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "B",
+        "value": "3980",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "H",
+        "value": "4200",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "Полная масса",
+        "value": "16500",
+        "unit": "кг",
+        "page": 109
+      },
+      {
+        "label": "Масса масла",
+        "value": "3700",
+        "unit": "кг",
+        "page": 109
+      },
+      {
+        "label": "Транспортная масса",
+        "value": "13200",
+        "unit": "кг",
+        "page": 109
+      },
+      {
+        "label": "H1",
+        "value": "2717",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "H2",
+        "value": "850",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "A",
+        "value": "1524",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "N",
+        "value": "484",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "b",
+        "value": "318",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "b1",
+        "value": "318",
+        "unit": "мм",
+        "page": 109
+      },
+      {
+        "label": "Количество обмоток",
+        "value": "2",
+        "unit": null,
+        "page": 109
+      },
+      {
+        "label": "Высота установки над уровнем моря",
+        "value": "не более 1000",
+        "unit": "м",
+        "page": 109
+      },
+      {
+        "label": "Температура эксплуатации — умеренное исполнение",
+        "value": "−45 … +40",
+        "unit": "°C",
+        "page": 109
+      },
+      {
+        "label": "Температура эксплуатации — холодное исполнение",
+        "value": "−60 … +40",
+        "unit": "°C",
+        "page": 109
+      },
+      {
+        "label": "Стандарты климатических условий",
+        "value": "ГОСТ 15543.1-89; ГОСТ 15150-69; ГОСТ 11677-85",
+        "unit": null,
+        "page": 109
+      }
+    ],
+    "manufacturerStatus": "unknown within assigned pages; Alageum logo alone is not factory attribution"
+  },
+  {
+    "id": "alageum-tdtns-16000-35-413cb587",
+    "proposedStableId": "alageum-tdtns-16000-35-413cb587",
+    "familyId": "tdtnsh-35",
+    "designation": "ТДТНШ-16000/35",
+    "name": "ТДТНШ-16000/35",
+    "sku": "ТДТНШ-16000/35",
+    "execution": "трехобмоточный; РПН; У1 (УХЛ1)",
+    "sourcePages": [
+      111,
+      112
+    ],
+    "sourceRow": {
+      "pdfPage": 112,
+      "printedPage": 112,
+      "designation": "ТДТНШ-16000/35",
+      "variant": null,
+      "tableModelIndexOnPage": 1
+    },
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "16000",
+        "unit": "кВА",
+        "page": 112
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "36,75",
+        "unit": "кВ",
+        "page": 112
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6,6",
+        "unit": "кВ",
+        "page": 112
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": null,
+        "page": 112
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "6,3",
+        "unit": "кВ",
+        "page": 112
+      },
+      {
+        "label": "Потери Х.Х.",
+        "value": "15",
+        "unit": "кВт",
+        "page": 112
+      },
+      {
+        "label": "Потери К.З.",
+        "value": "115",
+        "unit": "кВт",
+        "page": 112
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,3",
+        "unit": "%",
+        "page": 112
+      },
+      {
+        "label": "Uk ВН-СН",
+        "value": "8,0",
+        "unit": "%",
+        "page": 112
+      },
+      {
+        "label": "Uk ВН-НН",
+        "value": "16,5",
+        "unit": "%",
+        "page": 112
+      },
+      {
+        "label": "Uk СН-НН",
+        "value": "7,0",
+        "unit": "%",
+        "page": 112
+      },
+      {
+        "label": "Полная масса",
+        "value": "30000",
+        "unit": "кг",
+        "page": 112
+      },
+      {
+        "label": "Масса масла",
+        "value": "8000",
+        "unit": "кг",
+        "page": 112
+      },
+      {
+        "label": "Транспортная масса",
+        "value": "25000",
+        "unit": "кг",
+        "page": 112
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": null,
+        "page": 111
+      },
+      {
+        "label": "Охлаждение",
+        "value": "естественная циркуляция масла и принудительная циркуляция воздуха",
+        "unit": null,
+        "page": 111
+      },
+      {
+        "label": "РПН со стороны ВН",
+        "value": "±9х1,78%",
+        "unit": null,
+        "page": 111
+      },
+      {
+        "label": "ПБВ со стороны СН",
+        "value": "±2х2,5%",
+        "unit": null,
+        "page": 111
+      }
+    ],
+    "manufacturer": null,
+    "manufacturerEvidencePages": [],
+    "candidateOldIds": [],
+    "recordType": "model",
+    "uncertainties": [
+      "Page 111 designation explanation/body repeatedly says ТДТНШ-16000/110 У1 despite /35 heading and table. No separate model inferred from contradictory prose.",
+      "Page111 heading and top description identify /35 and36,75kV, but repeated designation explanation/body below says /110. Retain existing source-conflict warning. Do not synthesize a /110 model."
+    ],
+    "drawingPages": [
+      112
+    ],
+    "assetFamilyId": "drawing-tdtnsh-112",
+    "configurationLabel": null,
+    "brand": "Alageum Electric",
+    "productKind": "transformer",
+    "sourceDocument": "ALAGEUM transformer technical catalog, 2026-03-18",
+    "sourceEvidence": [
+      {
+        "pdfPage": 111,
+        "printedPage": 111,
+        "localAssetPath": "alageum-catalog-assets-next/frontend/public/catalog-source/transformers-2026/page-111.webp",
+        "appAssetPath": "/catalog-source/transformers-2026/page-111.webp"
+      },
+      {
+        "pdfPage": 112,
+        "printedPage": 112,
+        "localAssetPath": "alageum-catalog-assets-next/frontend/public/catalog-source/transformers-2026/page-112.webp",
+        "appAssetPath": "/catalog-source/transformers-2026/page-112.webp"
+      }
+    ],
+    "technicalSpecCoverage": "All tabulated electrical characteristics and readable tabulated dimensional/mass fields; untranscribed numeric drawing callouts remain available in source drawing assets.",
+    "rawSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "16000",
+        "unit": "кВА",
+        "page": 112
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "36,75",
+        "unit": "кВ",
+        "page": 112
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "6,6",
+        "unit": "кВ",
+        "page": 112
+      },
+      {
+        "label": "Схема и группа соединения обмоток",
+        "value": "Ун/Д-Д-11-11",
+        "unit": null,
+        "page": 112
+      },
+      {
+        "label": "Номинальное напряжение СН",
+        "value": "6,3",
+        "unit": "кВ",
+        "page": 112
+      },
+      {
+        "label": "Потери Х.Х.",
+        "value": "15",
+        "unit": "кВт",
+        "page": 112
+      },
+      {
+        "label": "Потери К.З.",
+        "value": "115",
+        "unit": "кВт",
+        "page": 112
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "0,3",
+        "unit": "%",
+        "page": 112
+      },
+      {
+        "label": "Uk ВН-СН",
+        "value": "8,0",
+        "unit": "%",
+        "page": 112
+      },
+      {
+        "label": "Uk ВН-НН",
+        "value": "16,5",
+        "unit": "%",
+        "page": 112
+      },
+      {
+        "label": "Uk СН-НН",
+        "value": "7,0",
+        "unit": "%",
+        "page": 112
+      },
+      {
+        "label": "Полная масса",
+        "value": "30000",
+        "unit": "кг",
+        "page": 112
+      },
+      {
+        "label": "Масса масла",
+        "value": "8000",
+        "unit": "кг",
+        "page": 112
+      },
+      {
+        "label": "Транспортная масса",
+        "value": "25000",
+        "unit": "кг",
+        "page": 112
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": null,
+        "page": 111
+      },
+      {
+        "label": "Охлаждение",
+        "value": "естественная циркуляция масла и принудительная циркуляция воздуха",
+        "unit": null,
+        "page": 111
+      },
+      {
+        "label": "РПН со стороны ВН",
+        "value": "±9х1,78%",
+        "unit": null,
+        "page": 111
+      },
+      {
+        "label": "ПБВ со стороны СН",
+        "value": "±2х2,5%",
+        "unit": null,
+        "page": 111
+      }
+    ],
+    "manufacturerStatus": "unknown within assigned pages; Alageum logo alone is not factory attribution"
+  }
+]

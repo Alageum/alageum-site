@@ -1,0 +1,22 @@
+{
+  "status": "pass",
+  "reviewedAt": "2026-10-05T08:00:57.715920+00:00",
+  "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+  "inventorySha256": "c3948d7152a6130aa4672b9f6d3d5a8f08144b5965df7bebabca067ba5bc8438",
+  "admittedEntries": 508,
+  "familyParents": 77,
+  "runtimeRecords": 585,
+  "heldEntries": 32,
+  "sourceSpecificationsPreserved": 7595,
+  "oldIdsPreserved": 238,
+  "checks": [
+    "All508 admitted row IDs present exactly once",
+    "All32 candidate IDs absent",
+    "No old238 ID collision",
+    "Every admitted raw technical spec preserved with explicit unknown units empty",
+    "All source pages retained and every spec page grounded",
+    "No orderable SKUs invented",
+    "Reactive power never assigned to kVA field",
+    "Reviewedp25A1 correction preserved"
+  ]
+}

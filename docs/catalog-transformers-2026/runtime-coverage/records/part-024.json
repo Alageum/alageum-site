@@ -1,0 +1,1975 @@
+[
+  {
+    "id": "alageum-2026-tsn-250",
+    "name": "ТСН(З)-250",
+    "designation": "ТСН(З)-250",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tsn-nomex",
+    "sourceFamilyId": "tsn-nomex",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        91,
+        92,
+        94
+      ],
+      "sourceRow": {
+        "page": 91,
+        "designation": "ТСН(З)-250",
+        "execution": "с изоляцией Номекс",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "35f88c8abd6b2637d59bfd0d4a94f4d779f9f18e135a1ec18c0e671bb53138f6",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        91,
+        92,
+        94
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-091.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "execution-choice-required",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        91,
+        92,
+        94
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-091.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "execution-choice-required",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-091.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        91
+      ]
+    },
+    "proposalEvidence": {
+      "status": "execution-choice-required",
+      "evidenceGroupIds": [
+        "dry-tsn-open",
+        "dry-tsnz-top-bushing"
+      ],
+      "choices": [
+        {
+          "groupId": "dry-tsn-open",
+          "geometryType": "tr26-dry-nomex-open",
+          "iconType": "tr26-dry-nomex-open",
+          "sourcePages": [
+            92
+          ],
+          "viewMode": "illustrative-topology"
+        },
+        {
+          "groupId": "dry-tsnz-top-bushing",
+          "geometryType": "tr26-dry-top-bushings",
+          "iconType": "tr26-dry-top-bushings",
+          "sourcePages": [
+            94
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-tsn-400",
+    "name": "ТСН(З)-400",
+    "designation": "ТСН(З)-400",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tsn-nomex",
+    "sourceFamilyId": "tsn-nomex",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        91,
+        92,
+        93,
+        94
+      ],
+      "sourceRow": {
+        "page": 91,
+        "designation": "ТСН(З)-400",
+        "execution": "с изоляцией Номекс",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "80e30ba2d53699029610b558c58a1aebf7b0ccbe88f8fa8a51ce0e58e1b4ee0c",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        91,
+        92,
+        93,
+        94
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-091.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "execution-choice-required",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        91,
+        92,
+        93,
+        94
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-091.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "execution-choice-required",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-091.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        91
+      ]
+    },
+    "proposalEvidence": {
+      "status": "execution-choice-required",
+      "evidenceGroupIds": [
+        "dry-tsn-open",
+        "dry-tsnz-mesh",
+        "dry-tsnz-top-bushing"
+      ],
+      "choices": [
+        {
+          "groupId": "dry-tsn-open",
+          "geometryType": "tr26-dry-nomex-open",
+          "iconType": "tr26-dry-nomex-open",
+          "sourcePages": [
+            92
+          ],
+          "viewMode": "illustrative-topology"
+        },
+        {
+          "groupId": "dry-tsnz-mesh",
+          "geometryType": "tr26-dry-mesh-closed",
+          "iconType": "tr26-dry-mesh-closed",
+          "sourcePages": [
+            93
+          ],
+          "viewMode": "illustrative-topology"
+        },
+        {
+          "groupId": "dry-tsnz-top-bushing",
+          "geometryType": "tr26-dry-top-bushings",
+          "iconType": "tr26-dry-top-bushings",
+          "sourcePages": [
+            94
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-tsn-630",
+    "name": "ТСН(З)-630",
+    "designation": "ТСН(З)-630",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tsn-nomex",
+    "sourceFamilyId": "tsn-nomex",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        91,
+        92,
+        93,
+        94
+      ],
+      "sourceRow": {
+        "page": 91,
+        "designation": "ТСН(З)-630",
+        "execution": "с изоляцией Номекс",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "68ce8330d3d57d5b4521cd4b97d29047a2d304e5ffb84d0b244e9205d8190be2",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        91,
+        92,
+        93,
+        94
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-091.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "execution-choice-required",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        91,
+        92,
+        93,
+        94
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-091.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "execution-choice-required",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-091.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        91
+      ]
+    },
+    "proposalEvidence": {
+      "status": "execution-choice-required",
+      "evidenceGroupIds": [
+        "dry-tsn-open",
+        "dry-tsnz-mesh",
+        "dry-tsnz-top-bushing"
+      ],
+      "choices": [
+        {
+          "groupId": "dry-tsn-open",
+          "geometryType": "tr26-dry-nomex-open",
+          "iconType": "tr26-dry-nomex-open",
+          "sourcePages": [
+            92
+          ],
+          "viewMode": "illustrative-topology"
+        },
+        {
+          "groupId": "dry-tsnz-mesh",
+          "geometryType": "tr26-dry-mesh-closed",
+          "iconType": "tr26-dry-mesh-closed",
+          "sourcePages": [
+            93
+          ],
+          "viewMode": "illustrative-topology"
+        },
+        {
+          "groupId": "dry-tsnz-top-bushing",
+          "geometryType": "tr26-dry-top-bushings",
+          "iconType": "tr26-dry-top-bushings",
+          "sourcePages": [
+            94
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "tr2026-family-nom",
+    "name": "НОМ — однофазный измерительный",
+    "designation": "НОМ",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "family",
+    "sourceRecordType": "family",
+    "familyId": null,
+    "sourceFamilyId": "nom",
+    "variantIds": [
+      "alageum-2026-nom-6",
+      "alageum-2026-nom-10",
+      "alageum-2026-nom-3-drawing"
+    ],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        97
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "48165cbee8d73a8228d9d5366f4b2f5ba0cdb4159eaabf4aa6964b7f7d1fb07c",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        97
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-097.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        97
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-097.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-097.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        97
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "alageum-2026-nom-6",
+    "name": "НОМ-6",
+    "designation": "НОМ-6",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-nom",
+    "sourceFamilyId": "nom",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        97
+      ],
+      "sourceRow": {
+        "page": 97,
+        "designation": "НОМ-6",
+        "execution": "однофазный измерительный",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "081d5d8ea60c3983e0ef3df88aabb934ff5837952a04c971de004a36713960da",
+    "geometry": {
+      "type": "tr26-instrument-two-round",
+      "confidence": "source-matched",
+      "sourcePages": [
+        97
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-097.webp",
+      "approval": {
+        "recordShapeSha256": "ea3210bb8c1224593ec414f425e3f963acdb741c1099cfde66c9c75f50e05c62",
+        "databaseId": "8c9ab2ba-9851-51ba-86f6-19c0324e543d",
+        "groupId": "measurement-nom",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-instrument-two-round",
+      "confidence": "source-based",
+      "sourcePages": [
+        97
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-097.webp",
+      "approval": {
+        "recordShapeSha256": "ea3210bb8c1224593ec414f425e3f963acdb741c1099cfde66c9c75f50e05c62",
+        "databaseId": "8c9ab2ba-9851-51ba-86f6-19c0324e543d",
+        "groupId": "measurement-nom",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-097.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        97
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "measurement-nom"
+      ],
+      "choices": [
+        {
+          "groupId": "measurement-nom",
+          "geometryType": "tr26-instrument-two-round",
+          "iconType": "tr26-instrument-two-round",
+          "sourcePages": [
+            97
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-nom-10",
+    "name": "НОМ-10",
+    "designation": "НОМ-10",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-nom",
+    "sourceFamilyId": "nom",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        97
+      ],
+      "sourceRow": {
+        "page": 97,
+        "designation": "НОМ-10",
+        "execution": "однофазный измерительный",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "0c4e638317e96fc7c47a2eeda95ba3f2782b83408ec9282814c0f4472c767a23",
+    "geometry": {
+      "type": "tr26-instrument-two-round",
+      "confidence": "source-matched",
+      "sourcePages": [
+        97
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-097.webp",
+      "approval": {
+        "recordShapeSha256": "5c46265cecd80b6db57fa50d6461c37c3530afda442cde4b8a058b44302e0cca",
+        "databaseId": "4c069c9f-ee61-58b3-9b02-c12c2933d085",
+        "groupId": "measurement-nom",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-instrument-two-round",
+      "confidence": "source-based",
+      "sourcePages": [
+        97
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-097.webp",
+      "approval": {
+        "recordShapeSha256": "5c46265cecd80b6db57fa50d6461c37c3530afda442cde4b8a058b44302e0cca",
+        "databaseId": "4c069c9f-ee61-58b3-9b02-c12c2933d085",
+        "groupId": "measurement-nom",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-097.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        97
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "measurement-nom"
+      ],
+      "choices": [
+        {
+          "groupId": "measurement-nom",
+          "geometryType": "tr26-instrument-two-round",
+          "iconType": "tr26-instrument-two-round",
+          "sourcePages": [
+            97
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-nom-3-drawing",
+    "name": "НОМ-3",
+    "designation": "НОМ-3",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "drawing-only-model",
+    "familyId": "tr2026-family-nom",
+    "sourceFamilyId": "nom",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        97
+      ],
+      "sourceRow": {
+        "page": 97,
+        "designation": "НОМ-3",
+        "execution": "named only in small drawing table shared with НОМ-6",
+        "kind": "drawing-only-model"
+      }
+    },
+    "recordSha256": "80bb51dcc0abdc7d964593a73f078133b80eed76fdeb8f823a691b6b158652f1",
+    "geometry": {
+      "type": "tr26-instrument-two-round",
+      "confidence": "source-matched",
+      "sourcePages": [
+        97
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-097.webp",
+      "approval": {
+        "recordShapeSha256": "74f708e3d2689375fec1018703e51024c880ab2905825caf847aed22e4fa54e8",
+        "databaseId": "1a90edf7-19bb-51bd-a8b0-3915d58e142d",
+        "groupId": "measurement-nom",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-instrument-two-round",
+      "confidence": "source-based",
+      "sourcePages": [
+        97
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-097.webp",
+      "approval": {
+        "recordShapeSha256": "74f708e3d2689375fec1018703e51024c880ab2905825caf847aed22e4fa54e8",
+        "databaseId": "1a90edf7-19bb-51bd-a8b0-3915d58e142d",
+        "groupId": "measurement-nom",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-097.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        97
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "measurement-nom"
+      ],
+      "choices": [
+        {
+          "groupId": "measurement-nom",
+          "geometryType": "tr26-instrument-two-round",
+          "iconType": "tr26-instrument-two-round",
+          "sourcePages": [
+            97
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "tr2026-family-nami",
+    "name": "НАМИ — трехфазный измерительный",
+    "designation": "НАМИ",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "family",
+    "sourceRecordType": "family",
+    "familyId": null,
+    "sourceFamilyId": "nami",
+    "variantIds": [
+      "alageum-2026-nami-6",
+      "alageum-2026-nami-10"
+    ],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        98
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "23362fe410a497aee952e24edd732df2fca7bc00e5539cdcad5da296570bcd93",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        98
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-098.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        98
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-098.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-098.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        98
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "alageum-2026-nami-6",
+    "name": "НАМИ-6",
+    "designation": "НАМИ-6",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-nami",
+    "sourceFamilyId": "nami",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        98
+      ],
+      "sourceRow": {
+        "page": 98,
+        "designation": "НАМИ-6",
+        "execution": "трехфазный измерительный",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "42abdc0764d70e58f790879c99d13cf5336abb9c87cb348553bf0a2d0a7a1959",
+    "geometry": {
+      "type": "tr26-instrument-three-rect",
+      "confidence": "source-matched",
+      "sourcePages": [
+        98
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-098.webp",
+      "approval": {
+        "recordShapeSha256": "e409283af2d450d0f3aca0bc591d3efeb2246f8671f175e49d84565cb53908bb",
+        "databaseId": "c394f228-faf9-5894-ad49-c3281ca8bb80",
+        "groupId": "measurement-nami",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-instrument-three-rect",
+      "confidence": "source-based",
+      "sourcePages": [
+        98
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-098.webp",
+      "approval": {
+        "recordShapeSha256": "e409283af2d450d0f3aca0bc591d3efeb2246f8671f175e49d84565cb53908bb",
+        "databaseId": "c394f228-faf9-5894-ad49-c3281ca8bb80",
+        "groupId": "measurement-nami",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-098.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        98
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "measurement-nami"
+      ],
+      "choices": [
+        {
+          "groupId": "measurement-nami",
+          "geometryType": "tr26-instrument-three-rect",
+          "iconType": "tr26-instrument-three-rect",
+          "sourcePages": [
+            98
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-nami-10",
+    "name": "НАМИ-10",
+    "designation": "НАМИ-10",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-nami",
+    "sourceFamilyId": "nami",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        98
+      ],
+      "sourceRow": {
+        "page": 98,
+        "designation": "НАМИ-10",
+        "execution": "трехфазный измерительный",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "d8db2bc6ed8c0ce7c5ed60943bd21c35073009d405ab17ede4c37d59b6a304ed",
+    "geometry": {
+      "type": "tr26-instrument-three-rect",
+      "confidence": "source-matched",
+      "sourcePages": [
+        98
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-098.webp",
+      "approval": {
+        "recordShapeSha256": "321f0c093e9f1badf839e720684a6cab743d17221fda8e3d792a500397cc4c0a",
+        "databaseId": "26a30d3b-b4d0-5aa0-b0bc-b56d184530b0",
+        "groupId": "measurement-nami",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-instrument-three-rect",
+      "confidence": "source-based",
+      "sourcePages": [
+        98
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-098.webp",
+      "approval": {
+        "recordShapeSha256": "321f0c093e9f1badf839e720684a6cab743d17221fda8e3d792a500397cc4c0a",
+        "databaseId": "26a30d3b-b4d0-5aa0-b0bc-b56d184530b0",
+        "groupId": "measurement-nami",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-098.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        98
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "measurement-nami"
+      ],
+      "choices": [
+        {
+          "groupId": "measurement-nami",
+          "geometryType": "tr26-instrument-three-rect",
+          "iconType": "tr26-instrument-three-rect",
+          "sourcePages": [
+            98
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "tr2026-family-zom",
+    "name": "ЗОМ — измерительный, railway",
+    "designation": "ЗОМ",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "family",
+    "sourceRecordType": "family",
+    "familyId": null,
+    "sourceFamilyId": "zom",
+    "variantIds": [
+      "alageum-2026-zom-1p25-35"
+    ],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        99
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "cb14012e6ce0beb2380c3dea7ab7990fa0b1bd26fe47c7ad2fb49c250e3d970e",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        99
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-099.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        99
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-099.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-099.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        99
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "alageum-2026-zom-1p25-35",
+    "name": "ЗОМ-1,25/35",
+    "designation": "ЗОМ-1,25/35",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-zom",
+    "sourceFamilyId": "zom",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        99
+      ],
+      "sourceRow": {
+        "page": 99,
+        "designation": "ЗОМ-1,25/35",
+        "execution": "измерительный, railway",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "1aa796b5b0e04480dd717fb5165c2b12563ea9d139342036c450f2e831497ce9",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        99
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-099.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "independently-withheld-geometry",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": "tr26-instrument-column",
+      "confidence": "source-based",
+      "sourcePages": [
+        99
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-099.webp",
+      "approval": {
+        "recordShapeSha256": "900ce9e7f7958eec2b0f9d5375979ab0d0c35431f0209c37f9069fa4af8fca78",
+        "databaseId": "57cac660-ff8d-5237-bfb3-9604072e2b77",
+        "groupId": "measurement-zom-znom",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-099.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        99
+      ]
+    },
+    "proposalEvidence": {
+      "status": "icon-only-proposal",
+      "evidenceGroupIds": [
+        "measurement-zom-znom"
+      ],
+      "choices": [
+        {
+          "groupId": "measurement-zom-znom",
+          "geometryType": null,
+          "iconType": "tr26-instrument-column",
+          "sourcePages": [
+            99
+          ],
+          "viewMode": "illustrative-icon"
+        }
+      ],
+      "reasons": [
+        "По страницам 99/100 нельзя однозначно классифицировать малые символы как выводы НН или пробки. Нужна подписанная схема внешних выводов. До подтверждения доступен только условный значок основного столба; 3D привязка удержана.",
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "tr2026-family-znom",
+    "name": "ЗНОМ — nominal-winding-voltage option1",
+    "designation": "ЗНОМ",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "family",
+    "sourceRecordType": "family",
+    "familyId": null,
+    "sourceFamilyId": "znom",
+    "variantIds": [
+      "alageum-2026-znom35-config1",
+      "alageum-2026-znom35-config2"
+    ],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        100
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "039bafd2e426cbcc3b5935593b0b0a66f71a964f06f89ca52cba4841bf5e880e",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        100
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-100.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        100
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-100.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-100.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        100
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "alageum-2026-znom35-config1",
+    "name": "ЗНОМ-35",
+    "designation": "ЗНОМ-35",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-znom",
+    "sourceFamilyId": "znom",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        100
+      ],
+      "sourceRow": {
+        "page": 100,
+        "table": "technical",
+        "row": 1,
+        "voltageSubrow": 1
+      }
+    },
+    "recordSha256": "f1defa488f63c77a4d723860b4db15fd160e4013a1d7593eff19bc0b6f4fa6ad",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        100
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-100.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "independently-withheld-geometry",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": "tr26-instrument-column",
+      "confidence": "source-based",
+      "sourcePages": [
+        100
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-100.webp",
+      "approval": {
+        "recordShapeSha256": "d8382f3b2252f3fb3a8e9090e91fc75d938f59b137dfc62c3a9e5de16b7bf15f",
+        "databaseId": "94dbb639-6aeb-5d15-acde-52195fafaa1b",
+        "groupId": "measurement-zom-znom",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-100.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        100
+      ]
+    },
+    "proposalEvidence": {
+      "status": "icon-only-proposal",
+      "evidenceGroupIds": [
+        "measurement-zom-znom"
+      ],
+      "choices": [
+        {
+          "groupId": "measurement-zom-znom",
+          "geometryType": null,
+          "iconType": "tr26-instrument-column",
+          "sourcePages": [
+            100
+          ],
+          "viewMode": "illustrative-icon"
+        }
+      ],
+      "reasons": [
+        "По страницам 99/100 нельзя однозначно классифицировать малые символы как выводы НН или пробки. Нужна подписанная схема внешних выводов. До подтверждения доступен только условный значок основного столба; 3D привязка удержана.",
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-znom35-config2",
+    "name": "ЗНОМ-35",
+    "designation": "ЗНОМ-35",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-znom",
+    "sourceFamilyId": "znom",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        100
+      ],
+      "sourceRow": {
+        "page": 100,
+        "table": "technical",
+        "row": 1,
+        "voltageSubrow": 2
+      }
+    },
+    "recordSha256": "bbaf97e91aaf808c6e9cc54a05c049fe355972a6c56949cb8869612001952e9d",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        100
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-100.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "independently-withheld-geometry",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": "tr26-instrument-column",
+      "confidence": "source-based",
+      "sourcePages": [
+        100
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-100.webp",
+      "approval": {
+        "recordShapeSha256": "ea9721bc7e51f6b3e201eaab6c4e475cd24b38693bbf047a860de4a687f57962",
+        "databaseId": "94d0e36e-21b1-5f5a-8230-8fb3194fd043",
+        "groupId": "measurement-zom-znom",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-100.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        100
+      ]
+    },
+    "proposalEvidence": {
+      "status": "icon-only-proposal",
+      "evidenceGroupIds": [
+        "measurement-zom-znom"
+      ],
+      "choices": [
+        {
+          "groupId": "measurement-zom-znom",
+          "geometryType": null,
+          "iconType": "tr26-instrument-column",
+          "sourcePages": [
+            100
+          ],
+          "viewMode": "illustrative-icon"
+        }
+      ],
+      "reasons": [
+        "По страницам 99/100 нельзя однозначно классифицировать малые символы как выводы НН или пробки. Нужна подписанная схема внешних выводов. До подтверждения доступен только условный значок основного столба; 3D привязка удержана.",
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "tr2026-family-omzh-27-5",
+    "name": "Трансформаторы ОМЖ-2,5–10 кВА напряжением 27,5 кВ",
+    "designation": "Трансформаторы ОМЖ-2,5–10 кВА напряжением 27,5 кВ",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "family",
+    "sourceRecordType": "family",
+    "familyId": null,
+    "sourceFamilyId": "omzh-27-5",
+    "variantIds": [
+      "alageum-om-2-5-27-5-5c844db4",
+      "alageum-om-4-27-5-dc449b1f",
+      "alageum-om-10-27-5-4afd1689"
+    ],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        102
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "d065a1fd05a2269ed21539499f307631775da121e16b30a0991878fe516ddfff",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        102
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-102.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        102
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-102.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-102.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        102
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "alageum-om-2-5-27-5-5c844db4",
+    "name": "ОМЖ-2,5/27,5",
+    "designation": "ОМЖ-2,5/27,5",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "model",
+    "familyId": "tr2026-family-omzh-27-5",
+    "sourceFamilyId": "omzh-27-5",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        102
+      ],
+      "sourceRow": {
+        "pdfPage": 102,
+        "printedPage": 102,
+        "designation": "ОМЖ-2,5/27,5",
+        "variant": null,
+        "tableModelIndexOnPage": 1
+      }
+    },
+    "recordSha256": "984f214295e75a4f34b27bcd1d9a81b287517a5d722280d4d9053d561e52c377",
+    "geometry": {
+      "type": "tr26-rail-single-conservator",
+      "confidence": "source-matched",
+      "sourcePages": [
+        102
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-102.webp",
+      "approval": {
+        "recordShapeSha256": "60066060865f70d081edbc3ab5af89c5a6ec0f0e10e994097d76570e57125a4f",
+        "databaseId": "59964aca-7e33-563a-9d10-9a8ccbc4ff2e",
+        "groupId": "drawing-omzh-102",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-rail-single-conservator",
+      "confidence": "source-based",
+      "sourcePages": [
+        102
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-102.webp",
+      "approval": {
+        "recordShapeSha256": "60066060865f70d081edbc3ab5af89c5a6ec0f0e10e994097d76570e57125a4f",
+        "databaseId": "59964aca-7e33-563a-9d10-9a8ccbc4ff2e",
+        "groupId": "drawing-omzh-102",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-102.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        102
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "drawing-omzh-102"
+      ],
+      "choices": [
+        {
+          "groupId": "drawing-omzh-102",
+          "geometryType": "tr26-rail-single-conservator",
+          "iconType": "tr26-rail-single-conservator",
+          "sourcePages": [
+            102
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-om-4-27-5-dc449b1f",
+    "name": "ОМЖ-4/27,5",
+    "designation": "ОМЖ-4/27,5",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "model",
+    "familyId": "tr2026-family-omzh-27-5",
+    "sourceFamilyId": "omzh-27-5",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        102
+      ],
+      "sourceRow": {
+        "pdfPage": 102,
+        "printedPage": 102,
+        "designation": "ОМЖ-4/27,5",
+        "variant": null,
+        "tableModelIndexOnPage": 2
+      }
+    },
+    "recordSha256": "fb37c46a58578ad1f609236dfe33c5c64a980f6681d0782254e7a1e17069ec69",
+    "geometry": {
+      "type": "tr26-rail-single-conservator",
+      "confidence": "source-matched",
+      "sourcePages": [
+        102
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-102.webp",
+      "approval": {
+        "recordShapeSha256": "10fcd880540c87a121d1c6acdbfddef1b3e271f1716e14d49b4cbb7e0f9b6f7f",
+        "databaseId": "d3688b58-2971-52e4-a0a4-c105d3a60719",
+        "groupId": "drawing-omzh-102",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-rail-single-conservator",
+      "confidence": "source-based",
+      "sourcePages": [
+        102
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-102.webp",
+      "approval": {
+        "recordShapeSha256": "10fcd880540c87a121d1c6acdbfddef1b3e271f1716e14d49b4cbb7e0f9b6f7f",
+        "databaseId": "d3688b58-2971-52e4-a0a4-c105d3a60719",
+        "groupId": "drawing-omzh-102",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-102.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        102
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "drawing-omzh-102"
+      ],
+      "choices": [
+        {
+          "groupId": "drawing-omzh-102",
+          "geometryType": "tr26-rail-single-conservator",
+          "iconType": "tr26-rail-single-conservator",
+          "sourcePages": [
+            102
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-om-10-27-5-4afd1689",
+    "name": "ОМЖ-10/27,5",
+    "designation": "ОМЖ-10/27,5",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "model",
+    "familyId": "tr2026-family-omzh-27-5",
+    "sourceFamilyId": "omzh-27-5",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        102
+      ],
+      "sourceRow": {
+        "pdfPage": 102,
+        "printedPage": 102,
+        "designation": "ОМЖ-10/27,5",
+        "variant": null,
+        "tableModelIndexOnPage": 3
+      }
+    },
+    "recordSha256": "8d116b5220ec0a5a679fe3d57e0f2e9c2d0c1fa555bbe0f1ce4b330c638bcaf8",
+    "geometry": {
+      "type": "tr26-rail-single-conservator",
+      "confidence": "source-matched",
+      "sourcePages": [
+        102
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-102.webp",
+      "approval": {
+        "recordShapeSha256": "716f6153fad7ca314ec8bb00259c87b8d09900a8b62a0f6c9bf1bf773c0b37cf",
+        "databaseId": "efa13efe-6b1f-5e2d-8256-a811cebddbe7",
+        "groupId": "drawing-omzh-102",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-rail-single-conservator",
+      "confidence": "source-based",
+      "sourcePages": [
+        102
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-102.webp",
+      "approval": {
+        "recordShapeSha256": "716f6153fad7ca314ec8bb00259c87b8d09900a8b62a0f6c9bf1bf773c0b37cf",
+        "databaseId": "efa13efe-6b1f-5e2d-8256-a811cebddbe7",
+        "groupId": "drawing-omzh-102",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-102.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        102
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "drawing-omzh-102"
+      ],
+      "choices": [
+        {
+          "groupId": "drawing-omzh-102",
+          "geometryType": "tr26-rail-single-conservator",
+          "iconType": "tr26-rail-single-conservator",
+          "sourcePages": [
+            102
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "tr2026-family-tm-zh-35-27-5",
+    "name": "Трансформаторы ТМ(Ж)-25–630 кВА напряжением 35(27,5) кВ",
+    "designation": "Трансформаторы ТМ(Ж)-25–630 кВА напряжением 35(27,5) кВ",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "family",
+    "sourceRecordType": "family",
+    "familyId": null,
+    "sourceFamilyId": "tm-zh-35-27-5",
+    "variantIds": [
+      "alageum-tm-25-cu-cu-0becb1cd",
+      "alageum-tm-40-cu-cu-757e760d",
+      "alageum-tm-63-cu-cu-e6ec72c3",
+      "alageum-tm-100-gofro-41550739",
+      "alageum-tm-160-gofro-0b7d356f",
+      "alageum-tm-250-gofro-b79053ec",
+      "alageum-tm-400-gofro-6de155e2",
+      "alageum-tm-630-gofro-5f8fa7bf"
+    ],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        103,
+        104
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "f1811bec915b36edd70fd1d53edc501bfd1ac9df0f85eff73e921cbb4e226de0",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        103,
+        104
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-103.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        103,
+        104
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-103.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-103.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        103
+      ]
+    },
+    "proposalEvidence": null
+  }
+]

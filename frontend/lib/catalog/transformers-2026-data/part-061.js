@@ -1,0 +1,2684 @@
+// Generated from independently reviewed source records.
+const records = [
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТМ(Ж)-100 гофро",
+    "execution": "гофро",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      103,
+      104
+    ],
+    "sourceRow": {
+      "pdfPage": 103,
+      "printedPage": 103,
+      "designation": "ТМ(Ж)-100 гофро",
+      "variant": "гофро",
+      "tableModelIndexOnPage": 4
+    },
+    "sourceFamilyId": "tm-zh-35-27-5",
+    "sourceRecordType": "model",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum Electric",
+    "isOrderableSku": false,
+    "power": 100,
+    "voltage": "35(27,5)/0,4",
+    "voltageUnit": "кВ",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "100",
+        "unit": "кВА",
+        "page": 103,
+        "valueBasis": "Power value parsed from explicit model designation; row label occupies the nominal-power column."
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "35(27,5)/0,4",
+        "unit": "кВ",
+        "page": 103
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "P0",
+        "value": "410",
+        "unit": "Вт",
+        "page": 103
+      },
+      {
+        "label": "Pk",
+        "value": "1970",
+        "unit": "Вт",
+        "page": 103
+      },
+      {
+        "label": "Uk",
+        "value": "6,5",
+        "unit": "%",
+        "page": 103
+      },
+      {
+        "label": "I0",
+        "value": "2,1",
+        "unit": "%",
+        "page": 103
+      },
+      {
+        "label": "L",
+        "value": "1185",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "B",
+        "value": "780",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "1720",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Полная масса",
+        "value": "915",
+        "unit": "кг",
+        "page": 103
+      },
+      {
+        "label": "Масса масла",
+        "value": "280",
+        "unit": "кг",
+        "page": 103
+      },
+      {
+        "label": "A",
+        "value": "550",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A1",
+        "value": "550",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "M",
+        "value": "100",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "K",
+        "value": "435",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h",
+        "value": "380",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h1",
+        "value": "165",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 103
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Тип трансформатора",
+        "value": "масляный",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ 11677",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-103.webp",
+    "imageSourcePage": 103,
+    "imageCaption": "Страница 103 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "100",
+        "unit": "кВА",
+        "page": 103,
+        "valueBasis": "Power value parsed from explicit model designation; row label occupies the nominal-power column."
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "35(27,5)/0,4",
+        "unit": "кВ",
+        "page": 103
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0",
+        "unit": null,
+        "page": 103
+      },
+      {
+        "label": "P0",
+        "value": "410",
+        "unit": "Вт",
+        "page": 103
+      },
+      {
+        "label": "Pk",
+        "value": "1970",
+        "unit": "Вт",
+        "page": 103
+      },
+      {
+        "label": "Uk",
+        "value": "6,5",
+        "unit": "%",
+        "page": 103
+      },
+      {
+        "label": "I0",
+        "value": "2,1",
+        "unit": "%",
+        "page": 103
+      },
+      {
+        "label": "L",
+        "value": "1185",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "B",
+        "value": "780",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "H",
+        "value": "1720",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "Полная масса",
+        "value": "915",
+        "unit": "кг",
+        "page": 103
+      },
+      {
+        "label": "Масса масла",
+        "value": "280",
+        "unit": "кг",
+        "page": 103
+      },
+      {
+        "label": "A",
+        "value": "550",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "A1",
+        "value": "550",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "M",
+        "value": "100",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "K",
+        "value": "435",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "h",
+        "value": "380",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "h1",
+        "value": "165",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 103
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": null,
+        "page": 103
+      },
+      {
+        "label": "Тип трансформатора",
+        "value": "масляный",
+        "unit": null,
+        "page": 103
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ 11677",
+        "unit": null,
+        "page": 103
+      }
+    ],
+    "id": "alageum-tm-100-gofro-41550739",
+    "name": "ТМ(Ж)-100 гофро",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-tm-zh-35-27-5",
+    "familyName": "Трансформаторы ТМ(Ж)-25–630 кВА напряжением 35(27,5) кВ",
+    "series": "Трансформаторы ТМ(Ж)-25–630 кВА напряжением 35(27,5) кВ",
+    "subtype": "гофро",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "100",
+        "unit": "кВА",
+        "page": 103,
+        "valueBasis": "Power value parsed from explicit model designation; row label occupies the nominal-power column."
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "35(27,5)/0,4",
+        "unit": "кВ",
+        "page": 103
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "P0",
+        "value": "410",
+        "unit": "Вт",
+        "page": 103
+      },
+      {
+        "label": "Pk",
+        "value": "1970",
+        "unit": "Вт",
+        "page": 103
+      },
+      {
+        "label": "Uk",
+        "value": "6,5",
+        "unit": "%",
+        "page": 103
+      },
+      {
+        "label": "I0",
+        "value": "2,1",
+        "unit": "%",
+        "page": 103
+      },
+      {
+        "label": "L",
+        "value": "1185",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "B",
+        "value": "780",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "1720",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Полная масса",
+        "value": "915",
+        "unit": "кг",
+        "page": 103
+      },
+      {
+        "label": "Масса масла",
+        "value": "280",
+        "unit": "кг",
+        "page": 103
+      },
+      {
+        "label": "A",
+        "value": "550",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A1",
+        "value": "550",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "M",
+        "value": "100",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "K",
+        "value": "435",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h",
+        "value": "380",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h1",
+        "value": "165",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 103
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Тип трансформатора",
+        "value": "масляный",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ 11677",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТМ(Ж)-160 гофро",
+    "execution": "гофро",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      103,
+      104
+    ],
+    "sourceRow": {
+      "pdfPage": 103,
+      "printedPage": 103,
+      "designation": "ТМ(Ж)-160 гофро",
+      "variant": "гофро",
+      "tableModelIndexOnPage": 5
+    },
+    "sourceFamilyId": "tm-zh-35-27-5",
+    "sourceRecordType": "model",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum Electric",
+    "isOrderableSku": false,
+    "power": 160,
+    "voltage": "35(27,5)/0,4",
+    "voltageUnit": "кВ",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "160",
+        "unit": "кВА",
+        "page": 103,
+        "valueBasis": "Power value parsed from explicit model designation; row label occupies the nominal-power column."
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "35(27,5)/0,4",
+        "unit": "кВ",
+        "page": 103
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "P0",
+        "value": "560",
+        "unit": "Вт",
+        "page": 103
+      },
+      {
+        "label": "Pk",
+        "value": "2650",
+        "unit": "Вт",
+        "page": 103
+      },
+      {
+        "label": "Uk",
+        "value": "6,0",
+        "unit": "%",
+        "page": 103
+      },
+      {
+        "label": "I0",
+        "value": "2,0",
+        "unit": "%",
+        "page": 103
+      },
+      {
+        "label": "L",
+        "value": "1285",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "B",
+        "value": "1015",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "1715",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Полная масса",
+        "value": "1020",
+        "unit": "кг",
+        "page": 103
+      },
+      {
+        "label": "Масса масла",
+        "value": "310",
+        "unit": "кг",
+        "page": 103
+      },
+      {
+        "label": "A",
+        "value": "660",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A1",
+        "value": "660",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "M",
+        "value": "100",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "K",
+        "value": "560",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h",
+        "value": "510",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h1",
+        "value": "145",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 103
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Тип трансформатора",
+        "value": "масляный",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ 11677",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-103.webp",
+    "imageSourcePage": 103,
+    "imageCaption": "Страница 103 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "160",
+        "unit": "кВА",
+        "page": 103,
+        "valueBasis": "Power value parsed from explicit model designation; row label occupies the nominal-power column."
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "35(27,5)/0,4",
+        "unit": "кВ",
+        "page": 103
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0",
+        "unit": null,
+        "page": 103
+      },
+      {
+        "label": "P0",
+        "value": "560",
+        "unit": "Вт",
+        "page": 103
+      },
+      {
+        "label": "Pk",
+        "value": "2650",
+        "unit": "Вт",
+        "page": 103
+      },
+      {
+        "label": "Uk",
+        "value": "6,0",
+        "unit": "%",
+        "page": 103
+      },
+      {
+        "label": "I0",
+        "value": "2,0",
+        "unit": "%",
+        "page": 103
+      },
+      {
+        "label": "L",
+        "value": "1285",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "B",
+        "value": "1015",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "H",
+        "value": "1715",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "Полная масса",
+        "value": "1020",
+        "unit": "кг",
+        "page": 103
+      },
+      {
+        "label": "Масса масла",
+        "value": "310",
+        "unit": "кг",
+        "page": 103
+      },
+      {
+        "label": "A",
+        "value": "660",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "A1",
+        "value": "660",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "M",
+        "value": "100",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "K",
+        "value": "560",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "h",
+        "value": "510",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "h1",
+        "value": "145",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 103
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": null,
+        "page": 103
+      },
+      {
+        "label": "Тип трансформатора",
+        "value": "масляный",
+        "unit": null,
+        "page": 103
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ 11677",
+        "unit": null,
+        "page": 103
+      }
+    ],
+    "id": "alageum-tm-160-gofro-0b7d356f",
+    "name": "ТМ(Ж)-160 гофро",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-tm-zh-35-27-5",
+    "familyName": "Трансформаторы ТМ(Ж)-25–630 кВА напряжением 35(27,5) кВ",
+    "series": "Трансформаторы ТМ(Ж)-25–630 кВА напряжением 35(27,5) кВ",
+    "subtype": "гофро",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "160",
+        "unit": "кВА",
+        "page": 103,
+        "valueBasis": "Power value parsed from explicit model designation; row label occupies the nominal-power column."
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "35(27,5)/0,4",
+        "unit": "кВ",
+        "page": 103
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "P0",
+        "value": "560",
+        "unit": "Вт",
+        "page": 103
+      },
+      {
+        "label": "Pk",
+        "value": "2650",
+        "unit": "Вт",
+        "page": 103
+      },
+      {
+        "label": "Uk",
+        "value": "6,0",
+        "unit": "%",
+        "page": 103
+      },
+      {
+        "label": "I0",
+        "value": "2,0",
+        "unit": "%",
+        "page": 103
+      },
+      {
+        "label": "L",
+        "value": "1285",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "B",
+        "value": "1015",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "1715",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Полная масса",
+        "value": "1020",
+        "unit": "кг",
+        "page": 103
+      },
+      {
+        "label": "Масса масла",
+        "value": "310",
+        "unit": "кг",
+        "page": 103
+      },
+      {
+        "label": "A",
+        "value": "660",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A1",
+        "value": "660",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "M",
+        "value": "100",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "K",
+        "value": "560",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h",
+        "value": "510",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h1",
+        "value": "145",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 103
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Тип трансформатора",
+        "value": "масляный",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ 11677",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТМ(Ж)-250 гофро",
+    "execution": "гофро",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      103,
+      104
+    ],
+    "sourceRow": {
+      "pdfPage": 103,
+      "printedPage": 103,
+      "designation": "ТМ(Ж)-250 гофро",
+      "variant": "гофро",
+      "tableModelIndexOnPage": 6
+    },
+    "sourceFamilyId": "tm-zh-35-27-5",
+    "sourceRecordType": "model",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum Electric",
+    "isOrderableSku": false,
+    "power": 250,
+    "voltage": "35(27,5)/0,4",
+    "voltageUnit": "кВ",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "250",
+        "unit": "кВА",
+        "page": 103,
+        "valueBasis": "Power value parsed from explicit model designation; row label occupies the nominal-power column."
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "35(27,5)/0,4",
+        "unit": "кВ",
+        "page": 103
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "P0",
+        "value": "800",
+        "unit": "Вт",
+        "page": 103
+      },
+      {
+        "label": "Pk",
+        "value": "3700",
+        "unit": "Вт",
+        "page": 103
+      },
+      {
+        "label": "Uk",
+        "value": "6,0",
+        "unit": "%",
+        "page": 103
+      },
+      {
+        "label": "I0",
+        "value": "2,0",
+        "unit": "%",
+        "page": 103
+      },
+      {
+        "label": "L",
+        "value": "1630",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "B",
+        "value": "930",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "1800",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Полная масса",
+        "value": "1540",
+        "unit": "кг",
+        "page": 103
+      },
+      {
+        "label": "Масса масла",
+        "value": "520",
+        "unit": "кг",
+        "page": 103
+      },
+      {
+        "label": "A",
+        "value": "605",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A1",
+        "value": "605",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "M",
+        "value": "100",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "K",
+        "value": "435",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h",
+        "value": "375",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h1",
+        "value": "172",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 103
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Тип трансформатора",
+        "value": "масляный",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ 11677",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-103.webp",
+    "imageSourcePage": 103,
+    "imageCaption": "Страница 103 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "250",
+        "unit": "кВА",
+        "page": 103,
+        "valueBasis": "Power value parsed from explicit model designation; row label occupies the nominal-power column."
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "35(27,5)/0,4",
+        "unit": "кВ",
+        "page": 103
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0",
+        "unit": null,
+        "page": 103
+      },
+      {
+        "label": "P0",
+        "value": "800",
+        "unit": "Вт",
+        "page": 103
+      },
+      {
+        "label": "Pk",
+        "value": "3700",
+        "unit": "Вт",
+        "page": 103
+      },
+      {
+        "label": "Uk",
+        "value": "6,0",
+        "unit": "%",
+        "page": 103
+      },
+      {
+        "label": "I0",
+        "value": "2,0",
+        "unit": "%",
+        "page": 103
+      },
+      {
+        "label": "L",
+        "value": "1630",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "B",
+        "value": "930",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "H",
+        "value": "1800",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "Полная масса",
+        "value": "1540",
+        "unit": "кг",
+        "page": 103
+      },
+      {
+        "label": "Масса масла",
+        "value": "520",
+        "unit": "кг",
+        "page": 103
+      },
+      {
+        "label": "A",
+        "value": "605",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "A1",
+        "value": "605",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "M",
+        "value": "100",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "K",
+        "value": "435",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "h",
+        "value": "375",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "h1",
+        "value": "172",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 103
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": null,
+        "page": 103
+      },
+      {
+        "label": "Тип трансформатора",
+        "value": "масляный",
+        "unit": null,
+        "page": 103
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ 11677",
+        "unit": null,
+        "page": 103
+      }
+    ],
+    "id": "alageum-tm-250-gofro-b79053ec",
+    "name": "ТМ(Ж)-250 гофро",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-tm-zh-35-27-5",
+    "familyName": "Трансформаторы ТМ(Ж)-25–630 кВА напряжением 35(27,5) кВ",
+    "series": "Трансформаторы ТМ(Ж)-25–630 кВА напряжением 35(27,5) кВ",
+    "subtype": "гофро",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "250",
+        "unit": "кВА",
+        "page": 103,
+        "valueBasis": "Power value parsed from explicit model designation; row label occupies the nominal-power column."
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "35(27,5)/0,4",
+        "unit": "кВ",
+        "page": 103
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "P0",
+        "value": "800",
+        "unit": "Вт",
+        "page": 103
+      },
+      {
+        "label": "Pk",
+        "value": "3700",
+        "unit": "Вт",
+        "page": 103
+      },
+      {
+        "label": "Uk",
+        "value": "6,0",
+        "unit": "%",
+        "page": 103
+      },
+      {
+        "label": "I0",
+        "value": "2,0",
+        "unit": "%",
+        "page": 103
+      },
+      {
+        "label": "L",
+        "value": "1630",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "B",
+        "value": "930",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "1800",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Полная масса",
+        "value": "1540",
+        "unit": "кг",
+        "page": 103
+      },
+      {
+        "label": "Масса масла",
+        "value": "520",
+        "unit": "кг",
+        "page": 103
+      },
+      {
+        "label": "A",
+        "value": "605",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A1",
+        "value": "605",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "M",
+        "value": "100",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "K",
+        "value": "435",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h",
+        "value": "375",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h1",
+        "value": "172",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 103
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Тип трансформатора",
+        "value": "масляный",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ 11677",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТМ(Ж)-400 гофро",
+    "execution": "гофро",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      103,
+      104
+    ],
+    "sourceRow": {
+      "pdfPage": 103,
+      "printedPage": 103,
+      "designation": "ТМ(Ж)-400 гофро",
+      "variant": "гофро",
+      "tableModelIndexOnPage": 7
+    },
+    "sourceFamilyId": "tm-zh-35-27-5",
+    "sourceRecordType": "model",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum Electric",
+    "isOrderableSku": false,
+    "power": 400,
+    "voltage": "35(27,5)/0,4",
+    "voltageUnit": "кВ",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "400",
+        "unit": "кВА",
+        "page": 103,
+        "valueBasis": "Power value parsed from explicit model designation; row label occupies the nominal-power column."
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "35(27,5)/0,4",
+        "unit": "кВ",
+        "page": 103
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "P0",
+        "value": "1090",
+        "unit": "Вт",
+        "page": 103
+      },
+      {
+        "label": "Pk",
+        "value": "5900",
+        "unit": "Вт",
+        "page": 103
+      },
+      {
+        "label": "Uk",
+        "value": "6,5",
+        "unit": "%",
+        "page": 103
+      },
+      {
+        "label": "I0",
+        "value": "1,8",
+        "unit": "%",
+        "page": 103
+      },
+      {
+        "label": "L",
+        "value": "1585",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "B",
+        "value": "950",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "1930",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Полная масса",
+        "value": "1994",
+        "unit": "кг",
+        "page": 103
+      },
+      {
+        "label": "Масса масла",
+        "value": "675",
+        "unit": "кг",
+        "page": 103
+      },
+      {
+        "label": "A",
+        "value": "760",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A1",
+        "value": "760",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "M",
+        "value": "150",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "K",
+        "value": "480",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h",
+        "value": "400",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h1",
+        "value": "156",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 103
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Тип трансформатора",
+        "value": "масляный",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ 11677",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-103.webp",
+    "imageSourcePage": 103,
+    "imageCaption": "Страница 103 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "400",
+        "unit": "кВА",
+        "page": 103,
+        "valueBasis": "Power value parsed from explicit model designation; row label occupies the nominal-power column."
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "35(27,5)/0,4",
+        "unit": "кВ",
+        "page": 103
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0",
+        "unit": null,
+        "page": 103
+      },
+      {
+        "label": "P0",
+        "value": "1090",
+        "unit": "Вт",
+        "page": 103
+      },
+      {
+        "label": "Pk",
+        "value": "5900",
+        "unit": "Вт",
+        "page": 103
+      },
+      {
+        "label": "Uk",
+        "value": "6,5",
+        "unit": "%",
+        "page": 103
+      },
+      {
+        "label": "I0",
+        "value": "1,8",
+        "unit": "%",
+        "page": 103
+      },
+      {
+        "label": "L",
+        "value": "1585",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "B",
+        "value": "950",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "H",
+        "value": "1930",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "Полная масса",
+        "value": "1994",
+        "unit": "кг",
+        "page": 103
+      },
+      {
+        "label": "Масса масла",
+        "value": "675",
+        "unit": "кг",
+        "page": 103
+      },
+      {
+        "label": "A",
+        "value": "760",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "A1",
+        "value": "760",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "M",
+        "value": "150",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "K",
+        "value": "480",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "h",
+        "value": "400",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "h1",
+        "value": "156",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 103
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": null,
+        "page": 103
+      },
+      {
+        "label": "Тип трансформатора",
+        "value": "масляный",
+        "unit": null,
+        "page": 103
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ 11677",
+        "unit": null,
+        "page": 103
+      }
+    ],
+    "id": "alageum-tm-400-gofro-6de155e2",
+    "name": "ТМ(Ж)-400 гофро",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-tm-zh-35-27-5",
+    "familyName": "Трансформаторы ТМ(Ж)-25–630 кВА напряжением 35(27,5) кВ",
+    "series": "Трансформаторы ТМ(Ж)-25–630 кВА напряжением 35(27,5) кВ",
+    "subtype": "гофро",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "400",
+        "unit": "кВА",
+        "page": 103,
+        "valueBasis": "Power value parsed from explicit model designation; row label occupies the nominal-power column."
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "35(27,5)/0,4",
+        "unit": "кВ",
+        "page": 103
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "P0",
+        "value": "1090",
+        "unit": "Вт",
+        "page": 103
+      },
+      {
+        "label": "Pk",
+        "value": "5900",
+        "unit": "Вт",
+        "page": 103
+      },
+      {
+        "label": "Uk",
+        "value": "6,5",
+        "unit": "%",
+        "page": 103
+      },
+      {
+        "label": "I0",
+        "value": "1,8",
+        "unit": "%",
+        "page": 103
+      },
+      {
+        "label": "L",
+        "value": "1585",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "B",
+        "value": "950",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "1930",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Полная масса",
+        "value": "1994",
+        "unit": "кг",
+        "page": 103
+      },
+      {
+        "label": "Масса масла",
+        "value": "675",
+        "unit": "кг",
+        "page": 103
+      },
+      {
+        "label": "A",
+        "value": "760",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A1",
+        "value": "760",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "M",
+        "value": "150",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "K",
+        "value": "480",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h",
+        "value": "400",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h1",
+        "value": "156",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 103
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Тип трансформатора",
+        "value": "масляный",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ 11677",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "configurations": []
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТМ(Ж)-630 гофро",
+    "execution": "гофро",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      103,
+      104
+    ],
+    "sourceRow": {
+      "pdfPage": 103,
+      "printedPage": 103,
+      "designation": "ТМ(Ж)-630 гофро",
+      "variant": "гофро",
+      "tableModelIndexOnPage": 8
+    },
+    "sourceFamilyId": "tm-zh-35-27-5",
+    "sourceRecordType": "model",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum Electric",
+    "isOrderableSku": false,
+    "power": 630,
+    "voltage": "35(27,5)/0,4",
+    "voltageUnit": "кВ",
+    "cooling": null,
+    "installation": null,
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "630",
+        "unit": "кВА",
+        "page": 103,
+        "valueBasis": "Power value parsed from explicit model designation; row label occupies the nominal-power column."
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "35(27,5)/0,4",
+        "unit": "кВ",
+        "page": 103
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "P0",
+        "value": "1700",
+        "unit": "Вт",
+        "page": 103
+      },
+      {
+        "label": "Pk",
+        "value": "8500",
+        "unit": "Вт",
+        "page": 103
+      },
+      {
+        "label": "Uk",
+        "value": "6,5",
+        "unit": "%",
+        "page": 103
+      },
+      {
+        "label": "I0",
+        "value": "1,5",
+        "unit": "%",
+        "page": 103
+      },
+      {
+        "label": "L",
+        "value": "2025",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "B",
+        "value": "1204",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "2205",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Полная масса",
+        "value": "3100",
+        "unit": "кг",
+        "page": 103
+      },
+      {
+        "label": "Масса масла",
+        "value": "1025",
+        "unit": "кг",
+        "page": 103
+      },
+      {
+        "label": "A",
+        "value": "820",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A1",
+        "value": "820",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "M",
+        "value": "150",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "K",
+        "value": "400",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h",
+        "value": "220",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h1",
+        "value": "190",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 103
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Тип трансформатора",
+        "value": "масляный",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ 11677",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-103.webp",
+    "imageSourcePage": 103,
+    "imageCaption": "Страница 103 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "630",
+        "unit": "кВА",
+        "page": 103,
+        "valueBasis": "Power value parsed from explicit model designation; row label occupies the nominal-power column."
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "35(27,5)/0,4",
+        "unit": "кВ",
+        "page": 103
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0",
+        "unit": null,
+        "page": 103
+      },
+      {
+        "label": "P0",
+        "value": "1700",
+        "unit": "Вт",
+        "page": 103
+      },
+      {
+        "label": "Pk",
+        "value": "8500",
+        "unit": "Вт",
+        "page": 103
+      },
+      {
+        "label": "Uk",
+        "value": "6,5",
+        "unit": "%",
+        "page": 103
+      },
+      {
+        "label": "I0",
+        "value": "1,5",
+        "unit": "%",
+        "page": 103
+      },
+      {
+        "label": "L",
+        "value": "2025",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "B",
+        "value": "1204",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "H",
+        "value": "2205",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "Полная масса",
+        "value": "3100",
+        "unit": "кг",
+        "page": 103
+      },
+      {
+        "label": "Масса масла",
+        "value": "1025",
+        "unit": "кг",
+        "page": 103
+      },
+      {
+        "label": "A",
+        "value": "820",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "A1",
+        "value": "820",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "M",
+        "value": "150",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "K",
+        "value": "400",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "h",
+        "value": "220",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "h1",
+        "value": "190",
+        "unit": null,
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred."
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 103
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": null,
+        "page": 103
+      },
+      {
+        "label": "Тип трансформатора",
+        "value": "масляный",
+        "unit": null,
+        "page": 103
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ 11677",
+        "unit": null,
+        "page": 103
+      }
+    ],
+    "id": "alageum-tm-630-gofro-5f8fa7bf",
+    "name": "ТМ(Ж)-630 гофро",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-tm-zh-35-27-5",
+    "familyName": "Трансформаторы ТМ(Ж)-25–630 кВА напряжением 35(27,5) кВ",
+    "series": "Трансформаторы ТМ(Ж)-25–630 кВА напряжением 35(27,5) кВ",
+    "subtype": "гофро",
+    "description": "",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "630",
+        "unit": "кВА",
+        "page": 103,
+        "valueBasis": "Power value parsed from explicit model designation; row label occupies the nominal-power column."
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "35(27,5)/0,4",
+        "unit": "кВ",
+        "page": 103
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "P0",
+        "value": "1700",
+        "unit": "Вт",
+        "page": 103
+      },
+      {
+        "label": "Pk",
+        "value": "8500",
+        "unit": "Вт",
+        "page": 103
+      },
+      {
+        "label": "Uk",
+        "value": "6,5",
+        "unit": "%",
+        "page": 103
+      },
+      {
+        "label": "I0",
+        "value": "1,5",
+        "unit": "%",
+        "page": 103
+      },
+      {
+        "label": "L",
+        "value": "2025",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "B",
+        "value": "1204",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "2205",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Полная масса",
+        "value": "3100",
+        "unit": "кг",
+        "page": 103
+      },
+      {
+        "label": "Масса масла",
+        "value": "1025",
+        "unit": "кг",
+        "page": 103
+      },
+      {
+        "label": "A",
+        "value": "820",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A1",
+        "value": "820",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "M",
+        "value": "150",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "K",
+        "value": "400",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h",
+        "value": "220",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h1",
+        "value": "190",
+        "unit": "",
+        "page": 103,
+        "unitNote": "Source table dimension header does not print a unit; no unit inferred.",
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 103
+      },
+      {
+        "label": "Количество фаз",
+        "value": "3",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Тип трансформатора",
+        "value": "масляный",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ 11677",
+        "unit": "",
+        "page": 103,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "configurations": []
+  }
+];
+export default records;

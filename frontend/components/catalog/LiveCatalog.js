@@ -1,0 +1,77 @@
+'use client';
+import { sourcePageUrl } from '@/lib/catalog/sources';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
+import { loadApiCatalog } from '@/lib/catalog/source';
+import { liveHref } from '@/lib/catalog/apiData';
+import { catalogPrice } from '@/lib/catalog/admin';
+import { filterProducts, parseComparison, selectionCsv, sortProducts } from '@/lib/catalog/query';
+import { categories } from '@/lib/catalog/data';
+import { comparisonSpecValue } from '@/lib/catalog/comparison';
+import ProductIcon from './ProductIcon';
+import { ProductThumbnail } from './ProductPhotograph';
+import ProductPhotoVisual from './ProductPhotoVisual';
+import CatalogConfigurations from './CatalogConfigurations';
+import CatalogSpecValue from './CatalogSpecValue';
+import CatalogSourceEvidence from './CatalogSourceEvidence';
+import { getApiCatalogReadProduct } from '@/lib/catalog/identityCompletion';
+import { catalogFamilyMembers, catalogMemberLabel, displayDescription, displayExecution, displayFamilyName, displayProductName, displaySpecLabel, catalogSourceWarnings, isCatalogFamily } from '@/lib/catalog/presentation';
+import { getCatalogSpecSummary } from '@/lib/catalog/grouping';
+import { useApiSelection } from './ApiSelectionProvider';
+import { useUrlComparison } from './useUrlComparison';
+
+function useLiveProducts() {
+ const [data,setData]=useState({status:'loading',items:[],error:''});
+ const [attempt,setAttempt]=useState(0);
+ useEffect(()=>{let active=true;loadApiCatalog().then(items=>{if(active)setData({status:'ready',items,error:''});}).catch(error=>{if(active)setData({status:'error',items:[],error:error.message});});return()=>{active=false;};},[attempt]);
+ return {...data,retry:()=>{setData({status:'loading',items:[],error:''});setAttempt(value=>value+1);}};
+}
+function LiveStatus({data}) {
+ return data.status==='loading'?<p role="status">Загрузка актуальных данных…</p>:data.status==='error'?<div className="catalog-empty" role="alert" aria-label="Ошибка каталога"><h2>Сервер каталога недоступен</h2><p>Актуальные товары и цены не удалось получить. Статический каталог не подменяет данные сервера.</p><p>{data.error}</p><button className="catalog-button" onClick={data.retry}>Повторить</button>{process.env.NEXT_PUBLIC_CATALOG_SOURCE !== 'api' && <Link href="/catalog?source=static">Справочный статический каталог</Link>}</div>:null;
+}
+function LiveNotice(){return <p className="catalog-notice">Актуальный каталог из базы. Цены указаны в валюте каждой позиции; наличие и условия поставки уточняются. <Link href="/selection?source=api">Подборка →</Link></p>;}
+function AddButton({product,onAdded}) {const selection=useApiSelection();return <button className="catalog-button compact" onClick={()=>{selection.add(product.id,product.databaseId);onAdded('Добавлено в подборку');}}>В подборку +</button>;}
+
+export function LiveCatalog() {
+ const data=useLiveProducts(),params=useSearchParams(),router=useRouter(),selection=useApiSelection();
+ const [notice,setNotice]=useState('');
+ const query=Object.fromEntries(params),filtered=sortProducts(filterProducts(data.items,query),query.sort);
+ const page=Math.min(Math.max(1,parseInt(query.page||'1',10)||1),Math.max(1,Math.ceil(filtered.length/20)));
+ const [selected,setSelected]=useUrlComparison(query.compare,data.items.filter(product=>product.comparable));
+ function update(changes){const next=new URLSearchParams(params);next.set('source','api');next.delete('page');Object.entries(changes).forEach(([key,value])=>value?next.set(key,value):next.delete(key));router.push(`/catalog?${next}`,{scroll:false});}
+ function toggle(id){if(!selected.includes(id)&&selected.length>=4){setNotice('Можно сравнить до четырёх товаров.');return;}const next=selected.includes(id)?selected.filter(key=>key!==id):[...selected,id];setSelected(next);const url=new URLSearchParams(window.location.search);url.set('source','api');url.set('compare',next.join(','));window.history.replaceState(null,'',`/catalog?${url}`);}
+ return <div className="catalog-page"><div className="catalog-heading compact-heading"><div><p className="catalog-kicker">АКТУАЛЬНЫЙ КАТАЛОГ</p><h1>Оборудование и цены</h1></div><Link className="catalog-button" href="/selection?source=api">Подборка ({selection.count})</Link></div><LiveNotice/>
+  <form className="catalog-search" onSubmit={event=>{event.preventDefault();update({q:new FormData(event.currentTarget).get('q')});}}><input name="q" type="search" aria-label="Поиск оборудования" defaultValue={query.q||''} placeholder="Название, артикул, характеристика"/><button className="catalog-button primary">Найти</button></form>
+  <label className="catalog-field"><span id="live-category-label">Категория</span><select aria-labelledby="live-category-label" value={query.category||''} onChange={event=>update({category:event.target.value})}><option value="">Все категории</option>{categories.map(category=><option key={category.id} value={category.id}>{category.name}</option>)}</select></label><LiveStatus data={data}/>
+  {data.status==='ready'&&<><p role="status">Найдено: {filtered.length}</p><div className="catalog-table-wrap"><table className="catalog-table"><thead><tr><th>Сравнить</th><th>Оборудование</th><th>Цена</th><th>Действия</th></tr></thead><tbody>{filtered.slice((page-1)*20,page*20).map(product=><tr key={product.id}><td><input type="checkbox" aria-label={`Сравнить ${product.designation||product.sku||displayProductName(product)}`} checked={selected.includes(product.id)} disabled={!product.comparable} onChange={()=>toggle(product.id)}/></td><td><div className="product-cell"><ProductThumbnail product={product}/><div><Link className="product-name" href={liveHref(product.id)}>{displayProductName(product)}</Link>{displayExecution(product)&&<span className="catalog-meta">{displayExecution(product)}</span>}<span className="product-sku">{product.sku||'Артикул не указан'}</span></div></div></td><td>{catalogPrice(product)}</td><td><AddButton product={product} onAdded={setNotice}/></td></tr>)}</tbody></table></div>{!filtered.length&&<p>Опубликованные товары не найдены.</p>}<div className="catalog-pagination"><button className="catalog-button" disabled={page<=1} onClick={()=>update({page:String(page-1)})}>← Назад</button><span>Страница {page}</span><button className="catalog-button" disabled={page*20>=filtered.length} onClick={()=>update({page:String(page+1)})}>Далее →</button></div></>}
+  <p role="status">{notice}</p>{selected.length>0&&<div className="comparison-tray"><span>Выбрано: {selected.length} из 4</span><button className="text-button" onClick={()=>update({compare:''})}>Очистить</button>{selected.length>=2&&<Link className="catalog-button primary" href={`/catalog/compare?source=api&ids=${selected.join(',')}`}>Сравнить →</Link>}</div>}
+ </div>;
+}
+export function LiveProductDetails({id}) {
+ const data=useLiveProducts();const [notice,setNotice]=useState('');
+ const product=getApiCatalogReadProduct(id,data.items);
+ const related=product?catalogFamilyMembers(product,data.items):[];
+ const warnings=product?catalogSourceWarnings(product,data.items):[];
+ return <div className="catalog-page product-page"><nav className="breadcrumbs"><Link href="/catalog?source=api">Каталог</Link><span>/</span><span>Товар</span></nav><LiveStatus data={data}/>
+ {data.status==='ready'&&(!product?<div className="catalog-empty"><h1>Товар недоступен</h1><p>Он скрыт, снят с публикации или ссылка устарела.</p><Link href="/catalog?source=api">Вернуться в актуальный каталог</Link></div>:<><LiveNotice/><div className="product-overview"><ProductPhotoVisual key={product.id} product={product} records={data.items}/><div className="product-summary"><p className="catalog-kicker">АКТУАЛЬНАЯ ВЕРСИЯ {product.version}</p><h1>{displayProductName(product)}</h1><p className="product-code">{product.designation || product.sku || product.name}</p>{displayExecution(product) && <p className="catalog-meta">Исполнение строки: {displayExecution(product)}</p>}<h2>{catalogPrice(product)}</h2><p>{displayDescription(product,data.items)}</p><dl className="member-evidence-specs">{getCatalogSpecSummary(product,data.items).filter(row=>row.value!=='—').map(row=><div key={row.key}><dt>{displaySpecLabel(row.label)}</dt><dd>{row.value}</dd></div>)}</dl><div className="product-actions"><AddButton product={product} onAdded={setNotice}/>{product.comparable&&<Link className="catalog-button" href={`/catalog?source=api&compare=${product.id}`}>К сравнению →</Link>}</div><p role="status">{notice}</p></div></div>
+ {isCatalogFamily(product)&&<CatalogSourceEvidence product={product} records={data.items}/>}
+ <section className="product-panel"><h2>Технические характеристики</h2><dl className="technical-specs">{product.technicalSpecs.map((row,index)=><div key={index}><dt className="catalog-spec-text">{displaySpecLabel(row.label)}</dt><dd className="catalog-spec-text"><CatalogSpecValue product={product} row={row}/></dd><span className="catalog-spec-text">{row.unit||'—'}</span></div>)}{!product.technicalSpecs.length&&product.attributes.map((row,index)=><div key={index}><dt>{row.code}</dt><dd>{typeof row.value==='object'?JSON.stringify(row.value):String(row.value??'—')}</dd><span>{row.unit||'—'}</span></div>)}</dl>{!product.technicalSpecs.length&&!product.attributes.length&&<p>Характеристики ещё не добавлены.</p>}
+ {warnings.length>0&&<details className="catalog-data-warning"><summary>Примечания источника ({warnings.length})</summary><ul>{warnings.map((warning,index)=><li key={index}>{warning.note}{warning.productId!==product.id&&<> <Link href={liveHref(warning.productId)}>Запись: {warning.designation} →</Link></>}</li>)}</ul></details>}
+ <CatalogConfigurations product={product}/>
+ {product.familyId&&data.items.some(item=>item.id===product.familyId)&&<p><Link href={liveHref(product.familyId)}>Семейство: {displayFamilyName(product)||product.familyId} →</Link></p>}{related.length>0&&<><h3>Опубликованные исполнения серии</h3><div className="variant-grid">{related.map(item=><Link key={item.id} href={liveHref(item.id)}><ProductIcon product={item} size={40}/><span>{catalogMemberLabel(item)}</span></Link>)}</div></>}
+ <h3>Источник</h3><p>{product.sourceTitle||'Данные владельца каталога'}</p>{product.sourceUrl&&<a href={product.sourceUrl} target="_blank" rel="noopener noreferrer">Открыть источник ↗</a>}<div className="catalog-source-pages">{product.sourcePages.map(page=><Link key={page} href={sourcePageUrl(product, page)}>Страница {page}</Link>)}</div></section>{!isCatalogFamily(product)&&<CatalogSourceEvidence product={product} records={data.items}/>}</>)}
+ </div>;
+}
+export function LiveComparison(){
+ const data=useLiveProducts(),params=useSearchParams(),router=useRouter();const [notice,setNotice]=useState('');
+ const ids=parseComparison(params.get('ids'),data.items.filter(item=>item.comparable)),selected=ids.map(id=>data.items.find(item=>item.id===id));
+ const rows=[...new Map(selected.flatMap(product=>product.technicalSpecs.map(spec=>[`${spec.label}|${spec.unit}`,spec]))).values()];
+ return <div className="catalog-page"><h1>Сравнение оборудования</h1><LiveNotice/><LiveStatus data={data}/>{data.status==='ready'&&<>{selected.length<2?<p>Выберите минимум две опубликованные позиции. Скрытые товары недоступны для сравнения.</p>:<div className="comparison-table-wrap"><table className="comparison-table"><thead><tr><th>Параметр</th>{selected.map(product=><th key={product.id}><ProductIcon product={product} size={48}/><Link href={liveHref(product.id)}>{displayProductName(product)}</Link>{displayExecution(product)&&<span className="catalog-meta">{displayExecution(product)}</span>}<button aria-label={`Убрать ${product.designation || product.sku || product.name}`} onClick={()=>router.replace(`/catalog/compare?source=api&ids=${ids.filter(id=>id!==product.id).join(',')}`)}>×</button><AddButton product={product} onAdded={setNotice}/></th>)}</tr></thead><tbody><tr><th>Цена</th>{selected.map(product=><td key={product.id}>{catalogPrice(product)}</td>)}</tr>{rows.map(row=><tr key={`${row.label}|${row.unit}`}><th className="catalog-spec-text">{row.label}{row.unit?`, ${row.unit}`:''}</th>{selected.map(product=><td key={product.id} className="catalog-spec-text"><CatalogSpecValue product={product} row={row} value={comparisonSpecValue(product.technicalSpecs, row)}/></td>)}</tr>)}</tbody></table></div>}<Link className="catalog-button" href={`/catalog?source=api&compare=${ids.join(',')}`}>Изменить выбор →</Link></>}<p role="status">{notice}</p></div>;
+}
+export function LiveSelection(){
+ const data=useLiveProducts(),selection=useApiSelection();const [notice,setNotice]=useState('');
+ const available=selection.items.filter(item=>data.items.some(product=>product.id===item.id&&(!item.databaseId||product.databaseId===item.databaseId)));
+ function download(){const blob=new Blob([selectionCsv(available,data.items)],{type:'text/csv;charset=utf-8;'}),url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download='alageum-live-selection.csv';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);setNotice('Подборка скачана. Недоступные позиции не включены.');}
+ return <div className="catalog-page"><h1>Моя подборка · актуальный каталог</h1><LiveNotice/>{selection.storageUnavailable&&<p>Хранилище браузера недоступно. Подборка сохранится только до закрытия страницы.</p>}<LiveStatus data={data}/>{data.status==='ready'&&<><div className="selection-items">{selection.items.map(item=>{const product=data.items.find(product=>product.id===item.id&&(!item.databaseId||product.databaseId===item.databaseId));return <article className="selection-item" key={item.id}><div className="selection-product">{product?<><ProductIcon product={product} size={48}/><div><Link href={liveHref(product.id)}>{displayProductName(product)}</Link>{displayExecution(product)&&<p className="catalog-meta">{displayExecution(product)}</p>}<p>{catalogPrice(product)}</p></div></>:<div><strong>{item.id}</strong><p>Товар больше не опубликован. Он исключён из скачиваемой подборки.</p></div>}</div><label>Количество<input aria-label={`Количество ${product?.sku||item.id}`} type="number" min="1" max="999" value={item.quantity} onChange={event=>selection.setQuantity(item.id,event.target.value)}/></label><button className="remove-item" aria-label={`Удалить ${product?.sku||item.id}`} onClick={()=>selection.remove(item.id)}>×</button></article>;})}</div>{!selection.items.length&&<p>Добавьте товары из актуального каталога.</p>}<div className="inline-actions"><Link className="catalog-button primary" href="/catalog?source=api">Продолжить подбор →</Link><button className="catalog-button" disabled={!available.length} onClick={download}>Скачать CSV</button>{selection.items.length>0&&<Link className="catalog-button primary" href="/inquiry?source=api">Запросить КП →</Link>}</div><p className="catalog-meta">Подборка хранится в этом браузере. Скачивание не отправляет заявку и не оформляет заказ. CSV сохраняет исходные наименования каталога.</p></>}<p role="status">{notice}</p></div>;
+}

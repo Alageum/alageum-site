@@ -1,0 +1,2692 @@
+// Generated from independently reviewed source records.
+const records = [
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТМГ-25",
+    "execution": "стандартный",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      6,
+      7,
+      12
+    ],
+    "sourceRow": {
+      "designation": "ТМГ-25",
+      "electricalTablePage": 6,
+      "dimensionsTablePage": 7
+    },
+    "sourceFamilyId": "tmg-standard",
+    "sourceRecordType": "explicit-model-row",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": 25,
+    "voltage": "6(10)/0,4",
+    "voltageUnit": "кВ",
+    "cooling": null,
+    "installation": "наружной или внутренней",
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "25",
+        "unit": "кВА",
+        "page": 6
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "page": 6
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nУ/Zн-11\nД/Ун-11",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Р о",
+        "value": "120",
+        "unit": "Вт",
+        "page": 6
+      },
+      {
+        "label": "Рк",
+        "value": "600\n690\n690",
+        "unit": "Вт",
+        "page": 6
+      },
+      {
+        "label": "U к",
+        "value": "4,5\n4,7\n4,7",
+        "unit": "%",
+        "page": 6
+      },
+      {
+        "label": "I о",
+        "value": "3,0",
+        "unit": "%",
+        "page": 6
+      },
+      {
+        "label": "L",
+        "value": "836",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "B",
+        "value": "490",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "890",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A",
+        "value": "450",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A1",
+        "value": "400",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "M",
+        "value": "90",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h",
+        "value": "80",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h1",
+        "value": "95",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Полная масса",
+        "value": "275",
+        "unit": "кг",
+        "page": 7
+      },
+      {
+        "label": "Масса масла",
+        "value": "70",
+        "unit": "кг",
+        "page": 7
+      },
+      {
+        "label": "Температура умеренного климата",
+        "value": "от +40°C до -45°C",
+        "unit": "°C",
+        "page": 6
+      },
+      {
+        "label": "Температура холодного климата",
+        "value": "от +40°C до -60°C",
+        "unit": "°C",
+        "page": 6
+      },
+      {
+        "label": "Установка",
+        "value": "наружной или внутренней",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Высота установки над уровнем моря",
+        "value": "не более 1000",
+        "unit": "м",
+        "page": 6
+      },
+      {
+        "label": "Исполнение",
+        "value": "герметичное; внутренний объем не имеет сообщения с окружающей средой",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Заполнение",
+        "value": "полностью заполнены трансформаторным маслом",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Стенки",
+        "value": "гофрированные, для увеличения поверхности охлаждения и компенсации температурного расширения масла",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Расширитель / газовая подушка",
+        "value": "Расширитель и воздушная или газовая «подушка» отсутствуют",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Подготовка масла",
+        "value": "перед заливкой в трансформатор дегазируется",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "value": "тряска, вибрация, удары, химически активная среда",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "notes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed."
+    ],
+    "image": "/catalog-source/transformers-2026/page-006.webp",
+    "imageSourcePage": 6,
+    "imageCaption": "Страница 6 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "25",
+        "unit": "кВА",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nУ/Zн-11\nД/Ун-11",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Р о",
+        "value": "120",
+        "unit": "Вт",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Рк",
+        "value": "600\n690\n690",
+        "unit": "Вт",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "U к",
+        "value": "4,5\n4,7\n4,7",
+        "unit": "%",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "I о",
+        "value": "3,0",
+        "unit": "%",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "L",
+        "value": "836",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "B",
+        "value": "490",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "H",
+        "value": "890",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A",
+        "value": "450",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A1",
+        "value": "400",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "M",
+        "value": "90",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h",
+        "value": "80",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h1",
+        "value": "95",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Полная масса",
+        "value": "275",
+        "unit": "кг",
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Масса масла",
+        "value": "70",
+        "unit": "кг",
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      }
+    ],
+    "id": "alageum-tmg-standard-25",
+    "name": "ТМГ-25 (стандартный)",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-tmg-standard",
+    "familyName": "Трансформаторы ТМГ-16-3200 кВА стандартный",
+    "series": "ТМГ",
+    "subtype": "стандартный",
+    "description": "Трехфазные силовые масляные трансформаторы; герметичное исполнение; гофрированные стенки; расширитель и воздушная или газовая подушка отсутствуют; наружная или внутренняя установка; высота не более 1000 м.",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "25",
+        "unit": "кВА",
+        "page": 6
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "page": 6
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nУ/Zн-11\nД/Ун-11",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Р о",
+        "value": "120",
+        "unit": "Вт",
+        "page": 6
+      },
+      {
+        "label": "Рк",
+        "value": "600\n690\n690",
+        "unit": "Вт",
+        "page": 6
+      },
+      {
+        "label": "U к",
+        "value": "4,5\n4,7\n4,7",
+        "unit": "%",
+        "page": 6
+      },
+      {
+        "label": "I о",
+        "value": "3,0",
+        "unit": "%",
+        "page": 6
+      },
+      {
+        "label": "L",
+        "value": "836",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "B",
+        "value": "490",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "890",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A",
+        "value": "450",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A1",
+        "value": "400",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "M",
+        "value": "90",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h",
+        "value": "80",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h1",
+        "value": "95",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Полная масса",
+        "value": "275",
+        "unit": "кг",
+        "page": 7
+      },
+      {
+        "label": "Масса масла",
+        "value": "70",
+        "unit": "кг",
+        "page": 7
+      }
+    ],
+    "configurations": [
+      {
+        "id": "alageum-tmg-standard-25-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-standard-25",
+        "page": 6,
+        "sourcePages": [
+          6
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 6,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "600",
+            "unit": "Вт",
+            "page": 6
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 6
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-standard-25-connection-1",
+          "modelId": "alageum-tmg-standard-25",
+          "familyId": "tmg-standard",
+          "page": 6,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "600",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmg-standard-25-connection-2",
+        "designation": "У/Zн-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-standard-25",
+        "page": 6,
+        "sourcePages": [
+          6
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Zн-11",
+            "unit": "",
+            "page": 6,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "690",
+            "unit": "Вт",
+            "page": 6
+          },
+          {
+            "label": "U к",
+            "value": "4,7",
+            "unit": "%",
+            "page": 6
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-standard-25-connection-2",
+          "modelId": "alageum-tmg-standard-25",
+          "familyId": "tmg-standard",
+          "page": 6,
+          "connectionGroupRaw": "У/Zн-11",
+          "PkWRaw": "690",
+          "UkPercentRaw": "4,7",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmg-standard-25-connection-3",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-standard-25",
+        "page": 6,
+        "sourcePages": [
+          6
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 6,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "690",
+            "unit": "Вт",
+            "page": 6
+          },
+          {
+            "label": "U к",
+            "value": "4,7",
+            "unit": "%",
+            "page": 6
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-standard-25-connection-3",
+          "modelId": "alageum-tmg-standard-25",
+          "familyId": "tmg-standard",
+          "page": 6,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "690",
+          "UkPercentRaw": "4,7",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      }
+    ]
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТМГ-40",
+    "execution": "стандартный",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      6,
+      7,
+      12
+    ],
+    "sourceRow": {
+      "designation": "ТМГ-40",
+      "electricalTablePage": 6,
+      "dimensionsTablePage": 7
+    },
+    "sourceFamilyId": "tmg-standard",
+    "sourceRecordType": "explicit-model-row",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": 40,
+    "voltage": "6(10)/0,4",
+    "voltageUnit": "кВ",
+    "cooling": null,
+    "installation": "наружной или внутренней",
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "40",
+        "unit": "кВА",
+        "page": 6
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "page": 6
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nУ/Zн-11\nД/Ун-11",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Р о",
+        "value": "160",
+        "unit": "Вт",
+        "page": 6
+      },
+      {
+        "label": "Рк",
+        "value": "880\n1000\n1000",
+        "unit": "Вт",
+        "page": 6
+      },
+      {
+        "label": "U к",
+        "value": "4,5\n4,7\n4,7",
+        "unit": "%",
+        "page": 6
+      },
+      {
+        "label": "I о",
+        "value": "2,8",
+        "unit": "%",
+        "page": 6
+      },
+      {
+        "label": "L",
+        "value": "880",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "B",
+        "value": "515",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "895",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A",
+        "value": "450",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A1",
+        "value": "400",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "M",
+        "value": "105",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h",
+        "value": "75",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h1",
+        "value": "95",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Полная масса",
+        "value": "305",
+        "unit": "кг",
+        "page": 7
+      },
+      {
+        "label": "Масса масла",
+        "value": "70",
+        "unit": "кг",
+        "page": 7
+      },
+      {
+        "label": "Температура умеренного климата",
+        "value": "от +40°C до -45°C",
+        "unit": "°C",
+        "page": 6
+      },
+      {
+        "label": "Температура холодного климата",
+        "value": "от +40°C до -60°C",
+        "unit": "°C",
+        "page": 6
+      },
+      {
+        "label": "Установка",
+        "value": "наружной или внутренней",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Высота установки над уровнем моря",
+        "value": "не более 1000",
+        "unit": "м",
+        "page": 6
+      },
+      {
+        "label": "Исполнение",
+        "value": "герметичное; внутренний объем не имеет сообщения с окружающей средой",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Заполнение",
+        "value": "полностью заполнены трансформаторным маслом",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Стенки",
+        "value": "гофрированные, для увеличения поверхности охлаждения и компенсации температурного расширения масла",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Расширитель / газовая подушка",
+        "value": "Расширитель и воздушная или газовая «подушка» отсутствуют",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Подготовка масла",
+        "value": "перед заливкой в трансформатор дегазируется",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "value": "тряска, вибрация, удары, химически активная среда",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "notes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed."
+    ],
+    "image": "/catalog-source/transformers-2026/page-006.webp",
+    "imageSourcePage": 6,
+    "imageCaption": "Страница 6 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "40",
+        "unit": "кВА",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nУ/Zн-11\nД/Ун-11",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Р о",
+        "value": "160",
+        "unit": "Вт",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Рк",
+        "value": "880\n1000\n1000",
+        "unit": "Вт",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "U к",
+        "value": "4,5\n4,7\n4,7",
+        "unit": "%",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "I о",
+        "value": "2,8",
+        "unit": "%",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "L",
+        "value": "880",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "B",
+        "value": "515",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "H",
+        "value": "895",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A",
+        "value": "450",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A1",
+        "value": "400",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "M",
+        "value": "105",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h",
+        "value": "75",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h1",
+        "value": "95",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Полная масса",
+        "value": "305",
+        "unit": "кг",
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Масса масла",
+        "value": "70",
+        "unit": "кг",
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      }
+    ],
+    "id": "alageum-tmg-standard-40",
+    "name": "ТМГ-40 (стандартный)",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-tmg-standard",
+    "familyName": "Трансформаторы ТМГ-16-3200 кВА стандартный",
+    "series": "ТМГ",
+    "subtype": "стандартный",
+    "description": "Трехфазные силовые масляные трансформаторы; герметичное исполнение; гофрированные стенки; расширитель и воздушная или газовая подушка отсутствуют; наружная или внутренняя установка; высота не более 1000 м.",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "40",
+        "unit": "кВА",
+        "page": 6
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "page": 6
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nУ/Zн-11\nД/Ун-11",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Р о",
+        "value": "160",
+        "unit": "Вт",
+        "page": 6
+      },
+      {
+        "label": "Рк",
+        "value": "880\n1000\n1000",
+        "unit": "Вт",
+        "page": 6
+      },
+      {
+        "label": "U к",
+        "value": "4,5\n4,7\n4,7",
+        "unit": "%",
+        "page": 6
+      },
+      {
+        "label": "I о",
+        "value": "2,8",
+        "unit": "%",
+        "page": 6
+      },
+      {
+        "label": "L",
+        "value": "880",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "B",
+        "value": "515",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "895",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A",
+        "value": "450",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A1",
+        "value": "400",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "M",
+        "value": "105",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h",
+        "value": "75",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h1",
+        "value": "95",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Полная масса",
+        "value": "305",
+        "unit": "кг",
+        "page": 7
+      },
+      {
+        "label": "Масса масла",
+        "value": "70",
+        "unit": "кг",
+        "page": 7
+      }
+    ],
+    "configurations": [
+      {
+        "id": "alageum-tmg-standard-40-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-standard-40",
+        "page": 6,
+        "sourcePages": [
+          6
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 6,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "880",
+            "unit": "Вт",
+            "page": 6
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 6
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-standard-40-connection-1",
+          "modelId": "alageum-tmg-standard-40",
+          "familyId": "tmg-standard",
+          "page": 6,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "880",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmg-standard-40-connection-2",
+        "designation": "У/Zн-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-standard-40",
+        "page": 6,
+        "sourcePages": [
+          6
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Zн-11",
+            "unit": "",
+            "page": 6,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "1000",
+            "unit": "Вт",
+            "page": 6
+          },
+          {
+            "label": "U к",
+            "value": "4,7",
+            "unit": "%",
+            "page": 6
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-standard-40-connection-2",
+          "modelId": "alageum-tmg-standard-40",
+          "familyId": "tmg-standard",
+          "page": 6,
+          "connectionGroupRaw": "У/Zн-11",
+          "PkWRaw": "1000",
+          "UkPercentRaw": "4,7",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmg-standard-40-connection-3",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-standard-40",
+        "page": 6,
+        "sourcePages": [
+          6
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 6,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "1000",
+            "unit": "Вт",
+            "page": 6
+          },
+          {
+            "label": "U к",
+            "value": "4,7",
+            "unit": "%",
+            "page": 6
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-standard-40-connection-3",
+          "modelId": "alageum-tmg-standard-40",
+          "familyId": "tmg-standard",
+          "page": 6,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "1000",
+          "UkPercentRaw": "4,7",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      }
+    ]
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТМГ-63",
+    "execution": "стандартный",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      6,
+      7,
+      12
+    ],
+    "sourceRow": {
+      "designation": "ТМГ-63",
+      "electricalTablePage": 6,
+      "dimensionsTablePage": 7
+    },
+    "sourceFamilyId": "tmg-standard",
+    "sourceRecordType": "explicit-model-row",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": 63,
+    "voltage": "6(10)/0,4",
+    "voltageUnit": "кВ",
+    "cooling": null,
+    "installation": "наружной или внутренней",
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "63",
+        "unit": "кВА",
+        "page": 6
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "page": 6
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nУ/Zн-11\nД/Ун-11",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Р о",
+        "value": "210",
+        "unit": "Вт",
+        "page": 6
+      },
+      {
+        "label": "Рк",
+        "value": "1280\n1470\n1470",
+        "unit": "Вт",
+        "page": 6
+      },
+      {
+        "label": "U к",
+        "value": "4,5\n4,7\n4,7",
+        "unit": "%",
+        "page": 6
+      },
+      {
+        "label": "I о",
+        "value": "2,6",
+        "unit": "%",
+        "page": 6
+      },
+      {
+        "label": "L",
+        "value": "920",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "B",
+        "value": "530",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "935",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A",
+        "value": "450",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A1",
+        "value": "400",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "M",
+        "value": "90",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h",
+        "value": "85",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h1",
+        "value": "110",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Полная масса",
+        "value": "350",
+        "unit": "кг",
+        "page": 7
+      },
+      {
+        "label": "Масса масла",
+        "value": "87",
+        "unit": "кг",
+        "page": 7
+      },
+      {
+        "label": "Температура умеренного климата",
+        "value": "от +40°C до -45°C",
+        "unit": "°C",
+        "page": 6
+      },
+      {
+        "label": "Температура холодного климата",
+        "value": "от +40°C до -60°C",
+        "unit": "°C",
+        "page": 6
+      },
+      {
+        "label": "Установка",
+        "value": "наружной или внутренней",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Высота установки над уровнем моря",
+        "value": "не более 1000",
+        "unit": "м",
+        "page": 6
+      },
+      {
+        "label": "Исполнение",
+        "value": "герметичное; внутренний объем не имеет сообщения с окружающей средой",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Заполнение",
+        "value": "полностью заполнены трансформаторным маслом",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Стенки",
+        "value": "гофрированные, для увеличения поверхности охлаждения и компенсации температурного расширения масла",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Расширитель / газовая подушка",
+        "value": "Расширитель и воздушная или газовая «подушка» отсутствуют",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Подготовка масла",
+        "value": "перед заливкой в трансформатор дегазируется",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "value": "тряска, вибрация, удары, химически активная среда",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "notes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed."
+    ],
+    "image": "/catalog-source/transformers-2026/page-006.webp",
+    "imageSourcePage": 6,
+    "imageCaption": "Страница 6 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "63",
+        "unit": "кВА",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nУ/Zн-11\nД/Ун-11",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Р о",
+        "value": "210",
+        "unit": "Вт",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Рк",
+        "value": "1280\n1470\n1470",
+        "unit": "Вт",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "U к",
+        "value": "4,5\n4,7\n4,7",
+        "unit": "%",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "I о",
+        "value": "2,6",
+        "unit": "%",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "L",
+        "value": "920",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "B",
+        "value": "530",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "H",
+        "value": "935",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A",
+        "value": "450",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A1",
+        "value": "400",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "M",
+        "value": "90",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h",
+        "value": "85",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h1",
+        "value": "110",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Полная масса",
+        "value": "350",
+        "unit": "кг",
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Масса масла",
+        "value": "87",
+        "unit": "кг",
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      }
+    ],
+    "id": "alageum-tmg-standard-63",
+    "name": "ТМГ-63 (стандартный)",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-tmg-standard",
+    "familyName": "Трансформаторы ТМГ-16-3200 кВА стандартный",
+    "series": "ТМГ",
+    "subtype": "стандартный",
+    "description": "Трехфазные силовые масляные трансформаторы; герметичное исполнение; гофрированные стенки; расширитель и воздушная или газовая подушка отсутствуют; наружная или внутренняя установка; высота не более 1000 м.",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "63",
+        "unit": "кВА",
+        "page": 6
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "page": 6
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nУ/Zн-11\nД/Ун-11",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Р о",
+        "value": "210",
+        "unit": "Вт",
+        "page": 6
+      },
+      {
+        "label": "Рк",
+        "value": "1280\n1470\n1470",
+        "unit": "Вт",
+        "page": 6
+      },
+      {
+        "label": "U к",
+        "value": "4,5\n4,7\n4,7",
+        "unit": "%",
+        "page": 6
+      },
+      {
+        "label": "I о",
+        "value": "2,6",
+        "unit": "%",
+        "page": 6
+      },
+      {
+        "label": "L",
+        "value": "920",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "B",
+        "value": "530",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "935",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A",
+        "value": "450",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A1",
+        "value": "400",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "M",
+        "value": "90",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h",
+        "value": "85",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h1",
+        "value": "110",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Полная масса",
+        "value": "350",
+        "unit": "кг",
+        "page": 7
+      },
+      {
+        "label": "Масса масла",
+        "value": "87",
+        "unit": "кг",
+        "page": 7
+      }
+    ],
+    "configurations": [
+      {
+        "id": "alageum-tmg-standard-63-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-standard-63",
+        "page": 6,
+        "sourcePages": [
+          6
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 6,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "1280",
+            "unit": "Вт",
+            "page": 6
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 6
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-standard-63-connection-1",
+          "modelId": "alageum-tmg-standard-63",
+          "familyId": "tmg-standard",
+          "page": 6,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "1280",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmg-standard-63-connection-2",
+        "designation": "У/Zн-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-standard-63",
+        "page": 6,
+        "sourcePages": [
+          6
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Zн-11",
+            "unit": "",
+            "page": 6,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "1470",
+            "unit": "Вт",
+            "page": 6
+          },
+          {
+            "label": "U к",
+            "value": "4,7",
+            "unit": "%",
+            "page": 6
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-standard-63-connection-2",
+          "modelId": "alageum-tmg-standard-63",
+          "familyId": "tmg-standard",
+          "page": 6,
+          "connectionGroupRaw": "У/Zн-11",
+          "PkWRaw": "1470",
+          "UkPercentRaw": "4,7",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmg-standard-63-connection-3",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-standard-63",
+        "page": 6,
+        "sourcePages": [
+          6
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 6,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "1470",
+            "unit": "Вт",
+            "page": 6
+          },
+          {
+            "label": "U к",
+            "value": "4,7",
+            "unit": "%",
+            "page": 6
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-standard-63-connection-3",
+          "modelId": "alageum-tmg-standard-63",
+          "familyId": "tmg-standard",
+          "page": 6,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "1470",
+          "UkPercentRaw": "4,7",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      }
+    ]
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТМГ-100",
+    "execution": "стандартный",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      6,
+      7,
+      12
+    ],
+    "sourceRow": {
+      "designation": "ТМГ-100",
+      "electricalTablePage": 6,
+      "dimensionsTablePage": 7
+    },
+    "sourceFamilyId": "tmg-standard",
+    "sourceRecordType": "explicit-model-row",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": 100,
+    "voltage": "6(10)/0,4",
+    "voltageUnit": "кВ",
+    "cooling": null,
+    "installation": "наружной или внутренней",
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "100",
+        "unit": "кВА",
+        "page": 6
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "page": 6
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nУ/Zн-11\nД/Ун-11",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Р о",
+        "value": "280",
+        "unit": "Вт",
+        "page": 6
+      },
+      {
+        "label": "Рк",
+        "value": "1900\n2270\n2270",
+        "unit": "Вт",
+        "page": 6
+      },
+      {
+        "label": "U к",
+        "value": "4,5\n4,7\n4,5",
+        "unit": "%",
+        "page": 6
+      },
+      {
+        "label": "I о",
+        "value": "2,2",
+        "unit": "%",
+        "page": 6
+      },
+      {
+        "label": "L",
+        "value": "962",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "B",
+        "value": "682",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "1005",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A",
+        "value": "550",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A1",
+        "value": "550",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "M",
+        "value": "90",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h",
+        "value": "95",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h1",
+        "value": "110",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Полная масса",
+        "value": "445",
+        "unit": "кг",
+        "page": 7
+      },
+      {
+        "label": "Масса масла",
+        "value": "100",
+        "unit": "кг",
+        "page": 7
+      },
+      {
+        "label": "Температура умеренного климата",
+        "value": "от +40°C до -45°C",
+        "unit": "°C",
+        "page": 6
+      },
+      {
+        "label": "Температура холодного климата",
+        "value": "от +40°C до -60°C",
+        "unit": "°C",
+        "page": 6
+      },
+      {
+        "label": "Установка",
+        "value": "наружной или внутренней",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Высота установки над уровнем моря",
+        "value": "не более 1000",
+        "unit": "м",
+        "page": 6
+      },
+      {
+        "label": "Исполнение",
+        "value": "герметичное; внутренний объем не имеет сообщения с окружающей средой",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Заполнение",
+        "value": "полностью заполнены трансформаторным маслом",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Стенки",
+        "value": "гофрированные, для увеличения поверхности охлаждения и компенсации температурного расширения масла",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Расширитель / газовая подушка",
+        "value": "Расширитель и воздушная или газовая «подушка» отсутствуют",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Подготовка масла",
+        "value": "перед заливкой в трансформатор дегазируется",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "value": "тряска, вибрация, удары, химически активная среда",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "notes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed."
+    ],
+    "image": "/catalog-source/transformers-2026/page-006.webp",
+    "imageSourcePage": 6,
+    "imageCaption": "Страница 6 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "100",
+        "unit": "кВА",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nУ/Zн-11\nД/Ун-11",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Р о",
+        "value": "280",
+        "unit": "Вт",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "Рк",
+        "value": "1900\n2270\n2270",
+        "unit": "Вт",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "U к",
+        "value": "4,5\n4,7\n4,5",
+        "unit": "%",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "I о",
+        "value": "2,2",
+        "unit": "%",
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "L",
+        "value": "962",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "B",
+        "value": "682",
+        "unit": null,
+        "pdfPage": 6,
+        "printedPage": "6",
+        "table": "electrical"
+      },
+      {
+        "label": "H",
+        "value": "1005",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A",
+        "value": "550",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A1",
+        "value": "550",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "M",
+        "value": "90",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h",
+        "value": "95",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h1",
+        "value": "110",
+        "unit": null,
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Полная масса",
+        "value": "445",
+        "unit": "кг",
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Масса масла",
+        "value": "100",
+        "unit": "кг",
+        "pdfPage": 7,
+        "printedPage": "7",
+        "table": "dimensions-and-masses"
+      }
+    ],
+    "id": "alageum-tmg-standard-100",
+    "name": "ТМГ-100 (стандартный)",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-tmg-standard",
+    "familyName": "Трансформаторы ТМГ-16-3200 кВА стандартный",
+    "series": "ТМГ",
+    "subtype": "стандартный",
+    "description": "Трехфазные силовые масляные трансформаторы; герметичное исполнение; гофрированные стенки; расширитель и воздушная или газовая подушка отсутствуют; наружная или внутренняя установка; высота не более 1000 м.",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "100",
+        "unit": "кВА",
+        "page": 6
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "page": 6
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nУ/Zн-11\nД/Ун-11",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Р о",
+        "value": "280",
+        "unit": "Вт",
+        "page": 6
+      },
+      {
+        "label": "Рк",
+        "value": "1900\n2270\n2270",
+        "unit": "Вт",
+        "page": 6
+      },
+      {
+        "label": "U к",
+        "value": "4,5\n4,7\n4,5",
+        "unit": "%",
+        "page": 6
+      },
+      {
+        "label": "I о",
+        "value": "2,2",
+        "unit": "%",
+        "page": 6
+      },
+      {
+        "label": "L",
+        "value": "962",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "B",
+        "value": "682",
+        "unit": "",
+        "page": 6,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "1005",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A",
+        "value": "550",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A1",
+        "value": "550",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "M",
+        "value": "90",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h",
+        "value": "95",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h1",
+        "value": "110",
+        "unit": "",
+        "page": 7,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Полная масса",
+        "value": "445",
+        "unit": "кг",
+        "page": 7
+      },
+      {
+        "label": "Масса масла",
+        "value": "100",
+        "unit": "кг",
+        "page": 7
+      }
+    ],
+    "configurations": [
+      {
+        "id": "alageum-tmg-standard-100-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-standard-100",
+        "page": 6,
+        "sourcePages": [
+          6
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 6,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "1900",
+            "unit": "Вт",
+            "page": 6
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 6
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-standard-100-connection-1",
+          "modelId": "alageum-tmg-standard-100",
+          "familyId": "tmg-standard",
+          "page": 6,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "1900",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmg-standard-100-connection-2",
+        "designation": "У/Zн-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-standard-100",
+        "page": 6,
+        "sourcePages": [
+          6
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Zн-11",
+            "unit": "",
+            "page": 6,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "2270",
+            "unit": "Вт",
+            "page": 6
+          },
+          {
+            "label": "U к",
+            "value": "4,7",
+            "unit": "%",
+            "page": 6
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-standard-100-connection-2",
+          "modelId": "alageum-tmg-standard-100",
+          "familyId": "tmg-standard",
+          "page": 6,
+          "connectionGroupRaw": "У/Zн-11",
+          "PkWRaw": "2270",
+          "UkPercentRaw": "4,7",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmg-standard-100-connection-3",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-standard-100",
+        "page": 6,
+        "sourcePages": [
+          6
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 6,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "2270",
+            "unit": "Вт",
+            "page": 6
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 6
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-standard-100-connection-3",
+          "modelId": "alageum-tmg-standard-100",
+          "familyId": "tmg-standard",
+          "page": 6,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "2270",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      }
+    ]
+  }
+];
+export default records;

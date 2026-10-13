@@ -1,0 +1,2212 @@
+[
+  {
+    "id": "alageum-2026-tsl-20kv-2500",
+    "familyId": "tsl-20kv",
+    "name": "ТСЛ-2500",
+    "sourceDesignation": "ТСЛ-2500",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      82,
+      83,
+      84
+    ],
+    "rawSpecs": [
+      {
+        "label": "Pо",
+        "raw": "5000",
+        "unitAsPrinted": "кВт",
+        "sourcePage": 82
+      },
+      {
+        "label": "Pк",
+        "raw": "20000",
+        "unitAsPrinted": "кВт",
+        "sourcePage": 82
+      },
+      {
+        "label": "Iо",
+        "raw": "0,4",
+        "unitAsPrinted": "%",
+        "sourcePage": 82
+      },
+      {
+        "label": "Uк",
+        "raw": "6",
+        "unitAsPrinted": "%",
+        "sourcePage": 82
+      },
+      {
+        "label": "МО",
+        "raw": "670",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "L",
+        "raw": "1976",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "B",
+        "raw": "1250",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "H",
+        "raw": "2295",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "h",
+        "raw": "1720",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "Масса",
+        "raw": "5525",
+        "unitAsPrinted": "кг",
+        "sourcePage": 83
+      },
+      {
+        "label": "Номинальная мощность",
+        "raw": "2500",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 82
+      },
+      {
+        "label": "ВН",
+        "raw": "20",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 82
+      },
+      {
+        "label": "НН",
+        "raw": "0,4",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 82
+      },
+      {
+        "label": "Схема и группа соединения",
+        "raw": "Д/Ун-11",
+        "unitAsPrinted": null,
+        "sourcePage": 82
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "raw": "F",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "raw": "У3, УХЛ3, У1",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "raw": "У, УХЛ, Т",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Категория размещения",
+        "raw": "1;2;3",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "raw": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      }
+    ],
+    "assetFamilyIds": [
+      "dry-tsl-open-20"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Loss unit printed кВт with magnitudes600 etc; preserve source.",
+      "Purpose mentions ТСЛЗ enclosure option, but explicit table rows/dimensions name ТСЛ and drawing84 is IP00; do not apply these dimensions to enclosure."
+    ],
+    "series": "ТСЛ",
+    "context": "класса напряжения20кВ",
+    "powerKva": 2500,
+    "voltageRaw": "20/0,4 кВ",
+    "commonProseGroupIds": [
+      "common-prose-11-p82"
+    ],
+    "designation": "ТСЛ-2500",
+    "execution": "класса напряжения20кВ",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 82,
+      "designation": "ТСЛ-2500",
+      "execution": "класса напряжения20кВ",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Pо",
+        "value": "5000",
+        "unit": "кВт",
+        "page": 82
+      },
+      {
+        "label": "Pк",
+        "value": "20000",
+        "unit": "кВт",
+        "page": 82
+      },
+      {
+        "label": "Iо",
+        "value": "0,4",
+        "unit": "%",
+        "page": 82
+      },
+      {
+        "label": "Uк",
+        "value": "6",
+        "unit": "%",
+        "page": 82
+      },
+      {
+        "label": "МО",
+        "value": "670",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "L",
+        "value": "1976",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "B",
+        "value": "1250",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "H",
+        "value": "2295",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "h",
+        "value": "1720",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "Масса",
+        "value": "5525",
+        "unit": "кг",
+        "page": 83
+      },
+      {
+        "label": "Номинальная мощность",
+        "value": "2500",
+        "unit": "кВА",
+        "page": 82
+      },
+      {
+        "label": "ВН",
+        "value": "20",
+        "unit": "кВ",
+        "page": 82
+      },
+      {
+        "label": "НН",
+        "value": "0,4",
+        "unit": "кВ",
+        "page": 82
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "Д/Ун-11",
+        "unit": null,
+        "page": 82
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "value": "F",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "value": "У3, УХЛ3, У1",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "value": "У, УХЛ, Т",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Категория размещения",
+        "value": "1;2;3",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "value": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-tsl-20kv-3150",
+    "familyId": "tsl-20kv",
+    "name": "ТСЛ-3150",
+    "sourceDesignation": "ТСЛ-3150",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      82,
+      83,
+      84
+    ],
+    "rawSpecs": [
+      {
+        "label": "Pо",
+        "raw": "5000",
+        "unitAsPrinted": "кВт",
+        "sourcePage": 82
+      },
+      {
+        "label": "Pк",
+        "raw": "25000",
+        "unitAsPrinted": "кВт",
+        "sourcePage": 82
+      },
+      {
+        "label": "Iо",
+        "raw": "0,4",
+        "unitAsPrinted": "%",
+        "sourcePage": 82
+      },
+      {
+        "label": "Uк",
+        "raw": "7",
+        "unitAsPrinted": "%",
+        "sourcePage": 82
+      },
+      {
+        "label": "МО",
+        "raw": "710",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "L",
+        "raw": "2096",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "B",
+        "raw": "1250",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "H",
+        "raw": "2290",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "h",
+        "raw": "1725",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "Масса",
+        "raw": "5940",
+        "unitAsPrinted": "кг",
+        "sourcePage": 83
+      },
+      {
+        "label": "Номинальная мощность",
+        "raw": "3150",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 82
+      },
+      {
+        "label": "ВН",
+        "raw": "20",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 82
+      },
+      {
+        "label": "НН",
+        "raw": "0,4",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 82
+      },
+      {
+        "label": "Схема и группа соединения",
+        "raw": "Д/Ун-11",
+        "unitAsPrinted": null,
+        "sourcePage": 82
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "raw": "F",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "raw": "У3, УХЛ3, У1",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "raw": "У, УХЛ, Т",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Категория размещения",
+        "raw": "1;2;3",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "raw": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      }
+    ],
+    "assetFamilyIds": [
+      "dry-tsl-open-20"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Loss unit printed кВт with magnitudes600 etc; preserve source.",
+      "Purpose mentions ТСЛЗ enclosure option, but explicit table rows/dimensions name ТСЛ and drawing84 is IP00; do not apply these dimensions to enclosure."
+    ],
+    "series": "ТСЛ",
+    "context": "класса напряжения20кВ",
+    "powerKva": 3150,
+    "voltageRaw": "20/0,4 кВ",
+    "commonProseGroupIds": [
+      "common-prose-11-p82"
+    ],
+    "designation": "ТСЛ-3150",
+    "execution": "класса напряжения20кВ",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 82,
+      "designation": "ТСЛ-3150",
+      "execution": "класса напряжения20кВ",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Pо",
+        "value": "5000",
+        "unit": "кВт",
+        "page": 82
+      },
+      {
+        "label": "Pк",
+        "value": "25000",
+        "unit": "кВт",
+        "page": 82
+      },
+      {
+        "label": "Iо",
+        "value": "0,4",
+        "unit": "%",
+        "page": 82
+      },
+      {
+        "label": "Uк",
+        "value": "7",
+        "unit": "%",
+        "page": 82
+      },
+      {
+        "label": "МО",
+        "value": "710",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "L",
+        "value": "2096",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "B",
+        "value": "1250",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "H",
+        "value": "2290",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "h",
+        "value": "1725",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "Масса",
+        "value": "5940",
+        "unit": "кг",
+        "page": 83
+      },
+      {
+        "label": "Номинальная мощность",
+        "value": "3150",
+        "unit": "кВА",
+        "page": 82
+      },
+      {
+        "label": "ВН",
+        "value": "20",
+        "unit": "кВ",
+        "page": 82
+      },
+      {
+        "label": "НН",
+        "value": "0,4",
+        "unit": "кВ",
+        "page": 82
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "Д/Ун-11",
+        "unit": null,
+        "page": 82
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "value": "F",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "value": "У3, УХЛ3, У1",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "value": "У, УХЛ, Т",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Категория размещения",
+        "value": "1;2;3",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "value": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-tsl-20kv-4000",
+    "familyId": "tsl-20kv",
+    "name": "ТСЛ-4000",
+    "sourceDesignation": "ТСЛ-4000",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      82,
+      83,
+      84
+    ],
+    "rawSpecs": [
+      {
+        "label": "Pо",
+        "raw": "5800",
+        "unitAsPrinted": "кВт",
+        "sourcePage": 82
+      },
+      {
+        "label": "Pк",
+        "raw": "35500",
+        "unitAsPrinted": "кВт",
+        "sourcePage": 82
+      },
+      {
+        "label": "Iо",
+        "raw": "0,4",
+        "unitAsPrinted": "%",
+        "sourcePage": 82
+      },
+      {
+        "label": "Uк",
+        "raw": "8",
+        "unitAsPrinted": "%",
+        "sourcePage": 82
+      },
+      {
+        "label": "МО",
+        "raw": "780",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "L",
+        "raw": "2306",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "B",
+        "raw": "1250",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "H",
+        "raw": "2390",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "h",
+        "raw": "1740",
+        "unitAsPrinted": "мм",
+        "sourcePage": 83
+      },
+      {
+        "label": "Масса",
+        "raw": "7240",
+        "unitAsPrinted": "кг",
+        "sourcePage": 83
+      },
+      {
+        "label": "Номинальная мощность",
+        "raw": "4000",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 82
+      },
+      {
+        "label": "ВН",
+        "raw": "20",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 82
+      },
+      {
+        "label": "НН",
+        "raw": "0,4",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 82
+      },
+      {
+        "label": "Схема и группа соединения",
+        "raw": "Д/Ун-11",
+        "unitAsPrinted": null,
+        "sourcePage": 82
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "raw": "F",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "raw": "У3, УХЛ3, У1",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "raw": "У, УХЛ, Т",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Категория размещения",
+        "raw": "1;2;3",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "raw": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unitAsPrinted": null,
+        "sourcePage": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      }
+    ],
+    "assetFamilyIds": [
+      "dry-tsl-open-20"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Loss unit printed кВт with magnitudes600 etc; preserve source.",
+      "Purpose mentions ТСЛЗ enclosure option, but explicit table rows/dimensions name ТСЛ and drawing84 is IP00; do not apply these dimensions to enclosure."
+    ],
+    "series": "ТСЛ",
+    "context": "класса напряжения20кВ",
+    "powerKva": 4000,
+    "voltageRaw": "20/0,4 кВ",
+    "commonProseGroupIds": [
+      "common-prose-11-p82"
+    ],
+    "designation": "ТСЛ-4000",
+    "execution": "класса напряжения20кВ",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 82,
+      "designation": "ТСЛ-4000",
+      "execution": "класса напряжения20кВ",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Pо",
+        "value": "5800",
+        "unit": "кВт",
+        "page": 82
+      },
+      {
+        "label": "Pк",
+        "value": "35500",
+        "unit": "кВт",
+        "page": 82
+      },
+      {
+        "label": "Iо",
+        "value": "0,4",
+        "unit": "%",
+        "page": 82
+      },
+      {
+        "label": "Uк",
+        "value": "8",
+        "unit": "%",
+        "page": 82
+      },
+      {
+        "label": "МО",
+        "value": "780",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "L",
+        "value": "2306",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "B",
+        "value": "1250",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "H",
+        "value": "2390",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "h",
+        "value": "1740",
+        "unit": "мм",
+        "page": 83
+      },
+      {
+        "label": "Масса",
+        "value": "7240",
+        "unit": "кг",
+        "page": 83
+      },
+      {
+        "label": "Номинальная мощность",
+        "value": "4000",
+        "unit": "кВА",
+        "page": 82
+      },
+      {
+        "label": "ВН",
+        "value": "20",
+        "unit": "кВ",
+        "page": 82
+      },
+      {
+        "label": "НН",
+        "value": "0,4",
+        "unit": "кВ",
+        "page": 82
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "Д/Ун-11",
+        "unit": null,
+        "page": 82
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Класс нагревостойкости",
+        "value": "F",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (первая строка)",
+        "value": "У3, УХЛ3, У1",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Климатическое исполнение (вторая строка)",
+        "value": "У, УХЛ, Т",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Категория размещения",
+        "value": "1;2;3",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      },
+      {
+        "label": "Изоляция обмоток ВН",
+        "value": "заливка эпоксидной смолой в вакуум-заливочной машине",
+        "unit": null,
+        "page": 82,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-11-p82"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-relay-tr100",
+    "familyId": "dry-accessories",
+    "name": "Цифровое температурное реле ТР-100",
+    "sourceDesignation": "Цифровое температурное реле ТР-100",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      85
+    ],
+    "rawSpecs": [
+      {
+        "label": "Питание",
+        "raw": "24–255",
+        "unitAsPrinted": "В",
+        "sourcePage": 85
+      },
+      {
+        "label": "Число датчиков",
+        "raw": "3 или4",
+        "unitAsPrinted": null,
+        "sourcePage": 85
+      },
+      {
+        "label": "Контроль температуры для трансформаторов с литой изоляцией",
+        "raw": "обязателен",
+        "unitAsPrinted": null,
+        "sourcePage": 85,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-12-p85"
+      },
+      {
+        "label": "Четвертый датчик",
+        "raw": "по желанию клиента для контроля температуры магнитопровода",
+        "unitAsPrinted": null,
+        "sourcePage": 85,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-12-p85"
+      }
+    ],
+    "assetFamilyIds": [
+      "accessory-relay-tr100"
+    ],
+    "recordType": "accessory",
+    "uncertainties": [],
+    "context": "standard",
+    "series": "Цифровое температурное реле ТР-100",
+    "commonProseGroupIds": [
+      "common-prose-12-p85"
+    ],
+    "designation": "Цифровое температурное реле ТР-100",
+    "execution": "standard",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 85,
+      "designation": "Цифровое температурное реле ТР-100",
+      "execution": "standard",
+      "kind": "accessory"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Питание",
+        "value": "24–255",
+        "unit": "В",
+        "page": 85
+      },
+      {
+        "label": "Число датчиков",
+        "value": "3 или4",
+        "unit": null,
+        "page": 85
+      },
+      {
+        "label": "Контроль температуры для трансформаторов с литой изоляцией",
+        "value": "обязателен",
+        "unit": null,
+        "page": 85,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-12-p85"
+      },
+      {
+        "label": "Четвертый датчик",
+        "value": "по желанию клиента для контроля температуры магнитопровода",
+        "unit": null,
+        "page": 85,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-12-p85"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-sensor-pt100",
+    "familyId": "dry-accessories",
+    "name": "Датчики сопротивления pt-100",
+    "sourceDesignation": "Датчики сопротивления pt-100",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      85
+    ],
+    "rawSpecs": [
+      {
+        "label": "Номинальное сопротивление",
+        "raw": "100",
+        "unitAsPrinted": "Ом",
+        "sourcePage": 85
+      },
+      {
+        "label": "При температуре",
+        "raw": "0",
+        "unitAsPrinted": "°C",
+        "sourcePage": 85
+      },
+      {
+        "label": "Контроль температуры для трансформаторов с литой изоляцией",
+        "raw": "обязателен",
+        "unitAsPrinted": null,
+        "sourcePage": 85,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-12-p85"
+      },
+      {
+        "label": "Четвертый датчик",
+        "raw": "по желанию клиента для контроля температуры магнитопровода",
+        "unitAsPrinted": null,
+        "sourcePage": 85,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-12-p85"
+      }
+    ],
+    "assetFamilyIds": [
+      "accessory-sensor-pt100"
+    ],
+    "recordType": "accessory",
+    "uncertainties": [],
+    "context": "standard",
+    "series": "Датчики сопротивления pt-100",
+    "commonProseGroupIds": [
+      "common-prose-12-p85"
+    ],
+    "designation": "Датчики сопротивления pt-100",
+    "execution": "standard",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 85,
+      "designation": "Датчики сопротивления pt-100",
+      "execution": "standard",
+      "kind": "accessory"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Номинальное сопротивление",
+        "value": "100",
+        "unit": "Ом",
+        "page": 85
+      },
+      {
+        "label": "При температуре",
+        "value": "0",
+        "unit": "°C",
+        "page": 85
+      },
+      {
+        "label": "Контроль температуры для трансформаторов с литой изоляцией",
+        "value": "обязателен",
+        "unit": null,
+        "page": 85,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-12-p85"
+      },
+      {
+        "label": "Четвертый датчик",
+        "value": "по желанию клиента для контроля температуры магнитопровода",
+        "unit": null,
+        "page": 85,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-12-p85"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-damper-ek290",
+    "familyId": "dry-accessories",
+    "name": "Виброопора ЕК-290",
+    "sourceDesignation": "Виброопора ЕК-290",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      85
+    ],
+    "rawSpecs": [
+      {
+        "label": "Допустимая нагрузка на один амортизатор",
+        "raw": "10",
+        "unitAsPrinted": "кН",
+        "sourcePage": 85
+      },
+      {
+        "label": "Число опор на трансформатор",
+        "raw": "4",
+        "unitAsPrinted": null,
+        "sourcePage": 85
+      },
+      {
+        "label": "Уменьшение уровня вибрации",
+        "raw": "не менее20",
+        "unitAsPrinted": "dB",
+        "sourcePage": 85
+      },
+      {
+        "label": "Цвет",
+        "raw": "RAL7000",
+        "unitAsPrinted": null,
+        "sourcePage": 85
+      }
+    ],
+    "assetFamilyIds": [
+      "accessory-damper-ek290"
+    ],
+    "recordType": "accessory",
+    "uncertainties": [],
+    "context": "optional",
+    "series": "Виброопора ЕК-290",
+    "designation": "Виброопора ЕК-290",
+    "execution": "optional",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 85,
+      "designation": "Виброопора ЕК-290",
+      "execution": "optional",
+      "kind": "accessory"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Допустимая нагрузка на один амортизатор",
+        "value": "10",
+        "unit": "кН",
+        "page": 85
+      },
+      {
+        "label": "Число опор на трансформатор",
+        "value": "4",
+        "unit": null,
+        "page": 85
+      },
+      {
+        "label": "Уменьшение уровня вибрации",
+        "value": "не менее20",
+        "unit": "dB",
+        "page": 85
+      },
+      {
+        "label": "Цвет",
+        "value": "RAL7000",
+        "unit": null,
+        "page": 85
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-thermal-cabinet",
+    "familyId": "dry-accessories",
+    "name": "Шкаф тепловой защиты (ШТЗ)",
+    "sourceDesignation": "Шкаф тепловой защиты (ШТЗ)",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      86
+    ],
+    "rawSpecs": [
+      {
+        "label": "Контроль",
+        "raw": "реле ТР-100 с датчиками",
+        "unitAsPrinted": null,
+        "sourcePage": 86
+      }
+    ],
+    "assetFamilyIds": [
+      "accessory-thermal-cabinet"
+    ],
+    "recordType": "accessory",
+    "uncertainties": [],
+    "context": "optional",
+    "series": "Шкаф тепловой защиты (ШТЗ)",
+    "designation": "Шкаф тепловой защиты (ШТЗ)",
+    "execution": "optional",
+    "candidateOldIds": [
+      "cat-shtz"
+    ],
+    "overlapAssessment": [
+      {
+        "oldId": "cat-shtz",
+        "status": "strong-family-purpose-candidate-execution-unresolved",
+        "evidence": "Old cabinet catalog63 and new transformer catalog86 both explicitly name ШТЗ and describe thermal protection/control of transformer forced-cooling fans. New86 shows a door display, rotary controls and red/green lamps and internal control apparatus. New86 supplies no cabinet voltage, dimensions, mass or IP rating, so old220V,400×500×200mm,≤25kg,У3/IP34 cannot be attributed to the photographed new execution without further evidence.",
+        "autoMerge": false,
+        "oldSourcePages": [
+          63
+        ],
+        "newSourcePages": [
+          86
+        ]
+      }
+    ],
+    "sourceRow": {
+      "page": 86,
+      "designation": "Шкаф тепловой защиты (ШТЗ)",
+      "execution": "optional",
+      "kind": "accessory"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Контроль",
+        "value": "реле ТР-100 с датчиками",
+        "unit": null,
+        "page": 86
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-ts-10",
+    "familyId": "ts-low-voltage",
+    "name": "ТС(З)",
+    "sourceDesignation": "ТС(З)",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      86,
+      87,
+      88
+    ],
+    "rawSpecs": [
+      {
+        "label": "Мощность",
+        "raw": "10",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 86
+      },
+      {
+        "label": "ВН",
+        "raw": "380",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 86
+      },
+      {
+        "label": "НН",
+        "raw": "220",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 86
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "raw": "2,8",
+        "unitAsPrinted": "%",
+        "sourcePage": 86
+      },
+      {
+        "label": "H",
+        "raw": "450/593",
+        "unitAsPrinted": "мм",
+        "sourcePage": 86
+      },
+      {
+        "label": "L",
+        "raw": "500/566",
+        "unitAsPrinted": "мм",
+        "sourcePage": 86
+      },
+      {
+        "label": "B",
+        "raw": "320/376",
+        "unitAsPrinted": "мм",
+        "sourcePage": 86
+      },
+      {
+        "label": "Масса",
+        "raw": "100/120",
+        "unitAsPrinted": "кг",
+        "sourcePage": 86
+      },
+      {
+        "label": "Класс напряжения",
+        "raw": "0,66",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 86
+      }
+    ],
+    "assetFamilyIds": [
+      "dry-ts-open",
+      "dry-tsz-enclosed"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Voltage header literally кВ while values380/220 appear inconsistent with0,66кВ class; retained without correction.",
+      "Slash dimension/mass pairs not explicitly mapped to executions; retain raw."
+    ],
+    "series": "ТС(З)",
+    "context": "мощность 10кВА, класс0,66кВ",
+    "powerKva": 10,
+    "voltageRaw": "380/220 (header кВ)",
+    "explicitExecutions": [
+      "ТС без кожуха",
+      "ТСЗ с кожухом"
+    ],
+    "designation": "ТС(З)",
+    "execution": "мощность 10кВА, класс0,66кВ",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 86,
+      "designation": "ТС(З)",
+      "execution": "мощность 10кВА, класс0,66кВ",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Мощность",
+        "value": "10",
+        "unit": "кВА",
+        "page": 86
+      },
+      {
+        "label": "ВН",
+        "value": "380",
+        "unit": "кВ",
+        "page": 86
+      },
+      {
+        "label": "НН",
+        "value": "220",
+        "unit": "кВ",
+        "page": 86
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "2,8",
+        "unit": "%",
+        "page": 86
+      },
+      {
+        "label": "H",
+        "value": "450/593",
+        "unit": "мм",
+        "page": 86
+      },
+      {
+        "label": "L",
+        "value": "500/566",
+        "unit": "мм",
+        "page": 86
+      },
+      {
+        "label": "B",
+        "value": "320/376",
+        "unit": "мм",
+        "page": 86
+      },
+      {
+        "label": "Масса",
+        "value": "100/120",
+        "unit": "кг",
+        "page": 86
+      },
+      {
+        "label": "Класс напряжения",
+        "value": "0,66",
+        "unit": "кВ",
+        "page": 86
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-ts-16",
+    "familyId": "ts-low-voltage",
+    "name": "ТС(З)",
+    "sourceDesignation": "ТС(З)",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      86,
+      87,
+      88
+    ],
+    "rawSpecs": [
+      {
+        "label": "Мощность",
+        "raw": "16",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 87
+      },
+      {
+        "label": "ВН",
+        "raw": "380",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "НН",
+        "raw": "220",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "raw": "3,0",
+        "unitAsPrinted": "%",
+        "sourcePage": 87
+      },
+      {
+        "label": "H",
+        "raw": "475/638",
+        "unitAsPrinted": "мм",
+        "sourcePage": 87
+      },
+      {
+        "label": "L",
+        "raw": "500/566",
+        "unitAsPrinted": "мм",
+        "sourcePage": 87
+      },
+      {
+        "label": "B",
+        "raw": "320/376",
+        "unitAsPrinted": "мм",
+        "sourcePage": 87
+      },
+      {
+        "label": "Масса",
+        "raw": "115/135",
+        "unitAsPrinted": "кг",
+        "sourcePage": 87
+      },
+      {
+        "label": "Класс напряжения",
+        "raw": "0,66",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 86
+      }
+    ],
+    "assetFamilyIds": [
+      "dry-ts-open",
+      "dry-tsz-enclosed"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Voltage header literally кВ while values380/220 appear inconsistent with0,66кВ class; retained without correction.",
+      "Slash dimension/mass pairs not explicitly mapped to executions; retain raw."
+    ],
+    "series": "ТС(З)",
+    "context": "мощность 16кВА, класс0,66кВ",
+    "powerKva": 16,
+    "voltageRaw": "380/220 (header кВ)",
+    "explicitExecutions": [
+      "ТС без кожуха",
+      "ТСЗ с кожухом"
+    ],
+    "designation": "ТС(З)",
+    "execution": "мощность 16кВА, класс0,66кВ",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 87,
+      "designation": "ТС(З)",
+      "execution": "мощность 16кВА, класс0,66кВ",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Мощность",
+        "value": "16",
+        "unit": "кВА",
+        "page": 87
+      },
+      {
+        "label": "ВН",
+        "value": "380",
+        "unit": "кВ",
+        "page": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "НН",
+        "value": "220",
+        "unit": "кВ",
+        "page": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "3,0",
+        "unit": "%",
+        "page": 87
+      },
+      {
+        "label": "H",
+        "value": "475/638",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "L",
+        "value": "500/566",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "B",
+        "value": "320/376",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "Масса",
+        "value": "115/135",
+        "unit": "кг",
+        "page": 87
+      },
+      {
+        "label": "Класс напряжения",
+        "value": "0,66",
+        "unit": "кВ",
+        "page": 86
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-ts-25",
+    "familyId": "ts-low-voltage",
+    "name": "ТС(З)",
+    "sourceDesignation": "ТС(З)",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      86,
+      87,
+      88
+    ],
+    "rawSpecs": [
+      {
+        "label": "Мощность",
+        "raw": "25",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 87
+      },
+      {
+        "label": "ВН",
+        "raw": "380",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "НН",
+        "raw": "220",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "raw": "3,0",
+        "unitAsPrinted": "%",
+        "sourcePage": 87
+      },
+      {
+        "label": "H",
+        "raw": "570/738",
+        "unitAsPrinted": "мм",
+        "sourcePage": 87
+      },
+      {
+        "label": "L",
+        "raw": "500/566",
+        "unitAsPrinted": "мм",
+        "sourcePage": 87
+      },
+      {
+        "label": "B",
+        "raw": "334/391",
+        "unitAsPrinted": "мм",
+        "sourcePage": 87
+      },
+      {
+        "label": "Масса",
+        "raw": "154/180",
+        "unitAsPrinted": "кг",
+        "sourcePage": 87
+      },
+      {
+        "label": "Класс напряжения",
+        "raw": "0,66",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 86
+      }
+    ],
+    "assetFamilyIds": [
+      "dry-ts-open",
+      "dry-tsz-enclosed"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Voltage header literally кВ while values380/220 appear inconsistent with0,66кВ class; retained without correction.",
+      "Slash dimension/mass pairs not explicitly mapped to executions; retain raw."
+    ],
+    "series": "ТС(З)",
+    "context": "мощность 25кВА, класс0,66кВ",
+    "powerKva": 25,
+    "voltageRaw": "380/220 (header кВ)",
+    "explicitExecutions": [
+      "ТС без кожуха",
+      "ТСЗ с кожухом"
+    ],
+    "designation": "ТС(З)",
+    "execution": "мощность 25кВА, класс0,66кВ",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 87,
+      "designation": "ТС(З)",
+      "execution": "мощность 25кВА, класс0,66кВ",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Мощность",
+        "value": "25",
+        "unit": "кВА",
+        "page": 87
+      },
+      {
+        "label": "ВН",
+        "value": "380",
+        "unit": "кВ",
+        "page": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "НН",
+        "value": "220",
+        "unit": "кВ",
+        "page": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "3,0",
+        "unit": "%",
+        "page": 87
+      },
+      {
+        "label": "H",
+        "value": "570/738",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "L",
+        "value": "500/566",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "B",
+        "value": "334/391",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "Масса",
+        "value": "154/180",
+        "unit": "кг",
+        "page": 87
+      },
+      {
+        "label": "Класс напряжения",
+        "value": "0,66",
+        "unit": "кВ",
+        "page": 86
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-ts-40",
+    "familyId": "ts-low-voltage",
+    "name": "ТС(З)",
+    "sourceDesignation": "ТС(З)",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      86,
+      87,
+      88
+    ],
+    "rawSpecs": [
+      {
+        "label": "Мощность",
+        "raw": "40",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 87
+      },
+      {
+        "label": "ВН",
+        "raw": "380",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "НН",
+        "raw": "220",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "raw": "3,0",
+        "unitAsPrinted": "%",
+        "sourcePage": 87
+      },
+      {
+        "label": "H",
+        "raw": "580/748",
+        "unitAsPrinted": "мм",
+        "sourcePage": 87
+      },
+      {
+        "label": "L",
+        "raw": "345/636",
+        "unitAsPrinted": "мм",
+        "sourcePage": 87
+      },
+      {
+        "label": "B",
+        "raw": "600/401",
+        "unitAsPrinted": "мм",
+        "sourcePage": 87
+      },
+      {
+        "label": "Масса",
+        "raw": "210/235",
+        "unitAsPrinted": "кг",
+        "sourcePage": 87
+      },
+      {
+        "label": "Класс напряжения",
+        "raw": "0,66",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 86
+      }
+    ],
+    "assetFamilyIds": [
+      "dry-ts-open",
+      "dry-tsz-enclosed"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Voltage header literally кВ while values380/220 appear inconsistent with0,66кВ class; retained without correction.",
+      "Slash dimension/mass pairs not explicitly mapped to executions; retain raw."
+    ],
+    "series": "ТС(З)",
+    "context": "мощность 40кВА, класс0,66кВ",
+    "powerKva": 40,
+    "voltageRaw": "380/220 (header кВ)",
+    "explicitExecutions": [
+      "ТС без кожуха",
+      "ТСЗ с кожухом"
+    ],
+    "designation": "ТС(З)",
+    "execution": "мощность 40кВА, класс0,66кВ",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 87,
+      "designation": "ТС(З)",
+      "execution": "мощность 40кВА, класс0,66кВ",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Мощность",
+        "value": "40",
+        "unit": "кВА",
+        "page": 87
+      },
+      {
+        "label": "ВН",
+        "value": "380",
+        "unit": "кВ",
+        "page": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "НН",
+        "value": "220",
+        "unit": "кВ",
+        "page": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "3,0",
+        "unit": "%",
+        "page": 87
+      },
+      {
+        "label": "H",
+        "value": "580/748",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "L",
+        "value": "345/636",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "B",
+        "value": "600/401",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "Масса",
+        "value": "210/235",
+        "unit": "кг",
+        "page": 87
+      },
+      {
+        "label": "Класс напряжения",
+        "value": "0,66",
+        "unit": "кВ",
+        "page": 86
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-ts-63",
+    "familyId": "ts-low-voltage",
+    "name": "ТС(З)",
+    "sourceDesignation": "ТС(З)",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      86,
+      87,
+      88
+    ],
+    "rawSpecs": [
+      {
+        "label": "Мощность",
+        "raw": "63",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 87
+      },
+      {
+        "label": "ВН",
+        "raw": "380",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "НН",
+        "raw": "220",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "raw": "4,0",
+        "unitAsPrinted": "%",
+        "sourcePage": 87
+      },
+      {
+        "label": "H",
+        "raw": "600/768",
+        "unitAsPrinted": "мм",
+        "sourcePage": 87
+      },
+      {
+        "label": "L",
+        "raw": "365/669",
+        "unitAsPrinted": "мм",
+        "sourcePage": 87
+      },
+      {
+        "label": "B",
+        "raw": "660/421",
+        "unitAsPrinted": "мм",
+        "sourcePage": 87
+      },
+      {
+        "label": "Масса",
+        "raw": "210/315",
+        "unitAsPrinted": "кг",
+        "sourcePage": 87
+      },
+      {
+        "label": "Класс напряжения",
+        "raw": "0,66",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 86
+      }
+    ],
+    "assetFamilyIds": [
+      "dry-ts-open",
+      "dry-tsz-enclosed"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Voltage header literally кВ while values380/220 appear inconsistent with0,66кВ class; retained without correction.",
+      "Slash dimension/mass pairs not explicitly mapped to executions; retain raw."
+    ],
+    "series": "ТС(З)",
+    "context": "мощность 63кВА, класс0,66кВ",
+    "powerKva": 63,
+    "voltageRaw": "380/220 (header кВ)",
+    "explicitExecutions": [
+      "ТС без кожуха",
+      "ТСЗ с кожухом"
+    ],
+    "designation": "ТС(З)",
+    "execution": "мощность 63кВА, класс0,66кВ",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 87,
+      "designation": "ТС(З)",
+      "execution": "мощность 63кВА, класс0,66кВ",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Мощность",
+        "value": "63",
+        "unit": "кВА",
+        "page": 87
+      },
+      {
+        "label": "ВН",
+        "value": "380",
+        "unit": "кВ",
+        "page": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "НН",
+        "value": "220",
+        "unit": "кВ",
+        "page": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "4,0",
+        "unit": "%",
+        "page": 87
+      },
+      {
+        "label": "H",
+        "value": "600/768",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "L",
+        "value": "365/669",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "B",
+        "value": "660/421",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "Масса",
+        "value": "210/315",
+        "unit": "кг",
+        "page": 87
+      },
+      {
+        "label": "Класс напряжения",
+        "value": "0,66",
+        "unit": "кВ",
+        "page": 86
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-ts-100",
+    "familyId": "ts-low-voltage",
+    "name": "ТС(З)",
+    "sourceDesignation": "ТС(З)",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      86,
+      87,
+      88
+    ],
+    "rawSpecs": [
+      {
+        "label": "Мощность",
+        "raw": "100",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 87
+      },
+      {
+        "label": "ВН",
+        "raw": "380",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "НН",
+        "raw": "220",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "raw": "4,0",
+        "unitAsPrinted": "%",
+        "sourcePage": 87
+      },
+      {
+        "label": "H",
+        "raw": "680/848",
+        "unitAsPrinted": "мм",
+        "sourcePage": 87
+      },
+      {
+        "label": "L",
+        "raw": "380/776",
+        "unitAsPrinted": "мм",
+        "sourcePage": 87
+      },
+      {
+        "label": "B",
+        "raw": "730/436",
+        "unitAsPrinted": "мм",
+        "sourcePage": 87
+      },
+      {
+        "label": "Масса",
+        "raw": "400/435",
+        "unitAsPrinted": "кг",
+        "sourcePage": 87
+      },
+      {
+        "label": "Класс напряжения",
+        "raw": "0,66",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 86
+      }
+    ],
+    "assetFamilyIds": [
+      "dry-ts-open",
+      "dry-tsz-enclosed"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Voltage header literally кВ while values380/220 appear inconsistent with0,66кВ class; retained without correction.",
+      "Slash dimension/mass pairs not explicitly mapped to executions; retain raw."
+    ],
+    "series": "ТС(З)",
+    "context": "мощность 100кВА, класс0,66кВ",
+    "powerKva": 100,
+    "voltageRaw": "380/220 (header кВ)",
+    "explicitExecutions": [
+      "ТС без кожуха",
+      "ТСЗ с кожухом"
+    ],
+    "designation": "ТС(З)",
+    "execution": "мощность 100кВА, класс0,66кВ",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 87,
+      "designation": "ТС(З)",
+      "execution": "мощность 100кВА, класс0,66кВ",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Мощность",
+        "value": "100",
+        "unit": "кВА",
+        "page": 87
+      },
+      {
+        "label": "ВН",
+        "value": "380",
+        "unit": "кВ",
+        "page": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "НН",
+        "value": "220",
+        "unit": "кВ",
+        "page": 87,
+        "unitHeaderSourcePage": 86
+      },
+      {
+        "label": "Напряжение короткого замыкания",
+        "value": "4,0",
+        "unit": "%",
+        "page": 87
+      },
+      {
+        "label": "H",
+        "value": "680/848",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "L",
+        "value": "380/776",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "B",
+        "value": "730/436",
+        "unit": "мм",
+        "page": 87
+      },
+      {
+        "label": "Масса",
+        "value": "400/435",
+        "unit": "кг",
+        "page": 87
+      },
+      {
+        "label": "Класс напряжения",
+        "value": "0,66",
+        "unit": "кВ",
+        "page": 86
+      }
+    ]
+  }
+]

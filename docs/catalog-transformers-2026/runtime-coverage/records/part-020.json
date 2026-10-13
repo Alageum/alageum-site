@@ -1,0 +1,2032 @@
+[
+  {
+    "id": "alageum-2026-tmpn-p64-r1",
+    "name": "ТМПНГ-160/3",
+    "designation": "ТМПНГ-160/3",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmpn-top",
+    "sourceFamilyId": "tmpn-top",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        64,
+        65,
+        66
+      ],
+      "sourceRow": {
+        "page": 64,
+        "table": "technical",
+        "row": 1
+      }
+    },
+    "recordSha256": "c9c1ecb6974ef5fb991a69175e8a3e3ac4460121360c5b5cd75a3f8eff768df1",
+    "geometry": {
+      "type": "tr26-hood-tall",
+      "confidence": "source-matched",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-066.webp",
+      "approval": {
+        "recordShapeSha256": "ea43ecb8cde771d0eedf61e36904720459acf83c04e8cff38cc2606ef4209370",
+        "databaseId": "09b411f8-177a-5c77-8101-38d09ed3a680",
+        "groupId": "oil-tmpn-top",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-hood-tall",
+      "confidence": "source-based",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-066.webp",
+      "approval": {
+        "recordShapeSha256": "ea43ecb8cde771d0eedf61e36904720459acf83c04e8cff38cc2606ef4209370",
+        "databaseId": "09b411f8-177a-5c77-8101-38d09ed3a680",
+        "groupId": "oil-tmpn-top",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-066.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        66
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-tmpn-top"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-tmpn-top",
+          "geometryType": "tr26-hood-tall",
+          "iconType": "tr26-hood-tall",
+          "sourcePages": [
+            66
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-tmpn-p64-r2",
+    "name": "ТМПНГ-160/3",
+    "designation": "ТМПНГ-160/3",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmpn-top",
+    "sourceFamilyId": "tmpn-top",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        64,
+        65,
+        66
+      ],
+      "sourceRow": {
+        "page": 64,
+        "table": "technical",
+        "row": 2
+      }
+    },
+    "recordSha256": "8792a2b584bc4e31477410a626648b400538cd549c9f787dfba58619225b2b07",
+    "geometry": {
+      "type": "tr26-hood-tall",
+      "confidence": "source-matched",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-066.webp",
+      "approval": {
+        "recordShapeSha256": "eea43a76d45144320661e232d677f9605f48ced3efbf0ad6ff2be6710e0b0106",
+        "databaseId": "a86a7875-fa82-5e86-ae31-ec4046777339",
+        "groupId": "oil-tmpn-top",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-hood-tall",
+      "confidence": "source-based",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-066.webp",
+      "approval": {
+        "recordShapeSha256": "eea43a76d45144320661e232d677f9605f48ced3efbf0ad6ff2be6710e0b0106",
+        "databaseId": "a86a7875-fa82-5e86-ae31-ec4046777339",
+        "groupId": "oil-tmpn-top",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-066.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        66
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-tmpn-top"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-tmpn-top",
+          "geometryType": "tr26-hood-tall",
+          "iconType": "tr26-hood-tall",
+          "sourcePages": [
+            66
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-tmpn-p64-r3",
+    "name": "ТМПНГ-250/3",
+    "designation": "ТМПНГ-250/3",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmpn-top",
+    "sourceFamilyId": "tmpn-top",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        64,
+        65,
+        66
+      ],
+      "sourceRow": {
+        "page": 64,
+        "table": "technical",
+        "row": 3
+      }
+    },
+    "recordSha256": "c15df6a1e9238d306cdebaca60b58f0e4f77c35007211675c355cd49f572423e",
+    "geometry": {
+      "type": "tr26-hood-tall",
+      "confidence": "source-matched",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-066.webp",
+      "approval": {
+        "recordShapeSha256": "361e5d98bf38112524a8a0b734a27207485a424301f180be702c893d7bb440b7",
+        "databaseId": "bc38698a-2058-5646-8564-8e7d87401bb4",
+        "groupId": "oil-tmpn-top",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-hood-tall",
+      "confidence": "source-based",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-066.webp",
+      "approval": {
+        "recordShapeSha256": "361e5d98bf38112524a8a0b734a27207485a424301f180be702c893d7bb440b7",
+        "databaseId": "bc38698a-2058-5646-8564-8e7d87401bb4",
+        "groupId": "oil-tmpn-top",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-066.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        66
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-tmpn-top"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-tmpn-top",
+          "geometryType": "tr26-hood-tall",
+          "iconType": "tr26-hood-tall",
+          "sourcePages": [
+            66
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-tmpn-p64-r4",
+    "name": "ТМПНГ-436/6",
+    "designation": "ТМПНГ-436/6",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmpn-top",
+    "sourceFamilyId": "tmpn-top",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        64,
+        65,
+        66
+      ],
+      "sourceRow": {
+        "page": 64,
+        "table": "technical",
+        "row": 4
+      }
+    },
+    "recordSha256": "79a6a278a1e50ee2a60f833c802a8fb905a70fdec1f7e05c3faff34935f53839",
+    "geometry": {
+      "type": "tr26-hood-tall",
+      "confidence": "source-matched",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-066.webp",
+      "approval": {
+        "recordShapeSha256": "a405a99b0e728966d0ffb3e525f3a63616019da4da942a346038b78d8309dce8",
+        "databaseId": "e5f4ebf1-ff6b-5ae3-af81-3d2c113f77df",
+        "groupId": "oil-tmpn-top",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-hood-tall",
+      "confidence": "source-based",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-066.webp",
+      "approval": {
+        "recordShapeSha256": "a405a99b0e728966d0ffb3e525f3a63616019da4da942a346038b78d8309dce8",
+        "databaseId": "e5f4ebf1-ff6b-5ae3-af81-3d2c113f77df",
+        "groupId": "oil-tmpn-top",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-066.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        66
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-tmpn-top"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-tmpn-top",
+          "geometryType": "tr26-hood-tall",
+          "iconType": "tr26-hood-tall",
+          "sourcePages": [
+            66
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-tmpn-p64-r5",
+    "name": "ТМПНГ-426/6",
+    "designation": "ТМПНГ-426/6",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmpn-top",
+    "sourceFamilyId": "tmpn-top",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        64,
+        65,
+        66
+      ],
+      "sourceRow": {
+        "page": 64,
+        "table": "technical",
+        "row": 5
+      }
+    },
+    "recordSha256": "ce5a3bc441458d548458ba3483cea660d789b6d04432327b5cb0b56615ea2e7c",
+    "geometry": {
+      "type": "tr26-hood-tall",
+      "confidence": "source-matched",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-066.webp",
+      "approval": {
+        "recordShapeSha256": "639b32c87427d2ca5eca9a898c90278b9a85eaac11308395769c9f09e7c95414",
+        "databaseId": "26d35003-9270-5f4a-9e15-24be4eeb9139",
+        "groupId": "oil-tmpn-top",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-hood-tall",
+      "confidence": "source-based",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-066.webp",
+      "approval": {
+        "recordShapeSha256": "639b32c87427d2ca5eca9a898c90278b9a85eaac11308395769c9f09e7c95414",
+        "databaseId": "26d35003-9270-5f4a-9e15-24be4eeb9139",
+        "groupId": "oil-tmpn-top",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-066.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        66
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-tmpn-top"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-tmpn-top",
+          "geometryType": "tr26-hood-tall",
+          "iconType": "tr26-hood-tall",
+          "sourcePages": [
+            66
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-tmpn-p64-r6",
+    "name": "ТМПНГ-665/3",
+    "designation": "ТМПНГ-665/3",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmpn-top",
+    "sourceFamilyId": "tmpn-top",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        64,
+        65,
+        66
+      ],
+      "sourceRow": {
+        "page": 64,
+        "table": "technical",
+        "row": 6
+      }
+    },
+    "recordSha256": "1cdccc764fed3328095b3ed8b1f371e96bab0713f8919e03391106e5205bd3a4",
+    "geometry": {
+      "type": "tr26-hood-tall",
+      "confidence": "source-matched",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-066.webp",
+      "approval": {
+        "recordShapeSha256": "85a21bc131140d36cbe3ff8c35f41d8a18af7af32044f1f68e9279cc04684cf9",
+        "databaseId": "2e0e5a9e-8731-54f7-b2c8-bde5bd55d097",
+        "groupId": "oil-tmpn-top",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-hood-tall",
+      "confidence": "source-based",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-066.webp",
+      "approval": {
+        "recordShapeSha256": "85a21bc131140d36cbe3ff8c35f41d8a18af7af32044f1f68e9279cc04684cf9",
+        "databaseId": "2e0e5a9e-8731-54f7-b2c8-bde5bd55d097",
+        "groupId": "oil-tmpn-top",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-066.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        66
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-tmpn-top"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-tmpn-top",
+          "geometryType": "tr26-hood-tall",
+          "iconType": "tr26-hood-tall",
+          "sourcePages": [
+            66
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "tr2026-family-tmpng-side",
+    "name": "ТМПНГ — боковой вывод",
+    "designation": "ТМПНГ",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "family",
+    "sourceRecordType": "family",
+    "familyId": null,
+    "sourceFamilyId": "tmpng-side",
+    "variantIds": [
+      "alageum-2026-tmpn-p64-r7",
+      "alageum-2026-tmpn-p64-r8",
+      "alageum-2026-tmpn-p64-r9",
+      "alageum-2026-tmpn-p64-r10"
+    ],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        64,
+        65,
+        67
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "608c44f1889ef03dd3e35b9b09ee21d3c4abf2b9fc81d4fef2fd46e971051d2e",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        64,
+        65,
+        67
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-064.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        64,
+        65,
+        67
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-064.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-064.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        64
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "alageum-2026-tmpn-p64-r7",
+    "name": "ТМПНГ-100/3 (боковой вывод)",
+    "designation": "ТМПНГ-100/3 (боковой вывод)",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmpng-side",
+    "sourceFamilyId": "tmpng-side",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        64,
+        65,
+        67
+      ],
+      "sourceRow": {
+        "page": 64,
+        "table": "technical",
+        "row": 7
+      }
+    },
+    "recordSha256": "54e7f9e882ed80a2292a1493c07bbda7dd7cdf7044d05f0f67b574682b7bd732",
+    "geometry": {
+      "type": "tr26-side-terminal-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        67
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-067.webp",
+      "approval": {
+        "recordShapeSha256": "88e66d7fe7a8fa93f8cac63b704a6701ebf5648769b05435e67ed69ec5448195",
+        "databaseId": "b2c93d04-3f37-5475-a685-36ab35f80679",
+        "groupId": "oil-tmpng-side",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-side-terminal-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        67
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-067.webp",
+      "approval": {
+        "recordShapeSha256": "88e66d7fe7a8fa93f8cac63b704a6701ebf5648769b05435e67ed69ec5448195",
+        "databaseId": "b2c93d04-3f37-5475-a685-36ab35f80679",
+        "groupId": "oil-tmpng-side",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-067.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        67
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-tmpng-side"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-tmpng-side",
+          "geometryType": "tr26-side-terminal-box",
+          "iconType": "tr26-side-terminal-box",
+          "sourcePages": [
+            67
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-tmpn-p64-r8",
+    "name": "ТМПНГ-160/3 (боковой вывод)",
+    "designation": "ТМПНГ-160/3 (боковой вывод)",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmpng-side",
+    "sourceFamilyId": "tmpng-side",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        64,
+        65,
+        67
+      ],
+      "sourceRow": {
+        "page": 64,
+        "table": "technical",
+        "row": 8
+      }
+    },
+    "recordSha256": "0107ad813638937af1cb31cc9e0a2147093681ec97badc2a32dba672a1babc1f",
+    "geometry": {
+      "type": "tr26-side-terminal-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        67
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-067.webp",
+      "approval": {
+        "recordShapeSha256": "8e4c768636e136384b65bc90c9b450a60b06804a9a795cc7de13d13275219c00",
+        "databaseId": "5afb6df1-b2bb-5743-b71e-b7fadbf7bfb8",
+        "groupId": "oil-tmpng-side",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-side-terminal-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        67
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-067.webp",
+      "approval": {
+        "recordShapeSha256": "8e4c768636e136384b65bc90c9b450a60b06804a9a795cc7de13d13275219c00",
+        "databaseId": "5afb6df1-b2bb-5743-b71e-b7fadbf7bfb8",
+        "groupId": "oil-tmpng-side",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-067.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        67
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-tmpng-side"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-tmpng-side",
+          "geometryType": "tr26-side-terminal-box",
+          "iconType": "tr26-side-terminal-box",
+          "sourcePages": [
+            67
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-tmpn-p64-r9",
+    "name": "ТМПНГ-250/3 (боковой вывод)",
+    "designation": "ТМПНГ-250/3 (боковой вывод)",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmpng-side",
+    "sourceFamilyId": "tmpng-side",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        64,
+        65,
+        67
+      ],
+      "sourceRow": {
+        "page": 65,
+        "table": "technical",
+        "row": 9
+      }
+    },
+    "recordSha256": "38b0c0daaab4a2143371cd2f5f4724231c2898b562e5bf1d5393e1b6dc229f8d",
+    "geometry": {
+      "type": "tr26-side-terminal-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        67
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-067.webp",
+      "approval": {
+        "recordShapeSha256": "6fd4c842c4d783884cd14548b0cb8a8756a8a1b36dde405b33e8c12012fef1e7",
+        "databaseId": "afcb2028-4893-57cb-afd0-b4516bb37c46",
+        "groupId": "oil-tmpng-side",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-side-terminal-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        67
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-067.webp",
+      "approval": {
+        "recordShapeSha256": "6fd4c842c4d783884cd14548b0cb8a8756a8a1b36dde405b33e8c12012fef1e7",
+        "databaseId": "afcb2028-4893-57cb-afd0-b4516bb37c46",
+        "groupId": "oil-tmpng-side",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-067.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        67
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-tmpng-side"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-tmpng-side",
+          "geometryType": "tr26-side-terminal-box",
+          "iconType": "tr26-side-terminal-box",
+          "sourcePages": [
+            67
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-tmpn-p64-r10",
+    "name": "ТМПНГ-630/3 (боковой вывод)",
+    "designation": "ТМПНГ-630/3 (боковой вывод)",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmpng-side",
+    "sourceFamilyId": "tmpng-side",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        64,
+        65,
+        67
+      ],
+      "sourceRow": {
+        "page": 65,
+        "table": "technical",
+        "row": 10
+      }
+    },
+    "recordSha256": "0045eb3d874dc22cd78cea408939f950f1e44293fc94e97a4547e860c6cc8abe",
+    "geometry": {
+      "type": "tr26-side-terminal-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        67
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-067.webp",
+      "approval": {
+        "recordShapeSha256": "8ce7dcf3aef7fa9216cef54bfd0d904e5f1960e67902a6f34a2eccc09bc25bb6",
+        "databaseId": "44363211-e5bb-5f5d-861b-5df2204681a4",
+        "groupId": "oil-tmpng-side",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-side-terminal-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        67
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-067.webp",
+      "approval": {
+        "recordShapeSha256": "8ce7dcf3aef7fa9216cef54bfd0d904e5f1960e67902a6f34a2eccc09bc25bb6",
+        "databaseId": "44363211-e5bb-5f5d-861b-5df2204681a4",
+        "groupId": "oil-tmpng-side",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-067.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        67
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-tmpng-side"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-tmpng-side",
+          "geometryType": "tr26-side-terminal-box",
+          "iconType": "tr26-side-terminal-box",
+          "sourcePages": [
+            67
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "tr2026-family-tmto-original",
+    "name": "ТМТО — трехобмоточный",
+    "designation": "ТМТО",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "family",
+    "sourceRecordType": "family",
+    "familyId": null,
+    "sourceFamilyId": "tmto-original",
+    "variantIds": [
+      "alageum-2026-tmto80-original"
+    ],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        68,
+        69
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "0f1de6dc2bb2736db3f0e5115e9749e79a85ad66ea3104047ac9f8e7bea8fb09",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        68,
+        69
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-068.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        68,
+        69
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-068.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-068.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        68
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "alageum-2026-tmto80-original",
+    "name": "ТМТО-80",
+    "designation": "ТМТО-80",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmto-original",
+    "sourceFamilyId": "tmto-original",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        68,
+        69
+      ],
+      "sourceRow": {
+        "page": 68,
+        "designation": "ТМТО-80",
+        "execution": "трехобмоточный",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "05fbf799b1797536ea9dcbec71dcbef8959905742f1347156dd681e2b6d5d8aa",
+    "geometry": {
+      "type": "tr26-heating-three-row",
+      "confidence": "source-matched",
+      "sourcePages": [
+        69
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-069.webp",
+      "approval": {
+        "recordShapeSha256": "dc000e008095bd375f21261059dde8288f39749d2517f10f209a0ec637ead66b",
+        "databaseId": "e7584eee-b9df-59c9-9720-f170de32481b",
+        "groupId": "oil-tmto-three-winding",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-heating-three-row",
+      "confidence": "source-based",
+      "sourcePages": [
+        69
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-069.webp",
+      "approval": {
+        "recordShapeSha256": "dc000e008095bd375f21261059dde8288f39749d2517f10f209a0ec637ead66b",
+        "databaseId": "e7584eee-b9df-59c9-9720-f170de32481b",
+        "groupId": "oil-tmto-three-winding",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-069.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        69
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-tmto-three-winding"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-tmto-three-winding",
+          "geometryType": "tr26-heating-three-row",
+          "iconType": "tr26-heating-three-row",
+          "sourcePages": [
+            69
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "tr2026-family-tmto-modern",
+    "name": "ТМТО — модернизированный",
+    "designation": "ТМТО",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "family",
+    "sourceRecordType": "family",
+    "familyId": null,
+    "sourceFamilyId": "tmto-modern",
+    "variantIds": [
+      "alageum-2026-tmto80-modern"
+    ],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        70,
+        71
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "528d1483035c9b48a4c108dc8dcc47c3d28b4994be1859d2b1c0ef90e766b03d",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        70,
+        71
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-070.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        70,
+        71
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-070.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-070.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        70
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "alageum-2026-tmto80-modern",
+    "name": "ТМТО-80",
+    "designation": "ТМТО-80",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-tmto-modern",
+    "sourceFamilyId": "tmto-modern",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        70,
+        71
+      ],
+      "sourceRow": {
+        "page": 70,
+        "designation": "ТМТО-80",
+        "execution": "модернизированный",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "3c4d043139ecbd52158d8b75e08360660b790e9d0d03b9175667003008c795a7",
+    "geometry": {
+      "type": "tr26-heating-single-row",
+      "confidence": "source-matched",
+      "sourcePages": [
+        71
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-071.webp",
+      "approval": {
+        "recordShapeSha256": "1b872abd18150d443f584ee2d55452832ae55c57fc886eb3bb2e6088644d5c13",
+        "databaseId": "22e4e166-ae96-5f1d-8f9c-83f2bfdf02f9",
+        "groupId": "oil-tmto-modern",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-heating-single-row",
+      "confidence": "source-based",
+      "sourcePages": [
+        71
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-071.webp",
+      "approval": {
+        "recordShapeSha256": "1b872abd18150d443f584ee2d55452832ae55c57fc886eb3bb2e6088644d5c13",
+        "databaseId": "22e4e166-ae96-5f1d-8f9c-83f2bfdf02f9",
+        "groupId": "oil-tmto-modern",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-071.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        71
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-tmto-modern"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-tmto-modern",
+          "geometryType": "tr26-heating-single-row",
+          "iconType": "tr26-heating-single-row",
+          "sourcePages": [
+            71
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "tr2026-family-om",
+    "name": "ОМ — однофазный масляный",
+    "designation": "ОМ",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "family",
+    "sourceRecordType": "family",
+    "familyId": null,
+    "sourceFamilyId": "om",
+    "variantIds": [
+      "alageum-2026-om-0p63",
+      "alageum-2026-om-1p25",
+      "alageum-2026-om-2p5",
+      "alageum-2026-om-2p0-drawing"
+    ],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        72,
+        73,
+        75
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "fe10b63431f2aa495977cefbe6be1b25b4171ba1d10c2f0fba564d05516751c2",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        72,
+        73,
+        75
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-072.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Источник доступен постранично. Конструкция этого исполнения не подтверждена для 3D-модели."
+    },
+    "icon": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        72,
+        73,
+        75
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-072.webp",
+      "approval": null,
+      "legacyEvidence": null,
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "family-parent-no-asset-inheritance",
+      "reason": "Документ источника; изображение конструкции не подтверждено"
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": true,
+    "iconOnly": false,
+    "sourceOnly": true,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-072.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        72
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "alageum-2026-om-0p63",
+    "name": "ОМ-0,63",
+    "designation": "ОМ-0,63",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-om",
+    "sourceFamilyId": "om",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        72,
+        73,
+        75
+      ],
+      "sourceRow": {
+        "page": 72,
+        "designation": "ОМ-0,63",
+        "execution": "однофазный масляный",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "ba9028cd6576008e4a532c50cda1c64bc98ca31978090a1fd0b67112af9735d5",
+    "geometry": {
+      "type": "tr26-pole-cylinder",
+      "confidence": "source-matched",
+      "sourcePages": [
+        75
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-075.webp",
+      "approval": {
+        "recordShapeSha256": "3eb2b666c8489509709ab56335b8a836b37b73a3773426b35e2c6aef12fa7bc4",
+        "databaseId": "c0b1adb1-54df-5820-bb9f-ad03383ba0fa",
+        "groupId": "oil-om",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-pole-cylinder",
+      "confidence": "source-based",
+      "sourcePages": [
+        75
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-075.webp",
+      "approval": {
+        "recordShapeSha256": "3eb2b666c8489509709ab56335b8a836b37b73a3773426b35e2c6aef12fa7bc4",
+        "databaseId": "c0b1adb1-54df-5820-bb9f-ad03383ba0fa",
+        "groupId": "oil-om",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-075.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        75
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-om"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-om",
+          "geometryType": "tr26-pole-cylinder",
+          "iconType": "tr26-pole-cylinder",
+          "sourcePages": [
+            75
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-om-1p25",
+    "name": "ОМ-1,25",
+    "designation": "ОМ-1,25",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-om",
+    "sourceFamilyId": "om",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        72,
+        73,
+        75
+      ],
+      "sourceRow": {
+        "page": 72,
+        "designation": "ОМ-1,25",
+        "execution": "однофазный масляный",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "aaf2f32c285e5d10f018114bf70b258835508f0dbb9d93f01311dd9423c67672",
+    "geometry": {
+      "type": "tr26-pole-cylinder",
+      "confidence": "source-matched",
+      "sourcePages": [
+        75
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-075.webp",
+      "approval": {
+        "recordShapeSha256": "cf2bd83f68368afc3882141849a3a1797b0faaf9c6ad6506f05e40243e2ae40c",
+        "databaseId": "290316ac-85a1-5ab9-a92a-e8f582cf44ac",
+        "groupId": "oil-om",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-pole-cylinder",
+      "confidence": "source-based",
+      "sourcePages": [
+        75
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-075.webp",
+      "approval": {
+        "recordShapeSha256": "cf2bd83f68368afc3882141849a3a1797b0faaf9c6ad6506f05e40243e2ae40c",
+        "databaseId": "290316ac-85a1-5ab9-a92a-e8f582cf44ac",
+        "groupId": "oil-om",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-075.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        75
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-om"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-om",
+          "geometryType": "tr26-pole-cylinder",
+          "iconType": "tr26-pole-cylinder",
+          "sourcePages": [
+            75
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-om-2p5",
+    "name": "ОМ-2,5",
+    "designation": "ОМ-2,5",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "explicit-model-row",
+    "familyId": "tr2026-family-om",
+    "sourceFamilyId": "om",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        72,
+        73,
+        75
+      ],
+      "sourceRow": {
+        "page": 72,
+        "designation": "ОМ-2,5",
+        "execution": "однофазный масляный",
+        "kind": "explicit-model-row"
+      }
+    },
+    "recordSha256": "b45d4d726a05685349ca7a1c1244a713f8a45f21342296227ad487a75730371e",
+    "geometry": {
+      "type": "tr26-pole-cylinder",
+      "confidence": "source-matched",
+      "sourcePages": [
+        75
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-075.webp",
+      "approval": {
+        "recordShapeSha256": "bee03ea88c96dd13dd235c58102744ced312ffe2d59638a2b65494143525df5e",
+        "databaseId": "b57a4495-7314-5e70-b61c-5fedc170b549",
+        "groupId": "oil-om",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-pole-cylinder",
+      "confidence": "source-based",
+      "sourcePages": [
+        75
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-075.webp",
+      "approval": {
+        "recordShapeSha256": "bee03ea88c96dd13dd235c58102744ced312ffe2d59638a2b65494143525df5e",
+        "databaseId": "b57a4495-7314-5e70-b61c-5fedc170b549",
+        "groupId": "oil-om",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-075.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        75
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-om"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-om",
+          "geometryType": "tr26-pole-cylinder",
+          "iconType": "tr26-pole-cylinder",
+          "sourcePages": [
+            75
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  },
+  {
+    "id": "alageum-2026-om-2p0-drawing",
+    "name": "ОМ 2,0",
+    "designation": "ОМ 2,0",
+    "cohort": "new-transformers-2026",
+    "category": "transformers",
+    "productKind": "transformer",
+    "role": "variant",
+    "sourceRecordType": "drawing-only-model",
+    "familyId": "tr2026-family-om",
+    "sourceFamilyId": "om",
+    "variantIds": [],
+    "source": {
+      "id": "transformers-2026",
+      "fileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "physicalPages": [
+        75
+      ],
+      "sourceRow": {
+        "page": 75,
+        "designation": "ОМ 2,0",
+        "execution": "drawing-only row",
+        "kind": "drawing-only-model"
+      }
+    },
+    "recordSha256": "4d0d1a4060866dfffc3f6bf87c73941a10dd3ddd54197871d6fd152f918881cf",
+    "geometry": {
+      "type": "tr26-pole-cylinder",
+      "confidence": "source-matched",
+      "sourcePages": [
+        75
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-075.webp",
+      "approval": {
+        "recordShapeSha256": "bf8a12b6e1bec31a2e30956d6b5e843aa7a1b80b5f6b5c86473eff3eb6cd74d6",
+        "databaseId": "d4315497-d8b5-56ec-b619-8a7e75571caf",
+        "groupId": "oil-om",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Иллюстративная компоновка по проверенному чертежу; не CAD, не размеры и не точная модель исполнения."
+    },
+    "icon": {
+      "type": "tr26-pole-cylinder",
+      "confidence": "source-based",
+      "sourcePages": [
+        75
+      ],
+      "sourceImage": "/catalog-source/transformers-2026/page-075.webp",
+      "approval": {
+        "recordShapeSha256": "bf8a12b6e1bec31a2e30956d6b5e843aa7a1b80b5f6b5c86473eff3eb6cd74d6",
+        "databaseId": "d4315497-d8b5-56ec-b619-8a7e75571caf",
+        "groupId": "oil-om",
+        "clearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+      },
+      "legacyEvidence": null,
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Иконка по проверенной видимой конструкции; не точный чертёж исполнения"
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-source/transformers-2026/page-075.webp",
+      "representation": "source-scan",
+      "sourceId": "transformers-2026",
+      "physicalPages": [
+        75
+      ]
+    },
+    "proposalEvidence": {
+      "status": "topology-proposal",
+      "evidenceGroupIds": [
+        "oil-om"
+      ],
+      "choices": [
+        {
+          "groupId": "oil-om",
+          "geometryType": "tr26-pole-cylinder",
+          "iconType": "tr26-pole-cylinder",
+          "sourcePages": [
+            75
+          ],
+          "viewMode": "illustrative-topology"
+        }
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ],
+      "authoritativeForRuntime": false
+    }
+  }
+]

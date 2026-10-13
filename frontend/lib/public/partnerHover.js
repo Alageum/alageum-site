@@ -1,0 +1,1 @@
+export function insidePartnerHoverZones(point,logo,card){const inside=(rect,padding)=>rect&&point.x>=rect.left-padding&&point.x<=rect.left+rect.width+padding&&point.y>=rect.top-padding&&point.y<=rect.top+rect.height+padding;return Boolean(inside(logo,24)||inside(card,20));}

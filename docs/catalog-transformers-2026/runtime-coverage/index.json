@@ -1,0 +1,326 @@
+{
+  "format": "alageum-runtime-coverage-v1",
+  "authority": "Actual frozen static resolvers and independent per-record/channel allowlists; proposal runtimeEligible flags are not activation state",
+  "inventorySha256": "c3948d7152a6130aa4672b9f6d3d5a8f08144b5965df7bebabca067ba5bc8438",
+  "runtimeAssetManifestSha256": "015aec00fbd4ee411c581fbc1443a348cdfd1f85649607820c406a0b658f6434",
+  "counts": {
+    "records": 823,
+    "cohorts": {
+      "legacy": 238,
+      "new-transformers-2026": 585
+    },
+    "roles": {
+      "reference-record": 14,
+      "variant": 667,
+      "family": 142
+    },
+    "geometry": {
+      "mapped/generic": 14,
+      "mapped/source-matched": 422,
+      "null/source-only": 377,
+      "null/unverified": 10
+    },
+    "icons": {
+      "mapped/typical": 66,
+      "mapped/source-based": 429,
+      "null/source-only": 328
+    },
+    "sourceOnlyRecords": 328,
+    "iconOnlyRecords": 59,
+    "newIconOnlyRecords": 6,
+    "newGeometryApproved": 251,
+    "newIconsApproved": 257
+  },
+  "records": {
+    "recordCount": 823,
+    "chunks": [
+      {
+        "path": "records/part-001.json",
+        "recordCount": 29,
+        "bytes": 72747,
+        "sha256": "8c4574bf0bb0223de1cbbcb25bdb8dbe7f1d15e2d23e1d34760927dc673f4a20"
+      },
+      {
+        "path": "records/part-002.json",
+        "recordCount": 26,
+        "bytes": 72813,
+        "sha256": "ab321ab8b9b1681b9c63e85cb9c2ff27431d20921b26f6168d430c45178fcd1a"
+      },
+      {
+        "path": "records/part-003.json",
+        "recordCount": 24,
+        "bytes": 72510,
+        "sha256": "da1970d118820a8093d5e8fc1068bfe41cfb4338322741742a4e86a2b0c57238"
+      },
+      {
+        "path": "records/part-004.json",
+        "recordCount": 25,
+        "bytes": 72555,
+        "sha256": "88e16ff01de1fa41f82b88ff118350d3ed1f15dfa6cd96bb58db45e05939a91a"
+      },
+      {
+        "path": "records/part-005.json",
+        "recordCount": 26,
+        "bytes": 71604,
+        "sha256": "a66032952f9c07c731ca0bb5315ba69045655fa28864adfb8b30e03dceba6bbc"
+      },
+      {
+        "path": "records/part-006.json",
+        "recordCount": 27,
+        "bytes": 72695,
+        "sha256": "7957527fe7faa0c157319393b491685aaa2ccca94f1efcce5b71f662796958c5"
+      },
+      {
+        "path": "records/part-007.json",
+        "recordCount": 26,
+        "bytes": 73109,
+        "sha256": "de1e62948df49b28461a32bcbefa539509e67968835c79a66c1d9b6dbf66b166"
+      },
+      {
+        "path": "records/part-008.json",
+        "recordCount": 25,
+        "bytes": 73388,
+        "sha256": "5a21558a37acce67cb5ee00acd7523887ae9857c66fa44d5e7a7220dea982c86"
+      },
+      {
+        "path": "records/part-009.json",
+        "recordCount": 26,
+        "bytes": 73915,
+        "sha256": "5313a55889700c81248f880e08e1dc4e56498eae0518eee4e9fa27dd47043d9a"
+      },
+      {
+        "path": "records/part-010.json",
+        "recordCount": 20,
+        "bytes": 73047,
+        "sha256": "905d2981cf41351bf0c1b73f78efd65e4b47ded715bd434fddb861f4d1516aab"
+      },
+      {
+        "path": "records/part-011.json",
+        "recordCount": 19,
+        "bytes": 73615,
+        "sha256": "11c4575a11a2a09fb90643ed7f607b49b0ad5509adc28aac172c1f3329f21d92"
+      },
+      {
+        "path": "records/part-012.json",
+        "recordCount": 18,
+        "bytes": 71075,
+        "sha256": "5be7de284743526401f267b7fa3087d8ff06daa6674fe94fce44a87011f22cb4"
+      },
+      {
+        "path": "records/part-013.json",
+        "recordCount": 20,
+        "bytes": 71313,
+        "sha256": "2112eb53d7546f29e0f5bbae4e10f179884cbcf9b0af11077633d85083faf4a8"
+      },
+      {
+        "path": "records/part-014.json",
+        "recordCount": 20,
+        "bytes": 72084,
+        "sha256": "f7d3ba05c4c756571857dd706269d7c24dbf212425906767b95f825972c36783"
+      },
+      {
+        "path": "records/part-015.json",
+        "recordCount": 20,
+        "bytes": 71415,
+        "sha256": "b26edb99ef9d08426263e48fc19f255fa83edb4e5499a858d04253a2462941dd"
+      },
+      {
+        "path": "records/part-016.json",
+        "recordCount": 20,
+        "bytes": 72180,
+        "sha256": "fc64419a0b2094d6ec4fefd0ba01b03951b391801701ee256eea8f3d343f6eb1"
+      },
+      {
+        "path": "records/part-017.json",
+        "recordCount": 19,
+        "bytes": 73358,
+        "sha256": "1bb683d7c42a55a9fd4d60f81a03ece5acd064a87a7fa3d0c09a3e5a053f0603"
+      },
+      {
+        "path": "records/part-018.json",
+        "recordCount": 19,
+        "bytes": 73236,
+        "sha256": "771493b5528a42b438a7c2e2c92ead7a9a379c6847ae85f14cbd9c0202f48617"
+      },
+      {
+        "path": "records/part-019.json",
+        "recordCount": 19,
+        "bytes": 71176,
+        "sha256": "b5d97673cfd6a9e416d35463a27a8ec87ffb8432ee000b7def34e602c058f59a"
+      },
+      {
+        "path": "records/part-020.json",
+        "recordCount": 20,
+        "bytes": 73235,
+        "sha256": "ccb88d948a19a3d4eab5dc6b5060581f8bbb47095a6b003434156ffbd5a5d30e"
+      },
+      {
+        "path": "records/part-021.json",
+        "recordCount": 20,
+        "bytes": 73201,
+        "sha256": "07215c0bceee0b6894273c9d1857a6acbf9dcc0e35a36a5b2d75b3f4b6d0188d"
+      },
+      {
+        "path": "records/part-022.json",
+        "recordCount": 19,
+        "bytes": 73394,
+        "sha256": "6a344ca77a3984fe7ac93e6a3f61d1b95e74dd783f178ec44b08474293d5297d"
+      },
+      {
+        "path": "records/part-023.json",
+        "recordCount": 21,
+        "bytes": 73440,
+        "sha256": "ecabde73a2a32c70e13c83a1e8bbed2d1ba421f5e923200bc3259e2a15731479"
+      },
+      {
+        "path": "records/part-024.json",
+        "recordCount": 20,
+        "bytes": 71550,
+        "sha256": "354b6df8d149ed419c93cae6655a95d142b08a6df45ca6455b245fdee1608eb0"
+      },
+      {
+        "path": "records/part-025.json",
+        "recordCount": 18,
+        "bytes": 71481,
+        "sha256": "c61080bea6243c2ac2a693bf0cd7e9801958920a70f6eefa8b600847491a0ff5"
+      },
+      {
+        "path": "records/part-026.json",
+        "recordCount": 19,
+        "bytes": 71024,
+        "sha256": "876b97dad10146b93a35a1545aa6b9fcfe161fb1328eff86bfccb75a665b2039"
+      },
+      {
+        "path": "records/part-027.json",
+        "recordCount": 19,
+        "bytes": 73567,
+        "sha256": "bdd6fed0d3c0038c1398fc7ff6f6ab628cbc4628538238ee9c66fe363005c50f"
+      },
+      {
+        "path": "records/part-028.json",
+        "recordCount": 20,
+        "bytes": 73393,
+        "sha256": "d5fe31e7c52cbc2e2996a7a762cc5926ca05f403b92b4cb0942f045640bd7000"
+      },
+      {
+        "path": "records/part-029.json",
+        "recordCount": 20,
+        "bytes": 71033,
+        "sha256": "b6840c701e36f7346cd7abe6cffbd9db8fcd2d897f7e5f5377fd58955db315ce"
+      },
+      {
+        "path": "records/part-030.json",
+        "recordCount": 23,
+        "bytes": 71756,
+        "sha256": "fd32d7f4fd0daccc7e6f93b8491db9adc95ca7e5fa9eca46932799075dbc7bbb"
+      },
+      {
+        "path": "records/part-031.json",
+        "recordCount": 23,
+        "bytes": 71253,
+        "sha256": "9a81fa0ef6626d712eb5d035e064f9d1f5a3f908c340594d35eff1edb4c20ca9"
+      },
+      {
+        "path": "records/part-032.json",
+        "recordCount": 23,
+        "bytes": 72015,
+        "sha256": "2e1e2ba1c867b4b51d25612bdd3e5e7c6e47151e39057de95106d6973379e5bb"
+      },
+      {
+        "path": "records/part-033.json",
+        "recordCount": 23,
+        "bytes": 71773,
+        "sha256": "b355dbca40b618060b5cd472b22bafa0656f9c2f3e0f9d7883306037b89bc3aa"
+      },
+      {
+        "path": "records/part-034.json",
+        "recordCount": 23,
+        "bytes": 71655,
+        "sha256": "0b55fd902e09efe2a3be6aaf2e60e989099e4fe7bf9e3a9ca766a927decb0ab2"
+      },
+      {
+        "path": "records/part-035.json",
+        "recordCount": 23,
+        "bytes": 71053,
+        "sha256": "2f83805395452281f3a01399e7a3df431c50ce849df32f490015cb619d8c4882"
+      },
+      {
+        "path": "records/part-036.json",
+        "recordCount": 23,
+        "bytes": 72796,
+        "sha256": "7d57c67afe4ade78b9acbc7e0c146f1ba202eeab113e3b125d007c01db150ac6"
+      },
+      {
+        "path": "records/part-037.json",
+        "recordCount": 23,
+        "bytes": 71161,
+        "sha256": "1f3daa990d7f23f89ec2418535f791284fc155cc5984994788d70d2fce459a2e"
+      },
+      {
+        "path": "records/part-038.json",
+        "recordCount": 15,
+        "bytes": 46268,
+        "sha256": "727e1f0b0b78f9027837a47c80fdadcd7e5295a2b9b9a4cd12db075041b62451"
+      }
+    ]
+  },
+  "heldIdentities": {
+    "recordCount": 32,
+    "chunks": [
+      {
+        "path": "held-identities/part-001.json",
+        "recordCount": 32,
+        "bytes": 59436,
+        "sha256": "37e0c81e0d88db256f4438e32032ad457a73e932192e29fcfec206475ff016de"
+      }
+    ]
+  },
+  "registeredGeometry": {
+    "recordCount": 122,
+    "chunks": [
+      {
+        "path": "geometry-availability/part-001.json",
+        "recordCount": 70,
+        "bytes": 72426,
+        "sha256": "53ed77375362eb6e465b024e09af8405a9e826ed912d5eb8d73290dbeb275134"
+      },
+      {
+        "path": "geometry-availability/part-002.json",
+        "recordCount": 52,
+        "bytes": 56660,
+        "sha256": "35184cfda8631ebde66ad7b7c516deb79bdd69dfbe8083939904c90c3eefd7ce"
+      }
+    ]
+  },
+  "registeredIcons": {
+    "recordCount": 132,
+    "chunks": [
+      {
+        "path": "icon-availability/part-001.json",
+        "recordCount": 73,
+        "bytes": 72838,
+        "sha256": "666a60791d9e896eba721b79535c6a11327be3177828692e671c0ddbb4f04e4d"
+      },
+      {
+        "path": "icon-availability/part-002.json",
+        "recordCount": 59,
+        "bytes": 62595,
+        "sha256": "1d0a3ecc9b5cf510d147ec9885cce6ce336809d7fc1b2769ead3c8fe232417c4"
+      }
+    ]
+  },
+  "evidenceGroups": {
+    "recordCount": 87,
+    "chunks": [
+      {
+        "path": "evidence-groups/part-001.json",
+        "recordCount": 87,
+        "bytes": 38205,
+        "sha256": "38c6ef902946d3ee5a41cf337e6637cb5f51b1fbddb69396dafa0ed574736892"
+      }
+    ]
+  },
+  "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+  "sourceProposals": "docs/catalog-transformers-2026/assets/coverage.json",
+  "assetClearance": "docs/catalog-transformers-2026/review/assets-clearance.json"
+}

@@ -1,0 +1,37 @@
+{
+  "format": "alageum-visual-presentation-clearance-v1",
+  "status": "approved-bounded-visual-presentation",
+  "baselineCommit": "c83265e76c3c671e84e97ed6d8527f788abe46e8",
+  "baselineTree": "bec2becfba7dd142d548d241ce0210900ee3731c",
+  "dependencies": {
+    "predecessors": {
+      "frontend/tests/helpers/historical-reviewed-bytes.mjs": "0546ba1c64f7331cf57f93efebbcac2f3a54ff3e98078b6091127a60cc955500",
+      "frontend/components/catalog/models/createEquipmentViewer.js": "145ea78f14dc5f2a211bf7c7befadf851cefe2a3ecf1c1942086f069811a65e7",
+      "frontend/components/catalog/source-context/CatalogSourceContext.module.css": "0ee83f648f3f6904c4522c1f7cda1b4a0d38f8805f8e1456eaf46d76e8f028c3",
+      "scripts/catalog/protection-context-reviewed-dependencies.mjs": "0cf8dfcdf11e933af1d5cf2d88aa8f4c878730c632538fcefd3457b4236aaa6e",
+      "scripts/catalog/catalog-browser-reviewed-dependencies.mjs": "808f1034297f0b3ab62826a339373287684a1df5bf173b06d9162d83976cc279",
+      "frontend/tests/transformer-asset-completion.test.mjs": "9541ff421a159dfc5e6781def30f64d1738733ca8bb135b616cab52ca6fa86d6",
+      "frontend/tests/catalog-browser-amendment.test.mjs": "df7d2e4fb399023b597dfaed3797f5cbaabce452d1c7a54b177fb05d96fd5e80",
+      "frontend/tests/protection-context-amendment.test.mjs": "36ab081e0d832126e5281f22da9f30249fc91cc66ad023e8f09f71e86b307439"
+    },
+    "reviewedFiles": {
+      "frontend/tests/helpers/historical-reviewed-bytes.mjs": "7df3fddddb7ecd1e3eddaaf25baf58db6de06b93aaa52b621112427e1800e5e5",
+      "frontend/components/catalog/models/createEquipmentViewer.js": "46efdcd611b69deba5a3d1bb30fe4ee95c72b705ce569a140252aba918fafe27",
+      "frontend/components/catalog/source-context/CatalogSourceContext.module.css": "0d13bcc3c0b8131c94427904aad26cd5ee45f8ac2d36a452869d8317512e4218",
+      "scripts/catalog/protection-context-reviewed-dependencies.mjs": "6ad4bdb7c5dace0f3dc2effe5c2c919d79ef5e7ea541d9fa772898719ada40ad",
+      "scripts/catalog/catalog-browser-reviewed-dependencies.mjs": "952df324b4acbd63536c3e85752bf3b6f3e8f70e6349be246112fb40177294b8",
+      "frontend/tests/transformer-asset-completion.test.mjs": "508622cad1f6bcad73c795cdf222da81d73e6a2ee26e7b17f97f6ade5c05cc8d",
+      "frontend/tests/catalog-browser-amendment.test.mjs": "45b33622e525b46cfe7fb016e33a2a24041b9acfbfd624d40ede45bfb2c0aee3",
+      "frontend/tests/protection-context-amendment.test.mjs": "fe457fba4c01d3a0e1b13be79955b5dc1867c9d00fad93eaed47b4fd7fe04ac8",
+      "frontend/tests/equipment-viewer-presentation.test.mjs": "055226cf6f43cc7b49f1f41f0bff55ad07a99b63649325c82b25d0c7d49231a4",
+      "frontend/tests/source-context-viewport.test.mjs": "50b4bd67a6518bc4a5cb0036d9b44d742564f58dfdbfb236a2fd13a0ea5cb863",
+      "frontend/tests/visual-presentation-amendment.test.mjs": "0bcf64814f15b6db3e7c8ba8398aa25aa6d7d6d3a222e0f5a355822e13dd672a",
+      "frontend/tests/helpers/visual-presentation-historical-bytes.mjs": "af06ebe3f20976a5360fad739939ed022e5e60b7bf025b62b60520fc6cae9a33",
+      "scripts/catalog/visual-presentation-reviewed-dependencies.mjs": "eceb99b8fbc1a0a52a6dbb6756f43d49d36a910aecc2b8edb50e3c07c11a3c38",
+      "docs/catalog-transformers-2026/review/catalog-visual-presentation/README.md": "d421f563a47be7183775448578738d85d576b5e2f72e2796acc535da526ad92d",
+      "docs/catalog-transformers-2026/review/catalog-visual-presentation/historical-test-bytes.json": "b614eee30bff041c851590b2ce0695a0e3a7180188adba1680a6e366d9f78b0e"
+    }
+  },
+  "reviewReport": "docs/catalog-transformers-2026/review/catalog-visual-presentation/independent-review.json",
+  "reviewReportSha256": "8f860b962d02fabdb017aa3f25658cae63c52823ea280662f4467ee019755e3d"
+}

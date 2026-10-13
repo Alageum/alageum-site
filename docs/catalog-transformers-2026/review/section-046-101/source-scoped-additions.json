@@ -1,0 +1,878 @@
+{
+  "sourceReview": "independent-review/review-006-101.json",
+  "sourceReviewSha256": "7468a33bd274fbf7a4ffa7661db2b5c3d44aaab1de3000b8200c9f7798922e42",
+  "sourcePdfSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+  "requiredCommonProseAdditions": [
+    {
+      "familyIds": [
+        "tm-20kv"
+      ],
+      "sourcePage": 50,
+      "confidence": "high",
+      "fields": [
+        {
+          "label": "Установка",
+          "value": "наружной или внутренней",
+          "unit": null,
+          "page": 50
+        },
+        {
+          "label": "Температура умеренного климата",
+          "value": "от +40°C до -45°C",
+          "unit": "°C",
+          "page": 50
+        },
+        {
+          "label": "Температура холодного климата",
+          "value": "от +40°C до -60°C",
+          "unit": "°C",
+          "page": 50
+        },
+        {
+          "label": "Высота установки над уровнем моря",
+          "value": "не более1000",
+          "unit": "м",
+          "page": 50
+        },
+        {
+          "label": "Исключенные условия работы",
+          "value": "тряска, вибрация, удары, химически активная среда",
+          "unit": null,
+          "page": 50
+        },
+        {
+          "label": "Регулирование напряжения ПБВ со стороны ВН",
+          "value": "±2x2,5",
+          "unit": "%",
+          "page": 50
+        },
+        {
+          "label": "Климатическое исполнение",
+          "value": "У1",
+          "unit": null,
+          "page": 50
+        },
+        {
+          "label": "Маслорасширитель",
+          "value": "установлен на крышке бака; вентиляционное отверстие соединенное через воздухоочиститель",
+          "unit": null,
+          "page": 50
+        },
+        {
+          "label": "Диапазон мощности (текст)",
+          "value": "40–2500",
+          "unit": "кВА",
+          "page": 50
+        }
+      ],
+      "note": "Heading/table start at100kVA while prose starts at40. Preserve disagreement; no40/63kVA TM20kV records may be invented."
+    },
+    {
+      "familyIds": [
+        "tmg-20kv-copper"
+      ],
+      "sourcePage": 51,
+      "confidence": "high",
+      "fields": [
+        {
+          "label": "Обмотки",
+          "value": "трехфазные, двухобмоточные",
+          "unit": null,
+          "page": 51
+        },
+        {
+          "label": "Охлаждение",
+          "value": "естественное охлаждение масла",
+          "unit": null,
+          "page": 51
+        },
+        {
+          "label": "Исполнение",
+          "value": "герметичное; полное заполнение маслом под вакуум",
+          "unit": null,
+          "page": 51
+        },
+        {
+          "label": "Компенсация изменения объема масла",
+          "value": "изменение объема гофрированных стенок бака за счет пластичной их деформации",
+          "unit": null,
+          "page": 51
+        }
+      ]
+    },
+    {
+      "familyIds": [
+        "tmg-20kv"
+      ],
+      "sourcePage": 54,
+      "confidence": "high",
+      "fields": [
+        {
+          "label": "Обмотки",
+          "value": "трехфазные, двухобмоточные",
+          "unit": null,
+          "page": 54
+        },
+        {
+          "label": "Охлаждение",
+          "value": "естественное охлаждение масла",
+          "unit": null,
+          "page": 54
+        },
+        {
+          "label": "Исполнение",
+          "value": "герметичное; полное заполнение маслом под вакуум",
+          "unit": null,
+          "page": 54
+        },
+        {
+          "label": "Компенсация изменения объема масла",
+          "value": "изменение объема гофрированных стенок бака за счет пластичной их деформации",
+          "unit": null,
+          "page": 54
+        }
+      ]
+    },
+    {
+      "familyIds": [
+        "tmgsu"
+      ],
+      "sourcePage": 58,
+      "confidence": "high",
+      "fields": [
+        {
+          "label": "Установка",
+          "value": "наружной или внутренней",
+          "unit": null,
+          "page": 58
+        },
+        {
+          "label": "Температура умеренного климата",
+          "value": "от +40 до -45",
+          "unit": "°C",
+          "page": 58
+        },
+        {
+          "label": "Температура холодного климата",
+          "value": "от +40 до -60",
+          "unit": "°C",
+          "page": 58
+        },
+        {
+          "label": "Окружающая среда",
+          "value": "невзрывоопасная, не содержащая пыли в концентрациях, снижающих параметры изделий в недопустимых пределах",
+          "unit": null,
+          "page": 58
+        },
+        {
+          "label": "Назначение симметрирующего устройства",
+          "value": "поддержание симметричности фазных напряжений при неравномерной пофазной нагрузке",
+          "unit": null,
+          "page": 58
+        }
+      ]
+    },
+    {
+      "familyIds": [
+        "tmeg"
+      ],
+      "sourcePage": 60,
+      "confidence": "high",
+      "fields": [
+        {
+          "label": "Охлаждение",
+          "value": "естественное масляное",
+          "unit": null,
+          "page": 60
+        },
+        {
+          "label": "Переключатель",
+          "value": "без возбуждения",
+          "unit": null,
+          "page": 60
+        },
+        {
+          "label": "Стандарт",
+          "value": "ГОСТ11677",
+          "unit": null,
+          "page": 60
+        }
+      ]
+    },
+    {
+      "familyIds": [
+        "tmpn-top"
+      ],
+      "sourcePage": 62,
+      "confidence": "high",
+      "fields": [
+        {
+          "label": "Температура окружающего воздуха",
+          "value": "от -45 до +40",
+          "unit": "°C",
+          "page": 62
+        },
+        {
+          "label": "Высота над уровнем моря",
+          "value": "до1000",
+          "unit": "м",
+          "page": 62
+        },
+        {
+          "label": "Относительная влажность воздуха",
+          "value": "не более80% при +25°C",
+          "unit": null,
+          "page": 62
+        },
+        {
+          "label": "Номинальное напряжение первичной обмотки",
+          "value": "0,38",
+          "unit": "кВ",
+          "page": 62
+        },
+        {
+          "label": "Стандарт",
+          "value": "ГОСТ11677",
+          "unit": null,
+          "page": 62
+        },
+        {
+          "label": "Переключатель",
+          "value": "без возбуждения",
+          "unit": null,
+          "page": 62
+        },
+        {
+          "label": "Исключенные условия работы",
+          "value": "тряска, вибрация, воздействие инерционных сил, удары, взрывоопасная и химически агрессивная среда",
+          "unit": null,
+          "page": 62
+        }
+      ],
+      "rowIds": [
+        "alageum-2026-tmpn-p62-r1",
+        "alageum-2026-tmpn-p62-r2",
+        "alageum-2026-tmpn-p62-r3",
+        "alageum-2026-tmpn-p62-r4",
+        "alageum-2026-tmpn-p62-r5",
+        "alageum-2026-tmpn-p62-r6",
+        "alageum-2026-tmpn-p62-r7",
+        "alageum-2026-tmpn-p62-r8"
+      ],
+      "note": "Apply only to the indicated page-scoped rows;62 and64 print different lower temperature limits. Do not flatten the mixed tmpn-top family into one temperature."
+    },
+    {
+      "familyIds": [
+        "tmpn-top",
+        "tmpng-side"
+      ],
+      "sourcePage": 64,
+      "confidence": "high",
+      "fields": [
+        {
+          "label": "Температура окружающего воздуха",
+          "value": "от -60 до +40",
+          "unit": "°C",
+          "page": 64
+        },
+        {
+          "label": "Высота над уровнем моря",
+          "value": "до1000",
+          "unit": "м",
+          "page": 64
+        },
+        {
+          "label": "Относительная влажность воздуха",
+          "value": "не более80% при +25°C",
+          "unit": null,
+          "page": 64
+        },
+        {
+          "label": "Номинальное напряжение первичной обмотки",
+          "value": "0,38",
+          "unit": "кВ",
+          "page": 64
+        },
+        {
+          "label": "Стандарт",
+          "value": "ГОСТ11677",
+          "unit": null,
+          "page": 64
+        },
+        {
+          "label": "Переключатель",
+          "value": "без возбуждения",
+          "unit": null,
+          "page": 64
+        },
+        {
+          "label": "Исключенные условия работы",
+          "value": "тряска, вибрация, воздействие инерционных сил, удары, взрывоопасная и химически агрессивная среда",
+          "unit": null,
+          "page": 64
+        }
+      ],
+      "rowIds": [
+        "alageum-2026-tmpn-p64-r1",
+        "alageum-2026-tmpn-p64-r2",
+        "alageum-2026-tmpn-p64-r3",
+        "alageum-2026-tmpn-p64-r4",
+        "alageum-2026-tmpn-p64-r5",
+        "alageum-2026-tmpn-p64-r6",
+        "alageum-2026-tmpn-p64-r7",
+        "alageum-2026-tmpn-p64-r8",
+        "alageum-2026-tmpn-p64-r9",
+        "alageum-2026-tmpn-p64-r10"
+      ],
+      "note": "Apply only to the indicated page-scoped rows;62 and64 print different lower temperature limits. Do not flatten the mixed tmpn-top family into one temperature."
+    },
+    {
+      "familyIds": [
+        "om",
+        "omp"
+      ],
+      "sourcePage": 72,
+      "confidence": "high",
+      "fields": [
+        {
+          "label": "Частота",
+          "value": "50",
+          "unit": "Гц",
+          "page": 72
+        },
+        {
+          "label": "Стандарт",
+          "value": "ГОСТ11677-85",
+          "unit": null,
+          "page": 72
+        },
+        {
+          "label": "Высота установки над уровнем моря",
+          "value": "не более1000",
+          "unit": "м",
+          "page": 72
+        },
+        {
+          "label": "Температура окружающего воздуха",
+          "value": "от -45 до +40 для У1",
+          "unit": "°C",
+          "page": 72
+        },
+        {
+          "label": "Относительная влажность воздуха",
+          "value": "не более80% при +25°C",
+          "unit": null,
+          "page": 72
+        },
+        {
+          "label": "Условие среды (как напечатано)",
+          "value": "Не взрывоопасной и химически активной среде",
+          "unit": null,
+          "page": 72
+        }
+      ],
+      "note": "The environmental bullet has odd printed wording. Retain verbatim with warning rather than silently inserting a second не. Do not infer missing electrical specs for drawing-only ОМ2,0.",
+      "rowIds": [
+        "alageum-2026-om-0p63",
+        "alageum-2026-om-1p25",
+        "alageum-2026-om-2p5",
+        "alageum-2026-om-4-p",
+        "alageum-2026-om-10-p"
+      ]
+    },
+    {
+      "familyIds": [
+        "tsl-loss-C"
+      ],
+      "sourcePage": 77,
+      "confidence": "high",
+      "fields": [
+        {
+          "label": "Частота",
+          "value": "50",
+          "unit": "Гц",
+          "page": 77
+        },
+        {
+          "label": "Класс нагревостойкости",
+          "value": "F",
+          "unit": null,
+          "page": 77
+        },
+        {
+          "label": "Климатическое исполнение (первая строка)",
+          "value": "У3, УХЛ3, У1",
+          "unit": null,
+          "page": 77
+        },
+        {
+          "label": "Климатическое исполнение (вторая строка)",
+          "value": "У, УХЛ, Т",
+          "unit": null,
+          "page": 77
+        },
+        {
+          "label": "Категория размещения",
+          "value": "1;2;3",
+          "unit": null,
+          "page": 77
+        },
+        {
+          "label": "Изоляция обмоток ВН",
+          "value": "заливка эпоксидной смолой в вакуум-заливочной машине",
+          "unit": null,
+          "page": 77
+        }
+      ],
+      "note": "Keep printed choices as choices; no climate/category Cartesian expansion. Page78 heading25–4000 is broader than the eleven actual classA rows63–2500."
+    },
+    {
+      "familyIds": [
+        "tsl-loss-A"
+      ],
+      "sourcePage": 78,
+      "confidence": "high",
+      "fields": [
+        {
+          "label": "Частота",
+          "value": "50",
+          "unit": "Гц",
+          "page": 78
+        },
+        {
+          "label": "Класс нагревостойкости",
+          "value": "F",
+          "unit": null,
+          "page": 78
+        },
+        {
+          "label": "Климатическое исполнение (первая строка)",
+          "value": "У3, УХЛ3, У1",
+          "unit": null,
+          "page": 78
+        },
+        {
+          "label": "Климатическое исполнение (вторая строка)",
+          "value": "У, УХЛ, Т",
+          "unit": null,
+          "page": 78
+        },
+        {
+          "label": "Категория размещения",
+          "value": "1;2;3",
+          "unit": null,
+          "page": 78
+        },
+        {
+          "label": "Изоляция обмоток ВН",
+          "value": "заливка эпоксидной смолой в вакуум-заливочной машине",
+          "unit": null,
+          "page": 78
+        }
+      ],
+      "note": "Keep printed choices as choices; no climate/category Cartesian expansion. Page78 heading25–4000 is broader than the eleven actual classA rows63–2500."
+    },
+    {
+      "familyIds": [
+        "tsl-20kv"
+      ],
+      "sourcePage": 82,
+      "confidence": "high",
+      "fields": [
+        {
+          "label": "Частота",
+          "value": "50",
+          "unit": "Гц",
+          "page": 82
+        },
+        {
+          "label": "Класс нагревостойкости",
+          "value": "F",
+          "unit": null,
+          "page": 82
+        },
+        {
+          "label": "Климатическое исполнение (первая строка)",
+          "value": "У3, УХЛ3, У1",
+          "unit": null,
+          "page": 82
+        },
+        {
+          "label": "Климатическое исполнение (вторая строка)",
+          "value": "У, УХЛ, Т",
+          "unit": null,
+          "page": 82
+        },
+        {
+          "label": "Категория размещения",
+          "value": "1;2;3",
+          "unit": null,
+          "page": 82
+        },
+        {
+          "label": "Изоляция обмоток ВН",
+          "value": "заливка эпоксидной смолой в вакуум-заливочной машине",
+          "unit": null,
+          "page": 82
+        }
+      ],
+      "note": "Keep printed choices as choices; no climate/category Cartesian expansion. Page78 heading25–4000 is broader than the eleven actual classA rows63–2500."
+    },
+    {
+      "familyIds": [
+        "dry-accessories"
+      ],
+      "sourcePage": 85,
+      "confidence": "high",
+      "fields": [
+        {
+          "label": "Контроль температуры для трансформаторов с литой изоляцией",
+          "value": "обязателен",
+          "unit": null,
+          "page": 85
+        },
+        {
+          "label": "Четвертый датчик",
+          "value": "по желанию клиента для контроля температуры магнитопровода",
+          "unit": null,
+          "page": 85
+        }
+      ],
+      "rowIds": [
+        "alageum-2026-relay-tr100",
+        "alageum-2026-sensor-pt100"
+      ],
+      "note": "Scope mandatory temperature-control statement to the cast-insulation transformer equipment context, with relay/sensor facts on those accessories; do not apply to damper or every accessory."
+    },
+    {
+      "familyIds": [
+        "dry-accessories"
+      ],
+      "sourcePage": 86,
+      "confidence": "high",
+      "fields": [
+        {
+          "label": "Система принудительной вентиляции",
+          "value": "от2 до6 вентиляторов в зависимости от мощности трансформатора",
+          "unit": null,
+          "page": 86
+        },
+        {
+          "label": "Увеличение мощности при обдуве",
+          "value": "до25",
+          "unit": "%",
+          "page": 86
+        }
+      ],
+      "note": "Apply only to existing optional fan configuration. No fan model/count product rows; no fan properties on other accessories.",
+      "configurationOnly": true,
+      "configurationIds": [
+        "alageum-2026-cooling-fans"
+      ],
+      "status": "already-captured-in-existing-configuration; preserve-without-duplication"
+    },
+    {
+      "familyIds": [
+        "tsn-nomex"
+      ],
+      "sourcePage": 91,
+      "confidence": "high",
+      "fields": [
+        {
+          "label": "Свойства изоляции (заявление каталога)",
+          "value": "не поддерживает горения и не выделяет токсичного дыма или опасных частиц",
+          "unit": null,
+          "page": 91
+        }
+      ],
+      "note": "180°C and133% are already in model rawSpecs. Present this statement as source claim, not an independent safety certification."
+    },
+    {
+      "familyIds": [
+        "ntmi"
+      ],
+      "sourcePage": 96,
+      "confidence": "high",
+      "fields": [
+        {
+          "label": "Сеть",
+          "value": "переменный ток с изолированной нейтралью",
+          "unit": null,
+          "page": 96
+        },
+        {
+          "label": "Исключенные условия работы",
+          "value": "тряска, вибрация, удары, взрывоопасная и агрессивная среда",
+          "unit": null,
+          "page": 96
+        }
+      ]
+    },
+    {
+      "familyIds": [
+        "nom"
+      ],
+      "sourcePage": 97,
+      "confidence": "high",
+      "fields": [
+        {
+          "label": "Частота",
+          "value": "50",
+          "unit": "Гц",
+          "page": 97
+        },
+        {
+          "label": "Сеть",
+          "value": "переменный ток с изолированной нейтралью",
+          "unit": null,
+          "page": 97
+        },
+        {
+          "label": "Исключенные условия работы",
+          "value": "тряска, вибрация, удары, взрывоопасная и агрессивная среда",
+          "unit": null,
+          "page": 97
+        }
+      ],
+      "rowIds": [
+        "alageum-2026-nom-6",
+        "alageum-2026-nom-10"
+      ],
+      "note": "Electrical rows only. Do not attach p97 prose as electrical/operating evidence to drawing-only НОМ3."
+    },
+    {
+      "familyIds": [
+        "nami"
+      ],
+      "sourcePage": 98,
+      "confidence": "high",
+      "fields": [
+        {
+          "label": "Частота",
+          "value": "50",
+          "unit": "Гц",
+          "page": 98
+        },
+        {
+          "label": "Нейтраль сети",
+          "value": "изолированная или заземленная через дугогасящий реактор",
+          "unit": null,
+          "page": 98
+        },
+        {
+          "label": "Исключенные условия работы",
+          "value": "тряска, вибрация, удары, взрывоопасная и агрессивная среда",
+          "unit": null,
+          "page": 98
+        }
+      ]
+    },
+    {
+      "familyIds": [
+        "zom"
+      ],
+      "sourcePage": 99,
+      "confidence": "high",
+      "fields": [
+        {
+          "label": "Частота",
+          "value": "50",
+          "unit": "Гц",
+          "page": 99
+        },
+        {
+          "label": "Охлаждение",
+          "value": "естественное",
+          "unit": null,
+          "page": 99
+        },
+        {
+          "label": "Применение",
+          "value": "измерительные приборы, автоматика, сигнализация и релейная защита электрифицированных участков железных дорог",
+          "unit": null,
+          "page": 99
+        },
+        {
+          "label": "Исключенные условия работы",
+          "value": "тряска, вибрация, удары, взрывоопасная и агрессивная среда",
+          "unit": null,
+          "page": 99
+        }
+      ]
+    },
+    {
+      "familyIds": [
+        "znom"
+      ],
+      "sourcePage": 100,
+      "confidence": "high",
+      "fields": [
+        {
+          "label": "Частота",
+          "value": "50 и60",
+          "unit": "Гц",
+          "page": 100
+        },
+        {
+          "label": "Охлаждение",
+          "value": "естественное",
+          "unit": null,
+          "page": 100
+        },
+        {
+          "label": "Нейтраль сети",
+          "value": "изолированная",
+          "unit": null,
+          "page": 100
+        },
+        {
+          "label": "Применение",
+          "value": "измерительные приборы, защита и сигнализация; релейная защита электрифицированных участков железной дороги",
+          "unit": null,
+          "page": 100
+        }
+      ]
+    }
+  ],
+  "unitAttributionFindings": [
+    {
+      "sourcePage": 72,
+      "rowIds": [
+        "alageum-2026-om-0p63",
+        "alageum-2026-om-1p25",
+        "alageum-2026-om-2p5",
+        "alageum-2026-om-4-p",
+        "alageum-2026-om-10-p"
+      ],
+      "fields": [
+        "rawSpecs[label=Напряжение ступеней регулирования при6кВ].unitAsPrinted",
+        "rawSpecs[label=Напряжение ступеней регулирования при10кВ].unitAsPrinted"
+      ],
+      "currentValue": "кВ",
+      "correctPrintedValue": null,
+      "confidence": "high",
+      "note": "Tap-voltage header does not itself print a unit. The adjacent nominal-voltage header prints кВ and values make kV a reasonable inference, but raw unitAsPrinted should be null; an explicitly labeled derived/normalized unit may remain кВ. No numeric conversion requested."
+    },
+    {
+      "sourcePages": [
+        68,
+        70
+      ],
+      "rowIds": [
+        "alageum-2026-tmto80-original",
+        "alageum-2026-tmto80-modern"
+      ],
+      "fields": [
+        "rawSpecs[label=Мощность/положение/напряжение ответвлений].unitAsPrinted"
+      ],
+      "currentValue": "кВА / — / В",
+      "correctPrintedValue": "кВА / — / —",
+      "confidence": "high",
+      "note": "Power subcolumn prints кВА; switch position and tap-voltage subcolumn print no unit. Other nominal-voltage columns print В, so V is a sensible inference but not literally printed for the tap subcolumn. Mark voltage unit inferred or separate columns. Do not change the tap values."
+    }
+  ],
+  "corrections": [
+    {
+      "rowId": null,
+      "familyId": "ts-low-voltage",
+      "fields": [
+        "title"
+      ],
+      "incorrectValue": "ТС(З) — мощность 10кВА, класс0,66кВ",
+      "correctPrintedValue": "Трансформаторы серии ТС(З)",
+      "sourcePage": 86,
+      "confidence": "high",
+      "kind": "family-label",
+      "note": "Family title was copied from the10kVA first row even though six explicit rows cover10,16,25,40,63,100kVA. A descriptive alternative is ТС(З) — 10–100кВА, класс0,66кВ; this is a range summary of six explicit rows, not authorization to synthesize intermediate models."
+    },
+    {
+      "rowId": null,
+      "familyId": "tmpn-top",
+      "fields": [
+        "designation",
+        "title"
+      ],
+      "incorrectValue": "ТМПН / ТМПН — верхние выводы по чертежу66",
+      "correctPrintedValue": "ТМПН(Г)",
+      "sourcePage": 66,
+      "confidence": "high",
+      "kind": "family-label",
+      "note": "Family includes both ТМПН and ТМПНГ rows. Model-level series fields correctly distinguish them. Retain that distinction in the family heading; p66 heading is ТМПН(Г)-25-665. Do not create25kVA from the heading."
+    },
+    {
+      "rowId": "alageum-2026-ts-16",
+      "fields": [
+        "rawSpecs[label=ВН].sourcePage",
+        "rawSpecs[label=НН].sourcePage",
+        "technicalSpecs[label=ВН].page",
+        "technicalSpecs[label=НН].page"
+      ],
+      "incorrectValue": 86,
+      "correctPrintedValue": 87,
+      "sourcePage": 87,
+      "confidence": "high",
+      "kind": "page-attribution",
+      "note": "These rows repeat380/220 explicitly on87;86 supplies the continued table header and0,66кВ family prose. Leave the class-voltage prose attribution at86. Numeric voltages and printed кВ unit remain unchanged."
+    },
+    {
+      "rowId": "alageum-2026-ts-25",
+      "fields": [
+        "rawSpecs[label=ВН].sourcePage",
+        "rawSpecs[label=НН].sourcePage",
+        "technicalSpecs[label=ВН].page",
+        "technicalSpecs[label=НН].page"
+      ],
+      "incorrectValue": 86,
+      "correctPrintedValue": 87,
+      "sourcePage": 87,
+      "confidence": "high",
+      "kind": "page-attribution",
+      "note": "These rows repeat380/220 explicitly on87;86 supplies the continued table header and0,66кВ family prose. Leave the class-voltage prose attribution at86. Numeric voltages and printed кВ unit remain unchanged."
+    },
+    {
+      "rowId": "alageum-2026-ts-40",
+      "fields": [
+        "rawSpecs[label=ВН].sourcePage",
+        "rawSpecs[label=НН].sourcePage",
+        "technicalSpecs[label=ВН].page",
+        "technicalSpecs[label=НН].page"
+      ],
+      "incorrectValue": 86,
+      "correctPrintedValue": 87,
+      "sourcePage": 87,
+      "confidence": "high",
+      "kind": "page-attribution",
+      "note": "These rows repeat380/220 explicitly on87;86 supplies the continued table header and0,66кВ family prose. Leave the class-voltage prose attribution at86. Numeric voltages and printed кВ unit remain unchanged."
+    },
+    {
+      "rowId": "alageum-2026-ts-63",
+      "fields": [
+        "rawSpecs[label=ВН].sourcePage",
+        "rawSpecs[label=НН].sourcePage",
+        "technicalSpecs[label=ВН].page",
+        "technicalSpecs[label=НН].page"
+      ],
+      "incorrectValue": 86,
+      "correctPrintedValue": 87,
+      "sourcePage": 87,
+      "confidence": "high",
+      "kind": "page-attribution",
+      "note": "These rows repeat380/220 explicitly on87;86 supplies the continued table header and0,66кВ family prose. Leave the class-voltage prose attribution at86. Numeric voltages and printed кВ unit remain unchanged."
+    },
+    {
+      "rowId": "alageum-2026-ts-100",
+      "fields": [
+        "rawSpecs[label=ВН].sourcePage",
+        "rawSpecs[label=НН].sourcePage",
+        "technicalSpecs[label=ВН].page",
+        "technicalSpecs[label=НН].page"
+      ],
+      "incorrectValue": 86,
+      "correctPrintedValue": 87,
+      "sourcePage": 87,
+      "confidence": "high",
+      "kind": "page-attribution",
+      "note": "These rows repeat380/220 explicitly on87;86 supplies the continued table header and0,66кВ family prose. Leave the class-voltage prose attribution at86. Numeric voltages and printed кВ unit remain unchanged."
+    }
+  ]
+}

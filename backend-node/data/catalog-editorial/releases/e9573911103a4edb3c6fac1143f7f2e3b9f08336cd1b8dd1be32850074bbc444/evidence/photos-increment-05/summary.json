@@ -1,0 +1,99 @@
+{
+  "status": "complete_reviewed_public_source_pass_coverage_partial",
+  "researchPass": "increment-05-documented-new-public-sources",
+  "catalogRecords": 843,
+  "catalogFamilies": 175,
+  "baselineImageCandidates": 207,
+  "addedImageCandidates": 14,
+  "combinedImageCandidates": 221,
+  "newVideoFrames": 0,
+  "mediaKinds": {
+    "photo": 217,
+    "photo_collage": 2,
+    "video_frame": 2
+  },
+  "assetResolutionOrAttributionUpgrades": 0,
+  "existingImageMappingChanges": 0,
+  "catalogRecordsWithExactOrSeriesPhoto": 249,
+  "catalogRecordsWithTwoExactOrSeriesPhotos": 88,
+  "catalogRecordsWithThreeExactOrSeriesPhotos": 58,
+  "catalogRecordsWithExactModelPhoto": 3,
+  "strictCoverageStatuses": {
+    "two_or_more_exact_or_series_photos": 88,
+    "no_confirmed_visual": 334,
+    "type_level_only": 251,
+    "one_exact_or_series_photo": 161,
+    "video_frames_only": 9
+  },
+  "frameInclusiveCoverage": {
+    "atLeastOne": 258,
+    "atLeastTwo": 97,
+    "atLeastThree": 58
+  },
+  "remainingRecordsNeedingTwoExactOrSeriesPhotos": 755,
+  "missingGroupFiles": [],
+  "sourceGroups": {
+    "distribution": {
+      "candidatesPresent": true,
+      "queryLedgerPresent": true,
+      "queryLedgerFamilies": 17,
+      "sourceRowsStillMarkedInProgress": 0
+    },
+    "dry": {
+      "candidatesPresent": true,
+      "queryLedgerPresent": true,
+      "queryLedgerFamilies": 10,
+      "sourceRowsStillMarkedInProgress": 0
+    },
+    "power_medium": {
+      "candidatesPresent": true,
+      "queryLedgerPresent": true,
+      "queryLedgerFamilies": 19,
+      "sourceRowsStillMarkedInProgress": 0
+    },
+    "power_asia": {
+      "candidatesPresent": true,
+      "queryLedgerPresent": true,
+      "queryLedgerFamilies": 20,
+      "sourceRowsStillMarkedInProgress": 0
+    },
+    "switchgear_substations": {
+      "candidatesPresent": true,
+      "queryLedgerPresent": true,
+      "queryLedgerFamilies": 83,
+      "sourceRowsStillMarkedInProgress": 0
+    }
+  },
+  "siteChanged": false,
+  "applicationTestsRun": false,
+  "rights": "Publication/reuse permissions remain unconfirmed.",
+  "countingPolicy": "Original photographs, photographic collages, and video frames are separately identified. exactOrSeriesPhotoCount keeps the prior still-image convention but excludes video frames; exactOrSeriesOriginalPhotoCount excludes the collage too. Same-shot resolution upgrades and mapping upgrades do not add distinct images.",
+  "addedDistinctOriginalPhotoCandidates": 14,
+  "recoveredPreviouslyHeldPhotoCandidates": 0,
+  "existingImageExactModelMappingUpgrades": 0,
+  "existingImageSeriesMappingUpgrades": 0,
+  "existingImageMappingDowngrades": 0,
+  "recordsWithExistingImageMappingChanges": 0,
+  "documentedFamilyLedgerCount": 149,
+  "distinctFamiliesInPass05Ledgers": 149,
+  "allProvidedFamilyLedgersLoaded": true,
+  "researchScope": "Only genuinely new avenues in the pass05 ledgers were checked. The prior complete pass04 family audit is carried forward; no fresh all-family or Internet-exhaustion claim.",
+  "addedPhotoRoleCounts": {
+    "terminal_detail": 1,
+    "nameplate_detail": 1,
+    "overall_installed": 2,
+    "instrumentation_detail": 1,
+    "overall_oblique_pair": 1,
+    "installed_context": 1,
+    "role_not_stated": 6,
+    "transport_partially_disassembled": 1
+  },
+  "photoRoleCountingNote": "Nameplate/details and transport-state photographs retain their roles. Multiple matching photos do not necessarily mean multiple complete-unit angles.",
+  "canonicalNamingLibraryVersion": 4,
+  "canonicalNamingPreserved": true,
+  "addedCandidateOrigins": {
+    "newly_selected_source_image": 14
+  },
+  "finalizedAt": "2026-10-12T20:53:27.406111+00:00",
+  "finalQAApproved": true
+}

@@ -1,0 +1,108 @@
+{
+  "format": "alageum-transformer-asset-completion-independent-review-v1",
+  "status": "approved-bounded-supplement",
+  "reviewedAt": "2026-10-06T08:54:06.043Z",
+  "sourceId": "transformers-2026",
+  "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+  "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+  "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+  "inventorySha256": "c3948d7152a6130aa4672b9f6d3d5a8f08144b5965df7bebabca067ba5bc8438",
+  "counts": {
+    "defaultRecords": 25,
+    "copperRecords": 13,
+    "newlyAdmittedDefaults": 16,
+    "explicitChoiceRecords": 4,
+    "explicitChoices": 8
+  },
+  "approvedRecordsSha256": "330a3ffd7343425b19e3645b49b0acba34dfb69530c29277f9dfa2f5dc1b36d3",
+  "approvedDependenciesSha256": "69280f20cea4ebe459545c66be274b3a91f828021a403b0f9069ef63783e4440",
+  "sourcePixelsIndependentlyInspected": [
+    4,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    77,
+    78,
+    79,
+    80,
+    81
+  ],
+  "findings": [
+    "All 29 exact record identities and canonical source-shape hashes match current admitted records; dependency and source-image hashes match current bytes.",
+    "The 01 and X1K1 tables on pages 8–11 are distinct explicit executions. Drawing captions on 12/13 explicitly include 01 and X1K1 and distinguish small and large capacity ranges.",
+    "Switching-execution pages 44–45 retain the explicit two-stage 6/10 kV execution. Captions 46/47 explicitly match that execution and broad small/large sealed exterior. Shared outer topology does not model the internal switch or its electrical operation.",
+    "The 13 copper rows use the separately reviewed, bounded subsection inference; 8 are covered by page 42 and 5 by page 43. Caption limitations and optional accessories remain explicit in every candidate reason.",
+    "TSL A/C loss-class rows remain independent source records. Pages 77–79 describe both enclosure forms; pages 80/81 label open TSL and enclosed TSLZ. Four new rows receive 8 explicit choices and no default. The cutaway remains labeled and does not infer IP rating.",
+    "Generator is additive: it rejects historical default/choice overrides, unknown IDs, wrong source/digests/UUIDs, removed alternatives, changed captions, and dependencies. Raw values, units, record bodies and old IDs are not changed."
+  ],
+  "limits": [
+    "Approval covers representative topology/icon source applicability only, not exact CAD, dimensions, winding material visualization, accessories, orderability or interchangeability.",
+    "Runtime integration must retain fail-closed source/shape/UUID checks and independent default versus explicit-choice channels.",
+    "Historical 251 geometry and 257 icon approvals and 32-record/66-choice baseline remain unchanged; approved supplement adds only 25 defaults and 4 records/8 explicit choices.",
+    "No legacy-standard TMG alias or old-record merge is authorized by copper subsection evidence.",
+    "X3K2, X4K3 conflicting-caption and remaining evidence holds remain withheld.",
+    "Browser/WebGL behavior is outside this source/generator approval and still requires final application verification."
+  ],
+  "reviewedImplementationSha256": {
+    "scripts/approve-transformer-asset-completion.mjs": "fd59991af4073d3c1afecebbf97975d123355b90e4041c7d538beb3fe22180b6",
+    "scripts/catalog/transformer-reviewed-dependencies.mjs": "a566088c2a32c79dd4ce771ae5e152820edf65341a6169dd8aea3bc9786e4e1a",
+    "scripts/approve-transformer-assets.mjs": "2bc733ea783679df478f723107644dd0be6c8fdcb42510ac161bc2233d106f27",
+    "scripts/approve-transformer-execution-choices.mjs": "4d6a98c04ed7c2b8057354857ea7f4c37bb1e065268fa44e081d300781a17d23",
+    "frontend/lib/catalog/models/transformer2026Runtime.js": "3265ac03cb44939adc5019a7336bc1a7b7f5c39424b42a1ce1f5f7275ca06eb9",
+    "frontend/lib/catalog/models/transformerExecutionChoices.js": "66bdec2d75d1a02b2338c4ac486051cc6860d8be053b8363cdb8a1b3e323b97e",
+    "frontend/lib/catalog/models/legacyAssetCompletion.js": "5e689f89ce7cc939efc0b92ddccaf31734674be64fc26bd2d0c05b8839f40831",
+    "frontend/lib/catalog/models/visualMap.js": "37b74cf55a159c05988a2063b8a8faa5732051ac164c664bedc3baa374515fda",
+    "frontend/lib/catalog/models/iconMap.js": "1811dc6241c9c9bdf297ac062218134f19efde73bb077419a43dca3981628cfd",
+    "frontend/components/catalog/ProductVisual.js": "fd20795177a9a79ca0f7e0700eb56ad1e90698502442a2584ed791122f48c939"
+  },
+  "integrationAmendmentReview": {
+    "status": "approved-exact-old-to-new-hash-pairs",
+    "count": 6,
+    "amendments": {
+      "frontend/lib/catalog/models/transformer2026Runtime.js": {
+        "historicalSha256": "b39571ef6fbd6983025cfdbcedce732acf8e40211dcd8995195fce59c66aaf24",
+        "reviewedSha256": "3265ac03cb44939adc5019a7336bc1a7b7f5c39424b42a1ce1f5f7275ca06eb9"
+      },
+      "frontend/lib/catalog/models/visualMap.js": {
+        "historicalSha256": "620615a601d9570c2cc527c346dc6609fe97b96665704b87fe288c7312813a2b",
+        "reviewedSha256": "37b74cf55a159c05988a2063b8a8faa5732051ac164c664bedc3baa374515fda"
+      },
+      "frontend/lib/catalog/models/iconMap.js": {
+        "historicalSha256": "56b7a0a45344696f24727720769c716f17ae460d57df136e9c24d3b170d9e47c",
+        "reviewedSha256": "1811dc6241c9c9bdf297ac062218134f19efde73bb077419a43dca3981628cfd"
+      },
+      "frontend/components/catalog/ProductVisual.js": {
+        "historicalSha256": "81f49623d6e39b121c553fb31268ac4a8341f2b26c9dad8ed8dc3e0e7924ff9f",
+        "reviewedSha256": "fd20795177a9a79ca0f7e0700eb56ad1e90698502442a2584ed791122f48c939"
+      },
+      "frontend/lib/catalog/models/transformerExecutionChoices.js": {
+        "historicalSha256": "8ca1d3c87406e4732b80c2e881a67e4531200f6b0adf3ca935318452f14c5fd1",
+        "reviewedSha256": "66bdec2d75d1a02b2338c4ac486051cc6860d8be053b8363cdb8a1b3e323b97e"
+      },
+      "scripts/approve-transformer-execution-choices.mjs": {
+        "historicalSha256": "c74e7bcb2f281a3e784630f3a5eb008563c716df23e2429303c7fe5b00e57e55",
+        "reviewedSha256": "4d6a98c04ed7c2b8057354857ea7f4c37bb1e065268fa44e081d300781a17d23"
+      }
+    },
+    "findings": [
+      "Only six named integration files may use reviewed exact old-to-new dependency hashes. All actual current hashes and historical expected hashes are pinned.",
+      "The verifier checks approved report hash, report format/status/source identity, approved dependency-object digest, its own code hash, original hash, replacement hash and exact reviewed-file pin.",
+      "The supplementary generator recomputes the required amendment set from both unchanged historical clearances and rejects missing, extra or unsupported amendment entries.",
+      "Source-image, source inventory, geometry, icon construction definitions and record Shape.js remain outside this amendment mechanism and retain their original hashes.",
+      "Runtime and choice resolvers merge generated additive supplemental maps only; their source/shape/UUID guards are retained and tightened. Legacy ШР11 dispatch is separately pinned to its independently reviewed exact row and primary provenance.",
+      "ProductVisual preserves explicit selection and disclosure; prior reviewed behavior is retained with accessibility labeling. No historical approval or source record was rewritten."
+    ]
+  }
+}

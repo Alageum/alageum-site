@@ -1,0 +1,1854 @@
+[
+  {
+    "id": "alageum-2026-tmpn-p64-r10",
+    "familyId": "tmpng-side",
+    "name": "ТМПНГ-630/3 (боковой вывод)",
+    "sourceDesignation": "ТМПНГ-630/3 (боковой вывод)",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      64,
+      65,
+      67
+    ],
+    "rawSpecs": [
+      {
+        "label": "Pо",
+        "raw": "1,1",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 65
+      },
+      {
+        "label": "Pк",
+        "raw": "9,4",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 65
+      },
+      {
+        "label": "Iо",
+        "raw": "1,6",
+        "unitAsPrinted": "%",
+        "sourcePage": 65
+      },
+      {
+        "label": "Uк",
+        "raw": "7,0",
+        "unitAsPrinted": "%",
+        "sourcePage": 65
+      },
+      {
+        "label": "L",
+        "raw": "1974",
+        "unitAsPrinted": "мм",
+        "sourcePage": 65
+      },
+      {
+        "label": "B",
+        "raw": "1355",
+        "unitAsPrinted": "мм",
+        "sourcePage": 65
+      },
+      {
+        "label": "H",
+        "raw": "1253",
+        "unitAsPrinted": "мм",
+        "sourcePage": 65
+      },
+      {
+        "label": "Полная масса",
+        "raw": "2145",
+        "unitAsPrinted": "кг",
+        "sourcePage": 65
+      },
+      {
+        "label": "Масса масла",
+        "raw": "600",
+        "unitAsPrinted": "кг",
+        "sourcePage": 65
+      },
+      {
+        "label": "Количество ступеней регулирования",
+        "raw": "25",
+        "unitAsPrinted": null,
+        "sourcePage": 65
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "raw": "380",
+        "unitAsPrinted": "В",
+        "sourcePage": 65
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "raw": "2810",
+        "unitAsPrinted": "В",
+        "sourcePage": 65
+      },
+      {
+        "label": "Схема соединения",
+        "raw": "Ун/Ун-0",
+        "unitAsPrinted": null,
+        "sourcePage": 65
+      },
+      {
+        "label": "Напряжение ступеней регулирования",
+        "raw": "3819-3705-3591-3477-3363-3268-3154-3040-2926-2812-2698-2584-2470-2356-2242-2128-2014-1900-1786-1672-1558-1444-1330-1216-1102",
+        "unitAsPrinted": "В",
+        "sourcePage": 65
+      },
+      {
+        "label": "Температура окружающего воздуха",
+        "raw": "от -60 до +40",
+        "unitAsPrinted": "°C",
+        "sourcePage": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Высота над уровнем моря",
+        "raw": "до1000",
+        "unitAsPrinted": "м",
+        "sourcePage": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Относительная влажность воздуха",
+        "raw": "не более80% при +25°C",
+        "unitAsPrinted": null,
+        "sourcePage": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Номинальное напряжение первичной обмотки",
+        "raw": "0,38",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Стандарт",
+        "raw": "ГОСТ11677",
+        "unitAsPrinted": null,
+        "sourcePage": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Переключатель",
+        "raw": "без возбуждения",
+        "unitAsPrinted": null,
+        "sourcePage": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "raw": "тряска, вибрация, воздействие инерционных сил, удары, взрывоопасная и химически агрессивная среда",
+        "unitAsPrinted": null,
+        "sourcePage": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      }
+    ],
+    "assetFamilyIds": [
+      "oil-tmpng-side"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Loss header literally says Вт although decimal magnitudes may indicate a source unit error; not converted."
+    ],
+    "series": "ТМПНГ",
+    "context": "боковой вывод",
+    "sourceRow": {
+      "page": 65,
+      "table": "technical",
+      "row": 10
+    },
+    "powerKva": 630,
+    "voltageRaw": "380/2810 В",
+    "commonProseGroupIds": [
+      "common-prose-07-p64"
+    ],
+    "designation": "ТМПНГ-630/3 (боковой вывод)",
+    "execution": "боковой вывод",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "technicalSpecs": [
+      {
+        "label": "Pо",
+        "value": "1,1",
+        "unit": "Вт",
+        "page": 65
+      },
+      {
+        "label": "Pк",
+        "value": "9,4",
+        "unit": "Вт",
+        "page": 65
+      },
+      {
+        "label": "Iо",
+        "value": "1,6",
+        "unit": "%",
+        "page": 65
+      },
+      {
+        "label": "Uк",
+        "value": "7,0",
+        "unit": "%",
+        "page": 65
+      },
+      {
+        "label": "L",
+        "value": "1974",
+        "unit": "мм",
+        "page": 65
+      },
+      {
+        "label": "B",
+        "value": "1355",
+        "unit": "мм",
+        "page": 65
+      },
+      {
+        "label": "H",
+        "value": "1253",
+        "unit": "мм",
+        "page": 65
+      },
+      {
+        "label": "Полная масса",
+        "value": "2145",
+        "unit": "кг",
+        "page": 65
+      },
+      {
+        "label": "Масса масла",
+        "value": "600",
+        "unit": "кг",
+        "page": 65
+      },
+      {
+        "label": "Количество ступеней регулирования",
+        "value": "25",
+        "unit": null,
+        "page": 65
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "380",
+        "unit": "В",
+        "page": 65
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "2810",
+        "unit": "В",
+        "page": 65
+      },
+      {
+        "label": "Схема соединения",
+        "value": "Ун/Ун-0",
+        "unit": null,
+        "page": 65
+      },
+      {
+        "label": "Напряжение ступеней регулирования",
+        "value": "3819-3705-3591-3477-3363-3268-3154-3040-2926-2812-2698-2584-2470-2356-2242-2128-2014-1900-1786-1672-1558-1444-1330-1216-1102",
+        "unit": "В",
+        "page": 65
+      },
+      {
+        "label": "Температура окружающего воздуха",
+        "value": "от -60 до +40",
+        "unit": "°C",
+        "page": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Высота над уровнем моря",
+        "value": "до1000",
+        "unit": "м",
+        "page": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Относительная влажность воздуха",
+        "value": "не более80% при +25°C",
+        "unit": null,
+        "page": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Номинальное напряжение первичной обмотки",
+        "value": "0,38",
+        "unit": "кВ",
+        "page": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ11677",
+        "unit": null,
+        "page": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Переключатель",
+        "value": "без возбуждения",
+        "unit": null,
+        "page": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      },
+      {
+        "label": "Исключенные условия работы",
+        "value": "тряска, вибрация, воздействие инерционных сил, удары, взрывоопасная и химически агрессивная среда",
+        "unit": null,
+        "page": 64,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-07-p64"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-tmto80-original",
+    "familyId": "tmto-original",
+    "name": "ТМТО-80",
+    "sourceDesignation": "ТМТО-80",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      68,
+      69
+    ],
+    "rawSpecs": [
+      {
+        "label": "Designation in purpose",
+        "raw": "ТМТО-80/0,38-У1",
+        "unitAsPrinted": null,
+        "sourcePage": 68
+      },
+      {
+        "label": "Обмотки",
+        "raw": "трехобмоточный",
+        "unitAsPrinted": null,
+        "sourcePage": 68
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "raw": "380",
+        "unitAsPrinted": "В",
+        "sourcePage": 68
+      },
+      {
+        "label": "Номинальный ток ВН",
+        "raw": "121,5",
+        "unitAsPrinted": "А",
+        "sourcePage": 68
+      },
+      {
+        "label": "Мощность/положение/напряжение ответвлений",
+        "raw": "77,5/V/95;69,34/IV/85;61,18/III/75;58,54/II/65;49,53/I/55",
+        "unitAsPrinted": "кВА / — / —",
+        "sourcePage": 68,
+        "inferredUnit": "кВА / — / В",
+        "unitInferenceNote": "Only power subcolumn prints кВА; tap voltage В is inferred from adjacent nominal-voltage columns. No numerical conversion."
+      },
+      {
+        "label": "Потери Х.Х",
+        "raw": "270",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 68
+      },
+      {
+        "label": "Потери К.З",
+        "raw": "2200",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 68
+      },
+      {
+        "label": "Ток холостого хода",
+        "raw": "2,3",
+        "unitAsPrinted": "%",
+        "sourcePage": 68
+      },
+      {
+        "label": "Схема и группа соединения",
+        "raw": "У/Д/Д-11/11",
+        "unitAsPrinted": null,
+        "sourcePage": 68
+      },
+      {
+        "label": "Масса масла",
+        "raw": "155",
+        "unitAsPrinted": "кг",
+        "sourcePage": 68
+      },
+      {
+        "label": "Масса полная",
+        "raw": "425",
+        "unitAsPrinted": "кг",
+        "sourcePage": 68
+      },
+      {
+        "label": "Номинальный ток СН",
+        "raw": "471 (V–III);520 (II–I)",
+        "unitAsPrinted": "А",
+        "sourcePage": 68
+      },
+      {
+        "label": "Номинальная мощность НН",
+        "raw": "25",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 68
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "raw": "42",
+        "unitAsPrinted": "В",
+        "sourcePage": 68
+      },
+      {
+        "label": "Номинальный ток НН",
+        "raw": "34,4",
+        "unitAsPrinted": "А",
+        "sourcePage": 68
+      }
+    ],
+    "assetFamilyIds": [
+      "oil-tmto-three-winding"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Source states25кВА,42В,34,4А for tertiary; retain incompatible-looking combination."
+    ],
+    "series": "ТМТО",
+    "context": "трехобмоточный",
+    "powerKva": 80,
+    "voltageRaw": "ВН380В; ответвления95/85/75/65/55В",
+    "designation": "ТМТО-80",
+    "execution": "трехобмоточный",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 68,
+      "designation": "ТМТО-80",
+      "execution": "трехобмоточный",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Designation in purpose",
+        "value": "ТМТО-80/0,38-У1",
+        "unit": null,
+        "page": 68
+      },
+      {
+        "label": "Обмотки",
+        "value": "трехобмоточный",
+        "unit": null,
+        "page": 68
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "380",
+        "unit": "В",
+        "page": 68
+      },
+      {
+        "label": "Номинальный ток ВН",
+        "value": "121,5",
+        "unit": "А",
+        "page": 68
+      },
+      {
+        "label": "Мощность/положение/напряжение ответвлений",
+        "value": "77,5/V/95;69,34/IV/85;61,18/III/75;58,54/II/65;49,53/I/55",
+        "unit": "кВА / — / —",
+        "page": 68,
+        "inferredUnit": "кВА / — / В",
+        "unitInferenceNote": "Only power subcolumn prints кВА; tap voltage В is inferred from adjacent nominal-voltage columns. No numerical conversion."
+      },
+      {
+        "label": "Потери Х.Х",
+        "value": "270",
+        "unit": "Вт",
+        "page": 68
+      },
+      {
+        "label": "Потери К.З",
+        "value": "2200",
+        "unit": "Вт",
+        "page": 68
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "2,3",
+        "unit": "%",
+        "page": 68
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "У/Д/Д-11/11",
+        "unit": null,
+        "page": 68
+      },
+      {
+        "label": "Масса масла",
+        "value": "155",
+        "unit": "кг",
+        "page": 68
+      },
+      {
+        "label": "Масса полная",
+        "value": "425",
+        "unit": "кг",
+        "page": 68
+      },
+      {
+        "label": "Номинальный ток СН",
+        "value": "471 (V–III);520 (II–I)",
+        "unit": "А",
+        "page": 68
+      },
+      {
+        "label": "Номинальная мощность НН",
+        "value": "25",
+        "unit": "кВА",
+        "page": 68
+      },
+      {
+        "label": "Номинальное напряжение НН",
+        "value": "42",
+        "unit": "В",
+        "page": 68
+      },
+      {
+        "label": "Номинальный ток НН",
+        "value": "34,4",
+        "unit": "А",
+        "page": 68
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-tmto80-modern",
+    "familyId": "tmto-modern",
+    "name": "ТМТО-80",
+    "sourceDesignation": "ТМТО-80",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      70,
+      71
+    ],
+    "rawSpecs": [
+      {
+        "label": "Designation in purpose",
+        "raw": "ТМТО-80/0,38-У1",
+        "unitAsPrinted": null,
+        "sourcePage": 70
+      },
+      {
+        "label": "Обмотки",
+        "raw": "двухобмоточный",
+        "unitAsPrinted": null,
+        "sourcePage": 70
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "raw": "380",
+        "unitAsPrinted": "В",
+        "sourcePage": 70
+      },
+      {
+        "label": "Номинальный ток ВН",
+        "raw": "121,5",
+        "unitAsPrinted": "А",
+        "sourcePage": 70
+      },
+      {
+        "label": "Мощность/положение/напряжение ответвлений",
+        "raw": "77,5/V/95;69,34/IV/85;61,18/III/75;58,54/II/65;49,53/I/55",
+        "unitAsPrinted": "кВА / — / —",
+        "sourcePage": 70,
+        "inferredUnit": "кВА / — / В",
+        "unitInferenceNote": "Only power subcolumn prints кВА; tap voltage В is inferred from adjacent nominal-voltage columns. No numerical conversion."
+      },
+      {
+        "label": "Потери Х.Х",
+        "raw": "270",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 70
+      },
+      {
+        "label": "Потери К.З",
+        "raw": "2200",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 70
+      },
+      {
+        "label": "Ток холостого хода",
+        "raw": "3,2",
+        "unitAsPrinted": "%",
+        "sourcePage": 70
+      },
+      {
+        "label": "Схема и группа соединения",
+        "raw": "У/Д-11",
+        "unitAsPrinted": null,
+        "sourcePage": 70
+      },
+      {
+        "label": "Масса масла",
+        "raw": "125",
+        "unitAsPrinted": "кг",
+        "sourcePage": 70
+      },
+      {
+        "label": "Масса полная",
+        "raw": "365",
+        "unitAsPrinted": "кг",
+        "sourcePage": 70
+      }
+    ],
+    "assetFamilyIds": [
+      "oil-tmto-modern"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [],
+    "series": "ТМТО",
+    "context": "модернизированный",
+    "powerKva": 80,
+    "voltageRaw": "ВН380В; ответвления95/85/75/65/55В",
+    "designation": "ТМТО-80",
+    "execution": "модернизированный",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 70,
+      "designation": "ТМТО-80",
+      "execution": "модернизированный",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Designation in purpose",
+        "value": "ТМТО-80/0,38-У1",
+        "unit": null,
+        "page": 70
+      },
+      {
+        "label": "Обмотки",
+        "value": "двухобмоточный",
+        "unit": null,
+        "page": 70
+      },
+      {
+        "label": "Номинальное напряжение ВН",
+        "value": "380",
+        "unit": "В",
+        "page": 70
+      },
+      {
+        "label": "Номинальный ток ВН",
+        "value": "121,5",
+        "unit": "А",
+        "page": 70
+      },
+      {
+        "label": "Мощность/положение/напряжение ответвлений",
+        "value": "77,5/V/95;69,34/IV/85;61,18/III/75;58,54/II/65;49,53/I/55",
+        "unit": "кВА / — / —",
+        "page": 70,
+        "inferredUnit": "кВА / — / В",
+        "unitInferenceNote": "Only power subcolumn prints кВА; tap voltage В is inferred from adjacent nominal-voltage columns. No numerical conversion."
+      },
+      {
+        "label": "Потери Х.Х",
+        "value": "270",
+        "unit": "Вт",
+        "page": 70
+      },
+      {
+        "label": "Потери К.З",
+        "value": "2200",
+        "unit": "Вт",
+        "page": 70
+      },
+      {
+        "label": "Ток холостого хода",
+        "value": "3,2",
+        "unit": "%",
+        "page": 70
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "У/Д-11",
+        "unit": null,
+        "page": 70
+      },
+      {
+        "label": "Масса масла",
+        "value": "125",
+        "unit": "кг",
+        "page": 70
+      },
+      {
+        "label": "Масса полная",
+        "value": "365",
+        "unit": "кг",
+        "page": 70
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-om-0p63",
+    "familyId": "om",
+    "name": "ОМ-0,63",
+    "sourceDesignation": "ОМ-0,63",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      72,
+      73,
+      75
+    ],
+    "rawSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "raw": "0,63",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 72
+      },
+      {
+        "label": "ВН options",
+        "raw": "6;10",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 72
+      },
+      {
+        "label": "НН options",
+        "raw": "0,23",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 72
+      },
+      {
+        "label": "Напряжение ступеней регулирования при6кВ",
+        "raw": "6,3-6,0-5,7",
+        "unitAsPrinted": null,
+        "sourcePage": 72,
+        "inferredUnit": "кВ",
+        "unitInferenceNote": "Tap-voltage column does not print a unit; кВ inferred from adjacent nominal-voltage header and values. No numerical conversion."
+      },
+      {
+        "label": "Напряжение ступеней регулирования при10кВ",
+        "raw": "10,5-10-9,5",
+        "unitAsPrinted": null,
+        "sourcePage": 72,
+        "inferredUnit": "кВ",
+        "unitInferenceNote": "Tap-voltage column does not print a unit; кВ inferred from adjacent nominal-voltage header and values. No numerical conversion."
+      },
+      {
+        "label": "Схема и группа соединения",
+        "raw": "1/1-0",
+        "unitAsPrinted": null,
+        "sourcePage": 72
+      },
+      {
+        "label": "Ток х.х",
+        "raw": "27",
+        "unitAsPrinted": "%",
+        "sourcePage": 72
+      },
+      {
+        "label": "Потери Х.Х",
+        "raw": "17",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 72
+      },
+      {
+        "label": "Потери К.З",
+        "raw": "45",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 72
+      },
+      {
+        "label": "Напряжение к.з",
+        "raw": "6,0",
+        "unitAsPrinted": "%",
+        "sourcePage": 73
+      },
+      {
+        "label": "Полная масса (first printed column)",
+        "raw": "40",
+        "unitAsPrinted": "кг",
+        "sourcePage": 73
+      },
+      {
+        "label": "L",
+        "raw": "470",
+        "unitAsPrinted": "мм",
+        "sourcePage": 73
+      },
+      {
+        "label": "B",
+        "raw": "327",
+        "unitAsPrinted": "мм",
+        "sourcePage": 73
+      },
+      {
+        "label": "H",
+        "raw": "630",
+        "unitAsPrinted": "мм",
+        "sourcePage": 73
+      },
+      {
+        "label": "Полная масса (last printed column)",
+        "raw": "40",
+        "unitAsPrinted": "кг",
+        "sourcePage": 73
+      },
+      {
+        "label": "Drawing H",
+        "raw": "630",
+        "unitAsPrinted": null,
+        "sourcePage": 75
+      },
+      {
+        "label": "Drawing H1",
+        "raw": "380",
+        "unitAsPrinted": null,
+        "sourcePage": 75
+      },
+      {
+        "label": "Drawing B",
+        "raw": "325",
+        "unitAsPrinted": null,
+        "sourcePage": 75
+      },
+      {
+        "label": "Drawing L",
+        "raw": "450",
+        "unitAsPrinted": null,
+        "sourcePage": 75
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Стандарт",
+        "raw": "ГОСТ11677-85",
+        "unitAsPrinted": null,
+        "sourcePage": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Высота установки над уровнем моря",
+        "raw": "не более1000",
+        "unitAsPrinted": "м",
+        "sourcePage": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Температура окружающего воздуха",
+        "raw": "от -45 до +40 для У1",
+        "unitAsPrinted": "°C",
+        "sourcePage": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Относительная влажность воздуха",
+        "raw": "не более80% при +25°C",
+        "unitAsPrinted": null,
+        "sourcePage": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Условие среды (как напечатано)",
+        "raw": "Не взрывоопасной и химически активной среде",
+        "unitAsPrinted": null,
+        "sourcePage": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      }
+    ],
+    "assetFamilyIds": [
+      "oil-om"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Page73 prints two different columns both labeled Полная масса, кг. Neither is silently relabeled oil mass; drawings74/75 also differ from table dimensions.",
+      "Page72 environmental condition literally says Не взрывоопасной и химически активной среде. Odd wording preserved without adding a missing не."
+    ],
+    "series": "ОМ",
+    "context": "однофазный масляный",
+    "powerKva": 0.63,
+    "voltageRaw": "6 или10 / 0,23 кВ",
+    "commonProseGroupIds": [
+      "common-prose-08-p72"
+    ],
+    "designation": "ОМ-0,63",
+    "execution": "однофазный масляный",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 72,
+      "designation": "ОМ-0,63",
+      "execution": "однофазный масляный",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "0,63",
+        "unit": "кВА",
+        "page": 72
+      },
+      {
+        "label": "ВН options",
+        "value": "6;10",
+        "unit": "кВ",
+        "page": 72
+      },
+      {
+        "label": "НН options",
+        "value": "0,23",
+        "unit": "кВ",
+        "page": 72
+      },
+      {
+        "label": "Напряжение ступеней регулирования при6кВ",
+        "value": "6,3-6,0-5,7",
+        "unit": null,
+        "page": 72,
+        "inferredUnit": "кВ",
+        "unitInferenceNote": "Tap-voltage column does not print a unit; кВ inferred from adjacent nominal-voltage header and values. No numerical conversion."
+      },
+      {
+        "label": "Напряжение ступеней регулирования при10кВ",
+        "value": "10,5-10-9,5",
+        "unit": null,
+        "page": 72,
+        "inferredUnit": "кВ",
+        "unitInferenceNote": "Tap-voltage column does not print a unit; кВ inferred from adjacent nominal-voltage header and values. No numerical conversion."
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "1/1-0",
+        "unit": null,
+        "page": 72
+      },
+      {
+        "label": "Ток х.х",
+        "value": "27",
+        "unit": "%",
+        "page": 72
+      },
+      {
+        "label": "Потери Х.Х",
+        "value": "17",
+        "unit": "Вт",
+        "page": 72
+      },
+      {
+        "label": "Потери К.З",
+        "value": "45",
+        "unit": "Вт",
+        "page": 72
+      },
+      {
+        "label": "Напряжение к.з",
+        "value": "6,0",
+        "unit": "%",
+        "page": 73
+      },
+      {
+        "label": "Полная масса (first printed column)",
+        "value": "40",
+        "unit": "кг",
+        "page": 73
+      },
+      {
+        "label": "L",
+        "value": "470",
+        "unit": "мм",
+        "page": 73
+      },
+      {
+        "label": "B",
+        "value": "327",
+        "unit": "мм",
+        "page": 73
+      },
+      {
+        "label": "H",
+        "value": "630",
+        "unit": "мм",
+        "page": 73
+      },
+      {
+        "label": "Полная масса (last printed column)",
+        "value": "40",
+        "unit": "кг",
+        "page": 73
+      },
+      {
+        "label": "Drawing H",
+        "value": "630",
+        "unit": null,
+        "page": 75
+      },
+      {
+        "label": "Drawing H1",
+        "value": "380",
+        "unit": null,
+        "page": 75
+      },
+      {
+        "label": "Drawing B",
+        "value": "325",
+        "unit": null,
+        "page": 75
+      },
+      {
+        "label": "Drawing L",
+        "value": "450",
+        "unit": null,
+        "page": 75
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ11677-85",
+        "unit": null,
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Высота установки над уровнем моря",
+        "value": "не более1000",
+        "unit": "м",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Температура окружающего воздуха",
+        "value": "от -45 до +40 для У1",
+        "unit": "°C",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Относительная влажность воздуха",
+        "value": "не более80% при +25°C",
+        "unit": null,
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Условие среды (как напечатано)",
+        "value": "Не взрывоопасной и химически активной среде",
+        "unit": null,
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-om-1p25",
+    "familyId": "om",
+    "name": "ОМ-1,25",
+    "sourceDesignation": "ОМ-1,25",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      72,
+      73,
+      75
+    ],
+    "rawSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "raw": "1,25",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 72
+      },
+      {
+        "label": "ВН options",
+        "raw": "6;10",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 72
+      },
+      {
+        "label": "НН options",
+        "raw": "0,23",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 72
+      },
+      {
+        "label": "Напряжение ступеней регулирования при6кВ",
+        "raw": "6,3-6,0-5,7",
+        "unitAsPrinted": null,
+        "sourcePage": 72,
+        "inferredUnit": "кВ",
+        "unitInferenceNote": "Tap-voltage column does not print a unit; кВ inferred from adjacent nominal-voltage header and values. No numerical conversion."
+      },
+      {
+        "label": "Напряжение ступеней регулирования при10кВ",
+        "raw": "10,5-10-9,5",
+        "unitAsPrinted": null,
+        "sourcePage": 72,
+        "inferredUnit": "кВ",
+        "unitInferenceNote": "Tap-voltage column does not print a unit; кВ inferred from adjacent nominal-voltage header and values. No numerical conversion."
+      },
+      {
+        "label": "Схема и группа соединения",
+        "raw": "1/1-0",
+        "unitAsPrinted": null,
+        "sourcePage": 72
+      },
+      {
+        "label": "Ток х.х",
+        "raw": "14",
+        "unitAsPrinted": "%",
+        "sourcePage": 72
+      },
+      {
+        "label": "Потери Х.Х",
+        "raw": "20",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 72
+      },
+      {
+        "label": "Потери К.З",
+        "raw": "67",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 72
+      },
+      {
+        "label": "Напряжение к.з",
+        "raw": "5,0",
+        "unitAsPrinted": "%",
+        "sourcePage": 73
+      },
+      {
+        "label": "Полная масса (first printed column)",
+        "raw": "53",
+        "unitAsPrinted": "кг",
+        "sourcePage": 73
+      },
+      {
+        "label": "L",
+        "raw": "470",
+        "unitAsPrinted": "мм",
+        "sourcePage": 73
+      },
+      {
+        "label": "B",
+        "raw": "327",
+        "unitAsPrinted": "мм",
+        "sourcePage": 73
+      },
+      {
+        "label": "H",
+        "raw": "630",
+        "unitAsPrinted": "мм",
+        "sourcePage": 73
+      },
+      {
+        "label": "Полная масса (last printed column)",
+        "raw": "44",
+        "unitAsPrinted": "кг",
+        "sourcePage": 73
+      },
+      {
+        "label": "Drawing H",
+        "raw": "630",
+        "unitAsPrinted": null,
+        "sourcePage": 75
+      },
+      {
+        "label": "Drawing H1",
+        "raw": "380",
+        "unitAsPrinted": null,
+        "sourcePage": 75
+      },
+      {
+        "label": "Drawing B",
+        "raw": "325",
+        "unitAsPrinted": null,
+        "sourcePage": 75
+      },
+      {
+        "label": "Drawing L",
+        "raw": "450",
+        "unitAsPrinted": null,
+        "sourcePage": 75
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Стандарт",
+        "raw": "ГОСТ11677-85",
+        "unitAsPrinted": null,
+        "sourcePage": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Высота установки над уровнем моря",
+        "raw": "не более1000",
+        "unitAsPrinted": "м",
+        "sourcePage": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Температура окружающего воздуха",
+        "raw": "от -45 до +40 для У1",
+        "unitAsPrinted": "°C",
+        "sourcePage": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Относительная влажность воздуха",
+        "raw": "не более80% при +25°C",
+        "unitAsPrinted": null,
+        "sourcePage": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Условие среды (как напечатано)",
+        "raw": "Не взрывоопасной и химически активной среде",
+        "unitAsPrinted": null,
+        "sourcePage": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      }
+    ],
+    "assetFamilyIds": [
+      "oil-om"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Page73 prints two different columns both labeled Полная масса, кг. Neither is silently relabeled oil mass; drawings74/75 also differ from table dimensions.",
+      "Page72 environmental condition literally says Не взрывоопасной и химически активной среде. Odd wording preserved without adding a missing не."
+    ],
+    "series": "ОМ",
+    "context": "однофазный масляный",
+    "powerKva": 1.25,
+    "voltageRaw": "6 или10 / 0,23 кВ",
+    "commonProseGroupIds": [
+      "common-prose-08-p72"
+    ],
+    "designation": "ОМ-1,25",
+    "execution": "однофазный масляный",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 72,
+      "designation": "ОМ-1,25",
+      "execution": "однофазный масляный",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "1,25",
+        "unit": "кВА",
+        "page": 72
+      },
+      {
+        "label": "ВН options",
+        "value": "6;10",
+        "unit": "кВ",
+        "page": 72
+      },
+      {
+        "label": "НН options",
+        "value": "0,23",
+        "unit": "кВ",
+        "page": 72
+      },
+      {
+        "label": "Напряжение ступеней регулирования при6кВ",
+        "value": "6,3-6,0-5,7",
+        "unit": null,
+        "page": 72,
+        "inferredUnit": "кВ",
+        "unitInferenceNote": "Tap-voltage column does not print a unit; кВ inferred from adjacent nominal-voltage header and values. No numerical conversion."
+      },
+      {
+        "label": "Напряжение ступеней регулирования при10кВ",
+        "value": "10,5-10-9,5",
+        "unit": null,
+        "page": 72,
+        "inferredUnit": "кВ",
+        "unitInferenceNote": "Tap-voltage column does not print a unit; кВ inferred from adjacent nominal-voltage header and values. No numerical conversion."
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "1/1-0",
+        "unit": null,
+        "page": 72
+      },
+      {
+        "label": "Ток х.х",
+        "value": "14",
+        "unit": "%",
+        "page": 72
+      },
+      {
+        "label": "Потери Х.Х",
+        "value": "20",
+        "unit": "Вт",
+        "page": 72
+      },
+      {
+        "label": "Потери К.З",
+        "value": "67",
+        "unit": "Вт",
+        "page": 72
+      },
+      {
+        "label": "Напряжение к.з",
+        "value": "5,0",
+        "unit": "%",
+        "page": 73
+      },
+      {
+        "label": "Полная масса (first printed column)",
+        "value": "53",
+        "unit": "кг",
+        "page": 73
+      },
+      {
+        "label": "L",
+        "value": "470",
+        "unit": "мм",
+        "page": 73
+      },
+      {
+        "label": "B",
+        "value": "327",
+        "unit": "мм",
+        "page": 73
+      },
+      {
+        "label": "H",
+        "value": "630",
+        "unit": "мм",
+        "page": 73
+      },
+      {
+        "label": "Полная масса (last printed column)",
+        "value": "44",
+        "unit": "кг",
+        "page": 73
+      },
+      {
+        "label": "Drawing H",
+        "value": "630",
+        "unit": null,
+        "page": 75
+      },
+      {
+        "label": "Drawing H1",
+        "value": "380",
+        "unit": null,
+        "page": 75
+      },
+      {
+        "label": "Drawing B",
+        "value": "325",
+        "unit": null,
+        "page": 75
+      },
+      {
+        "label": "Drawing L",
+        "value": "450",
+        "unit": null,
+        "page": 75
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ11677-85",
+        "unit": null,
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Высота установки над уровнем моря",
+        "value": "не более1000",
+        "unit": "м",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Температура окружающего воздуха",
+        "value": "от -45 до +40 для У1",
+        "unit": "°C",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Относительная влажность воздуха",
+        "value": "не более80% при +25°C",
+        "unit": null,
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Условие среды (как напечатано)",
+        "value": "Не взрывоопасной и химически активной среде",
+        "unit": null,
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-om-2p5",
+    "familyId": "om",
+    "name": "ОМ-2,5",
+    "sourceDesignation": "ОМ-2,5",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      72,
+      73,
+      75
+    ],
+    "rawSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "raw": "2,5",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 72
+      },
+      {
+        "label": "ВН options",
+        "raw": "6;10",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 72
+      },
+      {
+        "label": "НН options",
+        "raw": "0,23",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 72
+      },
+      {
+        "label": "Напряжение ступеней регулирования при6кВ",
+        "raw": "6,3-6,0-5,7",
+        "unitAsPrinted": null,
+        "sourcePage": 72,
+        "inferredUnit": "кВ",
+        "unitInferenceNote": "Tap-voltage column does not print a unit; кВ inferred from adjacent nominal-voltage header and values. No numerical conversion."
+      },
+      {
+        "label": "Напряжение ступеней регулирования при10кВ",
+        "raw": "10,5-10-9,5",
+        "unitAsPrinted": null,
+        "sourcePage": 72,
+        "inferredUnit": "кВ",
+        "unitInferenceNote": "Tap-voltage column does not print a unit; кВ inferred from adjacent nominal-voltage header and values. No numerical conversion."
+      },
+      {
+        "label": "Схема и группа соединения",
+        "raw": "1/1-0",
+        "unitAsPrinted": null,
+        "sourcePage": 72
+      },
+      {
+        "label": "Ток х.х",
+        "raw": "15",
+        "unitAsPrinted": "%",
+        "sourcePage": 72
+      },
+      {
+        "label": "Потери Х.Х",
+        "raw": "28",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 72
+      },
+      {
+        "label": "Потери К.З",
+        "raw": "87",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 72
+      },
+      {
+        "label": "Напряжение к.з",
+        "raw": "4,5",
+        "unitAsPrinted": "%",
+        "sourcePage": 73
+      },
+      {
+        "label": "Полная масса (first printed column)",
+        "raw": "87",
+        "unitAsPrinted": "кг",
+        "sourcePage": 73
+      },
+      {
+        "label": "L",
+        "raw": "510",
+        "unitAsPrinted": "мм",
+        "sourcePage": 73
+      },
+      {
+        "label": "B",
+        "raw": "440",
+        "unitAsPrinted": "мм",
+        "sourcePage": 73
+      },
+      {
+        "label": "H",
+        "raw": "650",
+        "unitAsPrinted": "мм",
+        "sourcePage": 73
+      },
+      {
+        "label": "Полная масса (last printed column)",
+        "raw": "61",
+        "unitAsPrinted": "кг",
+        "sourcePage": 73
+      },
+      {
+        "label": "Drawing H",
+        "raw": "680",
+        "unitAsPrinted": null,
+        "sourcePage": 75
+      },
+      {
+        "label": "Drawing H1",
+        "raw": "430",
+        "unitAsPrinted": null,
+        "sourcePage": 75
+      },
+      {
+        "label": "Drawing B",
+        "raw": "360",
+        "unitAsPrinted": null,
+        "sourcePage": 75
+      },
+      {
+        "label": "Drawing L",
+        "raw": "470",
+        "unitAsPrinted": null,
+        "sourcePage": 75
+      },
+      {
+        "label": "Частота",
+        "raw": "50",
+        "unitAsPrinted": "Гц",
+        "sourcePage": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Стандарт",
+        "raw": "ГОСТ11677-85",
+        "unitAsPrinted": null,
+        "sourcePage": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Высота установки над уровнем моря",
+        "raw": "не более1000",
+        "unitAsPrinted": "м",
+        "sourcePage": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Температура окружающего воздуха",
+        "raw": "от -45 до +40 для У1",
+        "unitAsPrinted": "°C",
+        "sourcePage": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Относительная влажность воздуха",
+        "raw": "не более80% при +25°C",
+        "unitAsPrinted": null,
+        "sourcePage": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Условие среды (как напечатано)",
+        "raw": "Не взрывоопасной и химически активной среде",
+        "unitAsPrinted": null,
+        "sourcePage": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      }
+    ],
+    "assetFamilyIds": [
+      "oil-om"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [
+      "Page73 prints two different columns both labeled Полная масса, кг. Neither is silently relabeled oil mass; drawings74/75 also differ from table dimensions.",
+      "Page72 environmental condition literally says Не взрывоопасной и химически активной среде. Odd wording preserved without adding a missing не."
+    ],
+    "series": "ОМ",
+    "context": "однофазный масляный",
+    "powerKva": 2.5,
+    "voltageRaw": "6 или10 / 0,23 кВ",
+    "commonProseGroupIds": [
+      "common-prose-08-p72"
+    ],
+    "designation": "ОМ-2,5",
+    "execution": "однофазный масляный",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 72,
+      "designation": "ОМ-2,5",
+      "execution": "однофазный масляный",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "2,5",
+        "unit": "кВА",
+        "page": 72
+      },
+      {
+        "label": "ВН options",
+        "value": "6;10",
+        "unit": "кВ",
+        "page": 72
+      },
+      {
+        "label": "НН options",
+        "value": "0,23",
+        "unit": "кВ",
+        "page": 72
+      },
+      {
+        "label": "Напряжение ступеней регулирования при6кВ",
+        "value": "6,3-6,0-5,7",
+        "unit": null,
+        "page": 72,
+        "inferredUnit": "кВ",
+        "unitInferenceNote": "Tap-voltage column does not print a unit; кВ inferred from adjacent nominal-voltage header and values. No numerical conversion."
+      },
+      {
+        "label": "Напряжение ступеней регулирования при10кВ",
+        "value": "10,5-10-9,5",
+        "unit": null,
+        "page": 72,
+        "inferredUnit": "кВ",
+        "unitInferenceNote": "Tap-voltage column does not print a unit; кВ inferred from adjacent nominal-voltage header and values. No numerical conversion."
+      },
+      {
+        "label": "Схема и группа соединения",
+        "value": "1/1-0",
+        "unit": null,
+        "page": 72
+      },
+      {
+        "label": "Ток х.х",
+        "value": "15",
+        "unit": "%",
+        "page": 72
+      },
+      {
+        "label": "Потери Х.Х",
+        "value": "28",
+        "unit": "Вт",
+        "page": 72
+      },
+      {
+        "label": "Потери К.З",
+        "value": "87",
+        "unit": "Вт",
+        "page": 72
+      },
+      {
+        "label": "Напряжение к.з",
+        "value": "4,5",
+        "unit": "%",
+        "page": 73
+      },
+      {
+        "label": "Полная масса (first printed column)",
+        "value": "87",
+        "unit": "кг",
+        "page": 73
+      },
+      {
+        "label": "L",
+        "value": "510",
+        "unit": "мм",
+        "page": 73
+      },
+      {
+        "label": "B",
+        "value": "440",
+        "unit": "мм",
+        "page": 73
+      },
+      {
+        "label": "H",
+        "value": "650",
+        "unit": "мм",
+        "page": 73
+      },
+      {
+        "label": "Полная масса (last printed column)",
+        "value": "61",
+        "unit": "кг",
+        "page": 73
+      },
+      {
+        "label": "Drawing H",
+        "value": "680",
+        "unit": null,
+        "page": 75
+      },
+      {
+        "label": "Drawing H1",
+        "value": "430",
+        "unit": null,
+        "page": 75
+      },
+      {
+        "label": "Drawing B",
+        "value": "360",
+        "unit": null,
+        "page": 75
+      },
+      {
+        "label": "Drawing L",
+        "value": "470",
+        "unit": null,
+        "page": 75
+      },
+      {
+        "label": "Частота",
+        "value": "50",
+        "unit": "Гц",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ11677-85",
+        "unit": null,
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Высота установки над уровнем моря",
+        "value": "не более1000",
+        "unit": "м",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Температура окружающего воздуха",
+        "value": "от -45 до +40 для У1",
+        "unit": "°C",
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Относительная влажность воздуха",
+        "value": "не более80% при +25°C",
+        "unit": null,
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      },
+      {
+        "label": "Условие среды (как напечатано)",
+        "value": "Не взрывоопасной и химически активной среде",
+        "unit": null,
+        "page": 72,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-08-p72"
+      }
+    ]
+  }
+]

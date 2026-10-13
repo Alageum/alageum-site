@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "verifiedAt": "2026-10-05T08:41:17.189Z",
+  "runtimeManifestSha256": "015aec00fbd4ee411c581fbc1443a348cdfd1f85649607820c406a0b658f6434",
+  "clearanceSha256": "930def10e4d3ac298b2551480432dab987198bc6e56fa404c8a00f6960a28f29",
+  "recordsChecked": 585,
+  "staticGeometry": 251,
+  "staticIcons": 257,
+  "normalizedApiFixtureGeometry": 251,
+  "normalizedApiFixtureIcons": 257,
+  "mutationDenials": 5222,
+  "unknownAndPrototypeIdsDenied": true,
+  "oldVisualIconMappingsUnchanged": 238,
+  "focusedTests": {
+    "passed": 29,
+    "failed": 0
+  },
+  "approvalGateCheck": "passed",
+  "limitations": [
+    "Normalized API fixtures, not a live HTTP/database test",
+    "No WebGL or browser validation claimed"
+  ]
+}

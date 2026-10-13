@@ -1,0 +1,13 @@
+# Scoped visual presentation correction
+
+Baseline: PR36 `c83265e76c3c671e84e97ed6d8527f788abe46e8`, tree `bec2becfba7dd142d548d241ce0210900ee3731c`.
+
+Fresh hosted desktop/mobile captures show both page-69 exemplars at normal size with pale faces. Desktop samples are front RGB 228/227/225, side 215/215/213 and top 236/235/235. The existing canvas check counts channels below 200. The side-face inversion through the installed Three ACES curve estimates RGB 197/197/195 at exposure 1.0 rather than 1.45; this is a quantized-pixel estimate, not a rendered acceptance result. Only the existing exact two-type resolver selects 1.0. All 126 preceding types retain 1.45; geometry, palettes, lighting positions/intensities, mappings and claims stay fixed.
+
+The surviving right SHNN crop rendered about 610.7px high inside a link with 24px vertical padding. Centering its roughly 634.7px link in a 720px viewport with 96px scroll padding predicts the captured bottom near 725.3px. The new local image maximum reserves that 96px, 1.5rem link padding and 1.5rem clearance. At the captured 720px/16px dimensions, the image is at most 576px, its link is 600px, and centered bottom is 708px. The 39rem ceiling, contain scaling, original crop bytes, captions and full-source links remain. Short viewport/text-size boundaries are checked numerically; they do not substitute for browser layout checks.
+
+The two runtime files and their focused tests were frozen before approval plumbing. New tests execute the actual viewer with real Three geometry/math and stub only browser/GPU edges. Earlier synthetic amendment-contract tests use eight exact portable PR36 file objects. Their original assertions remain; current-tree successor tests additionally exercise the real historical verifier with an in-memory new approval and reject tampering. The isolated historical corruption fixture copies the new dependency closure.
+
+Historical clearance/prototype/review files remain byte-identical. The new raw-byte leaf never calls older verifiers and has no persistent cache. Its finite predecessor map includes only the two presentation files, two required adapter files, and four necessary test-fixture adapters. Its independent report binds the complete new closure. All 254 hosted names, pixel and full-bound reachability assertions, Page files, workflows, dependencies, source records and identities stay unchanged.
+
+Hosted acceptance remains pending: the incomplete diagnostic run did not establish all 254 outcomes or subsequent rotation/reopen behavior. A passing local build or synthetic-reader test does not approve a release; the separately authored independent report is required, and fresh hosted pixels must validate the result.

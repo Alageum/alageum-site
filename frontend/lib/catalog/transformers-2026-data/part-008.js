@@ -1,0 +1,2388 @@
+// Generated from independently reviewed source records.
+const records = [
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТМГ-1600",
+    "execution": "Х1К1",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      10,
+      11,
+      13
+    ],
+    "sourceRow": {
+      "designation": "ТМГ-1600",
+      "electricalTablePage": 10,
+      "dimensionsTablePage": 11
+    },
+    "sourceFamilyId": "tmg-x1k1",
+    "sourceRecordType": "explicit-model-row",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": 1600,
+    "voltage": "6(10)/0,4",
+    "voltageUnit": "кВ",
+    "cooling": null,
+    "installation": "наружной или внутренней",
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "1600",
+        "unit": "кВА",
+        "page": 10
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "page": 10
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nД/Ун-11",
+        "unit": "",
+        "page": 10,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Р о",
+        "value": "1950",
+        "unit": "Вт",
+        "page": 10
+      },
+      {
+        "label": "Рк",
+        "value": "16500",
+        "unit": "Вт",
+        "page": 10
+      },
+      {
+        "label": "U к",
+        "value": "6,5",
+        "unit": "%",
+        "page": 10
+      },
+      {
+        "label": "I о",
+        "value": "0,5",
+        "unit": "%",
+        "page": 10
+      },
+      {
+        "label": "L",
+        "value": "1940",
+        "unit": "",
+        "page": 10,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "B",
+        "value": "1225",
+        "unit": "",
+        "page": 10,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "1870",
+        "unit": "",
+        "page": 11,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A",
+        "value": "1070",
+        "unit": "",
+        "page": 11,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A1",
+        "value": "1070",
+        "unit": "",
+        "page": 11,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "M",
+        "value": "210",
+        "unit": "",
+        "page": 11,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "K",
+        "value": "280",
+        "unit": "",
+        "page": 11,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h",
+        "value": "180",
+        "unit": "",
+        "page": 11,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h1",
+        "value": "160",
+        "unit": "",
+        "page": 11,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Полная масса",
+        "value": "3670",
+        "unit": "кг",
+        "page": 11
+      },
+      {
+        "label": "Масса масла",
+        "value": "775",
+        "unit": "кг",
+        "page": 11
+      },
+      {
+        "label": "Температура умеренного климата",
+        "value": "от +40°C до -45°C",
+        "unit": "°C",
+        "page": 10
+      },
+      {
+        "label": "Температура холодного климата",
+        "value": "от +40°C до -60°C",
+        "unit": "°C",
+        "page": 10
+      },
+      {
+        "label": "Установка",
+        "value": "наружной или внутренней",
+        "unit": "",
+        "page": 10,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Стандарт потерь",
+        "value": "ПАО «РОССЕТИ» СТО 34.01-3.2-011-2017",
+        "unit": "",
+        "page": 10,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Класс / уровень потерь",
+        "value": "Х1К1",
+        "unit": "",
+        "page": 10,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "notes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed.",
+      "There is no ТМГ-2000 row for Х1К1; do not interpolate it from the heading range."
+    ],
+    "image": "/catalog-source/transformers-2026/page-010.webp",
+    "imageSourcePage": 10,
+    "imageCaption": "Страница 10 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "1600",
+        "unit": "кВА",
+        "pdfPage": 10,
+        "printedPage": "10",
+        "table": "electrical"
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "pdfPage": 10,
+        "printedPage": "10",
+        "table": "electrical"
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nД/Ун-11",
+        "unit": null,
+        "pdfPage": 10,
+        "printedPage": "10",
+        "table": "electrical"
+      },
+      {
+        "label": "Р о",
+        "value": "1950",
+        "unit": "Вт",
+        "pdfPage": 10,
+        "printedPage": "10",
+        "table": "electrical"
+      },
+      {
+        "label": "Рк",
+        "value": "16500",
+        "unit": "Вт",
+        "pdfPage": 10,
+        "printedPage": "10",
+        "table": "electrical"
+      },
+      {
+        "label": "U к",
+        "value": "6,5",
+        "unit": "%",
+        "pdfPage": 10,
+        "printedPage": "10",
+        "table": "electrical"
+      },
+      {
+        "label": "I о",
+        "value": "0,5",
+        "unit": "%",
+        "pdfPage": 10,
+        "printedPage": "10",
+        "table": "electrical"
+      },
+      {
+        "label": "L",
+        "value": "1940",
+        "unit": null,
+        "pdfPage": 10,
+        "printedPage": "10",
+        "table": "electrical"
+      },
+      {
+        "label": "B",
+        "value": "1225",
+        "unit": null,
+        "pdfPage": 10,
+        "printedPage": "10",
+        "table": "electrical"
+      },
+      {
+        "label": "H",
+        "value": "1870",
+        "unit": null,
+        "pdfPage": 11,
+        "printedPage": "11",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A",
+        "value": "1070",
+        "unit": null,
+        "pdfPage": 11,
+        "printedPage": "11",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A1",
+        "value": "1070",
+        "unit": null,
+        "pdfPage": 11,
+        "printedPage": "11",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "M",
+        "value": "210",
+        "unit": null,
+        "pdfPage": 11,
+        "printedPage": "11",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "K",
+        "value": "280",
+        "unit": null,
+        "pdfPage": 11,
+        "printedPage": "11",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h",
+        "value": "180",
+        "unit": null,
+        "pdfPage": 11,
+        "printedPage": "11",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h1",
+        "value": "160",
+        "unit": null,
+        "pdfPage": 11,
+        "printedPage": "11",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Полная масса",
+        "value": "3670",
+        "unit": "кг",
+        "pdfPage": 11,
+        "printedPage": "11",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Масса масла",
+        "value": "775",
+        "unit": "кг",
+        "pdfPage": 11,
+        "printedPage": "11",
+        "table": "dimensions-and-masses"
+      }
+    ],
+    "id": "alageum-tmg-x1k1-1600",
+    "name": "ТМГ-1600 (Х1К1)",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-tmg-x1k1",
+    "familyName": "Трансформаторы ТМГ-63-2500 кВА (Х1К1)",
+    "series": "ТМГ",
+    "subtype": "Х1К1",
+    "description": "Потери соответствуют СТО 34.01-3.2-011-2017 ПАО «Россети».",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "1600",
+        "unit": "кВА",
+        "page": 10
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "page": 10
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nД/Ун-11",
+        "unit": "",
+        "page": 10,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Р о",
+        "value": "1950",
+        "unit": "Вт",
+        "page": 10
+      },
+      {
+        "label": "Рк",
+        "value": "16500",
+        "unit": "Вт",
+        "page": 10
+      },
+      {
+        "label": "U к",
+        "value": "6,5",
+        "unit": "%",
+        "page": 10
+      },
+      {
+        "label": "I о",
+        "value": "0,5",
+        "unit": "%",
+        "page": 10
+      },
+      {
+        "label": "L",
+        "value": "1940",
+        "unit": "",
+        "page": 10,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "B",
+        "value": "1225",
+        "unit": "",
+        "page": 10,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "1870",
+        "unit": "",
+        "page": 11,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A",
+        "value": "1070",
+        "unit": "",
+        "page": 11,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A1",
+        "value": "1070",
+        "unit": "",
+        "page": 11,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "M",
+        "value": "210",
+        "unit": "",
+        "page": 11,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "K",
+        "value": "280",
+        "unit": "",
+        "page": 11,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h",
+        "value": "180",
+        "unit": "",
+        "page": 11,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h1",
+        "value": "160",
+        "unit": "",
+        "page": 11,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Полная масса",
+        "value": "3670",
+        "unit": "кг",
+        "page": 11
+      },
+      {
+        "label": "Масса масла",
+        "value": "775",
+        "unit": "кг",
+        "page": 11
+      }
+    ],
+    "configurations": [
+      {
+        "id": "alageum-tmg-x1k1-1600-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-x1k1-1600",
+        "page": 10,
+        "sourcePages": [
+          10
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 10,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "16500",
+            "unit": "Вт",
+            "page": 10
+          },
+          {
+            "label": "U к",
+            "value": "6,5",
+            "unit": "%",
+            "page": 10
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-x1k1-1600-connection-1",
+          "modelId": "alageum-tmg-x1k1-1600",
+          "familyId": "tmg-x1k1",
+          "page": 10,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "16500",
+          "UkPercentRaw": "6,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmg-x1k1-1600-connection-2",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmg-x1k1-1600",
+        "page": 10,
+        "sourcePages": [
+          10
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 10,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "16500",
+            "unit": "Вт",
+            "page": 10
+          },
+          {
+            "label": "U к",
+            "value": "6,5",
+            "unit": "%",
+            "page": 10
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmg-x1k1-1600-connection-2",
+          "modelId": "alageum-tmg-x1k1-1600",
+          "familyId": "tmg-x1k1",
+          "page": 10,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "16500",
+          "UkPercentRaw": "6,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      }
+    ]
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "Трансформаторы ТМ-16-2500 кВА стандартный",
+    "execution": "стандартный",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      14,
+      15,
+      16,
+      17
+    ],
+    "sourceRow": null,
+    "sourceFamilyId": "tm-standard",
+    "sourceRecordType": "family",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": null,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": "наружной или внутренней",
+    "technicalSpecs": [
+      {
+        "label": "Температура умеренного климата",
+        "value": "от +40°C до -45°C",
+        "unit": "°C",
+        "page": 14
+      },
+      {
+        "label": "Температура холодного климата",
+        "value": "от +40°C до -60°C",
+        "unit": "°C",
+        "page": 14
+      },
+      {
+        "label": "Установка",
+        "value": "наружной или внутренней",
+        "unit": "",
+        "page": 14,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Высота установки над уровнем моря",
+        "value": "не более 1000",
+        "unit": "м",
+        "page": 14
+      },
+      {
+        "label": "Исключенные условия работы",
+        "value": "тряска, вибрация, удары, химически активная среда",
+        "unit": "",
+        "page": 14,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Регулирование напряжения ПБВ со стороны ВН",
+        "value": "±2x2,5",
+        "unit": "%",
+        "page": 14
+      },
+      {
+        "label": "Климатическое исполнение",
+        "value": "У1",
+        "unit": "",
+        "page": 14,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Маслорасширитель",
+        "value": "установлен на крышке бака; вентиляционное отверстие соединенное через воздухоочиститель",
+        "unit": "",
+        "page": 14,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Диапазон мощности (текст)",
+        "value": "25–2500",
+        "unit": "кВА",
+        "page": 14
+      }
+    ],
+    "notes": [
+      "Heading and table include 16 кВА, but body states Диапазон мощности – 25–2500 кВА. Both preserved; not corrected."
+    ],
+    "image": "/catalog-source/transformers-2026/page-014.webp",
+    "imageSourcePage": 14,
+    "imageCaption": "Страница 14 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Температура умеренного климата",
+        "value": "от +40°C до -45°C",
+        "unit": "°C",
+        "page": 14
+      },
+      {
+        "label": "Температура холодного климата",
+        "value": "от +40°C до -60°C",
+        "unit": "°C",
+        "page": 14
+      },
+      {
+        "label": "Установка",
+        "value": "наружной или внутренней",
+        "unit": null,
+        "page": 14
+      },
+      {
+        "label": "Высота установки над уровнем моря",
+        "value": "не более 1000",
+        "unit": "м",
+        "page": 14
+      },
+      {
+        "label": "Исключенные условия работы",
+        "value": "тряска, вибрация, удары, химически активная среда",
+        "unit": null,
+        "page": 14
+      },
+      {
+        "label": "Регулирование напряжения ПБВ со стороны ВН",
+        "value": "±2x2,5",
+        "unit": "%",
+        "page": 14
+      },
+      {
+        "label": "Климатическое исполнение",
+        "value": "У1",
+        "unit": null,
+        "page": 14
+      },
+      {
+        "label": "Маслорасширитель",
+        "value": "установлен на крышке бака; вентиляционное отверстие соединенное через воздухоочиститель",
+        "unit": null,
+        "page": 14
+      },
+      {
+        "label": "Диапазон мощности (текст)",
+        "value": "25–2500",
+        "unit": "кВА",
+        "page": 14
+      }
+    ],
+    "id": "tr2026-family-tm-standard",
+    "name": "Трансформаторы ТМ-16-2500 кВА стандартный",
+    "recordKind": "family",
+    "recordType": "catalog-family",
+    "series": "ТМ",
+    "subtype": "стандартный",
+    "description": "Маслорасширитель установлен на крышке бака; вентиляционное отверстие соединенное через воздухоочиститель; регулирование ПБВ со стороны ВН ±2x2,5%; У1.",
+    "variantIds": [
+      "alageum-tm-standard-16",
+      "alageum-tm-standard-25",
+      "alageum-tm-standard-40",
+      "alageum-tm-standard-63",
+      "alageum-tm-standard-100",
+      "alageum-tm-standard-160",
+      "alageum-tm-standard-250",
+      "alageum-tm-standard-400",
+      "alageum-tm-standard-630",
+      "alageum-tm-standard-1000",
+      "alageum-tm-standard-1250",
+      "alageum-tm-standard-1600",
+      "alageum-tm-standard-2000",
+      "alageum-tm-standard-2500"
+    ],
+    "configurations": [
+      {
+        "id": "alageum-tm-standard-16-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-16",
+        "page": 14,
+        "sourcePages": [
+          14
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 14,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "440",
+            "unit": "Вт",
+            "page": 14
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 14
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-16-connection-1",
+          "modelId": "alageum-tm-standard-16",
+          "familyId": "tm-standard",
+          "page": 14,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "440",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-16-connection-2",
+        "designation": "У/Zн-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-16",
+        "page": 14,
+        "sourcePages": [
+          14
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Zн-11",
+            "unit": "",
+            "page": 14,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "500",
+            "unit": "Вт",
+            "page": 14
+          },
+          {
+            "label": "U к",
+            "value": "4,7",
+            "unit": "%",
+            "page": 14
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-16-connection-2",
+          "modelId": "alageum-tm-standard-16",
+          "familyId": "tm-standard",
+          "page": 14,
+          "connectionGroupRaw": "У/Zн-11",
+          "PkWRaw": "500",
+          "UkPercentRaw": "4,7",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-16-connection-3",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-16",
+        "page": 14,
+        "sourcePages": [
+          14
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 14,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "500",
+            "unit": "Вт",
+            "page": 14
+          },
+          {
+            "label": "U к",
+            "value": "4,7",
+            "unit": "%",
+            "page": 14
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-16-connection-3",
+          "modelId": "alageum-tm-standard-16",
+          "familyId": "tm-standard",
+          "page": 14,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "500",
+          "UkPercentRaw": "4,7",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-25-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-25",
+        "page": 14,
+        "sourcePages": [
+          14
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 14,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "600",
+            "unit": "Вт",
+            "page": 14
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 14
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-25-connection-1",
+          "modelId": "alageum-tm-standard-25",
+          "familyId": "tm-standard",
+          "page": 14,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "600",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-25-connection-2",
+        "designation": "У/Zн-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-25",
+        "page": 14,
+        "sourcePages": [
+          14
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Zн-11",
+            "unit": "",
+            "page": 14,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "690",
+            "unit": "Вт",
+            "page": 14
+          },
+          {
+            "label": "U к",
+            "value": "4,7",
+            "unit": "%",
+            "page": 14
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-25-connection-2",
+          "modelId": "alageum-tm-standard-25",
+          "familyId": "tm-standard",
+          "page": 14,
+          "connectionGroupRaw": "У/Zн-11",
+          "PkWRaw": "690",
+          "UkPercentRaw": "4,7",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-25-connection-3",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-25",
+        "page": 14,
+        "sourcePages": [
+          14
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 14,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "690",
+            "unit": "Вт",
+            "page": 14
+          },
+          {
+            "label": "U к",
+            "value": "4,7",
+            "unit": "%",
+            "page": 14
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-25-connection-3",
+          "modelId": "alageum-tm-standard-25",
+          "familyId": "tm-standard",
+          "page": 14,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "690",
+          "UkPercentRaw": "4,7",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-40-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-40",
+        "page": 14,
+        "sourcePages": [
+          14
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 14,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "880",
+            "unit": "Вт",
+            "page": 14
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 14
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-40-connection-1",
+          "modelId": "alageum-tm-standard-40",
+          "familyId": "tm-standard",
+          "page": 14,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "880",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-40-connection-2",
+        "designation": "У/Zн-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-40",
+        "page": 14,
+        "sourcePages": [
+          14
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Zн-11",
+            "unit": "",
+            "page": 14,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "1000",
+            "unit": "Вт",
+            "page": 14
+          },
+          {
+            "label": "U к",
+            "value": "4,7",
+            "unit": "%",
+            "page": 14
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-40-connection-2",
+          "modelId": "alageum-tm-standard-40",
+          "familyId": "tm-standard",
+          "page": 14,
+          "connectionGroupRaw": "У/Zн-11",
+          "PkWRaw": "1000",
+          "UkPercentRaw": "4,7",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-40-connection-3",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-40",
+        "page": 14,
+        "sourcePages": [
+          14
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 14,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "1000",
+            "unit": "Вт",
+            "page": 14
+          },
+          {
+            "label": "U к",
+            "value": "4,7",
+            "unit": "%",
+            "page": 14
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-40-connection-3",
+          "modelId": "alageum-tm-standard-40",
+          "familyId": "tm-standard",
+          "page": 14,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "1000",
+          "UkPercentRaw": "4,7",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-63-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-63",
+        "page": 14,
+        "sourcePages": [
+          14
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 14,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "1280",
+            "unit": "Вт",
+            "page": 14
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 14
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-63-connection-1",
+          "modelId": "alageum-tm-standard-63",
+          "familyId": "tm-standard",
+          "page": 14,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "1280",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-63-connection-2",
+        "designation": "У/Zн-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-63",
+        "page": 14,
+        "sourcePages": [
+          14
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Zн-11",
+            "unit": "",
+            "page": 14,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "1470",
+            "unit": "Вт",
+            "page": 14
+          },
+          {
+            "label": "U к",
+            "value": "4,7",
+            "unit": "%",
+            "page": 14
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-63-connection-2",
+          "modelId": "alageum-tm-standard-63",
+          "familyId": "tm-standard",
+          "page": 14,
+          "connectionGroupRaw": "У/Zн-11",
+          "PkWRaw": "1470",
+          "UkPercentRaw": "4,7",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-63-connection-3",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-63",
+        "page": 14,
+        "sourcePages": [
+          14
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 14,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "1470",
+            "unit": "Вт",
+            "page": 14
+          },
+          {
+            "label": "U к",
+            "value": "4,7",
+            "unit": "%",
+            "page": 14
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-63-connection-3",
+          "modelId": "alageum-tm-standard-63",
+          "familyId": "tm-standard",
+          "page": 14,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "1470",
+          "UkPercentRaw": "4,7",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-100-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-100",
+        "page": 14,
+        "sourcePages": [
+          14
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 14,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "1900",
+            "unit": "Вт",
+            "page": 14
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 14
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-100-connection-1",
+          "modelId": "alageum-tm-standard-100",
+          "familyId": "tm-standard",
+          "page": 14,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "1900",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-100-connection-2",
+        "designation": "У/Zн-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-100",
+        "page": 14,
+        "sourcePages": [
+          14
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Zн-11",
+            "unit": "",
+            "page": 14,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "2270",
+            "unit": "Вт",
+            "page": 14
+          },
+          {
+            "label": "U к",
+            "value": "4,7",
+            "unit": "%",
+            "page": 14
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-100-connection-2",
+          "modelId": "alageum-tm-standard-100",
+          "familyId": "tm-standard",
+          "page": 14,
+          "connectionGroupRaw": "У/Zн-11",
+          "PkWRaw": "2270",
+          "UkPercentRaw": "4,7",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-100-connection-3",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-100",
+        "page": 14,
+        "sourcePages": [
+          14
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 14,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "2270",
+            "unit": "Вт",
+            "page": 14
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 14
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-100-connection-3",
+          "modelId": "alageum-tm-standard-100",
+          "familyId": "tm-standard",
+          "page": 14,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "2270",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-160-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-160",
+        "page": 14,
+        "sourcePages": [
+          14
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 14,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "2600",
+            "unit": "Вт",
+            "page": 14
+          },
+          {
+            "label": "U к",
+            "value": "5,0",
+            "unit": "%",
+            "page": 14
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-160-connection-1",
+          "modelId": "alageum-tm-standard-160",
+          "familyId": "tm-standard",
+          "page": 14,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "2600",
+          "UkPercentRaw": "5,0",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-160-connection-2",
+        "designation": "У/Zн-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-160",
+        "page": 14,
+        "sourcePages": [
+          14
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Zн-11",
+            "unit": "",
+            "page": 14,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "3100",
+            "unit": "Вт",
+            "page": 14
+          },
+          {
+            "label": "U к",
+            "value": "5,5",
+            "unit": "%",
+            "page": 14
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-160-connection-2",
+          "modelId": "alageum-tm-standard-160",
+          "familyId": "tm-standard",
+          "page": 14,
+          "connectionGroupRaw": "У/Zн-11",
+          "PkWRaw": "3100",
+          "UkPercentRaw": "5,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-160-connection-3",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-160",
+        "page": 14,
+        "sourcePages": [
+          14
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 14,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "3100",
+            "unit": "Вт",
+            "page": 14
+          },
+          {
+            "label": "U к",
+            "value": "5,0",
+            "unit": "%",
+            "page": 14
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-160-connection-3",
+          "modelId": "alageum-tm-standard-160",
+          "familyId": "tm-standard",
+          "page": 14,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "3100",
+          "UkPercentRaw": "5,0",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-250-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-250",
+        "page": 14,
+        "sourcePages": [
+          14
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 14,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "3700",
+            "unit": "Вт",
+            "page": 14
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 14
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-250-connection-1",
+          "modelId": "alageum-tm-standard-250",
+          "familyId": "tm-standard",
+          "page": 14,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "3700",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-250-connection-2",
+        "designation": "У/Zн-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-250",
+        "page": 14,
+        "sourcePages": [
+          14
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Zн-11",
+            "unit": "",
+            "page": 14,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "4200",
+            "unit": "Вт",
+            "page": 14
+          },
+          {
+            "label": "U к",
+            "value": "4,7",
+            "unit": "%",
+            "page": 14
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-250-connection-2",
+          "modelId": "alageum-tm-standard-250",
+          "familyId": "tm-standard",
+          "page": 14,
+          "connectionGroupRaw": "У/Zн-11",
+          "PkWRaw": "4200",
+          "UkPercentRaw": "4,7",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-250-connection-3",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-250",
+        "page": 14,
+        "sourcePages": [
+          14
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 14,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "4200",
+            "unit": "Вт",
+            "page": 14
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 14
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-250-connection-3",
+          "modelId": "alageum-tm-standard-250",
+          "familyId": "tm-standard",
+          "page": 14,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "4200",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-400-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-400",
+        "page": 14,
+        "sourcePages": [
+          14
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 14,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "5500",
+            "unit": "Вт",
+            "page": 14
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 14
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-400-connection-1",
+          "modelId": "alageum-tm-standard-400",
+          "familyId": "tm-standard",
+          "page": 14,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "5500",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-400-connection-2",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-400",
+        "page": 14,
+        "sourcePages": [
+          14
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 14,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "5900",
+            "unit": "Вт",
+            "page": 14
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 14
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-400-connection-2",
+          "modelId": "alageum-tm-standard-400",
+          "familyId": "tm-standard",
+          "page": 14,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "5900",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-630-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-630",
+        "page": 14,
+        "sourcePages": [
+          14
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 14,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "7900",
+            "unit": "Вт",
+            "page": 14
+          },
+          {
+            "label": "U к",
+            "value": "5,5",
+            "unit": "%",
+            "page": 14
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-630-connection-1",
+          "modelId": "alageum-tm-standard-630",
+          "familyId": "tm-standard",
+          "page": 14,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "7900",
+          "UkPercentRaw": "5,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-630-connection-2",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-630",
+        "page": 14,
+        "sourcePages": [
+          14
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 14,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "8500",
+            "unit": "Вт",
+            "page": 14
+          },
+          {
+            "label": "U к",
+            "value": "5,5",
+            "unit": "%",
+            "page": 14
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-630-connection-2",
+          "modelId": "alageum-tm-standard-630",
+          "familyId": "tm-standard",
+          "page": 14,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "8500",
+          "UkPercentRaw": "5,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-1000-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-1000",
+        "page": 14,
+        "sourcePages": [
+          14
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 14,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "12200",
+            "unit": "Вт",
+            "page": 14
+          },
+          {
+            "label": "U к",
+            "value": "5,5",
+            "unit": "%",
+            "page": 14
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-1000-connection-1",
+          "modelId": "alageum-tm-standard-1000",
+          "familyId": "tm-standard",
+          "page": 14,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "12200",
+          "UkPercentRaw": "5,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-1000-connection-2",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-1000",
+        "page": 14,
+        "sourcePages": [
+          14
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 14,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "12200",
+            "unit": "Вт",
+            "page": 14
+          },
+          {
+            "label": "U к",
+            "value": "5,5",
+            "unit": "%",
+            "page": 14
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-1000-connection-2",
+          "modelId": "alageum-tm-standard-1000",
+          "familyId": "tm-standard",
+          "page": 14,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "12200",
+          "UkPercentRaw": "5,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-1250-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-1250",
+        "page": 14,
+        "sourcePages": [
+          14
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 14,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "15000",
+            "unit": "Вт",
+            "page": 14
+          },
+          {
+            "label": "U к",
+            "value": "6,0",
+            "unit": "%",
+            "page": 14
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-1250-connection-1",
+          "modelId": "alageum-tm-standard-1250",
+          "familyId": "tm-standard",
+          "page": 14,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "15000",
+          "UkPercentRaw": "6,0",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-1250-connection-2",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-1250",
+        "page": 14,
+        "sourcePages": [
+          14
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 14,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "15000",
+            "unit": "Вт",
+            "page": 14
+          },
+          {
+            "label": "U к",
+            "value": "6,0",
+            "unit": "%",
+            "page": 14
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-1250-connection-2",
+          "modelId": "alageum-tm-standard-1250",
+          "familyId": "tm-standard",
+          "page": 14,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "15000",
+          "UkPercentRaw": "6,0",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-1600-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-1600",
+        "page": 15,
+        "sourcePages": [
+          15
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 15,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "18000",
+            "unit": "Вт",
+            "page": 15
+          },
+          {
+            "label": "U к",
+            "value": "6,0",
+            "unit": "%",
+            "page": 15
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-1600-connection-1",
+          "modelId": "alageum-tm-standard-1600",
+          "familyId": "tm-standard",
+          "page": 15,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "18000",
+          "UkPercentRaw": "6,0",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-1600-connection-2",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-1600",
+        "page": 15,
+        "sourcePages": [
+          15
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 15,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "18000",
+            "unit": "Вт",
+            "page": 15
+          },
+          {
+            "label": "U к",
+            "value": "6,0",
+            "unit": "%",
+            "page": 15
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-1600-connection-2",
+          "modelId": "alageum-tm-standard-1600",
+          "familyId": "tm-standard",
+          "page": 15,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "18000",
+          "UkPercentRaw": "6,0",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-2000-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-2000",
+        "page": 15,
+        "sourcePages": [
+          15
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 15,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "25000",
+            "unit": "Вт",
+            "page": 15
+          },
+          {
+            "label": "U к",
+            "value": "6,0",
+            "unit": "%",
+            "page": 15
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-2000-connection-1",
+          "modelId": "alageum-tm-standard-2000",
+          "familyId": "tm-standard",
+          "page": 15,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "25000",
+          "UkPercentRaw": "6,0",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-2000-connection-2",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-2000",
+        "page": 15,
+        "sourcePages": [
+          15
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 15,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "25000",
+            "unit": "Вт",
+            "page": 15
+          },
+          {
+            "label": "U к",
+            "value": "6,0",
+            "unit": "%",
+            "page": 15
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-2000-connection-2",
+          "modelId": "alageum-tm-standard-2000",
+          "familyId": "tm-standard",
+          "page": 15,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "25000",
+          "UkPercentRaw": "6,0",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-2500-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-2500",
+        "page": 15,
+        "sourcePages": [
+          15
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 15,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "28000",
+            "unit": "Вт",
+            "page": 15
+          },
+          {
+            "label": "U к",
+            "value": "6,5",
+            "unit": "%",
+            "page": 15
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-2500-connection-1",
+          "modelId": "alageum-tm-standard-2500",
+          "familyId": "tm-standard",
+          "page": 15,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "28000",
+          "UkPercentRaw": "6,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-2500-connection-2",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-2500",
+        "page": 15,
+        "sourcePages": [
+          15
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 15,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "28000",
+            "unit": "Вт",
+            "page": 15
+          },
+          {
+            "label": "U к",
+            "value": "6,5",
+            "unit": "%",
+            "page": 15
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-2500-connection-2",
+          "modelId": "alageum-tm-standard-2500",
+          "familyId": "tm-standard",
+          "page": 15,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "28000",
+          "UkPercentRaw": "6,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      }
+    ]
+  }
+];
+export default records;

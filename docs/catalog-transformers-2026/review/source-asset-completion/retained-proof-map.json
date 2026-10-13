@@ -1,0 +1,29 @@
+{
+  "format": "alageum-accessory-retained-review-proofs-v1",
+  "sourceReview": "docs/catalog-transformers-2026/review/source-asset-completion/accessory-source-decision.json",
+  "sourceReviewSha256": "84671022234f624ee77893ac25136b4100b2a65675db051aee8172db46726ce9",
+  "evidenceKind": "CPU-rendered source/topology contact sheets; not hosted browser or WebGL QA",
+  "reproducibleScript": "frontend/scripts/render-accessory-prototype.mjs",
+  "publicSourcePage": "frontend/public/catalog-source/transformers-2026/page-085.webp",
+  "files": [
+    {
+      "sourceReviewArtifact": "geometry-contact-sheet.png",
+      "originalLocalPath": "/workspace/shared/alageum-accessories-prototype/geometry-contact-sheet.png",
+      "retainedRepositoryPath": "docs/catalog-transformers-2026/review/source-asset-completion/proofs/geometry-contact-sheet.png",
+      "sha256": "827bb437e5e8c32a4970b3f7fb1cba693102aea3bc67e4e05f9a9b392e868093",
+      "bytes": 175420
+    },
+    {
+      "sourceReviewArtifact": "icon-contact-sheet.png",
+      "originalLocalPath": "/workspace/shared/alageum-accessories-prototype/icon-contact-sheet.png",
+      "retainedRepositoryPath": "docs/catalog-transformers-2026/review/source-asset-completion/proofs/icon-contact-sheet.png",
+      "sha256": "3f5ba8d6d33ebb7a9ab6c885f7b9bc17630ac9f920ded7163012076f8aa668b9",
+      "bytes": 30305
+    }
+  ],
+  "notDuplicated": [
+    "Original supplied PDF",
+    "Original-resolution full page85 render"
+  ],
+  "hostedBrowserEvidenceStatus": "pending-publication-and-hosted-validation"
+}

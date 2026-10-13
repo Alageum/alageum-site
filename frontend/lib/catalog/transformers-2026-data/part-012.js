@@ -1,0 +1,2283 @@
+// Generated from independently reviewed source records.
+const records = [
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТМ-2000",
+    "execution": "стандартный",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      14,
+      15,
+      17
+    ],
+    "sourceRow": {
+      "designation": "ТМ-2000",
+      "electricalTablePage": 15,
+      "dimensionsTablePage": 15
+    },
+    "sourceFamilyId": "tm-standard",
+    "sourceRecordType": "explicit-model-row",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": 2000,
+    "voltage": "6(10)/0,4",
+    "voltageUnit": "кВ",
+    "cooling": null,
+    "installation": "наружной или внутренней",
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "2000",
+        "unit": "кВА",
+        "page": 15
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "page": 15
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nД/Ун-11",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Р о",
+        "value": "2600",
+        "unit": "Вт",
+        "page": 15
+      },
+      {
+        "label": "Рк",
+        "value": "25000",
+        "unit": "Вт",
+        "page": 15
+      },
+      {
+        "label": "U к",
+        "value": "6,0",
+        "unit": "%",
+        "page": 15
+      },
+      {
+        "label": "I о",
+        "value": "0,5",
+        "unit": "%",
+        "page": 15
+      },
+      {
+        "label": "L",
+        "value": "1940",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "B",
+        "value": "1358",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "2245",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A",
+        "value": "820",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A1",
+        "value": "820",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "M",
+        "value": "260",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "K",
+        "value": "250",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h",
+        "value": "200",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h1",
+        "value": "210",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Полная масса",
+        "value": "4020",
+        "unit": "кг",
+        "page": 15
+      },
+      {
+        "label": "Масса масла",
+        "value": "870",
+        "unit": "кг",
+        "page": 15
+      },
+      {
+        "label": "Температура умеренного климата",
+        "value": "от +40°C до -45°C",
+        "unit": "°C",
+        "page": 14
+      },
+      {
+        "label": "Температура холодного климата",
+        "value": "от +40°C до -60°C",
+        "unit": "°C",
+        "page": 14
+      },
+      {
+        "label": "Установка",
+        "value": "наружной или внутренней",
+        "unit": "",
+        "page": 14,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Высота установки над уровнем моря",
+        "value": "не более 1000",
+        "unit": "м",
+        "page": 14
+      },
+      {
+        "label": "Исключенные условия работы",
+        "value": "тряска, вибрация, удары, химически активная среда",
+        "unit": "",
+        "page": 14,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Регулирование напряжения ПБВ со стороны ВН",
+        "value": "±2x2,5",
+        "unit": "%",
+        "page": 14
+      },
+      {
+        "label": "Климатическое исполнение",
+        "value": "У1",
+        "unit": "",
+        "page": 14,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Маслорасширитель",
+        "value": "установлен на крышке бака; вентиляционное отверстие соединенное через воздухоочиститель",
+        "unit": "",
+        "page": 14,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Диапазон мощности (текст)",
+        "value": "25–2500",
+        "unit": "кВА",
+        "page": 14
+      }
+    ],
+    "notes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed.",
+      "Heading and table include 16 кВА, but body states Диапазон мощности – 25–2500 кВА. Both preserved; not corrected."
+    ],
+    "image": "/catalog-source/transformers-2026/page-015.webp",
+    "imageSourcePage": 15,
+    "imageCaption": "Страница 15 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "2000",
+        "unit": "кВА",
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "electrical"
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "electrical"
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nД/Ун-11",
+        "unit": null,
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "electrical"
+      },
+      {
+        "label": "Р о",
+        "value": "2600",
+        "unit": "Вт",
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "electrical"
+      },
+      {
+        "label": "Рк",
+        "value": "25000",
+        "unit": "Вт",
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "electrical"
+      },
+      {
+        "label": "U к",
+        "value": "6,0",
+        "unit": "%",
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "electrical"
+      },
+      {
+        "label": "I о",
+        "value": "0,5",
+        "unit": "%",
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "electrical"
+      },
+      {
+        "label": "L",
+        "value": "1940",
+        "unit": null,
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "electrical"
+      },
+      {
+        "label": "B",
+        "value": "1358",
+        "unit": null,
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "electrical"
+      },
+      {
+        "label": "H",
+        "value": "2245",
+        "unit": null,
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A",
+        "value": "820",
+        "unit": null,
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A1",
+        "value": "820",
+        "unit": null,
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "M",
+        "value": "260",
+        "unit": null,
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "K",
+        "value": "250",
+        "unit": null,
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h",
+        "value": "200",
+        "unit": null,
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h1",
+        "value": "210",
+        "unit": null,
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Полная масса",
+        "value": "4020",
+        "unit": "кг",
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Масса масла",
+        "value": "870",
+        "unit": "кг",
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "dimensions-and-masses"
+      }
+    ],
+    "id": "alageum-tm-standard-2000",
+    "name": "ТМ-2000 (стандартный)",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-tm-standard",
+    "familyName": "Трансформаторы ТМ-16-2500 кВА стандартный",
+    "series": "ТМ",
+    "subtype": "стандартный",
+    "description": "Маслорасширитель установлен на крышке бака; вентиляционное отверстие соединенное через воздухоочиститель; регулирование ПБВ со стороны ВН ±2x2,5%; У1.",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "2000",
+        "unit": "кВА",
+        "page": 15
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "page": 15
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nД/Ун-11",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Р о",
+        "value": "2600",
+        "unit": "Вт",
+        "page": 15
+      },
+      {
+        "label": "Рк",
+        "value": "25000",
+        "unit": "Вт",
+        "page": 15
+      },
+      {
+        "label": "U к",
+        "value": "6,0",
+        "unit": "%",
+        "page": 15
+      },
+      {
+        "label": "I о",
+        "value": "0,5",
+        "unit": "%",
+        "page": 15
+      },
+      {
+        "label": "L",
+        "value": "1940",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "B",
+        "value": "1358",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "2245",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A",
+        "value": "820",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A1",
+        "value": "820",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "M",
+        "value": "260",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "K",
+        "value": "250",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h",
+        "value": "200",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h1",
+        "value": "210",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Полная масса",
+        "value": "4020",
+        "unit": "кг",
+        "page": 15
+      },
+      {
+        "label": "Масса масла",
+        "value": "870",
+        "unit": "кг",
+        "page": 15
+      }
+    ],
+    "configurations": [
+      {
+        "id": "alageum-tm-standard-2000-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-2000",
+        "page": 15,
+        "sourcePages": [
+          15
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 15,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "25000",
+            "unit": "Вт",
+            "page": 15
+          },
+          {
+            "label": "U к",
+            "value": "6,0",
+            "unit": "%",
+            "page": 15
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-2000-connection-1",
+          "modelId": "alageum-tm-standard-2000",
+          "familyId": "tm-standard",
+          "page": 15,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "25000",
+          "UkPercentRaw": "6,0",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-2000-connection-2",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-2000",
+        "page": 15,
+        "sourcePages": [
+          15
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 15,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "25000",
+            "unit": "Вт",
+            "page": 15
+          },
+          {
+            "label": "U к",
+            "value": "6,0",
+            "unit": "%",
+            "page": 15
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-2000-connection-2",
+          "modelId": "alageum-tm-standard-2000",
+          "familyId": "tm-standard",
+          "page": 15,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "25000",
+          "UkPercentRaw": "6,0",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      }
+    ]
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТМ-2500",
+    "execution": "стандартный",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      14,
+      15,
+      17
+    ],
+    "sourceRow": {
+      "designation": "ТМ-2500",
+      "electricalTablePage": 15,
+      "dimensionsTablePage": 15
+    },
+    "sourceFamilyId": "tm-standard",
+    "sourceRecordType": "explicit-model-row",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": 2500,
+    "voltage": "6(10)/0,4",
+    "voltageUnit": "кВ",
+    "cooling": null,
+    "installation": "наружной или внутренней",
+    "technicalSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "2500",
+        "unit": "кВА",
+        "page": 15
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "page": 15
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nД/Ун-11",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Р о",
+        "value": "2770",
+        "unit": "Вт",
+        "page": 15
+      },
+      {
+        "label": "Рк",
+        "value": "28000",
+        "unit": "Вт",
+        "page": 15
+      },
+      {
+        "label": "U к",
+        "value": "6,5",
+        "unit": "%",
+        "page": 15
+      },
+      {
+        "label": "I о",
+        "value": "0,4",
+        "unit": "%",
+        "page": 15
+      },
+      {
+        "label": "L",
+        "value": "2115",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "B",
+        "value": "1325",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "2410",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A",
+        "value": "1070",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A1",
+        "value": "1070",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "M",
+        "value": "145",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "K",
+        "value": "260",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h",
+        "value": "160",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h1",
+        "value": "235",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Полная масса",
+        "value": "4725",
+        "unit": "кг",
+        "page": 15
+      },
+      {
+        "label": "Масса масла",
+        "value": "980",
+        "unit": "кг",
+        "page": 15
+      },
+      {
+        "label": "Температура умеренного климата",
+        "value": "от +40°C до -45°C",
+        "unit": "°C",
+        "page": 14
+      },
+      {
+        "label": "Температура холодного климата",
+        "value": "от +40°C до -60°C",
+        "unit": "°C",
+        "page": 14
+      },
+      {
+        "label": "Установка",
+        "value": "наружной или внутренней",
+        "unit": "",
+        "page": 14,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Высота установки над уровнем моря",
+        "value": "не более 1000",
+        "unit": "м",
+        "page": 14
+      },
+      {
+        "label": "Исключенные условия работы",
+        "value": "тряска, вибрация, удары, химически активная среда",
+        "unit": "",
+        "page": 14,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Регулирование напряжения ПБВ со стороны ВН",
+        "value": "±2x2,5",
+        "unit": "%",
+        "page": 14
+      },
+      {
+        "label": "Климатическое исполнение",
+        "value": "У1",
+        "unit": "",
+        "page": 14,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Маслорасширитель",
+        "value": "установлен на крышке бака; вентиляционное отверстие соединенное через воздухоочиститель",
+        "unit": "",
+        "page": 14,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Диапазон мощности (текст)",
+        "value": "25–2500",
+        "unit": "кВА",
+        "page": 14
+      }
+    ],
+    "notes": [
+      "L, B, H and other lettered dimensional columns carry no explicit unit in these tables; unit left null rather than assumed.",
+      "Heading and table include 16 кВА, but body states Диапазон мощности – 25–2500 кВА. Both preserved; not corrected."
+    ],
+    "image": "/catalog-source/transformers-2026/page-015.webp",
+    "imageSourcePage": 15,
+    "imageCaption": "Страница 15 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "2500",
+        "unit": "кВА",
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "electrical"
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "electrical"
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nД/Ун-11",
+        "unit": null,
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "electrical"
+      },
+      {
+        "label": "Р о",
+        "value": "2770",
+        "unit": "Вт",
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "electrical"
+      },
+      {
+        "label": "Рк",
+        "value": "28000",
+        "unit": "Вт",
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "electrical"
+      },
+      {
+        "label": "U к",
+        "value": "6,5",
+        "unit": "%",
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "electrical"
+      },
+      {
+        "label": "I о",
+        "value": "0,4",
+        "unit": "%",
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "electrical"
+      },
+      {
+        "label": "L",
+        "value": "2115",
+        "unit": null,
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "electrical"
+      },
+      {
+        "label": "B",
+        "value": "1325",
+        "unit": null,
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "electrical"
+      },
+      {
+        "label": "H",
+        "value": "2410",
+        "unit": null,
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A",
+        "value": "1070",
+        "unit": null,
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "A1",
+        "value": "1070",
+        "unit": null,
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "M",
+        "value": "145",
+        "unit": null,
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "K",
+        "value": "260",
+        "unit": null,
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h",
+        "value": "160",
+        "unit": null,
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "h1",
+        "value": "235",
+        "unit": null,
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Полная масса",
+        "value": "4725",
+        "unit": "кг",
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "dimensions-and-masses"
+      },
+      {
+        "label": "Масса масла",
+        "value": "980",
+        "unit": "кг",
+        "pdfPage": 15,
+        "printedPage": "15",
+        "table": "dimensions-and-masses"
+      }
+    ],
+    "id": "alageum-tm-standard-2500",
+    "name": "ТМ-2500 (стандартный)",
+    "recordKind": "variant",
+    "recordType": "catalog-model",
+    "familyId": "tr2026-family-tm-standard",
+    "familyName": "Трансформаторы ТМ-16-2500 кВА стандартный",
+    "series": "ТМ",
+    "subtype": "стандартный",
+    "description": "Маслорасширитель установлен на крышке бака; вентиляционное отверстие соединенное через воздухоочиститель; регулирование ПБВ со стороны ВН ±2x2,5%; У1.",
+    "variantSpecs": [
+      {
+        "label": "Номинальная мощность",
+        "value": "2500",
+        "unit": "кВА",
+        "page": 15
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "page": 15
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0\nД/Ун-11",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Р о",
+        "value": "2770",
+        "unit": "Вт",
+        "page": 15
+      },
+      {
+        "label": "Рк",
+        "value": "28000",
+        "unit": "Вт",
+        "page": 15
+      },
+      {
+        "label": "U к",
+        "value": "6,5",
+        "unit": "%",
+        "page": 15
+      },
+      {
+        "label": "I о",
+        "value": "0,4",
+        "unit": "%",
+        "page": 15
+      },
+      {
+        "label": "L",
+        "value": "2115",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "B",
+        "value": "1325",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "H",
+        "value": "2410",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A",
+        "value": "1070",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "A1",
+        "value": "1070",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "M",
+        "value": "145",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "K",
+        "value": "260",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h",
+        "value": "160",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "h1",
+        "value": "235",
+        "unit": "",
+        "page": 15,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Полная масса",
+        "value": "4725",
+        "unit": "кг",
+        "page": 15
+      },
+      {
+        "label": "Масса масла",
+        "value": "980",
+        "unit": "кг",
+        "page": 15
+      }
+    ],
+    "configurations": [
+      {
+        "id": "alageum-tm-standard-2500-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-2500",
+        "page": 15,
+        "sourcePages": [
+          15
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 15,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "28000",
+            "unit": "Вт",
+            "page": 15
+          },
+          {
+            "label": "U к",
+            "value": "6,5",
+            "unit": "%",
+            "page": 15
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-2500-connection-1",
+          "modelId": "alageum-tm-standard-2500",
+          "familyId": "tm-standard",
+          "page": 15,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "28000",
+          "UkPercentRaw": "6,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tm-standard-2500-connection-2",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tm-standard-2500",
+        "page": 15,
+        "sourcePages": [
+          15
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 15,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "28000",
+            "unit": "Вт",
+            "page": 15
+          },
+          {
+            "label": "U к",
+            "value": "6,5",
+            "unit": "%",
+            "page": 15
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tm-standard-2500-connection-2",
+          "modelId": "alageum-tm-standard-2500",
+          "familyId": "tm-standard",
+          "page": 15,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "28000",
+          "UkPercentRaw": "6,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      }
+    ]
+  },
+  {
+    "category": "transformers",
+    "productKind": "transformer",
+    "sku": null,
+    "designation": "ТМГэ-энергосберегающие трансформаторы с уровнем потерь Х2К1 согласно стандарта ПАО «РОССЕТИ» СТО 34.01-3.2-011-2017",
+    "execution": "Х2К1",
+    "source": "official",
+    "sourceKind": "supplied-pdf",
+    "sourceId": "transformers-2026",
+    "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+    "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+    "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+    "sourceTitle": "Технический каталог трансформаторов · 18.03.2026",
+    "sourcePages": [
+      18,
+      19,
+      22,
+      23
+    ],
+    "sourceRow": null,
+    "sourceFamilyId": "tmge-x2k1",
+    "sourceRecordType": "family",
+    "manufacturer": null,
+    "manufacturers": [],
+    "manufacturerEvidencePages": [],
+    "brand": "Alageum electric",
+    "isOrderableSku": false,
+    "power": null,
+    "voltage": null,
+    "voltageUnit": "",
+    "cooling": null,
+    "installation": "наружной или внутренней",
+    "technicalSpecs": [
+      {
+        "label": "Температура умеренного климата",
+        "value": "от +40°C до -45°C",
+        "unit": "°C",
+        "page": 18
+      },
+      {
+        "label": "Температура холодного климата",
+        "value": "от +40°C до -60°C",
+        "unit": "°C",
+        "page": 18
+      },
+      {
+        "label": "Установка",
+        "value": "наружной или внутренней",
+        "unit": "",
+        "page": 18,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Стандарт потерь",
+        "value": "ПАО «РОССЕТИ» СТО 34.01-3.2-011-2017",
+        "unit": "",
+        "page": 18,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      },
+      {
+        "label": "Класс / уровень потерь",
+        "value": "Х2К1",
+        "unit": "",
+        "page": 18,
+        "sourceUnit": null,
+        "unitStatus": "not-stated"
+      }
+    ],
+    "notes": [],
+    "image": "/catalog-source/transformers-2026/page-018.webp",
+    "imageSourcePage": 18,
+    "imageCaption": "Страница 18 исходного каталога; не фотография изделия",
+    "documentCount": 1,
+    "rawSourceSpecs": [
+      {
+        "label": "Температура умеренного климата",
+        "value": "от +40°C до -45°C",
+        "unit": "°C",
+        "page": 18
+      },
+      {
+        "label": "Температура холодного климата",
+        "value": "от +40°C до -60°C",
+        "unit": "°C",
+        "page": 18
+      },
+      {
+        "label": "Установка",
+        "value": "наружной или внутренней",
+        "unit": null,
+        "page": 18
+      },
+      {
+        "label": "Стандарт потерь",
+        "value": "ПАО «РОССЕТИ» СТО 34.01-3.2-011-2017",
+        "unit": null,
+        "page": 18
+      },
+      {
+        "label": "Класс / уровень потерь",
+        "value": "Х2К1",
+        "unit": null,
+        "page": 18
+      }
+    ],
+    "id": "tr2026-family-tmge-x2k1",
+    "name": "ТМГэ-энергосберегающие трансформаторы с уровнем потерь Х2К1 согласно стандарта ПАО «РОССЕТИ» СТО 34.01-3.2-011-2017",
+    "recordKind": "family",
+    "recordType": "catalog-family",
+    "series": "ТМГэ",
+    "subtype": "Х2К1",
+    "description": "Энергоэффективный, класс Х2К1; 63–2500 кВА; трехфазный силовой масляный.",
+    "variantIds": [
+      "alageum-tmge-x2k1-63",
+      "alageum-tmge-x2k1-100",
+      "alageum-tmge-x2k1-160",
+      "alageum-tmge-x2k1-250",
+      "alageum-tmge-x2k1-400",
+      "alageum-tmge-x2k1-630",
+      "alageum-tmge-x2k1-1000",
+      "alageum-tmge-x2k1-1250",
+      "alageum-tmge-x2k1-1600",
+      "alageum-tmge-x2k1-2500"
+    ],
+    "configurations": [
+      {
+        "id": "alageum-tmge-x2k1-63-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmge-x2k1-63",
+        "page": 18,
+        "sourcePages": [
+          18
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 18,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "1280",
+            "unit": "Вт",
+            "page": 18
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 18
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmge-x2k1-63-connection-1",
+          "modelId": "alageum-tmge-x2k1-63",
+          "familyId": "tmge-x2k1",
+          "page": 18,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "1280",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmge-x2k1-63-connection-2",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmge-x2k1-63",
+        "page": 18,
+        "sourcePages": [
+          18
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 18,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "1280",
+            "unit": "Вт",
+            "page": 18
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 18
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmge-x2k1-63-connection-2",
+          "modelId": "alageum-tmge-x2k1-63",
+          "familyId": "tmge-x2k1",
+          "page": 18,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "1280",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmge-x2k1-100-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmge-x2k1-100",
+        "page": 18,
+        "sourcePages": [
+          18
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 18,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "1970",
+            "unit": "Вт",
+            "page": 18
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 18
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmge-x2k1-100-connection-1",
+          "modelId": "alageum-tmge-x2k1-100",
+          "familyId": "tmge-x2k1",
+          "page": 18,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "1970",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmge-x2k1-100-connection-2",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmge-x2k1-100",
+        "page": 18,
+        "sourcePages": [
+          18
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 18,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "1970",
+            "unit": "Вт",
+            "page": 18
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 18
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmge-x2k1-100-connection-2",
+          "modelId": "alageum-tmge-x2k1-100",
+          "familyId": "tmge-x2k1",
+          "page": 18,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "1970",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmge-x2k1-160-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmge-x2k1-160",
+        "page": 18,
+        "sourcePages": [
+          18
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 18,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "2900",
+            "unit": "Вт",
+            "page": 18
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 18
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmge-x2k1-160-connection-1",
+          "modelId": "alageum-tmge-x2k1-160",
+          "familyId": "tmge-x2k1",
+          "page": 18,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "2900",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmge-x2k1-160-connection-2",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmge-x2k1-160",
+        "page": 18,
+        "sourcePages": [
+          18
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 18,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "2900",
+            "unit": "Вт",
+            "page": 18
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 18
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmge-x2k1-160-connection-2",
+          "modelId": "alageum-tmge-x2k1-160",
+          "familyId": "tmge-x2k1",
+          "page": 18,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "2900",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmge-x2k1-250-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmge-x2k1-250",
+        "page": 18,
+        "sourcePages": [
+          18
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 18,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "3700",
+            "unit": "Вт",
+            "page": 18
+          },
+          {
+            "label": "U к",
+            "value": "4,0",
+            "unit": "%",
+            "page": 18
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmge-x2k1-250-connection-1",
+          "modelId": "alageum-tmge-x2k1-250",
+          "familyId": "tmge-x2k1",
+          "page": 18,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "3700",
+          "UkPercentRaw": "4,0",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmge-x2k1-250-connection-2",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmge-x2k1-250",
+        "page": 18,
+        "sourcePages": [
+          18
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 18,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "3700",
+            "unit": "Вт",
+            "page": 18
+          },
+          {
+            "label": "U к",
+            "value": "4,0",
+            "unit": "%",
+            "page": 18
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmge-x2k1-250-connection-2",
+          "modelId": "alageum-tmge-x2k1-250",
+          "familyId": "tmge-x2k1",
+          "page": 18,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "3700",
+          "UkPercentRaw": "4,0",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmge-x2k1-400-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmge-x2k1-400",
+        "page": 18,
+        "sourcePages": [
+          18
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 18,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "5400",
+            "unit": "Вт",
+            "page": 18
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 18
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmge-x2k1-400-connection-1",
+          "modelId": "alageum-tmge-x2k1-400",
+          "familyId": "tmge-x2k1",
+          "page": 18,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "5400",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmge-x2k1-400-connection-2",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmge-x2k1-400",
+        "page": 18,
+        "sourcePages": [
+          18
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 18,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "5400",
+            "unit": "Вт",
+            "page": 18
+          },
+          {
+            "label": "U к",
+            "value": "4,5",
+            "unit": "%",
+            "page": 18
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmge-x2k1-400-connection-2",
+          "modelId": "alageum-tmge-x2k1-400",
+          "familyId": "tmge-x2k1",
+          "page": 18,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "5400",
+          "UkPercentRaw": "4,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmge-x2k1-630-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmge-x2k1-630",
+        "page": 18,
+        "sourcePages": [
+          18
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 18,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "7600",
+            "unit": "Вт",
+            "page": 18
+          },
+          {
+            "label": "U к",
+            "value": "5,5",
+            "unit": "%",
+            "page": 18
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmge-x2k1-630-connection-1",
+          "modelId": "alageum-tmge-x2k1-630",
+          "familyId": "tmge-x2k1",
+          "page": 18,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "7600",
+          "UkPercentRaw": "5,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmge-x2k1-630-connection-2",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmge-x2k1-630",
+        "page": 18,
+        "sourcePages": [
+          18
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 18,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "7600",
+            "unit": "Вт",
+            "page": 18
+          },
+          {
+            "label": "U к",
+            "value": "5,5",
+            "unit": "%",
+            "page": 18
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmge-x2k1-630-connection-2",
+          "modelId": "alageum-tmge-x2k1-630",
+          "familyId": "tmge-x2k1",
+          "page": 18,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "7600",
+          "UkPercentRaw": "5,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmge-x2k1-1000-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmge-x2k1-1000",
+        "page": 18,
+        "sourcePages": [
+          18
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 18,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "10600",
+            "unit": "Вт",
+            "page": 18
+          },
+          {
+            "label": "U к",
+            "value": "5,5",
+            "unit": "%",
+            "page": 18
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmge-x2k1-1000-connection-1",
+          "modelId": "alageum-tmge-x2k1-1000",
+          "familyId": "tmge-x2k1",
+          "page": 18,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "10600",
+          "UkPercentRaw": "5,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmge-x2k1-1000-connection-2",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmge-x2k1-1000",
+        "page": 18,
+        "sourcePages": [
+          18
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 18,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "10600",
+            "unit": "Вт",
+            "page": 18
+          },
+          {
+            "label": "U к",
+            "value": "5,5",
+            "unit": "%",
+            "page": 18
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmge-x2k1-1000-connection-2",
+          "modelId": "alageum-tmge-x2k1-1000",
+          "familyId": "tmge-x2k1",
+          "page": 18,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "10600",
+          "UkPercentRaw": "5,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmge-x2k1-1250-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmge-x2k1-1250",
+        "page": 18,
+        "sourcePages": [
+          18
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 18,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "13500",
+            "unit": "Вт",
+            "page": 18
+          },
+          {
+            "label": "U к",
+            "value": "6,5",
+            "unit": "%",
+            "page": 18
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmge-x2k1-1250-connection-1",
+          "modelId": "alageum-tmge-x2k1-1250",
+          "familyId": "tmge-x2k1",
+          "page": 18,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "13500",
+          "UkPercentRaw": "6,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmge-x2k1-1250-connection-2",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmge-x2k1-1250",
+        "page": 18,
+        "sourcePages": [
+          18
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 18,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "13500",
+            "unit": "Вт",
+            "page": 18
+          },
+          {
+            "label": "U к",
+            "value": "6,5",
+            "unit": "%",
+            "page": 18
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmge-x2k1-1250-connection-2",
+          "modelId": "alageum-tmge-x2k1-1250",
+          "familyId": "tmge-x2k1",
+          "page": 18,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "13500",
+          "UkPercentRaw": "6,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmge-x2k1-1600-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmge-x2k1-1600",
+        "page": 18,
+        "sourcePages": [
+          18
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 18,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "16500",
+            "unit": "Вт",
+            "page": 18
+          },
+          {
+            "label": "U к",
+            "value": "6,0",
+            "unit": "%",
+            "page": 18
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmge-x2k1-1600-connection-1",
+          "modelId": "alageum-tmge-x2k1-1600",
+          "familyId": "tmge-x2k1",
+          "page": 18,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "16500",
+          "UkPercentRaw": "6,0",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmge-x2k1-1600-connection-2",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmge-x2k1-1600",
+        "page": 18,
+        "sourcePages": [
+          18
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 18,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "16500",
+            "unit": "Вт",
+            "page": 18
+          },
+          {
+            "label": "U к",
+            "value": "6,0",
+            "unit": "%",
+            "page": 18
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmge-x2k1-1600-connection-2",
+          "modelId": "alageum-tmge-x2k1-1600",
+          "familyId": "tmge-x2k1",
+          "page": 18,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "16500",
+          "UkPercentRaw": "6,0",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmge-x2k1-2500-connection-1",
+        "designation": "У/Ун-0",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmge-x2k1-2500",
+        "page": 18,
+        "sourcePages": [
+          18
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "У/Ун-0",
+            "unit": "",
+            "page": 18,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "26500",
+            "unit": "Вт",
+            "page": 18
+          },
+          {
+            "label": "U к",
+            "value": "6,5",
+            "unit": "%",
+            "page": 18
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmge-x2k1-2500-connection-1",
+          "modelId": "alageum-tmge-x2k1-2500",
+          "familyId": "tmge-x2k1",
+          "page": 18,
+          "connectionGroupRaw": "У/Ун-0",
+          "PkWRaw": "26500",
+          "UkPercentRaw": "6,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      },
+      {
+        "id": "alageum-tmge-x2k1-2500-connection-2",
+        "designation": "Д/Ун-11",
+        "kind": "configuration",
+        "sourceKind": "printed-connection-option",
+        "modelId": "alageum-tmge-x2k1-2500",
+        "page": 18,
+        "sourcePages": [
+          18
+        ],
+        "specifications": [
+          {
+            "label": "Группа соединения обмоток",
+            "value": "Д/Ун-11",
+            "unit": "",
+            "page": 18,
+            "sourceUnit": null,
+            "unitStatus": "not-stated"
+          },
+          {
+            "label": "Рк",
+            "value": "26500",
+            "unit": "Вт",
+            "page": 18
+          },
+          {
+            "label": "U к",
+            "value": "6,5",
+            "unit": "%",
+            "page": 18
+          }
+        ],
+        "isOrderableSku": false,
+        "sourceRow": null,
+        "rawSource": {
+          "id": "alageum-tmge-x2k1-2500-connection-2",
+          "modelId": "alageum-tmge-x2k1-2500",
+          "familyId": "tmge-x2k1",
+          "page": 18,
+          "connectionGroupRaw": "Д/Ун-11",
+          "PkWRaw": "26500",
+          "UkPercentRaw": "6,5",
+          "scope": "Printed connection option; no synthetic SKU generated"
+        },
+        "notes": []
+      }
+    ]
+  }
+];
+export default records;

@@ -1,0 +1,29 @@
+.viewer { width:100%; min-width:0; color:var(--ink,#181a1c); background:#f4f4f4; border:1px solid #e4e4e4; border-radius:4px; overflow:hidden; }
+.topline { display:flex; align-items:center; justify-content:space-between; padding:18px 20px 0; gap:10px; color:#777777; font-size:10px; line-height:1.3; font-weight:700; letter-spacing:.12em; }
+.badge { display:inline-flex; align-items:center; justify-content:center; min-width:29px; height:24px; border:1px solid #d3d3d3; border-radius:3px; font-size:10px; letter-spacing:0; }
+.viewport { position:relative; width:100%; height:330px; background:radial-gradient(ellipse at 50% 60%,#fff 0%,rgba(255,255,255,0) 67%); }
+.canvas { display:block; width:100%; height:100%; cursor:grab; touch-action:none; }
+.canvas:active { cursor:grabbing; }
+.canvas:focus-visible { outline:2px solid var(--brand-red,#ce1528); outline-offset:-4px; }
+.preview { display:flex; height:100%; align-items:center; justify-content:center; flex-direction:column; gap:16px; padding:18px 20px 78px; color:#505d5e; }
+.previewLabel { text-align:center; font-size:14px; line-height:1.4; color:#303b3b; }
+.activate { position:absolute; bottom:18px; left:50%; transform:translateX(-50%); display:flex; align-items:center; justify-content:center; gap:10px; min-height:44px; padding:11px 17px; border:1px solid #d1d1d1; border-radius:3px; background:white; color:#3a3a3a; white-space:nowrap; font-size:12px; font-weight:600; }
+.activate:hover { border-color:#939393; background:#fefefe; }
+.activate>span { font-size:19px; line-height:1; color:var(--brand-red,#ce1528); }
+.loading { position:absolute; inset:0; display:grid; place-items:center; background:rgba(244,244,244,.85); color:#515151; font-size:13px; }
+.controls { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:5px; padding:0 14px 8px; }
+.controls button,.retry { display:inline-flex; justify-content:center; align-items:center; min-width:40px; min-height:40px; padding:8px; border:1px solid #dadada; border-radius:3px; color:#3e3e3e; background:#fff; font-size:19px; line-height:1; }
+.controls button:hover,.retry:hover { border-color:#8d8d8d; background:#fdfdfd; }
+.controls .reset,.controls .close,.retry { padding:8px 11px; font-size:12px; line-height:1.2; }
+.controls .close { background:transparent; }
+.help { margin:0; padding:8px 20px 12px; text-align:center; font-size:11px; line-height:1.55; color:#6b6b6b; }
+.disclosure { margin:0; padding:13px 20px; color:#6f6f6f; background:#ececec; border-top:1px solid #dddddd; font-size:11px; line-height:1.55; }
+.fallback { position:absolute; inset:auto 16px 0; padding:10px; text-align:center; color:#696969; }
+.fallback p { margin:0 0 9px; font-size:11px; line-height:1.4; }
+.viewer[data-model-status="error"] .preview { padding-bottom:123px; }
+.viewer[data-model-status="error"] .preview>svg { width:105px; height:105px; }
+@media(max-width:640px) { .viewport { height:300px; } .topline { padding:14px 16px 0; } .help,.disclosure { padding-left:16px; padding-right:16px; } .controls { gap:4px; padding-left:8px; padding-right:8px; } .controls button { min-width:38px; } }
+
+/* This accepted icon has opaque occlusion layers. Its new type uses a solid
+   preview surface so every fill matches exactly, including no-WebGL fallback. */
+.viewer[data-equipment-model="tr26-measurement-column-zom-znom-source"] .viewport { background:#f4f4f4; --equipment-icon-surface:#f4f4f4; }

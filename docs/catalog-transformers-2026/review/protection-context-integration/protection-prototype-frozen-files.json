@@ -1,0 +1,191 @@
+{
+  "format": "alageum-protection-example-prototype-v1",
+  "frozenAt": "2026-10-06T14:14:27.632819+00:00",
+  "baseCommit": "a68a0fe2f234d7375338671cca20940257ab695b",
+  "baseTree": "48e8af658763f78c7a1efc7df54d9ab4388bea96",
+  "candidateTree": "15f1923f3146225258afc011423edefa57c154b4",
+  "candidateCommit": null,
+  "clonePath": "/workspace/scratch/3e2b26bde66a/alageum-protection-example-prototype",
+  "status": "frozen-offline-prototypes-independent-review-required",
+  "files": [
+    {
+      "path": "frontend/lib/catalog/models/protectionExampleTypes.js",
+      "sha256": "6de7d7a8331548541d792df1b0773c5b87499b60afaa4bffc6b0d10573683c16",
+      "bytes": 3941
+    },
+    {
+      "path": "frontend/lib/catalog/models/protectionExampleGeometry.js",
+      "sha256": "4d545c102d7b8443f4ce18b80df9449b2db56fd5cbb6d13f58066a5fea02bef9",
+      "bytes": 4208
+    },
+    {
+      "path": "frontend/lib/catalog/models/protectionExampleIcons.js",
+      "sha256": "0491652d699058cb87b564cf31ac58b43dcc59c776c27348a0f422745e7c25dd",
+      "bytes": 3407
+    },
+    {
+      "path": "frontend/lib/catalog/models/protectionExampleSourceReview.md",
+      "sha256": "be53a10309369587404148d24346ef5886af8e4a5f9ae4ec1be948032d183df4",
+      "bytes": 5431
+    },
+    {
+      "path": "frontend/scripts/render-protection-example-prototype.mjs",
+      "sha256": "98b7b076be41302c34368411e54b9f35a4a643116b26450b5e4b543d4716b54a",
+      "bytes": 10191
+    },
+    {
+      "path": "frontend/tests/protection-example-prototype.test.mjs",
+      "sha256": "af09b348c6fc9a81d67d79d10bd47f689a91aa621442083ecfae07735d8d1f7d",
+      "bytes": 13127
+    }
+  ],
+  "patch": {
+    "path": "prototype.patch",
+    "sha256": "80596042e135f86fd2de5070fa1b2f8533e7e4a24bc3715a54d7a7a31b3e5459"
+  },
+  "models": [
+    "source69-ptm-u1-example",
+    "source69-tde9-u3-example"
+  ],
+  "iconOnlyTypes": [
+    "source69-paired-protection-examples-icon"
+  ],
+  "futureConsumers": [
+    {
+      "recordId": "cat-ptm-tded-v012",
+      "type": "source69-ptm-u1-example",
+      "scope": [
+        "geometry",
+        "icon"
+      ]
+    },
+    {
+      "recordId": "cat-ptm-tded-v013",
+      "type": "source69-tde9-u3-example",
+      "scope": [
+        "geometry",
+        "icon"
+      ]
+    },
+    {
+      "recordId": "cat-ptm-tded",
+      "type": "source69-paired-protection-examples-icon",
+      "scope": [
+        "icon"
+      ],
+      "geometryType": null
+    }
+  ],
+  "runtimeEligible": false,
+  "newProducts": 0,
+  "newDefaultBindings": 0,
+  "confidencePromotions": 0,
+  "coverageCountChanges": 0,
+  "publicationActions": 0,
+  "existingFileEdits": 0,
+  "sourcePage": {
+    "url": "/catalog/source?page=69",
+    "image": "/catalog-source/page-069.webp",
+    "sha256": "4f0833448f3519f9519a2e09fa62b4c28016665b4cd8e95c7341b17042ff5885"
+  },
+  "inputReviewSha256": "9b5dab74676891728eea53145afbcdcc5a51961a6877cc520a372fb09c546758",
+  "featureDecisions": {
+    "path": "source-feature-decisions.json",
+    "sha256": "bdf3f8102136a14d9ed54d5b88df5467805336ef471f7054204577ac687970bc"
+  },
+  "protectedBaselineFiles": [
+    {
+      "path": "frontend/lib/catalog/models/geometry.js",
+      "sha256": "aa2c046751a420a4a8c7f0a49f97a2157f0e6caee545ef8c443ede44e09a2d8d",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/lib/catalog/models/sourceGeometry.js",
+      "sha256": "ee9d74f87bdc4d5a62394dd0dc23d6a8a4f60ba2b241cc4474db6ead6d12af40",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/components/catalog/EquipmentIcon.js",
+      "sha256": "9517b53f5a014b93ef17f0b253614c7a24bc8ae8e08d1a1f1cf59583d3e0b49a",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/lib/catalog/models/sourceIconShapesB.js",
+      "sha256": "254b24bd3aa663d23cbf5fe78408cf47f34a0884c0f4168981df5abddcafe923",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/lib/catalog/models/sourceIconMapB.js",
+      "sha256": "05ce3f82f143e4d29216bfdd56c4065a926bfda68a65ebc65cdeb8f4867074b6",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/lib/catalog/models/iconTypes.js",
+      "sha256": "08f653897063587814d1605df638ae0b97d8d2aae170b132dcc4aa8e19d9bf1c",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/lib/catalog/models/types.js",
+      "sha256": "0c91c7f469ffe02b337eb71af958bbd65d85cb3b04df2c21ceb3c08eff061fd5",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/lib/catalog/models/visualMap.js",
+      "sha256": "b2caad1e6718d69098e8e3c4c9770e6b9e3a372bd33fba05eb6d59e16ade9358",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/lib/catalog/models/sourceConstructions.js",
+      "sha256": "6ace0d7987d83d5c28d2a15900b8a48b560e594eb3cb6ea69b8dfe61b024c1b8",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/lib/catalog/models/iconMap.js",
+      "sha256": "6207843c89358731cfd67edbbc41009e62657a1faf6c346bf9a8ab1b9e37c24a",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/lib/catalog/sources.js",
+      "sha256": "e7a4165464c8687bfb3151be9ddf84398d295a912f78f04d352cbc6c4dffbb07",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/lib/catalog/imported-data/part-019.js",
+      "sha256": "70591ca3a33b74d7b0ff9bb84b08cc4b454c768548db67bd584b4707d5a2bf5d",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/lib/catalog/imported-data/part-020.js",
+      "sha256": "2900aead2469364250de5543d7d25cd2e8dc05246b1ad712eb410163b8b9b5c1",
+      "unchanged": true
+    }
+  ],
+  "preservedRuntimeConsumers": "Family existing paired icon/null model; v001–v011 typical shared icons/null models; v012/v013 existing source-based icon/source-matched model bindings unchanged",
+  "validation": {
+    "tests": 21,
+    "passed": 21,
+    "failed": 0,
+    "newFocusedTests": 9,
+    "lint": "passed",
+    "cpuModelViews": 12,
+    "cpuViewMarginsVerified": true,
+    "icons": 3,
+    "listingSizes": [
+      28,
+      32,
+      40,
+      48,
+      56,
+      64,
+      96,
+      148
+    ],
+    "sourceCropPixelsEqualOriginal": true,
+    "allModelViewSheetsAndIconSheetInspected": true,
+    "originalSourceAndExistingCPUViewsInspected": true,
+    "browserOrWebGLClaim": false,
+    "fullBuildOrFullUnitSuiteClaim": false,
+    "patchReverseCheck": "passed"
+  },
+  "testDependencySetup": "Ignored local symlink to already installed baseline node_modules; no package, dependency or lockfile changes"
+}

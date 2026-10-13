@@ -1,0 +1,36 @@
+{
+  "name": "alageum-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "test:e2e": "playwright test",
+    "test:e2e:catalog": "playwright test --config=playwright.catalog.config.js",
+    "test:e2e:document": "playwright test --config=playwright.document.config.js",
+    "test:e2e:invoice": "playwright test --config=playwright.invoice.config.js",
+    "test:e2e:orders": "playwright test --config=playwright.orders.config.js",
+    "test:unit": "node --test tests/*.test.mjs",
+    "build:preview": "node scripts/build-preview.mjs",
+    "check": "npm run lint && npm run test:unit && npm run build",
+    "test:e2e:admin": "playwright test --config=playwright.admin.config.js",
+    "test:e2e:vercel": "playwright test --config=playwright.vercel.config.js",
+    "test:e2e:company": "playwright test --config=playwright.company.config.js",
+    "audit:company": "node scripts/audit-company-pages.mjs",
+    "test:e2e:quotes": "playwright test --config=playwright.quotes.config.js",
+    "test:e2e:quote-print": "playwright test --config=playwright.quote-print.config.js"
+  },
+  "dependencies": {
+    "next": "16.3.8",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.62.1",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.3.8"
+  }
+}

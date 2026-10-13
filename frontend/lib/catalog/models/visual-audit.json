@@ -1,0 +1,3769 @@
+{
+  "auditedAt": "2026-10-01",
+  "scope": "Existing source pixels, shared outer construction only; no exact CAD or dimensional equivalence",
+  "counts": {
+    "officialRecords": 238,
+    "importedRecords": 224,
+    "importedFamilies": 65,
+    "sourceImages": 59,
+    "records": {
+      "generic": 14,
+      "source-matched": 123,
+      "source-only": 91,
+      "unverified": 10
+    },
+    "families": {
+      "source-matched": 25,
+      "source-only": 34,
+      "unverified": 6
+    }
+  },
+  "sourceMatchedTypes": {
+    "mining-skid-substation": 10,
+    "single-door-switchgear": 2,
+    "substation": 8,
+    "compact-substation": 5,
+    "double-compact-substation": 1,
+    "kiosk-substation": 13,
+    "pole-substation": 5,
+    "distribution-cabinet": 1,
+    "plain-floor-cabinet": 2,
+    "switchgear": 2,
+    "outdoor-switchgear-shelter": 3,
+    "wall-control-box": 11,
+    "wall-box": 26,
+    "protection-cabinet": 1,
+    "wall-canopy-box": 10,
+    "control-cabinet": 1,
+    "metering-box": 4,
+    "railway-frame-substation": 10,
+    "upper-input-protection": 3,
+    "outdoor-floor-cabinet": 5
+  },
+  "families": {
+    "cat-ktp-25-250": {
+      "type": "substation",
+      "sourcePages": [
+        6
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktp-25-250.webp",
+      "reason": "Сборка из двухъярусного шкафа с верхними вводами и открытого трансформатора на общей платформе; не мачтовая МТП.",
+      "inherit": true
+    },
+    "cat-ktpn-25-3150": {
+      "type": "compact-substation",
+      "sourcePages": [
+        8
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpn-25-3150.webp",
+      "reason": "Закрытый прямоугольный корпус с двумя дверями, вентиляцией и двумя узлами ввода на крыше.",
+      "inherit": true
+    },
+    "cat-2ktpn-25-3150": {
+      "type": "double-compact-substation",
+      "sourcePages": [
+        10
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-2ktpn-25-3150.webp",
+      "reason": "Две соседние закрытые трансформаторные секции с отдельными верхними вводами; одиночная КТПН не подставляется.",
+      "inherit": true
+    },
+    "cat-ktpg-25-3150": {
+      "type": "kiosk-substation",
+      "sourcePages": [
+        12
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpg-25-3150.webp",
+      "reason": "Киоск с закрытым трансформаторным отсеком и парными дверями, без открытого бака снаружи.",
+      "inherit": true
+    },
+    "cat-2ktpg-25-3150": {
+      "type": null,
+      "sourcePages": [
+        13
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-2ktpg-25-3150.webp",
+      "reason": "Чертёж показывает два киоска и центральный шкаф АВР; одиночный киоск не соответствует этой сборке.",
+      "inherit": false
+    },
+    "cat-ktpp-2ktpp-250-6300": {
+      "type": null,
+      "sourcePages": [
+        15
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ktpp-2ktpp-250-6300.webp",
+      "reason": "Протяжённая внутренняя сборка КТПП/2КТПП с линейкой РУНН; в одном семействе разные компоновки.",
+      "inherit": false
+    },
+    "cat-ktpo-4-10": {
+      "type": null,
+      "sourcePages": [
+        17
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ktpo-4-10.webp",
+      "reason": "Узкий высокий трёхсекционный корпус с верхними вводами; отличается от МТП на опоре и обычного шкафа.",
+      "inherit": false
+    },
+    "cat-ktpto-80": {
+      "type": null,
+      "sourcePages": [
+        18
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ktpto-80.webp",
+      "reason": "Станция прогрева с открытым трансформатором за низким шкафом; обычная КТП не отражает эту компоновку.",
+      "inherit": false
+    },
+    "cat-ktps-100-1600": {
+      "type": null,
+      "sourcePages": [
+        19
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ktps-100-1600.webp",
+      "reason": "Открытая площадка 35 кВ с ограждением, лестницей и высоковольтной рамой; не компактная КТП.",
+      "inherit": false
+    },
+    "cat-mtp-25-100": {
+      "type": "pole-substation",
+      "sourcePages": [
+        21
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-mtp-25-100.webp",
+      "reason": "Одна мачта с верхней траверсой, открытым трансформатором на кронштейне и нижним шкафом РУНН.",
+      "inherit": true
+    },
+    "cat-mtpo-4-10": {
+      "type": null,
+      "sourcePages": [
+        22
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-mtpo-4-10.webp",
+      "reason": "Однофазная опорная компоновка с боковыми аппаратами и отличающимися траверсами; трёхфазная МТП не подставляется.",
+      "inherit": false
+    },
+    "kso-366": {
+      "type": "single-door-switchgear",
+      "sourcePages": [
+        23
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/kso-366.webp",
+      "reason": "Высокая однодверная камера с отдельным верхним отсеком; повторяется общая закрытая конструкция КСО.",
+      "inherit": true
+    },
+    "cat-kso-366m": {
+      "type": "single-door-switchgear",
+      "sourcePages": [
+        24
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-kso-366m.webp",
+      "reason": "Однодверная высокая камера с отдельной верхней панелью; общий внешний контур с КСО-366, без вывода о внутренней схеме.",
+      "inherit": true
+    },
+    "kso-2-10": {
+      "type": null,
+      "sourcePages": [
+        25
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/kso-2-10.webp",
+      "reason": "Релейная панель и силовой отсек отличаются от однодверной КСО-366 и трёхсекционного KERNEU; показан исходный чертёж.",
+      "inherit": false
+    },
+    "cat-kso-2-20": {
+      "type": null,
+      "sourcePages": [
+        27
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-kso-2-20.webp",
+      "reason": "Иллюстрация представляет открытый разрез с вакуумными аппаратами; закрытый фасад из неё не восстанавливается.",
+      "inherit": false
+    },
+    "kso-292": {
+      "type": null,
+      "sourcePages": [
+        28
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/kso-292.webp",
+      "reason": "Высокая камера с верхней сетчатой зоной и собственной лицевой панелью; исходная конструкция сохранена.",
+      "inherit": false
+    },
+    "cat-rmu-ae": {
+      "type": null,
+      "sourcePages": [
+        30
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-rmu-ae.webp",
+      "reason": "Многосекционный RMU с газоизолированными ячейками; одиночный шкаф не представляет эту сборку.",
+      "inherit": false
+    },
+    "cat-krn-iv": {
+      "type": null,
+      "sourcePages": [
+        31
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-krn-iv.webp",
+      "reason": "Наружная двухсекционная ячейка с уклонной крышей и вводами на крыше; не обычный внутренний шкаф.",
+      "inherit": false
+    },
+    "cat-grsh-04": {
+      "type": null,
+      "sourcePages": [
+        32
+      ],
+      "confidence": "unverified",
+      "fallbackImage": null,
+      "reason": "На странице приведены характеристики, но проверенного изображения конструкции нет.",
+      "inherit": false
+    },
+    "cat-shcho-70": {
+      "type": "distribution-cabinet",
+      "sourcePages": [
+        33
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-shcho-70.webp",
+      "reason": "Высокая распределительная панель с верхним рядом приборов, одной дверью и нижней коммутационной зоной.",
+      "inherit": true
+    },
+    "cat-shnn": {
+      "type": null,
+      "sourcePages": [
+        35
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-shnn.webp",
+      "reason": "Чертёж показывает рамную панель с открытыми боковыми зонами; вводные, секционные и линейные исполнения различаются.",
+      "inherit": false
+    },
+    "cat-shchsu-04": {
+      "type": "plain-floor-cabinet",
+      "sourcePages": [
+        36
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-shchsu-04.webp",
+      "reason": "Высокий напольный однодверный корпус без верхних вводов и внешних приборных панелей.",
+      "inherit": true
+    },
+    "cat-bktp-modular": {
+      "type": null,
+      "sourcePages": [
+        38,
+        39
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-bktp-modular.webp",
+      "reason": "Страницы 38 и 39 показывают разные здания БКТП и 2БКТП; общий значок не подтверждает конкретную компоновку.",
+      "inherit": false
+    },
+    "cat-bktp-concrete": {
+      "type": null,
+      "sourcePages": [
+        41
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-bktp-concrete.webp",
+      "reason": "Бетонное здание с собственной кровлей и расположением проёмов; не заменяется условным металлическим модулем.",
+      "inherit": false
+    },
+    "cat-kru-k07-ktz": {
+      "type": "switchgear",
+      "sourcePages": [
+        43
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-kru-k07-ktz.webp",
+      "reason": "Внутренняя выкатная ячейка с верхней релейной панелью и нижним силовым отсеком; общая конструкция, не схема аппаратов.",
+      "inherit": true
+    },
+    "cat-krun07-ktz": {
+      "type": "outdoor-switchgear-shelter",
+      "sourcePages": [
+        43
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-krun07-ktz.webp",
+      "reason": "Наружная сборка ячеек под общей двускатной кровлей на опорах.",
+      "inherit": true
+    },
+    "cat-kru-kerneu-6-10": {
+      "type": "switchgear",
+      "sourcePages": [
+        45
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-kru-kerneu-6-10.webp",
+      "reason": "Глубокая трёхсекционная ячейка с верхними приборами и выкатным силовым отсеком; исходная основа этого визуального типа.",
+      "inherit": true
+    },
+    "cat-kru-kerneu-35": {
+      "type": null,
+      "sourcePages": [
+        47
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-kru-kerneu-35.webp",
+      "reason": "Крупногабаритная глубокая ячейка 35 кВ имеет другую компоновку; геометрия 6–10 кВ не наследуется.",
+      "inherit": false
+    },
+    "cat-k8m": {
+      "type": "outdoor-switchgear-shelter",
+      "sourcePages": [
+        49
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-k8m.webp",
+      "reason": "Глубокая наружная камера в укрытии с двускатной крышей и опорными стойками; визуализируется внешний корпус.",
+      "inherit": true
+    },
+    "cat-k59": {
+      "type": "outdoor-switchgear-shelter",
+      "sourcePages": [
+        51
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-k59.webp",
+      "reason": "Наружная камера под крышей на опорных стойках; общий внешний контур с К-8М, без переноса внутренней аппаратуры.",
+      "inherit": true
+    },
+    "cat-km7m": {
+      "type": null,
+      "sourcePages": [
+        53
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-km7m.webp",
+      "reason": "Разрез выкатной камеры показывает открытую нижнюю зону и особый релейный отсек; сохранён исходник.",
+      "inherit": false
+    },
+    "cat-ktpb-k": {
+      "type": null,
+      "sourcePages": [
+        55
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ktpb-k.webp",
+      "reason": "Открытая подстанция 35/110/220 кВ с порталами и разными схемами площадки; не модульное здание БКТП.",
+      "inherit": false
+    },
+    "cat-vru": {
+      "type": null,
+      "sourcePages": [
+        60
+      ],
+      "confidence": "unverified",
+      "fallbackImage": null,
+      "reason": "Проверенного изображения конструкции нет; назначение ВРУ не определяет число и вид шкафов.",
+      "inherit": false
+    },
+    "cat-shsn-04": {
+      "type": null,
+      "sourcePages": [
+        61
+      ],
+      "confidence": "unverified",
+      "fallbackImage": null,
+      "reason": "Проверенного изображения конструкции нет; данные не подтверждают конкретный фасад шкафа.",
+      "inherit": false
+    },
+    "cat-shuot": {
+      "type": null,
+      "sourcePages": [
+        62
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-shuot.webp",
+      "reason": "Сборка из приборного шкафа и отдельной открытой батарейной стойки; одиночный шкаф не соответствует.",
+      "inherit": false
+    },
+    "cat-shtz": {
+      "type": "wall-control-box",
+      "sourcePages": [
+        63
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-shtz.webp",
+      "reason": "Неглубокий навесной ящик с верхними креплениями, дверными приборами и кнопками; не напольный шкаф.",
+      "inherit": true
+    },
+    "cat-pr-shr11": {
+      "type": null,
+      "sourcePages": [
+        64
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-pr-shr11.webp",
+      "reason": "Показана открытая панель распределения, а ПР, ПР-11 и ШР11 объединены на странице; закрытый фасад не подтверждён.",
+      "inherit": false
+    },
+    "cat-yatp": {
+      "type": "wall-control-box",
+      "sourcePages": [
+        65
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-yatp.webp",
+      "reason": "Навесной ящик с передней дверью и наружной коммутационной арматурой; общая форма корпуса, не расположение конкретных разъёмов.",
+      "inherit": true
+    },
+    "cat-ya5000-rusm5000": {
+      "type": "wall-box",
+      "sourcePages": [
+        66
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф.",
+      "inherit": true
+    },
+    "cat-yauo": {
+      "type": null,
+      "sourcePages": [
+        67
+      ],
+      "confidence": "unverified",
+      "fallbackImage": null,
+      "reason": "Текст подтверждает навесной ящик, но нет проверенного чертежа фасада и его органов управления.",
+      "inherit": false
+    },
+    "cat-rusm-5100-5400": {
+      "type": null,
+      "sourcePages": [
+        67
+      ],
+      "confidence": "unverified",
+      "fallbackImage": null,
+      "reason": "Текст описывает металлические ящики нескольких габаритов; конкретный фасад и пропорции не показаны.",
+      "inherit": false
+    },
+    "cat-ptm-tded": {
+      "type": null,
+      "sourcePages": [
+        69
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ptm-tded.webp",
+      "reason": "Страница 69 содержит разные корпуса ПТМ(Д)-У1 и ТДЕ(Д)-9-У3; наследование одного корпуса всем обозначениям запрещено.",
+      "inherit": false
+    },
+    "cat-bdrm": {
+      "type": "wall-canopy-box",
+      "sourcePages": [
+        70
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-bdrm.webp",
+      "reason": "Наружный навесной блок с козырьком, передней дверью и задними крепёжными планками. Общий чертёж страницы 70 связан с размерной таблицей; два обозначения только из схем отдельно исключены.",
+      "inherit": true
+    },
+    "cat-pusk-3m": {
+      "type": "control-cabinet",
+      "sourcePages": [
+        72
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-pusk-3m.webp",
+      "reason": "Напольный шкаф на ножках с отделённой верхней приборной панелью и передней дверью.",
+      "inherit": true
+    },
+    "cat-shueng": {
+      "type": null,
+      "sourcePages": [
+        72,
+        73
+      ],
+      "confidence": "unverified",
+      "fallbackImage": null,
+      "reason": "Даны текст и габариты, но отсутствует проверенный чертёж внешней конструкции.",
+      "inherit": false
+    },
+    "cat-kik": {
+      "type": "metering-box",
+      "sourcePages": [
+        74
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-kik.webp",
+      "reason": "Квадратная стойка с небольшой дверцей и двускатным козырьком; отдельная от СКИП форма.",
+      "inherit": true
+    },
+    "cat-skip": {
+      "type": null,
+      "sourcePages": [
+        74
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-skip.webp",
+      "reason": "Круглая трубчатая стойка с прямоугольной головкой и треугольной крышей; квадратная КИК не подставляется.",
+      "inherit": false
+    },
+    "cat-ktpzh-2-4": {
+      "type": null,
+      "sourcePages": [
+        75
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ktpzh-2-4.webp",
+      "reason": "Опорная однофазная железнодорожная сборка с боковой арматурой; трёхфазная МТП не соответствует.",
+      "inherit": false
+    },
+    "cat-ktpzh-25-1000": {
+      "type": "railway-frame-substation",
+      "sourcePages": [
+        76
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "reason": "Повторяемая наружная сборка на общей платформе: высокая вводная рама, открытый трансформатор и шкафы НН. Общий вид серии со страницы 76, не чертёж отдельной мощности.",
+      "inherit": true
+    },
+    "cat-mtpzh-1-25-2-5": {
+      "type": null,
+      "sourcePages": [
+        77
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-mtpzh-1-25-2-5.webp",
+      "reason": "Одна опора с одиночным боковым трансформатором; отсутствуют три ввода и большой бак трёхфазной МТП.",
+      "inherit": false
+    },
+    "cat-mtpzh-10": {
+      "type": null,
+      "sourcePages": [
+        78
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-mtpzh-10.webp",
+      "reason": "Компактная сборка высокого шкафа и отдельного низкого трансформатора; название МТПЖ не означает мачтовую силуэтную форму.",
+      "inherit": false
+    },
+    "cat-atp-2x25": {
+      "type": null,
+      "sourcePages": [
+        81
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-atp-2x25.webp",
+      "reason": "Специальная железнодорожная автотрансформаторная сборка на общей раме; универсальная ячейка не подходит.",
+      "inherit": false
+    },
+    "cat-psk-27-5": {
+      "type": null,
+      "sourcePages": [
+        84
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-psk-27-5.webp",
+      "reason": "Пост секционирования с несколькими компоновками и высоковольтными аппаратами; нужен исходный чертёж.",
+      "inherit": false
+    },
+    "cat-kru-27-5": {
+      "type": null,
+      "sourcePages": [
+        86
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-kru-27-5.webp",
+      "reason": "Железнодорожная ячейка с боковыми изоляторами и собственным фасадом; внутреннее КРУ 6–10 кВ не подставляется.",
+      "inherit": false
+    },
+    "cat-pktp": {
+      "type": "mining-skid-substation",
+      "sourcePages": [
+        87
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-pktp.webp",
+      "reason": "Повторяемая передвижная сборка на полозьях: боковой шкаф, трансформатор и верхняя сетчатая зона вводов. Контур общего вида серии со страницы 87; размеры исполнения не переносятся.",
+      "inherit": true
+    },
+    "cat-kru-rn": {
+      "type": null,
+      "sourcePages": [
+        89
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-kru-rn.webp",
+      "reason": "Рудничная ячейка с характерным смотровым окном и монтажной рамой; исходный чертёж сохраняет конструкцию.",
+      "inherit": false
+    },
+    "cat-yakno-6-10": {
+      "type": null,
+      "sourcePages": [
+        90
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-yakno-6-10.webp",
+      "reason": "Шкаф на полозьях с высоким сетчатым ограждением вводов; обычный шкаф не представляет верхнюю защитную зону.",
+      "inherit": false
+    },
+    "cat-yakno-20": {
+      "type": null,
+      "sourcePages": [
+        91
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-yakno-20.webp",
+      "reason": "Высокий трёхсекционный шкаф с сетчатой верхней камерой; отличается от ЯКНО 6–10 кВ и обычного КРУ.",
+      "inherit": false
+    },
+    "cat-ktpshg": {
+      "type": null,
+      "sourcePages": [
+        92
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ktpshg.webp",
+      "reason": "Низкая шахтная горизонтальная сборка на полозьях с центральным баком; общий силуэт КТП не подходит.",
+      "inherit": false
+    },
+    "cat-ukzv": {
+      "type": null,
+      "sourcePages": [
+        93
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ukzv.webp",
+      "reason": "Высокая двухъярусная наружная установка с верхними изоляторами; не низкий шкаф катодной защиты.",
+      "inherit": false
+    },
+    "cat-ukzn": {
+      "type": "outdoor-floor-cabinet",
+      "sourcePages": [
+        93
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ukzn.webp",
+      "reason": "Наружный высокий однодверный шкаф с козырьком на фундаменте; на странице 93 прямо отделён от двухъярусной УКЗВ. Отсутствующие у УКЗН верхние изоляторы не добавляются.",
+      "inherit": true
+    },
+    "cat-bueskn": {
+      "type": null,
+      "sourcePages": [
+        95
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-bueskn.webp",
+      "reason": "Навесной блок с козырьком, верхними индикаторами и отдельной фасадной дверцей; сохранён исходный рисунок.",
+      "inherit": false
+    },
+    "cat-bushk-2m": {
+      "type": "plain-floor-cabinet",
+      "sourcePages": [
+        96
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-bushk-2m.webp",
+      "reason": "Высокий узкий напольный однодверный шкаф; общая внешняя форма корпуса, приборы и вентиляция исполнения остаются в исходнике.",
+      "inherit": true
+    },
+    "cat-ktpnd": {
+      "type": "substation",
+      "sourcePages": [
+        97
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpnd.webp",
+      "reason": "Двухъярусный шкаф с верхними вводами и открытым трансформатором за ним на общей платформе; форма родственна КТП 25–250.",
+      "inherit": true
+    },
+    "cat-modular-oil": {
+      "type": null,
+      "sourcePages": [
+        98
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-modular-oil.webp",
+      "reason": "Длинный контейнер с лестницами и площадками; условная БКТП не отражает внешний вид.",
+      "inherit": false
+    }
+  },
+  "records": [
+    {
+      "id": "tmg-400",
+      "sku": "ТМГ-400/10(6)-0,4",
+      "recordKind": "website-reference",
+      "type": "oil-transformer",
+      "sourceFamilyId": null,
+      "sourcePages": [],
+      "confidence": "generic",
+      "fallbackImage": null,
+      "reason": "Типовая иллюстрация: конкретная конструкция этой позиции не подтверждена просмотренным чертежом."
+    },
+    {
+      "id": "tmg-630",
+      "sku": "ТМГ-630/10(6)-0,4",
+      "recordKind": "website-reference",
+      "type": "oil-transformer",
+      "sourceFamilyId": null,
+      "sourcePages": [],
+      "confidence": "generic",
+      "fallbackImage": null,
+      "reason": "Типовая иллюстрация: конкретная конструкция этой позиции не подтверждена просмотренным чертежом."
+    },
+    {
+      "id": "tmg-1000",
+      "sku": "ТМГ-1000/10(6)-0,4",
+      "recordKind": "website-reference",
+      "type": "oil-transformer",
+      "sourceFamilyId": null,
+      "sourcePages": [],
+      "confidence": "generic",
+      "fallbackImage": null,
+      "reason": "Типовая иллюстрация: конкретная конструкция этой позиции не подтверждена просмотренным чертежом."
+    },
+    {
+      "id": "tmg-2500",
+      "sku": "ТМГ-2500/10(6)-0,4",
+      "recordKind": "website-reference",
+      "type": "oil-transformer",
+      "sourceFamilyId": null,
+      "sourcePages": [],
+      "confidence": "generic",
+      "fallbackImage": null,
+      "reason": "Типовая иллюстрация: конкретная конструкция этой позиции не подтверждена просмотренным чертежом."
+    },
+    {
+      "id": "tmgs-63",
+      "sku": "ТМГС-63",
+      "recordKind": "website-reference",
+      "type": "oil-transformer",
+      "sourceFamilyId": null,
+      "sourcePages": [],
+      "confidence": "generic",
+      "fallbackImage": null,
+      "reason": "Типовая иллюстрация: конкретная конструкция этой позиции не подтверждена просмотренным чертежом."
+    },
+    {
+      "id": "tmgs-160",
+      "sku": "ТМГС-160",
+      "recordKind": "website-reference",
+      "type": "oil-transformer",
+      "sourceFamilyId": null,
+      "sourcePages": [],
+      "confidence": "generic",
+      "fallbackImage": null,
+      "reason": "Типовая иллюстрация: конкретная конструкция этой позиции не подтверждена просмотренным чертежом."
+    },
+    {
+      "id": "tmgf-630",
+      "sku": "ТМГФ-630",
+      "recordKind": "website-reference",
+      "type": "oil-transformer",
+      "sourceFamilyId": null,
+      "sourcePages": [],
+      "confidence": "generic",
+      "fallbackImage": null,
+      "reason": "Типовая иллюстрация: конкретная конструкция этой позиции не подтверждена просмотренным чертежом."
+    },
+    {
+      "id": "tmgf-1600",
+      "sku": "ТМГФ-1600",
+      "recordKind": "website-reference",
+      "type": "oil-transformer",
+      "sourceFamilyId": null,
+      "sourcePages": [],
+      "confidence": "generic",
+      "fallbackImage": null,
+      "reason": "Типовая иллюстрация: конкретная конструкция этой позиции не подтверждена просмотренным чертежом."
+    },
+    {
+      "id": "tmeg-250",
+      "sku": "ТМЭГ-250",
+      "recordKind": "website-reference",
+      "type": "oil-transformer",
+      "sourceFamilyId": null,
+      "sourcePages": [],
+      "confidence": "generic",
+      "fallbackImage": null,
+      "reason": "Типовая иллюстрация: конкретная конструкция этой позиции не подтверждена просмотренным чертежом."
+    },
+    {
+      "id": "tsl-630",
+      "sku": "ТСЛ-630",
+      "recordKind": "website-reference",
+      "type": "dry-transformer",
+      "sourceFamilyId": null,
+      "sourcePages": [],
+      "confidence": "generic",
+      "fallbackImage": null,
+      "reason": "Типовая иллюстрация: конкретная конструкция этой позиции не подтверждена просмотренным чертежом."
+    },
+    {
+      "id": "tsl-1600",
+      "sku": "ТСЛ-1600",
+      "recordKind": "website-reference",
+      "type": "dry-transformer",
+      "sourceFamilyId": null,
+      "sourcePages": [],
+      "confidence": "generic",
+      "fallbackImage": null,
+      "reason": "Типовая иллюстрация: конкретная конструкция этой позиции не подтверждена просмотренным чертежом."
+    },
+    {
+      "id": "ntmi-6",
+      "sku": "НТМИ-6",
+      "recordKind": "website-reference",
+      "type": "instrument-transformer",
+      "sourceFamilyId": null,
+      "sourcePages": [],
+      "confidence": "generic",
+      "fallbackImage": null,
+      "reason": "Типовая иллюстрация: конкретная конструкция этой позиции не подтверждена просмотренным чертежом."
+    },
+    {
+      "id": "ntmi-10",
+      "sku": "НТМИ-10",
+      "recordKind": "website-reference",
+      "type": "instrument-transformer",
+      "sourceFamilyId": null,
+      "sourcePages": [],
+      "confidence": "generic",
+      "fallbackImage": null,
+      "reason": "Типовая иллюстрация: конкретная конструкция этой позиции не подтверждена просмотренным чертежом."
+    },
+    {
+      "id": "pktp-400",
+      "sku": "ПКТП-400",
+      "recordKind": "variant",
+      "type": "mining-skid-substation",
+      "sourceFamilyId": "cat-pktp",
+      "sourcePages": [
+        87
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-pktp.webp",
+      "reason": "Повторяемая передвижная сборка на полозьях: боковой шкаф, трансформатор и верхняя сетчатая зона вводов. Контур общего вида серии со страницы 87; размеры исполнения не переносятся."
+    },
+    {
+      "id": "pktp-1000",
+      "sku": "ПКТП-1000",
+      "recordKind": "variant",
+      "type": "mining-skid-substation",
+      "sourceFamilyId": "cat-pktp",
+      "sourcePages": [
+        87
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-pktp.webp",
+      "reason": "Повторяемая передвижная сборка на полозьях: боковой шкаф, трансформатор и верхняя сетчатая зона вводов. Контур общего вида серии со страницы 87; размеры исполнения не переносятся."
+    },
+    {
+      "id": "rlnd",
+      "sku": "РЛНД",
+      "recordKind": "website-reference",
+      "type": "disconnector",
+      "sourceFamilyId": null,
+      "sourcePages": [],
+      "confidence": "generic",
+      "fallbackImage": null,
+      "reason": "Типовая иллюстрация: конкретная конструкция этой позиции не подтверждена просмотренным чертежом."
+    },
+    {
+      "id": "kso-366",
+      "sku": "КСО-366",
+      "recordKind": "family",
+      "type": "single-door-switchgear",
+      "sourceFamilyId": "kso-366",
+      "sourcePages": [
+        23
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/kso-366.webp",
+      "reason": "Высокая однодверная камера с отдельным верхним отсеком; повторяется общая закрытая конструкция КСО."
+    },
+    {
+      "id": "kso-292",
+      "sku": "КСО-292",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "kso-292",
+      "sourcePages": [
+        28
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/kso-292.webp",
+      "reason": "Высокая камера с верхней сетчатой зоной и собственной лицевой панелью; исходная конструкция сохранена."
+    },
+    {
+      "id": "kso-2-10",
+      "sku": "КСО-2-10",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "kso-2-10",
+      "sourcePages": [
+        25
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/kso-2-10.webp",
+      "reason": "Релейная панель и силовой отсек отличаются от однодверной КСО-366 и трёхсекционного KERNEU; показан исходный чертёж."
+    },
+    {
+      "id": "cat-ktp-25-250",
+      "sku": "КТП 25-250/6(10)/0,4кВ У1",
+      "recordKind": "family",
+      "type": "substation",
+      "sourceFamilyId": "cat-ktp-25-250",
+      "sourcePages": [
+        6
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktp-25-250.webp",
+      "reason": "Сборка из двухъярусного шкафа с верхними вводами и открытого трансформатора на общей платформе; не мачтовая МТП."
+    },
+    {
+      "id": "cat-ktpn-25-3150",
+      "sku": "КТПН 25-3150/6(10)/0,4кВ",
+      "recordKind": "family",
+      "type": "compact-substation",
+      "sourceFamilyId": "cat-ktpn-25-3150",
+      "sourcePages": [
+        8
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpn-25-3150.webp",
+      "reason": "Закрытый прямоугольный корпус с двумя дверями, вентиляцией и двумя узлами ввода на крыше."
+    },
+    {
+      "id": "cat-ktpn-25-3150-v004",
+      "sku": "КТПН-1000 кВА",
+      "recordKind": "variant",
+      "type": "compact-substation",
+      "sourceFamilyId": "cat-ktpn-25-3150",
+      "sourcePages": [
+        8
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpn-25-3150.webp",
+      "reason": "Закрытый прямоугольный корпус с двумя дверями, вентиляцией и двумя узлами ввода на крыше."
+    },
+    {
+      "id": "cat-ktpn-25-3150-v005",
+      "sku": "КТПН-1600 кВА",
+      "recordKind": "variant",
+      "type": "compact-substation",
+      "sourceFamilyId": "cat-ktpn-25-3150",
+      "sourcePages": [
+        8
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpn-25-3150.webp",
+      "reason": "Закрытый прямоугольный корпус с двумя дверями, вентиляцией и двумя узлами ввода на крыше."
+    },
+    {
+      "id": "cat-ktpn-25-3150-v006",
+      "sku": "КТПН-2500кВА",
+      "recordKind": "variant",
+      "type": "compact-substation",
+      "sourceFamilyId": "cat-ktpn-25-3150",
+      "sourcePages": [
+        8
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpn-25-3150.webp",
+      "reason": "Закрытый прямоугольный корпус с двумя дверями, вентиляцией и двумя узлами ввода на крыше."
+    },
+    {
+      "id": "cat-ktpn-25-3150-v007",
+      "sku": "КТПН-3150 кВА",
+      "recordKind": "variant",
+      "type": "compact-substation",
+      "sourceFamilyId": "cat-ktpn-25-3150",
+      "sourcePages": [
+        8
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpn-25-3150.webp",
+      "reason": "Закрытый прямоугольный корпус с двумя дверями, вентиляцией и двумя узлами ввода на крыше."
+    },
+    {
+      "id": "cat-2ktpn-25-3150",
+      "sku": "2КТПН 25...3150/6(10)-0,4КВ",
+      "recordKind": "family",
+      "type": "double-compact-substation",
+      "sourceFamilyId": "cat-2ktpn-25-3150",
+      "sourcePages": [
+        10
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-2ktpn-25-3150.webp",
+      "reason": "Две соседние закрытые трансформаторные секции с отдельными верхними вводами; одиночная КТПН не подставляется."
+    },
+    {
+      "id": "cat-ktpg-25-3150",
+      "sku": "КТПГ 25-3150/10(6) У1",
+      "recordKind": "family",
+      "type": "kiosk-substation",
+      "sourceFamilyId": "cat-ktpg-25-3150",
+      "sourcePages": [
+        12
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpg-25-3150.webp",
+      "reason": "Киоск с закрытым трансформаторным отсеком и парными дверями, без открытого бака снаружи."
+    },
+    {
+      "id": "cat-ktpg-25-3150-v001",
+      "sku": "КТПГ-25",
+      "recordKind": "variant",
+      "type": "kiosk-substation",
+      "sourceFamilyId": "cat-ktpg-25-3150",
+      "sourcePages": [
+        12
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpg-25-3150.webp",
+      "reason": "Киоск с закрытым трансформаторным отсеком и парными дверями, без открытого бака снаружи."
+    },
+    {
+      "id": "cat-ktpg-25-3150-v002",
+      "sku": "КТПГ-40",
+      "recordKind": "variant",
+      "type": "kiosk-substation",
+      "sourceFamilyId": "cat-ktpg-25-3150",
+      "sourcePages": [
+        12
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpg-25-3150.webp",
+      "reason": "Киоск с закрытым трансформаторным отсеком и парными дверями, без открытого бака снаружи."
+    },
+    {
+      "id": "cat-ktpg-25-3150-v003",
+      "sku": "КТПГ-63",
+      "recordKind": "variant",
+      "type": "kiosk-substation",
+      "sourceFamilyId": "cat-ktpg-25-3150",
+      "sourcePages": [
+        12
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpg-25-3150.webp",
+      "reason": "Киоск с закрытым трансформаторным отсеком и парными дверями, без открытого бака снаружи."
+    },
+    {
+      "id": "cat-ktpg-25-3150-v004",
+      "sku": "КТПГ-100",
+      "recordKind": "variant",
+      "type": "kiosk-substation",
+      "sourceFamilyId": "cat-ktpg-25-3150",
+      "sourcePages": [
+        12
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpg-25-3150.webp",
+      "reason": "Киоск с закрытым трансформаторным отсеком и парными дверями, без открытого бака снаружи."
+    },
+    {
+      "id": "cat-ktpg-25-3150-v005",
+      "sku": "КТПГ-160",
+      "recordKind": "variant",
+      "type": "kiosk-substation",
+      "sourceFamilyId": "cat-ktpg-25-3150",
+      "sourcePages": [
+        12
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpg-25-3150.webp",
+      "reason": "Киоск с закрытым трансформаторным отсеком и парными дверями, без открытого бака снаружи."
+    },
+    {
+      "id": "cat-ktpg-25-3150-v006",
+      "sku": "КТПГ-250",
+      "recordKind": "variant",
+      "type": "kiosk-substation",
+      "sourceFamilyId": "cat-ktpg-25-3150",
+      "sourcePages": [
+        12
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpg-25-3150.webp",
+      "reason": "Киоск с закрытым трансформаторным отсеком и парными дверями, без открытого бака снаружи."
+    },
+    {
+      "id": "cat-ktpg-25-3150-v007",
+      "sku": "КТПГ-400",
+      "recordKind": "variant",
+      "type": "kiosk-substation",
+      "sourceFamilyId": "cat-ktpg-25-3150",
+      "sourcePages": [
+        12
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpg-25-3150.webp",
+      "reason": "Киоск с закрытым трансформаторным отсеком и парными дверями, без открытого бака снаружи."
+    },
+    {
+      "id": "cat-ktpg-25-3150-v008",
+      "sku": "КТПГ-630",
+      "recordKind": "variant",
+      "type": "kiosk-substation",
+      "sourceFamilyId": "cat-ktpg-25-3150",
+      "sourcePages": [
+        12
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpg-25-3150.webp",
+      "reason": "Киоск с закрытым трансформаторным отсеком и парными дверями, без открытого бака снаружи."
+    },
+    {
+      "id": "cat-ktpg-25-3150-v009",
+      "sku": "КТПГ-1000",
+      "recordKind": "variant",
+      "type": "kiosk-substation",
+      "sourceFamilyId": "cat-ktpg-25-3150",
+      "sourcePages": [
+        12
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpg-25-3150.webp",
+      "reason": "Киоск с закрытым трансформаторным отсеком и парными дверями, без открытого бака снаружи."
+    },
+    {
+      "id": "cat-ktpg-25-3150-v010",
+      "sku": "КТПГ-1600",
+      "recordKind": "variant",
+      "type": "kiosk-substation",
+      "sourceFamilyId": "cat-ktpg-25-3150",
+      "sourcePages": [
+        12
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpg-25-3150.webp",
+      "reason": "Киоск с закрытым трансформаторным отсеком и парными дверями, без открытого бака снаружи."
+    },
+    {
+      "id": "cat-ktpg-25-3150-v011",
+      "sku": "КТПГ-2500",
+      "recordKind": "variant",
+      "type": "kiosk-substation",
+      "sourceFamilyId": "cat-ktpg-25-3150",
+      "sourcePages": [
+        12
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpg-25-3150.webp",
+      "reason": "Киоск с закрытым трансформаторным отсеком и парными дверями, без открытого бака снаружи."
+    },
+    {
+      "id": "cat-ktpg-25-3150-v012",
+      "sku": "КТПГ-3150",
+      "recordKind": "variant",
+      "type": "kiosk-substation",
+      "sourceFamilyId": "cat-ktpg-25-3150",
+      "sourcePages": [
+        12
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpg-25-3150.webp",
+      "reason": "Киоск с закрытым трансформаторным отсеком и парными дверями, без открытого бака снаружи."
+    },
+    {
+      "id": "cat-2ktpg-25-3150",
+      "sku": "2КТПГ 25-3150/10(6)кВ",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-2ktpg-25-3150",
+      "sourcePages": [
+        13
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-2ktpg-25-3150.webp",
+      "reason": "Чертёж показывает два киоска и центральный шкаф АВР; одиночный киоск не соответствует этой сборке."
+    },
+    {
+      "id": "cat-ktpp-2ktpp-250-6300",
+      "sku": "КТПП, 2КТПП 250-6300/6(10)/0,4КВ",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-ktpp-2ktpp-250-6300",
+      "sourcePages": [
+        15
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ktpp-2ktpp-250-6300.webp",
+      "reason": "Протяжённая внутренняя сборка КТПП/2КТПП с линейкой РУНН; в одном семействе разные компоновки."
+    },
+    {
+      "id": "cat-ktpo-4-10",
+      "sku": "КТПО 4-10/6(10)/0,23кВ",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-ktpo-4-10",
+      "sourcePages": [
+        17
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ktpo-4-10.webp",
+      "reason": "Узкий высокий трёхсекционный корпус с верхними вводами; отличается от МТП на опоре и обычного шкафа."
+    },
+    {
+      "id": "cat-ktpo-4-10-v001",
+      "sku": "КТПО-4/6/0,23",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-ktpo-4-10",
+      "sourcePages": [
+        17
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ktpo-4-10.webp",
+      "reason": "Узкий высокий трёхсекционный корпус с верхними вводами; отличается от МТП на опоре и обычного шкафа."
+    },
+    {
+      "id": "cat-ktpo-4-10-v002",
+      "sku": "КТПО-4/10/0,23",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-ktpo-4-10",
+      "sourcePages": [
+        17
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ktpo-4-10.webp",
+      "reason": "Узкий высокий трёхсекционный корпус с верхними вводами; отличается от МТП на опоре и обычного шкафа."
+    },
+    {
+      "id": "cat-ktpo-4-10-v003",
+      "sku": "КТПО 10/6/0,23",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-ktpo-4-10",
+      "sourcePages": [
+        17
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ktpo-4-10.webp",
+      "reason": "Узкий высокий трёхсекционный корпус с верхними вводами; отличается от МТП на опоре и обычного шкафа."
+    },
+    {
+      "id": "cat-ktpo-4-10-v004",
+      "sku": "КТПО-10/10/0,23",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-ktpo-4-10",
+      "sourcePages": [
+        17
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ktpo-4-10.webp",
+      "reason": "Узкий высокий трёхсекционный корпус с верхними вводами; отличается от МТП на опоре и обычного шкафа."
+    },
+    {
+      "id": "cat-ktpto-80",
+      "sku": "КТПТО 80/0,38 У1",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-ktpto-80",
+      "sourcePages": [
+        18
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ktpto-80.webp",
+      "reason": "Станция прогрева с открытым трансформатором за низким шкафом; обычная КТП не отражает эту компоновку."
+    },
+    {
+      "id": "cat-ktps-100-1600",
+      "sku": "КТПС 100-1600/35/0,4кВ У1",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-ktps-100-1600",
+      "sourcePages": [
+        19
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ktps-100-1600.webp",
+      "reason": "Открытая площадка 35 кВ с ограждением, лестницей и высоковольтной рамой; не компактная КТП."
+    },
+    {
+      "id": "cat-ktps-100-1600-v007",
+      "sku": "КТПС-1600",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-ktps-100-1600",
+      "sourcePages": [
+        19
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ktps-100-1600.webp",
+      "reason": "Открытая площадка 35 кВ с ограждением, лестницей и высоковольтной рамой; не компактная КТП."
+    },
+    {
+      "id": "cat-mtp-25-100",
+      "sku": "МТП 25-100/10(6) У1",
+      "recordKind": "family",
+      "type": "pole-substation",
+      "sourceFamilyId": "cat-mtp-25-100",
+      "sourcePages": [
+        21
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-mtp-25-100.webp",
+      "reason": "Одна мачта с верхней траверсой, открытым трансформатором на кронштейне и нижним шкафом РУНН."
+    },
+    {
+      "id": "cat-mtp-25-100-v001",
+      "sku": "МТП-25/10(6)",
+      "recordKind": "variant",
+      "type": "pole-substation",
+      "sourceFamilyId": "cat-mtp-25-100",
+      "sourcePages": [
+        21
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-mtp-25-100.webp",
+      "reason": "Одна мачта с верхней траверсой, открытым трансформатором на кронштейне и нижним шкафом РУНН."
+    },
+    {
+      "id": "cat-mtp-25-100-v002",
+      "sku": "МТП-40/10(6)",
+      "recordKind": "variant",
+      "type": "pole-substation",
+      "sourceFamilyId": "cat-mtp-25-100",
+      "sourcePages": [
+        21
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-mtp-25-100.webp",
+      "reason": "Одна мачта с верхней траверсой, открытым трансформатором на кронштейне и нижним шкафом РУНН."
+    },
+    {
+      "id": "cat-mtp-25-100-v003",
+      "sku": "МТП-63/10(6)",
+      "recordKind": "variant",
+      "type": "pole-substation",
+      "sourceFamilyId": "cat-mtp-25-100",
+      "sourcePages": [
+        21
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-mtp-25-100.webp",
+      "reason": "Одна мачта с верхней траверсой, открытым трансформатором на кронштейне и нижним шкафом РУНН."
+    },
+    {
+      "id": "cat-mtp-25-100-v004",
+      "sku": "МТП-100/10(6)",
+      "recordKind": "variant",
+      "type": "pole-substation",
+      "sourceFamilyId": "cat-mtp-25-100",
+      "sourcePages": [
+        21
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-mtp-25-100.webp",
+      "reason": "Одна мачта с верхней траверсой, открытым трансформатором на кронштейне и нижним шкафом РУНН."
+    },
+    {
+      "id": "cat-mtpo-4-10",
+      "sku": "МТПО 4-10/10(6)/0,23 У1",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-mtpo-4-10",
+      "sourcePages": [
+        22
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-mtpo-4-10.webp",
+      "reason": "Однофазная опорная компоновка с боковыми аппаратами и отличающимися траверсами; трёхфазная МТП не подставляется."
+    },
+    {
+      "id": "cat-kso-366m",
+      "sku": "КСО-3М",
+      "recordKind": "family",
+      "type": "single-door-switchgear",
+      "sourceFamilyId": "cat-kso-366m",
+      "sourcePages": [
+        24
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-kso-366m.webp",
+      "reason": "Однодверная высокая камера с отдельной верхней панелью; общий внешний контур с КСО-366, без вывода о внутренней схеме."
+    },
+    {
+      "id": "cat-kso-2-20",
+      "sku": "КСО-2-20",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-kso-2-20",
+      "sourcePages": [
+        27
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-kso-2-20.webp",
+      "reason": "Иллюстрация представляет открытый разрез с вакуумными аппаратами; закрытый фасад из неё не восстанавливается."
+    },
+    {
+      "id": "cat-rmu-ae",
+      "sku": "RMU AE 6/10/20 КВ",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-rmu-ae",
+      "sourcePages": [
+        30
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-rmu-ae.webp",
+      "reason": "Многосекционный RMU с газоизолированными ячейками; одиночный шкаф не представляет эту сборку."
+    },
+    {
+      "id": "cat-krn-iv",
+      "sku": "КРН-IV-6(10)кВ",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-krn-iv",
+      "sourcePages": [
+        31
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-krn-iv.webp",
+      "reason": "Наружная двухсекционная ячейка с уклонной крышей и вводами на крыше; не обычный внутренний шкаф."
+    },
+    {
+      "id": "cat-grsh-04",
+      "sku": "ГРЩ-0,4кВ",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-grsh-04",
+      "sourcePages": [
+        32
+      ],
+      "confidence": "unverified",
+      "fallbackImage": null,
+      "reason": "На странице приведены характеристики, но проверенного изображения конструкции нет."
+    },
+    {
+      "id": "cat-shcho-70",
+      "sku": "ЩО-70",
+      "recordKind": "family",
+      "type": "distribution-cabinet",
+      "sourceFamilyId": "cat-shcho-70",
+      "sourcePages": [
+        33
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-shcho-70.webp",
+      "reason": "Высокая распределительная панель с верхним рядом приборов, одной дверью и нижней коммутационной зоной."
+    },
+    {
+      "id": "cat-shnn",
+      "sku": "ШНН",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-shnn",
+      "sourcePages": [
+        35
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-shnn.webp",
+      "reason": "Чертёж показывает рамную панель с открытыми боковыми зонами; вводные, секционные и линейные исполнения различаются."
+    },
+    {
+      "id": "cat-shnn-v001",
+      "sku": "ШНН-В-10-У3",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-shnn",
+      "sourcePages": [
+        35
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-shnn.webp",
+      "reason": "Чертёж показывает рамную панель с открытыми боковыми зонами; вводные, секционные и линейные исполнения различаются."
+    },
+    {
+      "id": "cat-shnn-v002",
+      "sku": "ШНН-В-16-У3",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-shnn",
+      "sourcePages": [
+        35
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-shnn.webp",
+      "reason": "Чертёж показывает рамную панель с открытыми боковыми зонами; вводные, секционные и линейные исполнения различаются."
+    },
+    {
+      "id": "cat-shnn-v003",
+      "sku": "ШНН-В-20-У3",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-shnn",
+      "sourcePages": [
+        35
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-shnn.webp",
+      "reason": "Чертёж показывает рамную панель с открытыми боковыми зонами; вводные, секционные и линейные исполнения различаются."
+    },
+    {
+      "id": "cat-shnn-v004",
+      "sku": "ШНН-В-25-У3",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-shnn",
+      "sourcePages": [
+        35
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-shnn.webp",
+      "reason": "Чертёж показывает рамную панель с открытыми боковыми зонами; вводные, секционные и линейные исполнения различаются."
+    },
+    {
+      "id": "cat-shnn-v005",
+      "sku": "ШНН-В-32-У3",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-shnn",
+      "sourcePages": [
+        35
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-shnn.webp",
+      "reason": "Чертёж показывает рамную панель с открытыми боковыми зонами; вводные, секционные и линейные исполнения различаются."
+    },
+    {
+      "id": "cat-shnn-v006",
+      "sku": "ШНН-В-40-У3",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-shnn",
+      "sourcePages": [
+        35
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-shnn.webp",
+      "reason": "Чертёж показывает рамную панель с открытыми боковыми зонами; вводные, секционные и линейные исполнения различаются."
+    },
+    {
+      "id": "cat-shnn-v007",
+      "sku": "ШНН-В-50-У3",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-shnn",
+      "sourcePages": [
+        35
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-shnn.webp",
+      "reason": "Чертёж показывает рамную панель с открытыми боковыми зонами; вводные, секционные и линейные исполнения различаются."
+    },
+    {
+      "id": "cat-shnn-v008",
+      "sku": "ШНН-С-10-У3",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-shnn",
+      "sourcePages": [
+        35
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-shnn.webp",
+      "reason": "Чертёж показывает рамную панель с открытыми боковыми зонами; вводные, секционные и линейные исполнения различаются."
+    },
+    {
+      "id": "cat-shnn-v009",
+      "sku": "ШНН-С-16-У3",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-shnn",
+      "sourcePages": [
+        35
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-shnn.webp",
+      "reason": "Чертёж показывает рамную панель с открытыми боковыми зонами; вводные, секционные и линейные исполнения различаются."
+    },
+    {
+      "id": "cat-shnn-v010",
+      "sku": "ШНН-С-20-У3",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-shnn",
+      "sourcePages": [
+        35
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-shnn.webp",
+      "reason": "Чертёж показывает рамную панель с открытыми боковыми зонами; вводные, секционные и линейные исполнения различаются."
+    },
+    {
+      "id": "cat-shnn-v011",
+      "sku": "ШНН-С-25-У3",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-shnn",
+      "sourcePages": [
+        35
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-shnn.webp",
+      "reason": "Чертёж показывает рамную панель с открытыми боковыми зонами; вводные, секционные и линейные исполнения различаются."
+    },
+    {
+      "id": "cat-shnn-v012",
+      "sku": "ШНН-С-32-У3",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-shnn",
+      "sourcePages": [
+        35
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-shnn.webp",
+      "reason": "Чертёж показывает рамную панель с открытыми боковыми зонами; вводные, секционные и линейные исполнения различаются."
+    },
+    {
+      "id": "cat-shnn-v013",
+      "sku": "ШНН-С-40-У3",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-shnn",
+      "sourcePages": [
+        35
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-shnn.webp",
+      "reason": "Чертёж показывает рамную панель с открытыми боковыми зонами; вводные, секционные и линейные исполнения различаются."
+    },
+    {
+      "id": "cat-shnn-v014",
+      "sku": "ШНН-С-50-У3",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-shnn",
+      "sourcePages": [
+        35
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-shnn.webp",
+      "reason": "Чертёж показывает рамную панель с открытыми боковыми зонами; вводные, секционные и линейные исполнения различаются."
+    },
+    {
+      "id": "cat-shnn-v015",
+      "sku": "ШНН-Л-06-У3",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-shnn",
+      "sourcePages": [
+        35
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-shnn.webp",
+      "reason": "Чертёж показывает рамную панель с открытыми боковыми зонами; вводные, секционные и линейные исполнения различаются."
+    },
+    {
+      "id": "cat-shnn-v016",
+      "sku": "ШНН-Л-08-У3",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-shnn",
+      "sourcePages": [
+        35
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-shnn.webp",
+      "reason": "Чертёж показывает рамную панель с открытыми боковыми зонами; вводные, секционные и линейные исполнения различаются."
+    },
+    {
+      "id": "cat-shnn-v017",
+      "sku": "ШНН-Л-10-У3",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-shnn",
+      "sourcePages": [
+        35
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-shnn.webp",
+      "reason": "Чертёж показывает рамную панель с открытыми боковыми зонами; вводные, секционные и линейные исполнения различаются."
+    },
+    {
+      "id": "cat-shnn-v018",
+      "sku": "ШНН-Л-12-У3",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-shnn",
+      "sourcePages": [
+        35
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-shnn.webp",
+      "reason": "Чертёж показывает рамную панель с открытыми боковыми зонами; вводные, секционные и линейные исполнения различаются."
+    },
+    {
+      "id": "cat-shchsu-04",
+      "sku": "ЩСУ-0,4кВ У3",
+      "recordKind": "family",
+      "type": "plain-floor-cabinet",
+      "sourceFamilyId": "cat-shchsu-04",
+      "sourcePages": [
+        36
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-shchsu-04.webp",
+      "reason": "Высокий напольный однодверный корпус без верхних вводов и внешних приборных панелей."
+    },
+    {
+      "id": "cat-bktp-modular",
+      "sku": "БКТП (2БКТП) 100-3150/6(10)/0,4кВ УХЛ1",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-bktp-modular",
+      "sourcePages": [
+        38,
+        39
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-bktp-modular.webp",
+      "reason": "Страницы 38 и 39 показывают разные здания БКТП и 2БКТП; общий значок не подтверждает конкретную компоновку."
+    },
+    {
+      "id": "cat-bktp-modular-v001",
+      "sku": "БКТП-2500/10-0,4 УХЛ1",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-bktp-modular",
+      "sourcePages": [
+        38
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-source/page-038.webp",
+      "reason": "Однотрансформаторная БКТП прямо подписана на странице 38; чертёж двухтрансформаторной 2БКТП со страницы 39 не наследуется."
+    },
+    {
+      "id": "cat-bktp-modular-v002",
+      "sku": "2БКТП-2500/10-0,4 УХЛ1",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-bktp-modular",
+      "sourcePages": [
+        39
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-bktp-modular.webp",
+      "reason": "Двухтрансформаторная 2БКТП прямо подписана на странице 39; сохранён соответствующий исходный чертёж."
+    },
+    {
+      "id": "cat-bktp-concrete",
+      "sku": "БКТП в бетонном здании",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-bktp-concrete",
+      "sourcePages": [
+        41
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-bktp-concrete.webp",
+      "reason": "Бетонное здание с собственной кровлей и расположением проёмов; не заменяется условным металлическим модулем."
+    },
+    {
+      "id": "cat-kru-k07-ktz",
+      "sku": "КРУ К-07 КТЗ",
+      "recordKind": "family",
+      "type": "switchgear",
+      "sourceFamilyId": "cat-kru-k07-ktz",
+      "sourcePages": [
+        43
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-kru-k07-ktz.webp",
+      "reason": "Внутренняя выкатная ячейка с верхней релейной панелью и нижним силовым отсеком; общая конструкция, не схема аппаратов."
+    },
+    {
+      "id": "cat-krun07-ktz",
+      "sku": "КРУН-07 КТЗ",
+      "recordKind": "family",
+      "type": "outdoor-switchgear-shelter",
+      "sourceFamilyId": "cat-krun07-ktz",
+      "sourcePages": [
+        43
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-krun07-ktz.webp",
+      "reason": "Наружная сборка ячеек под общей двускатной кровлей на опорах."
+    },
+    {
+      "id": "cat-kru-kerneu-6-10",
+      "sku": "КРУ KERNEU 6(10) кВ",
+      "recordKind": "family",
+      "type": "switchgear",
+      "sourceFamilyId": "cat-kru-kerneu-6-10",
+      "sourcePages": [
+        45
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-kru-kerneu-6-10.webp",
+      "reason": "Глубокая трёхсекционная ячейка с верхними приборами и выкатным силовым отсеком; исходная основа этого визуального типа."
+    },
+    {
+      "id": "cat-kru-kerneu-35",
+      "sku": "КРУ KERNEU 35 кВ / КРУ К-07-К35 АЕ",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-kru-kerneu-35",
+      "sourcePages": [
+        47
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-kru-kerneu-35.webp",
+      "reason": "Крупногабаритная глубокая ячейка 35 кВ имеет другую компоновку; геометрия 6–10 кВ не наследуется."
+    },
+    {
+      "id": "cat-k8m",
+      "sku": "К-8М",
+      "recordKind": "family",
+      "type": "outdoor-switchgear-shelter",
+      "sourceFamilyId": "cat-k8m",
+      "sourcePages": [
+        49
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-k8m.webp",
+      "reason": "Глубокая наружная камера в укрытии с двускатной крышей и опорными стойками; визуализируется внешний корпус."
+    },
+    {
+      "id": "cat-k59",
+      "sku": "К-59",
+      "recordKind": "family",
+      "type": "outdoor-switchgear-shelter",
+      "sourceFamilyId": "cat-k59",
+      "sourcePages": [
+        51
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-k59.webp",
+      "reason": "Наружная камера под крышей на опорных стойках; общий внешний контур с К-8М, без переноса внутренней аппаратуры."
+    },
+    {
+      "id": "cat-km7m",
+      "sku": "КМ-7М",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-km7m",
+      "sourcePages": [
+        53
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-km7m.webp",
+      "reason": "Разрез выкатной камеры показывает открытую нижнюю зону и особый релейный отсек; сохранён исходник."
+    },
+    {
+      "id": "cat-ktpb-k",
+      "sku": "КТПБ(К)",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-ktpb-k",
+      "sourcePages": [
+        55
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ktpb-k.webp",
+      "reason": "Открытая подстанция 35/110/220 кВ с порталами и разными схемами площадки; не модульное здание БКТП."
+    },
+    {
+      "id": "cat-ktpb-k-v001",
+      "sku": "КТПБ(К) 35/10(6)",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-ktpb-k",
+      "sourcePages": [
+        55
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ktpb-k.webp",
+      "reason": "Открытая подстанция 35/110/220 кВ с порталами и разными схемами площадки; не модульное здание БКТП."
+    },
+    {
+      "id": "cat-ktpb-k-v002",
+      "sku": "КТПБ(К) 110/35/10(6)",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-ktpb-k",
+      "sourcePages": [
+        55
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ktpb-k.webp",
+      "reason": "Открытая подстанция 35/110/220 кВ с порталами и разными схемами площадки; не модульное здание БКТП."
+    },
+    {
+      "id": "cat-ktpb-k-v003",
+      "sku": "КТПБ(К) 220/35/10(6)",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-ktpb-k",
+      "sourcePages": [
+        55
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ktpb-k.webp",
+      "reason": "Открытая подстанция 35/110/220 кВ с порталами и разными схемами площадки; не модульное здание БКТП."
+    },
+    {
+      "id": "cat-vru",
+      "sku": "ВРУ",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-vru",
+      "sourcePages": [
+        60
+      ],
+      "confidence": "unverified",
+      "fallbackImage": null,
+      "reason": "Проверенного изображения конструкции нет; назначение ВРУ не определяет число и вид шкафов."
+    },
+    {
+      "id": "cat-shsn-04",
+      "sku": "ШСН-0,4кВ",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-shsn-04",
+      "sourcePages": [
+        61
+      ],
+      "confidence": "unverified",
+      "fallbackImage": null,
+      "reason": "Проверенного изображения конструкции нет; данные не подтверждают конкретный фасад шкафа."
+    },
+    {
+      "id": "cat-shuot",
+      "sku": "ШУОТ",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-shuot",
+      "sourcePages": [
+        62
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-shuot.webp",
+      "reason": "Сборка из приборного шкафа и отдельной открытой батарейной стойки; одиночный шкаф не соответствует."
+    },
+    {
+      "id": "cat-shtz",
+      "sku": "ШТЗ",
+      "recordKind": "family",
+      "type": "wall-control-box",
+      "sourceFamilyId": "cat-shtz",
+      "sourcePages": [
+        63
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-shtz.webp",
+      "reason": "Неглубокий навесной ящик с верхними креплениями, дверными приборами и кнопками; не напольный шкаф."
+    },
+    {
+      "id": "cat-pr-shr11",
+      "sku": "ПР и ШР11",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-pr-shr11",
+      "sourcePages": [
+        64
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-pr-shr11.webp",
+      "reason": "Показана открытая панель распределения, а ПР, ПР-11 и ШР11 объединены на странице; закрытый фасад не подтверждён."
+    },
+    {
+      "id": "cat-pr-shr11-v001",
+      "sku": "ПР",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-pr-shr11",
+      "sourcePages": [
+        64
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-pr-shr11.webp",
+      "reason": "Показана открытая панель распределения, а ПР, ПР-11 и ШР11 объединены на странице; закрытый фасад не подтверждён."
+    },
+    {
+      "id": "cat-pr-shr11-v002",
+      "sku": "ШР11",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-pr-shr11",
+      "sourcePages": [
+        64
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-pr-shr11.webp",
+      "reason": "Показана открытая панель распределения, а ПР, ПР-11 и ШР11 объединены на странице; закрытый фасад не подтверждён."
+    },
+    {
+      "id": "cat-pr-shr11-v003",
+      "sku": "ПР-11",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-pr-shr11",
+      "sourcePages": [
+        64
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-pr-shr11.webp",
+      "reason": "Показана открытая панель распределения, а ПР, ПР-11 и ШР11 объединены на странице; закрытый фасад не подтверждён."
+    },
+    {
+      "id": "cat-yatp",
+      "sku": "ЯТП-0,25; ЯТП-0,4; ЯТП-0,63",
+      "recordKind": "family",
+      "type": "wall-control-box",
+      "sourceFamilyId": "cat-yatp",
+      "sourcePages": [
+        65
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-yatp.webp",
+      "reason": "Навесной ящик с передней дверью и наружной коммутационной арматурой; общая форма корпуса, не расположение конкретных разъёмов."
+    },
+    {
+      "id": "cat-yatp-v001",
+      "sku": "ЯТП-0.25-220-12У3",
+      "recordKind": "variant",
+      "type": "wall-control-box",
+      "sourceFamilyId": "cat-yatp",
+      "sourcePages": [
+        65
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-yatp.webp",
+      "reason": "Навесной ящик с передней дверью и наружной коммутационной арматурой; общая форма корпуса, не расположение конкретных разъёмов."
+    },
+    {
+      "id": "cat-yatp-v002",
+      "sku": "ЯТП-0.25-220-24У3",
+      "recordKind": "variant",
+      "type": "wall-control-box",
+      "sourceFamilyId": "cat-yatp",
+      "sourcePages": [
+        65
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-yatp.webp",
+      "reason": "Навесной ящик с передней дверью и наружной коммутационной арматурой; общая форма корпуса, не расположение конкретных разъёмов."
+    },
+    {
+      "id": "cat-yatp-v003",
+      "sku": "ЯТП-0.25-220-36У3",
+      "recordKind": "variant",
+      "type": "wall-control-box",
+      "sourceFamilyId": "cat-yatp",
+      "sourcePages": [
+        65
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-yatp.webp",
+      "reason": "Навесной ящик с передней дверью и наружной коммутационной арматурой; общая форма корпуса, не расположение конкретных разъёмов."
+    },
+    {
+      "id": "cat-yatp-v004",
+      "sku": "ЯТП-0.4-220-12У3",
+      "recordKind": "variant",
+      "type": "wall-control-box",
+      "sourceFamilyId": "cat-yatp",
+      "sourcePages": [
+        65
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-yatp.webp",
+      "reason": "Навесной ящик с передней дверью и наружной коммутационной арматурой; общая форма корпуса, не расположение конкретных разъёмов."
+    },
+    {
+      "id": "cat-yatp-v005",
+      "sku": "ЯТП-0.4-220-24У3",
+      "recordKind": "variant",
+      "type": "wall-control-box",
+      "sourceFamilyId": "cat-yatp",
+      "sourcePages": [
+        65
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-yatp.webp",
+      "reason": "Навесной ящик с передней дверью и наружной коммутационной арматурой; общая форма корпуса, не расположение конкретных разъёмов."
+    },
+    {
+      "id": "cat-yatp-v006",
+      "sku": "ЯТП-0.4-220-36У3",
+      "recordKind": "variant",
+      "type": "wall-control-box",
+      "sourceFamilyId": "cat-yatp",
+      "sourcePages": [
+        65
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-yatp.webp",
+      "reason": "Навесной ящик с передней дверью и наружной коммутационной арматурой; общая форма корпуса, не расположение конкретных разъёмов."
+    },
+    {
+      "id": "cat-yatp-v007",
+      "sku": "ЯТП-0.63-220-12У3",
+      "recordKind": "variant",
+      "type": "wall-control-box",
+      "sourceFamilyId": "cat-yatp",
+      "sourcePages": [
+        65
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-yatp.webp",
+      "reason": "Навесной ящик с передней дверью и наружной коммутационной арматурой; общая форма корпуса, не расположение конкретных разъёмов."
+    },
+    {
+      "id": "cat-yatp-v008",
+      "sku": "ЯТП-0.63-220-24У3",
+      "recordKind": "variant",
+      "type": "wall-control-box",
+      "sourceFamilyId": "cat-yatp",
+      "sourcePages": [
+        65
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-yatp.webp",
+      "reason": "Навесной ящик с передней дверью и наружной коммутационной арматурой; общая форма корпуса, не расположение конкретных разъёмов."
+    },
+    {
+      "id": "cat-yatp-v009",
+      "sku": "ЯТП-0.63-220-36У3",
+      "recordKind": "variant",
+      "type": "wall-control-box",
+      "sourceFamilyId": "cat-yatp",
+      "sourcePages": [
+        65
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-yatp.webp",
+      "reason": "Навесной ящик с передней дверью и наружной коммутационной арматурой; общая форма корпуса, не расположение конкретных разъёмов."
+    },
+    {
+      "id": "cat-ya5000-rusm5000",
+      "sku": "Я 5000-5435 и РУСМ 5000",
+      "recordKind": "family",
+      "type": "wall-box",
+      "sourceFamilyId": "cat-ya5000-rusm5000",
+      "sourcePages": [
+        66
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v001",
+      "sku": "Я5110",
+      "recordKind": "variant",
+      "type": "wall-box",
+      "sourceFamilyId": "cat-ya5000-rusm5000",
+      "sourcePages": [
+        66
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v002",
+      "sku": "Я5111",
+      "recordKind": "variant",
+      "type": "wall-box",
+      "sourceFamilyId": "cat-ya5000-rusm5000",
+      "sourcePages": [
+        66
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v003",
+      "sku": "Я5112",
+      "recordKind": "variant",
+      "type": "wall-box",
+      "sourceFamilyId": "cat-ya5000-rusm5000",
+      "sourcePages": [
+        66
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v004",
+      "sku": "Я5113",
+      "recordKind": "variant",
+      "type": "wall-box",
+      "sourceFamilyId": "cat-ya5000-rusm5000",
+      "sourcePages": [
+        66
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v005",
+      "sku": "Я5410",
+      "recordKind": "variant",
+      "type": "wall-box",
+      "sourceFamilyId": "cat-ya5000-rusm5000",
+      "sourcePages": [
+        66
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v006",
+      "sku": "Я5411",
+      "recordKind": "variant",
+      "type": "wall-box",
+      "sourceFamilyId": "cat-ya5000-rusm5000",
+      "sourcePages": [
+        66
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v007",
+      "sku": "Я5412",
+      "recordKind": "variant",
+      "type": "wall-box",
+      "sourceFamilyId": "cat-ya5000-rusm5000",
+      "sourcePages": [
+        66
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v008",
+      "sku": "Я5413",
+      "recordKind": "variant",
+      "type": "wall-box",
+      "sourceFamilyId": "cat-ya5000-rusm5000",
+      "sourcePages": [
+        66
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v009",
+      "sku": "Я5141",
+      "recordKind": "variant",
+      "type": "wall-box",
+      "sourceFamilyId": "cat-ya5000-rusm5000",
+      "sourcePages": [
+        66
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v010",
+      "sku": "Я5441",
+      "recordKind": "variant",
+      "type": "wall-box",
+      "sourceFamilyId": "cat-ya5000-rusm5000",
+      "sourcePages": [
+        66
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v011",
+      "sku": "Я5114",
+      "recordKind": "variant",
+      "type": "wall-box",
+      "sourceFamilyId": "cat-ya5000-rusm5000",
+      "sourcePages": [
+        66
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v012",
+      "sku": "Я5115",
+      "recordKind": "variant",
+      "type": "wall-box",
+      "sourceFamilyId": "cat-ya5000-rusm5000",
+      "sourcePages": [
+        66
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v013",
+      "sku": "Я5414",
+      "recordKind": "variant",
+      "type": "wall-box",
+      "sourceFamilyId": "cat-ya5000-rusm5000",
+      "sourcePages": [
+        66
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v014",
+      "sku": "Я5415",
+      "recordKind": "variant",
+      "type": "wall-box",
+      "sourceFamilyId": "cat-ya5000-rusm5000",
+      "sourcePages": [
+        66
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v015",
+      "sku": "Я5124",
+      "recordKind": "variant",
+      "type": "wall-box",
+      "sourceFamilyId": "cat-ya5000-rusm5000",
+      "sourcePages": [
+        66
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v016",
+      "sku": "Я5125",
+      "recordKind": "variant",
+      "type": "wall-box",
+      "sourceFamilyId": "cat-ya5000-rusm5000",
+      "sourcePages": [
+        66
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v017",
+      "sku": "Я5424",
+      "recordKind": "variant",
+      "type": "wall-box",
+      "sourceFamilyId": "cat-ya5000-rusm5000",
+      "sourcePages": [
+        66
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v018",
+      "sku": "Я5425",
+      "recordKind": "variant",
+      "type": "wall-box",
+      "sourceFamilyId": "cat-ya5000-rusm5000",
+      "sourcePages": [
+        66
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v019",
+      "sku": "Я5130",
+      "recordKind": "variant",
+      "type": "wall-box",
+      "sourceFamilyId": "cat-ya5000-rusm5000",
+      "sourcePages": [
+        66
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v020",
+      "sku": "Я5131",
+      "recordKind": "variant",
+      "type": "wall-box",
+      "sourceFamilyId": "cat-ya5000-rusm5000",
+      "sourcePages": [
+        66
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v021",
+      "sku": "Я5430",
+      "recordKind": "variant",
+      "type": "wall-box",
+      "sourceFamilyId": "cat-ya5000-rusm5000",
+      "sourcePages": [
+        66
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v022",
+      "sku": "Я5431",
+      "recordKind": "variant",
+      "type": "wall-box",
+      "sourceFamilyId": "cat-ya5000-rusm5000",
+      "sourcePages": [
+        66
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v023",
+      "sku": "Я5434",
+      "recordKind": "variant",
+      "type": "wall-box",
+      "sourceFamilyId": "cat-ya5000-rusm5000",
+      "sourcePages": [
+        66
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v024",
+      "sku": "Я5135",
+      "recordKind": "variant",
+      "type": "wall-box",
+      "sourceFamilyId": "cat-ya5000-rusm5000",
+      "sourcePages": [
+        66
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    {
+      "id": "cat-ya5000-rusm5000-v025",
+      "sku": "Я5435",
+      "recordKind": "variant",
+      "type": "wall-box",
+      "sourceFamilyId": "cat-ya5000-rusm5000",
+      "sourcePages": [
+        66
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    {
+      "id": "cat-yauo",
+      "sku": "ЯУО 9601; ЯУО 9602",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-yauo",
+      "sourcePages": [
+        67
+      ],
+      "confidence": "unverified",
+      "fallbackImage": null,
+      "reason": "Текст подтверждает навесной ящик, но нет проверенного чертежа фасада и его органов управления."
+    },
+    {
+      "id": "cat-yauo-v001",
+      "sku": "ЯУО 9601",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-yauo",
+      "sourcePages": [
+        67
+      ],
+      "confidence": "unverified",
+      "fallbackImage": null,
+      "reason": "Текст подтверждает навесной ящик, но нет проверенного чертежа фасада и его органов управления."
+    },
+    {
+      "id": "cat-yauo-v002",
+      "sku": "ЯУО 9602",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-yauo",
+      "sourcePages": [
+        67
+      ],
+      "confidence": "unverified",
+      "fallbackImage": null,
+      "reason": "Текст подтверждает навесной ящик, но нет проверенного чертежа фасада и его органов управления."
+    },
+    {
+      "id": "cat-rusm-5100-5400",
+      "sku": "РУСМ 5100; РУСМ 5400",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-rusm-5100-5400",
+      "sourcePages": [
+        67
+      ],
+      "confidence": "unverified",
+      "fallbackImage": null,
+      "reason": "Текст описывает металлические ящики нескольких габаритов; конкретный фасад и пропорции не показаны."
+    },
+    {
+      "id": "cat-rusm-5100-5400-v001",
+      "sku": "РУСМ 5100",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-rusm-5100-5400",
+      "sourcePages": [
+        67
+      ],
+      "confidence": "unverified",
+      "fallbackImage": null,
+      "reason": "Текст описывает металлические ящики нескольких габаритов; конкретный фасад и пропорции не показаны."
+    },
+    {
+      "id": "cat-rusm-5100-5400-v002",
+      "sku": "РУСМ 5400",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-rusm-5100-5400",
+      "sourcePages": [
+        67
+      ],
+      "confidence": "unverified",
+      "fallbackImage": null,
+      "reason": "Текст описывает металлические ящики нескольких габаритов; конкретный фасад и пропорции не показаны."
+    },
+    {
+      "id": "cat-ptm-tded",
+      "sku": "ПТМ(Д), ТДЕ(Д)-9",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-ptm-tded",
+      "sourcePages": [
+        69
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ptm-tded.webp",
+      "reason": "Страница 69 содержит разные корпуса ПТМ(Д)-У1 и ТДЕ(Д)-9-У3; наследование одного корпуса всем обозначениям запрещено."
+    },
+    {
+      "id": "cat-ptm-tded-v001",
+      "sku": "ПТМ-1,2",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-ptm-tded",
+      "sourcePages": [
+        69
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ptm-tded.webp",
+      "reason": "Страница 69 содержит разные корпуса ПТМ(Д)-У1 и ТДЕ(Д)-9-У3; наследование одного корпуса всем обозначениям запрещено."
+    },
+    {
+      "id": "cat-ptm-tded-v002",
+      "sku": "ПТММ-1,2 (КСЭР)",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-ptm-tded",
+      "sourcePages": [
+        69
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ptm-tded.webp",
+      "reason": "Страница 69 содержит разные корпуса ПТМ(Д)-У1 и ТДЕ(Д)-9-У3; наследование одного корпуса всем обозначениям запрещено."
+    },
+    {
+      "id": "cat-ptm-tded-v003",
+      "sku": "ТДЕД-9-1,2",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-ptm-tded",
+      "sourcePages": [
+        69
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ptm-tded.webp",
+      "reason": "Страница 69 содержит разные корпуса ПТМ(Д)-У1 и ТДЕ(Д)-9-У3; наследование одного корпуса всем обозначениям запрещено."
+    },
+    {
+      "id": "cat-ptm-tded-v004",
+      "sku": "ПТМ-1,6",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-ptm-tded",
+      "sourcePages": [
+        69
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ptm-tded.webp",
+      "reason": "Страница 69 содержит разные корпуса ПТМ(Д)-У1 и ТДЕ(Д)-9-У3; наследование одного корпуса всем обозначениям запрещено."
+    },
+    {
+      "id": "cat-ptm-tded-v005",
+      "sku": "ПТММ-1,6 (КСЭР)",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-ptm-tded",
+      "sourcePages": [
+        69
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ptm-tded.webp",
+      "reason": "Страница 69 содержит разные корпуса ПТМ(Д)-У1 и ТДЕ(Д)-9-У3; наследование одного корпуса всем обозначениям запрещено."
+    },
+    {
+      "id": "cat-ptm-tded-v006",
+      "sku": "ТДЕД-9-го",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-ptm-tded",
+      "sourcePages": [
+        69
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ptm-tded.webp",
+      "reason": "Страница 69 содержит разные корпуса ПТМ(Д)-У1 и ТДЕ(Д)-9-У3; наследование одного корпуса всем обозначениям запрещено."
+    },
+    {
+      "id": "cat-ptm-tded-v007",
+      "sku": "ПТМ-3,0",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-ptm-tded",
+      "sourcePages": [
+        69
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ptm-tded.webp",
+      "reason": "Страница 69 содержит разные корпуса ПТМ(Д)-У1 и ТДЕ(Д)-9-У3; наследование одного корпуса всем обозначениям запрещено."
+    },
+    {
+      "id": "cat-ptm-tded-v008",
+      "sku": "ПТММ-3,0 (КСЭР)",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-ptm-tded",
+      "sourcePages": [
+        69
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ptm-tded.webp",
+      "reason": "Страница 69 содержит разные корпуса ПТМ(Д)-У1 и ТДЕ(Д)-9-У3; наследование одного корпуса всем обозначениям запрещено."
+    },
+    {
+      "id": "cat-ptm-tded-v009",
+      "sku": "ТДЕД-?-3,0",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-ptm-tded",
+      "sourcePages": [
+        69
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ptm-tded.webp",
+      "reason": "Страница 69 содержит разные корпуса ПТМ(Д)-У1 и ТДЕ(Д)-9-У3; наследование одного корпуса всем обозначениям запрещено."
+    },
+    {
+      "id": "cat-ptm-tded-v010",
+      "sku": "ПТМ-5,0",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-ptm-tded",
+      "sourcePages": [
+        69
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ptm-tded.webp",
+      "reason": "Страница 69 содержит разные корпуса ПТМ(Д)-У1 и ТДЕ(Д)-9-У3; наследование одного корпуса всем обозначениям запрещено."
+    },
+    {
+      "id": "cat-ptm-tded-v011",
+      "sku": "ТДЕД-9-5,0",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-ptm-tded",
+      "sourcePages": [
+        69
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ptm-tded.webp",
+      "reason": "Страница 69 содержит разные корпуса ПТМ(Д)-У1 и ТДЕ(Д)-9-У3; наследование одного корпуса всем обозначениям запрещено."
+    },
+    {
+      "id": "cat-ptm-tded-v012",
+      "sku": "ПТМ(Д)-У1",
+      "recordKind": "variant",
+      "type": "protection-cabinet",
+      "sourceFamilyId": "cat-ptm-tded",
+      "sourcePages": [
+        69
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ptm-tded.webp",
+      "reason": "На странице 69 этот корпус с козырьком прямо подписан ПТМ(Д)-У1; совпадение не распространяется на ТДЕ(Д)-9-У3."
+    },
+    {
+      "id": "cat-ptm-tded-v013",
+      "sku": "ТДЕ(Д)-9-У3",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-ptm-tded",
+      "sourcePages": [
+        69
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ptm-tded.webp",
+      "reason": "Страница 69 содержит разные корпуса ПТМ(Д)-У1 и ТДЕ(Д)-9-У3; наследование одного корпуса всем обозначениям запрещено."
+    },
+    {
+      "id": "cat-bdrm",
+      "sku": "БДРМ",
+      "recordKind": "family",
+      "type": "wall-canopy-box",
+      "sourceFamilyId": "cat-bdrm",
+      "sourcePages": [
+        70
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-bdrm.webp",
+      "reason": "Наружный навесной блок с козырьком, передней дверью и задними крепёжными планками. Общий чертёж страницы 70 связан с размерной таблицей; два обозначения только из схем отдельно исключены."
+    },
+    {
+      "id": "cat-bdrm-v001",
+      "sku": "БДРМ-50-1",
+      "recordKind": "variant",
+      "type": "wall-canopy-box",
+      "sourceFamilyId": "cat-bdrm",
+      "sourcePages": [
+        70
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-bdrm.webp",
+      "reason": "Наружный навесной блок с козырьком, передней дверью и задними крепёжными планками. Общий чертёж страницы 70 связан с размерной таблицей; два обозначения только из схем отдельно исключены."
+    },
+    {
+      "id": "cat-bdrm-v002",
+      "sku": "БДРМ-25-4-30-32УХЛ1",
+      "recordKind": "variant",
+      "type": "wall-canopy-box",
+      "sourceFamilyId": "cat-bdrm",
+      "sourcePages": [
+        70
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-bdrm.webp",
+      "reason": "Наружный навесной блок с козырьком, передней дверью и задними крепёжными планками. Общий чертёж страницы 70 связан с размерной таблицей; два обозначения только из схем отдельно исключены."
+    },
+    {
+      "id": "cat-bdrm-v003",
+      "sku": "БДРМ-25-4-33-44 УХЛ1",
+      "recordKind": "variant",
+      "type": "wall-canopy-box",
+      "sourceFamilyId": "cat-bdrm",
+      "sourcePages": [
+        70
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-bdrm.webp",
+      "reason": "Наружный навесной блок с козырьком, передней дверью и задними крепёжными планками. Общий чертёж страницы 70 связан с размерной таблицей; два обозначения только из схем отдельно исключены."
+    },
+    {
+      "id": "cat-bdrm-v004",
+      "sku": "БДРМ-25-2-10-11 УХЛ1",
+      "recordKind": "variant",
+      "type": "wall-canopy-box",
+      "sourceFamilyId": "cat-bdrm",
+      "sourcePages": [
+        70
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-bdrm.webp",
+      "reason": "Наружный навесной блок с козырьком, передней дверью и задними крепёжными планками. Общий чертёж страницы 70 связан с размерной таблицей; два обозначения только из схем отдельно исключены."
+    },
+    {
+      "id": "cat-bdrm-v005",
+      "sku": "БДРМ-25-2-20-22 УХЛ1",
+      "recordKind": "variant",
+      "type": "wall-canopy-box",
+      "sourceFamilyId": "cat-bdrm",
+      "sourcePages": [
+        70
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-bdrm.webp",
+      "reason": "Наружный навесной блок с козырьком, передней дверью и задними крепёжными планками. Общий чертёж страницы 70 связан с размерной таблицей; два обозначения только из схем отдельно исключены."
+    },
+    {
+      "id": "cat-bdrm-v006",
+      "sku": "БДРМ-10-4-30-33 УХЛ1",
+      "recordKind": "variant",
+      "type": "wall-canopy-box",
+      "sourceFamilyId": "cat-bdrm",
+      "sourcePages": [
+        70
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-bdrm.webp",
+      "reason": "Наружный навесной блок с козырьком, передней дверью и задними крепёжными планками. Общий чертёж страницы 70 связан с размерной таблицей; два обозначения только из схем отдельно исключены."
+    },
+    {
+      "id": "cat-bdrm-v007",
+      "sku": "БДРМ-10-4-40-44УХЛ1",
+      "recordKind": "variant",
+      "type": "wall-canopy-box",
+      "sourceFamilyId": "cat-bdrm",
+      "sourcePages": [
+        70
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-bdrm.webp",
+      "reason": "Наружный навесной блок с козырьком, передней дверью и задними крепёжными планками. Общий чертёж страницы 70 связан с размерной таблицей; два обозначения только из схем отдельно исключены."
+    },
+    {
+      "id": "cat-bdrm-v008",
+      "sku": "БДРМ-10-2-10-11 УХЛ1",
+      "recordKind": "variant",
+      "type": "wall-canopy-box",
+      "sourceFamilyId": "cat-bdrm",
+      "sourcePages": [
+        70
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-bdrm.webp",
+      "reason": "Наружный навесной блок с козырьком, передней дверью и задними крепёжными планками. Общий чертёж страницы 70 связан с размерной таблицей; два обозначения только из схем отдельно исключены."
+    },
+    {
+      "id": "cat-bdrm-v009",
+      "sku": "БДРМ-10-2-20-22 УХЛ1",
+      "recordKind": "variant",
+      "type": "wall-canopy-box",
+      "sourceFamilyId": "cat-bdrm",
+      "sourcePages": [
+        70
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-bdrm.webp",
+      "reason": "Наружный навесной блок с козырьком, передней дверью и задними крепёжными планками. Общий чертёж страницы 70 связан с размерной таблицей; два обозначения только из схем отдельно исключены."
+    },
+    {
+      "id": "cat-bdrm-v010",
+      "sku": "БДРМ-25-2-22-УХЛ1",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-bdrm",
+      "sourcePages": [
+        70,
+        71
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-bdrm.webp",
+      "reason": "Обозначение БДРМ-25-2-22 приведено только на принципиальной схеме и отличается от размерной таблицы; одинаковый корпус не утверждается."
+    },
+    {
+      "id": "cat-bdrm-v011",
+      "sku": "БДРМ-25-4-41-УХЛ1",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-bdrm",
+      "sourcePages": [
+        70,
+        71
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-bdrm.webp",
+      "reason": "Обозначение БДРМ-25-4-41 приведено только на принципиальной схеме; его механическое исполнение отдельно не подтверждено."
+    },
+    {
+      "id": "cat-pusk-3m",
+      "sku": "ПУСК-3М",
+      "recordKind": "family",
+      "type": "control-cabinet",
+      "sourceFamilyId": "cat-pusk-3m",
+      "sourcePages": [
+        72
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-pusk-3m.webp",
+      "reason": "Напольный шкаф на ножках с отделённой верхней приборной панелью и передней дверью."
+    },
+    {
+      "id": "cat-shueng",
+      "sku": "ШУЭНГ",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-shueng",
+      "sourcePages": [
+        72,
+        73
+      ],
+      "confidence": "unverified",
+      "fallbackImage": null,
+      "reason": "Даны текст и габариты, но отсутствует проверенный чертёж внешней конструкции."
+    },
+    {
+      "id": "cat-kik",
+      "sku": "КИК",
+      "recordKind": "family",
+      "type": "metering-box",
+      "sourceFamilyId": "cat-kik",
+      "sourcePages": [
+        74
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-kik.webp",
+      "reason": "Квадратная стойка с небольшой дверцей и двускатным козырьком; отдельная от СКИП форма."
+    },
+    {
+      "id": "cat-kik-v001",
+      "sku": "КИК 1-1",
+      "recordKind": "variant",
+      "type": "metering-box",
+      "sourceFamilyId": "cat-kik",
+      "sourcePages": [
+        74
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-kik.webp",
+      "reason": "Квадратная стойка с небольшой дверцей и двускатным козырьком; отдельная от СКИП форма."
+    },
+    {
+      "id": "cat-kik-v002",
+      "sku": "КИК 1-2",
+      "recordKind": "variant",
+      "type": "metering-box",
+      "sourceFamilyId": "cat-kik",
+      "sourcePages": [
+        74
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-kik.webp",
+      "reason": "Квадратная стойка с небольшой дверцей и двускатным козырьком; отдельная от СКИП форма."
+    },
+    {
+      "id": "cat-kik-v003",
+      "sku": "КИК 1-3",
+      "recordKind": "variant",
+      "type": "metering-box",
+      "sourceFamilyId": "cat-kik",
+      "sourcePages": [
+        74
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-kik.webp",
+      "reason": "Квадратная стойка с небольшой дверцей и двускатным козырьком; отдельная от СКИП форма."
+    },
+    {
+      "id": "cat-skip",
+      "sku": "СКИП",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-skip",
+      "sourcePages": [
+        74
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-skip.webp",
+      "reason": "Круглая трубчатая стойка с прямоугольной головкой и треугольной крышей; квадратная КИК не подставляется."
+    },
+    {
+      "id": "cat-skip-v001",
+      "sku": "СКИП-1",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-skip",
+      "sourcePages": [
+        74
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-skip.webp",
+      "reason": "Круглая трубчатая стойка с прямоугольной головкой и треугольной крышей; квадратная КИК не подставляется."
+    },
+    {
+      "id": "cat-skip-v002",
+      "sku": "СКИП-2",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-skip",
+      "sourcePages": [
+        74
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-skip.webp",
+      "reason": "Круглая трубчатая стойка с прямоугольной головкой и треугольной крышей; квадратная КИК не подставляется."
+    },
+    {
+      "id": "cat-ktpzh-2-4",
+      "sku": "КТПЖ 2–4/27,5 У1",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-ktpzh-2-4",
+      "sourcePages": [
+        75
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ktpzh-2-4.webp",
+      "reason": "Опорная однофазная железнодорожная сборка с боковой арматурой; трёхфазная МТП не соответствует."
+    },
+    {
+      "id": "cat-ktpzh-2-4-v001",
+      "sku": "КТПЖ-2/27,5/0,23-У1",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-ktpzh-2-4",
+      "sourcePages": [
+        75
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ktpzh-2-4.webp",
+      "reason": "Опорная однофазная железнодорожная сборка с боковой арматурой; трёхфазная МТП не соответствует."
+    },
+    {
+      "id": "cat-ktpzh-2-4-v002",
+      "sku": "КТПЖ-4/27,5/0,23-У1",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-ktpzh-2-4",
+      "sourcePages": [
+        75
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ktpzh-2-4.webp",
+      "reason": "Опорная однофазная железнодорожная сборка с боковой арматурой; трёхфазная МТП не соответствует."
+    },
+    {
+      "id": "cat-ktpzh-25-1000",
+      "sku": "КТПЖ 25–1000/27,5/0,4 У1, Т1",
+      "recordKind": "family",
+      "type": "railway-frame-substation",
+      "sourceFamilyId": "cat-ktpzh-25-1000",
+      "sourcePages": [
+        76
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "reason": "Повторяемая наружная сборка на общей платформе: высокая вводная рама, открытый трансформатор и шкафы НН. Общий вид серии со страницы 76, не чертёж отдельной мощности."
+    },
+    {
+      "id": "cat-ktpzh-25-1000-v001",
+      "sku": "КТПЖ-25/27,5-0,4-У1",
+      "recordKind": "variant",
+      "type": "railway-frame-substation",
+      "sourceFamilyId": "cat-ktpzh-25-1000",
+      "sourcePages": [
+        76
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "reason": "Повторяемая наружная сборка на общей платформе: высокая вводная рама, открытый трансформатор и шкафы НН. Общий вид серии со страницы 76, не чертёж отдельной мощности."
+    },
+    {
+      "id": "cat-ktpzh-25-1000-v002",
+      "sku": "КТПЖ-40/27,5-0,4-У1",
+      "recordKind": "variant",
+      "type": "railway-frame-substation",
+      "sourceFamilyId": "cat-ktpzh-25-1000",
+      "sourcePages": [
+        76
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "reason": "Повторяемая наружная сборка на общей платформе: высокая вводная рама, открытый трансформатор и шкафы НН. Общий вид серии со страницы 76, не чертёж отдельной мощности."
+    },
+    {
+      "id": "cat-ktpzh-25-1000-v003",
+      "sku": "КТПЖ-63/27,5-0,4-У1",
+      "recordKind": "variant",
+      "type": "railway-frame-substation",
+      "sourceFamilyId": "cat-ktpzh-25-1000",
+      "sourcePages": [
+        76
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "reason": "Повторяемая наружная сборка на общей платформе: высокая вводная рама, открытый трансформатор и шкафы НН. Общий вид серии со страницы 76, не чертёж отдельной мощности."
+    },
+    {
+      "id": "cat-ktpzh-25-1000-v004",
+      "sku": "КТПЖ-100/27,5-0,4-У1",
+      "recordKind": "variant",
+      "type": "railway-frame-substation",
+      "sourceFamilyId": "cat-ktpzh-25-1000",
+      "sourcePages": [
+        76
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "reason": "Повторяемая наружная сборка на общей платформе: высокая вводная рама, открытый трансформатор и шкафы НН. Общий вид серии со страницы 76, не чертёж отдельной мощности."
+    },
+    {
+      "id": "cat-ktpzh-25-1000-v005",
+      "sku": "КТПЖ-160/27,5-0,4-У1",
+      "recordKind": "variant",
+      "type": "railway-frame-substation",
+      "sourceFamilyId": "cat-ktpzh-25-1000",
+      "sourcePages": [
+        76
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "reason": "Повторяемая наружная сборка на общей платформе: высокая вводная рама, открытый трансформатор и шкафы НН. Общий вид серии со страницы 76, не чертёж отдельной мощности."
+    },
+    {
+      "id": "cat-ktpzh-25-1000-v006",
+      "sku": "КТПЖ-250/27,5-0,4-У1",
+      "recordKind": "variant",
+      "type": "railway-frame-substation",
+      "sourceFamilyId": "cat-ktpzh-25-1000",
+      "sourcePages": [
+        76
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "reason": "Повторяемая наружная сборка на общей платформе: высокая вводная рама, открытый трансформатор и шкафы НН. Общий вид серии со страницы 76, не чертёж отдельной мощности."
+    },
+    {
+      "id": "cat-ktpzh-25-1000-v007",
+      "sku": "КТПЖ-400/27,5-0,4-У1",
+      "recordKind": "variant",
+      "type": "railway-frame-substation",
+      "sourceFamilyId": "cat-ktpzh-25-1000",
+      "sourcePages": [
+        76
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "reason": "Повторяемая наружная сборка на общей платформе: высокая вводная рама, открытый трансформатор и шкафы НН. Общий вид серии со страницы 76, не чертёж отдельной мощности."
+    },
+    {
+      "id": "cat-ktpzh-25-1000-v008",
+      "sku": "КТПЖ-630/27,5-0,4-У1",
+      "recordKind": "variant",
+      "type": "railway-frame-substation",
+      "sourceFamilyId": "cat-ktpzh-25-1000",
+      "sourcePages": [
+        76
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "reason": "Повторяемая наружная сборка на общей платформе: высокая вводная рама, открытый трансформатор и шкафы НН. Общий вид серии со страницы 76, не чертёж отдельной мощности."
+    },
+    {
+      "id": "cat-ktpzh-25-1000-v009",
+      "sku": "КТПЖ-1000/27,5-0,4-У1",
+      "recordKind": "variant",
+      "type": "railway-frame-substation",
+      "sourceFamilyId": "cat-ktpzh-25-1000",
+      "sourcePages": [
+        76
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpzh-25-1000.webp",
+      "reason": "Повторяемая наружная сборка на общей платформе: высокая вводная рама, открытый трансформатор и шкафы НН. Общий вид серии со страницы 76, не чертёж отдельной мощности."
+    },
+    {
+      "id": "cat-mtpzh-1-25-2-5",
+      "sku": "МТПЖ 1,25–2,5/10(6)/0,23 У1",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-mtpzh-1-25-2-5",
+      "sourcePages": [
+        77
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-mtpzh-1-25-2-5.webp",
+      "reason": "Одна опора с одиночным боковым трансформатором; отсутствуют три ввода и большой бак трёхфазной МТП."
+    },
+    {
+      "id": "cat-mtpzh-1-25-2-5-v001",
+      "sku": "МТПЖ-1,25/10-0,23У1",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-mtpzh-1-25-2-5",
+      "sourcePages": [
+        77
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-mtpzh-1-25-2-5.webp",
+      "reason": "Одна опора с одиночным боковым трансформатором; отсутствуют три ввода и большой бак трёхфазной МТП."
+    },
+    {
+      "id": "cat-mtpzh-1-25-2-5-v002",
+      "sku": "МТПЖ-2,5/10-0,23У1",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-mtpzh-1-25-2-5",
+      "sourcePages": [
+        77
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-mtpzh-1-25-2-5.webp",
+      "reason": "Одна опора с одиночным боковым трансформатором; отсутствуют три ввода и большой бак трёхфазной МТП."
+    },
+    {
+      "id": "cat-mtpzh-10",
+      "sku": "МТПЖ 10/27,5",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-mtpzh-10",
+      "sourcePages": [
+        78
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-mtpzh-10.webp",
+      "reason": "Компактная сборка высокого шкафа и отдельного низкого трансформатора; название МТПЖ не означает мачтовую силуэтную форму."
+    },
+    {
+      "id": "cat-mtpzh-10-v001",
+      "sku": "МТПЖ10/27,5-0,23У1",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-mtpzh-10",
+      "sourcePages": [
+        78
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-mtpzh-10.webp",
+      "reason": "Компактная сборка высокого шкафа и отдельного низкого трансформатора; название МТПЖ не означает мачтовую силуэтную форму."
+    },
+    {
+      "id": "cat-atp-2x25",
+      "sku": "АТП-2×25 У1",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-atp-2x25",
+      "sourcePages": [
+        81
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-atp-2x25.webp",
+      "reason": "Специальная железнодорожная автотрансформаторная сборка на общей раме; универсальная ячейка не подходит."
+    },
+    {
+      "id": "cat-psk-27-5",
+      "sku": "ПСК-27,5 кВ",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-psk-27-5",
+      "sourcePages": [
+        84
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-psk-27-5.webp",
+      "reason": "Пост секционирования с несколькими компоновками и высоковольтными аппаратами; нужен исходный чертёж."
+    },
+    {
+      "id": "cat-psk-27-5-v001",
+      "sku": "ПСК-27,5-5 У1",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-psk-27-5",
+      "sourcePages": [
+        84
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-psk-27-5.webp",
+      "reason": "Пост секционирования с несколькими компоновками и высоковольтными аппаратами; нужен исходный чертёж."
+    },
+    {
+      "id": "cat-kru-27-5",
+      "sku": "КРУ-27,5 кВ",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-kru-27-5",
+      "sourcePages": [
+        86
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-kru-27-5.webp",
+      "reason": "Железнодорожная ячейка с боковыми изоляторами и собственным фасадом; внутреннее КРУ 6–10 кВ не подставляется."
+    },
+    {
+      "id": "cat-pktp",
+      "sku": "ПКТП 25–1000/6(10)/0,4 кВ У1",
+      "recordKind": "family",
+      "type": "mining-skid-substation",
+      "sourceFamilyId": "cat-pktp",
+      "sourcePages": [
+        87
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-pktp.webp",
+      "reason": "Повторяемая передвижная сборка на полозьях: боковой шкаф, трансформатор и верхняя сетчатая зона вводов. Контур общего вида серии со страницы 87; размеры исполнения не переносятся."
+    },
+    {
+      "id": "cat-pktp-v001",
+      "sku": "ПКТП-25",
+      "recordKind": "variant",
+      "type": "mining-skid-substation",
+      "sourceFamilyId": "cat-pktp",
+      "sourcePages": [
+        87
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-pktp.webp",
+      "reason": "Повторяемая передвижная сборка на полозьях: боковой шкаф, трансформатор и верхняя сетчатая зона вводов. Контур общего вида серии со страницы 87; размеры исполнения не переносятся."
+    },
+    {
+      "id": "cat-pktp-v002",
+      "sku": "ПКТП-40",
+      "recordKind": "variant",
+      "type": "mining-skid-substation",
+      "sourceFamilyId": "cat-pktp",
+      "sourcePages": [
+        87
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-pktp.webp",
+      "reason": "Повторяемая передвижная сборка на полозьях: боковой шкаф, трансформатор и верхняя сетчатая зона вводов. Контур общего вида серии со страницы 87; размеры исполнения не переносятся."
+    },
+    {
+      "id": "cat-pktp-v003",
+      "sku": "ПКТП-63",
+      "recordKind": "variant",
+      "type": "mining-skid-substation",
+      "sourceFamilyId": "cat-pktp",
+      "sourcePages": [
+        87
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-pktp.webp",
+      "reason": "Повторяемая передвижная сборка на полозьях: боковой шкаф, трансформатор и верхняя сетчатая зона вводов. Контур общего вида серии со страницы 87; размеры исполнения не переносятся."
+    },
+    {
+      "id": "cat-pktp-v004",
+      "sku": "ПКТП-100",
+      "recordKind": "variant",
+      "type": "mining-skid-substation",
+      "sourceFamilyId": "cat-pktp",
+      "sourcePages": [
+        87
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-pktp.webp",
+      "reason": "Повторяемая передвижная сборка на полозьях: боковой шкаф, трансформатор и верхняя сетчатая зона вводов. Контур общего вида серии со страницы 87; размеры исполнения не переносятся."
+    },
+    {
+      "id": "cat-pktp-v005",
+      "sku": "ПКТП-160",
+      "recordKind": "variant",
+      "type": "mining-skid-substation",
+      "sourceFamilyId": "cat-pktp",
+      "sourcePages": [
+        87
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-pktp.webp",
+      "reason": "Повторяемая передвижная сборка на полозьях: боковой шкаф, трансформатор и верхняя сетчатая зона вводов. Контур общего вида серии со страницы 87; размеры исполнения не переносятся."
+    },
+    {
+      "id": "cat-pktp-v006",
+      "sku": "ПКТП-250",
+      "recordKind": "variant",
+      "type": "mining-skid-substation",
+      "sourceFamilyId": "cat-pktp",
+      "sourcePages": [
+        87
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-pktp.webp",
+      "reason": "Повторяемая передвижная сборка на полозьях: боковой шкаф, трансформатор и верхняя сетчатая зона вводов. Контур общего вида серии со страницы 87; размеры исполнения не переносятся."
+    },
+    {
+      "id": "cat-pktp-v008",
+      "sku": "ПКТП-630",
+      "recordKind": "variant",
+      "type": "mining-skid-substation",
+      "sourceFamilyId": "cat-pktp",
+      "sourcePages": [
+        87
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-pktp.webp",
+      "reason": "Повторяемая передвижная сборка на полозьях: боковой шкаф, трансформатор и верхняя сетчатая зона вводов. Контур общего вида серии со страницы 87; размеры исполнения не переносятся."
+    },
+    {
+      "id": "cat-kru-rn",
+      "sku": "КРУ-РН 6(10) кВ",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-kru-rn",
+      "sourcePages": [
+        89
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-kru-rn.webp",
+      "reason": "Рудничная ячейка с характерным смотровым окном и монтажной рамой; исходный чертёж сохраняет конструкцию."
+    },
+    {
+      "id": "cat-yakno-6-10",
+      "sku": "ЯКНО 6(10) кВ",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-yakno-6-10",
+      "sourcePages": [
+        90
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-yakno-6-10.webp",
+      "reason": "Шкаф на полозьях с высоким сетчатым ограждением вводов; обычный шкаф не представляет верхнюю защитную зону."
+    },
+    {
+      "id": "cat-yakno-20",
+      "sku": "ЯКНО-20 кВ У1",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-yakno-20",
+      "sourcePages": [
+        91
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-yakno-20.webp",
+      "reason": "Высокий трёхсекционный шкаф с сетчатой верхней камерой; отличается от ЯКНО 6–10 кВ и обычного КРУ."
+    },
+    {
+      "id": "cat-ktpshg",
+      "sku": "КТПШГ 100–1000/6(10)/0,4 кВ У1",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-ktpshg",
+      "sourcePages": [
+        92
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ktpshg.webp",
+      "reason": "Низкая шахтная горизонтальная сборка на полозьях с центральным баком; общий силуэт КТП не подходит."
+    },
+    {
+      "id": "cat-ukzv",
+      "sku": "УКЗВ",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-ukzv",
+      "sourcePages": [
+        93
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ukzv.webp",
+      "reason": "Высокая двухъярусная наружная установка с верхними изоляторами; не низкий шкаф катодной защиты."
+    },
+    {
+      "id": "cat-ukzv-v001",
+      "sku": "УКЗВ-6(10)В-1,2-2У1",
+      "recordKind": "variant",
+      "type": "upper-input-protection",
+      "sourceFamilyId": "cat-ukzv",
+      "sourcePages": [
+        93
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ukzv.webp",
+      "reason": "Буква В прямо означает воздушный ввод; верхние вводные изоляторы соответствуют общему виду УКЗВ на странице 93."
+    },
+    {
+      "id": "cat-ukzv-v002",
+      "sku": "УКЗВ-6(10)К-1,2-2У1",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-ukzv",
+      "sourcePages": [
+        93
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ukzv.webp",
+      "reason": "Высокая двухъярусная наружная установка с верхними изоляторами; не низкий шкаф катодной защиты."
+    },
+    {
+      "id": "cat-ukzv-v003",
+      "sku": "УКЗВ-6(10)В-1,2-4У1",
+      "recordKind": "variant",
+      "type": "upper-input-protection",
+      "sourceFamilyId": "cat-ukzv",
+      "sourcePages": [
+        93
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ukzv.webp",
+      "reason": "Буква В прямо означает воздушный ввод; верхние вводные изоляторы соответствуют общему виду УКЗВ на странице 93."
+    },
+    {
+      "id": "cat-ukzv-v004",
+      "sku": "УКЗВ-6(10)К-1,2-4У1",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-ukzv",
+      "sourcePages": [
+        93
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ukzv.webp",
+      "reason": "Высокая двухъярусная наружная установка с верхними изоляторами; не низкий шкаф катодной защиты."
+    },
+    {
+      "id": "cat-ukzv-v005",
+      "sku": "УКЗВ-6(10)В-3-2У1",
+      "recordKind": "variant",
+      "type": "upper-input-protection",
+      "sourceFamilyId": "cat-ukzv",
+      "sourcePages": [
+        93
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ukzv.webp",
+      "reason": "Буква В прямо означает воздушный ввод; верхние вводные изоляторы соответствуют общему виду УКЗВ на странице 93."
+    },
+    {
+      "id": "cat-ukzv-v006",
+      "sku": "УКЗВ-6(10)К-3-2У1",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-ukzv",
+      "sourcePages": [
+        93
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ukzv.webp",
+      "reason": "Высокая двухъярусная наружная установка с верхними изоляторами; не низкий шкаф катодной защиты."
+    },
+    {
+      "id": "cat-ukzv-v007",
+      "sku": "УКЗВ-6(10)К-5-1У1",
+      "recordKind": "variant",
+      "type": null,
+      "sourceFamilyId": "cat-ukzv",
+      "sourcePages": [
+        93
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-ukzv.webp",
+      "reason": "Высокая двухъярусная наружная установка с верхними изоляторами; не низкий шкаф катодной защиты."
+    },
+    {
+      "id": "cat-ukzn",
+      "sku": "УКЗН",
+      "recordKind": "family",
+      "type": "outdoor-floor-cabinet",
+      "sourceFamilyId": "cat-ukzn",
+      "sourcePages": [
+        93
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ukzn.webp",
+      "reason": "Наружный высокий однодверный шкаф с козырьком на фундаменте; на странице 93 прямо отделён от двухъярусной УКЗВ. Отсутствующие у УКЗН верхние изоляторы не добавляются."
+    },
+    {
+      "id": "cat-ukzn-v001",
+      "sku": "УКЗН-0,22-1,2-2У1",
+      "recordKind": "variant",
+      "type": "outdoor-floor-cabinet",
+      "sourceFamilyId": "cat-ukzn",
+      "sourcePages": [
+        93
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ukzn.webp",
+      "reason": "Наружный высокий однодверный шкаф с козырьком на фундаменте; на странице 93 прямо отделён от двухъярусной УКЗВ. Отсутствующие у УКЗН верхние изоляторы не добавляются."
+    },
+    {
+      "id": "cat-ukzn-v002",
+      "sku": "УКЗН-0,22-1,2-4У1",
+      "recordKind": "variant",
+      "type": "outdoor-floor-cabinet",
+      "sourceFamilyId": "cat-ukzn",
+      "sourcePages": [
+        93
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ukzn.webp",
+      "reason": "Наружный высокий однодверный шкаф с козырьком на фундаменте; на странице 93 прямо отделён от двухъярусной УКЗВ. Отсутствующие у УКЗН верхние изоляторы не добавляются."
+    },
+    {
+      "id": "cat-ukzn-v003",
+      "sku": "УКЗН-0,22-3-2У1",
+      "recordKind": "variant",
+      "type": "outdoor-floor-cabinet",
+      "sourceFamilyId": "cat-ukzn",
+      "sourcePages": [
+        93
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ukzn.webp",
+      "reason": "Наружный высокий однодверный шкаф с козырьком на фундаменте; на странице 93 прямо отделён от двухъярусной УКЗВ. Отсутствующие у УКЗН верхние изоляторы не добавляются."
+    },
+    {
+      "id": "cat-ukzn-v004",
+      "sku": "УКЗН-0,22-5-1У1",
+      "recordKind": "variant",
+      "type": "outdoor-floor-cabinet",
+      "sourceFamilyId": "cat-ukzn",
+      "sourcePages": [
+        93
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ukzn.webp",
+      "reason": "Наружный высокий однодверный шкаф с козырьком на фундаменте; на странице 93 прямо отделён от двухъярусной УКЗВ. Отсутствующие у УКЗН верхние изоляторы не добавляются."
+    },
+    {
+      "id": "cat-bueskn",
+      "sku": "БУЭСКН",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-bueskn",
+      "sourcePages": [
+        95
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-bueskn.webp",
+      "reason": "Навесной блок с козырьком, верхними индикаторами и отдельной фасадной дверцей; сохранён исходный рисунок."
+    },
+    {
+      "id": "cat-bushk-2m",
+      "sku": "БУШК-2М",
+      "recordKind": "family",
+      "type": "plain-floor-cabinet",
+      "sourceFamilyId": "cat-bushk-2m",
+      "sourcePages": [
+        96
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-bushk-2m.webp",
+      "reason": "Высокий узкий напольный однодверный шкаф; общая внешняя форма корпуса, приборы и вентиляция исполнения остаются в исходнике."
+    },
+    {
+      "id": "cat-ktpnd",
+      "sku": "КТПНД 25–400/6(10)/0,4 кВ У1",
+      "recordKind": "family",
+      "type": "substation",
+      "sourceFamilyId": "cat-ktpnd",
+      "sourcePages": [
+        97
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpnd.webp",
+      "reason": "Двухъярусный шкаф с верхними вводами и открытым трансформатором за ним на общей платформе; форма родственна КТП 25–250."
+    },
+    {
+      "id": "cat-ktpnd-v001",
+      "sku": "КТПНД 25",
+      "recordKind": "variant",
+      "type": "substation",
+      "sourceFamilyId": "cat-ktpnd",
+      "sourcePages": [
+        97
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpnd.webp",
+      "reason": "Двухъярусный шкаф с верхними вводами и открытым трансформатором за ним на общей платформе; форма родственна КТП 25–250."
+    },
+    {
+      "id": "cat-ktpnd-v002",
+      "sku": "КТПНД 40",
+      "recordKind": "variant",
+      "type": "substation",
+      "sourceFamilyId": "cat-ktpnd",
+      "sourcePages": [
+        97
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpnd.webp",
+      "reason": "Двухъярусный шкаф с верхними вводами и открытым трансформатором за ним на общей платформе; форма родственна КТП 25–250."
+    },
+    {
+      "id": "cat-ktpnd-v003",
+      "sku": "КТПНД 63",
+      "recordKind": "variant",
+      "type": "substation",
+      "sourceFamilyId": "cat-ktpnd",
+      "sourcePages": [
+        97
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpnd.webp",
+      "reason": "Двухъярусный шкаф с верхними вводами и открытым трансформатором за ним на общей платформе; форма родственна КТП 25–250."
+    },
+    {
+      "id": "cat-ktpnd-v004",
+      "sku": "КТПНД 100",
+      "recordKind": "variant",
+      "type": "substation",
+      "sourceFamilyId": "cat-ktpnd",
+      "sourcePages": [
+        97
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpnd.webp",
+      "reason": "Двухъярусный шкаф с верхними вводами и открытым трансформатором за ним на общей платформе; форма родственна КТП 25–250."
+    },
+    {
+      "id": "cat-ktpnd-v005",
+      "sku": "КТПНД 160",
+      "recordKind": "variant",
+      "type": "substation",
+      "sourceFamilyId": "cat-ktpnd",
+      "sourcePages": [
+        97
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpnd.webp",
+      "reason": "Двухъярусный шкаф с верхними вводами и открытым трансформатором за ним на общей платформе; форма родственна КТП 25–250."
+    },
+    {
+      "id": "cat-ktpnd-v006",
+      "sku": "КТПНД 250",
+      "recordKind": "variant",
+      "type": "substation",
+      "sourceFamilyId": "cat-ktpnd",
+      "sourcePages": [
+        97
+      ],
+      "confidence": "source-matched",
+      "fallbackImage": "/catalog-products/cat-ktpnd.webp",
+      "reason": "Двухъярусный шкаф с верхними вводами и открытым трансформатором за ним на общей платформе; форма родственна КТП 25–250."
+    },
+    {
+      "id": "cat-modular-oil",
+      "sku": "Модульный блок контейнерного типа",
+      "recordKind": "family",
+      "type": null,
+      "sourceFamilyId": "cat-modular-oil",
+      "sourcePages": [
+        98
+      ],
+      "confidence": "source-only",
+      "fallbackImage": "/catalog-products/cat-modular-oil.webp",
+      "reason": "Длинный контейнер с лестницами и площадками; условная БКТП не отражает внешний вид."
+    }
+  ]
+}

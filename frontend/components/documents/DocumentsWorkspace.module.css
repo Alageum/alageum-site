@@ -1,0 +1,21 @@
+.workspace { min-width: 0; display: grid; gap: 16px; overflow-wrap: anywhere; }
+.workspace :global(.grid) { grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); }
+
+.documentActions { margin-top: 12px; }
+.signing { min-width: 0; display: grid; gap: 12px; }
+.signing p, .signing h3 { margin: 0; }
+.signingHeader { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.signingHeader h3 { overflow-wrap: anywhere; }
+.signingPreview { display: grid; gap: 10px; margin: 0; padding: 16px; background: #f3f6f9; border-radius: 10px; }
+.signingPreview div { display: grid; grid-template-columns: minmax(100px, 140px) minmax(0, 1fr); gap: 12px; }
+.signingPreview dt { color: #526174; }
+.signingPreview dd { margin: 0; overflow-wrap: anywhere; }
+.signingHash { font-family: monospace; font-size: 0.9rem; }
+.signingActions { display: flex; flex-wrap: wrap; gap: 10px; }
+.signing :global(button:disabled) { opacity: 0.6; cursor: not-allowed; }
+@media (max-width: 520px) {
+  .signingHeader { flex-wrap: wrap; }
+  .signingPreview { padding: 12px; }
+  .signingPreview div { grid-template-columns: 1fr; gap: 3px; }
+  .signingActions { flex-direction: column; }
+}

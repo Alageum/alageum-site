@@ -1,0 +1,155 @@
+{
+  "format": "alageum-ptmm-qualification-independent-review-v1",
+  "status": "approved-bounded-ptmm-qualification",
+  "reviewedAt": "2026-10-06T22:15:26.765749+00:00",
+  "baselineCommit": "27e143efa1e0cbe850887a6807b17ea29a2877da",
+  "baselineTree": "aa54618c5f6f6602899dc87422082ff5d1ca678e",
+  "approvedDependenciesSha256": "06145ed1c79357f6b8383dd8f224f5a11991c42e76032af1dd9c5d8aa35c4f9c",
+  "sourceUiReviewSha256": "4fc8d837f2ceb97dca1cbb6fa66f6490db2de97d9753654fbb0c895e32e23fa3",
+  "affectedIds": [
+    "cat-ptm-tded-v002",
+    "cat-ptm-tded-v005",
+    "cat-ptm-tded-v008"
+  ],
+  "dimensionCellsPerMode": 6,
+  "otherRecordsUnchanged": 840,
+  "rawRecordsPreserved": 843,
+  "sourceUnitWording": "В исходной строке единица измерения не указана; обозначение „мм“ требует подтверждения.",
+  "browserEvidence": {
+    "readability": "cell-and-ancestor-bounds",
+    "units": "rendered-dom",
+    "console": "bounded-per-case-page-events"
+  },
+  "separateBrowserCases": 16,
+  "existingCatalogCases": 254,
+  "existingSuiteChanges": 0,
+  "thresholdChanges": 0,
+  "existingCatalogJobTimeoutMinutes": 25,
+  "existingCatalogStepTimeoutMinutes": 18,
+  "qualificationJobTimeoutMinutes": 15,
+  "qualificationStepTimeoutMinutes": 6,
+  "geometryMaterialChanges": 0,
+  "recordChanges": 0,
+  "pageChanges": 0,
+  "frozenCandidate": {
+    "manifestSha256": "628d5982b826bd05838e8887cebee6eb45772745b3d894678d2d26bf7a95e0bf",
+    "combinedPatchSha256": "f13fc88b9dfddc2b371083eac871867a60224c03cbf1167cde2ec244ab43d409",
+    "deltaPatchSha256": "6113bf94258182727fb69d99bbf92ca54a52a464293a4bff4467314aba2bed48",
+    "implementationAndPendingReviewFiles": 32,
+    "pendingClearanceSha256": "8d65984fc4911f380f519a43ba423a2e981ced2ebffb464f5066565bf29ae105"
+  },
+  "sourceUiReview": {
+    "status": "passed-and-identical",
+    "reviewedLogicFiles": 8,
+    "productsPerMode": 843,
+    "comparisonBatchesPerMode": 211,
+    "technicalCellsPerMode": 15737,
+    "malformedSpoofRejections": 183,
+    "getterInvocations": 0,
+    "differencesOnlySelections": 7,
+    "idsUuidsPricesQuotesCsvSummariesPreserved": true,
+    "ambiguousTdedRecordsRemainExcluded": [
+      "cat-ptm-tded-v006",
+      "cat-ptm-tded-v009"
+    ],
+    "sourcePages": [
+      68,
+      69
+    ],
+    "sourceEvidenceIsFreshPostReset": true
+  },
+  "gateReview": {
+    "status": "passed",
+    "requiredCurrentFiles": 69,
+    "finitePredecessors": 11,
+    "historicalPredecessorBytesMatchBaseGit": true,
+    "fixedSourceAndSourceUiPinsPreserved": true,
+    "independentCasesAndControls": 140,
+    "defaultEntrypoints": [
+      "ptmm",
+      "visual",
+      "browser",
+      "protection",
+      "measurement",
+      "sourceAsset"
+    ],
+    "negativeProofSha256": "b38aa6e673e3232cb95d0bc29e7b757a480980198ccbfe720d116f8367b8bf8c",
+    "negativeScriptSha256": "e2ffcd4c0a27dddcde8d1b24fe27b0539f9930497fd80847cfbb989d1141c9e2",
+    "suppliedGateTests": {
+      "passed": 14,
+      "failed": 0,
+      "logSha256": "0e5867b0c8ccd9bdd4e90be44e4093e11e859fe652364f5feadd5912ad2fbcd4"
+    },
+    "controls": [
+      "missing or pending approval",
+      "incomplete or broadened closure and predecessor maps",
+      "every required file raw-byte mutation",
+      "same-size timestamp-restored mutations after success",
+      "all eleven mixed historical/current predecessor combinations",
+      "wrong and unknown predecessor hashes",
+      "report hash and semantic mismatches",
+      "self-reattested source/UI/geometry changes"
+    ],
+    "negativeTestsUsedOnlyDeletedTemporarySyntheticApproval": true,
+    "defaultReadersWereNotReplaced": true
+  },
+  "browserWorkflowReview": {
+    "status": "passed-code-and-controls",
+    "reportSha256": "17ecc4f1ba5acd42560c4d47f4f8c79de652997e1f5cf00809684cee161056d1",
+    "narrativeSha256": "c8a7603ae8da0ed900b8242c4208dfc0ca62080ca8c8230d8cb35afa475f6b7b",
+    "controlsSha256": "111422bc1fa9315ad20401f319af2963deec63539951ef5cb5a8f6d20dec03bf",
+    "controlsScriptSha256": "8b1e0ef381d83716eaf9d58ea8be4429bcc43f010acd90fc5cd02c2fb5dfab4f",
+    "focusedTests": {
+      "passed": 18,
+      "failed": 0
+    },
+    "visibilityControls": 33,
+    "serializedUnitControls": 4,
+    "nativeFilesystemAndExactHookControls": 11,
+    "qualifiedCollection": 16,
+    "originalCatalogCollection": 254,
+    "sourceUi8Preserved": true,
+    "pageCms15Preserved": true,
+    "exporterCoverage3Preserved": true,
+    "originalWorkflowPrefixBytesPreserved": 14380,
+    "originalWorkflowJobsAndSettingsPreserved": true,
+    "newJobBuildTimeoutMinutes": 5,
+    "harnessGlobalTimeoutSeconds": 240,
+    "harnessCaseTimeoutSeconds": 45,
+    "workers": 2,
+    "retries": 0
+  },
+  "closedFindings": [
+    {
+      "id": "PTMM-BW-V2-001",
+      "resolution": "Exact spec selection measures the direct value span, strong caveat and actual detail/static/API unit target. Serialized predicate controls reject hidden, transparent and clipped targets while allowing ordinary tall-content scrolling."
+    },
+    {
+      "id": "PTMM-BW-V2-002",
+      "resolution": "Evidence is written to a sibling temporary file, atomically renamed and validated against exact generated bytes. Partial final writes preserve earlier valid evidence; corrupt or substituted final files cannot leave a stale saved success. Valid attachment fallback remains independent."
+    }
+  ],
+  "blockingFindings": [],
+  "requiredCodeFixes": [],
+  "approvalScope": "Exact frozen source/UI, finite gate successor, harness and appended workflow bytes. This is independent code/evidence approval; full-suite, production-build and hosted-browser execution remain separate required validation.",
+  "executionClaims": {
+    "freshGateControlsExecuted": true,
+    "focusedTestsExecuted": true,
+    "collectionsExecuted": true,
+    "fullUnitSuiteExecutedInThisReview": false,
+    "productionBuildExecutedInThisReview": false,
+    "browserExecutedInThisReview": false,
+    "hostedCiExecutedInThisReview": false,
+    "publicationPerformed": false
+  },
+  "approvalChanges": {
+    "newIndependentReport": "docs/catalog-transformers-2026/review/ptmm-dimension-qualification/independent-review.json",
+    "newPendingClearanceUpdated": "docs/catalog-transformers-2026/review/ptmm-dimension-qualification/clearance.json",
+    "implementationFilesEditedByReviewer": 0,
+    "historicalApprovalsEdited": 0
+  },
+  "knownEvidenceLimits": [
+    "The retained first console snapshot can predate late transport errors; the final afterEach annotation carries current retention and capture status.",
+    "The bounded API route fixture verifies PTMM presentation against actual importer/public DTOs; it does not claim HTTP-method or pagination coverage."
+  ]
+}

@@ -1,0 +1,373 @@
+{
+  "schemaVersion": 1,
+  "command": "node scripts/probe-webpack-middleware.js --with-head-cleanup --write-results",
+  "adapterMode": "application-owned HEAD cleanup via modifyResponseData",
+  "versions": {
+    "webpack": "5.109.2",
+    "webpack-dev-middleware": "7.4.6",
+    "koa": "2.16.4"
+  },
+  "startedAt": "2026-10-02T11:01:10.211Z",
+  "scope": "Installed webpack 5 + Koa + webpack-dev-middleware.koaWrapper; loopback HTTP; disposable memory output; no Strapi server",
+  "profiles": [
+    {
+      "name": "slash-defaults",
+      "publicPath": "/assets/",
+      "middlewareOptions": {
+        "modifyResponseData": "application-owned closeHeadStream"
+      },
+      "checks": {
+        "streamed GET, MIME, length and next isolation": "pass",
+        "HEAD returns headers with no body": "pass",
+        "binary and zero-byte responses": "pass",
+        "single byte range 206 and unsatisfiable range 416": "pass",
+        "HEAD cleanup preserves partial, unsatisfiable and empty responses": "pass",
+        "fresh defaults do not add validators": "pass",
+        "HEAD cleanup preserves default and explicit-validator conditional status": "pass",
+        "missing paths and unsupported methods call only fallback": "pass",
+        "malformed percent URLs fall through; encoded and literal NUL reject": "pass",
+        "sibling traversal cannot escape memory output; healthy before and after": "pass",
+        "client abort destroys stream; subsequent GET succeeds": "pass",
+        "no unexpected Koa application errors": "pass",
+        "bounded watcher/server shutdown and released loopback port": "pass",
+        "response streams are released after middleware shutdown": "pass"
+      },
+      "containment": {
+        "beforeStatus": 200,
+        "afterStatus": 200,
+        "bodyUnchanged": true,
+        "attacks": [
+          {
+            "url": "/assets../sentinel.txt",
+            "status": 404
+          },
+          {
+            "url": "/assets%2e%2e/sentinel.txt",
+            "status": 404
+          },
+          {
+            "url": "/assets..%2fsentinel.txt",
+            "status": 404
+          },
+          {
+            "url": "/assets/../sentinel.txt",
+            "status": 403
+          },
+          {
+            "url": "/assets/%2e%2e/sentinel.txt",
+            "status": 403
+          }
+        ],
+        "sentinelStayedInMemory": true,
+        "sentinelLeaked": false
+      },
+      "validators": {
+        "etagEmitted": false,
+        "lastModifiedEmitted": false,
+        "conditionalStatuses": [
+          200
+        ]
+      },
+      "headResponses": {
+        "partial": {
+          "status": 206,
+          "bytes": 0,
+          "headers": {
+            "content-type": "application/octet-stream",
+            "content-length": "8",
+            "content-range": "bytes 3-10/4096",
+            "accept-ranges": "bytes"
+          }
+        },
+        "unsatisfiable": {
+          "status": 416,
+          "bytes": 0,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "content-length": "147",
+            "content-range": "bytes */4096"
+          }
+        },
+        "empty": {
+          "status": 200,
+          "bytes": 0,
+          "headers": {
+            "content-type": "text/plain; charset=utf-8",
+            "content-length": "0",
+            "accept-ranges": "bytes"
+          }
+        }
+      },
+      "headConditional": {
+        "staleStatus": 200,
+        "conditionalStatuses": []
+      },
+      "abort": {
+        "status": 200,
+        "receivedBytes": 4087,
+        "advertisedBytes": 2097152,
+        "fixtureReadPacingMs": 2,
+        "streamDestroyed": true,
+        "responseFinished": false,
+        "after": {
+          "status": 200,
+          "bytes": 118784
+        }
+      },
+      "shutdown": {
+        "elapsedMs": 2,
+        "portRebound": true
+      },
+      "observations": {
+        "streamsCreated": 15,
+        "streamsNotDestroyedAfterShutdown": []
+      }
+    },
+    {
+      "name": "non-slash-defaults",
+      "publicPath": "/assets",
+      "middlewareOptions": {
+        "modifyResponseData": "application-owned closeHeadStream"
+      },
+      "checks": {
+        "streamed GET, MIME, length and next isolation": "pass",
+        "HEAD returns headers with no body": "pass",
+        "binary and zero-byte responses": "pass",
+        "single byte range 206 and unsatisfiable range 416": "pass",
+        "HEAD cleanup preserves partial, unsatisfiable and empty responses": "pass",
+        "fresh defaults do not add validators": "pass",
+        "HEAD cleanup preserves default and explicit-validator conditional status": "pass",
+        "missing paths and unsupported methods call only fallback": "pass",
+        "malformed percent URLs fall through; encoded and literal NUL reject": "pass",
+        "sibling traversal cannot escape memory output; healthy before and after": "pass",
+        "client abort destroys stream; subsequent GET succeeds": "pass",
+        "no unexpected Koa application errors": "pass",
+        "bounded watcher/server shutdown and released loopback port": "pass",
+        "response streams are released after middleware shutdown": "pass"
+      },
+      "containment": {
+        "beforeStatus": 200,
+        "afterStatus": 200,
+        "bodyUnchanged": true,
+        "attacks": [
+          {
+            "url": "/assets../sentinel.txt",
+            "status": 403
+          },
+          {
+            "url": "/assets%2e%2e/sentinel.txt",
+            "status": 403
+          },
+          {
+            "url": "/assets..%2fsentinel.txt",
+            "status": 403
+          },
+          {
+            "url": "/assets/../sentinel.txt",
+            "status": 403
+          },
+          {
+            "url": "/assets/%2e%2e/sentinel.txt",
+            "status": 403
+          }
+        ],
+        "sentinelStayedInMemory": true,
+        "sentinelLeaked": false
+      },
+      "validators": {
+        "etagEmitted": false,
+        "lastModifiedEmitted": false,
+        "conditionalStatuses": [
+          200
+        ]
+      },
+      "headResponses": {
+        "partial": {
+          "status": 206,
+          "bytes": 0,
+          "headers": {
+            "content-type": "application/octet-stream",
+            "content-length": "8",
+            "content-range": "bytes 3-10/4096",
+            "accept-ranges": "bytes"
+          }
+        },
+        "unsatisfiable": {
+          "status": 416,
+          "bytes": 0,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "content-length": "147",
+            "content-range": "bytes */4096"
+          }
+        },
+        "empty": {
+          "status": 200,
+          "bytes": 0,
+          "headers": {
+            "content-type": "text/plain; charset=utf-8",
+            "content-length": "0",
+            "accept-ranges": "bytes"
+          }
+        }
+      },
+      "headConditional": {
+        "staleStatus": 200,
+        "conditionalStatuses": []
+      },
+      "abort": {
+        "status": 200,
+        "receivedBytes": 16375,
+        "advertisedBytes": 2097152,
+        "fixtureReadPacingMs": 2,
+        "streamDestroyed": true,
+        "responseFinished": false,
+        "after": {
+          "status": 200,
+          "bytes": 118784
+        }
+      },
+      "shutdown": {
+        "elapsedMs": 1,
+        "portRebound": true
+      },
+      "observations": {
+        "streamsCreated": 15,
+        "streamsNotDestroyedAfterShutdown": []
+      }
+    },
+    {
+      "name": "explicit-validators",
+      "publicPath": "/assets/",
+      "middlewareOptions": {
+        "modifyResponseData": "application-owned closeHeadStream",
+        "etag": "weak",
+        "lastModified": true
+      },
+      "checks": {
+        "streamed GET, MIME, length and next isolation": "pass",
+        "HEAD returns headers with no body": "pass",
+        "binary and zero-byte responses": "pass",
+        "single byte range 206 and unsatisfiable range 416": "pass",
+        "HEAD cleanup preserves partial, unsatisfiable and empty responses": "pass",
+        "explicit validators produce conditional 304": "pass",
+        "HEAD cleanup preserves default and explicit-validator conditional status": "pass",
+        "missing paths and unsupported methods call only fallback": "pass",
+        "malformed percent URLs fall through; encoded and literal NUL reject": "pass",
+        "sibling traversal cannot escape memory output; healthy before and after": "pass",
+        "client abort destroys stream; subsequent GET succeeds": "pass",
+        "no unexpected Koa application errors": "pass",
+        "bounded watcher/server shutdown and released loopback port": "pass",
+        "response streams are released after middleware shutdown": "pass"
+      },
+      "containment": {
+        "beforeStatus": 200,
+        "afterStatus": 200,
+        "bodyUnchanged": true,
+        "attacks": [
+          {
+            "url": "/assets../sentinel.txt",
+            "status": 404
+          },
+          {
+            "url": "/assets%2e%2e/sentinel.txt",
+            "status": 404
+          },
+          {
+            "url": "/assets..%2fsentinel.txt",
+            "status": 404
+          },
+          {
+            "url": "/assets/../sentinel.txt",
+            "status": 403
+          },
+          {
+            "url": "/assets/%2e%2e/sentinel.txt",
+            "status": 403
+          }
+        ],
+        "sentinelStayedInMemory": true,
+        "sentinelLeaked": false
+      },
+      "validators": {
+        "etagEmitted": true,
+        "lastModifiedEmitted": true,
+        "conditionalStatuses": [
+          304,
+          304
+        ]
+      },
+      "headResponses": {
+        "partial": {
+          "status": 206,
+          "bytes": 0,
+          "headers": {
+            "content-type": "application/octet-stream",
+            "content-length": "8",
+            "content-range": "bytes 3-10/4096",
+            "accept-ranges": "bytes",
+            "etag": "W/\"1000-1a0fc467406\"",
+            "last-modified": "Fri, 02 Oct 2026 11:01:10 GMT"
+          }
+        },
+        "unsatisfiable": {
+          "status": 416,
+          "bytes": 0,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "content-length": "147",
+            "content-range": "bytes */4096"
+          }
+        },
+        "empty": {
+          "status": 200,
+          "bytes": 0,
+          "headers": {
+            "content-type": "text/plain; charset=utf-8",
+            "content-length": "0",
+            "accept-ranges": "bytes",
+            "etag": "W/\"0-1a0fc467406\"",
+            "last-modified": "Fri, 02 Oct 2026 11:01:10 GMT"
+          }
+        }
+      },
+      "headConditional": {
+        "staleStatus": 200,
+        "conditionalStatuses": [
+          304,
+          304
+        ]
+      },
+      "abort": {
+        "status": 200,
+        "receivedBytes": 4087,
+        "advertisedBytes": 2097152,
+        "fixtureReadPacingMs": 2,
+        "streamDestroyed": true,
+        "responseFinished": false,
+        "after": {
+          "status": 200,
+          "bytes": 118784
+        }
+      },
+      "shutdown": {
+        "elapsedMs": 1,
+        "portRebound": true
+      },
+      "observations": {
+        "streamsCreated": 14,
+        "streamsNotDestroyedAfterShutdown": []
+      }
+    }
+  ],
+  "finishedAt": "2026-10-02T11:01:10.834Z",
+  "passed": true,
+  "checksPassed": 42,
+  "checksFailed": 0,
+  "fixtureRemoved": true,
+  "limitations": [
+    "This does not establish actual Strapi webpack, HMR/SSE, Vite, browser, or production compatibility.",
+    "The abort-only memory stream is paced by 2 ms per read to ensure the client disconnect reaches the server before completion; all other streams are unmodified.",
+    "HEAD cleanup is an application-owned hook using the documented modifyResponseData option; it is not an upstream middleware fix. The unchanged no-hook failure is preserved in webpack-protocol-results.json."
+  ]
+}

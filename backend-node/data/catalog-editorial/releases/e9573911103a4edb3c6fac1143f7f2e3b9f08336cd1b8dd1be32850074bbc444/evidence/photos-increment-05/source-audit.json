@@ -1,0 +1,3490 @@
+{
+  "distribution": {
+    "summary": {
+      "status": "reviewed",
+      "newDistinctPhotoCount": 7,
+      "newPhotoMatchingProductIds": [
+        "alageum-tmg-standard-250",
+        "tmg-1000",
+        "tmg-400"
+      ],
+      "newExactModelClaims": 0,
+      "existingImageRemappings": 0,
+      "genericMappingExpansion": false,
+      "scope": "Only documented new public avenues; earlier family audits remain separate.",
+      "rightsClearedForPublication": false
+    },
+    "source-dispositions": [
+      {
+        "sourceId": "ktz-anniversary2024",
+        "sourcePageUrl": "https://alageum.com/ru/novosti/s-dnem-osnovaniya-ao-kentauskij-transformatornyj-zavod",
+        "retrievalStatus": 200,
+        "sha256": "8fef97ecacf7fdea090b89207ccf044ca160964eecd4bb6da72541bb725b418c",
+        "disposition": "no_product_photo",
+        "notes": "Three anniversary/history posters were visually inspected. No current catalog product photograph.",
+        "verifiedAt": "2026-10-12"
+      },
+      {
+        "sourceId": "kentuki-ktz",
+        "sourcePageUrl": "https://kentuki.kz/ktz.html",
+        "retrievalStatus": "HTTP Error 403: Forbidden",
+        "sha256": null,
+        "disposition": "blocked_http403",
+        "notes": "The public URL returned HTTP403. No alternate identity, route, headers or retry was used.",
+        "verifiedAt": "2026-10-12"
+      },
+      {
+        "sourceId": "transformator-video",
+        "sourcePageUrl": "https://transformatory.pro/library/video/",
+        "retrievalStatus": 200,
+        "sha256": "735fab9410ae5b659566f4fe9abda3349680e153098c49320e11234bcca280a9",
+        "disposition": "unavailable_content",
+        "notes": "HTTP200 returned a Bitrix system/install error, not a product video archive.",
+        "verifiedAt": "2026-10-12"
+      },
+      {
+        "sourceId": "aliq-home",
+        "sourcePageUrl": "https://aliq-energo.am/",
+        "retrievalStatus": 200,
+        "sha256": "6cf3e28d9d70d4e7b68f0c1370015de556a469d2dde75431333bf8ba7204bf4c",
+        "disposition": "manufacturer_and_variant_unresolved",
+        "notes": "Six homepage photographs were inspected. Dry units visibly belong to GBE Italy; oil-unit factory photographs have no photo-specific maker, rating, voltage or execution identification. The supplier explicitly mixes Kazakh, Ukrainian and Russian manufacturers.",
+        "verifiedAt": "2026-10-12"
+      },
+      {
+        "sourceId": "telegram-official",
+        "sourcePageUrl": "https://t.me/s/alageum_news",
+        "retrievalStatus": 200,
+        "sha256": "5b131ca14aa96311d3432b0062c7443d3b0e6346ec279bd376a75f0a76bcd5d7",
+        "disposition": "previously_closed_unavailable_source",
+        "notes": "The public page returned Site Unavailable and no media. This was recognized as a previously closed avenue and not pursued through an alternate route.",
+        "verifiedAt": "2026-10-12"
+      },
+      {
+        "sourceId": "ecodesign-tv",
+        "sourcePageUrl": "https://24.kz/amp/ru/news/social/736466-kazakhstanskie-uchjonye-izobreli-umnyj-transformator",
+        "retrievalStatus": 200,
+        "sha256": "e379e8530e59844e01138b17a7ea7739a7e44ca94328f4719a7a99dc097f3450",
+        "disposition": "different_unlisted_product_and_no_product_still",
+        "notes": "The report concerns TMGN630/20 EcoDesign2, absent from the 843 source records. Its still image shows an operator at a computer. It is not evidence for TMGiN630/10 X4K3; no model or voltage substitution.",
+        "verifiedAt": "2026-10-12"
+      },
+      {
+        "sourceId": "aliq-oil",
+        "sourcePageUrl": "https://aliq-energo.am/category/1",
+        "retrievalStatus": 200,
+        "sha256": "f6addad70099d757f713405e58d0ded002e906683aa54e71c31725221b220ef8",
+        "disposition": "mixed_manufacturer_unattributed_stock",
+        "notes": "Aliq supplier news/category pages repeat the homepage gallery and identify multiple manufacturers, with no photograph-specific Alageum designation.",
+        "verifiedAt": "2026-10-12"
+      },
+      {
+        "sourceId": "aliq-news3",
+        "sourcePageUrl": "https://aliq-energo.am/single/3",
+        "retrievalStatus": 200,
+        "sha256": "3f55f2ddfc4aa8172886d1c6a51eb17d69695b54997e1c6fa7eda4f2a1af81e6",
+        "disposition": "mixed_manufacturer_unattributed_stock",
+        "notes": "The page/gallery and linked stock image were checked. It names multiple manufacturers and broad product ranges without identifying the photographed unit; the low-resolution product thumbnails cannot establish an Alageum variant.",
+        "verifiedAt": "2026-10-12"
+      },
+      {
+        "sourceId": "aliq-news2",
+        "sourcePageUrl": "https://aliq-energo.am/single/2",
+        "retrievalStatus": 200,
+        "sha256": "b4a08174ea21b565a61406768a0b099651f56fe5f24634a02605d310df901245",
+        "disposition": "mixed_manufacturer_unattributed_stock",
+        "notes": "The page/gallery and linked stock image were checked. It names multiple manufacturers and broad product ranges without identifying the photographed unit; the low-resolution product thumbnails cannot establish an Alageum variant.",
+        "verifiedAt": "2026-10-12"
+      },
+      {
+        "sourceId": "aliq-news1",
+        "sourcePageUrl": "https://aliq-energo.am/single/1",
+        "retrievalStatus": 200,
+        "sha256": "31722860a1d72a16ec52e88d2238c1b48388417de89bfa539542825dbfd1052c",
+        "disposition": "mixed_manufacturer_unattributed_stock",
+        "notes": "The page/gallery and linked stock image were checked. It names multiple manufacturers and broad product ranges without identifying the photographed unit; the low-resolution product thumbnails cannot establish an Alageum variant.",
+        "verifiedAt": "2026-10-12"
+      },
+      {
+        "sourceId": "mtk-tmg40020",
+        "sourcePageUrl": "https://trans-mtk.com/catalog/transformatory-tmg/tmg-400-20-0-4-alageum-electric/",
+        "retrievalStatus": 200,
+        "sha256": "e514fefd40dae96d3c8fcd0aa54678e1710ab5c26fe2d0c785767b461ed9bbbd",
+        "disposition": "ambiguous_stock_voltage_photo",
+        "notes": "The 20kV product page uses the identical main image URL as the ordinary 6(10)kV TMG400 page. Both images were inspected; neither readable plate proves20kV. No new20kV model/series mapping.",
+        "verifiedAt": "2026-10-12"
+      },
+      {
+        "sourceId": "utz-export",
+        "sourcePageUrl": "https://export.bgov.kz/ru/exporter/588/",
+        "retrievalStatus": 200,
+        "sha256": "9388336e050ab47eff4b2c84a6fcfbd5d2fcaa9be43dafd2b84914404fa23e27",
+        "disposition": "rendered_illustrations_not_photos",
+        "notes": "Three manufacturer-listed portal images were inspected. They are rendered/cutout illustrations; the TM listing even displays a sealed-body illustration although its text describes a conservator unit. None is counted as a photograph.",
+        "verifiedAt": "2026-10-12"
+      },
+      {
+        "sourceId": "uuemz-sandwich",
+        "sourcePageUrl": "https://uuemz.ru/projects/proektirovanie/proektirovanie-elektrosnabzheniya-novoy-linii-po-proizvodstvu-sendvich-paneley/",
+        "retrievalStatus": 200,
+        "sha256": "3bb2456a7f01c06ebcf3a4004418dcb781987d36e6db8ed82b2cb0aed5ae4fe6",
+        "disposition": "three_new_identified_photographs",
+        "notes": "Three final gallery photographs show KTZ/Alageum TMG1000 units. The source explicitly names the supplier and1000kVA10/0.4kV. Three distinct views accepted only for tmg-1000. The other twelve cabinet/context views do not independently qualify as Alageum product images.",
+        "verifiedAt": "2026-10-12"
+      },
+      {
+        "sourceId": "export-tmg",
+        "sourcePageUrl": "https://export.bgov.kz/ru/transport/33/tmg-type-oil-immersed-power-transformer/",
+        "retrievalStatus": 200,
+        "sha256": "427285e4b30debb6c52fd911902ad171754b3084516b23a9e1761ebe98a82918",
+        "disposition": "rendered_illustration_not_photo",
+        "notes": "Manufacturer product text supplies only a range25–2500kVA,6–20/0.4kV. The image is an illustration and cannot establish a photographed20kV unit.",
+        "verifiedAt": "2026-10-12"
+      },
+      {
+        "sourceId": "export-tm",
+        "sourcePageUrl": "https://export.bgov.kz/ru/transport/33/tm-type-oil-immersed-power-transformer/",
+        "retrievalStatus": 200,
+        "sha256": "fffac13c6ee4c4cc086c8d2ee1005865c5b8ab99cb47094ac3053643d363f119",
+        "disposition": "text_visual_construction_conflict",
+        "notes": "Product text describes a conservator but the rendered image is sealed corrugated construction. Excluded from photo selection.",
+        "verifiedAt": "2026-10-12"
+      },
+      {
+        "sourceId": "export-tmge",
+        "sourcePageUrl": "https://export.bgov.kz/ru/transport/33/tmge-type-oil-immersed-power-transformer/",
+        "retrievalStatus": 200,
+        "sha256": "270a5c1b4feb721a7a7776497e55f0e9419ee88a9cd8a0a820cdd6b6172ca6c2",
+        "disposition": "rendered_illustration_and_unknown_loss_class",
+        "notes": "The portal gives a broad energy-efficient range but no X2K1/X2K2/X3K2/X3K3 proof and no genuine photograph. No execution mapping.",
+        "verifiedAt": "2026-10-12"
+      },
+      {
+        "sourceId": "aliq-p58",
+        "sourcePageUrl": "https://aliq-energo.am/product/58",
+        "retrievalStatus": 200,
+        "sha256": "185a3498921202dca69314c08f1cf879682b50b783ba91f6134377a8418968b1",
+        "disposition": "mixed_manufacturer_unattributed_stock",
+        "notes": "The page/gallery and linked stock image were checked. It names multiple manufacturers and broad product ranges without identifying the photographed unit; the low-resolution product thumbnails cannot establish an Alageum variant.",
+        "verifiedAt": "2026-10-12"
+      },
+      {
+        "sourceId": "aliq-p59",
+        "sourcePageUrl": "https://aliq-energo.am/product/59",
+        "retrievalStatus": 200,
+        "sha256": "c1093694ee61d9aa81acf870337641d6bd21d3026c9d305a785efc19e1d137e7",
+        "disposition": "mixed_manufacturer_unattributed_stock",
+        "notes": "The page/gallery and linked stock image were checked. It names multiple manufacturers and broad product ranges without identifying the photographed unit; the low-resolution product thumbnails cannot establish an Alageum variant.",
+        "verifiedAt": "2026-10-12"
+      },
+      {
+        "sourceId": "aliq-p60",
+        "sourcePageUrl": "https://aliq-energo.am/product/60",
+        "retrievalStatus": 200,
+        "sha256": "793b80ddb59e475617ce753414d6a512e9af42849426f230f9bd6c029f23fdec",
+        "disposition": "mixed_manufacturer_unattributed_stock",
+        "notes": "The page/gallery and linked stock image were checked. It names multiple manufacturers and broad product ranges without identifying the photographed unit; the low-resolution product thumbnails cannot establish an Alageum variant.",
+        "verifiedAt": "2026-10-12"
+      },
+      {
+        "sourceId": "mtk-tmg40010",
+        "sourcePageUrl": "https://trans-mtk.com/catalog/transformatory-tmg/tmg-400/",
+        "retrievalStatus": 200,
+        "sha256": "1553573110ff3294cb008664995f8334624ab6fb15224373844d2a0bbe0fba88",
+        "disposition": "cross_page_reused_stock_photo",
+        "notes": "This page repeats the identical 900x1200 image on the20kV page. It establishes a source inconsistency rather than an exact-voltage photograph.",
+        "verifiedAt": "2026-10-12"
+      },
+      {
+        "sourceId": "uuemz-ktp400",
+        "sourcePageUrl": "https://volgograd.uuemz.ru/projects/proizvodstvo/ktp/izgotovili-ktpnu-kk-400-6-0-4-kv-ukhl1-i-otgruzili-dlya-gornoobogatitelnogo-kombinata/",
+        "retrievalStatus": 200,
+        "sha256": "e6f3df39be0677252751961fb702e9ae808b0c9c83df975e37c45beda1ed2344",
+        "disposition": "one_new_identified_installation_photo",
+        "notes": "The complete twelve-image project gallery was reviewed. One photograph shows the identified Alageum TMG400 in the transformer compartment. Accepted for tmg-400 with6kV project-context caveat; the ЮУЭМЗ cabinets are not attributed to Alageum.",
+        "verifiedAt": "2026-10-12"
+      },
+      {
+        "sourceId": "olx-ktpn250",
+        "sourcePageUrl": "https://www.olx.kz/d/obyavlenie/transformator-ktpn-IDq6MPX.html",
+        "retrievalStatus": 200,
+        "disposition": "three_new_nameplate_identified_transformer_photos",
+        "notes": "Separate upper-detail, nameplate and overall images were visually inspected. Readable KTZ plate identifies TMG250/10 U1. Only the transformer is matched; cabinet maker remains unproven.",
+        "verifiedAt": "2026-10-12"
+      },
+      {
+        "sourceId": "market2014",
+        "sourcePageUrl": "https://marketelectro.ru/sites/default/files/informacionnyy_blok_10.pdf",
+        "retrievalStatus": 200,
+        "disposition": "archive_context_without_variant_identification",
+        "notes": "The dry/instrument researcher inspected the KTZ feature on PDF pages62–63. Assembly and yard photographs do not identify a missing distribution variant. No additional photographs counted.",
+        "verifiedAt": "2026-10-12"
+      }
+    ],
+    "held-candidates": [
+      {
+        "imageId": "aliq-home-3",
+        "sourcePageUrl": "https://aliq-energo.am/",
+        "imageUrl": "https://aliq-energo.am/images/1618904076.JPG",
+        "reviewStatus": "held",
+        "eligibleForPhotoCount": false,
+        "reason": "Unverified maker/variant or reused stock/illustration. See the corresponding source disposition.",
+        "publicationApproved": false
+      },
+      {
+        "imageId": "aliq-home-4",
+        "sourcePageUrl": "https://aliq-energo.am/",
+        "imageUrl": "https://aliq-energo.am/images/1618904029.JPG",
+        "reviewStatus": "held",
+        "eligibleForPhotoCount": false,
+        "reason": "Unverified maker/variant or reused stock/illustration. See the corresponding source disposition.",
+        "publicationApproved": false
+      },
+      {
+        "imageId": "aliq-home-5",
+        "sourcePageUrl": "https://aliq-energo.am/",
+        "imageUrl": "https://aliq-energo.am/images/1618904003.jpg",
+        "reviewStatus": "held",
+        "eligibleForPhotoCount": false,
+        "reason": "Unverified maker/variant or reused stock/illustration. See the corresponding source disposition.",
+        "publicationApproved": false
+      },
+      {
+        "imageId": "aliq-home-6",
+        "sourcePageUrl": "https://aliq-energo.am/",
+        "imageUrl": "https://aliq-energo.am/images/1618903974.JPG",
+        "reviewStatus": "held",
+        "eligibleForPhotoCount": false,
+        "reason": "Unverified maker/variant or reused stock/illustration. See the corresponding source disposition.",
+        "publicationApproved": false
+      },
+      {
+        "imageId": "aliq-home-7",
+        "sourcePageUrl": "https://aliq-energo.am/",
+        "imageUrl": "https://aliq-energo.am/images/1618494045.JPG",
+        "reviewStatus": "held",
+        "eligibleForPhotoCount": false,
+        "reason": "Unverified maker/variant or reused stock/illustration. See the corresponding source disposition.",
+        "publicationApproved": false
+      },
+      {
+        "imageId": "aliq-home-8",
+        "sourcePageUrl": "https://aliq-energo.am/",
+        "imageUrl": "https://aliq-energo.am/images/1618493933.JPG",
+        "reviewStatus": "held",
+        "eligibleForPhotoCount": false,
+        "reason": "Unverified maker/variant or reused stock/illustration. See the corresponding source disposition.",
+        "publicationApproved": false
+      },
+      {
+        "imageId": "aliq-home-4",
+        "sourcePageUrl": "https://aliq-energo.am/",
+        "imageUrl": "https://aliq-energo.am/images/1618904029.JPG",
+        "reviewStatus": "held",
+        "eligibleForPhotoCount": false,
+        "reason": "Unverified maker/variant or reused stock/illustration. See the corresponding source disposition.",
+        "publicationApproved": false
+      },
+      {
+        "imageId": "aliq-home-5",
+        "sourcePageUrl": "https://aliq-energo.am/",
+        "imageUrl": "https://aliq-energo.am/images/1618904003.jpg",
+        "reviewStatus": "held",
+        "eligibleForPhotoCount": false,
+        "reason": "Unverified maker/variant or reused stock/illustration. See the corresponding source disposition.",
+        "publicationApproved": false
+      },
+      {
+        "imageId": "aliq-home-7",
+        "sourcePageUrl": "https://aliq-energo.am/",
+        "imageUrl": "https://aliq-energo.am/images/1618494045.JPG",
+        "reviewStatus": "held",
+        "eligibleForPhotoCount": false,
+        "reason": "Unverified maker/variant or reused stock/illustration. See the corresponding source disposition.",
+        "publicationApproved": false
+      },
+      {
+        "imageId": "mtk-tmg40020-0",
+        "sourcePageUrl": "https://trans-mtk.com/catalog/transformatory-tmg/tmg-400-20-0-4-alageum-electric/",
+        "imageUrl": "https://trans-mtk.com/upload/iblock/1f3/jcc48nkdu4v3e9207j8ikv1p0m3vock1.jpg",
+        "reviewStatus": "held",
+        "eligibleForPhotoCount": false,
+        "reason": "Unverified maker/variant or reused stock/illustration. See the corresponding source disposition.",
+        "publicationApproved": false
+      },
+      {
+        "imageId": "mtk-tmg40020-1",
+        "sourcePageUrl": "https://trans-mtk.com/catalog/transformatory-tmg/tmg-400-20-0-4-alageum-electric/",
+        "imageUrl": "https://trans-mtk.com/upload/iblock/8a2/nehgsp9o3slr9cr6l1urrn8j3cr2k2cu.JPG",
+        "reviewStatus": "held",
+        "eligibleForPhotoCount": false,
+        "reason": "Unverified maker/variant or reused stock/illustration. See the corresponding source disposition.",
+        "publicationApproved": false
+      },
+      {
+        "imageId": "mtk-tmg40020-2",
+        "sourcePageUrl": "https://trans-mtk.com/catalog/transformatory-tmg/tmg-400-20-0-4-alageum-electric/",
+        "imageUrl": "https://trans-mtk.com/upload/iblock/d93/nord.jpg",
+        "reviewStatus": "held",
+        "eligibleForPhotoCount": false,
+        "reason": "Unverified maker/variant or reused stock/illustration. See the corresponding source disposition.",
+        "publicationApproved": false
+      },
+      {
+        "imageId": "mtk-tmg40020-3",
+        "sourcePageUrl": "https://trans-mtk.com/catalog/transformatory-tmg/tmg-400-20-0-4-alageum-electric/",
+        "imageUrl": "https://trans-mtk.com/upload/iblock/52c/gazprom.jpg",
+        "reviewStatus": "held",
+        "eligibleForPhotoCount": false,
+        "reason": "Unverified maker/variant or reused stock/illustration. See the corresponding source disposition.",
+        "publicationApproved": false
+      },
+      {
+        "imageId": "mtk-tmg40020-4",
+        "sourcePageUrl": "https://trans-mtk.com/catalog/transformatory-tmg/tmg-400-20-0-4-alageum-electric/",
+        "imageUrl": "https://trans-mtk.com/upload/iblock/c26/vakinskoe_agro.jpg",
+        "reviewStatus": "held",
+        "eligibleForPhotoCount": false,
+        "reason": "Unverified maker/variant or reused stock/illustration. See the corresponding source disposition.",
+        "publicationApproved": false
+      },
+      {
+        "imageId": "mtk-tmg40020-5",
+        "sourcePageUrl": "https://trans-mtk.com/catalog/transformatory-tmg/tmg-400-20-0-4-alageum-electric/",
+        "imageUrl": "https://trans-mtk.com/upload/iblock/b28/rybinsk-1.jpg",
+        "reviewStatus": "held",
+        "eligibleForPhotoCount": false,
+        "reason": "Unverified maker/variant or reused stock/illustration. See the corresponding source disposition.",
+        "publicationApproved": false
+      },
+      {
+        "imageId": "mtk-tmg40020-6",
+        "sourcePageUrl": "https://trans-mtk.com/catalog/transformatory-tmg/tmg-400-20-0-4-alageum-electric/",
+        "imageUrl": "https://trans-mtk.com/upload/iblock/4f0/rosterminalugol-1.jpg",
+        "reviewStatus": "held",
+        "eligibleForPhotoCount": false,
+        "reason": "Unverified maker/variant or reused stock/illustration. See the corresponding source disposition.",
+        "publicationApproved": false
+      },
+      {
+        "imageId": "mtk-tmg40020-7",
+        "sourcePageUrl": "https://trans-mtk.com/catalog/transformatory-tmg/tmg-400-20-0-4-alageum-electric/",
+        "imageUrl": "https://trans-mtk.com/upload/iblock/ce0/vm1-1.jpg",
+        "reviewStatus": "held",
+        "eligibleForPhotoCount": false,
+        "reason": "Unverified maker/variant or reused stock/illustration. See the corresponding source disposition.",
+        "publicationApproved": false
+      },
+      {
+        "imageId": "mtk-tmg40020-8",
+        "sourcePageUrl": "https://trans-mtk.com/catalog/transformatory-tmg/tmg-400-20-0-4-alageum-electric/",
+        "imageUrl": "https://trans-mtk.com/upload/iblock/58c/paritet.jpg",
+        "reviewStatus": "held",
+        "eligibleForPhotoCount": false,
+        "reason": "Unverified maker/variant or reused stock/illustration. See the corresponding source disposition.",
+        "publicationApproved": false
+      },
+      {
+        "imageId": "mtk-tmg40020-9",
+        "sourcePageUrl": "https://trans-mtk.com/catalog/transformatory-tmg/tmg-400-20-0-4-alageum-electric/",
+        "imageUrl": "https://trans-mtk.com/upload/iblock/cbd/review-ASKCG.jpg",
+        "reviewStatus": "held",
+        "eligibleForPhotoCount": false,
+        "reason": "Unverified maker/variant or reused stock/illustration. See the corresponding source disposition.",
+        "publicationApproved": false
+      },
+      {
+        "imageId": "mtk-tmg40020-10",
+        "sourcePageUrl": "https://trans-mtk.com/catalog/transformatory-tmg/tmg-400-20-0-4-alageum-electric/",
+        "imageUrl": "https://trans-mtk.com/upload/iblock/a87/review-sarapulskiy-electrogeneratorniy-zavod.jpg",
+        "reviewStatus": "held",
+        "eligibleForPhotoCount": false,
+        "reason": "Unverified maker/variant or reused stock/illustration. See the corresponding source disposition.",
+        "publicationApproved": false
+      },
+      {
+        "imageId": "mtk-tmg40020-11",
+        "sourcePageUrl": "https://trans-mtk.com/catalog/transformatory-tmg/tmg-400-20-0-4-alageum-electric/",
+        "imageUrl": "https://trans-mtk.com/upload/iblock/eeb/review-ioteh.jpg",
+        "reviewStatus": "held",
+        "eligibleForPhotoCount": false,
+        "reason": "Unverified maker/variant or reused stock/illustration. See the corresponding source disposition.",
+        "publicationApproved": false
+      },
+      {
+        "imageId": "utz-export-13",
+        "sourcePageUrl": "https://export.bgov.kz/ru/exporter/588/",
+        "imageUrl": "https://export.bgov.kz/upload/iblock/b21/hnkjg9vx5m6mdu2onkg1fw0b7vr0agw6.PNG",
+        "reviewStatus": "held",
+        "eligibleForPhotoCount": false,
+        "reason": "Unverified maker/variant or reused stock/illustration. See the corresponding source disposition.",
+        "publicationApproved": false
+      },
+      {
+        "imageId": "utz-export-14",
+        "sourcePageUrl": "https://export.bgov.kz/ru/exporter/588/",
+        "imageUrl": "https://export.bgov.kz/upload/iblock/41a/b1x2u8170e6563cnkm2pt7guxkegyx3e.PNG",
+        "reviewStatus": "held",
+        "eligibleForPhotoCount": false,
+        "reason": "Unverified maker/variant or reused stock/illustration. See the corresponding source disposition.",
+        "publicationApproved": false
+      },
+      {
+        "imageId": "utz-export-15",
+        "sourcePageUrl": "https://export.bgov.kz/ru/exporter/588/",
+        "imageUrl": "https://export.bgov.kz/upload/iblock/d81/jjcm4eyy6it3pid87oipnmkijzic4ex9.png",
+        "reviewStatus": "held",
+        "eligibleForPhotoCount": false,
+        "reason": "Unverified maker/variant or reused stock/illustration. See the corresponding source disposition.",
+        "publicationApproved": false
+      },
+      {
+        "imageId": "utz-export-13",
+        "sourcePageUrl": "https://export.bgov.kz/ru/exporter/588/",
+        "imageUrl": "https://export.bgov.kz/upload/iblock/b21/hnkjg9vx5m6mdu2onkg1fw0b7vr0agw6.PNG",
+        "reviewStatus": "held",
+        "eligibleForPhotoCount": false,
+        "reason": "Unverified maker/variant or reused stock/illustration. See the corresponding source disposition.",
+        "publicationApproved": false
+      },
+      {
+        "imageId": "utz-export-15",
+        "sourcePageUrl": "https://export.bgov.kz/ru/exporter/588/",
+        "imageUrl": "https://export.bgov.kz/upload/iblock/d81/jjcm4eyy6it3pid87oipnmkijzic4ex9.png",
+        "reviewStatus": "held",
+        "eligibleForPhotoCount": false,
+        "reason": "Unverified maker/variant or reused stock/illustration. See the corresponding source disposition.",
+        "publicationApproved": false
+      },
+      {
+        "imageId": "aliq-oil-12",
+        "sourcePageUrl": "https://aliq-energo.am/category/1",
+        "imageUrl": "https://aliq-energo.am/images/products/1614074439.jpg",
+        "reviewStatus": "held",
+        "eligibleForPhotoCount": false,
+        "reason": "Unverified maker/variant or reused stock/illustration. See the corresponding source disposition.",
+        "publicationApproved": false
+      },
+      {
+        "imageId": "aliq-oil-13",
+        "sourcePageUrl": "https://aliq-energo.am/category/1",
+        "imageUrl": "https://aliq-energo.am/images/products/1614074475.jpg",
+        "reviewStatus": "held",
+        "eligibleForPhotoCount": false,
+        "reason": "Unverified maker/variant or reused stock/illustration. See the corresponding source disposition.",
+        "publicationApproved": false
+      },
+      {
+        "imageId": "aliq-oil-14",
+        "sourcePageUrl": "https://aliq-energo.am/category/1",
+        "imageUrl": "https://aliq-energo.am/images/products/1614074511.jpg",
+        "reviewStatus": "held",
+        "eligibleForPhotoCount": false,
+        "reason": "Unverified maker/variant or reused stock/illustration. See the corresponding source disposition.",
+        "publicationApproved": false
+      }
+    ],
+    "final-review": {
+      "status": "ready",
+      "candidateCount": 7,
+      "familyDeltaLedgerCount": 17,
+      "sourceDispositionCount": 23,
+      "allKnownConcreteNewLeadsDisposed": true,
+      "noWebsiteChanges": true,
+      "noPublicationRightsAssumed": true,
+      "noPriorMappingChanges": true,
+      "prior207AssetsUnmodified": true,
+      "reviewedPhotoRoles": {
+        "inc05-distribution-olx-ktpn250-2": "terminal_detail",
+        "inc05-distribution-olx-ktpn250-3": "nameplate_detail",
+        "inc05-distribution-olx-ktpn250-5": "overall_installed",
+        "inc05-distribution-uuemz-rest-0": "overall_installed",
+        "inc05-distribution-uuemz-rest-1": "instrumentation_detail",
+        "inc05-distribution-uuemz-rest-2": "overall_oblique_pair",
+        "inc05-distribution-uuemz-ktp400-2": "installed_context"
+      },
+      "manufacturerAttribution": "TMG250 directly readable KTZ nameplate; TMG1000 project identifies KTZ and logo visible; TMG400 project explicitly identifies Alageum, factory unspecified.",
+      "scopeLimit": "No new zero-photo record was resolved by this group. New images strengthen rating evidence and add views to already illustrated rows."
+    }
+  },
+  "dry": {
+    "source-dispositions": [
+      {
+        "sourceId": "dry5-allbiz-alageum",
+        "sourcePageUrl": "https://alageum.all.biz/goods",
+        "familyIds": [
+          "tsi-tools",
+          "nami",
+          "nom",
+          "zom"
+        ],
+        "status": "prior_closed_not_refetched",
+        "disposition": "prior_closed_not_refetched",
+        "visualDisposition": "prior_closed_not_refetched",
+        "notes": "Already closed source; index rediscovered, no new asset or page evidence.",
+        "acceptedCandidateIds": [],
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Publicly accessible or indexed; reuse license not established. No publication authorized."
+      },
+      {
+        "sourceId": "dry5-flagma-elmo-tszi4",
+        "sourcePageUrl": "https://flagma.kz/transformator-tszi-4-0-o1806486.html",
+        "familyIds": [
+          "tsi-tools"
+        ],
+        "status": "retrieved",
+        "bytes": 234932,
+        "sha256": "9b3c6a7b297d4ff8f5e38e4f11d88ee5bd57c2ae15c32f235940a461e843b92c",
+        "disposition": "wrong_model",
+        "visualDisposition": "wrong_model",
+        "notes": "Listing seller Elmo-Alageum names TSZI-4, but hero URL is the already reviewed TSL-630/20 image. Cannot use for enclosed TSZI.",
+        "acceptedCandidateIds": [],
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Publicly accessible or indexed; reuse license not established. No publication authorized."
+      },
+      {
+        "sourceId": "dry5-netelectro-ktz",
+        "sourcePageUrl": "https://netelectro.ru/company/kentauskij-transformatornyj-zavod/",
+        "familyIds": [
+          "tsl-loss-A",
+          "tsl-loss-C",
+          "tsl-20kv",
+          "tsi-tools"
+        ],
+        "status": "prior_closed_not_refetched",
+        "disposition": "prior_closed_not_refetched",
+        "visualDisposition": "prior_closed_not_refetched",
+        "notes": "SGB partnership history rediscovered. Existing factory images already reviewed; no new asset identified.",
+        "acceptedCandidateIds": [],
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Publicly accessible or indexed; reuse license not established. No publication authorized."
+      },
+      {
+        "sourceId": "dry5-energozavod-znom",
+        "sourcePageUrl": "https://energo-zavod96.ru/oborudovanie/prochie-transformatory-tfzm-nkf-nami-znom-znog-tol/transformator-znom",
+        "familyIds": [
+          "zom",
+          "znom"
+        ],
+        "status": "retrieved",
+        "bytes": 68826,
+        "sha256": "91ff38b362db2117dfc3ce0910b0f2f8f871a2a2ded862d4983ace4e9b652be5",
+        "disposition": "other_maker",
+        "visualDisposition": "other_maker",
+        "notes": "Photo shows three tall porcelain instruments with Sverdlovelektroshchit watermark. No KTZ origin; no ZOM-1.25/35 proof.",
+        "acceptedCandidateIds": [],
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Publicly accessible or indexed; reuse license not established. No publication authorized."
+      },
+      {
+        "sourceId": "dry5-elm-promtorg-tsl2500",
+        "sourcePageUrl": "https://elm-promtorg.ru/product/transformator-tsl-2500/",
+        "familyIds": [
+          "tsl-loss-A",
+          "tsl-loss-C"
+        ],
+        "status": "retrieved",
+        "bytes": 225528,
+        "sha256": "a94d247f9ba698f091c6db023bbe83410a24a6bd36b389d190ef197007aad221",
+        "disposition": "wrong_model",
+        "visualDisposition": "wrong_model",
+        "notes": "TSL-2500 card uses tm630.jpg oil transformer illustration. Multi-manufacturer list cannot identify photographed maker; not dry TSL.",
+        "acceptedCandidateIds": [],
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Publicly accessible or indexed; reuse license not established. No publication authorized."
+      },
+      {
+        "sourceId": "dry5-fabrikant3078",
+        "sourcePageUrl": "https://static.fabrikant.ru/files/products_out/3078.pdf?title=%D0%9A%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3_%D0%AD%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BE%D0%B1%D0%BE%D1%80%D1%83%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%B8_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82%D1%83%D1%8E%D1%89%D0%B8%D0%B5.pdf",
+        "familyIds": [
+          "tsl-loss-A",
+          "tsl-loss-C",
+          "tsl-20kv",
+          "tsi-tools",
+          "zom"
+        ],
+        "status": "retrieved",
+        "bytes": 4927661,
+        "sha256": "a050c0f1fa575931f78d53a6520e527b5f0d0e5eb55d7b0f82cf4327c72293bc",
+        "disposition": "composite_ambiguous",
+        "visualDisposition": "composite_ambiguous",
+        "notes": "Page 5 has an advertising composite with one dry and two oil transformers; supplier represents both KTZ and Chirchik. No individual maker/voltage link. Not split into manufactured new shots.",
+        "acceptedCandidateIds": [],
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Publicly accessible or indexed; reuse license not established. No publication authorized.",
+        "sourceDocumentUrl": "https://static.fabrikant.ru/files/products_out/3078.pdf?title=%D0%9A%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3_%D0%AD%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BE%D0%B1%D0%BE%D1%80%D1%83%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%B8_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82%D1%83%D1%8E%D1%89%D0%B8%D0%B5.pdf",
+        "imageUrl": null
+      },
+      {
+        "sourceId": "dry5-aemz-expo2016",
+        "sourcePageUrl": "https://aemz.kz/info/news/astana-expo-2016-alageum/",
+        "familyIds": [
+          "tsl-20kv"
+        ],
+        "status": "retrieved",
+        "bytes": 96296,
+        "sha256": "8001d89ea415af1f7efc75772792b24f51df3b20ee2b66dbed2fcdf0df04f365",
+        "disposition": "non_product_photo",
+        "visualDisposition": "non_product_photo",
+        "notes": "Official project page has only handshake/wind/solar promotional collage; no finished dry transformer photograph.",
+        "acceptedCandidateIds": [],
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Publicly accessible or indexed; reuse license not established. No publication authorized."
+      },
+      {
+        "sourceId": "dry5-elec-expo2017",
+        "sourcePageUrl": "https://www.elec.ru/news/2017/06/13/transformatory-alageum-electric-obespechivayut-ele.html",
+        "familyIds": [
+          "tsl-20kv"
+        ],
+        "status": "retrieval_failed",
+        "error": "HTTP Error 502: Bad Gateway",
+        "disposition": "retrieval_failed",
+        "visualDisposition": "retrieval_failed",
+        "notes": "HTTP502. Search-index article text identifies 90 dry units 630–3150 kVA,20 kV; does not tie a visible dry photograph to these units. No visual acceptance.",
+        "acceptedCandidateIds": [],
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Publicly accessible or indexed; reuse license not established. No publication authorized."
+      },
+      {
+        "sourceId": "dry5-elec-atlanty2017",
+        "sourcePageUrl": "https://www.elec.ru/publications/menedzhment/4422/",
+        "familyIds": [
+          "tsl-20kv"
+        ],
+        "status": "retrieval_failed",
+        "error": "HTTP Error 403: Forbidden",
+        "disposition": "access_blocked",
+        "visualDisposition": "access_blocked",
+        "notes": "HTTP403 on public page; stopped this target, no bypass. Indexed anniversary/project text alone does not prove photo identity.",
+        "acceptedCandidateIds": [],
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Publicly accessible or indexed; reuse license not established. No publication authorized."
+      },
+      {
+        "sourceId": "dry5-ivancompany2024",
+        "sourcePageUrl": "https://ivan-company.kz/wp-content/uploads/2024/10/katalog_2024.pdf",
+        "familyIds": [
+          "tsl-20kv",
+          "tsl-loss-A",
+          "tsl-loss-C",
+          "tsi-tools",
+          "zom",
+          "znom",
+          "nami",
+          "nom"
+        ],
+        "status": "retrieved",
+        "bytes": 27761648,
+        "sha256": "aa40b0c9caf89125e176b8d374332a59610d02e8ef00aabc8a271e5b2a0d0bff",
+        "disposition": "wrong_product_catalog",
+        "visualDisposition": "wrong_product_catalog",
+        "notes": "135-page heating/HVAC catalog. Alageum/EXPO are customer references; contents and text search show no target transformer models. No transformer photo accepted.",
+        "acceptedCandidateIds": [],
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Publicly accessible or indexed; reuse license not established. No publication authorized.",
+        "sourceDocumentUrl": "https://ivan-company.kz/wp-content/uploads/2024/10/katalog_2024.pdf",
+        "imageUrl": null
+      },
+      {
+        "sourceId": "dry5-flagma-tszi5",
+        "sourcePageUrl": "https://flagma.kz/transformator-tszi-5-0-o1808557.html",
+        "familyIds": [
+          "tsi-tools"
+        ],
+        "status": "retrieved",
+        "bytes": 235657,
+        "sha256": "19cead346ce8dd58b8377a10c20e0451b3055b4e46044cfa782ffcd24d31129d",
+        "disposition": "unattributed_composite",
+        "visualDisposition": "unattributed_composite",
+        "notes": "TSZI5 seller Altynenergy uses two grey enclosed units in a cutout composite. Maker labels unreadable; no Alageum/KTZ link, and 5kVA is outside assigned enclosed1.6/2.5/4.",
+        "acceptedCandidateIds": [],
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Publicly accessible or indexed; reuse license not established. No publication authorized."
+      },
+      {
+        "sourceId": "dry5-vsetmg-dry",
+        "sourcePageUrl": "https://vsetmg.ru/catalog/transformatory-tsl-tszl/",
+        "familyIds": [
+          "tsl-loss-A",
+          "tsl-loss-C",
+          "tsl-20kv"
+        ],
+        "status": "prior_closed_not_refetched",
+        "disposition": "prior_closed_not_refetched",
+        "visualDisposition": "prior_closed_not_refetched",
+        "notes": "Prior closed KTZ dry catalogue. No genuinely new asset identified.",
+        "acceptedCandidateIds": [],
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Publicly accessible or indexed; reuse license not established. No publication authorized."
+      },
+      {
+        "sourceId": "dry5-telegram-alageum",
+        "sourcePageUrl": "https://t.me/s/alageum_news?before=272",
+        "familyIds": [
+          "tsi-tools",
+          "zom",
+          "tsl-20kv",
+          "tsl-loss-A",
+          "tsl-loss-C",
+          "nami",
+          "nom",
+          "znom"
+        ],
+        "status": "retrieved",
+        "bytes": 195,
+        "sha256": "5b131ca14aa96311d3432b0062c7443d3b0e6346ec279bd376a75f0a76bcd5d7",
+        "disposition": "access_unavailable",
+        "visualDisposition": "access_unavailable",
+        "notes": "HTTP200 body is SiteUnavailable, not channel media. No bypass, no media downloaded. Official-channel ownership not independently established.",
+        "acceptedCandidateIds": [],
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Publicly accessible or indexed; reuse license not established. No publication authorized."
+      },
+      {
+        "sourceId": "dry5-krasluch-zom-znom",
+        "sourcePageUrl": "https://krasluch.ru/znom-35%2C-zom-35-transformator-napry",
+        "familyIds": [
+          "zom",
+          "znom"
+        ],
+        "status": "retrieved",
+        "bytes": 866912,
+        "sha256": "49d70650e3fd1571b4808426e0dda6992a634289a265d567c9e944a7e79842d8",
+        "disposition": "duplicate_and_drawing",
+        "visualDisposition": "duplicate_and_drawing",
+        "notes": "Photo is the lower-resolution same shot as dry4-znom-rst-rear; second image is a dimensional drawing. Combined ZNOM/ZOM page does not establish ZOM identity.",
+        "acceptedCandidateIds": [],
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Publicly accessible or indexed; reuse license not established. No publication authorized."
+      },
+      {
+        "sourceId": "dry5-elec-kuntuarov2019",
+        "sourcePageUrl": "https://www.elec.ru/publications/ot-pervogo-litsa/5697/",
+        "familyIds": [
+          "tsl-loss-A",
+          "tsl-loss-C",
+          "tsl-20kv"
+        ],
+        "status": "retrieval_failed",
+        "error": "HTTP Error 403: Forbidden",
+        "disposition": "access_blocked",
+        "visualDisposition": "access_blocked",
+        "notes": "HTTP403 on public interview page; stopped. Indexed German winding/co-production history cannot attribute a separate pictured transformer or winding material.",
+        "acceptedCandidateIds": [],
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Publicly accessible or indexed; reuse license not established. No publication authorized."
+      },
+      {
+        "sourceId": "dry5-belktp-tsl1000",
+        "sourcePageUrl": "https://belktp.ru/product/transformator-tsl-1000/",
+        "familyIds": [
+          "tsl-loss-A",
+          "tsl-loss-C"
+        ],
+        "status": "retrieved",
+        "bytes": 432856,
+        "sha256": "a48577b8f51ed1c026d00cd3edea61471cd43bbdd606b444ad084c8ac99b2102",
+        "disposition": "mixed_maker_gallery",
+        "visualDisposition": "mixed_maker_gallery",
+        "notes": "Seven distinct gallery assets inspected. One is a drawing; six photographs lack readable Alageum/KTZ attribution. Page explicitly offers six different makers, so card rating/voltage does not identify any photographed unit.",
+        "acceptedCandidateIds": [],
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Publicly accessible or indexed; reuse license not established. No publication authorized."
+      },
+      {
+        "sourceId": "dry5-market2014",
+        "sourcePageUrl": "https://marketelectro.ru/sites/default/files/informacionnyy_blok_10.pdf",
+        "familyIds": [
+          "tsl-loss-A",
+          "tsl-loss-C",
+          "tsl-20kv"
+        ],
+        "newEvidence": "New trade magazine archive: not present in prior URL ledger.",
+        "status": "retrieved",
+        "bytes": 4222710,
+        "sha256": "37f6ffc54b5f54afa4f4d0a4709961b64da7c430db0d523de42eca890f230e03",
+        "disposition": "no_dry_product_photo",
+        "visualDisposition": "no_dry_product_photo",
+        "notes": "110-page industry magazine. KTZ-authored feature on PDF62–63 has oil-transformer assembly, winding machinery and oil yard photographs, no dry/instrument product. Referred to distribution worker.",
+        "acceptedCandidateIds": [],
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Publicly accessible or indexed; reuse license not established. No publication authorized.",
+        "sourceDocumentUrl": "https://marketelectro.ru/sites/default/files/informacionnyy_blok_10.pdf",
+        "imageUrl": null
+      },
+      {
+        "sourceId": "dry5-elec2010",
+        "sourcePageUrl": "https://www.elec.ru/files/2021/09/20/333-2010.pdf",
+        "familyIds": [
+          "tsl-loss-A",
+          "tsl-loss-C",
+          "tsl-20kv"
+        ],
+        "newEvidence": "New dated industry magazine featuring Kentau manufacturing; not present in prior URL ledger.",
+        "status": "retrieval_failed",
+        "error": "HTTP Error 403: Forbidden",
+        "disposition": "access_blocked",
+        "visualDisposition": "access_blocked",
+        "notes": "HTTP403 on public magazine PDF; stopped this target without alternate route or bypass.",
+        "acceptedCandidateIds": [],
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Publicly accessible or indexed; reuse license not established. No publication authorized."
+      },
+      {
+        "sourceId": "dry5-trastek-form3150",
+        "sourcePageUrl": "https://s3.yandexcloud.net/pulscen/public_assets/000/015/426/8690__oprosnyitsl-3150-20-10.pdf",
+        "familyIds": [
+          "tsl-20kv",
+          "dry-accessories"
+        ],
+        "status": "retrieved",
+        "bytes": 318378,
+        "sha256": "22eccd9445c063f3f948fa171c418f1ac93bb299e82ec96b9e08418574ba0bb2",
+        "disposition": "technical_text_only",
+        "visualDisposition": "technical_text_only",
+        "notes": "One-page unsigned KTZ/Trastek order form: TSL3150/20(10)-0.4, aluminium,IP00,TR100/PT100. Contains tables and logos, no product photograph. Cannot transfer attributes onto an unrelated shot.",
+        "acceptedCandidateIds": [],
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Publicly accessible or indexed; reuse license not established. No publication authorized.",
+        "sourceDocumentUrl": "https://s3.yandexcloud.net/pulscen/public_assets/000/015/426/8690__oprosnyitsl-3150-20-10.pdf",
+        "imageUrl": null
+      },
+      {
+        "sourceId": "dry5-trastek-form100",
+        "sourcePageUrl": "https://s3.yandexcloud.net/pulscen/public_assets/000/015/261/4ef1__oprosnyitsl-100-20.pdf",
+        "familyIds": [
+          "tsl-20kv",
+          "dry-accessories"
+        ],
+        "status": "retrieved",
+        "bytes": 318203,
+        "sha256": "e49f338394b11c4cea7b16a116f441472f4d5e0ed1749fc505c08587bf2d8253",
+        "disposition": "technical_text_only",
+        "visualDisposition": "technical_text_only",
+        "notes": "One-page unsigned KTZ/Trastek order form: TSL100/20-0.4, aluminium,IP00,TR100/PT100. Contains tables and logos, no product photograph. Cannot transfer attributes onto an unrelated shot.",
+        "acceptedCandidateIds": [],
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Publicly accessible or indexed; reuse license not established. No publication authorized.",
+        "sourceDocumentUrl": "https://s3.yandexcloud.net/pulscen/public_assets/000/015/261/4ef1__oprosnyitsl-100-20.pdf",
+        "imageUrl": null
+      },
+      {
+        "sourceId": "dry5-yvision-dry-new-assets",
+        "sourcePageUrl": "https://yvision.kz/post/kak-delayut-transformatory-na-kentauskom-transformatornom-zavode-577363",
+        "familyIds": [
+          "tsl-loss-A",
+          "tsl-loss-C",
+          "tsl-20kv",
+          "tsi-tools"
+        ],
+        "status": "prior_page_reused_new_assets_inspected",
+        "disposition": "production_context_only",
+        "notes": "Three dry-production section images were not in the prior downloaded set. All three now inspected: vacuum vessel, employee portrait with winding machinery, employee at winding machine. No finished transformer or nameplate. Prior source HTML reused, not fetched again.",
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Author explicitly reserves copying rights. Research only; publication permission required.",
+        "acceptedCandidateIds": []
+      }
+    ],
+    "mapping-upgrades": [],
+    "asset-dispositions": [
+      {
+        "assetId": "energozavod-znom",
+        "imageUrl": "https://energo-zavod96.ru/cache/preview/8f3157219d477142f49e45c6a1e4adac.jpg",
+        "sourcePageUrl": "https://energo-zavod96.ru/oborudovanie/prochie-transformatory-tfzm-nkf-nami-znom-znog-tol/transformator-znom",
+        "dimensions": [
+          700,
+          700
+        ],
+        "sha256": "509c62191069d9d37f1937e4ee50772f95f1a59618a488a802f38c7162992d07",
+        "status": "retrieved",
+        "visualDisposition": "other_maker",
+        "visualEvidence": "Real photo of three boxed porcelain-tower instruments; Sverdlovelektroshchit watermark, not identified KTZ.",
+        "visuallyInspected": true,
+        "acceptedCandidateIds": [],
+        "countsAsDistinctPhoto": false,
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Reuse license unknown."
+      },
+      {
+        "assetId": "elm-tsl2500",
+        "imageUrl": "https://elm-promtorg.ru/wp-content/uploads/2025/01/tm630.jpg",
+        "sourcePageUrl": "https://elm-promtorg.ru/product/transformator-tsl-2500/",
+        "dimensions": [
+          900,
+          700
+        ],
+        "sha256": "d3525731907ec1b264738cddfb02bcc5e41e6f5ae7fe6255202b11d079cf2bae",
+        "status": "retrieved",
+        "visualDisposition": "wrong_model",
+        "visualEvidence": "Oil conservator-type transformer, not dry TSL; polished illustrative appearance not needed to resolve rejection.",
+        "visuallyInspected": true,
+        "acceptedCandidateIds": [],
+        "countsAsDistinctPhoto": false,
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Reuse license unknown."
+      },
+      {
+        "assetId": "flagma-tszi5-related",
+        "imageUrl": "https://img02.flagma.kz/photo/transformator-tszi-5-0-1803574_medium.jpg",
+        "sourcePageUrl": "https://flagma.kz/transformator-tszi-4-0-o1806486.html",
+        "dimensions": [
+          256,
+          192
+        ],
+        "sha256": "2e43a9dd2fc30620de9d9d65c9eeaa71705d2eded2d73be2126eb10a1ff904b6",
+        "status": "retrieved",
+        "visualDisposition": "unattributed_composite",
+        "visualEvidence": "Two differently sized vented grey cabinets cut onto white background. Small yellow labels unreadable; no Alageum/KTZ identification.",
+        "visuallyInspected": true,
+        "acceptedCandidateIds": [],
+        "countsAsDistinctPhoto": false,
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Reuse license unknown."
+      },
+      {
+        "assetId": "aemz-expo-hero",
+        "imageUrl": "https://aemz.kz/upload/iblock/e79/e79ffce50a6fc7beebe289c955163bdd.jpg",
+        "sourcePageUrl": "https://aemz.kz/info/news/astana-expo-2016-alageum/",
+        "dimensions": [
+          300,
+          150
+        ],
+        "sha256": "3d6e5fec2cf95ef4e1fcfae708cad14af800d6d163d2b01dbecb36e12d27c357",
+        "status": "retrieved",
+        "visualDisposition": "non_product_photo",
+        "visualEvidence": "Handshake/renewables advertising collage.",
+        "visuallyInspected": true,
+        "acceptedCandidateIds": [],
+        "countsAsDistinctPhoto": false,
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Reuse license unknown."
+      },
+      {
+        "assetId": "aemz-expo-inline",
+        "imageUrl": "https://aemz.kz/upload/iblock/83d/83d228beb30929f49a18b7c6c78f5359.jpg",
+        "sourcePageUrl": "https://aemz.kz/info/news/astana-expo-2016-alageum/",
+        "dimensions": [
+          478,
+          240
+        ],
+        "sha256": "12b3bf1f2ecf18bd4afdf658e8e8dd4196d646ee288683b2b8b169d0467bf11c",
+        "status": "retrieved",
+        "visualDisposition": "duplicate_non_product",
+        "visualEvidence": "Same promotional collage as hero at another size, not a product shot.",
+        "visuallyInspected": true,
+        "acceptedCandidateIds": [],
+        "countsAsDistinctPhoto": false,
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Reuse license unknown."
+      },
+      {
+        "assetId": "yvision-dry-1",
+        "imageUrl": "https://storage.yvision.kz/images/user/theyakov/F5lHeIr5VGa64Q8g8z924Qp9ZSnUSB.jpg",
+        "sourcePageUrl": "https://yvision.kz/post/kak-delayut-transformatory-na-kentauskom-transformatornom-zavode-577363",
+        "sourceCaption": "  Ещё одно относительно новое направление производства - сборка сухих трансформаторов. ",
+        "dimensions": [
+          1000,
+          667
+        ],
+        "sha256": "5ca805e6ac0493945c802bda32996f9d78d318521a97c2c62c8688e307fdea15",
+        "status": "retrieved",
+        "visualDisposition": "production_context_only",
+        "visualEvidence": "Vacuum impregnation/drying vessel and associated tank, not a transformer product.",
+        "visuallyInspected": true,
+        "acceptedCandidateIds": [],
+        "countsAsDistinctPhoto": false,
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Author reserves copying rights; permission required before reuse."
+      },
+      {
+        "assetId": "yvision-dry-2",
+        "imageUrl": "https://storage.yvision.kz/images/user/theyakov/H2M0JgXQ7YbEK92BM7SqVf6q2Mb0Y6.jpg",
+        "sourcePageUrl": "https://yvision.kz/post/kak-delayut-transformatory-na-kentauskom-transformatornom-zavode-577363",
+        "sourceCaption": "  Старший мастер цеха по выпуску сухих трансформаторов - Исаев Баглан на предприятии работает уже около 10 лет, из них 8 лет занимается именно сухими трансформаторами. ",
+        "dimensions": [
+          1000,
+          667
+        ],
+        "sha256": "6e8b72db678145047d855838f1dbe2b21a52b8d9f821fed049e9352b3fe6cf3d",
+        "status": "retrieved",
+        "visualDisposition": "production_context_only",
+        "visualEvidence": "Employee portrait; blurred winding machinery behind, not a finished product.",
+        "visuallyInspected": true,
+        "acceptedCandidateIds": [],
+        "countsAsDistinctPhoto": false,
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Author reserves copying rights; permission required before reuse."
+      },
+      {
+        "assetId": "yvision-dry-3",
+        "imageUrl": "https://storage.yvision.kz/images/user/theyakov/V1R3KnOLCBDIBR81t0y2jgd068ek8K.jpg",
+        "sourcePageUrl": "https://yvision.kz/post/kak-delayut-transformatory-na-kentauskom-transformatornom-zavode-577363",
+        "sourceCaption": "  Это новое направление началось в КТЗ в 2007-2008 годах. Сотрудники предприятия во время освоения новой линии ездили проходить стажировку в Германию. ",
+        "dimensions": [
+          1000,
+          667
+        ],
+        "sha256": "8967177676970fbb63f44adf9056a561c0d0d8e5802a2ab9da9e25d856649f3e",
+        "status": "retrieved",
+        "visualDisposition": "production_context_only",
+        "visualEvidence": "Employee operating winding machinery; no complete transformer.",
+        "visuallyInspected": true,
+        "acceptedCandidateIds": [],
+        "countsAsDistinctPhoto": false,
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Author reserves copying rights; permission required before reuse."
+      },
+      {
+        "assetId": "krasluch-zom-znom-6",
+        "imageUrl": "https://krasluch.ru/thumb/2/m0EJlE05W-0d2EJtPPyjvQ/360r300/d/znom-35.jpg",
+        "sourcePageUrl": "https://krasluch.ru/znom-35%2C-zom-35-transformator-napry",
+        "dimensions": [
+          173,
+          300
+        ],
+        "sha256": "056e95f1c934054ef2185832571193a7da3539af005cca755f8a3758ed16547c",
+        "status": "retrieved",
+        "visualDisposition": "duplicate",
+        "visualEvidence": "Same rear ZNOM photograph, resized, as accepted dry4-znom-rst-rear. Not ZOM evidence.",
+        "visuallyInspected": true,
+        "acceptedCandidateIds": [],
+        "countsAsDistinctPhoto": false,
+        "checkedAt": "2026-10-12",
+        "duplicateOfCandidateId": "dry4-znom-rst-rear",
+        "rightsStatus": "Reuse license unknown."
+      },
+      {
+        "assetId": "krasluch-zom-znom-7",
+        "imageUrl": "https://krasluch.ru/thumb/2/dcLIa1Xv5zMHrpjdbQjQOQ/r/d/znom-35.png",
+        "sourcePageUrl": "https://krasluch.ru/znom-35%2C-zom-35-transformator-napry",
+        "dimensions": [
+          550,
+          425
+        ],
+        "sha256": "2b5ae6ab7305c71de4729a13af6d09d133b95ad80541ad4ad189f5791a5cc124",
+        "status": "retrieved",
+        "visualDisposition": "drawing",
+        "visualEvidence": "Dimensioned 2D front/top instrument drawing; kept separately as secondary material, not photo.",
+        "visuallyInspected": true,
+        "acceptedCandidateIds": [],
+        "countsAsDistinctPhoto": false,
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Reuse license unknown."
+      },
+      {
+        "assetId": "belktp-tsl1000-0",
+        "imageUrl": "https://belktp.ru/wp-content/uploads/2023/05/tsl-630.jpg",
+        "sourcePageUrl": "https://belktp.ru/product/transformator-tsl-1000/",
+        "dimensions": [
+          900,
+          700
+        ],
+        "sha256": "b6d3376cef16620e099b6b16df0cdd7f1abb15299f765d9ec624fcc069916c28",
+        "status": "retrieved",
+        "visualDisposition": "unattributed_photo",
+        "visualEvidence": "Red cast coils, grey frame. Maker plate too small to read; mixed-maker seller context insufficient.",
+        "visuallyInspected": true,
+        "acceptedCandidateIds": [],
+        "countsAsDistinctPhoto": false,
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Reuse license unknown."
+      },
+      {
+        "assetId": "belktp-tsl1000-18",
+        "imageUrl": "https://belktp.ru/wp-content/uploads/2023/05/dsc00454-scaled.jpeg",
+        "sourcePageUrl": "https://belktp.ru/product/transformator-tsl-1000/",
+        "dimensions": [
+          2560,
+          1707
+        ],
+        "sha256": "91f13f9cd585507ea82a2ee7ad0821b48990fc775f277694fa2145da55596d9e",
+        "status": "retrieved",
+        "visualDisposition": "unattributed_photo",
+        "visualEvidence": "Blue-frame brown-cast units on factory floor with yellow component labels. No readable KTZ/Alageum plate; maker identity unresolved.",
+        "visuallyInspected": true,
+        "acceptedCandidateIds": [],
+        "countsAsDistinctPhoto": false,
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Reuse license unknown."
+      },
+      {
+        "assetId": "belktp-tsl1000-19",
+        "imageUrl": "https://belktp.ru/wp-content/uploads/2023/05/geqqlrfg_le.jpg",
+        "sourcePageUrl": "https://belktp.ru/product/transformator-tsl-1000/",
+        "dimensions": [
+          1280,
+          960
+        ],
+        "sha256": "c74237367d592f5e440cc11f3fff8f2c7ce0bcb6a853f1bb8f6c5e54136011fa",
+        "status": "retrieved",
+        "visualDisposition": "unattributed_photo",
+        "visualEvidence": "Palletized blue-frame cast-coil units. No readable maker/rating plates; multi-brand page gives no photo-specific identity.",
+        "visuallyInspected": true,
+        "acceptedCandidateIds": [],
+        "countsAsDistinctPhoto": false,
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Reuse license unknown."
+      },
+      {
+        "assetId": "belktp-tsl1000-20",
+        "imageUrl": "https://belktp.ru/wp-content/uploads/2023/05/trans_12.jpeg",
+        "sourcePageUrl": "https://belktp.ru/product/transformator-tsl-1000/",
+        "dimensions": [
+          2079,
+          1518
+        ],
+        "sha256": "826f6f75334b7479dd1b213570cccdfeff08281f0b93136046ef5340bfe0ba62",
+        "status": "retrieved",
+        "visualDisposition": "unattributed_photo",
+        "visualEvidence": "Different close view of blue-frame cast-coil units. No readable KTZ/Alageum identification.",
+        "visuallyInspected": true,
+        "acceptedCandidateIds": [],
+        "countsAsDistinctPhoto": false,
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Reuse license unknown."
+      },
+      {
+        "assetId": "belktp-tsl1000-21",
+        "imageUrl": "https://belktp.ru/wp-content/uploads/2023/05/tsl-seshch-6-10-kv-u3-foto2.jpg",
+        "sourcePageUrl": "https://belktp.ru/product/transformator-tsl-1000/",
+        "dimensions": [
+          358,
+          475
+        ],
+        "sha256": "a3e61a35e8f533b3ed36140b64d6c997e65bcbcee63bd554d90b6fcf5a7881ee",
+        "status": "retrieved",
+        "visualDisposition": "other_maker_or_unattributed",
+        "visualEvidence": "Filename explicitly tsl-seshch-6-10-kv-u3-foto2.jpg and photograph has blue frame/brown casts. No KTZ identification; cannot inherit mixed-maker page attribution.",
+        "visuallyInspected": true,
+        "acceptedCandidateIds": [],
+        "countsAsDistinctPhoto": false,
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Reuse license unknown."
+      },
+      {
+        "assetId": "belktp-tsl1000-22",
+        "imageUrl": "https://belktp.ru/wp-content/uploads/2023/05/066-2.jpg",
+        "sourcePageUrl": "https://belktp.ru/product/transformator-tsl-1000/",
+        "dimensions": [
+          1645,
+          2115
+        ],
+        "sha256": "90bb14736cfaffd72f4d40099a319db9f03233b5548139fc90a22de9d549f553",
+        "status": "retrieved",
+        "visualDisposition": "drawing",
+        "visualEvidence": "Dimensioned transformer technical drawing. No photo count.",
+        "visuallyInspected": true,
+        "acceptedCandidateIds": [],
+        "countsAsDistinctPhoto": false,
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Reuse license unknown."
+      },
+      {
+        "assetId": "belktp-tsl1000-23",
+        "imageUrl": "https://belktp.ru/wp-content/uploads/2023/05/tsl-1.jpg",
+        "sourcePageUrl": "https://belktp.ru/product/transformator-tsl-1000/",
+        "dimensions": [
+          900,
+          700
+        ],
+        "sha256": "04e97333cdf90181040ea8e4202648022f8ea0ca5b30e4dfc82ffe8b3d6adeaf",
+        "status": "retrieved",
+        "visualDisposition": "unattributed_photo",
+        "visualEvidence": "Orange cast coils, grey frame and small two-label plate with no readable Alageum/KTZ identity. Cannot identify maker from multi-brand listing.",
+        "visuallyInspected": true,
+        "acceptedCandidateIds": [],
+        "countsAsDistinctPhoto": false,
+        "checkedAt": "2026-10-12",
+        "rightsStatus": "Reuse license unknown."
+      },
+      {
+        "assetId": "fabrikant3078-p5-x324",
+        "sourcePageUrl": "https://static.fabrikant.ru/files/products_out/3078.pdf?title=%D0%9A%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3_%D0%AD%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BE%D0%B1%D0%BE%D1%80%D1%83%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%B8_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82%D1%83%D1%8E%D1%89%D0%B8%D0%B5.pdf",
+        "sourceDocumentUrl": "https://static.fabrikant.ru/files/products_out/3078.pdf?title=%D0%9A%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3_%D0%AD%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BE%D0%B1%D0%BE%D1%80%D1%83%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%B8_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82%D1%83%D1%8E%D1%89%D0%B8%D0%B5.pdf",
+        "imageUrl": null,
+        "pdfPage": 5,
+        "pdfImageXref": 324,
+        "visualDisposition": "composite_ambiguous",
+        "visualEvidence": "Dry transformer centered with two oil units in one advertising raster; individual maker/voltage not established. No crops counted.",
+        "visuallyInspected": true,
+        "countsAsDistinctPhoto": false,
+        "checkedAt": "2026-10-12",
+        "acceptedCandidateIds": [],
+        "rightsStatus": "Reuse license unknown."
+      }
+    ],
+    "search-only-dispositions": [
+      {
+        "sourcePageUrl": "https://assema-machines.com/reference/",
+        "sourceType": "manufacturer_reference_list",
+        "disposition": "machine_equipment_reference_only",
+        "evidence": "Search-index reference list identifies Kentau2008 TRL600 and SGB2006 TRL400 production-equipment clients, not a KTZ transformer photo or winding-material plate.",
+        "fetchStatus": "search_only_no_photo_specific_lead"
+      },
+      {
+        "sourcePageUrl": "https://www.viplisting.biz/en/companies/727-power-industry/alageum-electric.html",
+        "sourceType": "business_directory",
+        "disposition": "company_profile_no_photo_specific_identity",
+        "evidence": "Historical company profile gives product ranges, not photo-specific primary voltage or construction.",
+        "fetchStatus": "search_only_no_photo_specific_lead"
+      },
+      {
+        "sourcePageUrl": "https://7suppliers.com/contact/akcionernoe-obschestvo-kentauskiy-transformatornyy-zavod/",
+        "sourceType": "supplier_directory",
+        "disposition": "certificate_listing_no_product_photo_identity",
+        "evidence": "Certificate-derived listing mentions ZOM1.25 but no identified product photograph.",
+        "fetchStatus": "search_only_no_photo_specific_lead"
+      }
+    ],
+    "family-dispositions": [
+      {
+        "familyId": "tsi-tools",
+        "targetProductIds": [
+          "tr2026-family-tsi-tools",
+          "alageum-2026-tsi-1p6-open",
+          "alageum-2026-tsi-2p5-open",
+          "alageum-2026-tsi-4p0-open",
+          "alageum-2026-tsi-1p6-enclosed",
+          "alageum-2026-tsi-2p5-enclosed",
+          "alageum-2026-tsi-4p0-enclosed"
+        ],
+        "targetRecordCount": 7,
+        "sourceIds": [
+          "dry5-allbiz-alageum",
+          "dry5-flagma-elmo-tszi4",
+          "dry5-netelectro-ktz",
+          "dry5-fabrikant3078",
+          "dry5-ivancompany2024",
+          "dry5-flagma-tszi5",
+          "dry5-telegram-alageum",
+          "dry5-yvision-dry-new-assets"
+        ],
+        "reviewedSourceUrls": [
+          "https://alageum.all.biz/goods",
+          "https://flagma.kz/transformator-tszi-4-0-o1806486.html",
+          "https://netelectro.ru/company/kentauskij-transformatornyj-zavod/",
+          "https://static.fabrikant.ru/files/products_out/3078.pdf?title=%D0%9A%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3_%D0%AD%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BE%D0%B1%D0%BE%D1%80%D1%83%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%B8_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82%D1%83%D1%8E%D1%89%D0%B8%D0%B5.pdf",
+          "https://ivan-company.kz/wp-content/uploads/2024/10/katalog_2024.pdf",
+          "https://flagma.kz/transformator-tszi-5-0-o1808557.html",
+          "https://t.me/s/alageum_news?before=272",
+          "https://yvision.kz/post/kak-delayut-transformatory-na-kentauskom-transformatornom-zavode-577363"
+        ],
+        "searchOnlyOrPreviouslyClosedResultUrls": [
+          "https://www.pwc.com/kz/en/services/business-mission/ru-catalogue/13.pdf"
+        ],
+        "outcome": "No new visually verified attributable photograph or mapping upgrade. Current concrete fresh leads closed with reason; access-limited targets retained in blocked-leads.json.",
+        "remainingIdentityEvidence": "Need an actual KTZ/Alageum photograph positively identified as enclosed TSZI (not larger TSZ), with 0.38 kV primary and 1.6/2.5/4 kVA or source-backed same-series range. Current closed TSZI listings are wrong TSL imagery or unattributed 5 kVA composites. Open TSI photos cannot illustrate closed construction.",
+        "newDistinctPhotoCount": 0,
+        "stoppingCondition": "All concrete fresh leads identified in this search pass are visually dispositioned, excluded by source content, or have a documented access failure. No permission to contact makers; no authentication or access bypass. This is a bounded evidence gap, not a claim that no photograph exists anywhere.",
+        "checkedAt": "2026-10-12"
+      },
+      {
+        "familyId": "zom",
+        "targetProductIds": [
+          "tr2026-family-zom",
+          "alageum-2026-zom-1p25-35"
+        ],
+        "targetRecordCount": 2,
+        "sourceIds": [
+          "dry5-allbiz-alageum",
+          "dry5-energozavod-znom",
+          "dry5-fabrikant3078",
+          "dry5-ivancompany2024",
+          "dry5-telegram-alageum",
+          "dry5-krasluch-zom-znom"
+        ],
+        "reviewedSourceUrls": [
+          "https://alageum.all.biz/goods",
+          "https://energo-zavod96.ru/oborudovanie/prochie-transformatory-tfzm-nkf-nami-znom-znog-tol/transformator-znom",
+          "https://static.fabrikant.ru/files/products_out/3078.pdf?title=%D0%9A%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3_%D0%AD%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BE%D0%B1%D0%BE%D1%80%D1%83%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%B8_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82%D1%83%D1%8E%D1%89%D0%B8%D0%B5.pdf",
+          "https://ivan-company.kz/wp-content/uploads/2024/10/katalog_2024.pdf",
+          "https://t.me/s/alageum_news?before=272",
+          "https://krasluch.ru/znom-35%2C-zom-35-transformator-napry"
+        ],
+        "searchOnlyOrPreviouslyClosedResultUrls": [],
+        "outcome": "No new visually verified attributable photograph or mapping upgrade. Current concrete fresh leads closed with reason; access-limited targets retained in blocked-leads.json.",
+        "remainingIdentityEvidence": "Need genuine KTZ ZOM-1.25/35 railway-supply transformer photo with readable designation or dedicated manufacturer evidence. Tall single-bushing ZNOM instrument photo on a combined page cannot establish ZOM identity.",
+        "newDistinctPhotoCount": 0,
+        "stoppingCondition": "All concrete fresh leads identified in this search pass are visually dispositioned, excluded by source content, or have a documented access failure. No permission to contact makers; no authentication or access bypass. This is a bounded evidence gap, not a claim that no photograph exists anywhere.",
+        "checkedAt": "2026-10-12"
+      },
+      {
+        "familyId": "dry-accessories",
+        "targetProductIds": [
+          "tr2026-family-dry-accessories",
+          "alageum-2026-relay-tr100",
+          "alageum-2026-sensor-pt100",
+          "alageum-2026-damper-ek290"
+        ],
+        "targetRecordCount": 4,
+        "sourceIds": [
+          "dry5-trastek-form3150",
+          "dry5-trastek-form100"
+        ],
+        "reviewedSourceUrls": [
+          "https://s3.yandexcloud.net/pulscen/public_assets/000/015/426/8690__oprosnyitsl-3150-20-10.pdf",
+          "https://s3.yandexcloud.net/pulscen/public_assets/000/015/261/4ef1__oprosnyitsl-100-20.pdf"
+        ],
+        "searchOnlyOrPreviouslyClosedResultUrls": [],
+        "outcome": "No new visually verified attributable photograph or mapping upgrade. Current concrete fresh leads closed with reason; access-limited targets retained in blocked-leads.json.",
+        "remainingIdentityEvidence": "Need additional correctly attributable photographs of TR-100, PT100 and EK-290 components or actual installed set. Order forms confirm optional equipment names but no photographed shape, maker or installed pairing. Generic T154 is not TR-100.",
+        "newDistinctPhotoCount": 0,
+        "stoppingCondition": "All concrete fresh leads identified in this search pass are visually dispositioned, excluded by source content, or have a documented access failure. No permission to contact makers; no authentication or access bypass. This is a bounded evidence gap, not a claim that no photograph exists anywhere.",
+        "checkedAt": "2026-10-12"
+      },
+      {
+        "familyId": "tsl-loss-C",
+        "targetProductIds": [
+          "tr2026-family-tsl-loss-c",
+          "alageum-2026-tsl-c-25",
+          "alageum-2026-tsl-c-40",
+          "alageum-2026-tsl-c-63",
+          "alageum-2026-tsl-c-100",
+          "alageum-2026-tsl-c-160",
+          "alageum-2026-tsl-c-250",
+          "alageum-2026-tsl-c-400",
+          "alageum-2026-tsl-c-1000",
+          "alageum-2026-tsl-c-1250",
+          "alageum-2026-tsl-c-2000",
+          "alageum-2026-tsl-c-2500",
+          "alageum-2026-tsl-c-3150",
+          "alageum-2026-tsl-c-4000",
+          "alageum-2026-tsl-c-1600",
+          "alageum-2026-tsl-c-630"
+        ],
+        "targetRecordCount": 16,
+        "sourceIds": [
+          "dry5-netelectro-ktz",
+          "dry5-elm-promtorg-tsl2500",
+          "dry5-fabrikant3078",
+          "dry5-ivancompany2024",
+          "dry5-vsetmg-dry",
+          "dry5-telegram-alageum",
+          "dry5-elec-kuntuarov2019",
+          "dry5-belktp-tsl1000",
+          "dry5-market2014",
+          "dry5-elec2010",
+          "dry5-yvision-dry-new-assets"
+        ],
+        "reviewedSourceUrls": [
+          "https://netelectro.ru/company/kentauskij-transformatornyj-zavod/",
+          "https://elm-promtorg.ru/product/transformator-tsl-2500/",
+          "https://static.fabrikant.ru/files/products_out/3078.pdf?title=%D0%9A%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3_%D0%AD%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BE%D0%B1%D0%BE%D1%80%D1%83%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%B8_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82%D1%83%D1%8E%D1%89%D0%B8%D0%B5.pdf",
+          "https://ivan-company.kz/wp-content/uploads/2024/10/katalog_2024.pdf",
+          "https://vsetmg.ru/catalog/transformatory-tsl-tszl/",
+          "https://t.me/s/alageum_news?before=272",
+          "https://www.elec.ru/publications/ot-pervogo-litsa/5697/",
+          "https://belktp.ru/product/transformator-tsl-1000/",
+          "https://marketelectro.ru/sites/default/files/informacionnyy_blok_10.pdf",
+          "https://www.elec.ru/files/2021/09/20/333-2010.pdf",
+          "https://yvision.kz/post/kak-delayut-transformatory-na-kentauskom-transformatornom-zavode-577363"
+        ],
+        "searchOnlyOrPreviouslyClosedResultUrls": [
+          "https://assema-machines.com/reference/"
+        ],
+        "outcome": "No new visually verified attributable photograph or mapping upgrade. Current concrete fresh leads closed with reason; access-limited targets retained in blocked-leads.json.",
+        "remainingIdentityEvidence": "Need photograph/nameplate/document tied to the pictured unit proving loss class C, primary voltage and open/enclosed construction; verify winding material separately. Generic TSL gallery or SGB production history cannot prove this option.",
+        "newDistinctPhotoCount": 0,
+        "stoppingCondition": "All concrete fresh leads identified in this search pass are visually dispositioned, excluded by source content, or have a documented access failure. No permission to contact makers; no authentication or access bypass. This is a bounded evidence gap, not a claim that no photograph exists anywhere.",
+        "checkedAt": "2026-10-12"
+      },
+      {
+        "familyId": "tsl-20kv",
+        "targetProductIds": [
+          "tr2026-family-tsl-20kv",
+          "alageum-2026-tsl-20kv-100",
+          "alageum-2026-tsl-20kv-160",
+          "alageum-2026-tsl-20kv-250",
+          "alageum-2026-tsl-20kv-400",
+          "alageum-2026-tsl-20kv-630",
+          "alageum-2026-tsl-20kv-1000",
+          "alageum-2026-tsl-20kv-1250",
+          "alageum-2026-tsl-20kv-1600",
+          "alageum-2026-tsl-20kv-2000",
+          "alageum-2026-tsl-20kv-2500",
+          "alageum-2026-tsl-20kv-3150",
+          "alageum-2026-tsl-20kv-4000"
+        ],
+        "targetRecordCount": 13,
+        "sourceIds": [
+          "dry5-netelectro-ktz",
+          "dry5-fabrikant3078",
+          "dry5-aemz-expo2016",
+          "dry5-elec-expo2017",
+          "dry5-elec-atlanty2017",
+          "dry5-ivancompany2024",
+          "dry5-vsetmg-dry",
+          "dry5-telegram-alageum",
+          "dry5-elec-kuntuarov2019",
+          "dry5-market2014",
+          "dry5-elec2010",
+          "dry5-trastek-form3150",
+          "dry5-trastek-form100",
+          "dry5-yvision-dry-new-assets"
+        ],
+        "reviewedSourceUrls": [
+          "https://netelectro.ru/company/kentauskij-transformatornyj-zavod/",
+          "https://static.fabrikant.ru/files/products_out/3078.pdf?title=%D0%9A%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3_%D0%AD%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BE%D0%B1%D0%BE%D1%80%D1%83%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%B8_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82%D1%83%D1%8E%D1%89%D0%B8%D0%B5.pdf",
+          "https://aemz.kz/info/news/astana-expo-2016-alageum/",
+          "https://www.elec.ru/news/2017/06/13/transformatory-alageum-electric-obespechivayut-ele.html",
+          "https://www.elec.ru/publications/menedzhment/4422/",
+          "https://ivan-company.kz/wp-content/uploads/2024/10/katalog_2024.pdf",
+          "https://vsetmg.ru/catalog/transformatory-tsl-tszl/",
+          "https://t.me/s/alageum_news?before=272",
+          "https://www.elec.ru/publications/ot-pervogo-litsa/5697/",
+          "https://marketelectro.ru/sites/default/files/informacionnyy_blok_10.pdf",
+          "https://www.elec.ru/files/2021/09/20/333-2010.pdf",
+          "https://s3.yandexcloud.net/pulscen/public_assets/000/015/426/8690__oprosnyitsl-3150-20-10.pdf",
+          "https://s3.yandexcloud.net/pulscen/public_assets/000/015/261/4ef1__oprosnyitsl-100-20.pdf",
+          "https://yvision.kz/post/kak-delayut-transformatory-na-kentauskom-transformatornom-zavode-577363"
+        ],
+        "searchOnlyOrPreviouslyClosedResultUrls": [
+          "https://tress.kz/p109005302-transformator-tsl-250020.html",
+          "https://alageum.com/images/katalog/2Imid_rus2024.pdf"
+        ],
+        "outcome": "No new visually verified attributable photograph or mapping upgrade. Current concrete fresh leads closed with reason; access-limited targets retained in blocked-leads.json.",
+        "remainingIdentityEvidence": "Need photo tied directly to one of the documented 20 kV units, with readable plate or unambiguous dedicated delivery/serial record. EXPO quantity/range and unsigned aluminium/IP00 order forms do not establish which existing photo is 20 kV.",
+        "newDistinctPhotoCount": 0,
+        "stoppingCondition": "All concrete fresh leads identified in this search pass are visually dispositioned, excluded by source content, or have a documented access failure. No permission to contact makers; no authentication or access bypass. This is a bounded evidence gap, not a claim that no photograph exists anywhere.",
+        "checkedAt": "2026-10-12"
+      },
+      {
+        "familyId": "tsl-loss-A",
+        "targetProductIds": [
+          "tr2026-family-tsl-loss-a",
+          "alageum-2026-tsl-a-63",
+          "alageum-2026-tsl-a-100",
+          "alageum-2026-tsl-a-160",
+          "alageum-2026-tsl-a-250",
+          "alageum-2026-tsl-a-400",
+          "alageum-2026-tsl-a-1000",
+          "alageum-2026-tsl-a-1250",
+          "alageum-2026-tsl-a-2000",
+          "alageum-2026-tsl-a-2500",
+          "alageum-2026-tsl-a-1600",
+          "alageum-2026-tsl-a-630"
+        ],
+        "targetRecordCount": 12,
+        "sourceIds": [
+          "dry5-netelectro-ktz",
+          "dry5-elm-promtorg-tsl2500",
+          "dry5-fabrikant3078",
+          "dry5-ivancompany2024",
+          "dry5-vsetmg-dry",
+          "dry5-telegram-alageum",
+          "dry5-elec-kuntuarov2019",
+          "dry5-belktp-tsl1000",
+          "dry5-market2014",
+          "dry5-elec2010",
+          "dry5-yvision-dry-new-assets"
+        ],
+        "reviewedSourceUrls": [
+          "https://netelectro.ru/company/kentauskij-transformatornyj-zavod/",
+          "https://elm-promtorg.ru/product/transformator-tsl-2500/",
+          "https://static.fabrikant.ru/files/products_out/3078.pdf?title=%D0%9A%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3_%D0%AD%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BE%D0%B1%D0%BE%D1%80%D1%83%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%B8_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82%D1%83%D1%8E%D1%89%D0%B8%D0%B5.pdf",
+          "https://ivan-company.kz/wp-content/uploads/2024/10/katalog_2024.pdf",
+          "https://vsetmg.ru/catalog/transformatory-tsl-tszl/",
+          "https://t.me/s/alageum_news?before=272",
+          "https://www.elec.ru/publications/ot-pervogo-litsa/5697/",
+          "https://belktp.ru/product/transformator-tsl-1000/",
+          "https://marketelectro.ru/sites/default/files/informacionnyy_blok_10.pdf",
+          "https://www.elec.ru/files/2021/09/20/333-2010.pdf",
+          "https://yvision.kz/post/kak-delayut-transformatory-na-kentauskom-transformatornom-zavode-577363"
+        ],
+        "searchOnlyOrPreviouslyClosedResultUrls": [
+          "https://assema-machines.com/reference/"
+        ],
+        "outcome": "No new visually verified attributable photograph or mapping upgrade. Current concrete fresh leads closed with reason; access-limited targets retained in blocked-leads.json.",
+        "remainingIdentityEvidence": "Need photograph/nameplate/document tied to pictured unit proving loss class A, primary voltage and open/enclosed construction; winding material is an independent option. No such new source-backed unit found.",
+        "newDistinctPhotoCount": 0,
+        "stoppingCondition": "All concrete fresh leads identified in this search pass are visually dispositioned, excluded by source content, or have a documented access failure. No permission to contact makers; no authentication or access bypass. This is a bounded evidence gap, not a claim that no photograph exists anywhere.",
+        "checkedAt": "2026-10-12"
+      },
+      {
+        "familyId": "znom",
+        "targetProductIds": [
+          "tr2026-family-znom",
+          "alageum-2026-znom35-config1",
+          "alageum-2026-znom35-config2"
+        ],
+        "targetRecordCount": 3,
+        "sourceIds": [
+          "dry5-energozavod-znom",
+          "dry5-ivancompany2024",
+          "dry5-telegram-alageum",
+          "dry5-krasluch-zom-znom"
+        ],
+        "reviewedSourceUrls": [
+          "https://energo-zavod96.ru/oborudovanie/prochie-transformatory-tfzm-nkf-nami-znom-znog-tol/transformator-znom",
+          "https://ivan-company.kz/wp-content/uploads/2024/10/katalog_2024.pdf",
+          "https://t.me/s/alageum_news?before=272",
+          "https://krasluch.ru/znom-35%2C-zom-35-transformator-napry"
+        ],
+        "searchOnlyOrPreviouslyClosedResultUrls": [],
+        "outcome": "No new visually verified attributable photograph or mapping upgrade. Current concrete fresh leads closed with reason; access-limited targets retained in blocked-leads.json.",
+        "remainingIdentityEvidence": "Need readable ZNOM-35 plate or photo-specific factory record showing the required secondary winding/ratio configuration. Existing two angles do not establish each v4 winding branch; new Krasluch photo is the same rear shot.",
+        "newDistinctPhotoCount": 0,
+        "stoppingCondition": "All concrete fresh leads identified in this search pass are visually dispositioned, excluded by source content, or have a documented access failure. No permission to contact makers; no authentication or access bypass. This is a bounded evidence gap, not a claim that no photograph exists anywhere.",
+        "checkedAt": "2026-10-12"
+      },
+      {
+        "familyId": "nami",
+        "targetProductIds": [
+          "alageum-2026-nami-6",
+          "alageum-2026-nami-10"
+        ],
+        "targetRecordCount": 2,
+        "sourceIds": [
+          "dry5-allbiz-alageum",
+          "dry5-ivancompany2024",
+          "dry5-telegram-alageum"
+        ],
+        "reviewedSourceUrls": [
+          "https://alageum.all.biz/goods",
+          "https://ivan-company.kz/wp-content/uploads/2024/10/katalog_2024.pdf",
+          "https://t.me/s/alageum_news?before=272"
+        ],
+        "searchOnlyOrPreviouslyClosedResultUrls": [
+          "https://all-pribors.ru/opisanie/84344-22-nami-610-namit-610",
+          "https://all-pribors.ru/docs/2022-84344-22.pdf",
+          "https://kip-guide.ru/info/51198-12"
+        ],
+        "outcome": "No new visually verified attributable photograph or mapping upgrade. Current concrete fresh leads closed with reason; access-limited targets retained in blocked-leads.json.",
+        "remainingIdentityEvidence": "Need new correctly attributed NAMI rather than NAMIT photograph with specific 6/10 kV branch evidence. Registry descriptions group both voltage options and also include NAMIT, which has no canonical record. Do not infer branch from tank appearance.",
+        "newDistinctPhotoCount": 0,
+        "stoppingCondition": "All concrete fresh leads identified in this search pass are visually dispositioned, excluded by source content, or have a documented access failure. No permission to contact makers; no authentication or access bypass. This is a bounded evidence gap, not a claim that no photograph exists anywhere.",
+        "checkedAt": "2026-10-12"
+      },
+      {
+        "familyId": "ts-low-voltage",
+        "targetProductIds": [
+          "tr2026-family-ts-low-voltage",
+          "alageum-2026-ts-10",
+          "alageum-2026-ts-16",
+          "alageum-2026-ts-25",
+          "alageum-2026-ts-40",
+          "alageum-2026-ts-63",
+          "alageum-2026-ts-100"
+        ],
+        "targetRecordCount": 7,
+        "sourceIds": [],
+        "reviewedSourceUrls": [],
+        "searchOnlyOrPreviouslyClosedResultUrls": [
+          "https://suet-trans.ru/p11460409491/ts-z-10-100-0-66-u3",
+          "https://www.elec.ru/files/2017/06/20/Katalog-produktsii-AO-KTZ.pdf"
+        ],
+        "outcome": "No new visually verified attributable photograph or mapping upgrade. Current concrete fresh leads closed with reason; access-limited targets retained in blocked-leads.json.",
+        "remainingIdentityEvidence": "Need additional KTZ/Alageum TS low-voltage photo with open/closed prefix and primary voltage identified. Search returns previous catalog illustrations and TS/TSZ tables only; large cast-resin TSL photo cannot substitute.",
+        "newDistinctPhotoCount": 0,
+        "stoppingCondition": "All concrete fresh leads identified in this search pass are visually dispositioned, excluded by source content, or have a documented access failure. No permission to contact makers; no authentication or access bypass. This is a bounded evidence gap, not a claim that no photograph exists anywhere.",
+        "checkedAt": "2026-10-12"
+      },
+      {
+        "familyId": "nom",
+        "targetProductIds": [
+          "tr2026-family-nom",
+          "alageum-2026-nom-6",
+          "alageum-2026-nom-10",
+          "alageum-2026-nom-3-drawing"
+        ],
+        "targetRecordCount": 4,
+        "sourceIds": [
+          "dry5-allbiz-alageum",
+          "dry5-ivancompany2024",
+          "dry5-telegram-alageum"
+        ],
+        "reviewedSourceUrls": [
+          "https://alageum.all.biz/goods",
+          "https://ivan-company.kz/wp-content/uploads/2024/10/katalog_2024.pdf",
+          "https://t.me/s/alageum_news?before=272"
+        ],
+        "searchOnlyOrPreviouslyClosedResultUrls": [
+          "https://aemz.kz/catalog/transformatory/transformatory-napryazheniya-odnofaznye-maslyannye-tipa-nom/",
+          "https://www.garant.ru/products/ipo/prime/doc/70132112/"
+        ],
+        "outcome": "No new visually verified attributable photograph or mapping upgrade. Current concrete fresh leads closed with reason; access-limited targets retained in blocked-leads.json.",
+        "remainingIdentityEvidence": "Need specifically attributed NOM-3 or readable NOM6/10 nameplate/dedicated gallery, not a voltage inferred from shared generic two-bushing image. Fresh exact searches yielded prior manufacturer catalog/registry material without new identifiable photo.",
+        "newDistinctPhotoCount": 0,
+        "stoppingCondition": "All concrete fresh leads identified in this search pass are visually dispositioned, excluded by source content, or have a documented access failure. No permission to contact makers; no authentication or access bypass. This is a bounded evidence gap, not a claim that no photograph exists anywhere.",
+        "checkedAt": "2026-10-12"
+      }
+    ]
+  },
+  "power_medium": {
+    "summary": {
+      "verifiedAt": "2026-10-12T20:49:00Z",
+      "status": "ready_for_merge_review",
+      "newPhotoCandidates": 4,
+      "seriesPhotos": 3,
+      "typeOnlyPhotos": 1,
+      "newExactClaims": 0,
+      "sourceDispositionCount": 8,
+      "downloadedOriginalImageFilesInspected": 62,
+      "familyCount": 19,
+      "assignedRecordCount": 83,
+      "queryCount": 59,
+      "acceptedSeriesProductIds": [
+        "tr2026-family-tmn-35-20",
+        "alageum-tmn-6300-35-20-6b6ca37e"
+      ],
+      "acceptedTypeOnlyAssignedProductIds": [
+        "alageum-tmn-1000-35-20-927a3377",
+        "alageum-tmn-1600-35-20-c4b0c4e2",
+        "alageum-tmn-2500-35-20-6c3eee06",
+        "alageum-tmn-4000-35-20-1487b233"
+      ],
+      "rights": "No publication rights cleared.",
+      "mainResult": "Three new Aenergo TMN6300/35/10 project views; one primary Karazhyra6300/35 OLTC type reference. MPK new photos withheld due caption contradictions. All19 families have new-query dispositions.",
+      "outputFiles": [
+        "candidates.json",
+        "selected-originals/",
+        "contact-sheet.jpg",
+        "family-query-ledger.json",
+        "source-dispositions.json",
+        "asset-dispositions.json",
+        "duplicate-review.json",
+        "mapping-evidence.json",
+        "validation.json"
+      ]
+    },
+    "source-dispositions": [
+      {
+        "sourceId": "aenergo-atyashevsky",
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "retrievalStatus": 200,
+        "disposition": "accepted_three_new_series_photos",
+        "evidence": "Primary installation contractor explicitly names two new TMN6300/35/10 replacing old TM4000/35/10. Alageum badge readable on new installed unit.42 original gallery assets inspected, strongest3 complementary completed-unit views retained. Source date text contains a year typo, so no manufacturing date inferred. 6300 model and family series only, secondary10 vs11 discrepancy explicit; lower ratings type-only.",
+        "candidateIds": [
+          "inc05-medium-aenergo-tmn6300-branded-end",
+          "inc05-medium-aenergo-tmn6300-oblique",
+          "inc05-medium-aenergo-tmn6300-installed-pair"
+        ],
+        "remainingProof": "Readable nameplate needed for exact secondary nominal voltage, group, tap range and climate execution.",
+        "verifiedAt": "2026-10-12T20:49:00Z"
+      },
+      {
+        "sourceId": "karazhyra-2021",
+        "sourcePageUrl": "https://alageum.com/en/novosti/gruppa-kompanij-alageum-electric-postavila-transformatory-dlya-podstantsij-yuzhnaya-i-zapadnaya",
+        "retrievalStatus": 200,
+        "disposition": "accepted_one_new_type_photo",
+        "evidence": "Manufacturer reports two KTZ6300kVA35kV special-construction OLTC units delivered to Karazhyra. Real Alageum-badged installation photo, M and XL same exposure. No prefix or secondary voltage stated. TDTN16000/110 mentioned only as different future order.",
+        "candidateIds": [
+          "inc05-medium-karazhyra-6300-35-oltc-type"
+        ],
+        "remainingProof": "Photo-specific TMN prefix, secondary voltage and execution not verified; type only.",
+        "verifiedAt": "2026-10-12T20:49:00Z"
+      },
+      {
+        "sourceId": "mpk-35-220-projects",
+        "sourcePageUrl": "https://mpk77.ru/produktsiya/silovye-transformatory/transformatory-35-220-kv",
+        "retrievalStatus": 200,
+        "disposition": "held_caption_misalignment_no_candidates",
+        "evidence": "15 originals visually inspected. Gallery has known contradiction: Giaginskaya filename and identical frozen Snab exposure placed under Atyashevsky/Mordovia caption. MPK09 TM4000/35 Slavneft filename conflicts with TMN4000/35/6.3 Novodmitrievskaya card. Several Alageum photos genuinely new, but prefix/secondary/project association cannot safely be taken from neighboring captions. Retain originals for future independently sourced identification, no true coverage and no generic filler.",
+        "candidateIds": [],
+        "remainingProof": "Readable technical plate or independently attributable project-original publication linking each photo to manufacturer, prefix and HV/LV execution.",
+        "verifiedAt": "2026-10-12T20:49:00Z"
+      },
+      {
+        "sourceId": "mines-tentekskaya",
+        "sourcePageUrl": "https://mines.kz/news/press-reliz/zapusk-podstantsii/",
+        "retrievalStatus": 200,
+        "disposition": "referred_switchgear_no_power_photo",
+        "evidence": "14Jan2025 primary contractor PS8-new35/6/6.3–0.4 project explicitly names KTZ equipment. Three photos show yard, indoor switchgear and modular building, no inspectable power-transformer model. Originals referred to switchgear worker, not counted here.",
+        "candidateIds": [],
+        "remainingProof": "Power-transformer-specific photo/model absent from available gallery.",
+        "verifiedAt": "2026-10-12T20:49:00Z"
+      },
+      {
+        "sourceId": "v-spc-magadan-des",
+        "sourcePageUrl": "https://www.v-spc.ru/nashi-proekty",
+        "retrievalStatus": 200,
+        "disposition": "text_only_project_no_gallery",
+        "evidence": "Primary designer project list confirms Magadanenergo PS35/6 DES modernization replacing TDNS16000/35/6. Page has only3 decorative/logo images, no project gallery or transformer photo and no KTZ/Alageum maker attribution. Separate Sakhalin project elsewhere in list must not be conflated.",
+        "candidateIds": [],
+        "remainingProof": "Supplier/OEM attribution and actual installed transformer photographs absent.",
+        "verifiedAt": "2026-10-12T20:49:00Z"
+      },
+      {
+        "sourceId": "tavrida-ter-subdoc",
+        "sourcePageUrl": "https://www.tavrida.ru/upload/iblock/8cb/gssdbjxfo1gtxai3qiq8yod954g5e6ob/TER_SubDoc_PG_5.pdf",
+        "retrievalStatus": 404,
+        "disposition": "unavailable_public_url_404",
+        "evidence": "New primary engineering technical-PDF result mentions KTZ TM4000/35 variants among other manufacturers. Ordinary exact-URL request returned404. No PDF image verified; no alternate path or access workaround used.",
+        "candidateIds": [],
+        "remainingProof": "Accessible original with identifiable model photo.",
+        "verifiedAt": "2026-10-12T20:49:00Z"
+      },
+      {
+        "sourceId": "forbes-before-dawn",
+        "sourcePageUrl": "https://forbes.kz/articles/pered_rassvetom",
+        "retrievalStatus": 200,
+        "disposition": "held_factory_context_no_model",
+        "evidence": "Individually inspected worker-fetched originals alageum-forbes-2.img720x479 (large power-transformer factory assembly), -3.img350x525(active part), -5.img349x234(KTZ factory group). No readable specific model/voltage; no mapping to35kV from generic factory context. ©Pavel Shelkovенко/Andrey Lunin credits, no reuse permission.",
+        "candidateIds": [],
+        "remainingProof": "Photo-specific product identity; active-part image not a complete catalog product.",
+        "verifiedAt": "2026-10-12T20:49:00Z"
+      },
+      {
+        "sourceId": "electronmash-2025",
+        "sourcePageUrl": "https://electronmash.ru/storage/marketing_documentation/26March2025/maslyanye-silovye-transformatory.pdf",
+        "retrievalStatus": "reused_local_worker_download",
+        "disposition": "byte_identical_prior_reviewed_pdf",
+        "evidence": "SHA2567cc9d96accf152d08a182dbc7ba9ce788eba8c78f462118aa4af65bb9b9da79b equals increment04/power_medium/research/electronmash-pdf.pdf. Re-inspected400x300 Alageum TMN cutout: generic >110kV heading conflicts with short compact bushings, no image-specific rating. Already held in increment04; not a new source or new evidence.",
+        "candidateIds": [],
+        "remainingProof": "Photo-specific voltage/rating independently verified. No new image counted.",
+        "verifiedAt": "2026-10-12T20:49:00Z"
+      }
+    ],
+    "mapping-upgrades": [],
+    "asset-dispositions": [
+      {
+        "imageId": "aenergo-hero-18_big_1",
+        "imageUrl": "https://aenergo.su/u/our_project/18_big_1.jpg",
+        "width": 768,
+        "height": 500,
+        "sha256": "0d1f2ac9b91dcdf816726e5dd3101c970cd36d8e51594cd84cdc9634d0bcc27d",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "duplicate_crop",
+        "evidence": "Cropped version of selected gallery104, counted once."
+      },
+      {
+        "imageId": "aenergo-process-130_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/130_big.jpeg",
+        "width": 768,
+        "height": 1024,
+        "sha256": "85d28b07b8d0575f951e4a3fcbefd966c8aa0447706cb8560c863f38cbfc35d3",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "accepted_series",
+        "candidateId": "inc05-medium-aenergo-tmn6300-branded-end"
+      },
+      {
+        "imageId": "aenergo-process-129_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/129_big.jpeg",
+        "width": 768,
+        "height": 1024,
+        "sha256": "c05c872b97d9147810905a2ef30f020b922eeb492fc0dd4362e704faafccd26f",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "unselected_redundant_or_obscured_view",
+        "evidence": "Genuine additional exposure but strongest three complementary project views already selected; no additional material detail justifies extra count."
+      },
+      {
+        "imageId": "aenergo-process-128_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/128_big.jpeg",
+        "width": 768,
+        "height": 1024,
+        "sha256": "1944536b0ff043443676a5bc4c583f49724c48a3413a16a61b3ade17d9998d2f",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "project_civil_works_context",
+        "evidence": "Excavation, foundations, crane/site activity or distant equipment; no useful additional product view."
+      },
+      {
+        "imageId": "aenergo-process-127_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/127_big.jpeg",
+        "width": 768,
+        "height": 1024,
+        "sha256": "1fadc8eedb738079a0f5afbb21ce28a0b4ee5e1800c8b8b7a3a5c2223dd7071e",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "project_civil_works_context",
+        "evidence": "Excavation, foundations, crane/site activity or distant equipment; no useful additional product view."
+      },
+      {
+        "imageId": "aenergo-process-126_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/126_big.jpeg",
+        "width": 768,
+        "height": 1024,
+        "sha256": "af2e73e4243df8de8e2fb7bd77998e6c8ae4e5b339e923c76a7c220ae03892d9",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "project_civil_works_context",
+        "evidence": "Excavation, foundations, crane/site activity or distant equipment; no useful additional product view."
+      },
+      {
+        "imageId": "aenergo-process-125_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/125_big.jpeg",
+        "width": 1024,
+        "height": 768,
+        "sha256": "e22a4c58f5e9450ccd3dfca8186333c6a6daa9d262a472f9f937fa7fe504fbf0",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "construction_stage_identity_unresolved",
+        "evidence": "Crane handling view. Project includes old TM4000 removal and new TMN6300 installation; image-specific handling identity not sufficiently explicit, not mapped."
+      },
+      {
+        "imageId": "aenergo-process-124_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/124_big.jpeg",
+        "width": 768,
+        "height": 1024,
+        "sha256": "91b8ae1575e320a1860a36212135b77986b2a2b33bdfc09763811ff1ff234fad",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "construction_stage_identity_unresolved",
+        "evidence": "Crane handling view. Project includes old TM4000 removal and new TMN6300 installation; image-specific handling identity not sufficiently explicit, not mapped."
+      },
+      {
+        "imageId": "aenergo-process-123_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/123_big.jpeg",
+        "width": 768,
+        "height": 1024,
+        "sha256": "aebcd62ab7123f655cf4bc95743299493aa3c9f62bec3824a17c1f0772164105",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "construction_stage_identity_unresolved",
+        "evidence": "Crane handling view. Project includes old TM4000 removal and new TMN6300 installation; image-specific handling identity not sufficiently explicit, not mapped."
+      },
+      {
+        "imageId": "aenergo-process-122_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/122_big.jpeg",
+        "width": 768,
+        "height": 1024,
+        "sha256": "2043a386a6d4fbc29ac771a131a41efd08aab2e77513aa5095a7908984cee30e",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "unselected_assembly_stage",
+        "evidence": "Partially assembled/shipping stage; strongest three completed views retained instead."
+      },
+      {
+        "imageId": "aenergo-process-121_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/121_big.jpg",
+        "width": 768,
+        "height": 1024,
+        "sha256": "40d90a6a02d6fef1ca6d1b686a7e4ae3acc41aefa9d9aadd1664c5dd6557c4ff",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "ancillary_other_equipment",
+        "evidence": "Outdoor current/voltage measurement apparatus, no assigned power-transformer image."
+      },
+      {
+        "imageId": "aenergo-process-120_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/120_big.jpg",
+        "width": 768,
+        "height": 1024,
+        "sha256": "137a21cc6bac786b6d7a1b9a8850ea72c63ba56718834c446979f6a7bc06a65b",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "project_civil_works_context",
+        "evidence": "Excavation, foundations, crane/site activity or distant equipment; no useful additional product view."
+      },
+      {
+        "imageId": "aenergo-process-119_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/119_big.jpg",
+        "width": 1024,
+        "height": 768,
+        "sha256": "b0f8c94fb38d266ec51d5545fd0215361791b05b5d86816af9f165c0fcd58dcf",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "project_civil_works_context",
+        "evidence": "Excavation, foundations, crane/site activity or distant equipment; no useful additional product view."
+      },
+      {
+        "imageId": "aenergo-process-118_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/118_big.jpg",
+        "width": 1024,
+        "height": 768,
+        "sha256": "f7d8762822cb20279809d7a36285e9f71b7615062fa93d8214c2f58c31aeb13d",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "project_civil_works_context",
+        "evidence": "Excavation, foundations, crane/site activity or distant equipment; no useful additional product view."
+      },
+      {
+        "imageId": "aenergo-process-117_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/117_big.jpg",
+        "width": 768,
+        "height": 1024,
+        "sha256": "085315834fb5da5386bfb7888e33c6109e48081dbe3a253d2c91e26a53cb0471",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "project_civil_works_context",
+        "evidence": "Excavation, foundations, crane/site activity or distant equipment; no useful additional product view."
+      },
+      {
+        "imageId": "aenergo-process-116_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/116_big.jpg",
+        "width": 768,
+        "height": 1024,
+        "sha256": "3c38023980be9da3fd17751c220d30f0a1a49795c693d60130ba6d5d70a2d57f",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "project_civil_works_context",
+        "evidence": "Excavation, foundations, crane/site activity or distant equipment; no useful additional product view."
+      },
+      {
+        "imageId": "aenergo-process-115_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/115_big.jpg",
+        "width": 768,
+        "height": 1024,
+        "sha256": "97892b5821945ccd5901b3699be9131f75ac4b3908a7c0f52ff00c7a50d52458",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "project_civil_works_context",
+        "evidence": "Excavation, foundations, crane/site activity or distant equipment; no useful additional product view."
+      },
+      {
+        "imageId": "aenergo-process-114_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/114_big.jpg",
+        "width": 768,
+        "height": 1024,
+        "sha256": "5949f3d3743d4640f54a7504123f8f8562ddd1e69ee77a2458d9dd793b071691",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "project_civil_works_context",
+        "evidence": "Excavation, foundations, crane/site activity or distant equipment; no useful additional product view."
+      },
+      {
+        "imageId": "aenergo-process-113_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/113_big.jpg",
+        "width": 768,
+        "height": 1024,
+        "sha256": "f3b80d2179b08fbc4456bdc3618ab5a15ce8ac4ce1e49bed31e9a6ed945b3673",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "project_civil_works_context",
+        "evidence": "Excavation, foundations, crane/site activity or distant equipment; no useful additional product view."
+      },
+      {
+        "imageId": "aenergo-process-112_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/112_big.jpg",
+        "width": 768,
+        "height": 1024,
+        "sha256": "b29f38ff16011ade4367983f6c9bc8f81622f1b60e285bc0382aca5047479929",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "project_civil_works_context",
+        "evidence": "Excavation, foundations, crane/site activity or distant equipment; no useful additional product view."
+      },
+      {
+        "imageId": "aenergo-process-111_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/111_big.jpg",
+        "width": 1024,
+        "height": 478,
+        "sha256": "9d860e6076b4945928e5515bde87a9d14fa86b1ae148c90340a83ef07cd4c9f6",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "unselected_redundant_or_obscured_view",
+        "evidence": "Genuine additional exposure but strongest three complementary project views already selected; no additional material detail justifies extra count."
+      },
+      {
+        "imageId": "aenergo-process-110_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/110_big.jpg",
+        "width": 478,
+        "height": 1024,
+        "sha256": "7be84fe5f76ebcfb3fb75bb084d26ff49af7868386f789ca3b0020bc22f2e798",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "unselected_redundant_or_obscured_view",
+        "evidence": "Genuine additional exposure but strongest three complementary project views already selected; no additional material detail justifies extra count."
+      },
+      {
+        "imageId": "aenergo-process-109_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/109_big.jpg",
+        "width": 478,
+        "height": 1024,
+        "sha256": "d8c15dabed093e47461a2cbe61b2cb9243cac32fcb9b2dd3d05abf013e6a15d8",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "different_oem_switchgear",
+        "evidence": "Etalon/Tavrida switchgear project context, not assigned Alageum power transformer."
+      },
+      {
+        "imageId": "aenergo-process-108_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/108_big.jpg",
+        "width": 768,
+        "height": 1024,
+        "sha256": "519897ff36c431c2e412b7d37795c57b5b829ce0bf61924f62feca78830248f2",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "ancillary_other_equipment",
+        "evidence": "Outdoor current/voltage measurement apparatus, no assigned power-transformer image."
+      },
+      {
+        "imageId": "aenergo-process-107_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/107_big.jpg",
+        "width": 768,
+        "height": 1024,
+        "sha256": "be88ee2c648496456db1d76d0701cbe5669863ba8fcbf779375107dce3b60e49",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "unselected_assembly_stage",
+        "evidence": "Partially assembled/shipping stage; strongest three completed views retained instead."
+      },
+      {
+        "imageId": "aenergo-process-106_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/106_big.jpg",
+        "width": 768,
+        "height": 1024,
+        "sha256": "c1ccfc34c9e9a9f8b2353aa9416f363fadb82d4c7cbd3fd481f65525112d83d3",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "project_civil_works_context",
+        "evidence": "Excavation, foundations, crane/site activity or distant equipment; no useful additional product view."
+      },
+      {
+        "imageId": "aenergo-process-105_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/105_big.jpg",
+        "width": 768,
+        "height": 1024,
+        "sha256": "d3f683cc94a8c46c6a86dde93529c366f7e9a1074a6dffbf021ff9d1389a5849",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "project_civil_works_context",
+        "evidence": "Excavation, foundations, crane/site activity or distant equipment; no useful additional product view."
+      },
+      {
+        "imageId": "aenergo-process-104_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/104_big.jpg",
+        "width": 768,
+        "height": 1024,
+        "sha256": "3eea56616027fd14338f5f5ad5e2c04d3e116ea8f48f27d998fba6d773ca6cdd",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "project_civil_works_context",
+        "evidence": "Excavation, foundations, crane/site activity or distant equipment; no useful additional product view."
+      },
+      {
+        "imageId": "aenergo-process-103_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/103_big.jpg",
+        "width": 1024,
+        "height": 768,
+        "sha256": "25682880fa13606c72bae5229fb0042ab60409b375cf1a91c413d071c5ece27f",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "unselected_redundant_or_obscured_view",
+        "evidence": "Genuine additional exposure but strongest three complementary project views already selected; no additional material detail justifies extra count."
+      },
+      {
+        "imageId": "aenergo-process-102_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/102_big.jpg",
+        "width": 768,
+        "height": 1024,
+        "sha256": "77be948accb4d7483551925e9bae08c4048899f847e0fb4ffa8fdb7eddd20839",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "unselected_component_detail",
+        "evidence": "Terminal-box/base detail does not show complete unit or readable rating."
+      },
+      {
+        "imageId": "aenergo-process-101_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/101_big.jpg",
+        "width": 768,
+        "height": 1024,
+        "sha256": "4345e9fce466e37dc92f0fbd73dcba1f9c242930f70d49f8212007f0859bebd6",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "unselected_assembly_stage",
+        "evidence": "Partially assembled/shipping stage; strongest three completed views retained instead."
+      },
+      {
+        "imageId": "aenergo-process-100_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/100_big.jpg",
+        "width": 1024,
+        "height": 768,
+        "sha256": "b30da15717bf39184ceb6d01f7cf1a95368e839f174055695e747a0122535df4",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "unselected_component_detail",
+        "evidence": "Terminal-box/base detail does not show complete unit or readable rating."
+      },
+      {
+        "imageId": "aenergo-process-99_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/99_big.jpg",
+        "width": 768,
+        "height": 1024,
+        "sha256": "37b3598d1ce39bd6cf7b227ca81019e8018b3ee4d75f6e2cc36980d8779d0945",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "unselected_assembly_stage",
+        "evidence": "Partially assembled/shipping stage; strongest three completed views retained instead."
+      },
+      {
+        "imageId": "aenergo-process-98_big",
+        "imageUrl": "https://aenergo.su/u/our_project_process/18/98_big.jpg",
+        "width": 768,
+        "height": 1024,
+        "sha256": "81704094d5432708322a42392c1a5bfbd37520ac0c606030937ccb142d4127b7",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "unselected_assembly_stage",
+        "evidence": "Partially assembled/shipping stage; strongest three completed views retained instead."
+      },
+      {
+        "imageId": "aenergo-gallery-111_big",
+        "imageUrl": "https://aenergo.su/u/our_project_gallery/18/111_big.jpg",
+        "width": 768,
+        "height": 1024,
+        "sha256": "401a244317aaa24a345be2d6a3870197715c33e6b0b7ecfaff140d87854e0c6c",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "different_oem_switchgear",
+        "evidence": "Etalon/Tavrida switchgear project context, not assigned Alageum power transformer."
+      },
+      {
+        "imageId": "aenergo-gallery-110_big",
+        "imageUrl": "https://aenergo.su/u/our_project_gallery/18/110_big.jpg",
+        "width": 1024,
+        "height": 768,
+        "sha256": "601a29f22181fa88dbf75d79446f6f1e265a67c7aff9d9b79694c5390fdc3b13",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "accepted_series",
+        "candidateId": "inc05-medium-aenergo-tmn6300-installed-pair"
+      },
+      {
+        "imageId": "aenergo-gallery-109_big",
+        "imageUrl": "https://aenergo.su/u/our_project_gallery/18/109_big.jpg",
+        "width": 768,
+        "height": 1024,
+        "sha256": "6dec25460ce4cb38cf35e7592bc92829d33b46265abea240b04dcc723b712aea",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "different_oem_switchgear",
+        "evidence": "Etalon/Tavrida switchgear project context, not assigned Alageum power transformer."
+      },
+      {
+        "imageId": "aenergo-gallery-108_big",
+        "imageUrl": "https://aenergo.su/u/our_project_gallery/18/108_big.jpg",
+        "width": 768,
+        "height": 1024,
+        "sha256": "4141d75d70d24d16a2dca1dc44107e61c8810a5b01e95fbf8bab7a22419dc9bb",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "ancillary_other_equipment",
+        "evidence": "Outdoor current/voltage measurement apparatus, no assigned power-transformer image."
+      },
+      {
+        "imageId": "aenergo-gallery-107_big",
+        "imageUrl": "https://aenergo.su/u/our_project_gallery/18/107_big.jpg",
+        "width": 478,
+        "height": 1024,
+        "sha256": "10eb1c01c67e7967ab99b5deb5dd1a2c6212560125f7d48ec9d67f01851cf53e",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "different_oem_switchgear",
+        "evidence": "Etalon/Tavrida switchgear project context, not assigned Alageum power transformer."
+      },
+      {
+        "imageId": "aenergo-gallery-106_big",
+        "imageUrl": "https://aenergo.su/u/our_project_gallery/18/106_big.jpg",
+        "width": 1024,
+        "height": 478,
+        "sha256": "13137b95c27693f679f3422721e26f674dcb0235a118250121f8ddaaf1f0ef31",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "unselected_redundant_or_obscured_view",
+        "evidence": "Genuine additional exposure but strongest three complementary project views already selected; no additional material detail justifies extra count."
+      },
+      {
+        "imageId": "aenergo-gallery-105_big",
+        "imageUrl": "https://aenergo.su/u/our_project_gallery/18/105_big.jpg",
+        "width": 1024,
+        "height": 478,
+        "sha256": "ac912cdd65137bf64d0424e5922d6db5d0570353c86eb4a4bcc164c95f07d789",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "unselected_redundant_or_obscured_view",
+        "evidence": "Genuine additional exposure but strongest three complementary project views already selected; no additional material detail justifies extra count."
+      },
+      {
+        "imageId": "aenergo-gallery-104_big",
+        "imageUrl": "https://aenergo.su/u/our_project_gallery/18/104_big.jpg",
+        "width": 768,
+        "height": 1024,
+        "sha256": "5e463471431d2df692043bc7ddccad48c3f32dccaacd3ba031a29727ffc0d8ad",
+        "status": 200,
+        "sourcePageUrl": "https://aenergo.su/objects/proveden-vtoroj-etap-tehniceskogo-perevooruzenia-ps-3510-kv-dla-ooo-mpk-atasevskij/",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "accepted_series",
+        "candidateId": "inc05-medium-aenergo-tmn6300-oblique"
+      },
+      {
+        "url": "https://mpk77.ru/uploads/47152121_500_q70_39aa89d3c6.webp",
+        "alt": "transformer",
+        "title": null,
+        "imageId": "mpk-00",
+        "width": 3825,
+        "height": 2869,
+        "sha256": "b86c3e2772b312413a3d7f2b6e89d8193a4403b209544c94eb1ef17c5cdd2ddb",
+        "status": 200,
+        "sourcePageUrl": "https://mpk77.ru/produktsiya/silovye-transformatory/transformatory-35-220-kv",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "held_generic_factory_context",
+        "evidence": "Real Alageum workshop/tank view without photo-specific series or voltage. No generic photo added to fill known target gaps."
+      },
+      {
+        "url": "https://mpk77.ru/uploads/22983561_1300_q70_93a26752d3.webp",
+        "alt": "transformer",
+        "title": null,
+        "imageId": "mpk-01",
+        "width": 1036,
+        "height": 444,
+        "sha256": "4e41153d6c6ab4cd8688f83ad49d4a5f3039340e8c0beca2501da95544f87345",
+        "status": 200,
+        "sourcePageUrl": "https://mpk77.ru/produktsiya/silovye-transformatory/transformatory-35-220-kv",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "duplicate_crop",
+        "evidence": "Same exposure as MPK08 or MPK07 respectively, alternate crop only."
+      },
+      {
+        "url": "https://mpk77.ru/uploads/Ostov_transformatora_43d2ad08ed.webp",
+        "alt": "Остов трансформатора.webp",
+        "title": null,
+        "imageId": "mpk-02",
+        "width": 262,
+        "height": 244,
+        "sha256": "5102a9705e35f3669ed3e8890f56adf1e9d9226f43a946d884eeac6cb6c22547",
+        "status": 200,
+        "sourcePageUrl": "https://mpk77.ru/produktsiya/silovye-transformatory/transformatory-35-220-kv",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "component_only",
+        "evidence": "Core, winding or active-part component, not complete transformer photo; exact model and winding material not established."
+      },
+      {
+        "url": "https://mpk77.ru/uploads/Obmotka_vysokogo_napryazheniya_35k_V_10a1483960.webp",
+        "alt": "Обмотка высокого напряжения 35кВ.webp",
+        "title": null,
+        "imageId": "mpk-03",
+        "width": 312,
+        "height": 294,
+        "sha256": "3dfa4dda147e178a7a0758f2534bba3e5ff96c1900e904cd3cea9e2072f3b64c",
+        "status": 200,
+        "sourcePageUrl": "https://mpk77.ru/produktsiya/silovye-transformatory/transformatory-35-220-kv",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "component_only",
+        "evidence": "Core, winding or active-part component, not complete transformer photo; exact model and winding material not established."
+      },
+      {
+        "url": "https://mpk77.ru/uploads/Aktivnaya_chast_transformatora_4956a0ff98.webp",
+        "alt": "Активная часть трансформатора.webp",
+        "title": null,
+        "imageId": "mpk-04",
+        "width": 344,
+        "height": 260,
+        "sha256": "4338d2a337dd01751753480cd49df72c8ae86f0f3a7efba3ed4983811f2720e8",
+        "status": 200,
+        "sourcePageUrl": "https://mpk77.ru/produktsiya/silovye-transformatory/transformatory-35-220-kv",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "component_only",
+        "evidence": "Core, winding or active-part component, not complete transformer photo; exact model and winding material not established."
+      },
+      {
+        "url": "https://mpk77.ru/uploads/Bak_transformatora_v_sobrannom_vide_4dafb2e5d2.webp",
+        "alt": "Бак трансформатора в собранном виде.webp",
+        "title": null,
+        "imageId": "mpk-05",
+        "width": 424,
+        "height": 428,
+        "sha256": "7f466946245bdf14ab1fe7d4785dc2770f2b3975b4dcbcc2f5bf54e79839d34a",
+        "status": 200,
+        "sourcePageUrl": "https://mpk77.ru/produktsiya/silovye-transformatory/transformatory-35-220-kv",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "held_generic_factory_context",
+        "evidence": "Real Alageum workshop/tank view without photo-specific series or voltage. No generic photo added to fill known target gaps."
+      },
+      {
+        "url": "https://mpk77.ru/uploads/tmn_4000_35_otgruzka_stanciya_aldan_ff712aa535.webp",
+        "alt": "Транспортировка силового трансформатора ТМН-4000/35 на железнодорожной платформе",
+        "title": null,
+        "imageId": "mpk-06",
+        "width": 1040,
+        "height": 584,
+        "sha256": "63bb08b0b606a67eac44262a8b2d962f851328983de0b492bd7fb265721758f5",
+        "status": 200,
+        "sourcePageUrl": "https://mpk77.ru/produktsiya/silovye-transformatory/transformatory-35-220-kv",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "duplicate_crop",
+        "evidence": "Same exposure as MPK08 or MPK07 respectively, alternate crop only."
+      },
+      {
+        "url": "https://mpk77.ru/uploads/TMN_4000_35_Otpravka_na_st_Aldan_1_ad3d43ea26.webp",
+        "alt": "ТМН-4000-35. Отправка на ст. Алдан (1).webp",
+        "title": null,
+        "imageId": "mpk-07",
+        "width": 787,
+        "height": 590,
+        "sha256": "9ee5d9c90a307188ac69464a215dd1b3bcf3ae8c84f085b38e5955852410e3ac",
+        "status": 200,
+        "sourcePageUrl": "https://mpk77.ru/produktsiya/silovye-transformatory/transformatory-35-220-kv",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "held_missing_image_specific_manufacturer_and_model_proof",
+        "evidence": "Genuine shipping/installation photo and supplier project claim; no sufficiently readable manufacturer/model plate. Gallery has proven caption misalignment, so card text alone is not safe for true coverage."
+      },
+      {
+        "url": "https://mpk77.ru/uploads/Whats_App_Image_2021_03_10_at_2_58_36_PM_1_7a647dccaa.webp",
+        "alt": "WhatsApp Image 2021-03-10 at 2.58.36 PM (1).webp",
+        "title": null,
+        "imageId": "mpk-08",
+        "width": 787,
+        "height": 590,
+        "sha256": "7d17d9581b67e286d34ecf1ff7c47be8a6a689c432d6bdc6905a4f8491f8a66d",
+        "status": 200,
+        "sourcePageUrl": "https://mpk77.ru/produktsiya/silovye-transformatory/transformatory-35-220-kv",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "held_conflicting_model_caption",
+        "evidence": "Alageum-badged installed transformer; DOM calls TM4000/35/10.5 Slavneft but visible OLTC-like assembly and neighboring mismatches make caption-to-image attribution unsafe."
+      },
+      {
+        "url": "https://mpk77.ru/uploads/TM_4000_35_Slavneft_1_e8fc85e256.webp",
+        "alt": "ТМ-4000-35. Славнефть (1).webp",
+        "title": null,
+        "imageId": "mpk-09",
+        "width": 590,
+        "height": 787,
+        "sha256": "8de6934f5a7948289065622933f75282b5dfed67b51a0d9febedcb31f0f2b335",
+        "status": 200,
+        "sourcePageUrl": "https://mpk77.ru/produktsiya/silovye-transformatory/transformatory-35-220-kv",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "held_conflicting_model_caption",
+        "evidence": "Alageum badge visible; image filename/alt says TM4000/35 Slavneft, adjacent card claims TMN4000/35/6.3 Novodmitrievskaya. No readable technical plate or independent project photo resolves prefix and secondary voltage."
+      },
+      {
+        "url": "https://mpk77.ru/uploads/Whats_App_Image_2022_04_18_at_1_56_20_PM_b70bf91c0b.webp",
+        "alt": "WhatsApp Image 2022-04-18 at 1.56.20 PM.webp",
+        "title": null,
+        "imageId": "mpk-10",
+        "width": 1280,
+        "height": 960,
+        "sha256": "86d47b0bce46150eb1c4c4d484c1a9bb1cd0208d694986feeac203566101d068",
+        "status": 200,
+        "sourcePageUrl": "https://mpk77.ru/produktsiya/silovye-transformatory/transformatory-35-220-kv",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "held_missing_image_specific_manufacturer_and_model_proof",
+        "evidence": "Genuine shipping/installation photo and supplier project claim; no sufficiently readable manufacturer/model plate. Gallery has proven caption misalignment, so card text alone is not safe for true coverage."
+      },
+      {
+        "url": "https://mpk77.ru/uploads/TMN_6300_35_Stanicza_Giaginskaya_9be196b282.webp",
+        "alt": "ТМН-6300-35. Станица Гиагинская.webp",
+        "title": null,
+        "imageId": "mpk-11",
+        "width": 1280,
+        "height": 960,
+        "sha256": "5908fa2c84bc0a089a86a8c53fef17e29622cb6e0a43776f46742c0505fc8fd3",
+        "status": 200,
+        "sourcePageUrl": "https://mpk77.ru/produktsiya/silovye-transformatory/transformatory-35-220-kv",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "frozen_duplicate_with_conflicting_caption",
+        "evidence": "Same exposure as frozen inc04-medium-snab-tmn6300-giaginskaya-rear, dHash distance0. MPK attaches Mordovia/Atyashevsky caption despite Giaginskaya filename and established Snab context; do not replace proven attribution."
+      },
+      {
+        "url": "https://mpk77.ru/uploads/1a9fa13e_6c90_492e_a74f_46ad2baa0cf1_b7557ca6fb.webp",
+        "alt": "1a9fa13e-6c90-492e-a74f-46ad2baa0cf1.webp",
+        "title": null,
+        "imageId": "mpk-12",
+        "width": 867,
+        "height": 1156,
+        "sha256": "513f10872154236798efb3bac7ecafea4924eb31a3be972112ab68349c0cc8cc",
+        "status": 200,
+        "sourcePageUrl": "https://mpk77.ru/produktsiya/silovye-transformatory/transformatory-35-220-kv",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "held_missing_image_specific_manufacturer_and_model_proof",
+        "evidence": "Genuine shipping/installation photo and supplier project claim; no sufficiently readable manufacturer/model plate. Gallery has proven caption misalignment, so card text alone is not safe for true coverage."
+      },
+      {
+        "url": "https://mpk77.ru/uploads/3_c0e292ac46.webp",
+        "alt": "3.webp",
+        "title": null,
+        "imageId": "mpk-13",
+        "width": 867,
+        "height": 1156,
+        "sha256": "4fdee7dbf6cd453b67d61700f52f48d66383509a5ad650e5f2f8a64a7066aad2",
+        "status": 200,
+        "sourcePageUrl": "https://mpk77.ru/produktsiya/silovye-transformatory/transformatory-35-220-kv",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "held_missing_image_specific_manufacturer_and_model_proof",
+        "evidence": "Genuine shipping/installation photo and supplier project claim; no sufficiently readable manufacturer/model plate. Gallery has proven caption misalignment, so card text alone is not safe for true coverage."
+      },
+      {
+        "url": "https://mpk77.ru/uploads/Whats_App_Image_2022_04_18_at_8_00_08_AM_1_7efdaa3e7c.webp",
+        "alt": "WhatsApp Image 2022-04-18 at 8.00.08 AM (1).webp",
+        "title": null,
+        "imageId": "mpk-14",
+        "width": 774,
+        "height": 1032,
+        "sha256": "708d14fc7ef654680dc3170f3c5fe0714a7cfc59611677c0eb3ce1cf52f635a3",
+        "status": 200,
+        "sourcePageUrl": "https://mpk77.ru/produktsiya/silovye-transformatory/transformatory-35-220-kv",
+        "visuallyInspected": true,
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "disposition": "held_missing_image_specific_manufacturer_and_model_proof",
+        "evidence": "Genuine shipping/installation photo and supplier project claim; no sufficiently readable manufacturer/model plate. Gallery has proven caption misalignment, so card text alone is not safe for true coverage."
+      },
+      {
+        "imageId": "mines-tentek-0",
+        "imageUrl": "https://mines.kz/upload/iblock/6e0/l0rgmeh209siqk6cc5rvi448kpz83vj2.jpg",
+        "width": 1600,
+        "height": 1200,
+        "sha256": "fee2bbff1f8bb418a886fc947c9d4c6b3a5b837286aecc77153a810e6a5a4ec5",
+        "sourcePageUrl": "https://mines.kz/news/press-reliz/zapusk-podstantsii/",
+        "disposition": "referred_to_switchgear_researcher",
+        "visuallyInspected": true,
+        "evidence": "Three contractor photos show outdoor yard, indoor switchgear and modular building; no power-transformer model visible.",
+        "verifiedAt": "2026-10-12T20:47:00Z"
+      },
+      {
+        "imageId": "mines-tentek-1",
+        "imageUrl": "https://mines.kz/upload/iblock/63f/sjydvh9h3veyjpjic9hwjoj8w1jnu899.jpg",
+        "width": 1600,
+        "height": 1200,
+        "sha256": "bcbc9b0cbfb616bfc1da93c74a3a0d2b3c8dc99e4ef6a03d480bbe3dcfe69619",
+        "sourcePageUrl": "https://mines.kz/news/press-reliz/zapusk-podstantsii/",
+        "disposition": "referred_to_switchgear_researcher",
+        "visuallyInspected": true,
+        "evidence": "Three contractor photos show outdoor yard, indoor switchgear and modular building; no power-transformer model visible.",
+        "verifiedAt": "2026-10-12T20:47:00Z"
+      },
+      {
+        "imageId": "mines-tentek-2",
+        "imageUrl": "https://mines.kz/upload/iblock/f65/ckx2rpnvwlt8swclfozcrhdfymewfua5.jpg",
+        "width": 1600,
+        "height": 1200,
+        "sha256": "62f6256d5fb19a2cb480319e3edcb3ab410b26762f67e52eaf78840c5cfbe763",
+        "sourcePageUrl": "https://mines.kz/news/press-reliz/zapusk-podstantsii/",
+        "disposition": "referred_to_switchgear_researcher",
+        "visuallyInspected": true,
+        "evidence": "Three contractor photos show outdoor yard, indoor switchgear and modular building; no power-transformer model visible.",
+        "verifiedAt": "2026-10-12T20:47:00Z"
+      },
+      {
+        "imageId": "karazhyra-M",
+        "sourcePageUrl": "https://alageum.com/en/novosti/gruppa-kompanij-alageum-electric-postavila-transformatory-dlya-podstantsij-yuzhnaya-i-zapadnaya",
+        "imageUrl": "https://alageum.com/media/k2/items/cache/556202461533c16857a46ed5bfb7c21c_M.jpg",
+        "status": 200,
+        "width": 400,
+        "height": 267,
+        "sha256": "64c789c00c5cb67109329516e5f5e49c5ba71cd891896a23c8b20cd87a2e44e8",
+        "visuallyInspected": true,
+        "disposition": "duplicate_resolution",
+        "candidateId": null,
+        "verifiedAt": "2026-10-12T20:47:00Z"
+      },
+      {
+        "imageId": "karazhyra-XL",
+        "sourcePageUrl": "https://alageum.com/en/novosti/gruppa-kompanij-alageum-electric-postavila-transformatory-dlya-podstantsij-yuzhnaya-i-zapadnaya",
+        "imageUrl": "https://alageum.com/media/k2/items/cache/556202461533c16857a46ed5bfb7c21c_XL.jpg",
+        "status": 200,
+        "width": 900,
+        "height": 601,
+        "sha256": "207405c74b7dc6d01935e120bf74517fbe9cdbb6616774a030f7135def8c8656",
+        "visuallyInspected": true,
+        "disposition": "accepted_type",
+        "candidateId": "inc05-medium-karazhyra-6300-35-oltc-type",
+        "verifiedAt": "2026-10-12T20:47:00Z"
+      }
+    ],
+    "duplicate-review": [
+      {
+        "candidateId": "inc05-medium-aenergo-tmn6300-branded-end",
+        "exactShaDuplicates": [],
+        "nearestDHash": [
+          [
+            17,
+            "inc04-medium-snab-tmn1600-035-front-type"
+          ],
+          [
+            21,
+            "inc04-medium-snab-tmn1600-035-side-type"
+          ],
+          [
+            22,
+            "dry-tsi-encom-open"
+          ],
+          [
+            22,
+            "vendor-retry-32"
+          ],
+          [
+            23,
+            "enco-tmg-side"
+          ]
+        ],
+        "visualConclusion": "Genuine new exposure. Different project/context from frozen KTZ cutout and Snab installations; no crop or rescale of frozen photograph identified."
+      },
+      {
+        "candidateId": "inc05-medium-aenergo-tmn6300-oblique",
+        "exactShaDuplicates": [],
+        "nearestDHash": [
+          [
+            21,
+            "power-asia-tdn40000-110-testhall"
+          ],
+          [
+            21,
+            "power-rst-project-00"
+          ],
+          [
+            22,
+            "power-alageum-tdns10000-35-oriyon"
+          ],
+          [
+            23,
+            "inc03-energyland-km7mk-exhibition"
+          ],
+          [
+            23,
+            "ktz-p137-kso2"
+          ]
+        ],
+        "visualConclusion": "Genuine new exposure. Different project/context from frozen KTZ cutout and Snab installations; no crop or rescale of frozen photograph identified."
+      },
+      {
+        "candidateId": "inc05-medium-aenergo-tmn6300-installed-pair",
+        "exactShaDuplicates": [],
+        "nearestDHash": [
+          [
+            23,
+            "ktz-p127-ukzn"
+          ],
+          [
+            24,
+            "inc04-asia-trdn280000-220-installed-frame"
+          ],
+          [
+            25,
+            "aemz-krn-iii-iv-iv-k-6-k-6u-0"
+          ],
+          [
+            25,
+            "aemz-ptm-cathodic-photo"
+          ],
+          [
+            25,
+            "gisprofi-ukzv-historical-photo"
+          ]
+        ],
+        "visualConclusion": "Genuine new exposure. Different project/context from frozen KTZ cutout and Snab installations; no crop or rescale of frozen photograph identified."
+      },
+      {
+        "candidateId": "inc05-medium-karazhyra-6300-35-oltc-type",
+        "exactShaDuplicates": [],
+        "nearestDHash": [
+          [
+            23,
+            "inc04-asia-trdn280000-220-installed-frame"
+          ],
+          [
+            23,
+            "trade-59128066-3"
+          ],
+          [
+            24,
+            "inc02-power-asia-rom60000-official"
+          ],
+          [
+            24,
+            "inc04-medium-snab-tmn1600-035-front-type"
+          ],
+          [
+            24,
+            "power-rst-project-04"
+          ]
+        ],
+        "visualConclusion": "Genuine new exposure. Different project/context from frozen KTZ cutout and Snab installations; no crop or rescale of frozen photograph identified."
+      }
+    ]
+  },
+  "power_asia": {
+    "summary": {
+      "group": "power_asia",
+      "pass": 5,
+      "verifiedAt": "2026-10-12T20:44:30Z",
+      "assignedFamilies": 20,
+      "assignedRecords": 200,
+      "familyLedgerComplete": true,
+      "targetedTextSearchQueries": 112,
+      "mainQueries": 80,
+      "reactorQueries": 32,
+      "newOriginalPhotos": 1,
+      "newVideoFrames": 0,
+      "newAssets": 1,
+      "newPhotoKind": "supplementary_transport_state_type_reference",
+      "newStrictIndividualRecords": 0,
+      "individualTypeReferenceRecordsAdded": 1,
+      "newMappingUpgrades": 0,
+      "exactModelClaimsAdded": 0,
+      "heldGenuineUnmappedImages": 1,
+      "heldImageNotIncludedInAssetTotal": true,
+      "sourceDispositions": 22,
+      "newSourceAvenues": 18,
+      "frozenAssetsPreserved": 207,
+      "frozenStrictRecordBaselinePreserved": 249,
+      "railwayDowngradesPreserved": 4,
+      "railwayHeldUpgradesPreserved": 4,
+      "railwayBranchLeadOutcome": "Closed insufficient; no prior downgrade reversed.",
+      "rightsCleared": false,
+      "remainingOpenIssues": "New customer photos without prefix/unit-link proof remain held. Reactor/330 avenues supplied no acceptable model-specific image; access restrictions and transient failures recorded. Additional progress requires actual maker/model/winding proof, not broader family substitution.",
+      "dataIntegrityCheck": {
+        "originalRecords": 843,
+        "originalSha256": "b086563cdc178b79c21af067cbf07754b5626315324bc87f7fd22d5b50c05432",
+        "canonicalDistinctIds": 843,
+        "unknownProductIds": 0,
+        "allSelectedLocalFilesPresent": true,
+        "newExactProductIds": 0
+      },
+      "files": [
+        "candidates.json",
+        "mapping-upgrades.json",
+        "family-query-ledger.json",
+        "query-register.json",
+        "source-dispositions.json",
+        "held-candidates.json",
+        "held-identity-leads.json",
+        "similarity-audit.json",
+        "additional-similarity-audit.json",
+        "summary.json"
+      ]
+    },
+    "source-dispositions": [
+      {
+        "sourceId": "badamsha-2021",
+        "sourcePageUrl": "https://alageum.com/kz/novosti/transformator-dlya-badamshi-pervoj-vetroelektrostantsii-v-aktyubinskoj-oblasti",
+        "disposition": "accepted_supplementary_transport_photo",
+        "evidence": "Official article specifies Asia Trafo, three-phase two-winding oil transformer, 63000 kVA, 110/35 kV for Badamsha phase 2. Actual image is a bare transport tank without assembled cooling, bushings or conservator. Same M/XL exposure counted once; only family overview plus individual type reference.",
+        "verifiedAt": "2026-10-12T20:44:30Z",
+        "newSourceAvenue": true,
+        "candidateIds": [
+          "inc05-asia-badamsha63000-110-transport"
+        ],
+        "imageUrl": "https://alageum.com/media/k2/items/cache/d4ae67bb81032f6add66be1c1df07be9_XL.jpg"
+      },
+      {
+        "sourceId": "aluminium-traditions-2021",
+        "sourcePageUrl": "https://alageum.com/kz/novosti/prodolzhaya-traditsii-novaya-postavka-na-zavod-alyuminiya-kazakhstana",
+        "disposition": "held_prefix_winding_unknown",
+        "evidence": "Official article names 2 × 80 MVA / 110 kV Asia Trafo transformers for Aluminium Kazakhstan CHP-1. Genuine new assembled green transformer photograph is visually distinct from the frozen white TRDCN80000 winter units. No model prefix, winding layout or unit plate. The reference list identifies a GPP PAZ delivery; CHP-1 article cannot be equated to that unit solely by customer and rating. No catalog mapping.",
+        "verifiedAt": "2026-10-12T20:44:30Z",
+        "newSourceAvenue": true,
+        "imageUrl": "https://alageum.com/media/k2/items/cache/58b053c805beeea9e04dde1724076741_XL.jpg"
+      },
+      {
+        "sourceId": "apes-caspian-gallery",
+        "sourcePageUrl": "https://apes-ltd.kz/nashi-raboty/",
+        "disposition": "held_project_gallery_maker_unknown",
+        "evidence": "Three real customer-project gallery views inspected: two transformer views and a cable trench. Gallery describes Caspian energy-hub design, with historical 2014 context; the reference-list Asia Trafo TRMN delivery is 2020. No readable maker/model badge. Same project name does not link these photos to the later Asia unit.",
+        "verifiedAt": "2026-10-12T20:44:30Z",
+        "newSourceAvenue": true,
+        "imageUrls": [
+          "https://apes-ltd.kz/wp-content/uploads/2023/10/project-19-1.webp",
+          "https://apes-ltd.kz/wp-content/uploads/2023/10/project-19-2.webp",
+          "https://apes-ltd.kz/wp-content/uploads/2023/10/project-19-3.webp"
+        ],
+        "localImages": []
+      },
+      {
+        "sourceId": "astrec-consumers-2020",
+        "sourcePageUrl": "https://astrec.kz/uploads/files/otchet-file/-pered-potrebitelami-20g_compressed.pdf",
+        "disposition": "held_partial_transformer_maker_unknown",
+        "evidence": "31-page primary customer report. Page 11 discusses transformer procurement for Novaya/Levoberezhnaya; page 12 has a 228 × 240 partial tank/fan photo marked T1, with no readable maker/model. Cannot distinguish new Asia equipment from existing units. First timeout followed by one same-URL successful retry.",
+        "verifiedAt": "2026-10-12T20:44:30Z",
+        "newSourceAvenue": true,
+        "page": 12
+      },
+      {
+        "sourceId": "besk-press-2022",
+        "sourcePageUrl": "https://besk.kz/kz/news1/2844-press-ture-po-ob-ektam-ao-ob-edinjonnaya-energocervisnaya-kompaniya",
+        "disposition": "held_mixed_project_gallery_no_unit_link",
+        "evidence": "Customer article discusses Semey PS-2 TDTN63000 replacement and PS-3. Three photos inspected: wide yard with older green units, two interview/delegation views. No image-specific substation or new-unit caption, maker badge or plate. Manufacturer delivery table alone cannot assign the yard photograph.",
+        "verifiedAt": "2026-10-12T20:44:30Z",
+        "newSourceAvenue": true,
+        "localImages": []
+      },
+      {
+        "sourceId": "besk-press-2021",
+        "sourcePageUrl": "https://besk.kz/ru/news1/2695-press-tur-po-ob-ektam-ao-oesk",
+        "disposition": "different_project_no_maker_identity",
+        "evidence": "New article found in customer sitemap concerns Ust-Kamenogorsk SDI/Levoberezhnaya, not Semey PS-2. 40000 kVA replacement history without Asia Trafo/model evidence. Images not downloaded after text established the mismatch.",
+        "verifiedAt": "2026-10-12T20:44:30Z",
+        "newSourceAvenue": true
+      },
+      {
+        "sourceId": "besk-sitemap",
+        "sourcePageUrl": "https://besk.kz/ru/site-map",
+        "disposition": "discovery_index_closed",
+        "evidence": "Read-only discovery of the 2021 press-tour article; index itself supplies no catalog photograph.",
+        "verifiedAt": "2026-10-12T20:44:30Z",
+        "newSourceAvenue": true
+      },
+      {
+        "sourceId": "shymkent-1m1",
+        "sourcePageUrl": "https://alageum.com/kz/novosti/proekt-stroitelstva-podstantsii-1-m-1-v-g-shymkent",
+        "disposition": "building_photo_no_transformer",
+        "evidence": "Official page says two 40000 kVA Asia Trafo units supplied, but its actual 900 × 601 image depicts a substation building exterior, no visible transformer. No product candidate.",
+        "verifiedAt": "2026-10-12T20:44:30Z",
+        "newSourceAvenue": true,
+        "imageUrl": "https://alageum.com/media/k2/items/cache/a28321ba8f3530fc856783a3123dd44c_XL.jpg"
+      },
+      {
+        "sourceId": "alageum-news-kz45",
+        "sourcePageUrl": "https://alageum.com/kz/novosti?start=45",
+        "disposition": "discovery_index_closed",
+        "evidence": "New archive page used for concrete primary-news discovery; index thumbnails/renditions do not count as separate exposures.",
+        "verifiedAt": "2026-10-12T20:44:30Z",
+        "newSourceAvenue": true
+      },
+      {
+        "sourceId": "karazhyra-south-west",
+        "sourcePageUrl": "https://alageum.com/en/novosti/gruppa-kompanij-alageum-electric-postavila-transformatory-dlya-podstantsij-yuzhnaya-i-zapadnaya",
+        "disposition": "handed_to_medium_scope",
+        "evidence": "Official 23 June 2021 news identifies KTZ 2 × 6300 kVA 35 kV RPN delivery. Mention of future TDTN16000/110 does not identify the pictured equipment. Handed to medium-voltage worker; zero Asia candidates here.",
+        "verifiedAt": "2026-10-12T20:44:30Z",
+        "newSourceAvenue": true
+      },
+      {
+        "sourceId": "skala-tdc125000",
+        "sourcePageUrl": "https://skalagroup.kz/p791105-tdts-125000110-transformator.html",
+        "disposition": "different_oem_origin",
+        "evidence": "Search result explicitly gives Ukraine origin for TDC125000/110. No Asia Trafo maker proof; no image accepted or downloaded.",
+        "verifiedAt": "2026-10-12T20:44:30Z",
+        "newSourceAvenue": true
+      },
+      {
+        "sourceId": "new-telegram-delivery-index",
+        "sourcePageUrl": "https://t.me/s/alageum_news/321",
+        "disposition": "indexed_text_media_unavailable_prior_platform_closed",
+        "evidence": "Search-indexed new TDC400000/110 EEK and TDTN40000/110 Tokchilik delivery text does not supply an accessible original photo. Platform access was previously closed, not reopened or bypassed. Also no arbitrary mapping of 400 MVA equipment to lower catalog ratings.",
+        "verifiedAt": "2026-10-12T20:44:30Z",
+        "newSourceAvenue": false
+      },
+      {
+        "sourceId": "zhitikara-index",
+        "sourcePageUrl": "https://t.me/s/alageum_news?before=394",
+        "disposition": "indexed_text_media_unavailable_prior_platform_closed",
+        "evidence": "Search-indexed TDTN80000/110 Zhitikara caption; new independent-primary searches did not find a readable original photograph. No repeated request to the previously closed Telegram platform.",
+        "verifiedAt": "2026-10-12T20:44:30Z",
+        "newSourceAvenue": false
+      },
+      {
+        "sourceId": "reference-table-railway-link",
+        "sourcePageUrl": "https://asiatrafo.kz/images/referent.pdf",
+        "disposition": "held_branch_link_insufficient_no_restoration",
+        "evidence": "Existing reference-list rows 50/51, surfaced in new search results, state TDTNZh40000 230/38.5/27.5 for Karazhangyl and Karamurun. Frozen factory photo project card has repeated generic fields; neither table row has a unit-specific image/serial link. The indexed table alone does not prove the pictured winding branch. All four previous TDTNZh40000 downgrades remain, and the four held TDTNZh25000 upgrades remain held.",
+        "verifiedAt": "2026-10-12T20:44:30Z",
+        "newSourceAvenue": false,
+        "relatedExistingCandidateIds": [
+          "power-asia-tdtnzh40000-220-factory",
+          "power-alageum-tdtnzh40000-110-tobol"
+        ]
+      },
+      {
+        "sourceId": "trenco-science",
+        "sourcePageUrl": "https://trencontc.kz/en/news/integration-of-science-and-manufacturing",
+        "disposition": "meeting_photo_no_equipment",
+        "evidence": "New research-partner primary page names Asia Trafo and shunt-reactor noise/vibration project. Downloaded original 900 × 400 image visually inspected: people seated around a conference table, no reactor or transformer. No candidate.",
+        "imageUrl": "https://trencontc.kz/images/2022/222.jpg",
+        "verifiedAt": "2026-10-12T20:32:00Z",
+        "newSourceAvenue": true
+      },
+      {
+        "sourceId": "izolyator-2025-oct",
+        "sourcePageUrl": "https://mosizolyator.com/press-centre/news/2025/asia-trafo-meeting-10-2025",
+        "disposition": "new_primary_supplier_no_model_asset_transient_failure",
+        "evidence": "Supplier visit page read with web. Gives general Asia Trafo voltage range 110/220/500; image captions describe visitor and industrial site without model identity. Direct original images returned HTTP 502; one same-URL retry recorded. No model-specific photo accepted. Same-URL retry results: site photograph read timed out; visitor photograph again returned HTTP 502.",
+        "imageUrls": [
+          "https://mosizolyator.com/files/nodus_items/0009/4722/attaches/2314-3.jpg",
+          "https://mosizolyator.com/files/nodus_items/0009/4722/attaches/2312-1.jpg"
+        ],
+        "verifiedAt": "2026-10-12T20:32:00Z",
+        "newSourceAvenue": true
+      },
+      {
+        "sourceId": "izolyator-2025-jul",
+        "sourcePageUrl": "https://mosizolyator.com/press-centre/news/2025/asia-trafo-07-2025",
+        "disposition": "test_equipment_caption_not_assigned_product",
+        "evidence": "New supplier primary story says background equipment is a test transformer fitted with550 kV Izolyator bushing. Broad production text references126/252/550 kV; neither label identifies assigned production reactor or330 kV transformer. HTML fetch returned HTTP 502; web open timeout. Search-indexed caption preserved in search-q02.json. No acceptance.",
+        "verifiedAt": "2026-10-12T20:32:00Z",
+        "newSourceAvenue": true
+      },
+      {
+        "sourceId": "noise-vibration-2024-paper",
+        "sourcePageUrl": "https://www.tandfonline.com/doi/full/10.1080/23311916.2024.2340325",
+        "disposition": "restricted_http403_stopped",
+        "evidence": "New research-paper lead; page open returned HTTP 403 Forbidden, not retried or recovered through mirrors. No figure or assigned model identity established.",
+        "verifiedAt": "2026-10-12T20:32:00Z",
+        "newSourceAvenue": true
+      },
+      {
+        "sourceId": "zta-asia-supplier",
+        "sourcePageUrl": "https://zta.energy/ru/suppliers/too-asia-trafo/",
+        "disposition": "restricted_http403_stopped",
+        "evidence": "New Ukrainian distributor/supplier lead. Search snippet lists110/220/500kV and no330 kV project; opening page returned HTTP 403, stopped without retry or alternative route. No photo accepted.",
+        "verifiedAt": "2026-10-12T20:32:00Z",
+        "newSourceAvenue": true
+      },
+      {
+        "sourceId": "agadyr-rtu-journal",
+        "sourcePageUrl": "https://xn-----glcfccctdci4bhow0as6psb.xn--p1ai/nomera-zhurnalov/4-47-2019-g/model-upravlyaemogo-shuntiruyushchego-reaktora/",
+        "disposition": "different_oem_context_do_not_map",
+        "evidence": "New journal page explicitly captions RTU-180000/500 three-phase Agadyr photo. Caption does not credit Asia Trafo. Earlier technical paper explicitly identifies two Agadyr RTU-180000/500 units as Zaporozhtransformator. Exclude; matching substation or rating is not manufacturer proof. Photo not downloaded for catalog.",
+        "corroboratingSourceUrl": "https://rmebrk.kz/journals/1445/69452.pdf",
+        "verifiedAt": "2026-10-12T20:32:00Z",
+        "newSourceAvenue": true
+      },
+      {
+        "sourceId": "electronmash-2025-catalog",
+        "sourcePageUrl": "https://electronmash.ru/storage/marketing_documentation/26March2025/maslyanye-silovye-transformatory.pdf",
+        "disposition": "duplicate_prior_review_voltage_identity_still_unresolved",
+        "evidence": "Downloaded and inspected the one-page brochure, then medium-voltage worker confirmed it is byte-identical to increment04/power_medium/research/electronmash-pdf.pdf (SHA256 7cc9d96accf152d08a182dbc7ba9ce788eba8c78f462118aa4af65bb9b9da79b). The TMN cutout is a different view from frozen TMN35 but was already held in pass04 because the generic >110 kV heading conflicts with short bushings and the photo lacks a voltage/rating label. No new source or candidate counted. Two upper images are other OEMs. No Asia transformer or330 kV mapping.",
+        "verifiedAt": "2026-10-12T20:44:30Z",
+        "newSourceAvenue": false,
+        "page": 1
+      },
+      {
+        "sourceId": "gtr-jul2026",
+        "sourcePageUrl": "https://www.scribd.com/document/1060367157/Gtr-July-2026-Pus",
+        "disposition": "cross_article_keyword_collision",
+        "evidence": "330/220 kV text belongs Lithuania Harmony Link/Gizai procurement; Asia Trafo mention belongs to the 500 kV Karabatan autotransformer delivery. Not an Asia Trafo330 kV photo lead. Search only; no login/download.",
+        "verifiedAt": "2026-10-12T20:32:00Z",
+        "newSourceAvenue": true
+      }
+    ],
+    "mapping-upgrades": [],
+    "held-candidates": [
+      {
+        "candidateId": "held-inc05-asia-aluminium80-110-prefix-unknown",
+        "sourcePageUrl": "https://alageum.com/kz/novosti/prodolzhaya-traditsii-novaya-postavka-na-zavod-alyuminiya-kazakhstana",
+        "imageUrl": "https://alageum.com/media/k2/items/cache/58b053c805beeea9e04dde1724076741_XL.jpg",
+        "caption": "Asia Trafo, 80 MVA / 110 kV, Aluminium Kazakhstan CHP-1; full designation unverified",
+        "mediaKind": "photo",
+        "modelMatch": "unidentified_variant",
+        "confidence": "high_manufacturer_and_rating_only",
+        "rightsStatus": "Publicly viewable; reuse rights unknown.",
+        "matchingProductIds": [],
+        "typeReferenceProductIds": [],
+        "exactProductIds": [],
+        "notes": "Official article names 2 × 80 MVA / 110 kV Asia Trafo transformers for Aluminium Kazakhstan CHP-1. Genuine new assembled green transformer photograph is visually distinct from the frozen white TRDCN80000 winter units. No model prefix, winding layout or unit plate. The reference list identifies a GPP PAZ delivery; CHP-1 article cannot be equated to that unit solely by customer and rating. No catalog mapping.",
+        "visualEvidence": "Real outdoor green transformer beside industrial pipes, Alageum badge on conservator, two large cooling fans, gray HV bushings, worker and yellow crane. Distinct equipment/color/angle from frozen white winter TRDCN80000 photograph.",
+        "remainingIdentityEvidence": "Full photo-specific prefix and winding/cooling identity. Do not map by shared 80 MVA/110 kV rating.",
+        "countsAsDistinctPhoto": false,
+        "countsAsDistinctVisual": false,
+        "heldImageIsGenuinePhoto": true,
+        "heldReason": "No compatible catalog family can be selected from caption alone.",
+        "visuallyVerified": true,
+        "verifiedAt": "2026-10-12T20:44:30Z",
+        "sha256": "062abd0498cf80f27ebd524e0047fbd0f0ea275b2d14f725e9de1dcdd79b6fad"
+      }
+    ],
+    "held-identity-leads": [
+      {
+        "leadId": "karamurun-karazhangyl-railway-branch",
+        "sourceUrls": [
+          "https://asiatrafo.kz/images/referent.pdf",
+          "https://asiatrafo.kz/ru/transformers.html"
+        ],
+        "knownFacts": "Manufacturer reference table lists TDTNZh40000, 230/38.5/27.5 at Karazhangyl and Karamurun. Existing factory photograph is in a TDTNZh40000/220 card naming those projects.",
+        "linkLimitation": "Card has repeated generic date/location metadata and no unit serial or photo-specific winding voltage; reference table has no linked image. Project-name association remains insufficient to prove that photographed unit uses this winding branch.",
+        "disposition": "closed_insufficient_for_branch_restoration",
+        "restoredMappings": [],
+        "preservedDowngrades": [
+          {
+            "candidateId": "power-alageum-tdtnzh40000-110-tobol",
+            "productId": "alageum-tdtn-40000-110-sn-27-5-kv-nn-6-6-11-0-kv-5a5901cd",
+            "previousLevel": "series",
+            "newLevel": "type_reference",
+            "targetDesignation": "ТДТНЖ-40000/110",
+            "targetWindingBranch": "СН 27,5 кВ; НН 6,6; 11,0 кВ",
+            "evidence": "Source does not identify the photographed СН/НН branch. Catalog alternatives differ not only in voltage but in winding connection: СН 27.5 / НН 6.6–11 uses Ун/Д/Д-11-11; СН 38.5 / НН 27.5 uses Ун/Ун/Д-0-11. Same prefix, HV class and power do not establish winding-construction equivalence.",
+            "appliesTo": "frozen branch-specific record mapping only; generic family overview unchanged",
+            "frozenFileModified": false,
+            "verifiedAt": "2026-10-12T20:00:00Z"
+          },
+          {
+            "candidateId": "power-alageum-tdtnzh40000-110-tobol",
+            "productId": "alageum-tdtn-40000-110-sn-38-5-kv-nn-27-5-kv-5aa6ae9c",
+            "previousLevel": "series",
+            "newLevel": "type_reference",
+            "targetDesignation": "ТДТНЖ-40000/110",
+            "targetWindingBranch": "СН 38,5 кВ; НН 27,5 кВ",
+            "evidence": "Source does not identify the photographed СН/НН branch. Catalog alternatives differ not only in voltage but in winding connection: СН 27.5 / НН 6.6–11 uses Ун/Д/Д-11-11; СН 38.5 / НН 27.5 uses Ун/Ун/Д-0-11. Same prefix, HV class and power do not establish winding-construction equivalence.",
+            "appliesTo": "frozen branch-specific record mapping only; generic family overview unchanged",
+            "frozenFileModified": false,
+            "verifiedAt": "2026-10-12T20:00:00Z"
+          },
+          {
+            "candidateId": "power-asia-tdtnzh40000-220-factory",
+            "productId": "alageum-tdtn-40000-220-sn-27-5-kv-nn-6-6-11-0-kv-ec0dfa9c",
+            "previousLevel": "series",
+            "newLevel": "type_reference",
+            "targetDesignation": "ТДТНЖ-40000/220",
+            "targetWindingBranch": "СН 27,5 кВ; НН 6,6; 11,0 кВ",
+            "evidence": "Source does not identify the photographed СН/НН branch. Catalog alternatives differ not only in voltage but in winding connection: СН 27.5 / НН 6.6–11 uses Ун/Д/Д-11-11; СН 38.5 / НН 27.5 uses Ун/Ун/Д-0-11. Same prefix, HV class and power do not establish winding-construction equivalence.",
+            "appliesTo": "frozen branch-specific record mapping only; generic family overview unchanged",
+            "frozenFileModified": false,
+            "verifiedAt": "2026-10-12T20:00:00Z"
+          },
+          {
+            "candidateId": "power-asia-tdtnzh40000-220-factory",
+            "productId": "alageum-tdtn-40000-220-sn-38-5-kv-nn-27-5-kv-2d3282a7",
+            "previousLevel": "series",
+            "newLevel": "type_reference",
+            "targetDesignation": "ТДТНЖ-40000/220",
+            "targetWindingBranch": "СН 38,5 кВ; НН 27,5 кВ",
+            "evidence": "Source does not identify the photographed СН/НН branch. Catalog alternatives differ not only in voltage but in winding connection: СН 27.5 / НН 6.6–11 uses Ун/Д/Д-11-11; СН 38.5 / НН 27.5 uses Ун/Ун/Д-0-11. Same prefix, HV class and power do not establish winding-construction equivalence.",
+            "appliesTo": "frozen branch-specific record mapping only; generic family overview unchanged",
+            "frozenFileModified": false,
+            "verifiedAt": "2026-10-12T20:00:00Z"
+          }
+        ],
+        "preserveHeld25000Upgrades": true,
+        "remainingEvidence": "A reliable unit-specific caption, nameplate or photograph-linked manufacturer document giving СН 38.5 / НН 27.5 for this actual image.",
+        "verifiedAt": "2026-10-12T20:44:30Z"
+      }
+    ],
+    "similarity-audit": {
+      "frozenAssetsCompared": 207,
+      "byteDuplicates": 0,
+      "nearest": [
+        {
+          "candidateId": "power-rst-project-05",
+          "distance": 98,
+          "sameBytes": false
+        },
+        {
+          "candidateId": "dry-ntmi-alelectro-green",
+          "distance": 102,
+          "sameBytes": false
+        },
+        {
+          "candidateId": "dry2-nami-td-oblique",
+          "distance": 103,
+          "sameBytes": false
+        },
+        {
+          "candidateId": "aemz-rlnd-brown-insulator",
+          "distance": 106,
+          "sameBytes": false
+        },
+        {
+          "candidateId": "aemz-tm-series",
+          "distance": 107,
+          "sameBytes": false
+        }
+      ]
+    },
+    "additional-similarity-audit": [
+      {
+        "file": "electronmash-p1-0.jpeg",
+        "nearest": [
+          {
+            "candidateId": "aemz-krn-iii-iv-iv-k-6-k-6u-1",
+            "distance": 63
+          },
+          {
+            "candidateId": "inc03-sales-kso2-single-white",
+            "distance": 69
+          },
+          {
+            "candidateId": "dry-accessory-ek290-sputnik",
+            "distance": 72
+          },
+          {
+            "candidateId": "dry4-znom-rst-rear",
+            "distance": 72
+          }
+        ]
+      },
+      {
+        "file": "aluminium-traditions-0.jpg",
+        "nearest": [
+          {
+            "candidateId": "inc04-pss-bdrm-419",
+            "distance": 96
+          },
+          {
+            "candidateId": "epr2024-tmgin-630-collage",
+            "distance": 97
+          },
+          {
+            "candidateId": "power-alageum-tdtnzh40000-110-tobol",
+            "distance": 102
+          },
+          {
+            "candidateId": "aemz-f1-1",
+            "distance": 102
+          }
+        ]
+      }
+    ]
+  },
+  "switchgear_substations": {
+    "summary": {
+      "verifiedAt": "2026-10-12T20:47:00Z",
+      "status": "concrete_new_source_inventory_closed",
+      "acceptedAssets": 2,
+      "acceptedPhotos": 2,
+      "acceptedPhotoCollages": 0,
+      "acceptedMatchingProductCount": 0,
+      "acceptedTypeReferenceProductCount": 1,
+      "newStrictlyMatchedRecords": 0,
+      "newPreviouslyUnillustratedRecords": 0,
+      "heldReferenceAssets": 4,
+      "familiesReviewed": 83,
+      "assignedRecords": 216,
+      "sourcePagesChecked": 20,
+      "persistedSearchQueries": 48,
+      "notes": "Two KTZ-attributed Atyrau outdoor KTP photographs remain accepted only as family-base type references. OLX station cabinet views and rival KTPZH assembly views are held, excluded from selected counts. Three confirmed KTZ transformer photographs from OLX are owned and counted separately by the parent. No mapping upgrades.",
+      "pendingLeads": [
+        {
+          "sourceId": "pan-news90",
+          "sourcePageUrl": "https://ktptm.orgs.biz/news/90",
+          "status": "blocked_image_access_unavailable_no_visual_verification",
+          "reason": "Caption explicitly identifies Alageum TMG-400/10/0.4, but every disclosed photo URL returned Site Unavailable HTML. No retry, alternate identity or URL transformation attempted."
+        }
+      ],
+      "unresolvedAcceptedSetDependencies": [],
+      "rightsCleared": false,
+      "publicationApproved": false,
+      "frozenBaselinePreserved": true
+    },
+    "source-dispositions": [
+      {
+        "sourceId": "aemz-gorodella",
+        "sourcePageUrl": "https://kz.gorodella.com/org/almaty/elektronika-elektrotexnika/elektrotexnika/elektrotexnika-1/356435-almatinskii-elektromexaniceskii-zavod",
+        "outcome": "access_unavailable_closed",
+        "notes": "HTTP 200 delivered Access Denied / site suspended HTML; no useful content. No alternate route.",
+        "httpStatus": 200,
+        "requestError": null,
+        "evidenceFile": "source-batch01.json",
+        "acceptedCandidateIds": [],
+        "verifiedAt": "2026-10-12T20:47:00Z"
+      },
+      {
+        "sourceId": "aemz-kaznaru",
+        "sourcePageUrl": "https://www.kaznaru.edu.kz/kz/news/9910",
+        "outcome": "checked_no_identifiable_product",
+        "notes": "College visit photographs show people, offices and incomplete AEMZ switchgear frames. No legible series plate or complete cabinet construction.",
+        "httpStatus": 200,
+        "requestError": null,
+        "evidenceFile": "source-batch01.json",
+        "acceptedCandidateIds": [],
+        "verifiedAt": "2026-10-12T20:47:00Z"
+      },
+      {
+        "sourceId": "alageum-forbes",
+        "sourcePageUrl": "https://forbes.kz/articles/pered_rassvetom",
+        "outcome": "checked_leads_transferred_no_station_match",
+        "notes": "Factory photo essay inspected. Power-transformer images transferred to power worker. AEMZ container and UTZ hall do not establish cabinet/station prefix, rating or voltage.",
+        "httpStatus": 200,
+        "requestError": null,
+        "evidenceFile": "source-batch01.json",
+        "acceptedCandidateIds": [],
+        "verifiedAt": "2026-10-12T20:47:00Z"
+      },
+      {
+        "sourceId": "ktz-mines",
+        "sourcePageUrl": "https://mines.kz/news/press-reliz/zapusk-podstantsii/",
+        "outcome": "checked_no_identifiable_product",
+        "notes": "Contractor explicitly names Kentau equipment at Tentekskaya substation. Indoor KRU lineup is genuine but series labels are unreadable. ORU yard and blue modules do not identify complete KTPB/KRU executions.",
+        "httpStatus": 200,
+        "requestError": null,
+        "evidenceFile": "source-batch01.json",
+        "acceptedCandidateIds": [],
+        "verifiedAt": "2026-10-12T20:47:00Z"
+      },
+      {
+        "sourceId": "ktz-kentuki",
+        "sourcePageUrl": "https://kentuki.kz/ktz.html",
+        "outcome": "access_denied_closed",
+        "notes": "HTTP 403; stopped without retry or alternate route.",
+        "httpStatus": null,
+        "requestError": "HTTP Error 403: Forbidden",
+        "cachedPage": null,
+        "evidenceFile": "source-batch01.json",
+        "acceptedCandidateIds": [],
+        "verifiedAt": "2026-10-12T20:47:00Z"
+      },
+      {
+        "sourceId": "alageum-karaganda",
+        "sourcePageUrl": "https://alageum.com/ru/novosti/v-karagandinskoj-oblasti-proshla-regionalnaya-prezentatsiya-gk-alageum-electric",
+        "outcome": "checked_no_product_photo",
+        "notes": "Regional presentation photograph shows people and slides, not a usable finished product photograph.",
+        "httpStatus": 200,
+        "requestError": null,
+        "evidenceFile": "source-batch01.json",
+        "acceptedCandidateIds": [],
+        "verifiedAt": "2026-10-12T20:47:00Z"
+      },
+      {
+        "sourceId": "atyrau50",
+        "sourcePageUrl": "https://azh.kz/ru/news/view/68687",
+        "outcome": "accepted_two_type_references",
+        "notes": "Two distinct manufacturer-attributed real outdoor KTP photographs; KTZ/Alageum logo and 630 kVA batch supported. Only KTPN family-base type mapping: station prefix, HV voltage and execution plate not readable.",
+        "httpStatus": 200,
+        "requestError": null,
+        "evidenceFile": "source-batch02.json",
+        "acceptedCandidateIds": [
+          "inc05-atyrau50-5",
+          "inc05-atyrau50-6"
+        ],
+        "verifiedAt": "2026-10-12T20:47:00Z"
+      },
+      {
+        "sourceId": "elmo-digitalbusiness",
+        "sourcePageUrl": "https://digitalbusiness.kz/2026-06-30/chertezhi-izsssr-ineyroseti-kak-ustroena-odna-iz-pervih-elektromontazhnih-kompaniy-kazahstana/",
+        "outcome": "access_denied_closed",
+        "notes": "HTTP 403; stopped without retry or alternate route.",
+        "httpStatus": null,
+        "requestError": "HTTP Error 403: Forbidden",
+        "cachedPage": null,
+        "evidenceFile": "source-batch02.json",
+        "acceptedCandidateIds": [],
+        "verifiedAt": "2026-10-12T20:47:00Z"
+      },
+      {
+        "sourceId": "market-zachagansk",
+        "sourcePageUrl": "https://marketelectro.ru/articles-company/47",
+        "outcome": "checked_no_identifiable_product",
+        "notes": "Project text confirms Alageum involvement, but aerial yard and winding-workshop images cannot identify complete KTPB(K) station design or a relevant cabinet series.",
+        "httpStatus": 200,
+        "requestError": null,
+        "evidenceFile": "source-batch02.json",
+        "acceptedCandidateIds": [],
+        "verifiedAt": "2026-10-12T20:47:00Z"
+      },
+      {
+        "sourceId": "azhk-q42025",
+        "sourcePageUrl": "https://www.azhk.kz/images/260219-z-4.pdf",
+        "outcome": "checked_caption_photo_mismatch",
+        "notes": "Customer report names KTPG, MTP and transformers in one shipment list. The page-3 images show ordinary snowy transformer rows, not the named stations. No station assignment from text proximity.",
+        "httpStatus": 200,
+        "requestError": null,
+        "evidenceFile": "source-batch03.json",
+        "acceptedCandidateIds": [],
+        "verifiedAt": "2026-10-12T20:47:00Z"
+      },
+      {
+        "sourceId": "olx-ktpn250",
+        "sourcePageUrl": "https://www.olx.kz/d/obyavlenie/transformator-ktpn-IDq6MPX.html",
+        "outcome": "transformer_leads_transferred_station_views_held",
+        "notes": "Readable KTZ TMG-250/10 U1 plate supports the parent's three transformer candidates. Two station exterior/HV-compartment photographs held because a KTZ transformer does not prove the cabinet maker.",
+        "httpStatus": 200,
+        "requestError": null,
+        "evidenceFile": "source-batch03.json",
+        "acceptedCandidateIds": [],
+        "verifiedAt": "2026-10-12T20:47:00Z"
+      },
+      {
+        "sourceId": "panenergomet",
+        "sourcePageUrl": "https://ktptm.orgs.biz/",
+        "outcome": "explicit_caption_but_image_access_unavailable",
+        "notes": "Two 7 February 2025 shipment posts explicitly name Alageum TMG-400/10/0.4. All 20 disclosed CDN URLs returned Site Unavailable HTML, not images; no visual verification or alternate route. Child /news/90 checked.",
+        "httpStatus": 200,
+        "requestError": null,
+        "evidenceFile": "source-batch03.json",
+        "acceptedCandidateIds": [],
+        "verifiedAt": "2026-10-12T20:47:00Z"
+      },
+      {
+        "sourceId": "stadion",
+        "sourcePageUrl": "https://alageum.com/kz/novosti/stadion",
+        "outcome": "checked_no_product_photo",
+        "notes": "Official project text names a two-transformer 2000 kVA station, but the only image is an aerial stadium photograph.",
+        "httpStatus": 200,
+        "requestError": null,
+        "evidenceFile": "source-batch04.json",
+        "acceptedCandidateIds": [],
+        "verifiedAt": "2026-10-12T20:47:00Z"
+      },
+      {
+        "sourceId": "erg-news-index",
+        "sourcePageUrl": "https://alageum.com/kz/novosti?start=50",
+        "outcome": "power_project_lead_transferred",
+        "notes": "News index led to primary ERG/Aluminium Kazakhstan 2 x 80 MVA transformer delivery article. Transferred to power worker; no cabinet/substation product image accepted here.",
+        "httpStatus": 200,
+        "requestError": null,
+        "evidenceFile": "source-batch04.json",
+        "acceptedCandidateIds": [],
+        "verifiedAt": "2026-10-12T20:47:00Z"
+      },
+      {
+        "sourceId": "energo-railway-news",
+        "sourcePageUrl": "https://energo-zavod96.ru/o-kompanii/novosti",
+        "outcome": "checked_relevant_child_followed",
+        "notes": "Rival factory news index led to the explicit KTPZH project gallery. Child was inspected, not inferred from index thumbnails.",
+        "httpStatus": 200,
+        "requestError": null,
+        "evidenceFile": "source-batch05.json",
+        "acceptedCandidateIds": [],
+        "verifiedAt": "2026-10-12T20:47:00Z"
+      },
+      {
+        "sourceId": "epusk-ktpzh250",
+        "sourcePageUrl": "https://epusk.ru/catalog/ktpzh/transformatornaya_podstantsiya_ktpzh_250_27_5_0_4_s_opn/",
+        "outcome": "access_denied_closed",
+        "notes": "HTTP 403 on new public product-page attempt; stopped without retry or alternate route.",
+        "httpStatus": null,
+        "requestError": "HTTP Error 403: Forbidden",
+        "cachedPage": null,
+        "evidenceFile": "source-batch05.json",
+        "acceptedCandidateIds": [],
+        "verifiedAt": "2026-10-12T20:47:00Z"
+      },
+      {
+        "sourceId": "energo-ktpzh",
+        "sourcePageUrl": "https://energo-zavod96.ru/o-kompanii/novosti/dlya-nuzhd-zheleznoj-dorogi-byla-izgotovlena-zheleznodorozhnaya-ktpzh.html",
+        "outcome": "held_technical_reference_only",
+        "notes": "Six genuine rival-factory photographs include a 27.5/0.4 kV plate. Two assembly views retained as held technical references. Transformer absent; no Alageum product match or rating-variant mapping.",
+        "httpStatus": 200,
+        "requestError": null,
+        "evidenceFile": "source-batch06.json",
+        "acceptedCandidateIds": [],
+        "verifiedAt": "2026-10-12T20:47:00Z"
+      },
+      {
+        "sourceId": "mtk-ural-meeting",
+        "sourcePageUrl": "https://trans-mtk.com/company/news/1019/",
+        "outcome": "checked_no_product_photo",
+        "notes": "Primary distributor news confirms Ural Electric POWER-RING/MMU association but contains no identifiable equipment photographs.",
+        "httpStatus": 200,
+        "requestError": null,
+        "evidenceFile": "source-batch06.json",
+        "acceptedCandidateIds": [],
+        "verifiedAt": "2026-10-12T20:47:00Z"
+      },
+      {
+        "sourceId": "zhaik-ural-workshop",
+        "sourcePageUrl": "https://zhaikpress.kz/ru/news/v-zko-partnerstvo-organizacij-professionalnogo-obrazovaniya-i-predpriyatij-obespechivaet-effektivnoe-obuchenie-budushhix-specialistov/",
+        "outcome": "checked_no_identifiable_product",
+        "notes": "Ural Electric workshop photos show workers and unfinished/unlabelled cabinets. No RMU AE/POWER-RING designation or complete matched construction.",
+        "httpStatus": 200,
+        "requestError": null,
+        "evidenceFile": "source-batch06.json",
+        "acceptedCandidateIds": [],
+        "verifiedAt": "2026-10-12T20:47:00Z"
+      },
+      {
+        "sourceId": "pan-news90",
+        "sourcePageUrl": "https://ktptm.orgs.biz/news/90",
+        "outcome": "explicit_caption_but_image_access_unavailable",
+        "notes": "Linked shipment album explicitly identifies Alageum TMG-400/10/0.4. Public page loads, but disclosed userapi image URLs deliver 195-byte Site Unavailable HTML. Not accepted; genuine lead remains blocked.",
+        "httpStatus": 200,
+        "requestError": null,
+        "evidenceFile": "source-batch07.json",
+        "acceptedCandidateIds": [],
+        "verifiedAt": "2026-10-12T20:47:00Z"
+      }
+    ],
+    "mapping-upgrades": [],
+    "held-candidates": [
+      {
+        "candidateId": "inc05-olx-ktpn250-0",
+        "sourcePageUrl": "https://www.olx.kz/d/obyavlenie/transformator-ktpn-IDq6MPX.html",
+        "imageUrl": "https://frankfurt.apollo.olxcdn.com:443/v1/files/cwgx8nv5bgwj1-KZ/image;s=1500x2000",
+        "caption": "КТПН с установленным ТМГ250 Alageum · внешний вид, типовой пример",
+        "mediaKind": "photo",
+        "modelMatch": "type",
+        "confidence": "medium",
+        "rightsStatus": "unknown; no reuse license found; permission required before publication",
+        "matchingProductIds": [],
+        "typeReferenceProductIds": [
+          "cat-ktpn-25-3150"
+        ],
+        "exactProductIds": [],
+        "notes": "Частное объявление называет КТПН250 и установленный трансформатор Alageum. Шильдик трансформатора на отдельном фото подтверждает КТЗ,ТМГ250/10,10/0,4кВ,У/Ун0,2023; это НЕ доказывает производителя всего корпуса КТПН. Поэтому только базовый TYPE наружной КТПН. Нет переноса на городскую проходную КТПГ,двухтрансформаторную,нефтяную либо железнодорожную конструкцию. Упоминание250кВт продавцом исправляется только по табличке трансформатора250кВА, не выдаётся за полную марку подстанции.",
+        "visualEvidence": "Натуральная фотография смонтированного синего киоска с отдельными силовыми отсеками, вентиляционными жалюзи и подписью трансформатора250кВА. Связанный фотоальбом показывает внутренний ТМГ250/10 с читаемым шильдикомКТЗ.",
+        "verifiedAt": "2026-10-12",
+        "sourceType": "public_owner_listing_unverified_cabinet_manufacturer",
+        "visuallyVerified": true,
+        "countsAsDistinctPhoto": false,
+        "publicationApproved": false,
+        "reviewStatus": "held_reference_only",
+        "width": 1500,
+        "height": 2000,
+        "sha256": "b90b6d94a0644b0e617aa6b0846a8079f5879413a3da1d603c417cb8e280622c",
+        "researchGroup": "switchgear_substations",
+        "photographedDesignation": "Наружная комплектная подстанция; точная марка шкафа не читается",
+        "canonicalTargetLabels": [
+          "КТПН 25-3150/6(10)/0,4кВ"
+        ],
+        "eligibleForMerge": false,
+        "holdReason": "The transformer inside is proven KTZ TMG-250, but the station cabinet manufacturer is unproven. Not accepted as an Alageum station photograph. Distinct photograph retained as a technical reference only; excluded from selected photo counts."
+      },
+      {
+        "candidateId": "inc05-olx-ktpn250-4",
+        "sourcePageUrl": "https://www.olx.kz/d/obyavlenie/transformator-ktpn-IDq6MPX.html",
+        "imageUrl": "https://frankfurt.apollo.olxcdn.com:443/v1/files/ouas3us08ow9-KZ/image;s=1500x2000",
+        "caption": "КТПН с ТМГ250 Alageum · открытый высоковольтный отсек, типовой пример",
+        "mediaKind": "photo",
+        "modelMatch": "type",
+        "confidence": "medium",
+        "rightsStatus": "unknown; no reuse license found; permission required before publication",
+        "matchingProductIds": [],
+        "typeReferenceProductIds": [
+          "cat-ktpn-25-3150"
+        ],
+        "exactProductIds": [],
+        "notes": "Частное объявление называет КТПН250 и установленный трансформатор Alageum. Шильдик трансформатора на отдельном фото подтверждает КТЗ,ТМГ250/10,10/0,4кВ,У/Ун0,2023; это НЕ доказывает производителя всего корпуса КТПН. Поэтому только базовый TYPE наружной КТПН. Нет переноса на городскую проходную КТПГ,двухтрансформаторную,нефтяную либо железнодорожную конструкцию. Упоминание250кВт продавцом исправляется только по табличке трансформатора250кВА, не выдаётся за полную марку подстанции. Фотография частичного внутреннего узла используется только совместно с наружным общим видом; не иллюстрирует весь корпус сама по себе.",
+        "visualEvidence": "Самостоятельный кадр открытого синего отсека: сверху трехфазный разъединитель, ниже высоковольтные плавкие предохранители и кабельное присоединение. Контекст того же фотоальбома связывает его с наружным киоском иТМГ250/10. Не отдельный продукт-разъединитель.",
+        "verifiedAt": "2026-10-12",
+        "sourceType": "public_owner_listing_unverified_cabinet_manufacturer",
+        "visuallyVerified": true,
+        "countsAsDistinctPhoto": false,
+        "publicationApproved": false,
+        "reviewStatus": "held_reference_only",
+        "width": 1500,
+        "height": 2000,
+        "sha256": "5ee11f5c93f361b1d0035ca21e017b08b7117b76dc74e49530c1cac37fb00f50",
+        "researchGroup": "switchgear_substations",
+        "photographedDesignation": "Наружная комплектная подстанция; точная марка шкафа не читается",
+        "canonicalTargetLabels": [
+          "КТПН 25-3150/6(10)/0,4кВ"
+        ],
+        "eligibleForMerge": false,
+        "holdReason": "The transformer inside is proven KTZ TMG-250, but the station cabinet manufacturer is unproven. Not accepted as an Alageum station photograph. Distinct photograph retained as a technical reference only; excluded from selected photo counts."
+      },
+      {
+        "candidateId": "held-inc05-energo-ktpzh-0",
+        "sourcePageUrl": "https://energo-zavod96.ru/o-kompanii/novosti/dlya-nuzhd-zheleznoj-dorogi-byla-izgotovlena-zheleznodorozhnaya-ktpzh.html",
+        "imageUrl": "https://energo-zavod96.ru/images/electro/news/2017/4/2.jpg",
+        "caption": "КТПЖ: заводская сборка без трансформатора, СвердловЭлектроЩит",
+        "mediaKind": "photo",
+        "modelMatch": "type",
+        "confidence": "medium",
+        "rightsStatus": "unknown; no publication permission",
+        "matchingProductIds": [],
+        "typeReferenceProductIds": [
+          "cat-ktpzh-25-1000"
+        ],
+        "exactProductIds": [],
+        "notes": "Primary rival-manufacturer gallery dated 16 February 2017. A separate plate photo explicitly shows SverdlovElektroShchit, HV 27.5 kV, LV 0.4 kV. No Alageum attribution. Transformer absent from the photographed assembly. Rating partly obscured by watermark and is not used for variant mapping.",
+        "visualEvidence": "Actual factory assembly with tall three-phase HV fittings, raised service platform and an LV cabinet. The empty transformer position limits the image to construction reference.",
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "visuallyVerified": true,
+        "publicationApproved": false,
+        "reviewStatus": "held_reference_only",
+        "eligibleForMerge": false,
+        "countsAsDistinctPhoto": false,
+        "holdReason": "Rival maker and incomplete station; technical reference only, not an accepted Alageum product photograph.",
+        "width": 1000,
+        "height": 654,
+        "sha256": "d1b338d7e7631210b0ad6dd6f43d64e6ded05dbbae251907a40a1e09ed55b332"
+      },
+      {
+        "candidateId": "held-inc05-energo-ktpzh-5",
+        "sourcePageUrl": "https://energo-zavod96.ru/o-kompanii/novosti/dlya-nuzhd-zheleznoj-dorogi-byla-izgotovlena-zheleznodorozhnaya-ktpzh.html",
+        "imageUrl": "https://energo-zavod96.ru/images/electro/news/2017/4/n11.jpg",
+        "caption": "КТПЖ: заводская сборка без трансформатора, СвердловЭлектроЩит",
+        "mediaKind": "photo",
+        "modelMatch": "type",
+        "confidence": "medium",
+        "rightsStatus": "unknown; no publication permission",
+        "matchingProductIds": [],
+        "typeReferenceProductIds": [
+          "cat-ktpzh-25-1000"
+        ],
+        "exactProductIds": [],
+        "notes": "Primary rival-manufacturer gallery dated 16 February 2017. A separate plate photo explicitly shows SverdlovElektroShchit, HV 27.5 kV, LV 0.4 kV. No Alageum attribution. Transformer absent from the photographed assembly. Rating partly obscured by watermark and is not used for variant mapping.",
+        "visualEvidence": "Actual factory assembly with tall three-phase HV fittings, raised service platform and an LV cabinet. The empty transformer position limits the image to construction reference.",
+        "verifiedAt": "2026-10-12T20:47:00Z",
+        "visuallyVerified": true,
+        "publicationApproved": false,
+        "reviewStatus": "held_reference_only",
+        "eligibleForMerge": false,
+        "countsAsDistinctPhoto": false,
+        "holdReason": "Rival maker and incomplete station; technical reference only, not an accepted Alageum product photograph.",
+        "width": 1000,
+        "height": 576,
+        "sha256": "757018008a2770b06b253ff78e499533bfd67a1e60d6e40952f47283be81e23d"
+      }
+    ]
+  }
+}

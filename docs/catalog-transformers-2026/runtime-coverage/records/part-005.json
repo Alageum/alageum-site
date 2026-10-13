@@ -1,0 +1,1884 @@
+[
+  {
+    "id": "cat-yatp",
+    "name": "Ящики с понижающим трансформатором",
+    "designation": "ЯТП-0,25; ЯТП-0,4; ЯТП-0,63",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [
+      "cat-yatp-v001",
+      "cat-yatp-v002",
+      "cat-yatp-v003",
+      "cat-yatp-v004",
+      "cat-yatp-v005",
+      "cat-yatp-v006",
+      "cat-yatp-v007",
+      "cat-yatp-v008",
+      "cat-yatp-v009"
+    ],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        65
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "8bb6c75528e028acad9bbdfce0e91d296ed51485afce3d459de0b7d6ae579795",
+    "geometry": {
+      "type": "wall-control-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        65
+      ],
+      "sourceImage": "/catalog-products/cat-yatp.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Навесной ящик с передней дверью и наружной коммутационной арматурой; общая форма корпуса, не расположение конкретных разъёмов."
+    },
+    "icon": {
+      "type": "wall-control-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        65
+      ],
+      "sourceImage": "/catalog-products/cat-yatp.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему габаритному чертежу ЯТП на странице 65: навесной ящик с передней дверью и наружной коммутационной арматурой. Символ не кодирует число и расположение разъёмов исполнения."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-yatp.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        65
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-yatp-v001",
+    "name": "ЯТП-0.25-220-12У3",
+    "designation": "ЯТП-0.25-220-12У3",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-yatp",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        65
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "8a2e1975c4be51ca34bab22b8fec866ee481200bcd19900d0e092d679a31e856",
+    "geometry": {
+      "type": "wall-control-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        65
+      ],
+      "sourceImage": "/catalog-products/cat-yatp.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Навесной ящик с передней дверью и наружной коммутационной арматурой; общая форма корпуса, не расположение конкретных разъёмов."
+    },
+    "icon": {
+      "type": "wall-control-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        65
+      ],
+      "sourceImage": "/catalog-products/cat-yatp.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему габаритному чертежу ЯТП на странице 65: навесной ящик с передней дверью и наружной коммутационной арматурой. Символ не кодирует число и расположение разъёмов исполнения."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-yatp.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        65
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-yatp-v002",
+    "name": "ЯТП-0.25-220-24У3",
+    "designation": "ЯТП-0.25-220-24У3",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-yatp",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        65
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "2e230a8fce04e27992295829e3aae3b29f8755d730a39cf44965d1b53b52fa82",
+    "geometry": {
+      "type": "wall-control-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        65
+      ],
+      "sourceImage": "/catalog-products/cat-yatp.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Навесной ящик с передней дверью и наружной коммутационной арматурой; общая форма корпуса, не расположение конкретных разъёмов."
+    },
+    "icon": {
+      "type": "wall-control-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        65
+      ],
+      "sourceImage": "/catalog-products/cat-yatp.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему габаритному чертежу ЯТП на странице 65: навесной ящик с передней дверью и наружной коммутационной арматурой. Символ не кодирует число и расположение разъёмов исполнения."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-yatp.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        65
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-yatp-v003",
+    "name": "ЯТП-0.25-220-36У3",
+    "designation": "ЯТП-0.25-220-36У3",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-yatp",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        65
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "23f2bd8c7c637e19011e5ddfe6322ac47accc479f06288409aa2cadd75f9f7a3",
+    "geometry": {
+      "type": "wall-control-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        65
+      ],
+      "sourceImage": "/catalog-products/cat-yatp.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Навесной ящик с передней дверью и наружной коммутационной арматурой; общая форма корпуса, не расположение конкретных разъёмов."
+    },
+    "icon": {
+      "type": "wall-control-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        65
+      ],
+      "sourceImage": "/catalog-products/cat-yatp.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему габаритному чертежу ЯТП на странице 65: навесной ящик с передней дверью и наружной коммутационной арматурой. Символ не кодирует число и расположение разъёмов исполнения."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-yatp.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        65
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-yatp-v004",
+    "name": "ЯТП-0.4-220-12У3",
+    "designation": "ЯТП-0.4-220-12У3",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-yatp",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        65
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "e3f9215f462b2fd70a751ec5b0b6244a1a44fd7455a4439edd7c7f21683f3bfb",
+    "geometry": {
+      "type": "wall-control-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        65
+      ],
+      "sourceImage": "/catalog-products/cat-yatp.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Навесной ящик с передней дверью и наружной коммутационной арматурой; общая форма корпуса, не расположение конкретных разъёмов."
+    },
+    "icon": {
+      "type": "wall-control-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        65
+      ],
+      "sourceImage": "/catalog-products/cat-yatp.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему габаритному чертежу ЯТП на странице 65: навесной ящик с передней дверью и наружной коммутационной арматурой. Символ не кодирует число и расположение разъёмов исполнения."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-yatp.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        65
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-yatp-v005",
+    "name": "ЯТП-0.4-220-24У3",
+    "designation": "ЯТП-0.4-220-24У3",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-yatp",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        65
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "f7f205b3d268a6a6a3db8e48efa46de387cddcca391ca4d5ba088d7883b889b9",
+    "geometry": {
+      "type": "wall-control-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        65
+      ],
+      "sourceImage": "/catalog-products/cat-yatp.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Навесной ящик с передней дверью и наружной коммутационной арматурой; общая форма корпуса, не расположение конкретных разъёмов."
+    },
+    "icon": {
+      "type": "wall-control-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        65
+      ],
+      "sourceImage": "/catalog-products/cat-yatp.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему габаритному чертежу ЯТП на странице 65: навесной ящик с передней дверью и наружной коммутационной арматурой. Символ не кодирует число и расположение разъёмов исполнения."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-yatp.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        65
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-yatp-v006",
+    "name": "ЯТП-0.4-220-36У3",
+    "designation": "ЯТП-0.4-220-36У3",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-yatp",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        65
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "0180cc0b16741d2a142633134bfb093e02a230e06e017e882dd5385f27c94f74",
+    "geometry": {
+      "type": "wall-control-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        65
+      ],
+      "sourceImage": "/catalog-products/cat-yatp.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Навесной ящик с передней дверью и наружной коммутационной арматурой; общая форма корпуса, не расположение конкретных разъёмов."
+    },
+    "icon": {
+      "type": "wall-control-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        65
+      ],
+      "sourceImage": "/catalog-products/cat-yatp.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему габаритному чертежу ЯТП на странице 65: навесной ящик с передней дверью и наружной коммутационной арматурой. Символ не кодирует число и расположение разъёмов исполнения."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-yatp.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        65
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-yatp-v007",
+    "name": "ЯТП-0.63-220-12У3",
+    "designation": "ЯТП-0.63-220-12У3",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-yatp",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        65
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "921bfc85cdc03119be12a9d0bc2626a017ad5cbd65d410b2e9bb0a18ba6582a7",
+    "geometry": {
+      "type": "wall-control-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        65
+      ],
+      "sourceImage": "/catalog-products/cat-yatp.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Навесной ящик с передней дверью и наружной коммутационной арматурой; общая форма корпуса, не расположение конкретных разъёмов."
+    },
+    "icon": {
+      "type": "wall-control-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        65
+      ],
+      "sourceImage": "/catalog-products/cat-yatp.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему габаритному чертежу ЯТП на странице 65: навесной ящик с передней дверью и наружной коммутационной арматурой. Символ не кодирует число и расположение разъёмов исполнения."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-yatp.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        65
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-yatp-v008",
+    "name": "ЯТП-0.63-220-24У3",
+    "designation": "ЯТП-0.63-220-24У3",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-yatp",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        65
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "df7eed1d6617f0f3107f755805975b945cd9b545d6b31d5778efc6f40c949c06",
+    "geometry": {
+      "type": "wall-control-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        65
+      ],
+      "sourceImage": "/catalog-products/cat-yatp.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Навесной ящик с передней дверью и наружной коммутационной арматурой; общая форма корпуса, не расположение конкретных разъёмов."
+    },
+    "icon": {
+      "type": "wall-control-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        65
+      ],
+      "sourceImage": "/catalog-products/cat-yatp.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему габаритному чертежу ЯТП на странице 65: навесной ящик с передней дверью и наружной коммутационной арматурой. Символ не кодирует число и расположение разъёмов исполнения."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-yatp.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        65
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-yatp-v009",
+    "name": "ЯТП-0.63-220-36У3",
+    "designation": "ЯТП-0.63-220-36У3",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-yatp",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        65
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "1facc33e8bfdf279fc7eaa6d5b38e6e87d45f95de1ed727de6d6286ed3c056d2",
+    "geometry": {
+      "type": "wall-control-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        65
+      ],
+      "sourceImage": "/catalog-products/cat-yatp.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Навесной ящик с передней дверью и наружной коммутационной арматурой; общая форма корпуса, не расположение конкретных разъёмов."
+    },
+    "icon": {
+      "type": "wall-control-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        65
+      ],
+      "sourceImage": "/catalog-products/cat-yatp.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему габаритному чертежу ЯТП на странице 65: навесной ящик с передней дверью и наружной коммутационной арматурой. Символ не кодирует число и расположение разъёмов исполнения."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-yatp.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        65
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ya5000-rusm5000",
+    "name": "Ящики управления типа Я 5000-5435 и РУСМ 5000",
+    "designation": "Я 5000-5435 и РУСМ 5000",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [
+      "cat-ya5000-rusm5000-v001",
+      "cat-ya5000-rusm5000-v002",
+      "cat-ya5000-rusm5000-v003",
+      "cat-ya5000-rusm5000-v004",
+      "cat-ya5000-rusm5000-v005",
+      "cat-ya5000-rusm5000-v006",
+      "cat-ya5000-rusm5000-v007",
+      "cat-ya5000-rusm5000-v008",
+      "cat-ya5000-rusm5000-v009",
+      "cat-ya5000-rusm5000-v010",
+      "cat-ya5000-rusm5000-v011",
+      "cat-ya5000-rusm5000-v012",
+      "cat-ya5000-rusm5000-v013",
+      "cat-ya5000-rusm5000-v014",
+      "cat-ya5000-rusm5000-v015",
+      "cat-ya5000-rusm5000-v016",
+      "cat-ya5000-rusm5000-v017",
+      "cat-ya5000-rusm5000-v018",
+      "cat-ya5000-rusm5000-v019",
+      "cat-ya5000-rusm5000-v020",
+      "cat-ya5000-rusm5000-v021",
+      "cat-ya5000-rusm5000-v022",
+      "cat-ya5000-rusm5000-v023",
+      "cat-ya5000-rusm5000-v024",
+      "cat-ya5000-rusm5000-v025"
+    ],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        66
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "22b42d7619b5020f23ff6cee7e96c8923b84948085a8de233cf63b24ec0acb3e",
+    "geometry": {
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    "icon": {
+      "type": "wall-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему чертежу страницы 66: навесной металлический прямоугольный ящик с передней дверью. Типоразмер и внутренние аппараты модели не воспроизводятся."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        66
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ya5000-rusm5000-v001",
+    "name": "Я 5000-5435 и РУСМ 5000 · Я5110",
+    "designation": "Я5110",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ya5000-rusm5000",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        66
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "d7ca6831464135f13a13e508843542444aa01c24252c19ec0f8b33bea2a90855",
+    "geometry": {
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    "icon": {
+      "type": "wall-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему чертежу страницы 66: навесной металлический прямоугольный ящик с передней дверью. Типоразмер и внутренние аппараты модели не воспроизводятся."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        66
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ya5000-rusm5000-v002",
+    "name": "Я 5000-5435 и РУСМ 5000 · Я5111",
+    "designation": "Я5111",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ya5000-rusm5000",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        66
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "b159d21e011b1517cb9a45421bb211562e9023deb35b254cfe85373618d9499a",
+    "geometry": {
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    "icon": {
+      "type": "wall-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему чертежу страницы 66: навесной металлический прямоугольный ящик с передней дверью. Типоразмер и внутренние аппараты модели не воспроизводятся."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        66
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ya5000-rusm5000-v003",
+    "name": "Я 5000-5435 и РУСМ 5000 · Я5112",
+    "designation": "Я5112",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ya5000-rusm5000",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        66
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "819d1f2c720a19688a5c7b1e446bf6fc061ce38d13f7ee0a8b2e7984c820b984",
+    "geometry": {
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    "icon": {
+      "type": "wall-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему чертежу страницы 66: навесной металлический прямоугольный ящик с передней дверью. Типоразмер и внутренние аппараты модели не воспроизводятся."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        66
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ya5000-rusm5000-v004",
+    "name": "Я 5000-5435 и РУСМ 5000 · Я5113",
+    "designation": "Я5113",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ya5000-rusm5000",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        66
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "5fe0481c58e6b920a9ff0e4d5eb26f9484d019da36340ac72bf76df58e3d9436",
+    "geometry": {
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    "icon": {
+      "type": "wall-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему чертежу страницы 66: навесной металлический прямоугольный ящик с передней дверью. Типоразмер и внутренние аппараты модели не воспроизводятся."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        66
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ya5000-rusm5000-v005",
+    "name": "Я 5000-5435 и РУСМ 5000 · Я5410",
+    "designation": "Я5410",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ya5000-rusm5000",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        66
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "1a69224685dc442306d99914227c98daa19f2fa63b4501b67f30f2d9d4dad3b4",
+    "geometry": {
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    "icon": {
+      "type": "wall-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему чертежу страницы 66: навесной металлический прямоугольный ящик с передней дверью. Типоразмер и внутренние аппараты модели не воспроизводятся."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        66
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ya5000-rusm5000-v006",
+    "name": "Я 5000-5435 и РУСМ 5000 · Я5411",
+    "designation": "Я5411",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ya5000-rusm5000",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        66
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "061bd36a7eeb03b92bc22f44cbbd607fac4d5a6389d64dafb878d72d3f53d828",
+    "geometry": {
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    "icon": {
+      "type": "wall-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему чертежу страницы 66: навесной металлический прямоугольный ящик с передней дверью. Типоразмер и внутренние аппараты модели не воспроизводятся."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        66
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ya5000-rusm5000-v007",
+    "name": "Я 5000-5435 и РУСМ 5000 · Я5412",
+    "designation": "Я5412",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ya5000-rusm5000",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        66
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "1388203ad4e2cffba7e4759eee63d26436a7b413a99f7402cf1d3b79379987a9",
+    "geometry": {
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    "icon": {
+      "type": "wall-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему чертежу страницы 66: навесной металлический прямоугольный ящик с передней дверью. Типоразмер и внутренние аппараты модели не воспроизводятся."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        66
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ya5000-rusm5000-v008",
+    "name": "Я 5000-5435 и РУСМ 5000 · Я5413",
+    "designation": "Я5413",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ya5000-rusm5000",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        66
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "2ca60669ee68faea93f7565ffc94252135be41455ee1cb088e758336fe8ebd16",
+    "geometry": {
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    "icon": {
+      "type": "wall-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему чертежу страницы 66: навесной металлический прямоугольный ящик с передней дверью. Типоразмер и внутренние аппараты модели не воспроизводятся."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        66
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ya5000-rusm5000-v009",
+    "name": "Я 5000-5435 и РУСМ 5000 · Я5141",
+    "designation": "Я5141",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ya5000-rusm5000",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        66
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "ef32f7de52de627e1f7dbd78ab4f42b117fb45a0d72303b597c2bca02026df37",
+    "geometry": {
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    "icon": {
+      "type": "wall-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему чертежу страницы 66: навесной металлический прямоугольный ящик с передней дверью. Типоразмер и внутренние аппараты модели не воспроизводятся."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        66
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ya5000-rusm5000-v010",
+    "name": "Я 5000-5435 и РУСМ 5000 · Я5441",
+    "designation": "Я5441",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ya5000-rusm5000",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        66
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "dcdc1d1ce9ed7c7ad42988d744aa75f6f90240e7ad4951e934439a6659d98edd",
+    "geometry": {
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    "icon": {
+      "type": "wall-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему чертежу страницы 66: навесной металлический прямоугольный ящик с передней дверью. Типоразмер и внутренние аппараты модели не воспроизводятся."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        66
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ya5000-rusm5000-v011",
+    "name": "Я 5000-5435 и РУСМ 5000 · Я5114",
+    "designation": "Я5114",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ya5000-rusm5000",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        66
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "0356916bf4fe6fabb28342642c6a59d5997879c333aaaf32ebe153c8e440cc36",
+    "geometry": {
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    "icon": {
+      "type": "wall-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему чертежу страницы 66: навесной металлический прямоугольный ящик с передней дверью. Типоразмер и внутренние аппараты модели не воспроизводятся."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        66
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ya5000-rusm5000-v012",
+    "name": "Я 5000-5435 и РУСМ 5000 · Я5115",
+    "designation": "Я5115",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ya5000-rusm5000",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        66
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "e500a3f715b012fa5163c8579bb2779167c8b038998cf48ea65719e3e05b4fd8",
+    "geometry": {
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    "icon": {
+      "type": "wall-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему чертежу страницы 66: навесной металлический прямоугольный ящик с передней дверью. Типоразмер и внутренние аппараты модели не воспроизводятся."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        66
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ya5000-rusm5000-v013",
+    "name": "Я 5000-5435 и РУСМ 5000 · Я5414",
+    "designation": "Я5414",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ya5000-rusm5000",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        66
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "90a4c4abdea669931729e1d47c0d9b3dfeb6ea13121d4b86d0c9c706a30adac9",
+    "geometry": {
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    "icon": {
+      "type": "wall-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему чертежу страницы 66: навесной металлический прямоугольный ящик с передней дверью. Типоразмер и внутренние аппараты модели не воспроизводятся."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        66
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ya5000-rusm5000-v014",
+    "name": "Я 5000-5435 и РУСМ 5000 · Я5415",
+    "designation": "Я5415",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ya5000-rusm5000",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        66
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "f78f085946e6eb30ce496743c26dc295f9dc8ab1b6540dcfbfc206becd8db427",
+    "geometry": {
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    "icon": {
+      "type": "wall-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему чертежу страницы 66: навесной металлический прямоугольный ящик с передней дверью. Типоразмер и внутренние аппараты модели не воспроизводятся."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        66
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-ya5000-rusm5000-v015",
+    "name": "Я 5000-5435 и РУСМ 5000 · Я5124",
+    "designation": "Я5124",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-ya5000-rusm5000",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        66
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "da44241b1dbb84ae7f2896a135df05157205dbb51a549f8600cc398ac915f5f6",
+    "geometry": {
+      "type": "wall-box",
+      "confidence": "source-matched",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "На общем габаритном чертеже — небольшой навесной прямоугольный бокс; семейство повторяет корпус, не напольный шкаф."
+    },
+    "icon": {
+      "type": "wall-box",
+      "confidence": "source-based",
+      "sourcePages": [
+        66
+      ],
+      "sourceImage": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По общему чертежу страницы 66: навесной металлический прямоугольный ящик с передней дверью. Типоразмер и внутренние аппараты модели не воспроизводятся."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-ya5000-rusm5000.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        66
+      ]
+    },
+    "proposalEvidence": null
+  }
+]

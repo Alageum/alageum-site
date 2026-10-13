@@ -1,0 +1,108 @@
+{
+  "format": "alageum-ktpb-source-context-prototype-manifest-v1",
+  "status": "local-reviewable-prototype-no-publication-approval",
+  "baselineCommit": "47db11d6052e82455577f3d9190230d241c5b4c2",
+  "baselineTree": "c02884c801b0599778dcd9d67d3aaf693619e905",
+  "checkout": "/workspace/scratch/3e2b26bde66a/alageum-ktpb-source-context-local",
+  "branch": "work/ktpb-source-context-local",
+  "frozenAt": "2026-10-07T07:37:17.903569+00:00",
+  "files": [
+    {
+      "path": "frontend/components/catalog/source-context/SourceContextImage.js",
+      "kind": "modified",
+      "baselineSha256": "cbea5c72c693cbe1192f1a7721f062716f9434a94a026f20770ffe519677c3d0",
+      "candidateSha256": "53773db991258d2f99e1b581edab091a60250aa636ff130c6103441250ca291b",
+      "bytes": 907
+    },
+    {
+      "path": "frontend/lib/catalog/source-context/sourceContextManifest.json",
+      "kind": "modified",
+      "baselineSha256": "4ccb97d612b48f368a0ae298164f2ea80671fb12ce8b73724342a5747cc19ce3",
+      "candidateSha256": "c278d91b53c742d27a2d1d9b9c8e6a24a219bb99ed6fdcb42a47ec21072061fe",
+      "bytes": 22210
+    },
+    {
+      "path": "frontend/lib/catalog/source-context/sourceContexts.js",
+      "kind": "modified",
+      "baselineSha256": "5ed607db069ed54243f6a012c1a3b0941355c643a2e9ec4c1975d3bd83eec7b2",
+      "candidateSha256": "7fe1aea1dfaf539ea7e8389127e8f69ca0c44da9e959a740700b56c833a5d3c4",
+      "bytes": 9235
+    },
+    {
+      "path": "frontend/tests/catalog-source-context-render.test.mjs",
+      "kind": "modified",
+      "baselineSha256": "c769aa9fe19dcb7eaace693efcc7b1e9d21378a5e3de9713bc354d5c4da118f6",
+      "candidateSha256": "9466961a4682f514ef9509a8af78917cd833dfacdc2a78c2b7c73a9d7728515f",
+      "bytes": 6331
+    },
+    {
+      "path": "frontend/tests/catalog-source-context.test.mjs",
+      "kind": "modified",
+      "baselineSha256": "8921f0e96cb9f5fc4b4f4d86bd912de242769bdd97a242086f8c4fdaa2ab4e7d",
+      "candidateSha256": "d57d9c08069d72e483a6775dc68c65e4424d4c87cf72b04674d530451372c527",
+      "bytes": 13700
+    },
+    {
+      "path": "frontend/tests/ktpb-source-context.test.mjs",
+      "kind": "added",
+      "baselineSha256": null,
+      "candidateSha256": "6a236e921be6c6c5275455da939bb5a43cd1762265458cb1de83a3d2bdc2369b",
+      "bytes": 15453
+    }
+  ],
+  "patch": {
+    "path": "prototype.patch",
+    "sha256": "cf878c5bc891260a7b4148d0d9d78f6777ec10d6aed2a31382057ad87560379f"
+  },
+  "sourceLedger": {
+    "path": "source-ledger.json",
+    "sha256": "26f22b4422e1438359cf8aa702d6818db678309a789911f2ce0ccb441ae31831"
+  },
+  "preservation": {
+    "path": "preservation.json",
+    "sha256": "7dd60139a56464f2b31f1f672196ae0a27627328671b3d952c4104656da10c5d"
+  },
+  "validation": {
+    "focusedTests": {
+      "passed": 27,
+      "failed": 0,
+      "log": "focused-tests.log"
+    },
+    "focusedEslint": "passed",
+    "gitDiffCheck": "passed",
+    "fullNextBuild": "not-run-as-coordinated",
+    "browser": "not-run-blocked-route-respected",
+    "existing254CatalogCases": "files-unchanged-not-rerun",
+    "existing16SeparateBrowserCases": "files-unchanged-not-rerun"
+  },
+  "expectedGateBlockers": "gate-blockers.json",
+  "unchanged": {
+    "records": 843,
+    "sourceGroundedDefaultIllustrations": 464,
+    "sourceBasedIcons": 465,
+    "constructionChoiceRows": 36,
+    "constructionChoices": 74,
+    "openConstructionGaps": 243,
+    "gapFamilies": 29,
+    "modelOutputs": 128,
+    "iconOutputs": 139,
+    "legacySourceContexts": 24,
+    "legacyStaticApiPanelHtmlOutputs": 48
+  },
+  "scopeChanges": {
+    "sourceContextRecords": {
+      "before": 24,
+      "after": 26
+    },
+    "newProducts": 0,
+    "newOrChangedAssets": 0,
+    "confidencePromotions": 0,
+    "constructionGapsClosed": 0,
+    "dataOrIdChanges": 0,
+    "defaultGeometryOrIconMappingChanges": 0,
+    "historicalApprovalChanges": 0,
+    "gateBridgeChanges": 0,
+    "workflowOrDependencyChanges": 0,
+    "cms15Changes": 0
+  }
+}

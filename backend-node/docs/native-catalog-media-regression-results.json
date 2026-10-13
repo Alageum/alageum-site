@@ -1,0 +1,96 @@
+{
+  "kind": "final-candidate-default-vite-regressions",
+  "status": "blocked-browser",
+  "startedAt": "2026-10-02T15:10:04.821Z",
+  "finishedAt": "2026-10-02T15:12:49.061Z",
+  "commit": "76d7f84ced389f547aa167a7789adfcd5c922b45",
+  "node": "v24.19.0",
+  "heapMiB": 2560,
+  "workflow": ".github/workflows/node-strapi.yml",
+  "evidence": "backend-node/.tmp/candidate-regressions/run.sGdP92",
+  "detailedReport": "backend-node/.tmp/candidate-regressions/run.sGdP92/results.json",
+  "dependencyInstalls": 0,
+  "registryRequests": 0,
+  "checks": {
+    "backend-check": {
+      "status": "passed",
+      "tests": 74
+    },
+    "backend-integration": {
+      "status": "passed",
+      "tests": 60
+    },
+    "backend-default-vite-build": {
+      "status": "passed"
+    },
+    "backend-vite-assets": {
+      "status": "passed"
+    },
+    "frontend-lint": {
+      "status": "passed"
+    },
+    "frontend-unit": {
+      "status": "passed",
+      "tests": 164
+    },
+    "frontend-api-build": {
+      "status": "passed"
+    },
+    "frontend-quotes-build": {
+      "status": "passed"
+    },
+    "page-contracts": {
+      "status": "passed",
+      "tests": 12
+    },
+    "frontend-page-build": {
+      "status": "passed"
+    },
+    "page-http-fault-matrix": {
+      "status": "passed"
+    },
+    "page-native-delivery": {
+      "status": "passed"
+    },
+    "frontend-static-preview-build": {
+      "status": "passed"
+    }
+  },
+  "pageHttpFaultCases": 196,
+  "pageNativeChecks": 13,
+  "discoveredBrowserCases": 45,
+  "passedBrowserCases": 0,
+  "testRetries": 0,
+  "browsers": {
+    "cms": {
+      "discovered": 5,
+      "status": "blocked"
+    },
+    "admin": {
+      "discovered": 3,
+      "status": "blocked"
+    },
+    "rfq": {
+      "discovered": 2,
+      "status": "blocked"
+    },
+    "quotes": {
+      "discovered": 28,
+      "status": "blocked"
+    },
+    "pages": {
+      "discovered": 7,
+      "status": "blocked"
+    }
+  },
+  "screenshots": [],
+  "browserBlocker": "This executor rejects Chromium process-singleton Unix socket creation (Operation not permitted), before page creation. Browser cases are discovered but not executed; --http-builds was explicitly selected.",
+  "protectedFilesUnchanged": true,
+  "cleanup": {
+    "status": "passed",
+    "serversStopped": true,
+    "postgresStopped": true,
+    "homePreserved": true,
+    "codexHomePreserved": true
+  }
+}

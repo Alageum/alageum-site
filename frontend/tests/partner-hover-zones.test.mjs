@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {insidePartnerHoverZones} from '../lib/public/partnerHover.js';
+const logo={left:100,top:500,width:180,height:90},card={left:400,top:100,width:420,height:680};
+test('logo and information card have independent padded hover zones',()=>{assert.equal(insidePartnerHoverZones({x:90,y:540},logo,card),true);assert.equal(insidePartnerHoverZones({x:830,y:400},logo,card),true);assert.equal(insidePartnerHoverZones({x:100,y:120},logo,card),false);assert.equal(insidePartnerHoverZones({x:330,y:400},logo,card),false);assert.equal(insidePartnerHoverZones({x:900,y:400},logo,card),false);});

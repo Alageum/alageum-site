@@ -1,0 +1,23 @@
+{
+  "format": "alageum-catalog-browser-clearance-v1",
+  "status": "approved-three-browser-assertions",
+  "baselineCommit": "eace83de78e3167fe17a8dcd94ff72de6997974f",
+  "baselineTree": "1df444ca998debdfb8a61bd20ecec23cbf97961f",
+  "dependencies": {
+    "predecessors": {
+      "frontend/e2e/catalog.spec.js": "7609074a1aa0c7f35930ba1b125cfa166f5a194713daf722e32d8bc549a15a65",
+      "frontend/tests/transformer-asset-completion.test.mjs": "95ec5797c9d4faa549cc67711a937ed4561abce2110932b6a90e7c659beda40c",
+      "scripts/catalog/protection-context-reviewed-dependencies.mjs": "e38831416b22581376c8604884906276d977c4d56197d8f7b2f9dd0bb9c775c0"
+    },
+    "reviewedFiles": {
+      "frontend/e2e/catalog.spec.js": "cc06ec1299f040b684785837f16dba1c4f1f8faa1e6e0170d8f0df196cc8ad67",
+      "frontend/tests/transformer-asset-completion.test.mjs": "9541ff421a159dfc5e6781def30f64d1738733ca8bb135b616cab52ca6fa86d6",
+      "scripts/catalog/protection-context-reviewed-dependencies.mjs": "0cf8dfcdf11e933af1d5cf2d88aa8f4c878730c632538fcefd3457b4236aaa6e",
+      "scripts/catalog/catalog-browser-reviewed-dependencies.mjs": "808f1034297f0b3ab62826a339373287684a1df5bf173b06d9162d83976cc279",
+      "frontend/tests/catalog-browser-amendment.test.mjs": "df7d2e4fb399023b597dfaed3797f5cbaabce452d1c7a54b177fb05d96fd5e80",
+      "docs/catalog-transformers-2026/review/catalog-browser-assertions/README.md": "4a3de065da91d6f4bfbf60588f2439f90a93cf7c1b949f07bfbae936b2986e70"
+    }
+  },
+  "reviewReport": "docs/catalog-transformers-2026/review/catalog-browser-assertions/independent-review.json",
+  "reviewReportSha256": "592e59a3085ea9addbc5b031acfbd39e30bffde55720889c4cd53197365e5e28"
+}

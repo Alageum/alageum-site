@@ -1,0 +1,410 @@
+name: CI
+on:
+  push:
+  pull_request:
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_DB: alageum_ci
+          POSTGRES_USER: alageum
+          POSTGRES_PASSWORD: ci-password
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U alageum -d alageum_ci"
+          --health-interval 5s --health-timeout 3s --health-retries 10
+    env:
+      APP_DATABASE_URL: postgresql+asyncpg://alageum:ci-password@localhost:5432/alageum_ci
+      APP_SECRET_KEY: ci-secret-key-that-is-long-enough
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements-dev.lock
+      - run: pip-audit -r requirements.lock
+      - run: ruff check .
+      - run: python ../scripts/test_backend_readiness.py
+      - run: python ../scripts/check_vercel_runtime_lock.py
+      - name: Verify the explicit legacy route inventory
+        run: python ../scripts/check_legacy_route_inventory.py
+      - name: Reproduce frozen FastAPI query reference vectors
+        run: python ../backend-node/tests/reference/generate_legacy_query.py --check
+      - name: Reproduce frozen system DTO and metric reference vectors
+        run: python ../backend-node/tests/reference/generate_legacy_system.py --check
+      - name: Reproduce frozen quote-create limiter reference vectors
+        run: python ../backend-node/tests/reference/generate_legacy_quote_limit.py --check
+      - run: pytest --cov=app --cov-report=term-missing
+      - run: alembic upgrade head
+      - run: alembic downgrade base
+      - run: alembic upgrade head
+      - run: alembic check
+      - name: Verify RFQ transactions on PostgreSQL (including concurrent retries)
+        run: pytest tests/test_quote_requests.py
+        env:
+          ALAGEUM_TEST_POSTGRES_URL: postgresql+asyncpg://alageum:ci-password@localhost:5432/alageum_ci
+  frontend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm install --global npm@11.6.2
+      - run: npm ci
+      - run: python3 scripts/update_catalog_assets.py --check
+        working-directory: .
+      - run: python3 scripts/check_frontend_env.py
+        working-directory: .
+      - run: npm audit --audit-level=high
+      - run: npm run lint
+      - run: npm run test:unit
+      - run: npm run build
+      - run: npm run build:preview
+
+  e2e:
+    runs-on: ubuntu-latest
+    needs: [backend, frontend]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm install --global npm@11.6.2
+      - run: cp .env.example .env
+      - run: ./scripts/bootstrap.sh
+      - run: docker compose run --rm -v "$PWD/docs/catalog-import:/catalog:ro" backend python -m scripts.import_catalog --catalog-dir /catalog
+      - run: |
+          backup_path="$(./scripts/backup.sh)"
+          ./scripts/restore.sh "${backup_path}"
+          python3 scripts/smoke.py
+      - run: npm ci
+        working-directory: frontend
+      - run: npx playwright install --with-deps chromium
+        working-directory: frontend
+      - run: npm run test:e2e
+        working-directory: frontend
+      - if: always()
+        run: docker compose logs --no-color > compose-e2e.log
+      - if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: e2e-failure-context-${{ github.run_id }}
+          path: |
+            frontend/test-results/
+            frontend/playwright-report/
+            compose-e2e.log
+          retention-days: 7
+      - name: Retain public company-page retry diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: company-page-retry-context-${{ github.run_id }}
+          path: |
+            frontend/test-results/company-pages-*/test-failed-*.png
+            frontend/test-results/company-pages-*/error-context.md
+          if-no-files-found: ignore
+          retention-days: 7
+      - if: always()
+        run: docker compose down -v
+
+  vercel-services:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    needs: [backend, frontend]
+    permissions:
+      contents: read
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_DB: alageum_vercel_ci
+          POSTGRES_USER: alageum
+          POSTGRES_PASSWORD: ci-password
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U alageum -d alageum_vercel_ci"
+          --health-interval 5s --health-timeout 3s --health-retries 10
+    env:
+      APP_ENV: test
+      APP_DATABASE_URL: postgresql+asyncpg://alageum:ci-password@localhost:5432/alageum_vercel_ci
+      APP_SECRET_KEY: ci-only-vercel-services-secret-not-for-deployment
+      APP_LOCAL_STORAGE_PATH: /tmp/alageum-vercel-ci-storage
+      APP_CORS_ORIGINS: '["http://localhost:3200"]'
+      NEXT_PUBLIC_API_URL: /api/v1
+      NEXT_PUBLIC_CATALOG_SOURCE: static
+      NEXT_TELEMETRY_DISABLED: "1"
+      VERCEL_TELEMETRY_DISABLED: "1"
+      E2E_BASE_URL: http://localhost:3200
+      E2E_API_URL: http://localhost:3200/api/v1
+      E2E_VERCEL_SERVICES: "1"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: npm install --global npm@11.6.2
+      - run: npm install --global vercel@62.1.0
+      - run: pip install uv==0.12.19
+      - name: Install locked backend and prepare disposable database
+        working-directory: backend
+        run: |
+          uv sync --locked --no-dev
+          .venv/bin/alembic upgrade head
+          .venv/bin/python -m scripts.seed
+          .venv/bin/python -m scripts.import_catalog --catalog-dir ../docs/catalog-import
+      - run: npm ci
+        working-directory: frontend
+      - run: npx playwright install --with-deps chromium
+        working-directory: frontend
+      - name: Verify actual Vercel Services ingress and browser flows locally
+        timeout-minutes: 12
+        shell: bash
+        run: |
+          setsid vercel dev -L --listen 127.0.0.1:3200 > vercel-services.log 2>&1 &
+          server_pid=$!
+          cleanup() {
+            kill -- -"${server_pid}" 2>/dev/null || true
+            wait "${server_pid}" || true
+          }
+          trap cleanup EXIT
+          deadline=$((SECONDS + 180))
+          until curl --fail --silent --show-error --connect-timeout 2 --max-time 5 \
+            "${E2E_API_URL}/readiness" > /dev/null; do
+            if ! kill -0 "${server_pid}" 2>/dev/null || (( SECONDS >= deadline )); then
+              tail -100 vercel-services.log
+              echo "Vercel Services did not become ready" >&2
+              exit 1
+            fi
+            sleep 2
+          done
+          cd frontend
+          # Fail quickly on a shared ingress/hydration problem before the full suite.
+          npm run test:e2e:vercel -- e2e/vercel-services.spec.js --max-failures=1
+          npm run test:e2e:vercel -- e2e/catalog-admin.spec.js e2e/catalog.spec.js e2e/security.spec.js --max-failures=1
+      - if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vercel-services-failure-${{ github.run_id }}
+          path: |
+            vercel-services.log
+            frontend/test-results/
+            frontend/playwright-report/
+          retention-days: 7
+
+  transformer-source-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      NEXT_PUBLIC_CATALOG_SOURCE: static
+      NEXT_TELEMETRY_DISABLED: '1'
+      E2E_CATALOG_BASE_URL: http://127.0.0.1:3100
+      PLAYWRIGHT_JSON_OUTPUT_FILE: playwright-report/catalog-results.json
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Build the production static catalog
+        timeout-minutes: 5
+        run: npm run build
+      - name: Verify new source assets and old catalog regressions on desktop and mobile
+        timeout-minutes: 18
+        shell: bash
+        run: |
+          npm run start -- --hostname 127.0.0.1 --port 3100 > catalog-browser.log 2>&1 &
+          web_pid=$!
+          cleanup() {
+            kill "${web_pid}" 2>/dev/null || true
+            wait "${web_pid}" 2>/dev/null || true
+          }
+          trap cleanup EXIT
+          deadline=$((SECONDS + 90))
+          until curl --fail --silent --connect-timeout 2 --max-time 5 "${E2E_CATALOG_BASE_URL}/catalog" > /dev/null; do
+            if ! kill -0 "${web_pid}" || (( SECONDS >= deadline )); then
+              tail -80 catalog-browser.log
+              exit 1
+            fi
+            sleep 2
+          done
+          npm run test:e2e:catalog -- --reporter=github,json
+      - if: always()
+        id: catalog_full_artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: transformer-source-browser-${{ github.run_id }}
+          path: |
+            frontend/test-results/
+            frontend/playwright-report/
+            frontend/catalog-browser.log
+          retention-days: 7
+      - name: Prepare bounded catalog diagnostics from existing evidence
+        id: catalog_diagnostics
+        if: always() && steps.catalog_full_artifact.outcome == 'success'
+        env:
+          CATALOG_FULL_ARTIFACT_ID: ${{ steps.catalog_full_artifact.outputs.artifact-id }}
+          CATALOG_FULL_ARTIFACT_URL: ${{ steps.catalog_full_artifact.outputs.artifact-url }}
+          CATALOG_FULL_ARTIFACT_DIGEST: ${{ steps.catalog_full_artifact.outputs.artifact-digest }}
+          CATALOG_FULL_UPLOAD_OUTCOME: ${{ steps.catalog_full_artifact.outcome }}
+        run: node scripts/prepare-catalog-diagnostics.mjs "${{ runner.temp }}/catalog-diagnostics"
+      - name: Retain compact catalog report diagnostics
+        if: always() && steps.catalog_full_artifact.outcome == 'success'
+        uses: actions/upload-artifact@v4
+        with:
+          name: catalog-diagnostics-report-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/catalog-diagnostics/report/
+          if-no-files-found: error
+          include-hidden-files: true
+          retention-days: 7
+      - name: Retain compact catalog desktop diagnostics
+        if: always() && steps.catalog_full_artifact.outcome == 'success'
+        uses: actions/upload-artifact@v4
+        with:
+          name: catalog-diagnostics-desktop-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/catalog-diagnostics/desktop/
+          if-no-files-found: error
+          include-hidden-files: true
+          retention-days: 7
+      - name: Retain compact catalog mobile diagnostics
+        if: always() && steps.catalog_full_artifact.outcome == 'success'
+        uses: actions/upload-artifact@v4
+        with:
+          name: catalog-diagnostics-mobile-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/catalog-diagnostics/mobile/
+          if-no-files-found: error
+          include-hidden-files: true
+          retention-days: 7
+      - name: Retain compact catalog shared diagnostics
+        if: always() && steps.catalog_full_artifact.outcome == 'success'
+        uses: actions/upload-artifact@v4
+        with:
+          name: catalog-diagnostics-shared-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/catalog-diagnostics/shared/
+          if-no-files-found: error
+          include-hidden-files: true
+          retention-days: 7
+      - name: Retain compact catalog mobile part 001
+        if: always() && steps.catalog_full_artifact.outcome == 'success' && steps.catalog_diagnostics.outputs.mobile_part_count >= 1
+        uses: actions/upload-artifact@v4
+        with:
+          name: catalog-diagnostics-mobile-part-001-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/catalog-diagnostics/mobile-part-001/
+          if-no-files-found: error
+          include-hidden-files: true
+          retention-days: 7
+      - name: Retain compact catalog mobile part 002
+        if: always() && steps.catalog_full_artifact.outcome == 'success' && steps.catalog_diagnostics.outputs.mobile_part_count >= 2
+        uses: actions/upload-artifact@v4
+        with:
+          name: catalog-diagnostics-mobile-part-002-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/catalog-diagnostics/mobile-part-002/
+          if-no-files-found: error
+          include-hidden-files: true
+          retention-days: 7
+      - name: Retain compact catalog mobile part 003
+        if: always() && steps.catalog_full_artifact.outcome == 'success' && steps.catalog_diagnostics.outputs.mobile_part_count >= 3
+        uses: actions/upload-artifact@v4
+        with:
+          name: catalog-diagnostics-mobile-part-003-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/catalog-diagnostics/mobile-part-003/
+          if-no-files-found: error
+          include-hidden-files: true
+          retention-days: 7
+      - name: Retain compact catalog mobile part 004
+        if: always() && steps.catalog_full_artifact.outcome == 'success' && steps.catalog_diagnostics.outputs.mobile_part_count >= 4
+        uses: actions/upload-artifact@v4
+        with:
+          name: catalog-diagnostics-mobile-part-004-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/catalog-diagnostics/mobile-part-004/
+          if-no-files-found: error
+          include-hidden-files: true
+          retention-days: 7
+
+  ptmm-qualification-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    env:
+      NEXT_PUBLIC_CATALOG_SOURCE: static
+      NEXT_TELEMETRY_DISABLED: '1'
+      E2E_PTMM_BASE_URL: http://127.0.0.1:3118
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare isolated PTMM qualification evidence
+        run: |
+          mkdir -p ../ptmm-qualification-evidence
+          git rev-parse HEAD > ../ptmm-qualification-evidence/head.txt
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Build the reviewed PTMM qualification site
+        timeout-minutes: 5
+        shell: bash
+        run: npm run build 2>&1 | tee ../ptmm-qualification-evidence/build.log
+      - name: Verify sixteen PTMM qualification cases separately
+        timeout-minutes: 6
+        shell: bash
+        run: |
+          npm run start -- --hostname 127.0.0.1 --port 3118 > ../ptmm-qualification-evidence/server.log 2>&1 &
+          web_pid=$!
+          cleanup() {
+            kill "${web_pid}" 2>/dev/null || true
+            wait "${web_pid}" 2>/dev/null || true
+          }
+          trap cleanup EXIT
+          deadline=$((SECONDS + 90))
+          until curl --fail --silent --connect-timeout 2 --max-time 5 "${E2E_PTMM_BASE_URL}/catalog" > /dev/null; do
+            if ! kill -0 "${web_pid}" || (( SECONDS >= deadline )); then
+              tail -80 ../ptmm-qualification-evidence/server.log
+              exit 1
+            fi
+            sleep 2
+          done
+          npx playwright test --config=playwright.ptmm-qualification.config.mjs 2>&1 | tee ../ptmm-qualification-evidence/runner-console.log
+      - name: Retain complete isolated PTMM qualification evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ptmm-qualification-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ptmm-qualification-evidence/
+          if-no-files-found: error
+          include-hidden-files: true
+          retention-days: 7

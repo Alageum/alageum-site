@@ -1,0 +1,269 @@
+{
+  "format": "alageum-native-upload-sharp-independent-review-v1",
+  "status": "approved-bounded-native-upload-regression-scope",
+  "reviewDate": "2026-10-08",
+  "baselineCommit": "9dc634a9cc8f1f3341baca3d553703a71cb33d6d",
+  "baselineTree": "2cd6d6ad48632334f3409a2bf43578111cc81164",
+  "candidateIdentity": "Fresh local rebuild of the PR44 successor; not the lost 2026-10-07 candidate.",
+  "historicalApprovalTransferred": false,
+  "decision": {
+    "boundedNativeCodeAndEvidenceAccepted": true,
+    "fullSecurityGatePassed": false,
+    "browserAcceptanceEstablished": false,
+    "hostedExactHeadCiEstablished": false,
+    "mergeDeployOrReleaseApproved": false,
+    "scope": "The exact frozen dependency pair, rebuilt native regression harness and its stated local functional evidence only. This report is not approval of the separate proof successor."
+  },
+  "reviewedFilesSha256": {
+    "backend-node/package.json": "00c062b825c058fe9adf424e9c7ae814fa6ba9e33f3f21de8e48a22b8f2dd097",
+    "backend-node/package-lock.json": "720b62d6df31f9594667617758247d090ca6888241b871575dcb31746d421035",
+    "backend-node/tests/cms-catalog.integration-support.js": "692525322c98f272b9837bccb1f1c49c4bea81ae2014b468f8880a3049e434c7",
+    "backend-node/tests/cms-upload-safety.test.js": "5db8b13ff0345a289d23721c05ecf38086f5a6e6bc4bb95bfc55378bfe0e45be",
+    "backend-node/tests/cms-upload.integration-support.js": "eb7b12d37cc5100830ad97e41531fbf6f2ab71e09c5778878391ea100691abd2",
+    "backend-node/tests/helpers/upload-image-fixtures.js": "3d9b518a58004c397843a44140d9f49de9e0de380e6773a8f08b84cf66849d85",
+    "backend-node/tests/helpers/upload-quiescence.js": "a889581c98881d37df06c24ba96740ee7b2ceda2b23e4edb1f4e24f322cb5ab3",
+    "backend-node/tests/upload-image.test.js": "a48c67e90355834f50318f289ed64ba5b1f2538c6cd66dc9a48bcf680c80da06",
+    "backend-node/tests/upload-quiescence.test.js": "39c173d8f3f1d219027f7b8bb3630646d56c7601fbfb1d4e26ea5dd13e1bf648",
+    "backend-node/docs/native-upload-sharp-regression-results.json": "9d9a01befd4b1363d289d137dbba2b60574ca5cc5fd9dd9957030e8139b60e86",
+    "backend-node/docs/native-upload-sharp-regressions.md": "60bb2954e52606ce5bb51f01a9e52a18b4262e77ea9a95d5fb1b18d4f4c09d6c"
+  },
+  "reviewedFileModes": {
+    "backend-node/package.json": "100644",
+    "backend-node/package-lock.json": "100644",
+    "backend-node/tests/cms-catalog.integration-support.js": "100644",
+    "backend-node/tests/cms-upload-safety.test.js": "100644",
+    "backend-node/tests/cms-upload.integration-support.js": "100644",
+    "backend-node/tests/helpers/upload-image-fixtures.js": "100644",
+    "backend-node/tests/helpers/upload-quiescence.js": "100644",
+    "backend-node/tests/upload-image.test.js": "100644",
+    "backend-node/tests/upload-quiescence.test.js": "100644",
+    "backend-node/docs/native-upload-sharp-regression-results.json": "100644",
+    "backend-node/docs/native-upload-sharp-regressions.md": "100644"
+  },
+  "runtimeDelta": {
+    "manifestOnly": "@strapi/upload-scoped sharp 0.35.4 -> 0.35.5",
+    "strapi": "5.56.0",
+    "changedLockRecords": 27,
+    "changedLockPaths": [
+      "node_modules/@img/sharp-darwin-arm64",
+      "node_modules/@img/sharp-darwin-x64",
+      "node_modules/@img/sharp-freebsd-wasm32",
+      "node_modules/@img/sharp-libvips-darwin-arm64",
+      "node_modules/@img/sharp-libvips-darwin-x64",
+      "node_modules/@img/sharp-libvips-linux-arm",
+      "node_modules/@img/sharp-libvips-linux-arm64",
+      "node_modules/@img/sharp-libvips-linux-ppc64",
+      "node_modules/@img/sharp-libvips-linux-riscv64",
+      "node_modules/@img/sharp-libvips-linux-s390x",
+      "node_modules/@img/sharp-libvips-linux-x64",
+      "node_modules/@img/sharp-libvips-linuxmusl-arm64",
+      "node_modules/@img/sharp-libvips-linuxmusl-x64",
+      "node_modules/@img/sharp-linux-arm",
+      "node_modules/@img/sharp-linux-arm64",
+      "node_modules/@img/sharp-linux-ppc64",
+      "node_modules/@img/sharp-linux-riscv64",
+      "node_modules/@img/sharp-linux-s390x",
+      "node_modules/@img/sharp-linux-x64",
+      "node_modules/@img/sharp-linuxmusl-arm64",
+      "node_modules/@img/sharp-linuxmusl-x64",
+      "node_modules/@img/sharp-wasm32",
+      "node_modules/@img/sharp-webcontainers-wasm32",
+      "node_modules/@img/sharp-win32-arm64",
+      "node_modules/@img/sharp-win32-ia32",
+      "node_modules/@img/sharp-win32-x64",
+      "node_modules/sharp"
+    ],
+    "unrelatedManifestFieldsUnchanged": true,
+    "unrelatedLockRecordsAndTopLevelMetadataUnchanged": true,
+    "originalRuntimePairRecoveredExactly": true
+  },
+  "independentReviewerExecutions": [
+    {
+      "command": "node --test backend-node/tests/upload-image.test.js backend-node/tests/upload-quiescence.test.js backend-node/tests/cms-upload-safety.test.js",
+      "status": "passed",
+      "counts": {
+        "tests": 15,
+        "pass": 15,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      },
+      "evidenceFile": "reviewer-focused.log",
+      "evidenceSha256": "90d9d869c004f40dc60879129e26e5ffa3709ffe3025545f0e87094f5d1c0b3e"
+    },
+    {
+      "command": "npm run check --prefix backend-node",
+      "status": "passed",
+      "counts": {
+        "tests": 662,
+        "pass": 662,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      },
+      "evidenceFile": "reviewer-backend-check.log",
+      "evidenceSha256": "850618926aaf86c9791fe870bc276b1fcaa46a4cf5ca1222cc3a994b0f0ffcd6"
+    }
+  ],
+  "reviewedImplementerExecutions": {
+    "focused": {
+      "command": "cd backend-node && node --test tests/upload-image.test.js tests/upload-quiescence.test.js tests/cms-upload-safety.test.js",
+      "status": "passed",
+      "exitCode": 0,
+      "tests": 15,
+      "pass": 15,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "durationMs": 863.469745,
+      "sanitizedEvidenceFile": "focused.log",
+      "sanitizedEvidenceSha256": "174e239e77a2c29714f3ec2e20adc832f78a798ddf73dc80661bd95c51f4a7da"
+    },
+    "backendCheck": {
+      "command": "npm run check --prefix backend-node",
+      "status": "passed",
+      "exitCode": 0,
+      "tests": 662,
+      "pass": 662,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "durationMs": 6677.557822,
+      "sanitizedEvidenceFile": "backendCheck.log",
+      "sanitizedEvidenceSha256": "47bf0caecd811b687f0a414aff50096e5592664fce970b9219e684977394ae3c"
+    },
+    "nativeIntegration": {
+      "command": "bash backend-node/scripts/run-local-tests.sh --integration-only",
+      "status": "passed",
+      "exitCode": 0,
+      "tests": 110,
+      "pass": 110,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "durationMs": 35319.290334,
+      "sanitizedEvidenceFile": "nativeIntegration.log",
+      "sanitizedEvidenceSha256": "ed9689223b59aae34ce777bfa8ad82aa1972718c9c0e5f619bce1d163283f5a6"
+    },
+    "pageContracts": {
+      "command": "bash backend-node/scripts/run-page-tests.sh --contracts",
+      "status": "passed",
+      "exitCode": 0,
+      "tests": 12,
+      "pass": 12,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "durationMs": 8494.255262,
+      "sanitizedEvidenceFile": "pageContracts.log",
+      "sanitizedEvidenceSha256": "3d0722762bb71e2c704071ea44bcf498788d516ef6a64bba08e9d014f9f1bfc1"
+    },
+    "backendBuild": {
+      "command": "npm run build --prefix backend-node",
+      "status": "passed",
+      "exitCode": 0,
+      "adminBuildMs": 18635,
+      "environment": "NODE_ENV=production, APP_ENV=test, ephemeral loopback fixture DATABASE_URL and fresh disposable secrets; owned HOME/XDG/SWC cache",
+      "sanitizedEvidenceFile": "backendBuild.log",
+      "sanitizedEvidenceSha256": "76972d644d29440bf84e05a74f9f285d6e4d1eba1844b75f56f8b48942cb8828"
+    },
+    "fullAudit": {
+      "command": "npm audit --prefix backend-node --audit-level=high --json",
+      "status": "failed-security-gate",
+      "exitCode": 1,
+      "sharpFindingPresent": false,
+      "counts": {
+        "info": 0,
+        "low": 0,
+        "moderate": 3,
+        "high": 29,
+        "critical": 0,
+        "total": 32
+      },
+      "sanitizedEvidenceFile": "backendAudit.json",
+      "sanitizedEvidenceSha256": "973f83c998f5355bcf613410f9826111ac0c6061f06ae92ff17b5ac6830514ac"
+    }
+  },
+  "evidenceVerification": {
+    "allNineFrozenSourceHashesMatched": true,
+    "regressionResultsAndNarrativeHashesMatched": true,
+    "allSixSanitizedEvidenceHashesMatched": true,
+    "reportedTestCountsMatchedLogs": true,
+    "embeddedAuditExactlyMatchedSanitizedAudit": true,
+    "currentUploadsDirectory": [
+      ".gitkeep"
+    ],
+    "nativePageAdapterCheck": "18 official package files and 4 Slate runtime files independently verified unchanged by the full backend check.",
+    "disposableDatabaseShutdown": "Reported checked by the implementer after both final runs; the reviewer did not independently rerun PostgreSQL or recheck its process lifecycle."
+  },
+  "staticReview": {
+    "isolation": "Requires explicit test opt-in, an approved loopback PostgreSQL URL/name, matching current_database(), test-mode loaded Strapi, local upload provider and loopback HTTP server. Uses the existing owned disposable CMS fixture roles.",
+    "ownership": "Randomly prefixed rows and an exact provider-path ownership set are the only upload data removed. Preexisting rows, file hashes, settings/configuration and permission rows/IDs are compared after restoration.",
+    "admissionAndDrain": "Owned single-use request tickets enter AsyncLocalStorage at Koa.handleRequest. Admission is closed before cleanup; pending promises are repeatedly drained across setImmediate until the generation remains stable and empty. The request fence remains until outer server close.",
+    "nativePromiseSeams": [
+      "Koa native request result",
+      "upload service upload/remove/replace",
+      "provider upload/checkFileSize/replace",
+      "all image-manipulation functions",
+      "all native file-service functions",
+      "metrics.trackUsage",
+      "FILE repository create/update/delete",
+      "underlying provider.delete",
+      "owned eventHub.emit"
+    ],
+    "semantics": "Instrumentation preserves the native call receiver, arguments and original returned value/promise; synchronous throws propagate. Original service descriptors are restored. Unowned calls retain their native behavior.",
+    "unexpectedErrors": "Marked detached event failures are retained separately from expected fail-fast request/provider failures. They are asserted absent only after draining, cleanup and restoration, so an unexpected detached rejection cannot silently qualify a successful run.",
+    "imageChecks": "Independent zlib PNG fixtures define complete expected RGBA pixels. Actual upload-resolved sharp and native image-manipulation APIs validate originals, thumbnails and responsive variants, optimization, stream metadata/validation, safe SVG and malformed/truncated inputs.",
+    "unchangedScope": "No backend production application/configuration, native Page/Slate adapter, workflow, audit gate or runner was changed. The existing CMS integration helper only adds the bounded upload test invocation."
+  },
+  "nativeHttpCoverage": [
+    "Anonymous, B2B and denied-role identities rejected without row/file writes.",
+    "Real PNG multipart upload persists and serves original plus thumbnail/large/medium/small variants, each fully decoded.",
+    "Safe SVG multipart upload serves exact bytes and full decoded pixels without raster variants.",
+    "Malformed raster request rejects without persisted row/provider bytes.",
+    "Admitted client abort occurs while the native provider is held; real provider/row completion precedes teardown.",
+    "Injected fail-fast multipart sibling returns HTTP 500 while another native provider remains pending; the late branch then passes separately gated native metrics and FILE create stages and persists its real row before drain finishes."
+  ],
+  "syntheticCoverageSeparateFromHttp": [
+    "Single-use late-admission fencing",
+    "Receiver/argument/value/error/descriptor preservation",
+    "Fail-fast promise sibling and newly started descendant",
+    "Cleanup descendants",
+    "Unawaited event descendants",
+    "Detached event rejection retention through restoration",
+    "Unowned work exclusion"
+  ],
+  "resolvedReviewFindings": [
+    {
+      "finding": "A fail-fast branch could leave native file-service awaits outside the tracked seams.",
+      "resolution": "All callable file-service methods are now tracked in the owned scope."
+    },
+    {
+      "finding": "Native upload/remove emits an asynchronous event without awaiting its returned promise.",
+      "resolution": "Owned eventHub.emit is tracked; separate unawaited event/cleanup-descendant control passes."
+    },
+    {
+      "finding": "Detached event rejections could be consumed by allSettled without failing qualification.",
+      "resolution": "Marked detached errors are recorded and asserted after restoration; the rejection/restoration control passes."
+    },
+    {
+      "finding": "The ownership provider wrapper dropped additional call arguments.",
+      "resolution": "Unhooked and unowned calls now forward the full arguments with Reflect.apply."
+    }
+  ],
+  "openQualificationLimits": [
+    "The mandatory full npm audit failed with exit 1: 29 high and 3 moderate affected packages. No sharp finding is present. This review supplies no waiver, relaxed gate or production-only substitute.",
+    "Native PostgreSQL qualification used local 17.11 rather than the CI PostgreSQL 16 environment.",
+    "No browser was attempted, no hosted exact-head CI was established, and no merge/deploy/release authorization is implied.",
+    "Native HTTP counts are six new cases within 110 passing integration tests; 15 focused tests and 662 backend checks are fresh counts, not historical 743/109/45 parity.",
+    "The reviewer independently repeated the focused and complete backend checks. Native HTTP, Page HTTP and admin-build outcomes were independently inspected and hash-verified from the implementer logs rather than re-executed by this reviewer.",
+    "Controlled failure hooks deliberately retain the late fixture stream after native temp cleanup and delay metrics/FILE persistence. These demonstrate real HTTP/native provider/database completion under controlled failure, not an exploit reproducer.",
+    "Late-admission and detached-error scenarios use synthetic collaborators. No hard process-kill/crash recovery, arbitrary future unreturned background-task guarantee, or general malware/upload-security assessment is claimed."
+  ]
+}

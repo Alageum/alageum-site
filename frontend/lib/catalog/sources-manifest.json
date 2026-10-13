@@ -1,0 +1,3187 @@
+{
+  "format": "alageum-catalog-sources-v1",
+  "default_source_id": "substations",
+  "sources": {
+    "substations": {
+      "id": "substations",
+      "title": "Шкафные конструкции · 02.09.2024",
+      "source_file_id": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "source_sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "source_bytes": 182693789,
+      "page_count": 104,
+      "page_path_prefix": "/catalog-source/",
+      "source_url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "package_assets": 61,
+      "package_bytes": 1539242
+    },
+    "transformers-2026": {
+      "id": "transformers-2026",
+      "title": "Трансформаторы · 18.03.2026",
+      "source_file_id": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+      "source_sha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+      "source_bytes": 844084378,
+      "page_count": 187,
+      "page_path_prefix": "/catalog-source/transformers-2026/",
+      "source_url": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+      "package_assets": 187,
+      "package_bytes": 20429458
+    }
+  },
+  "legacy_baseline": {
+    "record_count": 238,
+    "empty_records": 24,
+    "records_sha256": "9a5079d803c06c5ef3b1746633b5fdaef85e5a3d1ee805ecbddb46b97e453215"
+  },
+  "assets": {
+    "/catalog-products/cat-pktp.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        87
+      ],
+      "sha256": "80bf3ce4b2e8a8d359550361b0d166cdeca25f8bf92a68d0ecbb2bb63f7133b6",
+      "bytes": 28706
+    },
+    "/catalog-products/kso-366.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        23
+      ],
+      "sha256": "16759f806d6e1e8f59cca257ab73b5766530190f1602d588be4dda8bac5e72a4",
+      "bytes": 7794
+    },
+    "/catalog-products/kso-292.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        28
+      ],
+      "sha256": "59fad1c2ae8b9ee4abc7521eaf2df58fea2909bd937a00e0b523752f717d2bb0",
+      "bytes": 28944
+    },
+    "/catalog-products/kso-2-10.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        25
+      ],
+      "sha256": "16aca699d0589a3bd95595f210a87248243ff73ab12639fc9c0d1ab5ab97961e",
+      "bytes": 6812
+    },
+    "/catalog-products/cat-ktp-25-250.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        6
+      ],
+      "sha256": "259763d738d522bce2f23197a2e63da4a3dc7d4e60266fec77097b7f0b8922db",
+      "bytes": 19112
+    },
+    "/catalog-products/cat-ktpn-25-3150.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        8
+      ],
+      "sha256": "e006a9b1b7832d1fe6a0004dc1bdb638e2950ceaa2a9b37dbb330b7f8dc199e0",
+      "bytes": 22486
+    },
+    "/catalog-products/cat-2ktpn-25-3150.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        10
+      ],
+      "sha256": "bc84e20ea898537d04c6f4ae38597e7ad74cd49446c4445a7f8d5391eb24b204",
+      "bytes": 43306
+    },
+    "/catalog-products/cat-ktpg-25-3150.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        12
+      ],
+      "sha256": "ab5a4b61d32bc7a7dc64c58d91eca60413946edf1e175d9a6287043e2b4bd762",
+      "bytes": 12908
+    },
+    "/catalog-products/cat-2ktpg-25-3150.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        13
+      ],
+      "sha256": "4a2de53d23704fc429b0716a78112b72f13f274b067868eea1b2148b913161d5",
+      "bytes": 13942
+    },
+    "/catalog-products/cat-ktpp-2ktpp-250-6300.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        15
+      ],
+      "sha256": "d28718bca781f3e0e9b27eb8138a6197ea17abb6a31631011c9c8842527eef45",
+      "bytes": 22198
+    },
+    "/catalog-products/cat-ktpo-4-10.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        17
+      ],
+      "sha256": "b0b8f862a5aa9e6d4d6f67c04712a2b4c7f1c283db016b81b6628846553fc63e",
+      "bytes": 11436
+    },
+    "/catalog-products/cat-ktpto-80.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        18
+      ],
+      "sha256": "2177151acd184c275e90375c2cfa4564357bb01005a25b25681db2679945c1f6",
+      "bytes": 9342
+    },
+    "/catalog-products/cat-ktps-100-1600.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        19
+      ],
+      "sha256": "6a08630939966a32b3a51ea4c543c2bdef9d4ea5c7188e4760e7c8d7027c7575",
+      "bytes": 26836
+    },
+    "/catalog-products/cat-mtp-25-100.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        21
+      ],
+      "sha256": "a82b49a8b4546ac7515d9c1e7497a54524f62889712b56fa3b0fd0a7cde08f8f",
+      "bytes": 23132
+    },
+    "/catalog-products/cat-mtpo-4-10.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        22
+      ],
+      "sha256": "9860069b6c95a1fcce00af9975cb03950388a2d7709818b7b6e53e55ce9a06f9",
+      "bytes": 13414
+    },
+    "/catalog-products/cat-kso-366m.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        24
+      ],
+      "sha256": "1cbab8ed2cbfb5ead69e72d3b68bb0001f4786fb5444571c7d725dbd0a58b325",
+      "bytes": 11024
+    },
+    "/catalog-products/cat-kso-2-20.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        27
+      ],
+      "sha256": "5b92c194f0fcfb23034d523fdfb99230e86142cb215053760b8769f1542cedbd",
+      "bytes": 43178
+    },
+    "/catalog-products/cat-rmu-ae.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        30
+      ],
+      "sha256": "45d9fca75f6c72607192d39d956ab16b4f79458f3ad090f9718dd9e324ef7b28",
+      "bytes": 66998
+    },
+    "/catalog-products/cat-krn-iv.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        31
+      ],
+      "sha256": "327c83fc6eba446fab2d0cc2be3d4ca4d5db75cb5f48dd88d815082ffc254c1d",
+      "bytes": 10112
+    },
+    "/catalog-products/cat-shcho-70.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        33
+      ],
+      "sha256": "765f78f8fde81640ec509390fe00b4478e164f714511e441d0d238955a711b5b",
+      "bytes": 17556
+    },
+    "/catalog-products/cat-shnn.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        35
+      ],
+      "sha256": "d048016565884b556da50781c25eea7c648faa263a51717d7717e9ce3a5c7738",
+      "bytes": 17148
+    },
+    "/catalog-products/cat-shchsu-04.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        36
+      ],
+      "sha256": "01cd98a71ec29eb5546576c78903f8b13fa3fa3d39ff45cd2a89010e0d39bba1",
+      "bytes": 7020
+    },
+    "/catalog-products/cat-bktp-modular.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        39
+      ],
+      "sha256": "85700d1173635ce253ed8811c7dab9408416ed98ad6bcf18c77c1c5dd54d730b",
+      "bytes": 25094
+    },
+    "/catalog-products/cat-bktp-concrete.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        41
+      ],
+      "sha256": "e3c6e357b5d10b0841e26c91bb06345f125b797719c083e55e0100a009e46a5d",
+      "bytes": 29726
+    },
+    "/catalog-products/cat-kru-k07-ktz.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        43
+      ],
+      "sha256": "d24695368e65eec3f10fa8af667775c8e57bdf066acfc4656322a43d377aa269",
+      "bytes": 14684
+    },
+    "/catalog-products/cat-krun07-ktz.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        43
+      ],
+      "sha256": "cd98d5354299b1d466bf51da85f503e3e970a586c6ff6ffe236f49247b314269",
+      "bytes": 17100
+    },
+    "/catalog-products/cat-kru-kerneu-6-10.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        45
+      ],
+      "sha256": "25836b660d57f61e87e1ed0dd0013d2f8e82600732e0494e5a5ed31b2ed1cb25",
+      "bytes": 28472
+    },
+    "/catalog-products/cat-kru-kerneu-35.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        47
+      ],
+      "sha256": "e9954e0905177849e9a1e546417f5c9211150e17a0f4d683fe32cc6240759e1c",
+      "bytes": 10542
+    },
+    "/catalog-products/cat-k8m.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        49
+      ],
+      "sha256": "5bfb0dbe332132be3816b39ae4f854763652d5a9eaa65240ca5f5f41b4b03753",
+      "bytes": 56084
+    },
+    "/catalog-products/cat-k59.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        51
+      ],
+      "sha256": "97c854f476cb8e60c92182ac49e0b3e1ed3e9a381dbc56adab9974228418c55c",
+      "bytes": 25746
+    },
+    "/catalog-products/cat-km7m.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        53
+      ],
+      "sha256": "0e21f6c5717d3f950a40fa74dee33342a86332e9fea1d540b76f3464d79d2c2d",
+      "bytes": 59486
+    },
+    "/catalog-products/cat-ktpb-k.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        55
+      ],
+      "sha256": "607f86f4c884ca4da6256b62016015af188179b94725c00290f94801f786e63d",
+      "bytes": 67258
+    },
+    "/catalog-products/cat-shuot.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        62
+      ],
+      "sha256": "4379737d37532e522bbc27f602df14cb5a1f3b05042cb68226799cb1e3f80467",
+      "bytes": 31296
+    },
+    "/catalog-products/cat-shtz.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        63
+      ],
+      "sha256": "70a8599d7edbe4aaa77b29d72427216c88291c01e58f6f188cb64b81d553a655",
+      "bytes": 18784
+    },
+    "/catalog-products/cat-pr-shr11.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        64
+      ],
+      "sha256": "d2c1d3d5b6ce0c38020aac35fc38e0259a855ecc8b41ffb9ca766d22f319b860",
+      "bytes": 31406
+    },
+    "/catalog-products/cat-yatp.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        65
+      ],
+      "sha256": "07be171e4a298619416aa5a227ff57b8348c2e065d1e63bf7b00b99984a2ab1f",
+      "bytes": 12014
+    },
+    "/catalog-products/cat-ya5000-rusm5000.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        66
+      ],
+      "sha256": "afcb8e4649884b63806e4b62a01ac252cc097e26f77e4fbac527fe58e4ba92f3",
+      "bytes": 12354
+    },
+    "/catalog-products/cat-ptm-tded.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        69
+      ],
+      "sha256": "8f4b49a972e51f55121c1f052a1017399f5ba73d7e9ac6e7c320444bab97b383",
+      "bytes": 9728
+    },
+    "/catalog-products/cat-bdrm.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        70
+      ],
+      "sha256": "81a3d5c84ebbae208b124c89a9909573ab2b8d7a8688762f7298511c99b6fdd5",
+      "bytes": 13090
+    },
+    "/catalog-products/cat-pusk-3m.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        72
+      ],
+      "sha256": "64f7096275320c764148dcfb337f55cae2448f2b0313dec206801ed95599df02",
+      "bytes": 3630
+    },
+    "/catalog-products/cat-kik.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        74
+      ],
+      "sha256": "975c7c7234537427b3f2f0c5ea042219a72b5192d83726c5081a80be966cc6c2",
+      "bytes": 5966
+    },
+    "/catalog-products/cat-skip.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        74
+      ],
+      "sha256": "c907b78c201c661c0633cd87c9e19e097626bda46c3a939066d4cebe2e438c72",
+      "bytes": 7250
+    },
+    "/catalog-products/cat-ktpzh-2-4.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        75
+      ],
+      "sha256": "cd6fc52dc316ce5148b5093859803bf7cf9e3fb828f647b71ef64fdf6a3e449f",
+      "bytes": 17600
+    },
+    "/catalog-products/cat-ktpzh-25-1000.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        76
+      ],
+      "sha256": "7f1c20d1d57674cb46bbfe8b1c02a103d6f24b488f6932c77cf5495fc7078352",
+      "bytes": 16310
+    },
+    "/catalog-products/cat-mtpzh-1-25-2-5.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        77
+      ],
+      "sha256": "3993a9fbae7f9601960de25b8e799a92219969d959240077068b0e59e875a3e2",
+      "bytes": 14314
+    },
+    "/catalog-products/cat-mtpzh-10.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        78
+      ],
+      "sha256": "4319be70f7d113c30322c1f1ecc1de1177c2ae5c7a1380835badb2aacdc82907",
+      "bytes": 7160
+    },
+    "/catalog-products/cat-atp-2x25.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        81
+      ],
+      "sha256": "97bc7f9295b1a782a9a628bcc0cadc95367959489dfde1309bf04fb2c9cda05c",
+      "bytes": 58172
+    },
+    "/catalog-products/cat-psk-27-5.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        84
+      ],
+      "sha256": "e8e15d4e5a6acf3f7928b12b880ea1b5e720cc35a159b6491b4b83e0124ef00b",
+      "bytes": 82772
+    },
+    "/catalog-products/cat-kru-27-5.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        86
+      ],
+      "sha256": "473ed9cf490e4d15eb220eb0b24df4f974ba2b02d0e985c987fc15790a4b1e26",
+      "bytes": 20568
+    },
+    "/catalog-products/cat-kru-rn.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        89
+      ],
+      "sha256": "7ec14ec423e8a2a99101669f9a8cdbe982a30735881e2aaf4282f1972c8c8753",
+      "bytes": 16906
+    },
+    "/catalog-products/cat-yakno-6-10.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        90
+      ],
+      "sha256": "9efc849a32b8c46339985d33c685687a99d904921051e77518f893f84211b99e",
+      "bytes": 11214
+    },
+    "/catalog-products/cat-yakno-20.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        91
+      ],
+      "sha256": "afbcd1b00e2a6ecfa42f11ee9e3f8f717ad87ad6395f1ff212c71b1738bae12d",
+      "bytes": 41798
+    },
+    "/catalog-products/cat-ktpshg.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        92
+      ],
+      "sha256": "ce907ae6c0567fda7ce7fc21215bc72ab924e0bc950c1cb758358836f330c891",
+      "bytes": 36390
+    },
+    "/catalog-products/cat-ukzv.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        93
+      ],
+      "sha256": "54562310b083ecb9cd8454156311737beaf913d45fc5f7a90fc1a51f464d73dd",
+      "bytes": 13768
+    },
+    "/catalog-products/cat-ukzn.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        93
+      ],
+      "sha256": "fe380a72cfa96093c909d590ea1812d9cfe4e1458cede884017a7e1a99501d40",
+      "bytes": 8208
+    },
+    "/catalog-products/cat-bueskn.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        95
+      ],
+      "sha256": "5c8def56ae1f6470b3bf2386c70e33ec5b6c853b0aa14480608a0ed5f5f1e21c",
+      "bytes": 6390
+    },
+    "/catalog-products/cat-bushk-2m.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        96
+      ],
+      "sha256": "2f80ebee34adbc5d8016e7d8f06d6e5352340e3c1847e91d867e3705ecdb13be",
+      "bytes": 9462
+    },
+    "/catalog-products/cat-ktpnd.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        97
+      ],
+      "sha256": "7e39813e309ff0b164ed6dafb62bded8f78b53218c5e09acba46a22cf1342907",
+      "bytes": 15446
+    },
+    "/catalog-products/cat-modular-oil.webp": {
+      "source_id": "substations",
+      "representation": "crop",
+      "source_pages": [
+        98
+      ],
+      "sha256": "81458ff3cd0710ad0e56e24a1d6b868063c9766a879d120cd6f014dce1468868",
+      "bytes": 18828
+    },
+    "/catalog-source/page-001.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        1
+      ],
+      "sha256": "7abeda6cecbbc2428c2854b4765fa7e4e542f55cc26693b28182ae7efe72d3e3",
+      "bytes": 70416
+    },
+    "/catalog-source/page-002.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        2
+      ],
+      "sha256": "629b61debbca56adea4d822cc291467f06b2e5c207560117de5fedc9ca40f9fa",
+      "bytes": 5068
+    },
+    "/catalog-source/page-003.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        3
+      ],
+      "sha256": "43698b652b8364a51b5cae3a1942ed640e4d38b0bd3d9d927ce4979fa77ec6fe",
+      "bytes": 271730
+    },
+    "/catalog-source/page-004.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        4
+      ],
+      "sha256": "f6f175c637baeec2f4a3632955928938e0ac9c3352d83bc050bda31dc9104dd0",
+      "bytes": 245618
+    },
+    "/catalog-source/page-005.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        5
+      ],
+      "sha256": "eae7175abac717832cb845810665f14489558c52b0f55933d12d05e0784ca9a4",
+      "bytes": 173466
+    },
+    "/catalog-source/page-006.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        6
+      ],
+      "sha256": "6812fa9bd166eeaafb74e1140584e9a8cd49cd43dd3d3f3c745306347a432d7e",
+      "bytes": 217506
+    },
+    "/catalog-source/page-007.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        7
+      ],
+      "sha256": "0a890003f19216fb6f9072466524fbb5ad4abe4d6865fd2b77f2dd0631ef7862",
+      "bytes": 87214
+    },
+    "/catalog-source/page-008.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        8
+      ],
+      "sha256": "08fd0944d910e5af4939f21fda47b2adfbfa53c2fa4597a86c8e0403572664bb",
+      "bytes": 109222
+    },
+    "/catalog-source/page-009.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        9
+      ],
+      "sha256": "60185bd5cf4077294ddf7cb5072e0357158cb534ebaa4bee2773f2b554cb748a",
+      "bytes": 68766
+    },
+    "/catalog-source/page-010.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        10
+      ],
+      "sha256": "b22d2d611e1facde81e9e5c77540a99fd1809039ffa517029783a8539e5c2c27",
+      "bytes": 112142
+    },
+    "/catalog-source/page-011.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        11
+      ],
+      "sha256": "0dc196ddbf3716088622d3c78aaab21a8ce01bf451624061c444d65e85298871",
+      "bytes": 118864
+    },
+    "/catalog-source/page-012.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        12
+      ],
+      "sha256": "3bb48916eca68dc9f19fd3298cde508b2f5dbe197d2efa17c1de7a4aceff4b23",
+      "bytes": 111538
+    },
+    "/catalog-source/page-013.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        13
+      ],
+      "sha256": "9bbe4f2b5cad9faefc05d8cb6ebc2b1fb6fb20b3726041bd95577ab24684c259",
+      "bytes": 81148
+    },
+    "/catalog-source/page-014.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        14
+      ],
+      "sha256": "40c9b96edcc30b60abf8c6d363a7478945566ed2ed5e2ab0f9d6f805f20ccca1",
+      "bytes": 126556
+    },
+    "/catalog-source/page-015.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        15
+      ],
+      "sha256": "e47a89eedd4d567599b19d43c6e2f46d68dc68d1ac629ddb3e01c09dac26fabf",
+      "bytes": 98258
+    },
+    "/catalog-source/page-016.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        16
+      ],
+      "sha256": "94da033fb8a07cae171eef4097322c279a0d352090b9a9b8d2f841ff13466454",
+      "bytes": 138804
+    },
+    "/catalog-source/page-017.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        17
+      ],
+      "sha256": "446edf186dd4fd37a906f5532eeecadefee6b929bcae53137cdd799ba77aacb0",
+      "bytes": 118926
+    },
+    "/catalog-source/page-018.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        18
+      ],
+      "sha256": "eee170dcae43ace327bb2d8187f6145843997d1380cb390227fb44eb2846b3d0",
+      "bytes": 159268
+    },
+    "/catalog-source/page-019.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        19
+      ],
+      "sha256": "d7b74d4a3aae882549e5b7e573c67572c64015d905f017fc49ae1e7a93a9edd6",
+      "bytes": 110764
+    },
+    "/catalog-source/page-020.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        20
+      ],
+      "sha256": "ffef0a8eee309c7bd7df4627b8b90085f4e36098ee91cc110a2292e93169947a",
+      "bytes": 86498
+    },
+    "/catalog-source/page-021.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        21
+      ],
+      "sha256": "26b420b73ad7ee728a3118443a7b9b7d1dd92d9384af652dc6a7d7f52d32c325",
+      "bytes": 148414
+    },
+    "/catalog-source/page-022.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        22
+      ],
+      "sha256": "7e5ff22b0eaef83091f80eda8b8aa6957c75afe76694062ecf19240d989bb53c",
+      "bytes": 157446
+    },
+    "/catalog-source/page-023.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        23
+      ],
+      "sha256": "9ee7ebc1ac2908b0800cebc64beb1344d7d0efebc4ab2a8ec23581bc35fc3af1",
+      "bytes": 204360
+    },
+    "/catalog-source/page-024.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        24
+      ],
+      "sha256": "806412c71c8dc635f8bc4cdb1804126eee9be2317a40710806b6237e69282bb5",
+      "bytes": 208878
+    },
+    "/catalog-source/page-025.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        25
+      ],
+      "sha256": "ead0710e352b4934575dd3bbe869c8b617ec923690191eff57f3b38fe7d6b120",
+      "bytes": 276744
+    },
+    "/catalog-source/page-026.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        26
+      ],
+      "sha256": "c372fde28437403825c275a673003710857f1fdcaed60e19eb4dd656230a3826",
+      "bytes": 207094
+    },
+    "/catalog-source/page-027.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        27
+      ],
+      "sha256": "ee6868570f7e739b206f71c0ec017adc8dcb659a2a6c55ca0b693f2d6fcb0356",
+      "bytes": 72630
+    },
+    "/catalog-source/page-028.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        28
+      ],
+      "sha256": "0e1ed2f6d9b2cbf1a14eb2ece78b9a91bd46bbf4b0ecc03cb885e1041b27dd1b",
+      "bytes": 182456
+    },
+    "/catalog-source/page-029.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        29
+      ],
+      "sha256": "f70140d83f72ac98a406f6a2da63029b35e3b4e55a0014f9b83fc643f2b5bb57",
+      "bytes": 168808
+    },
+    "/catalog-source/page-030.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        30
+      ],
+      "sha256": "8d51d9677bdbe075f76b71730a50f8da63960cc1e49ed80c21a59205f3a74a4e",
+      "bytes": 113206
+    },
+    "/catalog-source/page-031.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        31
+      ],
+      "sha256": "82c8ead4479c65b2a2873869357ed7d4f766163a7a19c2f48c9c9c89cf389a7a",
+      "bytes": 82326
+    },
+    "/catalog-source/page-032.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        32
+      ],
+      "sha256": "dd4c9bcce18606687e99d6f506e853854a4e6982c0448df50c7ca7729e215c8c",
+      "bytes": 232450
+    },
+    "/catalog-source/page-033.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        33
+      ],
+      "sha256": "84c285bf61be79afc7f1921b76797df27202c1c30395de1aa1baf43ce9cf84f1",
+      "bytes": 158656
+    },
+    "/catalog-source/page-034.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        34
+      ],
+      "sha256": "5bcd1acfbbdcc60dcbd1b25d877a241657255555c8f737ed69458bee3fc2609f",
+      "bytes": 223898
+    },
+    "/catalog-source/page-035.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        35
+      ],
+      "sha256": "34bc880a1d1d8d18fd7d349e59fd3dff51010898ddd53ca84de1a48ff414ff41",
+      "bytes": 113378
+    },
+    "/catalog-source/page-036.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        36
+      ],
+      "sha256": "391f062148f429c35ab1e53d5e0bd8b9e3501bd54547b6a361b415f378114a36",
+      "bytes": 78834
+    },
+    "/catalog-source/page-037.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        37
+      ],
+      "sha256": "023a1c7a7638f078c3f6f83cdeca16dbcdadb14b00fb90c0b8ebca79189da5c8",
+      "bytes": 334256
+    },
+    "/catalog-source/page-038.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        38
+      ],
+      "sha256": "84320b1a80967687e76cf52f8d1b2d1090fb721765f3a831591a71f58d88eb35",
+      "bytes": 114324
+    },
+    "/catalog-source/page-039.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        39
+      ],
+      "sha256": "7af0f0b02677afe871c8b67f7752db8430410e321581c8998c2cb34f88b1e0d3",
+      "bytes": 67912
+    },
+    "/catalog-source/page-040.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        40
+      ],
+      "sha256": "49c7447ef5376e7f0583793481e0b06a4fcf886a7b78183562738ab1cffbc877",
+      "bytes": 153022
+    },
+    "/catalog-source/page-041.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        41
+      ],
+      "sha256": "e765dfc3acb402e35fde00b9d2d80a1c6265afbda60620c03a2c476e6ca9b855",
+      "bytes": 68680
+    },
+    "/catalog-source/page-042.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        42
+      ],
+      "sha256": "87594b73642be3bb23716853eea79e9f887d29748e20ee231d7615120224fdb9",
+      "bytes": 273250
+    },
+    "/catalog-source/page-043.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        43
+      ],
+      "sha256": "c8be97ef4ac3ed72fb619bd54d5aece2185ff0320ab6ee123fa9bb462e5903f5",
+      "bytes": 59888
+    },
+    "/catalog-source/page-044.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        44
+      ],
+      "sha256": "2bda43f9253ca0afe327a1fe379d4388fe99ae6a89d0c003858d61b28b6c8c31",
+      "bytes": 304640
+    },
+    "/catalog-source/page-045.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        45
+      ],
+      "sha256": "a24a7e4be82b3ce6ec0d68d2056e8a4f7ad5367dfacd504297d1a296d3e8d2dd",
+      "bytes": 46912
+    },
+    "/catalog-source/page-046.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        46
+      ],
+      "sha256": "713830b809f31103c6e40dce1e9c50c4b46c47ee2f65b1dd42fd3734fc715c5a",
+      "bytes": 320832
+    },
+    "/catalog-source/page-047.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        47
+      ],
+      "sha256": "15e27dc34f0dfb0fb3ae11be8736635e71276c22badb1d70d967042b34785444",
+      "bytes": 53818
+    },
+    "/catalog-source/page-048.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        48
+      ],
+      "sha256": "3532fa14749b7b5c08ed8ffb5b154cd6c3000f3b6325f1b3a8df05b30ac6e5a5",
+      "bytes": 169796
+    },
+    "/catalog-source/page-049.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        49
+      ],
+      "sha256": "2d0678eeb81d3b9ccab7a3acde764aa4c64909d84dc6854603ff3e58ce296365",
+      "bytes": 68342
+    },
+    "/catalog-source/page-050.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        50
+      ],
+      "sha256": "c0c7be6d4881cbd1f382cd208a391200268cebf4163fcfab0776ecf9a54d1e29",
+      "bytes": 199716
+    },
+    "/catalog-source/page-051.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        51
+      ],
+      "sha256": "b36ec6d323583a9c473cfe6989e9c0883c199f50ca709cc356cc73f50c613bf4",
+      "bytes": 72382
+    },
+    "/catalog-source/page-052.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        52
+      ],
+      "sha256": "c2b279ee096d1cd9988153e02f204a50644a276cd12af1731250d50fcf3c352d",
+      "bytes": 167142
+    },
+    "/catalog-source/page-053.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        53
+      ],
+      "sha256": "6b33a4b7df41855f93b5e7a432d75850ae6221b9639c3d6ad8577daf8d03d122",
+      "bytes": 91184
+    },
+    "/catalog-source/page-054.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        54
+      ],
+      "sha256": "0dff7b60c905d7def0833d8cd3888d0372ac44a03a693baca97b70a48340e012",
+      "bytes": 288238
+    },
+    "/catalog-source/page-055.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        55
+      ],
+      "sha256": "a871865df7f4a10b3642994f4c29506a44a32ee78c86116fa0880bc627c430d4",
+      "bytes": 122172
+    },
+    "/catalog-source/page-056.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        56
+      ],
+      "sha256": "4e6ea1db177c66bc84a8dc0031cfcee685fef53df029e28ec132cf1b681e0721",
+      "bytes": 114140
+    },
+    "/catalog-source/page-057.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        57
+      ],
+      "sha256": "3ee8d48ba4ac073b3a7c25dc8760f9d83e3b06717c022f3b8e4001597dd7df12",
+      "bytes": 84898
+    },
+    "/catalog-source/page-058.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        58
+      ],
+      "sha256": "b9f532d52f43d583a9fd3b04bb0a790c99242a9b00934b764c965ce025607402",
+      "bytes": 74404
+    },
+    "/catalog-source/page-059.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        59
+      ],
+      "sha256": "1111ccc4e1bc40fe01807d04bc3823c171ab3d7dc8dd187c1c2d1e668f1025be",
+      "bytes": 86570
+    },
+    "/catalog-source/page-060.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        60
+      ],
+      "sha256": "1768124b14f2c500594d13561f87049c3269aecc620ce005ec952520efbeace6",
+      "bytes": 139836
+    },
+    "/catalog-source/page-061.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        61
+      ],
+      "sha256": "b2ca13a3d715313d51644f25af6e9017da02eca689538dde4fddff40ee30baa4",
+      "bytes": 95176
+    },
+    "/catalog-source/page-062.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        62
+      ],
+      "sha256": "16c1a4851e99368a2f03ac43b5de40a0e52f850d9a0cf5b794da3556bbd9c589",
+      "bytes": 174702
+    },
+    "/catalog-source/page-063.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        63
+      ],
+      "sha256": "c3a8edce2eecb531812b8994804e0f85e90b77d6e4f7f00ad8b635f7f75394e8",
+      "bytes": 103494
+    },
+    "/catalog-source/page-064.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        64
+      ],
+      "sha256": "2a153ebf804b1c2547b77dc9316e3dc6cae570eddce56613ee4f7aaba459b5c7",
+      "bytes": 158352
+    },
+    "/catalog-source/page-065.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        65
+      ],
+      "sha256": "6d357dae7a1fe6efc910f8451d3f63e18bff8f2e3b8c11365a9ec18d30f3e4d3",
+      "bytes": 199814
+    },
+    "/catalog-source/page-066.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        66
+      ],
+      "sha256": "08532bfacc79697e9fae123101be938f582e0c65361db9080cd2d1f8147a56cb",
+      "bytes": 155230
+    },
+    "/catalog-source/page-067.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        67
+      ],
+      "sha256": "4b8aed0d1b12296c2a7008298fc8ecc9b5d8b66962bf15910fc010a565dc57db",
+      "bytes": 231286
+    },
+    "/catalog-source/page-068.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        68
+      ],
+      "sha256": "68538d5278821dcc15fe6064621c8271c0397e1c0fc18a60dfcfa885093a9c77",
+      "bytes": 181012
+    },
+    "/catalog-source/page-069.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        69
+      ],
+      "sha256": "4f0833448f3519f9519a2e09fa62b4c28016665b4cd8e95c7341b17042ff5885",
+      "bytes": 90574
+    },
+    "/catalog-source/page-070.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        70
+      ],
+      "sha256": "cd08a6d2854a516e7572da5817dfe19223ae9ea08b9078161dbecdfc8347e231",
+      "bytes": 188818
+    },
+    "/catalog-source/page-071.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        71
+      ],
+      "sha256": "98659d60906088ad7105b2eec6c2809bddd13c1516cf50093638f25e25051c5e",
+      "bytes": 174670
+    },
+    "/catalog-source/page-072.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        72
+      ],
+      "sha256": "b2a4a0b99922a5aaa1e5d4950a05b9780455876513c05bada127cc1333225f45",
+      "bytes": 256506
+    },
+    "/catalog-source/page-073.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        73
+      ],
+      "sha256": "0bbf6050cd87d61cfff91b1ec2cab83c4a3df0e898d7fa0e922a8a30d456bab9",
+      "bytes": 132132
+    },
+    "/catalog-source/page-074.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        74
+      ],
+      "sha256": "92ef05fdac991680453612453edd7dfd112d165556e893f50ab1514bfd7d2591",
+      "bytes": 196088
+    },
+    "/catalog-source/page-075.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        75
+      ],
+      "sha256": "e41dc26f6db68d5ac9f81b1c66bbdad8413cba50c4c10142c85f56f84d46e4d8",
+      "bytes": 147408
+    },
+    "/catalog-source/page-076.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        76
+      ],
+      "sha256": "1aa59987bd2e776d4b4662829cf9744f0718fdb73501995b478b90995bc0fbd8",
+      "bytes": 210102
+    },
+    "/catalog-source/page-077.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        77
+      ],
+      "sha256": "cff6f8d1aa372e8c89d81ffdb9c231d87d819897a8bb8b34fac12e58c7c4b823",
+      "bytes": 131996
+    },
+    "/catalog-source/page-078.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        78
+      ],
+      "sha256": "e5b6ec9cdc3252531fbd126875aefe3da5fd50896951ca6cb0418ced664a51cc",
+      "bytes": 122016
+    },
+    "/catalog-source/page-079.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        79
+      ],
+      "sha256": "dbce6426ed6c773c8cfe23a35532020de309aaf4e17c8ce8746cc053158b8148",
+      "bytes": 144006
+    },
+    "/catalog-source/page-080.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        80
+      ],
+      "sha256": "60fa3936a89db36e9cf0e93dd7ebe28a002a77bc8d46304533e0cc4266cc73de",
+      "bytes": 70688
+    },
+    "/catalog-source/page-081.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        81
+      ],
+      "sha256": "ffe0dc726977b50788574f22a70c52105d5a713558807227eff1ea80c4f7b3a0",
+      "bytes": 108344
+    },
+    "/catalog-source/page-082.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        82
+      ],
+      "sha256": "e34097590974713dea0475c04d668ada0daeec8cab312e834e23433e9dd906f0",
+      "bytes": 149188
+    },
+    "/catalog-source/page-083.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        83
+      ],
+      "sha256": "ef2610d0b9a63331de974c2f94fe14404710f9702fbffed88044a63c1be03d5b",
+      "bytes": 83032
+    },
+    "/catalog-source/page-084.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        84
+      ],
+      "sha256": "426894846f092683bf2fe7d4f94fc985a9423eb0c102b0c347d1b0961cb5aaa3",
+      "bytes": 164520
+    },
+    "/catalog-source/page-085.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        85
+      ],
+      "sha256": "8eb03b5300ae3bd229d7383f4323d093e46831b25cf9b938c264718474dc2c64",
+      "bytes": 200088
+    },
+    "/catalog-source/page-086.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        86
+      ],
+      "sha256": "3d9f4c0a0bb465a90e550ed76697d733800ba3f31a10aecaf080b4b12804e879",
+      "bytes": 115480
+    },
+    "/catalog-source/page-087.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        87
+      ],
+      "sha256": "4c45cc99fcfb46885707480cb441aaeb6b2157210bf86b7f51a51cb3e35f50ed",
+      "bytes": 163188
+    },
+    "/catalog-source/page-088.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        88
+      ],
+      "sha256": "1a64d40bd4279f976ca650a0e73e2b7de0d52a3aef2c8fc688227cbe19a96be0",
+      "bytes": 71892
+    },
+    "/catalog-source/page-089.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        89
+      ],
+      "sha256": "310618a1f242bf4bc9370af617768cc93dcce866fc8230e96625d2f94cf2a3b7",
+      "bytes": 215032
+    },
+    "/catalog-source/page-090.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        90
+      ],
+      "sha256": "646ba84af10f0089f5be9debb33334647db2e2cbb92745d16d10a3109d689eae",
+      "bytes": 174836
+    },
+    "/catalog-source/page-091.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        91
+      ],
+      "sha256": "3d76d0a83295700855668a2c1d44c842ddd381eae0980b0a32ab424f150e15b9",
+      "bytes": 165846
+    },
+    "/catalog-source/page-092.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        92
+      ],
+      "sha256": "6e5e7152c862546387957f0d78e9f7754ab9d2530c9ef53aa23d5e22865228b6",
+      "bytes": 143952
+    },
+    "/catalog-source/page-093.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        93
+      ],
+      "sha256": "284ef1ffb6e532435cea7d58bb9c756883592b67dd3f8abeaeb7e2dcf777480b",
+      "bytes": 154670
+    },
+    "/catalog-source/page-094.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        94
+      ],
+      "sha256": "3a75f997bca8b657342da36a047a21fa1bbaa251e763d4c287ff3da1ff829d99",
+      "bytes": 58402
+    },
+    "/catalog-source/page-095.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        95
+      ],
+      "sha256": "6082b063c3a96eb49ad804b894db988546e2a08843627f4e74e544b49b1af844",
+      "bytes": 240452
+    },
+    "/catalog-source/page-096.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        96
+      ],
+      "sha256": "19a149c01e3b082e8525eb2919bad8252164735b06d9df3177e369ab16568203",
+      "bytes": 260444
+    },
+    "/catalog-source/page-097.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        97
+      ],
+      "sha256": "320ca4e1e01cf0afaac3c41869b5a4c37b1f4e0550ff3dbef5862fe9e0e47813",
+      "bytes": 184114
+    },
+    "/catalog-source/page-098.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        98
+      ],
+      "sha256": "661b32eb3f5e30e583e922292cc728fbe4db7a81d1a2bb09cbeb0f96b3d24fed",
+      "bytes": 192988
+    },
+    "/catalog-source/page-099.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        99
+      ],
+      "sha256": "7ca85671a70be91f8b8301e44af01cf2e04540031f7052a343afcc597aa58b6e",
+      "bytes": 221456
+    },
+    "/catalog-source/page-100.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        100
+      ],
+      "sha256": "1fed85726bfb653b91cda059fd34226046a22abee43b491cf198e6f79cd69d4c",
+      "bytes": 177240
+    },
+    "/catalog-source/page-101.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        101
+      ],
+      "sha256": "80e039bcd6ed8c7d196304fcb41fe420d0a662b79344bbe0b9b3c77b69c11960",
+      "bytes": 14166
+    },
+    "/catalog-source/page-102.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        102
+      ],
+      "sha256": "b1ba5cad1949ebd475ccf40fbfa09a95d7823adc6a10ec54fb2079bd168b50a8",
+      "bytes": 14406
+    },
+    "/catalog-source/page-103.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        103
+      ],
+      "sha256": "629b61debbca56adea4d822cc291467f06b2e5c207560117de5fedc9ca40f9fa",
+      "bytes": 5068
+    },
+    "/catalog-source/page-104.webp": {
+      "source_id": "substations",
+      "representation": "source-scan",
+      "source_pages": [
+        104
+      ],
+      "sha256": "f06a4efda77cbf1704b3d719d1d31027028227dc9039b29aded8f6b452e201de",
+      "bytes": 21258
+    },
+    "/catalog-source/transformers-2026/page-001.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        1
+      ],
+      "sha256": "f45cbea9ba3f3471d995b177768d31def99818e1609326abe881900709f2393b",
+      "bytes": 383062
+    },
+    "/catalog-source/transformers-2026/page-002.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        2
+      ],
+      "sha256": "4a35c287a1eb13e448685a9ccc8ecc434aaeb885550693d0142cb39ddce35086",
+      "bytes": 188506
+    },
+    "/catalog-source/transformers-2026/page-003.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        3
+      ],
+      "sha256": "9533944e23ac6df15b7e62eefda8852474bc387373a63e083a0a3237c5cf5d8c",
+      "bytes": 217020
+    },
+    "/catalog-source/transformers-2026/page-004.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        4
+      ],
+      "sha256": "680652a645312435c454419a413339f99b6101f0c1d753c3d3d3dbe1a383c609",
+      "bytes": 42602
+    },
+    "/catalog-source/transformers-2026/page-005.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        5
+      ],
+      "sha256": "1e0fa5df5c98188c25d2f9c4f711c8f70ebe4593e46d65445f8553c9ecb1501e",
+      "bytes": 173438
+    },
+    "/catalog-source/transformers-2026/page-006.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        6
+      ],
+      "sha256": "92524d8a7e6507119e04c4777b53dc39b1cb42eca50aeb903715b509ab52cb82",
+      "bytes": 163460
+    },
+    "/catalog-source/transformers-2026/page-007.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        7
+      ],
+      "sha256": "9f1e9a5c87bc97ae001293b084c2eefe73970a1ffb6aa9433fcf67ccbbad0739",
+      "bytes": 75892
+    },
+    "/catalog-source/transformers-2026/page-008.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        8
+      ],
+      "sha256": "c0d86fa6beff9d683b41ecbbaa01d08bdf1c4e7f57ef90d3537a5c1b7e2bf5a7",
+      "bytes": 135958
+    },
+    "/catalog-source/transformers-2026/page-009.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        9
+      ],
+      "sha256": "30b939f34253febf5f347e5fdeb5986ec9834f1fd1d79f152f621cbb503479e2",
+      "bytes": 48264
+    },
+    "/catalog-source/transformers-2026/page-010.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        10
+      ],
+      "sha256": "3db90047fd29e19195b72c4d6e586b1663b05cd4a8c5799a46906d8a1893f93a",
+      "bytes": 102418
+    },
+    "/catalog-source/transformers-2026/page-011.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        11
+      ],
+      "sha256": "9d62b9b1b8886c07eea00e104fb017c4f76d47e69759cde1ea4484ce92905783",
+      "bytes": 44730
+    },
+    "/catalog-source/transformers-2026/page-012.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        12
+      ],
+      "sha256": "4012efb16d72716f53960c075ad98ed3796e3c8c1d8487b1bb1781e782455b77",
+      "bytes": 111854
+    },
+    "/catalog-source/transformers-2026/page-013.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        13
+      ],
+      "sha256": "ead1a8bf62eb02c0612691a90e783554425fde0cb122391fa5e37118a60f9955",
+      "bytes": 109592
+    },
+    "/catalog-source/transformers-2026/page-014.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        14
+      ],
+      "sha256": "e9edb621e5bdf7655b29a6c5b05c3d60b6b65b65856e53e4205080055a4d8280",
+      "bytes": 139466
+    },
+    "/catalog-source/transformers-2026/page-015.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        15
+      ],
+      "sha256": "1578908c27897c749b9cb2e042010ec805880ba019b5321f883fee41122bb0c0",
+      "bytes": 66644
+    },
+    "/catalog-source/transformers-2026/page-016.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        16
+      ],
+      "sha256": "5162eb949a0d5f0fba97c51aa29447eccbdc801ca1830ce30105c1fb4d8d2e21",
+      "bytes": 115732
+    },
+    "/catalog-source/transformers-2026/page-017.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        17
+      ],
+      "sha256": "c000f943f5b1bc98a600fc17b8bae08282ab4ae891bc76edb2053d353688f95c",
+      "bytes": 122390
+    },
+    "/catalog-source/transformers-2026/page-018.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        18
+      ],
+      "sha256": "826cee139480b9fa5cf939eaf1b76698ce78786ce78326fed4a25808d4ae4a1a",
+      "bytes": 148016
+    },
+    "/catalog-source/transformers-2026/page-019.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        19
+      ],
+      "sha256": "1411c4f310a9e75e057f2280c45f0dc38a64b9dc85672572433762c5e391522f",
+      "bytes": 46582
+    },
+    "/catalog-source/transformers-2026/page-020.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        20
+      ],
+      "sha256": "c4cb30b28bbd02696554b0844468b504cd7b2d7ad42496dd1c1cf3d210b81a02",
+      "bytes": 146188
+    },
+    "/catalog-source/transformers-2026/page-021.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        21
+      ],
+      "sha256": "c67ba61fda0e49e29ccb3908ffce13b4817d876723dfb4a4d484a19797dd4ef7",
+      "bytes": 56820
+    },
+    "/catalog-source/transformers-2026/page-022.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        22
+      ],
+      "sha256": "196a199a063a5bd3968c4f752a0cc203a6633c8bbc3419b8fdcc4a33ecf1320d",
+      "bytes": 111340
+    },
+    "/catalog-source/transformers-2026/page-023.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        23
+      ],
+      "sha256": "0d0db02bc677fff4edce40b45c25c07e6da00b4376c4afc59485c9694f196184",
+      "bytes": 112438
+    },
+    "/catalog-source/transformers-2026/page-024.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        24
+      ],
+      "sha256": "f07ae55f699ea55614f6eac21ba71da6a31b42f151b1b76945968ad438352aed",
+      "bytes": 130080
+    },
+    "/catalog-source/transformers-2026/page-025.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        25
+      ],
+      "sha256": "491fdcaec8447507863405995a951f1607c8d9f96fdab4ed2cfc86b36b401c70",
+      "bytes": 46730
+    },
+    "/catalog-source/transformers-2026/page-026.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        26
+      ],
+      "sha256": "af8d831b27039ee49460fbb4f37bd3c43f71fd16cfabadb5d8bba8c4fc8f9843",
+      "bytes": 131416
+    },
+    "/catalog-source/transformers-2026/page-027.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        27
+      ],
+      "sha256": "2da4f9ad2b1826615ee002ea1b2092d6f11be48cee481467b99189d12d7ab71b",
+      "bytes": 46570
+    },
+    "/catalog-source/transformers-2026/page-028.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        28
+      ],
+      "sha256": "d883f94283ebe8027f7f6a1ebbaaeb41e7035b00a4e2eacc6c17addcabf35961",
+      "bytes": 130770
+    },
+    "/catalog-source/transformers-2026/page-029.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        29
+      ],
+      "sha256": "8cd8ec019872d60df2636200672d96d254e14afa8c244f7224982ed5e0a834f8",
+      "bytes": 46068
+    },
+    "/catalog-source/transformers-2026/page-030.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        30
+      ],
+      "sha256": "270769453d833dfc8eb67007df09d31e1b5ef0b2f8ad5a9df012b158f6fd654d",
+      "bytes": 109974
+    },
+    "/catalog-source/transformers-2026/page-031.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        31
+      ],
+      "sha256": "15c8eaf316397be33895e0c53989155a7116448d52919176d46cc5b2f18137d1",
+      "bytes": 114450
+    },
+    "/catalog-source/transformers-2026/page-032.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        32
+      ],
+      "sha256": "5ec20876b2511f18bea11e3fb93fdbeac4a4104f20c98733b92cc90c57a2759e",
+      "bytes": 119268
+    },
+    "/catalog-source/transformers-2026/page-033.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        33
+      ],
+      "sha256": "6ce7fd76a5e6ac2275cf2df61861133174de9f767f09aee3e437cb74f5014a43",
+      "bytes": 99516
+    },
+    "/catalog-source/transformers-2026/page-034.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        34
+      ],
+      "sha256": "4d43641141de888a66ff2f90062b57657d9ad0af68bb676e49ab4cd2f10a3453",
+      "bytes": 125290
+    },
+    "/catalog-source/transformers-2026/page-035.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        35
+      ],
+      "sha256": "833d0e83dce10c6cd5668e5184d895654a5dfac338a9ae896cd13ff3590213de",
+      "bytes": 111774
+    },
+    "/catalog-source/transformers-2026/page-036.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        36
+      ],
+      "sha256": "864946a79136886e26cd9ddf53f9da0aa23b64470d9ddabb52987c5af49b9338",
+      "bytes": 126722
+    },
+    "/catalog-source/transformers-2026/page-037.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        37
+      ],
+      "sha256": "9c9087c2fe67efa63c7b3bb617c9fa2e17118e8e30fb93baa29e3d79d5bf27fd",
+      "bytes": 115148
+    },
+    "/catalog-source/transformers-2026/page-038.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        38
+      ],
+      "sha256": "b37e626da481661f8fe231ed4ee97f03bc098c1ef2349676b53128ab8e25bf02",
+      "bytes": 90408
+    },
+    "/catalog-source/transformers-2026/page-039.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        39
+      ],
+      "sha256": "3e3a770f9313a9700aa0237688a62d420c9ddad897c40bf5cc5efadec13298c6",
+      "bytes": 111740
+    },
+    "/catalog-source/transformers-2026/page-040.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        40
+      ],
+      "sha256": "4afd58a783a727ee986d0297b4210d2a4589fd0bf8f037574b3e878af7d2b94e",
+      "bytes": 151828
+    },
+    "/catalog-source/transformers-2026/page-041.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        41
+      ],
+      "sha256": "d866589a249a70938337f5b20f0aeb9773f147d903ad431603efa971bb8a6739",
+      "bytes": 65664
+    },
+    "/catalog-source/transformers-2026/page-042.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        42
+      ],
+      "sha256": "c88905d6c6db278efb81cd89c573db3bf08ace15b4654631d53ddfe5564b045a",
+      "bytes": 116628
+    },
+    "/catalog-source/transformers-2026/page-043.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        43
+      ],
+      "sha256": "5c1229ae24db96a3f09a1b2c685faa086e296f6c73c9a75e9cf0e13bfcb4948e",
+      "bytes": 112446
+    },
+    "/catalog-source/transformers-2026/page-044.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        44
+      ],
+      "sha256": "c30590b3a49e02be71cc3583ee3101d5cfbc5bdab8c7b2281cf90ba4e4973723",
+      "bytes": 155230
+    },
+    "/catalog-source/transformers-2026/page-045.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        45
+      ],
+      "sha256": "df7cde6ecb20c67318703bd9dc51821ead68e23fca1ea72d574d01b3cdffa957",
+      "bytes": 65294
+    },
+    "/catalog-source/transformers-2026/page-046.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        46
+      ],
+      "sha256": "e2b822816bc79dc8c016acb5103629f0d05039f496906aea32c23724b46f9c47",
+      "bytes": 128716
+    },
+    "/catalog-source/transformers-2026/page-047.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        47
+      ],
+      "sha256": "0fd957cbda45d99b589e82bbe0c7f87e162b325f3ff82b71ef82fdbc4c045d1a",
+      "bytes": 120632
+    },
+    "/catalog-source/transformers-2026/page-048.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        48
+      ],
+      "sha256": "3352a8cdbde4ffc743e8a89d4ec3ba3a82c436bc01c9ce733015aa280750852b",
+      "bytes": 102634
+    },
+    "/catalog-source/transformers-2026/page-049.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        49
+      ],
+      "sha256": "28ae8db73b15eccfa4769265f369e1ec94d7b596ad2e970c88ead534c5034a72",
+      "bytes": 112520
+    },
+    "/catalog-source/transformers-2026/page-050.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        50
+      ],
+      "sha256": "4a9c52bead75bd9e65057e54a22f55cbf78f60895683342254f9abd64f4f5612",
+      "bytes": 139976
+    },
+    "/catalog-source/transformers-2026/page-051.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        51
+      ],
+      "sha256": "bb788666b5ac6949b934af540009454836e219f75701d1a800c5131e4aa7acf9",
+      "bytes": 126852
+    },
+    "/catalog-source/transformers-2026/page-052.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        52
+      ],
+      "sha256": "d37a7089cdb64a9a311a2920db4cf70db16ba2de68a0562784f673c8f849581f",
+      "bytes": 115238
+    },
+    "/catalog-source/transformers-2026/page-053.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        53
+      ],
+      "sha256": "aa5aa46e3a5ff49d262b72ee21f15a3af3e9e349dbfd9b023deb4a53ef1ab460",
+      "bytes": 124442
+    },
+    "/catalog-source/transformers-2026/page-054.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        54
+      ],
+      "sha256": "fb100f0f0e3b2b34f3c85f076bd4648058f79f05f24f0bc2c6cf62a3e2eb2908",
+      "bytes": 103982
+    },
+    "/catalog-source/transformers-2026/page-055.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        55
+      ],
+      "sha256": "6f11f731fb380651353e76eb0dd7c6c5409fec444290e5da649830064cdc7807",
+      "bytes": 47282
+    },
+    "/catalog-source/transformers-2026/page-056.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        56
+      ],
+      "sha256": "5286068ef926ba324034419e09f9146724150572b35fef1d5de77cd2a5dd016f",
+      "bytes": 113514
+    },
+    "/catalog-source/transformers-2026/page-057.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        57
+      ],
+      "sha256": "b2c04829c0cc964739b46dbc4b3a92ce77cfe9540790e232dcd5c695d8992a1e",
+      "bytes": 110276
+    },
+    "/catalog-source/transformers-2026/page-058.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        58
+      ],
+      "sha256": "f1bc6de84c385670265fb7db8ddadd75a53e6bbe79eaa23efc73f0d8998c2aee",
+      "bytes": 111680
+    },
+    "/catalog-source/transformers-2026/page-059.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        59
+      ],
+      "sha256": "bd43e74f9fea780bb05bd0b6762153cd6d210a3ac7ca518c970de06a33bd8b0c",
+      "bytes": 113476
+    },
+    "/catalog-source/transformers-2026/page-060.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        60
+      ],
+      "sha256": "c4632c55e9d4fda61de6afa1bc7bfd4c6c12e15ef57b09f88f1b42166dad66c4",
+      "bytes": 95512
+    },
+    "/catalog-source/transformers-2026/page-061.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        61
+      ],
+      "sha256": "9c8f38452713f06e5a50272c3e212635dc8fb88878c511fd0c3cef7ed4590fac",
+      "bytes": 119728
+    },
+    "/catalog-source/transformers-2026/page-062.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        62
+      ],
+      "sha256": "ab1230f91f84d3c46fce0e0c23f4527e1936f89fc8e59418b6a10570d21a8a95",
+      "bytes": 151876
+    },
+    "/catalog-source/transformers-2026/page-063.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        63
+      ],
+      "sha256": "6cc0a08a570e10545c51ad8b55bab01df54ae2947ac2c5e3c7dc9c4959e1f845",
+      "bytes": 42978
+    },
+    "/catalog-source/transformers-2026/page-064.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        64
+      ],
+      "sha256": "3cfc650bf13721907375c1972899adac28eacd91c184ca2c06d78628b1f8e22a",
+      "bytes": 161352
+    },
+    "/catalog-source/transformers-2026/page-065.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        65
+      ],
+      "sha256": "2038d3024c274bc16dc9270373b634f11b159cb843a594cb7abaa5d5175559a3",
+      "bytes": 76400
+    },
+    "/catalog-source/transformers-2026/page-066.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        66
+      ],
+      "sha256": "fda7d1133f5535acf56e8d5af17fd8531223eedaf03512cb4822b4397aa6c26a",
+      "bytes": 87472
+    },
+    "/catalog-source/transformers-2026/page-067.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        67
+      ],
+      "sha256": "5598561d7b6a3d419877409849127e1ce7a10b3c0d2a12064f09d067fedbc69e",
+      "bytes": 92390
+    },
+    "/catalog-source/transformers-2026/page-068.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        68
+      ],
+      "sha256": "6a35e1edaef755f0cefdf55caf2e13cd529c3be32bed7f6a95882526c12a98b0",
+      "bytes": 79742
+    },
+    "/catalog-source/transformers-2026/page-069.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        69
+      ],
+      "sha256": "ba1f6b66b1c6d40106a4d27b77b9afdd8a2ed16d7be13e601f52a68674969cc1",
+      "bytes": 82960
+    },
+    "/catalog-source/transformers-2026/page-070.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        70
+      ],
+      "sha256": "2367b7957ffdf161b47f198f5765c6498df36cffd719b10a831004cfda1667cc",
+      "bytes": 74922
+    },
+    "/catalog-source/transformers-2026/page-071.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        71
+      ],
+      "sha256": "a97857267eb9e943b17d4efb884fcd280e6efc3d2a2304a4fc2ba9c14b7bd8f5",
+      "bytes": 91366
+    },
+    "/catalog-source/transformers-2026/page-072.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        72
+      ],
+      "sha256": "5edad63ef3fd1db4f27a6df1c1bad8714749a6a3bb965f6e7a2c166f90761315",
+      "bytes": 101196
+    },
+    "/catalog-source/transformers-2026/page-073.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        73
+      ],
+      "sha256": "2653c8bb8968cabccd7a1b240a8c8baae22fadbcb1e09a451e4d6618a0e48a4e",
+      "bytes": 27590
+    },
+    "/catalog-source/transformers-2026/page-074.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        74
+      ],
+      "sha256": "f745366c242fcf110482f8258bfe8247f50bfcb6b68f6b34050ff8d316b688df",
+      "bytes": 78952
+    },
+    "/catalog-source/transformers-2026/page-075.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        75
+      ],
+      "sha256": "27be7461fd864739977445f3640742030aaec4d2e3267a898b5d964f350fe8bd",
+      "bytes": 67266
+    },
+    "/catalog-source/transformers-2026/page-076.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        76
+      ],
+      "sha256": "9de94cd545b94f730af9f838c773d1b733d9c0f033da8ecb885833d257c8dfeb",
+      "bytes": 148326
+    },
+    "/catalog-source/transformers-2026/page-077.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        77
+      ],
+      "sha256": "6fc797584352485c95b69e504e23e422ac3a9302f8ee35143cfe56b9e970b1cf",
+      "bytes": 130770
+    },
+    "/catalog-source/transformers-2026/page-078.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        78
+      ],
+      "sha256": "15d0f08386aae0a94c210a1049f71628a5c0794faa52506da41bf53aa5fd44ad",
+      "bytes": 168424
+    },
+    "/catalog-source/transformers-2026/page-079.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        79
+      ],
+      "sha256": "d140e145d7f5ac083395e493a1890f082f05f0fdf5023529df3192777c778547",
+      "bytes": 102128
+    },
+    "/catalog-source/transformers-2026/page-080.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        80
+      ],
+      "sha256": "5142c148f3295a44eda17477166b99bd27bc89730cdac5cde1362f45b4b909e5",
+      "bytes": 103150
+    },
+    "/catalog-source/transformers-2026/page-081.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        81
+      ],
+      "sha256": "da78a8813f1f2e59b709346c8c33d10a6f8674af2dcf8131909a2fec172d09c6",
+      "bytes": 126506
+    },
+    "/catalog-source/transformers-2026/page-082.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        82
+      ],
+      "sha256": "b0c4c436f09950faf2377aa635e8cfdf13a7660ff40480f56bdefde7359cfe73",
+      "bytes": 109666
+    },
+    "/catalog-source/transformers-2026/page-083.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        83
+      ],
+      "sha256": "9f553afa0f7e2ef2f9a15007774d44e9ec11ee7488de82e70c39649160c2661b",
+      "bytes": 71576
+    },
+    "/catalog-source/transformers-2026/page-084.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        84
+      ],
+      "sha256": "3a3aaecd35b1372e0336966a6ef05be3632ce0f4c478bbbb4293af9f341918bb",
+      "bytes": 108614
+    },
+    "/catalog-source/transformers-2026/page-085.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        85
+      ],
+      "sha256": "330a52d933cf91f7a00769eeee856bcd3f989a26d6906af2d168039486b649c2",
+      "bytes": 188280
+    },
+    "/catalog-source/transformers-2026/page-086.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        86
+      ],
+      "sha256": "3a6aaec041ca7cc67f31470cc2c47f24a27fc6c95a1d0fa4ad2640800dc7d7fc",
+      "bytes": 154626
+    },
+    "/catalog-source/transformers-2026/page-087.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        87
+      ],
+      "sha256": "77b3a6ea0e6dc5864c3aff61ded632e60d3006f51bf5938c9ae059e16b7a1e7a",
+      "bytes": 85120
+    },
+    "/catalog-source/transformers-2026/page-088.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        88
+      ],
+      "sha256": "271313470bb4be9f7b41d6367d4f54baaf1b36184420c19fcd4d4b9de654afc9",
+      "bytes": 94252
+    },
+    "/catalog-source/transformers-2026/page-089.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        89
+      ],
+      "sha256": "42e944c3cd38347955d83a126cbb2cefbbf8f99bbbbd5be0758c5e6c2ed8ccf1",
+      "bytes": 135114
+    },
+    "/catalog-source/transformers-2026/page-090.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        90
+      ],
+      "sha256": "2db5d50780a545e3ef11efba98b2e9811b67001336be903b94842185c40a24db",
+      "bytes": 83588
+    },
+    "/catalog-source/transformers-2026/page-091.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        91
+      ],
+      "sha256": "0fe2279280d776a60f77f6d698d03e1fd0add1b0822fcac728e0a624ee0a1625",
+      "bytes": 94556
+    },
+    "/catalog-source/transformers-2026/page-092.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        92
+      ],
+      "sha256": "ab86b6cf205db3ce2bed41f5fcd21297342ee3fa2ab847a97bdf71f14ce9ef7f",
+      "bytes": 83860
+    },
+    "/catalog-source/transformers-2026/page-093.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        93
+      ],
+      "sha256": "75a7916fe025f2d265db57cc635375746a1ee723dfef3ab7ef21b3a021238918",
+      "bytes": 83664
+    },
+    "/catalog-source/transformers-2026/page-094.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        94
+      ],
+      "sha256": "f64932ab4037de21089f984626d2b35b88ea6f8b052531db4d86d66529d5336d",
+      "bytes": 73656
+    },
+    "/catalog-source/transformers-2026/page-095.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        95
+      ],
+      "sha256": "545ec9396a79fd756711d9cf15d60ec0b4364237c2d8dad0a28425ceb32eb3bd",
+      "bytes": 138890
+    },
+    "/catalog-source/transformers-2026/page-096.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        96
+      ],
+      "sha256": "536da2fbf98a84d623a1c4a6bec4b07105d599866fcc41ce866ee3573fdc7234",
+      "bytes": 146572
+    },
+    "/catalog-source/transformers-2026/page-097.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        97
+      ],
+      "sha256": "85000083bc2259e03750bbcd6808f8c4f70d9db4f9855666379067e28604c45c",
+      "bytes": 130962
+    },
+    "/catalog-source/transformers-2026/page-098.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        98
+      ],
+      "sha256": "435d6900ab0d0c4308886cff63d8961b836bdf70c9a46d4dee51138056f1d346",
+      "bytes": 127618
+    },
+    "/catalog-source/transformers-2026/page-099.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        99
+      ],
+      "sha256": "92c80ddbdcdf228d8c96256ee9d3cc4a7072302899476f9cda964ca7ef76865a",
+      "bytes": 132056
+    },
+    "/catalog-source/transformers-2026/page-100.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        100
+      ],
+      "sha256": "10af5bac68e0c1982c9c83667585d6e66a5b40e935d217c19770ac84a46f4bc1",
+      "bytes": 136864
+    },
+    "/catalog-source/transformers-2026/page-101.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        101
+      ],
+      "sha256": "29a447380383bd278116604c0c4da6ab749222ac17f11e3e18caf50c7a8bcab6",
+      "bytes": 191920
+    },
+    "/catalog-source/transformers-2026/page-102.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        102
+      ],
+      "sha256": "a110df9467440aed10f69317fa1a7349aabdcc7b9a57f5a7df3fe3c27206fc2b",
+      "bytes": 132998
+    },
+    "/catalog-source/transformers-2026/page-103.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        103
+      ],
+      "sha256": "3708b5ff3382c59db4cf3f035f0bcbfe4661ef6d8b105ccaa90b14a879a94e70",
+      "bytes": 120024
+    },
+    "/catalog-source/transformers-2026/page-104.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        104
+      ],
+      "sha256": "2761ddfdfeeb0e4a883ec38f604c4f8cc02ff0c096939fc2900e8f75a1c12e1a",
+      "bytes": 106816
+    },
+    "/catalog-source/transformers-2026/page-105.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        105
+      ],
+      "sha256": "0467ad4d11b03a5fe10954f6536f3ca8311a1169084a5d93b7787472e37e7467",
+      "bytes": 87862
+    },
+    "/catalog-source/transformers-2026/page-106.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        106
+      ],
+      "sha256": "497c7495a6dd93b28acdbc2f15888804bf102c51cd952958e19bb30a52fb003d",
+      "bytes": 47754
+    },
+    "/catalog-source/transformers-2026/page-107.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        107
+      ],
+      "sha256": "1f304db5683f435071d0a5bbf9a1359599d41c9999823f56440e13b3532e850d",
+      "bytes": 112922
+    },
+    "/catalog-source/transformers-2026/page-108.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        108
+      ],
+      "sha256": "ba358e24a2cfc64a2c92bad98c986d019ba19037563a8b05bf858c5ceabd2760",
+      "bytes": 111888
+    },
+    "/catalog-source/transformers-2026/page-109.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        109
+      ],
+      "sha256": "ceb3226fe320e82a3e04e3945314b484eb476e8640b87813724040a88ea73364",
+      "bytes": 151168
+    },
+    "/catalog-source/transformers-2026/page-110.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        110
+      ],
+      "sha256": "af2f4e6cf2d0ad8461878b0de6c56abd812e345b094dfa3b4a58c4dade28f47a",
+      "bytes": 66344
+    },
+    "/catalog-source/transformers-2026/page-111.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        111
+      ],
+      "sha256": "43c17b358bc3d1d8e0eb1f39b9ada1d817ab09a43308b26a62187eec10669273",
+      "bytes": 165876
+    },
+    "/catalog-source/transformers-2026/page-112.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        112
+      ],
+      "sha256": "0b9c5a9f26237245c229b1db9f9e1088549edff9713366154b6d74297004f528",
+      "bytes": 89830
+    },
+    "/catalog-source/transformers-2026/page-113.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        113
+      ],
+      "sha256": "450b14b5595660c512a68d7352702352c9e407b36c82e98491bb91df8c3dcf3a",
+      "bytes": 162214
+    },
+    "/catalog-source/transformers-2026/page-114.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        114
+      ],
+      "sha256": "526bf45cb618c4c6ebfea1b795b2a056da585b3cae5faed6f4dca80e495d69bf",
+      "bytes": 98434
+    },
+    "/catalog-source/transformers-2026/page-115.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        115
+      ],
+      "sha256": "530cce1992d51290c3adebf36847b55868fa564ade1dd4cbbf01a6385a507c1d",
+      "bytes": 92662
+    },
+    "/catalog-source/transformers-2026/page-116.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        116
+      ],
+      "sha256": "af68cc3ccdce0e40db9873b6d3352bc1f637437875e83503382ad324e5d4b822",
+      "bytes": 107668
+    },
+    "/catalog-source/transformers-2026/page-117.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        117
+      ],
+      "sha256": "9fcea69f5e3c7ed2012428be76f1e8a2bb5d5f08a08bc59ae71bb2189559d0aa",
+      "bytes": 130298
+    },
+    "/catalog-source/transformers-2026/page-118.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        118
+      ],
+      "sha256": "76d764d4c9089e607855d826916ca95a9391c2f4b15a3270ad7f6912a76e37f1",
+      "bytes": 74202
+    },
+    "/catalog-source/transformers-2026/page-119.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        119
+      ],
+      "sha256": "0dcfdfcc154cad62d7cd4640448cb120f4a2d83913df17312f138de52c18220b",
+      "bytes": 150026
+    },
+    "/catalog-source/transformers-2026/page-120.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        120
+      ],
+      "sha256": "c9847a8405afe64f3c0a806446098449a8dfa2f56cbce84d5dd223cfc9624a49",
+      "bytes": 97710
+    },
+    "/catalog-source/transformers-2026/page-121.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        121
+      ],
+      "sha256": "d743ae1a8fd33f00e6b33fb576489097cbc51573d8c38079d39b8581db4b7e19",
+      "bytes": 108552
+    },
+    "/catalog-source/transformers-2026/page-122.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        122
+      ],
+      "sha256": "a1e59b1513480056f684f710229b9eeb9fb6ddd2315080afb88abd92849c553f",
+      "bytes": 95986
+    },
+    "/catalog-source/transformers-2026/page-123.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        123
+      ],
+      "sha256": "2cb0e294d082ef2165db7af3aeadb1d9279315cdbbcb12b0f3a4de234f2eaed9",
+      "bytes": 100520
+    },
+    "/catalog-source/transformers-2026/page-124.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        124
+      ],
+      "sha256": "33250ee9ab80c4a6e52cd66811ff4b88cdba0e974bf4c0a8e1b933fa329a584f",
+      "bytes": 135472
+    },
+    "/catalog-source/transformers-2026/page-125.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        125
+      ],
+      "sha256": "6a96fbc7114c61463c360bd7bfcd6a9ea5d43843279c89f2af3a21f711b4869f",
+      "bytes": 105080
+    },
+    "/catalog-source/transformers-2026/page-126.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        126
+      ],
+      "sha256": "feca8f19202dfe63a1bb42a5b5010a1706defcbad214b16ba73d30d4e5e7d437",
+      "bytes": 71356
+    },
+    "/catalog-source/transformers-2026/page-127.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        127
+      ],
+      "sha256": "0e0e928238e9873a19ebed70a7c28387cda9c9a154112084e4ce4c5eaee73b66",
+      "bytes": 75418
+    },
+    "/catalog-source/transformers-2026/page-128.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        128
+      ],
+      "sha256": "9b9e43dcb06da0643a006fb597f6f56c01879e800cb9cff5d297daca4c891fd2",
+      "bytes": 132562
+    },
+    "/catalog-source/transformers-2026/page-129.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        129
+      ],
+      "sha256": "48ebdbb333a5896c75a54119db7f8c864752e0d7b1b480084e81011a3b4fdbb8",
+      "bytes": 91558
+    },
+    "/catalog-source/transformers-2026/page-130.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        130
+      ],
+      "sha256": "2a2cd88862e28180950f3a324c00e44472156b91b2a7b798fded351e2a3c931d",
+      "bytes": 74006
+    },
+    "/catalog-source/transformers-2026/page-131.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        131
+      ],
+      "sha256": "0bea9fa5e8823c49d30e6679bf9a6112193ac29b2818b360b98357f1ed537c07",
+      "bytes": 63198
+    },
+    "/catalog-source/transformers-2026/page-132.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        132
+      ],
+      "sha256": "ec8b4c0f10f019f3f98de6da1b66ac5c5a571b17a347b20e30aae34285d854a2",
+      "bytes": 75356
+    },
+    "/catalog-source/transformers-2026/page-133.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        133
+      ],
+      "sha256": "13e680778f96df8527d1ffa8c0c2c4bde345daa85a365d4751cff2fa96c63077",
+      "bytes": 70230
+    },
+    "/catalog-source/transformers-2026/page-134.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        134
+      ],
+      "sha256": "9e2362db0d84a414c49b6d882ba9d5aa87ab7a3ee470df2a5691201ed76a6915",
+      "bytes": 128984
+    },
+    "/catalog-source/transformers-2026/page-135.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        135
+      ],
+      "sha256": "38ffde1d62c2a9a9652be8cc0ef9c6bf17ae42035a2d5ae9c4e11223a96f721d",
+      "bytes": 90656
+    },
+    "/catalog-source/transformers-2026/page-136.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        136
+      ],
+      "sha256": "5208279480a6ff4266464be0e0fd8ca355705a5affe7f8ca6d7db676422fc8bf",
+      "bytes": 72964
+    },
+    "/catalog-source/transformers-2026/page-137.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        137
+      ],
+      "sha256": "051e91879763f9763c0c89b76b8fb99132014757fc2a6f2110e03e03d8403f4f",
+      "bytes": 67110
+    },
+    "/catalog-source/transformers-2026/page-138.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        138
+      ],
+      "sha256": "eaef89ae538f587d2462d7fb532a1fc064454b3b4577ba5b1b358bc7bd0dabf9",
+      "bytes": 77274
+    },
+    "/catalog-source/transformers-2026/page-139.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        139
+      ],
+      "sha256": "ba668950bbcd5f846a857e1b4a03876c1918c4db0fb2d565dc30e3745ef9b0c7",
+      "bytes": 68808
+    },
+    "/catalog-source/transformers-2026/page-140.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        140
+      ],
+      "sha256": "8e3a0a8b8513b7bf381833fd08b58f56574a0e01dc1fde45d3e86f4013cdc88d",
+      "bytes": 144294
+    },
+    "/catalog-source/transformers-2026/page-141.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        141
+      ],
+      "sha256": "3d47d656b7bb88fb5ea4a2fe2c82a00239499cc0a6a8a09b47c5dad5dd7bc86f",
+      "bytes": 69692
+    },
+    "/catalog-source/transformers-2026/page-142.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        142
+      ],
+      "sha256": "ee137f749b217913616b193f8402decd13f516ae3e9923df856b8528e6020d92",
+      "bytes": 157886
+    },
+    "/catalog-source/transformers-2026/page-143.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        143
+      ],
+      "sha256": "9e51ce8a6ad0894f88481a7ae1d01765d17243ee3ea0875f9bc998c1fa7464c6",
+      "bytes": 74434
+    },
+    "/catalog-source/transformers-2026/page-144.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        144
+      ],
+      "sha256": "d452feb7549828dc94ade3b9885043b960a96321ab715e0e12bd685ce3ba5cbe",
+      "bytes": 123954
+    },
+    "/catalog-source/transformers-2026/page-145.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        145
+      ],
+      "sha256": "cd1c8c8960e7ddda04ec1c513b227978ac3b8c53ee03495deba82306fc52039f",
+      "bytes": 64540
+    },
+    "/catalog-source/transformers-2026/page-146.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        146
+      ],
+      "sha256": "cc22e61c594ec535a01ab2dcd5b428fd87a65db9edae6ddde482bb1322acd54b",
+      "bytes": 91730
+    },
+    "/catalog-source/transformers-2026/page-147.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        147
+      ],
+      "sha256": "457e3126a170605f1dfb2b3a46225c5dd51d9e84ea71a6c4f8d9b59ad7076020",
+      "bytes": 85918
+    },
+    "/catalog-source/transformers-2026/page-148.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        148
+      ],
+      "sha256": "cc67d8fb60db66cf38a73cd1f60d65f3708be7c0f730c7faf934d915acecd2df",
+      "bytes": 78252
+    },
+    "/catalog-source/transformers-2026/page-149.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        149
+      ],
+      "sha256": "e95b96a09f9995fd87a87ece4e6c59831e0a1a3da9c42c8b5b5ecec4ad75da24",
+      "bytes": 138552
+    },
+    "/catalog-source/transformers-2026/page-150.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        150
+      ],
+      "sha256": "bc6f2c3cd9e76b29a3d6caeb4d753c3035a35b1bd1303005d14f7e6cf821a062",
+      "bytes": 98120
+    },
+    "/catalog-source/transformers-2026/page-151.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        151
+      ],
+      "sha256": "5ce4302aeff0864a3f1468c636314bd675287e907ca2f08f63fe9aa323a9004b",
+      "bytes": 157384
+    },
+    "/catalog-source/transformers-2026/page-152.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        152
+      ],
+      "sha256": "3f7d9944ceba326b7a6ae9fb8fdfc98b2f1cabe4c3b13fa7d123c8302e0439d2",
+      "bytes": 96530
+    },
+    "/catalog-source/transformers-2026/page-153.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        153
+      ],
+      "sha256": "be50c486f2c6b98ed02f22420fde747eeaff606996e9f9ec4ea60e1573d7aa06",
+      "bytes": 90262
+    },
+    "/catalog-source/transformers-2026/page-154.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        154
+      ],
+      "sha256": "0c28f82a852d3c93fdda823b12c9f3d47b4458bfe30a7cd8fe449b24eaf9cf2a",
+      "bytes": 146706
+    },
+    "/catalog-source/transformers-2026/page-155.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        155
+      ],
+      "sha256": "c40b3b270109c13423833079e81fd2faf9ce0b41bcdd16f01277e813d0499fc7",
+      "bytes": 97310
+    },
+    "/catalog-source/transformers-2026/page-156.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        156
+      ],
+      "sha256": "351922b3bb062febac30b650c19c566d9cc3edc9a419e47346adaad9a2cf0658",
+      "bytes": 94210
+    },
+    "/catalog-source/transformers-2026/page-157.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        157
+      ],
+      "sha256": "4f6206adfa6c6c6d1d2a42725f88b000440c529811829f058f5aa4e4b88a6fad",
+      "bytes": 120994
+    },
+    "/catalog-source/transformers-2026/page-158.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        158
+      ],
+      "sha256": "b9afce84bb6992c50fd017b69c68f689aa28a237cf080c3e80bbb44e23648b09",
+      "bytes": 79148
+    },
+    "/catalog-source/transformers-2026/page-159.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        159
+      ],
+      "sha256": "edcc86e9f95071bb0ee7158aaeaad8e101d017ef882127c4eefa5f4f0c925fc2",
+      "bytes": 136878
+    },
+    "/catalog-source/transformers-2026/page-160.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        160
+      ],
+      "sha256": "7df7985c1d222c4884538e9c9c4485b162a6e52a6a172eaad6cb5379365348ad",
+      "bytes": 75918
+    },
+    "/catalog-source/transformers-2026/page-161.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        161
+      ],
+      "sha256": "4450429271dde9b6411518d54cb1f4537b587e8257ef8a0ff544795fb86e9f94",
+      "bytes": 114884
+    },
+    "/catalog-source/transformers-2026/page-162.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        162
+      ],
+      "sha256": "6c071debbfe4127b61d92cd9aef4ea7efe20dd52aca7a2430e68b0cd4a08ef6a",
+      "bytes": 32570
+    },
+    "/catalog-source/transformers-2026/page-163.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        163
+      ],
+      "sha256": "27da87d5a3dcb6c58e3f1ee955540e1789da571d8a95dddfd1e23131063056aa",
+      "bytes": 75270
+    },
+    "/catalog-source/transformers-2026/page-164.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        164
+      ],
+      "sha256": "8ad1e945acf44db191b1fc8aff68fdd8ac22ec4fe5dfe76420e68e962c042253",
+      "bytes": 79608
+    },
+    "/catalog-source/transformers-2026/page-165.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        165
+      ],
+      "sha256": "73a7d2c2eb55492ad9eed88f7b722040caf35ba88dacf0cdd2d136c135fde879",
+      "bytes": 166942
+    },
+    "/catalog-source/transformers-2026/page-166.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        166
+      ],
+      "sha256": "37c69eb858c04285ae45ddb780bdf0541f98e5604f5d89a974ac9d21299823ca",
+      "bytes": 269906
+    },
+    "/catalog-source/transformers-2026/page-167.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        167
+      ],
+      "sha256": "33e37a2081b8f2b681c400889c110faeb6a11dc0adfb71f14fa5b4b2dec65de4",
+      "bytes": 141282
+    },
+    "/catalog-source/transformers-2026/page-168.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        168
+      ],
+      "sha256": "848d22aa7314346bb177b91f8652bef593836e6441e43e9fa85f9fbe784bf87d",
+      "bytes": 138436
+    },
+    "/catalog-source/transformers-2026/page-169.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        169
+      ],
+      "sha256": "c244eedb36304f3ec47566bc3a6dd6608506769eeca0264d78798bdfbf46cf75",
+      "bytes": 155108
+    },
+    "/catalog-source/transformers-2026/page-170.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        170
+      ],
+      "sha256": "57b14f665504cb38866d47a11a79dd16f8de360036ce208b7d7cc9162684a2de",
+      "bytes": 143920
+    },
+    "/catalog-source/transformers-2026/page-171.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        171
+      ],
+      "sha256": "50dd0f9844cd5e5f56b83a2847456fdd95a7ee58741afe3f58528e8b4b041700",
+      "bytes": 82432
+    },
+    "/catalog-source/transformers-2026/page-172.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        172
+      ],
+      "sha256": "912959e8348c874a1995948ba01c73b587be7266789792fa26e11d3eebbea8f2",
+      "bytes": 113336
+    },
+    "/catalog-source/transformers-2026/page-173.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        173
+      ],
+      "sha256": "19fb109f0a5858c7a85e89e3a30ef090b51336b71b2765a91f7a31bfde1dd24d",
+      "bytes": 110910
+    },
+    "/catalog-source/transformers-2026/page-174.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        174
+      ],
+      "sha256": "ea8c1b3602ef1c93d291032501606ba91b5c4b1b3e5405f5095abd1641e4d704",
+      "bytes": 85496
+    },
+    "/catalog-source/transformers-2026/page-175.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        175
+      ],
+      "sha256": "b1e8b6bcb0bd5d9d06369bb74088b05c8f926af79f42c8ec520d45eefa86f22c",
+      "bytes": 133032
+    },
+    "/catalog-source/transformers-2026/page-176.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        176
+      ],
+      "sha256": "868c58ef44a1da4ea7ac45a1102519c6917f09d3d1d4f383347755c2770bd12f",
+      "bytes": 103868
+    },
+    "/catalog-source/transformers-2026/page-177.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        177
+      ],
+      "sha256": "4b8cee04dd938071392646d889ba663d04485fe7c15beee266613ca676a82aec",
+      "bytes": 105358
+    },
+    "/catalog-source/transformers-2026/page-178.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        178
+      ],
+      "sha256": "06d3b548262f328ca42fb4806dc8a17d0a80d98bd391f2a74e3182e64409150f",
+      "bytes": 143492
+    },
+    "/catalog-source/transformers-2026/page-179.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        179
+      ],
+      "sha256": "32dd7e9133f240690f8f9d17821f62d3bc9f8613d932f1a9584310505dd19148",
+      "bytes": 62892
+    },
+    "/catalog-source/transformers-2026/page-180.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        180
+      ],
+      "sha256": "b6e5dc2c9188661dc3961d49f92c6c9cf4ff88e651462db20eac939e23413e2e",
+      "bytes": 146228
+    },
+    "/catalog-source/transformers-2026/page-181.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        181
+      ],
+      "sha256": "2a3e31882c85f1cecedad350d11b2205046ffd85d4a4356b27bc49d4d63ca128",
+      "bytes": 31096
+    },
+    "/catalog-source/transformers-2026/page-182.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        182
+      ],
+      "sha256": "efe9073452737f1d2e49519a28b28b0a207aa3ed03c875eb2c1dfe8a9d858ac3",
+      "bytes": 146464
+    },
+    "/catalog-source/transformers-2026/page-183.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        183
+      ],
+      "sha256": "2a9e788d668dff727f67ef64ba2937df00ae1a83c2606b1fa7ae58a574bbd756",
+      "bytes": 36352
+    },
+    "/catalog-source/transformers-2026/page-184.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        184
+      ],
+      "sha256": "1dc2b032448e61fbc5bcdf78e55a032bb2c72cc180dbd213e4c5f91617da8f57",
+      "bytes": 121626
+    },
+    "/catalog-source/transformers-2026/page-185.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        185
+      ],
+      "sha256": "4ccfbd22dcc6013fb2c5759b403cd167f1f54b91ce64215bf7da3d0eb8ef8ae0",
+      "bytes": 125828
+    },
+    "/catalog-source/transformers-2026/page-186.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        186
+      ],
+      "sha256": "2f2745204aa6c67fed5a7f4a075831134f45c634f27d6b1d912ea926a34d9e19",
+      "bytes": 185838
+    },
+    "/catalog-source/transformers-2026/page-187.webp": {
+      "source_id": "transformers-2026",
+      "representation": "source-scan",
+      "source_pages": [
+        187
+      ],
+      "sha256": "640b8ed914d35e7a7e0fa7b65838b5872806200392a536db4a6a9a9a5492ef24",
+      "bytes": 3680
+    }
+  }
+}

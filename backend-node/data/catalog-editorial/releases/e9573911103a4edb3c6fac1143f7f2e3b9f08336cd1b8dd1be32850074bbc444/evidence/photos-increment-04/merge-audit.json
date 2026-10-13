@@ -1,0 +1,119 @@
+[
+  {
+    "correction": {
+      "candidateId": "power-alageum-tdtnzh40000-110-tobol",
+      "productId": "alageum-tdtn-40000-110-sn-27-5-kv-nn-6-6-11-0-kv-5a5901cd",
+      "previousLevel": "series",
+      "newLevel": "type_reference",
+      "targetDesignation": "ТДТНЖ-40000/110",
+      "targetWindingBranch": "СН 27,5 кВ; НН 6,6; 11,0 кВ",
+      "evidence": "Source does not identify the photographed СН/НН branch. Catalog alternatives differ not only in voltage but in winding connection: СН 27.5 / НН 6.6–11 uses Ун/Д/Д-11-11; СН 38.5 / НН 27.5 uses Ун/Ун/Д-0-11. Same prefix, HV class and power do not establish winding-construction equivalence.",
+      "appliesTo": "frozen branch-specific record mapping only; generic family overview unchanged",
+      "frozenFileModified": false,
+      "verifiedAt": "2026-10-12T20:00:00Z",
+      "researchGroup": "power_asia"
+    },
+    "previousMapping": {
+      "candidateId": "power-alageum-tdtnzh40000-110-tobol",
+      "modelMatch": "series",
+      "recommended": true
+    },
+    "status": "applied_downgrade_to_type_reference"
+  },
+  {
+    "correction": {
+      "candidateId": "power-alageum-tdtnzh40000-110-tobol",
+      "productId": "alageum-tdtn-40000-110-sn-38-5-kv-nn-27-5-kv-5aa6ae9c",
+      "previousLevel": "series",
+      "newLevel": "type_reference",
+      "targetDesignation": "ТДТНЖ-40000/110",
+      "targetWindingBranch": "СН 38,5 кВ; НН 27,5 кВ",
+      "evidence": "Source does not identify the photographed СН/НН branch. Catalog alternatives differ not only in voltage but in winding connection: СН 27.5 / НН 6.6–11 uses Ун/Д/Д-11-11; СН 38.5 / НН 27.5 uses Ун/Ун/Д-0-11. Same prefix, HV class and power do not establish winding-construction equivalence.",
+      "appliesTo": "frozen branch-specific record mapping only; generic family overview unchanged",
+      "frozenFileModified": false,
+      "verifiedAt": "2026-10-12T20:00:00Z",
+      "researchGroup": "power_asia"
+    },
+    "previousMapping": {
+      "candidateId": "power-alageum-tdtnzh40000-110-tobol",
+      "modelMatch": "series",
+      "recommended": true
+    },
+    "status": "applied_downgrade_to_type_reference"
+  },
+  {
+    "correction": {
+      "candidateId": "power-asia-tdtnzh40000-220-factory",
+      "productId": "alageum-tdtn-40000-220-sn-27-5-kv-nn-6-6-11-0-kv-ec0dfa9c",
+      "previousLevel": "series",
+      "newLevel": "type_reference",
+      "targetDesignation": "ТДТНЖ-40000/220",
+      "targetWindingBranch": "СН 27,5 кВ; НН 6,6; 11,0 кВ",
+      "evidence": "Source does not identify the photographed СН/НН branch. Catalog alternatives differ not only in voltage but in winding connection: СН 27.5 / НН 6.6–11 uses Ун/Д/Д-11-11; СН 38.5 / НН 27.5 uses Ун/Ун/Д-0-11. Same prefix, HV class and power do not establish winding-construction equivalence.",
+      "appliesTo": "frozen branch-specific record mapping only; generic family overview unchanged",
+      "frozenFileModified": false,
+      "verifiedAt": "2026-10-12T20:00:00Z",
+      "researchGroup": "power_asia"
+    },
+    "previousMapping": {
+      "candidateId": "power-asia-tdtnzh40000-220-factory",
+      "modelMatch": "series",
+      "recommended": true
+    },
+    "status": "applied_downgrade_to_type_reference"
+  },
+  {
+    "correction": {
+      "candidateId": "power-asia-tdtnzh40000-220-factory",
+      "productId": "alageum-tdtn-40000-220-sn-38-5-kv-nn-27-5-kv-2d3282a7",
+      "previousLevel": "series",
+      "newLevel": "type_reference",
+      "targetDesignation": "ТДТНЖ-40000/220",
+      "targetWindingBranch": "СН 38,5 кВ; НН 27,5 кВ",
+      "evidence": "Source does not identify the photographed СН/НН branch. Catalog alternatives differ not only in voltage but in winding connection: СН 27.5 / НН 6.6–11 uses Ун/Д/Д-11-11; СН 38.5 / НН 27.5 uses Ун/Ун/Д-0-11. Same prefix, HV class and power do not establish winding-construction equivalence.",
+      "appliesTo": "frozen branch-specific record mapping only; generic family overview unchanged",
+      "frozenFileModified": false,
+      "verifiedAt": "2026-10-12T20:00:00Z",
+      "researchGroup": "power_asia"
+    },
+    "previousMapping": {
+      "candidateId": "power-asia-tdtnzh40000-220-factory",
+      "modelMatch": "series",
+      "recommended": true
+    },
+    "status": "applied_downgrade_to_type_reference"
+  },
+  {
+    "correction": {
+      "subject": "Prior increment03 ND exposed-transformer rejection",
+      "previousRationale": "KTPND100 image shows exposed rural transformer rather than enclosed-transformer construction",
+      "correctedRationale": "Invalid as a blanket construction criterion: current KTPND25–250 drawing and separately captioned Sales image show an exposed rear oil transformer with stacked HV/LV cabinets. The prior Flagma ND100 exposure is identical to Sales/AEMZ recovered ND photo.",
+      "affectedSourceUrl": "https://flagma.kz/komplektnaya-transformatornaya-podstanciya-ktpnd-o1816302.html",
+      "decision": "Recover exposure as series KTPND25–250, not exact100; frozen files unchanged.",
+      "candidateId": "inc04-sales-ktpnd-open",
+      "researchGroup": "substations"
+    },
+    "status": "narrative_source_disposition_correction"
+  },
+  {
+    "correction": {
+      "subject": "AEMZ mixed-body held photos",
+      "previousCandidateIds": [
+        "review-c465c89a40fd",
+        "review-ff633e66ca79",
+        "review-6721ad63a6aa"
+      ],
+      "decision": "Separate Sales image captions resolve c465 asND and ff633 as ruralKTP. First closed image6721 remains held because no independent exact-image caption was found. Do not release all three by association.",
+      "researchGroup": "substations"
+    },
+    "status": "narrative_source_disposition_correction"
+  },
+  {
+    "correction": {
+      "subject": "White legacy KTP/KTPND reused photo",
+      "decision": "Keep held: same white exposure used under incompatible ruralKTP andND captions. Exposed-transformer construction alone is not a rejection reason, but the original identity conflict remains unresolved.",
+      "researchGroup": "substations"
+    },
+    "status": "narrative_source_disposition_correction"
+  }
+]

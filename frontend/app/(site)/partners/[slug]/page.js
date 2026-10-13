@@ -1,0 +1,9 @@
+import {notFound} from 'next/navigation';
+import E from '@/components/locale/LocaleElement';
+import Image from '@/components/locale/LocaleImage';
+import Link from '@/components/locale/LocaleLink';
+import {partners,partnerProfiles} from '@/lib/public/partners';
+import {EcoSection} from '@/components/ecosystem/Parts';
+export function generateStaticParams(){return partners.map(item=>({slug:item.id}));}
+export async function generateMetadata({params}){const {slug}=await params;return {title:partners.find(item=>item.id===slug)?.name||'Партнёры'};}
+export default async function PartnerPage({params}){const {slug}=await params;const item=partners.find(item=>item.id===slug),profile=partnerProfiles[slug];if(!item||!profile)notFound();return <E as="div" className="eco-page"><EcoSection><Link className="site-text-link" href="/#partner-heading">← Партнёры компании</Link><div className="partner-profile-heading"><Image src={`/partners/${slug}.png`} alt={item.name} width={180} height={90} unoptimized/><div><E as="p" className="site-eyebrow">{item.sector}</E><E as="h1">{item.name}</E><E as="p">{item.text}</E></div></div><E as="dl" className="eco-facts partner-profile-facts">{[[profile.year,'Основание'],[profile.geography,'География'],[profile.focus,'Направления']].map(([value,label])=>value&&<div key={label}><E as="dt">{label}</E><E as="dd">{value}</E></div>)}</E><div className="partner-profile-copy">{profile.paragraphs.map(text=><E as="p" key={text}>{text}</E>)}</div><div className="partner-profile-gallery">{profile.gallery.map(photo=><E as="figure" key={photo.src}><Image src={photo.src} alt={photo.caption} width={760} height={440} unoptimized/><E as="figcaption">{photo.caption}</E></E>)}</div><E as="p" className="eco-source">Справочные сведения. Название, логотип и фотографии принадлежат соответствующим правообладателям.</E></EcoSection></E>;}

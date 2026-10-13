@@ -1,0 +1,156 @@
+{
+  "status": "passed-vm-only",
+  "startedAt": "2026-10-02T11:23:39.103Z",
+  "scope": "Standalone webpack browser bundle using Strapi's actual production config and admin hook; no Strapi server or AI upload",
+  "versions": {
+    "node": "v24.19.0",
+    "webpack": "5.109.2",
+    "micromatch": "4.0.8",
+    "path-browserify": "1.0.1",
+    "util": "0.12.5",
+    "process": "0.11.10",
+    "playwright": "1.62.1",
+    "strapi": "5.56.0"
+  },
+  "fixtures": {
+    "files": 56,
+    "patterns": 18,
+    "ignore": [
+      "**/node_modules/**",
+      "**/.git/**",
+      "**/.next/**",
+      "**/dist/**",
+      "**/build/**",
+      "**/.cache/**",
+      "**/coverage/**",
+      "**/test/**",
+      "**/__tests__/**",
+      "**/*.test.*",
+      "**/*.spec.*"
+    ]
+  },
+  "chromium": {
+    "status": "not-run",
+    "accepted": false
+  },
+  "previousBrowserFailure": {
+    "startedAt": "2026-10-02T11:16:06.008Z",
+    "webpackHookSha256": "6b12daa2ed14ce226f7af4addcfefa7cabc7e6a881ec38d1a530cb8b97ec979d",
+    "error": {
+      "name": "Error",
+      "message": "browserType.launchPersistentContext: Target page, context or browser has been closed\nBrowser logs:\n\n<launching> /usr/bin/chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,Translate,AutoDeElevate,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/workspace/scratch/3e2b26bde66a/alageum-webpack-compat/backend-node/.webpack-browser-polyfill-probe-brAkMZ/chromium-profile --remote-debugging-pipe about:blank\n<launched> pid=17\n[pid=17][err] [17:17:1002/161607.029490:FATAL:chrome/browser/process_singleton_posix.cc:297] Check failed: . socket() failed: Operation not permitted (1)\n[pid=17][err] [1002/161607.029708:ERROR:third_party/crashpad/crashpad/util/linux/scoped_ptrace_attach.cc:27] ptrace: Operation not permitted (1)\nCall log:\n\u001b[2m  - <launching> /usr/bin/chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,Translate,AutoDeElevate,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/workspace/scratch/3e2b26bde66a/alageum-webpack-compat/backend-node/.webpack-browser-polyfill-probe-brAkMZ/chromium-profile --remote-debugging-pipe about:blank\u001b[22m\n\u001b[2m  - <launched> pid=17\u001b[22m\n\u001b[2m  - [pid=17][err] [17:17:1002/161607.029490:FATAL:chrome/browser/process_singleton_posix.cc:297] Check failed: . socket() failed: Operation not permitted (1)\u001b[22m\n\u001b[2m  - [pid=17][err] [1002/161607.029708:ERROR:third_party/crashpad/crashpad/util/linux/scoped_ptrace_attach.cc:27] ptrace: Operation not permitted (1)\u001b[22m\n\u001b[2m  - [pid=17] <gracefully close start>\u001b[22m\n\u001b[2m  - [pid=17] <kill>\u001b[22m\n\u001b[2m  - [pid=17] <will force kill>\u001b[22m\n\u001b[2m  - [pid=17] <process did exit: exitCode=null, signal=SIGABRT>\u001b[22m\n\u001b[2m  - [pid=17] starting temporary directories cleanup\u001b[22m\n\u001b[2m  - [pid=17] finished temporary directories cleanup\u001b[22m\n\u001b[2m  - [pid=17] <gracefully close end>\u001b[22m\n"
+    },
+    "cleanup": {
+      "fixturesRemoved": true,
+      "portReleased": true,
+      "errors": []
+    }
+  },
+  "previousCompilationFailure": {
+    "startedAt": "2026-10-02T11:19:58.493Z",
+    "webpackHookSha256": "6b12daa2ed14ce226f7af4addcfefa7cabc7e6a881ec38d1a530cb8b97ec979d",
+    "strapiConfiguration": {
+      "sourceSha256": "45b77a04e65a0da229df611726734a1a0d84acca88f9caf1c04e5db00b7e9d64",
+      "browserQueries": [
+        "last 3 major versions",
+        "Firefox ESR",
+        "last 2 Opera versions",
+        "not dead"
+      ],
+      "transpileTargets": [
+        "chrome152",
+        "edge152",
+        "firefox153",
+        "ios18",
+        "opera133",
+        "safari18"
+      ],
+      "productionLoaders": true,
+      "productionPlugins": true,
+      "minification": false,
+      "runtimeChunk": false
+    },
+    "error": {
+      "name": "AssertionError",
+      "message": "[\n  {\n    \"moduleIdentifier\": \"javascript/esm|/workspace/scratch/3e2b26bde66a/alageum-webpack-compat/backend-node/node_modules/esbuild-loader/dist/index.cjs??ruleSet[1].rules[1].use!/workspace/scratch/3e2b26bde66a/alageum-webpack-compat/backend-node/node_modules/generator-function/require.mjs\",\n    \"moduleName\": \"./node_modules/generator-function/require.mjs\",\n    \"message\": \"Module build failed (from ./node_modules/esbuild-loader/dist/index.cjs):\\nError: Transform failed with 1 error:\\n/workspace/scratch/3e2b26bde66a/alageum-webpack-compat/backend-node/node_modules/generator-function/require.mjs:5:33: ERROR: Using the string \\\"module.exports\\\" as an export name is not supported in the configured target environment (\\\"chrome152\\\", \\\"edge152\\\", \\\"firefox153\\\", \\\"ios18\\\", \\\"opera133\\\", \\\"safari18\\\" + 1 override)\\n    at failureErrorWithLog (/workspace/scratch/3e2b26bde66a/alageum-webpack-compat/backend-node/node_modules/esbuild/lib/main.js:1752:15)\\n    at /workspace/scratch/3e2b26bde66a/alageum-webpack-compat/backend-node/node_modules/esbuild/lib/main.js:1019:50\\n    at responseCallbacks.<computed> (/workspace/scratch/3e2b26bde66a/alageum-webpack-compat/backend-node/node_modules/esbuild/lib/main.js:886:9)\\n    at handleIncomingPacket (/workspace/scratch/3e2b26bde66a/alageum-webpack-compat/backend-node/node_modules/esbuild/lib/main.js:941:12)\\n    at Socket.readFromStdout (/workspace/scratch/3e2b26bde66a/alageum-webpack-compat/backend-node/node_modules/esbuild/lib/main.js:864:7)\\n    at Socket.emit (node:events:509:28)\\n    at addChunk (node:internal/streams/readable:563:12)\\n    at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)\\n    at Readable.push (node:internal/streams/readable:394:5)\\n    at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)\"\n  }\n]\n\ntrue !== false\n"
+    },
+    "cleanup": {
+      "fixturesRemoved": true,
+      "portReleased": false,
+      "errors": []
+    }
+  },
+  "uploadSourceSha256": "f9a2047600b03c5f82a380af74668c8e52a80c9ccc02ba2e59dd15f48b47d0f0",
+  "webpackHookSha256": "8ca458b84f9bd23c3350d7c3336a2b3af57f5aa3ae193fd55acaac8c8c7f2c39",
+  "strapiConfiguration": {
+    "sourceSha256": "45b77a04e65a0da229df611726734a1a0d84acca88f9caf1c04e5db00b7e9d64",
+    "browserQueries": [
+      "last 3 major versions",
+      "Firefox ESR",
+      "last 2 Opera versions",
+      "not dead"
+    ],
+    "transpileTargets": [
+      "chrome152",
+      "edge152",
+      "firefox153",
+      "ios18",
+      "opera133",
+      "safari18"
+    ],
+    "productionLoaders": true,
+    "productionPlugins": true,
+    "minification": false,
+    "runtimeChunk": false
+  },
+  "compilation": {
+    "errors": 0,
+    "warnings": 0,
+    "assets": [
+      {
+        "name": "bundle.js",
+        "size": 179674
+      },
+      {
+        "name": "index.html",
+        "size": 193
+      }
+    ],
+    "generatorFunction": {
+      "version": "2.0.1",
+      "declaredDefault": "./index.js",
+      "compiledModules": [
+        "index.js"
+      ],
+      "moduleSyncWrapperAbsent": true
+    }
+  },
+  "comparisons": {
+    "micromatchPatternFilePairs": 3024,
+    "micromatchIgnoreFiles": 56,
+    "uploadAllowedDecisions": 112,
+    "micromatchInvalidInputs": 4,
+    "pathInputs": 19,
+    "pathJoins": 5,
+    "pathRelatives": 4,
+    "util": [
+      "format",
+      "inspect",
+      "types",
+      "inherits",
+      "promisify"
+    ]
+  },
+  "isolatedJavaScript": {
+    "matchedNode": true,
+    "injectedNodeProcess": false,
+    "injectedNodeRequire": false
+  },
+  "cleanup": {
+    "fixturesRemoved": true,
+    "portsOpened": 0,
+    "portReleased": null,
+    "errors": []
+  },
+  "durationMs": 1531
+}

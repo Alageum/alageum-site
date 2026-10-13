@@ -1,0 +1,106 @@
+{
+  "format": "alageum-catalog-browser-independent-review-v1",
+  "status": "approved-three-browser-assertions",
+  "reviewedAtUtc": "2026-10-06T17:22:10Z",
+  "baselineCommit": "eace83de78e3167fe17a8dcd94ff72de6997974f",
+  "baselineTree": "1df444ca998debdfb8a61bd20ecec23cbf97961f",
+  "reviewedCandidateTree": "137bbbf8874dd4b48639fab28ecac5e88cfe0210",
+  "candidateManifestSha256": "a2584265e712ce283446b166286bcba31f67aa04fba29b6f73b55ca8329533e5",
+  "candidatePatchSha256": "707a414de127d2b47f78f349ad3470dba28bb552724c918d931f26ee86fdda10",
+  "candidateNote": "The reviewed tree includes pending placeholders for these two new approval documents. Final attachment may replace only those two placeholders with the exact independently supplied bytes. Final publication clearance also requires a passing default gate on that attached tree; the post-attachment attestation records its tree and file hashes.",
+  "approvedDependenciesSha256": "ddca339e65d26dd57703c3755dc74aa0f3381313c1a939a758859bf21c3528cd",
+  "corrections": [
+    "paired-family-icon",
+    "original-measurement-mutations",
+    "family-query-record-kind"
+  ],
+  "hostedCaseCount": 254,
+  "runtimeChanges": 0,
+  "pixelOrLayoutRelaxations": 0,
+  "reviewedFiles": {
+    "frontend/e2e/catalog.spec.js": "cc06ec1299f040b684785837f16dba1c4f1f8faa1e6e0170d8f0df196cc8ad67",
+    "frontend/tests/transformer-asset-completion.test.mjs": "9541ff421a159dfc5e6781def30f64d1738733ca8bb135b616cab52ca6fa86d6",
+    "scripts/catalog/protection-context-reviewed-dependencies.mjs": "0cf8dfcdf11e933af1d5cf2d88aa8f4c878730c632538fcefd3457b4236aaa6e",
+    "scripts/catalog/catalog-browser-reviewed-dependencies.mjs": "808f1034297f0b3ab62826a339373287684a1df5bf173b06d9162d83976cc279",
+    "frontend/tests/catalog-browser-amendment.test.mjs": "df7d2e4fb399023b597dfaed3797f5cbaabce452d1c7a54b177fb05d96fd5e80",
+    "docs/catalog-transformers-2026/review/catalog-browser-assertions/README.md": "4a3de065da91d6f4bfbf60588f2439f90a93cf7c1b949f07bfbae936b2986e70"
+  },
+  "findings": [
+    "The E2E file is exactly the three authorized transformations of eace83de. All other E2E bytes, including case titles, timeout settings, pixel/layout assertions and the protection-specific mutation block, are unchanged.",
+    "The source-backed paired family icon resolves to source69-paired-protection-examples-icon with source-based confidence and no family model. The corrected expectation matches that already published runtime contract.",
+    "Actual StaticCatalog JSX and query helpers show 14 unfiltered SKU matches, with the family at zero-based index 10 and six records per page. recordKind=family places the same family on page one without changing the product specimens or subsequent family-selection/canvas assertions.",
+    "The older measurement mutation block is restored byte-for-byte to PR33. Its nine UUID/execution/raw-media mutations still reject all three measurement records. The accidentally added page-69 climate variant is outside those measurement authority shapes and explains the failure. The removed source-title case also rejects in an independent probe; removal restores the explicitly authorized prior block, not a runtime guard change.",
+    "All six independent PTM/TDE climate/source-title mutation probes reject. The published protection mutation test retains UUID, execution, climate, source-title and raw-media rejection coverage unchanged.",
+    "The historical corruption test changes only its fixture-copy closure to include the new verifier, tests, README and approval documents. Existing corruption assertions and diagnostics remain identical.",
+    "The append-only leaf retains both published protection/context approval documents and all prior hashes. Only three fixed predecessor paths may be forwarded: E2E assertions, the historical verifier adapter and fixture-copy test. The E2E successor hash is hardcoded. Reviewed path sets, prior hashes, report status and hashes are checked, and each invocation reads raw current bytes with no persistent cache.",
+    "All other tracked repository bytes are identical to eace83de. No runtime, source, model, icon, asset, build configuration, workflow, timeout, dependency, artifact or security changes are approved."
+  ],
+  "checks": {
+    "focusedNodeTests": {
+      "passed": 15,
+      "failed": 0,
+      "command": "node --test --test-concurrency=1 tests/catalog-browser-amendment.test.mjs tests/equipment-icons.test.mjs tests/measurement-column-completion.test.mjs"
+    },
+    "historicalPortableCorruptionPath": {
+      "passed": 1,
+      "failed": 0,
+      "syntheticApprovalFixture": true,
+      "command": "node --test --test-concurrency=1 --test-name-pattern='historical release refuses pending forward approval' tests/transformer-asset-completion.test.mjs"
+    },
+    "onDiskMutationCases": {
+      "passed": 20,
+      "defaultFilesystemReader": true,
+      "syntheticApprovalFixture": true,
+      "warmSuccessMutateRejectRestoreSuccess": true,
+      "sameSizeRestoredTimestampCovered": true,
+      "includesMissingMismatchedBroadenedApproval": true,
+      "includesThresholdAndOtherTestByteChanges": true,
+      "includesRuntimeAndSourceDependencyCorruption": true
+    },
+    "defaultCliInExactTreeFixture": {
+      "passed": true,
+      "command": "node scripts/check-protection-context-integration.mjs",
+      "syntheticApprovalFixture": true,
+      "injectedReader": false,
+      "counts": "All inherited product, identity, model, icon, choice, context and coverage preservation counts pass."
+    },
+    "frontendLint": {
+      "passed": true,
+      "command": "npm run lint"
+    },
+    "verifierSyntaxChecks": {
+      "passed": true,
+      "command": "node --check for both changed verifier modules"
+    },
+    "playwrightDiscovery": {
+      "cases": 254,
+      "browserLaunched": false
+    },
+    "exactManifestAndPatchHashes": true,
+    "allOtherTrackedBytesUnchanged": true,
+    "actualDefaultGateAfterApprovalAttachment": "Required before final clearance; must use actual candidate filesystem without injected readers or synthetic approvals."
+  },
+  "remainingLimits": [
+    "This approval covers only the exact assertion correction and its required hash/fixture closure. It does not certify catalogue browser acceptance or a green website.",
+    "The published eace83de hosted run has 18 named failures and a 12-minute timeout; final passed/completed/unreached counts are unknown. PTM/TDE canvas density and failed-image desktop reachability remain unresolved. The corrected static family query still reaches the original canvas assertions and may expose the same density failure.",
+    "Screenshots were not downloaded or visually inspected. A 46,822,507-byte artifact exceeds the helper limit, and its returned URL gave HTTP403 before expiry; the cause is unknown. The supported cloud Chrome localhost route gave ERR_BLOCKED_BY_CLIENT. Neither route was retried and no alternate hosts, tunnels or local Chromium launch were used.",
+    "No threshold relaxation or visual conclusion is inferred from log-only pixel counts. Fresh hosted screenshots, actual WebGL and source-gallery/reachability review remain necessary.",
+    "The earlier 14 passing functional Node jobs and unchanged published runtime do not close the outstanding browser or security workflow failures. No external publication, merge, deployment or PR metadata change is authorized by this report."
+  ],
+  "evidence": {
+    "exact-diff-evidence.json": "5b628caeda4ee36cefa3b17cb6c51ec2510e2adc81dbb54f3683df0d778725b5",
+    "source-dom-evidence.json": "21faa8228464bbfbfb8319c5194e40686d4f77a261080af94c9db8df969c437c",
+    "source-dom-check.mjs": "be9f458fbc5ed2e2238814f2c4269176422e0c3d7676e164e8d3bcecb4cdfbd9",
+    "catalog-before.html": "c750b25143474c33f719af44230ae49b9d61ee43e3f21e4ac91fde52aaa6f0b3",
+    "catalog-page2.html": "b382fec20b50ba0b1bac9959b342715f3125ce76cf1c1644a296e10710a5e59d",
+    "catalog-after.html": "8ab680eb46cac0bf245efff02a3803089fa0cb17f27e6a6ec721e93e3a2f289d",
+    "frozen-tree-evidence.json": "249815e9c84bd06f65d67a302a61bc8439b9014005bd4230e14ace7b3f7eaf97",
+    "on-disk-mutations.json": "d30f7c9dc61e10c6834a912afe03e83f622e45d8fb4c14d2fc1f53ed388f0c52",
+    "on-disk-mutations.mjs": "fd32da0d48c9ab19f3e5154fbe05b7e53ec1bc49cde859bc8ed0da1c40e45a67",
+    "default-gate-fixture.log": "ef57e43a947bf873eba7568fc5976942717c512c11a53b43499c8e69abff5376",
+    "independent-focused-unit.log": "fdb35a79423f3207d44dc681e29b07effc66c4a5eed00fcfddf4ee37dceb0de9",
+    "independent-corruption-path.log": "a8a8abc154c4706e307542d16c95eeb0d7e35045b0a185b199359675b6c7cf9d",
+    "independent-full-lint.log": "88b58c7f9297b027c4b27d1e0785d6940c92309503535f2fe04e5efac3262a2d",
+    "discovery.log": "5c6ee85b99cd0caa0190ee50d6c357da64d3e66dd4cab17af30fbff64226fdf6"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "scope": "Data-only validation; no app tests or site changes.",
+  "allPassed": true,
+  "checks": [
+    {
+      "check": "all_843_original_ids_once",
+      "passed": true
+    },
+    {
+      "check": "all_175_family_keys",
+      "passed": true
+    },
+    {
+      "check": "all_160_remaining_family_ledgers",
+      "passed": true
+    },
+    {
+      "check": "candidate_ids_unique",
+      "passed": true
+    },
+    {
+      "check": "candidate_original_bytes_unique",
+      "passed": true
+    },
+    {
+      "check": "all_163_prior_candidates_and_bytes_preserved",
+      "passed": true
+    },
+    {
+      "check": "all_local_candidate_hashes_match",
+      "passed": true
+    },
+    {
+      "check": "all_alternative_hashes_match",
+      "passed": true
+    },
+    {
+      "check": "all_candidate_provenance_present",
+      "passed": true
+    },
+    {
+      "check": "all_mappings_resolve_to_candidates",
+      "passed": true
+    },
+    {
+      "check": "all_video_frames_excluded_from_photo_counts",
+      "passed": true
+    },
+    {
+      "check": "all_counts_reconcile",
+      "passed": true
+    },
+    {
+      "check": "every_match_has_limitations",
+      "passed": true
+    },
+    {
+      "check": "exact_model_record_count_still_three",
+      "passed": true
+    },
+    {
+      "check": "all_remaining_records_have_source_request",
+      "passed": true
+    },
+    {
+      "check": "no_unhandled_review_items",
+      "passed": true
+    },
+    {
+      "check": "all_group_inputs_present",
+      "passed": true
+    },
+    {
+      "check": "four_winding_branch_mappings_not_added",
+      "passed": true
+    }
+  ],
+  "remainingSourceRequests": 755
+}

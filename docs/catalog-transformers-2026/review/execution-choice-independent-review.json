@@ -1,0 +1,100 @@
+{
+  "format": "alageum-transformer-execution-choice-independent-review-v1",
+  "status": "approved-explicit-choice-only",
+  "reviewedAt": "2026-10-06T07:46:32Z",
+  "sourceId": "transformers-2026",
+  "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+  "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+  "inventorySha256": "c3948d7152a6130aa4672b9f6d3d5a8f08144b5965df7bebabca067ba5bc8438",
+  "counts": {
+    "records": 32,
+    "choices": 66,
+    "geometryTypes": 7
+  },
+  "scope": "Display-only explicit choice for precisely the 32 admitted mixed dry-transformer rows; no new direct/default binding and no source metadata or physical-product count changes.",
+  "sourceMappingRegistrySha256": "7871ed6ff31390d63198f622efbf7f834d00f1b6314472ce8f4239c45cadddf6",
+  "candidateSha256": "12c23572423ba09c6addb4c492ce1da0ed383bff8d509c210bda1da11e76dfbd",
+  "sourceMappingChecks": {
+    "exactRecordSet": true,
+    "exactChoiceMembershipAndOrder": true,
+    "captionsAndRussianLabels": true,
+    "geometryAndIconTypes": true,
+    "viewModes": true,
+    "canonicalRecordDigests": true,
+    "canonicalImportUuids": true,
+    "sourceFileIdentityAndHash": true,
+    "sourceImageHashes": true
+  },
+  "visualReview": {
+    "sourcePages": [
+      80,
+      81,
+      87,
+      88,
+      92,
+      93,
+      94
+    ],
+    "sourcePixelInspection": true,
+    "existingGeometryPerspectiveInspection": true,
+    "reviewedGeometryTypes": [
+      "tr26-dry-cast-open",
+      "tr26-dry-compact-louver",
+      "tr26-dry-foil-open",
+      "tr26-dry-mesh-closed",
+      "tr26-dry-mesh-cutaway",
+      "tr26-dry-nomex-open",
+      "tr26-dry-top-bushings"
+    ],
+    "finding": "Open coils, compact louvered enclosure, mesh cutaway, closed mesh enclosure and top-bushing enclosure remain distinct and match the corresponding labelled source drawings at illustrative visible-topology level.",
+    "limits": [
+      "Existing geometry is unchanged and uses scene units.",
+      "No exact CAD, dimension fidelity or exact-mesh equivalence is approved.",
+      "TSLZ lower opening remains a disclosed illustrative cutaway, not a permanently open cabinet.",
+      "TSLZ IP21/IP31 remain unselected source options.",
+      "TSNZ mesh remains restricted to 400/630 kVA; 160/250 kVA cannot select it.",
+      "Slash-pair dimension order is not resolved by this display choice."
+    ]
+  },
+  "implementationSourceReview": {
+    "files": {
+      "frontend/lib/catalog/models/transformerExecutionChoices.js": "8ca1d3c87406e4732b80c2e881a67e4531200f6b0adf3ca935318452f14c5fd1",
+      "scripts/approve-transformer-execution-choices.mjs": "c74e7bcb2f281a3e784630f3a5eb008563c716df23e2429303c7fe5b00e57e55"
+    },
+    "noDefaultOrFallback": true,
+    "sourceIdentityGate": true,
+    "recordShapeGate": true,
+    "apiDatabaseIdentityGate": true,
+    "admittedMembershipGate": true,
+    "immutableChoiceMetadata": true,
+    "generatorChecksIndependentReportStatusHashCounts": true,
+    "reviewBindsApprovedRecordPayload": true,
+    "reviewBindsApprovedDependencyHashes": true,
+    "reviewBindsSourceIdentityAndReviewDate": true
+  },
+  "defaultBindings": {
+    "byteForByteUnchangedFromRetainedCheckout": true,
+    "geometry": 251,
+    "icons": 257,
+    "manifestSha256": "015aec00fbd4ee411c581fbc1443a348cdfd1f85649607820c406a0b658f6434"
+  },
+  "unresolvedGroups": [
+    "tmgve-x3k2",
+    "tmgi-x4k3",
+    "tmg-copper",
+    "tsi-tools",
+    "zom",
+    "znom",
+    "asia-high-voltage"
+  ],
+  "releaseRequirements": [
+    "Run the generated registry and helper mutation tests.",
+    "Run source/runtime guard verification and applicable aggregate checks.",
+    "Verify UI requires explicit selection, clears selection when the record changes, and handles Close/Back/repeated selections without default promotion.",
+    "Re-review after any change to hashed dependencies, source scans, choice captions, allowed groups, or record shapes."
+  ],
+  "runtimeTestsPerformedByThisReview": false,
+  "publicationAuthorizedByThisReport": false,
+  "approvedRecordsSha256": "8815252e2a509d04adfc0c0dbde3e05a033219b3aea4344455cfef0916e319f8",
+  "approvedDependenciesSha256": "4f1fcadc62ac03aac22de139056439014d11a32a430e21e9cc669c78b67320f5"
+}

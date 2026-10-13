@@ -1,0 +1,45 @@
+.home-power-section{padding:76px 0;background:white;color:var(--ink);font-family:var(--site-font);scroll-margin-top:96px}
+.home-chart-layout{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:80px}
+.home-chart-intro h2,.home-voltage-heading h2{font-size:clamp(30px,3.5vw,50px);line-height:1.14;letter-spacing:-.04em;font-weight:400;margin:20px 0 24px}
+.home-chart-intro>p:not(.site-eyebrow){font-size:16px;line-height:1.8;color:#676d73;max-width:420px;margin-bottom:28px}
+.home-chart-caption{font-size:12px;line-height:1.7;margin:0 0 20px;color:#676d73}
+.home-power-row{display:block;padding:20px 16px;border-top:1px solid var(--line,#c6c6c6);transition:background .2s;color:inherit;text-decoration:none}
+.home-power-row:last-child{border-bottom:1px solid var(--line,#c6c6c6)}
+.home-power-row:hover,.home-power-row:focus-visible{background:#f2f3f4}
+.home-power-row:focus-visible,.home-voltage-details a:focus-visible{outline:2px solid #ce1727;outline-offset:3px}
+.home-power-row-heading{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.home-power-row h3{font-size:17px;line-height:1.4;font-weight:400;margin:0}
+.home-power-row strong{font-size:48px;font-weight:400;line-height:1;letter-spacing:-.04em;font-variant-numeric:tabular-nums;white-space:nowrap}
+.home-power-row strong small{font-size:12px;margin-left:8px;letter-spacing:0;font-weight:400;color:#676d73}
+.home-power-track{height:7px;margin:20px 0 12px;background:#eff1f3;overflow:hidden}
+.home-power-track span{display:block;height:100%;width:var(--power-width);background:#ce1727;transform:scaleX(0);transform-origin:left;transition:transform 1.2s cubic-bezier(.16,1,.3,1) var(--chart-delay)}
+.home-power-chart.is-visible .home-power-track span{transform:scaleX(1)}
+.home-power-row-footer{display:flex;justify-content:space-between;gap:20px;font-size:11px;line-height:1.6;color:#676d73}
+.home-power-row-footer>span:last-child{color:#ce1727;white-space:nowrap}
+.home-chart-note{font-size:11px;line-height:1.7;color:#676d73;margin:20px 16px 0;max-width:540px}
+.home-voltage-section{background:#222528;color:#fff;padding:76px 0;font-family:var(--site-font);overflow:hidden;scroll-margin-top:96px}
+.home-voltage-heading{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);align-items:end;gap:80px}
+.home-voltage-heading .site-eyebrow{color:#e8727b}
+.home-voltage-heading h2{margin-bottom:0}
+.home-voltage-heading>p{font-size:16px;line-height:1.8;color:#c6c6c6;max-width:440px;margin:0}
+.home-voltage-chart{position:relative;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));margin:56px 0 44px;padding-top:16px}
+.home-voltage-rail{position:absolute;top:22px;left:10%;right:10%;height:1px;background:#55595d;overflow:hidden}
+.home-voltage-rail>span{display:block;width:100%;height:100%;background:#ce1727;transform:scaleX(0);transform-origin:left;transition:transform 1.5s cubic-bezier(.16,1,.3,1)}
+.home-voltage-chart.is-visible .home-voltage-rail>span{transform:scaleX(1)}
+.home-voltage-node{position:relative;display:flex;align-items:center;flex-direction:column;text-align:center;gap:12px;min-width:0}
+.home-voltage-dot{width:13px;height:13px;border-radius:50%;background:#222528;border:2px solid #787c80;transition:background .35s var(--node-delay),border-color .35s var(--node-delay)}
+.home-voltage-chart.is-visible .home-voltage-dot{background:#ce1727;border-color:#ce1727}
+.home-voltage-node strong{font-size:clamp(30px,4.5vw,64px);font-weight:400;line-height:1.1;letter-spacing:-.05em;font-variant-numeric:tabular-nums;margin-top:12px;white-space:nowrap}
+.home-voltage-node small{font-size:13px;font-weight:400;letter-spacing:0;margin-left:7px;color:#c6c6c6}
+.home-voltage-node>span:last-child{font-size:12px;color:#c6c6c6}
+.home-voltage-details{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);border-top:1px solid #55595d;border-bottom:1px solid #55595d}
+.home-voltage-details a{display:flex;flex-direction:column;gap:12px;padding:28px 24px;color:#fff;text-decoration:none;transition:background .2s}
+.home-voltage-details a:first-child{border-right:1px solid #55595d}
+.home-voltage-details a:hover{background:#303438}
+.home-voltage-details span{font-size:11px;color:#c6c6c6}
+.home-voltage-details strong{font-size:20px;font-weight:400;line-height:1.5}
+.home-voltage-details small{font-size:12px;line-height:1.6;color:#c6c6c6}
+.home-voltage-note{font-size:11px;line-height:1.8;color:#aeb4ba;margin:22px 0 0;max-width:800px}
+@media(max-width:1000px){.home-chart-layout,.home-voltage-heading{gap:36px}.home-power-row h3{font-size:15px}.home-power-row strong{font-size:40px}.home-power-row-footer{gap:12px}.home-power-row-footer>span:last-child{white-space:normal}}
+@media(max-width:760px){.home-power-section,.home-voltage-section{padding:48px 0}.home-chart-layout,.home-voltage-heading{grid-template-columns:1fr;gap:28px}.home-chart-intro>p:not(.site-eyebrow){max-width:none}.home-chart-intro h2{margin-top:16px}.home-power-row{padding-inline:0}.home-power-row h3{font-size:16px}.home-chart-note{margin-inline:0}.home-voltage-chart{margin:36px 0 28px}.home-voltage-node{gap:8px}.home-voltage-node strong{font-size:clamp(22px,6vw,34px);margin-top:8px}.home-voltage-node small{display:block;font-size:11px;margin:6px 0 0;letter-spacing:0}.home-voltage-node>span:last-child{font-size:10px}.home-voltage-details{grid-template-columns:1fr}.home-voltage-details a{padding:24px 16px}.home-voltage-details a:first-child{border-right:0;border-bottom:1px solid #55595d}.home-voltage-details strong{font-size:18px}}
+@media(prefers-reduced-motion:reduce){.home-power-track span,.home-voltage-rail>span{transform:none;transition:none}.home-voltage-dot{background:#ce1727;border-color:#ce1727;transition:none}.home-power-row,.home-voltage-details a{transition:none}}

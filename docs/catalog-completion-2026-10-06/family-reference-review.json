@@ -1,0 +1,289 @@
+{
+  "format": "alageum-family-reference-followup-independent-review-v1",
+  "status": "approved-narrow-change-hosted-browser-pending",
+  "reviewedAt": "2026-10-06T10:34:05.962386+00:00",
+  "baseCommit": "43bea601992c58837b2ecd55f3ddeb69430379d3",
+  "findings": [],
+  "renderProof": {
+    "status": "passed",
+    "checkedAt": "2026-10-06T10:28:48.915Z",
+    "mapping": [
+      {
+        "familyId": "tr2026-family-tmg-standard",
+        "canonicalId": "tmg-400",
+        "panelId": "alageum-tmg-standard-400",
+        "sourcePages": [
+          6,
+          7,
+          12
+        ]
+      },
+      {
+        "familyId": "tr2026-family-tmg-standard",
+        "canonicalId": "tmg-630",
+        "panelId": "alageum-tmg-standard-630",
+        "sourcePages": [
+          6,
+          7,
+          12
+        ]
+      },
+      {
+        "familyId": "tr2026-family-tmg-standard",
+        "canonicalId": "tmg-1000",
+        "panelId": "alageum-tmg-standard-1000",
+        "sourcePages": [
+          6,
+          7,
+          13
+        ]
+      },
+      {
+        "familyId": "tr2026-family-tmg-standard",
+        "canonicalId": "tmg-2500",
+        "panelId": "alageum-tmg-standard-2500",
+        "sourcePages": [
+          6,
+          7,
+          13
+        ]
+      },
+      {
+        "familyId": "tr2026-family-tmgs-pole",
+        "canonicalId": "tmgs-63",
+        "panelId": "alageum-tmgs-pole-63",
+        "sourcePages": [
+          34,
+          35
+        ]
+      },
+      {
+        "familyId": "tr2026-family-tmgs-pole",
+        "canonicalId": "tmgs-160",
+        "panelId": "alageum-tmgs-pole-160",
+        "sourcePages": [
+          34,
+          35
+        ]
+      },
+      {
+        "familyId": "tr2026-family-tmgf",
+        "canonicalId": "tmgf-630",
+        "panelId": "alageum-tmgf-630",
+        "sourcePages": [
+          38,
+          39
+        ]
+      },
+      {
+        "familyId": "tr2026-family-tmgf",
+        "canonicalId": "tmgf-1600",
+        "panelId": "alageum-tmgf-1600",
+        "sourcePages": [
+          38,
+          39
+        ]
+      },
+      {
+        "familyId": "tr2026-family-tmeg",
+        "canonicalId": "tmeg-250",
+        "panelId": "alageum-2026-tmeg-250",
+        "sourcePages": [
+          60,
+          61
+        ]
+      },
+      {
+        "familyId": "tr2026-family-dry-accessories",
+        "canonicalId": "cat-shtz",
+        "panelId": "alageum-2026-thermal-cabinet",
+        "sourcePages": [
+          86
+        ]
+      }
+    ],
+    "staticFamilySections": 5,
+    "apiFamilySections": 5,
+    "canonicalPanelAnchors": 10,
+    "mutatedGuardCases": 80,
+    "sourceOnlyVisibilityPassed": true,
+    "membersSummariesRecordsUnchanged": true,
+    "manualApiFixture": "tmg-400 native CMS exact multiline fixture through normalizeApiProduct",
+    "manualValueAndDesignationExact": true,
+    "unitAndPageSiblings": true,
+    "missingInvalidPagesSuppressed": true,
+    "rawCmsAssertionsUnchanged": true,
+    "sourceAssetCmsCodeUnchanged": true,
+    "guardedAsyncScrollEffectPassed": true,
+    "browserHistoryBehavior": "Requires hosted browser evidence; no local browser launch attempted"
+  },
+  "coverageProof": {
+    "status": "passed",
+    "checkedAt": "2026-10-06T10:26:18.792Z",
+    "allPriorCoverageFieldsExactlyUnchanged": true,
+    "sourceReferenceLinks": 10,
+    "familiesWithSourceReferences": 5,
+    "remainingExplicitEntries": 259,
+    "remainingFamilies": 33,
+    "byCohort": {
+      "legacy": 43,
+      "transformers-2026": 216
+    }
+  },
+  "sourceScope": "Previously reviewed panels only. No newly inferred source fact or construction binding.",
+  "checkedUnchanged": [
+    "All 843 raw records",
+    "All source and asset bindings",
+    "All prior coverage fields excluding added navigation metadata",
+    "All family member lists and specification summary helpers",
+    "Backend CMS implementation and unchanged native CMS browser assertions"
+  ],
+  "uiFreeze": {
+    "path": "/workspace/shared/alageum-oct6-card-audit/family-reference-followup/ui-freeze.json",
+    "originalPath": "/workspace/shared/alageum-oct6-family-links-checkpoint/manifest.json",
+    "sha256": "46b312dfe390897161075864a02d65ccc4e340d0ab26dc1c124ccced2e054250",
+    "files": 9,
+    "allHashesMatch": true
+  },
+  "reviewedFiles": [
+    {
+      "path": "docs/catalog-completion-2026-10-06/README.md",
+      "sha256": "1c70b8425bd384ed1e18b6dabe6e0a891d022a9ca969ea8ca0adc2d6cdf28375",
+      "bytes": 7058
+    },
+    {
+      "path": "docs/catalog-completion-2026-10-06/coverage.json",
+      "sha256": "28b58ed11088c03128adc75f984fbecd75526a3b07405b49391bf8948275408c",
+      "bytes": 1238567
+    },
+    {
+      "path": "docs/catalog-completion-2026-10-06/remaining-source-gaps.json",
+      "sha256": "ca4454d95898c130c67ab2c56317d46e0afaa484d4074d8c18eb457f51d339da",
+      "bytes": 33871
+    },
+    {
+      "path": "frontend/app/catalog.css",
+      "sha256": "4b3f4162402af619bbb8810af0485c494d3fe5928f08eccf3c1a474058019249",
+      "bytes": 34504
+    },
+    {
+      "path": "frontend/components/catalog/CatalogConfigurations.js",
+      "sha256": "168b6d447be76635ecb6d6b4bdcc88a9ee4257d1e727270992b17a99e0ad732f",
+      "bytes": 2772
+    },
+    {
+      "path": "frontend/components/catalog/CatalogSourceEvidence.js",
+      "sha256": "aaca63d81c8d47b37d05e85b9c8775ed42a7cb47455cc5d361e8b5cb936e31cf",
+      "bytes": 9038
+    },
+    {
+      "path": "frontend/components/catalog/LiveCatalog.js",
+      "sha256": "9f2957d6b8d3ba079241d52f0fcfdd8f1a02e964775407c15163db2308e035c7",
+      "bytes": 16317
+    },
+    {
+      "path": "frontend/components/catalog/ProductDetails.js",
+      "sha256": "2abb9a7ed3a00f40f4218f6f0c5cd59849e945213f9b5305ad3725ce8a7d94ea",
+      "bytes": 12760
+    },
+    {
+      "path": "frontend/e2e/catalog.spec.js",
+      "sha256": "b13b58c48c3b7bffd77d82f42cdf1c9c166a1b94e756dc97b4b8d8c92993b983",
+      "bytes": 61630
+    },
+    {
+      "path": "frontend/lib/catalog/familySourceReferences.js",
+      "sha256": "459b63ea8a39786d69bf1df37448eb1310d237cd3380476134468cb855c1a0e0",
+      "bytes": 1751
+    },
+    {
+      "path": "frontend/tests/catalog-identity-presentation.test.mjs",
+      "sha256": "0606731d164c74b5675ba4a46ef389c5424ec5f5722ca350d90b1a400930b15a",
+      "bytes": 14423
+    },
+    {
+      "path": "frontend/tests/family-source-references.test.mjs",
+      "sha256": "af0c5ed24ffdd1bb343437f214d63ee7961e8f1ec2b4ed4b717372731b8d1dde",
+      "bytes": 5644
+    },
+    {
+      "path": "scripts/audit-catalog-completion.mjs",
+      "sha256": "5a312faa70c4d96903480a858c12f91a8d11f7b4bca5a5a6e3714dc0f02e2551",
+      "bytes": 7527
+    }
+  ],
+  "nativeCmsAssertionFile": {
+    "path": "frontend/e2e/node-cms.spec.js",
+    "sha256": "b4793781f2961ed79ff58800c407cc816a8fb8c0417709bd39e3be7179ef0aed",
+    "unchangedFromBase": true
+  },
+  "proofFiles": [
+    {
+      "path": "/workspace/shared/alageum-oct6-card-audit/family-reference-followup/check-coverage.mjs",
+      "sha256": "930bf84653da77291fe5d39f493866adecfeb8a1f8818f58e79192694759f7e9",
+      "bytes": 2193
+    },
+    {
+      "path": "/workspace/shared/alageum-oct6-card-audit/family-reference-followup/check-render.mjs",
+      "sha256": "6a428fc5614eb72961f6dd72a5189b4a42009d7234aa6ba988f08d4e799b8c59",
+      "bytes": 10278
+    },
+    {
+      "path": "/workspace/shared/alageum-oct6-card-audit/family-reference-followup/coverage-results.json",
+      "sha256": "1e16cd5b91b956c9d6d2a7c70f747a67f22c728daf571d00212cdfa71a674b45",
+      "bytes": 315
+    },
+    {
+      "path": "/workspace/shared/alageum-oct6-card-audit/family-reference-followup/manual-api-multiline.html",
+      "sha256": "90bcf03941f65e7cad6cafd5e4b5d87d675464ee6b29be1795924b3b38fac6b8",
+      "bytes": 957
+    },
+    {
+      "path": "/workspace/shared/alageum-oct6-card-audit/family-reference-followup/render-results.json",
+      "sha256": "c3462522c0b8c4777d4ac40ddac4650c87fc2430f22e616165d413a582493455",
+      "bytes": 2619
+    },
+    {
+      "path": "/workspace/shared/alageum-oct6-card-audit/family-reference-followup/tr2026-family-dry-accessories.html",
+      "sha256": "ebf6cbfa2aba790caa29d9c46e7f4724a67e098436cda67dea22fb9c0a001231",
+      "bytes": 853
+    },
+    {
+      "path": "/workspace/shared/alageum-oct6-card-audit/family-reference-followup/tr2026-family-tmeg.html",
+      "sha256": "335b73f86431b23f5d5a1180c92e09b58c002019f39361a95718966d1d94e3e0",
+      "bytes": 804
+    },
+    {
+      "path": "/workspace/shared/alageum-oct6-card-audit/family-reference-followup/tr2026-family-tmg-standard.html",
+      "sha256": "30b0b2a7d266afcd5480c7b6c9191f4aec96dfb90b850601839539863176dea5",
+      "bytes": 1385
+    },
+    {
+      "path": "/workspace/shared/alageum-oct6-card-audit/family-reference-followup/tr2026-family-tmgf.html",
+      "sha256": "be2c8e2ef598bdd98985e7e3d6ee5a1f7140cb45ae2b786b0117ba0f3988b90c",
+      "bytes": 975
+    },
+    {
+      "path": "/workspace/shared/alageum-oct6-card-audit/family-reference-followup/tr2026-family-tmgs-pole.html",
+      "sha256": "d0200fa877e1c2e044839037c7f8765684b25516dc1063e8aeb0d4e616ef1936",
+      "bytes": 1025
+    },
+    {
+      "path": "/workspace/shared/alageum-oct6-card-audit/family-reference-followup/ui-freeze.json",
+      "sha256": "46b312dfe390897161075864a02d65ccc4e340d0ab26dc1c124ccced2e054250",
+      "bytes": 3417
+    }
+  ],
+  "limits": [
+    "Actual component markup and targeted scroll effect checked; browser layout/click/back/forward await hosted evidence",
+    "No local browser retry or external publication performed by reviewer"
+  ],
+  "finalNonRuntimeRefresh": {
+    "files": [
+      "docs/catalog-completion-2026-10-06/README.md",
+      "frontend/e2e/catalog.spec.js"
+    ],
+    "testAdjustment": "innerText to textContent for the pre-navigation summary snapshot only. Exact URL/href, panel viewport after click and forward, member selection before/after back, unchanged summary text, reference counts and shell assertions retained.",
+    "documentation": "Local versus hosted checks and 43bea601 PostgreSQL status remain separately labelled; security-audit failures remain explicit. Validation counts here are parent/worker-reported; no new execution claimed."
+  }
+}

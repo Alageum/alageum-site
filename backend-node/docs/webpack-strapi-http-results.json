@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "status": "passed-http-only",
+  "sourceCheckpoint": "0fb6f64cc5c1e64ff7695c27c16383a0d971c39d",
+  "node": "v24.19.0",
+  "strapi": "5.56.0",
+  "webpack": "5.109.2",
+  "middleware": "7.4.6",
+  "command": "bash scripts/run-webpack-compat.sh --watch",
+  "cold": {
+    "initialCompilationErrors": 0,
+    "cmsAssetsAndDeepRoutes": true,
+    "apiIsolation": true,
+    "sseSyncAndBuild": true,
+    "hotUpdateManifestAndChunks": true,
+    "syntaxErrorRecovery": true,
+    "disconnectReadiness": true,
+    "portReleased": true
+  },
+  "warm": {
+    "initialCompilationErrors": 0,
+    "cmsAssetsAndDeepRoutes": true,
+    "apiIsolation": true,
+    "sseSyncAndBuild": true,
+    "hotUpdateManifestAndChunks": true,
+    "syntaxErrorRecovery": true,
+    "disconnectReadiness": true,
+    "portReleased": true
+  },
+  "cleanup": {
+    "postgresStopped": true,
+    "syntheticEntryRestored": true,
+    "syntheticModuleRemoved": true,
+    "sanitizedSnapshotPublished": true
+  },
+  "browser": {
+    "status": "not-run-environment-blocked",
+    "requiredNativeCmsCases": 4
+  },
+  "evidenceDirectory": "webpack-compat-evidence/run.djVAkm",
+  "limitations": [
+    "HTTP and SSE evidence does not execute React in a browser.",
+    "Both Chromium launch routes failed on the executor Unix-socket restriction; browser acceptance is reserved for hosted CI."
+  ],
+  "inputs": {
+    "backend-node/package-lock.json": "eae762a9730dba640590de7b4fbeb2ec515e6c434f6ea0d0377a0204730c6159",
+    "backend-node/patches/strapi-webpack-koa.json": "f301e0a1d583f4ad7405794d4059fa927077df280b6226d0c3f3f066edd9a8d2",
+    "backend-node/src/admin/webpack.config.js": "8ca458b84f9bd23c3350d7c3336a2b3af57f5aa3ae193fd55acaac8c8c7f2c39",
+    "backend-node/scripts/run-webpack-compat.sh": "a4ae384633720f7134217c8c5525e8673f794ac10942192ecad37297348c1f55",
+    "backend-node/scripts/probe-webpack-strapi.js": "e032e66c38ebefab4ef9bd695de984d507c46ec78426277bc96c2693a35ff70c"
+  }
+}

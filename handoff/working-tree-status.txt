@@ -1,0 +1,181 @@
+ M Design/index.html
+ M frontend/app/(site)/ai/page.js
+ M frontend/app/(site)/b2b/documents/page.js
+ M frontend/app/(site)/b2b/finance/page.js
+ M frontend/app/(site)/b2b/layout.js
+ M frontend/app/(site)/b2b/members/page.js
+ M frontend/app/(site)/b2b/orders/page.js
+ M frontend/app/(site)/b2b/page.js
+ M frontend/app/(site)/b2b/profile/page.js
+ M frontend/app/(site)/b2b/quotes/quotes.css
+ M frontend/app/(site)/b2b/support/page.js
+ M frontend/app/(site)/catalog/[slug]/page.js
+ M frontend/app/(site)/catalog/compare/page.js
+ M frontend/app/(site)/catalog/page.js
+ M frontend/app/(site)/catalog/source/page.js
+ M frontend/app/(site)/contacts/page.js
+ M frontend/app/(site)/data-policy/page.js
+ M frontend/app/(site)/documents/page.js
+ M frontend/app/(site)/inquiry/inquiry.css
+ M frontend/app/(site)/inquiry/page.js
+ M frontend/app/(site)/loading.js
+ M frontend/app/(site)/login/page.js
+ M frontend/app/(site)/manufacturers/[slug]/page.js
+ M frontend/app/(site)/manufacturers/page.js
+ M frontend/app/(site)/page.js
+ M frontend/app/(site)/projects/[slug]/page.js
+ M frontend/app/(site)/projects/page.js
+ M frontend/app/(site)/selection/page.js
+ M frontend/app/(site)/solutions/[slug]/page.js
+ M frontend/app/(site)/solutions/page.js
+ M frontend/app/(site)/workspace/page.js
+ M frontend/app/(site)/workspace/workspace.css
+ M frontend/app/catalog.css
+ M frontend/app/company-pages.css
+ M frontend/app/error.js
+ M frontend/app/globals.css
+ M frontend/app/layout.js
+ M frontend/app/not-found.js
+ M frontend/app/pages/[locale]/[slug]/error.js
+ M frontend/app/pages/[locale]/[slug]/not-found.js
+ M frontend/components/B2BNav.js
+ M frontend/components/CompanyProfileEditor.js
+ M frontend/components/OrganizationChooser.js
+ M frontend/components/ResourceList.js
+ M frontend/components/SiteFooter.js
+ M frontend/components/SiteHeader.js
+ M frontend/components/catalog/Catalog.js
+ M frontend/components/catalog/CatalogConfigurations.js
+ M frontend/components/catalog/CatalogNotice.js
+ M frontend/components/catalog/CatalogSource.js
+ M frontend/components/catalog/CatalogSourceEvidence.js
+ M frontend/components/catalog/CatalogSourcePreview.js
+ M frontend/components/catalog/EquipmentModel.js
+ M frontend/components/catalog/FamilyProductVisual.js
+ M frontend/components/catalog/ImportedProductData.js
+ M frontend/components/catalog/ProductDetails.js
+ M frontend/components/catalog/ProductPhotograph.js
+ M frontend/components/catalog/ProductVisual.js
+ M frontend/components/catalog/Selection.js
+ M frontend/components/catalog/SelectionNavigation.js
+ M frontend/components/catalog/models/EquipmentModel.module.css
+ M frontend/components/catalog/source-context/CatalogSourceContext.js
+ M frontend/components/finance/InvoicesWorkspace.js
+ M frontend/components/inquiry/InquiryForm.js
+ M frontend/components/members/MembersWorkspace.js
+ M frontend/components/orders/OrdersWorkspace.js
+ M frontend/components/public/CorporatePage.js
+ M frontend/components/public/CorporateParts.js
+ M frontend/components/public/CorporatePhoto.js
+ M frontend/components/public/EditorialPage.js
+ M frontend/components/public/EnterpriseDirectory.js
+ M frontend/components/public/OfficeDirectory.js
+ M frontend/components/public/PageIntro.js
+ M frontend/components/public/ProjectCTA.js
+ M frontend/components/public/SourceNote.js
+ M frontend/components/public/StaticCompanyPage.js
+ M frontend/components/quotes/LiveInquiry.js
+ M frontend/components/quotes/QuoteAccess.js
+ M frontend/components/quotes/QuoteDetail.js
+ M frontend/components/quotes/QuoteList.js
+ M frontend/components/quotes/QuotePrint.js
+ M frontend/components/quotes/QuotePrintDocument.js
+ M frontend/components/support/SupportWorkspace.js
+ M frontend/components/workspace/Workspace.js
+ M frontend/e2e/company-pages.spec.js
+ M frontend/lib/catalog/data.js
+ M frontend/lib/catalog/grouping.js
+ M frontend/lib/catalog/presentation.js
+ M frontend/lib/catalog/query.js
+ M frontend/lib/public/company.js
+ M frontend/lib/public/content.js
+ M frontend/lib/public/photography-manifest.json
+ M frontend/next.config.mjs
+ M frontend/tests/company-pages.test.mjs
+ M frontend/tests/editorial-pages.test.mjs
+ M frontend/tests/photography.test.mjs
+ M frontend/tests/public-content.test.mjs
+?? Design/assets/logo-lettering-01-red.svg
+?? Design/assets/logo-lettering-01-white.svg
+?? backend-node/data/catalog-editorial/
+?? frontend/app/(site)/careers/
+?? frontend/app/(site)/catalog/home/
+?? frontend/app/(site)/client/
+?? frontend/app/(site)/company/
+?? frontend/app/(site)/investors/
+?? frontend/app/(site)/materials/
+?? frontend/app/(site)/news/
+?? frontend/app/(site)/partners/
+?? frontend/app/[locale]/
+?? frontend/app/brand-details.css
+?? frontend/app/brand-experience.css
+?? frontend/app/brand-motion.css
+?? frontend/app/design-system.css
+?? frontend/app/ecosystem.css
+?? frontend/app/icon.svg
+?? frontend/app/partner-marquee.css
+?? frontend/app/project-cases.css
+?? frontend/components/ExperienceShell.js
+?? frontend/components/catalog/CatalogHome.css
+?? frontend/components/catalog/CatalogHome.js
+?? frontend/components/catalog/ParametricCatalog.css
+?? frontend/components/catalog/ParametricFilters.js
+?? frontend/components/catalog/ProductRecommendations.css
+?? frontend/components/catalog/QuickProductDetails.js
+?? frontend/components/catalog/RelatedProducts.js
+?? frontend/components/ecosystem/
+?? frontend/components/locale/
+?? frontend/components/public/AnimatedProjectInputs.css
+?? frontend/components/public/AnimatedProjectInputs.js
+?? frontend/components/public/CompanyMetrics.css
+?? frontend/components/public/CompanyMetrics.js
+?? frontend/components/public/ContextSupport.js
+?? frontend/components/public/EnterpriseMapPreview.css
+?? frontend/components/public/EnterpriseMapPreview.js
+?? frontend/components/public/HeroVideo.js
+?? frontend/components/public/HomeEngineeringCharts.css
+?? frontend/components/public/HomeEngineeringCharts.js
+?? frontend/components/public/MaterialDirectory.js
+?? frontend/components/public/PartnerMarquee.js
+?? frontend/components/public/ProductionFeature.js
+?? frontend/components/public/ProjectGraphic.js
+?? frontend/components/public/ProjectPortfolio.js
+?? frontend/components/ui/
+?? frontend/e2e/ecosystem.spec.js
+?? frontend/lib/catalog/advancedQuery.js
+?? frontend/lib/catalog/catalogEditorial.js
+?? frontend/lib/catalog/catalogEditorialOverlay.json
+?? frontend/lib/catalog/relatedProducts.js
+?? frontend/lib/ecosystem/
+?? frontend/lib/i18n/
+?? frontend/lib/public/document-migration.json
+?? frontend/lib/public/localResources.js
+?? frontend/lib/public/materials-index.json
+?? frontend/lib/public/materials/
+?? frontend/lib/public/news-photography.json
+?? frontend/lib/public/partnerHover.js
+?? frontend/lib/public/partners.js
+?? frontend/lib/public/project-cases.js
+?? frontend/output/
+?? frontend/playwright.ecosystem.config.js
+?? frontend/proxy.js
+?? frontend/public/brand/logo-lettering-01-red.svg
+?? frontend/public/brand/logo-lettering-01-white.svg
+?? frontend/public/content/
+?? frontend/public/design-panel/
+?? frontend/public/documents/
+?? frontend/public/partners/
+?? frontend/public/people/
+?? frontend/public/photography/manufacturers/batys-electric-gallery.webp
+?? frontend/public/photography/manufacturers/batys-electric.webp
+?? frontend/public/photography/manufacturers/ural-electric-gallery.webp
+?? frontend/public/photography/manufacturers/ural-electric.webp
+?? frontend/public/photography/news/
+?? frontend/public/video/
+?? frontend/tests/catalog-advanced-search.test.mjs
+?? frontend/tests/catalog-related-products.test.mjs
+?? frontend/tests/ecosystem-domain.test.mjs
+?? frontend/tests/local-content-migration.test.mjs
+?? frontend/tests/partner-hover-zones.test.mjs
+?? scripts/import-catalog-editorial.mjs
+?? scripts/validate-catalog-editorial.mjs

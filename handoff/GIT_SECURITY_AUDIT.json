@@ -1,0 +1,55 @@
+{
+  "scanScope": "Actual Git index blobs, not only filenames or working-tree files",
+  "stagedFileCount": 3577,
+  "stagedBytes": 492424955,
+  "actualCurrentSecretValuesChecked": 9,
+  "actualSecretMatches": 0,
+  "privateKeyOrTokenPatternMatches": 0,
+  "forbiddenPaths": 0,
+  "sourceImplementationPreserved": true,
+  "oldHistoryIncluded": false,
+  "filesOver50MiBAllowedByOrdinaryGit": [
+    {
+      "path": "frontend/public/documents/substations-local-edition.pdf",
+      "bytes": 75421849
+    },
+    {
+      "path": "frontend/public/video/alageum-upscaled-4k.mp4",
+      "bytes": 52443533
+    }
+  ],
+  "syntheticCredentialUrlReferences": [
+    ".github/workflows/catalog-rfq.yml",
+    ".github/workflows/ci.yml",
+    ".github/workflows/node-strapi.yml",
+    "backend-node/scripts/run-candidate-regressions.js",
+    "backend-node/scripts/run-document-tests.sh",
+    "backend-node/scripts/run-invoice-tests.sh",
+    "backend-node/scripts/run-local-tests.sh",
+    "backend-node/scripts/run-member-tests.sh",
+    "backend-node/scripts/run-orders-tests.sh",
+    "backend-node/scripts/run-organization-tests.sh",
+    "backend-node/scripts/run-page-tests.sh",
+    "backend-node/scripts/run-profile-tests.sh",
+    "backend-node/scripts/run-quote-limit-checks.js",
+    "backend-node/scripts/run-quote-limit-tests.sh",
+    "backend-node/scripts/run-quote-print-tests.sh",
+    "backend-node/scripts/run-signing-tests.sh",
+    "backend-node/scripts/run-support-tests.sh",
+    "backend-node/scripts/run-system-checks.js",
+    "backend-node/scripts/run-system-tests.sh",
+    "backend-node/scripts/run-vite-compat.sh",
+    "backend-node/scripts/run-webpack-compat.sh",
+    "backend-node/tests/cms-upload-safety.test.js",
+    "backend-node/tests/quote-limit-runner.test.js",
+    "backend-node/tests/system-runner.test.js",
+    "backend/tests/test_system.py",
+    "docs/catalog-rfq.md",
+    "docs/catalog-transformers-2026/review/ptmm-dimension-qualification/historical-test-bytes.json",
+    "docs/node-strapi-migration.md",
+    "handoff/create-local-env.mjs"
+  ],
+  "syntheticReferencePolicy": "Only test/CI fixtures and historical documentation; no real local credentials. Runtime examples blank and inactive legacy defaults removed.",
+  "excludedImportantPdf": "frontend/public/documents/transformers-2026-original.pdf",
+  "testsOrBuildsRun": false
+}

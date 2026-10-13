@@ -1,0 +1,2240 @@
+[
+  {
+    "id": "alageum-2026-tmgsu-100",
+    "familyId": "tmgsu",
+    "name": "ТМГСУ-100",
+    "sourceDesignation": "ТМГСУ-100",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      58,
+      59
+    ],
+    "rawSpecs": [
+      {
+        "label": "Pо",
+        "raw": "290",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 58
+      },
+      {
+        "label": "Pк",
+        "raw": "2270",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 58
+      },
+      {
+        "label": "Uк",
+        "raw": "4,5",
+        "unitAsPrinted": "%",
+        "sourcePage": 58
+      },
+      {
+        "label": "Iо",
+        "raw": "2,2",
+        "unitAsPrinted": "%",
+        "sourcePage": 58
+      },
+      {
+        "label": "L",
+        "raw": "1015",
+        "unitAsPrinted": null,
+        "sourcePage": 58
+      },
+      {
+        "label": "B",
+        "raw": "730",
+        "unitAsPrinted": null,
+        "sourcePage": 58
+      },
+      {
+        "label": "H",
+        "raw": "1005",
+        "unitAsPrinted": null,
+        "sourcePage": 58
+      },
+      {
+        "label": "A",
+        "raw": "550",
+        "unitAsPrinted": null,
+        "sourcePage": 58
+      },
+      {
+        "label": "A1",
+        "raw": "550",
+        "unitAsPrinted": null,
+        "sourcePage": 58
+      },
+      {
+        "label": "M",
+        "raw": "90",
+        "unitAsPrinted": null,
+        "sourcePage": 58
+      },
+      {
+        "label": "K",
+        "raw": "190",
+        "unitAsPrinted": null,
+        "sourcePage": 58
+      },
+      {
+        "label": "h",
+        "raw": "95",
+        "unitAsPrinted": null,
+        "sourcePage": 58
+      },
+      {
+        "label": "h1",
+        "raw": "110",
+        "unitAsPrinted": null,
+        "sourcePage": 58
+      },
+      {
+        "label": "Полная масса",
+        "raw": "534",
+        "unitAsPrinted": "кг",
+        "sourcePage": 58
+      },
+      {
+        "label": "Масса масла",
+        "raw": "130",
+        "unitAsPrinted": "кг",
+        "sourcePage": 58
+      },
+      {
+        "label": "Номинальная мощность",
+        "raw": "100",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 58
+      },
+      {
+        "label": "Номинальное напряжение",
+        "raw": "6(10)/0,4",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 58
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "raw": "У/Ун-0",
+        "unitAsPrinted": null,
+        "sourcePage": 58
+      },
+      {
+        "label": "Установка",
+        "raw": "наружной или внутренней",
+        "unitAsPrinted": null,
+        "sourcePage": 58,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-04-p58"
+      },
+      {
+        "label": "Температура умеренного климата",
+        "raw": "от +40 до -45",
+        "unitAsPrinted": "°C",
+        "sourcePage": 58,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-04-p58"
+      },
+      {
+        "label": "Температура холодного климата",
+        "raw": "от +40 до -60",
+        "unitAsPrinted": "°C",
+        "sourcePage": 58,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-04-p58"
+      },
+      {
+        "label": "Окружающая среда",
+        "raw": "невзрывоопасная, не содержащая пыли в концентрациях, снижающих параметры изделий в недопустимых пределах",
+        "unitAsPrinted": null,
+        "sourcePage": 58,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-04-p58"
+      },
+      {
+        "label": "Назначение симметрирующего устройства",
+        "raw": "поддержание симметричности фазных напряжений при неравномерной пофазной нагрузке",
+        "unitAsPrinted": null,
+        "sourcePage": 58,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-04-p58"
+      }
+    ],
+    "assetFamilyIds": [
+      "oil-tmgsu"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [],
+    "series": "ТМГСУ",
+    "context": "с симметрирующим устройством",
+    "powerKva": 100,
+    "voltageRaw": "6(10)/0,4 кВ",
+    "commonProseGroupIds": [
+      "common-prose-04-p58"
+    ],
+    "designation": "ТМГСУ-100",
+    "execution": "с симметрирующим устройством",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 58,
+      "designation": "ТМГСУ-100",
+      "execution": "с симметрирующим устройством",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Pо",
+        "value": "290",
+        "unit": "Вт",
+        "page": 58
+      },
+      {
+        "label": "Pк",
+        "value": "2270",
+        "unit": "Вт",
+        "page": 58
+      },
+      {
+        "label": "Uк",
+        "value": "4,5",
+        "unit": "%",
+        "page": 58
+      },
+      {
+        "label": "Iо",
+        "value": "2,2",
+        "unit": "%",
+        "page": 58
+      },
+      {
+        "label": "L",
+        "value": "1015",
+        "unit": null,
+        "page": 58
+      },
+      {
+        "label": "B",
+        "value": "730",
+        "unit": null,
+        "page": 58
+      },
+      {
+        "label": "H",
+        "value": "1005",
+        "unit": null,
+        "page": 58
+      },
+      {
+        "label": "A",
+        "value": "550",
+        "unit": null,
+        "page": 58
+      },
+      {
+        "label": "A1",
+        "value": "550",
+        "unit": null,
+        "page": 58
+      },
+      {
+        "label": "M",
+        "value": "90",
+        "unit": null,
+        "page": 58
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": null,
+        "page": 58
+      },
+      {
+        "label": "h",
+        "value": "95",
+        "unit": null,
+        "page": 58
+      },
+      {
+        "label": "h1",
+        "value": "110",
+        "unit": null,
+        "page": 58
+      },
+      {
+        "label": "Полная масса",
+        "value": "534",
+        "unit": "кг",
+        "page": 58
+      },
+      {
+        "label": "Масса масла",
+        "value": "130",
+        "unit": "кг",
+        "page": 58
+      },
+      {
+        "label": "Номинальная мощность",
+        "value": "100",
+        "unit": "кВА",
+        "page": 58
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "page": 58
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0",
+        "unit": null,
+        "page": 58
+      },
+      {
+        "label": "Установка",
+        "value": "наружной или внутренней",
+        "unit": null,
+        "page": 58,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-04-p58"
+      },
+      {
+        "label": "Температура умеренного климата",
+        "value": "от +40 до -45",
+        "unit": "°C",
+        "page": 58,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-04-p58"
+      },
+      {
+        "label": "Температура холодного климата",
+        "value": "от +40 до -60",
+        "unit": "°C",
+        "page": 58,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-04-p58"
+      },
+      {
+        "label": "Окружающая среда",
+        "value": "невзрывоопасная, не содержащая пыли в концентрациях, снижающих параметры изделий в недопустимых пределах",
+        "unit": null,
+        "page": 58,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-04-p58"
+      },
+      {
+        "label": "Назначение симметрирующего устройства",
+        "value": "поддержание симметричности фазных напряжений при неравномерной пофазной нагрузке",
+        "unit": null,
+        "page": 58,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-04-p58"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-tmgsu-160",
+    "familyId": "tmgsu",
+    "name": "ТМГСУ-160",
+    "sourceDesignation": "ТМГСУ-160",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      58,
+      59
+    ],
+    "rawSpecs": [
+      {
+        "label": "Pо",
+        "raw": "460",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 58
+      },
+      {
+        "label": "Pк",
+        "raw": "3100",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 58
+      },
+      {
+        "label": "Uк",
+        "raw": "5,0",
+        "unitAsPrinted": "%",
+        "sourcePage": 58
+      },
+      {
+        "label": "Iо",
+        "raw": "1,9",
+        "unitAsPrinted": "%",
+        "sourcePage": 58
+      },
+      {
+        "label": "L",
+        "raw": "1134",
+        "unitAsPrinted": null,
+        "sourcePage": 58
+      },
+      {
+        "label": "B",
+        "raw": "762",
+        "unitAsPrinted": null,
+        "sourcePage": 58
+      },
+      {
+        "label": "H",
+        "raw": "1080",
+        "unitAsPrinted": null,
+        "sourcePage": 58
+      },
+      {
+        "label": "A",
+        "raw": "550",
+        "unitAsPrinted": null,
+        "sourcePage": 58
+      },
+      {
+        "label": "A1",
+        "raw": "550",
+        "unitAsPrinted": null,
+        "sourcePage": 58
+      },
+      {
+        "label": "M",
+        "raw": "90",
+        "unitAsPrinted": null,
+        "sourcePage": 58
+      },
+      {
+        "label": "K",
+        "raw": "190",
+        "unitAsPrinted": null,
+        "sourcePage": 58
+      },
+      {
+        "label": "h",
+        "raw": "115",
+        "unitAsPrinted": null,
+        "sourcePage": 58
+      },
+      {
+        "label": "h1",
+        "raw": "120",
+        "unitAsPrinted": null,
+        "sourcePage": 58
+      },
+      {
+        "label": "Полная масса",
+        "raw": "756",
+        "unitAsPrinted": "кг",
+        "sourcePage": 58
+      },
+      {
+        "label": "Масса масла",
+        "raw": "180",
+        "unitAsPrinted": "кг",
+        "sourcePage": 58
+      },
+      {
+        "label": "Номинальная мощность",
+        "raw": "160",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 58
+      },
+      {
+        "label": "Номинальное напряжение",
+        "raw": "6(10)/0,4",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 58
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "raw": "У/Ун-0",
+        "unitAsPrinted": null,
+        "sourcePage": 58
+      },
+      {
+        "label": "Установка",
+        "raw": "наружной или внутренней",
+        "unitAsPrinted": null,
+        "sourcePage": 58,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-04-p58"
+      },
+      {
+        "label": "Температура умеренного климата",
+        "raw": "от +40 до -45",
+        "unitAsPrinted": "°C",
+        "sourcePage": 58,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-04-p58"
+      },
+      {
+        "label": "Температура холодного климата",
+        "raw": "от +40 до -60",
+        "unitAsPrinted": "°C",
+        "sourcePage": 58,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-04-p58"
+      },
+      {
+        "label": "Окружающая среда",
+        "raw": "невзрывоопасная, не содержащая пыли в концентрациях, снижающих параметры изделий в недопустимых пределах",
+        "unitAsPrinted": null,
+        "sourcePage": 58,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-04-p58"
+      },
+      {
+        "label": "Назначение симметрирующего устройства",
+        "raw": "поддержание симметричности фазных напряжений при неравномерной пофазной нагрузке",
+        "unitAsPrinted": null,
+        "sourcePage": 58,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-04-p58"
+      }
+    ],
+    "assetFamilyIds": [
+      "oil-tmgsu"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [],
+    "series": "ТМГСУ",
+    "context": "с симметрирующим устройством",
+    "powerKva": 160,
+    "voltageRaw": "6(10)/0,4 кВ",
+    "commonProseGroupIds": [
+      "common-prose-04-p58"
+    ],
+    "designation": "ТМГСУ-160",
+    "execution": "с симметрирующим устройством",
+    "candidateOldIds": [],
+    "overlapAssessment": [
+      {
+        "oldId": "tmgs-160",
+        "status": "do-not-merge",
+        "evidence": "ТМГСУ with symmetrizing device is a different explicit series from old ТМГС.",
+        "autoMerge": false
+      }
+    ],
+    "sourceRow": {
+      "page": 58,
+      "designation": "ТМГСУ-160",
+      "execution": "с симметрирующим устройством",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Pо",
+        "value": "460",
+        "unit": "Вт",
+        "page": 58
+      },
+      {
+        "label": "Pк",
+        "value": "3100",
+        "unit": "Вт",
+        "page": 58
+      },
+      {
+        "label": "Uк",
+        "value": "5,0",
+        "unit": "%",
+        "page": 58
+      },
+      {
+        "label": "Iо",
+        "value": "1,9",
+        "unit": "%",
+        "page": 58
+      },
+      {
+        "label": "L",
+        "value": "1134",
+        "unit": null,
+        "page": 58
+      },
+      {
+        "label": "B",
+        "value": "762",
+        "unit": null,
+        "page": 58
+      },
+      {
+        "label": "H",
+        "value": "1080",
+        "unit": null,
+        "page": 58
+      },
+      {
+        "label": "A",
+        "value": "550",
+        "unit": null,
+        "page": 58
+      },
+      {
+        "label": "A1",
+        "value": "550",
+        "unit": null,
+        "page": 58
+      },
+      {
+        "label": "M",
+        "value": "90",
+        "unit": null,
+        "page": 58
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": null,
+        "page": 58
+      },
+      {
+        "label": "h",
+        "value": "115",
+        "unit": null,
+        "page": 58
+      },
+      {
+        "label": "h1",
+        "value": "120",
+        "unit": null,
+        "page": 58
+      },
+      {
+        "label": "Полная масса",
+        "value": "756",
+        "unit": "кг",
+        "page": 58
+      },
+      {
+        "label": "Масса масла",
+        "value": "180",
+        "unit": "кг",
+        "page": 58
+      },
+      {
+        "label": "Номинальная мощность",
+        "value": "160",
+        "unit": "кВА",
+        "page": 58
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "page": 58
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0",
+        "unit": null,
+        "page": 58
+      },
+      {
+        "label": "Установка",
+        "value": "наружной или внутренней",
+        "unit": null,
+        "page": 58,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-04-p58"
+      },
+      {
+        "label": "Температура умеренного климата",
+        "value": "от +40 до -45",
+        "unit": "°C",
+        "page": 58,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-04-p58"
+      },
+      {
+        "label": "Температура холодного климата",
+        "value": "от +40 до -60",
+        "unit": "°C",
+        "page": 58,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-04-p58"
+      },
+      {
+        "label": "Окружающая среда",
+        "value": "невзрывоопасная, не содержащая пыли в концентрациях, снижающих параметры изделий в недопустимых пределах",
+        "unit": null,
+        "page": 58,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-04-p58"
+      },
+      {
+        "label": "Назначение симметрирующего устройства",
+        "value": "поддержание симметричности фазных напряжений при неравномерной пофазной нагрузке",
+        "unit": null,
+        "page": 58,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-04-p58"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-tmgsu-250",
+    "familyId": "tmgsu",
+    "name": "ТМГСУ-250",
+    "sourceDesignation": "ТМГСУ-250",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      58,
+      59
+    ],
+    "rawSpecs": [
+      {
+        "label": "Pо",
+        "raw": "610",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 58
+      },
+      {
+        "label": "Pк",
+        "raw": "4200",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 58
+      },
+      {
+        "label": "Uк",
+        "raw": "4,5",
+        "unitAsPrinted": "%",
+        "sourcePage": 58
+      },
+      {
+        "label": "Iо",
+        "raw": "1,9",
+        "unitAsPrinted": "%",
+        "sourcePage": 58
+      },
+      {
+        "label": "L",
+        "raw": "1175",
+        "unitAsPrinted": null,
+        "sourcePage": 58
+      },
+      {
+        "label": "B",
+        "raw": "856",
+        "unitAsPrinted": null,
+        "sourcePage": 58
+      },
+      {
+        "label": "H",
+        "raw": "1145",
+        "unitAsPrinted": null,
+        "sourcePage": 58
+      },
+      {
+        "label": "A",
+        "raw": "550",
+        "unitAsPrinted": null,
+        "sourcePage": 58
+      },
+      {
+        "label": "A1",
+        "raw": "550",
+        "unitAsPrinted": null,
+        "sourcePage": 58
+      },
+      {
+        "label": "M",
+        "raw": "110",
+        "unitAsPrinted": null,
+        "sourcePage": 58
+      },
+      {
+        "label": "K",
+        "raw": "230",
+        "unitAsPrinted": null,
+        "sourcePage": 58
+      },
+      {
+        "label": "h",
+        "raw": "110",
+        "unitAsPrinted": null,
+        "sourcePage": 58
+      },
+      {
+        "label": "h1",
+        "raw": "115",
+        "unitAsPrinted": null,
+        "sourcePage": 58
+      },
+      {
+        "label": "Полная масса",
+        "raw": "1038",
+        "unitAsPrinted": "кг",
+        "sourcePage": 58
+      },
+      {
+        "label": "Масса масла",
+        "raw": "200",
+        "unitAsPrinted": "кг",
+        "sourcePage": 58
+      },
+      {
+        "label": "Номинальная мощность",
+        "raw": "250",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 58
+      },
+      {
+        "label": "Номинальное напряжение",
+        "raw": "6(10)/0,4",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 58
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "raw": "У/Ун-0",
+        "unitAsPrinted": null,
+        "sourcePage": 58
+      },
+      {
+        "label": "Установка",
+        "raw": "наружной или внутренней",
+        "unitAsPrinted": null,
+        "sourcePage": 58,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-04-p58"
+      },
+      {
+        "label": "Температура умеренного климата",
+        "raw": "от +40 до -45",
+        "unitAsPrinted": "°C",
+        "sourcePage": 58,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-04-p58"
+      },
+      {
+        "label": "Температура холодного климата",
+        "raw": "от +40 до -60",
+        "unitAsPrinted": "°C",
+        "sourcePage": 58,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-04-p58"
+      },
+      {
+        "label": "Окружающая среда",
+        "raw": "невзрывоопасная, не содержащая пыли в концентрациях, снижающих параметры изделий в недопустимых пределах",
+        "unitAsPrinted": null,
+        "sourcePage": 58,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-04-p58"
+      },
+      {
+        "label": "Назначение симметрирующего устройства",
+        "raw": "поддержание симметричности фазных напряжений при неравномерной пофазной нагрузке",
+        "unitAsPrinted": null,
+        "sourcePage": 58,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-04-p58"
+      }
+    ],
+    "assetFamilyIds": [
+      "oil-tmgsu"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [],
+    "series": "ТМГСУ",
+    "context": "с симметрирующим устройством",
+    "powerKva": 250,
+    "voltageRaw": "6(10)/0,4 кВ",
+    "commonProseGroupIds": [
+      "common-prose-04-p58"
+    ],
+    "designation": "ТМГСУ-250",
+    "execution": "с симметрирующим устройством",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 58,
+      "designation": "ТМГСУ-250",
+      "execution": "с симметрирующим устройством",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Pо",
+        "value": "610",
+        "unit": "Вт",
+        "page": 58
+      },
+      {
+        "label": "Pк",
+        "value": "4200",
+        "unit": "Вт",
+        "page": 58
+      },
+      {
+        "label": "Uк",
+        "value": "4,5",
+        "unit": "%",
+        "page": 58
+      },
+      {
+        "label": "Iо",
+        "value": "1,9",
+        "unit": "%",
+        "page": 58
+      },
+      {
+        "label": "L",
+        "value": "1175",
+        "unit": null,
+        "page": 58
+      },
+      {
+        "label": "B",
+        "value": "856",
+        "unit": null,
+        "page": 58
+      },
+      {
+        "label": "H",
+        "value": "1145",
+        "unit": null,
+        "page": 58
+      },
+      {
+        "label": "A",
+        "value": "550",
+        "unit": null,
+        "page": 58
+      },
+      {
+        "label": "A1",
+        "value": "550",
+        "unit": null,
+        "page": 58
+      },
+      {
+        "label": "M",
+        "value": "110",
+        "unit": null,
+        "page": 58
+      },
+      {
+        "label": "K",
+        "value": "230",
+        "unit": null,
+        "page": 58
+      },
+      {
+        "label": "h",
+        "value": "110",
+        "unit": null,
+        "page": 58
+      },
+      {
+        "label": "h1",
+        "value": "115",
+        "unit": null,
+        "page": 58
+      },
+      {
+        "label": "Полная масса",
+        "value": "1038",
+        "unit": "кг",
+        "page": 58
+      },
+      {
+        "label": "Масса масла",
+        "value": "200",
+        "unit": "кг",
+        "page": 58
+      },
+      {
+        "label": "Номинальная мощность",
+        "value": "250",
+        "unit": "кВА",
+        "page": 58
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(10)/0,4",
+        "unit": "кВ",
+        "page": 58
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0",
+        "unit": null,
+        "page": 58
+      },
+      {
+        "label": "Установка",
+        "value": "наружной или внутренней",
+        "unit": null,
+        "page": 58,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-04-p58"
+      },
+      {
+        "label": "Температура умеренного климата",
+        "value": "от +40 до -45",
+        "unit": "°C",
+        "page": 58,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-04-p58"
+      },
+      {
+        "label": "Температура холодного климата",
+        "value": "от +40 до -60",
+        "unit": "°C",
+        "page": 58,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-04-p58"
+      },
+      {
+        "label": "Окружающая среда",
+        "value": "невзрывоопасная, не содержащая пыли в концентрациях, снижающих параметры изделий в недопустимых пределах",
+        "unit": null,
+        "page": 58,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-04-p58"
+      },
+      {
+        "label": "Назначение симметрирующего устройства",
+        "value": "поддержание симметричности фазных напряжений при неравномерной пофазной нагрузке",
+        "unit": null,
+        "page": 58,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-04-p58"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-tmeg-40",
+    "familyId": "tmeg",
+    "name": "ТМЭГ-40",
+    "sourceDesignation": "ТМЭГ-40",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      60,
+      61
+    ],
+    "rawSpecs": [
+      {
+        "label": "Pо",
+        "raw": "160",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 60
+      },
+      {
+        "label": "Pк",
+        "raw": "1000",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 60
+      },
+      {
+        "label": "Uк",
+        "raw": "4,5",
+        "unitAsPrinted": "%",
+        "sourcePage": 60
+      },
+      {
+        "label": "Iо",
+        "raw": "2,8",
+        "unitAsPrinted": "%",
+        "sourcePage": 60
+      },
+      {
+        "label": "L",
+        "raw": "880",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "B",
+        "raw": "515",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "H",
+        "raw": "1090",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "A",
+        "raw": "450",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "A1",
+        "raw": "400",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "M",
+        "raw": "105",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "K",
+        "raw": "190",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "h",
+        "raw": "75",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "h1",
+        "raw": "95",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "Полная масса",
+        "raw": "325",
+        "unitAsPrinted": "кг",
+        "sourcePage": 60
+      },
+      {
+        "label": "Масса масла",
+        "raw": "79",
+        "unitAsPrinted": "кг",
+        "sourcePage": 60
+      },
+      {
+        "label": "Номинальная мощность",
+        "raw": "40",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 60
+      },
+      {
+        "label": "Номинальное напряжение",
+        "raw": "6(6,3)",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 60
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "raw": "У/Ун-0",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "Охлаждение",
+        "raw": "естественное масляное",
+        "unitAsPrinted": null,
+        "sourcePage": 60,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-05-p60"
+      },
+      {
+        "label": "Переключатель",
+        "raw": "без возбуждения",
+        "unitAsPrinted": null,
+        "sourcePage": 60,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-05-p60"
+      },
+      {
+        "label": "Стандарт",
+        "raw": "ГОСТ11677",
+        "unitAsPrinted": null,
+        "sourcePage": 60,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-05-p60"
+      }
+    ],
+    "assetFamilyIds": [
+      "oil-tmeg"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [],
+    "series": "ТМЭГ",
+    "context": "для питания электрооборудования экскаваторов",
+    "powerKva": 40,
+    "voltageRaw": "6(6,3) кВ; НН не указан",
+    "commonProseGroupIds": [
+      "common-prose-05-p60"
+    ],
+    "designation": "ТМЭГ-40",
+    "execution": "для питания электрооборудования экскаваторов",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 60,
+      "designation": "ТМЭГ-40",
+      "execution": "для питания электрооборудования экскаваторов",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Pо",
+        "value": "160",
+        "unit": "Вт",
+        "page": 60
+      },
+      {
+        "label": "Pк",
+        "value": "1000",
+        "unit": "Вт",
+        "page": 60
+      },
+      {
+        "label": "Uк",
+        "value": "4,5",
+        "unit": "%",
+        "page": 60
+      },
+      {
+        "label": "Iо",
+        "value": "2,8",
+        "unit": "%",
+        "page": 60
+      },
+      {
+        "label": "L",
+        "value": "880",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "B",
+        "value": "515",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "H",
+        "value": "1090",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "A",
+        "value": "450",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "A1",
+        "value": "400",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "M",
+        "value": "105",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "h",
+        "value": "75",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "h1",
+        "value": "95",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "Полная масса",
+        "value": "325",
+        "unit": "кг",
+        "page": 60
+      },
+      {
+        "label": "Масса масла",
+        "value": "79",
+        "unit": "кг",
+        "page": 60
+      },
+      {
+        "label": "Номинальная мощность",
+        "value": "40",
+        "unit": "кВА",
+        "page": 60
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(6,3)",
+        "unit": "кВ",
+        "page": 60
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "Охлаждение",
+        "value": "естественное масляное",
+        "unit": null,
+        "page": 60,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-05-p60"
+      },
+      {
+        "label": "Переключатель",
+        "value": "без возбуждения",
+        "unit": null,
+        "page": 60,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-05-p60"
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ11677",
+        "unit": null,
+        "page": 60,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-05-p60"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-tmeg-63",
+    "familyId": "tmeg",
+    "name": "ТМЭГ-63",
+    "sourceDesignation": "ТМЭГ-63",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      60,
+      61
+    ],
+    "rawSpecs": [
+      {
+        "label": "Pо",
+        "raw": "210",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 60
+      },
+      {
+        "label": "Pк",
+        "raw": "1470",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 60
+      },
+      {
+        "label": "Uк",
+        "raw": "4,5",
+        "unitAsPrinted": "%",
+        "sourcePage": 60
+      },
+      {
+        "label": "Iо",
+        "raw": "2,6",
+        "unitAsPrinted": "%",
+        "sourcePage": 60
+      },
+      {
+        "label": "L",
+        "raw": "1128",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "B",
+        "raw": "530",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "H",
+        "raw": "1040",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "A",
+        "raw": "450",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "A1",
+        "raw": "400",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "M",
+        "raw": "90",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "K",
+        "raw": "190",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "h",
+        "raw": "85",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "h1",
+        "raw": "110",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "Полная масса",
+        "raw": "380",
+        "unitAsPrinted": "кг",
+        "sourcePage": 60
+      },
+      {
+        "label": "Масса масла",
+        "raw": "85",
+        "unitAsPrinted": "кг",
+        "sourcePage": 60
+      },
+      {
+        "label": "Номинальная мощность",
+        "raw": "63",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 60
+      },
+      {
+        "label": "Номинальное напряжение",
+        "raw": "6(6,3)",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 60
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "raw": "У/Ун-0",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "Охлаждение",
+        "raw": "естественное масляное",
+        "unitAsPrinted": null,
+        "sourcePage": 60,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-05-p60"
+      },
+      {
+        "label": "Переключатель",
+        "raw": "без возбуждения",
+        "unitAsPrinted": null,
+        "sourcePage": 60,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-05-p60"
+      },
+      {
+        "label": "Стандарт",
+        "raw": "ГОСТ11677",
+        "unitAsPrinted": null,
+        "sourcePage": 60,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-05-p60"
+      }
+    ],
+    "assetFamilyIds": [
+      "oil-tmeg"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [],
+    "series": "ТМЭГ",
+    "context": "для питания электрооборудования экскаваторов",
+    "powerKva": 63,
+    "voltageRaw": "6(6,3) кВ; НН не указан",
+    "commonProseGroupIds": [
+      "common-prose-05-p60"
+    ],
+    "designation": "ТМЭГ-63",
+    "execution": "для питания электрооборудования экскаваторов",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 60,
+      "designation": "ТМЭГ-63",
+      "execution": "для питания электрооборудования экскаваторов",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Pо",
+        "value": "210",
+        "unit": "Вт",
+        "page": 60
+      },
+      {
+        "label": "Pк",
+        "value": "1470",
+        "unit": "Вт",
+        "page": 60
+      },
+      {
+        "label": "Uк",
+        "value": "4,5",
+        "unit": "%",
+        "page": 60
+      },
+      {
+        "label": "Iо",
+        "value": "2,6",
+        "unit": "%",
+        "page": 60
+      },
+      {
+        "label": "L",
+        "value": "1128",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "B",
+        "value": "530",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "H",
+        "value": "1040",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "A",
+        "value": "450",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "A1",
+        "value": "400",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "M",
+        "value": "90",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "h",
+        "value": "85",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "h1",
+        "value": "110",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "Полная масса",
+        "value": "380",
+        "unit": "кг",
+        "page": 60
+      },
+      {
+        "label": "Масса масла",
+        "value": "85",
+        "unit": "кг",
+        "page": 60
+      },
+      {
+        "label": "Номинальная мощность",
+        "value": "63",
+        "unit": "кВА",
+        "page": 60
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(6,3)",
+        "unit": "кВ",
+        "page": 60
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "Охлаждение",
+        "value": "естественное масляное",
+        "unit": null,
+        "page": 60,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-05-p60"
+      },
+      {
+        "label": "Переключатель",
+        "value": "без возбуждения",
+        "unit": null,
+        "page": 60,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-05-p60"
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ11677",
+        "unit": null,
+        "page": 60,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-05-p60"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-tmeg-100",
+    "familyId": "tmeg",
+    "name": "ТМЭГ-100",
+    "sourceDesignation": "ТМЭГ-100",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      60,
+      61
+    ],
+    "rawSpecs": [
+      {
+        "label": "Pо",
+        "raw": "280",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 60
+      },
+      {
+        "label": "Pк",
+        "raw": "2270",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 60
+      },
+      {
+        "label": "Uк",
+        "raw": "4,5",
+        "unitAsPrinted": "%",
+        "sourcePage": 60
+      },
+      {
+        "label": "Iо",
+        "raw": "2,2",
+        "unitAsPrinted": "%",
+        "sourcePage": 60
+      },
+      {
+        "label": "L",
+        "raw": "1154",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "B",
+        "raw": "682",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "H",
+        "raw": "1190",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "A",
+        "raw": "550",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "A1",
+        "raw": "550",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "M",
+        "raw": "90",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "K",
+        "raw": "190",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "h",
+        "raw": "95",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "h1",
+        "raw": "110",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "Полная масса",
+        "raw": "465",
+        "unitAsPrinted": "кг",
+        "sourcePage": 60
+      },
+      {
+        "label": "Масса масла",
+        "raw": "100",
+        "unitAsPrinted": "кг",
+        "sourcePage": 60
+      },
+      {
+        "label": "Номинальная мощность",
+        "raw": "100",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 60
+      },
+      {
+        "label": "Номинальное напряжение",
+        "raw": "6(6,3)",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 60
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "raw": "У/Ун-0",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "Охлаждение",
+        "raw": "естественное масляное",
+        "unitAsPrinted": null,
+        "sourcePage": 60,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-05-p60"
+      },
+      {
+        "label": "Переключатель",
+        "raw": "без возбуждения",
+        "unitAsPrinted": null,
+        "sourcePage": 60,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-05-p60"
+      },
+      {
+        "label": "Стандарт",
+        "raw": "ГОСТ11677",
+        "unitAsPrinted": null,
+        "sourcePage": 60,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-05-p60"
+      }
+    ],
+    "assetFamilyIds": [
+      "oil-tmeg"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [],
+    "series": "ТМЭГ",
+    "context": "для питания электрооборудования экскаваторов",
+    "powerKva": 100,
+    "voltageRaw": "6(6,3) кВ; НН не указан",
+    "commonProseGroupIds": [
+      "common-prose-05-p60"
+    ],
+    "designation": "ТМЭГ-100",
+    "execution": "для питания электрооборудования экскаваторов",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 60,
+      "designation": "ТМЭГ-100",
+      "execution": "для питания электрооборудования экскаваторов",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Pо",
+        "value": "280",
+        "unit": "Вт",
+        "page": 60
+      },
+      {
+        "label": "Pк",
+        "value": "2270",
+        "unit": "Вт",
+        "page": 60
+      },
+      {
+        "label": "Uк",
+        "value": "4,5",
+        "unit": "%",
+        "page": 60
+      },
+      {
+        "label": "Iо",
+        "value": "2,2",
+        "unit": "%",
+        "page": 60
+      },
+      {
+        "label": "L",
+        "value": "1154",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "B",
+        "value": "682",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "H",
+        "value": "1190",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "A",
+        "value": "550",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "A1",
+        "value": "550",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "M",
+        "value": "90",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "h",
+        "value": "95",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "h1",
+        "value": "110",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "Полная масса",
+        "value": "465",
+        "unit": "кг",
+        "page": 60
+      },
+      {
+        "label": "Масса масла",
+        "value": "100",
+        "unit": "кг",
+        "page": 60
+      },
+      {
+        "label": "Номинальная мощность",
+        "value": "100",
+        "unit": "кВА",
+        "page": 60
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(6,3)",
+        "unit": "кВ",
+        "page": 60
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "Охлаждение",
+        "value": "естественное масляное",
+        "unit": null,
+        "page": 60,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-05-p60"
+      },
+      {
+        "label": "Переключатель",
+        "value": "без возбуждения",
+        "unit": null,
+        "page": 60,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-05-p60"
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ11677",
+        "unit": null,
+        "page": 60,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-05-p60"
+      }
+    ]
+  },
+  {
+    "id": "alageum-2026-tmeg-160",
+    "familyId": "tmeg",
+    "name": "ТМЭГ-160",
+    "sourceDesignation": "ТМЭГ-160",
+    "sku": null,
+    "skuStatus": "No complete order SKU asserted; exact source designation retained.",
+    "manufacturer": null,
+    "manufacturerStatus": "Not explicitly named on these product pages",
+    "brand": "Alageum electric",
+    "sourcePages": [
+      60,
+      61
+    ],
+    "rawSpecs": [
+      {
+        "label": "Pо",
+        "raw": "450",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 60
+      },
+      {
+        "label": "Pк",
+        "raw": "2600",
+        "unitAsPrinted": "Вт",
+        "sourcePage": 60
+      },
+      {
+        "label": "Uк",
+        "raw": "5,0",
+        "unitAsPrinted": "%",
+        "sourcePage": 60
+      },
+      {
+        "label": "Iо",
+        "raw": "1,9",
+        "unitAsPrinted": "%",
+        "sourcePage": 60
+      },
+      {
+        "label": "L",
+        "raw": "1190",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "B",
+        "raw": "692",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "H",
+        "raw": "1177",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "A",
+        "raw": "550",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "A1",
+        "raw": "550",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "M",
+        "raw": "90",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "K",
+        "raw": "190",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "h",
+        "raw": "115",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "h1",
+        "raw": "120",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "Полная масса",
+        "raw": "660",
+        "unitAsPrinted": "кг",
+        "sourcePage": 60
+      },
+      {
+        "label": "Масса масла",
+        "raw": "145",
+        "unitAsPrinted": "кг",
+        "sourcePage": 60
+      },
+      {
+        "label": "Номинальная мощность",
+        "raw": "160",
+        "unitAsPrinted": "кВА",
+        "sourcePage": 60
+      },
+      {
+        "label": "Номинальное напряжение",
+        "raw": "6(6,3)",
+        "unitAsPrinted": "кВ",
+        "sourcePage": 60
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "raw": "У/Ун-0",
+        "unitAsPrinted": null,
+        "sourcePage": 60
+      },
+      {
+        "label": "Охлаждение",
+        "raw": "естественное масляное",
+        "unitAsPrinted": null,
+        "sourcePage": 60,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-05-p60"
+      },
+      {
+        "label": "Переключатель",
+        "raw": "без возбуждения",
+        "unitAsPrinted": null,
+        "sourcePage": 60,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-05-p60"
+      },
+      {
+        "label": "Стандарт",
+        "raw": "ГОСТ11677",
+        "unitAsPrinted": null,
+        "sourcePage": 60,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-05-p60"
+      }
+    ],
+    "assetFamilyIds": [
+      "oil-tmeg"
+    ],
+    "recordType": "explicit-model-row",
+    "uncertainties": [],
+    "series": "ТМЭГ",
+    "context": "для питания электрооборудования экскаваторов",
+    "powerKva": 160,
+    "voltageRaw": "6(6,3) кВ; НН не указан",
+    "commonProseGroupIds": [
+      "common-prose-05-p60"
+    ],
+    "designation": "ТМЭГ-160",
+    "execution": "для питания электрооборудования экскаваторов",
+    "candidateOldIds": [],
+    "overlapAssessment": [],
+    "sourceRow": {
+      "page": 60,
+      "designation": "ТМЭГ-160",
+      "execution": "для питания электрооборудования экскаваторов",
+      "kind": "explicit-model-row"
+    },
+    "technicalSpecs": [
+      {
+        "label": "Pо",
+        "value": "450",
+        "unit": "Вт",
+        "page": 60
+      },
+      {
+        "label": "Pк",
+        "value": "2600",
+        "unit": "Вт",
+        "page": 60
+      },
+      {
+        "label": "Uк",
+        "value": "5,0",
+        "unit": "%",
+        "page": 60
+      },
+      {
+        "label": "Iо",
+        "value": "1,9",
+        "unit": "%",
+        "page": 60
+      },
+      {
+        "label": "L",
+        "value": "1190",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "B",
+        "value": "692",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "H",
+        "value": "1177",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "A",
+        "value": "550",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "A1",
+        "value": "550",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "M",
+        "value": "90",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "K",
+        "value": "190",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "h",
+        "value": "115",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "h1",
+        "value": "120",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "Полная масса",
+        "value": "660",
+        "unit": "кг",
+        "page": 60
+      },
+      {
+        "label": "Масса масла",
+        "value": "145",
+        "unit": "кг",
+        "page": 60
+      },
+      {
+        "label": "Номинальная мощность",
+        "value": "160",
+        "unit": "кВА",
+        "page": 60
+      },
+      {
+        "label": "Номинальное напряжение",
+        "value": "6(6,3)",
+        "unit": "кВ",
+        "page": 60
+      },
+      {
+        "label": "Группа соединения обмоток",
+        "value": "У/Ун-0",
+        "unit": null,
+        "page": 60
+      },
+      {
+        "label": "Охлаждение",
+        "value": "естественное масляное",
+        "unit": null,
+        "page": 60,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-05-p60"
+      },
+      {
+        "label": "Переключатель",
+        "value": "без возбуждения",
+        "unit": null,
+        "page": 60,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-05-p60"
+      },
+      {
+        "label": "Стандарт",
+        "value": "ГОСТ11677",
+        "unit": null,
+        "page": 60,
+        "sourceKind": "common-prose",
+        "commonProseGroupId": "common-prose-05-p60"
+      }
+    ]
+  }
+]

@@ -1,0 +1,355 @@
+{
+  "auditReportVersion": 2,
+  "vulnerabilities": {
+    "@strapi/admin": {
+      "name": "@strapi/admin",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@strapi/data-transfer",
+        "react-router-dom"
+      ],
+      "effects": [
+        "@strapi/core",
+        "@strapi/plugin-users-permissions"
+      ],
+      "range": "<=0.0.0-next.ffc36acb308febe288f1a31b62cbbb75b286585c || >=4.6.0-alpha.0",
+      "nodes": [
+        "node_modules/@strapi/admin"
+      ],
+      "fixAvailable": {
+        "name": "@strapi/plugin-users-permissions",
+        "version": "4.26.2",
+        "isSemVerMajor": true
+      }
+    },
+    "@strapi/content-manager": {
+      "name": "@strapi/content-manager",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@strapi/admin",
+        "react-router-dom"
+      ],
+      "effects": [
+        "@strapi/review-workflows"
+      ],
+      "range": "<=0.0.0-next.ffc36acb308febe288f1a31b62cbbb75b286585c || >=5.0.0-beta.6",
+      "nodes": [
+        "node_modules/@strapi/content-manager"
+      ],
+      "fixAvailable": true
+    },
+    "@strapi/content-releases": {
+      "name": "@strapi/content-releases",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@strapi/admin",
+        "@strapi/content-manager",
+        "react-router-dom"
+      ],
+      "effects": [],
+      "range": "<=0.0.0-next.ffc36acb308febe288f1a31b62cbbb75b286585c || >=5.0.0-alpha.0",
+      "nodes": [
+        "node_modules/@strapi/content-releases"
+      ],
+      "fixAvailable": true
+    },
+    "@strapi/content-type-builder": {
+      "name": "@strapi/content-type-builder",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@strapi/admin",
+        "react-router-dom"
+      ],
+      "effects": [],
+      "range": "<=0.0.0-next.ffc36acb308febe288f1a31b62cbbb75b286585c || >=5.0.0-beta.6",
+      "nodes": [
+        "node_modules/@strapi/content-type-builder"
+      ],
+      "fixAvailable": true
+    },
+    "@strapi/core": {
+      "name": "@strapi/core",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@strapi/admin"
+      ],
+      "effects": [],
+      "range": "<=0.0.0-next.ffc36acb308febe288f1a31b62cbbb75b286585c || >=5.0.0-alpha.0",
+      "nodes": [
+        "node_modules/@strapi/core"
+      ],
+      "fixAvailable": true
+    },
+    "@strapi/data-transfer": {
+      "name": "@strapi/data-transfer",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "stream-json"
+      ],
+      "effects": [
+        "@strapi/admin",
+        "@strapi/strapi"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/@strapi/data-transfer"
+      ],
+      "fixAvailable": {
+        "name": "@strapi/strapi",
+        "version": "4.26.2",
+        "isSemVerMajor": true
+      }
+    },
+    "@strapi/email": {
+      "name": "@strapi/email",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@strapi/admin",
+        "react-router-dom"
+      ],
+      "effects": [],
+      "range": "<=0.0.0-next.ffc36acb308febe288f1a31b62cbbb75b286585c || >=5.0.0-beta.6",
+      "nodes": [
+        "node_modules/@strapi/email"
+      ],
+      "fixAvailable": true
+    },
+    "@strapi/i18n": {
+      "name": "@strapi/i18n",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@strapi/admin",
+        "@strapi/content-manager",
+        "react-router-dom"
+      ],
+      "effects": [],
+      "range": "<=0.0.0-next.ffc36acb308febe288f1a31b62cbbb75b286585c || >=5.0.0-beta.6",
+      "nodes": [
+        "node_modules/@strapi/i18n"
+      ],
+      "fixAvailable": true
+    },
+    "@strapi/plugin-users-permissions": {
+      "name": "@strapi/plugin-users-permissions",
+      "severity": "moderate",
+      "isDirect": true,
+      "via": [
+        "@strapi/admin",
+        "@strapi/strapi",
+        "react-router-dom"
+      ],
+      "effects": [],
+      "range": "<=0.0.0-next.ffc36acb308febe288f1a31b62cbbb75b286585c || >=5.0.0-alpha.0",
+      "nodes": [
+        "node_modules/@strapi/plugin-users-permissions"
+      ],
+      "fixAvailable": {
+        "name": "@strapi/plugin-users-permissions",
+        "version": "4.26.2",
+        "isSemVerMajor": true
+      }
+    },
+    "@strapi/review-workflows": {
+      "name": "@strapi/review-workflows",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@strapi/admin",
+        "@strapi/content-manager",
+        "react-router-dom"
+      ],
+      "effects": [],
+      "range": "*",
+      "nodes": [
+        "node_modules/@strapi/review-workflows"
+      ],
+      "fixAvailable": true
+    },
+    "@strapi/strapi": {
+      "name": "@strapi/strapi",
+      "severity": "moderate",
+      "isDirect": true,
+      "via": [
+        "@strapi/admin",
+        "@strapi/content-manager",
+        "@strapi/content-releases",
+        "@strapi/content-type-builder",
+        "@strapi/core",
+        "@strapi/data-transfer",
+        "@strapi/email",
+        "@strapi/i18n",
+        "@strapi/review-workflows",
+        "@strapi/upload",
+        "react-router-dom"
+      ],
+      "effects": [
+        "@strapi/plugin-users-permissions"
+      ],
+      "range": "<=0.0.0-next.ffc36acb308febe288f1a31b62cbbb75b286585c || >=4.6.0-alpha.0",
+      "nodes": [
+        "node_modules/@strapi/strapi"
+      ],
+      "fixAvailable": {
+        "name": "@strapi/strapi",
+        "version": "4.26.2",
+        "isSemVerMajor": true
+      }
+    },
+    "@strapi/upload": {
+      "name": "@strapi/upload",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@strapi/admin",
+        "react-router-dom"
+      ],
+      "effects": [],
+      "range": "<=0.0.0-next.ffc36acb308febe288f1a31b62cbbb75b286585c || >=5.0.0-beta.6",
+      "nodes": [
+        "node_modules/@strapi/upload"
+      ],
+      "fixAvailable": true
+    },
+    "react-router": {
+      "name": "react-router",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1124268,
+          "name": "react-router",
+          "dependency": "react-router",
+          "title": "React Router: Open redirect via backslash in <Link> and useNavigate (CVE-2025-68470 bypass)",
+          "url": "https://github.com/advisories/GHSA-wrjc-x8rr-h8h6",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-601"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": ">=6.0.0 <7.18.0"
+        },
+        {
+          "source": 1124272,
+          "name": "react-router",
+          "dependency": "react-router",
+          "title": "React Router: Arbitrary Constructor Injection via deserializeErrors() in React Router SSR Hydration",
+          "url": "https://github.com/advisories/GHSA-337j-9hxr-rhxg",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-470"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": ">=6.4.0 <7.18.0"
+        }
+      ],
+      "effects": [
+        "react-router-dom"
+      ],
+      "range": "6.0.0 - 7.17.0",
+      "nodes": [
+        "node_modules/react-router"
+      ],
+      "fixAvailable": {
+        "name": "react-router-dom",
+        "version": "7.18.4",
+        "isSemVerMajor": true
+      }
+    },
+    "react-router-dom": {
+      "name": "react-router-dom",
+      "severity": "moderate",
+      "isDirect": true,
+      "via": [
+        "react-router"
+      ],
+      "effects": [
+        "@strapi/admin",
+        "@strapi/content-manager",
+        "@strapi/content-releases",
+        "@strapi/content-type-builder",
+        "@strapi/email",
+        "@strapi/i18n",
+        "@strapi/plugin-users-permissions",
+        "@strapi/review-workflows",
+        "@strapi/strapi",
+        "@strapi/upload"
+      ],
+      "range": "6.0.0-alpha.0 - 7.17.0",
+      "nodes": [
+        "node_modules/react-router-dom"
+      ],
+      "fixAvailable": {
+        "name": "react-router-dom",
+        "version": "7.18.4",
+        "isSemVerMajor": true
+      }
+    },
+    "stream-json": {
+      "name": "stream-json",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1164823,
+          "name": "stream-json",
+          "dependency": "stream-json",
+          "title": "stream-json: pick/ignore/filter/replace filters are O(depth²) on nested input — small crafted JSON blocks the event loop for seconds→minutes (DoS)",
+          "url": "https://github.com/advisories/GHSA-528h-pc64-c93x",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-407"
+          ],
+          "cvss": {
+            "score": 6.2,
+            "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<=3.4.0"
+        }
+      ],
+      "effects": [
+        "@strapi/data-transfer"
+      ],
+      "range": "<=3.4.0",
+      "nodes": [
+        "node_modules/stream-json"
+      ],
+      "fixAvailable": {
+        "name": "@strapi/strapi",
+        "version": "4.26.2",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 15,
+      "high": 0,
+      "critical": 0,
+      "total": 15
+    },
+    "dependencies": {
+      "prod": 1437,
+      "dev": 0,
+      "optional": 150,
+      "peer": 2,
+      "peerOptional": 0,
+      "total": 1588
+    }
+  }
+}

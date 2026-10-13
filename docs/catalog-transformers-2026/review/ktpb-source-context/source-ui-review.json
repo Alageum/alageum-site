@@ -1,0 +1,139 @@
+{
+  "format": "alageum-ktpb-independent-source-ui-review-v1",
+  "status": "source-ui-pass-local-prototype-only",
+  "reviewedAt": "2026-10-07T07:38:20Z",
+  "scope": "Independent source facts, visible Russian copy, static/API UI binding and fail-closed controls for the exact frozen six-file local prototype. This is not a release, publication, historical dependency, or integrated byte-gate approval.",
+  "baselineCommit": "47db11d6052e82455577f3d9190230d241c5b4c2",
+  "baselineTree": "c02884c801b0599778dcd9d67d3aaf693619e905",
+  "prototypeManifestSha256": "a404b70851b8ccd6888291a6f5e49d3af4d0052b3d1e765743c2cf6e19e86576",
+  "prototypePatchSha256": "cf878c5bc891260a7b4148d0d9d78f6777ec10d6aed2a31382057ad87560379f",
+  "reviewedFiles": {
+    "frontend/components/catalog/source-context/SourceContextImage.js": "53773db991258d2f99e1b581edab091a60250aa636ff130c6103441250ca291b",
+    "frontend/lib/catalog/source-context/sourceContextManifest.json": "c278d91b53c742d27a2d1d9b9c8e6a24a219bb99ed6fdcb42a47ec21072061fe",
+    "frontend/lib/catalog/source-context/sourceContexts.js": "7fe1aea1dfaf539ea7e8389127e8f69ca0c44da9e959a740700b56c833a5d3c4",
+    "frontend/tests/catalog-source-context-render.test.mjs": "9466961a4682f514ef9509a8af78917cd833dfacdc2a78c2b7c73a9d7728515f",
+    "frontend/tests/catalog-source-context.test.mjs": "d57d9c08069d72e483a6775dc68c65e4424d4c87cf72b04674d530451372c527",
+    "frontend/tests/ktpb-source-context.test.mjs": "6a236e921be6c6c5275455da939bb5a43cd1762265458cb1de83a3d2bdc2369b"
+  },
+  "sourceReview": {
+    "assetsVisuallyInspected": [
+      "/catalog-source/page-054.webp",
+      "/catalog-source/page-055.webp",
+      "/catalog-source/page-056.webp",
+      "/catalog-source/page-057.webp",
+      "/catalog-source/page-058.webp",
+      "/catalog-source/page-059.webp"
+    ],
+    "readingAids": [
+      "existing exact-source page-056-rotated.png",
+      "existing page-056-components.png"
+    ],
+    "pixelFinding": "Page 56 is a sideways orthographic engineering sheet with plan, longitudinal A–A and transverse Б, two transformer bays, a bridge, and long KRU/OPU block. It is not an axonometric view or merely a plan.",
+    "contradiction": "Outer heading says 35/10(6); figure 26 names 2КТПБ(К), scheme 110-4Н. Equipment rows 1–6 explicitly say 110 kV, row 10 identifies КРУ-6кВ совмещенный с ОПУ, row 11 identifies Ошиновка ОРУ-110кВ.",
+    "boundary": "Page 54 establishes the catalog 110/35/10(6) designation, but page 56 does not establish a 35 kV stage or the complete selected execution. Pages 57–59 add electrical schemes and do not establish a reviewed 220 kV construction view.",
+    "copyResult": "PASS. Heading, intro, figure caption/legend and status preserve contradiction, source-example scope, whole-page/sideways orientation and unresolved 35 kV/full-execution binding. No dimensions, CAD or new geometry are asserted.",
+    "familyVisualResult": "PASS. Exact cat-ktpb-k family retains existing source-matched outdoor-switchyard-substation representative illustration and source-based icon from page 55. New family status explicitly refers to this separate page-56 example and its unestablished relation to family executions, not to whether any family construction is known.",
+    "familyStatus": "Пример относится к отдельной схеме. Его соответствие исполнениям семейства, включая 110/35/10(6), не установлено.",
+    "sourcePdfSha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+    "originalPdfLimit": "Original PDF bytes were unavailable and were not rehashed. The value is the unchanged provenance ledger value; all six actual published page images were independently rehashed.",
+    "sourcePageHashes": {
+      "/catalog-source/page-054.webp": "0dff7b60c905d7def0833d8cd3888d0372ac44a03a693baca97b70a48340e012",
+      "/catalog-source/page-055.webp": "a871865df7f4a10b3642994f4c29506a44a32ee78c86116fa0880bc627c430d4",
+      "/catalog-source/page-056.webp": "4e6ea1db177c66bc84a8dc0031cfcee685fef53df029e28ec132cf1b681e0721",
+      "/catalog-source/page-057.webp": "3ee8d48ba4ac073b3a7c25dc8760f9d83e3b06717c022f3b8e4001597dd7df12",
+      "/catalog-source/page-058.webp": "b9f532d52f43d583a9fd3b04bb0a790c99242a9b00934b764c965ce025607402",
+      "/catalog-source/page-059.webp": "1111ccc4e1bc40fe01807d04bc3823c171ab3d7dc8dd187c1c2d1e668f1025be"
+    },
+    "page56Bytes": 114140,
+    "page56Pixels": [
+      1406,
+      1988
+    ]
+  },
+  "bindingControls": {
+    "newContextIds": [
+      "cat-ktpb-k",
+      "cat-ktpb-k-v002"
+    ],
+    "excludedKtpbIds": [
+      "cat-ktpb-k-v001",
+      "cat-ktpb-k-v003"
+    ],
+    "recordsUnchanged": 843,
+    "otherContextAndVisualRecordsUnchanged": 841,
+    "allStaticApiVisualIconChoiceOutputsEqualBaseline": true,
+    "legacyContextRecords": 24,
+    "legacyStaticApiPanelHtmlByteComparisons": 48,
+    "adversarialRejections": 1081,
+    "narrowFamilyRule": "Missing familyId is admitted only for exact cat-ktpb-k, still bound to canonical record kind/shape, raw source media, source registry and static/API authority; API requires exact importer UUID. All 841 other records with familyId removed reject.",
+    "ownerEdits": "Canonical source/name/spec/identity/record-kind changes reject. Description and variantSpecs are not panel authority and are never interpolated into this source copy.",
+    "renderedRoutes": "Actual ProductDetails dispatch, StaticProductDetails, LiveProductDetails, FamilyProductVisual, ProductVisual and CatalogSourceContext JSX rendered with supplied async/routing/hook state. Direct family/v001/v002/v003 static and API routes plus overview/35/110/220/unknown/reset family states checked.",
+    "failureFallback": "Actual image failure callback/failure-state controls retain source caption, contradiction, uncertainty and usable full-page link without replacing the image. Unknown/conflicting API source identity produces no panel, no invented page-56 destination, and no null/undefined/# links.",
+    "sourceUrlHandling": "Figure sourceHref equals unchanged sourcePageUrl(record,56); sourceImage equals sourcePageImage(record,56); complete page remains available through /catalog/source?page=56 and original image link.",
+    "freshAssetProof": "Actual reader verified 14 distinct bytes/hash descriptors. Existing test suite rejects missing and same-sized corrupt assets; old proof or null proof cannot authorize new panel.",
+    "constructionCounts": {
+      "sourceGroundedDefaults": 464,
+      "sourceBasedIcons": 465,
+      "choiceRows": 36,
+      "choices": 74,
+      "openGaps": 243,
+      "gapFamilies": 29,
+      "closedGaps": 0
+    },
+    "preservedFiles": "Only five tracked source/test files changed and one test file added. All 2,464 other tracked files match clean PR42 HEAD, including raw datasets, old 16+254 browser cases, CMS15, source registries/assets, model/icon maps, workflow, dependencies and historical approvals."
+  },
+  "reproducibleControls": [
+    {
+      "command": "node /workspace/shared/alageum-ktpb-context-independent-review/review.mjs",
+      "result": "PASS",
+      "detail": "Independent controls re-run after builder freeze; output in controls.json/log; exact frozen six file hashes matched."
+    },
+    {
+      "command": "node --test frontend/tests/catalog-source-context.test.mjs frontend/tests/catalog-source-context-render.test.mjs frontend/tests/ktpb-source-context.test.mjs frontend/tests/source-context-viewport.test.mjs frontend/tests/product-visual-source-links.test.mjs",
+      "result": "PASS 23/23",
+      "log": "focused-tests.log"
+    },
+    {
+      "command": "cd frontend && ./node_modules/.bin/eslint components/catalog/source-context/SourceContextImage.js lib/catalog/source-context/sourceContexts.js tests/catalog-source-context-render.test.mjs tests/catalog-source-context.test.mjs tests/ktpb-source-context.test.mjs",
+      "result": "PASS",
+      "log": "lint.log"
+    },
+    {
+      "command": "node scripts/audit-catalog-completion.mjs --check",
+      "result": "PASS",
+      "log": "coverage.log"
+    },
+    {
+      "command": "git diff --check",
+      "result": "PASS"
+    }
+  ],
+  "expectedReleaseBlockers": [
+    {
+      "command": "node scripts/check-protection-context-integration.mjs",
+      "observedFailure": "scripts/check-protection-context-integration.mjs:114 expects null geometry for every context-bearing row; exact family cat-ktpb-k correctly preserves its existing outdoor-switchyard-substation visual.",
+      "log": "expected-gate-blocker.log"
+    },
+    {
+      "observedBy": "Builder dependency checks; confirmed immutable guard code",
+      "failure": "Published PR42 dependency closure rejects new SourceContextImage hash. Existing source-context helper also binds the old 24 IDs/counts and original manifest/dependency hashes."
+    },
+    {
+      "requiredFutureReview": "Any later integrated exception must name only exact cat-ktpb-k and pin its unchanged old visual type/source authority, while preserving the original 24 records’ null-type/source-only checks. It must review the two additions and exact dependency successor independently. No guard was edited here."
+    }
+  ],
+  "limits": [
+    "No browser, viewport screenshot, navigation event, hydration, keyboard interaction or pixel layout acceptance claimed. Allowed browser route remains blocked; no alternate host/tunnel used.",
+    "Rendered-output controls substitute routing/async state and unrelated leaf UI; they use the actual visual/context/detail/family components and fresh local asset proof.",
+    "No full Next build or old16+254/CMS browser rerun; those files remain unchanged.",
+    "No source-approval helper, historical approval, geometry, icon, raw record, asset, workflow or lockfile change; separate lockfile successor not reviewed by this task.",
+    "No publication or release authority is granted."
+  ],
+  "artifactHashes": {
+    "review.mjs": "cd54853f98032f480fbf149f0178c46b7062b38f70971b01c50c968a94dfc8c2",
+    "controls.json": "6f84397e39b9d2c71781912741f169c486513f0a5b9e4c1876c2c607f899783b",
+    "focused-tests.log": "fee7216174a5f625f378eff3a41d7625640a58a8af86092c381147fb009e1caf",
+    "coverage.log": "d9fb922163dea20abe0778e9b9f508f2ec22f0d7532ccb4edd0ffe567d536fd0",
+    "expected-gate-blocker.log": "62fea24a1efb8c9daffc72302a1f1c07fdc50287348014607f9c43d7d34b6f38"
+  }
+}

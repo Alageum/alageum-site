@@ -1,0 +1,1 @@
+"""ALAGEUM backend application."""

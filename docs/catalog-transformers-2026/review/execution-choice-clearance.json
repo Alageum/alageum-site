@@ -1,0 +1,1052 @@
+{
+  "format": "alageum-transformer-execution-choices-clearance-v1",
+  "status": "approved-explicit-choice-only",
+  "sourceId": "transformers-2026",
+  "sourceFileId": "113q2las1R18OJ6g6laJ5ZN4PFPsY635f",
+  "sourceSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+  "sourceUrl": "https://drive.google.com/file/d/113q2las1R18OJ6g6laJ5ZN4PFPsY635f/view",
+  "inventorySha256": "c3948d7152a6130aa4672b9f6d3d5a8f08144b5965df7bebabca067ba5bc8438",
+  "reviewedAt": "2026-10-06T07:46:32Z",
+  "reviewReport": "docs/catalog-transformers-2026/review/execution-choice-independent-review.json",
+  "reviewReportSha256": "13803a03daf7ab2dfe942924c79d242f91d1cabde034188c71c3c43466def4a7",
+  "reviewedLibraryHashes": {
+    "frontend/lib/catalog/models/transformer2026AssetEvidence.json": "6d54c9e8e83409384de5dce6233f306ceeb1bcdcdac384ef57f778251edb519d",
+    "frontend/lib/catalog/models/transformer2026Geometry.js": "32f91701425584f0bfa4e7b138525329fb6527588344fc5a574ed8dea7f0ef09",
+    "frontend/lib/catalog/models/transformer2026GroupMap.js": "057a7978bdd7f6f26761c4664904a5f93e48805c1c8ffee591c3eccf5bd39b0b",
+    "frontend/lib/catalog/models/transformer2026Icons.js": "9e49caab2b69cbb165c4a1b56f12a317d06cc910091cbae39c355bab63cca405",
+    "frontend/lib/catalog/models/transformer2026PowerLayouts.js": "efd30d083dfe7d0cc5c609508301877774b05e855b9b501056bc25fdff9ff265",
+    "frontend/lib/catalog/models/transformer2026Types.js": "56ee5e7de958abeae364b565d8799430fc33b7fb25ca5f2cb665d17db020b9a8",
+    "frontend/lib/catalog/models/transformer2026Shape.js": "ed07fb7f8c239623277338e2f8fcace52d77dbd12145e1c65cf8603c4100fb96",
+    "frontend/lib/catalog/models/transformer2026Runtime.js": "b39571ef6fbd6983025cfdbcedce732acf8e40211dcd8995195fce59c66aaf24",
+    "frontend/lib/catalog/models/transformerExecutionChoices.js": "8ca1d3c87406e4732b80c2e881a67e4531200f6b0adf3ca935318452f14c5fd1",
+    "scripts/approve-transformer-execution-choices.mjs": "c74e7bcb2f281a3e784630f3a5eb008563c716df23e2429303c7fe5b00e57e55"
+  },
+  "reviewedSourceImageHashes": {
+    "/catalog-source/transformers-2026/page-080.webp": "5142c148f3295a44eda17477166b99bd27bc89730cdac5cde1362f45b4b909e5",
+    "/catalog-source/transformers-2026/page-081.webp": "da78a8813f1f2e59b709346c8c33d10a6f8674af2dcf8131909a2fec172d09c6",
+    "/catalog-source/transformers-2026/page-088.webp": "271313470bb4be9f7b41d6367d4f54baaf1b36184420c19fcd4d4b9de654afc9",
+    "/catalog-source/transformers-2026/page-087.webp": "77b3a6ea0e6dc5864c3aff61ded632e60d3006f51bf5938c9ae059e16b7a1e7a",
+    "/catalog-source/transformers-2026/page-092.webp": "ab86b6cf205db3ce2bed41f5fcd21297342ee3fa2ab847a97bdf71f14ce9ef7f",
+    "/catalog-source/transformers-2026/page-093.webp": "75a7916fe025f2d265db57cc635375746a1ee723dfef3ab7ef21b3a021238918",
+    "/catalog-source/transformers-2026/page-094.webp": "f64932ab4037de21089f984626d2b35b88ea6f8b052531db4d86d66529d5336d"
+  },
+  "sourceRegistrySha256": "23d30c3d87a43abe24c9843453b3e0c69e32af3f7674629e4d9a8b7b6ae06f9c",
+  "records": [
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-25",
+      "record_shape_sha256": "a504364d0487a78936978b2067732f7054d0483a93da27ff5b789543289fb043",
+      "database_id": "bde520ff-6168-5cc0-a13f-b22460bde27d",
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "label": "Без кожуха · ТСЛ",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Чертеж трансформатора без кожуха ТСЛ (IP00)",
+          "reason": "Три катушки, верхняя и нижняя стяжные балки, видимые диагональные связи и катки; корпус отсутствует."
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "label": "С кожухом · ТСЛЗ",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway",
+          "sourceCaption": "Чертеж трансформатора с кожухом ТСЛЗ (IP21, IP31,)",
+          "reason": "Сохранен характер источника: верхняя сетка, средняя панель и раскрытый нижний фрагмент с видимыми катушками. Это иллюстративный разрез, не утверждение о постоянно открытом фасаде. Подпись источника перечисляет IP21 и IP31; выбор вида не определяет степень защиты и не подтверждает одинаковую геометрию этих исполнений."
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-40",
+      "record_shape_sha256": "845fe971374d384591cbdceb53623cb08b6050bbf19cfa983d8b51fae974957d",
+      "database_id": "60dd96fb-487c-514e-b911-233ad79efd82",
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "label": "Без кожуха · ТСЛ",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Чертеж трансформатора без кожуха ТСЛ (IP00)",
+          "reason": "Три катушки, верхняя и нижняя стяжные балки, видимые диагональные связи и катки; корпус отсутствует."
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "label": "С кожухом · ТСЛЗ",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway",
+          "sourceCaption": "Чертеж трансформатора с кожухом ТСЛЗ (IP21, IP31,)",
+          "reason": "Сохранен характер источника: верхняя сетка, средняя панель и раскрытый нижний фрагмент с видимыми катушками. Это иллюстративный разрез, не утверждение о постоянно открытом фасаде. Подпись источника перечисляет IP21 и IP31; выбор вида не определяет степень защиты и не подтверждает одинаковую геометрию этих исполнений."
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-63",
+      "record_shape_sha256": "5f4dd66e7121b1be85712cfe89a82cefd7e85c5660f8897b6671076d90bb0a89",
+      "database_id": "2260df65-2c2e-5fd1-afe7-433a999fbed8",
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "label": "Без кожуха · ТСЛ",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Чертеж трансформатора без кожуха ТСЛ (IP00)",
+          "reason": "Три катушки, верхняя и нижняя стяжные балки, видимые диагональные связи и катки; корпус отсутствует."
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "label": "С кожухом · ТСЛЗ",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway",
+          "sourceCaption": "Чертеж трансформатора с кожухом ТСЛЗ (IP21, IP31,)",
+          "reason": "Сохранен характер источника: верхняя сетка, средняя панель и раскрытый нижний фрагмент с видимыми катушками. Это иллюстративный разрез, не утверждение о постоянно открытом фасаде. Подпись источника перечисляет IP21 и IP31; выбор вида не определяет степень защиты и не подтверждает одинаковую геометрию этих исполнений."
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-100",
+      "record_shape_sha256": "fae0e5a4d0128271e0a39e1e7438cbf03e8c4fd595b08d646a2af559dac4b303",
+      "database_id": "32e40f4e-f37b-5a87-bd45-6d8da7a75b23",
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "label": "Без кожуха · ТСЛ",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Чертеж трансформатора без кожуха ТСЛ (IP00)",
+          "reason": "Три катушки, верхняя и нижняя стяжные балки, видимые диагональные связи и катки; корпус отсутствует."
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "label": "С кожухом · ТСЛЗ",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway",
+          "sourceCaption": "Чертеж трансформатора с кожухом ТСЛЗ (IP21, IP31,)",
+          "reason": "Сохранен характер источника: верхняя сетка, средняя панель и раскрытый нижний фрагмент с видимыми катушками. Это иллюстративный разрез, не утверждение о постоянно открытом фасаде. Подпись источника перечисляет IP21 и IP31; выбор вида не определяет степень защиты и не подтверждает одинаковую геометрию этих исполнений."
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-160",
+      "record_shape_sha256": "87aed603e7c0bc70d74487c3736ee7b6898913e313e1559cf0c63056cdedd80d",
+      "database_id": "e9452421-4dd7-584c-a204-665b7b66618e",
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "label": "Без кожуха · ТСЛ",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Чертеж трансформатора без кожуха ТСЛ (IP00)",
+          "reason": "Три катушки, верхняя и нижняя стяжные балки, видимые диагональные связи и катки; корпус отсутствует."
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "label": "С кожухом · ТСЛЗ",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway",
+          "sourceCaption": "Чертеж трансформатора с кожухом ТСЛЗ (IP21, IP31,)",
+          "reason": "Сохранен характер источника: верхняя сетка, средняя панель и раскрытый нижний фрагмент с видимыми катушками. Это иллюстративный разрез, не утверждение о постоянно открытом фасаде. Подпись источника перечисляет IP21 и IP31; выбор вида не определяет степень защиты и не подтверждает одинаковую геометрию этих исполнений."
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-250",
+      "record_shape_sha256": "1994085486d1a1bf76a17b03c2d7d977286c3fb59e8a747158b65249e4c81454",
+      "database_id": "164ca42f-8deb-5714-890a-820d9fab6540",
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "label": "Без кожуха · ТСЛ",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Чертеж трансформатора без кожуха ТСЛ (IP00)",
+          "reason": "Три катушки, верхняя и нижняя стяжные балки, видимые диагональные связи и катки; корпус отсутствует."
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "label": "С кожухом · ТСЛЗ",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway",
+          "sourceCaption": "Чертеж трансформатора с кожухом ТСЛЗ (IP21, IP31,)",
+          "reason": "Сохранен характер источника: верхняя сетка, средняя панель и раскрытый нижний фрагмент с видимыми катушками. Это иллюстративный разрез, не утверждение о постоянно открытом фасаде. Подпись источника перечисляет IP21 и IP31; выбор вида не определяет степень защиты и не подтверждает одинаковую геометрию этих исполнений."
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-400",
+      "record_shape_sha256": "1afc15d671ff0bf19868be6ab9b8dd4da30089846c999b6381f3118a4664ce0d",
+      "database_id": "f2be7412-03ea-53d7-a3b4-fe6242197fe4",
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "label": "Без кожуха · ТСЛ",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Чертеж трансформатора без кожуха ТСЛ (IP00)",
+          "reason": "Три катушки, верхняя и нижняя стяжные балки, видимые диагональные связи и катки; корпус отсутствует."
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "label": "С кожухом · ТСЛЗ",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway",
+          "sourceCaption": "Чертеж трансформатора с кожухом ТСЛЗ (IP21, IP31,)",
+          "reason": "Сохранен характер источника: верхняя сетка, средняя панель и раскрытый нижний фрагмент с видимыми катушками. Это иллюстративный разрез, не утверждение о постоянно открытом фасаде. Подпись источника перечисляет IP21 и IP31; выбор вида не определяет степень защиты и не подтверждает одинаковую геометрию этих исполнений."
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-1000",
+      "record_shape_sha256": "2b845a2e5433e4110dc3e43c03f94e3d54295886e2f8f9d7f9bdb34017d14b8f",
+      "database_id": "cd567672-19e0-50d7-9b6c-d6bf81bfd5ea",
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "label": "Без кожуха · ТСЛ",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Чертеж трансформатора без кожуха ТСЛ (IP00)",
+          "reason": "Три катушки, верхняя и нижняя стяжные балки, видимые диагональные связи и катки; корпус отсутствует."
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "label": "С кожухом · ТСЛЗ",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway",
+          "sourceCaption": "Чертеж трансформатора с кожухом ТСЛЗ (IP21, IP31,)",
+          "reason": "Сохранен характер источника: верхняя сетка, средняя панель и раскрытый нижний фрагмент с видимыми катушками. Это иллюстративный разрез, не утверждение о постоянно открытом фасаде. Подпись источника перечисляет IP21 и IP31; выбор вида не определяет степень защиты и не подтверждает одинаковую геометрию этих исполнений."
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-1250",
+      "record_shape_sha256": "7f29726391717d1dee308b6f1035f45e130adac006e25b856306ec60504efe50",
+      "database_id": "495efcf3-16a0-5eee-b8ff-60e7dccbb032",
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "label": "Без кожуха · ТСЛ",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Чертеж трансформатора без кожуха ТСЛ (IP00)",
+          "reason": "Три катушки, верхняя и нижняя стяжные балки, видимые диагональные связи и катки; корпус отсутствует."
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "label": "С кожухом · ТСЛЗ",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway",
+          "sourceCaption": "Чертеж трансформатора с кожухом ТСЛЗ (IP21, IP31,)",
+          "reason": "Сохранен характер источника: верхняя сетка, средняя панель и раскрытый нижний фрагмент с видимыми катушками. Это иллюстративный разрез, не утверждение о постоянно открытом фасаде. Подпись источника перечисляет IP21 и IP31; выбор вида не определяет степень защиты и не подтверждает одинаковую геометрию этих исполнений."
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-2000",
+      "record_shape_sha256": "7cce49c21216fc805b49a79aee8d3505421e8b8c61c100d8d0650da4714224fe",
+      "database_id": "e16f200a-eb2b-5687-88fa-4f08ba4e83ad",
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "label": "Без кожуха · ТСЛ",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Чертеж трансформатора без кожуха ТСЛ (IP00)",
+          "reason": "Три катушки, верхняя и нижняя стяжные балки, видимые диагональные связи и катки; корпус отсутствует."
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "label": "С кожухом · ТСЛЗ",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway",
+          "sourceCaption": "Чертеж трансформатора с кожухом ТСЛЗ (IP21, IP31,)",
+          "reason": "Сохранен характер источника: верхняя сетка, средняя панель и раскрытый нижний фрагмент с видимыми катушками. Это иллюстративный разрез, не утверждение о постоянно открытом фасаде. Подпись источника перечисляет IP21 и IP31; выбор вида не определяет степень защиты и не подтверждает одинаковую геометрию этих исполнений."
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-2500",
+      "record_shape_sha256": "205c8f56f9dea6c3b9a2272a8c187383d2f558ca40ee591d08048c9f6c31e0ca",
+      "database_id": "8aaeb2bb-9a65-58c1-8d8f-1ed921b94d67",
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "label": "Без кожуха · ТСЛ",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Чертеж трансформатора без кожуха ТСЛ (IP00)",
+          "reason": "Три катушки, верхняя и нижняя стяжные балки, видимые диагональные связи и катки; корпус отсутствует."
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "label": "С кожухом · ТСЛЗ",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway",
+          "sourceCaption": "Чертеж трансформатора с кожухом ТСЛЗ (IP21, IP31,)",
+          "reason": "Сохранен характер источника: верхняя сетка, средняя панель и раскрытый нижний фрагмент с видимыми катушками. Это иллюстративный разрез, не утверждение о постоянно открытом фасаде. Подпись источника перечисляет IP21 и IP31; выбор вида не определяет степень защиты и не подтверждает одинаковую геометрию этих исполнений."
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-3150",
+      "record_shape_sha256": "6b4b557a678bde2c857632db0ffbbffce9fa69479b925d313988b2b02d8ab992",
+      "database_id": "0b4500df-16c5-523c-be2b-48c98f710924",
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "label": "Без кожуха · ТСЛ",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Чертеж трансформатора без кожуха ТСЛ (IP00)",
+          "reason": "Три катушки, верхняя и нижняя стяжные балки, видимые диагональные связи и катки; корпус отсутствует."
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "label": "С кожухом · ТСЛЗ",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway",
+          "sourceCaption": "Чертеж трансформатора с кожухом ТСЛЗ (IP21, IP31,)",
+          "reason": "Сохранен характер источника: верхняя сетка, средняя панель и раскрытый нижний фрагмент с видимыми катушками. Это иллюстративный разрез, не утверждение о постоянно открытом фасаде. Подпись источника перечисляет IP21 и IP31; выбор вида не определяет степень защиты и не подтверждает одинаковую геометрию этих исполнений."
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-4000",
+      "record_shape_sha256": "f717a22a0985d508c2b8780f1b73485682a0384e4480f2274428b1fa412c5de2",
+      "database_id": "5c9792f9-a59d-534e-9f7f-bae295fce198",
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "label": "Без кожуха · ТСЛ",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Чертеж трансформатора без кожуха ТСЛ (IP00)",
+          "reason": "Три катушки, верхняя и нижняя стяжные балки, видимые диагональные связи и катки; корпус отсутствует."
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "label": "С кожухом · ТСЛЗ",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway",
+          "sourceCaption": "Чертеж трансформатора с кожухом ТСЛЗ (IP21, IP31,)",
+          "reason": "Сохранен характер источника: верхняя сетка, средняя панель и раскрытый нижний фрагмент с видимыми катушками. Это иллюстративный разрез, не утверждение о постоянно открытом фасаде. Подпись источника перечисляет IP21 и IP31; выбор вида не определяет степень защиты и не подтверждает одинаковую геометрию этих исполнений."
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-a-63",
+      "record_shape_sha256": "17c2793c9decff91a17b1d72d49ce036d8075a4284bbad58c653d5bc9683c3ed",
+      "database_id": "30bf0582-5b0d-5df5-b5f4-81559c209c1c",
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "label": "Без кожуха · ТСЛ",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Чертеж трансформатора без кожуха ТСЛ (IP00)",
+          "reason": "Три катушки, верхняя и нижняя стяжные балки, видимые диагональные связи и катки; корпус отсутствует."
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "label": "С кожухом · ТСЛЗ",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway",
+          "sourceCaption": "Чертеж трансформатора с кожухом ТСЛЗ (IP21, IP31,)",
+          "reason": "Сохранен характер источника: верхняя сетка, средняя панель и раскрытый нижний фрагмент с видимыми катушками. Это иллюстративный разрез, не утверждение о постоянно открытом фасаде. Подпись источника перечисляет IP21 и IP31; выбор вида не определяет степень защиты и не подтверждает одинаковую геометрию этих исполнений."
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-a-100",
+      "record_shape_sha256": "aaec0acc7124e87bb1df11a97b04350fa6361c5b27c608f2b7c57def44cd9a84",
+      "database_id": "5aee36bf-474e-5915-baf7-0d5cb0afa172",
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "label": "Без кожуха · ТСЛ",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Чертеж трансформатора без кожуха ТСЛ (IP00)",
+          "reason": "Три катушки, верхняя и нижняя стяжные балки, видимые диагональные связи и катки; корпус отсутствует."
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "label": "С кожухом · ТСЛЗ",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway",
+          "sourceCaption": "Чертеж трансформатора с кожухом ТСЛЗ (IP21, IP31,)",
+          "reason": "Сохранен характер источника: верхняя сетка, средняя панель и раскрытый нижний фрагмент с видимыми катушками. Это иллюстративный разрез, не утверждение о постоянно открытом фасаде. Подпись источника перечисляет IP21 и IP31; выбор вида не определяет степень защиты и не подтверждает одинаковую геометрию этих исполнений."
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-a-160",
+      "record_shape_sha256": "6871d0ef22ce2d90269524526aa0a67123061faa18d524d2292f1fd5293b1129",
+      "database_id": "8292282c-eb34-58fb-9e18-853445a5573f",
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "label": "Без кожуха · ТСЛ",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Чертеж трансформатора без кожуха ТСЛ (IP00)",
+          "reason": "Три катушки, верхняя и нижняя стяжные балки, видимые диагональные связи и катки; корпус отсутствует."
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "label": "С кожухом · ТСЛЗ",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway",
+          "sourceCaption": "Чертеж трансформатора с кожухом ТСЛЗ (IP21, IP31,)",
+          "reason": "Сохранен характер источника: верхняя сетка, средняя панель и раскрытый нижний фрагмент с видимыми катушками. Это иллюстративный разрез, не утверждение о постоянно открытом фасаде. Подпись источника перечисляет IP21 и IP31; выбор вида не определяет степень защиты и не подтверждает одинаковую геометрию этих исполнений."
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-a-250",
+      "record_shape_sha256": "74f8c49d01d676166bba39c364e23e33f6a74d573fc6a0bcf5c9412f23b25f6d",
+      "database_id": "e2a74a2a-029e-566e-8c2c-7f65f0d5a90f",
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "label": "Без кожуха · ТСЛ",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Чертеж трансформатора без кожуха ТСЛ (IP00)",
+          "reason": "Три катушки, верхняя и нижняя стяжные балки, видимые диагональные связи и катки; корпус отсутствует."
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "label": "С кожухом · ТСЛЗ",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway",
+          "sourceCaption": "Чертеж трансформатора с кожухом ТСЛЗ (IP21, IP31,)",
+          "reason": "Сохранен характер источника: верхняя сетка, средняя панель и раскрытый нижний фрагмент с видимыми катушками. Это иллюстративный разрез, не утверждение о постоянно открытом фасаде. Подпись источника перечисляет IP21 и IP31; выбор вида не определяет степень защиты и не подтверждает одинаковую геометрию этих исполнений."
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-a-400",
+      "record_shape_sha256": "710eb2421c71ab644953bccda7baca53a9368cfc9656e7378cbd3d5f8812bd59",
+      "database_id": "90faaeb9-e0bc-5c3b-9f76-7408fb8d578b",
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "label": "Без кожуха · ТСЛ",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Чертеж трансформатора без кожуха ТСЛ (IP00)",
+          "reason": "Три катушки, верхняя и нижняя стяжные балки, видимые диагональные связи и катки; корпус отсутствует."
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "label": "С кожухом · ТСЛЗ",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway",
+          "sourceCaption": "Чертеж трансформатора с кожухом ТСЛЗ (IP21, IP31,)",
+          "reason": "Сохранен характер источника: верхняя сетка, средняя панель и раскрытый нижний фрагмент с видимыми катушками. Это иллюстративный разрез, не утверждение о постоянно открытом фасаде. Подпись источника перечисляет IP21 и IP31; выбор вида не определяет степень защиты и не подтверждает одинаковую геометрию этих исполнений."
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-a-1000",
+      "record_shape_sha256": "6d7160338f657d99c6b9907567a52e2bfd317200e5e0a8c5aa47947d3dc0bc5b",
+      "database_id": "98363e5e-0636-51ce-a8ad-40a6d72354b6",
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "label": "Без кожуха · ТСЛ",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Чертеж трансформатора без кожуха ТСЛ (IP00)",
+          "reason": "Три катушки, верхняя и нижняя стяжные балки, видимые диагональные связи и катки; корпус отсутствует."
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "label": "С кожухом · ТСЛЗ",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway",
+          "sourceCaption": "Чертеж трансформатора с кожухом ТСЛЗ (IP21, IP31,)",
+          "reason": "Сохранен характер источника: верхняя сетка, средняя панель и раскрытый нижний фрагмент с видимыми катушками. Это иллюстративный разрез, не утверждение о постоянно открытом фасаде. Подпись источника перечисляет IP21 и IP31; выбор вида не определяет степень защиты и не подтверждает одинаковую геометрию этих исполнений."
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-a-1250",
+      "record_shape_sha256": "a9bf114c905d57897b9d268550170b5793ebc5173425aaea49100c57191ffca0",
+      "database_id": "61b1c848-5426-50d2-974d-0681f04d3419",
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "label": "Без кожуха · ТСЛ",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Чертеж трансформатора без кожуха ТСЛ (IP00)",
+          "reason": "Три катушки, верхняя и нижняя стяжные балки, видимые диагональные связи и катки; корпус отсутствует."
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "label": "С кожухом · ТСЛЗ",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway",
+          "sourceCaption": "Чертеж трансформатора с кожухом ТСЛЗ (IP21, IP31,)",
+          "reason": "Сохранен характер источника: верхняя сетка, средняя панель и раскрытый нижний фрагмент с видимыми катушками. Это иллюстративный разрез, не утверждение о постоянно открытом фасаде. Подпись источника перечисляет IP21 и IP31; выбор вида не определяет степень защиты и не подтверждает одинаковую геометрию этих исполнений."
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-a-2000",
+      "record_shape_sha256": "69af87008ea90cb2b9cfc7b4071e63948fef03522de920d224be2f250933be2a",
+      "database_id": "4fb15549-1ec6-5349-b03f-8ca8eb7e1c1b",
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "label": "Без кожуха · ТСЛ",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Чертеж трансформатора без кожуха ТСЛ (IP00)",
+          "reason": "Три катушки, верхняя и нижняя стяжные балки, видимые диагональные связи и катки; корпус отсутствует."
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "label": "С кожухом · ТСЛЗ",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway",
+          "sourceCaption": "Чертеж трансформатора с кожухом ТСЛЗ (IP21, IP31,)",
+          "reason": "Сохранен характер источника: верхняя сетка, средняя панель и раскрытый нижний фрагмент с видимыми катушками. Это иллюстративный разрез, не утверждение о постоянно открытом фасаде. Подпись источника перечисляет IP21 и IP31; выбор вида не определяет степень защиты и не подтверждает одинаковую геометрию этих исполнений."
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-a-2500",
+      "record_shape_sha256": "1c0585e0e5b1c4602a287650ea29f4478c157ee66116910b0f373bd043bccdd2",
+      "database_id": "7840e8e3-ae20-57b7-aa7b-1897a807c2e0",
+      "choices": [
+        {
+          "groupId": "dry-tsl-open-6-10",
+          "label": "Без кожуха · ТСЛ",
+          "geometryType": "tr26-dry-cast-open",
+          "iconType": "tr26-dry-cast-open",
+          "sourcePages": [
+            80
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Чертеж трансформатора без кожуха ТСЛ (IP00)",
+          "reason": "Три катушки, верхняя и нижняя стяжные балки, видимые диагональные связи и катки; корпус отсутствует."
+        },
+        {
+          "groupId": "dry-tslz-enclosed-6-10",
+          "label": "С кожухом · ТСЛЗ",
+          "geometryType": "tr26-dry-mesh-cutaway",
+          "iconType": "tr26-dry-mesh-cutaway",
+          "sourcePages": [
+            81
+          ],
+          "viewMode": "illustrative-cutaway",
+          "sourceCaption": "Чертеж трансформатора с кожухом ТСЛЗ (IP21, IP31,)",
+          "reason": "Сохранен характер источника: верхняя сетка, средняя панель и раскрытый нижний фрагмент с видимыми катушками. Это иллюстративный разрез, не утверждение о постоянно открытом фасаде. Подпись источника перечисляет IP21 и IP31; выбор вида не определяет степень защиты и не подтверждает одинаковую геометрию этих исполнений."
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-ts-10",
+      "record_shape_sha256": "dded47ceea04df121774b4a46960529549011598b87f549c1be5ab2b425d13b5",
+      "database_id": "8a98eacc-b0af-5314-aa1a-6646f5d39ae0",
+      "choices": [
+        {
+          "groupId": "dry-ts-open",
+          "label": "Открытое исполнение · ТС",
+          "geometryType": "tr26-dry-foil-open",
+          "iconType": "tr26-dry-foil-open",
+          "sourcePages": [
+            88
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Трансформаторы серии ТС",
+          "reason": "Три прямоугольных блока обмоток между открытыми балками и верхними клеммами, основание без кожуха."
+        },
+        {
+          "groupId": "dry-tsz-enclosed",
+          "label": "В кожухе · ТСЗ",
+          "geometryType": "tr26-dry-compact-louver",
+          "iconType": "tr26-dry-compact-louver",
+          "sourcePages": [
+            87
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Трансформаторы серии ТСЗ",
+          "reason": "Компактный закрытый кожух с двумя зонами жалюзи, верхней клеммной областью и проушинами."
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-ts-16",
+      "record_shape_sha256": "8df7bbf78519c4b5e3cf74a4368768fb039b1cd6ffec426f829decfb36385b83",
+      "database_id": "8444a0c1-1f09-5198-a618-cecc56b2e474",
+      "choices": [
+        {
+          "groupId": "dry-ts-open",
+          "label": "Открытое исполнение · ТС",
+          "geometryType": "tr26-dry-foil-open",
+          "iconType": "tr26-dry-foil-open",
+          "sourcePages": [
+            88
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Трансформаторы серии ТС",
+          "reason": "Три прямоугольных блока обмоток между открытыми балками и верхними клеммами, основание без кожуха."
+        },
+        {
+          "groupId": "dry-tsz-enclosed",
+          "label": "В кожухе · ТСЗ",
+          "geometryType": "tr26-dry-compact-louver",
+          "iconType": "tr26-dry-compact-louver",
+          "sourcePages": [
+            87
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Трансформаторы серии ТСЗ",
+          "reason": "Компактный закрытый кожух с двумя зонами жалюзи, верхней клеммной областью и проушинами."
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-ts-25",
+      "record_shape_sha256": "806ca140be56a3d366eef704d4c605a379c898daa7cc5b824ff0bf005a918d51",
+      "database_id": "143082da-e1c1-5df7-8056-70ad09896f77",
+      "choices": [
+        {
+          "groupId": "dry-ts-open",
+          "label": "Открытое исполнение · ТС",
+          "geometryType": "tr26-dry-foil-open",
+          "iconType": "tr26-dry-foil-open",
+          "sourcePages": [
+            88
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Трансформаторы серии ТС",
+          "reason": "Три прямоугольных блока обмоток между открытыми балками и верхними клеммами, основание без кожуха."
+        },
+        {
+          "groupId": "dry-tsz-enclosed",
+          "label": "В кожухе · ТСЗ",
+          "geometryType": "tr26-dry-compact-louver",
+          "iconType": "tr26-dry-compact-louver",
+          "sourcePages": [
+            87
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Трансформаторы серии ТСЗ",
+          "reason": "Компактный закрытый кожух с двумя зонами жалюзи, верхней клеммной областью и проушинами."
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-ts-40",
+      "record_shape_sha256": "cdcfc4eaa1c3201d7fc471d49e4ae2a24aba0af50212bda23a484562d6be17a9",
+      "database_id": "37d49305-67f1-5218-8fa6-fa49cd0b1e35",
+      "choices": [
+        {
+          "groupId": "dry-ts-open",
+          "label": "Открытое исполнение · ТС",
+          "geometryType": "tr26-dry-foil-open",
+          "iconType": "tr26-dry-foil-open",
+          "sourcePages": [
+            88
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Трансформаторы серии ТС",
+          "reason": "Три прямоугольных блока обмоток между открытыми балками и верхними клеммами, основание без кожуха."
+        },
+        {
+          "groupId": "dry-tsz-enclosed",
+          "label": "В кожухе · ТСЗ",
+          "geometryType": "tr26-dry-compact-louver",
+          "iconType": "tr26-dry-compact-louver",
+          "sourcePages": [
+            87
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Трансформаторы серии ТСЗ",
+          "reason": "Компактный закрытый кожух с двумя зонами жалюзи, верхней клеммной областью и проушинами."
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-ts-63",
+      "record_shape_sha256": "2824d59ee7c0ec628e0fd1f75ee4d794b510d65808bc3d8b7b90f40a0560992e",
+      "database_id": "c9961516-56ca-5459-9c29-bb8460dce35c",
+      "choices": [
+        {
+          "groupId": "dry-ts-open",
+          "label": "Открытое исполнение · ТС",
+          "geometryType": "tr26-dry-foil-open",
+          "iconType": "tr26-dry-foil-open",
+          "sourcePages": [
+            88
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Трансформаторы серии ТС",
+          "reason": "Три прямоугольных блока обмоток между открытыми балками и верхними клеммами, основание без кожуха."
+        },
+        {
+          "groupId": "dry-tsz-enclosed",
+          "label": "В кожухе · ТСЗ",
+          "geometryType": "tr26-dry-compact-louver",
+          "iconType": "tr26-dry-compact-louver",
+          "sourcePages": [
+            87
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Трансформаторы серии ТСЗ",
+          "reason": "Компактный закрытый кожух с двумя зонами жалюзи, верхней клеммной областью и проушинами."
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-ts-100",
+      "record_shape_sha256": "fd6b56a5a6c3b533474f8d4d87e352ca4a4b241b93efc862861049df92b26bba",
+      "database_id": "adeee66e-1f5a-5401-ab38-494355bc902c",
+      "choices": [
+        {
+          "groupId": "dry-ts-open",
+          "label": "Открытое исполнение · ТС",
+          "geometryType": "tr26-dry-foil-open",
+          "iconType": "tr26-dry-foil-open",
+          "sourcePages": [
+            88
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Трансформаторы серии ТС",
+          "reason": "Три прямоугольных блока обмоток между открытыми балками и верхними клеммами, основание без кожуха."
+        },
+        {
+          "groupId": "dry-tsz-enclosed",
+          "label": "В кожухе · ТСЗ",
+          "geometryType": "tr26-dry-compact-louver",
+          "iconType": "tr26-dry-compact-louver",
+          "sourcePages": [
+            87
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Трансформаторы серии ТСЗ",
+          "reason": "Компактный закрытый кожух с двумя зонами жалюзи, верхней клеммной областью и проушинами."
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsn-160",
+      "record_shape_sha256": "591208f4a3e66b4f2adb1793f66c3f8af815564f7a49bdbef4aa5d30e4310a94",
+      "database_id": "e5dbec7a-710d-532c-832a-22df74ee2924",
+      "choices": [
+        {
+          "groupId": "dry-tsn-open",
+          "label": "Открытое исполнение · ТСН",
+          "geometryType": "tr26-dry-nomex-open",
+          "iconType": "tr26-dry-nomex-open",
+          "sourcePages": [
+            92
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Трансформатор ТСН",
+          "reason": "Три блока обмоток, открытые балки, крупные передние клеммные пластины и колесная база; материал Номекс не моделируется геометрически."
+        },
+        {
+          "groupId": "dry-tsnz-top-bushing",
+          "label": "Кожух с верхними вводами · ТСНЗ",
+          "geometryType": "tr26-dry-top-bushings",
+          "iconType": "tr26-dry-top-bushings",
+          "sourcePages": [
+            94
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Трансформатор ТСНЗ-160,250 (400,630)",
+          "reason": "Закрытый кожух с двумя рядами жалюзи, тремя высокими и малыми верхними вводами; не сетчатый ТСНЗ страницы 93."
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsn-250",
+      "record_shape_sha256": "e0f30343ed1fc66317ce18f808bf5f0995fe3122044b68f4c50f922478d6c2b5",
+      "database_id": "d892e398-075f-512e-8bb1-e85432ce50e4",
+      "choices": [
+        {
+          "groupId": "dry-tsn-open",
+          "label": "Открытое исполнение · ТСН",
+          "geometryType": "tr26-dry-nomex-open",
+          "iconType": "tr26-dry-nomex-open",
+          "sourcePages": [
+            92
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Трансформатор ТСН",
+          "reason": "Три блока обмоток, открытые балки, крупные передние клеммные пластины и колесная база; материал Номекс не моделируется геометрически."
+        },
+        {
+          "groupId": "dry-tsnz-top-bushing",
+          "label": "Кожух с верхними вводами · ТСНЗ",
+          "geometryType": "tr26-dry-top-bushings",
+          "iconType": "tr26-dry-top-bushings",
+          "sourcePages": [
+            94
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Трансформатор ТСНЗ-160,250 (400,630)",
+          "reason": "Закрытый кожух с двумя рядами жалюзи, тремя высокими и малыми верхними вводами; не сетчатый ТСНЗ страницы 93."
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsn-400",
+      "record_shape_sha256": "1cbc2d015f6bf1572f97bab29631f08ae4a9f1933e2691d2c73453751e9e5a24",
+      "database_id": "4f69e435-6337-5cd2-bbe2-ee2844fe71be",
+      "choices": [
+        {
+          "groupId": "dry-tsn-open",
+          "label": "Открытое исполнение · ТСН",
+          "geometryType": "tr26-dry-nomex-open",
+          "iconType": "tr26-dry-nomex-open",
+          "sourcePages": [
+            92
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Трансформатор ТСН",
+          "reason": "Три блока обмоток, открытые балки, крупные передние клеммные пластины и колесная база; материал Номекс не моделируется геометрически."
+        },
+        {
+          "groupId": "dry-tsnz-mesh",
+          "label": "Сетчатый кожух · ТСНЗ-400,630",
+          "geometryType": "tr26-dry-mesh-closed",
+          "iconType": "tr26-dry-mesh-closed",
+          "sourcePages": [
+            93
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Трансформатор ТСНЗ-400,630",
+          "reason": "Замкнутый фасад с верхней и нижней сетками и средней панелью. Кожух не заменяется открытыми катушками."
+        },
+        {
+          "groupId": "dry-tsnz-top-bushing",
+          "label": "Кожух с верхними вводами · ТСНЗ",
+          "geometryType": "tr26-dry-top-bushings",
+          "iconType": "tr26-dry-top-bushings",
+          "sourcePages": [
+            94
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Трансформатор ТСНЗ-160,250 (400,630)",
+          "reason": "Закрытый кожух с двумя рядами жалюзи, тремя высокими и малыми верхними вводами; не сетчатый ТСНЗ страницы 93."
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsn-630",
+      "record_shape_sha256": "fec7c442cfdd02a3b91314fea0a3d9fc7f8c3344573873de15123958450086cd",
+      "database_id": "9dcbeaa0-388f-5d98-82ea-2ff84495d6b9",
+      "choices": [
+        {
+          "groupId": "dry-tsn-open",
+          "label": "Открытое исполнение · ТСН",
+          "geometryType": "tr26-dry-nomex-open",
+          "iconType": "tr26-dry-nomex-open",
+          "sourcePages": [
+            92
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Трансформатор ТСН",
+          "reason": "Три блока обмоток, открытые балки, крупные передние клеммные пластины и колесная база; материал Номекс не моделируется геометрически."
+        },
+        {
+          "groupId": "dry-tsnz-mesh",
+          "label": "Сетчатый кожух · ТСНЗ-400,630",
+          "geometryType": "tr26-dry-mesh-closed",
+          "iconType": "tr26-dry-mesh-closed",
+          "sourcePages": [
+            93
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Трансформатор ТСНЗ-400,630",
+          "reason": "Замкнутый фасад с верхней и нижней сетками и средней панелью. Кожух не заменяется открытыми катушками."
+        },
+        {
+          "groupId": "dry-tsnz-top-bushing",
+          "label": "Кожух с верхними вводами · ТСНЗ",
+          "geometryType": "tr26-dry-top-bushings",
+          "iconType": "tr26-dry-top-bushings",
+          "sourcePages": [
+            94
+          ],
+          "viewMode": "illustrative-topology",
+          "sourceCaption": "Трансформатор ТСНЗ-160,250 (400,630)",
+          "reason": "Закрытый кожух с двумя рядами жалюзи, тремя высокими и малыми верхними вводами; не сетчатый ТСНЗ страницы 93."
+        }
+      ]
+    }
+  ]
+}

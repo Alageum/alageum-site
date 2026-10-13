@@ -1,0 +1,80 @@
+{
+  "format": "alageum-transformer-execution-choice-change-manifest-v1",
+  "baseCommit": "c7a17f62645f86fd51ee7ae2605e741d1b4e01df",
+  "scope": "Separate explicit construction choices only; no default binding, source record, identity or reviewed geometry changes.",
+  "counts": {
+    "records": 32,
+    "choices": 66,
+    "geometryTypes": 7,
+    "defaultGeometry": 251,
+    "defaultIcons": 257,
+    "identityHeldRecords": 32
+  },
+  "validation": [
+    {
+      "command": "node scripts/approve-transformer-execution-choices.mjs docs/catalog-transformers-2026/review/execution-choice-clearance.json --check",
+      "result": "passed"
+    },
+    {
+      "cwd": "frontend",
+      "command": "node --test tests/transformer-execution-choices.test.mjs tests/transformer-import.test.mjs tests/equipment-transformer2026-assets.test.mjs tests/equipment-preview-authority.test.mjs",
+      "result": "37 tests passed; zero failed"
+    },
+    {
+      "cwd": "frontend",
+      "command": "./node_modules/.bin/eslint lib/catalog/models/transformerExecutionChoices.js tests/transformer-execution-choices.test.mjs",
+      "result": "passed; no diagnostics"
+    },
+    {
+      "command": "node --check scripts/approve-transformer-execution-choices.mjs",
+      "result": "passed"
+    },
+    {
+      "scope": "Final approved records and dependency payload digests, including label/reason/sourceCaption mutations",
+      "result": "37 focused regression tests passed after final clearance regeneration"
+    },
+    {
+      "scope": "Independent reviewer rerun",
+      "result": "8 choice tests passed and generator --check passed",
+      "evidence": "docs/catalog-transformers-2026/review/execution-choice-independent-runtime-verification.json"
+    }
+  ],
+  "remainingValidation": "Application build and browser interaction checks are coordinated with the catalog presentation implementation.",
+  "files": [
+    {
+      "path": "frontend/lib/catalog/models/transformerExecutionChoices.js",
+      "bytes": 2682,
+      "sha256": "8ca1d3c87406e4732b80c2e881a67e4531200f6b0adf3ca935318452f14c5fd1"
+    },
+    {
+      "path": "frontend/lib/catalog/models/transformerExecutionChoicesManifest.json",
+      "bytes": 20880,
+      "sha256": "28ffbaf5282a63e0e691393763d00c48abec96519c70d965771fa72391fd6666"
+    },
+    {
+      "path": "scripts/approve-transformer-execution-choices.mjs",
+      "bytes": 8256,
+      "sha256": "c74e7bcb2f281a3e784630f3a5eb008563c716df23e2429303c7fe5b00e57e55"
+    },
+    {
+      "path": "frontend/tests/transformer-execution-choices.test.mjs",
+      "bytes": 12189,
+      "sha256": "08c8ffd13b96b7a144a8d5816375444115571695bedd0c3207721ca911192c63"
+    },
+    {
+      "path": "docs/catalog-transformers-2026/review/execution-choice-clearance.json",
+      "bytes": 60863,
+      "sha256": "c31d103704e35d2a61916898133512f248296dd608d775613635f62594eb2be7"
+    },
+    {
+      "path": "docs/catalog-transformers-2026/review/execution-choice-independent-review.json",
+      "bytes": 4220,
+      "sha256": "13803a03daf7ab2dfe942924c79d242f91d1cabde034188c71c3c43466def4a7"
+    },
+    {
+      "path": "docs/catalog-transformers-2026/review/execution-choice-independent-runtime-verification.json",
+      "bytes": 1847,
+      "sha256": "457ff69c754e22ee1d25a00d344c2089f64634bd54ceae4030dd0b33304661c6"
+    }
+  ]
+}

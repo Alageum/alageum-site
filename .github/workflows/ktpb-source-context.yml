@@ -1,0 +1,75 @@
+name: KTPB source context browser
+
+on:
+  pull_request:
+    paths:
+      - 'frontend/**'
+      - 'scripts/**'
+      - 'docs/catalog-transformers-2026/**'
+      - '.github/workflows/ktpb-source-context.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ktpb-source-context-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    env:
+      NEXT_PUBLIC_CATALOG_SOURCE: static
+      NEXT_TELEMETRY_DISABLED: '1'
+      E2E_KTPB_BASE_URL: http://127.0.0.1:3119
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Prepare isolated KTPB source context evidence
+        run: |
+          mkdir -p ../ktpb-source-context-evidence
+          git rev-parse HEAD > ../ktpb-source-context-evidence/head.txt
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Build the reviewed KTPB source context site
+        timeout-minutes: 5
+        shell: bash
+        run: npm run build 2>&1 | tee ../ktpb-source-context-evidence/build.log
+      - name: Verify sixteen KTPB source context cases separately
+        timeout-minutes: 6
+        shell: bash
+        run: |
+          npm run start -- --hostname 127.0.0.1 --port 3119 > ../ktpb-source-context-evidence/server.log 2>&1 &
+          web_pid=$!
+          cleanup() {
+            kill "${web_pid}" 2>/dev/null || true
+            wait "${web_pid}" 2>/dev/null || true
+          }
+          trap cleanup EXIT
+          deadline=$((SECONDS + 90))
+          until curl --fail --silent --connect-timeout 2 --max-time 5 "${E2E_KTPB_BASE_URL}/catalog" > /dev/null; do
+            if ! kill -0 "${web_pid}" || (( SECONDS >= deadline )); then
+              tail -80 ../ktpb-source-context-evidence/server.log
+              exit 1
+            fi
+            sleep 2
+          done
+          npx playwright test --config=playwright.ktpb-source-context.config.mjs 2>&1 | tee ../ktpb-source-context-evidence/runner-console.log
+      - name: Retain complete isolated KTPB source context evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ktpb-source-context-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ktpb-source-context-evidence/
+          if-no-files-found: error
+          include-hidden-files: true
+          retention-days: 7

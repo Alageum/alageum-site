@@ -1,0 +1,3861 @@
+{
+  "format": "alageum-transformer-assets-independent-review-v1",
+  "status": "approved-specific-bindings-only",
+  "reviewedAt": "2026-10-05T08:37:54.493882+00:00",
+  "scope": {
+    "sourceRows": 540,
+    "activeAdapterRows": 585,
+    "oldStableRecords": 238,
+    "sourceEvidencePagesInspected": 87,
+    "allSourceScansHashVerified": 187,
+    "geometryDefinitionsReviewed": 62,
+    "iconDefinitionsReviewed": 67,
+    "geometryRecordBindingsApproved": 251,
+    "iconRecordBindingsApproved": 257,
+    "activeAdapterRowsWithoutGeometry": 334,
+    "activeAdapterRowsWithoutIcon": 328
+  },
+  "sourcePdfSha256": "8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e",
+  "sourcePdfBytesVerified": 844084378,
+  "inventorySha256": "c3948d7152a6130aa4672b9f6d3d5a8f08144b5965df7bebabca067ba5bc8438",
+  "shapeArtifactSha256": "2e960a153bfbc7b94be57fe26407852ae0d81e1ef5fd7ee529503d52c5042a28",
+  "sourceRegistrySha256": "23d30c3d87a43abe24c9843453b3e0c69e32af3f7674629e4d9a8b7b6ae06f9c",
+  "reviewedLibraryHashes": {
+    "frontend/lib/catalog/models/transformer2026AssetEvidence.json": "6d54c9e8e83409384de5dce6233f306ceeb1bcdcdac384ef57f778251edb519d",
+    "frontend/lib/catalog/models/transformer2026Bindings.js": "ec767070298a5aa4bbd5dcf4b77581e05b171febd9fb585964fd2c55da232712",
+    "frontend/lib/catalog/models/transformer2026Geometry.js": "32f91701425584f0bfa4e7b138525329fb6527588344fc5a574ed8dea7f0ef09",
+    "frontend/lib/catalog/models/transformer2026GroupMap.js": "057a7978bdd7f6f26761c4664904a5f93e48805c1c8ffee591c3eccf5bd39b0b",
+    "frontend/lib/catalog/models/transformer2026Icons.js": "9e49caab2b69cbb165c4a1b56f12a317d06cc910091cbae39c355bab63cca405",
+    "frontend/lib/catalog/models/transformer2026PowerLayouts.js": "efd30d083dfe7d0cc5c609508301877774b05e855b9b501056bc25fdff9ff265",
+    "frontend/lib/catalog/models/transformer2026Types.js": "56ee5e7de958abeae364b565d8799430fc33b7fb25ca5f2cb665d17db020b9a8",
+    "frontend/lib/catalog/models/transformer2026Shape.js": "ed07fb7f8c239623277338e2f8fcace52d77dbd12145e1c65cf8603c4100fb96",
+    "frontend/lib/catalog/models/transformer2026Runtime.js": "b39571ef6fbd6983025cfdbcedce732acf8e40211dcd8995195fce59c66aaf24",
+    "frontend/lib/catalog/models/visualMap.js": "620615a601d9570c2cc527c346dc6609fe97b96665704b87fe288c7312813a2b",
+    "frontend/lib/catalog/models/iconMap.js": "56b7a0a45344696f24727720769c716f17ae460d57df136e9c24d3b170d9e47c",
+    "frontend/lib/catalog/models/types.js": "a28eee4d674c6b4fb4a37109e3c94ae995651fa99d261cb39223765cde305d85",
+    "frontend/lib/catalog/models/iconTypes.js": "e0bbb1b7bdda581dfbcb7a22e434934b3d4efa3a2e59e92187b2277f94f41d03",
+    "frontend/lib/catalog/models/geometry.js": "b97a2eadfbb127c113cc058c4dc0e64351024ab0cdb10320616d41d1b356eb7d",
+    "frontend/lib/catalog/apiData.js": "75a499eca5aa761599ce19f8f48530e0e9f78859003566ba7ceee17161c0828b",
+    "frontend/lib/catalog/media.js": "e6c2d885852ad540995ac7da14b819d765c17241b5b4aa9d9dc0a2eaa1bf255e",
+    "frontend/components/catalog/EquipmentModel.js": "a558d1b02a4eb8944a38e4f874899a349f0234816a173a9e78c92f5c95529275",
+    "frontend/components/catalog/EquipmentIcon.js": "cd6b5d97fdcbcb4366712b5fa341f6388a18533eee084a583b5705e2f1c1d6b7",
+    "frontend/components/catalog/ProductVisual.js": "81f49623d6e39b121c553fb31268ac4a8341f2b26c9dad8ed8dc3e0e7924ff9f",
+    "frontend/components/catalog/ProductIcon.js": "42a56367388525f89988f4493546252f6df5e0338071646c84dc2424c0dd0a01"
+  },
+  "reviewedSourceImageHashes": {
+    "/catalog-source/transformers-2026/page-012.webp": "4012efb16d72716f53960c075ad98ed3796e3c8c1d8487b1bb1781e782455b77",
+    "/catalog-source/transformers-2026/page-013.webp": "ead1a8bf62eb02c0612691a90e783554425fde0cb122391fa5e37118a60f9955",
+    "/catalog-source/transformers-2026/page-016.webp": "5162eb949a0d5f0fba97c51aa29447eccbdc801ca1830ce30105c1fb4d8d2e21",
+    "/catalog-source/transformers-2026/page-017.webp": "c000f943f5b1bc98a600fc17b8bae08282ab4ae891bc76edb2053d353688f95c",
+    "/catalog-source/transformers-2026/page-022.webp": "196a199a063a5bd3968c4f752a0cc203a6633c8bbc3419b8fdcc4a33ecf1320d",
+    "/catalog-source/transformers-2026/page-023.webp": "0d0db02bc677fff4edce40b45c25c07e6da00b4376c4afc59485c9694f196184",
+    "/catalog-source/transformers-2026/page-030.webp": "270769453d833dfc8eb67007df09d31e1b5ef0b2f8ad5a9df012b158f6fd654d",
+    "/catalog-source/transformers-2026/page-031.webp": "15c8eaf316397be33895e0c53989155a7116448d52919176d46cc5b2f18137d1",
+    "/catalog-source/transformers-2026/page-033.webp": "6ce7fd76a5e6ac2275cf2df61861133174de9f767f09aee3e437cb74f5014a43",
+    "/catalog-source/transformers-2026/page-035.webp": "833d0e83dce10c6cd5668e5184d895654a5dfac338a9ae896cd13ff3590213de",
+    "/catalog-source/transformers-2026/page-037.webp": "9c9087c2fe67efa63c7b3bb617c9fa2e17118e8e30fb93baa29e3d79d5bf27fd",
+    "/catalog-source/transformers-2026/page-039.webp": "3e3a770f9313a9700aa0237688a62d420c9ddad897c40bf5cc5efadec13298c6",
+    "/catalog-source/transformers-2026/page-042.webp": "c88905d6c6db278efb81cd89c573db3bf08ace15b4654631d53ddfe5564b045a",
+    "/catalog-source/transformers-2026/page-043.webp": "5c1229ae24db96a3f09a1b2c685faa086e296f6c73c9a75e9cf0e13bfcb4948e",
+    "/catalog-source/transformers-2026/page-046.webp": "e2b822816bc79dc8c016acb5103629f0d05039f496906aea32c23724b46f9c47",
+    "/catalog-source/transformers-2026/page-047.webp": "0fd957cbda45d99b589e82bbe0c7f87e162b325f3ff82b71ef82fdbc4c045d1a",
+    "/catalog-source/transformers-2026/page-049.webp": "28ae8db73b15eccfa4769265f369e1ec94d7b596ad2e970c88ead534c5034a72",
+    "/catalog-source/transformers-2026/page-052.webp": "d37a7089cdb64a9a311a2920db4cf70db16ba2de68a0562784f673c8f849581f",
+    "/catalog-source/transformers-2026/page-053.webp": "aa5aa46e3a5ff49d262b72ee21f15a3af3e9e349dbfd9b023deb4a53ef1ab460",
+    "/catalog-source/transformers-2026/page-056.webp": "5286068ef926ba324034419e09f9146724150572b35fef1d5de77cd2a5dd016f",
+    "/catalog-source/transformers-2026/page-057.webp": "b2c04829c0cc964739b46dbc4b3a92ce77cfe9540790e232dcd5c695d8992a1e",
+    "/catalog-source/transformers-2026/page-059.webp": "bd43e74f9fea780bb05bd0b6762153cd6d210a3ac7ca518c970de06a33bd8b0c",
+    "/catalog-source/transformers-2026/page-061.webp": "9c8f38452713f06e5a50272c3e212635dc8fb88878c511fd0c3cef7ed4590fac",
+    "/catalog-source/transformers-2026/page-066.webp": "fda7d1133f5535acf56e8d5af17fd8531223eedaf03512cb4822b4397aa6c26a",
+    "/catalog-source/transformers-2026/page-067.webp": "5598561d7b6a3d419877409849127e1ce7a10b3c0d2a12064f09d067fedbc69e",
+    "/catalog-source/transformers-2026/page-069.webp": "ba1f6b66b1c6d40106a4d27b77b9afdd8a2ed16d7be13e601f52a68674969cc1",
+    "/catalog-source/transformers-2026/page-071.webp": "a97857267eb9e943b17d4efb884fcd280e6efc3d2a2304a4fc2ba9c14b7bd8f5",
+    "/catalog-source/transformers-2026/page-074.webp": "f745366c242fcf110482f8258bfe8247f50bfcb6b68f6b34050ff8d316b688df",
+    "/catalog-source/transformers-2026/page-075.webp": "27be7461fd864739977445f3640742030aaec4d2e3267a898b5d964f350fe8bd",
+    "/catalog-source/transformers-2026/page-080.webp": "5142c148f3295a44eda17477166b99bd27bc89730cdac5cde1362f45b4b909e5",
+    "/catalog-source/transformers-2026/page-081.webp": "da78a8813f1f2e59b709346c8c33d10a6f8674af2dcf8131909a2fec172d09c6",
+    "/catalog-source/transformers-2026/page-084.webp": "3a3aaecd35b1372e0336966a6ef05be3632ce0f4c478bbbb4293af9f341918bb",
+    "/catalog-source/transformers-2026/page-085.webp": "330a52d933cf91f7a00769eeee856bcd3f989a26d6906af2d168039486b649c2",
+    "/catalog-source/transformers-2026/page-086.webp": "3a6aaec041ca7cc67f31470cc2c47f24a27fc6c95a1d0fa4ad2640800dc7d7fc",
+    "/catalog-source/transformers-2026/page-087.webp": "77b3a6ea0e6dc5864c3aff61ded632e60d3006f51bf5938c9ae059e16b7a1e7a",
+    "/catalog-source/transformers-2026/page-088.webp": "271313470bb4be9f7b41d6367d4f54baaf1b36184420c19fcd4d4b9de654afc9",
+    "/catalog-source/transformers-2026/page-089.webp": "42e944c3cd38347955d83a126cbb2cefbbf8f99bbbbd5be0758c5e6c2ed8ccf1",
+    "/catalog-source/transformers-2026/page-090.webp": "2db5d50780a545e3ef11efba98b2e9811b67001336be903b94842185c40a24db",
+    "/catalog-source/transformers-2026/page-092.webp": "ab86b6cf205db3ce2bed41f5fcd21297342ee3fa2ab847a97bdf71f14ce9ef7f",
+    "/catalog-source/transformers-2026/page-093.webp": "75a7916fe025f2d265db57cc635375746a1ee723dfef3ab7ef21b3a021238918",
+    "/catalog-source/transformers-2026/page-094.webp": "f64932ab4037de21089f984626d2b35b88ea6f8b052531db4d86d66529d5336d",
+    "/catalog-source/transformers-2026/page-096.webp": "536da2fbf98a84d623a1c4a6bec4b07105d599866fcc41ce866ee3573fdc7234",
+    "/catalog-source/transformers-2026/page-097.webp": "85000083bc2259e03750bbcd6808f8c4f70d9db4f9855666379067e28604c45c",
+    "/catalog-source/transformers-2026/page-098.webp": "435d6900ab0d0c4308886cff63d8961b836bdf70c9a46d4dee51138056f1d346",
+    "/catalog-source/transformers-2026/page-099.webp": "92c80ddbdcdf228d8c96256ee9d3cc4a7072302899476f9cda964ca7ef76865a",
+    "/catalog-source/transformers-2026/page-100.webp": "10af5bac68e0c1982c9c83667585d6e66a5b40e935d217c19770ac84a46f4bc1",
+    "/catalog-source/transformers-2026/page-102.webp": "a110df9467440aed10f69317fa1a7349aabdcc7b9a57f5a7df3fe3c27206fc2b",
+    "/catalog-source/transformers-2026/page-104.webp": "2761ddfdfeeb0e4a883ec38f604c4f8cc02ff0c096939fc2900e8f75a1c12e1a",
+    "/catalog-source/transformers-2026/page-107.webp": "1f304db5683f435071d0a5bbf9a1359599d41c9999823f56440e13b3532e850d",
+    "/catalog-source/transformers-2026/page-108.webp": "ba358e24a2cfc64a2c92bad98c986d019ba19037563a8b05bf858c5ceabd2760",
+    "/catalog-source/transformers-2026/page-110.webp": "af2f4e6cf2d0ad8461878b0de6c56abd812e345b094dfa3b4a58c4dade28f47a",
+    "/catalog-source/transformers-2026/page-112.webp": "0b9c5a9f26237245c229b1db9f9e1088549edff9713366154b6d74297004f528",
+    "/catalog-source/transformers-2026/page-114.webp": "526bf45cb618c4c6ebfea1b795b2a056da585b3cae5faed6f4dca80e495d69bf",
+    "/catalog-source/transformers-2026/page-115.webp": "530cce1992d51290c3adebf36847b55868fa564ade1dd4cbbf01a6385a507c1d",
+    "/catalog-source/transformers-2026/page-116.webp": "af68cc3ccdce0e40db9873b6d3352bc1f637437875e83503382ad324e5d4b822",
+    "/catalog-source/transformers-2026/page-118.webp": "76d764d4c9089e607855d826916ca95a9391c2f4b15a3270ad7f6912a76e37f1",
+    "/catalog-source/transformers-2026/page-120.webp": "c9847a8405afe64f3c0a806446098449a8dfa2f56cbce84d5dd223cfc9624a49",
+    "/catalog-source/transformers-2026/page-121.webp": "d743ae1a8fd33f00e6b33fb576489097cbc51573d8c38079d39b8581db4b7e19",
+    "/catalog-source/transformers-2026/page-122.webp": "a1e59b1513480056f684f710229b9eeb9fb6ddd2315080afb88abd92849c553f",
+    "/catalog-source/transformers-2026/page-123.webp": "2cb0e294d082ef2165db7af3aeadb1d9279315cdbbcb12b0f3a4de234f2eaed9",
+    "/catalog-source/transformers-2026/page-125.webp": "6a96fbc7114c61463c360bd7bfcd6a9ea5d43843279c89f2af3a21f711b4869f",
+    "/catalog-source/transformers-2026/page-126.webp": "feca8f19202dfe63a1bb42a5b5010a1706defcbad214b16ba73d30d4e5e7d437",
+    "/catalog-source/transformers-2026/page-127.webp": "0e0e928238e9873a19ebed70a7c28387cda9c9a154112084e4ce4c5eaee73b66",
+    "/catalog-source/transformers-2026/page-130.webp": "2a2cd88862e28180950f3a324c00e44472156b91b2a7b798fded351e2a3c931d",
+    "/catalog-source/transformers-2026/page-131.webp": "0bea9fa5e8823c49d30e6679bf9a6112193ac29b2818b360b98357f1ed537c07",
+    "/catalog-source/transformers-2026/page-132.webp": "ec8b4c0f10f019f3f98de6da1b66ac5c5a571b17a347b20e30aae34285d854a2",
+    "/catalog-source/transformers-2026/page-133.webp": "13e680778f96df8527d1ffa8c0c2c4bde345daa85a365d4751cff2fa96c63077",
+    "/catalog-source/transformers-2026/page-136.webp": "5208279480a6ff4266464be0e0fd8ca355705a5affe7f8ca6d7db676422fc8bf",
+    "/catalog-source/transformers-2026/page-137.webp": "051e91879763f9763c0c89b76b8fb99132014757fc2a6f2110e03e03d8403f4f",
+    "/catalog-source/transformers-2026/page-138.webp": "eaef89ae538f587d2462d7fb532a1fc064454b3b4577ba5b1b358bc7bd0dabf9",
+    "/catalog-source/transformers-2026/page-139.webp": "ba668950bbcd5f846a857e1b4a03876c1918c4db0fb2d565dc30e3745ef9b0c7",
+    "/catalog-source/transformers-2026/page-141.webp": "3d47d656b7bb88fb5ea4a2fe2c82a00239499cc0a6a8a09b47c5dad5dd7bc86f",
+    "/catalog-source/transformers-2026/page-143.webp": "9e51ce8a6ad0894f88481a7ae1d01765d17243ee3ea0875f9bc998c1fa7464c6",
+    "/catalog-source/transformers-2026/page-146.webp": "cc22e61c594ec535a01ab2dcd5b428fd87a65db9edae6ddde482bb1322acd54b",
+    "/catalog-source/transformers-2026/page-147.webp": "457e3126a170605f1dfb2b3a46225c5dd51d9e84ea71a6c4f8d9b59ad7076020",
+    "/catalog-source/transformers-2026/page-148.webp": "cc67d8fb60db66cf38a73cd1f60d65f3708be7c0f730c7faf934d915acecd2df",
+    "/catalog-source/transformers-2026/page-150.webp": "bc6f2c3cd9e76b29a3d6caeb4d753c3035a35b1bd1303005d14f7e6cf821a062",
+    "/catalog-source/transformers-2026/page-152.webp": "3f7d9944ceba326b7a6ae9fb8fdfc98b2f1cabe4c3b13fa7d123c8302e0439d2",
+    "/catalog-source/transformers-2026/page-153.webp": "be50c486f2c6b98ed02f22420fde747eeaff606996e9f9ec4ea60e1573d7aa06",
+    "/catalog-source/transformers-2026/page-155.webp": "c40b3b270109c13423833079e81fd2faf9ce0b41bcdd16f01277e813d0499fc7",
+    "/catalog-source/transformers-2026/page-156.webp": "351922b3bb062febac30b650c19c566d9cc3edc9a419e47346adaad9a2cf0658",
+    "/catalog-source/transformers-2026/page-158.webp": "b9afce84bb6992c50fd017b69c68f689aa28a237cf080c3e80bbb44e23648b09",
+    "/catalog-source/transformers-2026/page-160.webp": "7df7985c1d222c4884538e9c9c4485b162a6e52a6a172eaad6cb5379365348ad",
+    "/catalog-source/transformers-2026/page-163.webp": "27da87d5a3dcb6c58e3f1ee955540e1789da571d8a95dddfd1e23131063056aa",
+    "/catalog-source/transformers-2026/page-164.webp": "8ad1e945acf44db191b1fc8aff68fdd8ac22ec4fe5dfe76420e68e962c042253",
+    "/catalog-source/transformers-2026/page-165.webp": "73a7d2c2eb55492ad9eed88f7b722040caf35ba88dacf0cdd2d136c135fde879",
+    "/catalog-source/transformers-2026/page-166.webp": "37c69eb858c04285ae45ddb780bdf0541f98e5604f5d89a974ac9d21299823ca"
+  },
+  "evidenceRegistrySha256": "6d54c9e8e83409384de5dce6233f306ceeb1bcdcdac384ef57f778251edb519d",
+  "exactAllowlist": "docs/catalog-transformers-2026/review/assets-clearance.json",
+  "statusPartition": {
+    "execution-binding-unverified": 19,
+    "execution-choice-required": 32,
+    "icon-only-proposal": 6,
+    "old-identity-hold": 32,
+    "source-evidence-needed": 200,
+    "topology-proposal": 251
+  },
+  "geometrySpecificExclusions": [
+    "alageum-2026-zom-1p25-35",
+    "alageum-2026-znom35-config1",
+    "alageum-2026-znom35-config2"
+  ],
+  "fixedFindings": [
+    "Large4LV/3HV terminal hierarchy and contact plates; page33 dedicated LV profile",
+    "Directional wall cooling at bracket/sidebox and panel-leaf orientation",
+    "Opposite-end staggered flange terminals, perpendicular OMP contacts, OM2HV/4LV, NAMI triangular3HV/7LV, rail3LV and upright7LV",
+    "Dry transformer three visible links,9/6busbar rows,3/4nomex tabs and closed/cutaway enclosure distinctions",
+    "Long-front and short-end conservator orientation/clearance, seven-terminal nonintersection",
+    "Five power topology splits, per-page asymmetric separate radiator units, source-positioned fans, source-visible exterior chambers and smoothHV columns",
+    "Independent icon rows/control positions and separate geometry-versus-icon preview authority"
+  ],
+  "verification": [
+    "All87 cited evidence scans inspected by two independent review scopes, with all62 actual mesh presets and67SVG definitions examined",
+    "Independent rerender of actual frozen Three.js meshes:248front/perspective/end/plan projections and67icons; finite bounds, no blank or edge-clipped outputs",
+    "28focused tests passed, including238old visual/icon mappings, all585static/API shape equality and identity/spec/media mutation denials",
+    "Separate preview-authority regression passed for withheld icon across idle/loading/ready/close/error flows",
+    "All187source scan hashes and844084378-byte originalPDF SHA256 verified",
+    "All254original topology IDs matched admitted data designation,family,sourceRow and drawing-page coverage; later three ZOM/ZNOM geometries deliberately withheld",
+    "All approved records require exact sourceFileId/sourceId/PDFhash, record-shape SHA256 and correct databaseUUID for API rows; no ID-only authority",
+    "Mixed/uncertain/oldidentity/evidence-gap rows remain no-default/null; ProductIcon and model preview use neutral source-document fallback",
+    "No application, runtime-manifest, old record or external-service writes made by independent reviewers"
+  ],
+  "limitations": [
+    "Representative source-visible topology only; scene dimensions/colors/fin and shed counts arbitrary",
+    "No exact variant/CAD/dimensional accuracy, engineering suitability, hidden internals or legal manufacturer inference",
+    "p99/100 small symbols cannot be safely classified as LV contacts versus plugs: ZOM/ZNOM geometry remainsnull; primary-column silhouette icon only",
+    "p115/123 source-visible cooling housings remain opaque where total fan levels are not established",
+    "Compact SVGs are source-topology schematics; close terminals may overlap at small sizes and are not dimensioned construction drawings",
+    "CPU projections and component tests do not prove WebGL/GPU rendering or full browser interaction; parent owns final application/browser/build QA",
+    "All approvals expire on changed reviewed code/source/record-shape hashes"
+  ],
+  "detailReports": [
+    "docs/catalog-transformers-2026/review/assets-non-power-topology-final.json",
+    "docs/catalog-transformers-2026/review/assets-power-topology-final.json"
+  ],
+  "excludedChannels": [
+    {
+      "sourceRecordId": "alageum-tmg-standard-400",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        6,
+        7,
+        12
+      ],
+      "reasons": [
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmg-standard-630",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        6,
+        7,
+        12
+      ],
+      "reasons": [
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmg-standard-1000",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        6,
+        7,
+        13
+      ],
+      "reasons": [
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmg-standard-2500",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        7,
+        13
+      ],
+      "reasons": [
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmg-01-400",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        8,
+        9,
+        12
+      ],
+      "reasons": [
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmg-01-630",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        8,
+        9,
+        12
+      ],
+      "reasons": [
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmg-01-1000",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        8,
+        9,
+        13
+      ],
+      "reasons": [
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmg-01-2500",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        8,
+        9,
+        13
+      ],
+      "reasons": [
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmg-x1k1-400",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        10,
+        11,
+        12
+      ],
+      "reasons": [
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmg-x1k1-630",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        10,
+        11,
+        12
+      ],
+      "reasons": [
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmg-x1k1-1000",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        10,
+        11,
+        13
+      ],
+      "reasons": [
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmg-x1k1-2500",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        10,
+        11,
+        13
+      ],
+      "reasons": [
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmgve-x3k2-63",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        24,
+        25
+      ],
+      "reasons": [
+        "No explicit Х3К2 drawing found; structurally similar candidates are not sufficient for verified mapping",
+        "Нужно подтвердить привязку подписи к исполнению: unverified"
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmgve-x3k2-100",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        24,
+        25
+      ],
+      "reasons": [
+        "No explicit Х3К2 drawing found; structurally similar candidates are not sufficient for verified mapping",
+        "Нужно подтвердить привязку подписи к исполнению: unverified"
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmgve-x3k2-160",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        24,
+        25
+      ],
+      "reasons": [
+        "No explicit Х3К2 drawing found; structurally similar candidates are not sufficient for verified mapping",
+        "Нужно подтвердить привязку подписи к исполнению: unverified"
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmgve-x3k2-250",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        24,
+        25
+      ],
+      "reasons": [
+        "No explicit Х3К2 drawing found; structurally similar candidates are not sufficient for verified mapping",
+        "Нужно подтвердить привязку подписи к исполнению: unverified"
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmgve-x3k2-400",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        24,
+        25
+      ],
+      "reasons": [
+        "No explicit Х3К2 drawing found; structurally similar candidates are not sufficient for verified mapping",
+        "Нужно подтвердить привязку подписи к исполнению: unverified"
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmgve-x3k2-630",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        24,
+        25
+      ],
+      "reasons": [
+        "No explicit Х3К2 drawing found; structurally similar candidates are not sufficient for verified mapping",
+        "Нужно подтвердить привязку подписи к исполнению: unverified"
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmgve-x3k2-1000",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        24,
+        25
+      ],
+      "reasons": [
+        "No explicit Х3К2 drawing found; structurally similar candidates are not sufficient for verified mapping",
+        "Нужно подтвердить привязку подписи к исполнению: unverified"
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmgve-x3k2-1250",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        24,
+        25
+      ],
+      "reasons": [
+        "No explicit Х3К2 drawing found; structurally similar candidates are not sufficient for verified mapping",
+        "Нужно подтвердить привязку подписи к исполнению: unverified"
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmgve-x3k2-1600",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        24,
+        25
+      ],
+      "reasons": [
+        "No explicit Х3К2 drawing found; structurally similar candidates are not sufficient for verified mapping",
+        "Нужно подтвердить привязку подписи к исполнению: unverified"
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmgve-x3k2-2500",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        24,
+        25
+      ],
+      "reasons": [
+        "No explicit Х3К2 drawing found; structurally similar candidates are not sufficient for verified mapping",
+        "Нужно подтвердить привязку подписи к исполнению: unverified"
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmgi-x4k3-63",
+      "status": "execution-binding-unverified",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        28,
+        29,
+        30
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: Х4К3 explicitly named; caption series ТМГвэ conflicts with table series ТМГи"
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmgi-x4k3-100",
+      "status": "execution-binding-unverified",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        28,
+        29,
+        30
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: Х4К3 explicitly named; caption series ТМГвэ conflicts with table series ТМГи"
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmgi-x4k3-160",
+      "status": "execution-binding-unverified",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        28,
+        29,
+        30
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: Х4К3 explicitly named; caption series ТМГвэ conflicts with table series ТМГи"
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmgi-x4k3-250",
+      "status": "execution-binding-unverified",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        28,
+        29,
+        30
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: Х4К3 explicitly named; caption series ТМГвэ conflicts with table series ТМГи"
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmgi-x4k3-400",
+      "status": "execution-binding-unverified",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        28,
+        29,
+        30
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: Х4К3 explicitly named; caption series ТМГвэ conflicts with table series ТМГи"
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmgi-x4k3-630",
+      "status": "execution-binding-unverified",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        28,
+        29,
+        30
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: Х4К3 explicitly named; caption series ТМГвэ conflicts with table series ТМГи"
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmgi-x4k3-1000",
+      "status": "execution-binding-unverified",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        28,
+        29,
+        31
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: Х4К3 explicitly named; caption series ТМГвэ conflicts with table series ТМГи"
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmgi-x4k3-1250",
+      "status": "execution-binding-unverified",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        28,
+        29,
+        31
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: Х4К3 explicitly named; caption series ТМГвэ conflicts with table series ТМГи"
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmgi-x4k3-1600",
+      "status": "execution-binding-unverified",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        28,
+        29,
+        31
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: Х4К3 explicitly named; caption series ТМГвэ conflicts with table series ТМГи"
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmgi-x4k3-2500",
+      "status": "execution-binding-unverified",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        28,
+        29,
+        31
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: Х4К3 explicitly named; caption series ТМГвэ conflicts with table series ТМГи"
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmgs-pole-63",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        34,
+        35
+      ],
+      "reasons": [
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmgs-pole-160",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        34,
+        35
+      ],
+      "reasons": [
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmgf-630",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        38,
+        39
+      ],
+      "reasons": [
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmgf-1600",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        38,
+        39
+      ],
+      "reasons": [
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-25",
+      "status": "execution-binding-unverified",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        40,
+        41,
+        42
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: adjacent-family-context; caption names broad ТМГ only"
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-40",
+      "status": "execution-binding-unverified",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        40,
+        41,
+        42
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: adjacent-family-context; caption names broad ТМГ only"
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-63",
+      "status": "execution-binding-unverified",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        40,
+        41,
+        42
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: adjacent-family-context; caption names broad ТМГ only"
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-100",
+      "status": "execution-binding-unverified",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        40,
+        41,
+        42
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: adjacent-family-context; caption names broad ТМГ only"
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-160",
+      "status": "execution-binding-unverified",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        40,
+        41,
+        42
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: adjacent-family-context; caption names broad ТМГ only"
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-250",
+      "status": "execution-binding-unverified",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        40,
+        41,
+        42
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: adjacent-family-context; caption names broad ТМГ only"
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-400",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        40,
+        41,
+        42
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: adjacent-family-context; caption names broad ТМГ only",
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-630",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        40,
+        41,
+        42
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: adjacent-family-context; caption names broad ТМГ only",
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-1000",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        40,
+        41,
+        43
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: adjacent-family-context; caption names broad ТМГ only",
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-1250",
+      "status": "execution-binding-unverified",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        40,
+        41,
+        43
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: adjacent-family-context; caption names broad ТМГ only"
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-1600",
+      "status": "execution-binding-unverified",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        41,
+        43
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: adjacent-family-context; caption names broad ТМГ only"
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-2000",
+      "status": "execution-binding-unverified",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        41,
+        43
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: adjacent-family-context; caption names broad ТМГ only"
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmg-copper-2500",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        41,
+        43
+      ],
+      "reasons": [
+        "Нужно подтвердить привязку подписи к исполнению: adjacent-family-context; caption names broad ТМГ only",
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmg-switch-6-10-400",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        44,
+        45,
+        46
+      ],
+      "reasons": [
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmg-switch-6-10-630",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        44,
+        45,
+        46
+      ],
+      "reasons": [
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmg-switch-6-10-1000",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        44,
+        45,
+        47
+      ],
+      "reasons": [
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmg-switch-6-10-2500",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        45,
+        47
+      ],
+      "reasons": [
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tmeg-250",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        60,
+        61
+      ],
+      "reasons": [
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-25",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-40",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-63",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-100",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-160",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-250",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-400",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-630",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения.",
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-1000",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-1250",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-1600",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения.",
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-2000",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-2500",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-3150",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-c-4000",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        77,
+        78,
+        80,
+        81
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-a-63",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        78,
+        79,
+        80,
+        81
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-a-100",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        78,
+        79,
+        80,
+        81
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-a-160",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        78,
+        79,
+        80,
+        81
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-a-250",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        78,
+        79,
+        80,
+        81
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-a-400",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        78,
+        79,
+        80,
+        81
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-a-630",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        78,
+        79,
+        80,
+        81
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения.",
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-a-1000",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        78,
+        79,
+        80,
+        81
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-a-1250",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        78,
+        79,
+        80,
+        81
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-a-1600",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        78,
+        79,
+        80,
+        81
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения.",
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-a-2000",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        78,
+        79,
+        80,
+        81
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsl-a-2500",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        78,
+        79,
+        80,
+        81
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-relay-tr100",
+      "status": "icon-only-proposal",
+      "geometryApproved": false,
+      "iconApproved": true,
+      "sourcePages": [
+        85
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-sensor-pt100",
+      "status": "icon-only-proposal",
+      "geometryApproved": false,
+      "iconApproved": true,
+      "sourcePages": [
+        85
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-damper-ek290",
+      "status": "icon-only-proposal",
+      "geometryApproved": false,
+      "iconApproved": true,
+      "sourcePages": [
+        85
+      ],
+      "reasons": [
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-thermal-cabinet",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        86
+      ],
+      "reasons": [
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-ts-10",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        86,
+        87,
+        88
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-ts-16",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        86,
+        87,
+        88
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-ts-25",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        86,
+        87,
+        88
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-ts-40",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        86,
+        87,
+        88
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-ts-63",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        86,
+        87,
+        88
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-ts-100",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        86,
+        87,
+        88
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsi-1p6-open",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        89
+      ],
+      "reasons": [
+        "Нужен подписанный чертеж открытого ТСИ 1,6/2,5/4,0. Рядом со строками показан кожух с подписями ТСНЗ-400/630; он не доказывает исполнение ТСИ."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsi-2p5-open",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        89
+      ],
+      "reasons": [
+        "Нужен подписанный чертеж открытого ТСИ 1,6/2,5/4,0. Рядом со строками показан кожух с подписями ТСНЗ-400/630; он не доказывает исполнение ТСИ."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsi-4p0-open",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        89
+      ],
+      "reasons": [
+        "Нужен подписанный чертеж открытого ТСИ 1,6/2,5/4,0. Рядом со строками показан кожух с подписями ТСНЗ-400/630; он не доказывает исполнение ТСИ."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsn-160",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        91,
+        92,
+        94
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsn-250",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        91,
+        92,
+        94
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsn-400",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        91,
+        92,
+        93,
+        94
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-tsn-630",
+      "status": "execution-choice-required",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        91,
+        92,
+        93,
+        94
+      ],
+      "reasons": [
+        "Строка объединяет несколько конструктивных исполнений. Нельзя выбрать открытое/закрытое исполнение или один из кожухов без явного уточнения."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-ntmi-6",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        96
+      ],
+      "reasons": [
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-ntmi-10",
+      "status": "old-identity-hold",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        96
+      ],
+      "reasons": [
+        "Есть кандидат существующей записи. Не создавать дубликат карточки и не заменять идентичность старого семейства без отдельной сверки."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-zom-1p25-35",
+      "status": "icon-only-proposal",
+      "geometryApproved": false,
+      "iconApproved": true,
+      "sourcePages": [
+        99
+      ],
+      "reasons": [
+        "По страницам 99/100 нельзя однозначно классифицировать малые символы как выводы НН или пробки. Нужна подписанная схема внешних выводов. До подтверждения доступен только условный значок основного столба; 3D привязка удержана.",
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-znom35-config1",
+      "status": "icon-only-proposal",
+      "geometryApproved": false,
+      "iconApproved": true,
+      "sourcePages": [
+        100
+      ],
+      "reasons": [
+        "По страницам 99/100 нельзя однозначно классифицировать малые символы как выводы НН или пробки. Нужна подписанная схема внешних выводов. До подтверждения доступен только условный значок основного столба; 3D привязка удержана.",
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-2026-znom35-config2",
+      "status": "icon-only-proposal",
+      "geometryApproved": false,
+      "iconApproved": true,
+      "sourcePages": [
+        100
+      ],
+      "reasons": [
+        "По страницам 99/100 нельзя однозначно классифицировать малые символы как выводы НН или пробки. Нужна подписанная схема внешних выводов. До подтверждения доступен только условный значок основного столба; 3D привязка удержана.",
+        "Предложение для проверки. Геометрия передает общую видимую компоновку; точное исполнение, размеры, число ребер и опции не подтверждаются моделью."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-td-25000-110-55b9380f",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        167
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tm-25000-110-dd066e9b",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        167
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-td-32000-110-b246075f",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        167
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tm-32000-110-08197af6",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        167
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-td-40000-110-44f0c7e8",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        167
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tm-40000-110-fdb95e20",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        167
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-td-63000-110-37e710db",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        167
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tm-63000-110-ff91e7e0",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        167
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdc-80000-110-392c53be",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        167
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-td-80000-110-18d7d442",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        167
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tm-80000-110-7b51a7a9",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        167
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdc-125000-110-8976374f",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        167
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-td-125000-110-1908f349",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        167
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tm-125000-110-5b3d8e52",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        167
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdn-25000-110-1229081c",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        167
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmn-25000-110-5337154f",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        167
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdn-32000-110-f3a1948c",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        167
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmn-32000-110-95b85cce",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        167
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdn-40000-110-33b543aa",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        167
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmn-40000-110-a0587428",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        167
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdn-63000-110-2f74a772",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        167
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmn-63000-110-c2bf9188",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        167
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdcn-80000-110-9df5061c",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        167
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdn-80000-110-012a9013",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        167
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmn-80000-110-22ace6e3",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        167
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdcn-125000-110-105794db",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        167
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdn-125000-110-58bac41b",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        167
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmn-125000-110-3b57f42c",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        167
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trdn-25000-110-6f4e9b4e",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        168
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trmn-25000-110-734db24a",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        168
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trdn-32000-110-af26cd9b",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        168
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trmn-32000-110-d0976b2a",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        168
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trdn-40000-110-10b5b31d",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        168
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trmn-40000-110-4dc88a84",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        168
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trdn-63000-110-97dc65fa",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        168
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trmn-63000-110-31a15285",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        168
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trdcn-80000-110-3e37b0b6",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        168
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trdn-80000-110-07f6ff1f",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        168
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trmn-80000-110-2c8397ba",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        168
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trdcn-125000-110-c79fbcd4",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        168
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trdn-125000-110-1ba5488f",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        168
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trmn-125000-110-b0672068",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        168
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdtn-25000-110-a469d1d3",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        168
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmtn-25000-110-fd0902ff",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        168
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdtn-40000-110-8333bd07",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        168
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmtn-40000-110-9583d3ef",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        168
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdtn-63000-110-57b0f316",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        168
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmtn-63000-110-522b6c52",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        168
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdctn-80000-110-4d635ef4",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        168
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdtn-80000-110-7e5b4694",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        168
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmtn-80000-110-f048ba1e",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        168
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-td-40000-220-1bcafb80",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdc-40000-220-07232d2b",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-td-63000-220-dd9eb34d",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdc-63000-220-11c7ac42",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-td-80000-220-d90a2ba7",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdc-80000-220-0becaf5a",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-td-125000-220-2ac21f8e",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdc-125000-220-6f02c686",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-td-160000-220-c778a861",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tc-160000-220-5ed423f4",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdc-160000-220-eb59f037",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-td-200000-220-d6fec4f4",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tc-200000-220-9b978b48",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdc-200000-220-5ff690be",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-td-250000-220-157ea21e",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tc-250000-220-dae756e3",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdc-250000-220-813033b3",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdn-40000-220-30674798",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdcn-40000-220-3f8d47e2",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdn-63000-220-4e0466d4",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdcn-63000-220-47ea3ff1",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdn-80000-220-f773e1f4",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdcn-80000-220-c2fad0ff",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdn-125000-220-38dd2bde",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdcn-125000-220-56e171bd",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdn-160000-220-8f064bf2",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tcn-160000-220-e99366b8",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdcn-160000-220-9873f91f",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdn-200000-220-1e79fefa",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tcn-200000-220-e8feb45a",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdcn-200000-220-7d192ee2",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdn-250000-220-95fe0bc7",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tcn-250000-220-a156fbc8",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdcn-250000-220-a6d0cff6",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        169
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trdn-32000-220-e6f20d76",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        170
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trdns-32000-220-b79b35f0",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        170
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trdn-40000-220-a1c7d270",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        170
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trdns-40000-220-a60a3ff8",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        170
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trdcn-40000-220-4362a95c",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        170
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trdn-63000-220-9cdd9f88",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        170
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trdcn-63000-220-87e84efa",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        170
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trdn-80000-220-7904acc3",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        170
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trdcn-80000-220-c3395751",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        170
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trdn-125000-220-dfb98af6",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        170
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trdcn-125000-220-388a10ad",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        170
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trdn-160000-220-ff6318de",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        170
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trdcn-160000-220-a61a8e6a",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        170
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trdn-200000-220-c07f50aa",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        170
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trdcn-200000-220-fc60ae1c",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        170
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trdn-280000-220-6953ec4d",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        170
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trdcn-280000-220-8933dd8c",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        170
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdtn-25000-220-55a3d34f",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        170
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmtn-25000-220-bd9ebb45",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        170
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdtn-40000-220-75f141db",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        170
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tmtn-40000-220-413a48d3",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        170
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdtn-63000-220-8003a018",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        170
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdctn-63000-220-915c9574",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        170
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdtn-80000-220-cbac6378",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        170
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdctn-80000-220-d470445a",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        170
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdtn-125000-220-c8d45a19",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        170
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdctn-125000-220-b797e347",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        170
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-atmtn-32000-220-110-bd2efd7a",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        171
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-atdtn-32000-220-110-8dd475f7",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        171
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-atdtn-63000-220-110-b4f7401c",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        171
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-atdctn-63000-220-110-3cab9a27",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        171
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-atdtn-90000-220-110-ffe08288",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        171
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-atdctn-90000-220-110-ca7447c2",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        171
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-atdtn-125000-220-110-090b201b",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        171
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-atdctn-125000-220-110-83c29006",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        171
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-atdtn-200000-220-110-d8b55826",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        171
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-atdctn-200000-220-110-908a14e9",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        171
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-atdtn-250000-220-110-51e1a483",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        171
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-atdctn-250000-220-110-ca96fe8b",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        171
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdc-125000-330-bbf2b363",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        172
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdc-200000-330-42b793d2",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        172
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tc-200000-330-ec224f2b",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        172
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdc-250000-330-84fee33d",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        172
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tc-250000-330-45f166b1",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        172
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trdns-40000-330-f4eb0751",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        172
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-trdcn-63000-330-1ccbe269",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        172
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-atdctn-125000-330-38fa5431",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        173
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-atdctn-200000-330-549cf03c",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        173
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-atdctn-250000-330-3ae0f837",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        173
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-aodctn-133000-330-aee1831e",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        173
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdc-250000-500-ae61d618",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        173
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tc-250000-500-71d82efb",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        173
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-atdctn-250000-500-f03cccd8",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        174
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-aodctn-167000-500-167000-50000-kva-9ba56f4a",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        174
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-aodctn-167000-500-167000-67000-kva-9c1ecac6",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        174
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-aodctn-167000-500-167000-83000-kva-0928bbe8",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        174
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-aodctn-267000-500-267000-67000-kva-294a89be",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        174
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-aodctn-267000-500-267000-83000-kva-51543798",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        174
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-aodctn-267000-500-267000-120000-kva-efdbbcda",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        174
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-aodctn-167000-500-167000-33000-kva-586755a3",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        174
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdtn-25000-110-sn-27-5-kv-nn-6-6-11-0-kv-f1e7ca16",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        175
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdtn-25000-110-sn-38-5-kv-nn-27-5-kv-627d9ef3",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        175
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdtn-40000-110-sn-27-5-kv-nn-6-6-11-0-kv-5a5901cd",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        175
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdtn-40000-110-sn-38-5-kv-nn-27-5-kv-5aa6ae9c",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        175
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdtn-25000-220-sn-27-5-kv-nn-6-6-11-0-kv-14a2a996",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        175
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdtn-25000-220-sn-38-5-kv-nn-27-5-kv-4b199bdc",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        175
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdtn-40000-220-sn-27-5-kv-nn-6-6-11-0-kv-ec0dfa9c",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        175
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdtn-40000-220-sn-38-5-kv-nn-27-5-kv-2d3282a7",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        175
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdtn-u-25000-110-sn-27-5-kv-nn-6-6-11-0-kv-8f6526a5",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        175
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdtn-u-25000-110-sn-38-5-kv-nn-27-5-kv-78feff46",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        175
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdtn-u-40000-110-sn-27-5-kv-nn-6-6-11-0-kv-13ef1946",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        175
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdtn-u-40000-110-sn-38-5-kv-nn-27-5-kv-830cf4a6",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        175
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdtn-u-25000-220-sn-27-5-kv-nn-6-6-11-0-kv-e8f1cd34",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        175
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdtn-u-25000-220-sn-38-5-kv-nn-27-5-kv-7dc1df41",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        175
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdtn-u-40000-220-sn-27-5-kv-nn-6-6-11-0-kv-487a3a73",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        175
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-tdtn-u-40000-220-sn-38-5-kv-nn-27-5-kv-9a790e6f",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        175
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-ordn-25000-110-297b77a1",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        175
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-ordn-25000-220-1baed01b",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        175
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-ordtn-25000-110-sn-38-5-kv-nn-27-5-27-5-kv-f7bf5bf1",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        175
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-ordtn-25000-110-sn-27-5-27-5-kv-nn-11-0-kv-b6bad86b",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        175
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-ordtn-25000-220-sn-38-5-kv-nn-27-5-27-5-kv-c91d6b9e",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        175
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-ordtn-25000-220-sn-27-5-27-5-kv-nn-11-0-kv-79cd15e6",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        175
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-rom-60000-500-db15c582",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        176
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-rom-55000-400-078a5957",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        176
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-rtm-128000-550-a6849ef8",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        177
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-rtm-65000-550-e23a652f",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        177
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-rtm-60000-550-2a12f7b8",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        177
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-rtdc-100000-400-69d5b69b",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        177
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-rtm-50000-400-af568f7b",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        177
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-rtm-45000-400-d6abf476",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        177
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-rtm-25000-230-6c350e4e",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        177
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-rtm-10000-230-8bd70b32",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        177
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-rtm-50000-110-101d5be1",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        177
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-rtd-20000-35-c03d6973",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        177
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-rtd-25000-20-fbeed70d",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        177
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-rtu-180000-500-ad6aea58",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        177
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-rtu-180000-330-b6d1816d",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        177
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-rtu-100000-220-1e871651",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        177
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-rtu-25000-220-61a097b8",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        177
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-rtu-63000-110-a162fd26",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        177
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-rtu-25000-110-62f75783",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        177
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    },
+    {
+      "sourceRecordId": "alageum-rtu-25000-35-b316a33b",
+      "status": "source-evidence-needed",
+      "geometryApproved": false,
+      "iconApproved": false,
+      "sourcePages": [
+        177
+      ],
+      "reasons": [
+        "Нужны подписанные вид/план или фото конкретного обозначения и исполнения. Редакционные фото раздела Asia Trafo не подтверждают эту строку."
+      ]
+    }
+  ]
+}

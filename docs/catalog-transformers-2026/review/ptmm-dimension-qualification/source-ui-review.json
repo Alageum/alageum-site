@@ -1,0 +1,170 @@
+{
+  "format": "ptmm-pr38-independent-source-ui-review-v1",
+  "status": "source-ui-passed-pending-separate-gate-amendment",
+  "freshPostResetEvidence": true,
+  "oldRawReportsReused": false,
+  "baseCommit": "737651da8df778e6bc1cddecc5b0834008f823e5",
+  "baseTree": "7c7e9e82082c28d81993175464f4cc9eb5d6199d",
+  "packageManifestSha256": "1cb6dada951962d90c8d44ac61334ba89f7937779eb1f604e4223f5471811b08",
+  "candidatePatchSha256": "d378561ae754fa6b703297b1a6dfc013b84ffe42d686c285e80c93112ba2fe4f",
+  "reviewedLogicFiles": {
+    "frontend/components/catalog/CatalogSpecValue.js": "2f17c69d29d5ee96275555391e443f37f0f4f577aab6366f7f45d20e67e19c8c",
+    "frontend/components/catalog/Comparison.js": "756435b644592c5719776f67ef0bd146c69366635e47fb948bf02ac0aadb81cd",
+    "frontend/components/catalog/ImportedProductData.js": "930b86b108abd7b839acbf62a7ced8c4d6ffcd9bed82babe0bfb404b34c6683d",
+    "frontend/components/catalog/LiveCatalog.js": "81d2562f9b2be3e23e1105f988e00595f4707f56829290fec0e8528f33675cf4",
+    "frontend/lib/catalog/ptmmDimensionQualification.js": "1300b65ff65e908471a6188a7f0fdc7f7e958997fdc06fc06331b08df45f17b0",
+    "frontend/tests/catalog-comparison-specs.test.mjs": "c903c8cbc916dbda1e8d4f32c6ce09f9ac49c45317eff1889627267150feb2c8",
+    "frontend/tests/helpers/render-catalog-spec-value.mjs": "57e2cbf02cee481b9961d20892428c6ac1cfa5abdfbd47dfa7939b18c332ca76",
+    "frontend/tests/ptmm-dimension-qualification.test.mjs": "03beaa1778bfff62ce1965ed8001324f09639e5c98db1e765926b7e1f1376ecd"
+  },
+  "sourcePages": {
+    "68": {
+      "path": "frontend/public/catalog-source/page-068.webp",
+      "sha256": "68538d5278821dcc15fe6064621c8271c0397e1c0fc18a60dfcfa885093a9c77",
+      "bytes": 181012,
+      "fullPagePixelsFreshlyInspected": true
+    },
+    "69": {
+      "path": "frontend/public/catalog-source/page-069.webp",
+      "sha256": "4f0833448f3519f9519a2e09fa62b4c28016665b4cd8e95c7341b17042ff5885",
+      "bytes": 90574,
+      "fullPagePixelsFreshlyInspected": true
+    }
+  },
+  "sourceFindings": [
+    "Page 68 dimension labels explicitly name PTM and TDE, not PTMM",
+    "No unit is printed in the original dimension rows; page 69 does not establish a general mm unit",
+    "Printed values stay unchanged; stored мм now receives the exact adjacent unit uncertainty note",
+    "No mechanical/climate/alias authority follows for the excluded TDED records"
+  ],
+  "affectedIds": [
+    "cat-ptm-tded-v002",
+    "cat-ptm-tded-v005",
+    "cat-ptm-tded-v008"
+  ],
+  "dimensionRowsPerMode": 6,
+  "unitCaveat": "В исходной строке единица измерения не указана; обозначение „мм“ требует подтверждения.",
+  "rawUnitPreserved": "мм",
+  "findings": [],
+  "requiredCodeFixes": [],
+  "verification": {
+    "records": 843,
+    "other840StaticAndApiCardsAndComparisonColumnsByteExact": true,
+    "realImporterPublicDto": true,
+    "idsUuidsPricesQuotesCsvSummariesPreserved": true,
+    "corpus": {
+      "productsPerMode": 843,
+      "batchesPerMode": 211,
+      "technicalCellsPerMode": 15737,
+      "changedCellsPerMode": {
+        "static": 6,
+        "api": 6
+      }
+    },
+    "malformedSpoofRejections": 183,
+    "getterInvocations": 0,
+    "differencesOnlySelections": 7,
+    "focusedTests": {
+      "passed": 13,
+      "failed": 0,
+      "independentlyRerun": true
+    },
+    "protectedPR38Files": 17,
+    "protectedPR37Files": 4,
+    "allProtectedBytesExact": true,
+    "existingCatalogSuiteCases": 254,
+    "existingSuiteOrTimeoutChanged": false,
+    "gateChecks": [
+      {
+        "name": "visual",
+        "status": "scoped-leaf-passed",
+        "error": null,
+        "customReader": false
+      },
+      {
+        "name": "protection",
+        "status": "rejected-as-pending",
+        "error": "Changed unreviewed browser dependency frontend/components/catalog/Comparison.js",
+        "customReader": false
+      },
+      {
+        "name": "measurement",
+        "status": "rejected-as-pending",
+        "error": "Changed unreviewed browser dependency frontend/components/catalog/Comparison.js",
+        "customReader": false
+      },
+      {
+        "name": "sourceAsset",
+        "status": "rejected-as-pending",
+        "error": "Changed unreviewed browser dependency frontend/components/catalog/Comparison.js",
+        "customReader": false
+      }
+    ]
+  },
+  "excludedTded": [
+    {
+      "id": "cat-ptm-tded-v006",
+      "aliases": false,
+      "geometry": null,
+      "sourcePanels": 0,
+      "qualification": false
+    },
+    {
+      "id": "cat-ptm-tded-v009",
+      "aliases": false,
+      "geometry": null,
+      "sourcePanels": 0,
+      "qualification": false
+    }
+  ],
+  "fullProof": {
+    "file": "review.json",
+    "sha256": "ae045a102f3ce7a2c157b8f1bf1f816ff964bb3fa77e872006c5e11d6da5ef18",
+    "bytes": 1052685
+  },
+  "auditScript": {
+    "file": "audit.mjs",
+    "sha256": "f965e9a471a2a61adec57de5fea802c8366858356dfdcaa7a52b15cb46309ff5"
+  },
+  "gateRequirements": {
+    "file": "gate-amendment-requirements.json",
+    "sha256": "18f8375d56520624fcca82f1f8360920db943f6a580f3de1f1a2791f3d1b1045"
+  },
+  "pending": [
+    "Separate exact-hash gate amendment; current aggregate result remains 566/578 with twelve strict gate rejections as reported by implementer",
+    "CMS 12-file approved correction must publish first, followed by verification of the new base before any integration",
+    "Proposed separate 16-case browser validation of eventual combined candidate, with existing254 suite/timeout unchanged"
+  ],
+  "browser": {
+    "executed": false,
+    "proposedOnly": true,
+    "cases": 16,
+    "details": 12,
+    "comparisons": 4,
+    "modes": [
+      "static",
+      "API"
+    ],
+    "viewports": [
+      {
+        "width": 1024,
+        "height": 768
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "retries": 0,
+    "scope": "Adjacency/readability of both source and unit notes; page68 links; back/forward; differences-only; equal-number PTM/PTMM; mobile comparison scrolling"
+  },
+  "publication": false,
+  "gateFilesEdited": false,
+  "sourceCodeEditedByReviewer": false,
+  "limitations": [
+    "Actual React/SWC source JSX with declared routing/hooks/selection/unrelated-visual boundaries, not browser hydration or production API data",
+    "Fresh complete committed page68/69 pixel review; no original large PDF reopening or new source download",
+    "No build/full578-test rerun by reviewer; focused13 and actual source/UI corpus plus four normal-reader gate entrypoints were independently executed",
+    "Source/UI verdict is distinct from the independently reviewed one-file coverage refresh"
+  ]
+}

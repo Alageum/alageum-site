@@ -1,0 +1,918 @@
+[
+  {
+    "candidateId": "dry3-tsl-transtek-factory",
+    "sourcePageUrl": "https://uslugi-manipulator-moskva.ru/silovoi-transformator-kupit-postavka-perevozka",
+    "imageUrl": "https://m-files.cdn1.cc/lpfile/e/6/5/e65042fcf6403e38dcb283dd2f16b78c/-/resize/1920/f.jpg",
+    "modelMatch": "type",
+    "familyIds": [
+      "ТСЛ"
+    ],
+    "matchingProductIds": [],
+    "typeReferenceProductIds": [
+      "tsl-630",
+      "tsl-1600"
+    ],
+    "caption": "Открытый ТСЛ в заводском цехе · фотография поставщика ТРАНСТЕК",
+    "visualEvidence": "Genuine factory photograph with three brown cast-resin coils, blue upper/lower steel frame, crossed flat conductors, a hanging paper/nameplate tag at left, and workshop machinery/floor in background. Full 1920×1778 original differs from existing catalogue cutouts, exhibition photograph and dry2 factory shot.",
+    "confidence": 0.86,
+    "rightsStatus": "unknown_not_cleared_for_republication",
+    "verifiedAt": "2026-10-12T18:41:00Z",
+    "notes": "Open TSL type reference only. Page repeats the same photo for 63 kVA and multiple other ratings/vector groups; no photographed unit power, voltage, winding material or loss class A/C is established. Do not map enclosed executions. Vendor presents its range as Alageum; official dealership status is a source claim, not independently certified.",
+    "mappingScope": "Open TSL type reference only. Page repeats the same photo for 63 kVA and multiple other ratings/vector groups; no photographed unit power, voltage, winding material or loss class A/C is established. Do not map enclosed executions. Vendor presents its range as Alageum; official dealership status is a source claim, not independently certified.",
+    "status": "verified_photo",
+    "visuallyVerified": true,
+    "mediaKind": "photo",
+    "publicationApproved": false,
+    "newDistinctShot": true,
+    "newAcceptedCandidateRelativeToBaseline": true,
+    "width": 1920,
+    "height": 1778,
+    "sha256": "3845f291bf113e9515028c3b37959711e904b54d77dfab982e86df7460503aeb",
+    "researchGroup": "dry",
+    "sourceAuthority": "attributable_vendor",
+    "sourceType": "attributable_vendor",
+    "construction": "open_TSL",
+    "resolutionStatus": "usable_for_review",
+    "countsAsDistinctPhoto": true,
+    "sourceEvidence": {
+      "association": "Dedicated section Сухие силовые трансформаторы. ТСЛ uses image e65042 for multiple offered ratings. Page identifies ООО ТРАНСТЕК and describes Alageum Electric supplied transformers.",
+      "sourceOfficialClaim": "Vendor self-claims official representation; no contact or verification request sent.",
+      "manufacturerAttributionLimit": "No independently readable Kentau nameplate. Alageum association comes from the vendor page and dedicated dry transformer section. Separate co-branded ТРАСТЕК manuals were not used to prove identity of this page’s ТРАНСТЕК entity."
+    },
+    "downloadEvidence": {
+      "observedThumbnailUrl": "https://m-files.cdn1.cc/lpfile/e/6/5/e65042fcf6403e38dcb283dd2f16b78c/-/crop/0x0x1920x1788/-/resize/188/-/resize/1920/f.jpg?92608300",
+      "method": "Same public CDN asset at original 1920 size without downsizing/crop transform; no retouch or generated pixels."
+    },
+    "localFile": "selected-images/dry3-tsl-transtek-factory.jpg"
+  },
+  {
+    "candidateId": "inc03-power-tdn62900-110-factory-side",
+    "sourcePageUrl": "https://electronmash.ru/press/news/predstaviteli-ao-elektronmash-posetili-zavod-menshe-br-bolshe-too-asia-trafo-v-g-shimkent",
+    "imageUrl": "https://electronmash.ru/storage/news/06June2023/zastavka.jpg",
+    "caption": "Asia Trafo ТДН-62900/110: боковой вид на испытаниях",
+    "mediaKind": "photo",
+    "assetOrigin": "downloaded_image",
+    "modelMatch": "series",
+    "sourceModelMatch": "series",
+    "confidence": "high",
+    "rightsStatus": "Publicly viewable. No reuse license established; publisher/photographer permission required before publication.",
+    "matchingProductIds": [
+      "tr2026-family-asia-two-winding-110-rpn"
+    ],
+    "typeReferenceProductIds": [
+      "alageum-tdn-63000-110-2f74a772"
+    ],
+    "exactProductIds": [],
+    "familyIds": [
+      "asia-two-winding-110-rpn"
+    ],
+    "typeReferenceFamilyIds": [],
+    "familyOverviewIds": [
+      "tr2026-family-asia-two-winding-110-rpn"
+    ],
+    "matchingLevelById": {
+      "tr2026-family-asia-two-winding-110-rpn": "family_overview"
+    },
+    "sameBaseModelReferenceIds": [
+      "alageum-tdn-63000-110-2f74a772"
+    ],
+    "notes": "Source designation is 62900, not canonical 63000. Do not silently correct the source or claim exact 63000 kVA identity. This is a confirmed TDN 110 kV RPN family illustration; 63000 row is type reference only.",
+    "designationEvidence": "Primary project contractor report dated 18 May 2023 explicitly identifies on-site acceptance tests of Asia Trafo TDN-62900/110 for Trunovskaya WPP.",
+    "visualEvidence": "Clear oblique side view in factory test hall: grey tank, oil conservator, radiators and two exposed fans, tall white bushings, workers on access steps. Natural lighting and factory context.",
+    "verifiedAt": "2026-10-12T18:37:00Z",
+    "visuallyVerified": true,
+    "countsAsDistinctPhoto": true,
+    "reviewStatus": "family_candidate",
+    "priority": 1,
+    "width": 1600,
+    "height": 1200,
+    "mimeType": "image/jpeg",
+    "sha256": "41b90a0a1e7ad95feaa24dfe4db31f49298cb09e775f4ff2ce6ff973d2f52d6a",
+    "publicationApproved": false,
+    "corroborationUrls": [
+      "https://electronmash.ru/press/news/elektronmash-s-funkciei-generalnogo-podryadchika-zavershil-raboty-po-stroitelstvu-ps-110-35-kv-trunovskaya"
+    ],
+    "mappingConstraints": [
+      "Do not propagate family photos across individual variants.",
+      "Only exactProductIds may be described as fully verified individual catalog products.",
+      "Type references do not prove execution, materials, winding voltages or nameplate ratings."
+    ],
+    "localFile": "selected-images/inc03-power-tdn62900-110-factory-side.jpg",
+    "researchGroup": "power",
+    "resolutionStatus": "usable_for_review"
+  },
+  {
+    "candidateId": "inc03-power-tdn62900-110-factory-end",
+    "sourcePageUrl": "https://electronmash.ru/press/news/predstaviteli-ao-elektronmash-posetili-zavod-menshe-br-bolshe-too-asia-trafo-v-g-shimkent",
+    "imageUrl": "https://electronmash.ru/storage/file-manager/%D0%B2%D0%BD%D1%83%D1%82%D1%80%D0%B8%20%D0%BD%D0%B2%D0%BE%D0%BE%D1%81%D1%82%D0%B8.jpg",
+    "caption": "Asia Trafo ТДН-62900/110: торцевой вид на испытаниях",
+    "mediaKind": "photo",
+    "assetOrigin": "downloaded_image",
+    "modelMatch": "series",
+    "sourceModelMatch": "series",
+    "confidence": "high",
+    "rightsStatus": "Publicly viewable. No reuse license established; publisher/photographer permission required before publication.",
+    "matchingProductIds": [
+      "tr2026-family-asia-two-winding-110-rpn"
+    ],
+    "typeReferenceProductIds": [
+      "alageum-tdn-63000-110-2f74a772"
+    ],
+    "exactProductIds": [],
+    "familyIds": [
+      "asia-two-winding-110-rpn"
+    ],
+    "typeReferenceFamilyIds": [],
+    "familyOverviewIds": [
+      "tr2026-family-asia-two-winding-110-rpn"
+    ],
+    "matchingLevelById": {
+      "tr2026-family-asia-two-winding-110-rpn": "family_overview"
+    },
+    "sameBaseModelReferenceIds": [
+      "alageum-tdn-63000-110-2f74a772"
+    ],
+    "notes": "Source designation is 62900, not canonical 63000. Do not silently correct the source or claim exact 63000 kVA identity. This is a confirmed TDN 110 kV RPN family illustration; 63000 row is type reference only.",
+    "designationEvidence": "Primary project contractor report dated 18 May 2023 explicitly identifies on-site acceptance tests of Asia Trafo TDN-62900/110 for Trunovskaya WPP.",
+    "visualEvidence": "Distinct opposite-end view, with tank end wall, gauges, two side radiator banks and tall bushings. Different camera position, not a crop of the side view.",
+    "verifiedAt": "2026-10-12T18:37:00Z",
+    "visuallyVerified": true,
+    "countsAsDistinctPhoto": true,
+    "reviewStatus": "family_candidate",
+    "priority": 1,
+    "width": 1200,
+    "height": 1600,
+    "mimeType": "image/jpeg",
+    "sha256": "6a6d2b44d8b7fc423824d00b5124f16e4ea24a8d5f506ff25a3d1b1e8a3d1995",
+    "publicationApproved": false,
+    "corroborationUrls": [
+      "https://electronmash.ru/press/news/elektronmash-s-funkciei-generalnogo-podryadchika-zavershil-raboty-po-stroitelstvu-ps-110-35-kv-trunovskaya"
+    ],
+    "mappingConstraints": [
+      "Do not propagate family photos across individual variants.",
+      "Only exactProductIds may be described as fully verified individual catalog products.",
+      "Type references do not prove execution, materials, winding voltages or nameplate ratings."
+    ],
+    "localFile": "selected-images/inc03-power-tdn62900-110-factory-end.jpg",
+    "researchGroup": "power",
+    "resolutionStatus": "usable_for_review"
+  },
+  {
+    "candidateId": "inc03-power-tdn-trunovskaya-installed",
+    "sourcePageUrl": "https://electronmash.ru/press/news/elektronmash-s-funkciei-generalnogo-podryadchika-zavershil-raboty-po-stroitelstvu-ps-110-35-kv-trunovskaya",
+    "imageUrl": "https://electronmash.ru/storage/file-manager/IMG_6823.jpg",
+    "caption": "ТДН 110 кВ, Труновская ВЭС: установленный трансформатор",
+    "mediaKind": "photo",
+    "assetOrigin": "downloaded_image",
+    "modelMatch": "series",
+    "sourceModelMatch": "project_association",
+    "confidence": "medium",
+    "rightsStatus": "Publicly viewable. No reuse license established; publisher/photographer permission required before publication.",
+    "matchingProductIds": [
+      "tr2026-family-asia-two-winding-110-rpn"
+    ],
+    "typeReferenceProductIds": [
+      "alageum-tdn-63000-110-2f74a772"
+    ],
+    "exactProductIds": [],
+    "familyIds": [
+      "asia-two-winding-110-rpn"
+    ],
+    "typeReferenceFamilyIds": [],
+    "familyOverviewIds": [
+      "tr2026-family-asia-two-winding-110-rpn"
+    ],
+    "matchingLevelById": {
+      "tr2026-family-asia-two-winding-110-rpn": "family_overview"
+    },
+    "sameBaseModelReferenceIds": [
+      "alageum-tdn-63000-110-2f74a772"
+    ],
+    "notes": "Secondary-priority installation/context view. Family association is based on the same contractor, project, dates and compatible construction; not a readable nameplate. Do not convert 126 MVA total station capacity into an exact individual 63000 model identification.",
+    "designationEvidence": "Contractor completion article dated 20 August 2023 identifies the same two-transformer Trunovskaya 110/35 kV project, total 126 MVA. The earlier contractor acceptance report identifies Asia Trafo TDN-62900/110.",
+    "visualEvidence": "Real outdoor group photograph in front of installed conservator transformer. Radiators, tall bushings, wiring and wind turbine visible. People and flags obscure the lower tank.",
+    "verifiedAt": "2026-10-12T18:37:00Z",
+    "visuallyVerified": true,
+    "countsAsDistinctPhoto": true,
+    "reviewStatus": "family_candidate",
+    "priority": 2,
+    "width": 4032,
+    "height": 3024,
+    "mimeType": "image/mpo",
+    "sha256": "8c282e6459d25e7c1c02d904165ec84c71780d4542bcdbb4337af34b8aff0c9e",
+    "publicationApproved": false,
+    "corroborationUrls": [
+      "https://electronmash.ru/press/news/predstaviteli-ao-elektronmash-posetili-zavod-menshe-br-bolshe-too-asia-trafo-v-g-shimkent"
+    ],
+    "mappingConstraints": [
+      "Do not propagate family photos across individual variants.",
+      "Only exactProductIds may be described as fully verified individual catalog products.",
+      "Type references do not prove execution, materials, winding voltages or nameplate ratings."
+    ],
+    "localFile": "selected-images/inc03-power-tdn-trunovskaya-installed.jpg",
+    "researchGroup": "power",
+    "resolutionStatus": "usable_for_review"
+  },
+  {
+    "candidateId": "inc03-power-at250000-500-end",
+    "sourcePageUrl": "https://baq.kz/amp/news/othernews/shymkentte-asia-trafo-zauyty-quaty-500-mva-salmagy-295-tonnalyq-avtotransformator-shygardy-314310/",
+    "imageUrl": "https://baq.kz/userfiles/images/4%20(4)(1).jpg",
+    "caption": "Asia Trafo, автотрансформатор 250 МВА / 500 кВ: торцевой вид",
+    "mediaKind": "photo",
+    "assetOrigin": "downloaded_image",
+    "modelMatch": "series",
+    "sourceModelMatch": "series",
+    "confidence": "high",
+    "rightsStatus": "Publicly viewable. No reuse license established; publisher/photographer permission required before publication.",
+    "matchingProductIds": [
+      "tr2026-family-asia-autotransformer-500"
+    ],
+    "typeReferenceProductIds": [
+      "alageum-atdctn-250000-500-f03cccd8"
+    ],
+    "exactProductIds": [],
+    "familyIds": [
+      "asia-autotransformer-500"
+    ],
+    "typeReferenceFamilyIds": [],
+    "familyOverviewIds": [
+      "tr2026-family-asia-autotransformer-500"
+    ],
+    "matchingLevelById": {
+      "tr2026-family-asia-autotransformer-500": "family_overview"
+    },
+    "sameBaseModelReferenceIds": [
+      "alageum-atdctn-250000-500-f03cccd8"
+    ],
+    "notes": "The BAQ headline incorrectly says 500 MVA; use the body’s 250000 kVA / 500 kV. Clear construction and article identify the family/project. Canonical row’s tertiary 100000 kVA, LV alternatives and execution are not documented, so the individual row remains a base-model reference rather than exact full-product proof.",
+    "designationEvidence": "On-site BAQ report of 28 September 2023 explicitly describes the photographed first domestic three-phase 250000 kVA, 500 kV autotransformer, mass 295 t. Alageum manufacturer-contributed 2024 article names its first such project ATDCTN-250000/500.",
+    "visualEvidence": "End view through test-hall doorway. Large three-phase autotransformer, conservator and pipework in front, tall 500 kV bushings and separate test equipment around it.",
+    "verifiedAt": "2026-10-12T18:37:00Z",
+    "visuallyVerified": true,
+    "countsAsDistinctPhoto": true,
+    "reviewStatus": "family_candidate",
+    "priority": 1,
+    "width": 1000,
+    "height": 750,
+    "mimeType": "image/jpeg",
+    "sha256": "c478aafdadb3946da6cef105f9b2f9efe8349128fc2d739b93c8bcb4173a5bc0",
+    "publicationApproved": false,
+    "corroborationUrls": [
+      "https://www.eprussia.ru/epr/499-500/4576474.htm",
+      "https://rus.baq.kz/samyy-bolshoy-v-tsentralnoy-azii-transformator-izgotovili-na-zavode-v-shymkente_160791/",
+      "https://alageum.com/ru/novosti/chem-izvesten-transformatornyj-zavod-kotoryj-posetil-prezident-kazakhstana-k-zh-tokaev"
+    ],
+    "mappingConstraints": [
+      "Do not propagate family photos across individual variants.",
+      "Only exactProductIds may be described as fully verified individual catalog products.",
+      "Type references do not prove execution, materials, winding voltages or nameplate ratings."
+    ],
+    "localFile": "selected-images/inc03-power-at250000-500-end.jpg",
+    "researchGroup": "power",
+    "resolutionStatus": "usable_for_review"
+  },
+  {
+    "candidateId": "inc03-power-at250000-500-bushing-side",
+    "sourcePageUrl": "https://baq.kz/amp/news/othernews/shymkentte-asia-trafo-zauyty-quaty-500-mva-salmagy-295-tonnalyq-avtotransformator-shygardy-314310/",
+    "imageUrl": "https://baq.kz/userfiles/images/2%20(10)(2).jpg",
+    "caption": "Asia Trafo, автотрансформатор 250 МВА / 500 кВ: сторона вводов",
+    "mediaKind": "photo",
+    "assetOrigin": "downloaded_image",
+    "modelMatch": "series",
+    "sourceModelMatch": "series",
+    "confidence": "high",
+    "rightsStatus": "Publicly viewable. No reuse license established; publisher/photographer permission required before publication.",
+    "matchingProductIds": [
+      "tr2026-family-asia-autotransformer-500"
+    ],
+    "typeReferenceProductIds": [
+      "alageum-atdctn-250000-500-f03cccd8"
+    ],
+    "exactProductIds": [],
+    "familyIds": [
+      "asia-autotransformer-500"
+    ],
+    "typeReferenceFamilyIds": [],
+    "familyOverviewIds": [
+      "tr2026-family-asia-autotransformer-500"
+    ],
+    "matchingLevelById": {
+      "tr2026-family-asia-autotransformer-500": "family_overview"
+    },
+    "sameBaseModelReferenceIds": [
+      "alageum-atdctn-250000-500-f03cccd8"
+    ],
+    "notes": "The BAQ headline incorrectly says 500 MVA; use the body’s 250000 kVA / 500 kV. Clear construction and article identify the family/project. Canonical row’s tertiary 100000 kVA, LV alternatives and execution are not documented, so the individual row remains a base-model reference rather than exact full-product proof.",
+    "designationEvidence": "On-site BAQ report of 28 September 2023 explicitly describes the photographed first domestic three-phase 250000 kVA, 500 kV autotransformer, mass 295 t. Alageum manufacturer-contributed 2024 article names its first such project ATDCTN-250000/500.",
+    "visualEvidence": "Low-angle bushing-side photograph of the completed three-phase unit. Three large inclined bushings dominate the front; tank, pipework and radiators remain visible. Test-hall rings at right are separate equipment.",
+    "verifiedAt": "2026-10-12T18:37:00Z",
+    "visuallyVerified": true,
+    "countsAsDistinctPhoto": true,
+    "reviewStatus": "family_candidate",
+    "priority": 1,
+    "width": 1000,
+    "height": 750,
+    "mimeType": "image/jpeg",
+    "sha256": "7ac88c3f0e11d749bc381b23a316fc88e92e9ed397ddf234a04b411bb6da6807",
+    "publicationApproved": false,
+    "corroborationUrls": [
+      "https://www.eprussia.ru/epr/499-500/4576474.htm",
+      "https://rus.baq.kz/samyy-bolshoy-v-tsentralnoy-azii-transformator-izgotovili-na-zavode-v-shymkente_160791/",
+      "https://alageum.com/ru/novosti/chem-izvesten-transformatornyj-zavod-kotoryj-posetil-prezident-kazakhstana-k-zh-tokaev"
+    ],
+    "mappingConstraints": [
+      "Do not propagate family photos across individual variants.",
+      "Only exactProductIds may be described as fully verified individual catalog products.",
+      "Type references do not prove execution, materials, winding voltages or nameplate ratings."
+    ],
+    "localFile": "selected-images/inc03-power-at250000-500-bushing-side.jpg",
+    "researchGroup": "power",
+    "resolutionStatus": "usable_for_review"
+  },
+  {
+    "candidateId": "inc03-power-at250000-500-radiator-side",
+    "sourcePageUrl": "https://baq.kz/amp/news/othernews/shymkentte-asia-trafo-zauyty-quaty-500-mva-salmagy-295-tonnalyq-avtotransformator-shygardy-314310/",
+    "imageUrl": "https://baq.kz/userfiles/images/3%20(8).jpg",
+    "caption": "Asia Trafo, автотрансформатор 250 МВА / 500 кВ: сторона радиаторов",
+    "mediaKind": "photo",
+    "assetOrigin": "downloaded_image",
+    "modelMatch": "series",
+    "sourceModelMatch": "series",
+    "confidence": "high",
+    "rightsStatus": "Publicly viewable. No reuse license established; publisher/photographer permission required before publication.",
+    "matchingProductIds": [
+      "tr2026-family-asia-autotransformer-500"
+    ],
+    "typeReferenceProductIds": [
+      "alageum-atdctn-250000-500-f03cccd8"
+    ],
+    "exactProductIds": [],
+    "familyIds": [
+      "asia-autotransformer-500"
+    ],
+    "typeReferenceFamilyIds": [],
+    "familyOverviewIds": [
+      "tr2026-family-asia-autotransformer-500"
+    ],
+    "matchingLevelById": {
+      "tr2026-family-asia-autotransformer-500": "family_overview"
+    },
+    "sameBaseModelReferenceIds": [
+      "alageum-atdctn-250000-500-f03cccd8"
+    ],
+    "notes": "The BAQ headline incorrectly says 500 MVA; use the body’s 250000 kVA / 500 kV. Clear construction and article identify the family/project. Canonical row’s tertiary 100000 kVA, LV alternatives and execution are not documented, so the individual row remains a base-model reference rather than exact full-product proof.",
+    "designationEvidence": "On-site BAQ report of 28 September 2023 explicitly describes the photographed first domestic three-phase 250000 kVA, 500 kV autotransformer, mass 295 t. Alageum manufacturer-contributed 2024 article names its first such project ATDCTN-250000/500.",
+    "visualEvidence": "Opposite broadside: radiator bank across the tank, conserved-oil tank with Alageum branding, three high-voltage bushings above. Distinct view of the same finished unit.",
+    "verifiedAt": "2026-10-12T18:37:00Z",
+    "visuallyVerified": true,
+    "countsAsDistinctPhoto": true,
+    "reviewStatus": "family_candidate",
+    "priority": 1,
+    "width": 1000,
+    "height": 750,
+    "mimeType": "image/jpeg",
+    "sha256": "dab2a90f0b1f5cedb9b17e57d8e4a9f2a1d4446f8a7229eeecc4c7cfaa8e4b90",
+    "publicationApproved": false,
+    "corroborationUrls": [
+      "https://www.eprussia.ru/epr/499-500/4576474.htm",
+      "https://rus.baq.kz/samyy-bolshoy-v-tsentralnoy-azii-transformator-izgotovili-na-zavode-v-shymkente_160791/",
+      "https://alageum.com/ru/novosti/chem-izvesten-transformatornyj-zavod-kotoryj-posetil-prezident-kazakhstana-k-zh-tokaev"
+    ],
+    "mappingConstraints": [
+      "Do not propagate family photos across individual variants.",
+      "Only exactProductIds may be described as fully verified individual catalog products.",
+      "Type references do not prove execution, materials, winding voltages or nameplate ratings."
+    ],
+    "localFile": "selected-images/inc03-power-at250000-500-radiator-side.jpg",
+    "researchGroup": "power",
+    "resolutionStatus": "usable_for_review"
+  },
+  {
+    "candidateId": "inc03-power-ktz-trdn80000-expo",
+    "sourcePageUrl": "https://eenergy.media/news/2831",
+    "imageUrl": "https://i0.wp.com/eenergy.media/wp-content/uploads/2017/07/tdrn3.jpg?w=599&ssl=1",
+    "caption": "КТЗ ТРДН-80000/110 для EXPO-2017: заводской снимок",
+    "mediaKind": "photo",
+    "assetOrigin": "downloaded_image",
+    "modelMatch": "type_only",
+    "sourceModelMatch": "type_only",
+    "confidence": "medium",
+    "rightsStatus": "Publicly viewable. No reuse license established; publisher/photographer permission required before publication.",
+    "matchingProductIds": [],
+    "typeReferenceProductIds": [
+      "tr2026-family-asia-split-110-rpn",
+      "alageum-trdn-80000-110-07f6ff1f"
+    ],
+    "exactProductIds": [],
+    "familyIds": [],
+    "typeReferenceFamilyIds": [
+      "asia-split-110-rpn"
+    ],
+    "familyOverviewIds": [],
+    "matchingLevelById": {},
+    "sameBaseModelReferenceIds": [
+      "tr2026-family-asia-split-110-rpn",
+      "alageum-trdn-80000-110-07f6ff1f"
+    ],
+    "notes": "Same group and TRDN-80000/110 designation, but photographed maker is KTZ whereas canonical source family is Asia Trafo. Preserve as explicitly labeled KTZ historical type reference only, never exact Asia Trafo product. The 304x457 and 599x900 source variants are one exposure.",
+    "designationEvidence": "Dated article identifies two Alageum/KTZ TRDN-80000 transformers of 110 kV for EXPO-2017; manufacturer sign on photographed conservator says Kentau Transformer Plant.",
+    "visualEvidence": "Genuine vertical factory photograph, grey conservator transformer with radiator at left, control box, pipes, large Alageum/KTZ sign and natural workshop background.",
+    "verifiedAt": "2026-10-12T18:37:00Z",
+    "visuallyVerified": true,
+    "countsAsDistinctPhoto": true,
+    "reviewStatus": "type_reference_only",
+    "priority": 2,
+    "width": 599,
+    "height": 900,
+    "mimeType": "image/jpeg",
+    "sha256": "e6c9cdccfbc4c3268e51c2c771ec9bdce5200023c737d1f00083115635970239",
+    "publicationApproved": false,
+    "corroborationUrls": [
+      "https://marketelectro.ru/node/25241"
+    ],
+    "mappingConstraints": [
+      "Do not propagate family photos across individual variants.",
+      "Only exactProductIds may be described as fully verified individual catalog products.",
+      "Type references do not prove execution, materials, winding voltages or nameplate ratings."
+    ],
+    "localFile": "selected-images/inc03-power-ktz-trdn80000-expo.jpg",
+    "researchGroup": "power",
+    "resolutionStatus": "usable_for_review"
+  },
+  {
+    "candidateId": "inc03-sales-shnn-front",
+    "sourcePageUrl": "https://alageumsales.com/elektromontazh_hhez/",
+    "imageUrl": "https://b24.alageum.com/upload/landing/6dc/iesx9rb15kjcsbl6grjpyew5pii625uk/shnn_1x.png",
+    "caption": "ШНН · фронтальный вид шкафа низкого напряжения",
+    "mediaKind": "photo",
+    "modelMatch": "series",
+    "confidence": "medium",
+    "rightsStatus": "unknown; public source, no reuse license found. Rights-holder permission required before publication.",
+    "matchingProductIds": [
+      "cat-shnn"
+    ],
+    "typeReferenceProductIds": [
+      "cat-shnn-v001",
+      "cat-shnn-v002",
+      "cat-shnn-v003",
+      "cat-shnn-v004",
+      "cat-shnn-v005",
+      "cat-shnn-v006",
+      "cat-shnn-v007",
+      "cat-shnn-v008",
+      "cat-shnn-v009",
+      "cat-shnn-v010",
+      "cat-shnn-v011",
+      "cat-shnn-v012",
+      "cat-shnn-v013",
+      "cat-shnn-v014",
+      "cat-shnn-v015",
+      "cat-shnn-v016",
+      "cat-shnn-v017",
+      "cat-shnn-v018"
+    ],
+    "exactProductIds": [],
+    "notes": "Номинальные токи и исполнение В/С/Л не читаются. 18 вариантов только type-reference. Чёрная полоса слева и нижняя линия присутствуют в исходном изображении; файл не ретуширован.",
+    "visualEvidence": "Реальная фотография двух вводных секций с аппаратами сверху и ряда вертикальных предохранителей снизу. В карточке рядом с этим файлом явно указано «ШНН».",
+    "verifiedAt": "2026-10-12",
+    "sourceType": "manufacturer_sales_portal",
+    "reviewStatus": "selected",
+    "visuallyVerified": true,
+    "publicationApproved": false,
+    "countsAsDistinctPhoto": true,
+    "width": 336,
+    "height": 477,
+    "sha256": "0bd0602ee08600b9d2d6f0f58f5b9398eb0079bab72461e42c60eb242ce1367b",
+    "researchGroup": "switchgear",
+    "resolutionStatus": "usable_for_review",
+    "distinctnessEvidence": "Compared visually with prior selected contact sheets and nearest-image review; not a new crop or watermark version of a retained photograph.",
+    "localFile": "selected-images/inc03-sales-shnn-front.png"
+  },
+  {
+    "candidateId": "inc03-sales-grsh-open",
+    "sourcePageUrl": "https://alageumsales.com/elektromontazh_hhez/",
+    "imageUrl": "https://b24.alageum.com/upload/landing/2f8/eeqtmmyxdd86ide5al35phaknzre7568/888_1x.png",
+    "caption": "ГРЩ · открытые секции низковольтного щита",
+    "mediaKind": "photo",
+    "modelMatch": "series",
+    "confidence": "medium",
+    "rightsStatus": "unknown; public source, no reuse license found. Rights-holder permission required before publication.",
+    "matchingProductIds": [
+      "cat-grsh-04"
+    ],
+    "typeReferenceProductIds": [],
+    "exactProductIds": [],
+    "notes": "Очень маленький оригинал 254×243. Схема и токи конкретной поставки не подтверждены. Не считать точным заказным исполнением.",
+    "visualEvidence": "Фотографическая композиция открытого ГРЩ: крайние вводные секции с медными шинами, в центре отходящие группы. DOM подпись «ГРЩ».",
+    "verifiedAt": "2026-10-12",
+    "sourceType": "manufacturer_sales_portal",
+    "reviewStatus": "selected",
+    "visuallyVerified": true,
+    "publicationApproved": false,
+    "countsAsDistinctPhoto": true,
+    "width": 254,
+    "height": 243,
+    "sha256": "93f6c5e4b9479b593cfacec5e233774e3fd7ac32becee6c899cbd1d72a995f0f",
+    "researchGroup": "switchgear",
+    "resolutionStatus": "low_resolution",
+    "distinctnessEvidence": "Compared visually with prior selected contact sheets and nearest-image review; not a new crop or watermark version of a retained photograph.",
+    "localFile": "selected-images/inc03-sales-grsh-open.png"
+  },
+  {
+    "candidateId": "inc03-sales-spassk89-open",
+    "sourcePageUrl": "https://alageumsales.com/elektromontazh_hhez/",
+    "imageUrl": "https://b24.alageum.com/upload/landing/02a/bxcuolehjej2gn3goe2xj6u9afp7y4yn/spassk_89_1x.png",
+    "caption": "ЩСУ / SPASSK-89 · выдвижные функциональные блоки",
+    "mediaKind": "photo",
+    "modelMatch": "series",
+    "confidence": "medium",
+    "rightsStatus": "unknown; public source, no reuse license found. Rights-holder permission required before publication.",
+    "matchingProductIds": [
+      "cat-shchsu-04"
+    ],
+    "typeReferenceProductIds": [],
+    "exactProductIds": [],
+    "notes": "Связь SPASSK-89 с ЩСУ-0,4 кВ подтверждает публикация Otyrar о КТЗ/ТШО: https://otyrar.kz/2021/12/o-preimushhestvah-raboty-s-tengizshevrojl-rasskazali-krupnye-proizvodstvenniki-yuga/ . Это фото серии; ток, схема, состав выдвижных блоков не доказаны.",
+    "visualEvidence": "Реальное фото высокого модульного НКУ с открытым правым кабельным отсеком, несколькими выдвижными блоками и органами управления. Отдельная подпись карточки SPASSK-89.",
+    "verifiedAt": "2026-10-12",
+    "sourceType": "manufacturer_sales_portal",
+    "reviewStatus": "selected",
+    "visuallyVerified": true,
+    "publicationApproved": false,
+    "countsAsDistinctPhoto": true,
+    "width": 568,
+    "height": 712,
+    "sha256": "b3bef91bd7a85b37a7b4b914149a5b08052022fb24c54f3bc7a7f8c67284c927",
+    "researchGroup": "switchgear",
+    "resolutionStatus": "usable_for_review",
+    "distinctnessEvidence": "Compared visually with prior selected contact sheets and nearest-image review; not a new crop or watermark version of a retained photograph.",
+    "localFile": "selected-images/inc03-sales-spassk89-open.png"
+  },
+  {
+    "candidateId": "inc03-sales-shcho70-three-panels",
+    "sourcePageUrl": "https://alageumsales.com/elektromontazh_hhez/",
+    "imageUrl": "https://b24.alageum.com/upload/landing/5d0/fvcjypfj9x74b7r62th2e4zwqnyubq3v/shcho_70_1x.png",
+    "caption": "ЩО-70 · три закрытые панели",
+    "mediaKind": "photo",
+    "modelMatch": "series",
+    "confidence": "medium",
+    "rightsStatus": "unknown; public source, no reuse license found. Rights-holder permission required before publication.",
+    "matchingProductIds": [
+      "cat-shcho-70"
+    ],
+    "typeReferenceProductIds": [],
+    "exactProductIds": [],
+    "notes": "Отличается от retained aemz-shcho70-mega-project: 3 панели, Ввод №1 и два линейных щита; старый кадр имеет 4 панели, Ввод 3 и другой состав. Конкретная схема ЩО70 не доказана.",
+    "visualEvidence": "Фото с натуральными отражениями: вводная панель с автоматическим выключателем и две линейные панели, сверху амперметры. Карточка подписана «ПАНЕЛИ ЩО-70».",
+    "verifiedAt": "2026-10-12",
+    "sourceType": "manufacturer_sales_portal",
+    "reviewStatus": "selected",
+    "visuallyVerified": true,
+    "publicationApproved": false,
+    "countsAsDistinctPhoto": true,
+    "width": 568,
+    "height": 573,
+    "sha256": "ede4e25f74462efa976248c6e761ca06f53d6318c46cfdb841a45ce89254d2ca",
+    "researchGroup": "switchgear",
+    "resolutionStatus": "usable_for_review",
+    "distinctnessEvidence": "Compared visually with prior selected contact sheets and nearest-image review; not a new crop or watermark version of a retained photograph.",
+    "localFile": "selected-images/inc03-sales-shcho70-three-panels.png"
+  },
+  {
+    "candidateId": "inc03-sales-pr11-open",
+    "sourcePageUrl": "https://alageumsales.com/elektromontazh_hhez/",
+    "imageUrl": "https://b24.alageum.com/upload/landing/fd8/f1bhs0surlem0zlj6loorab08pb0o33c/pr_11_1x.png",
+    "caption": "ПР/ШР11 · открытый распределительный шкаф",
+    "mediaKind": "photo",
+    "modelMatch": "series",
+    "confidence": "medium",
+    "rightsStatus": "unknown; public source, no reuse license found. Rights-holder permission required before publication.",
+    "matchingProductIds": [
+      "cat-pr-shr11"
+    ],
+    "typeReferenceProductIds": [
+      "cat-pr-shr11-v001",
+      "cat-pr-shr11-v002",
+      "cat-pr-shr11-v003"
+    ],
+    "exactProductIds": [],
+    "notes": "Два повторения src0-11 и src0-29 считаются одной фотографией. Подтверждена объединённая серия ПР/ШР11, не конкретные три варианта. Не путать со старым иным шкафом на ошибочной странице AEMZ с текстом КРУ-РН.",
+    "visualEvidence": "Натуральный открытый шкаф с рядами предохранителей/коммутационных аппаратов и горизонтальными красными шинами. Точная DOM подпись ПР11; второй resize этого же снимка подписан ШР11.",
+    "verifiedAt": "2026-10-12",
+    "sourceType": "manufacturer_sales_portal",
+    "reviewStatus": "selected",
+    "visuallyVerified": true,
+    "publicationApproved": false,
+    "countsAsDistinctPhoto": true,
+    "width": 552,
+    "height": 742,
+    "sha256": "b5be9c10daade41fad55bbbbd213ab50bef24f2164a5c6df4c769ba7cf4ab0c9",
+    "researchGroup": "switchgear",
+    "resolutionStatus": "usable_for_review",
+    "distinctnessEvidence": "Compared visually with prior selected contact sheets and nearest-image review; not a new crop or watermark version of a retained photograph.",
+    "localFile": "selected-images/inc03-sales-pr11-open.png"
+  },
+  {
+    "candidateId": "inc03-sales-yatp-gray-socket",
+    "sourcePageUrl": "https://alageumsales.com/elektromontazh_hhez/",
+    "imageUrl": "https://alageumsales.com/upload/landing/392/yfbtp0zced0t1zisj7ogm6y5zqfpbfwg/yatp_1x.png",
+    "caption": "ЯТП · серый ящик с розеткой",
+    "mediaKind": "photo",
+    "modelMatch": "type",
+    "confidence": "medium",
+    "rightsStatus": "unknown; public source, no reuse license found. Rights-holder permission required before publication.",
+    "matchingProductIds": [],
+    "typeReferenceProductIds": [
+      "cat-yatp-v001",
+      "cat-yatp-v002",
+      "cat-yatp-v003",
+      "cat-yatp-v004",
+      "cat-yatp-v005",
+      "cat-yatp-v006",
+      "cat-yatp-v007",
+      "cat-yatp-v008",
+      "cat-yatp-v009"
+    ],
+    "exactProductIds": [],
+    "notes": "Не видны мощность трансформатора и выходное напряжение. Все 9 ЯТП только type-reference; конкретный вариант не подтверждён. Отличается от синего коробчатого ЯТП в ранее выбранном каталоге.",
+    "visualEvidence": "Фото металлического ящика с синей розеткой на двери; натуральная тень и отражения. Отдельная карточка производителя подписана ЯТП.",
+    "verifiedAt": "2026-10-12",
+    "sourceType": "manufacturer_sales_portal",
+    "reviewStatus": "selected",
+    "visuallyVerified": true,
+    "publicationApproved": false,
+    "countsAsDistinctPhoto": true,
+    "width": 1080,
+    "height": 1080,
+    "sha256": "35942a5ac2d481ec3b2fc7f94366551cbd325b54ed2ca3cbeac4be9277d073fa",
+    "researchGroup": "switchgear",
+    "resolutionStatus": "usable_for_review",
+    "distinctnessEvidence": "Compared visually with prior selected contact sheets and nearest-image review; not a new crop or watermark version of a retained photograph.",
+    "localFile": "selected-images/inc03-sales-yatp-gray-socket.png"
+  },
+  {
+    "candidateId": "inc03-sales-kru-rn-open",
+    "sourcePageUrl": "https://alageumsales.com/visokovoltnoe_oborudovanie/",
+    "imageUrl": "https://alageumsales.com/upload/landing/7de/jyr6hkjxvtc52rbw51hqdqfaexlp7pqb/dizayn_bez_nazvaniya_18_1x.png",
+    "caption": "КРУ-РН · открытый рудничный шкаф",
+    "mediaKind": "photo",
+    "modelMatch": "series",
+    "confidence": "medium",
+    "rightsStatus": "unknown; public source, no reuse license found. Rights-holder permission required before publication.",
+    "matchingProductIds": [
+      "cat-kru-rn"
+    ],
+    "typeReferenceProductIds": [],
+    "exactProductIds": [],
+    "notes": "Номинальный ток, напряжение 6 или 10 кВ, роль В/О/С не доказаны. Не распространять на взрывозащищённое оборудование.",
+    "visualEvidence": "Реальный шкаф с герметизированными дверями, открытыми выкатными направляющими и коммутационным аппаратом, виден медный токопровод справа. Карточка КРУ-РН отдельно указывает КТЗ/АЭМЗ.",
+    "verifiedAt": "2026-10-12",
+    "sourceType": "manufacturer_sales_portal",
+    "reviewStatus": "selected",
+    "visuallyVerified": true,
+    "publicationApproved": false,
+    "countsAsDistinctPhoto": true,
+    "width": 1080,
+    "height": 1080,
+    "sha256": "07976250a73848ad691465effc713b01886a82598d00ff74c31dd04223d7e179",
+    "researchGroup": "switchgear",
+    "resolutionStatus": "usable_for_review",
+    "distinctnessEvidence": "Compared visually with prior selected contact sheets and nearest-image review; not a new crop or watermark version of a retained photograph.",
+    "localFile": "selected-images/inc03-sales-kru-rn-open.png"
+  },
+  {
+    "candidateId": "inc03-sales-k07k10-closed",
+    "sourcePageUrl": "https://alageumsales.com/visokovoltnoe_oborudovanie/",
+    "imageUrl": "https://alageumsales.com/upload/landing/13f/w0s44cqeoz4lmb9215z7dmhorgsp9oa1/dizayn_bez_nazvaniya_19_1x.png",
+    "caption": "КРУ К-07-К10 · закрытая кассетная ячейка",
+    "mediaKind": "photo",
+    "modelMatch": "type",
+    "confidence": "medium",
+    "rightsStatus": "unknown; public source, no reuse license found. Rights-holder permission required before publication.",
+    "matchingProductIds": [],
+    "typeReferenceProductIds": [
+      "cat-kru-kerneu-6-10"
+    ],
+    "exactProductIds": [],
+    "notes": "Исходный каталог раздела KERNEU содержит К-07-К10(3) только в таблице габаритов и прямо помечает соответствие как требующее подтверждения изготовителем. Поэтому только type-reference; не exact KERNEU, не 35 кВ, не серия обычных К-07.",
+    "visualEvidence": "Фото белой ячейки с релейным отсеком и двумя видимыми рядами боковых медных выводов. DOM подпись «КРУ К-07-К10».",
+    "verifiedAt": "2026-10-12",
+    "sourceType": "manufacturer_sales_portal",
+    "reviewStatus": "selected",
+    "visuallyVerified": true,
+    "publicationApproved": false,
+    "countsAsDistinctPhoto": true,
+    "width": 1080,
+    "height": 1080,
+    "sha256": "5bdc76059e1e0031eec3716615b09da3fea81b51f294c2139bdc27167a4b764d",
+    "researchGroup": "switchgear",
+    "resolutionStatus": "usable_for_review",
+    "distinctnessEvidence": "Compared visually with prior selected contact sheets and nearest-image review; not a new crop or watermark version of a retained photograph.",
+    "localFile": "selected-images/inc03-sales-k07k10-closed.png"
+  },
+  {
+    "candidateId": "inc03-sales-kso2-single-white",
+    "sourcePageUrl": "https://alageumsales.com/visokovoltnoe_oborudovanie/",
+    "imageUrl": "https://alageumsales.com/upload/landing/470/bartk2a50x02gfo7hqkgs4ycxcpivsmg/kso_2_10_1x.png",
+    "caption": "КСО-2-10 · белая одиночная камера",
+    "mediaKind": "photo",
+    "modelMatch": "series",
+    "confidence": "medium",
+    "rightsStatus": "unknown; public source, no reuse license found. Rights-holder permission required before publication.",
+    "matchingProductIds": [
+      "kso-2-10"
+    ],
+    "typeReferenceProductIds": [],
+    "exactProductIds": [],
+    "notes": "Не считать конкретной схемой или током. Ранее выбранные КСО-2-10 показывают другие ряды синих шкафов.",
+    "visualEvidence": "Натуральная фотография белой одиночной камеры: круглый счётчик и защита сверху, боковые приводы/тяги, три фасадных отсека. Отдельная подпись КСО 2-10.",
+    "verifiedAt": "2026-10-12",
+    "sourceType": "manufacturer_sales_portal",
+    "reviewStatus": "selected",
+    "visuallyVerified": true,
+    "publicationApproved": false,
+    "countsAsDistinctPhoto": true,
+    "width": 1080,
+    "height": 1080,
+    "sha256": "3c14b70c6525e0f0f2c158b82c11c3cb027663426221fcfa146d3b7c373b301d",
+    "researchGroup": "switchgear",
+    "resolutionStatus": "usable_for_review",
+    "distinctnessEvidence": "Compared visually with prior selected contact sheets and nearest-image review; not a new crop or watermark version of a retained photograph.",
+    "localFile": "selected-images/inc03-sales-kso2-single-white.png"
+  },
+  {
+    "candidateId": "inc03-aesh-kso292-open-blue",
+    "sourcePageUrl": "https://electro.com.kz/catalog/vysokovoltnoe_oborudovanie_yacheyki/1533/",
+    "imageUrl": "https://electro.com.kz/upload/iblock/c96/Камеры сборные одностороннего обслуживания серии КСО-292(М), 393_ сжатый.jpg",
+    "caption": "КСО-292 · открытая синяя одиночная камера",
+    "mediaKind": "photo",
+    "modelMatch": "series",
+    "confidence": "medium",
+    "rightsStatus": "unknown; public source, no reuse license found. Rights-holder permission required before publication.",
+    "matchingProductIds": [
+      "kso-292"
+    ],
+    "typeReferenceProductIds": [],
+    "exactProductIds": [],
+    "notes": "Заголовок группирует КСО-292(М),393; описание страницы явно КСО-292. Семейное соответствие, не конкретное исполнение М/393 и не точный SKU.",
+    "visualEvidence": "Реальное фото открытой камеры с синими фасадными панелями, проводкой, разъединителем и коммутационным оборудованием. Page itemprop brand = Alageum Electric.",
+    "verifiedAt": "2026-10-12",
+    "sourceType": "attributable_vendor",
+    "reviewStatus": "selected",
+    "visuallyVerified": true,
+    "publicationApproved": false,
+    "countsAsDistinctPhoto": true,
+    "width": 201,
+    "height": 350,
+    "sha256": "8211160715e352b7e202d30f32b4ec7437f75d1a36b0537471586036df293d91",
+    "researchGroup": "switchgear",
+    "resolutionStatus": "low_resolution",
+    "distinctnessEvidence": "Compared visually with prior selected contact sheets and nearest-image review; not a new crop or watermark version of a retained photograph.",
+    "localFile": "selected-images/inc03-aesh-kso292-open-blue.jpg"
+  },
+  {
+    "candidateId": "inc03-aesh-kso2-single-turquoise",
+    "sourcePageUrl": "https://electro.com.kz/catalog/vysokovoltnoe_oborudovanie_yacheyki/1531/",
+    "imageUrl": "https://electro.com.kz/upload/iblock/160/Камеры сборные одностороннего обслуживания серии КСО2-10_сжатый.png",
+    "caption": "КСО-2-10 · бирюзовая одиночная камера",
+    "mediaKind": "photo",
+    "modelMatch": "series",
+    "confidence": "medium",
+    "rightsStatus": "unknown; public source, no reuse license found. Rights-holder permission required before publication.",
+    "matchingProductIds": [
+      "kso-2-10"
+    ],
+    "typeReferenceProductIds": [],
+    "exactProductIds": [],
+    "notes": "Ток, внутренний аппарат и схема не читаются. Не заменять фото конкретной модификации.",
+    "visualEvidence": "Натуральный снимок закрытой камеры с бирюзовыми дверями, боковыми приводами и релейным отсеком. Заголовок КСО 2-10; карточка маркирована Alageum Electric.",
+    "verifiedAt": "2026-10-12",
+    "sourceType": "attributable_vendor",
+    "reviewStatus": "selected",
+    "visuallyVerified": true,
+    "publicationApproved": false,
+    "countsAsDistinctPhoto": true,
+    "width": 246,
+    "height": 512,
+    "sha256": "c8bd7796e16bd81b8525edeec1d7b84ac2870bf6661e96ab014370d411216076",
+    "researchGroup": "switchgear",
+    "resolutionStatus": "low_resolution",
+    "distinctnessEvidence": "Compared visually with prior selected contact sheets and nearest-image review; not a new crop or watermark version of a retained photograph.",
+    "localFile": "selected-images/inc03-aesh-kso2-single-turquoise.png"
+  },
+  {
+    "candidateId": "inc03-mtk-mtp-pole-installation",
+    "sourcePageUrl": "https://trans-mtk.com/catalog/machtovye-i-odnofaznye-podstantsii/",
+    "imageUrl": "https://trans-mtk.com/upload/iblock/e39/l47tual00iz465q7td0vonmk5dzsnr6c/preview.jpg",
+    "caption": "МТП · установленное на опоре оборудование",
+    "mediaKind": "photo",
+    "modelMatch": "type",
+    "confidence": "low",
+    "rightsStatus": "unknown; public source, no reuse license found. Rights-holder permission required before publication.",
+    "matchingProductIds": [],
+    "typeReferenceProductIds": [
+      "cat-mtp-25-100",
+      "cat-mtp-25-100-v001",
+      "cat-mtp-25-100-v002",
+      "cat-mtp-25-100-v003",
+      "cat-mtp-25-100-v004"
+    ],
+    "exactProductIds": [],
+    "notes": "На trans-mtk один и тот же preview.jpg повторён у МТП 25/40/63/100 и однофазных МТПО 4/10. Это не доказательство любой мощности, Alageum-происхождения именно снимка или однофазной конструкции. Оставлен только общий трёхфазный мачтовый type-reference; МТПО исключены.",
+    "visualEvidence": "Реальный уличный кадр: гофрированный трансформатор с тремя верхними вводами на железобетонной опоре, разъединители и воздушные провода.",
+    "verifiedAt": "2026-10-12",
+    "sourceType": "vendor_generic_image",
+    "reviewStatus": "selected",
+    "visuallyVerified": true,
+    "publicationApproved": false,
+    "countsAsDistinctPhoto": true,
+    "width": 500,
+    "height": 458,
+    "sha256": "5f451f6a5615421d1f69079597a746a0ab834ee2f239424e3a14c08d65aca6d5",
+    "researchGroup": "switchgear",
+    "resolutionStatus": "usable_for_review",
+    "distinctnessEvidence": "Compared visually with prior selected contact sheets and nearest-image review; not a new crop or watermark version of a retained photograph.",
+    "localFile": "selected-images/inc03-mtk-mtp-pole-installation.jpg"
+  },
+  {
+    "candidateId": "inc03-energyland-km7mk-exhibition",
+    "sourcePageUrl": "https://energyland.info/analitic-show---59198",
+    "imageUrl": "https://energyland.info/img/xin/201011/5_IMG_1819.jpg",
+    "caption": "КМ-7МК · ячейка на стенде Казтрансформатор, 2010",
+    "mediaKind": "photo",
+    "modelMatch": "type",
+    "confidence": "medium",
+    "rightsStatus": "unknown; public source, no reuse license found. Rights-holder permission required before publication.",
+    "matchingProductIds": [],
+    "typeReferenceProductIds": [
+      "cat-km7m"
+    ],
+    "exactProductIds": [],
+    "notes": "Каталожная запись cat-km7m = КМ-7М, без подтверждённого суффикса К. Исторический КМ-7МК только type-reference. Не путать с соседним фото Таврида Электрик.",
+    "visualEvidence": "Реальная выставочная фотография; над стендом надпись КАЗТРАНСФОРМАТОР, видна светлая ячейка справа. Непосредственный соседний абзац Energyland называет КРУ КМ-7 МК кассетного исполнения Alageum group.",
+    "verifiedAt": "2026-10-12",
+    "sourceType": "industry_report",
+    "reviewStatus": "selected",
+    "visuallyVerified": true,
+    "publicationApproved": false,
+    "countsAsDistinctPhoto": true,
+    "width": 500,
+    "height": 375,
+    "sha256": "5c8d065a553d5641db37e6d283021dbd1bc0a67d254539349f0ea831730981d8",
+    "researchGroup": "switchgear",
+    "resolutionStatus": "usable_for_review",
+    "distinctnessEvidence": "Compared visually with prior selected contact sheets and nearest-image review; not a new crop or watermark version of a retained photograph.",
+    "localFile": "selected-images/inc03-energyland-km7mk-exhibition.jpg"
+  },
+  {
+    "candidateId": "yunimag-tmgf-flanged-type",
+    "sourcePageUrl": "https://yunimag.ru/goods/7654819-transformator-tmgf-6301004-uhl1-uun-0-alageum-electric.html",
+    "imageUrl": "https://img.yunimag.ru/76/5/1293740.big.jpg",
+    "familyIds": [],
+    "typeReferenceFamilyIds": [
+      "tmgf"
+    ],
+    "matchingProductIds": [],
+    "typeReferenceProductIds": [
+      "tmgf-630",
+      "tmgf-1600",
+      "tr2026-family-tmgf",
+      "alageum-tmgf-400",
+      "alageum-tmgf-1000",
+      "alageum-tmgf-1250",
+      "alageum-tmgf-2500"
+    ],
+    "caption": "Фланцевый масляный трансформатор типа ТМГФ; производитель и мощность не подтверждены",
+    "mediaKind": "photo",
+    "modelMatch": "type",
+    "confidence": "low",
+    "rightsStatus": "Публичный источник. Лицензия на повторное использование не найдена; разрешение правообладателя требуется до публикации.",
+    "verifiedAt": "2026-10-12",
+    "reviewStatus": "selected",
+    "sourceType": "unattributed_vendor",
+    "visuallyVerified": true,
+    "countsAsDistinctPhoto": true,
+    "publicationApproved": false,
+    "eligibleForBrandCoverage": false,
+    "eligibleForExactModelCoverage": false,
+    "visualEvidence": "Реальный предметный снимок: герметичный гофрированный бак, два прямоугольных фланцевых короба на крышке, открытые вводы внутри коробов, опорные швеллеры. Название изготовителя и мощность на маленькой табличке не читаются.",
+    "notes": "Только типовой визуальный референс ТМГФ, не фото подтвержденного Alageum. Один и тот же URL стоит на четырех карточках ТМГФ 630 и 1600 кВА. Каталог Yunimag в целом смешивает повторные изображения и конструктивно неподходящие иллюстрации: в галерее этой карточки также обычный ТМГ 1293741 без фланцев. Не закрывает отсутствие фотографий серии Alageum, точной мощности, напряжения или группы соединения. Качество небольшое, 456×436.",
+    "sourceCorroboration": [
+      {
+        "url": "https://yunimag.ru/elektrotehnicheskiy/sistemy-raspredeleniya-vysokogo-napryazheniya/brand-alageum-electric/?page=2",
+        "finding": "Один главный снимок 1293740 опубликован для ТМГФ-630 и ТМГФ-1600. Это не четыре разных фото."
+      },
+      {
+        "url": "https://www.electroshield.ru/upload/iblock/683/Transformatory-silovye-dlya-sayta.pdf",
+        "page": 10,
+        "finding": "Официальный каталог другого изготовителя подтверждает, что аналогичные верхние фланцевые короба характерны типу ТМГФ; визуальная конструкция не доказывает изготовителя. Фотография в PDF и снимок Yunimag разные, точный источник снимка не установлен."
+      }
+    ],
+    "width": 456,
+    "height": 436,
+    "sha256": "c03716d67270a31e6476cd5518add55ad6166b3878a080d566b350e1b3c3cefb",
+    "localFile": "selected-images/yunimag-tmgf-flanged-type.jpg",
+    "researchGroup": "yunimag",
+    "resolutionStatus": "usable_for_review"
+  }
+]

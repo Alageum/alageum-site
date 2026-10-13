@@ -1,0 +1,1743 @@
+[
+  {
+    "id": "cat-kso-366m",
+    "name": "Камеры сборные серии КСО-3М (в тексте КСО-366М)",
+    "designation": "КСО-3М",
+    "cohort": "legacy",
+    "category": "switchgear",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        24
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "1989f0231cd232d09401582fed68881f7ce150116cd86c8309c887a4dfe1d510",
+    "geometry": {
+      "type": "single-door-switchgear",
+      "confidence": "source-matched",
+      "sourcePages": [
+        24
+      ],
+      "sourceImage": "/catalog-products/cat-kso-366m.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Однодверная высокая камера с отдельной верхней панелью; общий внешний контур с КСО-366, без вывода о внутренней схеме."
+    },
+    "icon": {
+      "type": "single-door-switchgear",
+      "confidence": "source-based",
+      "sourcePages": [
+        24
+      ],
+      "sourceImage": "/catalog-products/cat-kso-366m.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Однодверная высокая камера с отдельной верхней панелью; общий внешний контур с КСО-366, без вывода о внутренней схеме. Значок передаёт общий внешний контур семейства, не точное исполнение."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-kso-366m.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        24
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-kso-2-20",
+    "name": "Камера сборная одностороннего обслуживания 20кВ серии КСО-2-20",
+    "designation": "КСО-2-20",
+    "cohort": "legacy",
+    "category": "switchgear",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        26,
+        27
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "d952a58865e3fea6d4960fd491110597c06ba885cd6482ee51c4251a20733f21",
+    "geometry": {
+      "type": "open-vacuum-switchgear",
+      "confidence": "source-matched",
+      "sourcePages": [
+        27
+      ],
+      "sourceImage": "/catalog-products/cat-kso-2-20.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Сохранён именно открытый разрез со стр. 27: три вакуумных аппарата в раме и высокий правый короб с релейным отсеком. Закрытый фасад по этому разрезу не выдуман. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "open-vacuum-switchgear",
+      "confidence": "source-based",
+      "sourcePages": [
+        27
+      ],
+      "sourceImage": "/catalog-products/cat-kso-2-20.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Сохранён именно открытый разрез со стр. 27: три вакуумных аппарата в раме и высокий правый короб с релейным отсеком. Закрытый фасад по этому разрезу не выдуман."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-kso-2-20.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        27
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-rmu-ae",
+    "name": "Компактное распределительное устройство RMU AE",
+    "designation": "RMU AE 6/10/20 КВ",
+    "cohort": "legacy",
+    "category": "switchgear",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        29,
+        30
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "09147e34e79aa2435112f5559445d960a544cd41f92d4694022435a0746d7971",
+    "geometry": {
+      "type": "rmu-three-cell-lineup",
+      "confidence": "source-matched",
+      "sourcePages": [
+        30
+      ],
+      "sourceImage": "/catalog-products/cat-rmu-ae.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Три соседние ячейки с верхними шкафчиками, средней зоной органов управления и нижними кабельными дверями по вариантам RMU на стр. 30. Значок не передаёт конкретную электрическую схему. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "rmu-three-cell-lineup",
+      "confidence": "source-based",
+      "sourcePages": [
+        30
+      ],
+      "sourceImage": "/catalog-products/cat-rmu-ae.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Три соседние ячейки с верхними шкафчиками, средней зоной органов управления и нижними кабельными дверями по вариантам RMU на стр. 30. Значок не передаёт конкретную электрическую схему."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-rmu-ae.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        30
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-krn-iv",
+    "name": "Комплектное распределительное устройство наружной установки КРН-IV",
+    "designation": "КРН-IV-6(10)кВ",
+    "cohort": "legacy",
+    "category": "switchgear",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        31
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "48f32693d524618bff09b0acf0797b4ba5ffdcbf762dd503ed9a015599c64215",
+    "geometry": {
+      "type": "outdoor-roof-input-switchgear",
+      "confidence": "source-matched",
+      "sourcePages": [
+        31
+      ],
+      "sourceImage": "/catalog-products/cat-krn-iv.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Двухъярусная наружная камера с верхними изоляторами, кровлей и боковым объёмом по двум проекциям КРН-IV на стр. 31. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "outdoor-roof-input-switchgear",
+      "confidence": "source-based",
+      "sourcePages": [
+        31
+      ],
+      "sourceImage": "/catalog-products/cat-krn-iv.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Двухъярусная наружная камера с верхними изоляторами, кровлей и боковым объёмом по двум проекциям КРН-IV на стр. 31."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-krn-iv.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        31
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-grsh-04",
+    "name": "Главный распределительный щит серии ГРЩ-0,4кВ",
+    "designation": "ГРЩ-0,4кВ",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        32
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "66b883b776690d755bb13cb9a1472f18b9487a60f1fc8424ed307f8d71b3a143",
+    "geometry": {
+      "type": null,
+      "confidence": "unverified",
+      "sourcePages": [
+        32
+      ],
+      "sourceImage": null,
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "unverified",
+      "reason": "На странице приведены характеристики, но проверенного изображения конструкции нет."
+    },
+    "icon": {
+      "type": "main-distribution-lineup",
+      "confidence": "typical",
+      "sourcePages": [
+        32
+      ],
+      "sourceImage": null,
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": true,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "approximate-generic",
+      "reason": "Типовой символ ряда напольных распределительных панелей. На стр. 32 есть описание и размеры ГРЩ, но нет изображения: число шкафов, дверей и приборов конкретного щита не подтверждено."
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": null,
+      "representation": null,
+      "sourceId": null,
+      "physicalPages": []
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-shcho-70",
+    "name": "Панели распределительные серии ЩО-70",
+    "designation": "ЩО-70",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        33
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "fa74fded9bb28ffb7d7e676b7ad3bf86a478a46a7a2d3681ef6548aac9fe8f80",
+    "geometry": {
+      "type": "distribution-cabinet",
+      "confidence": "source-matched",
+      "sourcePages": [
+        33
+      ],
+      "sourceImage": "/catalog-products/cat-shcho-70.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "Высокая распределительная панель с верхним рядом приборов, одной дверью и нижней коммутационной зоной."
+    },
+    "icon": {
+      "type": "distribution-cabinet",
+      "confidence": "source-based",
+      "sourcePages": [
+        33
+      ],
+      "sourceImage": "/catalog-products/cat-shcho-70.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "Высокая распределительная панель с верхним рядом приборов, одной дверью и нижней коммутационной зоной. Значок передаёт общий внешний контур семейства, не точное исполнение."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-shcho-70.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        33
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-shnn",
+    "name": "Шкаф низкого напряжения ШНН",
+    "designation": "ШНН",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "family",
+    "sourceRecordType": "catalog-family",
+    "familyId": null,
+    "sourceFamilyId": null,
+    "variantIds": [
+      "cat-shnn-v001",
+      "cat-shnn-v002",
+      "cat-shnn-v003",
+      "cat-shnn-v004",
+      "cat-shnn-v005",
+      "cat-shnn-v006",
+      "cat-shnn-v007",
+      "cat-shnn-v008",
+      "cat-shnn-v009",
+      "cat-shnn-v010",
+      "cat-shnn-v011",
+      "cat-shnn-v012",
+      "cat-shnn-v013",
+      "cat-shnn-v014",
+      "cat-shnn-v015",
+      "cat-shnn-v016",
+      "cat-shnn-v017",
+      "cat-shnn-v018"
+    ],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        34,
+        35
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "536126ed6afd459c58268f7c8c0a43e416f756e891e0d899ea57b50944847ca2",
+    "geometry": {
+      "type": "open-sided-distribution-panel",
+      "confidence": "source-matched",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-topology",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-based-mapping",
+      "reason": "По левому примеру на стр. 35 показана приборная лицевая панель в открытой боковой раме. На той же странице есть другая линейная панель; один фасад не наследуется всем вводным, секционным и линейным обозначениям. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "open-sided-distribution-panel",
+      "confidence": "source-based",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": true,
+      "genericApproximation": false,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "source-based-mapping",
+      "reason": "По левому примеру на стр. 35 показана приборная лицевая панель в открытой боковой раме. На той же странице есть другая линейная панель; один фасад не наследуется всем вводным, секционным и линейным обозначениям."
+    },
+    "geometryUnavailable": false,
+    "iconUnavailable": false,
+    "iconOnly": false,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-shnn.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        35
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-shnn-v001",
+    "name": "ШНН-В-10-У3",
+    "designation": "ШНН-В-10-У3",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-shnn",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        34,
+        35
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "01a0b8f42e8ad2db631a3067b8c2dba533081cee98b926281f4e555af6018105",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-only",
+      "reason": "По левому примеру на стр. 35 показана приборная лицевая панель в открытой боковой раме. На той же странице есть другая линейная панель; один фасад не наследуется всем вводным, секционным и линейным обозначениям. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "open-sided-distribution-panel",
+      "confidence": "typical",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": true,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "approximate-generic",
+      "reason": "Условный силуэт панели с автоматическим выключателем по левому примеру на стр. 35. Рисунок не связан однозначно с конкретным вводным или секционным обозначением; фасад исполнения не подтверждён."
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-shnn.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        35
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-shnn-v002",
+    "name": "ШНН-В-16-У3",
+    "designation": "ШНН-В-16-У3",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-shnn",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        34,
+        35
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "b7014d411fcf42d7056ca29e40eb001ab7454107f84583a53f232e79f1d663fc",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-only",
+      "reason": "По левому примеру на стр. 35 показана приборная лицевая панель в открытой боковой раме. На той же странице есть другая линейная панель; один фасад не наследуется всем вводным, секционным и линейным обозначениям. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "open-sided-distribution-panel",
+      "confidence": "typical",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": true,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "approximate-generic",
+      "reason": "Условный силуэт панели с автоматическим выключателем по левому примеру на стр. 35. Рисунок не связан однозначно с конкретным вводным или секционным обозначением; фасад исполнения не подтверждён."
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-shnn.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        35
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-shnn-v003",
+    "name": "ШНН-В-20-У3",
+    "designation": "ШНН-В-20-У3",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-shnn",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        34,
+        35
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "3d8e26199a9281d228c223e3562b09b61c4be31ce8f03d94d85d22ac1e27b573",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-only",
+      "reason": "По левому примеру на стр. 35 показана приборная лицевая панель в открытой боковой раме. На той же странице есть другая линейная панель; один фасад не наследуется всем вводным, секционным и линейным обозначениям. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "open-sided-distribution-panel",
+      "confidence": "typical",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": true,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "approximate-generic",
+      "reason": "Условный силуэт панели с автоматическим выключателем по левому примеру на стр. 35. Рисунок не связан однозначно с конкретным вводным или секционным обозначением; фасад исполнения не подтверждён."
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-shnn.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        35
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-shnn-v004",
+    "name": "ШНН-В-25-У3",
+    "designation": "ШНН-В-25-У3",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-shnn",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        34,
+        35
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "23039235c0cdabdf91a77a3bbaa82ac6904cf6cbf4027b2ccfb34d8d8e183c8b",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-only",
+      "reason": "По левому примеру на стр. 35 показана приборная лицевая панель в открытой боковой раме. На той же странице есть другая линейная панель; один фасад не наследуется всем вводным, секционным и линейным обозначениям. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "open-sided-distribution-panel",
+      "confidence": "typical",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": true,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "approximate-generic",
+      "reason": "Условный силуэт панели с автоматическим выключателем по левому примеру на стр. 35. Рисунок не связан однозначно с конкретным вводным или секционным обозначением; фасад исполнения не подтверждён."
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-shnn.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        35
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-shnn-v005",
+    "name": "ШНН-В-32-У3",
+    "designation": "ШНН-В-32-У3",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-shnn",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        34,
+        35
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "a3d02e3e4196b54863808dd1b09833c0eb482a690a53ee89d840621dc1d8b025",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-only",
+      "reason": "По левому примеру на стр. 35 показана приборная лицевая панель в открытой боковой раме. На той же странице есть другая линейная панель; один фасад не наследуется всем вводным, секционным и линейным обозначениям. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "open-sided-distribution-panel",
+      "confidence": "typical",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": true,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "approximate-generic",
+      "reason": "Условный силуэт панели с автоматическим выключателем по левому примеру на стр. 35. Рисунок не связан однозначно с конкретным вводным или секционным обозначением; фасад исполнения не подтверждён."
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-shnn.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        35
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-shnn-v006",
+    "name": "ШНН-В-40-У3",
+    "designation": "ШНН-В-40-У3",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-shnn",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        34,
+        35
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "db92982d34753e6ecc736ccdfe25fa3e61177ee4e4c4f7d06f0b6149670dd8c5",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-only",
+      "reason": "По левому примеру на стр. 35 показана приборная лицевая панель в открытой боковой раме. На той же странице есть другая линейная панель; один фасад не наследуется всем вводным, секционным и линейным обозначениям. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "open-sided-distribution-panel",
+      "confidence": "typical",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": true,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "approximate-generic",
+      "reason": "Условный силуэт панели с автоматическим выключателем по левому примеру на стр. 35. Рисунок не связан однозначно с конкретным вводным или секционным обозначением; фасад исполнения не подтверждён."
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-shnn.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        35
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-shnn-v007",
+    "name": "ШНН-В-50-У3",
+    "designation": "ШНН-В-50-У3",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-shnn",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        34,
+        35
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "08ae13e22093221abf1e1477ee20d93f01fca39beeebd34253b31f81dce7fb5e",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-only",
+      "reason": "По левому примеру на стр. 35 показана приборная лицевая панель в открытой боковой раме. На той же странице есть другая линейная панель; один фасад не наследуется всем вводным, секционным и линейным обозначениям. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "open-sided-distribution-panel",
+      "confidence": "typical",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": true,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "approximate-generic",
+      "reason": "Условный силуэт панели с автоматическим выключателем по левому примеру на стр. 35. Рисунок не связан однозначно с конкретным вводным или секционным обозначением; фасад исполнения не подтверждён."
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-shnn.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        35
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-shnn-v008",
+    "name": "ШНН-С-10-У3",
+    "designation": "ШНН-С-10-У3",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-shnn",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        34,
+        35
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "b6c17445807e526ec9a48407a31be47f4a3eaa86f5b1e4831aefae98635e2455",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-only",
+      "reason": "По левому примеру на стр. 35 показана приборная лицевая панель в открытой боковой раме. На той же странице есть другая линейная панель; один фасад не наследуется всем вводным, секционным и линейным обозначениям. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "open-sided-distribution-panel",
+      "confidence": "typical",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": true,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "approximate-generic",
+      "reason": "Условный силуэт панели с автоматическим выключателем по левому примеру на стр. 35. Рисунок не связан однозначно с конкретным вводным или секционным обозначением; фасад исполнения не подтверждён."
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-shnn.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        35
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-shnn-v009",
+    "name": "ШНН-С-16-У3",
+    "designation": "ШНН-С-16-У3",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-shnn",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        34,
+        35
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "73b81680305c6ff4304e30fe9d131e6ff6f524244d54c8dc5a07acf382f06abb",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-only",
+      "reason": "По левому примеру на стр. 35 показана приборная лицевая панель в открытой боковой раме. На той же странице есть другая линейная панель; один фасад не наследуется всем вводным, секционным и линейным обозначениям. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "open-sided-distribution-panel",
+      "confidence": "typical",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": true,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "approximate-generic",
+      "reason": "Условный силуэт панели с автоматическим выключателем по левому примеру на стр. 35. Рисунок не связан однозначно с конкретным вводным или секционным обозначением; фасад исполнения не подтверждён."
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-shnn.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        35
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-shnn-v010",
+    "name": "ШНН-С-20-У3",
+    "designation": "ШНН-С-20-У3",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-shnn",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        34,
+        35
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "41092632c68c5b93d166cf86bdc74cb2d4071ccd65de4fe9ea117e427b20a29b",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-only",
+      "reason": "По левому примеру на стр. 35 показана приборная лицевая панель в открытой боковой раме. На той же странице есть другая линейная панель; один фасад не наследуется всем вводным, секционным и линейным обозначениям. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "open-sided-distribution-panel",
+      "confidence": "typical",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": true,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "approximate-generic",
+      "reason": "Условный силуэт панели с автоматическим выключателем по левому примеру на стр. 35. Рисунок не связан однозначно с конкретным вводным или секционным обозначением; фасад исполнения не подтверждён."
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-shnn.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        35
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-shnn-v011",
+    "name": "ШНН-С-25-У3",
+    "designation": "ШНН-С-25-У3",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-shnn",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        34,
+        35
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "18605d81277a0a4b480c6f96a867b59b877d8cc0461d254188e64cfe3cd44823",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-only",
+      "reason": "По левому примеру на стр. 35 показана приборная лицевая панель в открытой боковой раме. На той же странице есть другая линейная панель; один фасад не наследуется всем вводным, секционным и линейным обозначениям. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "open-sided-distribution-panel",
+      "confidence": "typical",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": true,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "approximate-generic",
+      "reason": "Условный силуэт панели с автоматическим выключателем по левому примеру на стр. 35. Рисунок не связан однозначно с конкретным вводным или секционным обозначением; фасад исполнения не подтверждён."
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-shnn.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        35
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-shnn-v012",
+    "name": "ШНН-С-32-У3",
+    "designation": "ШНН-С-32-У3",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-shnn",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        34,
+        35
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "e7f8d9d2add39a8d96e2f1c7ef17672714d70a936d678fda720a6f5dfe6d9294",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-only",
+      "reason": "По левому примеру на стр. 35 показана приборная лицевая панель в открытой боковой раме. На той же странице есть другая линейная панель; один фасад не наследуется всем вводным, секционным и линейным обозначениям. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "open-sided-distribution-panel",
+      "confidence": "typical",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": true,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "approximate-generic",
+      "reason": "Условный силуэт панели с автоматическим выключателем по левому примеру на стр. 35. Рисунок не связан однозначно с конкретным вводным или секционным обозначением; фасад исполнения не подтверждён."
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-shnn.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        35
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-shnn-v013",
+    "name": "ШНН-С-40-У3",
+    "designation": "ШНН-С-40-У3",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-shnn",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        34,
+        35
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "fc0ac74e824f6ad89bd4ddfeb8ecdf1af3f478232669fc283fff6381a9404daf",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-only",
+      "reason": "По левому примеру на стр. 35 показана приборная лицевая панель в открытой боковой раме. На той же странице есть другая линейная панель; один фасад не наследуется всем вводным, секционным и линейным обозначениям. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "open-sided-distribution-panel",
+      "confidence": "typical",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": true,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "approximate-generic",
+      "reason": "Условный силуэт панели с автоматическим выключателем по левому примеру на стр. 35. Рисунок не связан однозначно с конкретным вводным или секционным обозначением; фасад исполнения не подтверждён."
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-shnn.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        35
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-shnn-v014",
+    "name": "ШНН-С-50-У3",
+    "designation": "ШНН-С-50-У3",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-shnn",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        34,
+        35
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "721af409289f565167c77d333eb9c841a35681abfd10ff46f20e3a41d5baf263",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-only",
+      "reason": "По левому примеру на стр. 35 показана приборная лицевая панель в открытой боковой раме. На той же странице есть другая линейная панель; один фасад не наследуется всем вводным, секционным и линейным обозначениям. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "open-sided-distribution-panel",
+      "confidence": "typical",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": true,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "approximate-generic",
+      "reason": "Условный силуэт панели с автоматическим выключателем по левому примеру на стр. 35. Рисунок не связан однозначно с конкретным вводным или секционным обозначением; фасад исполнения не подтверждён."
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-shnn.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        35
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-shnn-v015",
+    "name": "ШНН-Л-06-У3",
+    "designation": "ШНН-Л-06-У3",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-shnn",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        34,
+        35
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "453410ff16a0deaf7902946290b5a09a546ce38084577d9e5494071b9e404a73",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-only",
+      "reason": "По левому примеру на стр. 35 показана приборная лицевая панель в открытой боковой раме. На той же странице есть другая линейная панель; один фасад не наследуется всем вводным, секционным и линейным обозначениям. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "open-sided-feeder-panel",
+      "confidence": "typical",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": true,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "approximate-generic",
+      "reason": "Условный силуэт линейной панели по правому примеру с отходящими линиями на стр. 35. Этот пример не подписан конкретным обозначением ШНН-Л; число приборов и линий данного исполнения не утверждается."
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-shnn.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        35
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-shnn-v016",
+    "name": "ШНН-Л-08-У3",
+    "designation": "ШНН-Л-08-У3",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-shnn",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        34,
+        35
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "3395fc2bdf7ceb57908221b5b20f668fec1c559b23e1ee8a041abcce8d9fa530",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-only",
+      "reason": "По левому примеру на стр. 35 показана приборная лицевая панель в открытой боковой раме. На той же странице есть другая линейная панель; один фасад не наследуется всем вводным, секционным и линейным обозначениям. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "open-sided-feeder-panel",
+      "confidence": "typical",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": true,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "approximate-generic",
+      "reason": "Условный силуэт линейной панели по правому примеру с отходящими линиями на стр. 35. Этот пример не подписан конкретным обозначением ШНН-Л; число приборов и линий данного исполнения не утверждается."
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-shnn.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        35
+      ]
+    },
+    "proposalEvidence": null
+  },
+  {
+    "id": "cat-shnn-v017",
+    "name": "ШНН-Л-10-У3",
+    "designation": "ШНН-Л-10-У3",
+    "cohort": "legacy",
+    "category": "cabinets",
+    "productKind": null,
+    "role": "variant",
+    "sourceRecordType": "catalog-listed-variant",
+    "familyId": "cat-shnn",
+    "sourceFamilyId": null,
+    "variantIds": [],
+    "source": {
+      "id": "substations",
+      "fileId": "1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr",
+      "sha256": "5cc9f57bf3ed16be6f168c0fff25f02a444675146919bfd277b7e722e640cefc",
+      "url": "https://drive.google.com/file/d/1qMKtgoDWWIjVhAwbrRd8YORKhIpSKazr/view",
+      "physicalPages": [
+        34,
+        35
+      ],
+      "sourceRow": null
+    },
+    "recordSha256": "82b76c17f9754fb2df426dc3f26cccb7a8c91689d677f3bf1db69dc256f4de0f",
+    "geometry": {
+      "type": null,
+      "confidence": "source-only",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": false,
+      "representation": "no-approved-construction",
+      "dimensionAccurate": false,
+      "exactProductModel": false,
+      "status": "source-only",
+      "reason": "По левому примеру на стр. 35 показана приборная лицевая панель в открытой боковой раме. На той же странице есть другая линейная панель; один фасад не наследуется всем вводным, секционным и линейным обозначениям. Иллюстративная геометрия по видимой конструкции; не CAD и не модель конкретного исполнения."
+    },
+    "icon": {
+      "type": "open-sided-feeder-panel",
+      "confidence": "typical",
+      "sourcePages": [
+        35
+      ],
+      "sourceImage": "/catalog-products/cat-shnn.webp",
+      "approval": null,
+      "legacyEvidence": "docs/catalog-3d-source-coverage/coverage.json",
+      "sourceSpecific": false,
+      "genericApproximation": true,
+      "representation": "illustrative-icon",
+      "dimensionAccurate": false,
+      "exactProductIcon": false,
+      "status": "approximate-generic",
+      "reason": "Условный силуэт линейной панели по правому примеру с отходящими линиями на стр. 35. Этот пример не подписан конкретным обозначением ШНН-Л; число приборов и линий данного исполнения не утверждается."
+    },
+    "geometryUnavailable": true,
+    "iconUnavailable": false,
+    "iconOnly": true,
+    "sourceOnly": false,
+    "displayMedia": {
+      "path": "/catalog-products/cat-shnn.webp",
+      "representation": "crop",
+      "sourceId": "substations",
+      "physicalPages": [
+        35
+      ]
+    },
+    "proposalEvidence": null
+  }
+]
