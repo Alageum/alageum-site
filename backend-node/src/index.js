@@ -13,7 +13,8 @@ const signingModule = require("./domain/document-signing");
 const signingSchema = require("./domain/document-signing-schema");
 const quoteModule = require("./domain/quotes");
 const quoteSchema = require("./domain/quote-schema");
-const { createQuoteRateLimiter } = require("./domain/quote-rate-limit");
+const { createDistributedRateLimiter } = require("./domain/distributed-rate-limit");
+const { createCmsAdmission } = require("./domain/cms-admission");
 const auditModule = require("./domain/audit");
 const organizationProfileModule = require("./domain/organization-profile");
 const organizationMembersModule = require("./domain/organization-members");
@@ -61,6 +62,7 @@ module.exports = {
     await pageEditorial.completePageSchema(strapi);
     await federatedSchema.ensureSchema(db);
     await registrationSchema.ensureSchema(db);
+    const cmsAdmission = createCmsAdmission({ db, config });
     const browserSessions = createBrowserSessions({ db, config, audit: auditModule.audit });
     const federated = federatedModule.createFederatedAuth({ db, config, audit: auditModule.audit, browserSessions });
     const auth = authModule.createAuth({
@@ -80,7 +82,7 @@ module.exports = {
     });
     // One policy instance for quote creation; a future generic adapter must use
     // this same bucket. No external quota override or reset surface is exposed.
-    const quoteCreateLimit = createQuoteRateLimiter();
+    const quoteCreateLimit = createDistributedRateLimiter({ db, secret: config.jwtSecret, policy: "quote-create", limit: 10, code: "rate_limit_exceeded", message: "Too many requests" });
     const cmsCatalog = createCatalog({
       db,
       authorizer: createCmsCatalogAuthorizer({ strapi }),
@@ -94,7 +96,7 @@ module.exports = {
     const documents = documentsModule.createDocuments({ db, auth, audit: auditModule.audit });
     const signing = signingModule.createDocumentSigning({ db, auth, audit: auditModule.audit, enabled: config.documentSigningEnabled });
     const system = systemModule.createSystem({ db, metrics: strapi.alageumMetrics, environment: config.env });
-    strapi.alageum = { auth, federated, browserSessions, registration, catalog, catalogFilters, quotes, quoteCreateLimit, cmsCatalog, organizationProfile, organizationMembers, support, orders, invoices, documents, signing, system };
+    strapi.alageum = { auth, federated, browserSessions, cmsAdmission, registration, catalog, catalogFilters, quotes, quoteCreateLimit, cmsCatalog, organizationProfile, organizationMembers, support, orders, invoices, documents, signing, system };
     if (config.importCatalog)
       strapi.log.info(
         "Reviewed catalog import: " +

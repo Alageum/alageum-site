@@ -1,3 +1,4 @@
+import { stubRenderBoundaries } from './helpers/render-boundaries.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
@@ -119,7 +120,7 @@ async function component(relative, name, bindings) {
   if (!compiled.has(relative)) {
     const file = new URL(`../components/catalog/${relative}.js`, import.meta.url);
     const source = (await readFile(file, 'utf8')).replace(/^import .+;\r?$/gm, '').replace(/^export \{ default as ProductIcon \} from '.+';\r?$/gm, '');
-    compiled.set(relative, (await transform(source, { filename: file.pathname,
+    compiled.set(relative, (await transform(stubRenderBoundaries(source), { filename: file.pathname,
       jsc: { parser: { syntax: 'ecmascript', jsx: true }, transform: { react: { runtime: 'automatic' } } }, module: { type: 'commonjs' } })).code);
   }
   return new Function('bindings', 'require', 'exports', `const { ${Object.keys(bindings).join(', ')} } = bindings;\n${compiled.get(relative)}\nreturn ${name};`)(bindings, require, {});
@@ -129,6 +130,8 @@ async function component(relative, name, bindings) {
 // verifies server-rendered routing; browser layout/hydration remains untested here.
 async function render(id, { api = false, selected = '', rows = api ? live : records, failed = false } = {}) {
   const bindings = { ...data, ...presentation, ...grouping, ...sources, useState, Link,
+    LocalResourceAnchor: props => createElement('a', props), DesignSelect: props => createElement('select', props),
+    ProductPhotograph: () => null, RelatedProducts: () => null, ProductThumbnail: () => null,
     Image: props => createElement('img', props), ProductIcon: () => null, EquipmentModel: () => null,
     getEquipmentVisual, getEquipmentIcon, getEquipmentConstructionChoices, getEquipmentConstructionChoice,
     getProtectionExampleEvidence, getProductMedia, getFamilyTechnicalDocument, equipmentModelName,
@@ -145,6 +148,7 @@ async function render(id, { api = false, selected = '', rows = api ? live : reco
   bindings.CatalogSourceContext = await component('source-context/CatalogSourceContext', 'CatalogSourceContext', bindings);
   bindings.ProductVisual = await component('ProductVisual', 'ProductVisual', bindings);
   bindings.FamilyProductVisual = await component('FamilyProductVisual', 'FamilyProductVisual', { ...bindings, useState: () => [selected, () => {}] });
+  bindings.ProductPhotoVisual = await component('ProductPhotoVisual', 'ProductPhotoVisual', bindings);
   bindings.LiveProductDetails = await component('LiveCatalog', 'LiveProductDetails', { ...bindings, useState: initial => [initial?.status === 'loading' ? { status: 'ready', items: rows, error: '' } : initial, () => {}] });
   const Details = await component('ProductDetails', 'ProductDetails', bindings);
   return renderToStaticMarkup(createElement(Details, { id }));

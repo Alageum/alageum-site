@@ -68,6 +68,10 @@ PGPASSWORD="$PG_PASSWORD" "$PG_BIN/createdb" -h 127.0.0.1 -p "$PG_PORT" -U alage
 export ALAGEUM_REGISTRATION_TEST_DATABASE_URL="postgresql://alageum_node_test:$PG_PASSWORD@127.0.0.1:$PG_PORT/alageum_registration_test"
 PGPASSWORD="$PG_PASSWORD" "$PG_BIN/createdb" -h 127.0.0.1 -p "$PG_PORT" -U alageum_node_test alageum_registration_browser_test
 export ALAGEUM_REGISTRATION_BROWSER_TEST_DATABASE_URL="postgresql://alageum_node_test:$PG_PASSWORD@127.0.0.1:$PG_PORT/alageum_registration_browser_test"
+PGPASSWORD="$PG_PASSWORD" "$PG_BIN/createdb" -h 127.0.0.1 -p "$PG_PORT" -U alageum_node_test alageum_rate_limit_test
+export ALAGEUM_RATE_LIMIT_TEST_DATABASE_URL="postgresql://alageum_node_test:$PG_PASSWORD@127.0.0.1:$PG_PORT/alageum_rate_limit_test"
+PGPASSWORD="$PG_PASSWORD" "$PG_BIN/createdb" -h 127.0.0.1 -p "$PG_PORT" -U alageum_node_test alageum_registration_mail_test
+export ALAGEUM_REGISTRATION_MAIL_TEST_DATABASE_URL="postgresql://alageum_node_test:$PG_PASSWORD@127.0.0.1:$PG_PORT/alageum_registration_mail_test"
 export APP_ENV=test HOST=127.0.0.1 ALAGEUM_SEED_DEMO=1 ALAGEUM_IMPORT_CATALOG=1
 export ALAGEUM_TEST_ADMIN_FIXTURES=1
 export STRAPI_TELEMETRY_DISABLED=true STRAPI_HIDE_UPDATE_MESSAGE=true NEXT_TELEMETRY_DISABLED=1
@@ -92,6 +96,7 @@ if [[ "$MODE" != --integration-only ]]; then
   npm run check 2>&1 | tee "$WORK/backend-check.log"
 fi
 npm run test:integration 2>&1 | tee "$WORK/backend-integration.log"
+bash scripts/run-registration-mail-tests.sh 2>&1 | tee "$WORK/registration-mail.log"
 [[ "$MODE" != --integration-only ]] || exit 0
 HOME="$WORK/home" NODE_ENV=production npm run build 2>&1 | tee "$WORK/backend-build.log"
 [[ "$MODE" != --backend-only ]] || exit 0

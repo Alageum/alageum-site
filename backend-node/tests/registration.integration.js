@@ -200,9 +200,9 @@ test("real PostgreSQL registration, single-use tokens, concurrency, tenancy and 
   await t.test("blocked IPs cannot allocate new email buckets after their quota", async () => {
     const limit = createRegistrationRateLimiter({ db, secret: config.jwtSecret }), context = ctx(); context.req.socket.remoteAddress = "127.0.0.88";
     for (let i = 0; i < 20; i++) await limit(context, "mail", `quota-${i}@example.test`);
-    const before = Number((await table(db, "registration_rate_buckets").count("* AS total").first()).total);
+    const before = Number((await table(db, "rate_limit_buckets").count("* AS total").first()).total);
     for (let i = 0; i < 10; i++) await assert.rejects(limit(context, "mail", `blocked-${i}@example.test`), errorCode("rate_limited"));
-    const after = Number((await table(db, "registration_rate_buckets").count("* AS total").first()).total);
+    const after = Number((await table(db, "rate_limit_buckets").count("* AS total").first()).total);
     assert.equal(after, before);
   });
   await t.test("audit has no passwords, email tokens or plaintext email delivery payloads", async () => {

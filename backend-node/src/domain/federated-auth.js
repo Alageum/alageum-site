@@ -2,7 +2,8 @@
 const { createHash, randomBytes, randomUUID, timingSafeEqual } = require("node:crypto");
 const { AppError } = require("./errors");
 const { createGoogleOidc } = require("./google-oidc");
-const { createRateLimiter } = require("./rate-limit");
+const { createDistributedRateLimiter } = require("./distributed-rate-limit");
+const { clientAddress } = require("./client-address");
 const { createBrowserSessions, browserSettings } = require("./browser-sessions");
 const table = (db, name) => db.withSchema("b2b").table(name);
 const hash = value => createHash("sha256").update(value).digest("hex");
@@ -28,7 +29,7 @@ function settings(config) {
 function createFederatedAuth({ db, config, audit, google, now = Date.now, browserSessions }) {
   const setup = settings(config);
   const provider = setup && (google || createGoogleOidc({ clientId: config.googleClientId, clientSecret: config.googleClientSecret, redirectUri: setup.redirectUri }));
-  const limit = createRateLimiter({ limit: 20, now });
+  const limit = setup ? createDistributedRateLimiter({ db, secret: config.jwtSecret, policy: "auth-entry", limit: 20 }) : null;
   const browser = browserSessions || createBrowserSessions({ db, config, audit, now });
   const browserService = browser;
   const { sessionCookie, attemptCookie, headers, cookie, sameOrigin } = browser;
@@ -39,7 +40,7 @@ function createFederatedAuth({ db, config, audit, google, now = Date.now, browse
   }
   async function prepare(ctx) { unavailable(); return browser.prepare(ctx); }
   async function start(ctx) {
-    headers(ctx); unavailable(); sameOrigin(ctx); limit(ctx.ip || "unknown");
+    headers(ctx); unavailable(); sameOrigin(ctx); await limit(clientAddress(ctx), ctx);
     const body = ctx.request.body;
     if (!body || typeof body !== "object" || Array.isArray(body) || Object.keys(body).some(key => !["next", "flow_id"].includes(key)) || typeof body.flow_id !== "string" || !UUID.test(body.flow_id)) throw new AppError("validation_error", "Invalid sign-in request", 422);
     const priorBrowser = ctx.cookies.get(attemptCookie, { signed: false });
@@ -48,8 +49,7 @@ function createFederatedAuth({ db, config, audit, google, now = Date.now, browse
     const state = random(), nonce = random(), verifier = random();
     // Cleanup is outside the flow transaction: every mutation locks the browser
     // row before attempt/session rows, preventing an expiry-cleanup lock inversion.
-    await table(db, "federated_attempts").where("expires_at", "<=", new Date(now())).delete();
-    await table(db, "federated_browsers").where("expires_at", "<=", new Date(now())).delete();
+    await browserService.cleanupExpired();
     await db.transaction(async tx => {
       const flow = await table(tx, "federated_browsers").where({ browser_hash: hash(browser), flow_id: body.flow_id }).forUpdate().first();
       if (!flow || new Date(flow.expires_at).getTime() <= now()) throw invalid();
@@ -62,7 +62,7 @@ function createFederatedAuth({ db, config, audit, google, now = Date.now, browse
     ctx.body = { authorization_url: provider.authorization({ state, nonce, challenge: createHash("sha256").update(verifier).digest("base64url") }) };
   }
   async function callback(ctx) {
-    headers(ctx); unavailable(); limit(ctx.ip || "unknown");
+    headers(ctx); unavailable(); await limit(clientAddress(ctx), ctx);
     let destination = "/b2b";
     try {
       const state = ctx.query.state, browser = ctx.cookies.get(attemptCookie, { signed: false });
@@ -84,8 +84,8 @@ function createFederatedAuth({ db, config, audit, google, now = Date.now, browse
       const raw = random(), sessionId = randomUUID();
       await db.transaction(async tx => {
         // Serialize account creation, including the same email on two subjects.
-        // This is bounded development code; distributed signup limits remain a
-        // production gate. Never use an email match to attach an identity.
+        // Distributed admission is charged before this transaction. Never use
+        // an email match to attach an identity.
         const latest = await table(tx, "federated_browsers").where({ browser_hash: hash(browser), state_hash: hash(state) }).forUpdate().first();
         if (!latest || new Date(latest.expires_at).getTime() <= now()) throw invalid();
         await table(tx, "federated_browsers").where({ browser_hash: hash(browser) }).update({ state_hash: null });

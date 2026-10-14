@@ -1,6 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { officialProducts } from '../lib/catalog/data.js';
+import { officialProducts as presentedProducts } from '../lib/catalog/data.js';
+// The current static editorial overlay is not an API contract (README_HANDOFF).
+// Keep this source-fact parity audit on the unmodified imported records.
+const officialProducts = presentedProducts.map(({ catalogEditorial, ...record }) => { void catalogEditorial; return record; });
 import { normalizeApiProduct } from '../lib/catalog/apiData.js';
 import { getCatalogSpecSummary, facetValues } from '../lib/catalog/grouping.js';
 import { importedProductId } from '../../scripts/catalog/measurement-column-asset-snapshot.mjs';
@@ -12,7 +15,7 @@ const dto = row => ({ id: importedProductId(row.id), public_key: row.id, sku: ro
 const live = officialProducts.map(row => normalizeApiProduct(dto(row)));
 const originalLive = live.map(row => { const prior = { ...row }; delete prior.variantSpecs; delete prior.sourceVariantSpecs; return prior; });
 
-test('all843 imported API summaries and facets match source-specific static values, with exactly the23 independently audited current corrections', () => {
+test('all843 raw imported API summaries and facets match source-specific static values, with exactly the23 independently audited current corrections', () => {
   const differences = [], facetDifferences = [];
   for (let index = 0; index < officialProducts.length; index++) {
     const source = officialProducts[index], row = live[index], prior = originalLive[index];
@@ -54,4 +57,22 @@ test('owner-provided changes and cleared variant fields remain live and do not r
     const row = normalizeApiProduct({ ...dto(source), specs: { ...source, variantSpecs } });
     assert.deepEqual(row.variantSpecs, []); assert.equal(row.sourceVariantSpecs, variantSpecs);
   }
+});
+
+
+test('current static VRU editorial wording stays separate from raw/API source wording and preserves its evidence', () => {
+  const presented = presentedProducts.find(row => row.id === 'cat-vru');
+  const raw = officialProducts.find(row => row.id === presented.id);
+  const api = normalizeApiProduct(dto(raw));
+  const before = JSON.stringify([presented, raw, api]);
+  const voltage = (row, rows) => getCatalogSpecSummary(row, rows).find(spec => spec.key === 'voltage');
+  const display = voltage(presented, presentedProducts), source = voltage(raw, officialProducts), live = voltage(api, [api]);
+  assert.equal(display.value, '380/220 В; главных цепей 400 В');
+  assert.deepEqual(display.values, [display.value]);
+  assert.equal(source.value, '380/220 В; номинальное напряжение главных цепей 400 В');
+  assert.deepEqual(live, source);
+  assert.deepEqual(display.sourceRows, source.sourceRows);
+  assert.equal(display.unit, source.unit);
+  assert.deepEqual(presented.technicalSpecs, raw.technicalSpecs);
+  assert.equal(JSON.stringify([presented, raw, api]), before);
 });

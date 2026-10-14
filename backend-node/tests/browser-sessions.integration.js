@@ -12,9 +12,10 @@ const { createFederatedAuth } = require("../src/domain/federated-auth");
 
 const config = { env: "test", googleEnabled: false, browserOrigin: "http://localhost:3000",
   jwtSecret: "isolated-browser-session-test-secret-32-plus", jwtIssuer: "test", jwtAudience: "test" };
+let fixtureClient = 0;
 function ctx({ jar = new Map(), method = "POST", body = {}, query = {}, boundary = "", origin = config.browserOrigin } = {}) {
   const headers = { origin, "x-browser-session": boundary }, responseHeaders = {}, writes = [];
-  return { jar, method, request: { body }, query, headers, responseHeaders, writes, state: {}, ip: randomUUID(),
+  return { jar, method, request: { body }, query, headers, responseHeaders, writes, state: {}, req: { socket: { remoteAddress: `192.0.2.${++fixtureClient}` } }, ip: "ignored-untrusted-ip",
     get: name => headers[name.toLowerCase()] || "", set: (name, value) => { responseHeaders[name] = value; },
     cookies: { get: name => jar.get(name), set: (name, value, options) => { writes.push({ name, value, options }); if (value === null) jar.delete(name); else jar.set(name, value); } } };
 }
@@ -49,6 +50,25 @@ test("real PostgreSQL password cookies, CSRF, cancellation, revocation and stale
     await auth.browserLogin(c); return c;
   }
   let jar = new Map(), signed;
+
+  await t.test("password-only preparation prunes expired bindings and caps new allocation without evicting live browsers", async () => {
+    const before = Number((await table("federated_browsers").count({ count: "*" }).first()).count);
+    const bounded = createBrowserSessions({ db, config, audit: auditModule.audit, maxBindings: before + 1 });
+    const jars = [new Map(), new Map()];
+    const otherReplica = createBrowserSessions({ db, config, audit: auditModule.audit, maxBindings: before + 1 });
+    const outcomes = await Promise.allSettled([prepare(jars[0], bounded), prepare(jars[1], otherReplica)]);
+    assert.equal(outcomes.filter(result => result.status === "fulfilled").length, 1);
+    assert.equal(outcomes.filter(result => result.status === "rejected" && result.reason.code === "rate_limited").length, 1);
+    const first = jars[outcomes.findIndex(result => result.status === "fulfilled")], next = jars[outcomes.findIndex(result => result.status === "rejected")];
+    assert.equal(next.size, 0);
+    await prepare(first, bounded);
+    assert.equal(Number((await table("federated_browsers").count({ count: "*" }).first()).count), before + 1);
+    const expiredHash = createHash("sha256").update(first.get("alageum_dev_google")).digest("hex");
+    await table("federated_browsers").where({ browser_hash: expiredHash }).update({ expires_at: new Date(0) });
+    await prepare(next, bounded);
+    assert.equal(await table("federated_browsers").where({ browser_hash: expiredHash }).first(), undefined);
+    assert.equal(Number((await table("federated_browsers").count({ count: "*" }).first()).count), before + 1);
+  });
 
   await t.test("password login works with Google disabled, emits no bearer pair, and grants no membership", async () => {
     const availability = ctx({ method: "GET" }); provider.providers(availability); assert.equal(availability.body.google.available, false);

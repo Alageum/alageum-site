@@ -12,7 +12,9 @@ const digest = value => createHash('sha256').update(JSON.stringify(value)).diges
 
 test('separate API browser fixtures retain actual importer records, UUID guards, raw dimensions and units', () => {
   assert.equal(fixture.format, 'ptmm-importer-public-dtos-v1');
-  assert.equal(fixture.sourceRecordsSha256, digest(officialProducts));
+  // Historical importer evidence binds raw fields, not the later static-only editorial namespace.
+  const rawRecords = officialProducts.map(({ catalogEditorial, ...record }) => { void catalogEditorial; return record; });
+  assert.equal(fixture.sourceRecordsSha256, digest(rawRecords));
   assert.equal(fixture.productionDatabase, false);
   assert.deepEqual(fixture.rows.map(row => row.public_key), ['cat-ptm-tded-v001', ...ptmmIds]);
   for (const dto of fixture.rows) {
@@ -64,13 +66,26 @@ test('qualification browser configuration owns separate output, sixteen cases an
   assert.match(spec, /page\.goBack\(\)/); assert.match(spec, /malformedPtmmDto/); assert.match(spec, /differences\.check\(\)/);
 });
 
-test('PR40 workflow stays an exact prefix and the qualification job owns bounded complete evidence', async () => {
-  const archive = JSON.parse(await readFile(new URL('../../docs/catalog-transformers-2026/review/ptmm-dimension-qualification/historical-test-bytes.json', import.meta.url)));
+test('current workflow preserves prior jobs except the explicit current-source reference migration and owns bounded PTMM evidence', async () => {
+  const archiveBytes = await readFile(new URL('../../docs/catalog-transformers-2026/review/ptmm-dimension-qualification/historical-test-bytes.json', import.meta.url));
+  assert.equal(createHash('sha256').update(archiveBytes).digest('hex'), 'f656ca40a032c2819c0677826e60abc2781ef8fdb9ce6df68ef85d7e27483117');
+  const archive = JSON.parse(archiveBytes);
   assert.equal(archive.baseCommit, '27e143efa1e0cbe850887a6807b17ea29a2877da');
   const before = archive.files['.github/workflows/ci.yml'].text;
+  assert.equal(createHash('sha256').update(before).digest('hex'), archive.files['.github/workflows/ci.yml'].sha256);
   const after = await readFile(new URL('../../.github/workflows/ci.yml', import.meta.url), 'utf8');
-  assert.ok(after.startsWith(before), 'No prior job, artifact, receipt or budget may change');
-  const added = after.slice(before.length);
+  // This is a current workflow contract, not a new historical approval. The
+  // immutable amendment gates still check their original reviewed source pins.
+  // Only the separately proved sanitized-source query/throttle invocation may
+  // differ; every other prior job, artifact, receipt and budget stays exact.
+  const oldQuery = '      - name: Reproduce frozen FastAPI query reference vectors\n        run: python ../backend-node/tests/reference/generate_legacy_query.py --check\n';
+  const currentQuery = '      - name: Reproduce current sanitized-source query and throttle behavior against archived vectors\n        run: python ../backend-node/tests/reference/verify_current_legacy.py --check\n';
+  const oldThrottle = '      - name: Reproduce frozen quote-create limiter reference vectors\n        run: python ../backend-node/tests/reference/generate_legacy_quote_limit.py --check\n';
+  for (const step of [oldQuery, oldThrottle]) assert.equal(before.split(step).length, 2);
+  const boundary = after.indexOf('\n  ptmm-qualification-browser:');
+  assert.ok(boundary > 0);
+  assert.equal(after.slice(0, boundary).trimEnd(), before.replace(oldQuery, currentQuery).replace(oldThrottle, '').trimEnd());
+  const added = after.slice(boundary);
   assert.deepEqual(added.match(/^  [a-z0-9-]+:$/gm), ['  ptmm-qualification-browser:']);
   assert.match(before, /transformer-source-browser:[\s\S]*?timeout-minutes: 25/);
   assert.match(before, /Verify new source assets and old catalog regressions on desktop and mobile\n        timeout-minutes: 18/);

@@ -1,3 +1,4 @@
+import { stubRenderBoundaries } from './helpers/render-boundaries.mjs';
 import { protectionExampleRuntimeManifest } from '../lib/catalog/models/protectionExampleRuntime.js';
 import { sourceAssetCompletionManifest } from '../lib/catalog/models/sourceAssetCompletion.js';
 import assert from 'node:assert/strict';
@@ -51,7 +52,7 @@ async function renderVisual(product) {
       .replace("'@/lib/catalog/media'", JSON.stringify(new URL('../lib/catalog/media.js', import.meta.url).href));
     const { transform, loadBindings } = require('next/dist/build/swc');
     await loadBindings();
-    const compiled = await transform(source, { filename: file.pathname, jsc: { parser: { syntax: 'ecmascript', jsx: true }, transform: { react: { runtime: 'automatic' } } }, module: { type: 'es6' } });
+    const compiled = await transform(stubRenderBoundaries(source), { filename: file.pathname, jsc: { parser: { syntax: 'ecmascript', jsx: true }, transform: { react: { runtime: 'automatic' } } }, module: { type: 'es6' } });
     const code = compiled.code.replaceAll('"react/jsx-runtime"', JSON.stringify(pathToFileURL(require.resolve('react/jsx-runtime')).href));
     visualComponent = (await import(`data:text/javascript;base64,${Buffer.from(code).toString('base64')}`)).default;
   }

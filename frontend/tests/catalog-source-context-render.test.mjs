@@ -1,3 +1,4 @@
+import { stubRenderBoundaries } from './helpers/render-boundaries.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
@@ -18,7 +19,7 @@ export async function sourceContextComponent() {
     .replace("import styles from './CatalogSourceContext.module.css';", 'const styles = new Proxy({}, { get: (_, name) => name });');
   const { transform, loadBindings } = require('next/dist/build/swc');
   await loadBindings();
-  const compiled = await transform(source, { filename: file.pathname, jsc: { parser: { syntax: 'ecmascript', jsx: true }, transform: { react: { runtime: 'automatic' } } }, module: { type: 'es6' } });
+  const compiled = await transform(stubRenderBoundaries(source), { filename: file.pathname, jsc: { parser: { syntax: 'ecmascript', jsx: true }, transform: { react: { runtime: 'automatic' } } }, module: { type: 'es6' } });
   const code = compiled.code.replaceAll('"react/jsx-runtime"', JSON.stringify(pathToFileURL(require.resolve('react/jsx-runtime')).href));
   component = (await import(`data:text/javascript;base64,${Buffer.from(code).toString('base64')}`)).default;
   return component;

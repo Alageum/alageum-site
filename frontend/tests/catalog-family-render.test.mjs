@@ -1,3 +1,4 @@
+import { stubRenderBoundaries } from './helpers/render-boundaries.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
@@ -20,7 +21,7 @@ async function harness() {
   for (const name of ['familyPresentation', 'presentation', 'grouping', 'sources']) source = source.replace(`'@/lib/catalog/${name}'`, JSON.stringify(new URL(`../lib/catalog/${name}.js`, import.meta.url).href));
   const { transform, loadBindings } = require('next/dist/build/swc');
   await loadBindings();
-  const compiled = await transform(source, { filename: file.pathname, jsc: { parser: { syntax: 'ecmascript', jsx: true }, transform: { react: { runtime: 'automatic' } } }, module: { type: 'es6' } });
+  const compiled = await transform(stubRenderBoundaries(source), { filename: file.pathname, jsc: { parser: { syntax: 'ecmascript', jsx: true }, transform: { react: { runtime: 'automatic' } } }, module: { type: 'es6' } });
   const code = compiled.code.replaceAll('"react/jsx-runtime"', JSON.stringify(pathToFileURL(require.resolve('react/jsx-runtime')).href));
   loaded = await import(`data:text/javascript;base64,${Buffer.from(code).toString('base64')}`);
   return loaded;

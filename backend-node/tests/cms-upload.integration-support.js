@@ -6,6 +6,7 @@ const { createHash, randomBytes } = require("node:crypto");
 const { Readable } = require("node:stream");
 const { createUploadQuiescence } = require("./helpers/upload-quiescence");
 const { png, svg, assertSolidImage } = require("./helpers/upload-image-fixtures");
+const { scannerFixture, EICAR } = require("./helpers/media-scanner-fixture");
 const DATABASES = new Set(["alageum_strapi_ci", "alageum_strapi_test", "alageum_strapi_cms_test", "alageum_strapi_browser_test"]);
 const deferred = () => { let resolve; const promise = new Promise(yes => { resolve = yes; }); return { promise, resolve }; };
 
@@ -36,6 +37,10 @@ async function snapshotFiles(root) {
 
 async function runCmsUploadTests(t, app, { base, editor, denied, businessToken, fixtures }) {
   const database = validateUploadEnvironment(process.env, app);
+  const scanner = await scannerFixture(t);
+  const mediaConfig = app.config.get("media-security");
+  const oldScanner = mediaConfig.scanner, oldQuarantine = mediaConfig.quarantineRoot;
+  mediaConfig.scanner = scanner.config.scanner; mediaConfig.quarantineRoot = scanner.config.quarantineRoot;
   assert.equal((await app.db.connection.raw("SELECT current_database() AS database")).rows[0].database, database);
   const plugin = app.plugin("upload"), upload = plugin.service("upload"), provider = plugin.service("provider");
   const files = app.db.query("plugin::upload.file"), root = path.join(app.dirs.static.public, "uploads");
@@ -117,6 +122,8 @@ async function runCmsUploadTests(t, app, { base, editor, denied, businessToken, 
       assert.deepEqual(await permissions.findMany({ where: { role: { id: fixtures.roles.editor } }, orderBy: { id: "asc" } }), permissionBefore);
       t.signal.removeEventListener("abort", releaseAll);
       assert.deepEqual(guard.detachedErrors, [], "No detached native event subscriber may fail silently");
+      assert.deepEqual(await fs.readdir(mediaConfig.quarantineRoot), [], "All request and admission quarantine files removed");
+      mediaConfig.scanner = oldScanner; mediaConfig.quarantineRoot = oldQuarantine;
     })();
     return cleanupPromise;
   }
@@ -148,7 +155,9 @@ async function runCmsUploadTests(t, app, { base, editor, denied, businessToken, 
       await guard.drain(); assert.deepEqual(await files.findMany(), rows); assert.deepEqual(await snapshotFiles(root), bytes);
     });
     await t.test("native HTTP PNG upload persists and serves completely decoded original and responsive images", async () => {
+      const scansBefore = scanner.scanned.length;
       const [file] = await json(await send([raster]), 201);
+      assert.equal(scanner.scanned.length - scansBefore, 12, "Raw/canonical input and original plus four variants each scanned before persistence");
       assert.equal(file.mime, "image/png"); assert.equal(file.width, 1200); assert.equal(file.height, 600);
       assert.ok(await files.findOne({ where: { id: file.id } }));
       assert.deepEqual(Object.keys(file.formats).sort(), ["large", "medium", "small", "thumbnail"]);
@@ -157,12 +166,38 @@ async function runCmsUploadTests(t, app, { base, editor, denied, businessToken, 
         await assertSolidImage(Buffer.from(await response.arrayBuffer()), output.width, output.height);
       }
     });
-    await t.test("native safe SVG upload keeps exact bytes and decoded pixels without raster variants", async () => {
-      const bytes = svg(); const [file] = await json(await send([{ name: "safe.svg", bytes, mime: "image/svg+xml" }]), 201);
-      assert.equal(file.mime, "image/svg+xml"); assert.equal(file.width, 120); assert.equal(file.height, 60);
-      assert.ok(!file.formats || Object.keys(file.formats).length === 0);
-      const served = Buffer.from(await (await fetch(`${base}${file.url}`)).arrayBuffer());
-      assert.deepEqual(served, bytes); await assertSolidImage(served, 120, 60);
+    await t.test("binary replacement preserves original, all variants and database rows even with scanner failure", async () => {
+      const rows = await files.findMany(), bytes = await snapshotFiles(root);
+      const old = rows.find(file => file.name === `${prefix}_red.png`); assert.ok(old);
+      const scansBefore = scanner.scanned.length;
+      for (const scannerDown of [false, true]) {
+        if (scannerDown) scanner.setResponder(() => "stream: scanner failure ERROR\0");
+        try {
+          const response = await fetch(`${base}/upload/files/${old.id}/replace`, {
+            method: "POST", headers: { ...guard.ticket(), Authorization: `Bearer ${editor}` }, body: body([raster]),
+          });
+          const result = await json(response, 409); assert.equal(result.error.details.code, "media_replace_disabled");
+          await guard.drain(); assert.deepEqual(await files.findMany(), rows); assert.deepEqual(await snapshotFiles(root), bytes);
+        } finally { scanner.setResponder(bytes => bytes.includes(EICAR) ? "stream: Eicar-Test-Signature FOUND\0" : "stream: OK\0"); }
+      }
+      assert.equal(scanner.scanned.length, scansBefore, "Replacement refusal precedes scanner and all writes");
+    });
+    await t.test("native SVG, HTML and PDF uploads are refused without touching public storage", async () => {
+      const rows = await files.findMany(), bytes = await snapshotFiles(root);
+      for (const item of [ { name: "safe.svg", bytes: svg(), mime: "image/svg+xml" },
+        { name: "page.html", bytes: Buffer.from("<html>blocked</html>"), mime: "text/html" },
+        { name: "catalog.pdf", bytes: Buffer.from("%PDF-1.7\nblocked"), mime: "application/pdf" } ]) {
+        const response = await send([item]); assert.equal(response.status, 400, await response.text());
+      }
+      await guard.drain(); assert.deepEqual(await files.findMany(), rows); assert.deepEqual(await snapshotFiles(root), bytes);
+    });
+    await t.test("native scanner rejects harmless EICAR fixture and scanner outage before writes", async () => {
+      const rows = await files.findMany(), bytes = await snapshotFiles(root);
+      await json(await send([{ name: "eicar.png", bytes: Buffer.concat([png(5, 5), EICAR]), mime: "image/png" }]), 400);
+      scanner.setResponder(() => "stream: scanner failure ERROR\0");
+      try { await json(await send([raster]), 503); }
+      finally { scanner.setResponder(bytes => bytes.includes(EICAR) ? "stream: Eicar-Test-Signature FOUND\0" : "stream: OK\0"); }
+      await guard.drain(); assert.deepEqual(await files.findMany(), rows); assert.deepEqual(await snapshotFiles(root), bytes);
     });
     await t.test("native malformed image upload rejects without persisted rows or provider files", async () => {
       const rows = await files.findMany(), bytes = await snapshotFiles(root);
@@ -174,51 +209,28 @@ async function runCmsUploadTests(t, app, { base, editor, denied, businessToken, 
       const entered = deferred(), release = deferred(); releaseGates.add(release.resolve);
       hook = async function (file, original) { entered.resolve(); await release.promise; return original.call(this, file); };
       const controller = new AbortController();
-      const response = send([{ name: "aborted.txt", bytes: Buffer.from("owned abort fixture"), mime: "text/plain" }], editor, { signal: controller.signal });
+      const response = send([{ name: "aborted.png", bytes: png(5, 5), mime: "image/png" }], editor, { signal: controller.signal });
       response.catch(() => {});
       try {
         await entered.promise; controller.abort(); await assert.rejects(response, { name: "AbortError" });
         assert.ok(guard.pending > 0); release.resolve(); await guard.drain();
-        assert.ok((await files.findMany()).some(file => file.name === `${prefix}_aborted.txt`));
+        assert.ok((await files.findMany()).some(file => file.name === `${prefix}_aborted.png`));
       } finally { release.resolve(); hook = null; releaseGates.delete(release.resolve); await guard.drain(); }
     });
-    await t.test("fail-fast multipart response leaves late provider work tracked until real file and row persistence finish", async () => {
-      const entered = deferred(), release = deferred(); releaseGates.add(release.resolve);
-      const metricEntered = deferred(), releaseMetric = deferred(), rowEntered = deferred(), releaseRow = deferred();
-      releaseGates.add(releaseMetric.resolve); releaseGates.add(releaseRow.resolve);
-      metricHook = async function (args, original) {
-        if (args[0] === "didSaveMediaWithCaption") { metricEntered.resolve(); await releaseMetric.promise; }
-        return Reflect.apply(original, this, args);
-      };
-      createHook = async function (args, original) {
-        if (args[0]?.data?.name === `${prefix}_late.txt`) { rowEntered.resolve(); await releaseRow.promise; }
-        return Reflect.apply(original, this, args);
-      };
+    await t.test("serial multipart persistence stops before later siblings after provider failure", async () => {
+      const rows = await files.findMany(), bytes = await snapshotFiles(root); let lateStarted = false;
       hook = async function (file, original) {
-        if (file.name.endsWith("_fail.txt")) { await entered.promise; throw new Error("owned upload failure regression"); }
-        const bytes = await fs.readFile(file.filepath); entered.resolve(); await release.promise;
-        file.getStream = () => Readable.from(bytes); return original.call(this, file);
+        if (file.name.endsWith("_fail.png")) throw new Error("owned upload failure regression");
+        lateStarted = true; return original.call(this, file);
       };
       try {
         const response = await send([
-          { name: "fail.txt", bytes: Buffer.from("owned fail-fast fixture"), mime: "text/plain" },
-          { name: "late.txt", bytes: Buffer.from("owned late sibling fixture"), mime: "text/plain", caption: "Owned delayed persistence fixture" },
+          { name: "fail.png", bytes: png(5, 5), mime: "image/png" },
+          { name: "late.png", bytes: png(5, 5), mime: "image/png" },
         ]);
-        assert.equal(response.status, 500, await response.text()); assert.ok(guard.pending > 0);
-        let drained = false; const draining = guard.drain().then(() => { drained = true; });
-        release.resolve(); await metricEntered.promise; await new Promise(resolve => setImmediate(resolve));
-        assert.equal(drained, false, "Late native metrics remain owned after fail-fast response");
-        releaseMetric.resolve(); await rowEntered.promise; await new Promise(resolve => setImmediate(resolve));
-        assert.equal(drained, false, "Late native FILE create remains owned after provider and metrics settle");
-        releaseRow.resolve(); await draining;
-        assert.ok((await files.findMany()).some(file => file.name === `${prefix}_late.txt`));
-        assert.ok(!(await files.findMany()).some(file => file.name === `${prefix}_fail.txt`));
-      } finally {
-        release.resolve(); releaseMetric.resolve(); releaseRow.resolve();
-        hook = null; metricHook = null; createHook = null;
-        for (const resolve of [release.resolve, releaseMetric.resolve, releaseRow.resolve]) releaseGates.delete(resolve);
-        await guard.drain();
-      }
+        assert.equal(response.status, 500, await response.text()); await guard.drain();
+        assert.equal(lateStarted, false); assert.deepEqual(await files.findMany(), rows); assert.deepEqual(await snapshotFiles(root), bytes);
+      } finally { hook = null; await guard.drain(); }
     });
   } finally { await cleanup(); }
 }

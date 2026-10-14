@@ -12,9 +12,10 @@ const { createGoogleOidc, JWKS_URL } = require("../src/domain/google-oidc");
 const logger = require("../src/middlewares/safe-request-logger");
 const config = { env: "test", googleEnabled: true, browserOrigin: "http://localhost:3000", googleClientId: "local-client.apps.googleusercontent.com", googleClientSecret: "local-only-test-secret", jwtSecret: "local-only-unit-secret-at-least-32-chars", jwtIssuer: "local", jwtAudience: "local" };
 const hash = value => createHash("sha256").update(value).digest("hex");
-function ctx({ jar = new Map(), body = {}, query = {}, method = "GET", boundary = "", origin = config.browserOrigin, ip = randomUUID() } = {}) {
+let fixtureClient = 0;
+function ctx({ jar = new Map(), body = {}, query = {}, method = "GET", boundary = "", origin = config.browserOrigin, ip = `192.0.2.${++fixtureClient}` } = {}) {
   const headers = { origin, "x-browser-session": boundary }, responseHeaders = {}, writes = [];
-  return { jar, writes, responseHeaders, request: { body }, query, method, state: {}, ip, headers,
+  return { jar, writes, responseHeaders, request: { body }, query, method, state: {}, ip, req: { socket: { remoteAddress: ip } }, headers,
     get: key => headers[key.toLowerCase()] || "", set: (key, value) => { responseHeaders[key] = value; },
     cookies: { get: name => jar.get(name), set: (name, value, options) => { writes.push({ name, value, options }); if (value === null) jar.delete(name); else jar.set(name, value); } },
     redirect(url) { this.location = url; this.status = 302; } };

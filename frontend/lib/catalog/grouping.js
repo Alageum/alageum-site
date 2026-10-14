@@ -71,11 +71,13 @@ export function categoryDisplayRows(category) {
 export function equipmentTypeFor(product = {}) {
   const family = product.familyProduct || product;
   const id = family.familyId || family.id || '';
-  const text = [displayProductName(family), displayFamilyName(family), family.series, family.subtype, family.installation].join(' ').toLocaleLowerCase('ru');
+  // Short editorial labels must not erase source evidence of the equipment type.
+  const text = [displayProductName(family), displayFamilyName(family), family.name, family.familyName, family.series, family.subtype, family.installation].join(' ').toLocaleLowerCase('ru');
   if (family.productKind === 'reactor' || family.category === 'reactors') return 'reactor';
   if (family.category === 'accessories') return 'transformer-accessory';
   if (family.category === 'transformers') {
-    if (/нтми|измерительн/.test(text)) return 'instrument-transformer';
+    const documentedInstrumentFamily = family.sourceId === 'transformers-2026' && ['zom', 'znom'].includes(family.sourceFamilyId);
+    if (documentedInstrumentFamily || /нтми|измерительн/.test(text)) return 'instrument-transformer';
     const documentedDryFamily = family.sourceId === 'transformers-2026' && ['ts-low-voltage', 'tsi-tools', 'tsn-nomex'].includes(family.sourceFamilyId);
     return documentedDryFamily || family.cooling === 'Сухое' || /сухой|сухие|тсл/.test(text) ? 'dry-transformer' : 'oil-transformer';
   }

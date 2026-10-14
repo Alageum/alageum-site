@@ -101,3 +101,8 @@ Combined cookie flow test:
 In environments with per-command network isolation, start PostgreSQL and invoke the tests within the same command environment. The test database must be new on each run; optional `_suffix` names are supported for these two registration suites.
 
 Independent review also covered logged-out account/session loops and newer same-route token links in the frontend. The backend regression suite deterministically blocks both concurrent manager decisions after their authorization locks, then releases them together; existing memberships are rejected without reciprocal row-lock deadlock. Operator bootstrap audit identifies the target account as metadata, never as the unverified actor of the local CLI.
+
+
+### Mail operations update, 14 October 2026
+
+See [registration mail and operator operations](registration-mail-operations.md) for the complete environment template, safe no-network configuration check, explicitly requested SMTP connection probe and local certificate-verified SMTP proof. The outbox now fences lease ownership, enforces the five-attempt ceiling after worker crashes, renews live leases, validates recipients/links and suppresses expired tokens. A local operator helper validates exact boolean apply flags and nonempty company details before any database access. These changes do not establish external email deliverability or permit a real access grant.

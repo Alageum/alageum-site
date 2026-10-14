@@ -1,7 +1,9 @@
+import { expectAutomaticModel, holdAutomaticModelImport } from './helpers/equipment-model.js';
 import { expect, test } from "@playwright/test";
 import catalogRelease from "../../backend-node/data/catalog-release.json" with { type: "json" };
 import measurementColumnReview from "../../docs/catalog-transformers-2026/review/measurement-column-completion/prototype-independent-review.json" with { type: "json" };
 import { expectCatalogViewport, expectReceivesPointer } from "./helpers/catalog-viewport";
+import { catalogFacet, catalogFacetOption, openCatalogFacet, setCatalogFacet } from './helpers/catalog-filters.js';
 
 const selectionKey = "alageum.catalog.selection.v1";
 const catalogRows = (page) => page.getByRole("region", { name: "Таблица оборудования, прокрутка по горизонтали" }).locator("tbody tr");
@@ -82,10 +84,12 @@ test("demo catalog opens without backend requests and shares the site shell", as
   const apiRequests = [];
   page.on("request", (request) => { if (/\/api\/v1\//.test(request.url())) apiRequests.push(request.url()); });
   await page.goto("/catalog?source=demo");
-  await expect(page.getByRole("heading", { level: 1 })).toHaveText(/Найдите оборудование\s*по параметрам/);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Каталог оборудования");
   await expect(page.getByText("Демонстрационный каталог", { exact: true })).toBeVisible();
   await expect(foundCount(page)).toHaveText("Найдено: 9");
-  await expect(catalogRows(page)).toHaveCount(6);
+  await expect(catalogRows(page)).toHaveCount(9);
+  await expect(page.getByLabel("Позиций на странице", { exact: true })).toHaveValue("12");
+  await expect(page.getByRole("button", { name: "Следующая страница", exact: true })).toBeDisabled();
   await expectShell(page);
   expect(apiRequests).toEqual([]);
 });
@@ -112,32 +116,51 @@ test("category and parameter filters survive reload and back-forward navigation"
   const filters = await openFilters(page);
   await filters.getByRole("button", { name: /^Трансформаторы/ }).click();
   await expect(foundCount(page)).toHaveText("Найдено: 5");
-  await filters.getByLabel("Охлаждение", { exact: true }).selectOption("Сухое");
+  const cooling = await openCatalogFacet(page, "Охлаждение");
+  await catalogFacetOption(cooling, "Сухое").check();
+  await expect(foundCount(page)).toHaveText("Найдено: 5");
+  await cooling.getByRole("button", { name: "Применить", exact: true }).click();
   await expect(foundCount(page)).toHaveText("Найдено: 2");
-  await filters.getByLabel("Мощность, кВА", { exact: true }).selectOption("1600");
+  await setCatalogFacet(page, "Мощность, кВА", ["1600"]);
   await expect(foundCount(page)).toHaveText("Найдено: 1");
-  await expect(page).toHaveURL(/power=1600/);
+  await expect(page).toHaveURL(url => url.searchParams.get("f_power") === '["1600"]');
   await page.goBack();
   await expect(foundCount(page)).toHaveText("Найдено: 2");
   await page.goForward();
   await expect(foundCount(page)).toHaveText("Найдено: 1");
   await page.reload();
   await expect(foundCount(page)).toHaveText("Найдено: 1");
+  await expect(catalogFacetOption(await openCatalogFacet(page, "Мощность, кВА"), "1600")).toBeChecked();
+  await page.keyboard.press("Escape");
+  await expect(catalogFacet(page, "Мощность, кВА")).not.toHaveAttribute("open");
   await expect(page.getByRole("link", { name: "Демо · сухой трансформатор 1600", exact: true })).toBeVisible();
   await page.getByRole("button", { name: "Сбросить все", exact: true }).click();
   await expect(foundCount(page)).toHaveText("Найдено: 9");
 });
 
-test("pagination and sorting update results without losing the catalog", async ({ page }) => {
-  await page.goto("/catalog?source=demo");
+test("pagination, page size and sorting update results without losing the catalog", async ({ page }) => {
+  await page.goto("/catalog?category=reactors");
+  await expect(foundCount(page)).toHaveText("Найдено: 24");
+  await expect(catalogRows(page)).toHaveCount(12);
+  await expect(page.getByRole("button", { name: "Предыдущая страница", exact: true })).toBeDisabled();
   await page.getByRole("button", { name: "Следующая страница", exact: true }).click();
   await expect(page).toHaveURL(/page=2/);
-  await expect(catalogRows(page)).toHaveCount(3);
+  await expect(catalogRows(page)).toHaveCount(12);
   await expect(page.getByRole("button", { name: "Следующая страница", exact: true })).toBeDisabled();
   await page.getByLabel("Сортировка", { exact: true }).selectOption("power-asc");
   await expect(page).toHaveURL(/sort=power-asc/);
   await expect(page).not.toHaveURL(/page=2/);
-  await expect(catalogRows(page)).toHaveCount(6);
+  await expect(catalogRows(page)).toHaveCount(12);
+  await page.getByLabel("Позиций на странице", { exact: true }).selectOption("24");
+  await expect(page).toHaveURL(/pageSize=24/);
+  await expect(catalogRows(page)).toHaveCount(24);
+  await expect(page.getByRole("button", { name: "Следующая страница", exact: true })).toBeDisabled();
+  await page.reload();
+  await expect(page.getByLabel("Позиций на странице", { exact: true })).toHaveValue("24");
+  await expect(catalogRows(page)).toHaveCount(24);
+  await page.goto("/catalog?source=demo");
+  await page.getByLabel("Сортировка", { exact: true }).selectOption("power-asc");
+  await expect(catalogRows(page)).toHaveCount(9);
   await expect(catalogRows(page).first().getByRole("cell").nth(2)).toHaveText("630");
   await page.getByLabel("Сортировка", { exact: true }).selectOption("power-desc");
   await expect(catalogRows(page).first().getByRole("cell").nth(2)).toHaveText("1600");
@@ -305,7 +328,7 @@ test("shared navigation closes after Escape and a route change", async ({ page, 
   await expectCatalogViewport(page);
   await expectReceivesPointer(isMobile
     ? page.getByRole("button", { name: "Открыть навигацию", exact: true })
-    : page.locator('.site-nav-link[href="/company"]'));
+    : page.getByRole("navigation", { name: "Основная навигация", exact: true }).getByRole("link", { name: "Продукция", exact: true }));
   await page.goto("/catalog?source=demo");
   await expectCatalogViewport(page);
   const header = page.getByRole("banner");
@@ -315,11 +338,11 @@ test("shared navigation closes after Escape and a route change", async ({ page, 
     await page.keyboard.press("Escape");
     await expect(header.getByRole("button", { name: "Открыть навигацию", exact: true })).toHaveAttribute("aria-expanded", "false");
     await header.getByRole("button", { name: "Открыть навигацию", exact: true }).click();
-    await header.getByRole("navigation", { name: "Мобильная навигация", exact: true }).getByRole("link", { name: "Компания", exact: true }).click();
-    await expect(page).toHaveURL(/\/company$/);
+    await header.getByRole("navigation", { name: "Мобильная навигация", exact: true }).getByRole("link", { name: "Каталог", exact: true }).click();
+    await expect(page).toHaveURL(/\/catalog\/home$/);
     await expect(header.getByRole("button", { name: "Открыть навигацию", exact: true })).toHaveAttribute("aria-expanded", "false");
   } else {
-    const catalog = header.getByRole("navigation", { name: "Основная навигация", exact: true }).getByRole("link", { name: "Каталог", exact: true });
+    const catalog = header.getByRole("navigation", { name: "Основная навигация", exact: true }).getByRole("link", { name: "Продукция", exact: true });
     await catalog.focus();
     await expect(catalog).toHaveAttribute("aria-expanded", "true");
     await page.keyboard.press("Escape");
@@ -379,14 +402,14 @@ test("comparison retains exact 12 V versus 24 V differences", async ({ page }) =
 test("category navigation preserves individual models and global search", async ({ page }) => {
   await page.goto("/catalog");
   await expect(foundCount(page)).toHaveText(`Найдено: ${catalogRelease.recordCount}`);
-  await expect(page.getByRole("button", { name: `Все товары (${catalogRelease.recordCount})`, exact: true })).toBeVisible();
   const filters = await openFilters(page);
+  await expect(filters.getByRole("button", { name: `Все оборудование ${catalogRelease.recordCount}`, exact: true })).toBeVisible();
   await filters.getByRole("button", { name: /^Трансформаторы/ }).click();
   await expect(foundCount(page)).toHaveText("Найдено: 590");
   await filters.getByRole("button", { name: /^Масляные трансформаторы/ }).click();
   await expect(page).toHaveURL(/equipmentType=oil-transformer/);
-  await expect(catalogRows(page)).toHaveCount(6);
-  await page.getByRole("button", { name: `Все товары (${catalogRelease.recordCount})`, exact: true }).click();
+  await expect(catalogRows(page)).toHaveCount(12);
+  await filters.getByRole("button", { name: `Все оборудование ${catalogRelease.recordCount}`, exact: true }).click();
   await expect(foundCount(page)).toHaveText(`Найдено: ${catalogRelease.recordCount}`);
   await page.getByLabel("Поиск по каталогу").fill("ЯТП-0.25-220-12У3");
   await page.getByLabel("Поиск по каталогу").press("Enter");
@@ -405,8 +428,8 @@ test("category navigation preserves individual models and global search", async 
 
 test("global parameter filters keep exact variant identities", async ({ page }) => {
   await page.goto("/catalog");
-  const filters = await openFilters(page);
-  await filters.getByLabel("Напряжение", { exact: true }).selectOption("220 → 12 В");
+  await setCatalogFacet(page, "Напряжение", ["220 → 12 В"]);
+  await expect(page).toHaveURL(url => url.searchParams.get("f_voltage") === '["220 → 12 В"]');
   await expect(page.locator('tr[data-product-id="cat-yatp-v001"]')).toBeVisible();
   await expect(page).not.toHaveURL(/category=/);
   await page.getByRole("checkbox", { name: "Сравнить ЯТП-0.25-220-12У3", exact: true }).check();
@@ -415,7 +438,7 @@ test("global parameter filters keep exact variant identities", async ({ page }) 
   await expect(page.getByRole("spinbutton", { name: "Количество ЯТП-0.25-220-12У3", exact: true })).toHaveValue("1");
 });
 
-test("shared 3D is on demand and has a no-WebGL fallback", async ({ page }) => {
+test("shared 3D starts automatically and has a no-WebGL fallback", async ({ page }) => {
   await page.addInitScript(() => {
     const original = HTMLCanvasElement.prototype.getContext;
     HTMLCanvasElement.prototype.getContext = function (kind, ...args) {
@@ -426,7 +449,7 @@ test("shared 3D is on demand and has a no-WebGL fallback", async ({ page }) => {
   await page.goto("/catalog/cat-kik");
   await expect(page.locator("canvas")).toHaveCount(0);
   await expect(page.getByText("Иллюстративная 3D-модель типа; не CAD и не чертёж конкретного исполнения", { exact: true })).toBeVisible();
-  await page.getByRole("button", { name: "Открыть 3D-модель", exact: true }).click();
+  // Automatic activation must reach the honest fallback without a click.
   await expect(page.getByText(/3D недоступно в этом браузере/)).toBeVisible();
   await expect(page.locator("canvas")).toHaveCount(0);
   await page.getByRole("button", { name: "Попробовать снова", exact: true }).click();
@@ -453,8 +476,8 @@ test("source-only and unverified products now have readable SVG icons", async ({
 test("catalog rows use only shared vectors and variants carry their own icon", async ({ page }) => {
   await page.goto("/catalog?category=protection");
   const rows = catalogRows(page);
-  await expect(rows).toHaveCount(6);
-  await expect(rows.locator("[data-product-icon] svg")).toHaveCount(6);
+  await expect(rows).toHaveCount(12);
+  await expect(rows.locator("[data-product-icon] svg")).toHaveCount(12);
   await expect(rows.locator(".product-thumb img")).toHaveCount(0);
   await page.goto("/catalog/cat-bktp-modular");
   const variants = page.locator(".variant-grid [data-product-icon]");
@@ -503,8 +526,8 @@ test("transformer source: physical page175 stays in the2026 PDF across repeated 
 test("transformer source: reactors preserve kVAr and document fallback without transformer geometry", async ({ page }) => {
   await page.goto("/catalog?category=reactors");
   await expect(foundCount(page)).toHaveText("Найдено: 24");
-  const filters = await openFilters(page);
-  await expect(filters.getByLabel("Мощность, кВА", { exact: true })).toHaveCount(0);
+  await expect(catalogFacet(page, "Напряжение")).toBeVisible();
+  await expect(catalogFacet(page, "Мощность, кВА")).toHaveCount(0);
   const id="tr2026-family-asia-shunt-reactor-configurations";
   await page.goto(`/catalog/${id}`);
   await expect(page.getByRole("heading", { level: 1 })).toContainText("Шунтирующие реакторы");
@@ -520,23 +543,25 @@ test("transformer source: reactors preserve kVAr and document fallback without t
 
 test("transformer source: exact power filter opens the admitted card and preserves its selection and source", async ({ page }) => {
   await page.goto("/catalog?category=transformers");
-  const filters = await openFilters(page);
-  await filters.getByLabel("Мощность, кВА", { exact: true }).selectOption("16");
-  await expect(page).toHaveURL(/power=16/);
+  await setCatalogFacet(page, "Мощность, кВА", ["16"]);
+  await expect(page).toHaveURL(url => url.searchParams.get("f_power") === '["16"]');
   await page.getByLabel("Поиск по каталогу").fill("alageum-tmg-standard-16");
   await page.getByLabel("Поиск по каталогу").press("Enter");
   await expect(catalogRows(page)).toHaveCount(1);
   const row = page.locator('tr[data-product-id="alageum-tmg-standard-16"]');
-  await expect(row.locator("[data-product-icon]")).toHaveAttribute("data-icon-type", "tr26-corrugated-small");
-  await expect(row.locator("[data-product-icon] svg")).toBeVisible();
+  const photograph = row.locator('[data-product-photograph="distribution-transformers"]');
+  await expect(photograph).toContainText("Продукция КТЗ");
+  await expect(photograph.locator("img")).toHaveAttribute("src", /category-transformers\.webp/);
+  await expectDecodedImage(photograph.locator("img"));
   await page.reload();
   await expect(catalogRows(page)).toHaveCount(1);
   await expectCatalogViewport(page);
-  await row.getByRole("link", { name: "ТМГ-16 (стандартный)", exact: true }).click();
-  await expect(page.getByRole("heading", { level: 1 })).toHaveText("ТМГ-16 (стандартный)");
+  await row.getByRole("link", { name: "ТМГ-16", exact: true }).click();
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("ТМГ-16");
+  await expect(page.locator('.model-type-label [data-product-icon]')).toHaveAttribute("data-icon-type", "tr26-corrugated-small");
+  await expect(page.locator('.model-type-label [data-product-icon] svg')).toBeVisible();
   await expect(page.locator(".summary-specs")).toContainText("16");
-  await expect(page.locator('[data-equipment-model="tr26-corrugated-small"]')).toHaveAttribute("data-model-status", "idle");
-  await expect(page.locator("canvas")).toHaveCount(0);
+  await expectAutomaticModel(page.locator('[data-equipment-model="tr26-corrugated-small"]'));
   await page.getByRole("button", { name: "В подборку ТМГ-16", exact: true }).click();
   await page.getByRole("button", { name: "В подборку ТМГ-16", exact: true }).click();
   await page.getByRole("link", { name: "Открыть подборку →", exact: true }).click();
@@ -549,7 +574,7 @@ test("transformer source: exact power filter opens the admitted card and preserv
   await expect(page).toHaveURL(/source=transformers-2026&page=6/);
   await expectDecodedImage(page.locator(".source-page-image img"));
   await page.goBack();
-  await expect(page.getByRole("heading", { level: 1 })).toHaveText("ТМГ-16 (стандартный)");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("ТМГ-16");
   await expectShell(page);
 });
 
@@ -565,11 +590,9 @@ for (const specimen of [
     page.on("pageerror", error => pageErrors.push(error.message));
     await page.goto(`/catalog/${specimen.id}`);
     const viewer = page.locator(`[data-equipment-model="${specimen.type}"]`);
-    await expect(viewer).toHaveAttribute("data-model-status", "idle");
-    await expect(viewer.locator(`svg[data-equipment-type="${specimen.type}"]`)).toBeVisible();
+    await expectAutomaticModel(viewer);
+    await expect(viewer.locator('canvas')).not.toBeFocused();
     await expect(viewer).toContainText("Иллюстративная 3D-модель типа; не CAD и не чертёж конкретного исполнения");
-    await expect(page.locator("canvas")).toHaveCount(0);
-    await viewer.getByRole("button", { name: "Открыть 3D-модель", exact: true }).click();
     // Deliberately fail if WebGL is unavailable. The separate forced-fallback
     // case verifies graceful degradation, but never substitutes for render QA.
     await expect(viewer).toHaveAttribute("data-model-status", "ready", { timeout: 30_000 });
@@ -592,6 +615,7 @@ for (const specimen of [
     await viewer.getByRole("button", { name: "Сброс", exact: true }).click();
     await viewer.getByRole("button", { name: "Закрыть 3D-модель", exact: true }).click();
     await expect(viewer).toHaveAttribute("data-model-status", "idle");
+    await expect(viewer.locator(`svg[data-equipment-type="${specimen.type}"]`)).toBeVisible();
     await expect(page.locator("canvas")).toHaveCount(0);
     await expect(viewer.getByRole("button", { name: "Открыть 3D-модель", exact: true })).toBeFocused();
     await viewer.getByRole("button", { name: "Открыть 3D-модель", exact: true }).click();
@@ -609,7 +633,7 @@ test("transformer source: shared construction survives family navigation without
   await page.goto("/catalog/alageum-tmg-standard-16");
   const type = "tr26-corrugated-small";
   const viewer = page.locator(`[data-equipment-model="${type}"]`);
-  await viewer.getByRole("button", { name: "Открыть 3D-модель", exact: true }).click();
+  await expectAutomaticModel(viewer);
   await expect(viewer).toHaveAttribute("data-model-status", "ready", { timeout: 30_000 });
   await page.locator(".family-back-link a").click();
   await expect(page).toHaveURL(/\/catalog\/tr2026-family-tmg-standard$/);
@@ -620,17 +644,15 @@ test("transformer source: shared construction survives family navigation without
   const variant = page.locator('.variant-grid a[href="/catalog/alageum-tmg-standard-25"]');
   await expect(variant.locator("[data-product-icon]")).toHaveAttribute("data-icon-type", type);
   await variant.click();
-  await expect(page.getByRole("heading", { level: 1 })).toHaveText("ТМГ-25 (стандартный)");
-  await expect(viewer).toHaveAttribute("data-model-status", "idle");
-  await viewer.getByRole("button", { name: "Открыть 3D-модель", exact: true }).click();
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("ТМГ-25 · 6(10)/0,4 кВ · стандартный");
+  await expectAutomaticModel(viewer);
   await expect(viewer).toHaveAttribute("data-model-status", "ready");
   await canvasEvidence(viewer.locator("canvas"), testInfo, "shared-construction-tmg25");
   await page.goBack();
   await expect(page).toHaveURL(/\/catalog\/tr2026-family-tmg-standard$/);
   await expect(page.locator("canvas")).toHaveCount(0);
   await page.goForward();
-  await expect(viewer).toHaveAttribute("data-model-status", "idle");
-  await expect(page.locator("canvas")).toHaveCount(0);
+  await expectAutomaticModel(viewer);
 });
 
 test("catalog source: independently approved icon-only records keep their source image and no 3D", async ({ page }) => {
@@ -660,7 +682,7 @@ test("transformer source: unavailable WebGL retains the separately approved icon
   });
   await page.goto("/catalog/alageum-tmg-standard-16");
   const viewer = page.locator('[data-equipment-model="tr26-corrugated-small"]');
-  await viewer.getByRole("button", { name: "Открыть 3D-модель", exact: true }).click();
+
   await expect(viewer).toHaveAttribute("data-model-status", "error");
   await expect(viewer).toContainText("Выше показана отдельно проверенная иконка");
   await expect(viewer.locator('svg[data-equipment-type="tr26-corrugated-small"]')).toBeVisible();
@@ -681,14 +703,14 @@ test('catalog completion: family preview requires an explicit child and releases
   await selector.selectOption('alageum-tmg-standard-16');
   await expect(page.locator('[data-selected-member]')).toHaveAttribute('data-selected-member', 'alageum-tmg-standard-16');
   await expect(page.locator('[data-equipment-model]')).toHaveAttribute('data-equipment-model', 'tr26-corrugated-small');
-  await page.getByRole('button', { name: 'Открыть 3D-модель', exact: true }).click();
+  await expectAutomaticModel(page.locator('[data-equipment-model]'));
   await expect(page.locator('[data-equipment-model]')).toHaveAttribute('data-model-status', 'ready');
   await canvasEvidence(page.locator('canvas'), testInfo, 'family-selected-member');
   await selector.selectOption('');
   await expect(page.locator('canvas')).toHaveCount(0);
   await expect(page.locator('[data-equipment-model]')).toHaveCount(0);
   await selector.selectOption('alageum-tmg-standard-25');
-  await expect(page.locator('[data-equipment-model]')).toHaveAttribute('data-model-status', 'idle');
+  await expectAutomaticModel(page.locator('[data-equipment-model]'));
   await expectShell(page);
 });
 
@@ -699,7 +721,7 @@ test('catalog completion: duplicate designations show separate source voltage ev
     await expect(selector.locator('option').filter({ hasText: new RegExp(`ТМПН-160/3.*${voltage} В`) })).toHaveCount(1);
   }
   await selector.selectOption('alageum-2026-tmpn-p62-r4');
-  await expect(page.locator('.family-selected-record')).toContainText('Номинальное напряжение ВН: 1900 В');
+  await expect(page.locator('.family-selected-record .member-evidence-specs')).toContainText('ВН: 1900 В');
   await page.getByRole('link', { name: 'Открыть отдельную карточку →', exact: true }).click();
   await expect(page).toHaveURL(/alageum-2026-tmpn-p62-r4$/);
   await expect(page.locator('.product-summary-text')).toContainText('1900 В');
@@ -732,12 +754,12 @@ test('catalog completion: source construction alternatives never silently defaul
   await selector.selectOption(options[0]);
   await expect(page.locator('[data-construction-choice]')).toHaveAttribute('data-construction-choice', options[0]);
   const firstType = await page.locator('[data-equipment-model]').getAttribute('data-equipment-model');
-  await page.getByRole('button', { name: 'Открыть 3D-модель', exact: true }).click();
+  await expectAutomaticModel(page.locator('[data-equipment-model]'));
   await expect(page.locator('[data-equipment-model]')).toHaveAttribute('data-model-status', 'ready');
   await canvasEvidence(page.locator('canvas'), testInfo, 'selected-construction-alternative');
   await selector.selectOption(options[1]);
-  await expect(page.locator('canvas')).toHaveCount(0);
-  await expect(page.locator('[data-equipment-model]')).toHaveAttribute('data-model-status', 'idle');
+  await expectAutomaticModel(page.locator('[data-equipment-model]'));
+  await expect(page.locator('canvas')).toHaveCount(1);
   await expect(page.locator('[data-equipment-model]')).not.toHaveAttribute('data-equipment-model', firstType);
   await selector.selectOption('');
   await expect(page.locator('[data-equipment-model]')).toHaveCount(0);
@@ -772,7 +794,8 @@ test('identity completion: source comparison keeps dimensions and series context
   await expect(panel).toContainText('Климатические диапазоны и опции не приписываются одному конкретному исполнению');
   await expect(panel.getByRole('button', { name: /В подборку/ })).toHaveCount(0);
   await page.locator('.catalog-related-references a[href="/catalog/alageum-tmg-copper-400"]').click();
-  await expect(page.getByRole('heading', { level: 1 })).toContainText('медными обмотками');
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('ТМГ-400 · 6(10)/0,4 кВ · медные обмотки');
+  await expect(page.locator('.product-summary')).toContainText('Исполнение строки: с медными обмотками');
   await testInfo.attach('tmg400-copper-overview.png', { body: await page.locator('.product-overview').screenshot({ animations: 'disabled' }), contentType: 'image/png' });
   await expect(page.locator('[data-catalog-source-panel]')).toHaveCount(0);
   await expectShell(page);
@@ -782,7 +805,7 @@ test('identity completion: new executions are explicit family members and mixed 
   await page.goto('/catalog/tr2026-family-tsl-loss-a');
   const member = page.getByRole('combobox', { name: 'Запись для просмотра', exact: true });
   await expect(member).toHaveValue('');
-  await expect(member.locator('option[value="alageum-2026-tsl-a-630"]')).toContainText('потерь А');
+  await expect(member.locator('option[value="alageum-2026-tsl-a-630"]')).toHaveText('ТСЛ(З)-630 · потери А');
   await member.selectOption('alageum-2026-tsl-a-630');
   await expect(page.locator('[data-selected-member]')).toHaveAttribute('data-selected-member', 'alageum-2026-tsl-a-630');
   await expect(page.locator('[data-equipment-model]')).toHaveCount(0);
@@ -809,8 +832,8 @@ test('identity completion: dry TS classification and fifteen reactor table rows 
   const labels = page.locator('.catalog-configuration summary');
   await expect(labels).toHaveCount(15);
   expect(new Set(await labels.allTextContents()).size).toBe(15);
-  await expect(labels.first()).toContainText('110 кВ; 25000 кВАр');
-  await expect(labels.last()).toContainText('500 кВ; 180000 кВАр');
+  await expect(labels.first()).toContainText('110 кВ · 25000 кВАр');
+  await expect(labels.last()).toContainText('500 кВ · 180000 кВАр');
   await expect(page.getByRole('combobox', { name: 'Запись для просмотра', exact: true })).toHaveCount(0);
   await expect(page.locator('a[href^="/catalog/alageum-suntiruusij-"]')).toHaveCount(0);
   await expectShell(page);
@@ -844,10 +867,9 @@ test('identity completion: reviewed SHR11 panel renders with its scoped caption 
   test.setTimeout(90_000);
   await page.goto('/catalog/cat-pr-shr11-v002');
   const viewer = page.locator('[data-equipment-model="open-distribution-panel"]');
-  await expect(viewer).toHaveAttribute('data-model-status', 'idle');
+  await expectAutomaticModel(viewer);
   await expect(page.locator('.visual-provenance')).toContainText('На ПР и ПР-11 не распространяется');
   await expect(page.getByRole('link', { name: 'Источник сопоставления ШР11 ↗', exact: true })).toHaveAttribute('href', 'https://alageum.com/ru/katalog/shkafy-upravleniya/shr11');
-  await viewer.getByRole('button', { name: 'Открыть 3D-модель', exact: true }).click();
   await expect(viewer).toHaveAttribute('data-model-status', 'ready', { timeout: 30_000 });
   await canvasEvidence(viewer.locator('canvas'), testInfo, 'reviewed-shr11-panel');
   await viewer.getByRole('button', { name: 'Закрыть 3D-модель', exact: true }).click();
@@ -932,19 +954,18 @@ test('NTMI source preview: explicit 3D, page96 scan and gallery history preserve
   await page.goto('/catalog/alageum-2026-ntmi-6');
   const preview = page.locator('[data-source-preview="alageum-2026-ntmi-6"]');
   const viewer = preview.locator('[data-equipment-model="tr26-instrument-three-triangle"]');
-  await expect(viewer).toHaveAttribute('data-model-status', 'idle');
+  await expectAutomaticModel(viewer);
   await expect(preview).toContainText('18.03.2026, стр. 96');
   await expect(preview).toContainText('не CAD, не размеры и не точная модель исполнения');
   await expect(page.locator('.product-overview [data-equipment-model]')).toHaveAttribute('data-equipment-model', 'instrument-transformer');
   await expect(page.locator('.product-actions a')).toHaveAttribute('href', '/catalog?compare=ntmi-6');
-  await expect(page.locator('canvas')).toHaveCount(0);
-  expect(await page.evaluate(() => window.__ntmiWebglContexts)).toBe(0);
+  await expect(viewer.locator('canvas')).toHaveCount(1);
+  expect(await page.evaluate(() => window.__ntmiWebglContexts)).toBeGreaterThan(0);
   await preview.locator('details summary').click();
   await expectDecodedImage(preview.locator('img'));
   await expect(preview.locator('img')).toHaveAttribute('src', /page-096\.webp/);
-  await testInfo.attach('ntmi6-source-preview-idle.png', { body: await preview.screenshot({ animations: 'disabled' }), contentType: 'image/png' });
+  await testInfo.attach('ntmi6-source-preview-automatic.png', { body: await preview.screenshot({ animations: 'disabled' }), contentType: 'image/png' });
   await preview.locator('details summary').click();
-  await viewer.getByRole('button', { name: 'Открыть 3D-модель', exact: true }).click();
   await expect(viewer).toHaveAttribute('data-model-status', 'ready', { timeout: 30_000 });
   expect(await page.evaluate(() => window.__ntmiWebglContexts)).toBeGreaterThan(0);
   await canvasEvidence(viewer.locator('canvas'), testInfo, 'ntmi6-source-preview-active');
@@ -961,10 +982,9 @@ test('NTMI source preview: explicit 3D, page96 scan and gallery history preserve
   await expect(page.locator('[data-source-preview]')).toHaveCount(0);
   await expectDecodedImage(page.locator('img[src*="page-096.webp"]'));
   await page.goBack();
-  await expect(viewer).toHaveAttribute('data-model-status', 'idle');
-  await expect(viewer.locator('canvas')).toHaveCount(0);
+  await expectAutomaticModel(viewer);
   await page.goto('/catalog/ntmi-10');
-  await expect(page.locator('[data-source-preview="alageum-2026-ntmi-10"] [data-equipment-model]')).toHaveAttribute('data-model-status', 'idle');
+  await expectAutomaticModel(page.locator('[data-source-preview="alageum-2026-ntmi-10"] [data-equipment-model]'));
   await expect(page.locator('[data-source-preview="alageum-2026-ntmi-6"]')).toHaveCount(0);
   await expectShell(page);
 });
@@ -982,14 +1002,13 @@ test('NTMI source preview: exact API records work while reused UUIDs and edited 
   for (const id of ['ntmi-6', 'ntmi-10']) {
     await page.goto(`/catalog/alageum-2026-${id}?source=api`);
     const preview = page.locator(`[data-source-preview="alageum-2026-${id}"]`);
-    await expect(preview.locator('[data-equipment-model]')).toHaveAttribute('data-model-status', 'idle');
+    await expectAutomaticModel(preview.locator('[data-equipment-model]'));
     await expect(preview.getByRole('link')).toHaveAttribute('href', '/catalog/source?source=transformers-2026&page=96');
     await preview.locator('details summary').click();
     await expectDecodedImage(preview.locator('img'));
     await preview.locator('details summary').click();
   }
   const viewer = page.locator('[data-source-preview] [data-equipment-model]');
-  await viewer.getByRole('button', { name: 'Открыть 3D-модель', exact: true }).click();
   await expect(viewer).toHaveAttribute('data-model-status', 'ready', { timeout: 30_000 });
   await canvasEvidence(viewer.locator('canvas'), testInfo, 'ntmi10-api-source-preview');
   records = records.map(record => ({ ...record, id: '10000000-0000-4000-8000-000000000001' }));
@@ -1015,7 +1034,7 @@ test('NTMI source preview: unavailable WebGL retains only the separately reviewe
   });
   await page.goto('/catalog/ntmi-6');
   const preview = page.locator('[data-source-preview]'), viewer = preview.locator('[data-equipment-model]');
-  await viewer.getByRole('button', { name: 'Открыть 3D-модель', exact: true }).click();
+
   await expect(viewer).toHaveAttribute('data-model-status', 'error');
   await expect(viewer).toContainText('Выше показана отдельно проверенная иконка');
   await expect(viewer.locator('canvas')).toHaveCount(0);
@@ -1071,12 +1090,10 @@ for (const specimen of sourceAssetAccessories) for (const mode of ['static', 'ap
     expect(await page.evaluate(() => window.__sourceAssetContexts.created)).toBe(0);
     await page.goto(`/catalog/${specimen.id}${mode === 'api' ? '?source=api' : ''}`);
     const viewer = page.locator(`[data-equipment-model="${specimen.type}"]`);
-    await expect(viewer).toHaveAttribute('data-model-status', 'idle');
-    await expect(viewer.locator(`svg[data-equipment-type="${specimen.type}"]`)).toBeVisible();
+    await expectAutomaticModel(viewer);
     await expect(page.locator('.visual-provenance')).toContainText('Скрытые поверхности условные');
-    await expect(page.locator('canvas')).toHaveCount(0);
-    expect(await page.evaluate(() => window.__sourceAssetContexts.created)).toBe(0);
-    await viewer.getByRole('button', { name: 'Открыть 3D-модель', exact: true }).click();
+    await expect(viewer.locator('canvas')).toHaveCount(1);
+    expect(await page.evaluate(() => window.__sourceAssetContexts.created)).toBe(1);
     await expect(viewer).toHaveAttribute('data-model-status', 'ready', { timeout: 30_000 });
     // The photographed PT100 is a thin cable/probe silhouette, so its required
     // foreground area is lower than a solid tank, while real pixels remain required.
@@ -1090,6 +1107,7 @@ for (const specimen of sourceAssetAccessories) for (const mode of ['static', 'ap
     await canvas.press('Home');
     await viewer.getByRole('button', { name: 'Закрыть 3D-модель', exact: true }).click();
     await expect(viewer).toHaveAttribute('data-model-status', 'idle');
+    await expect(viewer.locator(`svg[data-equipment-type="${specimen.type}"]`)).toBeVisible();
     await expect(page.locator('canvas')).toHaveCount(0);
     await expect.poll(() => page.evaluate(() => window.__sourceAssetContexts.lost)).toBe(1);
     await expect(viewer.getByRole('button', { name: 'Открыть 3D-модель', exact: true })).toBeFocused();
@@ -1106,8 +1124,7 @@ for (const specimen of sourceAssetAccessories) for (const mode of ['static', 'ap
     await expect(page.locator('canvas')).toHaveCount(0);
     await expectDecodedImage(page.locator('.source-page-image img'));
     await page.goBack();
-    await expect(viewer).toHaveAttribute('data-model-status', 'idle');
-    await expect(page.locator('canvas')).toHaveCount(0);
+    await expectAutomaticModel(viewer);
     await expectShell(page); expect(errors).toEqual([]);
   });
 }
@@ -1146,7 +1163,7 @@ test('bounded source assets: all three no-WebGL fallbacks retain honest icons, s
   for (const specimen of sourceAssetAccessories) {
     await page.goto(`/catalog/${specimen.id}`);
     const viewer = page.locator(`[data-equipment-model="${specimen.type}"]`);
-    await viewer.getByRole('button', { name: 'Открыть 3D-модель', exact: true }).click();
+
     await expect(viewer).toHaveAttribute('data-model-status', 'error');
     await expect(viewer.locator(`svg[data-equipment-type="${specimen.type}"]`)).toBeVisible();
     await expect(viewer).toContainText('Выше показана отдельно проверенная иконка');
@@ -1177,8 +1194,7 @@ for (const specimen of [
     await expect(provenance).toContainText('Точное соответствие серии и комплектации не подтверждено');
     await expect(provenance.getByRole('link')).toHaveAttribute('href', `/catalog/source?source=transformers-2026&page=${specimen.drawingPage}`);
     const viewer = page.locator(`[data-equipment-model="${specimen.type}"]`);
-    await expect(viewer).toHaveAttribute('data-model-status', 'idle');
-    await viewer.getByRole('button', { name: 'Открыть 3D-модель', exact: true }).click();
+    await expectAutomaticModel(viewer);
     await expect(viewer).toHaveAttribute('data-model-status', 'ready', { timeout: 30_000 });
     await canvasEvidence(viewer.locator('canvas'), testInfo, `${mode}-${specimen.id}`);
     await expect(provenance).toBeVisible();
@@ -1290,12 +1306,10 @@ for (const specimen of measurementColumnRecords) for (const mode of ['static', '
     const panel = page.locator('.product-visual-stack');
     const viewer = panel.locator(`[data-equipment-model="${measurementColumnType}"]`);
     const icon = viewer.locator(`svg[data-equipment-type="${measurementColumnType}"]`);
-    await expect(viewer).toHaveAttribute('data-model-status', 'idle');
-    await expect(page.locator('canvas')).toHaveCount(0);
-    expect(await page.evaluate(() => window.__sourceAssetContexts.created)).toBe(0);
-    await expectMeasurementColumnIconSurface(icon, testInfo, `${mode}-${specimen.id}-idle`);
-    await measurementColumnPanelEvidence(panel, specimen, testInfo, `${mode}-${specimen.id}-idle`);
-    await viewer.getByRole('button', { name: 'Открыть 3D-модель', exact: true }).click();
+    await expectAutomaticModel(viewer);
+    await expect(viewer.locator('canvas')).toHaveCount(1);
+    expect(await page.evaluate(() => window.__sourceAssetContexts.created)).toBe(1);
+    await measurementColumnPanelEvidence(panel, specimen, testInfo, `${mode}-${specimen.id}-automatic`);
     await expect(viewer).toHaveAttribute('data-model-status', 'ready', { timeout: 30_000 });
     const canvas = viewer.locator('canvas');
     await expect.poll(() => canvas.evaluate(element => {
@@ -1312,6 +1326,7 @@ for (const specimen of measurementColumnRecords) for (const mode of ['static', '
     await canvas.press('Home');
     await viewer.getByRole('button', { name: 'Закрыть 3D-модель', exact: true }).click();
     await expect(viewer).toHaveAttribute('data-model-status', 'idle');
+    await expectMeasurementColumnIconSurface(icon, testInfo, `${mode}-${specimen.id}-idle`);
     await expect(page.locator('canvas')).toHaveCount(0);
     await expect.poll(() => page.evaluate(() => window.__sourceAssetContexts.lost)).toBe(1);
     await expect(viewer.getByRole('button', { name: 'Открыть 3D-модель', exact: true })).toBeFocused();
@@ -1325,7 +1340,7 @@ for (const specimen of measurementColumnRecords) for (const mode of ['static', '
     await expect.poll(() => page.evaluate(() => window.__sourceAssetContexts.lost)).toBe(2);
     await expectDecodedImage(page.locator('.source-page-image img'));
     await page.goBack();
-    await expect(viewer).toHaveAttribute('data-model-status', 'idle');
+    await expectAutomaticModel(viewer);
     await expectMeasurementColumnDisclosure(panel, specimen);
     await panel.locator('.product-original-illustration summary').click();
     await expectDecodedImage(panel.locator('.product-original-illustration img'));
@@ -1343,16 +1358,12 @@ for (const mode of ['static', 'api']) test(`measurement column completion: ${mod
     const dto = await measurementColumnDto(specimen.id);
     await page.route('**/api/v1/catalog/products?*', route => route.fulfill({ json: { total: 1, items: [dto] } }));
   }
-  await page.goto(`/catalog/${specimen.id}${mode === 'api' ? '?source=api' : ''}`);
+  const { requests: imports, release: releaseImports } = await holdAutomaticModelImport(page);
+  await page.goto(`/catalog/${specimen.id}${mode === 'api' ? '?source=api' : ''}`, { waitUntil: 'domcontentloaded' });
   const viewer = page.locator(`[data-equipment-model="${measurementColumnType}"]`);
-  await expect(viewer).toHaveAttribute('data-model-status', 'idle');
-  let releaseImports;
-  const importGate = new Promise(resolve => { releaseImports = resolve; });
-  const imports = [];
-  const holdImport = async route => { imports.push(route.request()); await importGate; await route.continue(); };
-  await page.route('**/_next/static/chunks/**', holdImport);
+
   try {
-    await viewer.getByRole('button', { name: 'Открыть 3D-модель', exact: true }).click();
+
     await expect(viewer).toHaveAttribute('data-model-status', 'loading');
     await expect.poll(() => imports.length).toBeGreaterThan(0);
     await viewer.getByRole('button', { name: 'Закрыть 3D-модель', exact: true }).click();
@@ -1417,7 +1428,7 @@ for (const mode of ['static', 'api']) test(`measurement column completion: ${mod
     await page.goto(`/catalog/${specimen.id}${mode === 'api' ? '?source=api' : ''}`);
     const panel = page.locator('.product-visual-stack');
     const viewer = panel.locator(`[data-equipment-model="${measurementColumnType}"]`);
-    await viewer.getByRole('button', { name: 'Открыть 3D-модель', exact: true }).click();
+
     await expect(viewer).toHaveAttribute('data-model-status', 'error');
     await expect(viewer).toContainText('Выше показана отдельно проверенная иконка');
     await expect(page.locator('canvas')).toHaveCount(0);
@@ -1495,16 +1506,17 @@ for (const familyId of ['tr2026-family-zom', 'tr2026-family-znom']) for (const m
     await expect(page.locator('canvas')).toHaveCount(0);
     for (const specimen of specimens) {
       const option = selector.locator(`option[value="${specimen.id}"]`);
-      await expect(option).toContainText(`стр. ${specimen.sourcePage}`);
+      if (mode === 'api') await expect(option).toContainText(`стр. ${specimen.sourcePage}`);
       await expect(option).toContainText(specimen.id.endsWith('config2') ? '35/√3' : '27,5');
       await selector.selectOption(specimen.id);
       const selected = page.locator(`[data-selected-member="${specimen.id}"]`);
+      await expect(selected.locator('.family-member-source').getByRole('link', { name: `стр. ${specimen.sourcePage}`, exact: true }))
+        .toHaveAttribute('href', `/catalog/source?source=transformers-2026&page=${specimen.sourcePage}`);
       const panel = selected.locator('.product-visual-stack');
       const viewer = panel.locator(`[data-equipment-model="${measurementColumnType}"]`);
-      await expect(viewer).toHaveAttribute('data-model-status', 'idle');
+      await expectAutomaticModel(viewer);
       await expectMeasurementColumnIconSurface(selected.locator('.family-selected-heading svg'), testInfo, `${mode}-${specimen.id}-family-heading`);
-      await measurementColumnPanelEvidence(panel, specimen, testInfo, `${mode}-${specimen.id}-family-idle`);
-      await viewer.getByRole('button', { name: 'Открыть 3D-модель', exact: true }).click();
+      await measurementColumnPanelEvidence(panel, specimen, testInfo, `${mode}-${specimen.id}-family-automatic`);
       await expect(viewer).toHaveAttribute('data-model-status', 'ready', { timeout: 30_000 });
       await canvasEvidence(viewer.locator('canvas'), testInfo, `${mode}-${specimen.id}-family-open`);
       await measurementColumnPanelEvidence(panel, specimen, testInfo, `${mode}-${specimen.id}-family-open`);
@@ -1586,12 +1598,10 @@ for (const specimen of protectionExampleRecords) for (const mode of ['static', '
     await page.goto(`/catalog/${specimen.id}${suffix}`);
     const panel = page.locator('.product-visual-stack');
     const viewer = panel.locator(`[data-equipment-model="${specimen.type}"]`);
-    await expect(viewer).toHaveAttribute('data-model-status', 'idle');
-    await expect(viewer.locator(`svg[data-equipment-type="${specimen.type}"]`)).toBeVisible();
-    await expect(page.locator('canvas')).toHaveCount(0);
-    expect(await page.evaluate(() => window.__sourceAssetContexts.created)).toBe(0);
-    await protectionExamplePanelEvidence(panel, specimen, testInfo, `${mode}-${specimen.id}-idle`);
-    await viewer.getByRole('button', { name: 'Открыть 3D-модель', exact: true }).click();
+    await expectAutomaticModel(viewer);
+    await expect(viewer.locator('canvas')).toHaveCount(1);
+    expect(await page.evaluate(() => window.__sourceAssetContexts.created)).toBe(1);
+    await protectionExamplePanelEvidence(panel, specimen, testInfo, `${mode}-${specimen.id}-automatic`);
     await expect(viewer).toHaveAttribute('data-model-status', 'ready', { timeout: 30_000 });
     const canvas = viewer.locator('canvas');
     await expect.poll(() => canvas.evaluate(element => {
@@ -1608,6 +1618,7 @@ for (const specimen of protectionExampleRecords) for (const mode of ['static', '
     await canvas.press('Home');
     await viewer.getByRole('button', { name: 'Закрыть 3D-модель', exact: true }).click();
     await expect(viewer).toHaveAttribute('data-model-status', 'idle');
+    await expect(viewer.locator(`svg[data-equipment-type="${specimen.type}"]`)).toBeVisible();
     await expect(page.locator('canvas')).toHaveCount(0);
     await expect.poll(() => page.evaluate(() => window.__sourceAssetContexts.lost)).toBe(1);
     await expect(viewer.getByRole('button', { name: 'Открыть 3D-модель', exact: true })).toBeFocused();
@@ -1623,12 +1634,12 @@ for (const specimen of protectionExampleRecords) for (const mode of ['static', '
     await expectPinnedSourceBytes(page, '/catalog-source/page-069.webp', '4f0833448f3519f9519a2e09fa62b4c28016665b4cd8e95c7341b17042ff5885');
     await testInfo.attach(`${mode}-${specimen.id}-full-page69.png`, { body: await page.locator('.source-page-image').screenshot({ animations: 'disabled' }), contentType: 'image/png' });
     await page.goBack();
-    await expect(viewer).toHaveAttribute('data-model-status', 'idle');
+    await expectAutomaticModel(viewer);
     await expectProtectionExampleDisclosure(panel, specimen);
     await page.goForward();
     await expectDecodedImage(page.locator('.source-page-image img'));
     await page.goBack();
-    await expect(viewer).toHaveAttribute('data-model-status', 'idle');
+    await expectAutomaticModel(viewer);
     await expectProtectionExampleDisclosure(panel, specimen);
     await expectShell(page);
     expect(errors).toEqual([]);
@@ -1640,16 +1651,12 @@ for (const specimen of protectionExampleRecords) for (const mode of ['static', '
     test.setTimeout(60_000);
     await observeSourceAssetContexts(page);
     if (mode === 'api') await routeSourceContextRecords(page, [specimen.id]);
-    await page.goto(`/catalog/${specimen.id}${mode === 'api' ? '?source=api' : ''}`);
+    const { requests: imports, release: releaseImports } = await holdAutomaticModelImport(page);
+    await page.goto(`/catalog/${specimen.id}${mode === 'api' ? '?source=api' : ''}`, { waitUntil: 'domcontentloaded' });
     const viewer = page.locator(`[data-equipment-model="${specimen.type}"]`);
-    await expect(viewer).toHaveAttribute('data-model-status', 'idle');
-    let releaseImports;
-    const importGate = new Promise(resolve => { releaseImports = resolve; });
-    const imports = [];
-    const holdImport = async route => { imports.push(route.request()); await importGate; await route.continue(); };
-    await page.route('**/_next/static/chunks/**', holdImport);
+
     try {
-      await viewer.getByRole('button', { name: 'Открыть 3D-модель', exact: true }).click();
+
       await expect(viewer).toHaveAttribute('data-model-status', 'loading');
       await expect.poll(() => imports.length).toBeGreaterThan(0);
       await viewer.getByRole('button', { name: 'Закрыть 3D-модель', exact: true }).click();
@@ -1687,7 +1694,7 @@ for (const mode of ['static', 'api']) test(`protection source examples: ${mode} 
     await page.goto(`/catalog/${specimen.id}${mode === 'api' ? '?source=api' : ''}`);
     const panel = page.locator('.product-visual-stack');
     const viewer = panel.locator(`[data-equipment-model="${specimen.type}"]`);
-    await viewer.getByRole('button', { name: 'Открыть 3D-модель', exact: true }).click();
+
     await expect(viewer).toHaveAttribute('data-model-status', 'error');
     await expect(viewer.locator(`svg[data-equipment-type="${specimen.type}"]`)).toBeVisible();
     await expect(viewer).toContainText('Выше показана отдельно проверенная иконка');
@@ -1729,7 +1736,7 @@ for (const mode of ['static', 'api']) test(`protection source examples: ${mode} 
     await expect(selected.locator('.family-selected-heading [data-product-icon]')).toHaveAttribute('data-icon-type', specimen.type);
     const panel = selected.locator('.product-visual-stack');
     const viewer = panel.locator(`[data-equipment-model="${specimen.type}"]`);
-    await viewer.getByRole('button', { name: 'Открыть 3D-модель', exact: true }).click();
+    await expectAutomaticModel(viewer);
     await expect(viewer).toHaveAttribute('data-model-status', 'ready', { timeout: 30_000 });
     await canvasEvidence(viewer.locator('canvas'), testInfo, `${mode}-${specimen.id}-family`);
     await protectionExamplePanelEvidence(panel, specimen, testInfo, `${mode}-${specimen.id}-family`);
@@ -1985,8 +1992,9 @@ for (const familyId of ['cat-shnn', 'cat-ptm-tded']) for (const mode of ['static
           await expectDecodedImage(popup.locator('.source-page-image img'));
           await expect(popup.locator('.source-page-image img')).toHaveAttribute('src', new RegExp(`page-${String(first.page).padStart(3, '0')}\\.webp`));
         } else {
-          await expect(popup.getByRole('heading', { level: 1 })).toHaveText(productById(first.exemplar).name);
-          await expect(popup.locator('[data-equipment-model]')).toHaveAttribute('data-model-status', 'idle');
+          const editorialName = first.exemplar === 'cat-ptm-tded-v012' ? 'ПТМ(Д)-У1' : 'ТДЕ(Д)-9-У3';
+          await expect(popup.getByRole('heading', { level: 1 })).toHaveText(mode === 'api' ? productById(first.exemplar).name : editorialName);
+          await expectAutomaticModel(popup.locator('[data-equipment-model]'));
         }
         await popup.close();
         await expect(page).toHaveURL(originalUrl);

@@ -21,6 +21,9 @@ import { inquiryItems } from '../frontend/lib/inquiry/model.js';
 import { quotePayload, selectionFingerprint } from '../frontend/lib/quotes/model.js';
 import { importedProductId } from './catalog/measurement-column-asset-snapshot.mjs';
 import { protectionContextAssetSnapshot } from './catalog/protection-context-asset-snapshot.mjs';
+// Only the source/API text audit strips the later static-only editorial namespace.
+// Runtime asset guards, comparison cells and coverage still use presented rows.
+const sourceProducts = officialProducts.map(({ catalogEditorial, ...record }) => { void catalogEditorial; return record; });
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const protectionContextReviewDir = 'docs/catalog-transformers-2026/review/protection-context-integration';
 export const protectionExampleExactIds = Object.freeze(['cat-ptm-tded', 'cat-ptm-tded-v012', 'cat-ptm-tded-v013']);
@@ -37,7 +40,7 @@ export async function verifyProtectionContextPreservation() {
   assert.deepEqual(Object.keys(clientBaseline.records), Object.keys(baseline.products));
   const hashValue = value => digest(JSON.stringify(value));
   const normalizedRows = [];
-  for (const row of officialProducts) {
+  for (const row of sourceProducts) {
     const normalized = normalizeApiProduct({ id: importedProductId(row.id), public_key: row.id, sku: row.sku,
       category_public_key: row.category, translations: { ru: { name: row.name } }, specs: row, provenance: row,
       media: row.image ? [{ path: row.image, kind: 'image', alt: row.imageCaption }] : [],
@@ -59,9 +62,9 @@ export async function verifyProtectionContextPreservation() {
   const audit = JSON.parse(auditBytes), summaryChanges = [], facetChanges = [];
   const priorRows = normalizedRows.map(row => { const prior = { ...row }; delete prior.variantSpecs; delete prior.sourceVariantSpecs; return prior; });
   const displayed = rows => rows.map(({ key, label, value, unit, values }) => ({ key, label, value, unit, values }));
-  for (let index = 0; index < officialProducts.length; index++) {
-    const source = officialProducts[index], live = normalizedRows[index], prior = priorRows[index];
-    const expected = getCatalogSpecSummary(source, officialProducts), current = getCatalogSpecSummary(live, normalizedRows), before = getCatalogSpecSummary(prior, priorRows);
+  for (let index = 0; index < sourceProducts.length; index++) {
+    const source = sourceProducts[index], live = normalizedRows[index], prior = priorRows[index];
+    const expected = getCatalogSpecSummary(source, sourceProducts), current = getCatalogSpecSummary(live, normalizedRows), before = getCatalogSpecSummary(prior, priorRows);
     assert.deepEqual(displayed(current), displayed(expected), `Changed displayed source summary ${source.id}`);
     current.forEach((row, i) => { if (row.value !== before[i].value) summaryChanges.push({ id: source.id, field: row.key, static: row.value, api: before[i].value }); });
     for (const field of ['power', 'voltage', 'current', 'function', 'cooling', 'installation', 'subtype']) {

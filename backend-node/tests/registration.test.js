@@ -39,17 +39,17 @@ test("mail is unavailable until explicitly configured, never a successful no-op"
 });
 test("SMTP enforces TLS, rejects filesystem/URL content, and checks provider acceptance", async () => {
   let settings, message;
-  const mail = createRegistrationMail({ config: { registrationMail: { provider: "smtp", host: "smtp.example.test", port: 587, from: "noreply@example.test" } }, transportFactory: opts => {
+  const mail = createRegistrationMail({ config: { browserOrigin: "https://example.test", registrationMail: { provider: "smtp", host: "smtp.example.test", port: 587, from: "noreply@example.test" } }, transportFactory: opts => {
     settings = opts; return { sendMail: async value => { message = value; return { accepted: ["recipient@example.test"] }; } };
   } });
-  await mail.send({ email: "recipient@example.test", purpose: "verify", url: "https://example.test/verify-email#token=synthetic" });
+  await mail.send({ email: "recipient@example.test", purpose: "verify", url: "https://example.test/verify-email#token=" + "a".repeat(64) });
   assert.equal(settings.requireTLS, true);
   assert.equal(settings.tls.rejectUnauthorized, true);
   assert.equal(settings.disableFileAccess, true);
   assert.equal(settings.disableUrlAccess, true);
   assert.equal(message.disableFileAccess, true);
   assert.equal(message.disableUrlAccess, true);
-  assert.match(message.text, /#token=synthetic/);
+  assert.match(message.text, /#token=a{64}/);
 });
 test("public company request DTO never discloses routing, actor identities or membership IDs", () => {
   const result = requestOut({ id: "request", company_name: "Company", company_identifier: "BIN", message: "Hi", status: "pending", organization_id: "secret", user_id: "secret", decided_by: "secret" });

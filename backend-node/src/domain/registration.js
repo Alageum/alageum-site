@@ -4,7 +4,7 @@ const argon2 = require("argon2");
 const { AppError } = require("./errors");
 const { table, strictObject, uuid, privateResponse, assertActiveContext } = require("./auth");
 const { createRegistrationRateLimiter } = require("./registration-rate-limit");
-const { createRegistrationMail, createMailOutbox } = require("./registration-mail");
+const { createRegistrationMail, createMailOutbox, mailbox } = require("./registration-mail");
 const MANAGE = "organization.manage_users";
 const ACCEPTED = Object.freeze({ status: "accepted", message: "If this address is eligible, an email will be sent. Check your inbox and spam folder." });
 const hashToken = token => createHash("sha256").update(token).digest("hex");
@@ -12,7 +12,7 @@ const fail = message => { throw new AppError("validation_error", message, 422); 
 function emailValue(value) {
   if (typeof value !== "string") fail("A valid email is required");
   const email = value.trim().toLowerCase();
-  if (email.length > 320 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) fail("A valid email is required");
+  if (!mailbox(email)) fail("A valid email is required");
   return email;
 }
 function passwordValue(value) {
@@ -220,6 +220,6 @@ function createRegistration({ db, auth, config, audit, browserSessions, mail: su
   }
   return { register, verifyEmail, resendVerification: ctx => requestMail(ctx, "verify"), forgotPassword: ctx => requestMail(ctx, "reset"), resetPassword,
     account, requestCompanyAccess, accessRequests, accessRoles, approveAccess: ctx => decideAccess(ctx, true), rejectAccess: ctx => decideAccess(ctx, false),
-    startMailWorker: outbox.start, stopMailWorker: outbox.stop, flushMail: outbox.flush };
+    startMailWorker: outbox.start, stopMailWorker: outbox.stop, flushMail: outbox.flush, mailWorkerStatus: outbox.status };
 }
 module.exports = { createRegistration, emailValue, passwordValue, textValue, tokenValue, hashToken, requestOut, assignableRole, ACCEPTED };

@@ -1,5 +1,5 @@
 "use strict";
-const { quoteClientKey } = require("../../../domain/quote-rate-limit");
+const { clientAddress } = require("../../../domain/client-address");
 const { privateResponse } = require("../../../domain/auth");
 module.exports = ({ strapi }) => ({
   health: (ctx) => strapi.alageum.system.health(ctx),
@@ -60,11 +60,11 @@ module.exports = ({ strapi }) => ({
   submitDocumentSignature: (ctx) => strapi.alageum.signing.submit(ctx),
   cancelDocumentSigning: (ctx) => strapi.alageum.signing.cancel(ctx),
   recheckDocumentSignature: (ctx) => strapi.alageum.signing.recheck(ctx),
-  createQuote: (ctx) => {
+  createQuote: async (ctx) => {
     privateResponse(ctx);
     // Strapi has decoded JSON before controller dispatch. Charge an accepted
     // attempt before the domain service authenticates or validates its input.
-    strapi.alageum.quoteCreateLimit(quoteClientKey(ctx));
+    await strapi.alageum.quoteCreateLimit(clientAddress(ctx), ctx);
     return strapi.alageum.quotes.create(ctx);
   },
   quotes: (ctx) => strapi.alageum.quotes.list(ctx),

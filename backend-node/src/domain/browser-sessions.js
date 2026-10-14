@@ -1,7 +1,8 @@
 "use strict";
 const { createHash, randomBytes, randomUUID } = require("node:crypto");
 const { AppError } = require("./errors");
-const { createRateLimiter } = require("./rate-limit");
+const { createDistributedRateLimiter } = require("./distributed-rate-limit");
+const { clientAddress } = require("./client-address");
 const table = (db, name) => db.withSchema("b2b").table(name);
 const hash = value => createHash("sha256").update(value).digest("hex");
 const random = () => randomBytes(32).toString("base64url");
@@ -23,11 +24,11 @@ function browserSettings(config) {
   return { origin: origin.origin, secure: origin.protocol === "https:" };
 }
 
-function createBrowserSessions({ db, config, audit, now = Date.now }) {
+function createBrowserSessions({ db, config, audit, now = Date.now, maxBindings = 100000 }) {
+  if (!Number.isInteger(maxBindings) || maxBindings < 1 || maxBindings > 100000) throw new TypeError("Invalid browser binding capacity");
   const setup = browserSettings(config);
   // Shared by password and Google to prevent cross-method limit/flow bypass.
-  // Production startup remains blocked until the distributed policy is ready.
-  const limit = createRateLimiter({ limit: 20, now });
+  const limit = setup ? createDistributedRateLimiter({ db, secret: config.jwtSecret, policy: "auth-entry", limit: 20 }) : null;
   const sessionCookie = setup?.secure ? "__Host-alageum_session" : "alageum_dev_session";
   // Preserve the existing binding cookie so switching sign-in methods shares
   // the same latest-flow lock and invalidates previous sessions consistently.
@@ -38,16 +39,37 @@ function createBrowserSessions({ db, config, audit, now = Date.now }) {
   function sameOrigin(ctx) {
     if (ctx.get("Origin") !== setup.origin) throw new AppError("origin_denied", "Use the same-origin application", 403);
   }
+  async function cleanupExpired() {
+    // Each sweep is one bounded statement before any flow/session lock. Skip
+    // rows used by active transactions rather than reversing their lock order.
+    for (const [name, key] of [["browser_sessions", "id"], ["federated_attempts", "state_hash"], ["federated_browsers", "browser_hash"]]) {
+      await db.raw(`DELETE FROM b2b.${name} WHERE ${key} IN (SELECT ${key} FROM b2b.${name} WHERE expires_at <= ? ORDER BY expires_at, ${key} LIMIT 1000 FOR UPDATE SKIP LOCKED)`, [new Date(now())]);
+    }
+  }
   async function prepare(ctx) {
-    headers(ctx); unavailable(); sameOrigin(ctx); limit(ctx.ip || "unknown");
+    headers(ctx); unavailable(); sameOrigin(ctx); await limit(clientAddress(ctx), ctx);
     // Cleanup precedes every browser/session lock. Do not sweep other browsers
     // while holding this browser's session row (concurrent relogin deadlock).
-    await table(db, "browser_sessions").where("expires_at", "<=", new Date(now())).delete();
+    await cleanupExpired();
     const prior = ctx.cookies.get(attemptCookie, { signed: false });
     const browser = typeof prior === "string" && TOKEN.test(prior) ? prior : random();
     const flowId = randomUUID();
-    await table(db, "federated_browsers").insert({ browser_hash: hash(browser), flow_id: flowId,
-      state_hash: null, expires_at: new Date(now() + 8 * 3600000) }).onConflict("browser_hash").merge();
+    await db.transaction(async tx => {
+      await tx.raw("SET LOCAL lock_timeout = '2000ms'");
+      await tx.raw("SET LOCAL statement_timeout = '3000ms'");
+      const key = { browser_hash: hash(browser) };
+      let existing = await table(tx, "federated_browsers").where(key).forUpdate().first();
+      if (!existing) {
+        await tx.raw("SELECT pg_advisory_xact_lock(731624145)");
+        existing = await table(tx, "federated_browsers").where(key).forUpdate().first();
+        if (!existing && Number((await table(tx, "federated_browsers").count({ count: "*" }).first()).count) >= maxBindings) {
+          ctx.set("Retry-After", "60");
+          throw new AppError("rate_limited", "Sign-in capacity is temporarily unavailable", 429);
+        }
+      }
+      await table(tx, "federated_browsers").insert({ ...key, flow_id: flowId,
+        state_hash: null, expires_at: new Date(now() + 8 * 3600000) }).onConflict("browser_hash").merge();
+    });
     cookie(ctx, attemptCookie, browser, 8 * 3600);
     ctx.body = { flow_id: flowId };
   }
@@ -58,7 +80,7 @@ function createBrowserSessions({ db, config, audit, now = Date.now }) {
     await table(tx, "browser_sessions").insert({ id: sessionId, token_hash: hash(raw), browser_hash: hash(browser), user_id: user.id, credential_version: Number(user.credential_version || 0), expires_at: new Date(now() + 8 * 3600000) });
   }
   async function passwordLogin(ctx, verifyCredentials, recheckUser) {
-    headers(ctx); unavailable(); sameOrigin(ctx); limit(ctx.ip || "unknown");
+    headers(ctx); unavailable(); sameOrigin(ctx); await limit(clientAddress(ctx), ctx);
     const body = ctx.request.body;
     if (!body || typeof body !== "object" || Array.isArray(body) || Object.keys(body).some(key => !["email", "password", "flow_id"].includes(key)) || typeof body.flow_id !== "string" || !UUID.test(body.flow_id)) {
       throw new AppError("validation_error", "Invalid sign-in request", 422);
@@ -86,7 +108,7 @@ function createBrowserSessions({ db, config, audit, now = Date.now }) {
     ctx.status = 200;
   }
   async function cancel(ctx) {
-    headers(ctx); unavailable(); sameOrigin(ctx); limit(ctx.ip || "unknown");
+    headers(ctx); unavailable(); sameOrigin(ctx); await limit(clientAddress(ctx), ctx);
     const browser = ctx.cookies.get(attemptCookie, { signed: false });
     const flowId = ctx.request.body?.flow_id;
     if (typeof flowId !== "string" || !UUID.test(flowId)) throw invalid();
@@ -146,6 +168,6 @@ function createBrowserSessions({ db, config, audit, now = Date.now }) {
   }
   const assertOrigin = ctx => { unavailable(); sameOrigin(ctx); };
   return { setup, prepare, cancel, passwordLogin, assertOrigin, session, currentUser, assertActiveSession, logout,
-    headers, cookie, sameOrigin, unavailable, sessionCookie, attemptCookie, issue };
+    headers, cookie, sameOrigin, unavailable, sessionCookie, attemptCookie, issue, cleanupExpired };
 }
 module.exports = { createBrowserSessions, browserSettings };

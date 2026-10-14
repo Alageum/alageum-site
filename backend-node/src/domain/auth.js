@@ -4,6 +4,8 @@ const { createHash, randomBytes, randomUUID } = require("node:crypto");
 const jwt = require("jsonwebtoken");
 const argon2 = require("argon2");
 const { AppError } = require("./errors");
+const distributedLimits = require("./distributed-rate-limit");
+const { clientAddress } = require("./client-address");
 const { pagination, requestPagination } = require("./legacy-query");
 
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
@@ -125,6 +127,7 @@ async function ensureSchema(db) {
       "CREATE UNIQUE INDEX IF NOT EXISTS roles_global_code_unique ON b2b.roles (code) WHERE organization_id IS NULL",
     );
   });
+  await distributedLimits.ensureSchema(db);
 }
 
 function effectivePermissions(role) {
@@ -269,6 +272,14 @@ const DEMO_PERMISSIONS = {
 };
 
 function createAuth({ db, config, audit, browserSessions }) {
+  const entryLimit = distributedLimits.createDistributedRateLimiter({ db, secret: config.jwtSecret, policy: "auth-entry", limit: 20 });
+  const credentialLimit = distributedLimits.createDistributedRateLimiter({ db, secret: config.jwtSecret, policy: "password-identity", limit: 20 });
+  const refreshLimit = distributedLimits.createDistributedRateLimiter({ db, secret: config.jwtSecret, policy: "auth-refresh", limit: 60 });
+  const admittedLogins = new WeakMap();
+  function chargeLogin(ctx) {
+    if (!admittedLogins.has(ctx)) admittedLogins.set(ctx, entryLimit(clientAddress(ctx), ctx));
+    return admittedLogins.get(ctx);
+  }
   if (typeof audit !== "function")
     throw new TypeError("Transactional audit writer is required");
   const invalidToken = () =>
@@ -452,11 +463,12 @@ function createAuth({ db, config, audit, browserSessions }) {
       );
     return result;
   }
-  async function verifyCredentials(input) {
+  async function verifyCredentials(input, ctx) {
     const body = strictObject(input, ["email", "password"]);
     if (
       typeof body.email !== "string" ||
       body.email.length > 320 ||
+      /[\u0000-\u001f\u007f]/.test(body.email) ||
       !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(body.email)
     )
       fail("A valid email is required");
@@ -466,6 +478,7 @@ function createAuth({ db, config, audit, browserSessions }) {
       body.password.length > 256
     )
       fail("Password length must be between 8 and 256");
+    await credentialLimit(body.email.toLowerCase(), ctx);
     const user = await table(db, "users")
       .where({ email: body.email.toLowerCase() })
       .first();
@@ -495,7 +508,8 @@ function createAuth({ db, config, audit, browserSessions }) {
     return active;
   }
   async function login(ctx) {
-    const user = await verifyCredentials(ctx.request.body);
+    await chargeLogin(ctx);
+    const user = await verifyCredentials(ctx.request.body, ctx);
     ctx.body = await db.transaction(async tx => {
       const active = await recheckUser(tx, user);
       const result = await pair(tx, active);
@@ -507,9 +521,10 @@ function createAuth({ db, config, audit, browserSessions }) {
   }
   async function browserLogin(ctx) {
     if (!browserSessions?.passwordLogin) throw new AppError("browser_login_unavailable", "Browser login is not configured", 503);
-    return browserSessions.passwordLogin(ctx, verifyCredentials, recheckUser);
+    return browserSessions.passwordLogin(ctx, input => verifyCredentials(input, ctx), recheckUser);
   }
   async function refresh(ctx) {
+    await refreshLimit(clientAddress(ctx), ctx);
     const raw = refreshBody(ctx);
     ctx.body = await db.transaction(async (tx) => {
       const stored = await table(tx, "refresh_sessions")
@@ -656,6 +671,7 @@ function createAuth({ db, config, audit, browserSessions }) {
     });
   }
   return {
+    chargeLogin,
     login,
     browserLogin,
     refresh,

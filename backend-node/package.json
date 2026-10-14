@@ -7,7 +7,7 @@
     "develop": "strapi develop",
     "build": "strapi build",
     "start": "strapi start",
-    "test": "node --test tests/*.test.js",
+    "test": "node --test --test-concurrency=1 tests/*.test.js",
     "test:integration": "node --test --test-concurrency=1 tests/*.integration.js",
     "check": "node scripts/strapi-webpack-patch.js --check && node scripts/check-media-package.js && node scripts/check-page-editor-adapter.js && node scripts/check-syntax.js && npm test",
     "postinstall": "node scripts/strapi-webpack-patch.js --apply",

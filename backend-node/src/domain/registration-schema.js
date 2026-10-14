@@ -40,6 +40,10 @@ async function ensureSchema(db) {
       t.timestamp("expires_at", { useTz: true }).notNullable();
       t.timestamp("created_at", { useTz: true }).notNullable().defaultTo(tx.fn.now());
     });
+    // Additive migration for existing queues. Ownership fencing prevents an old
+    // worker from acknowledging a row reclaimed after its lease expired.
+    if (!(await schema().hasColumn("registration_mail_outbox", "lease_id")))
+      await schema().alterTable("registration_mail_outbox", t => t.uuid("lease_id"));
     if (!(await schema().hasTable("company_access_requests"))) await schema().createTable("company_access_requests", t => {
       t.uuid("id").primary();
       t.uuid("user_id").notNullable().references("id").inTable("b2b.users").onDelete("CASCADE");

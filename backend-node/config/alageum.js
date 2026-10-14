@@ -1,4 +1,5 @@
 "use strict";
+const { trustedProxyAddresses } = require("../src/domain/client-address");
 function required(env, name) {
   const value = env(name);
   if (!value || value.length < 32)
@@ -9,11 +10,8 @@ function required(env, name) {
 }
 module.exports = ({ env }) => {
   const mode = env("APP_ENV", "development");
-  if (!["test", "development"].includes(mode)) {
-    throw new Error(
-      "Production startup blocked: browser session transport, distributed rate limits, media scanner and cutover have not been approved or implemented",
-    );
-  }
+  if (mode === "production") require("../src/domain/production-readiness").assertProductionStartup(env);
+  if (!["test", "development"].includes(mode)) throw new Error("Unsupported APP_ENV; use test, development or the validated production release process");
   return {
     env: mode,
     jwtSecret: required(env, "ALAGEUM_JWT_SECRET"),
@@ -29,9 +27,11 @@ module.exports = ({ env }) => {
     maxRequestBytes: 1024 * 1024,
     googleEnabled: ["1", "true"].includes(env("ALAGEUM_GOOGLE_ENABLED", "false")),
     browserOrigin: env("ALAGEUM_BROWSER_ORIGIN", ""),
+    trustedProxyIps: trustedProxyAddresses(env("ALAGEUM_TRUSTED_PROXY_IPS", "").split(",").map(value => value.trim()).filter(Boolean)),
     registrationMail: {
       provider: env("ALAGEUM_REGISTRATION_MAIL_PROVIDER", "disabled"),
       host: env("ALAGEUM_SMTP_HOST", ""),
+      tlsServername: env("ALAGEUM_SMTP_TLS_SERVERNAME", ""),
       port: Number(env("ALAGEUM_SMTP_PORT", "587")),
       user: env("ALAGEUM_SMTP_USER", ""),
       pass: env("ALAGEUM_SMTP_PASSWORD", ""),
