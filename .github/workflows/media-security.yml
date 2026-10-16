@@ -43,19 +43,19 @@ jobs:
         run: |
           set -euo pipefail
           WORK=$(mktemp -d "$RUNNER_TEMP/alageum-clamav.XXXXXX")
-          mkdir -m 700 "$WORK/db"
-          printf 'DatabaseDirectory %s\nDatabaseOwner %s\nDatabaseMirror database.clamav.net\nDNSDatabaseInfo current.cvd.clamav.net\n' "$WORK/db" "$(id -un)" > "$WORK/freshclam.conf"
-          freshclam --config-file="$WORK/freshclam.conf" --stdout
-          printf 'DatabaseDirectory %s\nTCPSocket 13310\nTCPAddr 127.0.0.1\nForeground yes\nStreamMaxLength 2M\nMaxFileSize 2M\nLogTime yes\n' "$WORK/db" > "$WORK/clamd.conf"
+          # The Ubuntu package confines ClamAV to its approved /etc and /var
+          # paths. Keep AppArmor enabled; use the package-owned config/database.
+          sudo -u clamav freshclam --config-file=/etc/clamav/freshclam.conf --stdout
+          printf 'DatabaseDirectory /var/lib/clamav\nTCPSocket 13310\nTCPAddr 127.0.0.1\nForeground yes\nStreamMaxLength 2M\nMaxFileSize 2M\nLogTime yes\n' | sudo tee /etc/clamav/clamd.conf > /dev/null
           clamd --version | tee "$RUNNER_TEMP/media-scanner-engine.txt"
-          clamd --config-file="$WORK/clamd.conf" > "$WORK/clamd.log" 2>&1 &
+          sudo -u clamav clamd --config-file=/etc/clamav/clamd.conf > "$WORK/clamd.log" 2>&1 &
           PID=$!
-          trap 'kill "$PID" 2>/dev/null || true; wait "$PID" 2>/dev/null || true' EXIT
+          trap 'sudo kill "$PID" 2>/dev/null || true; wait "$PID" 2>/dev/null || true' EXIT
           # Wait for a listening local daemon; the subsequent clean/EICAR check is
           # mandatory and may not be bypassed by a readiness failure.
           ready=0
           for attempt in $(seq 1 120); do
-            kill -0 "$PID" 2>/dev/null || { echo 'ClamAV exited before readiness'; exit 1; }
+            sudo kill -0 "$PID" 2>/dev/null || { echo 'ClamAV exited before readiness'; exit 1; }
             if node -e 'const s=require("node:net").connect(13310,"127.0.0.1");s.setTimeout(1000);s.on("connect",()=>{s.end();process.exit(0)});s.on("error",()=>process.exit(1));s.on("timeout",()=>process.exit(1))'; then ready=1; break; fi
             sleep 2
           done

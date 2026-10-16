@@ -5,7 +5,7 @@ import { readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { createRequire, registerHooks } from 'node:module';
 import { pathToFileURL } from 'node:url';
-import { createElement, useState } from 'react';
+import { createElement, useCallback, useRef, useState } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import * as data from '../lib/catalog/data.js';
 import * as presentation from '../lib/catalog/presentation.js';
@@ -144,7 +144,7 @@ async function render(id, { api = false, selected = '', rows = api ? live : reco
     getCatalogSourceContext: context, sourceContextAssetProof: proof,
     styles: new Proxy({}, { get: (_, key) => key }), SourceContextImage,
   };
-  if (failed) bindings.SourceContextImage = await component('source-context/SourceContextImage', 'SourceContextImage', { createElement, useState: () => [page, () => {}] });
+  if (failed) bindings.SourceContextImage = await component('source-context/SourceContextImage', 'SourceContextImage', { createElement, useCallback, useRef, useState: () => [page, () => {}] });
   bindings.CatalogSourceContext = await component('source-context/CatalogSourceContext', 'CatalogSourceContext', bindings);
   bindings.ProductVisual = await component('ProductVisual', 'ProductVisual', bindings);
   bindings.FamilyProductVisual = await component('FamilyProductVisual', 'FamilyProductVisual', { ...bindings, useState: () => [selected, () => {}] });

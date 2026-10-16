@@ -54,7 +54,7 @@ test('public errors do not echo a server exception or disclose account existence
 });
 test('customer navigation retains local drafts and points account entries to /account', async () => {
   const header = await readFile(new URL('../components/SiteHeader.js', import.meta.url), 'utf8');
-  assert.match(header, /href="\/account" className="site-language/);
+  assert.match(header, /href=\{isPublicOnly\(\) \? "\/service-unavailable" : "\/account"\} className="site-language/);
   assert.match(header, /Локальные черновики.*\/client/);
   const account = await readFile(new URL('../components/account/PersonalAccount.js', import.meta.url), 'utf8');
   assert.match(account, /getPersonalAccount\(controller.signal\)/);

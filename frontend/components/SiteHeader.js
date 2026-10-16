@@ -8,6 +8,8 @@ import LanguageSwitcher from "@/components/locale/EcosystemNavigation";
 import SelectionNavigation from "@/components/catalog/SelectionNavigation";
 import { useAuth } from "@/components/AuthProvider";
 
+import { isPublicOnly } from '@/lib/deployment/publicMode';
+
 const corporateSections = [
 {
   href: "/catalog/home", label: "Каталог", title: "Технический каталог", note: "Оборудование, характеристики и подборка для проекта.",
@@ -68,7 +70,12 @@ function Chevron({ expanded = false }) {
 export default function SiteHeader({ selectionCount }) {
   const pathname = usePathname();
   const area = pathname.startsWith('/careers') ? 'careers' : ['/catalog', '/client', '/b2b', '/selection', '/inquiry', '/login', '/account', '/register', '/verify-email', '/forgot-password', '/reset-password'].some((root) => pathname === root || pathname.startsWith(`${root}/`)) ? 'catalog' : 'company';
-  const sections = area === 'careers' ? careerSections : area === 'catalog' ? catalogSections : corporateSections;
+  const configuredSections = area === 'careers' ? careerSections : area === 'catalog' ? catalogSections : corporateSections;
+  const sections = isPublicOnly() ? configuredSections.map(section => ({
+    ...section,
+    ...(section.href === '/account' ? { href: '/service-unavailable', label: 'Кабинет недоступен', title: 'Личный кабинет временно недоступен', note: 'Публичный каталог и локальные черновики работают без входа.' } : {}),
+    links: section.links.map(([label, href, note]) => ['/account', '/b2b'].includes(href) ? [label, '/service-unavailable', 'Временно недоступно. Данные не отправляются.'] : [label, href, note]),
+  })) : configuredSections;
   const { hasPermission } = useAuth();
   const headerRef = useRef(null);
   const toggleRef = useRef(null);
@@ -166,7 +173,7 @@ export default function SiteHeader({ selectionCount }) {
               {activeSection &&
               <LocaleElement as="div" className="site-mega-inner" key={activeSection.href}>
                   <LocaleElement as="div" className="site-mega-intro"><LocaleElement as="span" className="site-eyebrow">{activeSection.label}</LocaleElement><LocaleElement as="strong">{activeSection.title}</LocaleElement><LocaleElement as="p">{activeSection.note}</LocaleElement></LocaleElement>
-                  {activeSection.links.map(([label, href, note]) => <Link key={href} href={href} className="site-mega-link" onNavigate={() => closeMenus()}><LocaleElement as="span">{label}</LocaleElement><LocaleElement as="small" className="site-metadata">{note}</LocaleElement></Link>)}
+                  {activeSection.links.map(([label, href, note]) => <Link key={`${label}:${href}`} href={href} className="site-mega-link" onNavigate={() => closeMenus()}><LocaleElement as="span">{label}</LocaleElement><LocaleElement as="small" className="site-metadata">{note}</LocaleElement></Link>)}
                 </LocaleElement>
               }
             </LocaleElement>
@@ -174,8 +181,8 @@ export default function SiteHeader({ selectionCount }) {
           <LocaleElement as="div" className="site-header-actions">
             <div className="site-header-language"><LanguageSwitcher /></div>
             {area !== 'company' && <Link href={area === 'careers' ? '/careers/apply' : '/client/projects'} className="brand-header-contact" onNavigate={() => closeMenus()}>{area === 'careers' ? 'Оставить резюме' : 'Создать проект'} <LocaleElement as="span" aria-hidden="true">↗</LocaleElement></Link>}
-            <Link href="/account" className="site-language site-metadata" onNavigate={() => closeMenus()}>Личный кабинет</Link>
-            {hasPermission('catalog.manage') && <Link href="/admin/catalog" className="site-selection-link">Управление каталогом</Link>}
+            <Link href={isPublicOnly() ? "/service-unavailable" : "/account"} className="site-language site-metadata" onNavigate={() => closeMenus()}>{isPublicOnly() ? "Кабинет недоступен" : "Личный кабинет"}</Link>
+            {!isPublicOnly() && hasPermission('catalog.manage') && <Link href="/admin/catalog" className="site-selection-link">Управление каталогом</Link>}
             {area === 'catalog' && <Suspense fallback={<Link href="/selection" className="site-selection-link">Подборка</Link>}><SelectionNavigation selectionCount={selectionCount} onNavigate={() => closeMenus()} /></Suspense>}
             <LocaleElement as="button" ref={toggleRef} type="button" className="site-menu-toggle" aria-label={mobileOpen ? "Закрыть навигацию" : "Открыть навигацию"} aria-expanded={mobileOpen} aria-controls="site-mobile-navigation" onClick={() => {
               lastTrigger.current = toggleRef.current;
@@ -190,7 +197,7 @@ export default function SiteHeader({ selectionCount }) {
                 <Link href={section.href} aria-current={currentIndex === index ? "page" : undefined} onNavigate={() => closeMenus()}>{section.label}</Link>
                 <LocaleElement as="button" type="button" aria-label={`${menu.group === index ? "Свернуть" : "Развернуть"} раздел «${section.label}»`} aria-controls={`site-mobile-group-${index}`} aria-expanded={menu.group === index} onClick={() => setMenu((previous) => ({ ...previous, group: previous.group === index ? null : index }))}><Chevron expanded={menu.group === index} /></LocaleElement>
               </LocaleElement>
-              <LocaleElement as="div" id={`site-mobile-group-${index}`} className="site-mobile-group-links" hidden={menu.group !== index}>{section.links.map(([label, href]) => <Link key={href} href={href} onNavigate={() => closeMenus()}>{label}</Link>)}</LocaleElement>
+              <LocaleElement as="div" id={`site-mobile-group-${index}`} className="site-mobile-group-links" hidden={menu.group !== index}>{section.links.map(([label, href]) => <Link key={`${label}:${href}`} href={href} onNavigate={() => closeMenus()}>{label}</Link>)}</LocaleElement>
             </LocaleElement>
           )}
           <LanguageSwitcher />

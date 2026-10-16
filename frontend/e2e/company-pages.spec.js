@@ -310,3 +310,30 @@ test('company image audit rejects a broken visible image', async ({ page }) => {
   await page.setContent('<main><img alt="Broken image" width="16" height="16" src="data:,not-an-image"></main>');
   await expect(auditRenderedImages(page, { timeout: 200 })).rejects.toThrow();
 });
+
+
+test('login story keeps complete words at 320px and preserves wider mobile sizing', async ({ page }, testInfo) => {
+  await page.setViewportSize({ width: 320, height: 780 });
+  await page.goto('/login');
+  const heading = page.locator('.brand-login-story h2');
+  await expect(heading).toHaveText(/Ваш проект\.\s*Единое пространство\./);
+  for (const [width, fontSize] of [[320, 32], [390, 38]]) {
+    await page.setViewportSize({ width, height: 780 });
+    await heading.scrollIntoViewIfNeeded();
+    await expect(heading).toBeVisible();
+    const measured = await heading.evaluate(element => {
+      const words = [], walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
+      let node;
+      while ((node = walker.nextNode())) for (const match of node.textContent.matchAll(/\S+/g)) {
+        const range = document.createRange();
+        range.setStart(node, match.index); range.setEnd(node, match.index + match[0].length);
+        words.push({ text: match[0], width: range.getBoundingClientRect().width, fragments: range.getClientRects().length });
+      }
+      return { available: element.clientWidth, fontSize: parseFloat(getComputedStyle(element).fontSize), words };
+    });
+    expect(measured.fontSize).toBe(fontSize);
+    expect(measured.words.some(word => word.text === 'пространство.')).toBe(true);
+    expect(measured.words.filter(word => word.width > measured.available + 1 || word.fragments !== 1), `Whole login words at ${width}px`).toEqual([]);
+    await testInfo.attach(`login-story-${width}px`, { body: await heading.screenshot(), contentType: 'image/png' });
+  }
+});

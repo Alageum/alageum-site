@@ -1,3 +1,4 @@
+import { isPublicOnly, PUBLIC_UNAVAILABLE_MESSAGE } from '../deployment/publicMode.js';
 import { ApiError } from './client.js';
 import { loginDestination } from './loginRedirect.js';
 
@@ -7,6 +8,7 @@ function base() {
   return value.href.replace(/\/$/, '');
 }
 async function request(path, options = {}) {
+  if (isPublicOnly()) throw new ApiError(503, { error: { code: 'service_unavailable', message: PUBLIC_UNAVAILABLE_MESSAGE } });
   const response = await fetch(`${base()}${path}`, { ...options, credentials: 'same-origin', cache: 'no-store',
     headers: { 'Content-Type': 'application/json' } });
   const payload = await response.json().catch(() => ({}));

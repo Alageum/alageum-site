@@ -7,6 +7,8 @@ const { readFileSync, lstatSync, realpathSync } = require("node:fs");
 const { resolve, join, basename } = require("node:path");
 const { performance } = require("node:perf_hooks");
 const { snapshot, metricShape } = require("./system.integration-support");
+const { TABLE: RATE_LIMIT_TABLE } = require("../src/domain/distributed-rate-limit");
+const { assertAdmissionRows, keyHash } = require("./quote-limit-admission");
 const DATABASE = "alageum_strapi_quote_limit_test";
 const table = (db, name) => db.withSchema("b2b").table(name);
 const digest = value => createHash("sha256").update(JSON.stringify(value)).digest("hex");
@@ -83,14 +85,24 @@ async function seedFixtures(app) {
   return { orgs, actors, tokens, product: products[0].transport_id };
 }
 
-async function protectedState(db) {
+async function admissionState(db, expected, secret) {
+  const time = Number((await db.raw("SELECT floor(extract(epoch FROM clock_timestamp()) * 1000)::bigint AS time")).rows[0].time);
+  return assertAdmissionRows(await table(db, RATE_LIMIT_TABLE).select("*").orderBy("key_hash"), expected, { secret, time });
+}
+
+async function protectedState(db, expectedQuota, secret, includeQuoteRows = false) {
+  await admissionState(db, expectedQuota, secret);
   // Domain identity, grants, sessions, native catalog and structural privileges
   // must not change when exercising the quote route (even on failed requests).
   const rows = {};
   const names = (await db.raw("SELECT schemaname, tablename FROM pg_tables WHERE schemaname IN ('b2b','public') ORDER BY schemaname, tablename")).rows;
   for (const { schemaname, tablename } of names) {
-    if (schemaname === "b2b" && ["quote_requests", "quote_request_items", "audit_events"].includes(tablename)) continue;
-    rows[`${schemaname}.${tablename}`] = digest((await db.raw("SELECT COALESCE(jsonb_agg(to_jsonb(r) ORDER BY to_jsonb(r)::text), '[]'::jsonb)::text AS value FROM ?? r", [`${schemaname}.${tablename}`])).rows[0].value);
+    if (!includeQuoteRows && schemaname === "b2b" && ["quote_requests", "quote_request_items", "audit_events"].includes(tablename)) continue;
+    // Admission rows are checked completely above against explicit expectations.
+    // Their table and all structural metadata remain in this fingerprint.
+    rows[`${schemaname}.${tablename}`] = schemaname === "b2b" && tablename === RATE_LIMIT_TABLE
+      ? "exact-admission-state-verified-separately"
+      : digest((await db.raw("SELECT COALESCE(jsonb_agg(to_jsonb(r) ORDER BY to_jsonb(r)::text), '[]'::jsonb)::text AS value FROM ?? r", [`${schemaname}.${tablename}`])).rows[0].value);
   }
   const columns = await db("information_schema.columns").select("table_schema", "table_name", "column_name", "ordinal_position", "data_type", "is_nullable", "column_default").whereIn("table_schema", ["b2b", "public"]).orderBy(["table_schema", "table_name", "ordinal_position"]);
   const constraints = (await db.raw("SELECT n.nspname, c.conname, pg_get_constraintdef(c.oid) AS definition FROM pg_constraint c JOIN pg_namespace n ON n.oid=c.connamespace WHERE n.nspname IN ('b2b','public') ORDER BY n.nspname, c.conname")).rows;
@@ -102,18 +114,27 @@ async function protectedState(db) {
 
 function rateError(result, code = "rate_limit_exceeded", message = "Too many requests") {
   assert.equal(result.status, 429);
+  assert.match(result.headers["retry-after"], /^\d+$/);
+  assert.ok(Number(result.headers["retry-after"]) >= 1 && Number(result.headers["retry-after"]) <= 60);
   assert.deepEqual(result.body, { error: { code, message, details: null, request_id: result.headers["x-request-id"] } });
   if (code === "rate_limit_exceeded") assert.equal(result.headers["cache-control"], "private, no-store");
 }
 
 async function verifyQuoteLimit({ app, request, check, fixture, report, progress }) {
   const db = app.db.connection, metrics = app.alageumMetrics, keys = { original: randomUUID(), blocked: randomUUID() };
-  const baseline = await protectedState(db), before = await snapshot(db, ["b2b", "public"]);
+  const secret = app.config.get("alageum.jwtSecret");
+  const quota = (first, second = 0, login = 0) => [
+    ...(first ? [{ policy: "quote-create", address: "127.0.0.1", attempts: first }] : []),
+    ...(second ? [{ policy: "quote-create", address: "127.0.0.2", attempts: second }] : []),
+    ...(login ? [{ policy: "auth-entry", address: "127.0.0.1", attempts: login }] : []),
+  ];
+  const baseline = await protectedState(db, [], secret), before = await snapshot(db, ["b2b", "public"]);
+  const beforeAdmission = await protectedState(db, [], secret, true);
   const payload = { comment: "Fictitious quote throttle inquiry", items: [{ product_id: fixture.product, quantity: "1.25" }] };
   const headers = (actor = "owner", key = keys.original, extra = {}) => ({ Authorization: `Bearer ${fixture.tokens[actor]}`, "X-Organization-ID": fixture.orgs[actor === "other" ? "b" : "a"], "Idempotency-Key": key, ...extra });
   const quote = (options = {}) => request("/api/v1/quotes/catalog", { method: "POST", body: payload, headers: headers(), ...options });
   const count = async name => Number((await table(db, name).count("* AS total").first()).total);
-  let latestAccepted, first;
+  let latestAccepted, first, admissionBeforeExpiry;
   await check("Q01 native syntax prototype and byte protections plus unavailable generic POST preserve catalog allowances", async () => {
     for (const raw of ["{", '{"items":', "true false", '{"__proto__":{"quote_limit_polluted":true}}']) assert.equal((await quote({ raw, expected: 422 })).body.error.code, "validation_error");
     assert.equal({}.quote_limit_polluted, undefined);
@@ -135,7 +156,7 @@ async function verifyQuoteLimit({ app, request, check, fixture, report, progress
       { headers: headers("owner", "invalid-key"), expected: 422, code: "validation_error" },
     ];
     for (const item of decoded) assert.equal((await quote(item)).body.error.code, item.code);
-    assert.deepEqual(await snapshot(db, ["b2b", "public"]), before);
+    assert.deepEqual(await protectedState(db, quota(5), secret, true), beforeAdmission);
     first = await quote({ expected: 201 });
     const replay = await quote({ expected: 200 }); assert.deepEqual(replay.body, first.body);
     const peer = await quote({ headers: headers("peer"), expected: 201 });
@@ -144,7 +165,7 @@ async function verifyQuoteLimit({ app, request, check, fixture, report, progress
     const tenth = await quote({ headers: headers("owner", keys.original, { "X-Forwarded-For": "198.51.100.17", Forwarded: 'for="203.0.113.9"' }), expected: 200 });
     latestAccepted = performance.now(); assert.deepEqual(tenth.body, first.body);
     assert.equal(await count("quote_requests"), 3); assert.equal(await count("quote_request_items"), 3); assert.equal(await count("audit_events"), 3);
-    assert.deepEqual(await protectedState(db), baseline);
+    assert.deepEqual(await protectedState(db, quota(10), secret), baseline);
   });
   await check("Q03 concurrent rejected attempts ignore spoofed forwarding auth schema and idempotency with no writes or audit", async () => {
     const unchanged = await snapshot(db, ["b2b", "public"]), metricsBefore = metrics.snapshot();
@@ -169,14 +190,16 @@ async function verifyQuoteLimit({ app, request, check, fixture, report, progress
     for (const result of responses.filter(result => result.status === 429)) rateError(result);
     assert.equal(new Set(responses.filter(result => result.status === 201).map(result => result.body.id)).size, 10);
     assert.equal(await count("quote_requests"), 13); assert.equal(await count("quote_request_items"), 13); assert.equal(await count("audit_events"), 13);
+    assert.deepEqual(await protectedState(db, quota(10, 10), secret), baseline);
   });
   await check("Q05 exhausted quote quota leaves login limiter at its unchanged twenty-call policy", async () => {
-    const unchanged = await snapshot(db, ["b2b", "public"]);
+    const unchanged = await protectedState(db, quota(10, 10), secret, true);
     // Tokens are fixture-signed; no login call has used this actual socket IP.
     for (let index = 0; index < 20; index++) assert.equal((await request("/api/v1/auth/login", { method: "POST", body: {}, expected: 422 })).body.error.code, "validation_error");
-    rateError(await request("/api/v1/auth/login", { method: "POST", body: {}, expected: 429 }), "rate_limited", "Try again later");
+    rateError(await request("/api/v1/auth/login", { method: "POST", body: {}, expected: 429 }), "rate_limited", "Too many attempts. Try again later.");
     rateError(await quote({ expected: 429 }));
-    assert.deepEqual(await snapshot(db, ["b2b", "public"]), unchanged);
+    assert.deepEqual(await protectedState(db, quota(10, 10, 20), secret, true), unchanged);
+    admissionBeforeExpiry = await admissionState(db, quota(10, 10, 20), secret);
   });
   await check("Q06 the real default sixty-second window expires without resets and blocked creation safely retries", async () => {
     const waitStarted = performance.now();
@@ -194,6 +217,9 @@ async function verifyQuoteLimit({ app, request, check, fixture, report, progress
     rateError(await quote({ headers: headers("owner", randomUUID()), expected: 429 }));
     assert.deepEqual(await snapshot(db, ["b2b", "public"]), unchanged);
     assert.equal(await count("quote_requests"), 14); assert.equal(await count("quote_request_items"), 14); assert.equal(await count("audit_events"), 14);
+    const afterExpiry = await admissionState(db, quota(10, 10, 20), secret);
+    const chargedKey = keyHash(secret, "quote-create", "127.0.0.1");
+    assert.deepEqual(afterExpiry.filter(row => row.key_hash !== chargedKey), admissionBeforeExpiry.filter(row => row.key_hash !== chargedKey), "Other IP and auth buckets must not change during quote expiry/retry");
   });
   await check("Q07 safe request IDs no-store errors and public metrics cover every live attempt", async () => {
     const beforeScrape = metrics.snapshot();
@@ -205,9 +231,11 @@ async function verifyQuoteLimit({ app, request, check, fixture, report, progress
     assert.equal(report.generatedRequestIds, report.httpRequests);
   });
   await check("Q08 quote writes alone preserve identity sessions permissions native catalog schema and grants", async () => {
-    assert.deepEqual(await protectedState(db), baseline);
+    assert.deepEqual(await protectedState(db, quota(10, 10, 20), secret), baseline);
     assert.equal(await table(db, "audit_events").whereNot({ action: "quote.create" }).first("id"), undefined);
     report.protectedStateFingerprint = digest(baseline);
+    report.admissionStateFingerprint = digest(await admissionState(db, quota(10, 10, 20), secret));
+    report.admissionRows = 3;
     report.createdQuotes = 14; report.quoteAuditEvents = 14;
   });
 }

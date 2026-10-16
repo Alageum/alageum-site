@@ -1,3 +1,4 @@
+import { isPublicOnly, PUBLIC_UNAVAILABLE_MESSAGE } from '../deployment/publicMode.js';
 import { clearSession, getSession, getSessionGeneration, setSession } from "./sessionTransport.js";
 
 export { clearSession, getSession, setSession } from "./sessionTransport.js";
@@ -67,6 +68,7 @@ function expireSession(requestSession) {
 }
 
 async function request(path, options = {}, retry = true, candidateOrganizationId, onAcceptedQuoteReceipt) {
+  if (isPublicOnly()) throw new ApiError(503, { error: { code: 'service_unavailable', message: PUBLIC_UNAVAILABLE_MESSAGE } });
   const session = captureSession();
   const headers = new Headers(options.headers || {});
   if (!(options.body instanceof FormData)) headers.set("Content-Type", "application/json");

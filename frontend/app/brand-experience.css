@@ -422,7 +422,7 @@
  .brand-utility .card,.brand-utility .workspace-panel,.brand-utility .inquiry-panel{padding:22px}
  .brand-utility .site-main>.brand-login{grid-template-columns:1fr;margin:24px 20px 48px;padding:0}
  .brand-experience .brand-login-story{min-height:300px;padding:32px 24px}
- .brand-experience .brand-login-story h2{font-size:38px}
+ .brand-experience .brand-login-story h2{font-size:clamp(32px,10vw,38px)}
  .brand-experience .brand-login-form{padding:32px 24px}
  .brand-experience .brand-login-form h1{font-size:32px}
  .brand-experience .site-footer{padding-top:48px}

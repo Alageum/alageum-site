@@ -13,16 +13,23 @@ const backend = resolve(__dirname, "..");
 
 const { redactor, createAppOwner, finishCleanup } = require("./run-system-checks");
 
+function isAllowedStartupRefusal(env) {
+  const original = env.E2E_QUOTE_LIMIT_OWNED_DATABASE_URL;
+  const expected = env.E2E_QUOTE_LIMIT_EXPECTED_GUARD;
+  const refusingMode = ((env.APP_ENV === "production" && expected === "Production startup blocked") ||
+    (env.APP_ENV === "staging" && expected === "Unsupported APP_ENV")) && env.DATABASE_URL === original;
+  const refusingDatabase = env.APP_ENV === "test" && expected === "isolated alageum_strapi" && env.DATABASE_URL === "postgresql://ignored:ignored@127.0.0.1:1/legacy_forbidden";
+  const refusingSecret = env.APP_ENV === "test" && expected === "ALAGEUM_JWT_SECRET must be explicitly supplied" && env.ALAGEUM_JWT_SECRET === "" && env.DATABASE_URL === original;
+  return Boolean(original && (refusingMode || refusingDatabase || refusingSecret));
+}
+
 // Child startup must fail before mounting/listening. No guard child can serve HTTP.
 async function startupGuard() {
   const env = process.env, original = env.E2E_QUOTE_LIMIT_OWNED_DATABASE_URL;
   // This subprocess entry point cannot become a way to sync an arbitrary DB.
   await support.requireFreshDatabase({ ...env, APP_ENV: "test", DATABASE_URL: original });
+  assert.ok(isAllowedStartupRefusal(env), "Only fixed startup refusal cases are permitted");
   const expected = env.E2E_QUOTE_LIMIT_EXPECTED_GUARD;
-  const refusingMode = ["production", "staging"].includes(env.APP_ENV) && expected === "Production startup blocked" && env.DATABASE_URL === original;
-  const refusingDatabase = env.APP_ENV === "test" && expected === "isolated alageum_strapi" && env.DATABASE_URL === "postgresql://ignored:ignored@127.0.0.1:1/legacy_forbidden";
-  const refusingSecret = env.APP_ENV === "test" && expected === "ALAGEUM_JWT_SECRET must be explicitly supplied" && env.ALAGEUM_JWT_SECRET === "" && env.DATABASE_URL === original;
-  assert.ok(refusingMode || refusingDatabase || refusingSecret, "Only fixed startup refusal cases are permitted");
   let app;
   try {
     app = require("@strapi/strapi").createStrapi({ appDir: backend, distDir: backend });
@@ -145,7 +152,7 @@ async function run() {
     await check("actual Strapi startup rejects production staging wrong database and missing secrets", async () => {
       for (const override of [
         { APP_ENV: "production", E2E_QUOTE_LIMIT_EXPECTED_GUARD: "Production startup blocked" },
-        { APP_ENV: "staging", E2E_QUOTE_LIMIT_EXPECTED_GUARD: "Production startup blocked" },
+        { APP_ENV: "staging", E2E_QUOTE_LIMIT_EXPECTED_GUARD: "Unsupported APP_ENV" },
         { DATABASE_URL: "postgresql://ignored:ignored@127.0.0.1:1/legacy_forbidden", E2E_QUOTE_LIMIT_EXPECTED_GUARD: "isolated alageum_strapi" },
         { ALAGEUM_JWT_SECRET: "", E2E_QUOTE_LIMIT_EXPECTED_GUARD: "ALAGEUM_JWT_SECRET must be explicitly supplied" },
       ]) {
@@ -183,6 +190,7 @@ async function run() {
   }
 }
 
+module.exports = { isAllowedStartupRefusal };
 if (require.main === module) {
   if (process.argv[2] === "--startup-guard") startupGuard().then(() => process.exit(process.exitCode || 0)).catch(() => { console.error("Quote throttle startup guard refused its environment"); process.exit(1); });
   else run().catch(() => { console.error("Quote throttle runner refused its environment before starting; use run-quote-limit-tests.sh"); process.exitCode = 1; });

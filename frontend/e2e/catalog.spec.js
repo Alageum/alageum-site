@@ -140,6 +140,8 @@ test("category and parameter filters survive reload and back-forward navigation"
 
 test("pagination, page size and sorting update results without losing the catalog", async ({ page }) => {
   await page.goto("/catalog?category=reactors");
+  const sort = page.getByRole("combobox", { name: "Сортировка", exact: true });
+  await expect(sort).toBeVisible();
   await expect(foundCount(page)).toHaveText("Найдено: 24");
   await expect(catalogRows(page)).toHaveCount(12);
   await expect(page.getByRole("button", { name: "Предыдущая страница", exact: true })).toBeDisabled();
@@ -147,7 +149,7 @@ test("pagination, page size and sorting update results without losing the catalo
   await expect(page).toHaveURL(/page=2/);
   await expect(catalogRows(page)).toHaveCount(12);
   await expect(page.getByRole("button", { name: "Следующая страница", exact: true })).toBeDisabled();
-  await page.getByLabel("Сортировка", { exact: true }).selectOption("power-asc");
+  await sort.selectOption("power-asc");
   await expect(page).toHaveURL(/sort=power-asc/);
   await expect(page).not.toHaveURL(/page=2/);
   await expect(catalogRows(page)).toHaveCount(12);
@@ -159,11 +161,28 @@ test("pagination, page size and sorting update results without losing the catalo
   await expect(page.getByLabel("Позиций на странице", { exact: true })).toHaveValue("24");
   await expect(catalogRows(page)).toHaveCount(24);
   await page.goto("/catalog?source=demo");
-  await page.getByLabel("Сортировка", { exact: true }).selectOption("power-asc");
+  await sort.selectOption("power-asc");
   await expect(catalogRows(page)).toHaveCount(9);
   await expect(catalogRows(page).first().getByRole("cell").nth(2)).toHaveText("630");
-  await page.getByLabel("Сортировка", { exact: true }).selectOption("power-desc");
+  await sort.selectOption("power-desc");
   await expect(catalogRows(page).first().getByRole("cell").nth(2)).toHaveText("1600");
+});
+
+test("sorting stays reachable below the compact breakpoint without hiding its select wrapper", async ({ page }) => {
+  await page.goto("/catalog?source=demo");
+  const sort = page.getByRole("combobox", { name: "Сортировка", exact: true });
+  for (const width of [320, 768, 1200, 1201]) {
+    await page.setViewportSize({ width, height: 900 });
+    await sort.scrollIntoViewIfNeeded();
+    await expectReceivesPointer(sort);
+    await expect(sort.locator("..")).toHaveClass(/design-select/);
+    await sort.selectOption("power-asc");
+    await expect(page).toHaveURL(/sort=power-asc/);
+    await expect(catalogRows(page).first().getByRole("cell").nth(2)).toHaveText("630");
+    await sort.selectOption("power-desc");
+    await expect(page).toHaveURL(/sort=power-desc/);
+    await expect(catalogRows(page).first().getByRole("cell").nth(2)).toHaveText("1600");
+  }
 });
 
 test("details disclose unknown specs and documents and support keyboard tabs", async ({ page }) => {
@@ -1303,7 +1322,7 @@ for (const specimen of measurementColumnRecords) for (const mode of ['static', '
     }
     const suffix = mode === 'api' ? '?source=api' : '';
     await page.goto(`/catalog/${specimen.id}${suffix}`);
-    const panel = page.locator('.product-visual-stack');
+    const panel = page.locator('.product-visual-stack[data-product-visual]');
     const viewer = panel.locator(`[data-equipment-model="${measurementColumnType}"]`);
     const icon = viewer.locator(`svg[data-equipment-type="${measurementColumnType}"]`);
     await expectAutomaticModel(viewer);
@@ -1382,7 +1401,7 @@ for (const mode of ['static', 'api']) test(`measurement column completion: ${mod
   await expect(viewer.getByRole('button', { name: 'Открыть 3D-модель', exact: true })).toBeFocused();
   await expect(page.locator('canvas')).toHaveCount(0);
   expect(await page.evaluate(() => window.__sourceAssetContexts.created)).toBe(0);
-  await expectMeasurementColumnDisclosure(page.locator('.product-visual-stack'), specimen);
+  await expectMeasurementColumnDisclosure(page.locator('.product-visual-stack[data-product-visual]'), specimen);
   await viewer.getByRole('button', { name: 'Открыть 3D-модель', exact: true }).click();
   await expect(viewer).toHaveAttribute('data-model-status', 'ready', { timeout: 30_000 });
   await viewer.getByRole('button', { name: 'Закрыть 3D-модель', exact: true }).click();
@@ -1426,7 +1445,7 @@ for (const mode of ['static', 'api']) test(`measurement column completion: ${mod
   }
   for (const specimen of measurementColumnRecords) {
     await page.goto(`/catalog/${specimen.id}${mode === 'api' ? '?source=api' : ''}`);
-    const panel = page.locator('.product-visual-stack');
+    const panel = page.locator('.product-visual-stack[data-product-visual]');
     const viewer = panel.locator(`[data-equipment-model="${measurementColumnType}"]`);
 
     await expect(viewer).toHaveAttribute('data-model-status', 'error');
@@ -1506,13 +1525,21 @@ for (const familyId of ['tr2026-family-zom', 'tr2026-family-znom']) for (const m
     await expect(page.locator('canvas')).toHaveCount(0);
     for (const specimen of specimens) {
       const option = selector.locator(`option[value="${specimen.id}"]`);
-      if (mode === 'api') await expect(option).toContainText(`стр. ${specimen.sourcePage}`);
-      await expect(option).toContainText(specimen.id.endsWith('config2') ? '35/√3' : '27,5');
+      const voltage = specimen.id.endsWith('config2') ? '35/√3' : '27,5';
+      if (mode === 'api') {
+        await expect(option).toContainText(`стр. ${specimen.sourcePage}`);
+        await expect(option).toContainText(voltage);
+      } else {
+        // Static editorial labels are short; source voltage remains explicit
+        // in the selected record, rather than being inferred from its name.
+        await expect(option).toHaveText(specimen.sourcePage === 99 ? 'ЗОМ-1,25/35' : `ЗНОМ-35 · ВН ${voltage} кВ`);
+      }
       await selector.selectOption(specimen.id);
       const selected = page.locator(`[data-selected-member="${specimen.id}"]`);
+      await expect(selected.locator('.member-evidence-specs')).toContainText(`ВН: ${voltage} кВ`);
       await expect(selected.locator('.family-member-source').getByRole('link', { name: `стр. ${specimen.sourcePage}`, exact: true }))
         .toHaveAttribute('href', `/catalog/source?source=transformers-2026&page=${specimen.sourcePage}`);
-      const panel = selected.locator('.product-visual-stack');
+      const panel = selected.locator('.product-visual-stack[data-product-visual]');
       const viewer = panel.locator(`[data-equipment-model="${measurementColumnType}"]`);
       await expectAutomaticModel(viewer);
       await expectMeasurementColumnIconSurface(selected.locator('.family-selected-heading svg'), testInfo, `${mode}-${specimen.id}-family-heading`);
@@ -1596,7 +1623,7 @@ for (const specimen of protectionExampleRecords) for (const mode of ['static', '
     if (mode === 'api') await routeSourceContextRecords(page, [specimen.id]);
     const suffix = mode === 'api' ? '?source=api' : '';
     await page.goto(`/catalog/${specimen.id}${suffix}`);
-    const panel = page.locator('.product-visual-stack');
+    const panel = page.locator('.product-visual-stack[data-product-visual]');
     const viewer = panel.locator(`[data-equipment-model="${specimen.type}"]`);
     await expectAutomaticModel(viewer);
     await expect(viewer.locator('canvas')).toHaveCount(1);
@@ -1675,7 +1702,7 @@ for (const specimen of protectionExampleRecords) for (const mode of ['static', '
     await expect(viewer.getByRole('button', { name: 'Открыть 3D-модель', exact: true })).toBeFocused();
     await expect(page.locator('canvas')).toHaveCount(0);
     expect(await page.evaluate(() => window.__sourceAssetContexts.created)).toBe(0);
-    await expectProtectionExampleDisclosure(page.locator('.product-visual-stack'), specimen);
+    await expectProtectionExampleDisclosure(page.locator('.product-visual-stack[data-product-visual]'), specimen);
     await viewer.getByRole('button', { name: 'Открыть 3D-модель', exact: true }).click();
     await expect(viewer).toHaveAttribute('data-model-status', 'ready', { timeout: 30_000 });
     await viewer.getByRole('button', { name: 'Закрыть 3D-модель', exact: true }).click();
@@ -1692,7 +1719,7 @@ for (const mode of ['static', 'api']) test(`protection source examples: ${mode} 
   if (mode === 'api') await routeSourceContextRecords(page, protectionExampleRecords.map(specimen => specimen.id));
   for (const specimen of protectionExampleRecords) {
     await page.goto(`/catalog/${specimen.id}${mode === 'api' ? '?source=api' : ''}`);
-    const panel = page.locator('.product-visual-stack');
+    const panel = page.locator('.product-visual-stack[data-product-visual]');
     const viewer = panel.locator(`[data-equipment-model="${specimen.type}"]`);
 
     await expect(viewer).toHaveAttribute('data-model-status', 'error');
@@ -1734,7 +1761,7 @@ for (const mode of ['static', 'api']) test(`protection source examples: ${mode} 
     await selector.selectOption(specimen.id);
     const selected = page.locator(`[data-selected-member="${specimen.id}"]`);
     await expect(selected.locator('.family-selected-heading [data-product-icon]')).toHaveAttribute('data-icon-type', specimen.type);
-    const panel = selected.locator('.product-visual-stack');
+    const panel = selected.locator('.product-visual-stack[data-product-visual]');
     const viewer = panel.locator(`[data-equipment-model="${specimen.type}"]`);
     await expectAutomaticModel(viewer);
     await expect(viewer).toHaveAttribute('data-model-status', 'ready', { timeout: 30_000 });
@@ -1898,7 +1925,7 @@ for (const [batchIndex, specimens] of sourceContextBatches.entries()) for (const
       const context = await expectSourceContext(page, specimen, mode);
       await expect(page.locator('[data-equipment-model], canvas, [data-construction-choice]')).toHaveCount(0);
       await expect(page.getByRole('combobox', { name: 'Конструкция для просмотра', exact: true })).toHaveCount(0);
-      await expect(page.locator('.product-visual-stack')).toHaveAttribute('data-product-visual', productById(specimen.id).familyId);
+      await expect(page.locator('.product-visual-stack[data-product-visual]')).toHaveAttribute('data-product-visual', productById(specimen.id).familyId);
       if (specimen === specimens[0]) await sourceContextReachabilityEvidence(page, context, specimen, testInfo, `${mode}-${specimen.id}`);
       await expectShell(page);
     }
@@ -2003,7 +2030,21 @@ for (const familyId of ['cat-shnn', 'cat-ptm-tded']) for (const mode of ['static
       }
     }
     await selector.selectOption('');
-    await expect(page.locator('[data-selected-member], [data-source-context-for], canvas')).toHaveCount(0);
+    await expect(selector).toHaveValue('');
+    await expect(page.locator('[data-selected-member], [data-source-context-for]')).toHaveCount(0);
+    if (familyId === 'cat-shnn') {
+      // Reset restores only the admitted family overview, which starts itself.
+      const overview = page.locator('[data-product-visual="cat-shnn"] [data-equipment-model="open-sided-distribution-panel"]');
+      await expect(page.locator('[data-equipment-model]')).toHaveCount(1);
+      await expectAutomaticModel(overview);
+      await expect(page.locator('canvas')).toHaveCount(1);
+      // Explicit dismissal still owns the idle/no-canvas lifecycle assertion.
+      await overview.getByRole('button', { name: 'Закрыть 3D-модель', exact: true }).click();
+      await expect(overview).toHaveAttribute('data-model-status', 'idle');
+      await expect(page.locator('canvas')).toHaveCount(0);
+    } else {
+      await expect(page.locator('[data-equipment-model], canvas')).toHaveCount(0);
+    }
     await expectShell(page);
   });
 }

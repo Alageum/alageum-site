@@ -1,0 +1,42 @@
+name: Public frontend deployment proof
+on:
+  push:
+    branches: [main, feat/account-onboarding-20261013]
+    paths: ['frontend/**', 'vercel.json', '.github/workflows/public-frontend.yml']
+  pull_request:
+    paths: ['frontend/**', 'vercel.json', '.github/workflows/public-frontend.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  public-frontend:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+      - run: node --test tests/public-deployment.test.mjs tests/browser-proxy.test.mjs
+      - run: npm run build
+        env:
+          ALAGEUM_PUBLIC_ONLY: '1'
+          NEXT_TELEMETRY_DISABLED: '1'
+      - run: npx playwright install --with-deps chromium
+      - run: node scripts/check-public-deployment.mjs --browser
+      - if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: public-frontend-failure-${{ github.run_id }}
+          path: |
+            frontend/test-results/
+            frontend/playwright-report/
+          retention-days: 7

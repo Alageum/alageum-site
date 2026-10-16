@@ -6,6 +6,8 @@ import { getSession } from "@/lib/api/client";
 import { getSessionGeneration, subscribeSession } from "@/lib/api/sessionTransport";
 import { organizationProfileScope } from "@/lib/organizations/profile";
 
+import { isPublicOnly } from '@/lib/deployment/publicMode';
+
 const AuthContext = createContext({ profile: null, loading: true, hasPermission: () => false });
 
 export function AuthProvider({ children }) {
@@ -39,7 +41,7 @@ export function AuthProvider({ children }) {
     const controller = new AbortController();
     let active = true;
     const current = () => active && profileGeneration.current === generation && profileReadGeneration.current === readGeneration && getSessionGeneration() === sessionGeneration;
-    const loadProfile = async () => getSession().access_token && !getSession().federated_pending ? me(controller.signal) : null;
+    const loadProfile = async () => !isPublicOnly() && getSession().access_token && !getSession().federated_pending ? me(controller.signal) : null;
     const install = (value, error = null) => {
       if (current()) {
         currentProfile.current = value;
