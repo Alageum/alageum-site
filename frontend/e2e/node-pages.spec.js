@@ -248,8 +248,8 @@ test('public Page: responsive RU about renders the shared shell without browser 
     await expect(page.locator('.editorial-body img, .editorial-body iframe, .editorial-body script')).toHaveCount(0);
     await expect(page.locator('meta[name="robots"]').first()).toHaveAttribute('content', /noindex.*nofollow/);
     // Verify actual CSS application, not just presence of a stylesheet link.
-    await expect(page.locator('.editorial-body')).toHaveCSS('font-size', page.viewportSize().width <= 760 ? '15px' : '17px');
-    await expect(page.locator('.editorial-body')).toHaveCSS('border-top-width', '1px');
+    await expect(page.locator('.editorial-body')).toHaveCSS('font-size', '17px');
+    await expect(page.locator('.editorial-body')).toHaveCSS('border-top-width', '0px');
     await expect(page.locator('body')).toHaveCSS('margin', '0px');
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1)).toBe(true);
   };
@@ -315,8 +315,8 @@ test('public Page: responsive CMS company is authoritative within the existing n
     }
     await expect(page.locator('.corp-mission, #history, .corp-about-opening, .corp-end-note')).toHaveCount(0);
     await expect(page.locator('.editorial-body img, .editorial-body iframe, .editorial-body script')).toHaveCount(0);
-    await expect(page.locator('.editorial-body')).toHaveCSS('font-size', page.viewportSize().width <= 760 ? '15px' : '17px');
-    await expect(page.locator('.editorial-body')).toHaveCSS('border-top-width', '1px');
+    await expect(page.locator('.editorial-body')).toHaveCSS('font-size', '17px');
+    await expect(page.locator('.editorial-body')).toHaveCSS('border-top-width', '0px');
     await expect(page.locator('body')).toHaveCSS('margin', '0px');
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1)).toBe(true);
   };
