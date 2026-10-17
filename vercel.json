@@ -9,9 +9,9 @@
       "devCommand": "ALAGEUM_PUBLIC_ONLY=1 npm run dev"
     }
   },
-  "rewrites": [
+  "routes": [
     {
-      "source": "/(.*)",
+      "src": "/(.*)",
       "destination": {
         "service": "frontend"
       }

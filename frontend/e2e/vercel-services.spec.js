@@ -28,7 +28,12 @@ test('Vercel serves public pages/assets and replaces private entry points with h
     expect(unavailable.status()).toBe(200);
     expect(await unavailable.text()).not.toMatch(/<form|type="password"/);
   }
-  for (const path of ['/docs', '/redoc', '/.env', '/README_HANDOFF.md']) expect((await request.get(path)).status()).toBe(404);
+  for (const path of ['/docs', '/redoc', '/.env', '/README_HANDOFF.md',
+    '/backend/app/core/config.py', '/backend-node/src/index.js', '/frontend/package.json',
+    '/frontend/next.config.mjs', '/frontend/lib/api/client.js', '/frontend/.env', '/frontend/.env.production']) {
+    const response = await request.get(path);
+    expect(response.status(), `${path} must never expose repository source or environment files`).toBe(404);
+  }
   const asset = await request.get('/brand/logo.png');
   expect(asset.status()).toBe(200);
   expect(asset.headers()['content-type']).toContain('image/png');

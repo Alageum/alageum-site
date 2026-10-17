@@ -9,6 +9,10 @@ and browser-local project/draft tools. Drafts do not send data to Alageum.
 Use Node **24.x**. The existing Vercel project can keep its repository root and
 Services framework: the root `vercel.json` now defines exactly one Next service,
 rooted at `frontend`, with `npm ci` and `ALAGEUM_PUBLIC_ONLY=1 npm run build`.
+An explicit low-level service route runs before filesystem lookup. High-level
+`rewrites` are intentionally not used: the pinned Vercel CLI otherwise serves
+repository files before applying a rewrite. The root `.vercelignore` also permits
+only frontend build inputs and config, excluding frontend environment files.
 All ingress, including `/api`, reaches that frontend; public-mode policy refuses
 API requests. There is no Python or Strapi service in this deployment config.
 The original two-service configuration remains in Git history, not active config.
@@ -51,7 +55,8 @@ honestly labelled and must not be mistaken for sent orders or support tickets.
 
 ## Publication boundary and remaining checks
 
-Only `frontend/public` is static public output; backend/data, private editorial
+Only `frontend/public` assets and Next-generated static assets are public output;
+backend/data, private editorial
 packages, docs, tests and environment files must not be copied into it. Next's
 source-byte verifier stays enabled. The 805MiB original transformer PDF was
 excluded from Git by the handoff and is unavailable until separately provided.

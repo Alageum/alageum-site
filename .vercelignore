@@ -1,0 +1,6 @@
+# Build inputs for the sole public Next service; all other root data stays out.
+/*
+!frontend
+!vercel.json
+/frontend/.env
+/frontend/.env.*

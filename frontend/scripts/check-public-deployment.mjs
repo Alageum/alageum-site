@@ -51,7 +51,9 @@ try {
     assert.equal(response.status, 503, path); assert.equal((await response.json()).error.code, 'service_unavailable'); checks++;
   }
   const asset = await get('/brand/logo-lettering-01-red.svg'); assert.equal(asset.status, 200); assert.match(asset.headers.get('content-type') || '', /image\/svg\+xml/); await asset.arrayBuffer(); checks++;
-  for (const path of ['/.env', '/README_HANDOFF.md', '/docs/public-deployment.md', '/backend-node/data/catalog-editorial/catalog.json']) {
+  for (const path of ['/.env', '/README_HANDOFF.md', '/docs/public-deployment.md', '/backend-node/data/catalog-editorial/catalog.json',
+    '/backend-node/src/index.js', '/frontend/package.json', '/frontend/next.config.mjs',
+    '/frontend/lib/api/client.js', '/frontend/.env', '/frontend/.env.production']) {
     const response = await get(path); assert.equal(response.status, 404, path); await response.arrayBuffer(); checks++;
   }
   if (browserProof) {

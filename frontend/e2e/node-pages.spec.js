@@ -244,7 +244,7 @@ test('public Page: responsive RU about renders the shared shell without browser 
     await expect(page.locator('.editorial-body').getByRole('heading', { level: 2, name: 'НАПРАВЛЕНИЕ РАЗВИТИЯ', exact: true })).toBeVisible();
     await expect(page.locator('header.site-header')).toBeVisible();
     await expect(page.locator('footer.site-footer')).toBeVisible();
-    await expect(page.locator('main.site-main > .editorial-page.site-container')).toHaveCount(1);
+    await expect(page.locator('main#main-content.site-main > .corp-page.corp-editorial-page > .site-container.corp-page-content > article.editorial-page')).toHaveCount(1);
     await expect(page.locator('.editorial-body img, .editorial-body iframe, .editorial-body script')).toHaveCount(0);
     await expect(page.locator('meta[name="robots"]').first()).toHaveAttribute('content', /noindex.*nofollow/);
     // Verify actual CSS application, not just presence of a stylesheet link.
@@ -296,7 +296,7 @@ test('public Page: responsive CMS company is authoritative within the existing n
     if (request.isNavigationRequest() && request.frame() === page.mainFrame()) documentRequests.push(request.url());
   });
   const assertRender = async () => {
-    await expect(page.locator('main.site-main > .editorial-page.site-container')).toHaveAttribute('lang', 'ru');
+    await expect(page.locator('main#main-content.site-main > .corp-page.corp-editorial-page > .site-container.corp-page-content > article.editorial-page')).toHaveAttribute('lang', 'ru');
     await expect(page.locator('h1')).toHaveCount(1);
     await expect(page.getByRole('heading', { level: 1 })).toHaveText('О компании');
     await expect(page.locator('.editorial-body')).toContainText('Alageum Electric — электротехническая группа Казахстана.');

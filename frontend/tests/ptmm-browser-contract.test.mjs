@@ -66,7 +66,7 @@ test('qualification browser configuration owns separate output, sixteen cases an
   assert.match(spec, /page\.goBack\(\)/); assert.match(spec, /malformedPtmmDto/); assert.match(spec, /differences\.check\(\)/);
 });
 
-test('current workflow preserves prior jobs except the explicit current-source reference migration and owns bounded PTMM evidence', async () => {
+test('current workflow preserves prior jobs outside the explicit reference/public-deployment migrations and owns bounded PTMM evidence', async () => {
   const archiveBytes = await readFile(new URL('../../docs/catalog-transformers-2026/review/ptmm-dimension-qualification/historical-test-bytes.json', import.meta.url));
   assert.equal(createHash('sha256').update(archiveBytes).digest('hex'), 'f656ca40a032c2819c0677826e60abc2781ef8fdb9ce6df68ef85d7e27483117');
   const archive = JSON.parse(archiveBytes);
@@ -76,15 +76,30 @@ test('current workflow preserves prior jobs except the explicit current-source r
   const after = await readFile(new URL('../../.github/workflows/ci.yml', import.meta.url), 'utf8');
   // This is a current workflow contract, not a new historical approval. The
   // immutable amendment gates still check their original reviewed source pins.
-  // Only the separately proved sanitized-source query/throttle invocation may
-  // differ; every other prior job, artifact, receipt and budget stays exact.
+  // The current-source reference and public-only Vercel deployment migrations
+  // have separate executable contracts. All other jobs and PTMM evidence stay
+  // byte-exact; this grants no new authority to an archived approval.
   const oldQuery = '      - name: Reproduce frozen FastAPI query reference vectors\n        run: python ../backend-node/tests/reference/generate_legacy_query.py --check\n';
   const currentQuery = '      - name: Reproduce current sanitized-source query and throttle behavior against archived vectors\n        run: python ../backend-node/tests/reference/verify_current_legacy.py --check\n';
   const oldThrottle = '      - name: Reproduce frozen quote-create limiter reference vectors\n        run: python ../backend-node/tests/reference/generate_legacy_quote_limit.py --check\n';
   for (const step of [oldQuery, oldThrottle]) assert.equal(before.split(step).length, 2);
   const boundary = after.indexOf('\n  ptmm-qualification-browser:');
   assert.ok(boundary > 0);
-  assert.equal(after.slice(0, boundary).trimEnd(), before.replace(oldQuery, currentQuery).replace(oldThrottle, '').trimEnd());
+  const partitionDeployment = workflow => {
+    assert.equal(workflow.split('\n  vercel-services:\n').length, 2);
+    const start = workflow.indexOf('\n  vercel-services:\n');
+    const end = workflow.indexOf('\n  transformer-source-browser:\n', start);
+    assert.ok(end > start);
+    return { retained: workflow.slice(0, start) + workflow.slice(end), deployment: workflow.slice(start, end) };
+  };
+  const current = partitionDeployment(after.slice(0, boundary));
+  const prior = partitionDeployment(before.replace(oldQuery, currentQuery).replace(oldThrottle, ''));
+  assert.equal(current.retained.trimEnd(), prior.retained.trimEnd());
+  assert.match(current.deployment, /ALAGEUM_PUBLIC_ONLY: ['"]1['"]/);
+  assert.match(current.deployment, /vercel dev -L/);
+  assert.match(current.deployment, /e2e\/vercel-services\.spec\.js/);
+  assert.match(current.deployment, /tests\/public-services-workflow\.test\.mjs/);
+  assert.doesNotMatch(current.deployment, /setup-python|uvicorn|uv sync|alembic|DATABASE_URL|API_INTERNAL_BASE_URL|NEXT_PUBLIC_API_URL/);
   const added = after.slice(boundary);
   assert.deepEqual(added.match(/^  [a-z0-9-]+:$/gm), ['  ptmm-qualification-browser:']);
   assert.match(before, /transformer-source-browser:[\s\S]*?timeout-minutes: 25/);
