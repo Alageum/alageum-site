@@ -1,6 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
+import { readFile, readdir } from 'node:fs/promises';
+import generalPlaywrightConfig from '../playwright.config.js';
+import { assertPlaywrightCollection } from './helpers/playwright-collection.mjs';
 import { createHash } from 'node:crypto';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
@@ -20,7 +22,9 @@ const proof = await createSourceContextAssetVerifier(asset => readFile(new URL(`
 test('KTPB browser fixtures preserve actual importer IDs, four raw records and separate source/geometry decisions', () => {
   assert.equal(fixture.format, 'ktpb-importer-public-dtos-v1');
   assert.equal(fixture.baseCommit, 'c3241426715e8ab556df48242e405c9b382660ee');
-  assert.equal(fixture.sourceRecordsSha256, digest(officialProducts));
+  // Historical importer evidence binds raw fields, not the later static-only editorial namespace.
+  const rawRecords = officialProducts.map(({ catalogEditorial, ...record }) => { void catalogEditorial; return record; });
+  assert.equal(fixture.sourceRecordsSha256, digest(rawRecords));
   assert.equal(fixture.productionDatabase, false);
   assert.deepEqual(fixture.rows.map(row => row.public_key), ktpbIds);
   assert.ok(proof);
@@ -99,13 +103,20 @@ test('new KTPB browser configuration owns sixteen bounded cases and independent 
   assert.doesNotMatch(workflow, /secrets\.|deploy|continue-on-error|npm audit|frontend\/test-results|prepare-catalog-diagnostics/);
 });
 
-test('the unchanged general Playwright configuration cannot collect the dedicated KTPB harness', () => {
+test('the general Playwright configuration collects current declared specs without dedicated KTPB fixtures', async () => {
   const output = execFileSync(process.execPath, [fileURLToPath(new URL('../node_modules/@playwright/test/cli.js', import.meta.url)),
-    'test', '--config=playwright.config.js', '--list', '--reporter=list'], {
+    'test', '--config=playwright.config.js', '--list', '--reporter=json'], {
     cwd: fileURLToPath(new URL('..', import.meta.url)), encoding: 'utf8', timeout: 30_000, maxBuffer: 1024 * 1024,
   });
   assert.doesNotMatch(output, /ktpb-source-context\.(?:spec|browser)\.js/);
-  assert.match(output, /Total: 170 tests in 7 files/);
+  // File membership is the contract here, not an obsolete global case total.
+  // New account cases and split route journeys must remain collectible.
+  const ignored = generalPlaywrightConfig.testIgnore.map(pattern => {
+    assert.match(pattern, /^\*\*\/[^*]+\.spec\.js$/);
+    return pattern.slice(3);
+  });
+  const declared = (await readdir(new URL('../e2e/', import.meta.url))).filter(name => name.endsWith('.spec.js') && !ignored.includes(name));
+  assertPlaywrightCollection(JSON.parse(output), declared, generalPlaywrightConfig.projects.map(project => project.name));
 });
 const box = (left, right, top, bottom) => ({ left, right, top, bottom, width: right - left, height: bottom - top });
 function node(rect, extra = {}) {

@@ -6,6 +6,23 @@ const { join, resolve } = require("node:path");
 const { tmpdir } = require("node:os");
 const { spawnSync } = require("node:child_process");
 const { validateEnvironment } = require("./quote-limit.integration-support");
+const { isAllowedStartupRefusal } = require("../scripts/run-quote-limit-checks");
+
+test("startup refusal child allows only the exact mode-specific guard and owned database", () => {
+  const original = "postgresql://synthetic:local-only@127.0.0.1:55432/alageum_strapi_quote_limit_test";
+  const base = { E2E_QUOTE_LIMIT_OWNED_DATABASE_URL: original, DATABASE_URL: original };
+  for (const [mode, message] of [["production", "Production startup blocked"], ["staging", "Unsupported APP_ENV"]]) {
+    const valid = { ...base, APP_ENV: mode, E2E_QUOTE_LIMIT_EXPECTED_GUARD: message };
+    assert.equal(isAllowedStartupRefusal(valid), true);
+    for (const change of [{ E2E_QUOTE_LIMIT_EXPECTED_GUARD: "" },
+      { E2E_QUOTE_LIMIT_EXPECTED_GUARD: mode === "production" ? "Unsupported APP_ENV" : "Production startup blocked" },
+      { APP_ENV: "test" }, { APP_ENV: "development" }, { DATABASE_URL: "postgresql://synthetic:local-only@127.0.0.1/foreign" },
+      { E2E_QUOTE_LIMIT_OWNED_DATABASE_URL: undefined }])
+      assert.equal(isAllowedStartupRefusal({ ...valid, ...change }), false);
+  }
+  assert.equal(isAllowedStartupRefusal({ ...base, APP_ENV: "test", E2E_QUOTE_LIMIT_EXPECTED_GUARD: "isolated alageum_strapi", DATABASE_URL: "postgresql://ignored:ignored@127.0.0.1:1/legacy_forbidden" }), true);
+  assert.equal(isAllowedStartupRefusal({ ...base, APP_ENV: "test", E2E_QUOTE_LIMIT_EXPECTED_GUARD: "ALAGEUM_JWT_SECRET must be explicitly supplied", ALAGEUM_JWT_SECRET: "" }), true);
+});
 
 test("quote throttle fixture guard requires exact loopback URL, test flags and owned nonsymlink cluster", () => {
   const root = mkdtempSync(join(tmpdir(), "alageum-quote-limit-tests."));

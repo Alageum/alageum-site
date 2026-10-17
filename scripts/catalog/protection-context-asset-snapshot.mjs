@@ -22,6 +22,10 @@ export async function protectionContextAssetSnapshot(checkout) {
     'lib/catalog/models/transformer2026Icons.js', 'lib/catalog/models/geometry.js', 'lib/catalog/models/transformerExecutionChoices.js',
     'lib/catalog/identityCompletion.js', 'lib/catalog/media.js',
   ].map(load));
+  // Historical body hashes bind raw source fields, not the later static-only
+  // editorial namespace. Every asset, media, context and preview call below
+  // still receives the real presented record to detect authority regressions.
+  const sourceBody = ({ catalogEditorial, ...record }) => { void catalogEditorial; return record; };
   // PR32's historical snapshot remains untouched. This successor also enumerates
   // its three accessory assets and the new vocabulary, independent of bindings.
   const accessoryTypes = await load('lib/catalog/models/accessory2026Types.js');
@@ -41,7 +45,7 @@ export async function protectionContextAssetSnapshot(checkout) {
   const outputs = record => ({ visual: visuals.getEquipmentVisual(record), icon: icons.getEquipmentIcon(record),
     choices: choices.getEquipmentConstructionChoices(record), panels: panels.getCatalogSourceComparisons(record) });
   const products = Object.fromEntries(data.officialProducts.map(record => [record.id, {
-    body: hash(record), static: hash(outputs(record)), api: hash(outputs(normalized(record))),
+    body: hash(sourceBody(record)), static: hash(outputs(record)), api: hash(outputs(normalized(record))),
     staticMedia: hash(media.getProductMedia(record, visuals.getEquipmentVisual(record))),
     apiMedia: hash(media.getProductMedia(normalized(record), visuals.getEquipmentVisual(normalized(record)))),
     choices: hash(choices.getEquipmentConstructionChoices(record)), panels: hash(panels.getCatalogSourceComparisons(record)),

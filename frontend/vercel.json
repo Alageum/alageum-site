@@ -1,0 +1,7 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "nextjs",
+  "installCommand": "npm ci",
+  "buildCommand": "ALAGEUM_PUBLIC_ONLY=1 npm run build",
+  "devCommand": "ALAGEUM_PUBLIC_ONLY=1 npm run dev"
+}

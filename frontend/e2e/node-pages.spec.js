@@ -241,15 +241,15 @@ test('public Page: responsive RU about renders the shared shell without browser 
     await expect(page.getByRole('heading', { level: 1 })).toHaveText('О компании');
     await expect(page.locator('h1')).toHaveCount(1);
     await expect(page.locator('.editorial-body')).toContainText('Alageum Electric — электротехническая группа Казахстана.');
-    await expect(page.locator('.editorial-body').getByRole('heading', { name: 'НАША МИССИЯ', exact: true })).toBeVisible();
+    await expect(page.locator('.editorial-body').getByRole('heading', { level: 2, name: 'НАПРАВЛЕНИЕ РАЗВИТИЯ', exact: true })).toBeVisible();
     await expect(page.locator('header.site-header')).toBeVisible();
     await expect(page.locator('footer.site-footer')).toBeVisible();
-    await expect(page.locator('main.site-main > .editorial-page.site-container')).toHaveCount(1);
+    await expect(page.locator('main#main-content.site-main > .corp-page.corp-editorial-page > .site-container.corp-page-content > article.editorial-page')).toHaveCount(1);
     await expect(page.locator('.editorial-body img, .editorial-body iframe, .editorial-body script')).toHaveCount(0);
     await expect(page.locator('meta[name="robots"]').first()).toHaveAttribute('content', /noindex.*nofollow/);
     // Verify actual CSS application, not just presence of a stylesheet link.
-    await expect(page.locator('.editorial-body')).toHaveCSS('font-size', page.viewportSize().width <= 760 ? '15px' : '17px');
-    await expect(page.locator('.editorial-body')).toHaveCSS('border-top-width', '1px');
+    await expect(page.locator('.editorial-body')).toHaveCSS('font-size', '17px');
+    await expect(page.locator('.editorial-body')).toHaveCSS('border-top-width', '0px');
     await expect(page.locator('body')).toHaveCSS('margin', '0px');
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1)).toBe(true);
   };
@@ -282,38 +282,57 @@ test('public Page: responsive CMS company is authoritative within the existing n
   });
   expect((await page.goto(`${frontend}/catalog`)).status()).toBe(200);
   await expectCatalogViewport(page);
+  const isMobile = page.viewportSize().width <= 760;
+  const navigation = page.getByRole('navigation', { name: isMobile ? 'Мобильная навигация' : 'Основная навигация', exact: true });
+  const openNavigation = async () => {
+    if (!isMobile) return;
+    const toggle = page.getByRole('button', { name: 'Открыть навигацию', exact: true });
+    await expectReceivesPointer(toggle);
+    await toggle.click();
+    await expect(navigation).toBeVisible();
+  };
+  const documentRequests = [];
+  page.on('request', request => {
+    if (request.isNavigationRequest() && request.frame() === page.mainFrame()) documentRequests.push(request.url());
+  });
   const assertRender = async () => {
-    await expect(page.locator('main.site-main > .editorial-page.site-container')).toHaveAttribute('lang', 'ru');
+    await expect(page.locator('main#main-content.site-main > .corp-page.corp-editorial-page > .site-container.corp-page-content > article.editorial-page')).toHaveAttribute('lang', 'ru');
     await expect(page.locator('h1')).toHaveCount(1);
     await expect(page.getByRole('heading', { level: 1 })).toHaveText('О компании');
     await expect(page.locator('.editorial-body')).toContainText('Alageum Electric — электротехническая группа Казахстана.');
-    await expect(page.locator('.editorial-body').getByRole('heading', { name: 'НАША МИССИЯ', exact: true })).toBeVisible();
+    await expect(page.locator('.editorial-body').getByRole('heading', { level: 2, name: 'НАПРАВЛЕНИЕ РАЗВИТИЯ', exact: true })).toBeVisible();
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', `${frontend}/company`);
     await expect(page.locator('meta[name="robots"]').first()).toHaveAttribute('content', /noindex.*nofollow/);
     await expect(page.locator('header.site-header')).toBeVisible();
     await expect(page.locator('footer.site-footer')).toBeVisible();
-    await expect(page.locator('header.site-header .site-nav-link[href="/company"]')).toHaveAttribute('aria-current', 'page');
-    await expect(page.locator('.site-mobile-navigation a[href="/company"]').first()).toHaveAttribute('aria-current', 'page');
-    await expect(page.locator('header.site-header a[href="/catalog"]').first()).toHaveAttribute('href', '/catalog');
+    await openNavigation();
+    await expect(navigation.getByRole('link', { name: 'Компания', exact: true })).toHaveAttribute('aria-current', 'page');
+    await expect(navigation.getByRole('link', { name: 'Компания', exact: true })).toHaveAttribute('href', '/company');
+    await expect(navigation.getByRole('link', { name: 'Каталог', exact: true })).toHaveAttribute('href', '/catalog/home');
+    if (isMobile) {
+      await page.getByRole('button', { name: 'Закрыть навигацию', exact: true }).click();
+      await expect(navigation).toBeHidden();
+    }
     await expect(page.locator('.corp-mission, #history, .corp-about-opening, .corp-end-note')).toHaveCount(0);
     await expect(page.locator('.editorial-body img, .editorial-body iframe, .editorial-body script')).toHaveCount(0);
-    await expect(page.locator('.editorial-body')).toHaveCSS('font-size', page.viewportSize().width <= 760 ? '15px' : '17px');
-    await expect(page.locator('.editorial-body')).toHaveCSS('border-top-width', '1px');
+    await expect(page.locator('.editorial-body')).toHaveCSS('font-size', '17px');
+    await expect(page.locator('.editorial-body')).toHaveCSS('border-top-width', '0px');
     await expect(page.locator('body')).toHaveCSS('margin', '0px');
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1)).toBe(true);
   };
-  // Enter through the existing responsive navigation, including mobile menu
-  // opening, so this verifies the real public entry point as well as reload.
-  let companyLink = page.locator('header.site-header .site-nav-link[href="/company"]');
-  if (page.viewportSize().width <= 760) {
-    const toggle = page.getByRole('button', { name: 'Открыть навигацию', exact: true });
-    await expectReceivesPointer(toggle);
-    await toggle.click();
-    companyLink = page.locator('.site-mobile-navigation a[href="/company"]').first();
-  }
+  // The catalog has its own navigation. Use its real home link to reach the
+  // corporate shell, then enter Company through desktop/mobile navigation.
+  const homeLink = page.getByRole('banner').getByRole('link', { name: 'ALAGEUM Electric — главная', exact: true });
+  await expect(homeLink).toHaveAttribute('href', '/');
+  await expectReceivesPointer(homeLink);
+  await Promise.all([page.waitForURL(`${frontend}/`), homeLink.click()]);
+  await openNavigation();
+  const companyLink = navigation.getByRole('link', { name: 'Компания', exact: true });
+  await expect(companyLink).toHaveAttribute('href', '/company');
   await expectReceivesPointer(companyLink);
   await Promise.all([page.waitForURL(`${frontend}/company`), companyLink.click()]);
   await assertRender();
+  expect(documentRequests, 'Public links must use client navigation without a document reload').toEqual([]);
   expect((await page.reload()).status()).toBe(200);
   await assertRender();
   await page.evaluate(() => document.fonts.ready);

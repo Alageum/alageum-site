@@ -5,7 +5,7 @@ import { prepareTopCapture } from './helpers/prepare-top-capture';
 // No route interception: this test requires the running Node/Strapi backend and
 // its isolated seeded PostgreSQL database. Mocked interruption cases remain in
 // quotes.spec.js; this suite proves the same UI contract against real storage.
-const api = process.env.E2E_API_URL || 'http://127.0.0.1:8016/api/v1';
+const api = (process.env.E2E_API_URL || `${process.env.E2E_BASE_URL || 'http://127.0.0.1:3141'}/api/v1`).replace(/\/$/, '');
 
 test('real Node RFQ survives anonymous handoff, save, retry, reload and own list', async ({ page, request }, testInfo) => {
   const published = await request.get(`${api}/catalog/products/tmg-400`);
@@ -46,9 +46,12 @@ test('real Node RFQ survives anonymous handoff, save, retry, reload and own list
   // Repeat the browser's exact request and prove the DB idempotency contract.
   const original = response.request();
   const headers = await original.allHeaders();
-  const replay = await request.post(`${api}/quotes/catalog`, {
+  expect(headers.authorization).toBeUndefined();
+  expect(headers['x-browser-session']).toMatch(/^[0-9a-f-]{36}$/);
+  const replay = await page.request.post(`${api}/quotes/catalog`, {
     headers: {
-      Authorization: headers.authorization,
+      Origin: new URL(page.url()).origin,
+      'X-Browser-Session': headers['x-browser-session'],
       'X-Organization-Id': headers['x-organization-id'],
       'Idempotency-Key': headers['idempotency-key'],
     },

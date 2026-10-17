@@ -18,7 +18,7 @@ function redact(value) {
   let result = String(value);
   for (const secret of secrets) if (secret) result = result.split(secret).join("[REDACTED]");
   return result.replace(/\beyJ[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+/g, "[REDACTED_TOKEN]")
-    .replace(/(?<![A-Za-z0-9_-])[A-Za-z0-9_-]{64,}(?![A-Za-z0-9_-])/g, "[REDACTED_SECRET]")
+    .replace(/(?<![A-Za-z0-9_-])[A-Za-z0-9_-]{43,}(?![A-Za-z0-9_-])/g, "[REDACTED_SECRET]")
     .replace(/\$argon2\S+/g, "[REDACTED_HASH]");
 }
 // Only complete lines reach disk; credentials spanning output chunks are masked.
@@ -88,7 +88,10 @@ const deadline = setTimeout(() => { void interrupted("runner deadline"); }, 9000
     for (const key of ["APP_KEYS", "ADMIN_JWT_SECRET", "API_TOKEN_SALT", "TRANSFER_TOKEN_SALT", "ENCRYPTION_KEY", "ALAGEUM_JWT_SECRET"]) secrets.add(process.env[key]);
     const webPort = mode === "--browser" ? await port() : null;
     const webOrigin = webPort ? `http://127.0.0.1:${webPort}` : null;
-    if (webOrigin) process.env.CORS_ORIGINS = webOrigin;
+    if (webOrigin) {
+      process.env.CORS_ORIGINS = webOrigin;
+      process.env.ALAGEUM_BROWSER_ORIGIN = webOrigin;
+    }
     process.chdir(backend); process.env.HOST = "127.0.0.1"; process.env.PORT = "0";
     app = require("@strapi/strapi").createStrapi({ appDir: backend, distDir: backend });
     await app.load();
@@ -131,7 +134,7 @@ const deadline = setTimeout(() => { void interrupted("runner deadline"); }, 9000
       assert.equal(untouched.version, 0); assert.equal(untouched.name, manifest.organizations.b.name);
     });
     if (mode === "--browser") {
-      const env = { ...process.env, NODE_ENV: "production", NEXT_TELEMETRY_DISABLED: "1", ALAGEUM_PROFILE_BUILD: "1", NEXT_PUBLIC_API_URL: `${origin}/api/v1`, NEXT_PUBLIC_CATALOG_SOURCE: "static", COMPANY_SOURCE: "static", PAGES_SOURCE: "static", PAGES_STATIC_PREVIEW: "1", E2E_PROFILE_BASE_URL: webOrigin, E2E_PROFILE_API_URL: `${origin}/api/v1`, E2E_PROFILE_ORGANIZATION_A: a, E2E_PROFILE_ORGANIZATION_B: b, E2E_PROFILE_OUTPUT: join(evidence, "browser") };
+      const env = { ...process.env, NODE_ENV: "production", NEXT_TELEMETRY_DISABLED: "1", ALAGEUM_PROFILE_BUILD: "1", NEXT_PUBLIC_API_URL: "/api/v1", API_INTERNAL_BASE_URL: `${origin}/api/v1`, NEXT_PUBLIC_CATALOG_SOURCE: "static", COMPANY_SOURCE: "static", PAGES_SOURCE: "static", PAGES_STATIC_PREVIEW: "1", E2E_PROFILE_BASE_URL: webOrigin, E2E_PROFILE_API_URL: `${webOrigin}/api/v1`, E2E_PROFILE_ORGANIZATION_A: a, E2E_PROFILE_ORGANIZATION_B: b, E2E_PROFILE_OUTPUT: join(evidence, "browser") };
       await check("dedicated production Next build", async () => { build = child([join(frontend, "node_modules/next/dist/bin/next"), "build"], env, "next-build.log"); await completed(build, "Profile Next build failed; inspect sanitized log"); });
       next = child([join(frontend, "node_modules/next/dist/bin/next"), "start", "--hostname", "127.0.0.1", "--port", String(webPort)], env, "next.log");
       const readyBy = Date.now() + 45000;
@@ -142,11 +145,20 @@ const deadline = setTimeout(() => { void interrupted("runner deadline"); }, 9000
       }
       // Keep the six HTTP fixture logins outside the real 20/minute browser
       // login allowance. Respect the limiter instead of disabling security.
-      const remainingLoginWindow = fixtureLoginWindow + 61000 - Date.now();
+      report.cookieProxy = await require("./verify-browser-cookie-proxy").verifyBrowserCookieProxy({
+        origin: webOrigin, email: fixtures.EMAILS.editor, password: validated.password,
+        organizationId: manifest.organizations.a.id, foreignOrganizationId: manifest.organizations.b.id,
+        rememberSecret: value => secrets.add(value),
+      });
+      // Prepare and login use the unchanged shared limiter; give browser cases
+      // a fresh window after this additional real HTTP proof.
+      save();
+      const cookieProofFinishedAt = Date.now();
+      const remainingLoginWindow = Math.max(fixtureLoginWindow, cookieProofFinishedAt) + 61000 - Date.now();
       if (remainingLoginWindow > 0) await new Promise(done => setTimeout(done, remainingLoginWindow));
       await check("dedicated desktop/mobile company profile browser acceptance", async () => {
         report.browser = "running";
-        browser = child([join(frontend, "node_modules/@playwright/test/cli.js"), "test", "--config=playwright.profile.config.js"], env, "playwright.log");
+        browser = child([join(frontend, "node_modules/@playwright/test/cli.js"), "test", "--config=playwright.profile.config.js", "--max-failures=1"], env, "playwright.log");
         await completed(browser, "Profile browser acceptance failed; inspect sanitized log"); report.browser = "passed";
       });
     } else report.browser = "not-run: explicit --backend-only";

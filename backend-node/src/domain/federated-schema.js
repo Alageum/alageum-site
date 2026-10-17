@@ -29,6 +29,7 @@ async function ensureSchema(db) {
     if (!(await schema().hasTable("browser_sessions"))) await schema().createTable("browser_sessions", t => {
       t.uuid("id").primary();
       t.string("token_hash", 64).notNullable().unique();
+      t.integer("credential_version").notNullable().defaultTo(0);
       t.string("browser_hash", 64).notNullable().unique();
       t.uuid("user_id").notNullable().references("id").inTable("b2b.users").onDelete("CASCADE");
       t.timestamp("expires_at", { useTz: true }).notNullable().index();

@@ -59,13 +59,26 @@ PGPASSWORD="$PG_PASSWORD" "$PG_BIN/createdb" -h 127.0.0.1 -p "$PG_PORT" -U alage
 export DATABASE_URL="postgresql://alageum_node_test:$PG_PASSWORD@127.0.0.1:$PG_PORT/alageum_strapi_test"
 export ALAGEUM_DOMAIN_TEST_DATABASE_URL="postgresql://alageum_node_test:$PG_PASSWORD@127.0.0.1:$PG_PORT/alageum_strapi_domain_test"
 export ALAGEUM_CMS_BROWSER_DATABASE_URL="postgresql://alageum_node_test:$PG_PASSWORD@127.0.0.1:$PG_PORT/alageum_strapi_browser_test"
+# Authentication integration tests each require a fresh, explicitly named database.
+PGPASSWORD="$PG_PASSWORD" "$PG_BIN/createdb" -h 127.0.0.1 -p "$PG_PORT" -U alageum_node_test alageum_browser_session_test
+export ALAGEUM_BROWSER_SESSION_TEST_DATABASE_URL="postgresql://alageum_node_test:$PG_PASSWORD@127.0.0.1:$PG_PORT/alageum_browser_session_test"
+PGPASSWORD="$PG_PASSWORD" "$PG_BIN/createdb" -h 127.0.0.1 -p "$PG_PORT" -U alageum_node_test alageum_federated_test
+export ALAGEUM_FEDERATED_TEST_DATABASE_URL="postgresql://alageum_node_test:$PG_PASSWORD@127.0.0.1:$PG_PORT/alageum_federated_test"
+PGPASSWORD="$PG_PASSWORD" "$PG_BIN/createdb" -h 127.0.0.1 -p "$PG_PORT" -U alageum_node_test alageum_registration_test
+export ALAGEUM_REGISTRATION_TEST_DATABASE_URL="postgresql://alageum_node_test:$PG_PASSWORD@127.0.0.1:$PG_PORT/alageum_registration_test"
+PGPASSWORD="$PG_PASSWORD" "$PG_BIN/createdb" -h 127.0.0.1 -p "$PG_PORT" -U alageum_node_test alageum_registration_browser_test
+export ALAGEUM_REGISTRATION_BROWSER_TEST_DATABASE_URL="postgresql://alageum_node_test:$PG_PASSWORD@127.0.0.1:$PG_PORT/alageum_registration_browser_test"
+PGPASSWORD="$PG_PASSWORD" "$PG_BIN/createdb" -h 127.0.0.1 -p "$PG_PORT" -U alageum_node_test alageum_rate_limit_test
+export ALAGEUM_RATE_LIMIT_TEST_DATABASE_URL="postgresql://alageum_node_test:$PG_PASSWORD@127.0.0.1:$PG_PORT/alageum_rate_limit_test"
+PGPASSWORD="$PG_PASSWORD" "$PG_BIN/createdb" -h 127.0.0.1 -p "$PG_PORT" -U alageum_node_test alageum_registration_mail_test
+export ALAGEUM_REGISTRATION_MAIL_TEST_DATABASE_URL="postgresql://alageum_node_test:$PG_PASSWORD@127.0.0.1:$PG_PORT/alageum_registration_mail_test"
 export APP_ENV=test HOST=127.0.0.1 ALAGEUM_SEED_DEMO=1 ALAGEUM_IMPORT_CATALOG=1
 export ALAGEUM_TEST_ADMIN_FIXTURES=1
 export STRAPI_TELEMETRY_DISABLED=true STRAPI_HIDE_UPDATE_MESSAGE=true NEXT_TELEMETRY_DISABLED=1
-export CORS_ORIGINS="http://127.0.0.1:$WEB_PORT"
-export E2E_API_URL="http://127.0.0.1:$PORT/api/v1" E2E_BASE_URL="http://127.0.0.1:$WEB_PORT"
+export CORS_ORIGINS="http://127.0.0.1:$WEB_PORT" ALAGEUM_BROWSER_ORIGIN="http://127.0.0.1:$WEB_PORT"
+export API_INTERNAL_BASE_URL="http://127.0.0.1:$PORT/api/v1" E2E_API_URL="http://127.0.0.1:$WEB_PORT/api/v1" E2E_BASE_URL="http://127.0.0.1:$WEB_PORT"
 export E2E_CMS_BASE_URL="http://127.0.0.1:$PORT/cms"
-export E2E_QUOTES_BASE_URL="$E2E_BASE_URL" NEXT_PUBLIC_API_URL="$E2E_API_URL" NEXT_PUBLIC_CATALOG_SOURCE=api
+export E2E_QUOTES_BASE_URL="$E2E_BASE_URL" NEXT_PUBLIC_API_URL=/api/v1 NEXT_PUBLIC_CATALOG_SOURCE=api
 for key in APP_KEYS ADMIN_JWT_SECRET API_TOKEN_SALT TRANSFER_TOKEN_SALT ENCRYPTION_KEY ALAGEUM_JWT_SECRET; do
   value=$(node -p 'require("node:crypto").randomBytes(32).toString("hex")')
   if [[ "$key" == APP_KEYS ]]; then value="$value,$(node -p 'require("node:crypto").randomBytes(32).toString("hex")')"; fi
@@ -83,6 +96,7 @@ if [[ "$MODE" != --integration-only ]]; then
   npm run check 2>&1 | tee "$WORK/backend-check.log"
 fi
 npm run test:integration 2>&1 | tee "$WORK/backend-integration.log"
+bash scripts/run-registration-mail-tests.sh 2>&1 | tee "$WORK/registration-mail.log"
 [[ "$MODE" != --integration-only ]] || exit 0
 HOME="$WORK/home" NODE_ENV=production npm run build 2>&1 | tee "$WORK/backend-build.log"
 [[ "$MODE" != --backend-only ]] || exit 0

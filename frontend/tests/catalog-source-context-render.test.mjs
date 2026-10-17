@@ -1,3 +1,4 @@
+import { stubRenderBoundaries } from './helpers/render-boundaries.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
@@ -18,7 +19,7 @@ export async function sourceContextComponent() {
     .replace("import styles from './CatalogSourceContext.module.css';", 'const styles = new Proxy({}, { get: (_, name) => name });');
   const { transform, loadBindings } = require('next/dist/build/swc');
   await loadBindings();
-  const compiled = await transform(source, { filename: file.pathname, jsc: { parser: { syntax: 'ecmascript', jsx: true }, transform: { react: { runtime: 'automatic' } } }, module: { type: 'es6' } });
+  const compiled = await transform(stubRenderBoundaries(source), { filename: file.pathname, jsc: { parser: { syntax: 'ecmascript', jsx: true }, transform: { react: { runtime: 'automatic' } } }, module: { type: 'es6' } });
   const code = compiled.code.replaceAll('"react/jsx-runtime"', JSON.stringify(pathToFileURL(require.resolve('react/jsx-runtime')).href));
   component = (await import(`data:text/javascript;base64,${Buffer.from(code).toString('base64')}`)).default;
   return component;
@@ -70,18 +71,74 @@ test('scoped CSS gives narrow cards a single column, keeps complete figures, and
 });
 
 
-test('image request failure reports unavailable source and preserves the exact path without substitutions', async () => {
+// This small hook harness exercises attachment/error transitions without a DOM
+// dependency. The browser suite separately covers hydration and real requests.
+async function sourceImageHarness() {
   const file = new URL('../components/catalog/source-context/SourceContextImage.js', import.meta.url);
-  const source = (await readFile(file, 'utf8')).replace("import { createElement, useState } from 'react';", `import { createElement } from ${JSON.stringify(pathToFileURL(require.resolve('react')).href)}; export const state = { failedPath: null }; const useState = () => [state.failedPath, value => { state.failedPath = value; }];`);
+  const source = (await readFile(file, 'utf8')).replace(/^import \{[^}]+\} from 'react';/m, `import { createElement } from ${JSON.stringify(pathToFileURL(require.resolve('react')).href)}; export const state = { failedPath: null, imageRef: { current: null } }; const useState = () => [state.failedPath, value => { state.failedPath = value; }]; const useRef = () => state.imageRef; const useCallback = callback => callback;`);
   const { default: Image, state } = await import(`data:text/javascript;base64,${Buffer.from(source).toString('base64')}`);
+  state.failedPath = null;
+  state.imageRef.current = null;
+  return { Image, state };
+}
+
+test('image request failure reports unavailable source and preserves the exact path without substitutions', async () => {
+  const { Image, state } = await sourceImageHarness();
   const first = manifest.figures['shnn-page35-left-general-view'];
   const other = manifest.figures['shnn-page35-right-general-view'];
   const initial = Image({ figure: first });
   assert.equal(initial.type, 'img'); assert.equal(initial.props.src, first.cropPath);
-  initial.props.onError();
+  const image = { complete: false, naturalWidth: 0 };
+  initial.props.ref(image);
+  initial.props.onError({ currentTarget: image });
   const failed = Image({ figure: first });
   assert.equal(failed.type, 'span'); assert.equal(failed.props.role, 'status');
   assert.match(failed.props.children, /Исходное изображение недоступно/);
   assert.equal(Image({ figure: other }).props.src, other.cropPath);
   assert.equal(state.failedPath, first.cropPath);
+});
+
+test('attachment reconciles a failure before hydration but preserves pending and loaded source images', async () => {
+  const first = manifest.figures['shnn-page35-left-general-view'];
+  for (const [complete, naturalWidth, expectedType] of [[true, 0, 'span'], [false, 0, 'img'], [true, first.width, 'img']]) {
+    const { Image, state } = await sourceImageHarness();
+    const initial = Image({ figure: first });
+    assert.equal(initial.props.loading, 'lazy');
+    assert.equal(initial.props.decoding, 'async');
+    initial.props.ref({ complete, naturalWidth });
+    assert.equal(Image({ figure: first }).type, expectedType);
+    assert.equal(state.failedPath, expectedType === 'span' ? first.cropPath : null);
+  }
+});
+
+test('new source attachment recovers and stale failures cannot overwrite the current source state', async () => {
+  const { Image, state } = await sourceImageHarness();
+  const first = manifest.figures['shnn-page35-left-general-view'];
+  const other = manifest.figures['shnn-page35-right-general-view'];
+  const initial = Image({ figure: first });
+  const oldImage = { complete: true, naturalWidth: 0 };
+  initial.props.ref(oldImage);
+  assert.equal(Image({ figure: first }).type, 'span');
+  initial.props.ref(null);
+
+  const next = Image({ figure: other });
+  assert.notEqual(initial.key, next.key);
+  const nextImage = { complete: false, naturalWidth: 0 };
+  next.props.ref(nextImage);
+  assert.equal(state.failedPath, null);
+  initial.props.onError({ currentTarget: oldImage });
+  assert.equal(state.failedPath, null);
+  assert.equal(Image({ figure: other }).props.src, other.cropPath);
+
+  next.props.onError({ currentTarget: nextImage });
+  assert.equal(Image({ figure: other }).type, 'span');
+  initial.props.onError({ currentTarget: oldImage });
+  assert.equal(state.failedPath, other.cropPath);
+  assert.equal(Image({ figure: other }).type, 'span');
+  next.props.ref(null);
+
+  const recovered = Image({ figure: first });
+  recovered.props.ref({ complete: true, naturalWidth: first.width });
+  assert.equal(state.failedPath, null);
+  assert.equal(Image({ figure: first }).props.src, first.cropPath);
 });

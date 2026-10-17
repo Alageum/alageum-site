@@ -1,3 +1,4 @@
+import { stubRenderBoundaries } from './helpers/render-boundaries.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
@@ -27,7 +28,7 @@ async function component(name) {
   for (const moduleName of ['identityCompletion', 'presentation', 'sources', 'familySourceReferences', 'ntmiSourcePreview']) source = source.replace(`'@/lib/catalog/${moduleName}'`, JSON.stringify(new URL(`../lib/catalog/${moduleName}.js`, import.meta.url).href));
   const { transform, loadBindings } = require('next/dist/build/swc');
   await loadBindings();
-  const output = await transform(source, { filename: file.pathname, jsc: { parser: { syntax: 'ecmascript', jsx: true }, transform: { react: { runtime: 'automatic' } } }, module: { type: 'es6' } });
+  const output = await transform(stubRenderBoundaries(source), { filename: file.pathname, jsc: { parser: { syntax: 'ecmascript', jsx: true }, transform: { react: { runtime: 'automatic' } } }, module: { type: 'es6' } });
   const code = output.code.replaceAll('"react/jsx-runtime"', JSON.stringify(pathToFileURL(require.resolve('react/jsx-runtime')).href));
   const url = `data:text/javascript;base64,${Buffer.from(code).toString('base64')}`;
   compiled.set(name, url);
@@ -45,7 +46,12 @@ test('twenty admitted executions join only their explicit original family withou
     assert.ok(!family.variantIds.includes(execution.id));
     const members = catalogFamilyMembers(family, officialProducts);
     assert.equal(members.filter(member => member.id === execution.id).length, 1);
-    assert.strictEqual(members.find(member => member.id === execution.id), execution);
+    const member = members.find(member => member.id === execution.id);
+    assert.strictEqual(member, productById(execution.id));
+    // The optional editorial namespace changes the presentation wrapper only.
+    const { catalogEditorial, ...source } = member;
+    void catalogEditorial;
+    assert.deepEqual(source, execution);
     assert.ok(!catalogFamilyMembers({ ...family, sourceSha256: 'changed' }, officialProducts).length);
   }
   assert.equal(JSON.stringify(officialProducts), before);
@@ -67,7 +73,10 @@ test('fifteen source configuration tuples stay table rows with distinct labels a
   assert.equal(catalogFamilyMembers(family, officialProducts).length, 0);
   assert.equal(family.configurations.length, 15);
   assert.equal(new Set(family.configurations.map(catalogConfigurationLabel)).size, 15);
-  assert.ok(family.configurations.every((row, i) => catalogConfigurationLabel(row, i).includes(row.sourceRow.variant)));
+  for (const [index, row] of family.configurations.entries()) {
+    const label = catalogConfigurationLabel(row, index);
+    for (const sourceFact of row.sourceRow.variant.split('; ')) assert.ok(label.includes(sourceFact), label);
+  }
   assert.equal(catalogConfigurationEvidence(family, 'power').length, 15);
   const summary = getCatalogSpecSummary(family, officialProducts);
   assert.match(summary.find(row => row.key === 'power').value, /По строкам таблицы: Номинальная мощность: 25000 кВАр/);
@@ -75,8 +84,8 @@ test('fifteen source configuration tuples stay table rows with distinct labels a
   assert.ok(!categorySpecRows('reactors').some(row => row.key === 'power'));
   const html = await render('CatalogConfigurations', family);
   assert.equal((html.match(/class="catalog-configuration"/g) || []).length, 15);
-  assert.match(html, /110 кВ; 25000 кВАр/);
-  assert.match(html, /500 кВ; 180000 кВАр/);
+  assert.match(html, /110 кВ · 25000 кВАр/);
+  assert.match(html, /500 кВ · 180000 кВАр/);
   assert.doesNotMatch(html, /href="\/catalog\/alageum-suntiruusij/);
   assert.equal(JSON.stringify(family), before);
 });

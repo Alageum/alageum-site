@@ -12,7 +12,7 @@ const response = (status, body = {}) => ({ status, ok: status >= 200 && status <
 function deferred() { let resolve; const promise = new Promise(done => { resolve = done; }); return { promise, resolve }; }
 function browser(fetcher) {
   const oldWindow = globalThis.window, oldFetch = globalThis.fetch, data = new Map(), events = [];
-  globalThis.window = { dispatchEvent: event => { if (event.type === 'alageum:session-expired') events.push(event.type); } };
+  globalThis.window = { location: { origin: 'http://localhost:3000' }, dispatchEvent: event => { if (event.type === 'alageum:session-expired') events.push(event.type); } };
   const oldStorage = globalThis.sessionStorage;
   globalThis.sessionStorage = { getItem: key => data.get(key) || null, setItem: (key, value) => data.set(key, value), removeItem: key => data.delete(key) };
   globalThis.fetch = fetcher;
@@ -120,55 +120,100 @@ test('ordinary session refresh preserves an unsaved company draft but same-accou
   } finally { env.restore(); }
 });
 
-test('delayed login /me cannot restore credentials after a newer login', async () => {
+const browserA = '10000000-0000-4000-8000-000000000001';
+const browserB = '10000000-0000-4000-8000-000000000002';
+const organization = '20000000-0000-4000-8000-000000000001';
+const cookiePair = id => ({ session_id: id, user: { id: 'user' } });
+const cookieMarker = id => ({ access_token: `browser:${id}`, browser_session: id });
+
+test('rejected password login restores absence or the still-owned prior public marker', async () => {
+  for (const prior of [null, cookieMarker(browserB)]) {
+    const calls = [], pending = deferred(), started = deferred();
+    const env = browser(async url => {
+      calls.push(url);
+      if (url.endsWith('/auth/browser-prepare')) return response(200, { flow_id: browserA });
+      if (url.endsWith('/auth/browser-cancel')) return response(204);
+      started.resolve(); return pending.promise;
+    });
+    try {
+      if (prior) setSession(prior);
+      const signingIn = login('synthetic@example.test', 'invalid-test-password');
+      const rejected = assert.rejects(signingIn, { status: 401, code: 'invalid_credentials' });
+      await started.promise;
+      assert.equal(getSession().federated_pending, true);
+      assert.deepEqual(JSON.parse(sessionStorage.getItem('alageum_session')), prior);
+      pending.resolve(response(401, { error: { code: 'invalid_credentials' } }));
+      await rejected;
+      assert.deepEqual(getSession(), prior ?? {});
+      assert.deepEqual(JSON.parse(sessionStorage.getItem('alageum_session')), prior);
+      assert.equal(calls.filter(url => url.endsWith('/auth/browser-cancel')).length, 1);
+    } finally { env.restore(); }
+  }
+});
+
+test('delayed cookie login /me cannot restore an older identity after a newer login', async () => {
   const pendingMe = deferred(), started = deferred();
   const env = browser(async url => {
-    if (url.endsWith('/auth/login')) return response(200, accountA);
+    if (url.endsWith('/auth/browser-prepare')) return response(200, { flow_id: browserA });
+    if (url.endsWith('/auth/browser-login')) return response(200, cookiePair(browserA));
     started.resolve(); return pendingMe.promise;
   });
   try {
     const signingIn = login('a@example.test', 'test-password'); await started.promise;
-    setSession(accountB); pendingMe.resolve(response(200, { user: { id: 'a' }, organization: { id: 'org-a' } }));
-    await assert.rejects(signingIn, { code: 'session_changed' }); assert.deepEqual(getSession(), accountB);
+    setSession(cookieMarker(browserB)); pendingMe.resolve(response(200, { user: { id: 'a' }, organization: { id: organization } }));
+    await assert.rejects(signingIn, { code: 'session_changed' }); assert.deepEqual(getSession(), cookieMarker(browserB));
   } finally { env.restore(); }
 });
 
-test('latest login attempt wins even if older login response arrives last', async () => {
-  const first = deferred(), second = deferred(), calls = [];
+test('latest cookie login wins even if the older login response arrives last', async () => {
+  const first = deferred(), started = deferred(); let prepareCalls = 0;
   const env = browser(async (url, options) => {
-    if (url.endsWith('/auth/login')) { calls.push(JSON.parse(options.body).email); return calls.length === 1 ? first.promise : second.promise; }
-    return response(200, { user: { id: 'b' }, organization: { id: 'org-b' } });
+    if (url.endsWith('/auth/browser-prepare')) return response(200, { flow_id: ++prepareCalls === 1 ? browserA : browserB });
+    if (url.endsWith('/auth/browser-cancel')) return response(204);
+    if (url.endsWith('/auth/browser-login')) {
+      if (JSON.parse(options.body).email === 'a@example.test') { started.resolve(); return first.promise; }
+      return response(200, cookiePair(browserB));
+    }
+    return response(200, { user: { id: 'b' }, organization: { id: organization } });
   });
   try {
-    const oldLogin = login('a@example.test', 'test-password'), newLogin = login('b@example.test', 'test-password');
-    second.resolve(response(200, accountB)); await newLogin;
-    first.resolve(response(200, accountA)); await assert.rejects(oldLogin, { code: 'session_changed' });
-    assert.deepEqual(getSession(), accountB);
+    const oldLogin = login('a@example.test', 'test-password'); const oldRejected = assert.rejects(oldLogin, { code: 'session_changed' });
+    await started.promise;
+    await login('b@example.test', 'test-password');
+    first.resolve(response(200, cookiePair(browserA))); await oldRejected;
+    assert.deepEqual(getSession(), { ...cookieMarker(browserB), organization_id: organization });
   } finally { env.restore(); }
 });
 
-test('aborted login cannot install delayed credentials', async () => {
-  const pending = deferred(), env = browser(async () => pending.promise), controller = new AbortController();
+test('aborted cookie login never installs delayed credentials and cancels its flow', async () => {
+  const pending = deferred(), started = deferred(), calls = [], controller = new AbortController();
+  const env = browser(async (url, options) => {
+    calls.push({ url, options });
+    if (url.endsWith('/auth/browser-prepare')) return response(200, { flow_id: browserA });
+    if (url.endsWith('/auth/browser-cancel')) return response(204);
+    started.resolve(); return pending.promise;
+  });
   try {
-    setSession(accountB); const signingIn = login('a@example.test', 'test-password', { signal: controller.signal });
-    controller.abort(); pending.resolve(response(200, accountA));
-    await assert.rejects(signingIn, { code: 'session_changed' }); assert.deepEqual(getSession(), accountB);
+    setSession(cookieMarker(browserB)); const signingIn = login('a@example.test', 'test-password', { signal: controller.signal });
+    await started.promise; controller.abort(); pending.resolve(response(200, cookiePair(browserA)));
+    await assert.rejects(signingIn, { code: 'session_changed' }); assert.deepEqual(getSession(), cookieMarker(browserB));
+    assert.equal(calls.filter(call => call.url.endsWith('/auth/browser-cancel')).length, 1);
   } finally { env.restore(); }
 });
 
-test('aborted login cannot complete a delayed /me or install its organization', async () => {
+test('aborted cookie login cannot complete delayed /me or install its organization', async () => {
   const pendingMe = deferred(), started = deferred(), controller = new AbortController();
-  const pair = { access_token: 'login-a', refresh_token: 'login-refresh-a' };
   const env = browser(async url => {
-    if (url.endsWith('/auth/login')) return response(200, pair);
+    if (url.endsWith('/auth/browser-prepare')) return response(200, { flow_id: browserA });
+    if (url.endsWith('/auth/browser-login')) return response(200, cookiePair(browserA));
     started.resolve(); return pendingMe.promise;
   });
   try {
     const signingIn = login('a@example.test', 'test-password', { signal: controller.signal }); await started.promise;
     const generation = getSessionGeneration(); controller.abort();
-    pendingMe.resolve(response(200, { user: { id: 'a' }, organization: { id: 'org-a' } }));
+    pendingMe.resolve(response(200, { user: { id: 'a' }, organization: { id: organization } }));
     await assert.rejects(signingIn, { code: 'session_changed' });
-    assert.deepEqual(getSession(), pair); assert.equal(getSessionGeneration(), generation);
+    assert.deepEqual(getSession(), cookieMarker(browserA)); assert.equal(getSessionGeneration(), generation);
   } finally { env.restore(); }
 });
 test('same-session catalogue 401 prompts explicit reauthentication without automatic retry', async () => {
@@ -212,5 +257,15 @@ test('late failed A refresh cannot sign out B; separate B refresh never awaits A
     assert.deepEqual(await bRead, { owner: 'b' });
     assert.equal(getSession().access_token, 'rotated-b'); assert.equal(getSession().organization_id, 'org-b');
     assert.equal(calls.filter(call => call.url.endsWith('/auth/refresh')).length, 2);
+  } finally { env.restore(); }
+});
+
+test('repeated unauthenticated account reads keep the empty session generation stable', async () => {
+  const env = browser(async () => response(401, { error: { code: 'authentication_required' } }));
+  try {
+    setSession({}); const generation = getSessionGeneration();
+    await assert.rejects(apiFetch('/auth/account'), { status: 401 });
+    await assert.rejects(apiFetch('/auth/account'), { status: 401 });
+    assert.equal(getSessionGeneration(), generation); assert.deepEqual(getSession(), {}); assert.deepEqual(env.events, []);
   } finally { env.restore(); }
 });

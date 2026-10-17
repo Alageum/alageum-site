@@ -1,9 +1,18 @@
-// Browser token transport boundary. No component accesses Web Storage directly.
-// The current per-tab DEV transport is intentionally replaceable by a same-site
-// HttpOnly cookie/BFF transport after deployment topology and CSRF policy are approved.
+// Website sessions persist only a public per-tab boundary and organization ID.
+// The credential lives in a same-origin HttpOnly cookie. Explicit legacy API
+// callers may keep a token pair in document memory, never in Web Storage.
 const SESSION_KEY = "alageum_session";
 let generation = 0;
 let fingerprint = null;
+let volatileSession = null;
+let volatileWindow = null;
+const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+function publicSession(value) {
+  if (!value || typeof value !== "object" || !UUID.test(value.browser_session || "")) return {};
+  const session = { access_token: `browser:${value.browser_session}`, browser_session: value.browser_session };
+  if (typeof value.organization_id === "string" && UUID.test(value.organization_id)) session.organization_id = value.organization_id;
+  return session;
+}
 // Callback suspension belongs only to this document, never persisted storage.
 let federatedPending = false;
 
@@ -39,8 +48,9 @@ export function subscribeSession(listener) {
 export function getSession() {
   if (typeof window === "undefined") return {};
   try {
-    const value = JSON.parse(sessionStorage.getItem(SESSION_KEY) || "{}");
-    delete value.federated_pending;
+    if (volatileWindow !== window) { volatileSession = null; volatileWindow = window; }
+    // Old DEV bearer pairs are deliberately not restored after this migration.
+    const value = volatileSession || publicSession(JSON.parse(sessionStorage.getItem(SESSION_KEY) || "{}"));
     return federatedPending ? { ...value, federated_pending: true } : value;
   } catch {
     return {};
@@ -50,9 +60,13 @@ export function getSession() {
 export function setSession(value, { preserveGeneration = false, pendingFederated = false } = {}) {
   if (typeof window !== "undefined") {
     getSessionGeneration();
-    const stored = { ...value }; delete stored.federated_pending;
+    const supplied = { ...value }; delete supplied.federated_pending;
+    const stored = publicSession(supplied);
+    volatileWindow = window;
+    volatileSession = supplied.browser_session || !supplied.access_token ? null : supplied;
     federatedPending = pendingFederated;
-    sessionStorage.setItem(SESSION_KEY, JSON.stringify(stored));
+    if (stored.browser_session) sessionStorage.setItem(SESSION_KEY, JSON.stringify(stored));
+    else sessionStorage.removeItem(SESSION_KEY);
     if (!preserveGeneration) generation += 1;
     fingerprint = sessionFingerprint();
     window.dispatchEvent(new Event("alageum:session-changed"));
@@ -63,6 +77,8 @@ export function clearSession() {
   if (typeof window !== "undefined") {
     getSessionGeneration();
     federatedPending = false;
+    volatileSession = null;
+    volatileWindow = window;
     sessionStorage.removeItem(SESSION_KEY);
     generation += 1;
     fingerprint = sessionFingerprint();

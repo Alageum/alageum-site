@@ -1,6 +1,7 @@
 import { expect, test } from "@playwright/test";
+import { installBrowserSession } from "./helpers/browser-session";
 
-const API = process.env.E2E_API_URL || "http://localhost:8000/api/v1";
+const API = (process.env.E2E_API_URL || `${process.env.E2E_BASE_URL || "http://localhost:3000"}/api/v1`).replace(/\/$/, "");
 const loginCache = new Map();
 
 async function login(request, email, password = "ChangeMe123!") {
@@ -33,17 +34,25 @@ async function headers(request, email) {
   };
 }
 
-async function browserLogin(page, request, email = "buyer@demo.example") {
-  const auth = await headers(request, email);
+async function browserLogin(page, email = "buyer@demo.example") {
   await page.goto("/");
+  const session = await installBrowserSession(page, { email, password: "ChangeMe123!" });
+  const response = await page.request.get(new URL("/api/v1/auth/me", page.url()).href, {
+    headers: { "X-Browser-Session": session.browser_session },
+  });
+  expect(response.status()).toBe(200);
+  const me = await response.json();
   await page.evaluate((session) => {
     sessionStorage.setItem("alageum_session", JSON.stringify(session));
-  }, { ...auth.pair, organization_id: auth.me.organization.id });
-  return auth;
+    window.dispatchEvent(new Event("alageum:session-changed"));
+  }, { ...session, organization_id: me.organization.id });
+  return { session, me };
 }
 
 test("login through UI", async ({ page }) => {
   await page.goto("/login");
+  await page.getByLabel("Email", { exact: true }).fill("buyer@demo.example");
+  await page.getByLabel("Пароль", { exact: true }).fill("ChangeMe123!");
   await page.getByRole("button", { name: "Войти" }).click();
   await expect(page).toHaveURL(/\/b2b$/);
   await expect(page.getByTestId("active-organization").getByText("Demo Industrial Company", { exact: true })).toBeVisible();
@@ -70,8 +79,8 @@ test("foreign order and document are hidden", async ({ request }) => {
   expect(fileResponse.status()).toBe(404);
 });
 
-test("RFQ and ticket creation through UI", async ({ page, request }) => {
-  await browserLogin(page, request);
+test("RFQ and ticket creation through UI", async ({ page }) => {
+  await browserLogin(page);
   await page.goto("/catalog?source=api");
   await page.getByRole("button", { name: "В подборку +", exact: true }).first().click();
   await page.goto("/inquiry?source=api");
@@ -83,11 +92,12 @@ test("RFQ and ticket creation through UI", async ({ page, request }) => {
   await page.reload();
   await expect(page.getByText("Playwright RFQ", { exact: true })).toBeVisible();
   await page.goto("/b2b/support");
-  await page.getByLabel("Категория").selectOption({ index: 1 });
-  await page.getByLabel("Тема").fill("Playwright ticket");
-  await page.getByLabel("Сообщение").fill("Deterministic E2E message");
-  await page.getByRole("button", { name: "Создать обращение" }).click();
-  await expect(page.getByRole("form", { name: "Новое обращение", exact: true }).getByRole("status")).toContainText("Обращение создано");
+  const ticketForm = page.getByRole("form", { name: "Новое обращение", exact: true });
+  await ticketForm.getByRole("combobox", { name: "Категория", exact: true }).selectOption({ index: 1 });
+  await ticketForm.getByLabel("Тема", { exact: true }).fill("Playwright ticket");
+  await ticketForm.getByLabel("Сообщение", { exact: true }).fill("Deterministic E2E message");
+  await ticketForm.getByRole("button", { name: "Создать обращение", exact: true }).click();
+  await expect(ticketForm.getByRole("status")).toContainText("Обращение создано");
 });
 
 test("AI read isolation and scoped write confirmation", async ({ request }) => {
@@ -144,16 +154,19 @@ test("AI read isolation and scoped write confirmation", async ({ request }) => {
   expect(executed.ok()).toBeTruthy();
 });
 
-test("invalid refresh returns reauthentication UX", async ({ page, request }) => {
-  const auth = await browserLogin(page, request);
+test("persisted legacy bearer cannot restore a browser session even with an existing cookie", async ({ page }) => {
+  const auth = await browserLogin(page);
+  let refreshes = 0;
+  page.on("request", request => { if (request.url() === `${API}/auth/refresh`) refreshes++; });
   await page.evaluate((session) => {
     sessionStorage.setItem("alageum_session", JSON.stringify(session));
   }, {
-    ...auth.pair,
     access_token: "invalid",
     refresh_token: "invalid",
     organization_id: auth.me.organization.id,
   });
   await page.goto("/b2b/orders");
   await expect(page.getByText("Войдите, чтобы открыть B2B кабинет.")).toBeVisible();
+  expect(refreshes).toBe(0);
 });
+

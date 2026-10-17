@@ -65,6 +65,12 @@ before(async () => {
     const target = path.join(directory, file);
     fs.mkdirSync(path.dirname(target), { recursive: true }); fs.writeFileSync(target, bytes);
   }
+  // Current catalog readers import the editorial adapter. Copy its runtime
+  // inputs without adding synthetic authority or changing any reviewed hash.
+  // The existing verifier still decides whether those current bytes are valid.
+  for (const file of ['frontend/lib/catalog/catalogEditorial.js', 'frontend/lib/catalog/catalogEditorialOverlay.json']) {
+    fs.copyFileSync(new URL(`../../${file}`, import.meta.url), path.join(directory, file));
+  }
   modules = {};
   for (const name of ['ktpb-source-context', 'frontend-security', 'ptmm-browser-correction', 'ptmm-qualification',
     'visual-presentation', 'catalog-browser', 'protection-context', 'measurement-column', 'source-asset', 'transformer']) {

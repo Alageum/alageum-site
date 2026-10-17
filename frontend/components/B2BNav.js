@@ -20,7 +20,8 @@ const links = [
 ["/b2b/quotes", "Запросы КП", "quote.read"],
 ["/b2b/support", "Поддержка", "ticket.read"],
 ["/b2b/profile", "Профиль", null],
-["/b2b/members", "Участники", "organization.manage_users"]];
+["/b2b/members", "Участники", "organization.manage_users"],
+["/b2b/access-requests", "Заявки на доступ", "organization.manage_users"]];
 
 
 function Navigation() {
@@ -40,6 +41,7 @@ function Navigation() {
   const tokenPresent = !loading && Boolean(getSession().access_token);
 
   return <LocaleElement as="aside" className="sidebar">
+    <Link href="/account">Мой аккаунт</Link>
     <LocaleElement as="section" className={styles.active} aria-label="Текущая организация" data-testid="active-organization">
       {loading ? <LocaleElement as="p" role="status">Проверка сессии…</LocaleElement> : profile ? <>
         <LocaleElement as="p" className="muted">Текущая организация</LocaleElement>

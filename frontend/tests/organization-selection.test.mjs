@@ -16,7 +16,7 @@ const denied = (code = 'organization_access_denied') => response(code === 'organ
 function deferred() { let resolve; const promise = new Promise(done => { resolve = done; }); return { promise, resolve }; }
 function browser(fetcher) {
   const old = { window: globalThis.window, storage: globalThis.sessionStorage, fetch: globalThis.fetch }, data = new Map(), events = [];
-  globalThis.window = { dispatchEvent: event => events.push(event.type) };
+  globalThis.window = { location: { origin: 'http://localhost:3000' }, dispatchEvent: event => events.push(event.type) };
   globalThis.sessionStorage = { getItem: key => data.get(key) || null, setItem: (key, value) => data.set(key, value), removeItem: key => data.delete(key) };
   globalThis.fetch = fetcher;
   return { events, restore() { globalThis.window = old.window; globalThis.sessionStorage = old.storage; globalThis.fetch = old.fetch; } };
@@ -121,8 +121,8 @@ test('changed totals or duplicate organization IDs fail closed instead of hiding
 });
 
 test('multi-membership login returns choices without silently selecting equal display names', async () => {
-  const pair = { access_token: 'new', refresh_token: 'new-refresh' }, members = [member(orgA), member(orgB, 1)];
-  const env = browser(async url => url.endsWith('/auth/login') ? response(200, pair) : url.endsWith('/auth/me') ? denied('organization_required') : response(200, page(members)));
+  const pair = { access_token: `browser:${orgA}`, browser_session: orgA }, members = [member(orgA), member(orgB, 1)];
+  const env = browser(async url => url.endsWith('/auth/browser-prepare') ? response(200, { flow_id: orgB }) : url.endsWith('/auth/browser-login') ? response(200, { session_id: orgA, user: profile().user }) : url.endsWith('/auth/me') ? denied('organization_required') : response(200, page(members)));
   try {
     setSession(sessionB); const result = await login('test@example.test', 'fixture');
     assert.equal(result.requiresOrganization, true); assert.deepEqual(result.memberships, members);
@@ -130,19 +130,20 @@ test('multi-membership login returns choices without silently selecting equal di
   } finally { env.restore(); }
 });
 
-test('zero-membership login reports empty choices and never restores the prior account', async () => {
-  const pair = { access_token: 'none', refresh_token: 'none-refresh' };
-  const env = browser(async url => url.endsWith('/auth/login') ? response(200, pair) : url.endsWith('/auth/me') ? denied() : response(200, page([])));
+test('zero-membership login requires personal onboarding and never restores the prior account', async () => {
+  const pair = { access_token: `browser:${orgA}`, browser_session: orgA };
+  const env = browser(async url => url.endsWith('/auth/browser-prepare') ? response(200, { flow_id: orgB }) : url.endsWith('/auth/browser-login') ? response(200, { session_id: orgA, user: profile().user }) : url.endsWith('/auth/me') ? denied() : response(200, page([])));
   try {
     setSession(sessionB); const result = await login('test@example.test', 'fixture');
-    assert.equal(result.requiresOrganization, true); assert.deepEqual(result.memberships, []); assert.deepEqual(getSession(), pair);
+    assert.equal(result.requiresOnboarding, true); assert.deepEqual(result.memberships, []); assert.deepEqual(getSession(), pair);
   } finally { env.restore(); }
 });
 
 test('one available listed membership is revalidated rather than trusted for grants', async () => {
-  const pair = { access_token: 'new', refresh_token: 'new-refresh' }; let meCalls = 0;
+  let meCalls = 0;
   const env = browser(async (url, options) => {
-    if (url.endsWith('/auth/login')) return response(200, pair);
+    if (url.endsWith('/auth/browser-prepare')) return response(200, { flow_id: orgB });
+    if (url.endsWith('/auth/browser-login')) return response(200, { session_id: orgA, user: profile().user });
     if (url.endsWith('/auth/me')) {
       if (++meCalls === 1) return denied('organization_required');
       assert.equal(options.headers.get('X-Organization-ID'), orgA); return response(200, profile(orgA, ['quote.read']));
@@ -197,13 +198,13 @@ test('all private mutation methods require explicit retry after 401 and never re
 
 test('a newer login attempt prevents an older candidate selection from committing', async () => {
   const candidate = deferred(), nextLogin = deferred();
-  const env = browser(async url => url.endsWith('/auth/login') ? nextLogin.promise : candidate.promise);
+  const env = browser(async url => url.endsWith('/auth/browser-prepare') ? response(200, { flow_id: orgB }) : url.endsWith('/auth/browser-login') ? nextLogin.promise : url.endsWith('/auth/browser-cancel') ? response(204) : candidate.promise);
   try {
     setSession(sessionA); const choosing = selectOrganization(orgB);
     const signingIn = login('new@example.test', 'fixture');
     candidate.resolve(response(200, profile(orgB)));
-    await assert.rejects(choosing, { code: 'session_changed' }); assert.deepEqual(getSession(), sessionA);
-    nextLogin.resolve(response(401)); await assert.rejects(signingIn, { status: 401 });
+    await assert.rejects(choosing, { code: 'session_changed' }); assert.deepEqual(getSession(), { ...sessionA, federated_pending: true });
+    nextLogin.resolve(response(401)); await assert.rejects(signingIn, { status: 401 }); assert.deepEqual(getSession(), sessionA);
   } finally { env.restore(); }
 });
 

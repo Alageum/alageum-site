@@ -2,10 +2,8 @@
 
 const { test } = require("node:test");
 const assert = require("node:assert/strict");
-const { readFileSync } = require("node:fs");
-const { createHash } = require("node:crypto");
+const { verifyCurrentLegacyReference } = require("./reference/current-legacy");
 const { performance } = require("node:perf_hooks");
-const path = require("node:path");
 const { AppError } = require("../src/domain/errors");
 const { createQuoteRateLimiter, quoteClientKey } = require("../src/domain/quote-rate-limit");
 const fixture = require("./reference/legacy-quote-limit.json");
@@ -27,7 +25,7 @@ function denial(error) {
   return true;
 }
 
-test("quote limiter reference pins frozen sources and its isolated execution scope", () => {
+test("quote limiter reference preserves historical evidence and verifies current source parity", () => {
   assert.equal(fixture.evidence, "quote limiter/client-key/error AST reference; not full legacy endpoint execution");
   assert.equal(fixture.source_revision, "8def4eb6b95588d11313f5df19f67bd80d1564a0");
   assert.equal(fixture.python_requirement, ">=3.12");
@@ -38,9 +36,7 @@ test("quote limiter reference pins frozen sources and its isolated execution sco
     { function: "create_quote", path_suffix: "/catalog", policy: "quote_create" },
     { function: "create_legacy_quote", path_suffix: "", policy: "quote_create" },
   ]);
-  for (const [file, digest] of Object.entries(fixture.source_sha256)) {
-    assert.equal(createHash("sha256").update(readFileSync(path.join(__dirname, "../..", file))).digest("hex"), digest, `Frozen source changed: ${file}`);
-  }
+  verifyCurrentLegacyReference("quote_limit", fixture);
 });
 
 for (const vector of fixture.client_key_cases) test(`quote peer matches default-empty Python proxy trust: ${vector.id}`, () => {

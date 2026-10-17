@@ -25,7 +25,7 @@ test("catalog controller charges the socket peer before any quote-domain work", 
   assert.equal(responseHeaders["Cache-Control"], "private, no-store");
 });
 
-test("denied quote attempts never enter domain authentication or persistence", () => {
+test("denied quote attempts never enter domain authentication or persistence", async () => {
   const failure = new AppError("rate_limit_exceeded", "Too many requests", 429);
   let entered = false;
   const routes = controller({ strapi: { alageum: {
@@ -33,7 +33,7 @@ test("denied quote attempts never enter domain authentication or persistence", (
     quotes: { create: () => { entered = true; } },
   } } });
   const responseHeaders = {};
-  assert.throws(() => routes.createQuote({ req: { socket: { remoteAddress: "127.0.0.1" } }, set: (key, value) => { responseHeaders[key] = value; } }), error => error === failure);
+  await assert.rejects(routes.createQuote({ req: { socket: { remoteAddress: "127.0.0.1" } }, set: (key, value) => { responseHeaders[key] = value; } }), error => error === failure);
   assert.equal(entered, false);
   assert.equal(responseHeaders["Cache-Control"], "private, no-store");
 });

@@ -1,3 +1,6 @@
+import { deploymentMode } from './lib/deployment/config.js';
+import { browserApiRewrites } from "./lib/api/browserProxy.js";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Keep the static-default interruption test build separate from the live
@@ -7,11 +10,13 @@ const nextConfig = {
   output: "standalone",
   poweredByHeader: false,
   reactStrictMode: true,
+  async rewrites() { return browserApiRewrites(); },
 };
 
 export default async function config(phase) {
   if (phase === PHASE_PRODUCTION_BUILD || phase === PHASE_DEVELOPMENT_SERVER) await verifySourceContextBuild();
-  return nextConfig;
+  const mode = deploymentMode();
+  return { ...nextConfig, env: { NEXT_PUBLIC_SITE_MODE: mode } }; 
 }
 import { PHASE_DEVELOPMENT_SERVER, PHASE_PRODUCTION_BUILD } from 'next/constants.js';
 import { verifySourceContextBuild } from './scripts/verify-source-context-build.mjs';

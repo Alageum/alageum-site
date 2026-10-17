@@ -168,7 +168,7 @@ async function run() {
     await check("S11 actual Strapi startup rejects production staging wrong database and missing secrets", async () => {
       for (const override of [
         { APP_ENV: "production", E2E_SYSTEM_EXPECTED_GUARD: "Production startup blocked" },
-        { APP_ENV: "staging", E2E_SYSTEM_EXPECTED_GUARD: "Production startup blocked" },
+        { APP_ENV: "staging", E2E_SYSTEM_EXPECTED_GUARD: "Unsupported APP_ENV" },
         { DATABASE_URL: "postgresql://ignored:ignored@127.0.0.1:1/legacy_forbidden", E2E_SYSTEM_EXPECTED_GUARD: "isolated alageum_strapi" },
         { ALAGEUM_JWT_SECRET: "", E2E_SYSTEM_EXPECTED_GUARD: "ALAGEUM_JWT_SECRET must be explicitly supplied" },
       ]) {

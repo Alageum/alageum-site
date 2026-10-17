@@ -1,5 +1,5 @@
 "use strict";
-const { quoteClientKey } = require("../../../domain/quote-rate-limit");
+const { clientAddress } = require("../../../domain/client-address");
 const { privateResponse } = require("../../../domain/auth");
 module.exports = ({ strapi }) => ({
   health: (ctx) => strapi.alageum.system.health(ctx),
@@ -7,12 +7,26 @@ module.exports = ({ strapi }) => ({
   metrics: (ctx) => strapi.alageum.system.metrics(ctx),
   version: (ctx) => strapi.alageum.system.version(ctx),
   authProviders: (ctx) => strapi.alageum.federated.providers(ctx),
+  browserPrepare: (ctx) => strapi.alageum.browserSessions.prepare(ctx),
+  browserLogin: (ctx) => strapi.alageum.auth.browserLogin(ctx),
+  browserCancel: (ctx) => strapi.alageum.browserSessions.cancel(ctx),
+  registrationRegister: (ctx) => strapi.alageum.registration.register(ctx),
+  registrationVerifyEmail: (ctx) => strapi.alageum.registration.verifyEmail(ctx),
+  registrationResendVerification: (ctx) => strapi.alageum.registration.resendVerification(ctx),
+  registrationForgotPassword: (ctx) => strapi.alageum.registration.forgotPassword(ctx),
+  registrationResetPassword: (ctx) => strapi.alageum.registration.resetPassword(ctx),
+  registrationAccount: (ctx) => strapi.alageum.registration.account(ctx),
+  registrationRequestCompanyAccess: (ctx) => strapi.alageum.registration.requestCompanyAccess(ctx),
+  registrationAccessRequests: (ctx) => strapi.alageum.registration.accessRequests(ctx),
+  registrationAccessRoles: (ctx) => strapi.alageum.registration.accessRoles(ctx),
+  registrationApproveAccess: (ctx) => strapi.alageum.registration.approveAccess(ctx),
+  registrationRejectAccess: (ctx) => strapi.alageum.registration.rejectAccess(ctx),
   googlePrepare: (ctx) => strapi.alageum.federated.prepare(ctx),
   googleStart: (ctx) => strapi.alageum.federated.start(ctx),
   googleCancel: (ctx) => strapi.alageum.federated.cancel(ctx),
   googleCallback: (ctx) => strapi.alageum.federated.callback(ctx),
-  browserSession: (ctx) => strapi.alageum.federated.session(ctx),
-  browserLogout: (ctx) => strapi.alageum.federated.logout(ctx),
+  browserSession: (ctx) => strapi.alageum.browserSessions.session(ctx),
+  browserLogout: (ctx) => strapi.alageum.browserSessions.logout(ctx),
   login: (ctx) => strapi.alageum.auth.login(ctx),
   refresh: (ctx) => strapi.alageum.auth.refresh(ctx),
   logout: (ctx) => strapi.alageum.auth.logout(ctx),
@@ -46,11 +60,11 @@ module.exports = ({ strapi }) => ({
   submitDocumentSignature: (ctx) => strapi.alageum.signing.submit(ctx),
   cancelDocumentSigning: (ctx) => strapi.alageum.signing.cancel(ctx),
   recheckDocumentSignature: (ctx) => strapi.alageum.signing.recheck(ctx),
-  createQuote: (ctx) => {
+  createQuote: async (ctx) => {
     privateResponse(ctx);
     // Strapi has decoded JSON before controller dispatch. Charge an accepted
     // attempt before the domain service authenticates or validates its input.
-    strapi.alageum.quoteCreateLimit(quoteClientKey(ctx));
+    await strapi.alageum.quoteCreateLimit(clientAddress(ctx), ctx);
     return strapi.alageum.quotes.create(ctx);
   },
   quotes: (ctx) => strapi.alageum.quotes.list(ctx),

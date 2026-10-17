@@ -32,7 +32,7 @@ test('new user with no memberships retains identity but receives no organization
     if (url.endsWith('/auth/me')) return response(403, { error: { code: 'organization_access_denied' } });
     return response(200, { items: [], total: 0, page: 1, page_size: 100 });
   });
-  try { const result = await resumeFederatedLogin({ sessionId }); assert.equal(result.requiresOrganization, true); assert.deepEqual(result.memberships, []); assert.equal(getSession().organization_id, undefined); }
+  try { const result = await resumeFederatedLogin({ sessionId }); assert.equal(result.requiresOnboarding, true); assert.deepEqual(result.memberships, []); assert.equal(getSession().organization_id, undefined); }
   finally { restore(); }
 });
 test('mismatching or missing callback session never bootstraps another account', async () => {
@@ -108,9 +108,9 @@ test('interrupted callback suspension is document-local and never traps a reload
     setSession({ access_token: 'valid-prior' });
     const result = resumeFederatedLogin({ sessionId, signal: controller.signal });
     assert.equal(getSession().federated_pending, true);
-    assert.equal(JSON.parse(sessionStorage.getItem('alageum_session')).federated_pending, undefined);
+    assert.equal(sessionStorage.getItem('alageum_session'), null);
     const freshDocument = await import(`../lib/api/sessionTransport.js?reload=${Date.now()}`);
-    assert.deepEqual(freshDocument.getSession(), { access_token: 'valid-prior' });
+    assert.deepEqual(freshDocument.getSession(), {});
     controller.abort(); pending.resolve(response(401, { error: { code: 'authentication_required' } }));
     await assert.rejects(result); assert.deepEqual(getSession(), { access_token: 'valid-prior' });
   } finally { restore(); }

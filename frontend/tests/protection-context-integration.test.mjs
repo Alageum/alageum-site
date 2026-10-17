@@ -1,3 +1,4 @@
+import { stubRenderBoundaries } from './helpers/render-boundaries.mjs';
 import { ktpbLegacyContextIds } from '../../scripts/catalog/ktpb-source-context-reviewed-dependencies.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -152,7 +153,7 @@ async function component(name) {
     .replace("'./SourceContextImage.js'", JSON.stringify(new URL('../components/catalog/source-context/SourceContextImage.js', import.meta.url).href))
     .replace(/(['"])@\/([^'"]+)\1/g, (_, quote, relative) => JSON.stringify(new URL(`../${relative}.js`, import.meta.url).href));
   const { transform, loadBindings } = require('next/dist/build/swc'); await loadBindings();
-  const result = await transform(source, { filename: file.pathname, jsc: { parser: { syntax: 'ecmascript', jsx: true }, transform: { react: { runtime: 'automatic' } } }, module: { type: 'es6' } });
+  const result = await transform(stubRenderBoundaries(source), { filename: file.pathname, jsc: { parser: { syntax: 'ecmascript', jsx: true }, transform: { react: { runtime: 'automatic' } } }, module: { type: 'es6' } });
   const code = result.code.replaceAll('"react/jsx-runtime"', JSON.stringify(pathToFileURL(require.resolve('react/jsx-runtime')).href)).replaceAll("from 'react'", `from ${JSON.stringify(pathToFileURL(require.resolve('react')).href)}`);
   const url = `data:text/javascript;base64,${Buffer.from(code).toString('base64')}`; compiled.set(name, url); return url;
 }

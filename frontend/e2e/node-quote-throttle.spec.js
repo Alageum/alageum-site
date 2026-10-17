@@ -6,7 +6,7 @@ import { prepareTopCapture } from './helpers/prepare-top-capture';
 
 // Real Node/Strapi, seeded disposable PostgreSQL, and the production frontend.
 // No routes are intercepted, storage is never seeded, and no clock is mocked.
-const api = process.env.E2E_API_URL || 'http://127.0.0.1:8016/api/v1';
+const api = (process.env.E2E_API_URL || `${process.env.E2E_BASE_URL || 'http://127.0.0.1:3141'}/api/v1`).replace(/\/$/, '');
 const createUrl = `${api}/quotes/catalog`;
 const uuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 const windowMs = 60_000;
@@ -79,7 +79,7 @@ test('real quote throttle preserves inquiry and login, then explicitly retries o
   expect(rejectedAt, 'At most ten accepted requests must exhaust this real peer-IP bucket').not.toBeNull();
   const recoveryAnchor = acceptedAt ?? rejectedAt;
 
-  const loginResponse = page.waitForResponse(response => response.url() === `${api}/auth/login` && response.request().method() === 'POST');
+  const loginResponse = page.waitForResponse(response => response.url() === `${api}/auth/browser-login` && response.request().method() === 'POST');
   await page.getByRole('button', { name: 'Войти', exact: true }).click();
   expect((await loginResponse).status(), 'Quote exhaustion must not consume the independent login bucket').toBe(200);
   await expect(page).toHaveURL(/\/inquiry\?source=api$/);
@@ -122,10 +122,12 @@ test('real quote throttle preserves inquiry and login, then explicitly retries o
   expect(blockedStorage.drafts).toHaveLength(1);
   expect(blockedStorage.drafts[0].key).toBe(beforeSubmit.drafts[0].key);
   expect(blockedStorage.drafts[0].value).toMatchObject({ comment, attempt: { key: originalKey, payload: originalBody, quoteId: null } });
-  const authHeaders = { Authorization: originalHeaders.authorization };
+  expect(originalHeaders.authorization).toBeUndefined();
+  expect(originalHeaders['x-browser-session']).toMatch(uuid);
+  const authHeaders = { Origin: new URL(page.url()).origin, 'X-Browser-Session': originalHeaders['x-browser-session'] };
   if (originalHeaders['x-organization-id']) authHeaders['X-Organization-ID'] = originalHeaders['x-organization-id'];
   async function ownList() {
-    const response = await request.get(`${api}/quotes?mine=true&page=1&page_size=20`, { headers: authHeaders, timeout: 5_000 });
+    const response = await page.request.get(`${api}/quotes?mine=true&page=1&page_size=20`, { headers: authHeaders, timeout: 5_000 });
     expect(response.status()).toBe(200);
     expect(response.headers()['cache-control']).toMatch(/no-store/);
     return response.json();
@@ -177,7 +179,7 @@ test('real quote throttle preserves inquiry and login, then explicitly retries o
   await expect(page).toHaveURL(new RegExp(`/b2b/quotes/${quote.id}$`));
   await expect(page.getByText(comment, { exact: true })).toBeVisible();
 
-  const replay = await request.post(createUrl, {
+  const replay = await page.request.post(createUrl, {
     headers: { ...authHeaders, 'Idempotency-Key': originalKey }, data: originalBody, timeout: 5_000,
   });
   expect(replay.status()).toBe(200);

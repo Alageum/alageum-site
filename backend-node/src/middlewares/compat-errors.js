@@ -1,9 +1,7 @@
 "use strict";
 const { randomUUID } = require("node:crypto");
 const { AppError } = require("../domain/errors");
-const { createRateLimiter } = require("../domain/rate-limit");
-module.exports = () => {
-  const loginLimit = createRateLimiter({ limit: 20 });
+module.exports = (_config, { strapi } = {}) => {
   return async (ctx, next) => {
     const requestId = randomUUID();
     const apiPath = ctx.path.toLowerCase().replace(/\/+$/, "");
@@ -22,8 +20,6 @@ module.exports = () => {
           throw new AppError("validation_error", "Invalid request", 422);
         if (contentType !== "application/json") ctx.request.headers["content-type"] = "application/json";
       }
-      if (ctx.method === "POST" && apiPath === "/api/v1/auth/login")
-        loginLimit(ctx.ip);
       await next();
       if (
         (apiPath.startsWith("/api/v1/") || apiPath === "/api/v1") &&
@@ -53,7 +49,7 @@ module.exports = () => {
             ? 422
             : 500;
       if (status === 500)
-        strapi.log.error("API request failed", {
+        strapi?.log?.error?.("API request failed", {
           request_id: requestId,
           code: error.code,
         });

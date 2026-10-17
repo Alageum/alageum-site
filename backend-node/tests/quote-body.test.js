@@ -51,8 +51,11 @@ test("required native parser and existing limits remain configured", () => {
   const config = require("../config/middlewares")({ env: { array: (_name, fallback) => fallback } });
   const bodies = config.filter(item => item.name === "strapi::body");
   assert.equal(bodies.length, 1);
+  assert.ok(config.indexOf("global::media-upload-temporary") < config.indexOf(bodies[0]));
+  assert.ok(config.includes("global::media-upload-temporary"));
   assert.deepEqual(bodies[0].config, {
     jsonLimit: "1mb", formLimit: "1mb", textLimit: "1mb",
-    formidable: { maxFileSize: 1024 * 1024 }, onError: recoverQuoteJsonScalar,
+    formidable: { maxFileSize: 1024 * 1024, maxTotalFileSize: 10 * 1024 * 1024, maxFiles: 10, allowEmptyFiles: false,
+      onFileBegin: require("../src/domain/media-temporary").onFileBegin }, onError: recoverQuoteJsonScalar,
   });
 });

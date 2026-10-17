@@ -81,12 +81,24 @@ test('duplicate printed designations remain individually identifiable by explici
 });
 
 test('display aliases remove internal execution phrases and never rewrite identity-bound source strings', () => {
-  assert.equal(displayProductName(product('tr2026-family-zom')), 'Измерительные трансформаторы ЗОМ');
-  assert.equal(displayProductName(product('tr2026-family-znom')), 'Измерительные трансформаторы ЗНОМ');
+  assert.equal(displayProductName(product('tr2026-family-zom')), 'ЗОМ');
+  assert.equal(displayProductName({ ...product('tr2026-family-zom'), catalogEditorial: null }), 'Измерительные трансформаторы ЗОМ');
+  assert.equal(displayProductName(product('tr2026-family-znom')), 'ЗНОМ');
+  assert.equal(displayProductName({ ...product('tr2026-family-znom'), catalogEditorial: null }), 'Измерительные трансформаторы ЗНОМ');
   for (const id of ['tr2026-family-zom','tr2026-family-znom','alageum-2026-znom35-config1']) assert.equal(equipmentTypeFor(product(id)), 'instrument-transformer');
   const ids = ['alageum-2026-om-2p0-drawing', 'alageum-2026-relay-tr100', 'alageum-2026-sensor-pt100', 'alageum-2026-damper-ek290', 'alageum-2026-nom-3-drawing', 'alageum-2026-zom-1p25-35', 'alageum-2026-znom35-config1', 'alageum-2026-znom35-config2', 'tr2026-family-asia-shunt-reactor-configurations'];
   for (const id of ids) assert.doesNotMatch(displayExecution(product(id)), /drawing|standard|optional|railway|nominal|generic/);
   assert.equal(product('tr2026-family-zom').name, 'ЗОМ — измерительный, railway');
+});
+
+test('short editorial names cannot reclassify measurement transformers or grant visual authority', () => {
+  for (const id of ['tr2026-family-zom', 'tr2026-family-znom', 'alageum-2026-znom35-config1']) {
+    const source = product(id);
+    const changed = { ...source, catalogEditorial: { ...source.catalogEditorial, displayLabel: 'Краткое имя', displayName: 'Краткое имя' } };
+    assert.equal(equipmentTypeFor(changed), 'instrument-transformer', id);
+    assert.deepEqual(getEquipmentVisual(changed), getEquipmentVisual(source));
+    assert.deepEqual(getEquipmentIcon(changed), getEquipmentIcon(source));
+  }
 });
 
 test('API family selection uses only reciprocal published members, with no static fallback or authority upgrade', () => {

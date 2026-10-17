@@ -21,8 +21,10 @@ test('corporate composition is explicit and does not opt engineering routes in',
 });
 test('all dated project claims and privacy copy remain source-backed, not promotional', () => {
   const privacy = read('app/(site)/data-policy/page.js');
-  assert.match(privacy, /не отправляются менеджеру/);
-  assert.match(privacy, /Не вводите реальные банковские/);
+  assert.match(privacy, /не отправляются компании автоматически/);
+  assert.match(privacy, /Отправка письма выполняется вами/);
+  assert.match(privacy, /Черновик счёта не является основанием для оплаты/);
+  assert.match(privacy, /должны быть подтверждены продавцом/);
   assert.match(read('app/(site)/projects/[slug]/page.js'), /item.note/);
   assert.match(read('app/(site)/projects/page.js'), /getProjectPhoto/);
   assert.match(read('components/public/EnterpriseDirectory.js'), /getManufacturerPhoto/);

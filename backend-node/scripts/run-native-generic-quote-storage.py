@@ -24,6 +24,26 @@ DATABASE = "alageum_strapi_generic_quote_storage_test"
 OWNER = "native_quote_storage_owner"
 
 
+def copy_runtime_app(source, destination):
+    """Copy the executable fixture, excluding only the private editorial archive.
+
+    catalog-editorial is an unpublished research/release archive, not input to
+    readCatalog or the native storage proof. All runtime catalog records,
+    identity bindings, media bytes and manifests remain in the owned copy.
+    The 180 MiB budget still counts every copied byte and the PostgreSQL cluster.
+    """
+    def exclude_editorial(directory, names):
+        if Path(directory) == source / "data":
+            return [name for name in names if name == "catalog-editorial"]
+        return []
+
+    for name in ("config", "src", "data", "public", "scripts"):
+        shutil.copytree(source / name, destination / name, symlinks=False,
+                        ignore=exclude_editorial)
+    for name in ("package.json", "package-lock.json"):
+        shutil.copy2(source / name, destination / name)
+
+
 def bytes_used(root):
     total = 0
     for path in root.rglob("*"):
@@ -82,6 +102,7 @@ def main():
     data, appdir, tmpdir = fixture / "pgdata", fixture / "app", fixture / "tmp"
     lifecycle = {"status": "running", "port": PORT, "database": DATABASE,
                  "ownership": "new task-created synthetic fixture only", "disk_cap_bytes": CAP,
+                 "excluded_non_runtime_paths": ["data/catalog-editorial"],
                  "max_bytes_observed": 0, "started": False, "declared_postgres_major": args.postgres_major}
     child = None
     started = False
@@ -142,10 +163,7 @@ def main():
     try:
         appdir.mkdir()
         tmpdir.mkdir(mode=0o700)
-        for name in ("config", "src", "data", "public", "scripts"):
-            shutil.copytree(SOURCE / name, appdir / name, symlinks=False)
-        for name in ("package.json", "package-lock.json"):
-            shutil.copy2(SOURCE / name, appdir / name)
+        copy_runtime_app(SOURCE, appdir)
         (appdir / "node_modules").symlink_to(SOURCE / "node_modules", target_is_directory=True)
         phase = "initialize-owned-postgres"
         run([pg / "initdb", "-D", data, "--no-locale", "--encoding=UTF8", "--auth=trust",
@@ -245,3 +263,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

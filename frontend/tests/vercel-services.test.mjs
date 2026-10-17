@@ -3,29 +3,26 @@ import fs from 'node:fs';
 import test from 'node:test';
 
 const config = JSON.parse(fs.readFileSync(new URL('../../vercel.json', import.meta.url)));
-const route = path => config.rewrites.find(rule => new RegExp(`^${rule.source}$`).test(path));
+const route = path => config.routes.find(rule => new RegExp(`^${rule.src}$`).test(path));
 
-test('services resolve the existing FastAPI entrypoint and Next.js root', () => {
+test('Vercel root has only the public Next service and no legacy backend', () => {
   assert.deepEqual(config.services, {
-    backend: { root: 'backend', framework: 'fastapi', entrypoint: 'app.main:app' },
-    frontend: { root: 'frontend', framework: 'nextjs' },
+    frontend: { root: 'frontend', framework: 'nextjs', installCommand: 'npm ci', buildCommand: 'ALAGEUM_PUBLIC_ONLY=1 npm run build', devCommand: 'ALAGEUM_PUBLIC_ONLY=1 npm run dev' },
   });
-  for (const service of Object.values(config.services)) {
-    assert.ok(fs.statSync(new URL(`../../${service.root}`, import.meta.url)).isDirectory());
-  }
-  assert.ok(fs.existsSync(new URL('../../backend/app/main.py', import.meta.url)));
+  assert.ok(fs.statSync(new URL('../../frontend', import.meta.url)).isDirectory());
   for (const field of ['framework', 'functions', 'buildCommand', 'installCommand', 'devCommand']) {
     assert.equal(config[field], undefined, `${field} must be service-scoped`);
   }
 });
 
-test('API ingress precedes frontend fallback and preserves backend paths', () => {
+test('all ingress reaches Next, including API requests refused by public-mode policy', () => {
+  assert.equal(config.rewrites, undefined, 'high-level rewrites run after the filesystem and expose source files');
+  assert.deepEqual(config.routes, [{ src: '/(.*)', destination: { service: 'frontend' } }]);
   for (const path of ['/api/v1/health', '/api/v1/auth/login', '/api/v1/catalog/products',
-    '/api/v1/admin/catalog/products', '/api/openapi.json', '/api/missing']) {
-    assert.deepEqual(route(path).destination, { service: 'backend' });
-  }
-  for (const path of ['/', '/catalog', '/catalog/tmg-400', '/admin/catalog', '/login',
-    '/documents', '/docs', '/redoc', '/_next/static/example.js', '/brand/alageum.svg']) {
+    '/api/v1/admin/catalog/products', '/api/openapi.json', '/api/missing', '/', '/catalog',
+    '/catalog/tmg-400', '/admin/catalog', '/login', '/documents', '/docs', '/redoc',
+    '/_next/static/example.js', '/brand/logo.png', '/README_HANDOFF.md', '/backend/data/private.json',
+    '/frontend/package.json', '/frontend/lib/api/client.js', '/frontend/.env']) {
     assert.deepEqual(route(path).destination, { service: 'frontend' });
   }
 });
@@ -56,4 +53,10 @@ test('browser API defaults to same-origin and still permits an explicit local ov
     if (before === undefined) delete process.env.NEXT_PUBLIC_API_URL;
     else process.env.NEXT_PUBLIC_API_URL = before;
   }
+});
+
+test('Vercel upload allowlist keeps only frontend inputs and excludes every environment-file variant', () => {
+  const rules = fs.readFileSync(new URL('../../.vercelignore', import.meta.url), 'utf8')
+    .split(/\r?\n/).filter(line => line && !line.startsWith('#'));
+  assert.deepEqual(rules, ['/*', '!frontend', '!vercel.json', '/frontend/.env', '/frontend/.env.*']);
 });
