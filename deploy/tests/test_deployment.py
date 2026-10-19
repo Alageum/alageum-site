@@ -200,7 +200,10 @@ import json,os,pathlib,sys
 args=sys.argv[1:]
 with open(os.environ['MOCK_LOG'],'a') as f: f.write(json.dumps(args)+'\\n')
 if 'config' in args: print(pathlib.Path(os.environ['MOCK_CONFIG']).read_text())
-elif 'ps' in args: print(os.environ.get('MOCK_RUNNING',''))
+elif 'inspect' in args: print(os.environ.get('MOCK_HEALTH','running healthy'))
+elif 'ps' in args:
+ if '--quiet' in args: print({'backend':'a','frontend':'b','proxy':'c'}[args[-1]]*64)
+ else: print(os.environ.get('MOCK_RUNNING',''))
 elif any('pg_dump ' in a for a in args):
  if os.environ.get('MOCK_DUMP_FAIL')=='1': sys.exit(7)
  sys.stdout.write('synthetic-database-dump')
@@ -212,6 +215,8 @@ elif 'run' in args and 'tar' in args:
  else: sys.stdin.buffer.read()
 elif 'run' in args and 'node' in args:
  if os.environ.get('MOCK_MEDIA_NONEMPTY')=='1': sys.exit(1)
+elif 'start' in args:
+ if '--wait' in args or os.environ.get('MOCK_START_FAIL')=='1': sys.exit(9)
 elif not any(x in args for x in ['stop','start','up']):
  print('Unexpected mock command',file=sys.stderr);sys.exit(99)
 ''')
@@ -236,6 +241,32 @@ elif not any(x in args for x in ['stop','start','up']):
         calls=self.calls()
         self.assertTrue(any('stop' in c and 'backend' in c for c in calls))
         self.assertTrue(any('start' in c and all(s in c for s in ['backend','frontend','proxy']) for c in calls))
+        inspections = [c[-1] for c in calls if 'inspect' in c]
+        self.assertEqual(inspections, ['a'*64, 'b'*64, 'c'*64])
+        self.assertFalse(any('up' in c for c in calls))
+    def test_backup_does_not_start_previously_stopped_applications(self):
+        self.env['MOCK_RUNNING']='postgres'
+        self.backup()
+        self.assertFalse(any('start' in c or 'up' in c or 'inspect' in c for c in self.calls()))
+    def test_backup_resumes_only_the_original_running_subset(self):
+        self.env['MOCK_RUNNING']='postgres\nbackend'
+        self.backup()
+        starts=[c for c in self.calls() if 'start' in c]
+        self.assertEqual(len(starts),1)
+        self.assertEqual(starts[0][starts[0].index('start')+1:],['backend'])
+        self.assertEqual([c[-1] for c in self.calls() if 'inspect' in c],['a'*64])
+    def test_failed_restart_health_retains_backup_and_reports_failure(self):
+        self.env['MOCK_HEALTH']='running unhealthy'
+        result=self.call('backup.sh',self.backups)
+        self.assertEqual(result.returncode,1,result.stdout+result.stderr)
+        self.assertIn('restart needs operator attention',result.stderr)
+        self.assertEqual(len(list(self.backups.glob('alageum-*'))),1)
+        self.assertFalse(any('up' in c for c in self.calls()))
+    def test_original_dump_failure_survives_a_restart_failure(self):
+        self.env['MOCK_DUMP_FAIL']='1';self.env['MOCK_START_FAIL']='1'
+        result=self.call('backup.sh',self.backups)
+        self.assertEqual(result.returncode,7,result.stdout+result.stderr)
+        self.assertIn('restart needs operator attention',result.stderr)
     def test_failed_dump_still_resumes_original_services(self):
         self.env['MOCK_DUMP_FAIL']='1'
         result=self.call('backup.sh',self.backups)

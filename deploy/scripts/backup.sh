@@ -11,21 +11,47 @@ compose() { "$here/../compose.sh" "$env_file" "$@"; }
 "$here/check-config.sh" "$env_file"
 running_text="$(compose ps --status running --services)"
 mapfile -t running <<< "$running_text"
-resume=()
+resume=(); resume_ids=()
 for service in backend frontend proxy; do
-  if printf '%s\n' "${running[@]}" | grep -Fxq "$service"; then resume+=("$service"); fi
+  if printf '%s\n' "${running[@]}" | grep -Fxq "$service"; then
+    id="$(compose ps --all --quiet "$service")"
+    if [[ ! "$id" =~ ^[a-f0-9]{12,64}$ ]]; then
+      echo 'Expected exactly one existing container per application service; no services changed.' >&2; exit 1
+    fi
+    resume+=("$service"); resume_ids+=("$id")
+  fi
 done
 if ! printf '%s\n' "${running[@]}" | grep -Fxq postgres; then
   echo 'PostgreSQL must already be running; no services changed.' >&2; exit 1
 fi
 partial="$(mktemp -d "$output/.alageum-$(date -u +%Y%m%dT%H%M%SZ).partial.XXXXXX")"
+wait_for_original_services() {
+  local deadline=$((SECONDS + 180)) id state ready
+  while (( SECONDS < deadline )); do
+    ready=1
+    for id in "${resume_ids[@]}"; do
+      state="$(docker inspect --format '{{.State.Status}} {{if .State.Health}}{{.State.Health.Status}}{{else}}missing{{end}}' "$id")" || return 1
+      case "$state" in
+        'running healthy') ;;
+        'running starting') ready=0 ;;
+        *) return 1 ;;
+      esac
+    done
+    (( ready )) && return 0
+    sleep 2
+  done
+  return 1
+}
 cleanup() {
   result=$?
   trap - EXIT
   if (( ${#resume[@]} )); then
-    if ! compose start --wait --wait-timeout 180 "${resume[@]}"; then
+    # Compose 2.30 supports up --wait but not start --wait. Start only the
+    # captured existing services, then inspect those exact original containers.
+    # Do not use up: maintenance must never recreate or add services.
+    if ! compose start "${resume[@]}" || ! wait_for_original_services; then
       echo 'Backup maintenance ended, but application restart needs operator attention.' >&2
-      result=1
+      if [[ $result -eq 0 ]]; then result=1; fi
     fi
   fi
   if [[ $result -ne 0 ]]; then echo "Incomplete or unconfirmed backup retained privately at: $partial" >&2; fi
