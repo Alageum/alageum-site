@@ -48,6 +48,11 @@ Downloaded scanner signatures are copied to the second private signature store
 to avoid making a redundant FreshClam download. Official signature download or
 scanner health failures fail the gate; there is no mock fallback.
 
+The production image's normal entrypoint first runs against the real mounts and
+injected configuration with a no-op command. This exposes its existing safe
+readiness report before services start. On failure, log summaries contain only
+fixed category labels and allowlisted error codes, never raw messages or paths.
+
 Only safe result JSON, image inventory, ClamAV version and container state are
 uploaded. Private keys, environment files, inbox messages, account tokens,
 cookies, database dumps, media archives and raw service logs are not artifacts.

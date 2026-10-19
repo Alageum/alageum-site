@@ -28,6 +28,16 @@ PY
   for target in initial restored; do
     docker ps -a --filter "label=com.docker.compose.project=alageum-ci-$run_id-$target" \
       --format '{{.Names}}\t{{.Status}}' > "$results/$target-containers.txt" 2>/dev/null || true
+    if [[ "$result" != 0 ]]; then
+      # Never retain raw service logs. The summarizer emits only fixed categories
+      # and allowlisted error codes, with no environment values or account data.
+      for service in backend postgres clamav frontend proxy; do
+        docker inspect --format '{"status":{{json .State.Status}},"exit_code":{{.State.ExitCode}},"oom_killed":{{.State.OOMKilled}},"restarts":{{.RestartCount}}}' \
+          "alageum-ci-$run_id-$target-$service-1" > "$results/$target-$service-state.json" 2>/dev/null || true
+        docker logs --tail 200 "alageum-ci-$run_id-$target-$service-1" 2>&1 \
+          | python3 "$here/summarize-failure.py" > "$results/$target-$service-failure.json" || true
+      done
+    fi
   done
   docker rm -f "$sink" >/dev/null 2>&1 || true
   for target in initial restored; do
@@ -74,6 +84,12 @@ stage=build_production_images
 # Serial builds keep the Strapi and Next compilers within hosted-runner memory.
 compose build --pull backend
 compose build --pull frontend
+
+stage=production_image_preflight
+# Same production entrypoint, image, UID, environment and mounts as the service.
+# Its configuration report contains issue identifiers only, never supplied values.
+# No application startup or database writes occur in this one-off check.
+compose run --rm --no-deps backend true
 
 stage=start_production_compose
 # Official FreshClam downloads official signatures; failures fail the gate.

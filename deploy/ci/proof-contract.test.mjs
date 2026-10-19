@@ -23,6 +23,27 @@ test('Compose reset acceptance honors the actual no-content logout response', ()
   assert.match(proof, /api\('\/auth\/browser-logout', \{ method: 'POST', body: \{\}, expected: 204 \}\)/);
   assert.match(proof, /return response\.text \? JSON\.parse\(response\.text\) : null;/);
 });
+test('production image preflight uses the unchanged admission entrypoint before starting services', () => {
+  const proof = fs.readFileSync(path.join(here, 'run-proof.sh'), 'utf8');
+  assert.match(proof, /stage=production_image_preflight[\s\S]*compose run --rm --no-deps backend true/);
+  assert.ok(proof.indexOf('compose run --rm --no-deps backend true') < proof.indexOf('stage=start_production_compose'));
+  assert.match(proof, /docker logs --tail 200[\s\S]*python3 "\$here\/summarize-failure.py"/);
+});
+test('failure diagnostics emit only fixed labels, never raw secrets, tokens, messages or paths', () => {
+  const secret = 'private-password-do-not-retain';
+  const input = `Error: EACCES permission denied /private/${secret}\n` +
+    `postgresql://app:${secret}@postgres/db?token=account-token\n` +
+    'Error: no pg_hba.conf entry for host secret-address\n' +
+    'Native Page editor adapter verified: Strapi 5.56.0\n';
+  const output = execFileSync('python3', [path.join(here, 'summarize-failure.py')], { input, encoding: 'utf8' });
+  assert.deepEqual(JSON.parse(output), {
+    schema_version: 1, error_codes: ['EACCES'],
+    categories: ['permission_denied', 'database_hba_rejected'], raw_logs_retained: false,
+  });
+  for (const value of [secret, 'account-token', 'secret-address', 'postgresql://', '/private/']) assert.ok(!output.includes(value));
+  const empty = execFileSync('python3', [path.join(here, 'summarize-failure.py')], { input: 'successful startup', encoding: 'utf8' });
+  assert.deepEqual(JSON.parse(empty).categories, []);
+});
 test('production proof does not weaken production TLS or replace the stack', () => {
   const proof = ['run-proof.sh', 'prove-http.mjs', 'prove-browser.mjs', 'prove-container.cjs'].map(name => fs.readFileSync(path.join(here, name), 'utf8')).join('\n');
   assert.doesNotMatch(proof, /rejectUnauthorized:\s*false|ignoreHTTPSErrors:\s*true|NODE_TLS_REJECT_UNAUTHORIZED|ignore-certificate-errors/);
