@@ -33,6 +33,20 @@ const constraints = {
   eds_intents: ["CHECK (((status)::text = ANY ((ARRAY['open'::character varying, 'cancelled'::character varying, 'submitted'::character varying])::text[])))", "PRIMARY KEY (id)", "UNIQUE (id, organization_id)", "FOREIGN KEY (actor_user_id) REFERENCES b2b.users(id)", "FOREIGN KEY (document_id, organization_id) REFERENCES b2b.documents(id, organization_id)", "FOREIGN KEY (snapshot_id, organization_id) REFERENCES b2b.eds_snapshots(id, organization_id)"],
   eds_signatures: ["CHECK (((octet_length(signature) >= 1) AND (octet_length(signature) <= 262144)))", "CHECK (((status)::text = ANY ((ARRAY['pending_verification'::character varying, 'verified'::character varying, 'rejected'::character varying])::text[])))", "CHECK (((((status)::text = 'verified'::text) AND (verified_at IS NOT NULL) AND (provider IS NOT NULL) AND (reason IS NULL)) OR (((status)::text <> 'verified'::text) AND (verified_at IS NULL) AND (provider IS NULL))))", "PRIMARY KEY (id)", "UNIQUE (intent_id)", "UNIQUE (organization_id, signature_sha256)", "FOREIGN KEY (actor_user_id) REFERENCES b2b.users(id)", "FOREIGN KEY (document_id, organization_id) REFERENCES b2b.documents(id, organization_id)", "FOREIGN KEY (snapshot_id, organization_id) REFERENCES b2b.eds_snapshots(id, organization_id)", "FOREIGN KEY (intent_id, organization_id) REFERENCES b2b.eds_intents(id, organization_id)"],
 };
+// pg_dump emits pg_get_constraintdef SQL. PostgreSQL 16/17 can reparse a
+// varchar-array cast as per-element text casts. Accept only the two complete
+// equivalent expressions observed in a real dump/restore, never generic SQL
+// normalization (which could erase a changed enum, predicate or NOT VALID).
+const restoredStatusConstraints = {
+  eds_intents: "CHECK (((status)::text = ANY (ARRAY[('open'::character varying)::text, ('cancelled'::character varying)::text, ('submitted'::character varying)::text])))",
+  eds_signatures: "CHECK (((status)::text = ANY (ARRAY[('pending_verification'::character varying)::text, ('verified'::character varying)::text, ('rejected'::character varying)::text])))",
+};
+function canonicalConstraint(name, definition) {
+  if (Object.hasOwn(restoredStatusConstraints, name) && definition === restoredStatusConstraints[name]) {
+    return constraints[name].find(value => value.startsWith("CHECK (((status)::text = ANY ("));
+  }
+  return definition;
+}
 function columnShape(name, column) {
   if (column === "id" || column.endsWith("_id")) return ["uuid", null, "NO"];
   if (column.endsWith("_at")) return ["timestamp with time zone", null, column === "verified_at" ? "YES" : "NO"];
@@ -60,7 +74,7 @@ async function preflightSchema(db) {
       const expected = columnShape(name, c.column_name);
       return c.data_type !== expected[0] || c.character_maximum_length !== expected[1] || c.is_nullable !== expected[2] || c.column_default !== null || c.is_identity !== "NO" || c.is_generated !== "NEVER" || c.domain_name !== null || c.collation_name !== null || c.datetime_precision !== (expected[0] === "timestamp with time zone" ? 6 : null) || c.numeric_precision !== (expected[0] === "integer" ? 32 : null) || c.numeric_scale !== (expected[0] === "integer" ? 0 : null);
     })) bad();
-    const actualConstraints = (await db.raw("SELECT pg_get_constraintdef(oid) AS definition FROM pg_constraint WHERE conrelid=?::regclass", [`b2b.${name}`])).rows.map(c => c.definition).sort();
+    const actualConstraints = (await db.raw("SELECT pg_get_constraintdef(oid) AS definition FROM pg_constraint WHERE conrelid=?::regclass", [`b2b.${name}`])).rows.map(c => canonicalConstraint(name, c.definition)).sort();
     if (JSON.stringify(actualConstraints) !== JSON.stringify([...constraints[name]].sort())) bad();
     if ((await db.raw("SELECT 1 FROM pg_index WHERE indrelid=?::regclass AND (NOT indisvalid OR NOT indisready) UNION ALL SELECT 1 FROM pg_inherits WHERE inhrelid=?::regclass OR inhparent=?::regclass", Array(3).fill(`b2b.${name}`))).rows.length) bad();
     const triggers = (await db.raw("SELECT t.tgname,t.tgenabled,t.tgtype,t.tgqual IS NULL AS unconditional,t.tgattr::text AS columns,p.prosrc FROM pg_trigger t JOIN pg_proc p ON p.oid=t.tgfoid WHERE t.tgrelid=?::regclass AND NOT t.tgisinternal", [`b2b.${name}`])).rows;
@@ -80,4 +94,4 @@ async function ensureSchema(db) {
     await preflightSchema(tx);
   });
 }
-module.exports = { preflightSchema, ensureSchema };
+module.exports = { preflightSchema, ensureSchema, canonicalConstraint };

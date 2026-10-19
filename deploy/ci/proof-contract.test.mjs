@@ -43,6 +43,12 @@ test('failure diagnostics emit only fixed labels, never raw secrets, tokens, mes
   for (const value of [secret, 'account-token', 'secret-address', 'postgresql://', '/private/']) assert.ok(!output.includes(value));
   const empty = execFileSync('python3', [path.join(here, 'summarize-failure.py')], { input: 'successful startup', encoding: 'utf8' });
   assert.deepEqual(JSON.parse(empty).categories, []);
+  const schema = execFileSync('python3', [path.join(here, 'summarize-failure.py')], {
+    input: `Quote schema mismatch: quote_request_items columns; requires reviewed migration before schema sync\n${secret}`,
+    encoding: 'utf8',
+  });
+  assert.deepEqual(JSON.parse(schema).categories, ['database_schema_rejected', 'quote_schema_rejected', 'quote_columns_rejected']);
+  assert.ok(!schema.includes(secret));
 });
 test('production proof does not weaken production TLS or replace the stack', () => {
   const proof = ['run-proof.sh', 'prove-http.mjs', 'prove-browser.mjs', 'prove-container.cjs'].map(name => fs.readFileSync(path.join(here, name), 'utf8')).join('\n');

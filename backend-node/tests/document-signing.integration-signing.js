@@ -263,6 +263,28 @@ test("isolated PostgreSQL document signing safety contract (synthetic verifier o
     await pending; assert.equal(submission.body.status, "verified"); await logout;
     await assert.rejects(protectedDomain.status(request(another, second)), code("authentication_required"));
   });
+  await t.test("dump-deparsed status constraints reparse without losing schema admission or enum enforcement", async () => {
+    for (const name of ["eds_intents", "eds_signatures"]) {
+      const constraint = `${name}_status_check`;
+      const definition = (await db.raw("SELECT pg_get_constraintdef(oid) AS definition FROM pg_constraint WHERE conrelid=?::regclass AND conname=?", [`b2b.${name}`, constraint])).rows[0].definition;
+      await db.raw(`ALTER TABLE b2b.${name} DROP CONSTRAINT ${constraint}`);
+      await db.raw(`ALTER TABLE b2b.${name} ADD CONSTRAINT ${constraint} ${definition}`);
+    }
+    await schema.preflightSchema(db); await schema.ensureSchema(db);
+    for (const name of ["eds_intents", "eds_signatures"]) {
+      const statuses = name === "eds_intents" ? "'open','cancelled','submitted'" : "'pending_verification','verified','rejected'";
+      for (const expression of ["CHECK (true)", `CHECK (status IN (${statuses},'unreviewed'))`, `CHECK (status IN (${statuses})) NOT VALID`]) {
+        const marker = new Error("rollback invalid restored enum");
+        await assert.rejects(db.transaction(async tx => {
+          await tx.raw(`ALTER TABLE b2b.${name} DROP CONSTRAINT ${name}_status_check`);
+          await tx.raw(`ALTER TABLE b2b.${name} ADD CONSTRAINT ${name}_status_check ${expression}`);
+          await assert.rejects(schema.preflightSchema(tx), /EDS schema mismatch/);
+          throw marker;
+        }), e => e === marker);
+      }
+    }
+    await schema.preflightSchema(db);
+  });
   await t.test("schema drift is refused rather than silently repaired", async () => {
     await db.raw("ALTER TABLE b2b.eds_snapshots DISABLE TRIGGER eds_snapshots_guard");
     await assert.rejects(schema.preflightSchema(db), /EDS schema mismatch/);
