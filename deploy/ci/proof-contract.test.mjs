@@ -18,6 +18,11 @@ test('hosted proof cannot accidentally run against an operator machine', () => {
   assert.equal(result.status, 2);
   assert.match(result.stderr, /restricted to a GitHub-hosted/);
 });
+test('Compose reset acceptance honors the actual no-content logout response', () => {
+  const proof = fs.readFileSync(path.join(here, 'prove-http.mjs'), 'utf8');
+  assert.match(proof, /api\('\/auth\/browser-logout', \{ method: 'POST', body: \{\}, expected: 204 \}\)/);
+  assert.match(proof, /return response\.text \? JSON\.parse\(response\.text\) : null;/);
+});
 test('production proof does not weaken production TLS or replace the stack', () => {
   const proof = ['run-proof.sh', 'prove-http.mjs', 'prove-browser.mjs', 'prove-container.cjs'].map(name => fs.readFileSync(path.join(here, name), 'utf8')).join('\n');
   assert.doesNotMatch(proof, /rejectUnauthorized:\s*false|ignoreHTTPSErrors:\s*true|NODE_TLS_REJECT_UNAUTHORIZED|ignore-certificate-errors/);

@@ -155,7 +155,7 @@ async function runCatalogFilterTests(t, app) {
         await assert.rejects(filters.preflightSchema(tx), /Catalog filter schema mismatch/);
         await assert.rejects(filters.ensureSchema(tx), /Catalog filter schema mismatch/);
         let synchronized = false;
-        await assert.rejects(require("../src").register({ strapi: { db: { connection: tx }, documents: { use() { synchronized = true; } } } }), /Catalog filter schema mismatch/);
+        await assert.rejects(require("../src").register({ strapi: { config: app.config, db: { connection: tx }, documents: { use() { synchronized = true; } } } }), /Catalog filter schema mismatch/);
         assert.equal(synchronized, false);
       });
       assert.equal(await businessSnapshot(), before);

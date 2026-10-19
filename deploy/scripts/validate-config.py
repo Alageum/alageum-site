@@ -16,6 +16,9 @@ def inspect(config):
             errors.append(f"{name}_must_not_publish_ports")
         if name in {"postgres", "clamav", "proxy"} and not re.search(r"@sha256:[a-f0-9]{64}$", service.get("image", "")):
             errors.append(f"{name}_image_digest_required")
+        for mount in service.get("tmpfs", []):
+            if not isinstance(mount, str) or not mount.startswith("/"):
+                errors.append(f"{name}_tmpfs_absolute_target_required")
         for mount in service.get("volumes", []):
             if mount.get("type") == "bind":
                 source = pathlib.Path(mount["source"])

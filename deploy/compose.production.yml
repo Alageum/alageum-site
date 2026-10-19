@@ -108,7 +108,7 @@ services:
         target: /run/database-ca/ca.crt
         read_only: true
         bind: {create_host_path: false}
-    tmpfs: [/tmp:mode=1777,size=256m]
+    tmpfs: ["/tmp:mode=1777,size=256m"]
     networks:
       app: {ipv4_address: 172.30.44.4}
       database: {ipv4_address: 172.30.46.3}
@@ -139,7 +139,7 @@ services:
       NEXT_TELEMETRY_DISABLED: "1"
     networks: {app: {ipv4_address: 172.30.44.3}}
     depends_on: {backend: {condition: service_healthy}}
-    tmpfs: [/tmp:mode=1777,size=128m]
+    tmpfs: ["/tmp:mode=1777,size=128m"]
     stop_grace_period: 30s
     security_opt: [no-new-privileges:true]
     cap_drop: [ALL]

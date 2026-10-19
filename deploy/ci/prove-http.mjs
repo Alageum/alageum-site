@@ -55,7 +55,7 @@ async function api(route, { method = 'GET', body, expected = 200, sentOrigin = o
     const pair = cookie.split(';', 1)[0], at = pair.indexOf('=');
     state.cookies[pair.slice(0, at)] = pair.slice(at + 1);
   }
-  return JSON.parse(response.text);
+  return response.text ? JSON.parse(response.text) : null;
 }
 async function mailToken(route) {
   const deadline = Date.now() + 90000;
@@ -133,7 +133,7 @@ if (phase === 'initial') {
   state.password = 'Changed-synthetic-compose-password!';
   await api('/auth/reset-password', { method: 'POST', body: { token, password: state.password } });
   await api('/auth/account', { expected: 401 });
-  await login(); await api('/auth/browser-logout', { method: 'POST', body: {} });
+  await login(); await api('/auth/browser-logout', { method: 'POST', body: {}, expected: 204 });
   await api('/auth/account', { expected: 401 });
   passed('restored_stack_tls_reset_mail_revokes_old_cookie_and_new_login_logout_work');
 } else {

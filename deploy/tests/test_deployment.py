@@ -24,6 +24,12 @@ class PackageContracts(unittest.TestCase):
         services = self.config["services"]
         self.assertEqual([n for n, s in services.items() if s.get("ports")], ["proxy"])
         self.assertEqual(services["proxy"]["ports"], ["80:80", "443:443"])
+    def test_comma_bearing_tmpfs_options_are_one_quoted_mount(self):
+        services = self.config["services"]
+        self.assertEqual(services["backend"]["tmpfs"], ["/tmp:mode=1777,size=256m"])
+        self.assertEqual(services["frontend"]["tmpfs"], ["/tmp:mode=1777,size=128m"])
+        for service in services.values():
+            self.assertTrue(all(isinstance(mount, str) and mount.startswith("/") for mount in service.get("tmpfs", [])))
     def test_external_service_images_are_digest_locked(self):
         for name in ["postgres", "clamav", "proxy"]:
             self.assertRegex(self.config["services"][name]["image"], r"@sha256:[a-f0-9]{64}$")
@@ -103,6 +109,9 @@ class ConfigurationChecks(unittest.TestCase):
         self.config["services"]["backend"]["environment"] = env
         self.config["services"]["proxy"]["environment"] = {"ALAGEUM_HOSTNAME":"site.example.test"}
     def test_valid_configuration(self): self.assertEqual(validator.inspect(self.config), [])
+    def test_split_tmpfs_options_rejected_before_container_creation(self):
+        self.config["services"]["backend"]["tmpfs"] = ["/tmp:mode=1777", "size=256m"]
+        self.assertIn("backend_tmpfs_absolute_target_required", validator.inspect(self.config))
     def test_public_database_rejected(self):
         self.config["services"]["postgres"]["ports"] = [{"target":5432}]
         self.assertIn("postgres_must_not_publish_ports", validator.inspect(self.config))
