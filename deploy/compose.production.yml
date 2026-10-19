@@ -1,0 +1,200 @@
+# Standalone production topology. Do not combine with legacy Compose files.
+# Use ./deploy/compose.sh /absolute/private/stack.env <command>.
+name: ${ALAGEUM_PROJECT_NAME:-alageum}
+x-logging: &logging
+  driver: json-file
+  options: {max-size: "10m", max-file: "5"}
+x-public: &public
+  type: bind
+  source: ${ALAGEUM_DATA_DIR:?Set an existing absolute persistent data directory}/public
+  target: /var/lib/alageum/public
+  bind: {create_host_path: false}
+x-quarantine: &quarantine
+  type: bind
+  source: ${ALAGEUM_DATA_DIR:?Set persistent data directory}/private-quarantine
+  target: /var/lib/alageum/private-quarantine
+  bind: {create_host_path: false}
+services:
+  postgres:
+    image: postgres:17-bookworm@sha256:3645570cccdfa447589da9f57dd740faa29b30938e861289a5574b6ca6b03826
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: alageum_strapi
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD_FILE: /run/secrets/postgres_admin_password
+      POSTGRES_INITDB_ARGS: --auth-host=scram-sha-256 --auth-local=trust
+      ALAGEUM_DB_APP_PASSWORD_FILE: /run/secrets/postgres_app_password
+    command: [postgres, -c, ssl=on, -c, ssl_cert_file=/run/postgres-tls/server.crt, -c, ssl_key_file=/run/postgres-tls/server.key, -c, hba_file=/etc/postgresql/pg_hba.conf, -c, password_encryption=scram-sha-256]
+    volumes:
+      - type: bind
+        source: ${ALAGEUM_DATA_DIR:?Set persistent data directory}/postgres
+        target: /var/lib/postgresql/data
+        bind: {create_host_path: false}
+      - type: bind
+        source: ${ALAGEUM_TLS_DIR:?Set existing absolute TLS directory}/postgres
+        target: /run/postgres-tls
+        read_only: true
+        bind: {create_host_path: false}
+      - ./postgres/pg_hba.conf:/etc/postgresql/pg_hba.conf:ro
+      - ./postgres/10-app-role.sh:/docker-entrypoint-initdb.d/10-app-role.sh:ro
+    secrets: [postgres_admin_password, postgres_app_password]
+    networks: {database: {ipv4_address: 172.30.46.2}}
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U postgres -d alageum_strapi']
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 30s
+    logging: *logging
+    security_opt: [no-new-privileges:true]
+
+  clamav:
+    image: clamav/clamav:1.4_base@sha256:41f0d067c0f2e87a7083d4ca202373aeec18dd0a3f8619c1a8c8556d747705e2
+    # This verified official manifest is amd64. See server guide for other CPUs.
+    platform: linux/amd64
+    restart: unless-stopped
+    environment:
+      CLAMAV_NO_CLAMD: "false"
+      CLAMAV_NO_FRESHCLAMD: "false"
+      CLAMAV_NO_MILTERD: "true"
+      FRESHCLAM_CHECKS: "12"
+    volumes:
+      - type: bind
+        source: ${ALAGEUM_DATA_DIR:?Set persistent data directory}/clamav
+        target: /var/lib/clamav
+        bind: {create_host_path: false}
+    networks: {scanner: {ipv4_address: 172.30.45.2}}
+    # Official clamdcheck.sh is retained; monitor FreshClam freshness separately.
+    healthcheck: {start_period: 10m, interval: 30s, timeout: 10s, retries: 10}
+    mem_limit: 4g
+    logging: *logging
+    security_opt: [no-new-privileges:true]
+
+  backend:
+    image: alageum-backend:${ALAGEUM_RELEASE:?Set immutable source commit/release ID}
+    build: {context: ../backend-node}
+    init: true
+    restart: unless-stopped
+    env_file:
+      - path: ${ALAGEUM_BACKEND_ENV_FILE:?Set existing private backend env file}
+        format: raw
+    environment:
+      APP_ENV: production
+      NODE_ENV: production
+      HOST: 0.0.0.0
+      PORT: "8000"
+      DATABASE_SSL: "true"
+      NODE_EXTRA_CA_CERTS: /run/database-ca/ca.crt
+      ALAGEUM_BROWSER_ORIGIN: https://${ALAGEUM_HOSTNAME:?Set public DNS hostname}
+      CORS_ORIGINS: https://${ALAGEUM_HOSTNAME:?Set public DNS hostname}
+      ALAGEUM_TRUSTED_PROXY_IPS: 172.30.44.2
+      ALAGEUM_MEDIA_PUBLIC_ROOT: /var/lib/alageum/public
+      ALAGEUM_MEDIA_QUARANTINE_DIR: /var/lib/alageum/private-quarantine
+      ALAGEUM_MEDIA_CLAMAV_HOST: 172.30.45.2
+      ALAGEUM_MEDIA_CLAMAV_SOCKET: ""
+      ALAGEUM_MEDIA_CLAMAV_PORT: "3310"
+      ALAGEUM_MEDIA_SCAN_TIMEOUT_MS: "10000"
+      ALAGEUM_SEED_DEMO: "0"
+      ALAGEUM_IMPORT_CATALOG: "0"
+      ALAGEUM_EDS_ENABLED: "0"
+      ALAGEUM_GOOGLE_ENABLED: "0"
+      STRAPI_TELEMETRY_DISABLED: "true"
+      STRAPI_HIDE_UPDATE_MESSAGE: "true"
+    volumes:
+      - *public
+      - *quarantine
+      - type: bind
+        source: ${ALAGEUM_TLS_DIR:?Set TLS directory}/postgres/ca.crt
+        target: /run/database-ca/ca.crt
+        read_only: true
+        bind: {create_host_path: false}
+    tmpfs: [/tmp:mode=1777,size=256m]
+    networks:
+      app: {ipv4_address: 172.30.44.4}
+      database: {ipv4_address: 172.30.46.3}
+      scanner: {ipv4_address: 172.30.45.3}
+    depends_on:
+      postgres: {condition: service_healthy}
+      clamav: {condition: service_healthy}
+    stop_grace_period: 60s
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+    logging: *logging
+
+  frontend:
+    image: alageum-frontend:${ALAGEUM_RELEASE:?Set release ID}
+    build:
+      context: ../frontend
+      args: {ALAGEUM_PUBLIC_ONLY: "0", NEXT_PUBLIC_API_URL: /api/v1, NEXT_PUBLIC_CATALOG_SOURCE: api}
+    init: true
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      HOSTNAME: 0.0.0.0
+      PORT: "3000"
+      API_INTERNAL_BASE_URL: http://backend:8000/api/v1
+      COMPANY_SOURCE: static
+      PAGES_SOURCE: api
+      PAGES_SITE_ORIGIN: https://${ALAGEUM_HOSTNAME:?Set public DNS hostname}
+      NEXT_TELEMETRY_DISABLED: "1"
+    networks: {app: {ipv4_address: 172.30.44.3}}
+    depends_on: {backend: {condition: service_healthy}}
+    tmpfs: [/tmp:mode=1777,size=128m]
+    stop_grace_period: 30s
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+    logging: *logging
+
+  proxy:
+    image: nginx:stable-alpine@sha256:970364228b1e4f932abc22d321932816782cca8a20b85a77552a7cfe9acfb3b5
+    restart: unless-stopped
+    environment:
+      ALAGEUM_HOSTNAME: ${ALAGEUM_HOSTNAME:?Set public DNS hostname}
+      NGINX_ENVSUBST_FILTER: ^ALAGEUM_HOSTNAME$
+    ports: ["80:80", "443:443"]
+    volumes:
+      - ./nginx/default.conf.template:/etc/nginx/templates/default.conf.template:ro
+      - ./nginx/proxy-common.conf:/etc/nginx/proxy-common.conf:ro
+      - type: bind
+        source: ${ALAGEUM_TLS_DIR:?Set TLS directory}/https
+        target: /run/https-tls
+        read_only: true
+        bind: {create_host_path: false}
+    read_only: true
+    tmpfs: [/var/cache/nginx, /var/run, /etc/nginx/conf.d]
+    networks: {app: {ipv4_address: 172.30.44.2}}
+    depends_on:
+      frontend: {condition: service_healthy}
+      backend: {condition: service_healthy}
+    healthcheck:
+      test: [CMD, wget, -q, -O, /dev/null, http://127.0.0.1:8080/healthz]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+    security_opt: [no-new-privileges:true]
+    logging: *logging
+
+  # Offline helper; never starts the application or connects to a service.
+  storage:
+    profiles: [tools]
+    image: alageum-backend:${ALAGEUM_RELEASE:?Set release ID}
+    pull_policy: never
+    user: "1000:1000"
+    entrypoint: []
+    command: ["true"]
+    network_mode: none
+    read_only: true
+    volumes: [*public, *quarantine]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    logging: *logging
+
+secrets:
+  postgres_admin_password:
+    file: ${ALAGEUM_SECRET_DIR:?Set existing absolute secret directory}/postgres-admin-password
+  postgres_app_password:
+    file: ${ALAGEUM_SECRET_DIR:?Set existing absolute secret directory}/postgres-app-password
+networks:
+  app: {ipam: {config: [{subnet: 172.30.44.0/24}]}}
+  scanner: {ipam: {config: [{subnet: 172.30.45.0/24}]}}
+  database: {internal: true, ipam: {config: [{subnet: 172.30.46.0/24}]}}

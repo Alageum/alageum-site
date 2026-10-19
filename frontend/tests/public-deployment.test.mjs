@@ -52,8 +52,10 @@ test('actual Next proxy redirects private reads and refuses writes without forwa
       assert.equal(response.headers.get('x-middleware-rewrite'), null);
     }
     assert.equal(proxy(new NextRequest('https://example.test/catalog')).headers.get('x-middleware-next'), '1');
+    assert.equal(proxy(new NextRequest('https://example.test/healthz')).headers.get('set-cookie'), null);
     process.env.NEXT_PUBLIC_SITE_MODE = 'connected';
     assert.equal(proxy(new NextRequest('https://example.test/login')).headers.get('x-middleware-next'), '1');
+    assert.equal(proxy(new NextRequest('https://example.test/healthz')).headers.get('set-cookie'), null);
   } finally { if (previous === undefined) delete process.env.NEXT_PUBLIC_SITE_MODE; else process.env.NEXT_PUBLIC_SITE_MODE = previous; }
 });
 test('public-mode API clients fail before network or credential use', async () => {
@@ -69,12 +71,7 @@ test('public-mode API clients fail before network or credential use', async () =
     assert.equal(calls, 0);
   } finally { globalThis.fetch = oldFetch; if (previous === undefined) delete process.env.NEXT_PUBLIC_SITE_MODE; else process.env.NEXT_PUBLIC_SITE_MODE = previous; }
 });
-test('Vercel frontend config builds only Next in explicit public mode', async () => {
-  const config = JSON.parse(await fs.readFile(new URL('../vercel.json', import.meta.url), 'utf8'));
-  assert.equal(config.framework, 'nextjs');
-  assert.equal(config.buildCommand, 'ALAGEUM_PUBLIC_ONLY=1 npm run build');
-  assert.equal(config.installCommand, 'npm ci');
-  assert.equal(config.services, undefined); assert.equal(config.rewrites, undefined);
+test('explicit public mode retains an honest unavailable page without credential forms', async () => {
   const page = await fs.readFile(new URL('../app/service-unavailable/page.js', import.meta.url), 'utf8');
   assert.doesNotMatch(page, /<form|as="form"|onSubmit|type="password"/);
 });

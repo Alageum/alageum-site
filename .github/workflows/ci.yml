@@ -33,7 +33,7 @@ jobs:
       - run: pip-audit -r requirements.lock
       - run: ruff check .
       - run: python ../scripts/test_backend_readiness.py
-      - run: python ../scripts/check_vercel_runtime_lock.py
+      - run: python ../scripts/check_legacy_python_lock.py
       - name: Verify the explicit legacy route inventory
         run: python ../scripts/check_legacy_route_inventory.py
       - name: Reproduce current sanitized-source query and throttle behavior against archived vectors
@@ -121,10 +121,11 @@ jobs:
       - if: always()
         run: docker compose down -v
 
-  vercel-services:
-    # This deployment topology is public Next only. Legacy API assertions and
-    # current Node auth/RFQ flows remain executable in catalog-rfq.yml; the
-    # transformer-source-browser job below retains the full catalogue suite.
+  public-services:
+    # This explicit capability fixture is public Next only, not the default
+    # self-hosted mode. Legacy API assertions and current Node auth/RFQ flows
+    # remain executable in catalog-rfq.yml; transformer-source-browser below
+    # retains the full catalogue suite.
     runs-on: ubuntu-latest
     timeout-minutes: 20
     permissions:
@@ -133,9 +134,9 @@ jobs:
       ALAGEUM_PUBLIC_ONLY: '1'
       NEXT_PUBLIC_CATALOG_SOURCE: static
       NEXT_TELEMETRY_DISABLED: '1'
-      VERCEL_TELEMETRY_DISABLED: '1'
-      E2E_BASE_URL: http://127.0.0.1:3200
-      E2E_VERCEL_SERVICES: '1'
+    defaults:
+      run:
+        working-directory: frontend
     steps:
       - uses: actions/checkout@v4
         with:
@@ -145,43 +146,29 @@ jobs:
           node-version: '24'
           cache: npm
           cache-dependency-path: frontend/package-lock.json
-      - run: npm install --global vercel@62.1.0
       - run: npm ci
-        working-directory: frontend
       - name: Verify the explicit public deployment and workflow contracts
-        working-directory: frontend
-        run: node --test tests/vercel-services.test.mjs tests/public-deployment.test.mjs tests/public-services-workflow.test.mjs
+        run: node --test tests/portable-runtime.test.mjs tests/public-deployment.test.mjs tests/public-services-workflow.test.mjs
       - run: npx --no-install playwright install --with-deps chromium
-        working-directory: frontend
-      - name: Verify actual public-only Vercel ingress without a backend
+      - name: Build the explicit public-only standalone frontend
+        timeout-minutes: 5
+        shell: bash
+        run: |
+          set -o pipefail
+          npm run build 2>&1 | tee public-services-build.log
+      - name: Verify actual public-only standalone ingress without a backend
         timeout-minutes: 12
         shell: bash
         run: |
-          setsid vercel dev -L --listen 127.0.0.1:3200 > vercel-services.log 2>&1 &
-          server_pid=$!
-          cleanup() {
-            kill -- -"${server_pid}" 2>/dev/null || true
-            wait "${server_pid}" || true
-          }
-          trap cleanup EXIT
-          deadline=$((SECONDS + 180))
-          until curl --fail --silent --show-error --connect-timeout 2 --max-time 5 \
-            "${E2E_BASE_URL}/catalog" > /dev/null; do
-            if ! kill -0 "${server_pid}" 2>/dev/null || (( SECONDS >= deadline )); then
-              tail -100 vercel-services.log
-              echo "Public Vercel ingress did not become ready" >&2
-              exit 1
-            fi
-            sleep 2
-          done
-          cd frontend
-          npm run test:e2e:vercel -- e2e/vercel-services.spec.js --max-failures=1
+          set -o pipefail
+          node scripts/check-public-deployment.mjs --browser 2>&1 | tee public-services.log
       - if: failure()
         uses: actions/upload-artifact@v4
         with:
-          name: vercel-services-failure-${{ github.run_id }}
+          name: public-services-failure-${{ github.run_id }}
           path: |
-            vercel-services.log
+            frontend/public-services-build.log
+            frontend/public-services.log
             frontend/test-results/
             frontend/playwright-report/
           retention-days: 7

@@ -11,7 +11,7 @@ function required(env, name) {
 module.exports = ({ env }) => {
   const mode = env("APP_ENV", "development");
   if (mode === "production") require("../src/domain/production-readiness").assertProductionStartup(env);
-  if (!["test", "development"].includes(mode)) throw new Error("Unsupported APP_ENV; use test, development or the validated production release process");
+  if (!["test", "development", "production"].includes(mode)) throw new Error("Unsupported APP_ENV; use test, development or validated production configuration");
   return {
     env: mode,
     jwtSecret: required(env, "ALAGEUM_JWT_SECRET"),

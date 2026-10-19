@@ -76,7 +76,8 @@ test('current workflow preserves prior jobs outside the explicit reference/publi
   const after = await readFile(new URL('../../.github/workflows/ci.yml', import.meta.url), 'utf8');
   // This is a current workflow contract, not a new historical approval. The
   // immutable amendment gates still check their original reviewed source pins.
-  // The current-source reference and public-only Vercel deployment migrations
+  // The current-source reference, portable lock-check name and explicit public
+  // standalone deployment migrations
   // have separate executable contracts. All other jobs and PTMM evidence stay
   // byte-exact; this grants no new authority to an archived approval.
   const oldQuery = '      - name: Reproduce frozen FastAPI query reference vectors\n        run: python ../backend-node/tests/reference/generate_legacy_query.py --check\n';
@@ -85,21 +86,28 @@ test('current workflow preserves prior jobs outside the explicit reference/publi
   for (const step of [oldQuery, oldThrottle]) assert.equal(before.split(step).length, 2);
   const boundary = after.indexOf('\n  ptmm-qualification-browser:');
   assert.ok(boundary > 0);
-  const partitionDeployment = workflow => {
-    assert.equal(workflow.split('\n  vercel-services:\n').length, 2);
-    const start = workflow.indexOf('\n  vercel-services:\n');
+  const partitionDeployment = (workflow, jobName) => {
+    const marker = `\n  ${jobName}:\n`;
+    assert.equal(workflow.split(marker).length, 2);
+    const start = workflow.indexOf(marker);
     const end = workflow.indexOf('\n  transformer-source-browser:\n', start);
     assert.ok(end > start);
     return { retained: workflow.slice(0, start) + workflow.slice(end), deployment: workflow.slice(start, end) };
   };
-  const current = partitionDeployment(after.slice(0, boundary));
-  const prior = partitionDeployment(before.replace(oldQuery, currentQuery).replace(oldThrottle, ''));
+  const current = partitionDeployment(after.slice(0, boundary), 'public-services');
+  const oldLockCheck = '      - run: python ../scripts/check_vercel_runtime_lock.py\n';
+  const currentLockCheck = '      - run: python ../scripts/check_legacy_python_lock.py\n';
+  assert.equal(before.split(oldLockCheck).length, 2);
+  const prior = partitionDeployment(
+    before.replace(oldQuery, currentQuery).replace(oldThrottle, '').replace(oldLockCheck, currentLockCheck),
+    'vercel-services',
+  );
   assert.equal(current.retained.trimEnd(), prior.retained.trimEnd());
   assert.match(current.deployment, /ALAGEUM_PUBLIC_ONLY: ['"]1['"]/);
-  assert.match(current.deployment, /vercel dev -L/);
-  assert.match(current.deployment, /e2e\/vercel-services\.spec\.js/);
+  assert.match(current.deployment, /npm run build/);
+  assert.match(current.deployment, /node scripts\/check-public-deployment\.mjs --browser/);
   assert.match(current.deployment, /tests\/public-services-workflow\.test\.mjs/);
-  assert.doesNotMatch(current.deployment, /setup-python|uvicorn|uv sync|alembic|DATABASE_URL|API_INTERNAL_BASE_URL|NEXT_PUBLIC_API_URL/);
+  assert.doesNotMatch(current.deployment, /vercel|setup-python|uvicorn|uv sync|alembic|DATABASE_URL|API_INTERNAL_BASE_URL|NEXT_PUBLIC_API_URL/i);
   const added = after.slice(boundary);
   assert.deepEqual(added.match(/^  [a-z0-9-]+:$/gm), ['  ptmm-qualification-browser:']);
   assert.match(before, /transformer-source-browser:[\s\S]*?timeout-minutes: 25/);

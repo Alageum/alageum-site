@@ -1,0 +1,80 @@
+{
+  "kind": "collectionType",
+  "collectionName": "alageum_news_articles",
+  "info": {
+    "singularName": "news-article",
+    "pluralName": "news-articles",
+    "displayName": "Новости / News",
+    "description": "Новости сайта: черновик, редактирование и публикация."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": true
+    },
+    "content-type-builder": {
+      "visible": true
+    }
+  },
+  "attributes": {
+    "slug": {
+      "type": "uid",
+      "required": true,
+      "maxLength": 160,
+      "targetField": "title"
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 240
+    },
+    "locale_code": {
+      "type": "enumeration",
+      "enum": [
+        "ru",
+        "kk",
+        "en",
+        "zh",
+        "uz"
+      ],
+      "default": "ru",
+      "required": true
+    },
+    "body": {
+      "type": "blocks"
+    },
+    "seo_title": {
+      "type": "string",
+      "maxLength": 240
+    },
+    "seo_description": {
+      "type": "text",
+      "maxLength": 500
+    },
+    "summary": {
+      "type": "text",
+      "required": true,
+      "maxLength": 1200
+    },
+    "topic": {
+      "type": "string",
+      "maxLength": 120
+    },
+    "publication_date": {
+      "type": "date"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "cover_alt": {
+      "type": "string",
+      "maxLength": 300
+    }
+  }
+}

@@ -1,5 +1,5 @@
 "use strict";
-// Operator-only local CLI. Dry-run by default. Never creates passwords or verifies email.
+// Operator-only server CLI. Dry-run by default. Never creates passwords or verifies email.
 const { randomUUID } = require("node:crypto");
 const knex = require("knex");
 const { table, uuid } = require("../src/domain/auth");
@@ -93,13 +93,27 @@ function connectionSettings(value) {
   return { host: url.hostname === "[::1]" ? "::1" : url.hostname, port: Number(url.port || 5432), user: decodeURIComponent(url.username),
     password: decodeURIComponent(url.password), database: url.pathname.slice(1), ssl: false };
 }
+function connectionForEnvironment(env = process.env) {
+  if (env.APP_ENV === "production") {
+    require("../src/domain/production-readiness").assertProductionStartup((name, fallback) => env[name] ?? fallback);
+    if (env.ALAGEUM_OPERATOR_DATABASE_URL && env.ALAGEUM_OPERATOR_DATABASE_URL !== env.DATABASE_URL)
+      throw new Error("Production operator database override is forbidden");
+    const url = new URL(env.DATABASE_URL);
+    return { host: url.hostname === "[::1]" ? "::1" : url.hostname, port: Number(url.port || 5432),
+      user: decodeURIComponent(url.username), password: decodeURIComponent(url.password), database: url.pathname.slice(1),
+      ssl: ["1", "true"].includes(env.DATABASE_SSL) ? { rejectUnauthorized: true } : false };
+  }
+  if (!["development", "test"].includes(env.APP_ENV)) throw new Error("Explicit APP_ENV=production, development or test is required");
+  return connectionSettings(env.ALAGEUM_OPERATOR_DATABASE_URL);
+}
 async function main() {
-  if (!["development", "test"].includes(process.env.APP_ENV)) throw new Error("Explicit APP_ENV=development or test is required; production guard remains in place");
-  const connection = connectionSettings(process.env.ALAGEUM_OPERATOR_DATABASE_URL);
+  const connection = connectionForEnvironment();
   const args = options(process.argv.slice(2)), db = knex({ client: "pg", connection });
-  try { console.log(JSON.stringify(await (args.routePending ? routePending(db, args) : provision(db, args)), null, 2)); }
+  try {
+    if (process.env.APP_ENV === "production") await require("../src/domain/production-readiness").assertProductionDatabaseVersion(db);
+    console.log(JSON.stringify(await (args.routePending ? routePending(db, args) : provision(db, args)), null, 2)); }
   finally { await db.destroy(); }
 }
 if (require.main === module) main().catch(error => { console.error(error.message); process.exitCode = 1; });
-module.exports = { options, provision, routePending, connectionSettings, ADMIN_PERMISSIONS };
+module.exports = { options, provision, routePending, connectionSettings, connectionForEnvironment, ADMIN_PERMISSIONS };
 

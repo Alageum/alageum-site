@@ -14,3 +14,5 @@
 .editorial-message { padding-block: 62px 84px; min-height: 45vh; }.editorial-message h1 { max-width: 760px; margin-block: 20px; font-size: clamp(30px, 5vw, 56px); line-height: 1.15; font-weight: 500; }
 .editorial-message > p { margin-block: 18px; }.editorial-message-actions { display: flex; flex-wrap: wrap; gap: 24px; align-items: center; margin-top: 28px; }
 @media (max-width: 760px) { .editorial-page { padding-bottom: 52px; }.editorial-body { padding-top: 28px; font-size: 15px; }.editorial-body blockquote { padding: 18px; } }
+
+.news-article-cover { display: block; width: 100%; max-height: 640px; height: auto; object-fit: cover; margin-bottom: 36px; }

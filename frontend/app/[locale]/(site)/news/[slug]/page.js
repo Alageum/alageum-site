@@ -1,2 +1,1 @@
-import Page from '@/app/(site)/news/[slug]/page';
-export default Page;
+export { default, generateMetadata } from '@/app/(site)/news/[slug]/page';

@@ -1,6 +1,4 @@
-# Build inputs for the sole public Next service; all other root data stays out.
+# Retired-host safeguard: only the deny configuration is eligible for upload.
+# This does not unlink the Git integration or change existing deployments.
 /*
-!frontend
-!vercel.json
-/frontend/.env
-/frontend/.env.*
+!/vercel.json

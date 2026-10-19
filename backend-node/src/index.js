@@ -23,9 +23,11 @@ const catalogFiltersModule = require("./domain/catalog-filters");
 const { createCmsCatalogAuthorizer } = require("./domain/cms-catalog");
 const { readCatalog } = require("./domain/catalog-source");
 const pageEditorial = require("./domain/page-editorial");
+const newsEditorial = require("./domain/news-editorial");
 const systemModule = require("./domain/system");
 module.exports = {
   async register({ strapi }) {
+    if (strapi.config.get("alageum.env") === "production") await require("./domain/production-readiness").assertProductionDatabaseVersion(strapi.db.connection);
     try {
       await quoteSchema.preflightSchema(strapi.db.connection);
       await catalogFiltersModule.preflightSchema(strapi.db.connection);
@@ -35,6 +37,7 @@ module.exports = {
       await pageEditorial.preflightPages(strapi);
       strapi.alageumMetrics = systemModule.createMetrics();
       strapi.documents.use(pageEditorial.editorialMiddleware(strapi));
+      strapi.documents.use(newsEditorial.editorialMiddleware(strapi));
     } catch (error) {
       quoteSchema.invalidateAdmission(strapi.db.connection);
       throw error;

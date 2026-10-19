@@ -112,7 +112,7 @@ test("version captures immutable public metadata and ignores arbitrary environme
     }
   });
   Object.assign(process.env, poisoned);
-  for (const environment of ["test", "development"]) {
+  for (const environment of ["test", "development", "production"]) {
     const options = { db: {}, metrics: createMetrics(), environment, now: () => { throw new Error("Version must not use the clock"); }, name: "spoof", version: "spoof", settings: poisoned };
     const service = createSystem(options);
     options.environment = "production";
@@ -128,9 +128,9 @@ test("version captures immutable public metadata and ignores arbitrary environme
   }
 });
 
-test("system cannot introduce a public version environment outside the existing guard", () => {
-  for (const environment of [undefined, null, "", "production", "staging", "TEST", 0, {}, ["test"]]) {
-    assert.throws(() => createSystem({ db: {}, metrics: createMetrics(), environment }), /guarded test\/development/);
+test("system cannot introduce a public version outside validated application modes", () => {
+  for (const environment of [undefined, null, "", "staging", "TEST", 0, {}, ["test"]]) {
+    assert.throws(() => createSystem({ db: {}, metrics: createMetrics(), environment }), /validated application environment/);
   }
 });
 

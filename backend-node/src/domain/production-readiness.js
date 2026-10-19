@@ -5,8 +5,8 @@ const { readMediaConfig } = require("./media-policy");
 const { inspectMailConfiguration } = require("./registration-mail");
 
 const SECRET_NAMES = Object.freeze(["ADMIN_JWT_SECRET", "API_TOKEN_SALT", "TRANSFER_TOKEN_SALT", "ENCRYPTION_KEY", "ALAGEUM_JWT_SECRET"]);
-// These are evidence requirements, not environment flags. The inspector never
-// claims a real service, recovery rehearsal or operator decision from a string.
+// These remain operator evidence, not environment flags. Configuration admission
+// never certifies service health, a recovery rehearsal or approval to cut over.
 const RELEASE_REQUIREMENTS = Object.freeze([
   "https_same_origin_cookie_acceptance",
   "trusted_proxy_network_isolation",
@@ -78,6 +78,7 @@ function inspectProductionConfiguration(env = (name, fallback) => process.env[na
     if (!enabled(env("DATABASE_SSL")) && !(local && disabled(env("DATABASE_SSL"))))
       add("verified_database_tls_required", "DATABASE_SSL");
   } catch { add("dedicated_database_url_without_overrides_required", "DATABASE_URL"); }
+  if (!env("ALAGEUM_MEDIA_QUARANTINE_DIR", "")) add("explicit_private_quarantine_required", "ALAGEUM_MEDIA_QUARANTINE_DIR", "media");
   try {
     const media = readMediaConfig(env);
     if (!media.scanner.host && !media.scanner.socketPath) add("media_scanner_required", "ALAGEUM_MEDIA_CLAMAV_HOST|ALAGEUM_MEDIA_CLAMAV_SOCKET", "media");
@@ -100,17 +101,31 @@ function inspectProductionConfiguration(env = (name, fallback) => process.env[na
       add("google_credentials_required_when_enabled", "ALAGEUM_GOOGLE_CLIENT_ID|ALAGEUM_GOOGLE_CLIENT_SECRET", "optional_google");
   } else if (!disabled(env("ALAGEUM_GOOGLE_ENABLED"))) add("explicit_google_mode_required", "ALAGEUM_GOOGLE_ENABLED", "optional_google");
   return {
-    schema_version: 1, configuration_valid: issues.length === 0, startup_permitted: false,
+    schema_version: 2, configuration_valid: issues.length === 0,
+    configuration_admitted: issues.length === 0, release_verified: false,
     issues,
     implementation_blockers: [],
+    runtime_checks_required: ["supported_database_version_and_schema", "configured_media_storage"],
     release_evidence_required: [...RELEASE_REQUIREMENTS],
     limitations: ["binary_media_replacement_unavailable", "new_public_uploads_png_jpeg_webp_only"],
   };
 }
 function assertProductionStartup(env) {
   const report = inspectProductionConfiguration(env);
-  // No variable can self-approve operational evidence or remove this interlock.
+  // No approval/skip flag bypasses invalid configuration. Real storage checks
+  // still run in the upload plugin before provider registration, and Strapi
+  // awaits the database/schema bootstrap before accepting HTTP connections.
   const codes = [...new Set(report.issues.map(issue => issue.code)), ...report.implementation_blockers];
-  throw new Error(`Production startup blocked: ${codes.join(", ") || "release_evidence_pending"}; run node scripts/check-production-readiness.js for safe diagnostics. Cookie sessions, shared quotas and scanner admission are implemented; deployment evidence and cutover are still required.`);
+  if (!report.configuration_valid || codes.length)
+    throw new Error(`Production startup blocked: ${codes.join(", ")}; run node scripts/check-production-readiness.js for safe diagnostics.`);
+  return report;
 }
-module.exports = { inspectProductionConfiguration, assertProductionStartup, RELEASE_REQUIREMENTS };
+async function assertProductionDatabaseVersion(db) {
+  const result = await db.raw("SELECT current_setting('server_version_num') AS server_version");
+  const value = Number(result?.rows?.[0]?.server_version);
+  // Constraint representation is verified on these majors. PostgreSQL18 changes
+  // it; reject before any application migration rather than relax the checks.
+  if (!Number.isInteger(value) || ![16, 17].includes(Math.floor(value / 10000)))
+    throw new Error("Unsupported production PostgreSQL major; use PostgreSQL 16 or 17");
+}
+module.exports = { inspectProductionConfiguration, assertProductionStartup, assertProductionDatabaseVersion, RELEASE_REQUIREMENTS };

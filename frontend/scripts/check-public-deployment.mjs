@@ -57,7 +57,7 @@ try {
     const response = await get(path); assert.equal(response.status, 404, path); await response.arrayBuffer(); checks++;
   }
   if (browserProof) {
-    const browser = spawn(process.execPath, [fileURLToPath(new URL('../node_modules/@playwright/test/cli.js', import.meta.url)), 'test', '--config=playwright.vercel.config.js', 'e2e/vercel-services.spec.js', '--max-failures=1'], { cwd: root, stdio: 'inherit', env: { ...process.env, E2E_BASE_URL: base, E2E_VERCEL_SERVICES: '1' } });
+    const browser = spawn(process.execPath, [fileURLToPath(new URL('../node_modules/@playwright/test/cli.js', import.meta.url)), 'test', '--config=playwright.public.config.js', 'e2e/public-services.spec.js', '--max-failures=1'], { cwd: root, stdio: 'inherit', env: { ...process.env, E2E_BASE_URL: base, E2E_PUBLIC_SERVICES: '1' } });
     const result = await new Promise((resolve, reject) => { browser.once('error', reject); browser.once('exit', (code, signal) => resolve({ code, signal })); });
     assert.equal(result.code, 0, `Public browser proof failed (${result.signal || result.code})`);
   }

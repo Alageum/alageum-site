@@ -13,7 +13,10 @@ async function main() {
   } catch {
     report.media_storage = { configured: false, directories_ready: false, issues: ["invalid_media_configuration"], volume_persistence_verified: false, backup_restore_verified: false };
   }
+  report.local_startup_checks_passed = report.configuration_valid && report.media_storage.directories_ready;
+  // Exit zero certifies only these local checks, not live services or release
+  // evidence. Strapi still verifies its database/schema before accepting HTTP.
   process.stdout.write(`${JSON.stringify(report, null, 2)}\n`);
-  process.exitCode = report.configuration_valid && report.media_storage.directories_ready ? 2 : 1;
+  process.exitCode = report.local_startup_checks_passed ? 0 : 1;
 }
 main().catch(() => { process.stderr.write("Production configuration inspection failed\n"); process.exitCode = 1; });

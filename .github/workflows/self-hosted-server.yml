@@ -1,0 +1,87 @@
+name: Self-hosted production server proof
+
+on:
+  push:
+    paths: ['deploy/**', 'backend-node/**', 'frontend/**', '.github/workflows/self-hosted-server.yml']
+  pull_request:
+    paths: ['deploy/**', 'backend-node/**', 'frontend/**', '.github/workflows/self-hosted-server.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: self-hosted-server-${{ github.event.pull_request.head.ref || github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  production-backend-runtime:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      STRAPI_TELEMETRY_DISABLED: 'true'
+      STRAPI_HIDE_UPDATE_MESSAGE: 'true'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: backend-node/package-lock.json
+      - name: Install locked runtime dependencies and local PostgreSQL tools
+        run: |
+          npm ci --prefix backend-node
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends postgresql-16
+      - name: Prove production account flows and explicit first-operator bootstrap
+        env:
+          PG_BIN: /usr/lib/postgresql/16/bin
+        run: bash backend-node/scripts/run-production-tests.sh
+      - name: Prove native CMS news lifecycle and public delivery
+        env:
+          PG_BIN: /usr/lib/postgresql/16/bin
+        run: bash backend-node/scripts/run-news-tests.sh
+
+  disposable-production-compose:
+    # This is a disposable GitHub-hosted machine, never a production runner.
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    env:
+      COMPOSE_PARALLEL_LIMIT: '1'
+      DOCKER_BUILDKIT: '1'
+      NEXT_TELEMETRY_DISABLED: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - name: Check the proof's safety and shell contracts
+        run: |
+          bash -n deploy/ci/run-proof.sh
+          node --test deploy/ci/proof-contract.test.mjs
+      - name: Install the locked browser test dependencies
+        run: |
+          npm ci --prefix frontend
+          cd frontend
+          npx --no-install playwright install --with-deps chromium
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends libnss3-tools python3-yaml
+      - name: Verify deploy topology and maintenance-script negative cases
+        run: /usr/bin/python3 -m unittest discover -s deploy/tests -v
+      - name: Build and prove the actual production Compose stack
+        timeout-minutes: 50
+        run: bash deploy/ci/run-proof.sh
+      - name: Keep only credential-free proof results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: self-hosted-server-proof-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/alageum-server-proof-results/
+          if-no-files-found: warn
+          retention-days: 7

@@ -1,29 +1,20 @@
-# Deployment baseline
+# Deployment
 
-For the Vercel Services configuration, public routes, local checks and outstanding
-deployment prerequisites, see [Vercel Services](vercel-services.md).
+The active deployment target is the portable Node.js/Strapi + Next.js server
+package. Follow [server deployment](server-deployment.md) and
+[`deploy/README.md`](../deploy/README.md).
 
-## DEV
+Use `deploy/compose.production.yml` independently. It includes PostgreSQL with
+verified TLS, ClamAV/FreshClam, persistent uploads/private quarantine and an HTTPS
+same-origin reverse proxy. Backend mail delivery runs from the database outbox.
+No Vercel runtime or Vercel project configuration is required.
 
-Docker Compose, local file volume, mock providers, memory limiter/metrics and deterministic seed.
-`make bootstrap` is the supported path.
+Do not use the historical Python `make bootstrap`, `make restore` or root
+`docker-compose.yml` for this deployment. The opt-in `docker-compose.node.yml`
+remains local-development only. Production schema changes happen during the
+reviewed single-backend Strapi startup; there is no separate migration command
+that can be claimed without implementing and testing one.
 
-## STAGING
-
-Use production-like PostgreSQL/storage/network topology, explicit Alembic release job, synthetic
-data and real security adapters where selected. Never run the DEV seed.
-
-## PROD
-
-The application validates secrets, PostgreSQL, distributed rate limiting, malware scanning and
-browser auth transport. Migrations are an explicit reviewed step before application rollout;
-SQLAlchemy does not create schema. Terminate TLS at an approved edge and pass only trusted proxy
-headers. Secrets must be injected at runtime, never built into frontend or images.
-
-**NEEDS_CLIENT:** hosting and network zones, domain/TLS termination, same-site/BFF topology,
-reverse/trusted proxy chain, storage/scanner, secret manager, backup destination/retention,
-monitoring/exporter stack, job runner, replicas, RPO/RTO, DR and rollback ownership.
-
-Only `NEXT_PUBLIC_API_URL` and `NEXT_PUBLIC_CATALOG_SOURCE` are approved public frontend variables.
-CI should fail review if any secret-shaped
-`NEXT_PUBLIC_*` variable is introduced.
+The templates do not select a server, create secrets, issue certificates, configure
+SMTP, migrate real data or approve a production cutover. The full live acceptance
+and backup/restore checklist is in the server guide.

@@ -16,11 +16,13 @@
     "build:preview": "node scripts/build-preview.mjs",
     "check": "npm run lint && npm run test:unit && npm run build",
     "test:e2e:admin": "playwright test --config=playwright.admin.config.js",
-    "test:e2e:vercel": "playwright test --config=playwright.vercel.config.js",
     "test:e2e:company": "playwright test --config=playwright.company.config.js",
     "audit:company": "node scripts/audit-company-pages.mjs",
     "test:e2e:quotes": "playwright test --config=playwright.quotes.config.js",
-    "test:e2e:quote-print": "playwright test --config=playwright.quote-print.config.js"
+    "test:e2e:quote-print": "playwright test --config=playwright.quote-print.config.js",
+    "build:standalone": "next build && node scripts/prepare-standalone.mjs",
+    "start:standalone": "node .next/standalone/server.js",
+    "test:e2e:public": "playwright test --config=playwright.public.config.js"
   },
   "dependencies": {
     "next": "16.3.8",

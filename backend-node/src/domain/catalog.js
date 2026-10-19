@@ -477,7 +477,8 @@ function createCatalog({ db, auth, audit, authorizer, compatibilityReads = false
       productOut(r, { public_key: r.category_public_key }),
     );
   }
-  async function importRecords(records) {
+  async function importRecords(records, options = {}) {
+    if (typeof options.requireEmpty !== "undefined" && typeof options.requireEmpty !== "boolean") throw new Error("Invalid catalog bootstrap options");
     if (
       !Array.isArray(records) ||
       new Set(records.map((r) => r.id)).size !== records.length ||
@@ -487,6 +488,10 @@ function createCatalog({ db, auth, audit, authorizer, compatibilityReads = false
     return unique(() =>
       db.transaction(async (tx) => {
         await identityLock(tx);
+        // The one-time server bootstrap must not merge into operator-managed
+        // content. This check shares the identity lock with every catalog writer.
+        if (options.requireEmpty && (await table(tx).first("id") || await categories(tx).first("id")))
+          throw new Error("Reviewed catalog bootstrap requires an empty catalog");
         const result = { categories_created: 0, created: 0, skipped: 0 };
         const cat = {};
         for (const [i, [key, label]] of Object.entries(CATEGORIES).filter(([key]) => !["reactors", "accessories"].includes(key) || records.some(r => r.category === key)).entries()) {

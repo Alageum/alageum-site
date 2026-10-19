@@ -1,7 +1,7 @@
 import CompanyMetrics from '@/components/public/CompanyMetrics';
 import { DeliveryPowerChart, VoltageClassChart } from '@/components/public/HomeEngineeringCharts';
 import LocaleElement from "@/components/locale/LocaleElement";import { EcoCard } from '@/components/ecosystem/Parts';
-import { news } from '@/lib/ecosystem/news';
+import NewsFeed from '@/components/news/NewsFeed';
 import PartnerMarquee from '@/components/public/PartnerMarquee';
 import CorporateArrow from '@/components/public/CorporateArrow';
 import HeroVideo from '@/components/public/HeroVideo';
@@ -22,7 +22,8 @@ const categories = [
 { id: 'cabinets', title: 'Шкафы и щиты', text: 'Управление и электрическая защита', icon: 'control-cabinet' },
 { id: 'protection', title: 'Катодная защита', text: 'Оборудование электрохимической защиты', icon: 'protection-cabinet' }];
 
-export default function HomePage() {
+export default async function HomePage({ params }) {
+  const locale = (await params)?.locale || 'ru';
   return <CorporatePage wide className="corp-home">
     <LocaleElement as="div" className="corp-hero-band"><LocaleElement as="section" className="corp-home-hero site-container">
       <LocaleElement as="div" className="corp-hero-copy"><LocaleElement as="p" className="site-eyebrow">ALAGEUM ELECTRIC / КАЗАХСТАН</LocaleElement><LocaleElement as="h1">Производство<br />и инжиниринг<br /><LocaleElement as="em">для энергетики.</LocaleElement></LocaleElement><LocaleElement as="p" className="corp-lead">Объединяем предприятия, которые проектируют, производят и внедряют электротехническое оборудование.</LocaleElement><LocaleElement as="div" className="site-actions"><Link className="site-button site-button-primary" href="/company">Познакомиться с группой <CorporateArrow /></Link><Link className="site-text-link" href="/projects">Наши проекты <CorporateArrow direction="right" /></Link></LocaleElement><LocaleElement as="a" className="corp-hero-scroll" href="#capabilities"><LocaleElement as="span"><CorporateArrow direction="down" /></LocaleElement> ОТ ПРОЕКТИРОВАНИЯ ДО ОБСЛУЖИВАНИЯ</LocaleElement></LocaleElement>
@@ -35,7 +36,7 @@ export default function HomePage() {
     <DeliveryPowerChart />
     <CompanyMetrics charts />
     <PartnerMarquee />
-    <LocaleElement as="section" className="site-container corp-section"><SectionHeading number="04" label="НОВОСТИ И РАЗВИТИЕ" title="Компания в движении." href="/news" link="Все публикации" /><LocaleElement as="div" className="eco-grid home-news-grid">{news.map((item) => <EcoCard key={item.id} title={item.title} text={item.text} photo={item.photo} href={`/news/${item.id}`} link="Читать публикацию"><LocaleElement as="time" dateTime={item.date}>{item.date.split('-').reverse().join('.')}</LocaleElement></EcoCard>)}</LocaleElement></LocaleElement>
+    <LocaleElement as="section" className="site-container corp-section"><SectionHeading number="04" label="НОВОСТИ И РАЗВИТИЕ" title="Компания в движении." href="/news" link="Все публикации" /><NewsFeed locale={locale} /></LocaleElement>
     <LocaleElement as="section" id="equipment" className="corp-white-band"><LocaleElement as="div" className="site-container corp-section"><SectionHeading number="05" label="ПРОДУКЦИЯ" title="Оборудование предприятий" href="/catalog" link="Технический каталог" /><LocaleElement as="div" className="corp-equipment-grid">{categories.map((item, index) => <Link className="corp-equipment-card" href={`/catalog?category=${item.id}`} key={item.id}><LocaleElement as="span" className="corp-card-index">0{index + 1}</LocaleElement>{getCorporatePhoto(`category-${item.id}`) ? <CorporatePhoto photo={getCorporatePhoto(`category-${item.id}`)} caption={false} className="corp-equipment-photo" sizes="(max-width: 480px) 100px, 230px" /> : <LocaleElement as="div" className="corp-equipment-symbol"><EquipmentIcon type={item.icon} size={88} /></LocaleElement>}<LocaleElement as="h3">{item.title}</LocaleElement><LocaleElement as="p">{item.text}</LocaleElement><LocaleElement as="span" className="corp-card-arrow"><CorporateArrow /></LocaleElement></Link>)}</LocaleElement><LocaleElement as="p" className="corp-small-note">Каталог помогает предварительному подбору. Исполнение, комплектность и условия поставки подтверждаются производителем.</LocaleElement></LocaleElement></LocaleElement>
     <VoltageClassChart />
     <LocaleElement as="div" className="site-container corp-home-end"><LocaleElement as="div" className="eco-grid home-opportunities"><EcoCard title="Развивать промышленность" text="Структура группы, компетенции, проекты и публичные материалы для инвесторов." href="/investors" link="Инвесторам" /><EcoCard title="Работать в команде" text="Предприятия, профессии, стажировки и подготовка резюме." href="/careers" link="Карьера в Alageum" /><EcoCard title="Подготовить проект" text="Оборудование, подборки, запросы и документы в отдельном каталоге." href="/catalog/home" link="Каталог и кабинет" /></LocaleElement><CorporateCTA /><LocaleElement as="p" className="corp-small-note corp-end-note">Тестовая версия сайта. Запросы подготавливаются локально; онлайн-заказ и отправка заявки на сервер не выполняются.</LocaleElement></LocaleElement>

@@ -110,3 +110,10 @@ ptmm-qualification-evidence/
 *.p12
 *.pfx
 /frontend/public/documents/transformers-2026-original.pdf
+
+# Portable deployment private runtime inputs and local evidence.
+deploy/*.env
+!deploy/.env.example
+!deploy/backend.env.example
+deploy/local/
+deploy/.ci/

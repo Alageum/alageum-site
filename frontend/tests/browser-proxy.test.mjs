@@ -11,6 +11,9 @@ test('API proxy is opt-in and uses only the fixed same-origin browser API prefix
   assert.deepEqual(browserApiRewrites({ API_INTERNAL_BASE_URL: 'https://backend.example.test/api/v1' }), [
     { source: '/api/v1/:path*', destination: 'https://backend.example.test/api/v1/:path*' },
   ]);
+  assert.deepEqual(browserApiRewrites({ API_INTERNAL_BASE_URL: 'http://backend:8000/api/v1' }), [
+    { source: '/api/v1/:path*', destination: 'http://backend:8000/api/v1/:path*' },
+  ]);
 });
 test('API proxy rejects credentials, fragments, queries, unsupported protocols and widened paths', () => {
   for (const value of ['relative', 'file:///api/v1', 'https://user:secret@backend.test/api/v1',

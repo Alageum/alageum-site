@@ -1,68 +1,56 @@
-# Public frontend demonstration
+# Frontend hosting: connected server and optional public preview
 
-This release can run the existing Next application without a backend. It keeps
-company pages, locales, the bundled reference catalogue, 3D views, comparisons,
-and browser-local project/draft tools. Drafts do not send data to Alageum.
+The normal server target is **connected mode**: real account flows, live API
+catalogue and Strapi CMS behind one HTTPS origin. See the root
+[server deployment guide](../../docs/server-deployment.md). No Vercel CLI,
+Services configuration or platform dependency is required.
 
-## Build and host
+The production container builds with `ALAGEUM_PUBLIC_ONLY=0`,
+`NEXT_PUBLIC_API_URL=/api/v1` and `NEXT_PUBLIC_CATALOG_SOURCE=api`. The browser
+always uses the same origin; only the Next server receives
+`API_INTERNAL_BASE_URL=http://backend:8000/api/v1`. The backend need not be live
+while compiling the frontend. Public mode is a build-time choice, so changing
+an env variable after compilation does not enable account features.
 
-Use Node **24.x**. The existing Vercel project can keep its repository root and
-Services framework: the root `vercel.json` now defines exactly one Next service,
-rooted at `frontend`, with `npm ci` and `ALAGEUM_PUBLIC_ONLY=1 npm run build`.
-An explicit low-level service route runs before filesystem lookup. High-level
-`rewrites` are intentionally not used: the pinned Vercel CLI otherwise serves
-repository files before applying a rewrite. The root `.vercelignore` also permits
-only frontend build inputs and config, excluding frontend environment files.
-All ingress, including `/api`, reaches that frontend; public-mode policy refuses
-API requests. There is no Python or Strapi service in this deployment config.
-The original two-service configuration remains in Git history, not active config.
+## Standalone Node alternative
 
-Alternatively, a Next-only project rooted directly at **frontend** uses its
-frontend-specific `vercel.json` with the same explicit public-mode commands.
-Leave the output directory at the framework default. Do not copy backend files
-or credentials into either deployment. Services is a Vercel Beta feature; this
-change retains the existing project model rather than changing account settings.
-The supported single-service shape and service-scoped commands are documented at
-https://vercel.com/docs/services and https://vercel.com/docs/services/config-reference.
+From `frontend`, on Node 24.x:
 
-The flag is compiled into the server and client. A capability change requires a
-new build; changing an environment variable after the build does not enable
-accounts. Do not set `API_INTERNAL_BASE_URL`, `NEXT_PUBLIC_API_URL`, an API
-catalogue, CMS company source, or `PAGES_STATIC_PREVIEW=1` for this build. Conflicting
-settings fail the build. No database, SMTP, Google or application secrets are
-needed for the frontend demonstration. Do not copy backend environment files.
+```sh
+npm ci
+ALAGEUM_PUBLIC_ONLY=0 NEXT_PUBLIC_API_URL=/api/v1 NEXT_PUBLIC_CATALOG_SOURCE=api npm run build:standalone
+HOSTNAME=127.0.0.1 PORT=3000 API_INTERNAL_BASE_URL=http://127.0.0.1:8000/api/v1 npm run start:standalone
+```
 
-The root must remain `frontend` when choosing a different supported Node/Next host.
-For a local production smoke use the same build command, then
-`node scripts/check-public-deployment.mjs` (the emitted standalone server).
-For a standalone container, copy `.next/static` and `public` alongside its emitted
-server as required by Next; do not publish the repository as a static directory.
+This starts Next only. Supply the same-origin reverse proxy separately and route
+`/api/v1`/CMS/media to the backend. Do not expose a repository directory as a
+static site. `/healthz` is process liveness, not backend/SMTP/scanner readiness.
+Production runtime credentials belong in backend env only; no secret `NEXT_PUBLIC_*`
+variable is permitted. Standalone preparation copies `public` and `.next/static`
+next to the generated server, as required for portable Next hosting.
 
-## Deliberate unavailable state
+## Explicit frontend-only demonstration
 
-Login, registration/reset/verification, accounts, company cabinets, CMS/admin,
-AI and live CMS editorial reads redirect to an explicit unavailable page with
-no credential/submission form; writes are refused with HTTP503. Redirects discard
-query parameters and preserve the locale. `/api/**` returns uncached503 JSON. Explicit
-live-catalogue links also remain unavailable; they never silently fall back to a
-bundled record. The header labels the unavailable account entry. Existing public
-company routes still use their current bundled content. Public API clients refuse
-before sending any network request, including a stale session marker.
+A backend-free demonstration remains available when deliberately selected:
 
-This is a progress demonstration, not evidence that the backend, mail delivery,
-company approval or server-side saving is deployed. Browser-local drafts remain
-honestly labelled and must not be mistaken for sent orders or support tickets.
+```sh
+npm ci
+ALAGEUM_PUBLIC_ONLY=1 npm run build:standalone
+HOSTNAME=127.0.0.1 PORT=3000 npm run start:standalone
+```
 
-## Publication boundary and remaining checks
+Do not combine that build with API catalogue/source settings, backend variables
+or live CMS settings. The existing policy intentionally blocks credentials,
+account writes and `/api/**` in this mode; browser-local drafts do not send an
+order or request. Connected-mode account capabilities must be tested separately.
+`npm run build:preview` is the separately guarded static-export experiment;
+its export checks must pass before distributing that output.
 
-Only `frontend/public` assets and Next-generated static assets are public output;
-backend/data, private editorial
-packages, docs, tests and environment files must not be copied into it. Next's
-source-byte verifier stays enabled. The 805MiB original transformer PDF was
-excluded from Git by the handoff and is unavailable until separately provided.
-Some large source assets are present remotely but omitted from the cloud test
-checkout; use the real repository tree for deployment, not this partial copy.
+Only frontend public assets and Next-generated assets are public output. Never
+copy backend/data, source context, docs, environment files, private business
+files or backups to the web root. The full tracked source asset tree is required
+for source-byte verification; a partial checkout is not a deployment package.
+The omitted original transformer PDF is not restored by this server change.
 
-Provider account/team eligibility, any paid plan, domain ownership and a successful
-provider build/live HTTP check are separate prerequisites. This file does not
-select a team, approve a purchase, accept new terms, or claim a live URL.
+Historical Vercel evidence remains archived for provenance. It does not describe
+the active server commands or authorize any provider/account changes.

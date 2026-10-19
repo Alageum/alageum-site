@@ -15,6 +15,8 @@ export function proxy(request) {
       return NextResponse.redirect(target, { status: 307, headers });
     }
   }
+  // Liveness is process-only and must not set user locale cookies.
+  if (request.nextUrl.pathname === '/healthz') return NextResponse.next();
   // Preserve the existing normal-app exclusions and avoid cookies on assets.
   if (/^\/(?:api|admin|pages)(?:\/|$)/.test(request.nextUrl.pathname) || request.nextUrl.pathname.includes('.')) return NextResponse.next();
   const locale = localeFromPath(request.nextUrl.pathname);

@@ -1,3 +1,5 @@
+> **Historical only.** Vercel service deployments have been retired; only a refusing retired-host guard remains. Commands and service descriptions below are archived evidence, not current instructions. Use [server deployment](server-deployment.md). No remote Vercel project was modified.
+
 # Vercel Services configuration
 
 This change prepares one Vercel project containing the existing FastAPI backend and
