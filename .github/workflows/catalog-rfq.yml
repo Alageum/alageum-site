@@ -4,11 +4,13 @@ on:
     paths:
       - 'frontend/**'
       - 'backend/**'
+      - 'backend-node/**'
       - '.github/workflows/catalog-rfq.yml'
   push:
     paths:
       - 'frontend/**'
       - 'backend/**'
+      - 'backend-node/**'
       - '.github/workflows/catalog-rfq.yml'
 permissions:
   contents: read
@@ -20,76 +22,98 @@ jobs:
       postgres:
         image: postgres:16-alpine
         env:
-          POSTGRES_DB: alageum_rfq_ci
+          POSTGRES_DB: alageum_strapi_rfq_ci
           POSTGRES_USER: alageum
+          # Disposable CI service only; never use this account in deployment.
           POSTGRES_PASSWORD: ci-password
-        ports:
-          - 5432:5432
+        ports: ['5432:5432']
         options: >-
-          --health-cmd "pg_isready -U alageum -d alageum_rfq_ci"
+          --health-cmd "pg_isready -U alageum -d alageum_strapi_rfq_ci"
           --health-interval 5s --health-timeout 3s --health-retries 10
     env:
       APP_ENV: test
-      APP_DATABASE_URL: postgresql+asyncpg://alageum:ci-password@localhost:5432/alageum_rfq_ci
-      APP_SECRET_KEY: ci-only-catalogue-rfq-secret-not-for-deployment
-      APP_LOCAL_STORAGE_PATH: /tmp/alageum-rfq-ci-storage
-      APP_CORS_ORIGINS: '["http://127.0.0.1:3140"]'
-      NEXT_PUBLIC_API_URL: http://127.0.0.1:8015/api/v1
+      DATABASE_URL: postgresql://alageum:ci-password@127.0.0.1:5432/alageum_strapi_rfq_ci
+      HOST: 127.0.0.1
+      PORT: '8015'
+      ALAGEUM_SEED_DEMO: '1'
+      ALAGEUM_IMPORT_CATALOG: '1'
+      ALAGEUM_REGISTRATION_MAIL_PROVIDER: disabled
+      ALAGEUM_BROWSER_ORIGIN: http://127.0.0.1:3140
+      CORS_ORIGINS: http://127.0.0.1:3140
+      STRAPI_TELEMETRY_DISABLED: 'true'
+      STRAPI_HIDE_UPDATE_MESSAGE: 'true'
+      NEXT_PUBLIC_API_URL: /api/v1
+      API_INTERNAL_BASE_URL: http://127.0.0.1:8015/api/v1
       NEXT_PUBLIC_CATALOG_SOURCE: static
       NEXT_TELEMETRY_DISABLED: '1'
       E2E_BASE_URL: http://127.0.0.1:3140
       E2E_QUOTES_BASE_URL: http://127.0.0.1:3140
-      E2E_API_URL: http://127.0.0.1:8015/api/v1
+      E2E_API_URL: http://127.0.0.1:3140/api/v1
     steps:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
       - uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: '24'
           cache: npm
-          cache-dependency-path: frontend/package-lock.json
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-          cache: pip
-          cache-dependency-path: backend/requirements-dev.lock
-      - name: Install locked backend dependencies
+          cache-dependency-path: |
+            backend-node/package-lock.json
+            frontend/package-lock.json
+      - name: Generate disposable application keys
+        run: |
+          node <<'NODE'
+          const { randomBytes } = require('node:crypto');
+          const { appendFileSync } = require('node:fs');
+          for (const key of ['APP_KEYS', 'ADMIN_JWT_SECRET', 'API_TOKEN_SALT', 'TRANSFER_TOKEN_SALT', 'ENCRYPTION_KEY', 'ALAGEUM_JWT_SECRET']) {
+            const value = Array.from({ length: key === 'APP_KEYS' ? 2 : 1 }, () => randomBytes(32).toString('hex')).join(',');
+            console.log(`::add-mask::${value}`);
+            appendFileSync(process.env.GITHUB_ENV, `${key}=${value}\n`);
+          }
+          NODE
+      - name: Install locked Node backend dependencies
         timeout-minutes: 4
-        run: pip install -r backend/requirements-dev.lock
+        working-directory: backend-node
+        run: npm ci
       - name: Install locked frontend dependencies
         timeout-minutes: 4
         working-directory: frontend
         run: npm ci
+      - name: Verify exact assertion partition and quote discovery
+        working-directory: frontend
+        run: |
+          npx --no-install playwright test --config=playwright.security.config.js --list --reporter=json > security-discovery.json
+          node scripts/check-security-fixture-discovery.mjs security-discovery.json
+          npx --no-install playwright test --config=playwright.quotes.config.js --list --reporter=json > quotes-discovery.json
+          node scripts/check-security-fixture-discovery.mjs --quotes quotes-discovery.json
       - name: Install Chromium with bounded timeout
         timeout-minutes: 4
         working-directory: frontend
-        run: npx playwright install --with-deps chromium
-      - name: Prepare disposable migrated database
-        timeout-minutes: 3
-        working-directory: backend
-        run: |
-          alembic upgrade head
-          python -m scripts.seed
-          python -m scripts.import_catalog --catalog-dir ../docs/catalog-import
+        run: npx --no-install playwright install --with-deps chromium
+      - name: Build current Strapi backend
+        timeout-minutes: 5
+        working-directory: backend-node
+        env:
+          NODE_ENV: production
+        run: npm run build
       - name: Build production frontend
         timeout-minutes: 5
         working-directory: frontend
         run: npm run build
-      - name: Verify desktop/mobile interruptions and real authenticated persistence
+      - name: Verify desktop/mobile interruptions and real Node browser persistence
         timeout-minutes: 8
         shell: bash
         run: |
-          (cd backend && uvicorn app.main:app --host 127.0.0.1 --port 8015) > rfq-api.log 2>&1 &
+          setsid bash -c 'cd backend-node && exec npm run start' > rfq-api.log 2>&1 &
           api_pid=$!
-          (cd frontend && npm run start -- --hostname 127.0.0.1 --port 3140) > rfq-frontend.log 2>&1 &
+          setsid bash -c 'cd frontend && exec npm run start -- --hostname 127.0.0.1 --port 3140' > rfq-frontend.log 2>&1 &
           web_pid=$!
           cleanup() {
-            kill "${api_pid}" "${web_pid}" 2>/dev/null || true
+            kill -- -"${api_pid}" -"${web_pid}" 2>/dev/null || true
             wait "${api_pid}" "${web_pid}" 2>/dev/null || true
           }
           trap cleanup EXIT
-          deadline=$((SECONDS + 90))
+          deadline=$((SECONDS + 150))
           until curl --fail --silent --connect-timeout 2 --max-time 5 "${E2E_API_URL}/readiness" > /dev/null \
             && curl --fail --silent --connect-timeout 2 --max-time 5 "${E2E_BASE_URL}/inquiry?source=api" > /dev/null; do
             if ! kill -0 "${api_pid}" || ! kill -0 "${web_pid}" || (( SECONDS >= deadline )); then
@@ -100,8 +124,9 @@ jobs:
           done
           cd frontend
           npm run test:e2e:quotes -- --max-failures=3
-          npm run test:e2e -- e2e/security.spec.js --workers=1 --max-failures=1
-      - name: Save browser evidence
+          npx --no-install playwright test --config=playwright.security.config.js --grep '(?:^| )(login through UI|RFQ and ticket creation through UI|persisted legacy bearer cannot restore a browser session even with an existing cookie)$' --max-failures=1
+          node scripts/check-security-fixture-discovery.mjs --browser-results playwright-report/security-results.json
+      - name: Save current Node browser evidence
         if: always()
         uses: actions/upload-artifact@v4
         with:
@@ -109,6 +134,84 @@ jobs:
           path: |
             frontend/test-results/
             frontend/playwright-report/
+            frontend/*-discovery.json
             rfq-api.log
             rfq-frontend.log
+          retention-days: 7
+
+  legacy-api-security:
+    # These two API-only contracts cover Python-only AI behavior. They remain
+    # executable coverage and do not advertise a legacy browser/deployment path.
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_DB: alageum_rfq_legacy_ci
+          POSTGRES_USER: alageum
+          POSTGRES_PASSWORD: ci-password
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U alageum -d alageum_rfq_legacy_ci"
+          --health-interval 5s --health-timeout 3s --health-retries 10
+    env:
+      APP_ENV: test
+      APP_DATABASE_URL: postgresql+asyncpg://alageum:ci-password@localhost:5432/alageum_rfq_legacy_ci
+      APP_SECRET_KEY: ci-only-catalogue-rfq-secret-not-for-deployment
+      APP_LOCAL_STORAGE_PATH: /tmp/alageum-rfq-ci-storage
+      E2E_API_URL: http://127.0.0.1:8015/api/v1
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: backend/requirements-dev.lock
+      - name: Install locked legacy and test-client dependencies
+        run: |
+          pip install -r backend/requirements-dev.lock
+          npm ci --prefix frontend
+      - name: Verify unchanged legacy API assertion partition
+        working-directory: frontend
+        run: |
+          npx --no-install playwright test --config=playwright.security.config.js --list --reporter=json > security-discovery.json
+          node scripts/check-security-fixture-discovery.mjs security-discovery.json
+      - name: Prepare disposable legacy database
+        working-directory: backend
+        run: |
+          alembic upgrade head
+          python -m scripts.seed
+          python -m scripts.import_catalog --catalog-dir ../docs/catalog-import
+      - name: Verify both legacy API-only authorization contracts
+        shell: bash
+        run: |
+          setsid bash -c 'cd backend && exec uvicorn app.main:app --host 127.0.0.1 --port 8015' > legacy-rfq-api.log 2>&1 &
+          api_pid=$!
+          cleanup() { kill -- -"${api_pid}" 2>/dev/null || true; wait "${api_pid}" 2>/dev/null || true; }
+          trap cleanup EXIT
+          deadline=$((SECONDS + 90))
+          until curl --fail --silent --connect-timeout 2 --max-time 5 "${E2E_API_URL}/readiness" > /dev/null; do
+            if ! kill -0 "${api_pid}" || (( SECONDS >= deadline )); then tail -80 legacy-rfq-api.log; exit 1; fi
+            sleep 2
+          done
+          cd frontend
+          npx --no-install playwright test --config=playwright.security.config.js --grep '(?:^| )(foreign order and document are hidden|AI read isolation and scoped write confirmation)$' --max-failures=1
+          node scripts/check-security-fixture-discovery.mjs --legacy-results playwright-report/security-results.json
+      - name: Save legacy API-only evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: catalogue-legacy-api-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            frontend/playwright-report/security-results.json
+            frontend/security-discovery.json
+            legacy-rfq-api.log
           retention-days: 7

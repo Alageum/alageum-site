@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+import { expectAutomaticModel } from './helpers/equipment-model.js';
 import { readFile, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { ktpbIds, ktpbPublicDtos, malformedKtpbDto, ktpbSourceHref, ktpbSourceImage, ktpbFigureKey, ktpbFigureHeading, ktpbLegacyGeometry } from './helpers/ktpb-source-context-fixtures.mjs';
@@ -9,7 +10,18 @@ const records = new WeakMap();
 const contextFor = (page, id) => page.locator(`[data-source-context-for="${id}"]`);
 const memberSelect = page => page.getByLabel('Запись для просмотра', { exact: true });
 test.beforeEach(async ({ page }, testInfo) => {
-  records.set(page, { events: [capturePtmmBrowserEvents(page, testInfo)], measurements: [], screenshots: [], popupCount: 0 });
+  records.set(page, { events: [capturePtmmBrowserEvents(page, testInfo)], measurements: [], screenshots: [], popupCount: 0, imageResponses: [], imageStates: [] });
+  await page.addInitScript(sourcePath => {
+    window.__ktpbNativeImageErrors = [];
+    document.addEventListener('error', event => {
+      const image = event.target;
+      if (!(image instanceof HTMLImageElement) || new URL(image.currentSrc || image.src, location.href).pathname !== sourcePath) return;
+      if (window.__ktpbNativeImageErrors.length < 16) window.__ktpbNativeImageErrors.push({
+        time: performance.now(), documentReadyState: document.readyState, src: image.src, currentSrc: image.currentSrc,
+        complete: image.complete, naturalWidth: image.naturalWidth, naturalHeight: image.naturalHeight,
+      });
+    }, true);
+  }, ktpbSourceImage);
 });
 test.afterEach(async ({ page }, testInfo) => {
   const evidence = records.get(page);
@@ -20,7 +32,10 @@ test.afterEach(async ({ page }, testInfo) => {
   for (const recorder of evidence.events) results.push(await recorder.finish());
   const output = testInfo.outputPath('ktpb-observed-dom.json');
   const body = JSON.stringify({ format: 'ktpb-observed-dom-v1', testId: testInfo.testId, project: testInfo.project.name,
-    statusAtCaptureFinish: testInfo.status, measurements: evidence.measurements, screenshots: evidence.screenshots }, null, 2);
+    statusAtCaptureFinish: testInfo.status, measurements: evidence.measurements, screenshots: evidence.screenshots,
+    imageResponses: evidence.imageResponses, imageStates: evidence.imageStates,
+    nativeImageErrors: await page.evaluate(() => window.__ktpbNativeImageErrors || []).catch(error => [{ captureError: String(error.message).slice(0, 250) }]),
+  }, null, 2);
   if (Buffer.byteLength(body) > 256 * 1024) throw new Error('KTPB DOM evidence exceeded its explicit bound');
   await writeFile(output, body);
   expect(await readFile(output, 'utf8')).toBe(body);
@@ -72,6 +87,16 @@ async function sourcePanel(page, id, { failed = false } = {}) {
   await expect(figure.locator('li')).toHaveCount(4);
   const image = figure.locator('img');
   if (failed) {
+    // Exercise the failed request even when native lazy loading deferred it.
+    await figure.scrollIntoViewIfNeeded();
+    const evidence = records.get(page);
+    await expect.poll(() => evidence.imageResponses.filter(item => item.kind === 'corrupt-source-response').length, { message: 'The exact source image received the forced corrupt bytes' }).toBeGreaterThan(0);
+    await expect.poll(() => page.evaluate(() => (window.__ktpbNativeImageErrors || []).length), { message: 'The browser reported the source image decode failure' }).toBeGreaterThan(0);
+    evidence.imageStates.push({ id, phase: 'before-fallback', images: await image.evaluateAll(elements => elements.map(element => {
+      const box = element.getBoundingClientRect();
+      return { src: element.src, currentSrc: element.currentSrc, complete: element.complete, naturalWidth: element.naturalWidth, naturalHeight: element.naturalHeight,
+        bounds: { left: box.left, top: box.top, width: box.width, height: box.height } };
+    })), nativeErrors: await page.evaluate(() => window.__ktpbNativeImageErrors || []) });
     await expect(image).toHaveCount(0);
     await expect(figure.getByRole('status')).toHaveText('Исходное изображение недоступно. Откройте полную страницу каталога.');
     await readable(page, figure.getByRole('status'), `${id}: failed-image fallback`);
@@ -175,7 +200,11 @@ async function legacyProvenance(viewer) {
 async function openRecord(page, id, mode, state) {
   if (mode === 'api') await installApi(page, state);
   await page.goto(`/catalog/${id}${mode === 'api' ? '?source=api' : ''}`);
-  await expect(page.getByRole('heading', { level: 1 })).toHaveText(state.rows.find(row => row.public_key === id).translations.ru.name);
+  // The static family has the handed-off short editorial name; API fixtures
+  // retain their original source names and are asserted independently.
+  const expectedName = mode === 'static' && id === ktpbIds[0]
+    ? 'КТПБ(К)' : state.rows.find(row => row.public_key === id).translations.ru.name;
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText(expectedName);
 }
 async function rejectAndRestore(page, state, id, kind) {
   const original = state.rows;
@@ -208,15 +237,21 @@ for (const mode of ['static', 'api']) {
     const viewer = page.locator(`[data-equipment-model="${ktpbLegacyGeometry}"]`);
     await expect(viewer).toHaveCount(1);
     await legacyProvenance(viewer);
-    await viewer.getByRole('button', { name: 'Открыть 3D-модель', exact: true }).click();
-    await expect(viewer).toHaveAttribute('data-model-status', 'ready');
-    const canvas = viewer.locator('canvas');
+    const canvas = await expectAutomaticModel(viewer);
     const before = await canvasPixels(page, canvas, 'existing-35-model');
     await viewer.getByRole('button', { name: 'Повернуть модель вправо', exact: true }).click();
     await canvasPixels(page, canvas, 'existing-35-model-rotated', before);
     await memberSelect(page).selectOption(ktpbIds[1]);
     await expect(page.locator('[data-source-context-for]')).toHaveCount(0);
-    await expect(viewer).toHaveCount(1); await expect(page.locator('canvas')).toHaveCount(0);
+    await expect(viewer).toHaveCount(1);
+    await expectAutomaticModel(viewer);
+    // Explicit dismissal still removes the new member's canvas; reopening is
+    // separate from the automatic startup contract.
+    await viewer.getByRole('button', { name: 'Закрыть 3D-модель', exact: true }).click();
+    await expect(viewer).toHaveAttribute('data-model-status', 'idle');
+    await expect(page.locator('canvas')).toHaveCount(0);
+    await viewer.getByRole('button', { name: 'Открыть 3D-модель', exact: true }).click();
+    await expectAutomaticModel(viewer);
     await legacyProvenance(viewer);
     await expect(page.locator('.family-selected-record')).toHaveAttribute('data-selected-member', ktpbIds[1]);
     await memberSelect(page).selectOption(ktpbIds[2]);
@@ -229,6 +264,7 @@ for (const mode of ['static', 'api']) {
     await expect(page.locator('.family-selected-record')).toHaveAttribute('data-selected-member', ktpbIds[3]);
     await memberSelect(page).selectOption('');
     await sourcePanel(page, ktpbIds[0]); await expect(viewer).toHaveCount(1);
+    await expectAutomaticModel(viewer);
     await legacyProvenance(viewer);
     await retainScreenshot(page, 'family-reset-caption');
     if (mode === 'api') await rejectAndRestore(page, state, ktpbIds[0], 'owner-edit');
@@ -236,7 +272,10 @@ for (const mode of ['static', 'api']) {
 
   test(`${mode} KTPB 110: failed image preserves caption, source link and reload recovery`, async ({ page }) => {
     const state = { rows: ktpbPublicDtos() }, id = ktpbIds[2];
-    const broken = route => route.fulfill({ status: 200, contentType: 'image/webp', body: Buffer.from('invalid-image-for-decode-test') });
+    const broken = async route => {
+      await route.fulfill({ status: 200, contentType: 'image/webp', body: Buffer.from('invalid-image-for-decode-test') });
+      records.get(page).imageResponses.push({ kind: 'corrupt-source-response', url: route.request().url(), status: 200, bytes: 29 });
+    };
     await page.route(`**${ktpbSourceImage}`, broken);
     await openRecord(page, id, mode, state);
     // Lazy image loading must reach the actual source image before its fallback.
@@ -257,7 +296,10 @@ for (const mode of ['static', 'api']) {
 
   test(`${mode} KTPB family: failed image, selection and overview recovery`, async ({ page }) => {
     const state = { rows: ktpbPublicDtos() };
-    const broken = route => route.fulfill({ status: 200, contentType: 'image/webp', body: Buffer.from('invalid-image-for-decode-test') });
+    const broken = async route => {
+      await route.fulfill({ status: 200, contentType: 'image/webp', body: Buffer.from('invalid-image-for-decode-test') });
+      records.get(page).imageResponses.push({ kind: 'corrupt-source-response', url: route.request().url(), status: 200, bytes: 29 });
+    };
     await page.route(`**${ktpbSourceImage}`, broken);
     await openRecord(page, ktpbIds[0], mode, state);
     await contextFor(page, ktpbIds[0]).locator(`[data-source-figure="${ktpbFigureKey}"]`).scrollIntoViewIfNeeded();

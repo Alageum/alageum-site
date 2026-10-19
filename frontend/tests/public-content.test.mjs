@@ -4,6 +4,7 @@ import { products, webOfficialProducts, officialProducts, demoProducts, categori
 import { filterProducts, normalizeSelection, selectionCsv } from '../lib/catalog/query.js';
 import { manufacturers, projects, documents, offices } from '../lib/public/content.js';
 import { solutions } from '../lib/public/solutions.js';
+import { localResourceHref } from '../lib/public/localResources.js';
 test('official reference records are distinct from synthetic fixtures', () => {
  assert.equal(webOfficialProducts.length, 19); assert.equal(demoProducts.length, 9);
  assert.equal(new Set(products.map(p => p.id)).size, products.length);
@@ -32,7 +33,11 @@ test('source-aware selections and exports support official and demo items', () =
 });
 test('public content has unique slugs and verified source hosts', () => {
  for(const list of [manufacturers,projects]){assert.equal(new Set(list.map(x=>x.id)).size,list.length);for(const item of list)assert.ok(['alageum.com','asiatrafo.kz'].includes(new URL(item.source).hostname));}
- for(const item of documents)assert.ok(['alageum.com','asiatrafo.kz'].includes(new URL(item.href).hostname));
+ // Document cards now use the existing local archive/catalog destinations.
+ const documentSources = ['https://alageum.com/images/katalog/2Imid_rus2024.pdf', 'https://asiatrafo.kz/images/referent.pdf',
+  'https://alageum.com/ru/katalog/transformatory', 'https://alageum.com/ru/katalog/shkafy-upravleniya'];
+ assert.deepEqual(documents.map(item => item.href), documentSources.map(localResourceHref));
+ for (const item of documents) assert.match(item.href, /^\/(?:documents\/[a-z0-9-]+\.pdf|catalog\?category=(?:transformers|substations))$/);
  for(const office of offices){assert.match(office.tel,/^\+7\d{10}$/);assert.match(office.email,/@alageum\.com$/);}
 });
 test('current construction project is never represented as completed', () => {

@@ -1,0 +1,4 @@
+# Retired-host safeguard: only the deny configuration is eligible for upload.
+# This does not unlink the Git integration or change existing deployments.
+/*
+!/vercel.json

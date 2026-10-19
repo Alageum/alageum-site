@@ -26,12 +26,15 @@ const apiProduct = record => normalizeApiProduct({ id: metadata.guards[record.id
   specs: record, provenance: record, media: record.image ? [{ path: record.image, kind: 'image', alt: record.imageCaption }] : [],
 });
 
-test('exact843 runtime IDs preserve all original823 records and all585 transformer source shapes', () => {
+test('exact843 runtime IDs preserve all original823 raw records beneath the static editorial overlay and all585 transformer source shapes', () => {
   const original = [...baselineOfficialProducts, ...transformerProducts];
   assert.equal(original.length, 823); assert.equal(officialProducts.length, 843);
-  assert.deepEqual(officialProducts.slice(0, 823), original);
+  // Static catalog presentation has a separate editorial namespace; the API
+  // continues to expose the source rows without that presentation overlay.
+  const rawRecords = officialProducts.map(({ catalogEditorial, ...record }) => { void catalogEditorial; return record; });
+  assert.deepEqual(rawRecords.slice(0, 823), original);
   assert.equal(objectDigest(original), metadata.baselineRecordsSha256);
-  assert.deepEqual(readCatalog(), officialProducts);
+  assert.deepEqual(readCatalog(), rawRecords);
   assert.equal(metadata.counts.newFamilyCards, 0);
   assert.equal(metadata.inventorySha256, 'c3948d7152a6130aa4672b9f6d3d5a8f08144b5965df7bebabca067ba5bc8438');
   assert.equal(metadata.sourceSha256, '8f27b781f1ff620ce2d67f606d6e115f2d0c35fbd31698f04c392a8ae611c70e');

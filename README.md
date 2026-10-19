@@ -1,84 +1,64 @@
-> **Unpublished architecture checkpoint:** Node.js + Strapi are mandatory. This branch preserves stopped RFQ work for migration and must not be released as the approved backend. See [handoff and remaining guards](docs/rfq-checkpoint-handoff.md).
+# ALAGEUM site and B2B foundation
 
-> Architecture migration in progress: Node.js + Strapi is the required target. The isolated local implementation and verified/remaining scope are documented in [Node/Strapi migration](docs/node-strapi-migration.md). The Python backend and existing Vercel topology below are preserved legacy references, not the final architecture. No production cutover has occurred.
+Next.js frontend and a Node.js/Strapi backend, with PostgreSQL-backed business
+accounts, catalogue and CMS. The active server package is portable and does not
+require Vercel.
 
-> **Catalogue RFQ increment:** authenticated live-catalogue selections can be saved atomically and reopened in My requests, with server snapshots and idempotent retries. [Scope, setup and remaining decisions](docs/catalog-rfq.md). This is not manager/CRM delivery or order processing.
+## Server transfer
 
-> **Persistent catalog admin (2026-10-01):** database-backed prices, product create/edit/hide/restore and explicit live API mode are implemented in this branch. See [setup and production boundaries](docs/catalog-admin.md) and [verification](docs/catalog-admin-validation.md). The static public preview does not include administration.
+Read [the server deployment guide](docs/server-deployment.md) and
+[deployment package](deploy/README.md). It provides:
 
-> **Public-site preview expanded 2026-10-01:** see [FULL-SITE-README.md](FULL-SITE-README.md) for the complete public frontend, 238-record reference catalog with category/subcategory navigation, all 104 supplied source pages, local inquiry/workspace demo and static preview. Catalog coverage and known source limitations are documented in [catalog-import](docs/catalog-import/README.md). The foundation notes below describe the original backend boundary.
+- Next standalone and Strapi production images, locked dependency/base-image inputs
+- HTTPS same-origin Nginx, PostgreSQL with verified TLS and a non-superuser app role
+- ClamAV/FreshClam scanning before public media writes
+- Persistent uploads and private quarantine, DB-backed SMTP outbox worker
+- Paired PostgreSQL/media backup, isolated empty-target restore and rollback guidance
 
-# ALAGEUM.COM pre-Discovery foundation
+Use `deploy/compose.production.yml` alone. Fill private server env files and
+supply the domain, TLS, approved SMTP, independent secrets and existing data.
+The package does **not** claim an already deployed server, successful real mail,
+verified mounted storage or approved production cutover. Read the explicit
+acceptance checklist before enabling real traffic.
 
-Production-oriented modular-monolith foundation for a multi-tenant B2B platform. All bundled
-organizations, products, orders and documents are synthetic DEV data. No Alageum business rules,
-API contracts or production credentials are inferred here.
+## Development and checks
 
-## First run
+- Backend: `cd backend-node && npm ci && npm run check`
+- Frontend: `cd frontend && npm ci && npm run lint && npm run test:unit`
+- Portable frontend: `npm run build:standalone` and `npm run start:standalone`
+- Local Node stack: `docker-compose.node.yml`, isolated development only
+- Production configuration: `deploy/scripts/check-config.sh /absolute/private/stack.env`
 
-Requirements: Docker with Compose v2, `make`, `curl`, and 4 GB free memory.
+Node 24.x is the common supported toolchain. The complete tracked source-media
+package is required for builds; byte/hash guards must stay enabled. The normal
+server build is connected mode. The optional explicitly selected public-only
+preview is documented [here](frontend/docs/public-deployment.md).
 
-```bash
-make bootstrap
-```
+## Domain and safety boundaries
 
-Bootstrap copies `.env.example` to `.env` when absent, builds pinned images, starts PostgreSQL,
-runs Alembic, waits for readiness and installs the deterministic DEV seed.
+Business and CMS identities remain separate. New public media uploads require
+scanner admission and currently accept PNG/JPEG/WebP only; binary replacement
+and arbitrary new public PDF admission remain unsupported. Registration and
+password reset need verified SMTP; company/workspace access still requires the
+server-side approval/role model. EDS/Google/demo seeding and automatic catalogue
+import are disabled in the server template.
 
-- Frontend: http://localhost:3000
-- API: http://localhost:8000/api/v1
-- OpenAPI: http://localhost:8000/docs
-- Liveness: http://localhost:8000/api/v1/health
-- Readiness: http://localhost:8000/api/v1/readiness
+No production credentials or real company workflows are inferred from synthetic
+DEV data. ERP/1C, CRM, EDO, logistics and commercial decisions retain their agreed
+scope. See [catalogue RFQ](docs/catalog-rfq.md),
+[catalogue administration](docs/catalog-admin.md),
+[media security](backend-node/docs/media-upload-security.md), and the domain docs
+under `backend-node/docs` for implemented behavior and remaining boundaries.
 
-DEV ONLY accounts use `ChangeMe123!`:
+## Historical material
 
-- `admin@demo.example` — placeholder administrator in Demo Industrial Company;
-- `buyer@demo.example` — placeholder buyer;
-- `engineer@demo.example` — placeholder engineer;
-- `accountant@demo.example` — tenant-isolation account in Demo Supplier.
+The Python `backend/`, root `docker-compose.yml`, Makefile bootstrap/reset/restore
+commands and older Vercel notes are legacy references. They are not the current
+Node server deployment instructions. Existing source/proof material is preserved;
+this migration does not modify or delete any remote hosting project.
 
-These roles are examples, not the Alageum permission matrix.
-
-## Commands
-
-```text
-make bootstrap       build/start/migrate/seed a new checkout
-make dev / make down start or stop without deleting data
-make reset           guarded DEV volume reset, migrate and seed
-make demo-reset      deterministic alias for reset
-make build           build images
-make lint            backend and frontend lint
-make test-backend    backend tests
-make test-e2e        Playwright against running Compose
-make migration-check compare ORM metadata with Alembic head
-make smoke           API/frontend smoke suite
-make backup          create PostgreSQL custom-format backup
-make restore BACKUP=/absolute/file.dump
-```
-
-`make reset` refuses `APP_ENV=staging` and `APP_ENV=production`. Backups contain PostgreSQL only;
-file-object bytes require a separate storage-provider backup.
-
-## Local development
-
-```bash
-python3.12 -m venv .venv
-.venv/bin/pip install -r backend/requirements-dev.lock
-cd frontend && npm ci
-```
-
-Schema changes use Alembic only; the application never calls `metadata.create_all()` at startup.
-Production deployments must run migrations as an explicit reviewed release step.
-
-Architecture and onboarding: [architecture](docs/architecture.md),
-[development](docs/development.md), [API contract](docs/api-contract.md), and
-[pre-Discovery status](docs/pre-discovery-status.md). Operational guides:
-[deployment](docs/deployment.md), [backup/restore](docs/backup-restore.md), and
-[runbook](docs/runbook.md). Unresolved client decisions remain in
-[Discovery TODOs](docs/discovery-todos.md).
-
-## Freeze boundary
-
-Real ERP/1C, CRM, EDO, logistics, product taxonomy, roles, workflows, commercial rules, AI policy,
-content and branding are explicitly out of scope until Discovery.
+Minimal retired-host configuration rejects future ordinary Vercel builds/routes;
+it is not a runtime dependency or remote disconnection. The project owner must
+separately unlink the old Vercel Git/project integration and review existing
+deployments. Existing published sites are not changed by repository guards, and
+the old integration may fetch source before a build guard runs.

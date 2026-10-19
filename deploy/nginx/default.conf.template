@@ -1,0 +1,60 @@
+# Do not log query strings: account URLs and future query params may be private.
+log_format alageum '$remote_addr [$time_local] "$request_method $uri $server_protocol" $status $body_bytes_sent';
+access_log /dev/stdout alageum;
+error_log /dev/stderr warn;
+server_tokens off;
+# Docker DNS re-resolution survives backend/frontend container replacements.
+resolver 127.0.0.11 valid=10s ipv6=off;
+server {
+    listen 80 default_server;
+    server_name _;
+    return 444;
+}
+server {
+    listen 80;
+    server_name ${ALAGEUM_HOSTNAME};
+    return 308 https://${ALAGEUM_HOSTNAME}$request_uri;
+}
+server {
+    listen 443 ssl default_server;
+    ssl_reject_handshake on;
+    server_name _;
+}
+# Container-local process health only; this listener is never published.
+server {
+    listen 127.0.0.1:8080;
+    location = /healthz { access_log off; return 200 'ok\n'; }
+    location / { return 404; }
+}
+server {
+    listen 443 ssl;
+    server_name ${ALAGEUM_HOSTNAME};
+    ssl_certificate /run/https-tls/fullchain.pem;
+    ssl_certificate_key /run/https-tls/privkey.pem;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_session_cache shared:TLS:10m;
+    ssl_session_timeout 1d;
+    # No preload or includeSubDomains assumption about other hostnames.
+    add_header Strict-Transport-Security "max-age=31536000" always;
+    add_header X-Content-Type-Options nosniff always;
+    client_max_body_size 12m;
+    set $backend http://backend:8000;
+    set $frontend http://frontend:3000;
+    include /etc/nginx/proxy-common.conf;
+
+    # Prevent public first-admin takeover of a new/empty database.
+    # An authorized owner provisions the first CMS admin via interactive CLI.
+    location = /admin/register-admin { return 404; }
+    location ^~ /admin/register-admin/ { return 404; }
+
+    # Existing business catalogue admin remains a Next route, not Strapi /admin.
+    location = /admin/catalog { proxy_pass $frontend; }
+    location ^~ /admin/catalog/ { proxy_pass $frontend; }
+    # Strapi UI, native admin APIs and enabled CMS plugins stay behind HTTPS.
+    # Native CMS RBAC still applies; app business identities cannot administer CMS.
+    location ~ ^/(api|cms|admin|content-manager|content-type-builder|upload|uploads|i18n|alageum-catalog|content-releases|review-workflows|email)(/|$) {
+        proxy_pass $backend;
+    }
+    location ~ (^|/)\. { return 404; }
+    location / { proxy_pass $frontend; }
+}

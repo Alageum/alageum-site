@@ -1,7 +1,8 @@
 "use strict";
 // Disposable fixtures and live HTTP assertions; never imported by application startup.
 const assert = require("node:assert/strict");
-const { randomUUID, randomBytes, createHash } = require("node:crypto");
+const { randomUUID, randomBytes } = require("node:crypto");
+const { createReadOnlyFingerprint } = require("./system-fingerprint");
 const { readFileSync, lstatSync, realpathSync } = require("node:fs");
 const { resolve, join, basename } = require("node:path");
 const DATABASE = "alageum_strapi_system_test";
@@ -9,7 +10,6 @@ const METRIC_KEYS = ["http_errors_total", "http_request_duration_seconds_count",
 const ROUTES = ["health", "readiness", "metrics", "version"];
 const pause = ms => new Promise(done => setTimeout(done, ms));
 const table = (db, name) => db.withSchema("b2b").table(name);
-const digest = value => createHash("sha256").update(JSON.stringify(value)).digest("hex");
 
 function validateEnvironment(env = process.env) {
   assert.equal(env.APP_ENV, "test", "System fixtures require APP_ENV=test");
@@ -86,7 +86,8 @@ async function snapshot(db, schemas = ["b2b"]) {
     rows[`${schema}.${name}`] = (await db.raw("SELECT COALESCE(jsonb_agg(to_jsonb(x) ORDER BY to_jsonb(x)::text), '[]'::jsonb)::text AS value FROM ?? AS x", [`${schema}.${name}`])).rows[0].value;
   const columns = await db("information_schema.columns").select("table_schema", "table_name", "column_name", "ordinal_position", "data_type", "is_nullable", "column_default").whereIn("table_schema", schemas).orderBy(["table_schema", "table_name", "ordinal_position"]);
   const constraints = (await db.raw("SELECT n.nspname, c.conname, pg_get_constraintdef(c.oid) AS definition FROM pg_constraint c JOIN pg_namespace n ON n.oid=c.connamespace WHERE n.nspname = ANY(?) ORDER BY n.nspname, c.conname", [schemas])).rows;
-  return { digest: digest({ rows, columns, constraints }), tables: tables.length };
+  const catalogTables = (await db.raw("SELECT n.nspname AS table_schema, c.relname AS table_name FROM pg_class c JOIN pg_namespace n ON n.oid = c.relnamespace WHERE n.nspname = ANY(?) AND c.relkind IN ('r', 'p') ORDER BY n.nspname, c.relname", [schemas])).rows;
+  return createReadOnlyFingerprint({ schemas, tables, catalogTables, rows, columns, constraints });
 }
 
 function metricShape(value) {

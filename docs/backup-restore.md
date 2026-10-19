@@ -1,3 +1,5 @@
+> **Legacy Python guide.** For the active Node/Strapi server, use [paired PostgreSQL/media backup and empty-target restore](server-deployment.md#5-резервная-копия-и-восстановление) and `deploy/scripts/backup.sh` / `restore.sh`. Do not run the legacy restore commands below against the Node database.
+
 # PostgreSQL backup and restore
 
 Create a custom-format, no-owner/no-ACL database backup:

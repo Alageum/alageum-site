@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+import { browserLoginSlot as loginSlot, installBrowserSession } from './helpers/browser-session';
 
 // The ordinary list/detail/empty/isolation reads use real isolated PostgreSQL
 // fixtures. Interception is limited to named error and delayed-response cases.
@@ -19,17 +20,7 @@ const active = page => page.getByTestId('active-organization');
 const alerts = page => page.locator('.shell > section').getByRole('alert');
 const option = (page, id) => page.getByTestId(`organization-option-${id}`);
 const email = kind => `orders-${kind}@fixture.invalid`;
-const loginTimes = [];
 function deferred() { let resolve; const promise = new Promise(done => { resolve = done; }); return { promise, resolve }; }
-
-async function loginSlot() {
-  while (loginTimes.length && Date.now() - loginTimes[0] > 61000) loginTimes.shift();
-  if (loginTimes.length >= 16) {
-    await new Promise(resolve => setTimeout(resolve, 61050 - (Date.now() - loginTimes[0])));
-    while (loginTimes.length && Date.now() - loginTimes[0] > 61000) loginTimes.shift();
-  }
-  loginTimes.push(Date.now());
-}
 
 test.beforeAll(async ({}, testInfo) => {
   expect(process.env.APP_ENV, 'Use backend-node/scripts/run-orders-tests.sh').toBe('test');
@@ -42,11 +33,13 @@ test.beforeAll(async ({}, testInfo) => {
     expect(url.protocol).toBe('http:');
     expect(url.username + url.password + url.search + url.hash).toBe('');
   }
+  expect(new URL(api).origin).toBe(new URL(process.env.E2E_ORDERS_BASE_URL).origin);
+  expect(new URL(api).pathname).toBe('/api/v1');
   for (const id of [a, b, emptyOrganization, precise, foreign, empty]) expect(id).toMatch(/^[a-f0-9-]{36}$/);
   expect(new Set([a, b, emptyOrganization]).size).toBe(3);
   // A replacement worker has a fresh local clock but shares the server limiter.
   // Waiting preserves the real limiter; there is no login retry or bypass.
-  if (testInfo.workerIndex > 0) await new Promise(resolve => setTimeout(resolve, 61050));
+  if (testInfo.workerIndex > 0) { test.setTimeout(testInfo.timeout + 61050); await new Promise(resolve => setTimeout(resolve, 61050)); }
 });
 
 async function login(page, kind = 'reader', next = '/b2b/orders') {
@@ -62,15 +55,8 @@ async function login(page, kind = 'reader', next = '/b2b/orders') {
   await expect(page).toHaveURL(new RegExp(`${next}$`));
   await expect(active(page)).toContainText(kind === 'other' ? b : kind === 'empty' ? emptyOrganization : a);
 }
-async function installLogin(page, request, kind) {
-  await loginSlot();
-  const result = await request.post(`${api}/auth/login`, { data: { email: email(kind), password: process.env.E2E_ORDERS_PASSWORD } });
-  expect(result.status()).toBe(200);
-  const pair = await result.json();
-  await page.evaluate(session => {
-    sessionStorage.setItem('alageum_session', JSON.stringify(session));
-    window.dispatchEvent(new Event('alageum:session-changed'));
-  }, { ...pair, organization_id: kind === 'other' ? b : a });
+async function installLogin(page, kind) {
+  return installBrowserSession(page, { email: email(kind), password: process.env.E2E_ORDERS_PASSWORD, organizationId: kind === 'other' ? b : a });
 }
 async function switchTo(page, id) {
   await page.getByTestId('organization-switch-trigger').click();
@@ -152,14 +138,14 @@ test('responsive orders list and detail preserve real snapshot decimals through 
   expect(errors).toEqual([]);
 });
 
-test('responsive empty orders and no-item order are successful real reads', async ({ page, request }, testInfo) => {
+test('responsive empty orders and no-item order are successful real reads', async ({ page }, testInfo) => {
   const loaded = readResponse(page); await login(page, 'empty');
   const response = await loaded; expect(response.status()).toBe(200);
   expect(await response.json()).toEqual({ items: [], page: 1, page_size: 50, total: 0 });
   await expect(list(page).getByRole('status')).toHaveText('Данных пока нет');
   await expect(summaries(page)).toHaveCount(0);
   await screenshot(page, testInfo, 'orders-empty');
-  await installLogin(page, request, 'reader');
+  await installLogin(page, 'reader');
   await expect(summaries(page)).toHaveCount(3);
   const detailRead = readResponse(page, empty); await orderLink(page, 'FIXTURE-ORD-002').click();
   expect((await (await detailRead).json()).items).toEqual([]);
@@ -254,14 +240,14 @@ test('organization switch drops pending old detail before new-tenant reads and h
   expect(oldDetailHeaders).toContain(a); expect(oldDetailHeaders).not.toContain(b);
 });
 
-test('new login and same-organization login invalidate held list responses', async ({ page, request }) => {
+test('new login and same-organization login invalidate held list responses', async ({ page }) => {
   for (const kind of ['peer', 'other']) {
     await login(page); await expect(summaries(page)).toHaveCount(3);
     // A named stale-response marker makes same-organization re-login observable
     // even though both real accounts are allowed to read the same snapshots.
     const held = await holdRealReply(page, endpoint, { transform: body => ({ ...body, items: body.items.map(item => ({ ...item, number: 'Fictitious stale prior login' })) }) });
     await page.reload(); expect((await held.started).status).toBe(200);
-    await installLogin(page, request, kind);
+    await installLogin(page, kind);
     await expect(list(page)).toHaveAttribute('aria-busy', 'false');
     await held.release();
     await expect(active(page)).toContainText(kind === 'other' ? b : a);
@@ -272,12 +258,12 @@ test('new login and same-organization login invalidate held list responses', asy
   }
 });
 
-test('late old-login 401 cannot refresh or sign out the newer login', async ({ page, request }) => {
+test('late old-login 401 cannot refresh or sign out the newer login', async ({ page }) => {
   await login(page); await expect(summaries(page)).toHaveCount(3);
   let refreshes = 0; page.on('request', request => { if (request.url() === `${api}/auth/refresh` && request.method() === 'POST') refreshes++; });
   const held = await holdRealReply(page, `${endpoint}/${precise}`, { status: 401 });
   await orderLink(page, 'FIXTURE-ORD-001').click(); expect((await held.started).status).toBe(200);
-  await installLogin(page, request, 'other');
+  await installLogin(page, 'other');
   await expect(page).toHaveURL(/\/b2b\/orders$/); await expect(summaries(page)).toContainText('FIXTURE-OTHER-001');
   await held.release();
   await expect(active(page)).toContainText(b); await expect(summaries(page)).toHaveCount(1); expect(refreshes).toBe(0);
@@ -294,7 +280,7 @@ test('Back and Forward reload a failed detail without restoring its stale error'
   await expect(detail(page)).toContainText('Заказ FIXTURE-ORD-003'); await expect(alerts(page)).toHaveCount(0);
 });
 
-test('read refresh recovers once and terminal expiration preserves a safe exact detail login return', async ({ page }) => {
+test('cookie expiration never refreshes or replays and preserves the exact detail login return', async ({ page }) => {
   await login(page); await expect(summaries(page)).toHaveCount(3);
   let reads = 0, refreshes = 0;
   page.on('request', request => { if (request.url() === `${api}/auth/refresh` && request.method() === 'POST') refreshes++; });
@@ -304,18 +290,21 @@ test('read refresh recovers once and terminal expiration preserves a safe exact 
   };
   await page.route(`${endpoint}/${precise}`, once);
   await orderLink(page, 'FIXTURE-ORD-001').click();
-  await expect(detail(page)).toContainText('Заказ FIXTURE-ORD-001');
-  expect(reads).toBe(2); expect(refreshes).toBe(1);
+  await expect(page.getByRole('heading', { name: 'Войдите в B2B кабинет', exact: true })).toBeVisible();
+  await expect(detail(page)).toHaveCount(0);
+  await expect(page.getByRole('link', { name: 'Войти', exact: true })).toHaveAttribute('href', `/login?next=${encodeURIComponent(`/b2b/orders/${precise}`)}`);
+  expect(reads).toBe(1); expect(refreshes).toBe(0);
   await page.unroute(`${endpoint}/${precise}`, once);
+  await login(page, 'reader', `/b2b/orders/${precise}`);
+  await expect(detail(page)).toContainText('Заказ FIXTURE-ORD-001');
   const unauthorized = route => reply(route, rejection, 401);
-  const expired = route => reply(route, rejection, 401);
   await page.route(`${endpoint}/${empty}`, unauthorized);
-  await page.route(`${api}/auth/refresh`, expired);
   await page.goto(`/b2b/orders/${empty}`);
   await expect(page.getByRole('heading', { name: 'Войдите в B2B кабинет', exact: true })).toBeVisible();
   await expect(detail(page)).toHaveCount(0);
   await expect(page.getByRole('link', { name: 'Войти', exact: true })).toHaveAttribute('href', `/login?next=${encodeURIComponent(`/b2b/orders/${empty}`)}`);
-  await page.unroute(`${endpoint}/${empty}`, unauthorized); await page.unroute(`${api}/auth/refresh`, expired);
+  expect(refreshes).toBe(0);
+  await page.unroute(`${endpoint}/${empty}`, unauthorized);
   await login(page, 'reader', `/b2b/orders/${empty}`);
   await expect(detail(page)).toContainText('Заказ FIXTURE-ORD-002');
 });

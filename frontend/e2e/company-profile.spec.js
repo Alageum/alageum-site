@@ -1,8 +1,9 @@
 import { expect, test } from '@playwright/test';
+import { browserLoginSlot, installBrowserSession, logoutBrowserSession } from './helpers/browser-session';
 
 // Dedicated real Strapi/PostgreSQL fixture suite. Interceptions below delay real
 // replies or inject a named failure; the primary save/reload has no interception.
-// Credentials and tokens stay in memory. Trace/video/automatic screenshots are off.
+// Browser credentials stay in HttpOnly cookies. Trace/video/automatic screenshots are off.
 // Controlled pageshow is synthetic: pinned Playwright disables Chromium BFCache.
 const api = process.env.E2E_PROFILE_API_URL?.replace(/\/$/, '');
 const endpoint = `${api}/organizations/current/profile`;
@@ -18,7 +19,8 @@ const names = { name: 'Название компании', business_contact_name
 const response = (page, method) => page.waitForResponse(value => value.url() === endpoint && value.request().method() === method);
 function deferred() { let resolve; const promise = new Promise(done => { resolve = done; }); return { promise, resolve }; }
 
-test.beforeAll(() => {
+test.beforeAll(async ({}, testInfo) => {
+  if (testInfo.workerIndex > 0) { test.setTimeout(testInfo.timeout + 61050); await new Promise(resolve => setTimeout(resolve, 61050)); }
   expect(process.env.APP_ENV, 'Use backend-node/scripts/run-profile-tests.sh').toBe('test');
   expect(process.env.ALAGEUM_TEST_PROFILE_FIXTURES).toBe('1');
   expect(Boolean(process.env.E2E_PROFILE_PASSWORD && process.env.E2E_PROFILE_PASSWORD.length >= 40)).toBe(true);
@@ -29,10 +31,13 @@ test.beforeAll(() => {
     expect(url.protocol).toBe('http:');
     expect(url.username + url.password + url.search + url.hash).toBe('');
   }
+  expect(new URL(api).origin).toBe(new URL(process.env.E2E_PROFILE_BASE_URL).origin);
+  expect(new URL(api).pathname).toBe('/api/v1');
   for (const key of ['A', 'B']) expect(process.env[`E2E_PROFILE_ORGANIZATION_${key}`]).toMatch(/^[a-f0-9-]{36}$/);
 });
 
 async function login(page, kind = 'editor') {
+  await browserLoginSlot();
   await page.goto('/login?next=%2Fb2b%2Fprofile');
   await page.getByLabel('Email', { exact: true }).fill(emails[kind]);
   await page.getByLabel('Пароль', { exact: true }).fill(process.env.E2E_PROFILE_PASSWORD);
@@ -45,30 +50,19 @@ async function login(page, kind = 'editor') {
 async function readCurrent(page) {
   return page.evaluate(async url => {
     const session = JSON.parse(sessionStorage.getItem('alageum_session') || '{}');
-    const reply = await fetch(url, { headers: { Authorization: `Bearer ${session.access_token}`, 'X-Organization-ID': session.organization_id }, cache: 'no-store' });
+    const reply = await fetch(url, { credentials: 'same-origin', headers: { 'X-Browser-Session': session.browser_session, 'X-Organization-ID': session.organization_id }, cache: 'no-store' });
     return { status: reply.status, body: await reply.json() };
   }, endpoint);
 }
 
-// There is no production account/tenant picker. Exercise its existing transport
-// boundary directly with a genuine fixture login; no application test hook exists.
-async function installSession(page, request, kind, organization) {
-  const reply = await request.post(`${api}/auth/login`, { data: { email: emails[kind], password: process.env.E2E_PROFILE_PASSWORD } });
-  expect(reply.status()).toBe(200);
-  const pair = await reply.json();
-  await page.evaluate(session => {
-    sessionStorage.setItem('alageum_session', JSON.stringify(session));
-    window.dispatchEvent(new Event('alageum:session-changed'));
-  }, { ...pair, organization_id: organization });
+// Exercise a fresh login boundary during a held response with a real cookie
+// session; the public per-tab marker contains no credential or test-only hook.
+async function installSession(page, kind, organization) {
+  return installBrowserSession(page, { email: emails[kind], password: process.env.E2E_PROFILE_PASSWORD, organizationId: organization });
 }
 
 async function logoutSession(page) {
-  await page.evaluate(async url => {
-    const session = JSON.parse(sessionStorage.getItem('alageum_session') || '{}');
-    if (session.refresh_token) await fetch(`${url}/auth/logout`, { method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${session.access_token}` }, body: JSON.stringify({ refresh_token: session.refresh_token }) });
-    sessionStorage.removeItem('alageum_session');
-    window.dispatchEvent(new Event('alageum:session-changed'));
-  }, api);
+  await logoutBrowserSession(page);
 }
 
 async function holdRealReply(page, method) {
@@ -279,17 +273,17 @@ test('late read after logout cannot restore personal or company identity', async
   await expect(edit(page)).toHaveCount(0); await expect(company(page)).toHaveCount(0);
 });
 
-test('late write after account switch cannot replace the next account company', async ({ page, request }) => {
+test('late write after account switch cannot replace the next account company', async ({ page }) => {
   await login(page); await edit(page).click(); await field(page, names.name).fill('Fictitious previous account response');
   const held = await holdRealReply(page, 'PATCH'); await save(page).click(); expect((await held.started).status).toBe(200);
-  await installSession(page, request, 'other', process.env.E2E_PROFILE_ORGANIZATION_B);
+  await installSession(page, 'other', process.env.E2E_PROFILE_ORGANIZATION_B);
   await expect(personal(page)).toContainText(emails.other); await expect(company(page)).toContainText('Fictitious Profile Workshop B');
   await held.release(); await expect(personal(page)).toContainText(emails.other);
   await expect(company(page)).toContainText('Fictitious Profile Workshop B'); await expect(company(page)).not.toContainText('Fictitious previous account response');
 });
 
-test('multi-membership tenant switch ignores late reads and writes from the previous tenant', async ({ page, request }) => {
-  await page.goto('/login'); await installSession(page, request, 'multi', process.env.E2E_PROFILE_ORGANIZATION_A); await page.goto('/b2b/profile');
+test('multi-membership tenant switch ignores late reads and writes from the previous tenant', async ({ page }) => {
+  await page.goto('/login'); await installSession(page, 'multi', process.env.E2E_PROFILE_ORGANIZATION_A); await page.goto('/b2b/profile');
   await expect(edit(page)).toBeVisible();
   await page.locator('.sidebar').getByRole('link', { name: 'Обзор', exact: true }).click();
   const read = await holdRealReply(page, 'GET'); await page.locator('.sidebar').getByRole('link', { name: 'Профиль', exact: true }).click(); expect((await read.started).status).toBe(200);

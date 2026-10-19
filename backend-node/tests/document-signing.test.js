@@ -51,3 +51,19 @@ test("new EDS routes are additive and existing production interlock remains", ()
   assert.equal(config({ env }).documentSigningEnabled, false);
   assert.throws(() => config({ env: name => name === "APP_ENV" ? "production" : "x".repeat(32) }), /Production startup blocked/);
 });
+
+test("EDS constraint equivalence accepts only exact dump-restored enum expressions", () => {
+  const { canonicalConstraint } = require("../src/domain/document-signing-schema");
+  for (const [table, statuses] of [["eds_intents", ["open", "cancelled", "submitted"]], ["eds_signatures", ["pending_verification", "verified", "rejected"]]]) {
+    const original = `CHECK (((status)::text = ANY ((ARRAY[${statuses.map(value => `'${value}'::character varying`).join(", ")}])::text[])))`;
+    const restored = `CHECK (((status)::text = ANY (ARRAY[${statuses.map(value => `('${value}'::character varying)::text`).join(", ")}])))`;
+    assert.equal(canonicalConstraint(table, original), original);
+    assert.equal(canonicalConstraint(table, restored), original);
+    for (const altered of [restored + " NOT VALID", restored.replace(statuses[0], "unreviewed"), restored.replace("ANY", "ALL"), restored.replace("status", "reason"), restored + " OR true", restored.replace("::text", "::varchar")]) {
+      assert.equal(canonicalConstraint(table, altered), altered);
+      assert.notEqual(canonicalConstraint(table, altered), original);
+    }
+    assert.equal(canonicalConstraint("eds_snapshots", restored), restored);
+    assert.equal(canonicalConstraint("__proto__", restored), restored);
+  }
+});

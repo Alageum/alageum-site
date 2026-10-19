@@ -139,11 +139,18 @@ test("local login rate limiting is bounded and expires", () => {
 });
 
 test("case and trailing-slash aliases share login throttle and v1 envelope", async () => {
-  const middleware = require("../src/middlewares/compat-errors")();
+  const errors = require("../src/middlewares/compat-errors")();
+  const limit = require("../src/domain/rate-limit").createRateLimiter({ limit: 20 });
+  const security = require("../src/middlewares/request-security")({}, { strapi: {
+    config: { get: (_key, fallback) => fallback },
+    alageum: { auth: { chargeLogin: ctx => limit(require("../src/domain/client-address").clientAddress(ctx)) } },
+  } });
+  const middleware = (ctx, next) => errors(ctx, () => security(ctx, next));
   const make = (path) => ({
     path,
     method: "POST",
     ip: "test-address",
+    req: { socket: { remoteAddress: "192.0.2.1" } },
     state: {},
     headers: {},
     set(name, value) {

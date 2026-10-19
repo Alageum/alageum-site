@@ -175,13 +175,18 @@ test('legacy ПКТП references resolve into the PDF family without losing addi
   }
 });
 
-test('variant designation search returns one family and tolerates whitespace and dash typography', () => {
-  for (const q of ['ТМГ-400', 'тмг — 400', ' ТМГ 400 ']) {
+test('variant designation search normalizes dash typography while free words retain source matches', () => {
+  for (const q of ['ТМГ-400', 'тмг — 400']) {
     const result = filterCatalogGroups(groups, { q });
     assert.equal(result.length, 1);
     assert.equal(result[0].id, 'tmg-400');
     assert.deepEqual(result[0].matchingMemberIds, ['tmg-400']);
   }
+  // Space-separated technical search also finds the KTP source mentioning
+  // both ТМГ equipment and 400 V; it must not invent an exact SKU match.
+  const words = filterCatalogGroups(groups, { q: ' ТМГ 400 ' });
+  assert.deepEqual(words.map(record => record.id).sort(), ['cat-ktp-25-250', 'tmg-400']);
+  assert.deepEqual(words.find(record => record.id === 'tmg-400').matchingMemberIds, ['tmg-400']);
   const record = officialProducts.find((record) => record.sku === 'УКЗВ-6(10)К-5-1У1');
   assert.ok(record);
   const result = filterCatalogGroups(groups, { q: record.sku.replaceAll('-', ' – ') });

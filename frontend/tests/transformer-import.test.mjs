@@ -26,7 +26,9 @@ const allConfigs=read('configurations.json').chunks.flatMap(chunk=>JSON.parse(fs
 test('review-only staging accounts for exact identities without importing unreviewed rows',()=>{
  assert.equal(manifest.sourceModelVariationCount,540);assert.equal(manifest.sourceConfigurationCount,407);assert.equal(manifest.admittedModelCount,508);assert.equal(manifest.heldModelCount,32);assert.equal(manifest.familyCount,77);assert.equal(manifest.recordCount,585);
  assert.equal(rows.length,manifest.recordCount);assert.equal(allConfigs.length,407);assert.equal(new Set(rows.map(r=>r.id)).size,rows.length);
- assert.deepEqual(readCatalog(),officialProducts);assert.equal(baselineOfficialProducts.length,238);
+ // The static-only editorial namespace does not alter any imported source field.
+ const rawRecords=officialProducts.map(({catalogEditorial,...record})=>{void catalogEditorial;return record;});
+ assert.deepEqual(readCatalog(),rawRecords);assert.equal(baselineOfficialProducts.length,238);
  assert.equal(officialProducts.length,238+transformerProducts.length+identityCompletionProducts.length);
  if(!manifest.active) assert.equal(transformerProducts.length,0);
 });

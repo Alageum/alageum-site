@@ -1,3 +1,4 @@
+import { isPublicOnly, PUBLIC_UNAVAILABLE_MESSAGE } from '../deployment/publicMode.js';
 import { clearSession, getSession, getSessionGeneration, setSession } from "./sessionTransport.js";
 
 export { clearSession, getSession, setSession } from "./sessionTransport.js";
@@ -61,11 +62,13 @@ function expireSession(requestSession) {
   // A delayed unauthorized response belongs only to the credentials it used.
   // It must not sign out an account that logged in while the request was pending.
   if (requestSession && !sameSession(requestSession, current)) return;
+  if (!current.access_token && !current.refresh_token && !current.browser_session) return;
   clearSession();
   if (typeof window !== "undefined") window.dispatchEvent(new Event("alageum:session-expired"));
 }
 
 async function request(path, options = {}, retry = true, candidateOrganizationId, onAcceptedQuoteReceipt) {
+  if (isPublicOnly()) throw new ApiError(503, { error: { code: 'service_unavailable', message: PUBLIC_UNAVAILABLE_MESSAGE } });
   const session = captureSession();
   const headers = new Headers(options.headers || {});
   if (!(options.body instanceof FormData)) headers.set("Content-Type", "application/json");
@@ -73,8 +76,8 @@ async function request(path, options = {}, retry = true, candidateOrganizationId
   else if (session.access_token) headers.set("Authorization", `Bearer ${session.access_token}`);
   const organizationId = candidateOrganizationId ?? session.organization_id;
   if (organizationId) headers.set("X-Organization-ID", organizationId);
-  const response = await fetch(`${API_URL}${path}`, { ...options, headers, cache: "no-store" });
-  const authenticatedRead = !path.startsWith("/auth/") || path === "/auth/me";
+  const response = await fetch(`${API_URL}${path}`, { ...options, headers, credentials: "same-origin", cache: "no-store" });
+  const authenticatedRead = !path.startsWith("/auth/") || ["/auth/me", "/auth/account", "/auth/company-access-requests"].includes(path);
   const readOnly = ["GET", "HEAD"].includes((options.method || "GET").toUpperCase());
   if (response.status === 401 && retry && readOnly && session.refresh_token && authenticatedRead) {
     try {

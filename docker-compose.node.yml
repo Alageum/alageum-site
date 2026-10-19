@@ -19,8 +19,6 @@ services:
   backend-node:
     build:
       context: ./backend-node
-      secrets:
-        - strapi_build_env
     init: true
     environment:
       # Local HTTP CMS login needs development cookies; image assets are built.
@@ -62,10 +60,6 @@ services:
       interval: 10s
       timeout: 5s
       retries: 12
-
-secrets:
-  strapi_build_env:
-    file: ${NODE_ENV_FILE:?Set NODE_ENV_FILE to the same private env file used by --env-file}
 
 volumes:
   node_postgres_data:

@@ -28,12 +28,13 @@ async function preflightPages(strapi) {
 async function completePageSchema(strapi) {
   await strapi.db.connection.withSchema("b2b").table("editorial_page_schema").where({ key: MARKER }).update({ phase: "ready" });
 }
-function summaries(rows) {
-  return rows.map(row => ({ published: Boolean(row.publishedAt), updated_at: row.updatedAt, digest: createHash("sha256").update(JSON.stringify(FIELDS.map(field => row[field] ?? null))).digest("hex") })).sort((a, b) => Number(a.published) - Number(b.published));
-}
-function editorialMiddleware(strapi, recordAudit = audit) {
+function editorialMiddleware(strapi, recordAudit = audit, options = {}) {
+  const model = options.uid || UID, fields = options.fields || FIELDS;
+  const validate = options.validate || validatePage, entity = options.entity || "page";
+  const populate = { createdBy: { populate: ["roles"] }, ...options.populate };
+  const summarize = rows => rows.map(row => ({ published: Boolean(row.publishedAt), updated_at: row.updatedAt, digest: createHash("sha256").update(JSON.stringify(fields.map(field => row[field] ?? null))).digest("hex") })).sort((a, b) => Number(a.published) - Number(b.published));
   return async (context, next) => {
-    if (context.uid !== UID || READS.has(context.action)) return next();
+    if (context.uid !== model || READS.has(context.action)) return next();
     const action = ACTIONS[context.action];
     if (!action) throw new errors.ForbiddenError("This Page operation is not enabled");
     const ctx = strapi.requestContext.get();
@@ -42,31 +43,35 @@ function editorialMiddleware(strapi, recordAudit = audit) {
     if (ctx?.state?.isAuthenticated !== true || !Number.isSafeInteger(id) || id < 1 || typeof sessionId !== "string" || !sessionId) throw new errors.UnauthorizedError("Native CMS session required for Page writes");
     return strapi.db.transaction(async ({ trx }) => {
       const user = await lockNativePageAuthority(strapi, trx, { adminId: id, sessionId });
-      const loadRows = () => context.params.documentId ? strapi.db.query(UID).findMany({ where: { documentId: context.params.documentId }, populate: { createdBy: { populate: ["roles"] } } }) : [];
+      const loadRows = () => context.params.documentId ? strapi.db.query(model).findMany({ where: { documentId: context.params.documentId }, populate }) : [];
       let before = await loadRows();
       await lockPageConditionCreators(strapi, trx, before.map(row => row.createdBy?.id).filter(Number.isSafeInteger));
       if (before.length) before = await loadRows();
       const draft = before.find(row => !row.publishedAt);
       const ability = await strapi.admin.services.permission.engine.generateUserAbility(user);
-      const checker = strapi.plugin("content-manager").service("permission-checker").create({ userAbility: ability, model: UID });
+      const checker = strapi.plugin("content-manager").service("permission-checker").create({ userAbility: ability, model });
       if (!checker.can[action](draft)) throw new errors.ForbiddenError("Page permission required");
       if (["create", "update"].includes(context.action)) {
         if (context.params.status === "published") throw new errors.ForbiddenError("Use the native Publish action");
         // Native routing may have sanitized against an earlier ability. Recheck
         // every supplied Page field after locking fresh grants, never silently
         // accept a partially sanitized write after authority changes.
-        const input = Object.fromEntries(FIELDS.filter(field => Object.hasOwn(context.params.data || {}, field)).map(field => [field, context.params.data[field]]));
+        const input = Object.fromEntries(fields.filter(field => Object.hasOwn(context.params.data || {}, field)).map(field => [field, context.params.data[field]]));
         for (const field of Object.keys(input)) if (!checker.can[action](draft, field)) throw new errors.ForbiddenError(`Page field permission required: ${field}`);
         await checker.validateInput(`plugin::content-manager.explorer.${action}`, input, draft);
       }
       if (["create", "update", "publish"].includes(context.action)) {
-        try { validatePage({ locale_code: "ru", ...draft, ...context.params.data }); }
+        try { validate({ locale_code: "ru", ...draft, ...context.params.data }); }
         catch (error) { throw new errors.ValidationError(error.message); }
       }
       const result = await next();
       const documentId = context.params.documentId || result?.documentId;
-      const after = documentId ? await strapi.db.query(UID).findMany({ where: { documentId } }) : [];
-      await recordAudit(trx, ctx, { action: `page.${context.action}`, entity_type: "page", entity_id: documentId, actor_user_id: null, organization_id: null, event_metadata: { source: "cms", cms_admin_id: String(id), before: summaries(before), after: summaries(after) } });
+      const after = documentId ? await strapi.db.query(model).findMany({ where: { documentId }, populate: options.populate }) : [];
+      if (options.validatePersisted) {
+        try { for (const row of after) await options.validatePersisted(row); }
+        catch (error) { throw new errors.ValidationError(error.message); }
+      }
+      await recordAudit(trx, ctx, { action: `${entity}.${context.action}`, entity_type: entity, entity_id: documentId, actor_user_id: null, organization_id: null, event_metadata: { source: "cms", cms_admin_id: String(id), before: summarize(before), after: summarize(after) } });
       return result;
     });
   };

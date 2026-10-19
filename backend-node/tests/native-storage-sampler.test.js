@@ -28,6 +28,48 @@ function runPython(source) {
   assert.equal(result.status, 0, result.stderr || result.stdout);
 }
 
+test("native storage fixture excludes only the private editorial archive and preserves runtime data", () => {
+  runPython(`
+with tempfile.TemporaryDirectory(prefix="native-storage-copy-") as temporary:
+    root = Path(temporary)
+    source, destination = root / "source", root / "fixture"
+    source.mkdir()
+    destination.mkdir()
+    files = {
+        "config/server.js": b"server",
+        "src/catalog-editorial/keep.js": b"runtime directory with the same name",
+        "data/catalog-import/products.json": b"reviewed records",
+        "data/catalog-transformers-2026/products.json": b"additional records",
+        "data/catalog-identity-completion/manifest.json": b"identity binding",
+        "data/catalog-media/source.webp": b"reviewed image bytes",
+        "data/catalog-media-manifest.json": b"media hash binding",
+        "data/catalog-sources.json": b"source registry",
+        "data/public-assets.json": b"asset allowlist",
+        "data/catalog-release.json": b"release binding",
+        "public/uploads/.gitkeep": b"",
+        "scripts/check-media-package.js": b"runtime check",
+        "package.json": b"package",
+        "package-lock.json": b"locked dependencies",
+    }
+    for name, content in files.items():
+        target = source / name
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_bytes(content)
+    archive = source / "data/catalog-editorial/releases/private.bin"
+    archive.parent.mkdir(parents=True)
+    archive.write_bytes(b"unpublished archive" * 1000)
+
+    runner.copy_runtime_app(source, destination)
+    assert not (destination / "data/catalog-editorial").exists()
+    for name, content in files.items():
+        assert (destination / name).read_bytes() == content
+        assert (source / name).read_bytes() == content
+    assert archive.read_bytes() == b"unpublished archive" * 1000
+    assert runner.bytes_used(destination) == sum(map(len, files.values()))
+    assert runner.CAP == 180 * 1024 * 1024
+`);
+});
+
 test("native storage sampler counts regular bytes and excludes symlinks and directories", () => {
   runPython(`
 with tempfile.TemporaryDirectory(prefix="native-storage-sampler-") as temporary:
@@ -98,3 +140,4 @@ with tempfile.TemporaryDirectory(prefix="native-storage-sampler-") as temporary:
                 raise AssertionError("The sampler swallowed an observation error")
 `);
 });
+

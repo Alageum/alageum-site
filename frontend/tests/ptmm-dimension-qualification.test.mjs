@@ -1,3 +1,4 @@
+import { stubRenderBoundaries } from './helpers/render-boundaries.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
@@ -43,7 +44,7 @@ async function render(name, products, ids, differencesOnly = false) {
     const source = (await readFile(file, 'utf8')).replace(/^import .+;\r?$/gm, '');
     const { transform, loadBindings } = require('next/dist/build/swc');
     await loadBindings();
-    const compiled = await transform(source, {
+    const compiled = await transform(stubRenderBoundaries(source), {
       filename: file.pathname,
       jsc: { parser: { syntax: 'ecmascript', jsx: true }, transform: { react: { runtime: 'automatic' } } },
       module: { type: 'commonjs' },
@@ -61,8 +62,10 @@ async function render(name, products, ids, differencesOnly = false) {
     comparisonSpecValue, catalogSpecValueText, CatalogSpecValue,
     ...(ImportedSpecifications ? { ImportedSpecifications } : {}),
     getApiCatalogReadProduct, parseComparison, catalogPrice, liveHref, equipmentModelName,
-    Link: props => createElement('a', props),
+    Link: props => createElement('a', props), LocalResourceAnchor: props => createElement('a', props),
+    Image: props => createElement('img', props), DesignSelect: props => createElement('select', props),
     ProductIcon: () => null, CatalogNotice: () => null, FamilyProductVisual: () => null,
+    ProductPhotoVisual: () => null, RelatedProducts: () => null, ProductThumbnail: () => null,
     CatalogConfigurations: () => null, CatalogSourceEvidence: () => null,
     useEffect: () => {}, useRouter: () => ({ push() {}, replace() {} }),
     useSearchParams: () => new URLSearchParams({ ids: ids.join(',') }),

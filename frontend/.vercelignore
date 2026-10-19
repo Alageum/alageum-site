@@ -1,0 +1,4 @@
+# Retired-host safeguard when the linked project root is frontend/.
+# Git integration can fetch the repository before these deployment rules run.
+/*
+!/vercel.json

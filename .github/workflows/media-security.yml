@@ -1,0 +1,72 @@
+name: Public media admission and real ClamAV
+on:
+  pull_request:
+    paths: ['backend-node/**', '.github/workflows/media-security.yml']
+  push:
+    paths: ['backend-node/**', '.github/workflows/media-security.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: media-security-${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: true
+jobs:
+  media-security:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: backend-node/package-lock.json
+      - name: Install pinned backend dependencies
+        working-directory: backend-node
+        run: npm ci
+      - name: Admission, provider and real multipart regressions
+        working-directory: backend-node
+        run: node --test tests/media-admission.test.js tests/media-temporary.test.js tests/media-storage.test.js tests/quote-body.test.js
+      - name: Install ClamAV from the Ubuntu package repository
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends clamav-daemon clamav-freshclam
+          sudo systemctl stop clamav-freshclam clamav-daemon.socket clamav-daemon || true
+      - name: Verify actual daemon with fresh official signatures
+        working-directory: backend-node
+        env:
+          ALAGEUM_MEDIA_CLAMAV_HOST: 127.0.0.1
+          ALAGEUM_MEDIA_CLAMAV_PORT: '13310'
+          ALAGEUM_MEDIA_SCAN_TIMEOUT_MS: '10000'
+        run: |
+          set -euo pipefail
+          WORK=$(mktemp -d "$RUNNER_TEMP/alageum-clamav.XXXXXX")
+          # The Ubuntu package confines ClamAV to its approved /etc and /var
+          # paths. Keep AppArmor enabled; use the package-owned config/database.
+          sudo -u clamav freshclam --config-file=/etc/clamav/freshclam.conf --stdout
+          printf 'DatabaseDirectory /var/lib/clamav\nTCPSocket 13310\nTCPAddr 127.0.0.1\nForeground yes\nStreamMaxLength 2M\nMaxFileSize 2M\nLogTime yes\n' | sudo tee /etc/clamav/clamd.conf > /dev/null
+          clamd --version | tee "$RUNNER_TEMP/media-scanner-engine.txt"
+          sudo -u clamav clamd --config-file=/etc/clamav/clamd.conf > "$WORK/clamd.log" 2>&1 &
+          PID=$!
+          trap 'sudo kill "$PID" 2>/dev/null || true; wait "$PID" 2>/dev/null || true' EXIT
+          # Wait for a listening local daemon; the subsequent clean/EICAR check is
+          # mandatory and may not be bypassed by a readiness failure.
+          ready=0
+          for attempt in $(seq 1 120); do
+            sudo kill -0 "$PID" 2>/dev/null || { echo 'ClamAV exited before readiness'; exit 1; }
+            if node -e 'const s=require("node:net").connect(13310,"127.0.0.1");s.setTimeout(1000);s.on("connect",()=>{s.end();process.exit(0)});s.on("error",()=>process.exit(1));s.on("timeout",()=>process.exit(1))'; then ready=1; break; fi
+            sleep 2
+          done
+          [[ "$ready" == 1 ]] || { echo 'ClamAV did not become ready'; exit 1; }
+          node scripts/check-media-scanner.js | tee "$RUNNER_TEMP/media-scanner-result.json"
+      - name: Upload sanitized engine/check results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: media-scanner-results
+          if-no-files-found: warn
+          path: |
+            ${{ runner.temp }}/media-scanner-engine.txt
+            ${{ runner.temp }}/media-scanner-result.json

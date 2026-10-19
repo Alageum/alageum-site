@@ -33,15 +33,13 @@ jobs:
       - run: pip-audit -r requirements.lock
       - run: ruff check .
       - run: python ../scripts/test_backend_readiness.py
-      - run: python ../scripts/check_vercel_runtime_lock.py
+      - run: python ../scripts/check_legacy_python_lock.py
       - name: Verify the explicit legacy route inventory
         run: python ../scripts/check_legacy_route_inventory.py
-      - name: Reproduce frozen FastAPI query reference vectors
-        run: python ../backend-node/tests/reference/generate_legacy_query.py --check
+      - name: Reproduce current sanitized-source query and throttle behavior against archived vectors
+        run: python ../backend-node/tests/reference/verify_current_legacy.py --check
       - name: Reproduce frozen system DTO and metric reference vectors
         run: python ../backend-node/tests/reference/generate_legacy_system.py --check
-      - name: Reproduce frozen quote-create limiter reference vectors
-        run: python ../backend-node/tests/reference/generate_legacy_quote_limit.py --check
       - run: pytest --cov=app --cov-report=term-missing
       - run: alembic upgrade head
       - run: alembic downgrade base
@@ -123,94 +121,54 @@ jobs:
       - if: always()
         run: docker compose down -v
 
-  vercel-services:
+  public-services:
+    # This explicit capability fixture is public Next only, not the default
+    # self-hosted mode. Legacy API assertions and current Node auth/RFQ flows
+    # remain executable in catalog-rfq.yml; transformer-source-browser below
+    # retains the full catalogue suite.
     runs-on: ubuntu-latest
     timeout-minutes: 20
-    needs: [backend, frontend]
     permissions:
       contents: read
-    services:
-      postgres:
-        image: postgres:16-alpine
-        env:
-          POSTGRES_DB: alageum_vercel_ci
-          POSTGRES_USER: alageum
-          POSTGRES_PASSWORD: ci-password
-        ports:
-          - 5432:5432
-        options: >-
-          --health-cmd "pg_isready -U alageum -d alageum_vercel_ci"
-          --health-interval 5s --health-timeout 3s --health-retries 10
     env:
-      APP_ENV: test
-      APP_DATABASE_URL: postgresql+asyncpg://alageum:ci-password@localhost:5432/alageum_vercel_ci
-      APP_SECRET_KEY: ci-only-vercel-services-secret-not-for-deployment
-      APP_LOCAL_STORAGE_PATH: /tmp/alageum-vercel-ci-storage
-      APP_CORS_ORIGINS: '["http://localhost:3200"]'
-      NEXT_PUBLIC_API_URL: /api/v1
+      ALAGEUM_PUBLIC_ONLY: '1'
       NEXT_PUBLIC_CATALOG_SOURCE: static
-      NEXT_TELEMETRY_DISABLED: "1"
-      VERCEL_TELEMETRY_DISABLED: "1"
-      E2E_BASE_URL: http://localhost:3200
-      E2E_API_URL: http://localhost:3200/api/v1
-      E2E_VERCEL_SERVICES: "1"
+      NEXT_TELEMETRY_DISABLED: '1'
+    defaults:
+      run:
+        working-directory: frontend
     steps:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
       - uses: actions/setup-node@v4
         with:
-          node-version: "22"
+          node-version: '24'
           cache: npm
           cache-dependency-path: frontend/package-lock.json
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-      - run: npm install --global npm@11.6.2
-      - run: npm install --global vercel@62.1.0
-      - run: pip install uv==0.12.19
-      - name: Install locked backend and prepare disposable database
-        working-directory: backend
-        run: |
-          uv sync --locked --no-dev
-          .venv/bin/alembic upgrade head
-          .venv/bin/python -m scripts.seed
-          .venv/bin/python -m scripts.import_catalog --catalog-dir ../docs/catalog-import
       - run: npm ci
-        working-directory: frontend
-      - run: npx playwright install --with-deps chromium
-        working-directory: frontend
-      - name: Verify actual Vercel Services ingress and browser flows locally
+      - name: Verify the explicit public deployment and workflow contracts
+        run: node --test tests/portable-runtime.test.mjs tests/public-deployment.test.mjs tests/public-services-workflow.test.mjs
+      - run: npx --no-install playwright install --with-deps chromium
+      - name: Build the explicit public-only standalone frontend
+        timeout-minutes: 5
+        shell: bash
+        run: |
+          set -o pipefail
+          npm run build 2>&1 | tee public-services-build.log
+      - name: Verify actual public-only standalone ingress without a backend
         timeout-minutes: 12
         shell: bash
         run: |
-          setsid vercel dev -L --listen 127.0.0.1:3200 > vercel-services.log 2>&1 &
-          server_pid=$!
-          cleanup() {
-            kill -- -"${server_pid}" 2>/dev/null || true
-            wait "${server_pid}" || true
-          }
-          trap cleanup EXIT
-          deadline=$((SECONDS + 180))
-          until curl --fail --silent --show-error --connect-timeout 2 --max-time 5 \
-            "${E2E_API_URL}/readiness" > /dev/null; do
-            if ! kill -0 "${server_pid}" 2>/dev/null || (( SECONDS >= deadline )); then
-              tail -100 vercel-services.log
-              echo "Vercel Services did not become ready" >&2
-              exit 1
-            fi
-            sleep 2
-          done
-          cd frontend
-          # Fail quickly on a shared ingress/hydration problem before the full suite.
-          npm run test:e2e:vercel -- e2e/vercel-services.spec.js --max-failures=1
-          npm run test:e2e:vercel -- e2e/catalog-admin.spec.js e2e/catalog.spec.js e2e/security.spec.js --max-failures=1
+          set -o pipefail
+          node scripts/check-public-deployment.mjs --browser 2>&1 | tee public-services.log
       - if: failure()
         uses: actions/upload-artifact@v4
         with:
-          name: vercel-services-failure-${{ github.run_id }}
+          name: public-services-failure-${{ github.run_id }}
           path: |
-            vercel-services.log
+            frontend/public-services-build.log
+            frontend/public-services.log
             frontend/test-results/
             frontend/playwright-report/
           retention-days: 7

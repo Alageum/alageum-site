@@ -1,3 +1,4 @@
+import { stubRenderBoundaries } from './helpers/render-boundaries.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile}from'node:fs/promises';
@@ -14,7 +15,7 @@ async function harness(){
   .replace("import styles from './models/EquipmentModel.module.css';", "const styles={};")
   .replace('function ModelViewer(', 'export function ModelViewer(');
  const{transform,loadBindings}=require('next/dist/build/swc');await loadBindings();
- const compiled=await transform(source,{filename:file.pathname,jsc:{parser:{syntax:'ecmascript',jsx:true},transform:{react:{runtime:'automatic'}}},module:{type:'es6'}});
+ const compiled=await transform(stubRenderBoundaries(source),{filename:file.pathname,jsc:{parser:{syntax:'ecmascript',jsx:true},transform:{react:{runtime:'automatic'}}},module:{type:'es6'}});
  const code=compiled.code.replaceAll('"react/jsx-runtime"',JSON.stringify(pathToFileURL(require.resolve('react/jsx-runtime')).href));
  return import(`data:text/javascript;base64,${Buffer.from(code).toString('base64')}`);
 }
@@ -24,7 +25,7 @@ test('geometry eligibility never grants idle/error/closed preview icon eligibili
  const props={type:'tr26-corrugated-small',previewIconType:null};
  let tree=ModelViewer(props);let html=renderToStaticMarkup(tree);
  assert.match(html,/data-model-preview="source-document"/);assert.doesNotMatch(html,/data-preview-icon=/);
- find(tree,e=>e.type==='button'&&String(e.props.children).includes('Открыть 3D-модель')).props.onClick();
+ find(tree,e=>(e.type==='button'||e.props?.as==='button')&&String(e.props.children).includes('Открыть 3D-модель')).props.onClick();
  assert.equal(harnessState.status,'loading');
  html=renderToStaticMarkup(ModelViewer(props));assert.match(html,/<canvas/);assert.doesNotMatch(html,/data-preview-icon=/);
  harnessState.status='ready';tree=ModelViewer(props);assert.doesNotMatch(renderToStaticMarkup(tree),/data-preview-icon=/);

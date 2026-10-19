@@ -1,6 +1,7 @@
 import { chromium } from '@playwright/test';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { manufacturers, projects } from '../lib/public/content.js';
+import { auditRenderedImages } from './lib/company-image-audit.mjs';
 import { solutions } from '../lib/public/solutions.js';
 const base = process.env.COMPANY_AUDIT_URL || 'http://127.0.0.1:3280';
 const out = process.env.COMPANY_AUDIT_OUTPUT || '../artifacts/company-pages';
@@ -22,25 +23,20 @@ for (const [label, width, height] of [['desktop', 1440, 1000], ['tablet', 768, 1
   for (const [name, route] of routes) {
     const errors = []; const listener = error => errors.push(error.message); page.on('pageerror', listener);
     const response = await page.goto(base + route, { waitUntil: 'networkidle' });
-    // Every actual image is brought into view; keep production lazy loading intact.
-    for (const image of await page.locator('main img').all()) {
-      await image.scrollIntoViewIfNeeded();
-      await image.evaluate(img => img.complete ? undefined : new Promise(resolve => {
-        img.addEventListener('load', resolve, { once: true });
-        img.addEventListener('error', resolve, { once: true });
-      }));
-    }
+    // Next can retain hidden streamed copies; only rendered images can be
+    // scrolled into view. The shared walker still rejects broken visible images.
+    const renderedImageCount = await auditRenderedImages(page);
     await page.locator('footer.site-footer').scrollIntoViewIfNeeded();
     await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
     const audit = await page.evaluate(() => ({
       width: window.innerWidth, documentWidth: document.documentElement.scrollWidth,
-      images: [...document.querySelectorAll('main img')].every(img => img.complete && img.naturalWidth > 0),
+      images: true,
       headings: [...document.querySelectorAll('main h1')].map(el => el.textContent),
       corporate: Boolean(document.querySelector('.corp-investor')),
       palette: Object.fromEntries(['--brand-red', '--ink', '--line'].map(key => [key, getComputedStyle(document.documentElement).getPropertyValue(key).trim()])),
     }));
     await page.screenshot({ path: `${out}/${name}-${label}.png`, fullPage: true });
-    result.push({ page: name, route, viewport: label, status: response.status(), ...audit, errors });
+    result.push({ page: name, route, viewport: label, status: response.status(), ...audit, renderedImageCount, errors });
     page.off('pageerror', listener);
     await writeFile(`${out}/visual-audit.json`, JSON.stringify(result, null, 2));
   }

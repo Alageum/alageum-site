@@ -279,7 +279,13 @@ module.exports = async function verifyDocuments({ app, api, check, manifest, pas
         await tx.raw("ALTER TABLE b2b.document_versions DROP CONSTRAINT ??", [row.conname]);
       },
       async tx => { await tx.raw("ALTER TABLE b2b.document_versions RENAME TO fixture_saved_versions"); await tx.raw("CREATE VIEW b2b.document_versions AS SELECT * FROM b2b.fixture_saved_versions"); },
-      async tx => { await tx.raw("DROP TABLE b2b.document_versions"); await tx.raw("ALTER TABLE b2b.documents ALTER COLUMN source SET DEFAULT 'manual'"); },
+      async tx => {
+        // The signing slice now holds foreign keys to version rows. Rename in
+        // this rolled-back drift transaction so the canonical table is absent
+        // without dropping those constraints or their referenced data.
+        await tx.raw("ALTER TABLE b2b.document_versions RENAME TO fixture_saved_versions");
+        await tx.raw("ALTER TABLE b2b.documents ALTER COLUMN source SET DEFAULT 'manual'");
+      },
     ];
     for (const change of changes) await rollback(async tx => {
       await change(tx); const before = await tx("information_schema.tables").select("table_name").where({ table_schema: "b2b" }).orderBy("table_name");

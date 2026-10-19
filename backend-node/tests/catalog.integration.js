@@ -14,6 +14,8 @@ function ctx({ token, body, params = {}, query = {} } = {}) {
     params,
     query,
     headers: token ? { authorization: `Bearer ${token}` } : {},
+    // Koa exposes this getter even when the anonymous request has no cookies.
+    cookies: { get() { return undefined; } },
     get(name) {
       return this.headers[name.toLowerCase()] || "";
     },

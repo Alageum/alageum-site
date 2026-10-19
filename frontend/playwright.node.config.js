@@ -12,8 +12,8 @@ export default defineConfig({
   reporter: process.env.CI ? 'github' : 'list',
   use: {
     baseURL: process.env.E2E_BASE_URL || 'http://127.0.0.1:3141',
-    trace: 'retain-on-failure',
-    screenshot: 'only-on-failure',
+    trace: 'off', video: 'off',
+    screenshot: 'off',
     launchOptions: process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {},
   },
   projects: [

@@ -4,7 +4,7 @@ import { useLocale } from './LocaleProvider';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { localizedHref, stripLocale } from '@/lib/i18n/routing';
 import { Suspense } from 'react';
-export function ecosystemArea(path) { path = stripLocale(path); return path.startsWith('/careers') ? 'careers' : ['/catalog','/client','/b2b','/selection','/inquiry','/login'].some(root => path === root || path.startsWith(`${root}/`)) ? 'catalog' : 'company'; }
+export function ecosystemArea(path) { path = stripLocale(path); return path.startsWith('/careers') ? 'careers' : ['/catalog','/client','/b2b','/selection','/inquiry','/login','/account','/register','/verify-email','/forgot-password','/reset-password'].some(root => path === root || path.startsWith(`${root}/`)) ? 'catalog' : 'company'; }
 function Navigation() {
   const pathname = usePathname() || '/'; const params = useSearchParams(); const locale = useLocale();
   const labels = { ru: ['Компания','Каталог','Карьера','Язык сайта','Сайты Alageum Electric'], kk: ['Компания','Каталог','Мансап','Сайт тілі','Alageum Electric сайттары'], en: ['Company','Products','Careers','Site language','Alageum Electric websites'] }[locale];

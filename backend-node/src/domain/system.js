@@ -66,7 +66,7 @@ function formatTimestamp(date) {
 }
 
 function createSystem({ db, metrics, environment, now = () => new Date() }) {
-  if (!["test", "development"].includes(environment)) throw new Error("System reads require a guarded test/development application environment");
+  if (!["test", "development", "production"].includes(environment)) throw new Error("System reads require a validated application environment");
   // Deliberately public constants, captured once. Never serialize configuration
   // or allow APP_NAME/APP_VERSION/NODE_ENV to supply these fields.
   const version = Object.freeze({ name: "ALAGEUM API", version: packageVersion, environment });

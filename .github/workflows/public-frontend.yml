@@ -1,0 +1,54 @@
+name: Public frontend standalone proof
+on:
+  push:
+    branches: [main, feat/account-onboarding-20261013]
+    paths: ['frontend/**', '.github/workflows/public-frontend.yml']
+  pull_request:
+    paths: ['frontend/**', '.github/workflows/public-frontend.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  public-frontend:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    # Public-only is an explicit proof fixture; self-hosted builds default to full mode.
+    env:
+      ALAGEUM_PUBLIC_ONLY: '1'
+      NEXT_PUBLIC_CATALOG_SOURCE: static
+      NEXT_TELEMETRY_DISABLED: '1'
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+      - run: node --test tests/public-deployment.test.mjs tests/browser-proxy.test.mjs
+      - name: Build the explicit public-only standalone frontend
+        shell: bash
+        run: |
+          set -o pipefail
+          npm run build 2>&1 | tee public-frontend-build.log
+      - run: npx playwright install --with-deps chromium
+      - name: Verify standalone HTTP and browser behavior without a backend
+        shell: bash
+        run: |
+          set -o pipefail
+          node scripts/check-public-deployment.mjs --browser 2>&1 | tee public-frontend.log
+      - if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: public-frontend-failure-${{ github.run_id }}
+          path: |
+            frontend/public-frontend-build.log
+            frontend/public-frontend.log
+            frontend/test-results/
+            frontend/playwright-report/
+          retention-days: 7

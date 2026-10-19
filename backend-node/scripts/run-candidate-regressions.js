@@ -220,9 +220,9 @@ async function main() {
   Object.assign(env, {
     DATABASE_URL: dbUrl("alageum_strapi_test"), ALAGEUM_DOMAIN_TEST_DATABASE_URL: dbUrl("alageum_strapi_domain_test"),
     ALAGEUM_CMS_BROWSER_DATABASE_URL: dbUrl("alageum_strapi_browser_test"), ALAGEUM_SEED_DEMO: "1", ALAGEUM_IMPORT_CATALOG: "1", ALAGEUM_TEST_ADMIN_FIXTURES: "1",
-    PORT: apiPort, CORS_ORIGINS: `http://127.0.0.1:${webPort}`, E2E_API_URL: `http://127.0.0.1:${apiPort}/api/v1`,
+    PORT: apiPort, CORS_ORIGINS: `http://127.0.0.1:${webPort}`, ALAGEUM_BROWSER_ORIGIN: `http://127.0.0.1:${webPort}`, E2E_API_URL: `http://127.0.0.1:${webPort}/api/v1`,
     E2E_BASE_URL: `http://127.0.0.1:${webPort}`, E2E_QUOTES_BASE_URL: `http://127.0.0.1:${webPort}`, E2E_CMS_BASE_URL: `http://127.0.0.1:${apiPort}/cms`,
-    NEXT_PUBLIC_API_URL: `http://127.0.0.1:${apiPort}/api/v1`, NEXT_PUBLIC_CATALOG_SOURCE: "api",
+    NEXT_PUBLIC_API_URL: "/api/v1", API_INTERNAL_BASE_URL: `http://127.0.0.1:${apiPort}/api/v1`, NEXT_PUBLIC_CATALOG_SOURCE: "api",
   });
   await npm("backend-check", ["run", "check"], backend);
   await npm("backend-integration", ["run", "test:integration"], backend);
@@ -235,7 +235,7 @@ async function main() {
   await node("cms-fixtures", ["scripts/seed-test-cms-admins.js"], backend, { DATABASE_URL: env.ALAGEUM_CMS_BROWSER_DATABASE_URL });
   api = child("npm", ["run", "start"], backend, { ...env, NODE_ENV: "production", DATABASE_URL: env.ALAGEUM_CMS_BROWSER_DATABASE_URL }, "live-api"); servers.add(api);
   web = child("npm", ["run", "start", "--", "--hostname", "127.0.0.1", "--port", webPort], frontend, { ...env, NODE_ENV: "production" }, "live-frontend"); servers.add(web);
-  await ready(api, `${env.E2E_API_URL}/readiness`); await ready(web, `${env.E2E_BASE_URL}/inquiry?source=api`);
+  await ready(api, `${env.API_INTERNAL_BASE_URL}/readiness`); await ready(web, `${env.E2E_BASE_URL}/inquiry?source=api`);
   for (const suffix of ["/_health", "/cms"]) { const response = await fetch(`http://127.0.0.1:${apiPort}${suffix}`, { signal: AbortSignal.timeout(10000) }); await response.arrayBuffer(); assert.ok(response.ok); }
   for (const item of browserBlocked ? [] : selected.slice(0, 4)) {
     const overrides = item.key === "quotes" ? { E2E_QUOTES_BASE_URL: undefined, E2E_QUOTES_PRODUCTION: "1", NEXT_PUBLIC_CATALOG_SOURCE: "static", NODE_ENV: "production", E2E_QUOTES_PORT: quotesPort } : { NODE_ENV: "production" };

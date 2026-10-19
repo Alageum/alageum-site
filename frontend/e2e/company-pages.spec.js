@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+import { auditRenderedImages } from '../scripts/lib/company-image-audit.mjs';
 for (const [route, title] of [['/', 'Производство'], ['/company','Производственная база'], ['/manufacturers','География компетенций'], ['/contacts','Начнём сотрудничество']]) {
   test(`${route} renders a complete responsive public page without runtime errors`, async ({ page }) => {
     const errors = []; page.on('pageerror', error => errors.push(error.message));
@@ -39,7 +40,9 @@ for (const [route, title] of [['/', 'Производство'], ['/company','П
         const rect = await arrow.evaluate(el => ({ width: el.getBoundingClientRect().width, height: el.getBoundingClientRect().height }));
         expect(rect).toEqual({ width: 18, height: 18 });
       }
-      await expect(page.locator('.corp-cta')).toHaveCSS('background-color', 'rgb(24, 32, 31)');
+      // The 2026-10-13 handoff intentionally replaced green-gray with neutral
+      // gray. Keep this independent literal assertion aligned with that design.
+      await expect(page.locator('.corp-cta')).toHaveCSS('background-color', 'rgb(30, 30, 30)');
     });
     if (route === '/company') await test.step('all solution cards fit a 320px viewport', async () => {
       await page.setViewportSize({ width: 320, height: 780 });
@@ -162,14 +165,14 @@ test('keyboard selection works and reduced motion avoids animated page transitio
   await expect(button).toHaveAttribute('aria-pressed','true');
 });
 
-test('redesigned journeys keep content within the screen and preserve a single main landmark', async ({ page }) => {
-  const routes = ['/solutions', '/solutions/distribution', '/solutions/industry', '/solutions/infrastructure', '/projects', '/projects/petropavlovsk', '/projects/nur-esil', '/projects/yassy', '/projects/nura', '/manufacturers/ktz', '/manufacturers/asia-trafo', '/manufacturers/aemz', '/manufacturers/utz', '/manufacturers/petz', '/manufacturers/elmo', '/documents', '/data-policy', '/inquiry', '/selection', '/workspace', '/login', '/ai'];
-  // Includes the narrow screen that previously let a long solution heading
-  // expand its grid track beyond the visible page.
-  if (test.info().project.name.includes('mobile')) await page.setViewportSize({ width: 320, height: 780 });
-  const errors = [];
-  page.on('pageerror', error => errors.push(error.message));
-  for (const route of routes) {
+const journeyRoutes = ['/solutions', '/solutions/distribution', '/solutions/industry', '/solutions/infrastructure', '/projects', '/projects/petropavlovsk', '/projects/nur-esil', '/projects/yassy', '/projects/nura', '/manufacturers/ktz', '/manufacturers/asia-trafo', '/manufacturers/aemz', '/manufacturers/utz', '/manufacturers/petz', '/manufacturers/elmo', '/documents', '/data-policy', '/inquiry', '/selection', '/workspace', '/login', '/ai'];
+// Every route retains its own layout, runtime-error and whole-word checks.
+// A shared 30-second budget for 22 independent navigations hid later failures.
+for (const route of journeyRoutes) {
+  test(`journey ${route} keeps content within the screen and a single main landmark`, async ({ page }) => {
+    if (test.info().project.name.includes('mobile')) await page.setViewportSize({ width: 320, height: 780 });
+    const errors = [];
+    page.on('pageerror', error => errors.push(error.message));
     await page.goto(route);
     await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
     await expect(page.getByRole('main')).toHaveCount(1);
@@ -193,8 +196,12 @@ test('redesigned journeys keep content within the screen and preserve a single m
       return issues;
     }));
     expect(splitWords, `Whole words fit on ${route}`).toEqual([]);
-  }
-  expect(errors).toEqual([]);
+    expect(errors, route).toEqual([]);
+  });
+}
+
+test('home hero video loads on desktop and narrow mobile', async ({ page }) => {
+  if (test.info().project.name.includes('mobile')) await page.setViewportSize({ width: 320, height: 780 });
   await page.goto('/');
   const heroImage = page.getByRole('main').locator('.corp-hero-image video');
   await expect(heroImage).toHaveCount(1);
@@ -252,7 +259,7 @@ test('entrances wait until a substantial part of the block is inside the screen'
   }
 });
 
-test('expanded project portfolio filters work, case routes open and words fit', async ({ page }) => {
+test('expanded project portfolio filters work and retain full-width visuals', async ({ page }) => {
   if (test.info().project.name.includes('mobile')) await page.setViewportSize({ width: 320, height: 780 });
   await page.goto('/projects');
   await expect(page.locator('[data-project-case]')).toHaveCount(16);
@@ -267,7 +274,11 @@ test('expanded project portfolio filters work, case routes open and words fit', 
   await expect(page.locator('[data-project-case]')).toHaveCount(16);
   await page.locator('.project-featured').evaluate(el => window.scrollTo({ top: scrollY + el.getBoundingClientRect().top - 100, behavior: 'instant' }));
   await page.screenshot({ path: `test-results/brand/projects-${test.info().project.name}.png` });
-  for (const slug of ['batys', 'kunay', 'kairat', 'hub-aktau', 'astana-substations', 'aktau-substations', 'dostyk-pavlodar', 'keramika', 'expo-2017', 'burnoye-solar', 'ereymentau-wind', 'gorodskaya']) {
+});
+
+for (const slug of ['batys', 'kunay', 'kairat', 'hub-aktau', 'astana-substations', 'aktau-substations', 'dostyk-pavlodar', 'keramika', 'expo-2017', 'burnoye-solar', 'ereymentau-wind', 'gorodskaya']) {
+  test(`project ${slug} opens with facts and unbroken words`, async ({ page }) => {
+    if (test.info().project.name.includes('mobile')) await page.setViewportSize({ width: 320, height: 780 });
     await page.goto(`/projects/${slug}`);
     await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
     await expect(page.locator('.project-detail-facts')).toBeVisible();
@@ -282,5 +293,47 @@ test('expanded project portfolio filters work, case routes open and words fit', 
       return result;
     }));
     expect(overflow, slug).toEqual([]);
+  });
+}
+
+
+// Exercise the same image walker used by audit:company without a real network.
+test('company image audit loads offscreen images and ignores hidden streamed copies', async ({ page }) => {
+  await page.setContent(`<div hidden><main><img src="data:,hidden-copy"></main></div>
+    <main><h1>Image audit fixture</h1><img style="display:none" src="data:,hidden-responsive-image">
+    <div style="height:2000px"></div><img width="16" height="16" loading="lazy"
+      src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Crect width='16' height='16'/%3E%3C/svg%3E"></main>`);
+  await expect(auditRenderedImages(page)).resolves.toBe(1);
+});
+
+test('company image audit rejects a broken visible image', async ({ page }) => {
+  await page.setContent('<main><img alt="Broken image" width="16" height="16" src="data:,not-an-image"></main>');
+  await expect(auditRenderedImages(page, { timeout: 200 })).rejects.toThrow();
+});
+
+
+test('login story keeps complete words at 320px and preserves wider mobile sizing', async ({ page }, testInfo) => {
+  await page.setViewportSize({ width: 320, height: 780 });
+  await page.goto('/login');
+  const heading = page.locator('.brand-login-story h2');
+  await expect(heading).toHaveText(/Ваш проект\.\s*Единое пространство\./);
+  for (const [width, fontSize] of [[320, 32], [390, 38]]) {
+    await page.setViewportSize({ width, height: 780 });
+    await heading.scrollIntoViewIfNeeded();
+    await expect(heading).toBeVisible();
+    const measured = await heading.evaluate(element => {
+      const words = [], walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
+      let node;
+      while ((node = walker.nextNode())) for (const match of node.textContent.matchAll(/\S+/g)) {
+        const range = document.createRange();
+        range.setStart(node, match.index); range.setEnd(node, match.index + match[0].length);
+        words.push({ text: match[0], width: range.getBoundingClientRect().width, fragments: range.getClientRects().length });
+      }
+      return { available: element.clientWidth, fontSize: parseFloat(getComputedStyle(element).fontSize), words };
+    });
+    expect(measured.fontSize).toBe(fontSize);
+    expect(measured.words.some(word => word.text === 'пространство.')).toBe(true);
+    expect(measured.words.filter(word => word.width > measured.available + 1 || word.fragments !== 1), `Whole login words at ${width}px`).toEqual([]);
+    await testInfo.attach(`login-story-${width}px`, { body: await heading.screenshot(), contentType: 'image/png' });
   }
 });

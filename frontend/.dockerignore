@@ -1,4 +1,12 @@
 node_modules
-.next
-.env.local
-
+.next*
+.env
+.env.*
+!.env.example
+.vercel
+.git
+*.log
+playwright-report
+test-results
+preview-dist
+.preview-build

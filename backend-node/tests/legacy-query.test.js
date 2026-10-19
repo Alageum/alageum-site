@@ -4,19 +4,16 @@ const { test } = require("node:test");
 const assert = require("node:assert/strict");
 const { readFileSync } = require("node:fs");
 const path = require("node:path");
-const { createHash } = require("node:crypto");
+const { verifyCurrentLegacyReference } = require("./reference/current-legacy");
 const { AppError } = require("../src/domain/errors");
 const query = require("../src/domain/legacy-query");
 const fixture = JSON.parse(readFileSync(path.join(__dirname, "reference/legacy-query.json"), "utf8"), (key, value, context) =>
   typeof value === "number" && Number.isInteger(value) && !Number.isSafeInteger(value) ? JSON.rawJSON(context.source) : value);
 
-test("query reference identifies and verifies the frozen sources and exact runtime", () => {
+test("query reference preserves historical evidence and verifies the current sanitized source", () => {
   assert.equal(fixture.evidence, "query-reference; not full legacy endpoint execution");
   assert.deepEqual(fixture.runtime_versions, { fastapi: "0.141.1", starlette: "1.6.0", pydantic: "2.13.4", "pydantic-core": "2.46.4", httpx: "0.28.1" });
-  for (const [file, digest] of Object.entries(fixture.source_sha256)) {
-    const source = readFileSync(path.join(__dirname, "../..", file));
-    assert.equal(createHash("sha256").update(source).digest("hex"), digest, `Frozen source changed: ${file}`);
-  }
+  verifyCurrentLegacyReference("query", fixture);
 });
 
 for (const vector of fixture.cases) test(`frozen ASGI query reference: ${vector.id}`, () => {

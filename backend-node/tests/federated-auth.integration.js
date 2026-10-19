@@ -12,9 +12,10 @@ const { createGoogleOidc, JWKS_URL } = require("../src/domain/google-oidc");
 const logger = require("../src/middlewares/safe-request-logger");
 const config = { env: "test", googleEnabled: true, browserOrigin: "http://localhost:3000", googleClientId: "local-client.apps.googleusercontent.com", googleClientSecret: "local-only-test-secret", jwtSecret: "local-only-unit-secret-at-least-32-chars", jwtIssuer: "local", jwtAudience: "local" };
 const hash = value => createHash("sha256").update(value).digest("hex");
-function ctx({ jar = new Map(), body = {}, query = {}, method = "GET", boundary = "", origin = config.browserOrigin, ip = randomUUID() } = {}) {
+let fixtureClient = 0;
+function ctx({ jar = new Map(), body = {}, query = {}, method = "GET", boundary = "", origin = config.browserOrigin, ip = `192.0.2.${++fixtureClient}` } = {}) {
   const headers = { origin, "x-browser-session": boundary }, responseHeaders = {}, writes = [];
-  return { jar, writes, responseHeaders, request: { body }, query, method, state: {}, ip, headers,
+  return { jar, writes, responseHeaders, request: { body }, query, method, state: {}, ip, req: { socket: { remoteAddress: ip } }, headers,
     get: key => headers[key.toLowerCase()] || "", set: (key, value) => { responseHeaders[key] = value; },
     cookies: { get: name => jar.get(name), set: (name, value, options) => { writes.push({ name, value, options }); if (value === null) jar.delete(name); else jar.set(name, value); } },
     redirect(url) { this.location = url; this.status = 302; } };
@@ -119,7 +120,7 @@ test("real PostgreSQL Google signup, cookie sessions, replay, cancellation and t
     await assert.rejects(auth.permission(ctx({ jar, boundary: sessionId }), "document.sign"), { code: "permission_denied" });
     const other = ctx({ jar, boundary: sessionId }); other.headers["x-organization-id"] = randomUUID();
     await assert.rejects(auth.context(other), { code: "organization_access_denied" });
-    await federated.logout(ctx({ jar, boundary: sessionId, method: "POST" })); assert.ok(!jar.has("alageum_dev_session"));
+    const logoutResponse = ctx({ jar, boundary: sessionId, method: "POST" }); await federated.logout(logoutResponse); assert.equal(logoutResponse.writes.length, 0);
     await assert.rejects(federated.currentUser(ctx({ jar, boundary: sessionId })), { code: "authentication_required" });
   });
   await t.test("logout invalidates a pending provider exchange before it can recreate a session", async () => {
@@ -128,8 +129,9 @@ test("real PostgreSQL Google signup, cookie sessions, replay, cancellation and t
     let release; const wait = new Promise(resolve => { release = resolve; });
     const next = await begin(other, { wait }), pending = finish(other, next);
     while (await table("federated_attempts").where({ state_hash: hash(next.query.state) }).first()) await new Promise(resolve => setTimeout(resolve, 5));
-    await federated.logout(ctx({ jar: other, boundary, method: "POST" })); release();
-    assert.equal(new URL((await pending).location).searchParams.get("federated"), "invalid_federated_state"); assert.ok(!other.has("alageum_dev_session"));
+    const logoutResponse = ctx({ jar: other, boundary, method: "POST" }); await federated.logout(logoutResponse); assert.equal(logoutResponse.writes.length, 0); release();
+    assert.equal(new URL((await pending).location).searchParams.get("federated"), "invalid_federated_state");
+    await assert.rejects(federated.currentUser(ctx({ jar: other, boundary, method: "GET" })), { code: "authentication_required" });
   });
   await t.test("transactional session recheck rejects revocation and wrong actor; holds session until signing commit", async () => {
     const other = new Map(), signed = await finish(other, await begin(other));
@@ -153,8 +155,8 @@ test("real PostgreSQL Google signup, cookie sessions, replay, cancellation and t
     await assert.rejects(db.transaction(connection => auth.assertActiveSession(connection, request, userId)), { code: "authentication_required" });
     const now = Math.floor(Date.now() / 1000), bearer = ctx();
     bearer.headers.authorization = "Bearer " + jwt.sign({ sub: userId, type: "access", jti: randomUUID(), iat: now, nbf: now, exp: now + 300 }, config.jwtSecret, { issuer: config.jwtIssuer, audience: config.jwtAudience });
-    await auth.assertActiveSession({}, bearer, userId);
-    await assert.rejects(auth.assertActiveSession({}, bearer, randomUUID()), { code: "invalid_token" });
+    await db.transaction(tx => auth.assertActiveSession(tx, bearer, userId));
+    await assert.rejects(db.transaction(tx => auth.assertActiveSession(tx, bearer, randomUUID())), { code: "invalid_token" });
   });
   await t.test("inactive linked account cannot obtain a session", async () => {
     await table("users").where({ id: userId }).update({ is_active: false });
