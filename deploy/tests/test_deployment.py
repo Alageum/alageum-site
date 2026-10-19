@@ -77,6 +77,15 @@ class PackageContracts(unittest.TestCase):
         self.assertIn("location = /admin/catalog { proxy_pass $frontend; }", proxy)
         self.assertIn("location ^~ /admin/catalog/ { proxy_pass $frontend; }", proxy)
         self.assertIn("ssl_reject_handshake on", proxy)
+    def test_empty_git_checkout_has_nonroot_strapi_migration_directory(self):
+        docker = (ROOT / "backend-node/Dockerfile").read_text()
+        build, runtime = docker.split(" AS runtime", 1)
+        self.assertIn("mkdir -p public/uploads database/migrations", build)
+        self.assertIn("COPY --from=build --chown=node:node /app ./", runtime)
+        nonroot = runtime.split("USER node", 1)[1]
+        self.assertIn("fs.accessSync('database/migrations',fs.constants.R_OK|fs.constants.W_OK|fs.constants.X_OK)", nonroot)
+        self.assertNotIn("USER root", nonroot)
+        self.assertNotRegex(docker, r"chmod\s+(?:-R\s+)?777")
     def test_proxy_replaces_untrusted_forwarded_headers(self):
         common = (ROOT / "deploy/nginx/proxy-common.conf").read_text()
         self.assertIn("X-Forwarded-For $remote_addr", common)

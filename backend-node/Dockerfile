@@ -16,7 +16,10 @@ ENV STRAPI_TELEMETRY_DISABLED=true STRAPI_HIDE_UPDATE_MESSAGE=true
 # Build configuration is explicitly synthetic. No database connection or actual
 # runtime credential is needed, passed to BuildKit, or baked into the image.
 RUN node scripts/build-container.js
-RUN npm prune --omit=dev && mkdir -p public/uploads
+# Strapi's migration provider creates this directory before its first DB access.
+# Empty directories do not survive Git checkout; create it in the image rather
+# than requiring the non-root runtime to write to the root-owned /app directory.
+RUN npm prune --omit=dev && mkdir -p public/uploads database/migrations
 
 FROM ${NODE_IMAGE} AS runtime
 WORKDIR /app
@@ -25,6 +28,7 @@ ENV APP_ENV=production NODE_ENV=production HOST=0.0.0.0 PORT=8000 \
 COPY --from=build --chown=node:node /app ./
 COPY --from=build /etc/ssl/certs /etc/ssl/certs
 USER node
+RUN node -e "const fs=require('node:fs');fs.accessSync('database/migrations',fs.constants.R_OK|fs.constants.W_OK|fs.constants.X_OK)"
 EXPOSE 8000
 HEALTHCHECK --interval=10s --timeout=5s --start-period=90s --retries=12 \
     CMD node -e "fetch('http://127.0.0.1:8000/api/v1/readiness').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))"
