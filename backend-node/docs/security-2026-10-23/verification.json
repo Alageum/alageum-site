@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-23",
+  "toolchain": {
+    "node": "v24.19.0",
+    "npm": "11.9.0"
+  },
+  "checks": {
+    "cleanInstall": "passed",
+    "strapiWebpackAdapter": "unchanged; passed",
+    "nativePageSlateIntegrity": "unchanged; passed",
+    "immutableMediaPackage": "passed",
+    "backendCheck": {
+      "passed": 776,
+      "failed": 0,
+      "skipped": 0
+    },
+    "productionRuntime": {
+      "passed": 9,
+      "failed": 0,
+      "skipped": 0,
+      "postgres": "17.11; isolated synthetic loopback/TLS fixture"
+    },
+    "newsRuntime": {
+      "passed": 6,
+      "failed": 0,
+      "skipped": 0,
+      "postgres": "17.11; isolated synthetic loopback fixture"
+    },
+    "productionAdminBuild": "passed using scripts/build-container.js",
+    "browserDependencyRegression": "blocked before assertions; local Chromium Unix-socket sandbox restriction; separate cloud browser could not reach the synthetic fixture across isolated network namespaces; fixture server stopped"
+  },
+  "productionDeployment": false,
+  "audit": {
+    "before": {
+      "total": 42,
+      "critical": 6,
+      "high": 28,
+      "moderate": 3,
+      "low": 5
+    },
+    "after": {
+      "total": 32,
+      "critical": 0,
+      "high": 29,
+      "moderate": 3,
+      "low": 0
+    },
+    "clean": false,
+    "remainingRoots": [
+      "braces@3.0.3",
+      "react-router@6.30.6",
+      "stream-json@1.9.1"
+    ]
+  },
+  "productionSecurityGate": "Administrator must review unresolved advisories, restrict CMS/development/transfer access, rerun current audit and plan supported migrations before exposure. This is code handoff, not production approval."
+}

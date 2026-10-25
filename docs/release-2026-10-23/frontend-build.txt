@@ -1,0 +1,159 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> alageum-frontend@0.1.0 build:standalone
+> next build && node scripts/prepare-standalone.mjs
+
+▲ Next.js 16.4.2 (Turbopack)
+(node:18) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///workspace/shared/alageum-site/frontend/lib/deployment/config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /workspace/shared/alageum-site/frontend/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✓ Running next.config.mjs took 51ms
+- Experiments (use with caution):
+  · cpus: 2
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 7.0s
+  Running TypeScript ...
+  Finished TypeScript in 18ms ...
+  Collecting page data using 2 workers ...
+  Generating static pages using 2 workers (0/1221) ...
+  Generating static pages using 2 workers (305/1221) 
+  Generating static pages using 2 workers (610/1221) 
+  Generating static pages using 2 workers (915/1221) 
+✓ Generating static pages using 2 workers (1221/1221) in 3.9s
+  Finalizing page optimization ...
+
+Route (app)
+┌ ƒ /
+├ ƒ /_not-found
+├ ƒ /[locale]
+├ ƒ /[locale]/account
+├ ƒ /[locale]/ai
+├ ƒ /[locale]/b2b
+├ ƒ /[locale]/b2b/access-requests
+├ ƒ /[locale]/b2b/documents
+├ ƒ /[locale]/b2b/finance
+├ ƒ /[locale]/b2b/members
+├ ƒ /[locale]/b2b/orders
+├ ƒ /[locale]/b2b/orders/[id]
+├ ƒ /[locale]/b2b/profile
+├ ƒ /[locale]/b2b/quotes
+├ ƒ /[locale]/b2b/quotes/[id]
+├ ƒ /[locale]/b2b/quotes/[id]/print
+├ ƒ /[locale]/b2b/support
+├ ƒ /[locale]/careers
+├ ƒ /[locale]/careers/[slug]
+├ ƒ /[locale]/careers/apply
+├ ƒ /[locale]/careers/vacancies
+├ ƒ /[locale]/careers/vacancies/[id]
+├ ƒ /[locale]/catalog
+├ ƒ /[locale]/catalog/[slug]
+├ ƒ /[locale]/catalog/compare
+├ ƒ /[locale]/catalog/home
+├ ƒ /[locale]/catalog/source
+├ ƒ /[locale]/client
+├ ƒ /[locale]/client/[section]
+├ ƒ /[locale]/client/documents/[id]/print
+├ ƒ /[locale]/client/projects/[id]
+├ ƒ /[locale]/company
+├ ƒ /[locale]/company/[section]
+├ ƒ /[locale]/company/team
+├ ƒ /[locale]/contacts
+├ ƒ /[locale]/data-policy
+├ ƒ /[locale]/documents
+├ ƒ /[locale]/forgot-password
+├ ƒ /[locale]/inquiry
+├ ƒ /[locale]/investors
+├ ƒ /[locale]/login
+├ ƒ /[locale]/manufacturers
+├ ƒ /[locale]/manufacturers/[slug]
+├ ƒ /[locale]/materials
+├ ● /[locale]/materials/[slug]
+├ ƒ /[locale]/news
+├ ƒ /[locale]/news/[slug]
+├ ● /[locale]/partners/[slug]
+├ ƒ /[locale]/projects
+├ ƒ /[locale]/projects/[slug]
+├ ƒ /[locale]/register
+├ ƒ /[locale]/reset-password
+├ ƒ /[locale]/selection
+├ ƒ /[locale]/service-unavailable
+├ ƒ /[locale]/solutions
+├ ƒ /[locale]/solutions/[slug]
+├ ƒ /[locale]/verify-email
+├ ƒ /[locale]/workspace
+├ ƒ /account
+├ ƒ /admin/catalog
+├ ƒ /ai
+├ ƒ /b2b
+├ ƒ /b2b/access-requests
+├ ƒ /b2b/documents
+├ ƒ /b2b/finance
+├ ƒ /b2b/members
+├ ƒ /b2b/orders
+├ ƒ /b2b/orders/[id]
+├ ƒ /b2b/profile
+├ ƒ /b2b/quotes
+├ ƒ /b2b/quotes/[id]
+├ ƒ /b2b/quotes/[id]/print
+├ ƒ /b2b/support
+├ ƒ /careers
+├ ƒ /careers/[slug]
+├ ƒ /careers/apply
+├ ƒ /careers/vacancies
+├ ƒ /careers/vacancies/[id]
+├ ƒ /catalog
+├ ƒ /catalog/[slug]
+├ ƒ /catalog/compare
+├ ƒ /catalog/home
+├ ƒ /catalog/source
+├ ƒ /client
+├ ƒ /client/[section]
+├ ƒ /client/documents/[id]/print
+├ ƒ /client/projects/[id]
+├ ƒ /company
+├ ƒ /company/[section]
+├ ƒ /company/team
+├ ƒ /contacts
+├ ƒ /data-policy
+├ ƒ /documents
+├ ƒ /forgot-password
+├ ƒ /healthz
+├ ○ /icon.svg
+├ ƒ /inquiry
+├ ƒ /investors
+├ ƒ /login
+├ ƒ /manufacturers
+├ ƒ /manufacturers/[slug]
+├ ƒ /materials
+├ ƒ /materials/[slug]
+├ ƒ /news
+├ ƒ /news/[slug]
+├ ƒ /pages/[locale]/[slug]
+├ ƒ /partners/[slug]
+├ ƒ /projects
+├ ƒ /projects/[slug]
+├ ƒ /register
+├ ƒ /reset-password
+├ ○ /robots.txt
+├ ƒ /selection
+├ ƒ /service-unavailable
+├ ƒ /solutions
+├ ƒ /solutions/[slug]
+├ ƒ /verify-email
+└ ƒ /workspace
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+
+Standalone frontend prepared at /workspace/shared/alageum-site/frontend/.next/standalone
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice

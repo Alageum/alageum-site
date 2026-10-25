@@ -13,6 +13,7 @@ test('self-hosted builds default to connected standalone Next without active pla
   assert.equal(deploymentMode({ ALAGEUM_PUBLIC_ONLY: '0', NEXT_PUBLIC_API_URL: '/api/v1' }), 'connected');
   const nextSource = fs.readFileSync(new URL('../next.config.mjs', import.meta.url), 'utf8');
   assert.match(nextSource, /output: "standalone"/);
+  assert.match(nextSource, /experimental: \{ cpus: 2 \}/);
   const pkg = JSON.parse(fs.readFileSync(new URL('../package.json', import.meta.url), 'utf8'));
   assert.equal(pkg.scripts['build:standalone'], 'next build && node scripts/prepare-standalone.mjs');
   assert.equal(pkg.scripts['start:standalone'], 'node .next/standalone/server.js');

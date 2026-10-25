@@ -1,0 +1,27 @@
+{
+  "passed": 19,
+  "checks": [
+    "uncached frontend liveness",
+    "connected route /",
+    "connected route /company",
+    "connected route /careers",
+    "connected route /catalog",
+    "connected route /catalog/source?source=transformers-2026&page=1",
+    "connected route /selection",
+    "connected route /contacts",
+    "connected route /login",
+    "connected route /register",
+    "connected route /forgot-password",
+    "connected route /en/company",
+    "connected route /kk/company",
+    "unreachable CMS is shown honestly, not replaced by bundled news",
+    "source is not exposed: /.env",
+    "source is not exposed: /backend-node/package.json",
+    "source is not exposed: /docs/ADMINISTRATOR-RU.md",
+    "source is not exposed: /frontend/package.json",
+    "standalone public assets"
+  ],
+  "backend": "intentionally not started",
+  "browser": "not tested by this HTTP smoke",
+  "tls": "not tested by this loopback smoke"
+}

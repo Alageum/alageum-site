@@ -10,6 +10,9 @@ const nextConfig = {
   output: "standalone",
   poweredByHeader: false,
   reactStrictMode: true,
+  // Bound catalogue prerendering memory on ordinary administrator build hosts.
+  // This changes build concurrency only, not routes, validation or runtime mode.
+  experimental: { cpus: 2 },
   async rewrites() { return browserApiRewrites(); },
 };
 

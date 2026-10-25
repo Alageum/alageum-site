@@ -1,0 +1,15 @@
+✔ push and pull request events share one costly production proof per branch (1.871238ms)
+✔ hosted proof cannot accidentally run against an operator machine (21.470783ms)
+✔ Compose reset acceptance honors the actual no-content logout response (0.295128ms)
+✔ production image preflight uses the unchanged admission entrypoint before starting services (0.764686ms)
+✔ failure diagnostics emit only fixed labels, never raw secrets, tokens, messages or paths (365.672915ms)
+✔ production proof does not weaken production TLS or replace the stack (1.059843ms)
+✔ synthetic fixture has independently signed host certificates and private credentials (2855.192036ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3604.556682

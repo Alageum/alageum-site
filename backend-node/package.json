@@ -38,19 +38,23 @@
   },
   "overrides": {
     "axios": "1.20.0",
-    "dompurify": "3.4.16",
-    "markdown-it": "14.3.1",
+    "dompurify": "3.4.17",
+    "markdown-it": "14.3.3",
     "postcss": "8.5.28",
     "@strapi/provider-email-sendmail": {
       "nodemailer": "10.0.13"
     },
     "@strapi/strapi": {
-      "vite": "6.4.3",
+      "vite": "6.4.5",
       "webpack-dev-middleware": "7.4.6"
     },
     "@strapi/upload": {
       "sharp": "0.35.5"
     },
-    "handlebars": "4.7.10"
+    "handlebars": "4.7.10",
+    "@strapi/core": {
+      "@modelcontextprotocol/server": "2.3.1",
+      "@modelcontextprotocol/node": "2.1.1"
+    }
   }
 }

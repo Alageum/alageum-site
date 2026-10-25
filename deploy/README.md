@@ -1,6 +1,7 @@
 # Portable server package
 
-Start with [the server deployment guide](../docs/server-deployment.md).
+Start with [the administrator handoff](../docs/ADMINISTRATOR-RU.md), then
+[the server deployment guide](../docs/server-deployment.md).
 
 - `compose.production.yml`: the standalone production topology, not an override.
 - `.env.example`, `backend.env.example`: configuration templates; all secrets blank.

@@ -19,6 +19,10 @@ const sourceFiles = [
   'lib/i18n/dictionaries.json', 'lib/catalog/source-context/sourceContexts.js',
   'lib/catalog/source-context/sourceContextManifest.json',
   'lib/catalog/sources-manifest.json', 'scripts/verify-source-context-build.mjs',
+  'app/[locale]/layout.js', 'app/(site)/workspace/page.js', 'app/service-unavailable/page.js', 'components/ecosystem/ClientWorkspace.js',
+  ...['careers/[slug]', 'careers/vacancies/[id]', 'company/[section]', 'client/[section]', 'news/[slug]',
+    'catalog/[slug]', 'manufacturers/[slug]', 'materials/[slug]', 'partners/[slug]', 'projects/[slug]', 'solutions/[slug]']
+    .flatMap(route => ['(site)', '[locale]/(site)'].map(group => `app/${group}/${route}/page.js`)),
   'package.json', 'jsconfig.json',
 ];
 const text = (root, path) => readFile(join(root, path), 'utf8');

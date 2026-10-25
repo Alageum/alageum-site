@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-23",
+  "sourceBase": "3b817bbfcb11f2952f292ec078d790f546bc22e7",
+  "scope": "Code and administrator handoff only; no publication, merge or production deployment",
+  "toolchain": {
+    "node": "24.19.0",
+    "npm": "11.9.0"
+  },
+  "frontend": {
+    "next": "16.4.2",
+    "lint": "passed",
+    "unit": {
+      "total": 870,
+      "passed": 795,
+      "failed": 74,
+      "skipped": 1,
+      "cancelled": 0,
+      "skipReason": "Opt-in actual export HTML test is run separately after static build",
+      "knownFailures": {
+        "historicalApprovalOrHash": 65,
+        "missingHistoricalBrowserLog": 8,
+        "missingOriginalPdf": 1
+      }
+    },
+    "connectedStandaloneBuild": {
+      "status": "passed",
+      "staticPagesGenerated": 1221,
+      "workers": 2
+    },
+    "connectedHttpSmoke": {
+      "passed": 19,
+      "failed": 0,
+      "scope": "No backend, browser, SMTP or TLS; actual connected standalone process"
+    },
+    "staticExport": {
+      "status": "passed",
+      "staticPagesGenerated": 4893,
+      "workers": 2,
+      "focusedTests": {
+        "total": 10,
+        "passed": 10,
+        "failed": 0,
+        "skipped": 0
+      },
+      "actualHtmlVerified": "RU/KK/EN, snapshot notice, translated disabled-workspace body, no fabricated private routes"
+    },
+    "audit": {
+      "production": {
+        "total": 0
+      },
+      "full": {
+        "critical": 0,
+        "high": 5,
+        "moderate": 0,
+        "low": 0,
+        "total": 5
+      },
+      "cleanFullAudit": false
+    }
+  },
+  "backend": {
+    "report": "../../backend-node/docs/security-2026-10-23/verification.json",
+    "check": {
+      "passed": 776,
+      "failed": 0,
+      "skipped": 0
+    },
+    "adminBuild": "passed",
+    "productionRuntime": {
+      "passed": 9,
+      "failed": 0
+    },
+    "newsRuntime": {
+      "passed": 6,
+      "failed": 0
+    },
+    "audit": {
+      "critical": 0,
+      "high": 29,
+      "moderate": 3,
+      "low": 0,
+      "total": 32,
+      "clean": false
+    }
+  },
+  "deploymentContracts": {
+    "pythonPassed": 36,
+    "proofContractsPassed": 7,
+    "shellSyntax": "passed"
+  },
+  "sourceAssets": {
+    "files": 350,
+    "missing": 0,
+    "mismatched": 0,
+    "bytes": 36849714
+  },
+  "freshBrowserVerification": "blocked before assertions; executor Chromium socket restriction, separate cloud browser cannot reach its loopback",
+  "freshComposeVerification": "not run; Docker unavailable; Oct19 proof remains historical",
+  "productionApproved": false
+}
