@@ -1652,5 +1652,7 @@ jobs:
         with:
           name: quote-document-signing-${{ github.run_id }}-${{ github.run_attempt }}
           # Never upload the runner's raw cluster, ephemeral passwords or config.
-          path: signing-evidence/
+          path: |
+            signing-evidence/
+            frontend/playwright-report/document-signing-fixtures/**/error-context.md
           retention-days: 14

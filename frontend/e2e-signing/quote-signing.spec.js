@@ -1,16 +1,21 @@
 import { test, expect } from '@playwright/test';
 import { createHash } from 'node:crypto';
+import { signingBrowserSession } from './session-fixture.js';
 const org = '10000000-0000-4000-8000-000000000001', user = '20000000-0000-4000-8000-000000000001';
 const quote = '30000000-0000-4000-8000-000000000001', documentId = '60000000-0000-4000-8000-000000000001';
 const pdf = Buffer.from('%PDF-1.7\nBrowser transport test only\n%%EOF\n'), hash = createHash('sha256').update(pdf).digest('hex');
 async function setup(page, initial = 'preparation_available', manager = false) {
   let status = initial; const mutations = [];
-  await page.addInitScript(({ org }) => sessionStorage.setItem('alageum_session', JSON.stringify({ access_token: 'synthetic', refresh_token: 'synthetic-refresh', organization_id: org })), { org });
+  await page.addInitScript(session => sessionStorage.setItem('alageum_session', JSON.stringify(session)), signingBrowserSession(org));
   const receipt = () => ({ quote_id: quote, status, prepare_allowed: status === 'preparation_available', request_allowed: status === 'ready', pdf_sha256: ['ready', 'requested'].includes(status) ? hash : null, signature_status: 'not_verified', external_delivery: 'not_configured' });
   await page.route('**/api/v1/**', async route => {
     const req = route.request(), path = new URL(req.url()).pathname.replace('/api/v1', '');
     const reply = value => route.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify(value) });
-    if (path === '/auth/me') return reply({ user: { id: user, email: 'synthetic@example.invalid' }, organization: { id: org, name: 'Synthetic org' }, permissions: manager ? ['document.read', 'document.sign'] : ['quote.read', 'quote.create'] });
+    if (path === '/auth/me') {
+      expect(req.headers()['x-browser-session']).toMatch(/^[0-9a-f-]{36}$/);
+      expect(req.headers().authorization).toBeUndefined();
+      return reply({ user: { id: user, email: 'synthetic@example.invalid' }, organization: { id: org, name: 'Synthetic org' }, permissions: manager ? ['document.read', 'document.sign'] : ['quote.read', 'quote.create'] });
+    }
     if (path === `/quotes/${quote}`) return reply({ id: quote, status: 'submitted', comment: null, item_count: 1, created_at: '2026-10-25T00:00:00Z', items: [{ id: '40000000-0000-4000-8000-000000000001', product_id: '50000000-0000-4000-8000-000000000001', quantity: '2.000', product_snapshot: { sku: 'TEST', translations: { ru: { name: 'Трансформатор' } }, version: 1, price: null, currency: 'KZT', price_mode: 'on_request' } }] });
     if (path === `/quotes/${quote}/signature-request/prepare`) { mutations.push({ path, body: req.postData() }); status = 'ready'; return reply(receipt()); }
     if (path === `/quotes/${quote}/signature-request`) { if (req.method() === 'POST') { mutations.push({ path, body: req.postData() }); status = 'requested'; } return reply(receipt()); }

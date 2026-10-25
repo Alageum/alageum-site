@@ -1,6 +1,6 @@
 'use client';
 
-import { useLayoutEffect, useRef, useState } from 'react';
+import { useId, useLayoutEffect, useRef, useState } from 'react';
 import { useAuth } from '@/components/AuthProvider';
 import { getDocumentTypes, uploadDocument } from '@/lib/api/documents';
 import { downloadDocumentFile } from '@/lib/api/client';
@@ -8,6 +8,7 @@ import { fileError } from '@/lib/documents/fileLabels';
 import styles from './DocumentsWorkspace.module.css';
 
 export function DocumentUpload({ scope, labels, onSaved }) {
+  const typeLabelId = useId();
   const { isAuthScopeCurrent } = useAuth();
   const [open, setOpen] = useState(false), [types, setTypes] = useState(null), [error, setError] = useState('');
   const [busy, setBusy] = useState(false), [notice, setNotice] = useState(''), [attempt, setAttempt] = useState(0);
@@ -53,7 +54,7 @@ export function DocumentUpload({ scope, labels, onSaved }) {
       {types !== null && !types.length && <p role="status">{labels.noTypes}</p>}
       <label>{labels.title}<input name="title" required maxLength={300} disabled={busy} /></label>
       <label>{labels.number}<input name="number" maxLength={120} disabled={busy} /></label>
-      <label>{labels.type}<select name="type" required disabled={busy || !types?.length} defaultValue=""><option value="" disabled>—</option>{types?.map(type => <option key={type.code} value={type.code}>{type.code === 'manual_attachment' ? labels.file : type.name}</option>)}</select></label>
+      <label><span id={typeLabelId}>{labels.type}</span><select aria-labelledby={typeLabelId} name="type" required disabled={busy || !types?.length} defaultValue=""><option value="" disabled>—</option>{types?.map(type => <option key={type.code} value={type.code}>{type.code === 'manual_attachment' ? labels.file : type.name}</option>)}</select></label>
       <label>{labels.file}<input name="file" type="file" accept="application/pdf,image/jpeg,image/png,.pdf,.jpg,.jpeg,.png" required disabled={busy} aria-describedby="document-file-hint" /></label>
       {error && <p className="error" role="alert">{error}</p>}
       <div className={styles.documentActions}>

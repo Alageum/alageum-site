@@ -385,7 +385,9 @@ async function fillUpload(page, title) {
   await page.getByRole('button', { name: 'Загрузить документ', exact: true }).click();
   const form = page.getByRole('form', { name: 'Загрузить документ', exact: true });
   await form.getByLabel('Название', { exact: true }).fill(title);
-  await form.getByLabel('Тип документа', { exact: true }).selectOption('manual_attachment');
+  const type = form.getByLabel('Тип документа', { exact: true });
+  await expect(type).toHaveAccessibleName('Тип документа');
+  await type.selectOption('manual_attachment');
   await form.getByLabel('Файл', { exact: true }).setInputFiles({ name: 'fixture.pdf', mimeType: 'application/pdf', buffer: privatePdf });
   return form;
 }
