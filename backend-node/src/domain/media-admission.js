@@ -12,6 +12,7 @@ const { privateDirectory, readFileBounded, streamBytes } = require("./media-quar
 // Reuse the exact reviewed/pinned sharp instance used by Strapi, not a second decoder.
 const sharp = createRequire(require.resolve("@strapi/upload/package.json"))("sharp");
 const operations = new AsyncLocalStorage();
+const { multipartFileOrder } = require("./media-temporary");
 
 async function admitRaster(bytes, name, mime, config) {
   boundedBytes(bytes, config);
@@ -37,9 +38,12 @@ async function admitRaster(bytes, name, mime, config) {
 }
 function createMediaAdmission({ config, publicRoot }) {
   async function withInputs(files, data, work) {
-    const list = Array.isArray(files) ? files : [files];
+    let list = Array.isArray(files) ? files : [files];
     if (!list.length || list.length > config.maxFiles || list.some(file => !file))
       fail("media_file_count", "Upload between 1 and 10 media files");
+    // Explicit fileInfo arrays have already been aligned by the native controller.
+    // Otherwise preserve multipart wire order, not asynchronous disk completion.
+    if (!Array.isArray(data?.fileInfo)) list = multipartFileOrder(list);
     if (data?.path) fail("media_invalid_path", "Custom media storage paths are not allowed");
     const infos = Array.isArray(data?.fileInfo) ? data.fileInfo : [data?.fileInfo];
     // Validate names/types for every input before allocating quarantine or scanning.
