@@ -63,3 +63,17 @@ test("real INSTREAM protocol accepted only on clean result; malware and missing 
   } finally {await new Promise(resolve=>server.close(resolve));}
  }
 });
+
+test("in-memory document admission uses identical bounds/type/scanner policy and snapshots bytes",async t=>{
+ const {scannerFixture}=require("./helpers/media-scanner-fixture");
+ const scanner=await scannerFixture(t),storage=createDocumentStorage({...scanner.config,root:scanner.root});
+ for(const bytes of ["pdf",Buffer.alloc(0),Buffer.alloc(MAX_BYTES+1)]) await assert.rejects(storage.admitBytes({bytes,name:"quote.pdf",mime:"application/pdf"}));
+ await assert.rejects(storage.admitBytes({bytes:pdf,name:"../quote.pdf",mime:"application/pdf"}));
+ await assert.rejects(storage.admitBytes({bytes:pdf,name:"quote.pdf",mime:"image/png"}));
+ assert.equal(scanner.scanned.length,0);
+ const bytes=Buffer.from(pdf),pending=storage.admitBytes({bytes,name:"quote.pdf",mime:"application/pdf"});bytes.fill(0);
+ const admitted=await pending;assert.deepEqual(admitted.bytes,pdf);assert.equal(admitted.checksum,digest(pdf));assert.equal(admitted.name,"quote.pdf");
+ scanner.setResponder(()=>"stream: Eicar-Test-Signature FOUND\0");
+ await assert.rejects(storage.admitBytes({bytes:pdf,name:"quote.pdf",mime:"application/pdf"}));
+ await assert.rejects(createDocumentStorage({scanner:{}}).admitBytes({bytes:pdf,name:"quote.pdf",mime:"application/pdf"}),e=>e.status===503);
+});

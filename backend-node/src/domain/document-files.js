@@ -52,7 +52,14 @@ async function admit(file, config) {
   let bytes;
   try { bytes = await readFileBounded(file.filepath, config); }
   catch (error) { if (error.name === "MediaAdmissionError") fail(error.code, error.message, error.status); throw error; }
-  const mime = documentType(file.originalFilename, file.mimetype, bytes);
+  return admitBytes({ bytes, name: file.originalFilename, mime: file.mimetype }, config);
+}
+async function admitBytes(input, config) {
+  if (!input || !Buffer.isBuffer(input.bytes) || input.bytes.length === 0) fail("document_invalid_bytes", "Document bytes are required");
+  if (input.bytes.length > Math.min(MAX_BYTES, config.maxBytes ?? MAX_BYTES)) fail("document_too_large", "Document exceeds the 1 MiB limit", 413);
+  // Snapshot before asynchronous scanning; callers cannot mutate the admitted payload.
+  const bytes = Buffer.from(input.bytes);
+  const mime = documentType(input.name, input.mime, bytes);
   try { await scanBytes(bytes, config.scanner); }
   catch (error) { if (error.name === "MediaAdmissionError") fail(error.code, error.message, error.status); throw error; }
   if (mime !== "application/pdf") {
@@ -65,7 +72,7 @@ async function admit(file, config) {
     } catch { fail("document_invalid_image", "Document image could not be safely decoded"); }
   }
   // Keep exact admitted bytes: signatures bind these bytes, not a rewritten image.
-  return { bytes, mime, name: file.originalFilename, checksum: createHash("sha256").update(bytes).digest("hex") };
+  return { bytes, mime, name: input.name, checksum: createHash("sha256").update(bytes).digest("hex") };
 }
 function keyPath(root, key) {
   if (typeof key !== "string" || !/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/.test(key)) fail("document_file_unavailable", "Document file is unavailable", 404);
@@ -103,6 +110,6 @@ function createDocumentStorage(config = readDocumentConfig()) {
     } catch (error) { if (error instanceof AppError) throw error; fail("document_file_unavailable", "Document file is unavailable", 404); }
     finally { await handle?.close(); }
   }
-  return { admit: file => admit(file, config), store, remove, read, ready: () => assertRoot(config) };
+  return { admit: file => admit(file, config), admitBytes: input => admitBytes(input, config), store, remove, read, ready: () => assertRoot(config) };
 }
-module.exports = { MAX_BYTES, BACKEND, readDocumentConfig, assertRoot, validateInput, documentType, admit, keyPath, createDocumentStorage };
+module.exports = { MAX_BYTES, BACKEND, readDocumentConfig, assertRoot, validateInput, documentType, admit, admitBytes, keyPath, createDocumentStorage };

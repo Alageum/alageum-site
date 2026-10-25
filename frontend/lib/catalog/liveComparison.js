@@ -12,7 +12,7 @@ export function liveComparisonRows(products) {
   return [{ key: 'category', label: 'Категория' }, ...specRows, ...detailed.values()];
 }
 export function liveComparisonValue(product, row) {
-  if (row.technical) return catalogSpecValueText(product, row, comparisonSpecValue(product.technicalSpecs || [], row, valueOrDash));
+  if (row.technical) return catalogSpecValueText(product, row, comparisonSpecValue(product.technicalSpecs || [], row));
   if (row.attribute) {
     const found = (product.attributes || []).find(item => item.code === row.code && (item.unit || '') === row.unit);
     return found ? (typeof found.value === 'object' ? JSON.stringify(found.value) : String(found.value ?? '—')) : '—';
