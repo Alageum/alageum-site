@@ -27,6 +27,7 @@ for line in lines:
     if actual != digest: raise SystemExit('Backup checksum mismatch; nothing restored.')
     seen.add(name)
 if seen != expected: raise SystemExit('Backup incomplete; nothing restored.')
+if 'format=alageum-paired-backup-v2' not in (root/'metadata.txt').read_text().splitlines(): raise SystemExit('Backup format mismatch; nothing restored.')
 PY
 python3 "$here/verify-media-archive.py" "$backup/media.tar.gz"
 running="$(compose ps --status running --services)"
@@ -49,9 +50,10 @@ const fs=require("node:fs");
 const {inspectMediaStorage}=require("/app/src/domain/media-storage");
 process.umask(0o022);
 (async()=>{
+await require("/app/src/domain/document-files").assertRoot({root:"/var/lib/alageum/private-documents"});
 const report=await inspectMediaStorage({publicRoot:"/var/lib/alageum/public",quarantineRoot:"/var/lib/alageum/private-quarantine"});
 if (!report.directories_ready) process.exit(1);
-for (const p of ["/var/lib/alageum/public/uploads","/var/lib/alageum/private-quarantine"]) {
+for (const p of ["/var/lib/alageum/public/uploads","/var/lib/alageum/private-quarantine","/var/lib/alageum/private-documents"]) {
   if (fs.lstatSync(p).isSymbolicLink() || fs.readdirSync(p).length) process.exit(1);
 }
 if (fs.readdirSync("/var/lib/alageum/public").some(p=>p!=="uploads")) process.exit(1);

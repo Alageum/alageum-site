@@ -1,6 +1,9 @@
 "use client";
 
 import { useCallback, useLayoutEffect, useRef, useState } from 'react';
+import { usePathname } from 'next/navigation';
+import { DocumentUpload, DocumentDownload } from './DocumentFileActions';
+import { fileLabels } from '@/lib/documents/fileLabels';
 import { useAuth } from '@/components/AuthProvider';
 import { getDocuments } from '@/lib/api/documents';
 import { createDocumentRead, initialDocumentRead, documentReadError } from '@/lib/documents/read';
@@ -11,6 +14,8 @@ const signingEnabled = process.env.NEXT_PUBLIC_DOCUMENT_SIGNING_ENABLED === '1';
 
 function DocumentList({ scope }) {
   const { isAuthScopeCurrent, hasPermission } = useAuth();
+  const pathname = usePathname();
+  const labels = fileLabels[pathname?.split('/')[1]] || fileLabels.ru;
   const [signingDocument, setSigningDocument] = useState(null);
   const signingTrigger = useRef(null);
   const closeSigning = useCallback(() => { setSigningDocument(null); signingTrigger.current?.focus(); }, []);
@@ -25,6 +30,8 @@ function DocumentList({ scope }) {
   }, [scope, isAuthScopeCurrent]);
 
   return <section className={styles.workspace} data-testid="documents-list" aria-label="Документы организации" aria-busy={state.status === 'loading'}>
+    <button className="buttonSecondary" type="button" disabled={state.status === 'loading'} onClick={() => reader.current?.reload()}>{labels.refresh}</button>
+    {hasPermission('document.create') && <DocumentUpload scope={scope} labels={labels} onSaved={() => reader.current?.reload()} />}
     {state.status === 'loading' && <p role="status">Загрузка документов…</p>}
     {state.status === 'error' && <div className="card">
       <p className="error" role="alert">{documentReadError(state.error)}</p>
@@ -33,6 +40,7 @@ function DocumentList({ scope }) {
     {state.status === 'ready' && (state.value.length ? <div className="grid">
       {state.value.map(item => <div className="card" key={item.id} data-testid="document-summary">
         <h3>{item.title}</h3><p>{item.number || "Без номера"}</p><span className="muted">{item.type_code}</span>
+        <DocumentDownload item={item} scope={scope} labels={labels} />
         {signingEnabled && hasPermission('document.sign') && <div className={styles.documentActions}><button className="buttonSecondary" type="button" onClick={event => { signingTrigger.current = event.currentTarget; setSigningDocument(item); }}>Подпись ЭЦП</button></div>}
       </div>)}
     </div> : <p className="card muted" role="status">Данных пока нет</p>)}

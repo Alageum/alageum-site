@@ -6,6 +6,7 @@ import { getQuote } from '@/lib/api/quotes';
 import { catalogPrice } from '@/lib/catalog/admin';
 import { hasQuoteSnapshot, quoteDate, quoteError, quoteScope, quoteStatus, quoteTitle, UUID } from '@/lib/quotes/model';
 import QuoteAccess from './QuoteAccess';
+import QuoteSigningRequest from './QuoteSigningRequest';
 function OwnQuote({ id }) {
   const { profile } = useAuth(),scope = quoteScope(profile);
   const [retry, setRetry] = useState(0),[state, setState] = useState(null),key = `${scope}:${id}:${retry}`;
@@ -19,6 +20,7 @@ function OwnQuote({ id }) {
   const quote = state.data;
   const allSnapshots = quote.items.length > 0 && quote.items.every(hasQuoteSnapshot);
   return <><LocaleElement as="div" className="quote-page-heading"><LocaleElement as="h1">Запрос {quote.id.slice(0, 8)}</LocaleElement><LocaleElement as="span" className="quote-status">{quoteStatus(quote.status)}</LocaleElement><Link className="buttonSecondary" href={`/b2b/quotes/${quote.id}/print`}>Версия для печати</Link></LocaleElement><LocaleElement as="p" className="quote-id">ID: {quote.id}</LocaleElement><LocaleElement as="p">{quoteDate(quote.created_at)} · Позиций: {quote.item_count}</LocaleElement><LocaleElement as="p" className="card" role="status">Запрос сохранён в базе. Отправка менеджеру и CRM пока не подключена. Это не заказ и не подтверждение наличия.</LocaleElement>
+    <QuoteSigningRequest key={`${scope}:${quote.id}`} quoteId={quote.id} scope={scope} />
     {quote.comment && <LocaleElement as="section" className="card"><LocaleElement as="h2">Ваше сообщение</LocaleElement><LocaleElement as="p" className="quote-comment">{quote.comment}</LocaleElement></LocaleElement>}
     <LocaleElement as="section"><LocaleElement as="h2">{allSnapshots ? 'Состав на момент сохранения' : 'Состав запроса'}</LocaleElement><LocaleElement as="p" className="muted">{allSnapshots ? 'Названия, цены и версия товара зафиксированы в запросе. Изменения каталога не обновляют эту копию. Цены справочные.' : 'В этом запросе есть позиции без исторической копии товара. Для них показаны только сохранённые данные запроса. Актуальный каталог не подставляется вместо отсутствующей копии.'}</LocaleElement><LocaleElement as="div" className="quote-list">{quote.items.map((item) => {
           const hasSnapshot = hasQuoteSnapshot(item);

@@ -15,3 +15,21 @@ Start with [the administrator handoff](../docs/ADMINISTRATOR-RU.md), then
 Only the edge publishes 80/443. The app requires operator-provisioned persistent
 paths, DB/HTTPS certificates, SMTP and runtime secrets. Real-server acceptance,
 recovery rehearsal and operator cutover are not implied by checked-in files.
+
+## Private document files
+
+Provision `${ALAGEUM_DATA_DIR}/private-documents` as an empty, app-UID-owned
+mode `0700` directory alongside (never inside) public storage and quarantine.
+The backend mounts it at `/var/lib/alageum/private-documents`; set
+`ALAGEUM_DOCUMENT_ROOT` accordingly. No proxy alias or public URL may expose it.
+Uploads require `document.create` (currently administrator), downloads require
+`document.read` and the active company/session. Only PDF/JPEG/PNG up to **1 MiB**
+are accepted; the limit matches the existing multipart parser. Admission uses
+the configured ClamAV daemon and fails closed. PDFs are delivered as attachments,
+not executed or rendered on the server. This is not a PDF semantic validator.
+
+Paired backup format **v2** now includes private document bytes with the database,
+public media and quarantine. Restore intentionally rejects older v1 snapshots
+rather than silently restore document references without their bytes. Keep v1
+backups and their matching old release for an isolated legacy recovery; do not
+rename a format marker to bypass validation. Rehearse v2 recovery before cutover.

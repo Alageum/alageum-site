@@ -67,7 +67,7 @@ function expireSession(requestSession) {
   if (typeof window !== "undefined") window.dispatchEvent(new Event("alageum:session-expired"));
 }
 
-async function request(path, options = {}, retry = true, candidateOrganizationId, onAcceptedQuoteReceipt) {
+async function request(path, options = {}, retry = true, candidateOrganizationId, onAcceptedQuoteReceipt, binary = false) {
   if (isPublicOnly()) throw new ApiError(503, { error: { code: 'service_unavailable', message: PUBLIC_UNAVAILABLE_MESSAGE } });
   const session = captureSession();
   const headers = new Headers(options.headers || {});
@@ -85,14 +85,40 @@ async function request(path, options = {}, retry = true, candidateOrganizationId
       const rotated = sameContext(session) && !sameSession(session) ? captureSession() : await rotateSession(session);
       if (!sameSession(rotated)) throw sessionChanged();
       if (options.signal?.aborted) throw sessionChanged();
-      return request(path, options, false, candidateOrganizationId);
+      return request(path, options, false, candidateOrganizationId, undefined, binary);
     } catch (error) {
       expireSession(session);
       throw error;
     }
   }
   if (response.status === 401 && authenticatedRead) expireSession(session);
-  const payload = response.status === 204 ? null : await response.json().catch(() => ({}));
+  let payload;
+  if (binary && response.ok) {
+    const contentType = (response.headers.get("Content-Type") || "").split(";")[0].trim();
+    const size = Number(response.headers.get("Content-Length"));
+    if (!["application/pdf", "image/jpeg", "image/png"].includes(contentType) || size > 1048576) {
+      await response.body?.cancel();
+      throw new ApiError(502, { error: { code: "invalid_document_file" } });
+    }
+    const reader = response.body?.getReader(), chunks = [];
+    let length = 0;
+    if (!reader) throw new ApiError(502, { error: { code: "invalid_document_file" } });
+    try {
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        length += value.byteLength;
+        if (length > 1048576 || options.signal?.aborted || !sameContext(session)) {
+          await reader.cancel();
+          if (options.signal?.aborted || !sameContext(session)) throw sessionChanged();
+          throw new ApiError(502, { error: { code: "invalid_document_file" } });
+        }
+        chunks.push(value);
+      }
+    } finally { reader.releaseLock(); }
+    if (!length) throw new ApiError(502, { error: { code: "invalid_document_file" } });
+    payload = { blob: new Blob(chunks, { type: contentType }), contentType };
+  } else payload = response.status === 204 ? null : await response.json().catch(() => ({}));
   if (!response.ok) throw new ApiError(response.status, payload);
   if (onAcceptedQuoteReceipt) {
     // The sole accepted-receipt exception belongs to the fixed quote POST below.
@@ -111,6 +137,15 @@ async function request(path, options = {}, retry = true, candidateOrganizationId
 }
 
 export const apiFetch = (path, options = {}, retry = true) => request(path, options, retry);
+
+// Only authenticated private-document reads return binary data. They share the
+// same refresh, tenant-generation and cancellation checks as JSON responses.
+export const downloadDocumentFile = (id, { signal } = {}) => {
+  if (!/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(id || "")) {
+    throw new ApiError(400, { error: { code: "invalid_document_id" } });
+  }
+  return request(`/documents/${id}/download`, { signal }, true, undefined, undefined, true);
+};
 
 // Only this read may override the active tenant header. Validate first; the auth
 // coordinator commits a selection later without temporarily changing the session.

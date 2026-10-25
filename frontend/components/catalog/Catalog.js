@@ -3,6 +3,7 @@ import { displayProductName, displayExecution, displaySubtype, displayExecutionV
 import SelectionIndicator from '@/components/ui/SelectionIndicator';
 import QuickProductDetails from './QuickProductDetails';
 import ParametricFilters from './ParametricFilters';
+import SearchHistory, {saveSearch} from './SearchHistory';
 import { filterAdvancedProducts as filterProducts, advancedFacetKeys, readFacetSelection } from '@/lib/catalog/advancedQuery';
 import { useTranslate } from '@/components/locale/LocaleProvider';
 import './ParametricCatalog.css';
@@ -90,11 +91,12 @@ function StaticCatalog() {
     <LocaleElement as="nav" className="breadcrumbs" aria-label="Хлебные крошки"><Link href="/catalog/home">Каталог оборудования</Link><LocaleElement as="span" aria-hidden="true">/</LocaleElement><LocaleElement as="span">Каталог</LocaleElement></LocaleElement>
     <LocaleElement as="div" className="catalog-heading"><LocaleElement as="div"><LocaleElement as="p" className="catalog-kicker">КАТАЛОГ / ПАРАМЕТРИЧЕСКИЙ ПОИСК</LocaleElement><LocaleElement as="h1">{params.category ? categories.find(category=>category.id===params.category)?.name || 'Оборудование' : 'Каталог оборудования'}</LocaleElement></LocaleElement><LocaleElement as="p">Найдите, сравните и сохраните оборудование для проекта.</LocaleElement></LocaleElement>
     {apiMode ? <LocaleElement as="div" className="catalog-notice"><LocaleElement as="span" className="notice-mark">i</LocaleElement><LocaleElement as="div"><LocaleElement as="strong">Режим Backend API</LocaleElement><LocaleElement as="span"> Данные из существующего API. Сопоставление технических полей и подборка для API-позиций ещё не согласованы.</LocaleElement></LocaleElement></LocaleElement> : <CatalogNotice compact source={demoMode ? 'demo' : 'official'} />}
-    <LocaleElement as="form" className="catalog-search" onSubmit={(event) => {event.preventDefault();const data=new FormData(event.currentTarget);update({ q: data.get('q').trim(), searchMode: data.get('searchMode') });}} role="search">
+    <LocaleElement as="form" className="catalog-search" onSubmit={(event) => {event.preventDefault();const data=new FormData(event.currentTarget);saveSearch(data.get('q'));update({ q: data.get('q').trim(), searchMode: data.get('searchMode') });}} role="search">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" stroke="currentColor" strokeWidth="1.5" /><path d="m16 16 4.5 4.5" stroke="currentColor" strokeWidth="1.5" /></svg>
       <LocaleElement as="input" key={params.q || ''} name="q" type="search" aria-label="Поиск по каталогу" defaultValue={params.q || ''} placeholder="Наименование, артикул или параметр оборудования" maxLength={200} />
       <LocaleElement as="select" name="searchMode" aria-label="Режим поиска" defaultValue={params.searchMode||'all'} key={params.searchMode||'all'}><LocaleElement as="option" value="all">Все слова</LocaleElement><LocaleElement as="option" value="exact">Точное обозначение</LocaleElement></LocaleElement><LocaleElement as="button" type="submit" className="catalog-button primary">Найти <LocaleElement as="span" aria-hidden="true">→</LocaleElement></LocaleElement>
     </LocaleElement>
+    <SearchHistory onSelect={q=>update({q})}/>
     <LocaleElement as="div" className="parametric-search-help"><LocaleElement as="span">Поиск по обозначению, описанию и параметрам. Например: «630 кВА» или «10 кВ».</LocaleElement>{params.category && <LocaleElement as="button" className="text-button" onClick={()=>update({category:'',equipmentType:''})}>Искать во всех категориях →</LocaleElement>}</LocaleElement>
     <LocaleElement as="div" className="catalog-workspace">
       <LocaleElement as="button" type="button" className="catalog-button filter-toggle" aria-expanded={filtersOpen} aria-controls="catalog-filters" onClick={() => setFiltersOpen(!filtersOpen)}>Параметры и категории {activeFilters.length ? `(${activeFilters.length})` : ''}<LocaleElement as="span" aria-hidden="true">{filtersOpen ? '−' : '+'}</LocaleElement></LocaleElement>

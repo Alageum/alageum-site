@@ -36,7 +36,7 @@ class PackageContracts(unittest.TestCase):
         self.assertIn("postgres:17-bookworm@", self.config["services"]["postgres"]["image"])
     def test_explicit_persistent_mounts_and_quarantine(self):
         mounts = self.config["services"]["backend"]["volumes"]
-        for target in ["/var/lib/alageum/public", "/var/lib/alageum/private-quarantine"]:
+        for target in ["/var/lib/alageum/public", "/var/lib/alageum/private-quarantine", "/var/lib/alageum/private-documents"]:
             mount = next(m for m in mounts if m["target"] == target)
             self.assertEqual(mount["type"], "bind")
             self.assertFalse(mount["bind"]["create_host_path"])
@@ -111,7 +111,7 @@ class ConfigurationChecks(unittest.TestCase):
         self.root = pathlib.Path(self.temp.name)
         env = {"APP_ENV":"production", "NODE_ENV":"production", "DATABASE_SSL":"true",
                "ALAGEUM_TRUSTED_PROXY_IPS":"172.30.44.2", "ALAGEUM_MEDIA_CLAMAV_HOST":"172.30.45.2",
-               "ALAGEUM_MEDIA_PUBLIC_ROOT":"/var/lib/alageum/public", "ALAGEUM_MEDIA_QUARANTINE_DIR":"/var/lib/alageum/private-quarantine",
+               "ALAGEUM_DOCUMENT_ROOT":"/var/lib/alageum/private-documents", "ALAGEUM_MEDIA_PUBLIC_ROOT":"/var/lib/alageum/public", "ALAGEUM_MEDIA_QUARANTINE_DIR":"/var/lib/alageum/private-quarantine",
                "ALAGEUM_SEED_DEMO":"0", "ALAGEUM_IMPORT_CATALOG":"0", "ALAGEUM_EDS_ENABLED":"0",
                "ALAGEUM_BROWSER_ORIGIN":"https://site.example.test", "CORS_ORIGINS":"https://site.example.test"}
         self.config = {"services":{name:{"image":"fixture@sha256:"+"a"*64} for name in ["postgres","clamav","backend","frontend","proxy","storage"]}}
@@ -147,7 +147,7 @@ class ArchiveChecks(unittest.TestCase):
     def make(self, extra=None, roots=True):
         temp = tempfile.TemporaryDirectory();self.addCleanup(temp.cleanup)
         path = pathlib.Path(temp.name)/'media.tar.gz'
-        entries = [("public", tarfile.DIRTYPE, 0o755), ("public/uploads", tarfile.DIRTYPE, 0o755), ("private-quarantine", tarfile.DIRTYPE, 0o700)] if roots else []
+        entries = [("public", tarfile.DIRTYPE, 0o755), ("public/uploads", tarfile.DIRTYPE, 0o755), ("private-quarantine", tarfile.DIRTYPE, 0o700), ("private-documents", tarfile.DIRTYPE, 0o700)] if roots else []
         if extra: entries.extend(extra)
         with tarfile.open(path,"w:gz") as tar:
             for name, kind, mode in entries:
@@ -188,7 +188,7 @@ class ShellWorkflowChecks(unittest.TestCase):
         self.backups = self.root/'backups';self.backups.mkdir()
         archive_path = self.root/'media.tar.gz'
         with tarfile.open(archive_path,'w:gz') as tar:
-            for name, mode in [('public',0o755),('public/uploads',0o755),('private-quarantine',0o700)]:
+            for name, mode in [('public',0o755),('public/uploads',0o755),('private-quarantine',0o700),('private-documents',0o700)]:
                 item=tarfile.TarInfo(name);item.type=tarfile.DIRTYPE;item.mode=mode;tar.addfile(item)
         template = ConfigurationChecks();template.setUp()
         self.addCleanup(template.temp.cleanup)

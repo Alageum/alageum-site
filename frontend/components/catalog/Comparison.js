@@ -2,9 +2,10 @@
 import { displayProductName, displayExecution } from '@/lib/catalog/presentation';
 import { isApiCatalog } from '@/lib/catalog/apiData';
 import { LiveComparison } from './LiveCatalog';
-import Link from 'next/link';
+import Link from '@/components/locale/LocaleLink';
 import { useState } from 'react';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useSearchParams } from 'next/navigation';
+import { useRouter } from '@/components/locale/navigation';
 import { products, categoryName, specRows, valueOrDash, specUnit } from '@/lib/catalog/data';
 import { comparisonSpecValue } from '@/lib/catalog/comparison';
 import { catalogSpecValueText } from '@/lib/catalog/ptmmDimensionQualification';

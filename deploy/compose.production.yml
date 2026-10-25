@@ -14,6 +14,11 @@ x-quarantine: &quarantine
   source: ${ALAGEUM_DATA_DIR:?Set persistent data directory}/private-quarantine
   target: /var/lib/alageum/private-quarantine
   bind: {create_host_path: false}
+x-documents: &documents
+  type: bind
+  source: ${ALAGEUM_DATA_DIR:?Set persistent data directory}/private-documents
+  target: /var/lib/alageum/private-documents
+  bind: {create_host_path: false}
 services:
   postgres:
     image: postgres:17-bookworm@sha256:3645570cccdfa447589da9f57dd740faa29b30938e861289a5574b6ca6b03826
@@ -89,6 +94,7 @@ services:
       CORS_ORIGINS: https://${ALAGEUM_HOSTNAME:?Set public DNS hostname}
       ALAGEUM_TRUSTED_PROXY_IPS: 172.30.44.2
       ALAGEUM_MEDIA_PUBLIC_ROOT: /var/lib/alageum/public
+      ALAGEUM_DOCUMENT_ROOT: /var/lib/alageum/private-documents
       ALAGEUM_MEDIA_QUARANTINE_DIR: /var/lib/alageum/private-quarantine
       ALAGEUM_MEDIA_CLAMAV_HOST: 172.30.45.2
       ALAGEUM_MEDIA_CLAMAV_SOCKET: ""
@@ -103,6 +109,7 @@ services:
     volumes:
       - *public
       - *quarantine
+      - *documents
       - type: bind
         source: ${ALAGEUM_TLS_DIR:?Set TLS directory}/postgres/ca.crt
         target: /run/database-ca/ca.crt
@@ -184,7 +191,7 @@ services:
     command: ["true"]
     network_mode: none
     read_only: true
-    volumes: [*public, *quarantine]
+    volumes: [*public, *quarantine, *documents]
     cap_drop: [ALL]
     security_opt: [no-new-privileges:true]
     logging: *logging

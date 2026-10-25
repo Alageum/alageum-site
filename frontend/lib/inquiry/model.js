@@ -1,6 +1,7 @@
 export const SALES_EMAIL = 'sales@alageum.com';
 export const SALES_PHONE = '+7 771 005 22 22';
 export const INQUIRY_INTENTS = [
+  { value: 'investment', label: 'Инвестиционное сотрудничество' },
   { value: 'quote', label: 'Коммерческое предложение' },
   { value: 'selection', label: 'Помощь с подбором оборудования' },
   { value: 'consultation', label: 'Консультация по проекту' },
@@ -49,16 +50,18 @@ export function buildInquiryText(values, items = [], documents = []) {
   const intent = INQUIRY_INTENTS.find((item) => item.value === draft.intent).label;
   const lines = [inquirySubject(draft), '', `Цель: ${intent}`];
   for (const [key, label] of [['project', 'Проект'], ['solution', 'Направление'], ['location', 'Место поставки / объекта'], ['deadline', 'Планируемый срок']]) if (draft[key]) lines.push(`${label}: ${draft[key]}`);
-  lines.push('', 'ЗАДАЧА', draft.description || 'Описание не указано.', '', 'ОБОРУДОВАНИЕ');
+  lines.push('', 'ЗАДАЧА', draft.description || 'Описание не указано.');
+  if(draft.intent !== 'investment') { lines.push('', 'ОБОРУДОВАНИЕ');
   if (!items.length) lines.push('Нужна помощь с подбором. Конкретные позиции не выбраны.');
   items.forEach((item, index) => lines.push(`${index + 1}. ${item.name} (${item.sku}) — ${item.quantity} шт.${item.source === 'demo' ? ' [СИНТЕТИЧЕСКИЙ ДЕМО-ПРИМЕР, НЕ РЕАЛЬНЫЙ ТОВАР]' : item.source === 'official' ? ' [публичная серия / семейство; исполнение нужно уточнить]' : ''}`));
+  }
   const names = documentNames(documents);
   if (names.length) lines.push('', 'ПЛАНИРУЕМЫЕ ДОКУМЕНТЫ (ТОЛЬКО НАЗВАНИЯ)', ...names.map((name) => `- ${name}`), 'Сами файлы не приложены. Приложите их отдельно в почтовой программе, если требуется.');
   lines.push('', 'КОНТАКТ ДЛЯ ОТВЕТА', `Имя: ${draft.contactName || 'Не указано'}`);
   if (draft.company) lines.push(`Компания: ${draft.company}`);
   if (draft.email) lines.push(`Email: ${draft.email}`);
   if (draft.phone) lines.push(`Телефон: ${draft.phone}`);
-  lines.push('', 'Просьба уточнить исполнение, технические параметры, стоимость, наличие и сроки поставки.');
+  lines.push('', draft.intent==='investment'?'Просьба направить обращение ответственному за инвестиционное сотрудничество.':'Просьба уточнить исполнение, технические параметры, стоимость, наличие и сроки поставки.');
   if (items.some((item) => item.source === 'demo')) lines.push('ВНИМАНИЕ: список содержит синтетические тестовые позиции. Они не описывают реальную продукцию ALAGEUM.');
   lines.push('', 'Подготовлено локально на сайте. Этот текст не является заказом, счётом или подтверждением отправки.');
   return lines.join('\n');

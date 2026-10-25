@@ -1,7 +1,7 @@
 .workspace { min-width: 0; display: grid; gap: 16px; overflow-wrap: anywhere; }
 .workspace :global(.grid) { grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); }
 
-.documentActions { margin-top: 12px; }
+.documentActions { margin-top: 12px; display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
 .signing { min-width: 0; display: grid; gap: 12px; }
 .signing p, .signing h3 { margin: 0; }
 .signingHeader { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
@@ -19,3 +19,8 @@
   .signingPreview div { grid-template-columns: 1fr; gap: 3px; }
   .signingActions { flex-direction: column; }
 }
+
+.fileArea { display: grid; gap: 12px; justify-items: start; }
+.uploadForm { width: 100%; display: grid; gap: 12px; }
+.uploadForm label { display: grid; gap: 6px; }
+.uploadForm input, .uploadForm select { max-width: 100%; min-width: 0; }

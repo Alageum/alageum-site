@@ -117,9 +117,9 @@ module.exports = async function verifyDocuments({ app, api, check, manifest, pas
     }
     assert.equal(await countAllAudit(), before);
   });
-  await check("document mutations, bytes, uploads, signing and provider paths stay unavailable", async () => {
+  await check("legacy mutation endpoints stay unavailable and reader cannot upload", async () => {
     const before = await countAllAudit();
-    for (const method of ["POST", "PUT", "PATCH", "DELETE"]) for (const path of ["/documents", `/documents/${ids.versioned}`]) await api(path, { actor: actors.reader, organization: a, method, data: {}, expected: 405 });
+    for (const method of ["POST", "PUT", "PATCH", "DELETE"]) for (const path of ["/documents", `/documents/${ids.versioned}`]) await api(path, { actor: actors.reader, organization: a, method, data: {}, expected: method === "POST" && path === "/documents" ? 403 : 405 });
     for (const path of [`/documents/${ids.versioned}/download`, `/documents/${ids.versioned}/versions`, `/documents/${ids.versioned}/sign`, `/files/${manifest.files.version9}`, `/files/${manifest.files.version9}/download`, "/files", "/storage/providers"]) {
       await api(path, { actor: actors.reader, organization: a, expected: 404 });
       await api(path, { actor: actors.reader, organization: a, method: "POST", data: {}, expected: 405 });

@@ -141,6 +141,7 @@ if (phase === 'initial') {
   assert.equal((await api('/auth/account')).user.email, state.email);
   const media = await raw('/uploads/server-proof.png');
   assert.equal(media.status, 200); assert.match(media.headers['content-type'], /image\/png/);
+  assert.equal((await raw('/private-documents/document-proof.pdf')).status, 404);
   const hidden = await raw('/private-quarantine/server-proof.bin');
   assert.equal(hidden.status, 404);
   passed(phase === 'recreated' ? 'database_cookie_and_public_media_survive_container_recreation'
