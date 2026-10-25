@@ -358,7 +358,7 @@ jobs:
 
   webpack-compatibility:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 40
     env:
       APP_ENV: test
       STRAPI_TELEMETRY_DISABLED: 'true'
@@ -414,14 +414,14 @@ jobs:
           assert.equal(report.fixtureRemoved, true);
           NODE
       - name: Install bounded official Chromium for compatibility acceptance
-        timeout-minutes: 5
+        timeout-minutes: 10
         working-directory: frontend
         shell: bash
         env:
           PLAYWRIGHT_DOWNLOAD_CONNECTION_TIMEOUT: '60000'
         run: |
           set -euo pipefail
-          timeout --signal=TERM --kill-after=10s 270s npx --no-install playwright install --with-deps chromium 2>&1 | tee ../webpack-compatibility-evidence/chromium-install.log
+          timeout --signal=TERM --kill-after=10s 570s npx --no-install playwright install --with-deps chromium 2>&1 | tee ../webpack-compatibility-evidence/chromium-install.log
       - name: Verify compiled polyfill equivalence in a real browser
         timeout-minutes: 3
         shell: bash
