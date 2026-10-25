@@ -64,6 +64,9 @@ const routes = [
   ["POST", "/quotes/catalog", "createQuote"],
   ["GET", "/quotes", "quotes"],
   ["GET", "/quotes/:id", "quote"],
+  ["GET", "/quote-signature-requests", "quoteSigningInbox"],
+  ["POST", "/quotes/:id/signature-request/prepare", "prepareQuoteSigning"],
+  ["GET", "/quotes/:id/signature-request/pdf", "downloadQuoteSigningPdf"],
   ["GET", "/quotes/:id/signature-request", "quoteSigningStatus"],
   ["POST", "/quotes/:id/signature-request", "requestQuoteSigning"],
 ];

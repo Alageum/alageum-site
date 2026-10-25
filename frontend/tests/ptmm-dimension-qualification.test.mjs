@@ -14,6 +14,7 @@ import { normalizeApiProduct, liveHref } from '../lib/catalog/apiData.js';
 import { getApiCatalogReadProduct } from '../lib/catalog/identityCompletion.js';
 import { catalogPrice } from '../lib/catalog/admin.js';
 import { comparisonSpecValue } from '../lib/catalog/comparison.js';
+import { liveComparisonRows, liveComparisonValue, liveRowDiffers } from '../lib/catalog/liveComparison.js';
 import { parseComparison, selectionCsv } from '../lib/catalog/query.js';
 import { equipmentModelName } from '../lib/catalog/models/types.js';
 import { getPtmmDimensionQualification, catalogSpecValueText } from '../lib/catalog/ptmmDimensionQualification.js';
@@ -60,6 +61,7 @@ async function render(name, products, ids, differencesOnly = false) {
     ...data, ...presentation, ...grouping, ...sources, products, officialProducts: products,
     productById: id => products.find(product => product.id === id),
     comparisonSpecValue, catalogSpecValueText, CatalogSpecValue,
+    liveComparisonRows, liveComparisonValue, liveRowDiffers,
     ...(ImportedSpecifications ? { ImportedSpecifications } : {}),
     getApiCatalogReadProduct, parseComparison, catalogPrice, liveHref, equipmentModelName,
     Link: props => createElement('a', props), LocalResourceAnchor: props => createElement('a', props),
@@ -212,4 +214,13 @@ test('qualification preserves every source record, API identity/price, CSV and a
 test('page 68 source bytes remain those used by the visual dimension review', async () => {
   const bytes = await readFile(new URL('../public/catalog-source/page-068.webp', import.meta.url));
   assert.equal(createHash('sha256').update(bytes).digest('hex'), '68538d5278821dcc15fe6064621c8271c0397e1c0fc18a60dfcfa885093a9c77');
+});
+
+test('live differences-only preserves source-qualified dimensions and source links for equal numbers', async () => {
+  const html = await render('LiveComparison', liveProducts, ['cat-ptm-tded-v001', 'cat-ptm-tded-v002'], true);
+  assert.match(html, /<tr class="has-difference"><th[^>]*>Габаритные размеры В×Ш×Г, мм<\/th>/);
+  assert.match(html, /<td class="catalog-spec-text">800×600×380<\/td>/);
+  assert.match(html, /ПТМ в таблице источника: 800×600×380/);
+  assert.match(html, /data-ptmm-dimension-context="cat-ptm-tded-v002"/);
+  assert.match(html, /href="\/catalog\/source\?page=68"/);
 });

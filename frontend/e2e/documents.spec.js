@@ -175,7 +175,7 @@ test('responsive failed and malformed document reads show bounded errors and exp
   for (const scenario of [
     { status: 403, label: 'Нет доступа к документам.' },
     { status: 500, label: 'Не удалось загрузить документы. Повторите попытку.' },
-    { network: true, label: 'Не удалось загрузить документы. Повторите попытку.' },
+    { network: true, label: 'Не удалось подтвердить данные документов. Повторите загрузку.' },
     { status: 200, body: { items: [] }, label: 'Не удалось подтвердить данные документов. Повторите загрузку.' },
     { status: 200, body: { ...actualPage, items: [{ ...actual, latest_file_id: 1 }] }, label: 'Не удалось подтвердить данные документов. Повторите загрузку.' },
     { status: 200, body: { ...actualPage, items: [{ ...actual, latest_file_id: '/files/private' }] }, label: 'Не удалось подтвердить данные документов. Повторите загрузку.' },

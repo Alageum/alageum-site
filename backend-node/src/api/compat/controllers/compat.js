@@ -71,6 +71,13 @@ module.exports = ({ strapi }) => ({
     return strapi.alageum.quotes.create(ctx);
   },
   quotes: (ctx) => strapi.alageum.quotes.list(ctx),
+  quoteSigningInbox: (ctx) => strapi.alageum.quoteSigning.inbox(ctx),
+  downloadQuoteSigningPdf: (ctx) => strapi.alageum.quoteSigning.download(ctx),
+  prepareQuoteSigning: async (ctx) => {
+    privateResponse(ctx);
+    await strapi.alageum.quoteCreateLimit(clientAddress(ctx), ctx);
+    return strapi.alageum.quoteSigning.prepare(ctx);
+  },
   quoteSigningStatus: (ctx) => strapi.alageum.quoteSigning.status(ctx),
   requestQuoteSigning: (ctx) => strapi.alageum.quoteSigning.request(ctx),
   quote: (ctx) => strapi.alageum.quotes.detail(ctx),

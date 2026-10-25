@@ -1,0 +1,53 @@
+{
+  "format": "alageum-current-legacy-reference-v1",
+  "source_revision": "588dc98e7f0ded7a31b8fdee21c724f8889dfbb7",
+  "evidence": "Current sanitized checkout behavioral parity; not a historical approval or full legacy endpoint execution",
+  "provenance": {
+    "transfer_revision": "53f4ec681babcdd0f468059cdb93cfcfde294fa3",
+    "transfer_history_included": false,
+    "reason": "README_HANDOFF documents removal of inactive legacy default credentials during the independent Git transfer. Historical fixtures and generator bytes remain unchanged.",
+    "source_change": "backend/app/core/config.py",
+    "historical_sha256": "9a04a04b490af73a7309b0d62966dfe4a409942f2a02ed4027b2e2c8c0e1fc14",
+    "current_sha256": "e3e235c75301606f04f54cd6986bcd0ab17d234caddc73f389bf5e6742c0eed1"
+  },
+  "archives": {
+    "query": {
+      "fixture": "legacy-query.json",
+      "fixture_sha256": "c65df50f34280e913453c73f54833a83f63b5a91bbd3fb413cc4b676a2600ea6",
+      "generator": "generate_legacy_query.py",
+      "generator_sha256": "327d025dfc0f6681f50fabd2816b8774b305e87dde13d50734d9563bc0ad59ad",
+      "source_revision": "2c762db62fd779595a3d78e336f7911f10953783"
+    },
+    "quote_limit": {
+      "fixture": "legacy-quote-limit.json",
+      "fixture_sha256": "3614623cdead5186dae9a62e4fd018e01c7d7417f691831c60f05c8e440e0264",
+      "generator": "generate_legacy_quote_limit.py",
+      "generator_sha256": "40ddad60745cc62b264deb917d4725b45fee722b438a855a889f1e85bf536f14",
+      "source_revision": "8def4eb6b95588d11313f5df19f67bd80d1564a0"
+    }
+  },
+  "source_sha256": {
+    "backend/app/core/pagination.py": "f85f96ebd448176bd0e9b214f0145ef2c5153c6735af61d33ec8a94cecb5c8a1",
+    "backend/app/core/config.py": "e3e235c75301606f04f54cd6986bcd0ab17d234caddc73f389bf5e6742c0eed1",
+    "backend/app/core/errors.py": "31679dcc464399df31fad605749cbabd86d31b6d51a069e9250e9f57a93a890d",
+    "backend/app/catalog/router.py": "1cab3bbacc46dd77bde04c1035d573f2ed62f182239434280811b1bcf8568aeb",
+    "backend/app/commerce/router.py": "5bec87d8dc0bea983c188f6e22f2d6830cf35d6148289ed648230f0e974d0e5b",
+    "backend/app/core/redaction.py": "e96fdee9b954b494dff43dd859bb7fe686de52354ad66848576fb08fc2b773f3",
+    "backend/uv.lock": "80d93e2751be39e87ef0480761caa00369657f022bab5db4c51edeae36e7935e",
+    "backend/app/core/rate_limit.py": "d507548c315462875bda0bcff4c1cd7e742be431dae901555fc563ce1a313186"
+  },
+  "execution": {
+    "query": {
+      "all_archived_outputs_equal": true,
+      "behavior_sha256": "c2b2d813243ebdb310d41d9bc1e7b4aa5e8f41cfa5383a21e78e8f6304e4b2d4",
+      "cases": 185,
+      "client_key_cases": 0
+    },
+    "quote_limit": {
+      "all_archived_outputs_equal": true,
+      "behavior_sha256": "a7c5040686e16c32a32bb3aae32eb61e63ce90b7d4b8ea7ec74c19187216aadd",
+      "cases": 12,
+      "client_key_cases": 9
+    }
+  }
+}

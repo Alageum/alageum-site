@@ -166,3 +166,9 @@ export async function apiPage(path, options = {}) {
   const payload = await apiFetch(path, options);
   return payload?.items || [];
 }
+
+// Authenticated creator-only read of the exact immutable quote PDF, never a public URL.
+export const downloadQuoteSigningPdf = (id, { signal } = {}) => {
+  if (!/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(id || "")) throw new ApiError(400, { error: { code: "invalid_quote_id" } });
+  return request(`/quotes/${id}/signature-request/pdf`, { signal }, true, undefined, undefined, true);
+};

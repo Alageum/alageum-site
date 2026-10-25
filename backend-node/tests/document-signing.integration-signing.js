@@ -336,6 +336,45 @@ test("isolated PostgreSQL document signing safety contract (synthetic verifier o
     await assert.rejects(table("quote_signing_packets").where({ id: packetId }).update({ assigned_manager_id: peer.id }), /immutable/);
     await assert.rejects(table("quote_signing_packets").where({ id: packetId }).del(), /immutable/);
     assert.equal(Number((await table("audit_events").where({ action: "quote.signing_requested", entity_id: quote.id }).count("* AS count").first()).count), 1);
+    // Real PDF rendering, synthetic storage/scanner only in this isolated test.
+    const stored = new Map(); let removed = 0;
+    const storage = { ready: async () => {}, admitBytes: async input => ({ ...input, checksum: policy.sha256(input.bytes) }),
+      store: async value => { const key = randomUUID(); stored.set(key, Buffer.from(value.bytes)); return key; },
+      remove: async key => { removed++; stored.delete(key); } };
+    const generated = qs.createQuoteSigning({ db, auth, audit: auditModule.audit, routing, storage });
+    async function anotherQuote() {
+      const next = { ...quote, id: randomUUID() };
+      await table("quote_requests").insert(next);
+      await table("quote_request_items").insert({ ...item, id: randomUUID(), quote_request_id: next.id, product_snapshot: JSON.stringify(item.product_snapshot) });
+      return next;
+    }
+    const next = await anotherQuote();
+    async function invoke(service, method, target = next, who = customer) { const c = ctx(who, target.id, {}); await service[method](c); return c; }
+    assert.equal((await invoke(generated, "status")).body.status, "preparation_available");
+    const prepared = await invoke(generated, "prepare");
+    assert.equal(prepared.status, 201); assert.equal(prepared.body.status, "ready");
+    const pdf = (await invoke(generated, "download")).body;
+    assert.ok(pdf.subarray(0, 5).equals(Buffer.from("%PDF-")));
+    assert.equal(policy.sha256(pdf), prepared.body.pdf_sha256);
+    assert.deepEqual([...stored.values()][0], pdf);
+    assert.equal((await invoke(generated, "prepare")).body.pdf_sha256, prepared.body.pdf_sha256);
+    assert.equal(stored.size, 1);
+    await assert.rejects(invoke(generated, "download", next, otherCustomer), code("quote_not_found"));
+    await invoke(generated, "request");
+    const inbox = ctx(actor, next.id, {}); await generated.inbox(inbox);
+    assert.ok(inbox.body.items.some(entry => entry.quote_id === next.id));
+    const peerInbox = ctx(peer, next.id, {}); await generated.inbox(peerInbox); assert.deepEqual(peerInbox.body.items, []);
+    const failed = await anotherQuote();
+    const badScan = qs.createQuoteSigning({ db, auth, audit: auditModule.audit, routing, storage: { ...storage, admitBytes: async () => { throw Error("synthetic scan unavailable"); } } });
+    await assert.rejects(invoke(badScan, "prepare", failed), /synthetic scan unavailable/);
+    assert.equal(stored.size, 1); assert.equal(await table("quote_signing_packets").where({ quote_id: failed.id }).first(), undefined);
+    const rollback = qs.createQuoteSigning({ db, auth, routing, storage, audit: async (tx, context, event) => {
+      if (event.action === "quote.pdf_prepared") throw Error("synthetic audit failure");
+      await auditModule.audit(tx, context, event);
+    } });
+    await assert.rejects(invoke(rollback, "prepare", failed), /synthetic audit failure/);
+    assert.equal(stored.size, 1); assert.equal(removed, 1);
+    assert.equal(await table("quote_signing_packets").where({ quote_id: failed.id }).first(), undefined);
     await db.raw("ALTER TABLE b2b.quote_signing_packets DISABLE TRIGGER guard_quote_signing_packet");
     await assert.rejects(qs.ensureSchema(db), /schema mismatch/);
     await db.raw("ALTER TABLE b2b.quote_signing_packets ENABLE TRIGGER guard_quote_signing_packet");

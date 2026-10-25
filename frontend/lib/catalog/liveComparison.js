@@ -12,11 +12,14 @@ export function liveComparisonRows(products) {
   return [{ key: 'category', label: 'Категория' }, ...specRows, ...detailed.values()];
 }
 export function liveComparisonValue(product, row) {
-  if (row.technical) return catalogSpecValueText(product, row, comparisonSpecValue(product.technicalSpecs || [], row));
+  if (row.technical) return comparisonSpecValue(product.technicalSpecs || [], row);
   if (row.attribute) {
     const found = (product.attributes || []).find(item => item.code === row.code && (item.unit || '') === row.unit);
     return found ? (typeof found.value === 'object' ? JSON.stringify(found.value) : String(found.value ?? '—')) : '—';
   }
   return row.key === 'category' ? categoryName(product.category) : valueOrDash(product[row.key], specUnit(product, row));
 }
-export const liveRowDiffers = (products, row) => new Set(products.map(product => liveComparisonValue(product, row))).size > 1;
+export const liveRowDiffers = (products, row) => new Set(products.map(product => {
+  const value = liveComparisonValue(product, row);
+  return row.technical ? catalogSpecValueText(product, row, value) : value;
+})).size > 1;

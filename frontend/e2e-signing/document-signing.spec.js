@@ -37,6 +37,7 @@ async function setup(page, { available = true, permissions = ['document.read', '
     const method = request.method(); calls.push({ path, method, body: request.postData() });
     const reply = data => route.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify(data) });
     if (path === '/auth/me') return reply({ user: { id: '20000000-0000-4000-8000-000000000001', email: 'fictitious@example.invalid' }, organization: { id: organization, name: organization === orgA ? 'Fictitious A' : 'Fictitious B' }, permissions });
+    if (path === '/quote-signature-requests') return reply({ items: [], page: 1, page_size: 20, total: 0 });
     if (path === '/documents') return reply({ items: [{ id: documentId, number: 'FIXTURE-009', title: organization === orgA ? 'Fictitious signing document' : 'Fictitious other organization', external_id: null, source: 'fixture', type_code: 'fixture_pdf', latest_file_id: versionId }], page: 1, page_size: 50, total: 1 });
     if (path === `/documents/${documentId}/signing`) return reply({ enabled: true, signing_allowed: available, reason: available ? null : 'verifier_unavailable', document_id: documentId, version, signature: null });
     if (path.endsWith('/signing/intents')) return reply({ id: intentId, document_id: documentId, version_id: versionId, sha256: hash, expires_at: '2099-01-01T00:00:00Z', content_base64: content.toString('base64') });

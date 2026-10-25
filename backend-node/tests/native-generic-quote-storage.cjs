@@ -140,7 +140,17 @@ async function spawnNative(childMode, name, database = BASE_DATABASE) {
   return report;
 }
 
+async function removeSyntheticPacketDependency(client) {
+  // Only this runner's disposable cloned fixture may remove the additive FK owner.
+  assert.equal((await client.query("SELECT current_database() AS name")).rows[0].name, CASE_DATABASE);
+  const relation = (await client.query("SELECT to_regclass('b2b.quote_signing_packets') AS name")).rows[0].name;
+  if (!relation) return;
+  assert.equal(Number((await client.query("SELECT count(*) AS count FROM b2b.quote_signing_packets")).rows[0].count), 0, "Never discard populated signing evidence");
+  await client.query("DROP TABLE b2b.quote_signing_packets");
+}
+
 async function oldQuoteTables(client, populated) {
+  await removeSyntheticPacketDependency(client);
   await client.query("DROP TABLE b2b.quote_request_items; DROP TABLE b2b.quote_requests");
   await client.query(`CREATE TABLE b2b.quote_requests (
     id uuid PRIMARY KEY,organization_id uuid NOT NULL REFERENCES b2b.organizations(id),created_by_id uuid NOT NULL REFERENCES b2b.users(id),
@@ -227,9 +237,10 @@ async function supervise() {
       ["old-empty", client => oldQuoteTables(client, false)],
       ["old-populated", client => oldQuoteTables(client, true)],
       ["partial-parent-only", client => client.query("DROP TABLE b2b.quote_request_items")],
-      ["partial-child-only", client => client.query("ALTER TABLE b2b.quote_request_items DROP CONSTRAINT quote_items_parent_mode_foreign; DROP TABLE b2b.quote_requests")],
-      ["native-populated-no-quotes", client => client.query("DROP TABLE b2b.quote_request_items; DROP TABLE b2b.quote_requests")],
+      ["partial-child-only", async client => { await removeSyntheticPacketDependency(client); await client.query("ALTER TABLE b2b.quote_request_items DROP CONSTRAINT quote_items_parent_mode_foreign; DROP TABLE b2b.quote_requests"); }],
+      ["native-populated-no-quotes", async client => { await removeSyntheticPacketDependency(client); await client.query("DROP TABLE b2b.quote_request_items; DROP TABLE b2b.quote_requests"); }],
       ["native-empty-no-quotes", async client => {
+        await removeSyntheticPacketDependency(client);
         await client.query("DROP TABLE b2b.quote_request_items; DROP TABLE b2b.quote_requests");
         const relations = (await catalog(client)).relations.filter(row => row.relkind === "r");
         await client.query(`TRUNCATE ${relations.map(row => `${qi(row.nspname)}.${qi(row.relname)}`).join(",")} CASCADE`);

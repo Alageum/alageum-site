@@ -1,7 +1,7 @@
 {
-  "format": "alageum-current-legacy-reference-v1",
-  "source_revision": "588dc98e7f0ded7a31b8fdee21c724f8889dfbb7",
-  "evidence": "Current sanitized checkout behavioral parity; not a historical approval or full legacy endpoint execution",
+  "format": "alageum-current-legacy-reference-v2",
+  "source_revision": "4b723b73515d0b2b4016541892ce69167ecafd7f",
+  "evidence": "Fresh current-source behavioral parity after certifi security update; not a historical approval or full legacy endpoint execution",
   "provenance": {
     "transfer_revision": "53f4ec681babcdd0f468059cdb93cfcfde294fa3",
     "transfer_history_included": false,
@@ -24,6 +24,13 @@
       "generator": "generate_legacy_quote_limit.py",
       "generator_sha256": "40ddad60745cc62b264deb917d4725b45fee722b438a855a889f1e85bf536f14",
       "source_revision": "8def4eb6b95588d11313f5df19f67bd80d1564a0"
+    },
+    "system": {
+      "fixture": "legacy-system.json",
+      "fixture_sha256": "02cc5f028c91edb5cfcba01431eaac98edf5ef4aac85dae02c24bfbed960c648",
+      "generator": "generate_legacy_system.py",
+      "generator_sha256": "47aedc106c4504a8615f753a7f0b2246f9ca8f8573a2b3fb1c3443c8d8d30ff7",
+      "source_revision": "74b92855d1dcc2997c471823f83686ac66972649"
     }
   },
   "source_sha256": {
@@ -33,8 +40,10 @@
     "backend/app/catalog/router.py": "1cab3bbacc46dd77bde04c1035d573f2ed62f182239434280811b1bcf8568aeb",
     "backend/app/commerce/router.py": "5bec87d8dc0bea983c188f6e22f2d6830cf35d6148289ed648230f0e974d0e5b",
     "backend/app/core/redaction.py": "e96fdee9b954b494dff43dd859bb7fe686de52354ad66848576fb08fc2b773f3",
-    "backend/uv.lock": "80d93e2751be39e87ef0480761caa00369657f022bab5db4c51edeae36e7935e",
-    "backend/app/core/rate_limit.py": "d507548c315462875bda0bcff4c1cd7e742be431dae901555fc563ce1a313186"
+    "backend/uv.lock": "06e080b4fa6191dcfea7e9f2189205c9cec4dc67cd66ec8fee654314ac2f1362",
+    "backend/app/core/rate_limit.py": "d507548c315462875bda0bcff4c1cd7e742be431dae901555fc563ce1a313186",
+    "backend/app/api/system.py": "d323369d9b7f23cbad18360228f455be20ff2f3f35dcb7f6645c952f84f7acf6",
+    "backend/app/core/metrics.py": "f295284890abc1626ec0649af9f52aea61effb062719ea7e49f072e2022049a8"
   },
   "execution": {
     "query": {
@@ -48,6 +57,35 @@
       "behavior_sha256": "a7c5040686e16c32a32bb3aae32eb61e63ce90b7d4b8ea7ec74c19187216aadd",
       "cases": 12,
       "client_key_cases": 9
+    },
+    "system": {
+      "all_archived_outputs_equal": true,
+      "behavior_sha256": "8058ed12f7ae70faa351a4c22765c6f16437930ab845614de56729bfdac916df",
+      "case_groups": {
+        "dto_cases": 3,
+        "integer_cases": 4,
+        "metric_steps": 6,
+        "rounding_cases": 99,
+        "timestamp_cases": 12
+      },
+      "cases": 124,
+      "client_key_cases": 0
     }
+  },
+  "prior_evidence": {
+    "manifest": "current-legacy-reference.pre-certifi-20261019.json",
+    "sha256": "14cc5a4788a83b8426f5afc6a55855e0ece8b77f6d9f31a5dac2cf9ac8cfac13",
+    "source_revision": "588dc98e7f0ded7a31b8fdee21c724f8889dfbb7"
+  },
+  "dependency_update": {
+    "file": "backend/uv.lock",
+    "historical_sha256": "80d93e2751be39e87ef0480761caa00369657f022bab5db4c51edeae36e7935e",
+    "current_sha256": "06e080b4fa6191dcfea7e9f2189205c9cec4dc67cd66ec8fee654314ac2f1362",
+    "package": "certifi",
+    "previous_version": "2026.7.22",
+    "current_version": "2026.10.19",
+    "previous_lock_revision": 3,
+    "current_lock_revision": 5,
+    "reason": "Same-major security dependency remediation; no reference behavioral runtime package pins changed."
   }
 }

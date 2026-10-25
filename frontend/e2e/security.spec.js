@@ -88,7 +88,7 @@ test("RFQ and ticket creation through UI", async ({ page }) => {
   await page.getByLabel("Сообщение (необязательно)").fill("Playwright RFQ");
   await page.getByRole("button", { name: "Сохранить запрос КП", exact: true }).click();
   await expect(page).toHaveURL(/\/b2b\/quotes\/[0-9a-f-]+$/);
-  await expect(page.getByRole("status")).toContainText("Запрос сохранён в базе");
+  await expect(page.getByRole("status").filter({ hasText: "Запрос сохранён в базе" })).toBeVisible();
   await page.reload();
   await expect(page.getByText("Playwright RFQ", { exact: true })).toBeVisible();
   await page.goto("/b2b/support");

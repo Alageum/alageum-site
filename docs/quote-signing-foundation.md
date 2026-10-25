@@ -10,22 +10,33 @@ certificates, signing, outbound customer/manager message, or order conversion wa
 - Additive `b2b.quote_signing_packets` binds canonical saved quote payload/hash to an
   already reviewed immutable EDS PDF snapshot/hash. Customer organization/creator
   are separate from supplier signing organization/assigned manager.
-- Only trusted server rendering code may call `provisionPacket`; there is no public
-  provisioning/upload URL. It must render the exact canonical payload, then provide
-  `renderedQuoteSha256` and the already provisioned EDS snapshot ID. A hash alone is
-  not proof that the PDF accurately represents its source; renderer review is required.
+- Server `quote-pdf.js` renders the canonical saved selection using pinned PDFKit and
+  bundled OFL Noto Sans. It includes source SHA256 and reference-price/no-offer/no-order
+  notice. No external resource fetching, executable document content, financial totals
+  or invented terms. Output is bounded to 1 MiB and deterministic for the same payload.
+- Creator-only `POST /quotes/:id/signature-request/prepare` renders outside the DB
+  transaction, admits exact bytes via the same fail-closed ClamAV/storage boundary,
+  then rechecks session, permission, catalog snapshot and manager authorization before
+  atomically creating supplier document/version/snapshot/packet. Failed commit removes
+  the private file; concurrent preparation discards its duplicate. No arbitrary PDF
+  upload or caller-supplied supplier identity is accepted by this route.
+- Creator-only `GET /quotes/:id/signature-request/pdf` returns the exact immutable
+  snapshot. Client checks SHA256 before saving. Preparation is separate from the
+  explicit client request to the manager. Hash binding complements, rather than
+  replacing, renderer review.
 - Packet fields cannot be updated/deleted. Only first `requested_at` transition is
   allowed. Duplicate client requests return the same request state and do not repeat audit.
 - Creator-only `GET/POST /api/v1/quotes/:id/signature-request`; POST body is `{}`.
-  Missing routing or reviewed PDF produces `configuration_required` / HTTP 503,
+  Missing routing/storage produces `configuration_required` / HTTP 503,
   never fabricated assignment or success. A client request is not a signature.
 - All existing EDS operations enforce assigned user + selected supplier organization,
   current active membership/read+sign permissions, client-request existence, exact
   current PDF binding. Authorization runs again after document locking and after
   external verification. Existing EDS expiry/cancel/replay logic is retained.
 - Quote detail explains configuration-required state and, only for a prepared packet,
-  can request full ЭЦП. The existing document signing panel remains the signing UI;
-  no supplier inbox or external notification delivery is implemented here.
+  can request full ЭЦП. `GET /quote-signature-requests` is a paginated assigned-manager
+  inbox, shown in Documents with the existing signing panel. No external notification
+  delivery is implemented.
 
 ## Required operator/integration work — NOT completed
 
@@ -34,12 +45,11 @@ certificates, signing, outbound customer/manager message, or order conversion wa
    with actual UUIDs; leave both empty until confirmed. Partial/invalid config fails
    startup. The manager needs active membership and `document.read`/`document.sign`.
    An application role alone does not prove legal signing authority.
-2. Implement/review deterministic server PDF rendering from the saved final list,
-   including required document wording/format. Do not invent price, taxes, delivery,
-   payment terms, or contractual obligations. Reuse reviewed private document storage
-   and malware scanning, then `document-signing.provisionSnapshot` and `provisionPacket`.
-   This pipeline is intentionally not auto-wired; therefore no live quote becomes
-   ready solely by setting environment variables.
+2. Review the generated final-list document wording/format for the business use case.
+   Rendering/storage/scan/binding pipeline is now implemented; deployment must configure
+   protected document root and live ClamAV. It deliberately contains reference catalog
+   values rather than inventing an enforceable seller offer, taxes, delivery/payment
+   terms or obligations. Changing this commercial meaning requires explicit requirements.
 3. Obtain official NCA SDK/libraries, current integration/API documentation and test
    certificates through the company-authorized SDK access process. Supply supported
    runtime/architecture, approved trust anchors, revocation/OCSP policy, certificate
@@ -55,8 +65,8 @@ certificates, signing, outbound customer/manager message, or order conversion wa
    cert, wrong key usage, unavailable OCSP, timeout, replay, concurrent requests and
    cancellation using official test fixtures. Verify current NCALayer response/profile
    against those fixtures. Test-only synthetic outcomes are not cryptographic evidence.
-6. Design manager inbox/notification delivery and post-signature commercial workflow
-   explicitly. Do not infer conversion into an order or external sending approval.
+6. Configure external notification delivery and post-signature commercial workflow
+   explicitly; assigned-manager internal inbox is implemented. Do not infer conversion into an order or external sending approval.
 
 ## Official references checked 2026-10-25
 
@@ -81,3 +91,24 @@ one audit event and schema drift rejection. It requires the existing disposable
 `run-signing-tests.sh` runner; local PostgreSQL was unavailable during implementation.
 Do not mark SQL integration, browser rendering, live SDK or real ЭЦП verified until
 those exact tests have run. No merge or deployment belongs to this increment.
+
+## SDK acquisition barrier verified directly (2026-10-25)
+
+Read-only inspection of official `https://sdk.pki.gov.kz/` and its public application
+asset `/static/js/main.a7722edb.js` established the supported route:
+
+- Initial registration selects physical/legal person and requires personal-data consent
+  at `https://sdk.pki.gov.kz/user-check`, CAPTCHA, IIN and (legal entity) BIN/company.
+- Application fields include information-system name, phone, email and user count.
+  Submission invokes NCALayer to sign the application XML. Owner/authorized representative
+  must perform this action; no registration, consent, CAPTCHA, signing or submission was
+  performed by the assistant.
+- Existing registrants can use `https://sdk.pki.gov.kz/get-sdk/` to request a download
+  link at their previously registered email. No email dispatch was attempted.
+- Official NCA 2025-10-23 announcement confirms updated test certificates are included
+  in the SDK: https://pki.gov.kz/ru/2025/10/23/уважаемые-пользователи-10/
+
+Needed handoff: authorized representative completes registration/retrieval and provides
+SDK libraries + documentation + test fixtures through an approved file channel. Do not
+send private keys/passwords. No public unauthenticated official SDK archive was identified;
+third-party redistributed crypto libraries are not a substitute for this trust boundary.
