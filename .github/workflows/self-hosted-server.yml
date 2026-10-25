@@ -2,9 +2,9 @@ name: Self-hosted production server proof
 
 on:
   push:
-    paths: ['deploy/**', 'backend-node/**', 'frontend/**', '.github/workflows/self-hosted-server.yml']
+    paths: ['deploy/**', 'backend-node/**', 'frontend/**', '.github/workflows/self-hosted-server.yml', '.github/workflows/ci.yml']
   pull_request:
-    paths: ['deploy/**', 'backend-node/**', 'frontend/**', '.github/workflows/self-hosted-server.yml']
+    paths: ['deploy/**', 'backend-node/**', 'frontend/**', '.github/workflows/self-hosted-server.yml', '.github/workflows/ci.yml']
   workflow_dispatch:
 
 permissions:

@@ -1,9 +1,9 @@
 name: Public media admission and real ClamAV
 on:
   pull_request:
-    paths: ['backend-node/**', '.github/workflows/media-security.yml']
+    paths: ['backend-node/**', '.github/workflows/media-security.yml', '.github/workflows/ci.yml']
   push:
-    paths: ['backend-node/**', '.github/workflows/media-security.yml']
+    paths: ['backend-node/**', '.github/workflows/media-security.yml', '.github/workflows/ci.yml']
   workflow_dispatch:
 permissions:
   contents: read

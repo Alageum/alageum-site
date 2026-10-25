@@ -5,14 +5,14 @@
     "legacy": 50,
     "legacy_business": 46,
     "legacy_system": 4,
-    "node_compat": 61,
+    "node_compat": 69,
     "overlap": 33,
     "overlap_business": 29,
     "overlap_system": 4,
     "absent": 17,
     "absent_business": 17,
     "absent_system": 0,
-    "node_only": 28
+    "node_only": 36
   },
   "legacy": [
     {
@@ -389,6 +389,16 @@
     },
     {
       "method": "GET",
+      "path": "/api/v1/document-types",
+      "source": "backend-node/src/api/compat/routes/compat.js"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/documents/{param}/download",
+      "source": "backend-node/src/api/compat/routes/compat.js"
+    },
+    {
+      "method": "GET",
       "path": "/api/v1/documents/{param}/signing",
       "source": "backend-node/src/api/compat/routes/compat.js"
     },
@@ -405,6 +415,21 @@
     {
       "method": "GET",
       "path": "/api/v1/organizations/current/profile",
+      "source": "backend-node/src/api/compat/routes/compat.js"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/quote-signature-requests",
+      "source": "backend-node/src/api/compat/routes/compat.js"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/quotes/{param}/signature-request",
+      "source": "backend-node/src/api/compat/routes/compat.js"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/quotes/{param}/signature-request/pdf",
       "source": "backend-node/src/api/compat/routes/compat.js"
     },
     {
@@ -479,6 +504,11 @@
     },
     {
       "method": "POST",
+      "path": "/api/v1/documents",
+      "source": "backend-node/src/api/compat/routes/compat.js"
+    },
+    {
+      "method": "POST",
       "path": "/api/v1/documents/{param}/signing/intents",
       "source": "backend-node/src/api/compat/routes/compat.js"
     },
@@ -505,6 +535,16 @@
     {
       "method": "POST",
       "path": "/api/v1/organization/access-requests/{param}/reject",
+      "source": "backend-node/src/api/compat/routes/compat.js"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/quotes/{param}/signature-request",
+      "source": "backend-node/src/api/compat/routes/compat.js"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/quotes/{param}/signature-request/prepare",
       "source": "backend-node/src/api/compat/routes/compat.js"
     }
   ]
