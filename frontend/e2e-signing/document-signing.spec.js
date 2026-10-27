@@ -101,11 +101,28 @@ test('lost result can explicitly replay the exact signature without a second sig
   expect(await page.evaluate(() => window.__signingCommands.length)).toBe(1);
 });
 
-for (const action of ['Закрыть', 'Отменить', 'organization', 'logout', 'new-login']) test(`interrupt ${action} closes socket and suppresses late submission`, async ({ page }) => {
+for (const action of ['Закрыть', 'Отменить', 'organization', 'logout', 'new-login']) test(`interrupt ${action} closes socket and suppresses late submission`, async ({ page }, testInfo) => {
   const calls = await setup(page, { signing: 'hold' }); await open(page);
   await panel(page).getByRole('button', { name: 'Подписать в NCALayer', exact: true }).click();
   await expect(panel(page)).toContainText('Подтвердите подписание в NCALayer.');
-  if (action === 'Закрыть' || action === 'Отменить') await panel(page).getByRole('button', { name: action, exact: true }).click();
+  if (action === 'Закрыть') {
+    // Long SHA/UUID values must not grow the panel horizontally on mobile.
+    const layout = await panel(page).evaluate(element => {
+      const bounds = element.getBoundingClientRect();
+      const hash = element.querySelector('[data-testid="signing-hash"]');
+      return { left: bounds.left, right: bounds.right, viewport: document.documentElement.clientWidth,
+        hashOverflow: hash.scrollWidth - hash.clientWidth };
+    });
+    expect(layout.left).toBeGreaterThanOrEqual(0);
+    expect(layout.right).toBeLessThanOrEqual(layout.viewport + 1);
+    expect(layout.hashOverflow).toBeLessThanOrEqual(1);
+    const close = panel(page).getByRole('button', { name: 'Закрыть', exact: true });
+    await close.scrollIntoViewIfNeeded();
+    await expect(close).toBeInViewport();
+    console.log('Signing responsive layout:', JSON.stringify({ project: testInfo.project.name, ...layout }));
+    await page.screenshot({ path: testInfo.outputPath('signing-responsive-layout.png') });
+    await close.click();
+  } else if (action === 'Отменить') await panel(page).getByRole('button', { name: action, exact: true }).click();
   else await page.evaluate(({ action, orgB, nextSigningSessionId }) => {
     const session = JSON.parse(sessionStorage.getItem('alageum_session'));
     if (action === 'logout') sessionStorage.removeItem('alageum_session');

@@ -1257,7 +1257,7 @@ jobs:
         run: |
           set -euo pipefail
           timeout --signal=TERM --kill-after=10s 270s npx --no-install playwright install --with-deps chromium 2>&1 | tee ../document-metadata-evidence/chromium-install.log
-      - name: Verify isolated real HTTP and all twenty-six document metadata browser cases
+      - name: Verify isolated real HTTP and all thirty-four document metadata and file browser cases
         timeout-minutes: 17
         shell: bash
         run: |
@@ -1276,10 +1276,10 @@ jobs:
           const report = JSON.parse(fs.readFileSync(path.join(evidence, 'results.json')));
           assert.equal(report.status, 'passed');
           assert.equal(report.browser, 'passed');
-          assert.equal(report.checks.length, 26);
+          assert.equal(report.checks.length, 33);
           assert.ok(report.checks.every(check => check.status === 'passed'));
           assert.equal(report.cleanup, 'passed');
-          assert.equal(report.browserTests, 26);
+          assert.equal(report.browserTests, 34);
           assert.equal(report.screenshots.length, 6);
           for (const project of ['documents-desktop', 'documents-mobile']) {
             for (const name of ['documents-list', 'documents-empty', 'documents-retry']) {
@@ -1287,7 +1287,7 @@ jobs:
             }
           }
           const log = fs.readFileSync(path.join(evidence, 'playwright.log'), 'utf8');
-          assert.match(log, /\b26 passed\b/);
+          assert.match(log, /\b34 passed\b/);
           assert.doesNotMatch(log, /\b[1-9]\d* (?:failed|flaky|skipped|did not run)\b/);
           NODE
       - name: Retain sanitized document metadata evidence and successful screenshots
@@ -1655,4 +1655,5 @@ jobs:
           path: |
             signing-evidence/
             frontend/playwright-report/document-signing-fixtures/**/error-context.md
+            frontend/playwright-report/document-signing-fixtures/**/signing-responsive-layout.png
           retention-days: 14
