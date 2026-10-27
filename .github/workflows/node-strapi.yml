@@ -790,7 +790,7 @@ jobs:
 
   company-profile:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 40
     env:
       APP_ENV: test
       STRAPI_TELEMETRY_DISABLED: 'true'
@@ -825,14 +825,14 @@ jobs:
           npm ci --prefix backend-node
           npm ci --prefix frontend
       - name: Install bounded Chromium for profile acceptance
-        timeout-minutes: 5
+        timeout-minutes: 10
         working-directory: frontend
         shell: bash
         env:
           PLAYWRIGHT_DOWNLOAD_CONNECTION_TIMEOUT: '60000'
         run: |
           set -euo pipefail
-          timeout --signal=TERM --kill-after=10s 270s npx --no-install playwright install --with-deps chromium 2>&1 | tee ../company-profile-evidence/chromium-install.log
+          timeout --signal=TERM --kill-after=10s 570s npx --no-install playwright install --with-deps chromium 2>&1 | tee ../company-profile-evidence/chromium-install.log
       - name: Verify isolated real HTTP and all seventeen profile browser cases
         timeout-minutes: 17
         shell: bash
@@ -870,7 +870,7 @@ jobs:
 
   organization-selection:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 40
     env:
       APP_ENV: test
       STRAPI_TELEMETRY_DISABLED: 'true'
@@ -905,14 +905,14 @@ jobs:
           npm ci --prefix backend-node
           npm ci --prefix frontend
       - name: Install bounded Chromium for organization acceptance
-        timeout-minutes: 5
+        timeout-minutes: 10
         working-directory: frontend
         shell: bash
         env:
           PLAYWRIGHT_DOWNLOAD_CONNECTION_TIMEOUT: '60000'
         run: |
           set -euo pipefail
-          timeout --signal=TERM --kill-after=10s 270s npx --no-install playwright install --with-deps chromium 2>&1 | tee ../organization-selection-evidence/chromium-install.log
+          timeout --signal=TERM --kill-after=10s 570s npx --no-install playwright install --with-deps chromium 2>&1 | tee ../organization-selection-evidence/chromium-install.log
       - name: Verify isolated real HTTP and all nineteen organization browser cases
         timeout-minutes: 17
         shell: bash
@@ -1126,7 +1126,7 @@ jobs:
 
   invoice-metadata:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 40
     env:
       APP_ENV: test
       STRAPI_TELEMETRY_DISABLED: 'true'
@@ -1161,14 +1161,14 @@ jobs:
           npm ci --prefix backend-node
           npm ci --prefix frontend
       - name: Install bounded Chromium for invoice metadata acceptance
-        timeout-minutes: 5
+        timeout-minutes: 10
         working-directory: frontend
         shell: bash
         env:
           PLAYWRIGHT_DOWNLOAD_CONNECTION_TIMEOUT: '60000'
         run: |
           set -euo pipefail
-          timeout --signal=TERM --kill-after=10s 270s npx --no-install playwright install --with-deps chromium 2>&1 | tee ../invoice-metadata-evidence/chromium-install.log
+          timeout --signal=TERM --kill-after=10s 570s npx --no-install playwright install --with-deps chromium 2>&1 | tee ../invoice-metadata-evidence/chromium-install.log
       - name: Verify isolated real HTTP and all twenty-eight invoice metadata browser cases
         timeout-minutes: 17
         shell: bash
