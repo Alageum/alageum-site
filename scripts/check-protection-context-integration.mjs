@@ -30,7 +30,17 @@ export const protectionExampleExactIds = Object.freeze(['cat-ptm-tded', 'cat-ptm
 const digest = bytes => createHash('sha256').update(bytes).digest('hex');
 const read = file => fs.readFileSync(path.join(root, file));
 
+// Historical callers cannot opt into current semantics through arguments.
 export async function verifyProtectionContextPreservation() {
+  return verifyProtectionContextPreservationCore(false);
+}
+export async function verifyCurrentProtectionContextPreservation() {
+  const { verifyCurrentClientDtoContract } = await import('./catalog/current-client-dto-contract.mjs');
+  const dtoContract = await verifyCurrentClientDtoContract();
+  const counts = await verifyProtectionContextPreservationCore(true);
+  return { status: 'current-preservation-only', historicalApproval: false, releaseApproval: false, dtoContract, counts };
+}
+async function verifyProtectionContextPreservationCore(currentDtoExtension) {
   const baselineBytes = read(`${protectionContextReviewDir}/baseline-outputs.json`);
   assert.equal(digest(baselineBytes), 'edc00fd04790d5493d14c0965cc3fc3363af2d7ad2ca0c5b702887bd2e8a0b0b', 'Changed exact PR33 checkpoint');
   const baseline = JSON.parse(baselineBytes), current = await protectionContextAssetSnapshot(root);
@@ -49,6 +59,9 @@ export async function verifyProtectionContextPreservation() {
     // normalized objects are byte-identical. Every former field stays identical.
     normalizedRows.push(normalized);
     const { sourceVariantSpecs, variantSpecs, ...previousFields } = normalized;
+    // Current-only contract first independently binds all 843 raw source rows.
+    // Historical entry points retain exact prior whole-object comparisons.
+    if (currentDtoExtension) for (const key of ['current', 'function', 'manufacturers']) delete previousFields[key];
     assert.equal(Object.hasOwn(normalized, 'sourceVariantSpecs'), Object.hasOwn(row, 'variantSpecs'));
     assert.deepEqual(sourceVariantSpecs, row.variantSpecs);
     assert.deepEqual(variantSpecs, (row.variantSpecs || []).map(spec => ({ label: String(spec.label || ''), value: String(spec.value ?? '—'), unit: String(spec.unit || ''), page: Number.isInteger(spec.page) ? spec.page : null })));
@@ -60,7 +73,7 @@ export async function verifyProtectionContextPreservation() {
   const auditBytes = read(`${protectionContextReviewDir}/baseline-api-spec-audit.json`);
   assert.equal(digest(auditBytes), 'ef3ea8944fd248e83b690e7a3d69554a04b4df73a3f7e4380384a06aef6e2323');
   const audit = JSON.parse(auditBytes), summaryChanges = [], facetChanges = [];
-  const priorRows = normalizedRows.map(row => { const prior = { ...row }; delete prior.variantSpecs; delete prior.sourceVariantSpecs; return prior; });
+  const priorRows = normalizedRows.map(row => { const prior = { ...row }; delete prior.variantSpecs; delete prior.sourceVariantSpecs; if (currentDtoExtension) for (const key of ['current','function','manufacturers']) delete prior[key]; return prior; });
   const displayed = rows => rows.map(({ key, label, value, unit, values }) => ({ key, label, value, unit, values }));
   for (let index = 0; index < sourceProducts.length; index++) {
     const source = sourceProducts[index], live = normalizedRows[index], prior = priorRows[index];

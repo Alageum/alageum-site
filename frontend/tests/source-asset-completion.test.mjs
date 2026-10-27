@@ -19,7 +19,7 @@ import { resolveModelType, equipmentModelName } from '../lib/catalog/models/type
 import { resolveIconType, equipmentIconName } from '../lib/catalog/models/iconTypes.js';
 import { createEquipmentGeometry, disposeEquipmentGeometry } from '../lib/catalog/models/geometry.js';
 import { renderEquipmentIcon } from './helpers/render-equipment-icon.mjs';
-import { verifySourceAssetScope, verifySourceAssetPreservation } from '../../scripts/check-source-asset-completion.mjs';
+import { verifySourceAssetScope, verifyCurrentSourceAssetPreservation } from '../../scripts/check-source-asset-completion.mjs';
 import { verifySourceAssetDependencyAmendment, sourceAssetAmendmentFiles, digest, readBytes } from '../../scripts/catalog/source-asset-reviewed-dependencies.mjs';
 import { measurementColumnBaselineCommit } from '../../scripts/catalog/measurement-column-reviewed-dependencies.mjs';
 const rows = officialProducts.filter(row => Object.hasOwn(manifest.records, row.id));
@@ -30,7 +30,10 @@ const api = record => normalizeApiProduct({ id: manifest.records[record.id].data
 
 test('historical thirteen-binding checkpoint and the current three-binding successor each preserve their exact scope', async () => {
   assert.deepEqual(verifySourceAssetScope(), { addedBindings: 13, accessories: 3, x4k3: 10, newProducts: 0 });
-  const { historicalCheckpoint, forwardPreservation } = await verifySourceAssetPreservation();
+  const proof = await verifyCurrentSourceAssetPreservation();
+  assert.equal(proof.status, 'current-preservation-only');
+  assert.equal(proof.historicalApproval, false); assert.equal(proof.releaseApproval, false);
+  const { historicalCheckpoint, forwardPreservation } = proof.counts;
   assert.deepEqual(historicalCheckpoint, { commit: measurementColumnBaselineCommit,
     productBodies: 843, unaffectedRecords: 830, legacyRecords: 238, choiceRecords: 36, choices: 74, oldModelTypes: 122, oldIconTypes: 132 });
   assert.deepEqual(forwardPreservation, { productBodies: 843, unaffectedRecords: 840, legacyRecords: 238, priorSourceAssetAdmissions: 13,

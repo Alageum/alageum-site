@@ -13,7 +13,7 @@ import { getEquipmentIcon } from '../frontend/lib/catalog/models/iconMap.js';
 import { getEquipmentConstructionChoices } from '../frontend/lib/catalog/models/transformerExecutionChoices.js';
 import { getNtmiSourcePreview } from '../frontend/lib/catalog/ntmiSourcePreview.js';
 import { getSourcePageAsset } from '../frontend/lib/catalog/sources.js';
-import { verifyProtectionContextPreservation } from './check-protection-context-integration.mjs';
+import { verifyProtectionContextPreservation, verifyCurrentProtectionContextPreservation } from './check-protection-context-integration.mjs';
 import { importedProductId } from './catalog/catalog-asset-snapshot.mjs';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const reviewDir = 'docs/catalog-transformers-2026/review/measurement-column-completion';
@@ -61,6 +61,13 @@ export function verifyMeasurementColumnScope() {
   return { addedDefaultBindings: 3, refinedIcons: 3, addedSourceBasedIcons: 0, newProducts: 0 };
 }
 export async function verifyMeasurementColumnPreservation() {
+  return verifyMeasurementColumnPreservationCore(false);
+}
+export async function verifyCurrentMeasurementColumnPreservation() {
+  const counts = await verifyMeasurementColumnPreservationCore(true);
+  return { status: 'current-preservation-only', historicalApproval: false, releaseApproval: false, counts };
+}
+async function verifyMeasurementColumnPreservationCore(currentDtoExtension) {
   const baselineBytes = read(`${reviewDir}/baseline-outputs.json`);
   assert.equal(hash(baselineBytes), 'dda99f863f2a27a114e2b36ad597d338395868ef8b36655827f6a52540d69c2f', 'Changed exact PR32 baseline snapshot');
   const checkpointBytes = read('docs/catalog-transformers-2026/review/protection-context-integration/baseline-outputs.json');
@@ -97,7 +104,8 @@ export async function verifyMeasurementColumnPreservation() {
   assert.deepEqual(counts, { productBodies: 843, unaffectedRecords: 840, legacyRecords: 238, priorSourceAssetAdmissions: 13,
     choiceRecords: 36, choices: 74, sourceContextPreviews: 2, oldModelTypes: 125, oldIconTypes: 135,
     sourceGroundedDefault3D: 464, sourceBasedIcons: 465, explicitConstructionGaps: 243, constructionGapFamilies: 29 });
-  await verifyProtectionContextPreservation();
+  if (currentDtoExtension) await verifyCurrentProtectionContextPreservation();
+  else await verifyProtectionContextPreservation();
   return counts;
 }
 export async function verifyMeasurementColumnCompletion({ candidate = false } = {}) {

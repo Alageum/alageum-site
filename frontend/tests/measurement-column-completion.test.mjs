@@ -20,7 +20,7 @@ import { resolveIconType, equipmentIconName } from '../lib/catalog/models/iconTy
 import { createEquipmentGeometry, disposeEquipmentGeometry } from '../lib/catalog/models/geometry.js';
 import { getProductMedia } from '../lib/catalog/media.js';
 import { renderEquipmentIcon } from './helpers/render-equipment-icon.mjs';
-import { verifyMeasurementColumnScope, verifyMeasurementColumnPreservation } from '../../scripts/check-measurement-column-completion.mjs';
+import { verifyMeasurementColumnScope, verifyCurrentMeasurementColumnPreservation } from '../../scripts/check-measurement-column-completion.mjs';
 const rows = officialProducts.filter(row => Object.hasOwn(manifest.records, row.id));
 const api = record => normalizeApiProduct({ id: manifest.records[record.id].database_id, public_key: record.id, sku: record.sku,
   category_public_key: record.category, translations: { ru: { name: record.name } }, specs: record, provenance: record,
@@ -29,7 +29,10 @@ const api = record => normalizeApiProduct({ id: manifest.records[record.id].data
 
 test('only three exact source records refine icons and gain default geometry while all PR32 outputs are preserved', async () => {
   assert.deepEqual(verifyMeasurementColumnScope(), { addedDefaultBindings: 3, refinedIcons: 3, addedSourceBasedIcons: 0, newProducts: 0 });
-  const preservation = await verifyMeasurementColumnPreservation();
+  const proof = await verifyCurrentMeasurementColumnPreservation();
+  assert.equal(proof.status, 'current-preservation-only');
+  assert.equal(proof.historicalApproval, false); assert.equal(proof.releaseApproval, false);
+  const preservation = proof.counts;
   assert.equal(preservation.oldModelTypes, 125); assert.equal(preservation.oldIconTypes, 135);
   assert.equal(preservation.unaffectedRecords, 840); assert.equal(preservation.sourceGroundedDefault3D, 464);
 });

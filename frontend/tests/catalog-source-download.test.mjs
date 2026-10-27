@@ -1,3 +1,4 @@
+import { verifyTransformerViewerHtml } from '../scripts/verify-local-content-contract.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { existsSync, readFileSync } from 'node:fs';
@@ -65,6 +66,7 @@ test('transformer viewer replaces the unbundled original PDF download with an ho
   assert.equal(catalogSources['transformers-2026'].page_count, 187);
   for (const [locale, notice] of Object.entries(notices)) {
     const html = render('transformers-2026', 187, locale);
+    verifyTransformerViewerHtml(html, 187);
     assert.ok(html.includes(`data-source-document-notice="transformers-2026">${notice}</p>`), locale);
     assert.doesNotMatch(html, /transformers-2026-original\.pdf|download=/);
     assert.ok(html.includes('value="187" selected=""'), locale);

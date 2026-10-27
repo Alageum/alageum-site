@@ -22,7 +22,7 @@ import { getEquipmentConstructionChoices } from '../lib/catalog/models/transform
 import { sourceContextManifest, createSourceContextAssetVerifier } from '../lib/catalog/source-context/sourceContexts.js';
 import { renderEquipmentIcon } from './helpers/render-equipment-icon.mjs';
 import { importedProductId } from '../../scripts/catalog/measurement-column-asset-snapshot.mjs';
-import { verifyProtectionContextPreservation } from '../../scripts/check-protection-context-integration.mjs';
+import { verifyCurrentProtectionContextPreservation } from '../../scripts/check-protection-context-integration.mjs';
 const api = row => normalizeApiProduct({ id: importedProductId(row.id), public_key: row.id, sku: row.sku,
   category_public_key: row.category, translations: { ru: { name: row.name } }, specs: row, provenance: row,
   media: row.image ? [{ path: row.image, kind: 'image', alt: row.imageCaption }] : [],
@@ -31,7 +31,10 @@ const rows = Object.keys(bindings.records).map(productById);
 const proof = await createSourceContextAssetVerifier(asset => fs.readFileSync(new URL(`../public${asset}`, import.meta.url))).verify();
 
 test('843 bodies, all old geometry/SVG outputs and unchanged coverage survive the exact three binding refinements and 24 contexts', async () => {
-  const counts = await verifyProtectionContextPreservation();
+  const proof = await verifyCurrentProtectionContextPreservation();
+  assert.equal(proof.status, 'current-preservation-only');
+  assert.equal(proof.historicalApproval, false); assert.equal(proof.releaseApproval, false);
+  const counts = proof.counts;
   assert.equal(counts.sourceGroundedDefault3D, 464); assert.equal(counts.sourceBasedIcons, 465);
   assert.equal(counts.sourceContextRecords, 24); assert.equal(counts.explicitConstructionGaps, 243);
 });
