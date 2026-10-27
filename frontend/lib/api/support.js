@@ -1,3 +1,4 @@
+import { collectPages, pagePath } from './pagination.js';
 import { ApiError, apiFetch } from "./client.js";
 
 const uuid = value => typeof value === 'string' && /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(value);
@@ -5,15 +6,16 @@ const record = value => value && typeof value === 'object' && !Array.isArray(val
 const ticketSummary = item => record(item) && uuid(item.id) && ['subject', 'category', 'status'].every(key => typeof item[key] === 'string');
 const categorySummary = item => record(item) && uuid(item.id) && ['code', 'label'].every(key => typeof item[key] === 'string');
 async function readPage(path, validItem, { signal } = {}) {
-  const page = await apiFetch(path, { signal });
-  if (!record(page) || !Array.isArray(page.items) || !page.items.every(validItem) ||
-    !Number.isSafeInteger(page.page) || page.page < 1 || !Number.isSafeInteger(page.page_size) || page.page_size < 1 ||
-    !Number.isSafeInteger(page.total) || page.total < 0) {
-    // A missing/truncated envelope is a failed read, never an empty resource.
-    throw new ApiError(502, { error: { code: 'invalid_support_page', message: 'Не удалось подтвердить данные поддержки.' } });
+  try { return await collectPages(number => apiFetch(pagePath(path, number), { signal }), (page, number) =>
+    record(page) && Array.isArray(page.items) && page.items.every(validItem) &&
+    Number.isSafeInteger(page.page) && page.page === number && Number.isSafeInteger(page.page_size) && page.page_size >= 1 && page.page_size <= 100 &&
+    Number.isSafeInteger(page.total) && page.total >= 0 && page.items.length <= page.page_size);
+  } catch (error) {
+    if (error.status || error.name === 'AbortError') throw error;
+    throw new ApiError(502, { error: { code: 'invalid_support_page', message: 'Не удалось подтвердить полный список обращений.' } });
   }
-  return page.items;
 }
+
 export const getTickets = options => readPage('/support/tickets', ticketSummary, options);
 export const getTicketCategories = options => readPage('/support/categories', categorySummary, options);
 export async function createTicket(data, { signal } = {}) {

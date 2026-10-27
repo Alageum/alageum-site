@@ -5,9 +5,9 @@ const { documentId, documentOut, createDocuments, READ } = require("../src/domai
 const id = "60000000-0000-4000-8000-000000000001";
 const dto = () => ({ id, number: null, title: "Fictitious document", external_id: null, source: "manual", type_code: "opaque_inactive_type", latest_file_id: null });
 
-test("documents expose exactly list and detail metadata routes requiring document.read", () => {
+test("documents retain metadata reads and add a separate permission-protected upload route", () => {
   const routes = require("../src/api/compat/routes/compat").routes.filter(route => ["/documents", "/documents/:id"].includes(route.path));
-  assert.deepEqual(routes.map(({ method, path }) => [method, path]), [["GET", "/documents"], ["GET", "/documents/:id"]]);
+  assert.deepEqual(routes.map(({ method, path }) => [method, path]), [["POST", "/documents"], ["GET", "/documents"], ["GET", "/documents/:id"]]);
   assert.equal(READ, "document.read");
   assert.throws(() => createDocuments({}), /Transactional audit writer/);
 });

@@ -11,7 +11,7 @@ import { accessory2026TypeIds } from '../frontend/lib/catalog/models/accessory20
 import { getSourcePageAsset } from '../frontend/lib/catalog/sources.js';
 import { importedProductId } from './catalog/catalog-asset-snapshot.mjs';
 import { digest, rawFileHash, readBytes, sourceAssetClearancePath, verifySourceAssetDependencyAmendment } from './catalog/source-asset-reviewed-dependencies.mjs';
-import { verifyMeasurementColumnPreservation } from './check-measurement-column-completion.mjs';
+import { verifyMeasurementColumnPreservation, verifyCurrentMeasurementColumnPreservation } from './check-measurement-column-completion.mjs';
 import { measurementColumnBaselineCommit, measurementColumnClearancePath, verifyMeasurementColumnDependencyAmendment } from './catalog/measurement-column-reviewed-dependencies.mjs';
 const reviewDir = 'docs/catalog-transformers-2026/review/source-asset-completion';
 export const sourceAssetExactIds = Object.freeze([
@@ -71,6 +71,13 @@ export function verifySourceAssetScope() {
   return { addedBindings: 13, accessories: 3, x4k3: 10, newProducts: 0 };
 }
 export async function verifySourceAssetPreservation() {
+  return verifySourceAssetPreservationCore(false);
+}
+export async function verifyCurrentSourceAssetPreservation() {
+  const counts = await verifySourceAssetPreservationCore(true);
+  return { status: 'current-preservation-only', historicalApproval: false, releaseApproval: false, counts };
+}
+async function verifySourceAssetPreservationCore(currentDtoExtension) {
   const baseline = JSON.parse(readBytes(`${reviewDir}/baseline-outputs.json`));
   // PR32's claim is checked at its frozen checkpoint. The current catalogue is
   // separately checked against that checkpoint; its three later bindings are
@@ -94,7 +101,7 @@ export async function verifySourceAssetPreservation() {
     if (current.static !== old.static || current.api !== old.api) changed.push(id);
   }
   assert.deepEqual(changed.sort(), [...sourceAssetExactIds].sort(), 'PR32 changed only its thirteen exact bindings');
-  const forwardPreservation = await verifyMeasurementColumnPreservation();
+  const forwardPreservation = currentDtoExtension ? (await verifyCurrentMeasurementColumnPreservation()).counts : await verifyMeasurementColumnPreservation();
   return { historicalCheckpoint: { commit: measurementColumnBaselineCommit,
     productBodies: 843, unaffectedRecords: 830, legacyRecords: 238, choiceRecords: 36, choices: 74,
     oldModelTypes: Object.keys(baseline.modelOutputs).length, oldIconTypes: Object.keys(baseline.iconOutputs).length },

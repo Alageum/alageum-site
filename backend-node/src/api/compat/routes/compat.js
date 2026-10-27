@@ -51,6 +51,9 @@ const routes = [
   ["GET", "/orders", "orders"],
   ["GET", "/orders/:id", "order"],
   ["GET", "/finance/invoices", "invoices"],
+  ["GET", "/document-types", "documentTypes"],
+  ["POST", "/documents", "uploadDocument"],
+  ["GET", "/documents/:id/download", "downloadDocument"],
   ["GET", "/documents", "documents"],
   ["GET", "/documents/:id", "document"],
   ["GET", "/documents/:id/signing", "documentSigningStatus"],
@@ -61,6 +64,11 @@ const routes = [
   ["POST", "/quotes/catalog", "createQuote"],
   ["GET", "/quotes", "quotes"],
   ["GET", "/quotes/:id", "quote"],
+  ["GET", "/quote-signature-requests", "quoteSigningInbox"],
+  ["POST", "/quotes/:id/signature-request/prepare", "prepareQuoteSigning"],
+  ["GET", "/quotes/:id/signature-request/pdf", "downloadQuoteSigningPdf"],
+  ["GET", "/quotes/:id/signature-request", "quoteSigningStatus"],
+  ["POST", "/quotes/:id/signature-request", "requestQuoteSigning"],
 ];
 module.exports = {
   routes: routes.map(([method, path, action]) => ({

@@ -6,6 +6,7 @@ import { createElement } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { officialProducts, categoryName, specRows, valueOrDash, specUnit } from '../lib/catalog/data.js';
 import { comparisonSpecValue } from '../lib/catalog/comparison.js';
+import { liveComparisonRows, liveComparisonValue, liveRowDiffers } from '../lib/catalog/liveComparison.js';
 import { normalizeApiProduct, liveHref } from '../lib/catalog/apiData.js';
 import { catalogPrice } from '../lib/catalog/admin.js';
 import { parseComparison } from '../lib/catalog/query.js';
@@ -97,6 +98,7 @@ async function renderComparison(mode, products, ids, differencesOnly = false) {
   // Substitute only routing, async state, selection actions and unrelated visuals.
   const bindings = {
     products, categoryName, specRows, valueOrDash, specUnit, comparisonSpecValue, catalogSpecValueText,
+    liveComparisonRows, liveComparisonValue, liveRowDiffers,
     CatalogSpecValue: await catalogSpecValueComponent(),
     parseComparison, displayProductName, displayExecution, liveHref, catalogPrice,
     Link: props => createElement('a', props),
@@ -136,4 +138,15 @@ test('static differences-only mode compares the complete value, and both modes k
   assert.match(html, /<td[^>]*>25 кВА<\/td>/);
   const liveHtml = await renderComparison('live', products, products.map(product => product.id));
   assert.match(liveHtml, /<th[^>]*>Номинальная мощность, кВА<\/th><td[^>]*>25<\/td>/);
+});
+
+// The expanded live comparison must preserve the same complete source values
+// when the newly available differences-only view is enabled.
+test('live differences-only retains complete winding values and heading-only technical units', async () => {
+  const first = officialProducts.find(product => product.id === affectedIds[0]);
+  const second = officialProducts.find(product => product.id === affectedIds[1]);
+  const products = [first, {...second, technicalSpecs: second.technicalSpecs.filter(row => row.label !== 'Обмотки' || row.value === 'медные')}].map(product => ({...product, comparable: true}));
+  const html = await renderComparison('live', products, products.map(product => product.id), true);
+  assert.match(html, /<tr class="has-difference"><th[^>]*>Обмотки<\/th><td[^>]*>медные · трехфазные, двухобмоточные<\/td><td[^>]*>медные<\/td><\/tr>/);
+  assert.match(html, /<th[^>]*>Номинальная мощность, кВА<\/th><td[^>]*>25<\/td>/);
 });

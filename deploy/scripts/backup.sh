@@ -65,14 +65,14 @@ compose exec -T postgres sh -eu -c \
 test -s "$partial/database.dump"
 compose exec -T postgres pg_restore --list < "$partial/database.dump" > /dev/null
 compose run --rm -T --no-deps storage tar --create --gzip --file - \
-  --directory /var/lib/alageum public private-quarantine > "$partial/media.tar.gz"
+  --directory /var/lib/alageum public private-quarantine private-documents > "$partial/media.tar.gz"
 python3 "$here/verify-media-archive.py" "$partial/media.tar.gz"
 compose images --format json > "$partial/images.json"
 cat > "$partial/metadata.txt" <<META
-format=alageum-paired-backup-v1
+format=alageum-paired-backup-v2
 created_utc=$(date -u +%Y-%m-%dT%H:%M:%SZ)
 writer_state=backend-frontend-proxy-stopped
-scope=postgresql-public-uploads-private-quarantine
+scope=postgresql-public-uploads-private-quarantine-private-documents
 META
 (cd "$partial" && sha256sum database.dump media.tar.gz images.json metadata.txt > SHA256SUMS)
 final="${partial/\/.alageum-/\/alageum-}"

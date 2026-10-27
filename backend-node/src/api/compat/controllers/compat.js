@@ -54,6 +54,9 @@ module.exports = ({ strapi }) => ({
   order: (ctx) => strapi.alageum.orders.detail(ctx),
   invoices: (ctx) => strapi.alageum.invoices.list(ctx),
   documents: (ctx) => strapi.alageum.documents.list(ctx),
+  documentTypes: (ctx) => strapi.alageum.documents.types(ctx),
+  uploadDocument: (ctx) => strapi.alageum.documents.upload(ctx),
+  downloadDocument: (ctx) => strapi.alageum.documents.download(ctx),
   document: (ctx) => strapi.alageum.documents.detail(ctx),
   documentSigningStatus: (ctx) => strapi.alageum.signing.status(ctx),
   prepareDocumentSigning: (ctx) => strapi.alageum.signing.prepare(ctx),
@@ -68,5 +71,14 @@ module.exports = ({ strapi }) => ({
     return strapi.alageum.quotes.create(ctx);
   },
   quotes: (ctx) => strapi.alageum.quotes.list(ctx),
+  quoteSigningInbox: (ctx) => strapi.alageum.quoteSigning.inbox(ctx),
+  downloadQuoteSigningPdf: (ctx) => strapi.alageum.quoteSigning.download(ctx),
+  prepareQuoteSigning: async (ctx) => {
+    privateResponse(ctx);
+    await strapi.alageum.quoteCreateLimit(clientAddress(ctx), ctx);
+    return strapi.alageum.quoteSigning.prepare(ctx);
+  },
+  quoteSigningStatus: (ctx) => strapi.alageum.quoteSigning.status(ctx),
+  requestQuoteSigning: (ctx) => strapi.alageum.quoteSigning.request(ctx),
   quote: (ctx) => strapi.alageum.quotes.detail(ctx),
 });

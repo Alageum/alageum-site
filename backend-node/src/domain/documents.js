@@ -3,7 +3,9 @@
 const { AppError } = require("./errors");
 const { table, privateResponse, assertActiveContext } = require("./auth");
 const { categoryUuid, requestPagination } = require("./support");
-const READ = "document.read";
+const READ = "document.read", CREATE = "document.create";
+const { randomUUID } = require("node:crypto");
+const { BACKEND, validateInput, createDocumentStorage } = require("./document-files");
 
 function documentId(value) {
   const id = categoryUuid(value);
@@ -100,7 +102,7 @@ async function ensureSchema(db) {
   });
 }
 
-function createDocuments({ db, auth, audit }) {
+function createDocuments({ db, auth, audit, storage = createDocumentStorage() }) {
   if (typeof audit !== "function") throw new TypeError("Transactional audit writer is required");
   const query = (tx, organization) => table(tx, "documents").where("documents.organization_id", organization)
     .join("document_types AS type", "type.id", "documents.type_id")
@@ -132,6 +134,74 @@ function createDocuments({ db, auth, audit }) {
     // not erase the completed view event. Business rows are never modified.
     ctx.body = documentOut(row);
   }
-  return { list, detail };
+  async function fileContext(tx, ctx, context, permission) {
+    await auth.assertActiveSession(tx, ctx, context.user.id);
+    return assertActiveContext(tx, context, permission);
+  }
+  async function types(ctx) {
+    privateResponse(ctx);
+    const context = await auth.permission(ctx, CREATE);
+    ctx.body = await db.transaction(async tx => {
+      await fileContext(tx, ctx, context, CREATE);
+      const rows = await table(tx, "document_types").where({ is_active: true }).select("code", "name").orderBy("code");
+      const builtin = await table(tx, "document_types").where({ code: "manual_attachment" }).first();
+      return { items: builtin ? rows : [...rows, { code: "manual_attachment", name: "Файл" }] };
+    });
+  }
+  async function upload(ctx) {
+    privateResponse(ctx);
+    const context = await auth.permission(ctx, CREATE), input = validateInput(ctx);
+    await storage.ready();
+    // Check type and current access before the expensive scanner, then check again
+    // within the committing transaction to reject revocation during scanning.
+    await db.transaction(async tx => {
+      await fileContext(tx, ctx, context, CREATE);
+      const type = await table(tx, "document_types").where({ code: input.type_code }).first();
+      if ((!type && input.type_code !== "manual_attachment") || (type && !type.is_active)) throw new AppError("document_type_unavailable", "Document type is unavailable", 422);
+    });
+    const admitted = await storage.admit(input.file);
+    const storageKey = await storage.store(admitted);
+    try {
+      ctx.body = await db.transaction(async tx => {
+        const fresh = await fileContext(tx, ctx, context, CREATE);
+        if (input.type_code === "manual_attachment") await table(tx, "document_types").insert({ id: randomUUID(), code: "manual_attachment", name: "Файл", is_active: true }).onConflict("code").ignore();
+        const type = await table(tx, "document_types").where({ code: input.type_code, is_active: true }).forShare().first();
+        if (!type) throw new AppError("document_type_unavailable", "Document type is unavailable", 422);
+        const id = randomUUID(), fileId = randomUUID(), now = new Date(), organization = fresh.organization_id;
+        await table(tx, "documents").insert({ id, organization_id: organization, type_id: type.id, title: input.title, number: input.number, external_id: null, source: "manual", created_at: now, updated_at: now });
+        await table(tx, "file_objects").insert({ id: fileId, organization_id: organization, storage_key: storageKey, original_name: admitted.name, content_type: admitted.mime, size_bytes: admitted.bytes.length, checksum_sha256: admitted.checksum, storage_backend: BACKEND, created_at: now, updated_at: now });
+        await table(tx, "document_versions").insert({ id: randomUUID(), organization_id: organization, document_id: id, file_id: fileId, version: 1, created_at: now, updated_at: now });
+        await audit(tx, ctx, { action: "document.upload", actor_user_id: fresh.user.id, organization_id: organization, entity_type: "document", entity_id: id });
+        return documentOut({ id, title: input.title, number: input.number, external_id: null, source: "manual", type_code: type.code, latest_file_id: fileId });
+      });
+    } catch (error) {
+      // Never make a failed transaction's file downloadable. An unlink failure is
+      // surfaced as failure and leaves a private orphan for operator reconciliation.
+      await storage.remove(storageKey);
+      throw error;
+    }
+    ctx.status = 201;
+  }
+  async function download(ctx) {
+    privateResponse(ctx);
+    const context = await auth.permission(ctx, READ), id = documentId(ctx.params.id);
+    const result = await db.transaction(async tx => {
+      const fresh = await fileContext(tx, ctx, context, READ);
+      const document = await query(tx, fresh.organization_id).where("documents.id", id).first();
+      if (!document || !document.latest_file_id) throw new AppError("document_not_found", "Document not found", 404);
+      const file = await table(tx, "file_objects").where({ id: document.latest_file_id, organization_id: fresh.organization_id }).first();
+      if (!file) throw new AppError("document_not_found", "Document not found", 404);
+      const bytes = await storage.read(file);
+      await audit(tx, ctx, { action: "document.download", actor_user_id: fresh.user.id, organization_id: fresh.organization_id, entity_type: "document", entity_id: id });
+      return { bytes, file };
+    });
+    ctx.set("Content-Type", result.file.content_type);
+    ctx.set("Content-Length", String(result.bytes.length));
+    ctx.set("X-Content-Type-Options", "nosniff");
+    ctx.set("Content-Security-Policy", "sandbox; default-src 'none'");
+    ctx.set("Content-Disposition", "attachment; filename=\"document\"; filename*=UTF-8''" + encodeURIComponent(result.file.original_name).replace(/[!'()*]/g, c => "%" + c.charCodeAt(0).toString(16).toUpperCase()));
+    ctx.body = result.bytes;
+  }
+  return { list, detail, types, upload, download };
 }
-module.exports = { READ, documentId, documentOut, preflightSchema, ensureSchema, verifySchema, createDocuments };
+module.exports = { READ, CREATE, documentId, documentOut, preflightSchema, ensureSchema, verifySchema, createDocuments };

@@ -1,0 +1,25 @@
+
+Running 20 tests using 1 worker
+
+  ✓   1 [company-desktop] › e2e/company-pages.spec.js:3:7 › / renders a complete responsive public page without runtime errors (2.0s)
+  ✓   2 [company-desktop] › e2e/company-pages.spec.js:3:7 › /company renders a complete responsive public page without runtime errors (1.5s)
+  ✓   3 [company-desktop] › e2e/company-pages.spec.js:3:7 › /manufacturers renders a complete responsive public page without runtime errors (3.1s)
+  ✓   4 [company-desktop] › e2e/company-pages.spec.js:3:7 › /contacts renders a complete responsive public page without runtime errors (1.4s)
+  ✓   5 [company-desktop] › e2e/company-pages.spec.js:66:5 › home catalog and city links preserve useful destination state (3.3s)
+  ✓   6 [company-desktop] › e2e/company-pages.spec.js:82:5 › city map and list share URL state, repeat selection and survive back/forward/reload (1.6s)
+  ✓   7 [company-desktop] › e2e/company-pages.spec.js:100:5 › invalid city falls back to all entries and all profile links work (1.2s)
+  ✓   8 [company-desktop] › e2e/company-pages.spec.js:107:5 › regional contact search handles Russian casing, empty states and reset (2.3s)
+  ✓   9 [company-desktop] › e2e/company-pages.spec.js:121:5 › contact actions have correct destinations and FAQ can open and close repeatedly (1.3s)
+  ✓  10 [company-desktop] › e2e/company-pages.spec.js:148:5 › keyboard selection works and reduced motion avoids animated page transitions (994ms)
+  ✓  11 [company-mobile] › e2e/company-pages.spec.js:3:7 › / renders a complete responsive public page without runtime errors (2.1s)
+  ✓  12 [company-mobile] › e2e/company-pages.spec.js:3:7 › /company renders a complete responsive public page without runtime errors (1.4s)
+  ✓  13 [company-mobile] › e2e/company-pages.spec.js:3:7 › /manufacturers renders a complete responsive public page without runtime errors (2.6s)
+  ✓  14 [company-mobile] › e2e/company-pages.spec.js:3:7 › /contacts renders a complete responsive public page without runtime errors (1.5s)
+  ✓  15 [company-mobile] › e2e/company-pages.spec.js:66:5 › home catalog and city links preserve useful destination state (4.2s)
+  ✓  16 [company-mobile] › e2e/company-pages.spec.js:82:5 › city map and list share URL state, repeat selection and survive back/forward/reload (2.1s)
+  ✓  17 [company-mobile] › e2e/company-pages.spec.js:100:5 › invalid city falls back to all entries and all profile links work (1.4s)
+  ✓  18 [company-mobile] › e2e/company-pages.spec.js:107:5 › regional contact search handles Russian casing, empty states and reset (1.8s)
+  ✓  19 [company-mobile] › e2e/company-pages.spec.js:121:5 › contact actions have correct destinations and FAQ can open and close repeatedly (1.7s)
+  ✓  20 [company-mobile] › e2e/company-pages.spec.js:148:5 › keyboard selection works and reduced motion avoids animated page transitions (999ms)
+
+  20 passed (40.7s)

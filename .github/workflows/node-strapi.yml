@@ -25,6 +25,7 @@ on:
       - 'scripts/generate-catalog-media.mjs'
       - 'docker-compose.node.yml'
       - '.github/workflows/node-strapi.yml'
+      - '.github/workflows/ci.yml'
   push:
     paths:
       - 'backend-node/**'
@@ -50,6 +51,7 @@ on:
       - 'scripts/generate-catalog-media.mjs'
       - 'docker-compose.node.yml'
       - '.github/workflows/node-strapi.yml'
+      - '.github/workflows/ci.yml'
   workflow_dispatch:
 
 permissions:
@@ -358,7 +360,7 @@ jobs:
 
   webpack-compatibility:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 40
     env:
       APP_ENV: test
       STRAPI_TELEMETRY_DISABLED: 'true'
@@ -414,14 +416,14 @@ jobs:
           assert.equal(report.fixtureRemoved, true);
           NODE
       - name: Install bounded official Chromium for compatibility acceptance
-        timeout-minutes: 5
+        timeout-minutes: 10
         working-directory: frontend
         shell: bash
         env:
           PLAYWRIGHT_DOWNLOAD_CONNECTION_TIMEOUT: '60000'
         run: |
           set -euo pipefail
-          timeout --signal=TERM --kill-after=10s 270s npx --no-install playwright install --with-deps chromium 2>&1 | tee ../webpack-compatibility-evidence/chromium-install.log
+          timeout --signal=TERM --kill-after=10s 570s npx --no-install playwright install --with-deps chromium 2>&1 | tee ../webpack-compatibility-evidence/chromium-install.log
       - name: Verify compiled polyfill equivalence in a real browser
         timeout-minutes: 3
         shell: bash
@@ -788,7 +790,7 @@ jobs:
 
   company-profile:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 40
     env:
       APP_ENV: test
       STRAPI_TELEMETRY_DISABLED: 'true'
@@ -823,14 +825,14 @@ jobs:
           npm ci --prefix backend-node
           npm ci --prefix frontend
       - name: Install bounded Chromium for profile acceptance
-        timeout-minutes: 5
+        timeout-minutes: 10
         working-directory: frontend
         shell: bash
         env:
           PLAYWRIGHT_DOWNLOAD_CONNECTION_TIMEOUT: '60000'
         run: |
           set -euo pipefail
-          timeout --signal=TERM --kill-after=10s 270s npx --no-install playwright install --with-deps chromium 2>&1 | tee ../company-profile-evidence/chromium-install.log
+          timeout --signal=TERM --kill-after=10s 570s npx --no-install playwright install --with-deps chromium 2>&1 | tee ../company-profile-evidence/chromium-install.log
       - name: Verify isolated real HTTP and all seventeen profile browser cases
         timeout-minutes: 17
         shell: bash
@@ -868,7 +870,7 @@ jobs:
 
   organization-selection:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 40
     env:
       APP_ENV: test
       STRAPI_TELEMETRY_DISABLED: 'true'
@@ -903,14 +905,14 @@ jobs:
           npm ci --prefix backend-node
           npm ci --prefix frontend
       - name: Install bounded Chromium for organization acceptance
-        timeout-minutes: 5
+        timeout-minutes: 10
         working-directory: frontend
         shell: bash
         env:
           PLAYWRIGHT_DOWNLOAD_CONNECTION_TIMEOUT: '60000'
         run: |
           set -euo pipefail
-          timeout --signal=TERM --kill-after=10s 270s npx --no-install playwright install --with-deps chromium 2>&1 | tee ../organization-selection-evidence/chromium-install.log
+          timeout --signal=TERM --kill-after=10s 570s npx --no-install playwright install --with-deps chromium 2>&1 | tee ../organization-selection-evidence/chromium-install.log
       - name: Verify isolated real HTTP and all nineteen organization browser cases
         timeout-minutes: 17
         shell: bash
@@ -1124,7 +1126,7 @@ jobs:
 
   invoice-metadata:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 40
     env:
       APP_ENV: test
       STRAPI_TELEMETRY_DISABLED: 'true'
@@ -1159,14 +1161,14 @@ jobs:
           npm ci --prefix backend-node
           npm ci --prefix frontend
       - name: Install bounded Chromium for invoice metadata acceptance
-        timeout-minutes: 5
+        timeout-minutes: 10
         working-directory: frontend
         shell: bash
         env:
           PLAYWRIGHT_DOWNLOAD_CONNECTION_TIMEOUT: '60000'
         run: |
           set -euo pipefail
-          timeout --signal=TERM --kill-after=10s 270s npx --no-install playwright install --with-deps chromium 2>&1 | tee ../invoice-metadata-evidence/chromium-install.log
+          timeout --signal=TERM --kill-after=10s 570s npx --no-install playwright install --with-deps chromium 2>&1 | tee ../invoice-metadata-evidence/chromium-install.log
       - name: Verify isolated real HTTP and all twenty-eight invoice metadata browser cases
         timeout-minutes: 17
         shell: bash
@@ -1255,7 +1257,7 @@ jobs:
         run: |
           set -euo pipefail
           timeout --signal=TERM --kill-after=10s 270s npx --no-install playwright install --with-deps chromium 2>&1 | tee ../document-metadata-evidence/chromium-install.log
-      - name: Verify isolated real HTTP and all twenty-six document metadata browser cases
+      - name: Verify isolated real HTTP and all thirty-four document metadata and file browser cases
         timeout-minutes: 17
         shell: bash
         run: |
@@ -1274,10 +1276,10 @@ jobs:
           const report = JSON.parse(fs.readFileSync(path.join(evidence, 'results.json')));
           assert.equal(report.status, 'passed');
           assert.equal(report.browser, 'passed');
-          assert.equal(report.checks.length, 26);
+          assert.equal(report.checks.length, 33);
           assert.ok(report.checks.every(check => check.status === 'passed'));
           assert.equal(report.cleanup, 'passed');
-          assert.equal(report.browserTests, 26);
+          assert.equal(report.browserTests, 34);
           assert.equal(report.screenshots.length, 6);
           for (const project of ['documents-desktop', 'documents-mobile']) {
             for (const name of ['documents-list', 'documents-empty', 'documents-retry']) {
@@ -1285,7 +1287,7 @@ jobs:
             }
           }
           const log = fs.readFileSync(path.join(evidence, 'playwright.log'), 'utf8');
-          assert.match(log, /\b26 passed\b/);
+          assert.match(log, /\b34 passed\b/);
           assert.doesNotMatch(log, /\b[1-9]\d* (?:failed|flaky|skipped|did not run)\b/);
           NODE
       - name: Retain sanitized document metadata evidence and successful screenshots
@@ -1569,4 +1571,89 @@ jobs:
             frontend/playwright-report/pages-results/
             frontend/playwright-report/page-fast-save-results/**/fast-save-*.png
             frontend/playwright-report/page-sync-results/**/page-sync-*.png
+          retention-days: 14
+
+  quote-document-signing:
+    # Real isolated PostgreSQL + Strapi wiring and browser behavior. Synthetic
+    # verifier/NCALayer and INSTREAM fixtures are NOT proof of legal/real crypto.
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    env:
+      APP_ENV: test
+      STRAPI_TELEMETRY_DISABLED: 'true'
+      STRAPI_HIDE_UPDATE_MESSAGE: 'true'
+      NEXT_TELEMETRY_DISABLED: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: |
+            backend-node/package-lock.json
+            frontend/package-lock.json
+      - name: Discover disposable PostgreSQL runner tools
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p signing-evidence
+          pg_bin=$(pg_config --bindir)
+          for command in postgres initdb pg_ctl; do test -x "$pg_bin/$command"; done
+          printf 'PG_BIN=%s\n' "$pg_bin" >> "$GITHUB_ENV"
+      - name: Install locked signing dependencies
+        timeout-minutes: 8
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm ci --prefix backend-node
+          npm ci --prefix frontend
+      - name: Verify PDF, assignment and exact-byte INSTREAM admission boundaries
+        timeout-minutes: 3
+        working-directory: backend-node
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --test tests/quote-pdf.test.js tests/quote-signing.test.js tests/document-signing.test.js tests/document-files.test.js 2>&1 | tee ../signing-evidence/boundaries.log
+      - name: Run actual PostgreSQL quote packets and fail-closed Strapi signing HTTP
+        timeout-minutes: 10
+        shell: bash
+        run: |
+          set -euo pipefail
+          # Existing runner creates two fresh loopback databases and disposable
+          # keys, stops its cluster on exit; no shared DATABASE_URL is consumed.
+          timeout --signal=TERM --kill-after=20s 540s bash backend-node/scripts/run-signing-tests.sh 2>&1 | tee signing-evidence/postgres-http.log
+      - name: Install bounded Chromium for signing behavior
+        timeout-minutes: 5
+        working-directory: frontend
+        shell: bash
+        env:
+          PLAYWRIGHT_DOWNLOAD_CONNECTION_TIMEOUT: '60000'
+        run: |
+          set -euo pipefail
+          timeout --signal=TERM --kill-after=10s 270s npx --no-install playwright install --with-deps chromium 2>&1 | tee ../signing-evidence/chromium-install.log
+      - name: Exercise quote PDF handoff, manager inbox and EDS desktop/mobile UI
+        timeout-minutes: 11
+        working-directory: frontend
+        shell: bash
+        run: |
+          set -euo pipefail
+          timeout --signal=TERM --kill-after=20s 600s npx --no-install playwright test --config=playwright.document-signing.config.mjs --forbid-only --retries=0 --global-timeout=540000 2>&1 | tee ../signing-evidence/browser.log
+          node - <<'NODE'
+          const assert = require('node:assert/strict');
+          const log = require('node:fs').readFileSync('../signing-evidence/browser.log', 'utf8');
+          assert.match(log, /\b32 passed\b/, 'all 26 EDS and 6 quote desktop/mobile cases must execute');
+          assert.doesNotMatch(log, /\b[1-9]\d* (?:failed|flaky|skipped|did not run)\b/);
+          NODE
+      - name: Retain synthetic signing evidence only
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: quote-document-signing-${{ github.run_id }}-${{ github.run_attempt }}
+          # Never upload the runner's raw cluster, ephemeral passwords or config.
+          path: |
+            signing-evidence/
+            frontend/playwright-report/document-signing-fixtures/**/error-context.md
+            frontend/playwright-report/document-signing-fixtures/**/signing-responsive-layout.png
           retention-days: 14

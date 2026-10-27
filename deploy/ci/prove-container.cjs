@@ -22,6 +22,9 @@ async function main() {
   finally { await plaintext.end(); }
   const publicFile = "/var/lib/alageum/public/uploads/server-proof.png";
   const privateFile = "/var/lib/alageum/private-quarantine/server-proof.bin";
+  const documentStorage = require("/app/src/domain/document-files").createDocumentStorage();
+  const documentManifest = "/var/lib/alageum/private-quarantine/document-proof.json";
+  const documentBytes = Buffer.from("%PDF-1.7\n1 0 obj\n<< /Type /Catalog >>\nendobj\n%%EOF\n");
   const privateBytes = Buffer.from("Synthetic private quarantine persistence marker\n");
   if (phase === "initial") {
     const scanner = readMediaConfig().scanner;
@@ -31,10 +34,20 @@ async function main() {
     const eicar = Buffer.from("X5O!P%@AP[4\\PZX54(P^)7CC)7}$" + "EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*");
     assert.equal(eicar.length, 68);
     await assert.rejects(scanBytes(eicar, scanner), error => error.code === "media_malware_detected");
+    const documentInput = "/tmp/alageum-document-proof.pdf";
+    fs.writeFileSync(documentInput, documentBytes, { flag: "wx", mode: 0o600 });
+    try {
+      const admitted = await documentStorage.admit({ filepath: documentInput, originalFilename: "proof.pdf", mimetype: "application/pdf" });
+      const key = await documentStorage.store(admitted);
+      const row = { storage_backend: "private-local-v1", storage_key: key, original_name: "proof.pdf", content_type: "application/pdf", size_bytes: documentBytes.length, checksum_sha256: admitted.checksum };
+      assert.deepEqual(await documentStorage.read(row), documentBytes);
+      fs.writeFileSync(documentManifest, JSON.stringify(row), { flag: "wx", mode: 0o600 });
+    } finally { fs.unlinkSync(documentInput); }
     fs.writeFileSync(publicFile, png, { flag: "wx", mode: 0o640 });
     fs.writeFileSync(privateFile, privateBytes, { flag: "wx", mode: 0o600 });
     console.log("Passed: verified PostgreSQL TLS, app least privilege, plaintext refusal, real ClamAV clean/EICAR");
   } else {
+    assert.deepEqual(await documentStorage.read(JSON.parse(fs.readFileSync(documentManifest,"utf8"))), documentBytes);
     assert.deepEqual(fs.readFileSync(publicFile), png);
     assert.deepEqual(fs.readFileSync(privateFile), privateBytes);
     assert.equal(fs.statSync(privateFile).mode & 0o077, 0);

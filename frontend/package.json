@@ -25,7 +25,7 @@
     "test:e2e:public": "playwright test --config=playwright.public.config.js"
   },
   "dependencies": {
-    "next": "16.3.8",
+    "next": "16.4.2",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "three": "0.186.1"
@@ -33,6 +33,6 @@
   "devDependencies": {
     "@playwright/test": "1.62.1",
     "eslint": "9.39.5",
-    "eslint-config-next": "16.3.8"
+    "eslint-config-next": "16.4.2"
   }
 }

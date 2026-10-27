@@ -17,6 +17,7 @@ const mode = process.argv[2] || "--browser";
 const report = { kind: "isolated-document-metadata", startedAt: new Date().toISOString(), status: "running", checks: [], browser: "not-run" };
 const secrets = new Set([process.env.E2E_DOCUMENT_PASSWORD, process.env.DATABASE_URL]);
 let app, next, browser, build, origin, cleanupPromise;
+const browserFileCleanups = [];
 mkdirSync(evidence, { recursive: true, mode: 0o700 });
 function redact(value) {
   let result = String(value).replaceAll(evidence, publishedEvidence);
@@ -58,8 +59,11 @@ function cleanup() { return cleanupPromise ||= (async () => {
   const current = app; app = null;
   const results = await Promise.allSettled([
     stopOwnedGroup(browser), stopOwnedGroup(build), stopOwnedGroup(next),
-    current ? boundedDestroy(() => current.destroy()) : Promise.resolve(),
   ]);
+  for (const dispose of browserFileCleanups.reverse()) {
+    try { await boundedDestroy(dispose); } catch (reason) { results.push({ status: "rejected", reason }); }
+  }
+  try { if (current) await boundedDestroy(() => current.destroy()); } catch (reason) { results.push({ status: "rejected", reason }); }
   if (results.some(result => result.status === "rejected")) throw new Error("Bounded document runner teardown failed");
 })(); }
 function finishEvidence() {
@@ -136,6 +140,7 @@ const deadline = setTimeout(() => { void interrupted("runner deadline"); }, 9000
     origin = `http://127.0.0.1:${app.server.httpServer.address().port}`;
     const fixtureLoginWindow = Date.now();
     const actors = await require("../tests/documents.integration-support")({ app, api, check, manifest, password: validated.password, rememberSecret: value => secrets.add(value) });
+    await require("../tests/document-files.integration-support")({ app, origin, check, actors, manifest });
     await check("actual Strapi startup refuses missing document/version uniqueness before schema synchronization", async () => {
       const previous = app; app = null; await boundedDestroy(() => previous.destroy());
       const client = new (require("pg").Client)({ connectionString: validated.url.href });
@@ -186,7 +191,11 @@ const deadline = setTimeout(() => { void interrupted("runner deadline"); }, 9000
       } finally { await client.end(); }
     });
     if (mode === "--browser") {
-      const env = { ...process.env, NODE_ENV: "production", NEXT_TELEMETRY_DISABLED: "1", ALAGEUM_DOCUMENT_BUILD: "1", NEXT_PUBLIC_API_URL: "/api/v1", API_INTERNAL_BASE_URL: `${origin}/api/v1`, NEXT_PUBLIC_CATALOG_SOURCE: "static", COMPANY_SOURCE: "static", PAGES_SOURCE: "static", PAGES_STATIC_PREVIEW: "1", E2E_DOCUMENT_BASE_URL: webOrigin, E2E_DOCUMENT_API_URL: `${webOrigin}/api/v1`, E2E_DOCUMENT_ORGANIZATION_A: manifest.organizations.a.id, E2E_DOCUMENT_ORGANIZATION_B: manifest.organizations.b.id, E2E_DOCUMENT_ORGANIZATION_EMPTY: manifest.organizations.c.id, E2E_DOCUMENT_ID_A: manifest.documents.versioned, E2E_DOCUMENT_ID_B: manifest.documents.foreign, E2E_DOCUMENT_ID_EMPTY: manifest.documents.empty, E2E_DOCUMENT_ID_NEWEST: manifest.documents.newest, E2E_DOCUMENT_FILE_ID_A: manifest.files.version9, E2E_DOCUMENT_FILE_ID_NEWEST: manifest.files.newest, E2E_DOCUMENT_OUTPUT: join(evidence, "browser"), PLAYWRIGHT_JSON_OUTPUT_NAME: join(evidence, "browser-results.json") };
+      let browserFiles;
+      await check("isolated browser uploader and private storage survive the browser phase", async () => {
+        browserFiles = await require("../tests/document-browser-files-support")({ app, after: dispose => browserFileCleanups.push(dispose) });
+      });
+      const env = { ...process.env, NODE_ENV: "production", NEXT_TELEMETRY_DISABLED: "1", ALAGEUM_DOCUMENT_BUILD: "1", NEXT_PUBLIC_API_URL: "/api/v1", API_INTERNAL_BASE_URL: `${origin}/api/v1`, NEXT_PUBLIC_CATALOG_SOURCE: "static", COMPANY_SOURCE: "static", PAGES_SOURCE: "static", PAGES_STATIC_PREVIEW: "1", E2E_DOCUMENT_UPLOAD_ORGANIZATION: browserFiles.organization, E2E_DOCUMENT_UPLOAD_OTHER_ORGANIZATION: browserFiles.otherOrganization, E2E_DOCUMENT_BASE_URL: webOrigin, E2E_DOCUMENT_API_URL: `${webOrigin}/api/v1`, E2E_DOCUMENT_ORGANIZATION_A: manifest.organizations.a.id, E2E_DOCUMENT_ORGANIZATION_B: manifest.organizations.b.id, E2E_DOCUMENT_ORGANIZATION_EMPTY: manifest.organizations.c.id, E2E_DOCUMENT_ID_A: manifest.documents.versioned, E2E_DOCUMENT_ID_B: manifest.documents.foreign, E2E_DOCUMENT_ID_EMPTY: manifest.documents.empty, E2E_DOCUMENT_ID_NEWEST: manifest.documents.newest, E2E_DOCUMENT_FILE_ID_A: manifest.files.version9, E2E_DOCUMENT_FILE_ID_NEWEST: manifest.files.newest, E2E_DOCUMENT_OUTPUT: join(evidence, "browser"), PLAYWRIGHT_JSON_OUTPUT_NAME: join(evidence, "browser-results.json") };
       await check("dedicated production Next build", async () => { build = child([join(frontend, "node_modules/next/dist/bin/next"), "build"], env, "next-build.log"); await completed(build, "Document Next build failed; inspect sanitized log"); });
       next = child([join(frontend, "node_modules/next/dist/bin/next"), "start", "--hostname", "127.0.0.1", "--port", String(webPort)], env, "next.log");
       const readyBy = Date.now() + 45000;
@@ -213,7 +222,7 @@ const deadline = setTimeout(() => { void interrupted("runner deadline"); }, 9000
         const result = JSON.parse(readFileSync(env.PLAYWRIGHT_JSON_OUTPUT_NAME, "utf8"));
         const flatten = suites => suites.flatMap(suite => [...(suite.specs || []).flatMap(spec => spec.tests), ...flatten(suite.suites || [])]);
         const tests = flatten(result.suites);
-        assert.equal(tests.length, 26); assert.equal(result.stats.expected, 26);
+        assert.equal(tests.length, 34); assert.equal(result.stats.expected, 34);
         assert.equal(result.stats.unexpected + result.stats.skipped + result.stats.flaky, 0);
         const screenshots = [];
         for (const test of tests) {
@@ -226,10 +235,12 @@ const deadline = setTimeout(() => { void interrupted("runner deadline"); }, 9000
         assert.equal(screenshots.length, 6, "Desktop/mobile list/empty/retry PNGs are required");
         for (const project of ["documents-desktop", "documents-mobile"]) for (const name of ["documents-list", "documents-empty", "documents-retry"])
           assert.ok(screenshots.some(shot => shot.project === project && shot.name === name));
-        report.browser = "passed"; report.browserTests = 26; report.screenshots = screenshots;
+        assert.ok(browserFiles.scanner.scanned.length >= 6, "Browser upload cases must reach the protocol scanner");
+        report.browserScanner = "protocol-double (real ClamAV validated separately)";
+        report.browser = "passed"; report.browserTests = 34; report.screenshots = screenshots;
       });
     } else report.browser = "not-run: explicit --backend-only";
-    assert.equal(report.checks.length, mode === "--browser" ? 26 : 24);
+    assert.equal(report.checks.length, mode === "--browser" ? 33 : 30);
     report.status = "passed";
   } catch (error) { report.status = "failed"; if (report.browser === "running") report.browser = "failed"; report.error = redact(error.message); process.exitCode = 1; }
   finally {

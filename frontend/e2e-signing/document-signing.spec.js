@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { createHash } from 'node:crypto';
+import { signingBrowserSession, nextSigningSessionId } from './session-fixture.js';
 
 const documentId = '60000000-0000-4000-8000-000000000001';
 const versionId = '70000000-0000-4000-8000-000000000001';
@@ -13,8 +14,8 @@ const signature = { id: '90000000-0000-4000-8000-000000000001', status: 'pending
 const panel = page => page.getByTestId('document-signing');
 async function setup(page, { available = true, permissions = ['document.read', 'document.sign'], signing = 'success', submitFailure = false } = {}) {
   const calls = []; let submitted = 0;
-  await page.addInitScript(({ orgA, cms, signing }) => {
-    sessionStorage.setItem('alageum_session', JSON.stringify({ access_token: 'synthetic-browser-token', refresh_token: 'synthetic-refresh', organization_id: orgA }));
+  await page.addInitScript(({ session, cms, signing }) => {
+    sessionStorage.setItem('alageum_session', JSON.stringify(session));
     window.__signingSockets = []; window.__signingCommands = [];
     const Original = window.WebSocket;
     window.WebSocket = class {
@@ -30,13 +31,18 @@ async function setup(page, { available = true, permissions = ['document.read', '
       }
       close() { this.closed = true; }
     };
-  }, { orgA, cms, signing });
+  }, { session: signingBrowserSession(orgA), cms, signing });
   await page.route('**/api/v1/**', async route => {
     const request = route.request(), path = new URL(request.url()).pathname.replace('/api/v1', '');
     const organization = request.headers()['x-organization-id'] || orgA;
     const method = request.method(); calls.push({ path, method, body: request.postData() });
     const reply = data => route.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify(data) });
-    if (path === '/auth/me') return reply({ user: { id: '20000000-0000-4000-8000-000000000001', email: 'fictitious@example.invalid' }, organization: { id: organization, name: organization === orgA ? 'Fictitious A' : 'Fictitious B' }, permissions });
+    if (path === '/auth/me') {
+      expect(request.headers()['x-browser-session']).toMatch(/^[0-9a-f-]{36}$/);
+      expect(request.headers().authorization).toBeUndefined();
+      return reply({ user: { id: '20000000-0000-4000-8000-000000000001', email: 'fictitious@example.invalid' }, organization: { id: organization, name: organization === orgA ? 'Fictitious A' : 'Fictitious B' }, permissions });
+    }
+    if (path === '/quote-signature-requests') return reply({ items: [], page: 1, page_size: 20, total: 0 });
     if (path === '/documents') return reply({ items: [{ id: documentId, number: 'FIXTURE-009', title: organization === orgA ? 'Fictitious signing document' : 'Fictitious other organization', external_id: null, source: 'fixture', type_code: 'fixture_pdf', latest_file_id: versionId }], page: 1, page_size: 50, total: 1 });
     if (path === `/documents/${documentId}/signing`) return reply({ enabled: true, signing_allowed: available, reason: available ? null : 'verifier_unavailable', document_id: documentId, version, signature: null });
     if (path.endsWith('/signing/intents')) return reply({ id: intentId, document_id: documentId, version_id: versionId, sha256: hash, expires_at: '2099-01-01T00:00:00Z', content_base64: content.toString('base64') });
@@ -95,17 +101,34 @@ test('lost result can explicitly replay the exact signature without a second sig
   expect(await page.evaluate(() => window.__signingCommands.length)).toBe(1);
 });
 
-for (const action of ['Закрыть', 'Отменить', 'organization', 'logout', 'new-login']) test(`interrupt ${action} closes socket and suppresses late submission`, async ({ page }) => {
+for (const action of ['Закрыть', 'Отменить', 'organization', 'logout', 'new-login']) test(`interrupt ${action} closes socket and suppresses late submission`, async ({ page }, testInfo) => {
   const calls = await setup(page, { signing: 'hold' }); await open(page);
   await panel(page).getByRole('button', { name: 'Подписать в NCALayer', exact: true }).click();
   await expect(panel(page)).toContainText('Подтвердите подписание в NCALayer.');
-  if (action === 'Закрыть' || action === 'Отменить') await panel(page).getByRole('button', { name: action, exact: true }).click();
-  else await page.evaluate(({ action, orgB }) => {
+  if (action === 'Закрыть') {
+    // Long SHA/UUID values must not grow the panel horizontally on mobile.
+    const layout = await panel(page).evaluate(element => {
+      const bounds = element.getBoundingClientRect();
+      const hash = element.querySelector('[data-testid="signing-hash"]');
+      return { left: bounds.left, right: bounds.right, viewport: document.documentElement.clientWidth,
+        hashOverflow: hash.scrollWidth - hash.clientWidth };
+    });
+    expect(layout.left).toBeGreaterThanOrEqual(0);
+    expect(layout.right).toBeLessThanOrEqual(layout.viewport + 1);
+    expect(layout.hashOverflow).toBeLessThanOrEqual(1);
+    const close = panel(page).getByRole('button', { name: 'Закрыть', exact: true });
+    await close.scrollIntoViewIfNeeded();
+    await expect(close).toBeInViewport();
+    console.log('Signing responsive layout:', JSON.stringify({ project: testInfo.project.name, ...layout }));
+    await page.screenshot({ path: testInfo.outputPath('signing-responsive-layout.png') });
+    await close.click();
+  } else if (action === 'Отменить') await panel(page).getByRole('button', { name: action, exact: true }).click();
+  else await page.evaluate(({ action, orgB, nextSigningSessionId }) => {
     const session = JSON.parse(sessionStorage.getItem('alageum_session'));
     if (action === 'logout') sessionStorage.removeItem('alageum_session');
-    else sessionStorage.setItem('alageum_session', JSON.stringify({ ...session, ...(action === 'organization' ? { organization_id: orgB } : { access_token: 'new-synthetic-login' }) }));
+    else sessionStorage.setItem('alageum_session', JSON.stringify({ ...session, ...(action === 'organization' ? { organization_id: orgB } : { browser_session: nextSigningSessionId }) }));
     window.dispatchEvent(new Event('alageum:session-changed'));
-  }, { action, orgB });
+  }, { action, orgB, nextSigningSessionId });
   await expect(panel(page)).toHaveCount(0);
   expect(await page.evaluate(cms => { const socket = window.__signingSockets[0]; socket.onmessage?.({ data: JSON.stringify({ status: true, body: { result: cms } }) }); return socket.closed; }, cms)).toBe(true);
   expect(submissions(calls)).toHaveLength(0);

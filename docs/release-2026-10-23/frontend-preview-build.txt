@@ -1,0 +1,271 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> alageum-frontend@0.1.0 build:preview
+> node scripts/build-preview.mjs
+
+▲ Next.js 16.4.2 (Turbopack)
+(node:30) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///workspace/shared/alageum-site/frontend/.preview-build/lib/catalog/source-context/sourceContexts.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /workspace/shared/alageum-site/frontend/.preview-build/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✓ Running next.config.mjs took 41ms
+- Experiments (use with caution):
+  · cpus: 2
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 15.9s
+  Running TypeScript ...
+  Finished TypeScript in 8ms ...
+  Collecting page data using 2 workers ...
+  Generating static pages using 2 workers (0/4893) ...
+  Generating static pages using 2 workers (809/4893) 
+  Generating static pages using 2 workers (1223/4893) 
+  Generating static pages using 2 workers (2446/4893) 
+  Generating static pages using 2 workers (2849/4893) 
+  Generating static pages using 2 workers (3669/4893) 
+✓ Generating static pages using 2 workers (4893/4893) in 5.2min
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├   /[locale]
+│ ├ ● /ru
+│ ├ ● /kk
+│ └ ● /en
+├   /[locale]/careers
+│ ├ ● /ru/careers
+│ ├ ● /kk/careers
+│ └ ● /en/careers
+├   /[locale]/careers/[slug]
+│ ├ ● /ru/careers/about
+│ ├ ● /ru/careers/learning
+│ ├ ● /ru/careers/internships
+│ └ ● [+15 more paths]
+├   /[locale]/careers/apply
+│ ├ ● /ru/careers/apply
+│ ├ ● /kk/careers/apply
+│ └ ● /en/careers/apply
+├   /[locale]/careers/vacancies
+│ ├ ● /ru/careers/vacancies
+│ ├ ● /kk/careers/vacancies
+│ └ ● /en/careers/vacancies
+├   /[locale]/careers/vacancies/[id]
+│ ├ ● /ru/careers/vacancies/production-director
+│ ├ ● /ru/careers/vacancies/construction-director
+│ ├ ● /kk/careers/vacancies/production-director
+│ └ ● [+3 more paths]
+├   /[locale]/catalog
+│ ├ ● /ru/catalog
+│ ├ ● /kk/catalog
+│ └ ● /en/catalog
+├   /[locale]/catalog/[slug]
+│ ├ ● /ru/catalog/tmg-400
+│ ├ ● /ru/catalog/tmg-630
+│ ├ ● /ru/catalog/tmg-1000
+│ └ ● [+2559 more paths]
+├   /[locale]/catalog/compare
+│ ├ ● /ru/catalog/compare
+│ ├ ● /kk/catalog/compare
+│ └ ● /en/catalog/compare
+├   /[locale]/catalog/home
+│ ├ ● /ru/catalog/home
+│ ├ ● /kk/catalog/home
+│ └ ● /en/catalog/home
+├   /[locale]/catalog/source
+│ ├ ● /ru/catalog/source
+│ ├ ● /kk/catalog/source
+│ └ ● /en/catalog/source
+├   /[locale]/client
+│ ├ ● /ru/client
+│ ├ ● /kk/client
+│ └ ● /en/client
+├   /[locale]/client/[section]
+│ ├ ● /ru/client/projects
+│ ├ ● /ru/client/orders
+│ ├ ● /ru/client/documents
+│ └ ● [+12 more paths]
+├   /[locale]/company
+│ ├ ● /ru/company
+│ ├ ● /kk/company
+│ └ ● /en/company
+├   /[locale]/company/[section]
+│ ├ ● /ru/company/achievements
+│ ├ ● /ru/company/social
+│ ├ ● /ru/company/production
+│ └ ● [+12 more paths]
+├   /[locale]/company/team
+│ ├ ● /ru/company/team
+│ ├ ● /kk/company/team
+│ └ ● /en/company/team
+├   /[locale]/contacts
+│ ├ ● /ru/contacts
+│ ├ ● /kk/contacts
+│ └ ● /en/contacts
+├   /[locale]/data-policy
+│ ├ ● /ru/data-policy
+│ ├ ● /kk/data-policy
+│ └ ● /en/data-policy
+├   /[locale]/documents
+│ ├ ● /ru/documents
+│ ├ ● /kk/documents
+│ └ ● /en/documents
+├   /[locale]/inquiry
+│ ├ ● /ru/inquiry
+│ ├ ● /kk/inquiry
+│ └ ● /en/inquiry
+├   /[locale]/investors
+│ ├ ● /ru/investors
+│ ├ ● /kk/investors
+│ └ ● /en/investors
+├   /[locale]/manufacturers
+│ ├ ● /ru/manufacturers
+│ ├ ● /kk/manufacturers
+│ └ ● /en/manufacturers
+├   /[locale]/manufacturers/[slug]
+│ ├ ● /ru/manufacturers/ktz
+│ ├ ● /ru/manufacturers/asia-trafo
+│ ├ ● /ru/manufacturers/aemz
+│ └ ● [+21 more paths]
+├   /[locale]/materials
+│ ├ ● /ru/materials
+│ ├ ● /kk/materials
+│ └ ● /en/materials
+├   /[locale]/materials/[slug]
+│ ├ ● /ru/materials/ru-karera-aktualnye-vakansii
+│ ├ ● /ru/materials/ru-karera-stazhirovki-dlya-studentov
+│ ├ ● /ru/materials/ru-katalog-elektrotekhnicheskoe-oborudovanie-rlnd
+│ └ ● [+849 more paths]
+├   /[locale]/news
+│ ├ ● /ru/news
+│ ├ ● /kk/news
+│ └ ● /en/news
+├   /[locale]/news/[slug]
+│ ├ ● /ru/news/domestic-production
+│ ├ ● /ru/news/caspian-support
+│ ├ ● /ru/news/petropavlovsk-substation
+│ └ ● [+6 more paths]
+├   /[locale]/partners/[slug]
+│ ├ ● /ru/partners/kmg
+│ ├ ● /ru/partners/tco
+│ ├ ● /ru/partners/kegoc
+│ └ ● [+33 more paths]
+├   /[locale]/projects
+│ ├ ● /ru/projects
+│ ├ ● /kk/projects
+│ └ ● /en/projects
+├   /[locale]/projects/[slug]
+│ ├ ● /ru/projects/petropavlovsk
+│ ├ ● /ru/projects/nur-esil
+│ ├ ● /ru/projects/yassy
+│ └ ● [+45 more paths]
+├   /[locale]/selection
+│ ├ ● /ru/selection
+│ ├ ● /kk/selection
+│ └ ● /en/selection
+├   /[locale]/service-unavailable
+│ ├ ● /ru/service-unavailable
+│ ├ ● /kk/service-unavailable
+│ └ ● /en/service-unavailable
+├   /[locale]/solutions
+│ ├ ● /ru/solutions
+│ ├ ● /kk/solutions
+│ └ ● /en/solutions
+├   /[locale]/solutions/[slug]
+│ ├ ● /ru/solutions/distribution
+│ ├ ● /ru/solutions/industry
+│ ├ ● /ru/solutions/infrastructure
+│ └ ● [+6 more paths]
+├   /[locale]/workspace
+│ ├ ● /ru/workspace
+│ ├ ● /kk/workspace
+│ └ ● /en/workspace
+├ ○ /careers
+├   /careers/[slug]
+│ ├ ● /careers/about
+│ ├ ● /careers/learning
+│ ├ ● /careers/internships
+│ └ ● [+3 more paths]
+├ ○ /careers/apply
+├ ○ /careers/vacancies
+├   /careers/vacancies/[id]
+│ ├ ● /careers/vacancies/production-director
+│ └ ● /careers/vacancies/construction-director
+├ ○ /catalog
+├   /catalog/[slug]
+│ ├ ● /catalog/tmg-400
+│ ├ ● /catalog/tmg-630
+│ ├ ● /catalog/tmg-1000
+│ └ ● [+851 more paths]
+├ ○ /catalog/compare
+├ ○ /catalog/home
+├ ○ /catalog/source
+├ ○ /client
+├   /client/[section]
+│ ├ ● /client/projects
+│ ├ ● /client/orders
+│ ├ ● /client/documents
+│ └ ● [+2 more paths]
+├ ○ /company
+├   /company/[section]
+│ ├ ● /company/achievements
+│ ├ ● /company/social
+│ ├ ● /company/production
+│ └ ● [+2 more paths]
+├ ○ /company/team
+├ ○ /contacts
+├ ○ /data-policy
+├ ○ /documents
+├ ○ /icon.svg
+├ ○ /inquiry
+├ ○ /investors
+├ ○ /manufacturers
+├   /manufacturers/[slug]
+│ ├ ● /manufacturers/ktz
+│ ├ ● /manufacturers/asia-trafo
+│ ├ ● /manufacturers/aemz
+│ └ ● [+5 more paths]
+├ ○ /materials
+├   /materials/[slug]
+│ ├ ● /materials/ru-karera-aktualnye-vakansii
+│ ├ ● /materials/ru-karera-stazhirovki-dlya-studentov
+│ ├ ● /materials/ru-katalog-elektrotekhnicheskoe-oborudovanie-rlnd
+│ └ ● [+281 more paths]
+├ ○ /news
+├   /news/[slug]
+│ ├ ● /news/domestic-production
+│ ├ ● /news/caspian-support
+│ └ ● /news/petropavlovsk-substation
+├   /pages/[locale]/[slug]
+│ └ ● /pages/ru/about
+├   /partners/[slug]
+│ ├ ● /partners/kmg
+│ ├ ● /partners/tco
+│ ├ ● /partners/kegoc
+│ └ ● [+9 more paths]
+├ ○ /projects
+├   /projects/[slug]
+│ ├ ● /projects/petropavlovsk
+│ ├ ● /projects/nur-esil
+│ ├ ● /projects/yassy
+│ └ ● [+13 more paths]
+├ ○ /robots.txt
+├ ○ /selection
+├ ○ /service-unavailable
+├ ○ /solutions
+├   /solutions/[slug]
+│ ├ ● /solutions/distribution
+│ ├ ● /solutions/industry
+│ └ ● /solutions/infrastructure
+└ ○ /workspace
+
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+
+Public preview exported to /workspace/shared/alageum-site/frontend/preview-dist
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice

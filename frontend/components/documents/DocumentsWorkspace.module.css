@@ -1,21 +1,31 @@
 .workspace { min-width: 0; display: grid; gap: 16px; overflow-wrap: anywhere; }
 .workspace :global(.grid) { grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); }
 
-.documentActions { margin-top: 12px; }
-.signing { min-width: 0; display: grid; gap: 12px; }
+.documentActions { margin-top: 12px; display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.signing { min-width: 0; width: 100%; max-width: 100%; display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; }
 .signing p, .signing h3 { margin: 0; }
-.signingHeader { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
-.signingHeader h3 { overflow-wrap: anywhere; }
-.signingPreview { display: grid; gap: 10px; margin: 0; padding: 16px; background: #f3f6f9; border-radius: 10px; }
-.signingPreview div { display: grid; grid-template-columns: minmax(100px, 140px) minmax(0, 1fr); gap: 12px; }
+.signingHeader { min-width: 0; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: start; gap: 12px; }
+.signingHeader > button { justify-self: end; max-width: 100%; }
+/* The global typography rule forbids word breaking with !important. Technical
+   document identifiers must be allowed to wrap locally, or their min-content
+   width pushes the Close control beyond a narrow viewport. */
+:global(body) .signingHeader h3 { min-width: 0; overflow-wrap: anywhere !important; }
+.signingPreview { min-width: 0; max-width: 100%; display: grid; gap: 10px; margin: 0; padding: 16px; background: #f3f6f9; border-radius: 10px; }
+.signingPreview div { min-width: 0; display: grid; grid-template-columns: minmax(100px, 140px) minmax(0, 1fr); gap: 12px; }
 .signingPreview dt { color: #526174; }
-.signingPreview dd { margin: 0; overflow-wrap: anywhere; }
+:global(body) .signingPreview dd { min-width: 0; margin: 0; overflow-wrap: anywhere !important; }
 .signingHash { font-family: monospace; font-size: 0.9rem; }
 .signingActions { display: flex; flex-wrap: wrap; gap: 10px; }
 .signing :global(button:disabled) { opacity: 0.6; cursor: not-allowed; }
 @media (max-width: 520px) {
-  .signingHeader { flex-wrap: wrap; }
+  .signingHeader { grid-template-columns: minmax(0, 1fr); }
+  .signingHeader > button { justify-self: start; }
   .signingPreview { padding: 12px; }
   .signingPreview div { grid-template-columns: 1fr; gap: 3px; }
   .signingActions { flex-direction: column; }
 }
+
+.fileArea { display: grid; gap: 12px; justify-items: start; }
+.uploadForm { width: 100%; display: grid; gap: 12px; }
+.uploadForm label { display: grid; gap: 6px; }
+.uploadForm input, .uploadForm select { max-width: 100%; min-width: 0; }

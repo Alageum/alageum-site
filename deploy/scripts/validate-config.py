@@ -27,6 +27,7 @@ def inspect(config):
     backend = services.get("backend", {}).get("environment", {})
     wanted = {"APP_ENV": "production", "NODE_ENV": "production", "DATABASE_SSL": "true",
               "ALAGEUM_TRUSTED_PROXY_IPS": "172.30.44.2", "ALAGEUM_MEDIA_CLAMAV_HOST": "172.30.45.2",
+              "ALAGEUM_DOCUMENT_ROOT": "/var/lib/alageum/private-documents",
               "ALAGEUM_MEDIA_PUBLIC_ROOT": "/var/lib/alageum/public",
               "ALAGEUM_MEDIA_QUARANTINE_DIR": "/var/lib/alageum/private-quarantine",
               "ALAGEUM_SEED_DEMO": "0", "ALAGEUM_IMPORT_CATALOG": "0", "ALAGEUM_EDS_ENABLED": "0"}

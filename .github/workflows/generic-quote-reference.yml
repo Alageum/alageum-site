@@ -6,11 +6,13 @@ on:
       - 'backend/**'
       - 'docs/generic-quote-proof-gates.md'
       - '.github/workflows/generic-quote-reference.yml'
+      - '.github/workflows/ci.yml'
   push:
     paths:
       - 'backend/**'
       - 'docs/generic-quote-proof-gates.md'
       - '.github/workflows/generic-quote-reference.yml'
+      - '.github/workflows/ci.yml'
   workflow_dispatch:
 
 permissions:

@@ -6,6 +6,9 @@ require Vercel.
 
 ## Server transfer
 
+For the administrator, start with [the short Russian handoff](docs/ADMINISTRATOR-RU.md)
+and [the current verification report](docs/release-2026-10-23/README.md).
+
 Read [the server deployment guide](docs/server-deployment.md) and
 [deployment package](deploy/README.md). It provides:
 

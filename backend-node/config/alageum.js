@@ -23,6 +23,7 @@ module.exports = ({ env }) => {
     importCatalog: ["1", "true"].includes(
       env("ALAGEUM_IMPORT_CATALOG", "false"),
     ),
+    quoteSigningRouting: { organizationId: env("ALAGEUM_QUOTE_SIGNING_ORGANIZATION_ID", ""), managerId: env("ALAGEUM_QUOTE_SIGNING_MANAGER_ID", "") },
     documentSigningEnabled: env("ALAGEUM_EDS_ENABLED", "0") === "1",
     maxRequestBytes: 1024 * 1024,
     googleEnabled: ["1", "true"].includes(env("ALAGEUM_GOOGLE_ENABLED", "false")),

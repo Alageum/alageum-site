@@ -1,0 +1,30 @@
+(node:110) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///workspace/shared/alageum-site/frontend/lib/public/news.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /workspace/shared/alageum-site/frontend/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ published news rejects drafts, identity mismatches, unsafe blocks and remote covers (4.174771ms)
+✔ API delivery omits credentials, never caches and checks exact published DTOs (7.362052ms)
+✔ live outages and malformed responses never fall back to bundled archive (3.765503ms)
+✔ static preview is explicit and never connects to backend (0.293249ms)
+(node:111) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///workspace/shared/alageum-site/frontend/lib/i18n/routing.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /workspace/shared/alageum-site/frontend/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ static preview retains root and localized company metadata wiring for both allowed source selectors (1046.075352ms)
+✔ preview adaptations remain disposable and retain source guards and private live routes (721.590442ms)
+✔ non-static company selectors fail before changing the disposable preview or published output (660.436994ms)
+(node:118) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///workspace/shared/alageum-site/frontend/lib/ecosystem/careers.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /workspace/shared/alageum-site/frontend/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ preview enumerates bundled routes and locales without restricting the live CMS (1532.387047ms)
+✔ missing expected source or failed Next build cannot replace the last successful preview (2124.912502ms)
+✔ real exported HTML has static snapshots, correct languages and no fake private routes (35.264013ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3831.532686

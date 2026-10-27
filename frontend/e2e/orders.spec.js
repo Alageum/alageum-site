@@ -170,7 +170,7 @@ test('responsive failed and malformed reads are visible errors with explicit ret
   for (const scenario of [
     { url: endpoint, path: '/b2b/orders', status: 403, label: 'Нет доступа к заказам.' },
     { url: endpoint, path: '/b2b/orders', status: 500, label: 'Не удалось загрузить заказы. Повторите попытку.' },
-    { url: endpoint, path: '/b2b/orders', network: true, label: 'Не удалось загрузить заказы. Повторите попытку.' },
+    { url: endpoint, path: '/b2b/orders', network: true, label: 'Не удалось подтвердить данные заказа. Повторите загрузку.' },
     { url: endpoint, path: '/b2b/orders', status: 200, body: { items: [] }, label: 'Не удалось подтвердить данные заказа. Повторите загрузку.' },
     { url: endpoint, path: '/b2b/orders', status: 200, body: { ...actualPage, items: [{ ...preciseOrder, amount: 1 }] }, label: 'Не удалось подтвердить данные заказа. Повторите загрузку.' },
     { url: `${endpoint}/${precise}`, path: `/b2b/orders/${precise}`, status: 200, body: { id: precise, items: [] }, label: 'Не удалось подтвердить данные заказа. Повторите загрузку.' },

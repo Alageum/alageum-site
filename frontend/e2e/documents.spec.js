@@ -132,7 +132,9 @@ test('responsive document metadata retains the exact first-page DTO through relo
   await expect(summary(page, 'Fictitious unversioned document')).toContainText('Без номера', { useInnerText: true });
   await expect(page.getByText('FIXTURE-OTHER-001', { exact: true })).toHaveCount(0);
   await expect(list(page).getByRole('link')).toHaveCount(0);
-  await expect(list(page).getByRole('button')).toHaveCount(0);
+  await expect(list(page).getByRole('button', { name: 'Скачать файл', exact: true })).toHaveCount(3);
+  await expect(summary(page, 'Fictitious unversioned document').getByRole('button', { name: 'Скачать файл', exact: true })).toBeDisabled();
+  await expect(list(page).getByRole('button', { name: 'Загрузить документ', exact: true })).toHaveCount(0);
   await expect(list(page).locator('[download], a[href*="/files/"], a[href*="/documents/"]')).toHaveCount(0);
   await expect(list(page)).not.toContainText(latestFile, { useInnerText: true });
   await screenshot(page, testInfo, 'documents-list');
@@ -173,7 +175,7 @@ test('responsive failed and malformed document reads show bounded errors and exp
   for (const scenario of [
     { status: 403, label: 'Нет доступа к документам.' },
     { status: 500, label: 'Не удалось загрузить документы. Повторите попытку.' },
-    { network: true, label: 'Не удалось загрузить документы. Повторите попытку.' },
+    { network: true, label: 'Не удалось подтвердить данные документов. Повторите загрузку.' },
     { status: 200, body: { items: [] }, label: 'Не удалось подтвердить данные документов. Повторите загрузку.' },
     { status: 200, body: { ...actualPage, items: [{ ...actual, latest_file_id: 1 }] }, label: 'Не удалось подтвердить данные документов. Повторите загрузку.' },
     { status: 200, body: { ...actualPage, items: [{ ...actual, latest_file_id: '/files/private' }] }, label: 'Не удалось подтвердить данные документов. Повторите загрузку.' },
@@ -353,4 +355,117 @@ test('interrupted documents login cannot install a late session or reopen docume
   await page.goto('/b2b/documents');
   await expect(page.getByRole('heading', { name: 'Войдите в B2B кабинет', exact: true })).toBeVisible();
   await expect(list(page)).toHaveCount(0);
+});
+
+
+test('private file download errors remain bounded without leaving the workspace', async ({ page }) => {
+  await login(page); await expect(summaries(page)).toHaveCount(3);
+  const target = summary(page, 'Fictitious versioned document');
+  await page.route(`${endpoint}/${versioned}/download`, route => reply(route, { error: { code: 'document_file_unavailable', message: '/private/server/path' } }, 404));
+  await target.getByRole('button', { name: 'Скачать файл', exact: true }).click();
+  await expect(target.getByRole('alert')).toHaveText('Файл недоступен');
+  await expect(list(page)).not.toContainText('/private/server/path');
+  await expect(page).toHaveURL(/\/b2b\/documents$/);
+});
+
+// These use a separate disposable uploader and organizations, leaving reader
+// metadata/count fixtures unchanged. Only explicitly delayed replies are held.
+const uploadOrganization = process.env.E2E_DOCUMENT_UPLOAD_ORGANIZATION;
+const uploadOtherOrganization = process.env.E2E_DOCUMENT_UPLOAD_OTHER_ORGANIZATION;
+const privatePdf = Buffer.from('%PDF-1.7\n1 0 obj\n<< /Type /Catalog >>\nendobj\n%%EOF\n');
+async function uploader(page) {
+  expect(uploadOrganization).toMatch(/^[a-f0-9-]{36}$/);
+  expect(uploadOtherOrganization).toMatch(/^[a-f0-9-]{36}$/);
+  await page.goto('/login?next=%2Fb2b%2Fdocuments');
+  await installBrowserSession(page, { email: email('uploader'), password: process.env.E2E_DOCUMENT_PASSWORD, organizationId: uploadOrganization });
+  await page.goto('/b2b/documents');
+  await expect(active(page)).toContainText(uploadOrganization);
+}
+async function fillUpload(page, title) {
+  await page.getByRole('button', { name: 'Загрузить документ', exact: true }).click();
+  const form = page.getByRole('form', { name: 'Загрузить документ', exact: true });
+  await form.getByLabel('Название', { exact: true }).fill(title);
+  const type = form.getByLabel('Тип документа', { exact: true });
+  await expect(type).toHaveAccessibleName('Тип документа');
+  await type.selectOption('manual_attachment');
+  await form.getByLabel('Файл', { exact: true }).setInputFiles({ name: 'fixture.pdf', mimeType: 'application/pdf', buffer: privatePdf });
+  return form;
+}
+
+test('private upload and download traverse browser, API and private storage with exact bytes', async ({ page }, testInfo) => {
+  await uploader(page);
+  const title = `Fictitious browser bytes ${testInfo.project.name}`;
+  const form = await fillUpload(page, title);
+  const accepted = page.waitForResponse(r => r.url() === endpoint && r.request().method() === 'POST');
+  await form.getByRole('button', { name: 'Загрузить', exact: true }).click();
+  const receipt = await accepted; expect(receipt.status()).toBe(201);
+  const created = await receipt.json(); expect(created.latest_file_id).toMatch(/^[a-f0-9-]{36}$/);
+  await expect(summary(page, title)).toBeVisible();
+  const downloaded = page.waitForEvent('download');
+  await summary(page, title).getByRole('button', { name: 'Скачать файл', exact: true }).click();
+  const download = await downloaded;
+  expect(download.suggestedFilename()).toBe('document.pdf');
+  const stream = await download.createReadStream(), chunks = [];
+  for await (const chunk of stream) chunks.push(chunk);
+  expect(Buffer.concat(chunks)).toEqual(privatePdf);
+  await page.reload(); await expect(summary(page, title)).toBeVisible();
+  // Client cancellation cannot undo an already committed server mutation.
+  const cancelledTitle = `Fictitious cancelled receipt ${testInfo.project.name}`;
+  const cancelledForm = await fillUpload(page, cancelledTitle);
+  const held = await holdRealReply(page, endpoint, { method: 'POST' });
+  await cancelledForm.getByRole('button', { name: 'Загрузить', exact: true }).click();
+  try {
+    expect((await held.started).status).toBe(201);
+    await cancelledForm.getByRole('button', { name: 'Отмена', exact: true }).click();
+    await expect(page.getByText('Операция отменена. Если загрузка уже была принята сервером, документ появится после обновления списка.', { exact: true })).toBeVisible();
+  } finally { await held.release(); }
+  await expect(summary(page, cancelledTitle)).toBeVisible();
+});
+
+test('tenant change cancels held upload and download delivery without hiding accepted server work', async ({ page }, testInfo) => {
+  await uploader(page);
+  const title = `Fictitious tenant receipt ${testInfo.project.name}`;
+  const form = await fillUpload(page, title);
+  const held = await holdRealReply(page, endpoint, { method: 'POST' });
+  let created;
+  await form.getByRole('button', { name: 'Загрузить', exact: true }).click();
+  try {
+    const response = await held.started; expect(response.status).toBe(201); created = response.body;
+    await switchTo(page, uploadOtherOrganization);
+  } finally { await held.release(); }
+  await expect(summary(page, title)).toHaveCount(0);
+  await expect(page.getByText('Документ загружен и проверен сервером.', { exact: true })).toHaveCount(0);
+  await switchTo(page, uploadOrganization); await expect(summary(page, title)).toBeVisible();
+  const started = deferred(), release = deferred(), finished = deferred(), downloads = [];
+  const url = `${endpoint}/${created.id}/download`;
+  const handler = async route => {
+    try {
+      const response = await route.fetch(); started.resolve(response.status());
+      await release.promise; await route.fulfill({ response });
+    } catch { started.resolve(0); } finally { finished.resolve(); }
+  };
+  page.on('download', download => downloads.push(download));
+  await page.route(url, handler);
+  await summary(page, title).getByRole('button', { name: 'Скачать файл', exact: true }).click();
+  try { expect(await started.promise).toBe(200); await switchTo(page, uploadOtherOrganization); }
+  finally { release.resolve(); await finished.promise; await page.unroute(url, handler); }
+  await expect(summary(page, title)).toHaveCount(0);
+  await page.getByRole('button', { name: 'Обновить список', exact: true }).click();
+  await expect(list(page)).toHaveAttribute('aria-busy', 'false');
+  expect(downloads).toHaveLength(0);
+});
+
+test('new user session cannot consume a held successful upload receipt', async ({ page }, testInfo) => {
+  await uploader(page);
+  const title = `Fictitious prior user receipt ${testInfo.project.name}`;
+  const form = await fillUpload(page, title);
+  const held = await holdRealReply(page, endpoint, { method: 'POST' });
+  await form.getByRole('button', { name: 'Загрузить', exact: true }).click();
+  try { expect((await held.started).status).toBe(201); await installLogin(page, 'other'); }
+  finally { await held.release(); }
+  await expect(active(page)).toContainText(b);
+  await expect(summaries(page)).toHaveCount(1);
+  await expect(summary(page, title)).toHaveCount(0);
+  await expect(page.getByText('Документ загружен и проверен сервером.', { exact: true })).toHaveCount(0);
+  await expect(page.getByRole('button', { name: 'Загрузить документ', exact: true })).toHaveCount(0);
 });

@@ -1,0 +1,39 @@
+{
+  "historical_approval": false,
+  "migrations": {
+    "backend/alembic.ini": {
+      "after_sha256": "8cf6a2545e91416f5e13356d2c9cf1c9637b4de40013d1741abaa640945ffa70",
+      "before_sha256": "b77d0a3a871feb5f4ccf625e9df84ec46bb564a0eb000ce863c4f5e153b486d1"
+    },
+    "backend/app/core/config.py": {
+      "after_sha256": "e3e235c75301606f04f54cd6986bcd0ab17d234caddc73f389bf5e6742c0eed1",
+      "before_sha256": "9a04a04b490af73a7309b0d62966dfe4a409942f2a02ed4027b2e2c8c0e1fc14"
+    },
+    "backend/requirements-dev.lock": {
+      "after_sha256": "e5637c160ac382141d366c131c778c6ce46169250265f4b22ae4b5d5aef181a8",
+      "before_sha256": "b02e7af8f6238dd34637dee8219fca104932a3b913fc47d8340ac6344001da8a"
+    },
+    "backend/requirements.lock": {
+      "after_sha256": "02cf593cb9931a34422de97498b8a9b2cbe84474b27438915d9ef33d2e0668a9",
+      "before_sha256": "41b10cc5c0634ec4963e45986a5284c76b6332e06db70b36b149e7350c43bfcb"
+    },
+    "backend/uv.lock": {
+      "after_sha256": "06e080b4fa6191dcfea7e9f2189205c9cec4dc67cd66ec8fee654314ac2f1362",
+      "before_sha256": "80d93e2751be39e87ef0480761caa00369657f022bab5db4c51edeae36e7935e"
+    }
+  },
+  "package_migrations": {
+    "certifi": {
+      "after": "2026.10.19",
+      "before": "2026.7.22"
+    }
+  },
+  "reference_harness_sha256": {
+    "generic_quote_cases.py": "f9f9cc0965c9bdb81efed40f598ea5c281c2a390174cc78cef44968c497322c3",
+    "run_generic_quote_reference.py": "5cb5a7c6f56473174a9df18802cfe601fe451b0fa20439b31d20e32893cf462a"
+  },
+  "reference_manifest_sha256": "76a9a7117cf314bbcce78c7581db4f5d79477bcdaf4c487f748bbbb3c0f1b9d7",
+  "reference_revision": "8f8bd11a942e50686d7f8bbd52e1bb5ba3d9721a",
+  "schema": 1,
+  "scope": "current-generic-ASGI-ORM-PostgreSQL"
+}

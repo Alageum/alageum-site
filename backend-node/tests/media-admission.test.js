@@ -149,3 +149,19 @@ test("operator scanner diagnostic requires clean acceptance plus EICAR rejection
   await assert.rejects(promisify(execFile)(process.execPath, [script], { env }), error => error.code === 1 && /Scanner accepted EICAR/.test(error.stderr));
   await assert.rejects(promisify(execFile)(process.execPath, [script], { env: { ...env, ALAGEUM_MEDIA_CLAMAV_HOST: "" } }), error => error.code === 1 && /media_scanner_unavailable/.test(error.stderr));
 });
+
+test("serial multipart persistence follows fileBegin order despite reversed completion", async t => {
+  const { context } = require("../src/domain/media-temporary");
+  const { config, root } = await scannerFixture(t);
+  const first = await input(root, "fail.png"), later = await input(root, "late.png");
+  const started = [];
+  const service = createMediaAdmission({config}).wrapUpload({upload: async ({files}) => {
+    started.push(files[0].originalFilename);
+    if(files[0].originalFilename === "fail.png") throw new Error("owned provider failure");
+    return [{id:1}];
+  }});
+  // Native MIME validation can clone objects; filepath is the server-owned identity.
+  await assert.rejects(context.run({files:new Set([first,later])},()=>service.upload({data:{},files:[{...later},{...first}]})),/owned provider failure/);
+  assert.deepEqual(started,["fail.png"]);
+  assert.deepEqual(await fs.readdir(config.quarantineRoot),[]);
+});

@@ -1,0 +1,41 @@
+test_archive_root_file_refused (test_deployment.ArchiveChecks.test_archive_root_file_refused) ... ok
+test_duplicate_entries_refused (test_deployment.ArchiveChecks.test_duplicate_entries_refused) ... ok
+test_links_devices_and_world_writable (test_deployment.ArchiveChecks.test_links_devices_and_world_writable) ... ok
+test_missing_roots_refused (test_deployment.ArchiveChecks.test_missing_roots_refused) ... ok
+test_nested_uploads_refused (test_deployment.ArchiveChecks.test_nested_uploads_refused) ... ok
+test_path_traversal (test_deployment.ArchiveChecks.test_path_traversal) ... ok
+test_safe_archive (test_deployment.ArchiveChecks.test_safe_archive) ... ok
+test_unexpected_public_content (test_deployment.ArchiveChecks.test_unexpected_public_content) ... ok
+test_missing_mount_rejected (test_deployment.ConfigurationChecks.test_missing_mount_rejected) ... ok
+test_nginx_hostname_injection_rejected (test_deployment.ConfigurationChecks.test_nginx_hostname_injection_rejected) ... ok
+test_public_database_rejected (test_deployment.ConfigurationChecks.test_public_database_rejected) ... ok
+test_readable_secret_rejected (test_deployment.ConfigurationChecks.test_readable_secret_rejected) ... ok
+test_split_tmpfs_options_rejected_before_container_creation (test_deployment.ConfigurationChecks.test_split_tmpfs_options_rejected_before_container_creation) ... ok
+test_tls_downgrade_rejected (test_deployment.ConfigurationChecks.test_tls_downgrade_rejected) ... ok
+test_unpinned_image_rejected (test_deployment.ConfigurationChecks.test_unpinned_image_rejected) ... ok
+test_valid_configuration (test_deployment.ConfigurationChecks.test_valid_configuration) ... ok
+test_comma_bearing_tmpfs_options_are_one_quoted_mount (test_deployment.PackageContracts.test_comma_bearing_tmpfs_options_are_one_quoted_mount) ... ok
+test_connected_frontend_and_no_backend_build_credentials (test_deployment.PackageContracts.test_connected_frontend_and_no_backend_build_credentials) ... ok
+test_empty_git_checkout_has_nonroot_strapi_migration_directory (test_deployment.PackageContracts.test_empty_git_checkout_has_nonroot_strapi_migration_directory) ... ok
+test_explicit_persistent_mounts_and_quarantine (test_deployment.PackageContracts.test_explicit_persistent_mounts_and_quarantine) ... ok
+test_external_service_images_are_digest_locked (test_deployment.PackageContracts.test_external_service_images_are_digest_locked) ... ok
+test_fixed_proxy_scanner_and_tls_database_network (test_deployment.PackageContracts.test_fixed_proxy_scanner_and_tls_database_network) ... ok
+test_no_public_first_admin_takeover_and_catalog_route_preserved (test_deployment.PackageContracts.test_no_public_first_admin_takeover_and_catalog_route_preserved) ... ok
+test_only_edge_publishes_ports (test_deployment.PackageContracts.test_only_edge_publishes_ports) ... ok
+test_production_and_database_tls_are_mandatory (test_deployment.PackageContracts.test_production_and_database_tls_are_mandatory) ... ok
+test_proxy_replaces_untrusted_forwarded_headers (test_deployment.PackageContracts.test_proxy_replaces_untrusted_forwarded_headers) ... ok
+test_restore_is_empty_target_and_leaves_application_stopped (test_deployment.PackageContracts.test_restore_is_empty_target_and_leaves_application_stopped) ... ok
+test_backup_does_not_start_previously_stopped_applications (test_deployment.ShellWorkflowChecks.test_backup_does_not_start_previously_stopped_applications) ... ok
+test_backup_resumes_only_the_original_running_subset (test_deployment.ShellWorkflowChecks.test_backup_resumes_only_the_original_running_subset) ... ok
+test_corrupt_backup_refused_before_service_start (test_deployment.ShellWorkflowChecks.test_corrupt_backup_refused_before_service_start) ... ok
+test_empty_target_restore_does_not_start_application (test_deployment.ShellWorkflowChecks.test_empty_target_restore_does_not_start_application) ... ok
+test_failed_dump_still_resumes_original_services (test_deployment.ShellWorkflowChecks.test_failed_dump_still_resumes_original_services) ... ok
+test_failed_restart_health_retains_backup_and_reports_failure (test_deployment.ShellWorkflowChecks.test_failed_restart_health_retains_backup_and_reports_failure) ... ok
+test_nonempty_target_refused_before_restore (test_deployment.ShellWorkflowChecks.test_nonempty_target_refused_before_restore) ... ok
+test_original_dump_failure_survives_a_restart_failure (test_deployment.ShellWorkflowChecks.test_original_dump_failure_survives_a_restart_failure) ... ok
+test_paired_snapshot_and_original_services_resumed (test_deployment.ShellWorkflowChecks.test_paired_snapshot_and_original_services_resumed) ... ok
+
+----------------------------------------------------------------------
+Ran 36 tests in 21.441s
+
+OK

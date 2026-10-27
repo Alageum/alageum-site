@@ -54,7 +54,7 @@ async function provisionSnapshot(db, { organizationId, documentVersionId, bytes 
     return policy.versionOut(saved);
   });
 }
-function createDocumentSigning({ db, auth, audit, enabled = false, verifier = policy.unavailableVerifier, now = () => new Date(), verificationTimeoutMs = 10000 }) {
+function createDocumentSigning({ db, auth, audit, enabled = false, verifier = policy.unavailableVerifier, now = () => new Date(), verificationTimeoutMs = 10000, authorizeDocument = async () => {} }) {
   if (typeof audit !== "function") throw new TypeError("Transactional audit writer is required");
   const available = () => enabled === true && verifier.available === true;
   const verificationCalls = new Map();
@@ -75,7 +75,15 @@ function createDocumentSigning({ db, auth, audit, enabled = false, verifier = po
     // Hold a cookie session through the domain transaction, including the final
     // commit after external verification. Logout/replacement must wait or reject.
     await auth.assertActiveSession(tx, ctx, context.user.id);
-    return assertActiveContext(tx, context, sign ? [READ, SIGN] : READ);
+    const actor = await assertActiveContext(tx, context, sign ? [READ, SIGN] : READ);
+    await authorizeDocument(tx, actor, documentId(ctx.params.id));
+    return actor;
+  }
+  async function boundSnapshot(tx, actor, id, mutation = false) {
+    const snapshot = await documentAndSnapshot(tx, actor, id, mutation);
+    // Recheck after the document lock, closing provisioning/signing races.
+    await authorizeDocument(tx, actor, id);
+    return snapshot;
   }
   async function event(tx, ctx, context, action, id) {
     await audit(tx, ctx, { action, actor_user_id: context.user.id, organization_id: context.organization_id, entity_type: "document", entity_id: id });
@@ -83,7 +91,7 @@ function createDocumentSigning({ db, auth, audit, enabled = false, verifier = po
   async function status(ctx) {
     const { context, id } = await authorize(ctx);
     ctx.body = await db.transaction(async tx => {
-      const actor = await fresh(tx, context, false, ctx), snapshot = await documentAndSnapshot(tx, actor, id);
+      const actor = await fresh(tx, context, false, ctx), snapshot = await boundSnapshot(tx, actor, id);
       const signature = snapshot && await table(tx, "eds_signatures").where({ organization_id: actor.organization_id, document_id: id, snapshot_id: snapshot.id }).orderByRaw("CASE WHEN status = 'verified' THEN 0 ELSE 1 END").orderBy("created_at", "desc").orderBy("id").first();
       const reason = !enabled ? "disabled" : !available() ? "verifier_unavailable" : !snapshot ? "file_unavailable" : null;
       return { enabled: enabled === true, signing_allowed: reason === null && actor.permissions.has(SIGN), reason, document_id: id, version: policy.versionOut(snapshot), signature: policy.signatureOut(signature) };
@@ -94,7 +102,7 @@ function createDocumentSigning({ db, auth, audit, enabled = false, verifier = po
     const body = strictObject(ctx.request.body, ["version_id"]), versionId = uuid(body.version_id);
     requireEnabled(); requireVerifier();
     ctx.body = await db.transaction(async tx => {
-      const actor = await fresh(tx, context, true, ctx), snapshot = await documentAndSnapshot(tx, actor, id, true);
+      const actor = await fresh(tx, context, true, ctx), snapshot = await boundSnapshot(tx, actor, id, true);
       if (!snapshot) throw error("file_unavailable", "No reviewed document bytes are available", 503);
       if (snapshot.id !== versionId) throw error("document_version_changed", "Select the current document version again");
       if (await table(tx, "eds_signatures").where({ organization_id: actor.organization_id, snapshot_id: snapshot.id, status: "verified" }).first())
@@ -141,7 +149,7 @@ function createDocumentSigning({ db, auth, audit, enabled = false, verifier = po
         if (existing.signature_sha256 !== signatureHash) throw error("signing_intent_conflict", "This signing request already has a different signature");
         if (existing.status !== "pending_verification") return { row: existing };
       } else if (new Date(intent.expires_at).getTime() <= now().getTime()) throw error("signing_intent_expired", "Signing request expired");
-      const snapshot = await documentAndSnapshot(tx, actor, id, true);
+      const snapshot = await boundSnapshot(tx, actor, id, true);
       if (!snapshot || snapshot.id !== intent.snapshot_id) throw error("document_version_changed", "Document changed before signing completed");
       if (!existing) {
         // Serialize replay checks per tenant without holding any external call
@@ -172,7 +180,7 @@ function createDocumentSigning({ db, auth, audit, enabled = false, verifier = po
       ctx.status = ctx.body.status === "pending_verification" ? 202 : 200; return;
     }
     ctx.body = await db.transaction(async tx => {
-      const actor = await fresh(tx, context, true, ctx), snapshot = await documentAndSnapshot(tx, actor, id, true);
+      const actor = await fresh(tx, context, true, ctx), snapshot = await boundSnapshot(tx, actor, id, true);
       if (!snapshot || snapshot.id !== accepted.row.snapshot_id) throw error("document_version_changed", "Document changed while the signature was being checked");
       const row = await table(tx, "eds_signatures").where({ id: accepted.row.id, organization_id: actor.organization_id, actor_user_id: actor.user.id }).forUpdate().first();
       if (row.status !== "pending_verification") return policy.signatureOut(row);

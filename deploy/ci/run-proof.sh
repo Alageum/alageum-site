@@ -77,7 +77,7 @@ for target in initial restored; do
   sudo install -d -o "$pg_uid" -g "$pg_gid" -m 0700 "$work/$target/postgres"
   sudo install -d -o "$clam_uid" -g "$clam_gid" -m 0750 "$work/$target/clamav"
   sudo install -d -o 1000 -g 1000 -m 0750 "$work/$target/public" "$work/$target/public/uploads"
-  sudo install -d -o 1000 -g 1000 -m 0700 "$work/$target/private-quarantine"
+  sudo install -d -o 1000 -g 1000 -m 0700 "$work/$target/private-quarantine" "$work/$target/private-documents"
 done
 "$root/deploy/scripts/check-config.sh" "$active_env"
 stage=build_production_images

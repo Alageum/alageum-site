@@ -1,3 +1,4 @@
+import { collectPages, pagePath } from './pagination.js';
 import { ApiError, apiFetch } from "./client.js";
 
 export const orderId = value => typeof value === 'string' && /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(value);
@@ -12,13 +13,13 @@ const validOrder = value => record(value) && orderId(value.id) &&
 const invalid = () => new ApiError(502, { error: { code: 'invalid_order_response', message: 'Не удалось подтвердить данные заказа.' } });
 
 export async function getOrders({ signal } = {}) {
-  const page = await apiFetch('/orders', { signal });
-  if (!record(page) || !Array.isArray(page.items) || !page.items.every(validOrder) ||
-    !Number.isSafeInteger(page.page) || page.page !== 1 ||
-    !Number.isSafeInteger(page.page_size) || page.page_size < 1 || page.page_size > 100 ||
-    !Number.isSafeInteger(page.total) || page.total < page.items.length || page.items.length > page.page_size) throw invalid();
-  // This screen intentionally displays only the existing first page.
-  return page.items;
+  let items;
+  try { items = await collectPages(number => apiFetch(pagePath('/orders', number), { signal }), (page, number) =>
+    record(page) && Object.keys(page).every(key => ['items','page','page_size','total'].includes(key)) && Array.isArray(page.items) && page.items.every(validOrder) &&
+    Number.isSafeInteger(page.page) && page.page === number && Number.isSafeInteger(page.page_size) && page.page_size >= 1 && page.page_size <= 100 &&
+    Number.isSafeInteger(page.total) && page.total >= page.items.length && page.items.length <= page.page_size);
+  } catch (error) { if (error.status || error.name === 'AbortError') throw error; throw invalid(); }
+  return items;
 }
 
 export async function getOrder(id, { signal } = {}) {

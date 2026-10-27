@@ -8,6 +8,7 @@ import { ptmmIds, ptmmPublicDtos, malformedPtmmDto, dimensionLabels, ptmmUnitCav
 import { officialProducts, productById } from '../lib/catalog/data.js';
 import { normalizeApiProduct } from '../lib/catalog/apiData.js';
 import { getPtmmDimensionQualification } from '../lib/catalog/ptmmDimensionQualification.js';
+import { migrateCurrentReferenceAndTiming } from './helpers/current-ci-migrations.mjs';
 const digest = value => createHash('sha256').update(JSON.stringify(value)).digest('hex');
 
 test('separate API browser fixtures retain actual importer records, UUID guards, raw dimensions and units', () => {
@@ -77,8 +78,9 @@ test('current workflow preserves prior jobs outside the explicit reference/publi
   // This is a current workflow contract, not a new historical approval. The
   // immutable amendment gates still check their original reviewed source pins.
   // The current-source reference, portable lock-check name and explicit public
-  // standalone deployment migrations
-  // have separate executable contracts. All other jobs and PTMM evidence stay
+  // standalone deployment migrations and finite transformer browser budgets
+  // have separate executable contracts. Exact named replacements below do not
+  // admit arbitrary command/time-limit changes. All other jobs and PTMM evidence stay
   // byte-exact; this grants no new authority to an archived approval.
   const oldQuery = '      - name: Reproduce frozen FastAPI query reference vectors\n        run: python ../backend-node/tests/reference/generate_legacy_query.py --check\n';
   const currentQuery = '      - name: Reproduce current sanitized-source query and throttle behavior against archived vectors\n        run: python ../backend-node/tests/reference/verify_current_legacy.py --check\n';
@@ -99,7 +101,7 @@ test('current workflow preserves prior jobs outside the explicit reference/publi
   const currentLockCheck = '      - run: python ../scripts/check_legacy_python_lock.py\n';
   assert.equal(before.split(oldLockCheck).length, 2);
   const prior = partitionDeployment(
-    before.replace(oldQuery, currentQuery).replace(oldThrottle, '').replace(oldLockCheck, currentLockCheck),
+    migrateCurrentReferenceAndTiming(before.replace(oldQuery, currentQuery).replace(oldThrottle, '').replace(oldLockCheck, currentLockCheck)),
     'vercel-services',
   );
   assert.equal(current.retained.trimEnd(), prior.retained.trimEnd());

@@ -11,6 +11,7 @@ const invoicesModule = require("./domain/invoices");
 const documentsModule = require("./domain/documents");
 const signingModule = require("./domain/document-signing");
 const signingSchema = require("./domain/document-signing-schema");
+const quoteSigningModule = require("./domain/quote-signing");
 const quoteModule = require("./domain/quotes");
 const quoteSchema = require("./domain/quote-schema");
 const { createDistributedRateLimiter } = require("./domain/distributed-rate-limit");
@@ -61,6 +62,7 @@ module.exports = {
     await invoicesModule.ensureSchema(db);
     await documentsModule.ensureSchema(db);
     await signingSchema.ensureSchema(db);
+    await quoteSigningModule.ensureSchema(db);
     await catalogFiltersModule.ensureSchema(db);
     await pageEditorial.completePageSchema(strapi);
     await federatedSchema.ensureSchema(db);
@@ -97,9 +99,10 @@ module.exports = {
     const orders = ordersModule.createOrders({ db, auth, audit: auditModule.audit });
     const invoices = invoicesModule.createInvoices({ db, auth });
     const documents = documentsModule.createDocuments({ db, auth, audit: auditModule.audit });
-    const signing = signingModule.createDocumentSigning({ db, auth, audit: auditModule.audit, enabled: config.documentSigningEnabled });
+    const quoteSigning = quoteSigningModule.createQuoteSigning({ db, auth, audit: auditModule.audit, routing: config.quoteSigningRouting });
+    const signing = signingModule.createDocumentSigning({ db, auth, audit: auditModule.audit, enabled: config.documentSigningEnabled, authorizeDocument: quoteSigning.authorizeDocument });
     const system = systemModule.createSystem({ db, metrics: strapi.alageumMetrics, environment: config.env });
-    strapi.alageum = { auth, federated, browserSessions, cmsAdmission, registration, catalog, catalogFilters, quotes, quoteCreateLimit, cmsCatalog, organizationProfile, organizationMembers, support, orders, invoices, documents, signing, system };
+    strapi.alageum = { auth, federated, browserSessions, cmsAdmission, registration, catalog, catalogFilters, quotes, quoteCreateLimit, cmsCatalog, organizationProfile, organizationMembers, support, orders, invoices, documents, signing, quoteSigning, system };
     if (config.importCatalog)
       strapi.log.info(
         "Reviewed catalog import: " +

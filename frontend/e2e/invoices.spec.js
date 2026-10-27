@@ -163,7 +163,7 @@ test('responsive failed and malformed invoice reads show bounded errors and expl
   for (const scenario of [
     { status: 403, label: 'Нет доступа к счетам.' },
     { status: 500, label: 'Не удалось загрузить счета. Повторите попытку.' },
-    { network: true, label: 'Не удалось загрузить счета. Повторите попытку.' },
+    { network: true, label: 'Не удалось подтвердить данные счетов. Повторите загрузку.' },
     { status: 200, body: { items: [] }, label: 'Не удалось подтвердить данные счетов. Повторите загрузку.' },
     { status: 200, body: { ...actualPage, items: [{ ...actual, amount: 1 }] }, label: 'Не удалось подтвердить данные счетов. Повторите загрузку.' },
     { status: 200, body: { ...actualPage, items: [{ ...actual, amount: 'NaN' }] }, label: 'Не удалось подтвердить данные счетов. Повторите загрузку.' },

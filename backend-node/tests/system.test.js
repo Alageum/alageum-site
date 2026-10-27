@@ -3,7 +3,7 @@
 const { test } = require("node:test");
 const assert = require("node:assert/strict");
 const { readFileSync } = require("node:fs");
-const { createHash } = require("node:crypto");
+const { verifyCurrentLegacyReference } = require("./reference/current-legacy");
 const path = require("node:path");
 const { createMetrics, formatTimestamp, createSystem, jsonInteger } = require("../src/domain/system");
 const { version: packageVersion } = require("../package.json");
@@ -16,9 +16,7 @@ test("system reference verifies frozen sources, pinned packages, and a narrow ex
   assert.equal(fixture.source_revision, "74b92855d1dcc2997c471823f83686ac66972649");
   assert.equal(fixture.python_requirement, ">=3.12");
   assert.deepEqual(fixture.runtime_versions, { fastapi: "0.141.1", starlette: "1.6.0", pydantic: "2.13.4", "pydantic-core": "2.46.4", httpx: "0.28.1" });
-  for (const [file, digest] of Object.entries(fixture.source_sha256)) {
-    assert.equal(createHash("sha256").update(readFileSync(path.join(__dirname, "../..", file))).digest("hex"), digest, `Frozen source changed: ${file}`);
-  }
+  verifyCurrentLegacyReference("system", fixture);
 });
 
 for (const vector of fixture.timestamp_cases) test(`Pydantic UTC timestamp shape: ${vector.input}`, () => {
