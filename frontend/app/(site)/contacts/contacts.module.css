@@ -1,0 +1,93 @@
+/* Local specificity keeps the shared corporate styles from overriding these refinements. */
+.page.page:global(.corp-investor) :global(.site-page-heading) {
+  padding: 24px 0;
+  margin-bottom: 24px;
+  border-bottom: 0;
+}
+.page.page:global(.corp-investor) :global(.site-page-heading h1) {
+  font-size: clamp(38px, 4.6vw, 62px);
+  line-height: 1.06;
+  letter-spacing: -.045em;
+  margin: 18px 0;
+}
+.page.page:global(.corp-investor) :global(.corp-heading-muted) {
+  display: block;
+  margin-top: 8px;
+  font-size: .78em;
+  color: #747977;
+}
+.page.page:global(.corp-investor) :global(.site-page-heading > p:last-child) {
+  max-width: 640px;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 20px 0 0;
+}
+.page.page:global(.corp-investor) :global(.corp-contact-hero) { grid-template-columns: 1.12fr 1fr; margin-top: 0; }
+.page.page:global(.corp-investor) :global(.corp-contact-main), .page.page:global(.corp-investor) :global(.corp-contact-prepare) { padding: 36px 40px; }
+.page.page:global(.corp-investor) :global(.corp-contact-main) { background: #222528; color: #fff; }
+.page.page:global(.corp-investor) :global(.corp-contact-main .site-eyebrow) { color: #f18e9b; }
+.page.page:global(.corp-investor) :global(.corp-contact-main h2) {
+  font-size: clamp(29px, 3vw, 42px);
+  line-height: 1.08;
+  margin: 22px 0 26px;
+  color: #fff;
+}
+.page.page:global(.corp-investor) :global(.corp-contact-main > p:last-child) { color: #bfc4c4; margin: 20px 0 0; line-height: 1.7; }
+.page.page:global(.corp-investor) :global(.corp-contact-prepare) { background: #eeefed; border: 1px solid #dedfdd; }
+.page.page:global(.corp-investor) :global(.corp-contact-prepare h3) { font-size: clamp(27px, 2.8vw, 37px); line-height: 1.12; margin: 24px 0; }
+.page.page:global(.corp-investor) :global(.corp-contact-prepare ol) { margin-bottom: 0; }
+.page.page:global(.corp-investor) :global(.corp-contact-prepare li) { padding-block: 15px; line-height: 1.5; }
+.page.page:global(.corp-investor) :global(.corp-contact-shortcuts) { margin-block: 20px 0; }
+.page.page:global(.corp-investor) :global(.corp-contact-shortcuts a) { min-height: 76px; font-size: 12px; }
+.page.page:global(.corp-investor) :global(.corp-office-grid) { gap: 16px; }
+.page.page:global(.corp-investor) :global(.corp-office) {
+  background: #fff;
+  border: 1px solid #dedfdd;
+  padding: 28px;
+  transition: transform .2s, border-color .2s, box-shadow .2s;
+}
+.page.page:global(.corp-investor) :global(.corp-office h3) { font-size: 29px; letter-spacing: -.035em; }
+.page.page:global(.corp-investor) :global(.corp-office .site-eyebrow) { color: #616962; }
+.page.page:global(.corp-investor) :global(.corp-office address) { min-height: 48px; font-size: 14px; line-height: 1.65; }
+.page.page:global(.corp-investor) :global(.corp-office a[href^="tel:"]) { min-height: 44px; display: flex; align-items: center; font-size: 18px; font-weight: 600; }
+.page.page:global(.corp-investor) :global(.corp-office a[href^="mailto:"]) { min-height: 44px; font-size: 14px; }
+.page.page:global(.corp-investor) :global(.corp-office-search input) { min-height: 48px; background: #fff; border: 1px solid #bfc3c0; padding-inline: 16px 44px; font-size: 15px; }
+.page.page:global(.corp-investor) :global(.corp-office-search input:focus-visible) { outline: 2px solid var(--site-red); outline-offset: 3px; }
+.page.page:global(.corp-investor) :global(.corp-result-count) { font-variant-numeric: tabular-nums; }
+.page.page:global(.corp-investor) :global(.corp-contact-faq) { padding: 32px; margin-bottom: 20px; gap: 32px; }
+.page.page:global(.corp-investor) :global(.corp-contact-faq > div) { min-width: 0; }
+.page.page:global(.corp-investor) :global(.corp-contact-faq h2) { font-size: clamp(25px, 2.6vw, 35px); line-height: 1.15; }
+.page.page:global(.corp-investor) :global(.corp-contact-faq p) { line-height: 1.75; }
+.page :global(.public-faq summary) { display: flex; justify-content: space-between; align-items: center; gap: 24px; min-height: 64px; padding: 18px 0; list-style: none; }
+.page :global(.public-faq summary::-webkit-details-marker) { display: none; }
+.page :global(.public-faq summary::after) { content: ''; width: 16px; height: 16px; flex: 0 0 16px; background: linear-gradient(var(--site-red), var(--site-red)) center / 16px 2px no-repeat, linear-gradient(var(--site-red), var(--site-red)) center / 2px 16px no-repeat; }
+.page :global(.public-faq details[open] > summary::after) { background-size: 16px 2px, 0 0; }
+.page.page:global(.corp-investor) :global([id]) { scroll-margin-top: 110px; }
+.page.page:global(.corp-investor) :global(a:focus-visible), .page.page:global(.corp-investor) :global(summary:focus-visible) { outline: 2px solid var(--site-red); outline-offset: 5px; }
+
+@media (hover: hover) {
+  .page.page:global(.corp-investor) :global(.corp-office:hover) { transform: translateY(-3px); border-color: #acb2ad; box-shadow: 0 10px 28px #2225280a; }
+}
+@media (max-width: 760px) {
+  .page.page:global(.corp-investor) :global(.corp-contact-hero) { grid-template-columns: 1fr; }
+  .page.page:global(.corp-investor) :global(.corp-contact-main), .page.page:global(.corp-investor) :global(.corp-contact-prepare) { padding: 28px; }
+  .page.page:global(.corp-investor) :global(.site-page-heading) { padding: 20px 0 24px; }
+  .page.page:global(.corp-investor) :global(.site-page-heading h1) { font-size: 39px; }
+  .page.page:global(.corp-investor) :global(.corp-contact-main h2) { margin: 20px 0 24px; font-size: 34px; }
+  .page.page:global(.corp-investor) :global(.corp-contact-shortcuts a) { min-height: 58px; }
+  .page.page:global(.corp-investor) :global(.corp-office address) { min-height: 0; }
+  .page.page:global(.corp-investor) :global(.corp-contact-faq) { padding: 25px 22px; gap: 20px; }
+}
+@media (max-width: 380px) {
+  .page.page:global(.corp-investor) :global(.corp-contact-main), .page.page:global(.corp-investor) :global(.corp-contact-prepare) { padding: 24px 20px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page.page:global(.corp-investor) :global(.corp-office) { transition: none; transform: none; }
+}
+
+.enquiries { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin-top: 28px; }
+.page.page:global(.corp-investor) .enquiries :global(.corp-contact-faq) { margin: 0; padding: 32px; display: flex; flex-direction: column; gap: 24px; border-top: 3px solid #222528; }
+.page .enquiries :global(.site-text-link) { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding-block: 12px; border-bottom: 1px solid #ddd; width: 100%; line-height: 1.5; }
+.page .enquiries :global(h2) { max-width: 440px; }
+.page .enquiries :global(.corp-small-note) { font-size: 12px; }
+@media (max-width: 760px) { .enquiries { grid-template-columns: 1fr; gap: 16px; } .page.page:global(.corp-investor) .enquiries :global(.corp-contact-faq) { padding: 25px 22px; } }

@@ -1,0 +1,24 @@
+.channel { margin-bottom: 6px; }
+.row { display: flex; align-items: stretch; border: 1px solid #ffffff40; min-width: 0; }
+.row.phone { color: #222528; background: #fff; }
+.row.email { color: #fff; background: transparent; }
+.row .action.action { flex: 1; display: flex; min-width: 0; flex-direction: column; gap: 6px; padding: 14px 18px; color: inherit; text-decoration: none; transition: background .18s; }
+.label { font-size: 10px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; opacity: .75; }
+.value { font-size: clamp(20px, 2.5vw, 32px); line-height: 1.2; letter-spacing: -.03em; overflow-wrap: anywhere; }
+.copy.copy { display: grid; place-items: center; flex: 0 0 48px; align-self: stretch; min-height: 48px; padding: 10px; color: inherit; background: transparent; border: 0; border-left: 1px solid #8884; cursor: pointer; transition: background .18s, color .18s; }
+.copy svg { width: 20px; height: 20px; }
+.copy:disabled { cursor: progress; opacity: .5; }
+.feedback.feedback { min-height: 17px; margin: 5px 0 0; color: #d2d6d4; font-size: 11px; line-height: 1.5; }
+.action:focus-visible, .copy:focus-visible { outline: 2px solid #ed7687; outline-offset: 3px; position: relative; z-index: 1; }
+@media (hover: hover) {
+  .phone .action:hover, .phone .copy:hover { background: #f0dce0; }
+  .email .action:hover, .email .copy:hover { background: #ffffff12; }
+}
+@media (max-width: 760px) {
+  .row .action.action { padding: 13px 14px; }
+  .value { font-size: 20px; }
+  .email .value { font-size: 18px; }
+  .copy.copy { flex-basis: 44px; }
+}
+@media (max-width: 380px) { .value { font-size: 18px; } .email .value { font-size: 17px; } }
+@media (prefers-reduced-motion: reduce) { .row .action.action, .copy.copy { transition: none; } }
