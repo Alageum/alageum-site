@@ -1,4 +1,69 @@
-import LocaleElement from "@/components/locale/LocaleElement";import { notFound } from 'next/navigation';
-import { EcoHero, EcoSection, EcoActions, EcoSource } from '@/components/ecosystem/Parts';
-import { jobs } from '@/lib/ecosystem/careers';
-export default async function Vacancy({ params }) {const { id } = await params;const job = jobs.find((item) => item.id === id);if (!job) notFound();return <LocaleElement as="div" className="eco-page"><EcoHero label={job.field} title={job.title} text={job.text}><EcoActions primary={`/careers/apply?position=${job.id}`} primaryLabel="Подготовить отклик" secondary="/careers/vacancies" secondaryLabel="Все позиции" /></EcoHero><EcoSection title="Задачи и требования"><LocaleElement as="ul">{job.requirements.map((item) => <LocaleElement as="li" key={item}>{item}</LocaleElement>)}</LocaleElement><LocaleElement as="p" className="eco-notice">Позиция опубликована на официальном сайте. Актуальность, место работы, график и условия оплаты необходимо уточнить у HR. Зарплата и срок ответа здесь не заявляются.</LocaleElement><EcoSource href={job.source} /></EcoSection></LocaleElement>;}
+import CorporateArrow from "@/components/public/CorporateArrow";
+import L from "@/components/careers/Text";
+import { notFound } from "next/navigation";
+import { Intro, Action, Source } from "@/components/careers/Editorial";
+import { jobs } from "@/lib/ecosystem/careers";
+export async function generateMetadata({ params }) {
+  const { id } = await params;
+  return { title: jobs.find((j) => j.id === id)?.title || "Вакансия" };
+}
+export default async function Vacancy({ params }) {
+  const { id } = await params;
+  const job = jobs.find((j) => j.id === id);
+  if (!job) notFound();
+  return (
+    <>
+      <div className="site-container career-back">
+        <L as="a" className="site-text-link" href="/careers/vacancies">
+          <CorporateArrow direction="right" />
+          Все позиции
+        </L>
+      </div>
+      <Intro label={job.field} title={job.title} />
+      <section className="career-section">
+        <L as="p" className="eco-notice">
+          {job.status === "closed"
+            ? "Вакансия закрыта. Можно подготовить инициативный отклик."
+            : "Актуальность не подтверждена. Это сохранённая публикация, а не подтверждённая открытая вакансия."}
+        </L>
+        <div className="career-facts">
+          <div>
+            <L as="h2">Задачи и требования</L>
+            <L as="p">{job.text}</L>
+            <ul>
+              {job.requirements.map((r) => (
+                <L as="li" key={r}>
+                  {r}
+                </L>
+              ))}
+            </ul>
+            <Source href={job.source}>Публикация о вакансиях</Source>
+          </div>
+          <aside>
+            <L as="h3">Условия позиции</L>
+            <L as="p">
+              Город, предприятие, график, зарплата и дата закрытия не
+              подтверждены. Уточните их у HR перед передачей резюме.
+            </L>
+            <Action
+              href={
+                job.status === "closed"
+                  ? "/careers/apply"
+                  : `/careers/apply?position=${job.id}`
+              }
+            >
+              {job.status === "closed"
+                ? "Инициативный отклик"
+                : "Уточнить актуальность"}
+            </Action>
+          </aside>
+        </div>
+      </section>
+    </>
+  );
+}
+
+export const dynamicParams = false;
+export function generateStaticParams() {
+  return jobs.map(({ id }) => ({ id }));
+}

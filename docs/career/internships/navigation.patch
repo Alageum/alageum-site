@@ -1,0 +1,13 @@
+diff --git a/frontend/components/SiteHeader.js b/frontend/components/SiteHeader.js
+index d256f8d..53f5910 100644
+--- a/frontend/components/SiteHeader.js
++++ b/frontend/components/SiteHeader.js
+@@ -54,7 +54,7 @@ const corporateSections = [
+ const careerSections = [
+ { href: '/careers', label: 'Карьера', title: 'Работа, которая даёт энергию', note: 'Производство, инжиниринг и развитие вместе с Alageum.', links: [['Компания как работодатель', '/careers/about', 'Рабочая среда и направления'], ['Люди и команда', '/careers/team', 'Руководство и производственные команды'], ['Предприятия', '/careers/workplaces', 'География и специализация']] },
+ { href: '/careers/vacancies', label: 'Вакансии', title: 'Найдите своё направление', note: 'Профессии из официальных материалов. Актуальность уточняется у HR.', links: [['Все направления', '/careers/vacancies', 'Инженеры, производство и продажи'], ['Оставить резюме', '/careers/apply', 'Подготовка отклика'], ['Как проходит найм', '/careers/process', 'Рекомендуемый порядок знакомства']] },
+-{ href: '/careers/internships', label: 'Стажировки', title: 'Первый шаг в профессию', note: 'Производственные и офисные направления для студентов.', links: [['Стажировки', '/careers/internships', 'Направления программы'], ['Обучение и развитие', '/careers/learning', 'Возможности и вопросы к HR'], ['Отклик на стажировку', '/careers/apply?type=internship', 'Подготовьте резюме']] },
++{ href: '/careers/internships', label: 'Стажировки', title: 'Первый шаг в профессию', note: 'Производственные и офисные направления для студентов.', links: [['Стажировки', '/careers/internships', 'Направления программы'], ['Отклик на стажировку', '/careers/apply?type=internship', 'Подготовьте резюме']] },
+ { href: '/careers/process', label: 'Кандидатам', title: 'От знакомства до следующего шага', note: 'Практические ответы и подготовка отклика.', links: [['Этапы и вопросы', '/careers/process', 'Что уточнить перед откликом'], ['Мои черновики', '/careers/apply', 'Сохранённое резюме'], ['HR: cv@alageum.com', 'mailto:cv@alageum.com', 'Официальный канал из программы стажировок']] }];
+ 
+ const catalogSections = [
