@@ -11,6 +11,7 @@ import { useAuth } from "@/components/AuthProvider";
 import './public/company/company-architecture.css';
 import {companyMenuLinks,companyResources} from '@/lib/public/company-architecture';
 import HeaderContact from '@/components/HeaderContact';
+import { careerSections, careerSectionIndex } from "@/components/careers/navigation";
 
 import { isPublicOnly } from '@/lib/deployment/publicMode';
 
@@ -44,12 +45,6 @@ const corporateSections = [
 }];
 
 
-const careerSections = [
-{ href: '/careers', label: 'Карьера', title: 'Работа, которая даёт энергию', note: 'Производство, инжиниринг и развитие вместе с Alageum.', links: [['Компания как работодатель', '/careers/about', 'Рабочая среда и направления'], ['Люди и команда', '/careers/team', 'Руководство и производственные команды'], ['Предприятия', '/careers/workplaces', 'География и специализация']] },
-{ href: '/careers/vacancies', label: 'Вакансии', title: 'Найдите своё направление', note: 'Профессии из официальных материалов. Актуальность уточняется у HR.', links: [['Все направления', '/careers/vacancies', 'Инженеры, производство и продажи'], ['Оставить резюме', '/careers/apply', 'Подготовка отклика'], ['Как проходит найм', '/careers/process', 'Рекомендуемый порядок знакомства']] },
-{ href: '/careers/internships', label: 'Стажировки', title: 'Первый шаг в профессию', note: 'Производственные и офисные направления для студентов.', links: [['Стажировки', '/careers/internships', 'Направления программы'], ['Обучение и развитие', '/careers/learning', 'Возможности и вопросы к HR'], ['Отклик на стажировку', '/careers/apply?type=internship', 'Подготовьте резюме']] },
-{ href: '/careers/process', label: 'Кандидатам', title: 'От знакомства до следующего шага', note: 'Практические ответы и подготовка отклика.', links: [['Этапы и вопросы', '/careers/process', 'Что уточнить перед откликом'], ['Мои черновики', '/careers/apply', 'Сохранённое резюме'], ['HR: cv@alageum.com', 'mailto:cv@alageum.com', 'Официальный канал из программы стажировок']] }];
-
 const catalogSections = [
 { href: '/catalog/home', label: 'Каталог', title: 'Оборудование для вашего проекта', note: 'Выберите направление или начните с инженерной задачи.', links: [['Каталог продукции', '/catalog', 'Категории и технические параметры'], ['Производители', '/manufacturers', 'Промышленные площадки'], ['Материалы', '/documents', 'Каталоги и источники']] },
 { href: '/catalog', label: 'Продукция', title: 'Технический каталог', note: 'Параметры, исполнения и документы.', links: [['Трансформаторы', '/catalog?category=transformers', 'Преобразование напряжения'], ['Подстанции', '/catalog?category=substations', 'Комплектные решения'], ['Моя подборка', '/selection', 'Позиции для вашего проекта']] },
@@ -79,7 +74,7 @@ export default function SiteHeader({ selectionCount }) {
   const [menu, setMenu] = useState({ pathname, preview: null, desktop: false, mobile: false, group: null });
   const navPath = ['/account', '/b2b', '/login', '/register', '/verify-email', '/forgot-password', '/reset-password'].some(root => pathname === root || pathname.startsWith(`${root}/`)) ? '/account' : ['/manufacturers', '/documents', '/news', '/materials', '/partners'].some((prefix) => pathname.startsWith(prefix)) ? '/company' : pathname.startsWith('/projects') ? '/solutions' : pathname.startsWith('/inquiry') || pathname.startsWith('/client') ? '/contacts' : pathname;
   const exactIndex = sections.findIndex(section => navPath === section.href);
-  const currentIndex = exactIndex >= 0 ? exactIndex : sections.reduce((found,section,index) => navPath.startsWith(`${section.href}/`) && section.href.length > (sections[found]?.href.length || 0) ? index : found,-1);
+  const currentIndex = area === "careers" ? careerSectionIndex(pathname) : exactIndex >= 0 ? exactIndex : sections.reduce((found,section,index) => navPath.startsWith(`${section.href}/`) && section.href.length > (sections[found]?.href.length || 0) ? index : found,-1);
   const onCurrentPath = menu.pathname === pathname;
   const desktopOpen = onCurrentPath && menu.desktop;
   const mobileOpen = onCurrentPath && menu.mobile;
@@ -146,30 +141,31 @@ export default function SiteHeader({ selectionCount }) {
           <LocaleElement as="nav" className="site-desktop-nav" aria-label="Основная навигация">
             <LocaleElement as="div" className="site-nav-rail">
               {sections.map((section, index) =>
-              <Link key={section.href} href={section.href} ref={(element) => {navRefs.current[index] = element;}} className={`site-nav-link${currentIndex === index ? " is-current" : ""}`} aria-current={currentIndex === index ? "page" : undefined} aria-expanded={desktopOpen && previewIndex === index} aria-controls="site-mega-navigation" onMouseEnter={() => previewSection(index)} onFocus={() => {
+              <Link key={section.href} href={section.href} ref={(element) => {navRefs.current[index] = element;}} className={`site-nav-link${currentIndex === index ? " is-current" : ""}`} aria-current={currentIndex === index ? "page" : undefined} aria-expanded={section.links.length ? desktopOpen && previewIndex === index : undefined} aria-controls={section.links.length ? "site-mega-navigation" : undefined} onMouseEnter={() => {if(section.links.length)previewSection(index);}} onFocus={() => {
+                if (!section.links.length) return;
                 if (suppressFocusPreview.current) {suppressFocusPreview.current = false;return;}
                 previewSection(index);
               }} onKeyDown={(event) => {
-                if (event.key === "ArrowDown") {
+                if (event.key === "ArrowDown" && section.links.length) {
                   event.preventDefault();
                   pendingSubmenuFocus.current = true;
                   previewSection(index);
                 }
               }} onNavigate={() => closeMenus()}>
-                  {section.label}<Chevron />
+                  {section.label}{section.links.length > 0 && <Chevron />}
                 </Link>
               )}
               <LocaleElement as="span" className="site-nav-indicator site-nav-indicator-committed" aria-hidden="true" style={{ "--nav-index": Math.max(currentIndex, 0), opacity: currentIndex < 0 ? 0 : 1 }} />
               <LocaleElement as="span" className="site-nav-indicator site-nav-indicator-preview" aria-hidden="true" style={{ "--nav-index": Math.max(previewIndex, 0), opacity: previewIndex < 0 ? 0 : 1 }} />
             </LocaleElement>
-            <LocaleElement as="div" id="site-mega-navigation" className={`site-mega-navigation${desktopOpen ? " is-open" : ""}`} inert={!desktopOpen}>
+            {area !== "careers" && <LocaleElement as="div" id="site-mega-navigation" className={`site-mega-navigation${desktopOpen ? " is-open" : ""}`} inert={!desktopOpen}>
               {activeSection &&
               <LocaleElement as="div" className="site-mega-inner" key={activeSection.href}>
                   <LocaleElement as="div" className="site-mega-intro"><LocaleElement as="span" className="site-eyebrow">{activeSection.label}</LocaleElement><LocaleElement as="strong">{activeSection.title}</LocaleElement><LocaleElement as="p">{activeSection.note}</LocaleElement>{activeSection.resources&&<div className="company-menu-resources">{activeSection.resources.map(([label,href])=><Link key={href} href={href} onNavigate={()=>closeMenus()}>{label} ↗</Link>)}</div>}</LocaleElement>
                   {activeSection.links.map(([label, href, note]) => <Link key={`${label}:${href}`} href={href} className="site-mega-link" onNavigate={() => closeMenus()}><LocaleElement as="span">{label}</LocaleElement><LocaleElement as="small" className="site-metadata">{note}</LocaleElement></Link>)}
                 </LocaleElement>
               }
-            </LocaleElement>
+            </LocaleElement>}
           </LocaleElement>
           <LocaleElement as="div" className="site-header-actions">
             <div className="site-header-language"><LanguageSwitcher /></div>
@@ -178,7 +174,7 @@ export default function SiteHeader({ selectionCount }) {
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.79a2 2 0 0 1-.45 2.11L8.09 9.89a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.89.33 1.83.56 2.79.69A2 2 0 0 1 22 16.92Z" /></svg>
               <LocaleElement as="span">Обратная связь</LocaleElement>
             </Link>}
-            {area !== 'company' && <Link href={area === 'careers' ? '/careers/apply' : '/client/projects'} className="brand-header-contact" onNavigate={() => closeMenus()}>{area === 'careers' ? 'Оставить резюме' : 'Создать проект'} <LocaleElement as="span" aria-hidden="true">↗</LocaleElement></Link>}
+            {area !== 'company' && <Link href={area === 'careers' ? '/careers/apply' : '/client/projects'} className={`brand-header-contact${area === 'careers' ? ' career-resume-link' : ''}`} onNavigate={() => closeMenus()}>{area === 'careers' ? 'Оставить резюме' : 'Создать проект'} <LocaleElement as="span" aria-hidden="true">↗</LocaleElement></Link>}
             <Link href={isPublicOnly() ? "/service-unavailable" : "/account"} className="site-language site-metadata" onNavigate={() => closeMenus()}>{isPublicOnly() ? "Кабинет недоступен" : "Личный кабинет"}</Link>
             {!isPublicOnly() && hasPermission('catalog.manage') && <Link href="/admin/catalog" className="site-selection-link">Управление каталогом</Link>}
             {area === 'catalog' && <Suspense fallback={<Link href="/selection" className="site-selection-link">Подборка</Link>}><SelectionNavigation selectionCount={selectionCount} onNavigate={() => closeMenus()} /></Suspense>}
@@ -193,9 +189,9 @@ export default function SiteHeader({ selectionCount }) {
           <LocaleElement as="div" className="site-mobile-group" key={section.href}>
               <LocaleElement as="div" className="site-mobile-group-heading">
                 <Link href={section.href} aria-current={currentIndex === index ? "page" : undefined} onNavigate={() => closeMenus()}>{section.label}</Link>
-                <LocaleElement as="button" type="button" aria-label={`${menu.group === index ? "Свернуть" : "Развернуть"} раздел «${section.label}»`} aria-controls={`site-mobile-group-${index}`} aria-expanded={menu.group === index} onClick={() => setMenu((previous) => ({ ...previous, group: previous.group === index ? null : index }))}><Chevron expanded={menu.group === index} /></LocaleElement>
+                {section.links.length > 0 && <LocaleElement as="button" type="button" aria-label={`${menu.group === index ? "Свернуть" : "Развернуть"} раздел «${section.label}»`} aria-controls={`site-mobile-group-${index}`} aria-expanded={menu.group === index} onClick={() => setMenu((previous) => ({ ...previous, group: previous.group === index ? null : index }))}><Chevron expanded={menu.group === index} /></LocaleElement>}
               </LocaleElement>
-              <LocaleElement as="div" id={`site-mobile-group-${index}`} className="site-mobile-group-links" hidden={menu.group !== index}>{section.links.map(([label, href]) => <Link key={`${label}:${href}`} href={href} onNavigate={() => closeMenus()}>{label}</Link>)}{section.resources&&<div className="company-menu-resources">{section.resources.map(([label,href])=><Link key={href} href={href} onNavigate={()=>closeMenus()}>{label} ↗</Link>)}</div>}</LocaleElement>
+              {(section.links.length > 0 || section.resources?.length > 0) && <LocaleElement as="div" id={`site-mobile-group-${index}`} className="site-mobile-group-links" hidden={menu.group !== index}>{section.links.map(([label, href]) => <Link key={`${label}:${href}`} href={href} onNavigate={() => closeMenus()}>{label}</Link>)}{section.resources&&<div className="company-menu-resources">{section.resources.map(([label,href])=><Link key={href} href={href} onNavigate={()=>closeMenus()}>{label} ↗</Link>)}</div>}</LocaleElement>}
             </LocaleElement>
           )}
           <LanguageSwitcher />

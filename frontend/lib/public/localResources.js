@@ -5,6 +5,7 @@ const pages=new Map(materials.items.map(item=>[canonical(item.url),`/materials/$
 const archivePages=new Map(pages);
 pages.set('alageum.com','/');pages.set('alageum.com/ru','/');
 for(const [slug,target] of [['o-nas','/company'],['istoriya','/company#history'],['dostizheniya','/company#achievements'],['rukovodstvo','/company/team'],['soc-otv','/company/social'],['prodazha','/contacts#assets']])pages.set(`alageum.com/ru/kompaniya/${slug}`,target);
+for(const [language,locale] of [['ru',''],['en','/en'],['kk','/kk'],['kz','/kk']])for(const [old,route] of [['aktualnye-vakansii','vacancies'],['stazhirovki-dlya-studentov','internships']])pages.set(`alageum.com/${language}/karera/${old}`,`${locale}/careers/${route}`);
 pages.set('alageum.com/ru/kontakty','/contacts');
 for(const [slug,target] of [['novosti','/news'],['predpriyatiya','/manufacturers'],['napravleniya','/solutions'],['katalog','/catalog'],['karera','/careers']])pages.set(`alageum.com/ru/${slug}`,target);
 for(const [slug,id] of [['ao-ktz','ktz'],['too-asia-trafo','asia-trafo'],['too-aemz','aemz'],['too-utz','utz'],['too-petropavlovskij-elektrotekhnicheskij-zavod','petz'],['too-elektromontazh','elmo'],['too-aktauskij-transformatornyj-zavod','batys-electric'],['ural-electric','ural-electric']])pages.set(`alageum.com/ru/predpriyatiya/${slug}`,`/manufacturers/${id}`);

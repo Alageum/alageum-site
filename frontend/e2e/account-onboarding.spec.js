@@ -20,7 +20,7 @@ test('registration validates mismatch and submits once while pending', async ({ 
   await page.getByLabel('Имя и фамилия').fill('Test Buyer'); await page.getByLabel('Email', { exact: true }).fill(user.email);
   await page.getByLabel('Пароль', { exact: true }).fill('long-password-123'); await page.getByLabel('Повторите пароль').fill('long-password-456');
   await page.getByRole('button', { name: 'Создать аккаунт', exact: true }).click();
-  await expect(page.getByRole('alert')).toHaveText('Пароли не совпадают.'); expect(count).toBe(0);
+  await expect(page.getByRole('main').getByRole('alert')).toHaveText('Пароли не совпадают.'); expect(count).toBe(0);
   await page.getByLabel('Повторите пароль').fill('long-password-123');
   await page.getByRole('button', { name: 'Создать аккаунт', exact: true }).click();
   await expect(page.getByRole('button', { name: 'Создание аккаунта…' })).toBeDisabled();
@@ -36,7 +36,7 @@ test('verification requires a click, removes token from address and can resend e
   await expect(page.getByRole('button', { name: 'Подтвердить email', exact: true })).toBeEnabled();
   await expect(page).toHaveURL(/\/verify-email$/); expect(count).toBe(0);
   await page.getByRole('button', { name: 'Подтвердить email', exact: true }).click();
-  await expect(page.getByRole('alert')).toContainText('Ссылка недействительна'); expect(count).toBe(1);
+  await expect(page.getByRole('main').getByRole('alert')).toContainText('Ссылка недействительна'); expect(count).toBe(1);
   await page.getByLabel('Email', { exact: true }).fill(user.email); await page.getByRole('button', { name: 'Отправить письмо повторно' }).click();
   await expect(page.getByRole('status')).toContainText('Если для этого адреса');
 });
