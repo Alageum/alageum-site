@@ -103,7 +103,7 @@ test("each visible menu destination opens distinct content and is active", async
     await expect(page.locator("h1")).toContainText(item.heading);
     await expect(page).toHaveURL(new RegExp(item.href + "$"));
   }
-  for(const [label,href,heading] of [['Предприятия','/manufacturers','Найдите свою точку контакта.'],['Контакты','/contacts','Свяжемся по вашей задаче.']]){
+  for(const [label,href,heading] of [['Предприятия','/manufacturers','Найдите свою точку контакта.'],['Контакты','/contacts','Контакты.Начнём сотрудничество.']]){
     await page.goto('/careers');await page.locator('.site-footer nav a').filter({hasText:new RegExp('^'+label+'$')}).click();
     await expect(page).toHaveURL(new RegExp(href+'$'));await expect(page.locator('h1')).toContainText(heading);
   }
