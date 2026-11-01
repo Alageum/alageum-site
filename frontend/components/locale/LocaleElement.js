@@ -10,7 +10,10 @@ export default function LocaleElement({ as: Tag = 'span', children, ...props }) 
   const locale = useLocale();
   const attributes = { ...props };
   for (const key of ['alt', 'title', 'placeholder', 'aria-label', 'aria-description']) if (typeof attributes[key] === 'string') attributes[key] = translateText(attributes[key], locale);
-  if (Tag === 'a') attributes.href = localizedHref(localResourceHref(attributes.href), locale);
+  if (Tag === 'a') {
+    attributes.href = localizedHref(localResourceHref(attributes.href), locale);
+    if(attributes.href===null){Tag='span';delete attributes.href;delete attributes.target;delete attributes.rel;delete attributes.download;}
+  }
   const translated = props['data-no-translate'] ? children : Children.map(children, child => typeof child === 'string' ? translateText(child, locale) : child);
   if(Tag==='input'&&attributes.type==='checkbox')return <SelectionIndicator {...attributes}/>;
   if(Tag==='select')return <DesignSelect {...attributes}>{translated}</DesignSelect>;

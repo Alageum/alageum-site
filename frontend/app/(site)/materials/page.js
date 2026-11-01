@@ -1,6 +1,5 @@
-import E from '@/components/locale/LocaleElement';
-import {EcoHero,EcoSection} from '@/components/ecosystem/Parts';
+import {Story,Hero,Section,Jump} from '@/components/public/story/Story';
+import ArchiveFeature from '@/components/public/story/ArchiveFeature';
 import MaterialDirectory from '@/components/public/MaterialDirectory';
-import './[slug]/materials.css';
-export const metadata={title:'Материалы компании'};
-export default function Materials(){return <E as="div" className="eco-page"><EcoHero label="МАТЕРИАЛЫ" title="Публикации и опыт компании." text="Сохранённые материалы о предприятиях, проектах, руководстве и общественных инициативах. Исторические сведения относятся к периоду публикации."/><EcoSection><MaterialDirectory/></EcoSection></E>;}
+export const metadata={title:'Архив материалов компании'};
+export default function Materials(){return <Story name="materials"><Hero label="Архив материалов" variant="split" visual={<ArchiveFeature/>} title="Найдите нужную публикацию." lead="Исторические материалы о предприятиях, людях и событиях. Сведения сохраняют дату исходной публикации и не заменяют текущий профиль компании."><Jump href="#archive-search">Поиск в архиве</Jump></Hero><Section id="archive-search" label="ПОИСК В АРХИВЕ"><MaterialDirectory/></Section></Story>;}

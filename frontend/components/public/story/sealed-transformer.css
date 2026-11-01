@@ -1,0 +1,21 @@
+.tmg-explainer{display:grid;grid-template-columns:1.25fr 1fr;gap:28px 48px;background:#fff;border:1px solid #c8cbd0;margin-bottom:48px!important;padding:36px;align-items:center}
+.tmg-drawing{min-width:0;background:#f6f7f8;padding:12px 6px 18px}
+.tmg-drawing svg{display:block;width:100%;height:auto;max-height:340px}
+.tmg-terminal{stroke:#676d73;stroke-width:3;stroke-linejoin:round}
+.tmg-oil{fill:#f1e2c3}
+.tmg-tank{stroke:#53595f;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;fill:none}
+.tmg-core{stroke:#71777d;stroke-width:10;stroke-linejoin:round}
+.tmg-winding{fill:#d7ac79;stroke:#8f6843;stroke-width:1.5}
+.tmg-winding-line{stroke:#8f6843;stroke-width:1.2}
+.tmg-callout{stroke:#ce1727;stroke-width:1.5}
+.tmg-marker{fill:#fff;stroke:#ce1727;stroke-width:1.5}
+.tmg-drawing text{fill:#ce1727;font:600 15px Arial,sans-serif}
+.tmg-drawing>p{text-align:center;font-size:12px;color:#676d73}
+.tmg-explanation>div{display:grid;grid-template-columns:30px 1fr;gap:18px;padding:24px 0;border-bottom:1px solid #d0d3d6}
+.tmg-explanation>div:first-child{padding-top:0}.tmg-explanation>div:last-child{border-bottom:0;padding-bottom:0}
+.tmg-key{border:1px solid #ce1727;border-radius:50%;color:#ce1727;display:grid;place-content:center;width:28px;height:28px;font-size:12px;margin-top:3px}
+.tmg-explainer .tmg-explanation h3{font-size:clamp(22px,2vw,29px);line-height:1.16;letter-spacing:-.025em;margin:0 0 14px}
+.tmg-explainer .tmg-explanation p{font-size:16px;line-height:1.65;color:#535e64;margin:0}
+.tmg-explainer figcaption{grid-column:1/-1;border-top:1px solid #d0d3d6;padding-top:20px;font-size:12px;line-height:1.65;color:#676d73;max-width:none}
+@media(max-width:900px){.tmg-explainer{gap:24px;padding:26px;grid-template-columns:1fr 1fr}.tmg-explanation>div{gap:12px}}
+@media(max-width:760px){.tmg-explainer{grid-template-columns:1fr;padding:20px;gap:24px;margin-bottom:34px!important}.tmg-drawing{padding:0 0 16px}.tmg-explanation>div{padding:20px 0}.tmg-explainer .tmg-explanation h3{font-size:23px}.tmg-explainer .tmg-explanation p{font-size:15px}.tmg-explainer figcaption{padding-top:18px}}

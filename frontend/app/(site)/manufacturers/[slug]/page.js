@@ -1,25 +1,22 @@
-import LocaleElement from "@/components/locale/LocaleElement";import CorporateArrow from '@/components/public/CorporateArrow';
-import Link from "@/components/locale/LocaleLink";
+import {PhotoEssay} from '@/components/public/story/Visuals';
+import {storyPhotos} from '@/lib/public/story-photography';
+import FactoryFact from '@/components/public/story/FactoryFact';
+import E from '@/components/locale/LocaleElement';
 import { notFound } from 'next/navigation';
-import PageIntro from '@/components/public/PageIntro';
-import CorporatePage from '@/components/public/CorporatePage';
-import CorporatePhoto from '@/components/public/CorporatePhoto';
-import SourceNote from '@/components/public/SourceNote';
-import ProjectCTA from '@/components/public/ProjectCTA';
+import { Story, Hero, Section, Jump, Source, ChapterNav } from '@/components/public/story/Story';
 import { manufacturers, manufacturerById } from '@/lib/public/content';
 import { enterpriseContacts } from '@/lib/public/company';
+import { factoryDossiers } from '@/lib/public/factory-dossiers';
+import FactoryFocus from '@/components/public/story/FactoryFocus';
 import { getManufacturerPhoto } from '@/lib/public/photography';
-export const dynamicParams = false;
-export function generateStaticParams() {return manufacturers.map((item) => ({ slug: item.id }));}
-export async function generateMetadata({ params }) {const item = manufacturerById((await params).slug);return { title: item?.title || 'Предприятие', description: item?.description };}
-export default async function ManufacturerPage({ params }) {
-  const item = manufacturerById((await params).slug);if (!item) notFound();
-  const contact = enterpriseContacts[item.id];
-  return <CorporatePage className="corp-manufacturer-detail"><PageIntro label={item.short} parent={{ href: '/manufacturers', label: 'Предприятия' }} eyebrow={item.city} title={item.title} description={item.legal} />
-    <CorporatePhoto photo={getManufacturerPhoto(item.id)} className="corp-detail-photo" priority sizes="(max-width: 760px) 100vw, 90vw" />
-    <LocaleElement as="section" className="site-editorial-section"><LocaleElement as="div"><LocaleElement as="p" className="site-eyebrow">СПЕЦИАЛИЗАЦИЯ</LocaleElement><LocaleElement as="h2">{item.city}</LocaleElement><LocaleElement as="p" className="site-body-muted">{item.description}</LocaleElement></LocaleElement><LocaleElement as="div"><LocaleElement as="h2" className="public-section-title">Основные направления</LocaleElement><LocaleElement as="ol" className="public-checklist">{item.capabilities.map((text, index) => <LocaleElement as="li" key={text}><LocaleElement as="span">0{index + 1}</LocaleElement>{text}</LocaleElement>)}</LocaleElement></LocaleElement></LocaleElement>
-    <LocaleElement as="div" className="public-inline-actions corp-profile-actions">{item.catalogQuery && <Link className="site-button site-button-primary" href={`/catalog?q=${encodeURIComponent(item.catalogQuery)}`}>Оборудование предприятия <CorporateArrow /></Link>}<LocaleElement as="a" className="site-text-link" href={item.source} target="_blank" rel="noopener noreferrer">Официальный профиль <CorporateArrow /></LocaleElement></LocaleElement>
-    <LocaleElement as="section" className="site-editorial-section corp-profile-contact"><LocaleElement as="div"><LocaleElement as="p" className="site-eyebrow">СВЯЗЬ С ПРЕДПРИЯТИЕМ</LocaleElement><LocaleElement as="h2">Адрес и контакты</LocaleElement><LocaleElement as="p" className="site-body-muted">Перед визитом уточните адрес и порядок посещения. Адрес отдела продаж может отличаться от производственной площадки.</LocaleElement></LocaleElement><LocaleElement as="div"><LocaleElement as="p" className="site-body-muted">{contact.label}</LocaleElement><address>{contact.city}, {contact.address}</address><LocaleElement as="a" className="site-text-link" href={`tel:${contact.tel}`}>{contact.phone}{contact.extension ? ` · ${contact.extension}` : ''}</LocaleElement><br /><LocaleElement as="a" className="site-text-link" href={`mailto:${contact.email}`}>{contact.email} <CorporateArrow /></LocaleElement></LocaleElement></LocaleElement>
-    <SourceNote href={item.source}>Профиль предприятия ALAGEUM Electric</SourceNote><ProjectCTA href={`/inquiry?solution=${encodeURIComponent(item.title)}`} title="Подготовьте запрос предприятию" text="Укажите задачу, параметры оборудования и место поставки. Исполнение и комплектность подтверждаются после рассмотрения исходных данных." />
-  </CorporatePage>;
+export const dynamicParams=false;
+export function generateStaticParams(){return manufacturers.map(item=>({slug:item.id}));}
+export async function generateMetadata({params}){const item=manufacturerById((await params).slug);return {title:item?.title||'Предприятие',description:item?.description};}
+export default async function ManufacturerPage({params}){
+ const item=manufacturerById((await params).slug);if(!item)notFound();const dossier=factoryDossiers[item.id],contact=enterpriseContacts[item.id];
+ return <Story name={`factory factory-${item.id}`}><Hero ancestors={[{href:'/company',label:'Компания'}]} label={item.short} parent={{href:'/manufacturers',label:'Предприятия и производство'}} title={dossier.theme} lead={dossier.text} photo={getManufacturerPhoto(item.id)} variant={item.id==='asia-trafo'||item.id==='elmo'?'dark':'split'}><E as="p" className="story-kicker" style={{marginTop:24}}>{item.city} · {item.legal}</E></Hero>
+ <ChapterNav items={[["#factory-profile","Профиль"],["#factory-process",dossier.focus],["#factory-contact","Контакты"]]}/>
+ <Section id="factory-profile" label={item.title} title="Параметры специализации."><dl className="story-facts">{dossier.facts.map(fact=><div key={fact.label}><E as="dd"><FactoryFact value={fact.value}/></E><E as="dt">{fact.label}</E><E as="small">{fact.period}</E></div>)}</dl><Source href={dossier.source} period="Проверено 01.11.2026. Недатированные характеристики не являются отчётом о выпуске за год."/></Section>
+ <Section id="factory-process" label={dossier.focus} title={item.id==='utz'?'Как устроен герметичный трансформатор.':item.id==='asia-trafo'?'Сначала — модель. Затем — изделие.':item.id==='elmo'?'Работы на площадке.':'Что определяет работу площадки.'} tone="paper"><FactoryFocus id={item.id}/>{item.id==='asia-trafo'&&<PhotoEssay photos={[storyPhotos.asiaEngineering,storyPhotos.asiaLine]} label="Инженерия и производство Asia Trafo"/>}{item.id==='ktz'&&<PhotoEssay photos={[storyPhotos.ktzProcess,storyPhotos.ktzProducts]} label="Производство КТЗ"/>}<div className="story-dossier"><div className="story-process">{dossier.chapters.filter((_,index)=>item.id!=='utz'||index!==0).map(([title,text])=><article key={title}><E as="h3">{title}</E><E as="p">{text}</E></article>)}<Jump href={dossier.related[0]}>{dossier.related[1]}</Jump></div><aside><E as="p" className="story-kicker">НОМЕНКЛАТУРА</E><E as="h3">{item.short}</E><ul className="story-checklist">{item.capabilities.map(text=><E as="li" key={text}>{text}</E>)}</ul>{item.catalogQuery&&<Jump href={`/catalog?q=${encodeURIComponent(item.catalogQuery)}`}>Оборудование предприятия</Jump>}</aside></div></Section>
+ <Section id="factory-contact" label="ПРЯМАЯ СВЯЗЬ" title="Обратиться на предприятие."><div className="story-columns"><div><E as="p">{contact.label}</E><E as="address" style={{fontStyle:'normal',marginTop:18}}>{contact.city}, {contact.address}</E><Jump href={`tel:${contact.tel}`}>{contact.phone}{contact.extension?` · ${contact.extension}`:''}</Jump><br/><Jump href={`mailto:${contact.email}`}>{contact.email}</Jump></div><div className="story-copy"><E as="p">Укажите предприятие, тип оборудования и назначение объекта. Перед визитом уточните расположение отдела продаж и порядок посещения.</E><Jump href={`/inquiry?solution=${encodeURIComponent(item.title)}`}>Составить технический запрос</Jump><Source href="https://alageum.com/ru/kontakty">Официальные контакты</Source></div></div></Section></Story>;
 }

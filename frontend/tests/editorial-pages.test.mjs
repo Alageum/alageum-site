@@ -76,7 +76,8 @@ test('React Blocks rendering escapes text, clamps body H1 only and fetches no me
   const require = createRequire(import.meta.url);
   const { transform, loadBindings } = require('next/dist/build/swc');
   const file = new URL('../components/public/EditorialBlocks.js', import.meta.url);
-  const input = (await readFile(file, 'utf8')).replace("'../../lib/public/pages.js'", JSON.stringify(new URL('../lib/public/pages.js', import.meta.url).href));
+  let input = await readFile(file, 'utf8');
+  for(const path of ['public/pages.js','public/localResources.js','i18n/routing.js'])input=input.replace(`'../../lib/${path}'`,JSON.stringify(new URL(`../lib/${path}`,import.meta.url).href));
   await loadBindings();
   const compiled = await transform(input, { filename: file.pathname, jsc: { parser: { syntax: 'ecmascript', jsx: true }, transform: { react: { runtime: 'automatic' } } }, module: { type: 'es6' } });
   const code = compiled.code.replaceAll('"react/jsx-runtime"', JSON.stringify(pathToFileURL(require.resolve('react/jsx-runtime')).href));
@@ -97,14 +98,23 @@ test('React Blocks rendering escapes text, clamps body H1 only and fetches no me
   assert.match(html, /<li class="editorial-list-nested"><ul>/);
   assert.match(html, /href="https:\/\/example.com\/\?a=1&amp;b=2"/);
   assert.throws(() => renderToStaticMarkup(createElement(Blocks, { body: [{ type: 'image', image: { url: 'https://example.com/' } }] })));
+  const migrated=renderToStaticMarkup(createElement(Blocks,{locale:'en',body:[{type:'paragraph',children:[
+    {type:'link',url:'https://alageum.com/ru/kompaniya/o-nas',children:[text('Company')]},
+    {type:'link',url:'https://alageum.com/images/missing.pdf',children:[text('Unlinked text')]},
+    {type:'link',url:'mailto:sales@alageum.com',children:[text('Email')]},
+  ]}]}));
+  assert.match(migrated,/href="\/en\/company"/);
+  assert.match(migrated,/<span>Unlinked text<\/span>/);
+  assert.match(migrated,/href="mailto:sales@alageum.com"/);
+  assert.doesNotMatch(migrated,/href="https:\/\/alageum.com/);
 });
 
 test('preview contains exactly one RU page copied verbatim from the extracted company source', async () => {
   assert.deepEqual(previewPageParams(), [{ locale: 'ru', slug: 'about' }]);
-  const company = await source('components/public/StaticCompanyPage.js');
+  const company = await source('../docs/public-redesign-2026-11-01/company-before.js');
   const page = fixture();
   for (const value of [page.title, page.seo_title, page.seo_description, ...page.body.flatMap(block => block.children.map(child => child.text))]) assert.ok(company.includes(value), value);
-  assert.equal(previewPageProvenance.sourceFile, 'frontend/components/public/StaticCompanyPage.js');
+  assert.equal(previewPageProvenance.sourceFile, 'docs/public-redesign-2026-11-01/company-before.js');
   assert.equal(previewPageProvenance.sourceUrl, 'https://alageum.com/ru/kompaniya/o-nas');
   assert.equal(previewPageProvenance.reviewedAt, '2026-10-12');
   for (const locale of ['en', 'kk', 'uz', 'zh']) assert.equal(getPreviewPage(locale, 'about'), null);
@@ -234,7 +244,9 @@ test('company and generic routes resolve metadata and content together before re
   assert.match(company, /page: null, metadata: staticMetadata/);
   assert.equal((company.match(/await loadEditorialPage\(/g) || []).length, 1);
   assert.match(company, /loadEditorialPage\('ru', 'about'\)/);
-  assert.match(company, /return \(await getCompany\(\)\).metadata/);
+  assert.match(company, /const resolved=await getCompany\(\)/);
+  assert.match(company, /resolved.source==='cms'\?resolved.metadata:companyPageMetadata/);
+  assert.match(company, /overview=\{<EditorialPage page=\{resolved.page\}/);
   assert.match(generic, /locale === 'ru' && slug === 'about' \? companyDelivery\(\) : null/);
   assert.match(generic, /return \{ page, metadata \}/);
   assert.match(generic, /return \(await getPage\(locale, slug\)\).metadata/);

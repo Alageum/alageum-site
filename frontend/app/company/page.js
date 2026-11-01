@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import StaticCompanyPage, { metadata as staticMetadata } from '@/components/public/StaticCompanyPage';
 import EditorialPage from '@/components/public/EditorialPage';
 import { loadEditorialPage } from '@/lib/api/pagesServer';
+import {companyPageMetadata} from '@/lib/public/company-metadata';
 import { companyDelivery, companyMetadata } from '@/lib/api/companyServer';
 import '../pages/editorial-pages.css';
 
@@ -19,11 +20,12 @@ const getCompany = cache(async () => {
   return { source: 'cms', page, metadata: companyMetadata(page, config) };
 });
 
-export async function generateMetadata() {
-  return (await getCompany()).metadata;
+export async function generateMetadata({params} = {}) {
+  const resolved=await getCompany();
+  return resolved.source==='cms'?resolved.metadata:companyPageMetadata(resolved.metadata,'/company',(await params)?.locale||'ru');
 }
 
 export default async function CompanyPage() {
   const resolved = await getCompany();
-  return resolved.source === 'static' ? <StaticCompanyPage /> : <EditorialPage page={resolved.page} />;
+  return resolved.source === 'static' ? <StaticCompanyPage /> : <StaticCompanyPage overview={<EditorialPage page={resolved.page} />} />;
 }

@@ -1,0 +1,22 @@
+[
+  {
+    "fixtureMode": "ok",
+    "status": 200,
+    "noStaticFallback": true
+  },
+  {
+    "fixtureMode": "missing",
+    "status": 404,
+    "noStaticFallback": true
+  },
+  {
+    "fixtureMode": "unavailable",
+    "status": 500,
+    "noStaticFallback": true
+  },
+  {
+    "path": "/pages/ru/about",
+    "status": 200,
+    "canonical": "http://127.0.0.1:3001/company"
+  }
+]

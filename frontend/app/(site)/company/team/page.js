@@ -1,4 +1,8 @@
-import LocaleElement from "@/components/locale/LocaleElement";import { EcoHero, EcoSection } from '@/components/ecosystem/Parts';
-import Leadership from '@/components/ecosystem/Leadership';
-export const metadata = { title: 'Команда и руководство Alageum Electric' };
-export default function Team() {return <LocaleElement as="div" className="eco-page"><EcoHero label="КОМАНДА" title="Люди, которые развивают группу." text="Основатель, руководство группы и предприятий. Имена и должности — по официальным материалам компании." /><EcoSection title="Руководство"><Leadership /></EcoSection></LocaleElement>;}
+import {companyPageMetadata} from '@/lib/public/company-metadata';
+import E from '@/components/locale/LocaleElement';
+import Image from '@/components/locale/LocaleImage';
+import {Story,Hero,Section,Jump,Source} from '@/components/public/story/Story';
+import {leaders} from '@/lib/ecosystem/leadership';
+const pageMetadata={title:'Команда и руководство Alageum Electric'};
+export async function generateMetadata({params}){return companyPageMetadata(pageMetadata,'/company/team',(await params)?.locale||'ru');}
+export default function Team(){const founder=leaders[0];return <Story name="team"><Hero label="Руководство" parent={{href:'/company',label:'Компания'}} variant="split" photo={{path:founder.photo,width:480,height:560,alt:founder.name,caption:founder.role}} title="Люди и зоны ответственности." lead="Руководство группы и отдельных предприятий."><E as="h2" className="team-founder-name">{founder.name}</E><E as="p">{founder.role}</E><Jump href={founder.source}>Официальный профиль</Jump></Hero><Section tone="paper" label="УПРАВЛЕНИЕ ГРУППОЙ И ПРЕДПРИЯТИЯМИ" title="Ответственные за направления."><div className="story-leaders">{leaders.slice(1).map(person=><article key={person.source}><Image src={person.photo} alt={person.name} width={300} height={360}/><div><E as="h3">{person.name}</E><E as="p">{person.role}</E><Jump href={person.source}>Официальный профиль</Jump></div></article>)}</div><Source href="https://alageum.com/ru/kompaniya/rukovodstvo" period="Список на официальной странице сверён 01.11.2026. Подборка не является полным юридическим реестром органов управления."/></Section></Story>;}

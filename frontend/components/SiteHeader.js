@@ -8,15 +8,16 @@ import LanguageSwitcher from "@/components/locale/EcosystemNavigation";
 import SelectionNavigation from "@/components/catalog/SelectionNavigation";
 import { useAuth } from "@/components/AuthProvider";
 
+import './public/company/company-architecture.css';
+import {companyMenuLinks,companyResources} from '@/lib/public/company-architecture';
+import HeaderContact from '@/components/HeaderContact';
+
 import { isPublicOnly } from '@/lib/deployment/publicMode';
 
 const corporateSections = [
 {
-  href: "/catalog/home", label: "Каталог", title: "Технический каталог", note: "Оборудование, характеристики и подборка для проекта.",
-  links: [
-  ["Трансформаторы", "/catalog?category=transformers", "Параметры и исполнение"],
-  ["Распределительные устройства", "/catalog?category=switchgear", "Коммутация и распределение"],
-  ["Подстанции", "/catalog?category=substations", "Комплектные решения"]]
+  href: "/company", label: "Компания", title: "ALAGEUM Electric", note: "Предприятия, компетенции и проверенные публичные материалы.",
+  links: companyMenuLinks, resources: companyResources
 
 },
 {
@@ -28,25 +29,17 @@ const corporateSections = [
 
 },
 {
-  href: "/company", label: "Компания", title: "ALAGEUM Electric", note: "Предприятия, компетенции и проверенные публичные материалы.",
+  href: "/catalog/home", label: "Каталог", title: "Технический каталог", note: "Оборудование, характеристики и подборка для проекта.",
   links: [
-  ["О компании", "/company", "Производство, инжиниринг и сервис"],
-  ["Предприятия", "/manufacturers", "Профили заводов и компетенции"],
-  ["Документы", "/documents", "Каталоги и официальные источники"],
-  ["Инвесторам", "/investors", "Структура, проекты и публичные материалы"],
-      ["История и достижения", "/company/history", "Подтверждённые этапы развития"],
-      ["Социальная ответственность", "/company/social", "Участие в жизни регионов"],
-  ["Команда", "/company/team", "Руководство группы"],
-  ["Карьера", "/careers", "Работа и развитие в Alageum"],
-  ["Новости", "/news", "Производство и развитие"]]
+  ["Трансформаторы", "/catalog?category=transformers", "Параметры и исполнение"],
+  ["Распределительные устройства", "/catalog?category=switchgear", "Коммутация и распределение"],
+  ["Подстанции", "/catalog?category=substations", "Комплектные решения"]]
 
 },
 {
   href: "/contacts", label: "Контакты", title: "Связь по вашему проекту", note: "Официальные каналы связи и подготовка вашего обращения.",
   links: [
-  ["Контактная информация", "/contacts", "Телефоны, почта и региональные офисы"],
-  ["Подготовить запрос", "/inquiry", "Соберите исходные данные"],
-  ["Личный кабинет", "/account", "Аккаунт и доступ к компании"]]
+  ["Контактная информация", "/contacts", "Телефоны, почта и региональные офисы"]]
 
 }];
 
@@ -84,7 +77,7 @@ export default function SiteHeader({ selectionCount }) {
   const suppressFocusPreview = useRef(false);
   const pendingSubmenuFocus = useRef(false);
   const [menu, setMenu] = useState({ pathname, preview: null, desktop: false, mobile: false, group: null });
-  const navPath = ['/account', '/b2b', '/login', '/register', '/verify-email', '/forgot-password', '/reset-password'].some(root => pathname === root || pathname.startsWith(`${root}/`)) ? '/account' : ['/manufacturers', '/documents'].some((prefix) => pathname.startsWith(prefix)) ? '/company' : pathname.startsWith('/projects') ? '/solutions' : pathname.startsWith('/inquiry') || pathname.startsWith('/client') ? '/contacts' : pathname;
+  const navPath = ['/account', '/b2b', '/login', '/register', '/verify-email', '/forgot-password', '/reset-password'].some(root => pathname === root || pathname.startsWith(`${root}/`)) ? '/account' : ['/manufacturers', '/documents', '/news', '/materials', '/partners'].some((prefix) => pathname.startsWith(prefix)) ? '/company' : pathname.startsWith('/projects') ? '/solutions' : pathname.startsWith('/inquiry') || pathname.startsWith('/client') ? '/contacts' : pathname;
   const exactIndex = sections.findIndex(section => navPath === section.href);
   const currentIndex = exactIndex >= 0 ? exactIndex : sections.reduce((found,section,index) => navPath.startsWith(`${section.href}/`) && section.href.length > (sections[found]?.href.length || 0) ? index : found,-1);
   const onCurrentPath = menu.pathname === pathname;
@@ -172,7 +165,7 @@ export default function SiteHeader({ selectionCount }) {
             <LocaleElement as="div" id="site-mega-navigation" className={`site-mega-navigation${desktopOpen ? " is-open" : ""}`} inert={!desktopOpen}>
               {activeSection &&
               <LocaleElement as="div" className="site-mega-inner" key={activeSection.href}>
-                  <LocaleElement as="div" className="site-mega-intro"><LocaleElement as="span" className="site-eyebrow">{activeSection.label}</LocaleElement><LocaleElement as="strong">{activeSection.title}</LocaleElement><LocaleElement as="p">{activeSection.note}</LocaleElement></LocaleElement>
+                  <LocaleElement as="div" className="site-mega-intro"><LocaleElement as="span" className="site-eyebrow">{activeSection.label}</LocaleElement><LocaleElement as="strong">{activeSection.title}</LocaleElement><LocaleElement as="p">{activeSection.note}</LocaleElement>{activeSection.resources&&<div className="company-menu-resources">{activeSection.resources.map(([label,href])=><Link key={href} href={href} onNavigate={()=>closeMenus()}>{label} ↗</Link>)}</div>}</LocaleElement>
                   {activeSection.links.map(([label, href, note]) => <Link key={`${label}:${href}`} href={href} className="site-mega-link" onNavigate={() => closeMenus()}><LocaleElement as="span">{label}</LocaleElement><LocaleElement as="small" className="site-metadata">{note}</LocaleElement></Link>)}
                 </LocaleElement>
               }
@@ -180,6 +173,11 @@ export default function SiteHeader({ selectionCount }) {
           </LocaleElement>
           <LocaleElement as="div" className="site-header-actions">
             <div className="site-header-language"><LanguageSwitcher /></div>
+            {area === 'company' && <HeaderContact />}
+            {area === 'company' && <Link href="/contacts" className="site-feedback-link" aria-label="Обратная связь — контакты Alageum" onNavigate={() => closeMenus()}>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.79a2 2 0 0 1-.45 2.11L8.09 9.89a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.89.33 1.83.56 2.79.69A2 2 0 0 1 22 16.92Z" /></svg>
+              <LocaleElement as="span">Обратная связь</LocaleElement>
+            </Link>}
             {area !== 'company' && <Link href={area === 'careers' ? '/careers/apply' : '/client/projects'} className="brand-header-contact" onNavigate={() => closeMenus()}>{area === 'careers' ? 'Оставить резюме' : 'Создать проект'} <LocaleElement as="span" aria-hidden="true">↗</LocaleElement></Link>}
             <Link href={isPublicOnly() ? "/service-unavailable" : "/account"} className="site-language site-metadata" onNavigate={() => closeMenus()}>{isPublicOnly() ? "Кабинет недоступен" : "Личный кабинет"}</Link>
             {!isPublicOnly() && hasPermission('catalog.manage') && <Link href="/admin/catalog" className="site-selection-link">Управление каталогом</Link>}
@@ -197,7 +195,7 @@ export default function SiteHeader({ selectionCount }) {
                 <Link href={section.href} aria-current={currentIndex === index ? "page" : undefined} onNavigate={() => closeMenus()}>{section.label}</Link>
                 <LocaleElement as="button" type="button" aria-label={`${menu.group === index ? "Свернуть" : "Развернуть"} раздел «${section.label}»`} aria-controls={`site-mobile-group-${index}`} aria-expanded={menu.group === index} onClick={() => setMenu((previous) => ({ ...previous, group: previous.group === index ? null : index }))}><Chevron expanded={menu.group === index} /></LocaleElement>
               </LocaleElement>
-              <LocaleElement as="div" id={`site-mobile-group-${index}`} className="site-mobile-group-links" hidden={menu.group !== index}>{section.links.map(([label, href]) => <Link key={`${label}:${href}`} href={href} onNavigate={() => closeMenus()}>{label}</Link>)}</LocaleElement>
+              <LocaleElement as="div" id={`site-mobile-group-${index}`} className="site-mobile-group-links" hidden={menu.group !== index}>{section.links.map(([label, href]) => <Link key={`${label}:${href}`} href={href} onNavigate={() => closeMenus()}>{label}</Link>)}{section.resources&&<div className="company-menu-resources">{section.resources.map(([label,href])=><Link key={href} href={href} onNavigate={()=>closeMenus()}>{label} ↗</Link>)}</div>}</LocaleElement>
             </LocaleElement>
           )}
           <LanguageSwitcher />

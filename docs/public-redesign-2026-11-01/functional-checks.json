@@ -1,0 +1,48 @@
+{
+  "contacts": {
+    "search": "Алматы",
+    "filteredOffices": 1,
+    "afterClear": 11,
+    "tel": "tel:+77710052222",
+    "email": "mailto:sales@alageum.com",
+    "inquiryLinksInMain": 0
+  },
+  "projectFilter": {
+    "selection": "Поставка оборудования",
+    "visibleCases": 6
+  },
+  "mapRU": {
+    "region": "Туркестанская область",
+    "selected": true,
+    "cards": 4,
+    "repeatEnterResetsZoom": true
+  },
+  "mapEN": {
+    "label": "Show locations: Turkistan Region",
+    "url": "/en/manufacturers?region=215739",
+    "regionHeading": "Turkistan Region",
+    "cards": 4,
+    "resetLabel": "← Full map",
+    "resetURL": "/en/manufacturers"
+  },
+  "archiveSearchEN": {
+    "query": " transformer ",
+    "totalMatches": 41,
+    "initialVisible": 18,
+    "originalTitlesPreserved": true
+  },
+  "keyboardFocus": {
+    "target": "mailto:sales@alageum.com",
+    "outline": "rgb(255, 255, 255)",
+    "width": "3px",
+    "focusVisible": true
+  },
+  "newsAPI": {
+    "server": "localhost:3000",
+    "editorialState": "Публикаций пока нет.",
+    "notReplacedWithStaticNews": true
+  },
+  "backendHealth": {
+    "status": "ok"
+  }
+}

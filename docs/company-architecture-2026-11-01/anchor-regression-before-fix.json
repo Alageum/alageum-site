@@ -1,0 +1,126 @@
+{
+  "phase": "before-fix",
+  "note": "Historical diagnostics only; final screenshots and checks are in browser-audit.json.",
+  "checks": [
+    {
+      "path": "/company/history",
+      "size": "desktop",
+      "broken": [],
+      "hash": "#history",
+      "hashTarget": {
+        "exists": true,
+        "top": 206.25
+      },
+      "overflow": false,
+      "retiredLinks": [],
+      "title": "Alageum Electric",
+      "url": "http://127.0.0.1:3001/company#history",
+      "anchorInViewport": true
+    },
+    {
+      "path": "/company/history",
+      "size": "mobile",
+      "broken": [],
+      "hash": "#history",
+      "hashTarget": {
+        "exists": true,
+        "top": 206.171875
+      },
+      "overflow": false,
+      "retiredLinks": [],
+      "title": "Alageum Electric",
+      "url": "http://127.0.0.1:3001/company#history",
+      "anchorInViewport": true
+    },
+    {
+      "path": "/company/achievements",
+      "size": "desktop",
+      "broken": [],
+      "hash": "#achievements",
+      "hashTarget": {
+        "exists": true,
+        "top": 206.09375
+      },
+      "overflow": false,
+      "retiredLinks": [],
+      "title": "Alageum Electric",
+      "url": "http://127.0.0.1:3001/company#achievements",
+      "anchorInViewport": true
+    },
+    {
+      "path": "/company/achievements",
+      "size": "mobile",
+      "broken": [],
+      "hash": "#achievements",
+      "hashTarget": {
+        "exists": true,
+        "top": 206.21875
+      },
+      "overflow": false,
+      "retiredLinks": [],
+      "title": "Alageum Electric",
+      "url": "http://127.0.0.1:3001/company#achievements",
+      "anchorInViewport": true
+    },
+    {
+      "path": "/company/production",
+      "size": "desktop",
+      "broken": [],
+      "hash": "#technology",
+      "hashTarget": {
+        "exists": true,
+        "top": 1676.9375
+      },
+      "overflow": false,
+      "retiredLinks": [],
+      "title": "Найдите свою точку контакта.",
+      "url": "http://127.0.0.1:3001/manufacturers#technology",
+      "anchorInViewport": false
+    },
+    {
+      "path": "/company/production",
+      "size": "mobile",
+      "broken": [],
+      "hash": "#technology",
+      "hashTarget": {
+        "exists": true,
+        "top": 1058.359375
+      },
+      "overflow": false,
+      "retiredLinks": [],
+      "title": "Найдите свою точку контакта.",
+      "url": "http://127.0.0.1:3001/manufacturers#technology",
+      "anchorInViewport": false
+    },
+    {
+      "path": "/company/assets",
+      "size": "desktop",
+      "broken": [],
+      "hash": "#assets",
+      "hashTarget": {
+        "exists": true,
+        "top": 205.546875
+      },
+      "overflow": false,
+      "retiredLinks": [],
+      "title": "Свяжемся по вашей задаче.",
+      "url": "http://127.0.0.1:3001/contacts#assets",
+      "anchorInViewport": true
+    },
+    {
+      "path": "/company/assets",
+      "size": "mobile",
+      "broken": [],
+      "hash": "#assets",
+      "hashTarget": {
+        "exists": true,
+        "top": 5876.890625
+      },
+      "overflow": false,
+      "retiredLinks": [],
+      "title": "Свяжемся по вашей задаче.",
+      "url": "http://127.0.0.1:3001/contacts#assets",
+      "anchorInViewport": false
+    }
+  ]
+}

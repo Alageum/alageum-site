@@ -1,3 +1,4 @@
+import { companyRedirects, investorRedirects } from './lib/public/company-architecture.js';
 import { deploymentMode } from './lib/deployment/config.js';
 import { browserApiRewrites } from "./lib/api/browserProxy.js";
 
@@ -10,6 +11,7 @@ const nextConfig = {
   output: "standalone",
   poweredByHeader: false,
   reactStrictMode: true,
+  async redirects() { return [...companyRedirects(), ...investorRedirects()]; },
   async rewrites() { return browserApiRewrites(); },
 };
 

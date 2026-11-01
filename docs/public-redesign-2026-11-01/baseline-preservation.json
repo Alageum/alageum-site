@@ -1,0 +1,30 @@
+{
+  "preservedUserFiles": [
+    "docs/company-pages-sources.md",
+    "frontend/app/ecosystem.css",
+    "frontend/app/(site)/page.js",
+    "frontend/tests/enterprise-map-regions.test.mjs",
+    "frontend/tests/ecosystem-atlas.test.mjs",
+    "frontend/tests/company-metrics.test.mjs",
+    "frontend/lib/public/enterprise-map-regions.js",
+    "frontend/lib/public/enterprise-map-locations.js",
+    "frontend/lib/public/enterprise-map-boundaries.js",
+    "frontend/lib/public/company-metrics.js",
+    "frontend/lib/ecosystem/atlas.js",
+    "frontend/components/SiteHeader.js",
+    "frontend/components/HeaderContact.js",
+    "frontend/components/public/EnterpriseMapPreview.js",
+    "frontend/components/public/EnterpriseMapPreview.css",
+    "frontend/components/public/EnterpriseDirectory.js",
+    "frontend/components/public/CompanyMetrics.js",
+    "frontend/components/public/CompanyMetrics.css",
+    "frontend/components/ecosystem/EcosystemAtlas.js",
+    "backend-node/types/generated/contentTypes.d.ts",
+    "backend-node/types/generated/components.d.ts"
+  ],
+  "extendedForRedesign": [
+    "frontend/app/(site)/manufacturers/page.js",
+    "frontend/lib/i18n/dictionaries.json"
+  ],
+  "note": "No reset. Header, homepage, map components and company metric edits remain byte-identical. The manufacturers page shell is redesigned; dictionaries extended."
+}

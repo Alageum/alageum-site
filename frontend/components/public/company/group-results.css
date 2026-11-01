@@ -1,0 +1,18 @@
+.story-company .group-results{background:#fff;padding-top:64px;padding-bottom:64px}
+.story-company .group-results .story-section-heading{margin-bottom:36px}
+.story-company .group-results h2{font-size:32px}
+.investor-results-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:65px}
+.investor-financials{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.investor-financials article{border-top:2px solid #ce1727;padding-top:20px}
+.investor-financials h3{font-size:15px;font-weight:500;margin:0 0 24px;color:#535e64}
+.investor-financials strong{font-weight:500;font-size:clamp(44px,5vw,76px);letter-spacing:-.055em;line-height:1.05;display:block;white-space:nowrap;font-variant-numeric:tabular-nums}
+.investor-financials strong>span:last-child{display:block;font-size:18px;letter-spacing:0;margin-top:12px}
+.investor-period{grid-column:1/-1;font-size:13px;color:#535e64;margin:0}
+.investor-scale{border-left:1px solid #bcc5ca;padding-left:40px}
+.investor-scale>p{display:flex;gap:24px;align-items:center;margin:0 0 22px}
+.investor-scale>p strong{font-size:40px;min-width:105px;letter-spacing:-.04em;font-weight:500;white-space:nowrap}
+.investor-scale>p>span{font-size:15px;line-height:1.5;max-width:240px}
+.group-results .investor-scale .story-source{margin-top:28px}
+
+@media(max-width:1000px){.group-results .investor-results-grid{gap:30px;grid-template-columns:1.35fr 1fr}.group-results .investor-scale{padding-left:25px}.group-results .investor-scale>p{gap:12px}.group-results .investor-scale>p strong{font-size:32px;min-width:85px}}
+@media(max-width:760px){.group-results .investor-results-grid{grid-template-columns:1fr;gap:36px}.group-results .investor-financials{gap:16px}.group-results .investor-financials strong{font-size:42px}.group-results .investor-financials h3{margin-bottom:16px}.group-results .investor-scale{padding:28px 0 0;border-left:0;border-top:1px solid #bcc5ca}.group-results .investor-scale>p strong{min-width:100px;font-size:36px}.story-company .group-results{padding-top:40px;padding-bottom:40px}}

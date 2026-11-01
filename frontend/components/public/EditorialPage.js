@@ -1,10 +1,10 @@
-import LocaleElement from "@/components/locale/LocaleElement";import CorporatePage from './CorporatePage';
+import LocaleElement from "@/components/locale/LocaleElement";import {Story} from './story/Story';
 import PageIntro from './PageIntro';
 import EditorialBlocks from './EditorialBlocks';
 
 export default function EditorialPage({ page }) {
-  return <CorporatePage className="corp-editorial-page"><LocaleElement as="article" className="editorial-page" lang={page.locale_code}>
+  return <Story name="cms"><LocaleElement as="article" className="editorial-page" lang={page.locale_code}>
     <PageIntro label={page.title} title={page.title} />
-    <EditorialBlocks body={page.body} />
-  </LocaleElement></CorporatePage>;
+    <EditorialBlocks body={page.body} locale={page.locale_code} />
+  </LocaleElement></Story>;
 }

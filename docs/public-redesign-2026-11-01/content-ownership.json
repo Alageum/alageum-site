@@ -1,0 +1,38 @@
+{
+  "baseline": "/tmp/alageum-public-redesign-baseline-20261101",
+  "scope": "Corporate public site; preserve catalog, careers app, RFQ, client, account, admin and delivery contracts",
+  "owners": {
+    "/": "Orientation: capabilities, current highlights, partner discovery; preserve existing composition",
+    "/company": "Explain the group structure and how its enterprises complement one another",
+    "/company/history": "Dated chronology; own the detailed historical narrative",
+    "/company/production": "Production and verification processes; route to specialized factories",
+    "/company/achievements": "Dated awards with provenance; distinguish awards from product certificates",
+    "/company/social": "Education, regional and community initiatives with specific historical examples",
+    "/company/team": "Leadership and responsibility; official biographies",
+    "/company/assets": "Find historical asset offers; source and current enquiry channel",
+    "/manufacturers": "Interactive geography and office/factory selection; retain prior user map interactions",
+    "/manufacturers/[slug]": "Factory-specific capabilities, processes and independently sourced figures",
+    "/solutions": "Choose by engineering problem, not by organization structure",
+    "/solutions/[slug]": "Scenario-specific decision criteria and project inputs; preserve catalog and RFQ links",
+    "/projects": "Browse evidenced roles: construction, reconstruction and equipment supply",
+    "/projects/[slug]": "What this specific object needed, what was delivered, and evidence boundaries",
+    "/investors": "Financial period, ranking context, source and disclosure reading",
+    "/contacts": "Call/email or identify the correct regional contact; preserve office search",
+    "/documents": "Find the appropriate publication and understand what each document can establish",
+    "/news": "Published CMS news and a searchable historical archive; preserve API delivery",
+    "/news/[slug]": "Read one CMS article without static substitution",
+    "/partners/[slug]": "Partner-specific sector and public profile, not repeated group claims",
+    "/materials": "Search the reference archive by purpose",
+    "/materials/[slug]": "Read preserved historical source material with date and content identity",
+    "/data-policy": "Readable handling of local data and source rights; preserve legal meaning",
+    "/pages/[locale]/[slug]": "Render published CMS blocks; preserve content ownership and metadata"
+  },
+  "duplicates": [
+    {"block":"CompanyMetrics facts/charts", "before":["/","/company","/investors"], "decision":"Preserve home as benchmark; investor page links to primary facts and adds distinct historical interpretation; remove from company"},
+    {"block":"ProjectStages", "before":["/","/company"], "decision":"Home owns overview; production page explains actual manufacturing and testing rather than duplicating stages"},
+    {"block":"Company timeline", "before":["/company","/company/history"], "decision":"Detailed timeline belongs to history; company contains a short route into history"},
+    {"block":"Enterprise map", "before":["/company","/manufacturers"], "decision":"Only manufacturers owns geography; company uses organization roles"},
+    {"block":"Generic request CTA", "before":["/company","/manufacturers","/manufacturers/[slug]","/projects","/projects/[slug]","/solutions","/solutions/[slug]","/documents"], "decision":"Replace with task-specific local actions; do not repeat universal end banners"},
+    {"block":"Asia Trafo factory image", "before":["/solutions","/investors","factory pages"], "decision":"Reserve detailed factory photo story for Asia Trafo; select scenario-specific imagery elsewhere"}
+  ]
+}

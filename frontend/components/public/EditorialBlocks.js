@@ -1,4 +1,6 @@
 import { validatePageBlocks } from '../../lib/public/pages.js';
+import {localResourceHref} from '../../lib/public/localResources.js';
+import {localizedHref} from '../../lib/i18n/routing.js';
 
 function Text({ node }) {
   let text = node.text;
@@ -10,12 +12,12 @@ function Text({ node }) {
   return text;
 }
 
-function Nodes({ nodes, listParent = false }) {
+function Nodes({ nodes, listParent = false, locale }) {
   return nodes.map((node, index) => {
-    const children = node.children ? <Nodes nodes={node.children} listParent={node.type === 'list'} /> : null;
+    const children = node.children ? <Nodes nodes={node.children} listParent={node.type === 'list'} locale={locale} /> : null;
     switch (node.type) {
       case 'text': return <Text key={index} node={node} />;
-      case 'link': return <a key={index} href={node.url} rel="noopener noreferrer">{children}</a>;
+      case 'link': {const href=localizedHref(localResourceHref(node.url),locale);return href===null?<span key={index}>{children}</span>:<a key={index} href={href} rel="noopener noreferrer">{children}</a>;}
       case 'paragraph': return <p key={index}>{children}</p>;
       case 'heading': { const Heading = `h${Math.max(2, node.level)}`; return <Heading key={index}>{children}</Heading>; }
       case 'quote': return <blockquote key={index}>{children}</blockquote>;
@@ -29,4 +31,4 @@ function Nodes({ nodes, listParent = false }) {
     }
   });
 }
-export default function EditorialBlocks({ body }) { return <div className="editorial-body"><Nodes nodes={validatePageBlocks(body)} /></div>; }
+export default function EditorialBlocks({ body, locale='ru' }) { return <div className="editorial-body"><Nodes nodes={validatePageBlocks(body)} locale={locale} /></div>; }

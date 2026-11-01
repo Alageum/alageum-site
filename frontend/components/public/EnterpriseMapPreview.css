@@ -11,3 +11,79 @@
 @keyframes enterprise-map-preview-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}@keyframes enterprise-map-shade-in{from{opacity:0}to{opacity:1}}
 @media(max-width:760px){.enterprise-map-preview{padding:20px}.enterprise-map-preview figure img{aspect-ratio:2/1}.enterprise-map-preview h3{font-size:22px}.enterprise-map-shade{backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}}
 @media(prefers-reduced-motion:reduce){.enterprise-map-shade,.enterprise-map-preview{animation:none}}
+
+.corp-map-panel{position:relative;min-width:0}
+.corp-map{overflow:hidden}
+.corp-map-scene{position:relative;width:100%;height:100%;transition:transform 650ms cubic-bezier(.22,1,.36,1)}
+.corp-map-scene>svg{display:block;width:100%;height:auto}
+.corp-map.is-zoomed .corp-country-name{opacity:0}
+.enterprise-map-preview-layer.is-pinned{position:absolute;inset:42px 16px 56px auto;width:min(350px,46%);z-index:4}
+.is-pinned .enterprise-map-preview{position:absolute;inset:0;max-height:100%;padding:20px;animation:none}
+@media(max-width:760px){
+ .enterprise-map-preview-layer.is-pinned{position:relative;inset:auto;width:100%;margin-top:16px;pointer-events:auto}
+ .is-pinned .enterprise-map-preview{position:relative;max-height:460px}
+}
+@media(prefers-reduced-motion:reduce){.corp-map-scene{transition:none}}
+.corp-map.is-zoomed .corp-map-pin{transform:translate(-50%,-50%) scale(.2)}
+.corp-region-boundary{fill:none;stroke:#bcbcbc;stroke-width:.8;stroke-opacity:.65;pointer-events:none}
+.corp-map-legend{display:flex;gap:18px;flex-wrap:wrap;font-size:10px;color:#ccc;margin:12px 0 0}
+.corp-map-legend span{display:flex;align-items:center;gap:7px}
+.corp-map-legend span::before{content:'';width:20px;border-top:1px solid #bcbcbc}
+@media(max-width:760px){.corp-map{--enterprise-focus-x:50%}}
+.corp-map.is-zoomed .corp-map-grid{opacity:.2}
+.corp-map.is-zoomed .corp-map-pin[aria-pressed=false]{visibility:hidden}
+.brand-experience .corp-investor .corp-map-scene .corp-country-fill{stroke:none}
+
+.corp-map.is-zoomed .corp-region-boundary{stroke-width:.12}
+
+/* Fixed hit areas prevent the lifted region from jittering under the pointer. */
+.corp-map-grid{pointer-events:none}
+.corp-region-surface{pointer-events:all}
+.brand-experience .corp-investor .corp-map-scene .corp-region-surface.is-hovered{fill:#292929}
+.corp-region-raised{--region-lift:-7px;fill:#858585;stroke:#e3e3e3;stroke-width:1;pointer-events:none;filter:drop-shadow(0 7px 3px #0009);transform:translateY(var(--region-lift));animation:enterprise-region-lift 220ms ease-out}
+@keyframes enterprise-region-lift{from{transform:translateY(0);opacity:.7}to{transform:translateY(var(--region-lift));opacity:1}}
+@media(prefers-reduced-motion:reduce){.corp-region-raised{animation:none;transform:none;filter:none}}
+
+.corp-map .corp-map-pin{transform:translate(-50%,-50%) scale(var(--pin-scale,1))}
+.corp-map .corp-map-pin.is-lifted{transform:translate(-50%,calc(-50% + var(--region-lift))) scale(var(--pin-scale,1));animation:enterprise-pin-lift 220ms ease-out}
+.corp-map .corp-map-pin.is-outside{visibility:hidden}
+.corp-map.is-zoomed .corp-map-pin:not(.is-outside){visibility:visible}
+.corp-map .corp-region-raised{--region-lift:inherit;stroke-width:calc(1px / var(--map-scale));filter:drop-shadow(0 calc(7px / var(--map-scale)) calc(3px / var(--map-scale)) #0009)}
+.corp-map .corp-region-raised.is-selected{fill:#88626a;stroke:#ff9aa6}
+.corp-map.is-zoomed .corp-region-boundary{stroke-width:calc(.8px / var(--map-scale))}
+.corp-region-surface{cursor:pointer}
+.corp-region-surface:focus-visible{outline:none;stroke:#ff9aa6!important;stroke-width:2px!important}
+.corp-map-reset{position:absolute;top:12px;right:20px;z-index:5;border:1px solid #777;background:#292929;color:#fff;padding:8px 12px;cursor:pointer;font:12px var(--site-font)}
+.enterprise-region-card{border-top:1px solid #ddd;padding-top:18px;margin-top:20px;display:flex;flex-direction:column;gap:10px}
+.enterprise-region-card>img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover}
+.enterprise-region-card h3{font-size:20px;margin:0}
+.enterprise-region-card p,.enterprise-region-card address,.enterprise-region-card>a{font-size:12px;line-height:1.65;margin:0;font-style:normal}
+.enterprise-region-card>.site-eyebrow,.enterprise-region-count{font-size:10px;color:#666}
+@keyframes enterprise-pin-lift{from{transform:translate(-50%,-50%) scale(var(--pin-scale,1))}to{transform:translate(-50%,calc(-50% + var(--region-lift))) scale(var(--pin-scale,1))}}
+@media(prefers-reduced-motion:reduce){.corp-map .corp-map-pin.is-lifted{animation:none;transform:translate(-50%,-50%) scale(var(--pin-scale,1))}}
+.corp-region-surface:focus{outline:none}
+@media(max-width:760px){.corp-map{--enterprise-region-focus-x:50%}}
+.corp-region-surface[data-has-enterprises=false]{cursor:default}
+.enterprise-location-sources{display:flex;flex-direction:column;gap:7px;margin:14px 0;color:#676d73;font-size:11px;line-height:1.6}
+.enterprise-location-sources p{margin:0;font-size:11px}
+.enterprise-location-sources a{font-size:11px;text-decoration:underline;text-underline-offset:3px}
+.enterprise-map-kind{font-size:10px!important;color:#777;margin:10px 0!important;line-height:1.5}
+.brand-experience .corp-investor .corp-city-filter{max-height:590px;overflow-y:auto;scrollbar-width:thin;scrollbar-color:#777 transparent}
+@media(max-width:760px){.brand-experience .corp-investor .corp-city-filter{max-height:none}}
+
+/* Corporate graphite palette for the public geography section. */
+.public-story.story-geography .corp-geography{--corp-navy:#222528;background:#222528;color:#fff}
+.story-geography .corp-geo-sidebar{border-color:#51565b}
+.story-geography .corp-geo-sidebar>.site-eyebrow{color:#c8cbd0}
+.story-geography .corp-city-filter button{border-color:#51565b;color:#d8dbde}
+.story-geography .corp-city-filter button:hover{background:#2e3236}
+.story-geography .corp-city-filter button[aria-pressed=true]{background:#2e3236;color:#fff;border-left-color:#ff7384}
+.story-geography .corp-city-filter button span,.story-geography .corp-map-label{color:#c2c6ca}
+.story-geography .corp-map-scene>svg{color:#aeb3b8}
+.story-geography .corp-country-fill{fill:url(#enterprise-country-gray);stroke:none}
+.story-geography .corp-region-surface.is-hovered{fill:#2e3236}
+.story-geography .corp-country-name{color:#aeb3b8}
+.story-geography .corp-map-pin span{background:#222528}
+.story-geography .corp-map-pin i{background:#f2f3f4;box-shadow:0 0 0 5px rgba(242,243,244,.12)}
+.story-geography .corp-map-pin:hover i,.story-geography .corp-map-pin[aria-pressed=true] i,.story-geography .corp-map-pin.is-preview i{background:#ff6479;box-shadow:0 0 0 7px rgba(255,100,121,.18)}
+.story-geography .corp-map-note{color:#c2c6ca}

@@ -1,0 +1,692 @@
+{
+  "checkedAt": "2026-11-01",
+  "note": "No undated profile claim is presented as 2026 actual output. Existing project evidence retained. Homepage figures remain in company-metrics.js. Partner profiles retain their own source URL and gallery provenance. Archive bodies preserved verbatim.",
+  "facts": [
+    {
+      "organization": "ktz",
+      "claim": "Наименований продукции в официальном профиле",
+      "value": "400+",
+      "unit": "наименования",
+      "period": "Профиль без отчётной даты",
+      "source": "https://alageum.com/ru/predpriyatiya/ao-ktz",
+      "owner": "/manufacturers/ktz",
+      "checkedAt": "2026-11-01",
+      "kind": "product-range"
+    },
+    {
+      "organization": "asia-trafo",
+      "claim": "Мощность трансформаторов в номенклатуре",
+      "value": "до 500 МВА",
+      "unit": "МВА",
+      "period": "Профиль без отчётной даты",
+      "source": "https://alageum.com/ru/predpriyatiya/too-asia-trafo",
+      "owner": "/manufacturers/asia-trafo",
+      "checkedAt": "2026-11-01",
+      "kind": "product-range"
+    },
+    {
+      "organization": "asia-trafo",
+      "claim": "Проектная производственная мощность",
+      "value": ">12 000 МВА/год",
+      "unit": "МВА в год",
+      "period": "Проектная мощность, не фактический выпуск",
+      "source": "https://alageum.com/ru/predpriyatiya/too-asia-trafo",
+      "owner": "/manufacturers/asia-trafo",
+      "checkedAt": "2026-11-01",
+      "kind": "design-capacity"
+    },
+    {
+      "organization": "utz",
+      "claim": "Мощность трансформаторов по профилю завода",
+      "value": "до 2 500 кВА",
+      "unit": "кВА",
+      "period": "Профиль без отчётной даты",
+      "source": "https://alageum.com/ru/predpriyatiya/too-utz",
+      "owner": "/manufacturers/utz",
+      "checkedAt": "2026-11-01",
+      "kind": "product-range"
+    },
+    {
+      "organization": "utz",
+      "claim": "Классы напряжения трансформаторов",
+      "value": "6 / 10 / 20 кВ",
+      "unit": "кВ",
+      "period": "Профиль без отчётной даты",
+      "source": "https://alageum.com/ru/predpriyatiya/too-utz",
+      "owner": "/manufacturers/utz",
+      "checkedAt": "2026-11-01",
+      "kind": "product-range"
+    },
+    {
+      "organization": "petz",
+      "claim": "Год запуска предприятия",
+      "value": "2021",
+      "unit": "год",
+      "period": "Событие 2021 года",
+      "source": "https://alageum.com/ru/predpriyatiya/too-petropavlovskij-elektrotekhnicheskij-zavod",
+      "owner": "/manufacturers/petz",
+      "checkedAt": "2026-11-01",
+      "kind": "historical-event"
+    },
+    {
+      "organization": "petz",
+      "claim": "Оборудование по официальному профилю",
+      "value": "6–10 кВ",
+      "unit": "кВ",
+      "period": "Профиль без отчётной даты",
+      "source": "https://alageum.com/ru/predpriyatiya/too-petropavlovskij-elektrotekhnicheskij-zavod",
+      "owner": "/manufacturers/petz",
+      "checkedAt": "2026-11-01",
+      "kind": "product-range"
+    },
+    {
+      "organization": "aemz",
+      "claim": "Основание завода",
+      "value": "1959",
+      "unit": "год",
+      "period": "Событие 1959 года",
+      "source": "https://alageum.com/ru/predpriyatiya/too-aemz",
+      "owner": "/manufacturers/aemz",
+      "checkedAt": "2026-11-01",
+      "kind": "historical-event"
+    },
+    {
+      "organization": "elmo",
+      "claim": "Воздушные линии в перечне компетенций",
+      "value": "500 кВ и выше",
+      "unit": "кВ",
+      "period": "Профиль без отчётной даты",
+      "source": "https://alageum.com/ru/predpriyatiya/too-elektromontazh",
+      "owner": "/manufacturers/elmo",
+      "checkedAt": "2026-11-01",
+      "kind": "product-range"
+    },
+    {
+      "organization": "batys-electric",
+      "claim": "Мощности БКТП по профилю предприятия",
+      "value": "250–2 500 кВА",
+      "unit": "кВА",
+      "period": "Профиль без отчётной даты",
+      "source": "https://alageum.com/ru/predpriyatiya/too-aktauskij-transformatornyj-zavod",
+      "owner": "/manufacturers/batys-electric",
+      "checkedAt": "2026-11-01",
+      "kind": "product-range"
+    },
+    {
+      "organization": "batys-electric",
+      "claim": "Запуск предприятия",
+      "value": "2018",
+      "unit": "год",
+      "period": "Событие 2018 года",
+      "source": "https://alageum.com/ru/predpriyatiya/too-aktauskij-transformatornyj-zavod",
+      "owner": "/manufacturers/batys-electric",
+      "checkedAt": "2026-11-01",
+      "kind": "historical-event"
+    },
+    {
+      "organization": "ural-electric",
+      "claim": "Освоение эмалированного круглого провода",
+      "value": "2025",
+      "unit": "год",
+      "period": "Событие 2025 года",
+      "source": "https://alageum.com/ru/predpriyatiya/ural-electric",
+      "owner": "/manufacturers/ural-electric",
+      "checkedAt": "2026-11-01",
+      "kind": "historical-event"
+    },
+    {
+      "organization": "ГК Alageum Electric",
+      "claim": "Начало общей истории",
+      "value": "1997",
+      "unit": "год",
+      "period": "1997",
+      "source": "https://alageum.com/ru/kompaniya/istoriya",
+      "owner": "/company/history",
+      "kind": "historical-event"
+    },
+    {
+      "organization": "АЭМЗ",
+      "claim": "Развитие производства",
+      "value": "1999",
+      "unit": "год",
+      "period": "1999",
+      "source": "https://alageum.com/ru/predpriyatiya/too-aemz",
+      "owner": "/company/history",
+      "kind": "historical-event"
+    },
+    {
+      "organization": "ГК Alageum Electric",
+      "claim": "Единая структура",
+      "value": "2012",
+      "unit": "год",
+      "period": "2012",
+      "source": "https://alageum.com/ru/kompaniya/istoriya",
+      "owner": "/company/history",
+      "kind": "historical-event"
+    },
+    {
+      "organization": "ПЭТЗ",
+      "claim": "Новая площадка на севере",
+      "value": "2021",
+      "unit": "год",
+      "period": "2021",
+      "source": "https://alageum.com/ru/predpriyatiya/too-petropavlovskij-elektrotekhnicheskij-zavod",
+      "owner": "/company/history",
+      "kind": "historical-event"
+    },
+    {
+      "organization": "КТЗ",
+      "claim": "Алтын сапа",
+      "value": "2012",
+      "unit": "год",
+      "period": "2012",
+      "source": "https://alageum.com/ru/kompaniya/dostizheniya",
+      "owner": "/company/achievements",
+      "kind": "historical-award"
+    },
+    {
+      "organization": "КТЗ",
+      "claim": "Ұлы дала елі",
+      "value": "2016",
+      "unit": "год",
+      "period": "2016",
+      "source": "https://alageum.com/ru/kompaniya/dostizheniya",
+      "owner": "/company/achievements",
+      "kind": "historical-award"
+    },
+    {
+      "organization": "КТЗ",
+      "claim": "Парыз",
+      "value": "2016",
+      "unit": "год",
+      "period": "2016",
+      "source": "https://alageum.com/ru/kompaniya/dostizheniya",
+      "owner": "/company/achievements",
+      "kind": "historical-award"
+    },
+    {
+      "organization": "Сайдулла Кожабаев",
+      "claim": "Орден Парасат",
+      "value": "2013",
+      "unit": "год",
+      "period": "2013",
+      "source": "https://alageum.com/ru/kompaniya/dostizheniya",
+      "owner": "/company/achievements",
+      "kind": "historical-award"
+    },
+    {
+      "organization": "КТЗ",
+      "claim": "Начало дуального обучения",
+      "value": 2014,
+      "unit": "год",
+      "period": "2014",
+      "source": "https://alageum.com/ru/predpriyatiya/ao-ktz",
+      "owner": "/company/social",
+      "kind": "historical-event"
+    },
+    {
+      "organization": "ГК Alageum Electric",
+      "claim": "Помощь на восстановление сетей Шымкента",
+      "value": 40000000,
+      "unit": "тенге",
+      "period": "2024",
+      "source": "https://alageum.com/ru/kompaniya/soc-otv/content/obshchaya-informatsiya",
+      "owner": "/company/social",
+      "kind": "social-expenditure"
+    },
+    {
+      "organization": "ГК Alageum Electric",
+      "claim": "Выручка 2023",
+      "value": 160.9,
+      "unit": "млрд тенге",
+      "period": "2023",
+      "source": "https://forbes.kz/ranking/object/1044",
+      "publication": "декабрь 2025",
+      "owner": "/investors",
+      "kind": "published-financial-result"
+    },
+    {
+      "organization": "ГК Alageum Electric",
+      "claim": "Рост выручки 2024 к 2023",
+      "value": 23.3,
+      "unit": "%",
+      "period": "2024 к 2023",
+      "source": "https://forbes.kz/ranking/object/1044",
+      "publication": "декабрь 2025",
+      "owner": "/investors",
+      "kind": "published-financial-result"
+    },
+    {
+      "organization": "Alageum · генеральный подрядчик",
+      "claim": "Класс напряжения",
+      "value": "110 кВ",
+      "unit": "кВ",
+      "period": "Публикация 2026",
+      "source": "https://alageum.com/ru/novosti/alageum-obespechit-energiej-novye-obekty-petropavlovska",
+      "owner": "/projects/petropavlovsk",
+      "kind": "existing-project-evidence",
+      "scope": "Завершение планировалось к концу 2026 года. Фактический ввод в эксплуатацию не подтверждён.",
+      "additionalFacts": []
+    },
+    {
+      "organization": "Asia Trafo · поставка",
+      "claim": "Трансформаторное оборудование",
+      "value": "2 × 16 МВА",
+      "unit": "МВА",
+      "period": "Референсы 2019–2023",
+      "source": "https://asiatrafo.kz/images/referent.pdf",
+      "owner": "/projects/nur-esil",
+      "kind": "existing-project-evidence",
+      "scope": "Сведения относятся к поставке оборудования, а не к объёму строительства подстанции.",
+      "additionalFacts": []
+    },
+    {
+      "organization": "Asia Trafo · поставка",
+      "claim": "Трансформаторное оборудование",
+      "value": "2 × 40 МВА",
+      "unit": "МВА",
+      "period": "Референсы 2019–2023",
+      "source": "https://asiatrafo.kz/images/referent.pdf",
+      "owner": "/projects/yassy",
+      "kind": "existing-project-evidence",
+      "scope": "Точная дата ввода объекта и полный строительный объём в этой карточке не заявляются.",
+      "additionalFacts": []
+    },
+    {
+      "organization": "Asia Trafo · поставка",
+      "claim": "Автотрансформаторы",
+      "value": "3 × 167 МВА",
+      "unit": "МВА",
+      "period": "Референсы 2019–2023",
+      "source": "https://asiatrafo.kz/images/referent.pdf",
+      "owner": "/projects/nura",
+      "kind": "existing-project-evidence",
+      "scope": "Подтверждена запись производителя о поставке; параметры не являются спецификацией для нового заказа.",
+      "additionalFacts": []
+    },
+    {
+      "organization": "Строительство подстанции",
+      "claim": "Класс напряжения",
+      "value": "220 кВ",
+      "unit": "кВ",
+      "period": "Каталог 2024",
+      "source": "https://alageum.com/images/katalog/2Imid_rus2024.pdf#page=24",
+      "owner": "/projects/batys",
+      "kind": "existing-project-evidence",
+      "scope": "Объект указан среди реализованных проектов в корпоративном каталоге 2024 года. Дата ввода, заказчик и полный состав работ в этой публикации не раскрыты.",
+      "additionalFacts": []
+    },
+    {
+      "organization": "Строительство подстанции",
+      "claim": "Класс напряжения",
+      "value": "220 кВ",
+      "unit": "кВ",
+      "period": "Каталог 2024",
+      "source": "https://alageum.com/images/katalog/2Imid_rus2024.pdf#page=24",
+      "owner": "/projects/kunay",
+      "kind": "existing-project-evidence",
+      "scope": "Объект указан среди реализованных проектов в корпоративном каталоге 2024 года. Дата ввода, заказчик и полный состав работ в этой публикации не раскрыты.",
+      "additionalFacts": []
+    },
+    {
+      "organization": "Строительство подстанции",
+      "claim": "Класс напряжения",
+      "value": "220 кВ",
+      "unit": "кВ",
+      "period": "Каталог 2024",
+      "source": "https://alageum.com/images/katalog/2Imid_rus2024.pdf#page=24",
+      "owner": "/projects/kairat",
+      "kind": "existing-project-evidence",
+      "scope": "Объект указан среди реализованных проектов в корпоративном каталоге 2024 года. Дата ввода, заказчик и полный состав работ в этой публикации не раскрыты.",
+      "additionalFacts": []
+    },
+    {
+      "organization": "Строительство и пусконаладка",
+      "claim": "Класс напряжения",
+      "value": "110 кВ",
+      "unit": "кВ",
+      "period": "Каталог 2024",
+      "source": "https://alageum.com/images/katalog/2Imid_rus2024.pdf#page=24",
+      "owner": "/projects/hub-aktau",
+      "kind": "existing-project-evidence",
+      "scope": "Объект указан среди реализованных проектов в корпоративном каталоге 2024 года. Дата ввода, заказчик и полный состав работ в этой публикации не раскрыты.",
+      "additionalFacts": []
+    },
+    {
+      "organization": "Реконструкция",
+      "claim": "Трансформаторных подстанций",
+      "value": "100",
+      "unit": "единицы по подписи",
+      "period": "Каталог 2024",
+      "source": "https://alageum.com/images/katalog/2Imid_rus2024.pdf#page=24",
+      "owner": "/projects/astana-substations",
+      "kind": "existing-project-evidence",
+      "scope": "Объект указан среди реализованных проектов в корпоративном каталоге 2024 года. Дата ввода, заказчик и полный состав работ в этой публикации не раскрыты.",
+      "additionalFacts": []
+    },
+    {
+      "organization": "Строительство",
+      "claim": "Трансформаторных подстанций",
+      "value": "20",
+      "unit": "единицы по подписи",
+      "period": "Каталог 2024",
+      "source": "https://alageum.com/images/katalog/2Imid_rus2024.pdf#page=24",
+      "owner": "/projects/aktau-substations",
+      "kind": "existing-project-evidence",
+      "scope": "Объект указан среди реализованных проектов в корпоративном каталоге 2024 года. Дата ввода, заказчик и полный состав работ в этой публикации не раскрыты.",
+      "additionalFacts": []
+    },
+    {
+      "organization": "Реконструкция в консорциуме с IEM",
+      "claim": "Партнёр консорциума",
+      "value": "IEM",
+      "unit": "нечисловой параметр",
+      "period": "Каталог 2024",
+      "source": "https://alageum.com/images/katalog/2Imid_rus2024.pdf#page=24",
+      "owner": "/projects/dostyk-pavlodar",
+      "kind": "existing-project-evidence",
+      "scope": "Объект указан среди реализованных проектов в корпоративном каталоге 2024 года. Дата ввода, заказчик и полный состав работ в этой публикации не раскрыты.",
+      "additionalFacts": []
+    },
+    {
+      "organization": "Строительство в консорциуме с IEM",
+      "claim": "Партнёр консорциума",
+      "value": "IEM",
+      "unit": "нечисловой параметр",
+      "period": "Каталог 2024",
+      "source": "https://alageum.com/images/katalog/2Imid_rus2024.pdf#page=24",
+      "owner": "/projects/keramika",
+      "kind": "existing-project-evidence",
+      "scope": "Объект указан среди реализованных проектов в корпоративном каталоге 2024 года. Дата ввода, заказчик и полный состав работ в этой публикации не раскрыты.",
+      "additionalFacts": []
+    },
+    {
+      "organization": "Кентауский трансформаторный завод",
+      "claim": "Сухих трансформаторов",
+      "value": "90",
+      "unit": "единицы по подписи",
+      "period": "Каталог 2024",
+      "source": "https://alageum.com/images/katalog/2Imid_rus2024.pdf#page=25",
+      "owner": "/projects/expo-2017",
+      "kind": "existing-project-evidence",
+      "scope": "Данные описывают поставленное оборудование. Роль группы в строительстве всего выставочного комплекса не заявляется.",
+      "additionalFacts": [
+        {
+          "value": "90",
+          "label": "Сухих трансформаторов"
+        },
+        {
+          "value": "630–3150 кВА",
+          "label": "Мощность сухих трансформаторов"
+        },
+        {
+          "value": "20 кВ",
+          "label": "Напряжение сухих трансформаторов"
+        }
+      ]
+    },
+    {
+      "organization": "Предприятия группы",
+      "claim": "Возобновляемая энергетика",
+      "value": "СЭС",
+      "unit": "нечисловой параметр",
+      "period": "Каталог 2024",
+      "source": "https://alageum.com/images/katalog/2Imid_rus2024.pdf#page=25",
+      "owner": "/projects/burnoye-solar",
+      "kind": "existing-project-evidence",
+      "scope": "Точный состав поставки и строительная роль группы в этой публикации не уточнены.",
+      "additionalFacts": []
+    },
+    {
+      "organization": "Строительство",
+      "claim": "Мощность ветроэлектростанции",
+      "value": "45 МВт",
+      "unit": "МВт",
+      "period": "Каталог 2024",
+      "source": "https://alageum.com/images/katalog/2Imid_rus2024.pdf#page=8",
+      "owner": "/projects/ereymentau-wind",
+      "kind": "existing-project-evidence",
+      "scope": "45 МВт — мощность станции, а не объём оборудования Alageum. Детальная граница строительных работ не раскрыта.",
+      "additionalFacts": []
+    },
+    {
+      "organization": "Asia Trafo · поставка",
+      "claim": "Мощность трансформатора",
+      "value": "16 МВА",
+      "unit": "МВА",
+      "period": "Публикация 2023",
+      "source": "https://alageum.com/ru/novosti/sdelano-v-kazakhstane",
+      "owner": "/projects/gorodskaya",
+      "kind": "existing-project-evidence",
+      "scope": "Источник подтверждает поставку; полный объём строительства и дата ввода подстанции не заявляются.",
+      "additionalFacts": []
+    },
+    {
+      "organization": "kmg",
+      "claim": "Историческая дата основания / регистрации",
+      "value": "2002",
+      "unit": "год",
+      "period": "2002",
+      "source": "https://www.kmg.kz/ru/company/history/",
+      "owner": "/partners/kmg",
+      "kind": "existing-partner-history"
+    },
+    {
+      "organization": "tco",
+      "claim": "Историческая дата основания / регистрации",
+      "value": "1993",
+      "unit": "год",
+      "period": "1993",
+      "source": "https://tengizchevroil.com/company",
+      "owner": "/partners/tco",
+      "kind": "existing-partner-history"
+    },
+    {
+      "organization": "tco",
+      "claim": "Открытие Тенгиза",
+      "value": 1979,
+      "unit": "год",
+      "period": "1979",
+      "source": "https://tengizchevroil.com/company",
+      "owner": "/partners/tco",
+      "kind": "existing-partner-history"
+    },
+    {
+      "organization": "kegoc",
+      "claim": "Историческая дата основания / регистрации",
+      "value": "1997",
+      "unit": "год",
+      "period": "1997",
+      "source": "https://ar2024.kegoc.kz/en/company-profile.html",
+      "owner": "/partners/kegoc",
+      "kind": "existing-partner-history"
+    },
+    {
+      "organization": "ktz",
+      "claim": "Историческая дата основания / регистрации",
+      "value": "1997 / 2002",
+      "unit": "год",
+      "period": "1997 / 2002",
+      "source": "https://kase.kz/files/emitters/TMJL/tmjlp_2022_rus.pdf",
+      "owner": "/partners/ktz",
+      "kind": "existing-partner-history"
+    },
+    {
+      "organization": "kaztransoil",
+      "claim": "Историческая дата основания / регистрации",
+      "value": "1997",
+      "unit": "год",
+      "period": "1997",
+      "source": "https://kase.kz/ru/information/news/show/97179",
+      "owner": "/partners/kaztransoil",
+      "kind": "existing-partner-history"
+    },
+    {
+      "organization": "samruk",
+      "claim": "Историческая дата основания / регистрации",
+      "value": "2007",
+      "unit": "год",
+      "period": "2007",
+      "source": "https://samruk-energy.kz/en/company",
+      "owner": "/partners/samruk",
+      "kind": "existing-partner-history"
+    },
+    {
+      "organization": "kazatomprom",
+      "claim": "Историческая дата основания / регистрации",
+      "value": "1997",
+      "unit": "год",
+      "period": "1997",
+      "source": "https://www.kazatomprom.kz/ru/page/istoriya_kompanii",
+      "owner": "/partners/kazatomprom",
+      "kind": "existing-partner-history"
+    },
+    {
+      "organization": "bi",
+      "claim": "Историческая дата основания / регистрации",
+      "value": "1995",
+      "unit": "год",
+      "period": "1995",
+      "source": "https://bi.group/ru/company",
+      "owner": "/partners/bi",
+      "kind": "existing-partner-history",
+      "supportingSource": "https://bi.group/ru/special/novostroyki/astana/business"
+    },
+    {
+      "organization": "ГК Alageum Electric",
+      "claim": "Сотрудников",
+      "value": 4100,
+      "unit": "человек",
+      "period": "публикация декабрь 2025",
+      "publication": "декабрь 2025",
+      "source": "https://forbes.kz/ranking/object/1044",
+      "owner": "/",
+      "kind": "preserved-homepage-fact"
+    },
+    {
+      "organization": "ГК Alageum Electric",
+      "claim": "Место в рейтинге Forbes",
+      "value": 25,
+      "unit": "место",
+      "period": "публикация декабрь 2025",
+      "publication": "декабрь 2025",
+      "source": "https://forbes.kz/ranking/object/1044",
+      "owner": "/",
+      "kind": "preserved-homepage-fact"
+    },
+    {
+      "organization": "ГК Alageum Electric",
+      "claim": "Выручка",
+      "value": 198.47,
+      "unit": "млрд ₸",
+      "period": "2024",
+      "publication": "декабрь 2025",
+      "source": "https://forbes.kz/ranking/object/1044",
+      "owner": "/",
+      "kind": "preserved-homepage-fact"
+    },
+    {
+      "organization": "ГК Alageum Electric",
+      "claim": "Чистая прибыль",
+      "value": 26.64,
+      "unit": "млрд ₸",
+      "period": "2024",
+      "publication": "декабрь 2025",
+      "source": "https://forbes.kz/ranking/object/1044",
+      "owner": "/",
+      "kind": "preserved-homepage-fact"
+    },
+    {
+      "organization": "Производственный предшественник KSS «Южнефтепровод»",
+      "claim": "Основание производственного предшественника",
+      "value": 1969,
+      "unit": "год",
+      "period": "1969",
+      "source": "https://kazstroyservice.com/about/",
+      "owner": "/partners/kss",
+      "kind": "historical-predecessor"
+    },
+    {
+      "organization": "ГК Alageum Electric",
+      "claim": "Заводы в корпоративном профиле",
+      "value": 14,
+      "unit": "заводы",
+      "period": "Недатированный корпоративный профиль; не текущий реестр на 2026 год",
+      "source": "https://alageum.com/ru/kompaniya/o-nas",
+      "owner": "/",
+      "kind": "preserved-homepage-corporate-profile"
+    },
+    {
+      "organization": "ГК Alageum Electric",
+      "claim": "Офисы в корпоративном профиле",
+      "value": 40,
+      "unit": "офисы",
+      "period": "Недатированный корпоративный профиль; не текущий реестр на 2026 год",
+      "source": "https://alageum.com/ru/kompaniya/o-nas",
+      "owner": "/",
+      "kind": "preserved-homepage-corporate-profile"
+    },
+    {
+      "organization": "ГК Alageum Electric",
+      "claim": "Зарубежные представительства в корпоративном профиле",
+      "value": 6,
+      "unit": "представительства",
+      "period": "Недатированный корпоративный профиль; не текущий реестр на 2026 год",
+      "source": "https://alageum.com/ru/kompaniya/o-nas",
+      "owner": "/",
+      "kind": "preserved-homepage-corporate-profile"
+    },
+    {
+      "organization": "ГК Alageum Electric",
+      "claim": "Проектные и инженерные центры в корпоративном профиле",
+      "value": 2,
+      "unit": "центры",
+      "period": "Недатированный корпоративный профиль; не текущий реестр на 2026 год",
+      "source": "https://alageum.com/ru/kompaniya/o-nas",
+      "owner": "/",
+      "kind": "preserved-homepage-corporate-profile"
+    },
+    {
+      "organization": "ГК Alageum Electric",
+      "claim": "Казахстанское содержание в корпоративном профиле",
+      "value": 80,
+      "unit": "%",
+      "period": "Недатированный корпоративный профиль; не текущий реестр на 2026 год",
+      "source": "https://alageum.com/ru/kompaniya/o-nas",
+      "owner": "/",
+      "kind": "preserved-homepage-corporate-profile"
+    },
+    {
+      "organization": "АЭМЗ",
+      "claim": "Классы напряжения в обзоре главной",
+      "value": "0,4–35",
+      "unit": "кВ",
+      "period": "Недатированный официальный профиль",
+      "source": "https://alageum.com/ru/predpriyatiya/too-aemz",
+      "owner": "/",
+      "kind": "preserved-homepage-product-range"
+    },
+    {
+      "organization": "Asia Trafo",
+      "claim": "Классы напряжения в обзоре главной",
+      "value": "110 / 220 / 500",
+      "unit": "кВ",
+      "period": "Недатированный официальный профиль",
+      "source": "https://alageum.com/ru/predpriyatiya/too-asia-trafo",
+      "owner": "/",
+      "kind": "preserved-homepage-product-range"
+    },
+    {
+      "organization": "Asia Trafo",
+      "claim": "Мощности одного изделия на графике сопоставления поставок",
+      "value": "16 / 40 / 167",
+      "unit": "МВА на единицу",
+      "period": "Поставки из референс-листа 2019–2023",
+      "source": "https://asiatrafo.kz/images/referent.pdf",
+      "owner": "/",
+      "kind": "preserved-homepage-reference-comparison",
+      "scope": "Не суммарная мощность подстанций и не график роста."
+    }
+  ],
+  "archivalScope": "284 historical article bodies remain verbatim. Dates, amounts, technical catalogue tables and historical leadership data in those documents are source content, not new current claims. Individual source URL and publication date are retained in materials-index.json and each materials/*.json."
+}

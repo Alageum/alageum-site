@@ -1,0 +1,3563 @@
+[
+  {
+    "url": "https://alageum.com/ru/kompaniya/rukovodstvo",
+    "navigationTarget": "/company/team",
+    "sourceTarget": "/materials/ru-kompaniya-rukovodstvo",
+    "files": [
+      "frontend/app/(site)/company/team/page.js",
+      "frontend/components/ecosystem/Leadership.js",
+      "frontend/lib/ecosystem/source-register.js",
+      "frontend/lib/public/materials/ru-kompaniya-rukovodstvo.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/kontakty",
+    "navigationTarget": "/contacts",
+    "sourceTarget": "/contacts",
+    "files": [
+      "frontend/app/(site)/contacts/page.js",
+      "frontend/app/(site)/manufacturers/[slug]/page.js",
+      "frontend/lib/public/company.js",
+      "frontend/lib/public/enterprise-map-locations.js",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/",
+    "navigationTarget": "/",
+    "sourceTarget": "/",
+    "files": [
+      "frontend/components/inquiry/InquiryForm.js"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru",
+    "navigationTarget": "/",
+    "sourceTarget": "/",
+    "files": [
+      "frontend/components/public/SourceNote.js",
+      "frontend/lib/public/materials/ru-novosti-priglashenie-k-uchastiyu-v-torgakh-2.json",
+      "frontend/lib/public/materials/ru-novosti-priglashenie-k-uchastiyu-v-torgakh.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/kompaniya/soc-otv/content/obshchaya-informatsiya",
+    "navigationTarget": "/materials/ru-kompaniya-soc-otv-content-obshchaya-informatsiya",
+    "sourceTarget": "/materials/ru-kompaniya-soc-otv-content-obshchaya-informatsiya",
+    "files": [
+      "frontend/components/public/company/CommunityPage.js",
+      "frontend/lib/public/materials/ru-kompaniya-soc-otv-content-obshchaya-informatsiya.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/predpriyatiya/ao-ktz",
+    "navigationTarget": "/manufacturers/ktz",
+    "sourceTarget": "/materials/ru-predpriyatiya-ao-ktz",
+    "files": [
+      "frontend/components/public/company/CommunityPage.js",
+      "frontend/lib/catalog/photography-manifest.json",
+      "frontend/lib/public/content.js",
+      "frontend/lib/public/materials/ru-predpriyatiya-ao-ktz.json",
+      "frontend/lib/public/materials-index.json",
+      "frontend/lib/public/photography-manifest.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/kompaniya/soc-otv/content/podderzhka-sporta",
+    "navigationTarget": "/materials/ru-kompaniya-soc-otv-content-podderzhka-sporta",
+    "sourceTarget": "/materials/ru-kompaniya-soc-otv-content-podderzhka-sporta",
+    "files": [
+      "frontend/components/public/company/CommunityPage.js",
+      "frontend/lib/public/materials/ru-kompaniya-soc-otv-content-podderzhka-sporta.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/kompaniya/soc-otv/content/podderzhka-kultury-i-iskusstva",
+    "navigationTarget": "/materials/ru-kompaniya-soc-otv-content-podderzhka-kultury-i-iskusstva",
+    "sourceTarget": "/materials/ru-kompaniya-soc-otv-content-podderzhka-kultury-i-iskusstva",
+    "files": [
+      "frontend/components/public/company/CommunityPage.js",
+      "frontend/lib/public/materials/ru-kompaniya-soc-otv-content-podderzhka-kultury-i-iskusstva.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/kompaniya/dostizheniya",
+    "navigationTarget": "/company#achievements",
+    "sourceTarget": "/materials/ru-kompaniya-dostizheniya",
+    "files": [
+      "frontend/components/public/company/CompanyHistory.js",
+      "frontend/lib/ecosystem/source-register.js",
+      "frontend/lib/public/materials/ru-kompaniya-dostizheniya.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/predpriyatiya/too-aemz",
+    "navigationTarget": "/manufacturers/aemz",
+    "sourceTarget": "/materials/ru-predpriyatiya-too-aemz",
+    "files": [
+      "frontend/components/public/company/CompanyHistory.js",
+      "frontend/components/public/company/CompanyProduction.js",
+      "frontend/lib/public/company.js",
+      "frontend/lib/public/content.js",
+      "frontend/lib/public/materials/ru-predpriyatiya-too-aemz.json",
+      "frontend/lib/public/materials-index.json",
+      "frontend/lib/public/photography-manifest.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/predpriyatiya/too-asia-trafo",
+    "navigationTarget": "/manufacturers/asia-trafo",
+    "sourceTarget": "/materials/ru-predpriyatiya-too-asia-trafo",
+    "files": [
+      "frontend/components/public/company/CompanyProduction.js",
+      "frontend/lib/public/content.js",
+      "frontend/lib/public/materials/ru-predpriyatiya-too-asia-trafo.json",
+      "frontend/lib/public/materials-index.json",
+      "frontend/lib/public/photography-manifest.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/predpriyatiya/too-aktauskij-transformatornyj-zavod",
+    "navigationTarget": "/manufacturers/batys-electric",
+    "sourceTarget": "/materials/ru-predpriyatiya-too-aktauskij-transformatornyj-zavod",
+    "files": [
+      "frontend/components/public/company/CompanyProduction.js",
+      "frontend/lib/public/content.js",
+      "frontend/lib/public/materials/ru-predpriyatiya-too-aktauskij-transformatornyj-zavod.json",
+      "frontend/lib/public/materials-index.json",
+      "frontend/lib/public/photography-manifest.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/katalog/transformatory/tsl-z",
+    "navigationTarget": "/materials/ru-katalog-transformatory-tsl-z",
+    "sourceTarget": "/materials/ru-katalog-transformatory-tsl-z",
+    "files": [
+      "frontend/lib/catalog/catalogEditorialOverlay.json",
+      "frontend/lib/catalog/identity-completion-data/manifest.json",
+      "frontend/lib/catalog/official.js",
+      "frontend/lib/public/materials/ru-katalog-transformatory-tsl-z.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/katalog/transformatory/tmg-25-2500-6-10-kv-2-2",
+    "navigationTarget": "/materials/ru-katalog-transformatory-tmg-25-2500-6-10-kv-2-2",
+    "sourceTarget": "/materials/ru-katalog-transformatory-tmg-25-2500-6-10-kv-2-2",
+    "files": [
+      "frontend/lib/catalog/identity-completion-data/manifest.json",
+      "frontend/lib/catalog/identity-completion-data/panels-001.js",
+      "frontend/lib/catalog/identity-completion-data/panels-002.js",
+      "frontend/lib/catalog/official.js",
+      "frontend/lib/public/materials/ru-katalog-transformatory-tmg-25-2500-6-10-kv-2-2.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/katalog/transformatory/ntmi",
+    "navigationTarget": "/materials/ru-katalog-transformatory-ntmi",
+    "sourceTarget": "/materials/ru-katalog-transformatory-ntmi",
+    "files": [
+      "frontend/lib/catalog/identity-completion-data/panels-001.js",
+      "frontend/lib/catalog/official.js",
+      "frontend/lib/public/materials/ru-katalog-transformatory-ntmi.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/katalog/transformatory/tmeg",
+    "navigationTarget": "/materials/ru-katalog-transformatory-tmeg",
+    "sourceTarget": "/materials/ru-katalog-transformatory-tmeg",
+    "files": [
+      "frontend/lib/catalog/identity-completion-data/panels-001.js",
+      "frontend/lib/catalog/official.js",
+      "frontend/lib/public/materials/ru-katalog-transformatory-tmeg.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/katalog/transformatory/tmgf-6-10-kv",
+    "navigationTarget": "/materials/ru-katalog-transformatory-tmgf-6-10-kv",
+    "sourceTarget": "/materials/ru-katalog-transformatory-tmgf-6-10-kv",
+    "files": [
+      "frontend/lib/catalog/identity-completion-data/panels-002.js",
+      "frontend/lib/catalog/official.js",
+      "frontend/lib/public/materials/ru-katalog-transformatory-tmgf-6-10-kv.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/katalog/transformatory/tmgs-6-10-kv-2-2",
+    "navigationTarget": "/materials/ru-katalog-transformatory-tmgs-6-10-kv-2-2",
+    "sourceTarget": "/materials/ru-katalog-transformatory-tmgs-6-10-kv-2-2",
+    "files": [
+      "frontend/lib/catalog/identity-completion-data/panels-003.js",
+      "frontend/lib/catalog/official.js",
+      "frontend/lib/public/materials/ru-katalog-transformatory-tmgs-6-10-kv-2-2.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/katalog/shkafy-upravleniya/shr11",
+    "navigationTarget": null,
+    "sourceTarget": null,
+    "files": [
+      "frontend/lib/catalog/models/legacyAssetCompletion.js"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/oborudovanie/shkafi/shr11.jpg",
+    "navigationTarget": null,
+    "sourceTarget": null,
+    "files": [
+      "frontend/lib/catalog/models/legacyAssetCompletion.js"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/katalog/shkafy-upravleniya/pktp",
+    "navigationTarget": "/materials/ru-katalog-shkafy-upravleniya-pktp",
+    "sourceTarget": "/materials/ru-katalog-shkafy-upravleniya-pktp",
+    "files": [
+      "frontend/lib/catalog/official.js",
+      "frontend/lib/public/materials/ru-katalog-shkafy-upravleniya-pktp.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/katalog/elektrotekhnicheskoe-oborudovanie/rlnd",
+    "navigationTarget": "/materials/ru-katalog-elektrotekhnicheskoe-oborudovanie-rlnd",
+    "sourceTarget": "/materials/ru-katalog-elektrotekhnicheskoe-oborudovanie-rlnd",
+    "files": [
+      "frontend/lib/catalog/official.js",
+      "frontend/lib/public/materials/ru-katalog-elektrotekhnicheskoe-oborudovanie-rlnd.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/katalog/shkafy-upravleniya/content/vysokovoltnoe-oborudovanie",
+    "navigationTarget": "/materials/ru-katalog-shkafy-upravleniya-content-vysokovoltnoe-oborudovanie",
+    "sourceTarget": "/materials/ru-katalog-shkafy-upravleniya-content-vysokovoltnoe-oborudovanie",
+    "files": [
+      "frontend/lib/catalog/official.js",
+      "frontend/lib/public/materials/ru-katalog-shkafy-upravleniya-content-vysokovoltnoe-oborudovanie.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/zavodi/ktz/1.jpg",
+    "navigationTarget": "/photography/stories/ktz-equipment.webp",
+    "sourceTarget": "/photography/stories/ktz-equipment.webp",
+    "files": [
+      "frontend/lib/catalog/photography-manifest.json",
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-ao-ktz.json",
+      "frontend/lib/public/photography-manifest.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/katalog/transformatory",
+    "navigationTarget": "/catalog?category=transformers",
+    "sourceTarget": "/catalog?category=transformers",
+    "files": [
+      "frontend/lib/catalog/photography-manifest.json",
+      "frontend/lib/public/photography-manifest.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/media/k2/categories/10.png",
+    "navigationTarget": "/photography/equipment/dry-transformers.webp",
+    "sourceTarget": "/photography/equipment/dry-transformers.webp",
+    "files": [
+      "frontend/lib/catalog/photography-manifest.json",
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/photography-manifest.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/asia-trafo-izgotovil-avtotransformator-dlya-kegoc",
+    "navigationTarget": "/materials/ru-novosti-asia-trafo-izgotovil-avtotransformator-dlya-kegoc",
+    "sourceTarget": "/materials/ru-novosti-asia-trafo-izgotovil-avtotransformator-dlya-kegoc",
+    "files": [
+      "frontend/lib/catalog/photography-manifest.json",
+      "frontend/lib/public/materials/ru-novosti-asia-trafo-izgotovil-avtotransformator-dlya-kegoc.json",
+      "frontend/lib/public/materials-index.json",
+      "frontend/lib/public/photography-manifest.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/media/k2/items/cache/f9a9b7c9f33a923e5475b478a62125ae_XL.jpg",
+    "navigationTarget": "/photography/projects/nura.webp",
+    "sourceTarget": "/photography/projects/nura.webp",
+    "files": [
+      "frontend/lib/catalog/photography-manifest.json",
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/photography-manifest.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/karera/aktualnye-vakansii",
+    "navigationTarget": "/materials/ru-karera-aktualnye-vakansii",
+    "sourceTarget": "/materials/ru-karera-aktualnye-vakansii",
+    "files": [
+      "frontend/lib/ecosystem/careers.js",
+      "frontend/lib/ecosystem/source-register.js",
+      "frontend/lib/public/materials/ru-karera-aktualnye-vakansii.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/karera/stazhirovki-dlya-studentov",
+    "navigationTarget": "/materials/ru-karera-stazhirovki-dlya-studentov",
+    "sourceTarget": "/materials/ru-karera-stazhirovki-dlya-studentov",
+    "files": [
+      "frontend/lib/ecosystem/careers.js",
+      "frontend/lib/ecosystem/source-register.js",
+      "frontend/lib/public/materials/ru-karera-stazhirovki-dlya-studentov.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/kompaniya/rukovodstvo/kozhabaev-sajdulla-ilyasovich-2",
+    "navigationTarget": "/materials/ru-kompaniya-rukovodstvo-kozhabaev-sajdulla-ilyasovich-2",
+    "sourceTarget": "/materials/ru-kompaniya-rukovodstvo-kozhabaev-sajdulla-ilyasovich-2",
+    "files": [
+      "frontend/lib/ecosystem/leadership.js",
+      "frontend/lib/public/materials/ru-kompaniya-rukovodstvo-kozhabaev-sajdulla-ilyasovich-2.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/kompaniya/rukovodstvo/stvaev-nurzhan-adasbajevich",
+    "navigationTarget": "/materials/ru-kompaniya-rukovodstvo-stvaev-nurzhan-adasbajevich",
+    "sourceTarget": "/materials/ru-kompaniya-rukovodstvo-stvaev-nurzhan-adasbajevich",
+    "files": [
+      "frontend/lib/ecosystem/leadership.js",
+      "frontend/lib/public/materials/ru-kompaniya-rukovodstvo-stvaev-nurzhan-adasbajevich.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/kompaniya/rukovodstvo/ilyasov-erkebulan-sajdullauly",
+    "navigationTarget": "/materials/ru-kompaniya-rukovodstvo-ilyasov-erkebulan-sajdullauly",
+    "sourceTarget": "/materials/ru-kompaniya-rukovodstvo-ilyasov-erkebulan-sajdullauly",
+    "files": [
+      "frontend/lib/ecosystem/leadership.js",
+      "frontend/lib/public/materials/ru-kompaniya-rukovodstvo-ilyasov-erkebulan-sajdullauly.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/kompaniya/rukovodstvo/abdrakhmanov-nurmakhan-isalkhanovich-2",
+    "navigationTarget": "/materials/ru-kompaniya-rukovodstvo-abdrakhmanov-nurmakhan-isalkhanovich-2",
+    "sourceTarget": "/materials/ru-kompaniya-rukovodstvo-abdrakhmanov-nurmakhan-isalkhanovich-2",
+    "files": [
+      "frontend/lib/ecosystem/leadership.js",
+      "frontend/lib/public/materials/ru-kompaniya-rukovodstvo-abdrakhmanov-nurmakhan-isalkhanovich-2.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/kompaniya/rukovodstvo/abutalip-spash-ly-dajbergen-2",
+    "navigationTarget": "/materials/ru-kompaniya-rukovodstvo-abutalip-spash-ly-dajbergen-2",
+    "sourceTarget": "/materials/ru-kompaniya-rukovodstvo-abutalip-spash-ly-dajbergen-2",
+    "files": [
+      "frontend/lib/ecosystem/leadership.js",
+      "frontend/lib/public/materials/ru-kompaniya-rukovodstvo-abutalip-spash-ly-dajbergen-2.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/kompaniya/rukovodstvo/esirkepov-olzhas-zhunusbekovich-2-3-2-2",
+    "navigationTarget": "/materials/ru-kompaniya-rukovodstvo-esirkepov-olzhas-zhunusbekovich-2-3-2-2",
+    "sourceTarget": "/materials/ru-kompaniya-rukovodstvo-esirkepov-olzhas-zhunusbekovich-2-3-2-2",
+    "files": [
+      "frontend/lib/ecosystem/leadership.js",
+      "frontend/lib/public/materials/ru-kompaniya-rukovodstvo-esirkepov-olzhas-zhunusbekovich-2-3-2-2.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/kompaniya/rukovodstvo/khudajbergenov-bauyrzhan-amangeldievich-2-2",
+    "navigationTarget": "/materials/ru-kompaniya-rukovodstvo-khudajbergenov-bauyrzhan-amangeldievich-2-2",
+    "sourceTarget": "/materials/ru-kompaniya-rukovodstvo-khudajbergenov-bauyrzhan-amangeldievich-2-2",
+    "files": [
+      "frontend/lib/ecosystem/leadership.js",
+      "frontend/lib/public/materials/ru-kompaniya-rukovodstvo-khudajbergenov-bauyrzhan-amangeldievich-2-2.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/kompaniya/rukovodstvo/umbetaliev-ermek-erlanovich-2-2",
+    "navigationTarget": "/materials/ru-kompaniya-rukovodstvo-umbetaliev-ermek-erlanovich-2-2",
+    "sourceTarget": "/materials/ru-kompaniya-rukovodstvo-umbetaliev-ermek-erlanovich-2-2",
+    "files": [
+      "frontend/lib/ecosystem/leadership.js",
+      "frontend/lib/public/materials/ru-kompaniya-rukovodstvo-umbetaliev-ermek-erlanovich-2-2.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/kompaniya/rukovodstvo/tokmurzin-ruslan-rustamovich-2",
+    "navigationTarget": null,
+    "sourceTarget": null,
+    "files": [
+      "frontend/lib/ecosystem/leadership.js",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/kompaniya/rukovodstvo/shamshiev-ersultan-abdurashitovich",
+    "navigationTarget": null,
+    "sourceTarget": null,
+    "files": [
+      "frontend/lib/ecosystem/leadership.js",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/kompaniya/rukovodstvo/kulmakov-timur-timerbulatovich",
+    "navigationTarget": null,
+    "sourceTarget": null,
+    "files": [
+      "frontend/lib/ecosystem/leadership.js",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/kompaniya/rukovodstvo/n-r-ali-dastan-nurlan-ly",
+    "navigationTarget": null,
+    "sourceTarget": null,
+    "files": [
+      "frontend/lib/ecosystem/leadership.js",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti",
+    "navigationTarget": "/news",
+    "sourceTarget": "/materials/ru-novosti",
+    "files": [
+      "frontend/lib/ecosystem/news.js",
+      "frontend/lib/ecosystem/source-register.js",
+      "frontend/lib/public/materials/ru-novosti.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/alageum-obespechit-energiej-novye-obekty-petropavlovska",
+    "navigationTarget": "/materials/ru-novosti-alageum-obespechit-energiej-novye-obekty-petropavlovska",
+    "sourceTarget": "/materials/ru-novosti-alageum-obespechit-energiej-novye-obekty-petropavlovska",
+    "files": [
+      "frontend/lib/ecosystem/news.js",
+      "frontend/lib/public/content.js",
+      "frontend/lib/public/materials/ru-novosti-alageum-obespechit-energiej-novye-obekty-petropavlovska.json",
+      "frontend/lib/public/materials-index.json",
+      "frontend/lib/public/news-photography.json",
+      "frontend/lib/public/photography-manifest.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/kompaniya/istoriya",
+    "navigationTarget": "/company#history",
+    "sourceTarget": "/materials/ru-kompaniya-istoriya",
+    "files": [
+      "frontend/lib/ecosystem/source-register.js",
+      "frontend/lib/public/company.js",
+      "frontend/lib/public/materials/ru-kompaniya-istoriya.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/predpriyatiya",
+    "navigationTarget": "/manufacturers",
+    "sourceTarget": "/materials/ru-predpriyatiya",
+    "files": [
+      "frontend/lib/ecosystem/source-register.js",
+      "frontend/lib/public/materials/ru-predpriyatiya.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/napravleniya/elektromashinostroenie",
+    "navigationTarget": "/materials/ru-napravleniya-elektromashinostroenie",
+    "sourceTarget": "/materials/ru-napravleniya-elektromashinostroenie",
+    "files": [
+      "frontend/lib/ecosystem/source-register.js",
+      "frontend/lib/public/materials/ru-napravleniya-elektromashinostroenie.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/katalog/2Imid_rus2024.pdf",
+    "navigationTarget": "/documents/alageum-group-2024.pdf",
+    "sourceTarget": "/documents/alageum-group-2024.pdf",
+    "files": [
+      "frontend/lib/ecosystem/source-register.js",
+      "frontend/lib/public/project-cases.js"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/kompaniya/soc-otv",
+    "navigationTarget": "/company/social",
+    "sourceTarget": "/materials/ru-kompaniya-soc-otv",
+    "files": [
+      "frontend/lib/ecosystem/source-register.js",
+      "frontend/lib/public/materials/ru-kompaniya-soc-otv.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/kompaniya/o-nas",
+    "navigationTarget": "/company",
+    "sourceTarget": "/materials/ru-kompaniya-o-nas",
+    "files": [
+      "frontend/lib/public/company.js",
+      "frontend/lib/public/materials/ru-kompaniya-o-nas.json",
+      "frontend/lib/public/materials-index.json",
+      "frontend/lib/public/pagesPreview.js"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/predpriyatiya/too-petropavlovskij-elektrotekhnicheskij-zavod",
+    "navigationTarget": "/manufacturers/petz",
+    "sourceTarget": "/materials/ru-predpriyatiya-too-petropavlovskij-elektrotekhnicheskij-zavod",
+    "files": [
+      "frontend/lib/public/company.js",
+      "frontend/lib/public/content.js",
+      "frontend/lib/public/materials/ru-predpriyatiya-too-petropavlovskij-elektrotekhnicheskij-zavod.json",
+      "frontend/lib/public/materials-index.json",
+      "frontend/lib/public/photography-manifest.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/predpriyatiya/too-utz",
+    "navigationTarget": "/manufacturers/utz",
+    "sourceTarget": "/materials/ru-predpriyatiya-too-utz",
+    "files": [
+      "frontend/lib/public/content.js",
+      "frontend/lib/public/materials/ru-predpriyatiya-too-utz.json",
+      "frontend/lib/public/materials-index.json",
+      "frontend/lib/public/photography-manifest.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/predpriyatiya/too-elektromontazh",
+    "navigationTarget": "/manufacturers/elmo",
+    "sourceTarget": "/materials/ru-predpriyatiya-too-elektromontazh",
+    "files": [
+      "frontend/lib/public/content.js",
+      "frontend/lib/public/materials/ru-predpriyatiya-too-elektromontazh.json",
+      "frontend/lib/public/materials-index.json",
+      "frontend/lib/public/photography-manifest.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/predpriyatiya/ural-electric",
+    "navigationTarget": "/manufacturers/ural-electric",
+    "sourceTarget": "/materials/ru-predpriyatiya-ural-electric",
+    "files": [
+      "frontend/lib/public/content.js",
+      "frontend/lib/public/materials/ru-predpriyatiya-ural-electric.json",
+      "frontend/lib/public/materials-index.json",
+      "frontend/lib/public/photography-manifest.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/predpriyatiya/${slug}",
+    "navigationTarget": null,
+    "sourceTarget": null,
+    "files": [
+      "frontend/lib/public/factory-dossiers.js"
+    ]
+  },
+  {
+    "url": "https://alageum.com/media/k2/items/cache/4ddc75f1698994d05cf43f2316d7d33a_L.jpg",
+    "navigationTarget": "/content/legacy-media/0ae15abfd13a147c3dc7f0e9.jpg",
+    "sourceTarget": "/content/legacy-media/0ae15abfd13a147c3dc7f0e9.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-kompaniya-soc-otv-content-podderzhka-sporta.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/napravleniya/postavka.jpg",
+    "navigationTarget": "/content/legacy-media/f07fac0f3e517708920c513f.jpg",
+    "sourceTarget": "/content/legacy-media/f07fac0f3e517708920c513f.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-napravleniya-postavka-oborudovaniya.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/napravleniya/postavka/2.jpg",
+    "navigationTarget": "/content/legacy-media/eaf561667192c8bf0ca1224d.jpg",
+    "sourceTarget": "/content/legacy-media/eaf561667192c8bf0ca1224d.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-napravleniya-postavka-oborudovaniya.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/napravleniya/postavka/1.jpg",
+    "navigationTarget": "/content/legacy-media/97a869c8f695c62a4baa775e.jpg",
+    "sourceTarget": "/content/legacy-media/97a869c8f695c62a4baa775e.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-napravleniya-postavka-oborudovaniya.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/napravleniya/postavka/3.jpg",
+    "navigationTarget": "/content/legacy-media/7fc3751ab1d63d693632cc7c.jpg",
+    "sourceTarget": "/content/legacy-media/7fc3751ab1d63d693632cc7c.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-napravleniya-postavka-oborudovaniya.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/elmenti/PETZ.jpg",
+    "navigationTarget": "/content/legacy-media/26fd70e1d0d9f29fdcbb8146.jpg",
+    "sourceTarget": "/content/legacy-media/26fd70e1d0d9f29fdcbb8146.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-too-petropavlovskij-elektrotekhnicheskij-zavod.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/zavodi/petz/photo_2022-12-27_14-28-28.jpg",
+    "navigationTarget": "/content/legacy-media/0094f5cbfd949181b9ebec81.jpg",
+    "sourceTarget": "/content/legacy-media/0094f5cbfd949181b9ebec81.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-too-petropavlovskij-elektrotekhnicheskij-zavod.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/zavodi/petz/photo_2022-12-27_14-28-31.jpg",
+    "navigationTarget": "/content/legacy-media/8860d48725e0d44075468f02.jpg",
+    "sourceTarget": "/content/legacy-media/8860d48725e0d44075468f02.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-too-petropavlovskij-elektrotekhnicheskij-zavod.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/zavodi/petz/photo_2022-12-27_14-28-34.jpg",
+    "navigationTarget": "/photography/manufacturers/petz.webp",
+    "sourceTarget": "/photography/manufacturers/petz.webp",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-too-petropavlovskij-elektrotekhnicheskij-zavod.json",
+      "frontend/lib/public/photography-manifest.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/news/foto2.jpg",
+    "navigationTarget": "/content/legacy-media/0aae378687a46c579eb63a2d.jpg",
+    "sourceTarget": "/content/legacy-media/0aae378687a46c579eb63a2d.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-novosti-odin-iz-uspeshno-realizovannykh-nashej-komandoj-proektov-komplektnaya-podstantsiya-moshchnostyu-2500-kva-dlya-legkoatle-c52007307ca0.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/media/k2/categories/22.jpg",
+    "navigationTarget": "/content/legacy-media/61d688c62b1a7152ed1900a6.jpg",
+    "sourceTarget": "/content/legacy-media/61d688c62b1a7152ed1900a6.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-kompaniya-soc-otv.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/media/k2/categories/23.jpg",
+    "navigationTarget": "/content/legacy-media/20f936698b6b5703e6aebec5.jpg",
+    "sourceTarget": "/content/legacy-media/20f936698b6b5703e6aebec5.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-kompaniya-soc-otv.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/media/k2/categories/24.jpg",
+    "navigationTarget": "/content/legacy-media/f40d8388671a9240698d1186.jpg",
+    "sourceTarget": "/content/legacy-media/f40d8388671a9240698d1186.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-kompaniya-soc-otv.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/media/k2/categories/25.jpg",
+    "navigationTarget": "/content/legacy-media/71bc5c544819ebaf85fe7f89.jpg",
+    "sourceTarget": "/content/legacy-media/71bc5c544819ebaf85fe7f89.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-kompaniya-soc-otv.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/elmenti/atz.jpg",
+    "navigationTarget": "/photography/manufacturers/batys-electric.webp",
+    "sourceTarget": "/photography/manufacturers/batys-electric.webp",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-too-aktauskij-transformatornyj-zavod.json",
+      "frontend/lib/public/photography-manifest.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/zavodi/atz/Atz1.jpg",
+    "navigationTarget": "/content/legacy-media/342f9f1c7a168004e0c42f76.jpg",
+    "sourceTarget": "/content/legacy-media/342f9f1c7a168004e0c42f76.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-too-aktauskij-transformatornyj-zavod.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/zavodi/atz/Atz3.jpg",
+    "navigationTarget": "/content/legacy-media/367ddf938a0bee141148b70a.jpg",
+    "sourceTarget": "/content/legacy-media/367ddf938a0bee141148b70a.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-too-aktauskij-transformatornyj-zavod.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/zavodi/atz/Atz22.jpg",
+    "navigationTarget": "/content/legacy-media/8f000b6b724f17bf8f24c6e1.jpg",
+    "sourceTarget": "/content/legacy-media/8f000b6b724f17bf8f24c6e1.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-too-aktauskij-transformatornyj-zavod.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/news/KTZ/IMG-20240808-WA0030.jpg",
+    "navigationTarget": "/content/legacy-media/5d8e208cf7053e07b4d839a0.jpg",
+    "sourceTarget": "/content/legacy-media/5d8e208cf7053e07b4d839a0.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-novosti-s-dnem-osnovaniya-ao-kentauskij-transformatornyj-zavod.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/news/KTZ/IMG-20240808-WA0031.jpg",
+    "navigationTarget": "/content/legacy-media/a4147b3688ccb31cd97902e9.jpg",
+    "sourceTarget": "/content/legacy-media/a4147b3688ccb31cd97902e9.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-novosti-s-dnem-osnovaniya-ao-kentauskij-transformatornyj-zavod.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/news/KTZ/IMG-20240808-WA0032.jpg",
+    "navigationTarget": "/content/legacy-media/2c8fde412fcad64b00f5ce46.jpg",
+    "sourceTarget": "/content/legacy-media/2c8fde412fcad64b00f5ce46.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-novosti-s-dnem-osnovaniya-ao-kentauskij-transformatornyj-zavod.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/media/widgetkit/IMG-20240808-WA0030-d56015c831bea64c65b0192177c85a85.jpg",
+    "navigationTarget": "/content/legacy-media/98e5bd1a172f9c1b014843ab.jpg",
+    "sourceTarget": "/content/legacy-media/98e5bd1a172f9c1b014843ab.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-novosti-s-dnem-osnovaniya-ao-kentauskij-transformatornyj-zavod.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/media/widgetkit/IMG-20240808-WA0031-627fbabf8b07508e8364e3fa9cab00a4.jpg",
+    "navigationTarget": "/content/legacy-media/262d32ebb2a8b95d5acc7e79.jpg",
+    "sourceTarget": "/content/legacy-media/262d32ebb2a8b95d5acc7e79.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-novosti-s-dnem-osnovaniya-ao-kentauskij-transformatornyj-zavod.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/media/widgetkit/IMG-20240808-WA0032-23c36c16f4019749980f3be72dcb957e.jpg",
+    "navigationTarget": "/content/legacy-media/f40a9d3629f5b1230c1d8b29.jpg",
+    "sourceTarget": "/content/legacy-media/f40a9d3629f5b1230c1d8b29.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-novosti-s-dnem-osnovaniya-ao-kentauskij-transformatornyj-zavod.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/oborudovanie/transformatori/tmg-25-250-6-10-kv-1.jpg",
+    "navigationTarget": "/content/legacy-media/d1571de5c6f26e7cadf30183.jpg",
+    "sourceTarget": "/content/legacy-media/d1571de5c6f26e7cadf30183.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-katalog-transformatory-tmeg.json",
+      "frontend/lib/public/materials/ru-katalog-transformatory-tmg-25-2500-6-10-kv-2-2.json",
+      "frontend/lib/public/materials/ru-katalog-transformatory-tmgf-6-10-kv.json",
+      "frontend/lib/public/materials/ru-katalog-transformatory-tmgs-6-10-kv-2-2.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/oborudovanie/transformatori/tmg-25-250-6-10-kv-2.jpg",
+    "navigationTarget": "/content/legacy-media/cf98fdd4f1772af402b86685.jpg",
+    "sourceTarget": "/content/legacy-media/cf98fdd4f1772af402b86685.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-katalog-transformatory-tmeg.json",
+      "frontend/lib/public/materials/ru-katalog-transformatory-tmg-25-2500-6-10-kv-2-2.json",
+      "frontend/lib/public/materials/ru-katalog-transformatory-tmgf-6-10-kv.json",
+      "frontend/lib/public/materials/ru-katalog-transformatory-tmgs-6-10-kv-2-2.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/oborudovanie/transformatori/tmg-25-250-6-10-kv-3.jpg",
+    "navigationTarget": "/content/legacy-media/86c70ab504c8ad884c4fac82.jpg",
+    "sourceTarget": "/content/legacy-media/86c70ab504c8ad884c4fac82.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-katalog-transformatory-tmeg.json",
+      "frontend/lib/public/materials/ru-katalog-transformatory-tmg-25-2500-6-10-kv-2-2.json",
+      "frontend/lib/public/materials/ru-katalog-transformatory-tmgf-6-10-kv.json",
+      "frontend/lib/public/materials/ru-katalog-transformatory-tmgs-6-10-kv-2-2.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/oborudovanie/transformatori/tmg-25-250-6-10-kv-4.jpg",
+    "navigationTarget": "/content/legacy-media/27f5ac42ae392fac9459f70d.jpg",
+    "sourceTarget": "/content/legacy-media/27f5ac42ae392fac9459f70d.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-katalog-transformatory-tmeg.json",
+      "frontend/lib/public/materials/ru-katalog-transformatory-tmg-25-2500-6-10-kv-2-2.json",
+      "frontend/lib/public/materials/ru-katalog-transformatory-tmgf-6-10-kv.json",
+      "frontend/lib/public/materials/ru-katalog-transformatory-tmgs-6-10-kv-2-2.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/media/k2/items/cache/3f4808b525a42a0bb340252b3c0de1d3_L.jpg",
+    "navigationTarget": "/content/legacy-media/eadc16c75efb068c3492f04b.jpg",
+    "sourceTarget": "/content/legacy-media/eadc16c75efb068c3492f04b.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-kompaniya-soc-otv-content-podderzhka-kultury-i-iskusstva.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/napravleniya/stroyka.jpg",
+    "navigationTarget": "/content/legacy-media/424fb3cd44f9e3c0a534f380.jpg",
+    "sourceTarget": "/content/legacy-media/424fb3cd44f9e3c0a534f380.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-napravleniya-stroitelstvo.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/napravleniya/stroitelstvo/1.jpg",
+    "navigationTarget": "/content/legacy-media/86c761f85830a88ebf288d5f.jpg",
+    "sourceTarget": "/content/legacy-media/86c761f85830a88ebf288d5f.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-napravleniya-stroitelstvo.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/napravleniya/stroitelstvo/2.jpg",
+    "navigationTarget": "/content/legacy-media/ddbfd240512a51b93e7142f4.jpg",
+    "sourceTarget": "/content/legacy-media/ddbfd240512a51b93e7142f4.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-napravleniya-stroitelstvo.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/napravleniya/stroitelstvo/3.jpg",
+    "navigationTarget": "/content/legacy-media/e46ec3e82d88da7b2aae5549.jpg",
+    "sourceTarget": "/content/legacy-media/e46ec3e82d88da7b2aae5549.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-napravleniya-stroitelstvo.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/elmenti/history.jpg",
+    "navigationTarget": "/photography/stories/history.webp",
+    "sourceTarget": "/photography/stories/history.webp",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-kompaniya-istoriya.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/elmenti/asia-trafo.jpg",
+    "navigationTarget": "/content/legacy-media/fb5419c020016286e9d4cf16.jpg",
+    "sourceTarget": "/content/legacy-media/fb5419c020016286e9d4cf16.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-too-asia-trafo.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/zavodi/asia-trafo/2.jpg",
+    "navigationTarget": "/photography/manufacturers/asia-trafo.webp",
+    "sourceTarget": "/photography/manufacturers/asia-trafo.webp",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-too-asia-trafo.json",
+      "frontend/lib/public/photography-manifest.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/zavodi/asia-trafo/3.jpg",
+    "navigationTarget": "/photography/stories/asia-winding.webp",
+    "sourceTarget": "/photography/stories/asia-winding.webp",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-too-asia-trafo.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/zavodi/asia-trafo/4.jpg",
+    "navigationTarget": "/photography/stories/asia-workshop.webp",
+    "sourceTarget": "/photography/stories/asia-workshop.webp",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-too-asia-trafo.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/napravleniya/eksport.jpg",
+    "navigationTarget": "/content/legacy-media/e2545c70d5d249f0149ae087.jpg",
+    "sourceTarget": "/content/legacy-media/e2545c70d5d249f0149ae087.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-napravleniya-eksport.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/napravleniya/export/1.jpg",
+    "navigationTarget": "/content/legacy-media/8d9de4045a0e8fb10ab7dbe6.jpg",
+    "sourceTarget": "/content/legacy-media/8d9de4045a0e8fb10ab7dbe6.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-napravleniya-eksport.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/napravleniya/export/2.jpg",
+    "navigationTarget": "/content/legacy-media/b53ab969c7c7ad77d76a40f8.jpg",
+    "sourceTarget": "/content/legacy-media/b53ab969c7c7ad77d76a40f8.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-napravleniya-eksport.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/napravleniya/export/3.jpg",
+    "navigationTarget": "/content/legacy-media/6b3f97134097105b37421881.jpg",
+    "sourceTarget": "/content/legacy-media/6b3f97134097105b37421881.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-napravleniya-eksport.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/oborudovanie/shkafi/pktp.jpg",
+    "navigationTarget": "/content/legacy-media/65a98f8383604fab25849ef4.jpg",
+    "sourceTarget": "/content/legacy-media/65a98f8383604fab25849ef4.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-katalog-shkafy-upravleniya-pktp.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/zavodi/ue/ue.jpg",
+    "navigationTarget": "/photography/manufacturers/ural-electric.webp",
+    "sourceTarget": "/photography/manufacturers/ural-electric.webp",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-ural-electric.json",
+      "frontend/lib/public/photography-manifest.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/zavodi/ue/11.jpg",
+    "navigationTarget": "/content/legacy-media/c1289192d1124abcdc0cd3e5.jpg",
+    "sourceTarget": "/content/legacy-media/c1289192d1124abcdc0cd3e5.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-ural-electric.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/zavodi/ue/14.jpg",
+    "navigationTarget": "/content/legacy-media/4824fd5080c9d7494a7a6347.jpg",
+    "sourceTarget": "/content/legacy-media/4824fd5080c9d7494a7a6347.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-ural-electric.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/zavodi/ue/13.jpg",
+    "navigationTarget": "/content/legacy-media/30bab79a5e6419a9014bc8da.jpg",
+    "sourceTarget": "/content/legacy-media/30bab79a5e6419a9014bc8da.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-ural-electric.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/elmenti/electromontaz.jpg",
+    "navigationTarget": "/content/legacy-media/826aeef84a5abab29d1465a2.jpg",
+    "sourceTarget": "/content/legacy-media/826aeef84a5abab29d1465a2.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-too-elektromontazh.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/zavodi/elmo/1.jpg",
+    "navigationTarget": "/photography/equipment/category-switchgear.webp",
+    "sourceTarget": "/photography/equipment/category-switchgear.webp",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-too-elektromontazh.json",
+      "frontend/lib/public/photography-manifest.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/zavodi/elmo/2.jpg",
+    "navigationTarget": "/content/legacy-media/2a9c6734df9a017e305f4535.jpg",
+    "sourceTarget": "/content/legacy-media/2a9c6734df9a017e305f4535.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-too-elektromontazh.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/zavodi/elmo/3.jpg",
+    "navigationTarget": "/photography/manufacturers/elmo.webp",
+    "sourceTarget": "/photography/manufacturers/elmo.webp",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-too-elektromontazh.json",
+      "frontend/lib/public/photography-manifest.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/elmenti/ktz.jpg",
+    "navigationTarget": "/content/legacy-media/ec3c014e6f7cfce7d661b2e3.jpg",
+    "sourceTarget": "/content/legacy-media/ec3c014e6f7cfce7d661b2e3.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-ao-ktz.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/zavodi/ktz/2.jpg",
+    "navigationTarget": "/photography/stories/ktz-workshop.webp",
+    "sourceTarget": "/photography/stories/ktz-workshop.webp",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-ao-ktz.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/zavodi/ktz/3.jpg",
+    "navigationTarget": "/photography/manufacturers/ktz.webp",
+    "sourceTarget": "/photography/manufacturers/ktz.webp",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-ao-ktz.json",
+      "frontend/lib/public/photography-manifest.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/oborudovanie/transformatori/ntmi.jpg",
+    "navigationTarget": "/content/legacy-media/f1b2e3bd8be2d0c4bc2955dc.jpg",
+    "sourceTarget": "/content/legacy-media/f1b2e3bd8be2d0c4bc2955dc.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-katalog-transformatory-ntmi.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/elmenti/utz.jpg",
+    "navigationTarget": "/content/legacy-media/3385140805799f2988817f35.jpg",
+    "sourceTarget": "/content/legacy-media/3385140805799f2988817f35.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-too-utz.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/zavodi/utz/1.jpg",
+    "navigationTarget": "/content/legacy-media/0391879c1b80780b90b8f720.jpg",
+    "sourceTarget": "/content/legacy-media/0391879c1b80780b90b8f720.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-too-utz.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/zavodi/utz/2.jpg",
+    "navigationTarget": "/photography/manufacturers/utz.webp",
+    "sourceTarget": "/photography/manufacturers/utz.webp",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-too-utz.json",
+      "frontend/lib/public/photography-manifest.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/zavodi/utz/3.jpg",
+    "navigationTarget": "/content/legacy-media/ae01fb214b251f30a5e8631c.jpg",
+    "sourceTarget": "/content/legacy-media/ae01fb214b251f30a5e8631c.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-too-utz.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/elmenti/about_img.jpg",
+    "navigationTarget": "/content/legacy-media/ca609d9bf366b9ee8c3ed3d1.jpg",
+    "sourceTarget": "/content/legacy-media/ca609d9bf366b9ee8c3ed3d1.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-kompaniya-o-nas.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/social/obshaya.jpg",
+    "navigationTarget": "/photography/stories/social.webp",
+    "sourceTarget": "/photography/stories/social.webp",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-kompaniya-soc-otv-content-obshchaya-informatsiya.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/oborudovanie/shkafi/rlnd.jpg",
+    "navigationTarget": "/content/legacy-media/6f5b19b6f59e5d0cccf2eee3.jpg",
+    "sourceTarget": "/content/legacy-media/6f5b19b6f59e5d0cccf2eee3.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-katalog-elektrotekhnicheskoe-oborudovanie-rlnd.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/elmenti/almatinskiy.jpg",
+    "navigationTarget": "/content/legacy-media/52d0538d682fe1e79d99132d.jpg",
+    "sourceTarget": "/content/legacy-media/52d0538d682fe1e79d99132d.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-too-aemz.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/zavodi/aemz/1.jpg",
+    "navigationTarget": "/photography/equipment/category-substations.webp",
+    "sourceTarget": "/photography/equipment/category-substations.webp",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-too-aemz.json",
+      "frontend/lib/public/photography-manifest.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/zavodi/aemz/2.jpg",
+    "navigationTarget": "/content/legacy-media/23ce306a5d05ac28761fb7c3.jpg",
+    "sourceTarget": "/content/legacy-media/23ce306a5d05ac28761fb7c3.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-too-aemz.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/zavodi/aemz/3.jpg",
+    "navigationTarget": "/photography/manufacturers/aemz.webp",
+    "sourceTarget": "/photography/manufacturers/aemz.webp",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-predpriyatiya-too-aemz.json",
+      "frontend/lib/public/photography-manifest.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/napravleniya/in-construct.png",
+    "navigationTarget": "/content/legacy-media/ac5646d12d14afddcdba6773.png",
+    "sourceTarget": "/content/legacy-media/ac5646d12d14afddcdba6773.png",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-napravleniya-proektirovanie.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/napravleniya/montazh1.jpg",
+    "navigationTarget": "/content/legacy-media/5e8b00119f033a5925c0606a.jpg",
+    "sourceTarget": "/content/legacy-media/5e8b00119f033a5925c0606a.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-napravleniya-montazh-i-pusko-naladka.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/napravleniya/pusko-naladka/1.jpg",
+    "navigationTarget": "/content/legacy-media/10936c1b801c70b0951609ea.jpg",
+    "sourceTarget": "/content/legacy-media/10936c1b801c70b0951609ea.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-napravleniya-montazh-i-pusko-naladka.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/napravleniya/pusko-naladka/2.jpg",
+    "navigationTarget": "/content/legacy-media/758f0ccc4cd34f9c5a2e9f10.jpg",
+    "sourceTarget": "/content/legacy-media/758f0ccc4cd34f9c5a2e9f10.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-napravleniya-montazh-i-pusko-naladka.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/napravleniya/pusko-naladka/3.jpg",
+    "navigationTarget": "/content/legacy-media/f7a625081bdc7e71eccd176a.jpg",
+    "sourceTarget": "/content/legacy-media/f7a625081bdc7e71eccd176a.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-napravleniya-montazh-i-pusko-naladka.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/media/k2/items/cache/c987a1b31fd3f1f08322280ca0954f48_L.jpg",
+    "navigationTarget": "/content/legacy-media/2bcf22f4517e67cb5573e04d.jpg",
+    "sourceTarget": "/content/legacy-media/2bcf22f4517e67cb5573e04d.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-kompaniya-soc-otv-content-podderzhka-sotsialno-nezashchishchennykh-sloev-naseleniya.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/napravleniya/elekromachini.jpg",
+    "navigationTarget": "/content/legacy-media/bafe50f89622650f9b007e51.jpg",
+    "sourceTarget": "/content/legacy-media/bafe50f89622650f9b007e51.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-napravleniya-elektromashinostroenie.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/napravleniya/electromashinostroy/1.jpg",
+    "navigationTarget": "/content/legacy-media/9a80b1a34533a35b56441c97.jpg",
+    "sourceTarget": "/content/legacy-media/9a80b1a34533a35b56441c97.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-napravleniya-elektromashinostroenie.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/napravleniya/electromashinostroy/2.jpg",
+    "navigationTarget": "/content/legacy-media/8ab2772bf5dc768554ca67a6.jpg",
+    "sourceTarget": "/content/legacy-media/8ab2772bf5dc768554ca67a6.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-napravleniya-elektromashinostroenie.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/napravleniya/electromashinostroy/3.jpg",
+    "navigationTarget": "/content/legacy-media/7be549d7b2ac8fe4600016f2.jpg",
+    "sourceTarget": "/content/legacy-media/7be549d7b2ac8fe4600016f2.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-napravleniya-elektromashinostroenie.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/oborudovanie/transformatori/tsl-z-1.jpg",
+    "navigationTarget": "/content/legacy-media/2ba5e65059aed336f3456e19.jpg",
+    "sourceTarget": "/content/legacy-media/2ba5e65059aed336f3456e19.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-katalog-transformatory-tsl-z.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/oborudovanie/transformatori/tsl-z-2.jpg",
+    "navigationTarget": "/content/legacy-media/d5bd18dbb2fb3b456e5f2c7c.jpg",
+    "sourceTarget": "/content/legacy-media/d5bd18dbb2fb3b456e5f2c7c.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-katalog-transformatory-tsl-z.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/oborudovanie/transformatori/tsl-z-3.jpg",
+    "navigationTarget": "/content/legacy-media/9456d109e8fa99b0b3f4a0ef.jpg",
+    "sourceTarget": "/content/legacy-media/9456d109e8fa99b0b3f4a0ef.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-katalog-transformatory-tsl-z.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/elmenti/dostizheniya.jpg",
+    "navigationTarget": "/photography/stories/recognition.webp",
+    "sourceTarget": "/photography/stories/recognition.webp",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/materials/ru-kompaniya-dostizheniya.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/media/k2/items/cache/7a0c9d8bd9eadf879f0011817e8c2396_XL.jpg",
+    "navigationTarget": "/photography/news/petropavlovsk-substation.jpg",
+    "sourceTarget": "/photography/news/petropavlovsk-substation.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/news-photography.json",
+      "frontend/lib/public/photography-manifest.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/media/k2/items/cache/617a2776f20d4e817afffbdbb257cffa_XL.jpg",
+    "navigationTarget": "/photography/news/domestic-production.jpg",
+    "sourceTarget": "/photography/news/domestic-production.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/news-photography.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/media/k2/items/cache/8ab790b9074fed051af256aa504a66b7_XL.jpg",
+    "navigationTarget": "/photography/news/caspian-support.jpg",
+    "sourceTarget": "/photography/news/caspian-support.jpg",
+    "files": [
+      "frontend/lib/public/legacy-assets.json",
+      "frontend/lib/public/news-photography.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com",
+    "navigationTarget": "/",
+    "sourceTarget": "/",
+    "files": [
+      "frontend/lib/public/localResources.js"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/kompaniya/prodazha",
+    "navigationTarget": "/contacts#assets",
+    "sourceTarget": "/materials/ru-kompaniya-prodazha",
+    "files": [
+      "frontend/lib/public/materials/ru-kompaniya-prodazha.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/kompaniya/soc-otv/content/podderzhka-sotsialno-nezashchishchennykh-sloev-naseleniya",
+    "navigationTarget": "/materials/ru-kompaniya-soc-otv-content-podderzhka-sotsialno-nezashchishchennykh-sloev-naseleniya",
+    "sourceTarget": "/materials/ru-kompaniya-soc-otv-content-podderzhka-sotsialno-nezashchishchennykh-sloev-naseleniya",
+    "files": [
+      "frontend/lib/public/materials/ru-kompaniya-soc-otv-content-podderzhka-sotsialno-nezashchishchennykh-sloev-naseleniya.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/napravleniya/eksport",
+    "navigationTarget": "/materials/ru-napravleniya-eksport",
+    "sourceTarget": "/materials/ru-napravleniya-eksport",
+    "files": [
+      "frontend/lib/public/materials/ru-napravleniya-eksport.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/napravleniya/montazh-i-pusko-naladka",
+    "navigationTarget": "/materials/ru-napravleniya-montazh-i-pusko-naladka",
+    "sourceTarget": "/materials/ru-napravleniya-montazh-i-pusko-naladka",
+    "files": [
+      "frontend/lib/public/materials/ru-napravleniya-montazh-i-pusko-naladka.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/napravleniya/postavka-oborudovaniya",
+    "navigationTarget": "/materials/ru-napravleniya-postavka-oborudovaniya",
+    "sourceTarget": "/materials/ru-napravleniya-postavka-oborudovaniya",
+    "files": [
+      "frontend/lib/public/materials/ru-napravleniya-postavka-oborudovaniya.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/napravleniya/proektirovanie",
+    "navigationTarget": "/materials/ru-napravleniya-proektirovanie",
+    "sourceTarget": "/materials/ru-napravleniya-proektirovanie",
+    "files": [
+      "frontend/lib/public/materials/ru-napravleniya-proektirovanie.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/napravleniya/stroitelstvo",
+    "navigationTarget": "/materials/ru-napravleniya-stroitelstvo",
+    "sourceTarget": "/materials/ru-napravleniya-stroitelstvo",
+    "files": [
+      "frontend/lib/public/materials/ru-napravleniya-stroitelstvo.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/1-milliard-tenge-na-pomoshch-zko-vydelit-gruppa-kompanij-alageum-electric",
+    "navigationTarget": "/materials/ru-novosti-1-milliard-tenge-na-pomoshch-zko-vydelit-gruppa-kompanij-alageum-electric",
+    "sourceTarget": "/materials/ru-novosti-1-milliard-tenge-na-pomoshch-zko-vydelit-gruppa-kompanij-alageum-electric",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-1-milliard-tenge-na-pomoshch-zko-vydelit-gruppa-kompanij-alageum-electric.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/10-noyabrya-2014-g-ao-kentauskij-transformatornyj-zavod-provodit-mezhdunarodnyj-forum",
+    "navigationTarget": "/materials/ru-novosti-10-noyabrya-2014-g-ao-kentauskij-transformatornyj-zavod-provodit-mezhdunarodnyj-forum",
+    "sourceTarget": "/materials/ru-novosti-10-noyabrya-2014-g-ao-kentauskij-transformatornyj-zavod-provodit-mezhdunarodnyj-forum",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-10-noyabrya-2014-g-ao-kentauskij-transformatornyj-zavod-provodit-mezhdunarodnyj-forum.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/2014-god-god-55-letiya-ao-ktz-2",
+    "navigationTarget": "/materials/ru-novosti-2014-god-god-55-letiya-ao-ktz-2",
+    "sourceTarget": "/materials/ru-novosti-2014-god-god-55-letiya-ao-ktz-2",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-2014-god-god-55-letiya-ao-ktz-2.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/2014-god-god-55-letiya-ao-ktz",
+    "navigationTarget": "/materials/ru-novosti-2014-god-god-55-letiya-ao-ktz",
+    "sourceTarget": "/materials/ru-novosti-2014-god-god-55-letiya-ao-ktz",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-2014-god-god-55-letiya-ao-ktz.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/25-sentyabrya-2014-goda-v-g-kentau-na-baze-kentauskogo-politekhnicheskogo-kolledzha-sostoyalos-respublikanskoe-soveshchanie",
+    "navigationTarget": "/materials/ru-novosti-25-sentyabrya-2014-goda-v-g-kentau-na-baze-kentauskogo-politekhnicheskogo-kolledzha-sostoyalos-respublikanskoe-soveshchanie",
+    "sourceTarget": "/materials/ru-novosti-25-sentyabrya-2014-goda-v-g-kentau-na-baze-kentauskogo-politekhnicheskogo-kolledzha-sostoyalos-respublikanskoe-soveshchanie",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-25-sentyabrya-2014-goda-v-g-kentau-na-baze-kentauskogo-politekhnicheskogo-kolledzha-sostoyalos-respublikanskoe-soveshchanie.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/31-go-marta-v-almaty-v-too-almatinskom-elektromekhanicheskom-zavode-proshel-seminar",
+    "navigationTarget": "/materials/ru-novosti-31-go-marta-v-almaty-v-too-almatinskom-elektromekhanicheskom-zavode-proshel-seminar",
+    "sourceTarget": "/materials/ru-novosti-31-go-marta-v-almaty-v-too-almatinskom-elektromekhanicheskom-zavode-proshel-seminar",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-31-go-marta-v-almaty-v-too-almatinskom-elektromekhanicheskom-zavode-proshel-seminar.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/4-aya-kazakhstanskaya-mezhdunarodnaya-vystavka-energetika-elektrotekhnika-i-energeticheskoe-mashinostroenie",
+    "navigationTarget": "/materials/ru-novosti-4-aya-kazakhstanskaya-mezhdunarodnaya-vystavka-energetika-elektrotekhnika-i-energeticheskoe-mashinostroenie",
+    "sourceTarget": "/materials/ru-novosti-4-aya-kazakhstanskaya-mezhdunarodnaya-vystavka-energetika-elektrotekhnika-i-energeticheskoe-mashinostroenie",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-4-aya-kazakhstanskaya-mezhdunarodnaya-vystavka-energetika-elektrotekhnika-i-energeticheskoe-mashinostroenie.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/a-t-bede-mert-bol-an-52-zbekstandy-ty-rukhyna-52-zhemis-a-ashy-otyr-yzyldy",
+    "navigationTarget": "/materials/ru-novosti-a-t-bede-mert-bol-an-52-zbekstandy-ty-rukhyna-52-zhemis-a-ashy-otyr-yzyldy",
+    "sourceTarget": "/materials/ru-novosti-a-t-bede-mert-bol-an-52-zbekstandy-ty-rukhyna-52-zhemis-a-ashy-otyr-yzyldy",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-a-t-bede-mert-bol-an-52-zbekstandy-ty-rukhyna-52-zhemis-a-ashy-otyr-yzyldy.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/alageum-electric-generalnyj-sponsor-5-kh-vsemirnykh-igr-kochevnikov",
+    "navigationTarget": "/materials/ru-novosti-alageum-electric-generalnyj-sponsor-5-kh-vsemirnykh-igr-kochevnikov",
+    "sourceTarget": "/materials/ru-novosti-alageum-electric-generalnyj-sponsor-5-kh-vsemirnykh-igr-kochevnikov",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-alageum-electric-generalnyj-sponsor-5-kh-vsemirnykh-igr-kochevnikov.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/alageum-electric-horus-energia-vzaimovygodnoe-sotrudnichestvo",
+    "navigationTarget": "/materials/ru-novosti-alageum-electric-horus-energia-vzaimovygodnoe-sotrudnichestvo",
+    "sourceTarget": "/materials/ru-novosti-alageum-electric-horus-energia-vzaimovygodnoe-sotrudnichestvo",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-alageum-electric-horus-energia-vzaimovygodnoe-sotrudnichestvo.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/alageum-electric-na-innoprom-2024",
+    "navigationTarget": "/materials/ru-novosti-alageum-electric-na-innoprom-2024",
+    "sourceTarget": "/materials/ru-novosti-alageum-electric-na-innoprom-2024",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-alageum-electric-na-innoprom-2024.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/alageum-electric-napravit-300-mln-tenge-semyam-pogibshikh-i-postradavshikh-na-kaspii",
+    "navigationTarget": "/materials/ru-novosti-alageum-electric-napravit-300-mln-tenge-semyam-pogibshikh-i-postradavshikh-na-kaspii",
+    "sourceTarget": "/materials/ru-novosti-alageum-electric-napravit-300-mln-tenge-semyam-pogibshikh-i-postradavshikh-na-kaspii",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-alageum-electric-napravit-300-mln-tenge-semyam-pogibshikh-i-postradavshikh-na-kaspii.json",
+      "frontend/lib/public/materials-index.json",
+      "frontend/lib/public/news-photography.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/alageum-electric-pervym-primenil-novyj-zakon-o-endaumentakh-dlya-dolgosrochnoj-podderzhki-nauki-i-obrazovaniya",
+    "navigationTarget": "/materials/ru-novosti-alageum-electric-pervym-primenil-novyj-zakon-o-endaumentakh-dlya-dolgosrochnoj-podderzhki-nauki-i-obrazovaniya",
+    "sourceTarget": "/materials/ru-novosti-alageum-electric-pervym-primenil-novyj-zakon-o-endaumentakh-dlya-dolgosrochnoj-podderzhki-nauki-i-obrazovaniya",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-alageum-electric-pervym-primenil-novyj-zakon-o-endaumentakh-dlya-dolgosrochnoj-podderzhki-nauki-i-obrazovaniya.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/alageum-electric-podpisal-memorandum-s-yuzhnokorejskoj-kompaniej-hyosung-corporation",
+    "navigationTarget": "/materials/ru-novosti-alageum-electric-podpisal-memorandum-s-yuzhnokorejskoj-kompaniej-hyosung-corporation",
+    "sourceTarget": "/materials/ru-novosti-alageum-electric-podpisal-memorandum-s-yuzhnokorejskoj-kompaniej-hyosung-corporation",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-alageum-electric-podpisal-memorandum-s-yuzhnokorejskoj-kompaniej-hyosung-corporation.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/alageum-electric-prinyal-uchastie-v-torgovoj-missii-kazakhstana-v-uzbekistan",
+    "navigationTarget": "/materials/ru-novosti-alageum-electric-prinyal-uchastie-v-torgovoj-missii-kazakhstana-v-uzbekistan",
+    "sourceTarget": "/materials/ru-novosti-alageum-electric-prinyal-uchastie-v-torgovoj-missii-kazakhstana-v-uzbekistan",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-alageum-electric-prinyal-uchastie-v-torgovoj-missii-kazakhstana-v-uzbekistan.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/alageum-electric-provela-vstrechu-s-partnerami-i-potrebitelyami",
+    "navigationTarget": "/materials/ru-novosti-alageum-electric-provela-vstrechu-s-partnerami-i-potrebitelyami",
+    "sourceTarget": "/materials/ru-novosti-alageum-electric-provela-vstrechu-s-partnerami-i-potrebitelyami",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-alageum-electric-provela-vstrechu-s-partnerami-i-potrebitelyami.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/alageum-electric-rasshiryaet-gorizonty-sotrudnichestva-i-prinimaet-uchastie-v-kazakhstansko-tadzhikskom-forume",
+    "navigationTarget": "/materials/ru-novosti-alageum-electric-rasshiryaet-gorizonty-sotrudnichestva-i-prinimaet-uchastie-v-kazakhstansko-tadzhikskom-forume",
+    "sourceTarget": "/materials/ru-novosti-alageum-electric-rasshiryaet-gorizonty-sotrudnichestva-i-prinimaet-uchastie-v-kazakhstansko-tadzhikskom-forume",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-alageum-electric-rasshiryaet-gorizonty-sotrudnichestva-i-prinimaet-uchastie-v-kazakhstansko-tadzhikskom-forume.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/alageum-electric-udostoena-nagrady-za-vklad-v-razvitie-chelovecheskogo-kapitala",
+    "navigationTarget": "/materials/ru-novosti-alageum-electric-udostoena-nagrady-za-vklad-v-razvitie-chelovecheskogo-kapitala",
+    "sourceTarget": "/materials/ru-novosti-alageum-electric-udostoena-nagrady-za-vklad-v-razvitie-chelovecheskogo-kapitala",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-alageum-electric-udostoena-nagrady-za-vklad-v-razvitie-chelovecheskogo-kapitala.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/alageum-electric-vystupaet-platinovym-partnerom-foruma-digital-qazaqstan",
+    "navigationTarget": "/materials/ru-novosti-alageum-electric-vystupaet-platinovym-partnerom-foruma-digital-qazaqstan",
+    "sourceTarget": "/materials/ru-novosti-alageum-electric-vystupaet-platinovym-partnerom-foruma-digital-qazaqstan",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-alageum-electric-vystupaet-platinovym-partnerom-foruma-digital-qazaqstan.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/alageum-electric-zaklyuchenie-krupnoj-sdelki-s-ao-alfa-bank",
+    "navigationTarget": "/materials/ru-novosti-alageum-electric-zaklyuchenie-krupnoj-sdelki-s-ao-alfa-bank",
+    "sourceTarget": "/materials/ru-novosti-alageum-electric-zaklyuchenie-krupnoj-sdelki-s-ao-alfa-bank",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-alageum-electric-zaklyuchenie-krupnoj-sdelki-s-ao-alfa-bank.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/almatinskij-elektromekhanicheskij-zavod-odin-iz-nominantov-na-premiyu-altyn-sapa",
+    "navigationTarget": "/materials/ru-novosti-almatinskij-elektromekhanicheskij-zavod-odin-iz-nominantov-na-premiyu-altyn-sapa",
+    "sourceTarget": "/materials/ru-novosti-almatinskij-elektromekhanicheskij-zavod-odin-iz-nominantov-na-premiyu-altyn-sapa",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-almatinskij-elektromekhanicheskij-zavod-odin-iz-nominantov-na-premiyu-altyn-sapa.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/almatinskij-elektromekhanicheskij-zavod-vnedryaet-kajdzen",
+    "navigationTarget": "/materials/ru-novosti-almatinskij-elektromekhanicheskij-zavod-vnedryaet-kajdzen",
+    "sourceTarget": "/materials/ru-novosti-almatinskij-elektromekhanicheskij-zavod-vnedryaet-kajdzen",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-almatinskij-elektromekhanicheskij-zavod-vnedryaet-kajdzen.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/ao-alageum-electric-prezentoval-svoyu-novuyu-produktsiyu-na-vystavke-power-kazakhstan-2013",
+    "navigationTarget": "/materials/ru-novosti-ao-alageum-electric-prezentoval-svoyu-novuyu-produktsiyu-na-vystavke-power-kazakhstan-2013",
+    "sourceTarget": "/materials/ru-novosti-ao-alageum-electric-prezentoval-svoyu-novuyu-produktsiyu-na-vystavke-power-kazakhstan-2013",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-ao-alageum-electric-prezentoval-svoyu-novuyu-produktsiyu-na-vystavke-power-kazakhstan-2013.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/ao-alageum-electric-udostoeno-zvaniya-lider-partnerstva-2014",
+    "navigationTarget": "/materials/ru-novosti-ao-alageum-electric-udostoeno-zvaniya-lider-partnerstva-2014",
+    "sourceTarget": "/materials/ru-novosti-ao-alageum-electric-udostoeno-zvaniya-lider-partnerstva-2014",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-ao-alageum-electric-udostoeno-zvaniya-lider-partnerstva-2014.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/ao-elektromontazh-elmo-vypolnyaet-montazhnye-raboty-v-novoj-promzone-goroda-saran-karagandinskoj-oblasti",
+    "navigationTarget": "/materials/ru-novosti-ao-elektromontazh-elmo-vypolnyaet-montazhnye-raboty-v-novoj-promzone-goroda-saran-karagandinskoj-oblasti",
+    "sourceTarget": "/materials/ru-novosti-ao-elektromontazh-elmo-vypolnyaet-montazhnye-raboty-v-novoj-promzone-goroda-saran-karagandinskoj-oblasti",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-ao-elektromontazh-elmo-vypolnyaet-montazhnye-raboty-v-novoj-promzone-goroda-saran-karagandinskoj-oblasti.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/ao-kentauskij-transformatornyj-zavod-priznano-luchshim-na-premii-paryz",
+    "navigationTarget": "/materials/ru-novosti-ao-kentauskij-transformatornyj-zavod-priznano-luchshim-na-premii-paryz",
+    "sourceTarget": "/materials/ru-novosti-ao-kentauskij-transformatornyj-zavod-priznano-luchshim-na-premii-paryz",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-ao-kentauskij-transformatornyj-zavod-priznano-luchshim-na-premii-paryz.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/ao-ktz-priznano-luchshim-v-oblasti",
+    "navigationTarget": "/materials/ru-novosti-ao-ktz-priznano-luchshim-v-oblasti",
+    "sourceTarget": "/materials/ru-novosti-ao-ktz-priznano-luchshim-v-oblasti",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-ao-ktz-priznano-luchshim-v-oblasti.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/aset-isekeshev-posetil-uralskij-transformatornyj-zavod",
+    "navigationTarget": "/materials/ru-novosti-aset-isekeshev-posetil-uralskij-transformatornyj-zavod",
+    "sourceTarget": "/materials/ru-novosti-aset-isekeshev-posetil-uralskij-transformatornyj-zavod",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-aset-isekeshev-posetil-uralskij-transformatornyj-zavod.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/asia-trafo-nadezhnost-v-kazhdom-elemente",
+    "navigationTarget": "/materials/ru-novosti-asia-trafo-nadezhnost-v-kazhdom-elemente",
+    "sourceTarget": "/materials/ru-novosti-asia-trafo-nadezhnost-v-kazhdom-elemente",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-asia-trafo-nadezhnost-v-kazhdom-elemente.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/batys-aza-standa-biznes-zh-rgizu-zhe-il-me",
+    "navigationTarget": "/materials/ru-novosti-batys-aza-standa-biznes-zh-rgizu-zhe-il-me",
+    "sourceTarget": "/materials/ru-novosti-batys-aza-standa-biznes-zh-rgizu-zhe-il-me",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-batys-aza-standa-biznes-zh-rgizu-zhe-il-me.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/batys-aza-standy-zhastar-zh-mysshy-mamandy-yn-zhatsynbajdy",
+    "navigationTarget": "/materials/ru-novosti-batys-aza-standy-zhastar-zh-mysshy-mamandy-yn-zhatsynbajdy",
+    "sourceTarget": "/materials/ru-novosti-batys-aza-standy-zhastar-zh-mysshy-mamandy-yn-zhatsynbajdy",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-batys-aza-standy-zhastar-zh-mysshy-mamandy-yn-zhatsynbajdy.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/budushchie-elektroenergetiki-poluchili-sertifikaty",
+    "navigationTarget": "/materials/ru-novosti-budushchie-elektroenergetiki-poluchili-sertifikaty",
+    "sourceTarget": "/materials/ru-novosti-budushchie-elektroenergetiki-poluchili-sertifikaty",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-budushchie-elektroenergetiki-poluchili-sertifikaty.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/chelovek-truda-innovatsionnomu-proizvodstvu-nuzhny-molodye-kadry-oni-nash-intellektualnyj-potentsial-s-kozhabaev",
+    "navigationTarget": "/materials/ru-novosti-chelovek-truda-innovatsionnomu-proizvodstvu-nuzhny-molodye-kadry-oni-nash-intellektualnyj-potentsial-s-kozhabaev",
+    "sourceTarget": "/materials/ru-novosti-chelovek-truda-innovatsionnomu-proizvodstvu-nuzhny-molodye-kadry-oni-nash-intellektualnyj-potentsial-s-kozhabaev",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-chelovek-truda-innovatsionnomu-proizvodstvu-nuzhny-molodye-kadry-oni-nash-intellektualnyj-potentsial-s-kozhabaev.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/chem-izvesten-transformatornyj-zavod-kotoryj-posetil-prezident-kazakhstana-k-zh-tokaev",
+    "navigationTarget": "/materials/ru-novosti-chem-izvesten-transformatornyj-zavod-kotoryj-posetil-prezident-kazakhstana-k-zh-tokaev",
+    "sourceTarget": "/materials/ru-novosti-chem-izvesten-transformatornyj-zavod-kotoryj-posetil-prezident-kazakhstana-k-zh-tokaev",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-chem-izvesten-transformatornyj-zavod-kotoryj-posetil-prezident-kazakhstana-k-zh-tokaev.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/delovoj-portret-v-interere-rynka",
+    "navigationTarget": "/materials/ru-novosti-delovoj-portret-v-interere-rynka",
+    "sourceTarget": "/materials/ru-novosti-delovoj-portret-v-interere-rynka",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-delovoj-portret-v-interere-rynka.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/den-otkrytykh-dverej-na-zavode",
+    "navigationTarget": "/materials/ru-novosti-den-otkrytykh-dverej-na-zavode",
+    "sourceTarget": "/materials/ru-novosti-den-otkrytykh-dverej-na-zavode",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-den-otkrytykh-dverej-na-zavode.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/den-studentov-v-kentauskom-politekhnicheskom-kolledzhe",
+    "navigationTarget": "/materials/ru-novosti-den-studentov-v-kentauskom-politekhnicheskom-kolledzhe",
+    "sourceTarget": "/materials/ru-novosti-den-studentov-v-kentauskom-politekhnicheskom-kolledzhe",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-den-studentov-v-kentauskom-politekhnicheskom-kolledzhe.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/dvorets-detstva-i-yunoshestva-v-mikrorajone-kendala-g-karaganda",
+    "navigationTarget": "/materials/ru-novosti-dvorets-detstva-i-yunoshestva-v-mikrorajone-kendala-g-karaganda",
+    "sourceTarget": "/materials/ru-novosti-dvorets-detstva-i-yunoshestva-v-mikrorajone-kendala-g-karaganda",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-dvorets-detstva-i-yunoshestva-v-mikrorajone-kendala-g-karaganda.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/eksportnye-postavki-kentauskogo-transfrmatornogo-zavoda-v-ukrainu",
+    "navigationTarget": "/materials/ru-novosti-eksportnye-postavki-kentauskogo-transfrmatornogo-zavoda-v-ukrainu",
+    "sourceTarget": "/materials/ru-novosti-eksportnye-postavki-kentauskogo-transfrmatornogo-zavoda-v-ukrainu",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-eksportnye-postavki-kentauskogo-transfrmatornogo-zavoda-v-ukrainu.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/ekspress-intervyu-s-generalnym-direktorom-kholdingovoj-kompanii-alageum-m-a-sajdnasimovym",
+    "navigationTarget": "/materials/ru-novosti-ekspress-intervyu-s-generalnym-direktorom-kholdingovoj-kompanii-alageum-m-a-sajdnasimovym",
+    "sourceTarget": "/materials/ru-novosti-ekspress-intervyu-s-generalnym-direktorom-kholdingovoj-kompanii-alageum-m-a-sajdnasimovym",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-ekspress-intervyu-s-generalnym-direktorom-kholdingovoj-kompanii-alageum-m-a-sajdnasimovym.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/elmo-podaet-khoroshij-primer",
+    "navigationTarget": "/materials/ru-novosti-elmo-podaet-khoroshij-primer",
+    "sourceTarget": "/materials/ru-novosti-elmo-podaet-khoroshij-primer",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-elmo-podaet-khoroshij-primer.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/energeticheskaya-infrastruktura-dlya-umnykh-gorodov-i-tsifrovoj-ekonomiki",
+    "navigationTarget": "/materials/ru-novosti-energeticheskaya-infrastruktura-dlya-umnykh-gorodov-i-tsifrovoj-ekonomiki",
+    "sourceTarget": "/materials/ru-novosti-energeticheskaya-infrastruktura-dlya-umnykh-gorodov-i-tsifrovoj-ekonomiki",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-energeticheskaya-infrastruktura-dlya-umnykh-gorodov-i-tsifrovoj-ekonomiki.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/energiya-vetra-eto-realno",
+    "navigationTarget": "/materials/ru-novosti-energiya-vetra-eto-realno",
+    "sourceTarget": "/materials/ru-novosti-energiya-vetra-eto-realno",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-energiya-vetra-eto-realno.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/energoeffektivnye-transformatory",
+    "navigationTarget": "/materials/ru-novosti-energoeffektivnye-transformatory",
+    "sourceTarget": "/materials/ru-novosti-energoeffektivnye-transformatory",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-energoeffektivnye-transformatory.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/erkebulan-ilyasov-izbran-prezidentom-roo-federatsiya-zhamby-atu",
+    "navigationTarget": "/materials/ru-novosti-erkebulan-ilyasov-izbran-prezidentom-roo-federatsiya-zhamby-atu",
+    "sourceTarget": "/materials/ru-novosti-erkebulan-ilyasov-izbran-prezidentom-roo-federatsiya-zhamby-atu",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-erkebulan-ilyasov-izbran-prezidentom-roo-federatsiya-zhamby-atu.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/erkebulan-ilyasov-novyj-prezident-assotsiatsii-natsionalnykh-vidov-sporta",
+    "navigationTarget": "/materials/ru-novosti-erkebulan-ilyasov-novyj-prezident-assotsiatsii-natsionalnykh-vidov-sporta",
+    "sourceTarget": "/materials/ru-novosti-erkebulan-ilyasov-novyj-prezident-assotsiatsii-natsionalnykh-vidov-sporta",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-erkebulan-ilyasov-novyj-prezident-assotsiatsii-natsionalnykh-vidov-sporta.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/erkebulan-ilyasov-vozglavil-federatsiyu-natsionalnogo-vida-sporta-ar-an-tartys",
+    "navigationTarget": "/materials/ru-novosti-erkebulan-ilyasov-vozglavil-federatsiyu-natsionalnogo-vida-sporta-ar-an-tartys",
+    "sourceTarget": "/materials/ru-novosti-erkebulan-ilyasov-vozglavil-federatsiyu-natsionalnogo-vida-sporta-ar-an-tartys",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-erkebulan-ilyasov-vozglavil-federatsiyu-natsionalnogo-vida-sporta-ar-an-tartys.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/eto-byl-nastoyashchij-futbol",
+    "navigationTarget": "/materials/ru-novosti-eto-byl-nastoyashchij-futbol",
+    "sourceTarget": "/materials/ru-novosti-eto-byl-nastoyashchij-futbol",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-eto-byl-nastoyashchij-futbol.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/forum-mashinostroitelej-vystoyat-v-neprostoe-vremya",
+    "navigationTarget": "/materials/ru-novosti-forum-mashinostroitelej-vystoyat-v-neprostoe-vremya",
+    "sourceTarget": "/materials/ru-novosti-forum-mashinostroitelej-vystoyat-v-neprostoe-vremya",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-forum-mashinostroitelej-vystoyat-v-neprostoe-vremya.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/geroi-proizvodstva-dmitrij-rakitskij",
+    "navigationTarget": "/materials/ru-novosti-geroi-proizvodstva-dmitrij-rakitskij",
+    "sourceTarget": "/materials/ru-novosti-geroi-proizvodstva-dmitrij-rakitskij",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-geroi-proizvodstva-dmitrij-rakitskij.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/geroi-proizvodstva-ozhan-orazbaev",
+    "navigationTarget": "/materials/ru-novosti-geroi-proizvodstva-ozhan-orazbaev",
+    "sourceTarget": "/materials/ru-novosti-geroi-proizvodstva-ozhan-orazbaev",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-geroi-proizvodstva-ozhan-orazbaev.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/glava-alageum-electric-predlozhil-novye-mery-podderzhki-otechestvennogo-proizvodstva",
+    "navigationTarget": "/materials/ru-novosti-glava-alageum-electric-predlozhil-novye-mery-podderzhki-otechestvennogo-proizvodstva",
+    "sourceTarget": "/materials/ru-novosti-glava-alageum-electric-predlozhil-novye-mery-podderzhki-otechestvennogo-proizvodstva",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-glava-alageum-electric-predlozhil-novye-mery-podderzhki-otechestvennogo-proizvodstva.json",
+      "frontend/lib/public/materials-index.json",
+      "frontend/lib/public/news-photography.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/glava-kompanii-alageum-electric-e-ilyasov-mechty-predprinimatelej-sbylis-nado-tolko-rabotat",
+    "navigationTarget": "/materials/ru-novosti-glava-kompanii-alageum-electric-e-ilyasov-mechty-predprinimatelej-sbylis-nado-tolko-rabotat",
+    "sourceTarget": "/materials/ru-novosti-glava-kompanii-alageum-electric-e-ilyasov-mechty-predprinimatelej-sbylis-nado-tolko-rabotat",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-glava-kompanii-alageum-electric-e-ilyasov-mechty-predprinimatelej-sbylis-nado-tolko-rabotat.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/god-ekspluatatsii-polet-normalnyj",
+    "navigationTarget": "/materials/ru-novosti-god-ekspluatatsii-polet-normalnyj",
+    "sourceTarget": "/materials/ru-novosti-god-ekspluatatsii-polet-normalnyj",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-god-ekspluatatsii-polet-normalnyj.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/godovoe-obshchee-sobranie-aktsionerov",
+    "navigationTarget": "/materials/ru-novosti-godovoe-obshchee-sobranie-aktsionerov",
+    "sourceTarget": "/materials/ru-novosti-godovoe-obshchee-sobranie-aktsionerov",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-godovoe-obshchee-sobranie-aktsionerov.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/godovoe-sobranie-khk-alageum-electric",
+    "navigationTarget": "/materials/ru-novosti-godovoe-sobranie-khk-alageum-electric",
+    "sourceTarget": "/materials/ru-novosti-godovoe-sobranie-khk-alageum-electric",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-godovoe-sobranie-khk-alageum-electric.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/gosudarstvennaya-registratsiya-vypuska-tsennykh-bumag-ao-alageum-electric",
+    "navigationTarget": "/materials/ru-novosti-gosudarstvennaya-registratsiya-vypuska-tsennykh-bumag-ao-alageum-electric",
+    "sourceTarget": "/materials/ru-novosti-gosudarstvennaya-registratsiya-vypuska-tsennykh-bumag-ao-alageum-electric",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-gosudarstvennaya-registratsiya-vypuska-tsennykh-bumag-ao-alageum-electric.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/gruppa-kompanij-alageum-electric-perechislila-v-fond-qazaq-tili-endowment-100-millionov-tenge-vo-vtoroj-raz",
+    "navigationTarget": "/materials/ru-novosti-gruppa-kompanij-alageum-electric-perechislila-v-fond-qazaq-tili-endowment-100-millionov-tenge-vo-vtoroj-raz",
+    "sourceTarget": "/materials/ru-novosti-gruppa-kompanij-alageum-electric-perechislila-v-fond-qazaq-tili-endowment-100-millionov-tenge-vo-vtoroj-raz",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-gruppa-kompanij-alageum-electric-perechislila-v-fond-qazaq-tili-endowment-100-millionov-tenge-vo-vtoroj-raz.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/gruppa-kompanij-alageum-electric-postavila-transformatory-dlya-podstantsij-yuzhnaya-i-zapadnaya",
+    "navigationTarget": "/materials/ru-novosti-gruppa-kompanij-alageum-electric-postavila-transformatory-dlya-podstantsij-yuzhnaya-i-zapadnaya",
+    "sourceTarget": "/materials/ru-novosti-gruppa-kompanij-alageum-electric-postavila-transformatory-dlya-podstantsij-yuzhnaya-i-zapadnaya",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-gruppa-kompanij-alageum-electric-postavila-transformatory-dlya-podstantsij-yuzhnaya-i-zapadnaya.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/industriyaly-ajma-ta-19-mlrd-te-geni-zhobasy-iske-asady",
+    "navigationTarget": "/materials/ru-novosti-industriyaly-ajma-ta-19-mlrd-te-geni-zhobasy-iske-asady",
+    "sourceTarget": "/materials/ru-novosti-industriyaly-ajma-ta-19-mlrd-te-geni-zhobasy-iske-asady",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-industriyaly-ajma-ta-19-mlrd-te-geni-zhobasy-iske-asady.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/infrastruktura-gorodov-sputnikov-almatinskoj-oblasti-zarabotaet-v-3-kvartale-2015-goda",
+    "navigationTarget": "/materials/ru-novosti-infrastruktura-gorodov-sputnikov-almatinskoj-oblasti-zarabotaet-v-3-kvartale-2015-goda",
+    "sourceTarget": "/materials/ru-novosti-infrastruktura-gorodov-sputnikov-almatinskoj-oblasti-zarabotaet-v-3-kvartale-2015-goda",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-infrastruktura-gorodov-sputnikov-almatinskoj-oblasti-zarabotaet-v-3-kvartale-2015-goda.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/intellektualnaya-igra-alageum-show",
+    "navigationTarget": "/materials/ru-novosti-intellektualnaya-igra-alageum-show",
+    "sourceTarget": "/materials/ru-novosti-intellektualnaya-igra-alageum-show",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-intellektualnaya-igra-alageum-show.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/intervyu-direktora-utz-m-burylbaeva-uralskomu-oblastnomu-telekanalu",
+    "navigationTarget": "/materials/ru-novosti-intervyu-direktora-utz-m-burylbaeva-uralskomu-oblastnomu-telekanalu",
+    "sourceTarget": "/materials/ru-novosti-intervyu-direktora-utz-m-burylbaeva-uralskomu-oblastnomu-telekanalu",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-intervyu-direktora-utz-m-burylbaeva-uralskomu-oblastnomu-telekanalu.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/inzhener-syn-inzhenera",
+    "navigationTarget": "/materials/ru-novosti-inzhener-syn-inzhenera",
+    "sourceTarget": "/materials/ru-novosti-inzhener-syn-inzhenera",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-inzhener-syn-inzhenera.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/inzhenery-alageum-razrabotali-energoeffektivnye-transformatory-ecodesign-2-evropejskogo-standarta-2",
+    "navigationTarget": "/materials/ru-novosti-inzhenery-alageum-razrabotali-energoeffektivnye-transformatory-ecodesign-2-evropejskogo-standarta-2",
+    "sourceTarget": "/materials/ru-novosti-inzhenery-alageum-razrabotali-energoeffektivnye-transformatory-ecodesign-2-evropejskogo-standarta-2",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-inzhenery-alageum-razrabotali-energoeffektivnye-transformatory-ecodesign-2-evropejskogo-standarta-2.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/iskrenne-i-serdechno-pozdravlyaem-vas-s-zamechatelnym-vesennim-prazdnikom-nauryz",
+    "navigationTarget": "/materials/ru-novosti-iskrenne-i-serdechno-pozdravlyaem-vas-s-zamechatelnym-vesennim-prazdnikom-nauryz",
+    "sourceTarget": "/materials/ru-novosti-iskrenne-i-serdechno-pozdravlyaem-vas-s-zamechatelnym-vesennim-prazdnikom-nauryz",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-iskrenne-i-serdechno-pozdravlyaem-vas-s-zamechatelnym-vesennim-prazdnikom-nauryz.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/iv-aya-mezhdunarodnaya-vystavka-oborudovaniya-i-tekhnologij-po-energetike-i-elektrotekhnike-kazinterpower-2014",
+    "navigationTarget": "/materials/ru-novosti-iv-aya-mezhdunarodnaya-vystavka-oborudovaniya-i-tekhnologij-po-energetike-i-elektrotekhnike-kazinterpower-2014",
+    "sourceTarget": "/materials/ru-novosti-iv-aya-mezhdunarodnaya-vystavka-oborudovaniya-i-tekhnologij-po-energetike-i-elektrotekhnike-kazinterpower-2014",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-iv-aya-mezhdunarodnaya-vystavka-oborudovaniya-i-tekhnologij-po-energetike-i-elektrotekhnike-kazinterpower-2014.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/kachestvo-priznano-bezuprechnym",
+    "navigationTarget": "/materials/ru-novosti-kachestvo-priznano-bezuprechnym",
+    "sourceTarget": "/materials/ru-novosti-kachestvo-priznano-bezuprechnym",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-kachestvo-priznano-bezuprechnym.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/kak-alageum-electric-razvivaet-energeticheskuyu-infrastrukturu-i-tekhnologicheskoe-proizvodstvo-v-kazakhstane",
+    "navigationTarget": "/materials/ru-novosti-kak-alageum-electric-razvivaet-energeticheskuyu-infrastrukturu-i-tekhnologicheskoe-proizvodstvo-v-kazakhstane",
+    "sourceTarget": "/materials/ru-novosti-kak-alageum-electric-razvivaet-energeticheskuyu-infrastrukturu-i-tekhnologicheskoe-proizvodstvo-v-kazakhstane",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-kak-alageum-electric-razvivaet-energeticheskuyu-infrastrukturu-i-tekhnologicheskoe-proizvodstvo-v-kazakhstane.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/kak-elektromashinostroiteli-kazakhstana-razvivayut-inzhenernuyu-nauku",
+    "navigationTarget": "/materials/ru-novosti-kak-elektromashinostroiteli-kazakhstana-razvivayut-inzhenernuyu-nauku",
+    "sourceTarget": "/materials/ru-novosti-kak-elektromashinostroiteli-kazakhstana-razvivayut-inzhenernuyu-nauku",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-kak-elektromashinostroiteli-kazakhstana-razvivayut-inzhenernuyu-nauku.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/karavansaray-vstrechaet-gostej",
+    "navigationTarget": "/materials/ru-novosti-karavansaray-vstrechaet-gostej",
+    "sourceTarget": "/materials/ru-novosti-karavansaray-vstrechaet-gostej",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-karavansaray-vstrechaet-gostej.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/kazakhstan-industrialnyj-uspekh-lyubogo-predpriyatiya-zavisit-ot-edinstva-ego-komandy-glava-too-aemz-khajrulla-kozhabaev",
+    "navigationTarget": "/materials/ru-novosti-kazakhstan-industrialnyj-uspekh-lyubogo-predpriyatiya-zavisit-ot-edinstva-ego-komandy-glava-too-aemz-khajrulla-kozhabaev",
+    "sourceTarget": "/materials/ru-novosti-kazakhstan-industrialnyj-uspekh-lyubogo-predpriyatiya-zavisit-ot-edinstva-ego-komandy-glava-too-aemz-khajrulla-kozhabaev",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-kazakhstan-industrialnyj-uspekh-lyubogo-predpriyatiya-zavisit-ot-edinstva-ego-komandy-glava-too-aemz-khajrulla-kozhabaev.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/kazakhstan-v-skorom-vremeni-smozhet-eksportirovat-vysokovoltnye-transformatory",
+    "navigationTarget": "/materials/ru-novosti-kazakhstan-v-skorom-vremeni-smozhet-eksportirovat-vysokovoltnye-transformatory",
+    "sourceTarget": "/materials/ru-novosti-kazakhstan-v-skorom-vremeni-smozhet-eksportirovat-vysokovoltnye-transformatory",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-kazakhstan-v-skorom-vremeni-smozhet-eksportirovat-vysokovoltnye-transformatory.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/kazakhstanskie-uchenye-i-biznesmeny-prezentuyut-sverkhmoshchnyj-avtotransformator",
+    "navigationTarget": "/materials/ru-novosti-kazakhstanskie-uchenye-i-biznesmeny-prezentuyut-sverkhmoshchnyj-avtotransformator",
+    "sourceTarget": "/materials/ru-novosti-kazakhstanskie-uchenye-i-biznesmeny-prezentuyut-sverkhmoshchnyj-avtotransformator",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-kazakhstanskie-uchenye-i-biznesmeny-prezentuyut-sverkhmoshchnyj-avtotransformator.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/kazakhstantsy-dolzhny-dat-kart-blansh-svoemu-prezidentu-kollektiv-kholdinga-alageum-electric",
+    "navigationTarget": "/materials/ru-novosti-kazakhstantsy-dolzhny-dat-kart-blansh-svoemu-prezidentu-kollektiv-kholdinga-alageum-electric",
+    "sourceTarget": "/materials/ru-novosti-kazakhstantsy-dolzhny-dat-kart-blansh-svoemu-prezidentu-kollektiv-kholdinga-alageum-electric",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-kazakhstantsy-dolzhny-dat-kart-blansh-svoemu-prezidentu-kollektiv-kholdinga-alageum-electric.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/kentauskij-politekhnicheskij-kolledzh-voshel-v-assotsiatsiyu",
+    "navigationTarget": "/materials/ru-novosti-kentauskij-politekhnicheskij-kolledzh-voshel-v-assotsiatsiyu",
+    "sourceTarget": "/materials/ru-novosti-kentauskij-politekhnicheskij-kolledzh-voshel-v-assotsiatsiyu",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-kentauskij-politekhnicheskij-kolledzh-voshel-v-assotsiatsiyu.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/kentauskij-transformatornyj-zavod-posetil-premer-ministr-rk-olzhas-bektenov",
+    "navigationTarget": "/materials/ru-novosti-kentauskij-transformatornyj-zavod-posetil-premer-ministr-rk-olzhas-bektenov",
+    "sourceTarget": "/materials/ru-novosti-kentauskij-transformatornyj-zavod-posetil-premer-ministr-rk-olzhas-bektenov",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-kentauskij-transformatornyj-zavod-posetil-premer-ministr-rk-olzhas-bektenov.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/kentauskij-transformatornyj-zavod-zaklyuchil-kontrakt-s-kompaniej-iz-evrosoyuza",
+    "navigationTarget": "/materials/ru-novosti-kentauskij-transformatornyj-zavod-zaklyuchil-kontrakt-s-kompaniej-iz-evrosoyuza",
+    "sourceTarget": "/materials/ru-novosti-kentauskij-transformatornyj-zavod-zaklyuchil-kontrakt-s-kompaniej-iz-evrosoyuza",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-kentauskij-transformatornyj-zavod-zaklyuchil-kontrakt-s-kompaniej-iz-evrosoyuza.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/khodba-po-krayu-kazakhstanskie-elektroseti-rabotayut-na-iznos",
+    "navigationTarget": "/materials/ru-novosti-khodba-po-krayu-kazakhstanskie-elektroseti-rabotayut-na-iznos",
+    "sourceTarget": "/materials/ru-novosti-khodba-po-krayu-kazakhstanskie-elektroseti-rabotayut-na-iznos",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-khodba-po-krayu-kazakhstanskie-elektroseti-rabotayut-na-iznos.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/kholding-iz-provintsii",
+    "navigationTarget": "/materials/ru-novosti-kholding-iz-provintsii",
+    "sourceTarget": "/materials/ru-novosti-kholding-iz-provintsii",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-kholding-iz-provintsii.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/kolledzh-ao-ktz-voshel-v-programmu-dorozhnoj-karty",
+    "navigationTarget": "/materials/ru-novosti-kolledzh-ao-ktz-voshel-v-programmu-dorozhnoj-karty",
+    "sourceTarget": "/materials/ru-novosti-kolledzh-ao-ktz-voshel-v-programmu-dorozhnoj-karty",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-kolledzh-ao-ktz-voshel-v-programmu-dorozhnoj-karty.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/komanda-alageum-electric-pozdravlyaet-s-dnem-edinstva-narodov-kazakhstana",
+    "navigationTarget": "/materials/ru-novosti-komanda-alageum-electric-pozdravlyaet-s-dnem-edinstva-narodov-kazakhstana",
+    "sourceTarget": "/materials/ru-novosti-komanda-alageum-electric-pozdravlyaet-s-dnem-edinstva-narodov-kazakhstana",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-komanda-alageum-electric-pozdravlyaet-s-dnem-edinstva-narodov-kazakhstana.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/kompanii-rk-dogovorilis-o-postavke-tovarov-na-rynok-azerbajdzhana",
+    "navigationTarget": "/materials/ru-novosti-kompanii-rk-dogovorilis-o-postavke-tovarov-na-rynok-azerbajdzhana",
+    "sourceTarget": "/materials/ru-novosti-kompanii-rk-dogovorilis-o-postavke-tovarov-na-rynok-azerbajdzhana",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-kompanii-rk-dogovorilis-o-postavke-tovarov-na-rynok-azerbajdzhana.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/kompaniya-alageum-electric-prinyala-uchastie-v-mezhdunarodnoj-promyshlennoj-vystavke-innoprom-2021-v-gorode-ekaterinburg",
+    "navigationTarget": "/materials/ru-novosti-kompaniya-alageum-electric-prinyala-uchastie-v-mezhdunarodnoj-promyshlennoj-vystavke-innoprom-2021-v-gorode-ekaterinburg",
+    "sourceTarget": "/materials/ru-novosti-kompaniya-alageum-electric-prinyala-uchastie-v-mezhdunarodnoj-promyshlennoj-vystavke-innoprom-2021-v-gorode-ekaterinburg",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-kompaniya-alageum-electric-prinyala-uchastie-v-mezhdunarodnoj-promyshlennoj-vystavke-innoprom-2021-v-gorode-ekaterinburg.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/kompaniya-alageum-electric-voshla-v-sovet-razvitiya-strategicheskikh-partnerstv-v-neftegazovoj-otrasli-petrocouncil-kazakhstan",
+    "navigationTarget": "/materials/ru-novosti-kompaniya-alageum-electric-voshla-v-sovet-razvitiya-strategicheskikh-partnerstv-v-neftegazovoj-otrasli-petrocouncil-kazakhstan",
+    "sourceTarget": "/materials/ru-novosti-kompaniya-alageum-electric-voshla-v-sovet-razvitiya-strategicheskikh-partnerstv-v-neftegazovoj-otrasli-petrocouncil-kazakhstan",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-kompaniya-alageum-electric-voshla-v-sovet-razvitiya-strategicheskikh-partnerstv-v-neftegazovoj-otrasli-petrocouncil-kazakhstan.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/krepnut-prigranichnye-svyazi",
+    "navigationTarget": "/materials/ru-novosti-krepnut-prigranichnye-svyazi",
+    "sourceTarget": "/materials/ru-novosti-krepnut-prigranichnye-svyazi",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-krepnut-prigranichnye-svyazi.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/kvartiry-daet-zavod",
+    "navigationTarget": "/materials/ru-novosti-kvartiry-daet-zavod",
+    "sourceTarget": "/materials/ru-novosti-kvartiry-daet-zavod",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-kvartiry-daet-zavod.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/letnie-praktiki-po-dualnoj-sisteme",
+    "navigationTarget": "/materials/ru-novosti-letnie-praktiki-po-dualnoj-sisteme",
+    "sourceTarget": "/materials/ru-novosti-letnie-praktiki-po-dualnoj-sisteme",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-letnie-praktiki-po-dualnoj-sisteme.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/luchshikh-sotrudnikov-rabochikh-professij-premirovali-v-gruppe-kompanij-alageum-electric",
+    "navigationTarget": "/materials/ru-novosti-luchshikh-sotrudnikov-rabochikh-professij-premirovali-v-gruppe-kompanij-alageum-electric",
+    "sourceTarget": "/materials/ru-novosti-luchshikh-sotrudnikov-rabochikh-professij-premirovali-v-gruppe-kompanij-alageum-electric",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-luchshikh-sotrudnikov-rabochikh-professij-premirovali-v-gruppe-kompanij-alageum-electric.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/mashinostroenie-put-v-budushchee",
+    "navigationTarget": "/materials/ru-novosti-mashinostroenie-put-v-budushchee",
+    "sourceTarget": "/materials/ru-novosti-mashinostroenie-put-v-budushchee",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-mashinostroenie-put-v-budushchee.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/mazhilismeny-vstretilis-s-rabotnikami-kentauskogo-transformatornogo-zavoda",
+    "navigationTarget": "/materials/ru-novosti-mazhilismeny-vstretilis-s-rabotnikami-kentauskogo-transformatornogo-zavoda",
+    "sourceTarget": "/materials/ru-novosti-mazhilismeny-vstretilis-s-rabotnikami-kentauskogo-transformatornogo-zavoda",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-mazhilismeny-vstretilis-s-rabotnikami-kentauskogo-transformatornogo-zavoda.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/missiya-tvorit-dobro",
+    "navigationTarget": "/materials/ru-novosti-missiya-tvorit-dobro",
+    "sourceTarget": "/materials/ru-novosti-missiya-tvorit-dobro",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-missiya-tvorit-dobro.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/miting-26-aprelya-vse-na-vybory",
+    "navigationTarget": "/materials/ru-novosti-miting-26-aprelya-vse-na-vybory",
+    "sourceTarget": "/materials/ru-novosti-miting-26-aprelya-vse-na-vybory",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-miting-26-aprelya-vse-na-vybory.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/molodezhnaya-praktika-2021",
+    "navigationTarget": "/materials/ru-novosti-molodezhnaya-praktika-2021",
+    "sourceTarget": "/materials/ru-novosti-molodezhnaya-praktika-2021",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-molodezhnaya-praktika-2021.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/molodezhnyj-konkurs-ekspo-2017-energiya-budushchego-proshel-v-kentauskom-politekhnicheskom-kolledzhe",
+    "navigationTarget": "/materials/ru-novosti-molodezhnyj-konkurs-ekspo-2017-energiya-budushchego-proshel-v-kentauskom-politekhnicheskom-kolledzhe",
+    "sourceTarget": "/materials/ru-novosti-molodezhnyj-konkurs-ekspo-2017-energiya-budushchego-proshel-v-kentauskom-politekhnicheskom-kolledzhe",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-molodezhnyj-konkurs-ekspo-2017-energiya-budushchego-proshel-v-kentauskom-politekhnicheskom-kolledzhe.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/my-spokojny-nashe-budushchee-v-nadezhnykh-rukakh-s-kuntuarov",
+    "navigationTarget": "/materials/ru-novosti-my-spokojny-nashe-budushchee-v-nadezhnykh-rukakh-s-kuntuarov",
+    "sourceTarget": "/materials/ru-novosti-my-spokojny-nashe-budushchee-v-nadezhnykh-rukakh-s-kuntuarov",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-my-spokojny-nashe-budushchee-v-nadezhnykh-rukakh-s-kuntuarov.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/my-stroim-gorod-sputnik",
+    "navigationTarget": "/materials/ru-novosti-my-stroim-gorod-sputnik",
+    "sourceTarget": "/materials/ru-novosti-my-stroim-gorod-sputnik",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-my-stroim-gorod-sputnik.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/my-za-dobrye-dela",
+    "navigationTarget": "/materials/ru-novosti-my-za-dobrye-dela",
+    "sourceTarget": "/materials/ru-novosti-my-za-dobrye-dela",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-my-za-dobrye-dela.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/mzhk-freedom",
+    "navigationTarget": "/materials/ru-novosti-mzhk-freedom",
+    "sourceTarget": "/materials/ru-novosti-mzhk-freedom",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-mzhk-freedom.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/na-khrupkikh-plechakh-zhenshchin-derzhitsya-stabilnaya-rabota-zavoda-glava-too-aemz",
+    "navigationTarget": "/materials/ru-novosti-na-khrupkikh-plechakh-zhenshchin-derzhitsya-stabilnaya-rabota-zavoda-glava-too-aemz",
+    "sourceTarget": "/materials/ru-novosti-na-khrupkikh-plechakh-zhenshchin-derzhitsya-stabilnaya-rabota-zavoda-glava-too-aemz",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-na-khrupkikh-plechakh-zhenshchin-derzhitsya-stabilnaya-rabota-zavoda-glava-too-aemz.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/na-osveshchenie-novykh-stantsij-metro-almaty-v-chas-tratitsya-okolo-8-tysyach-tenge",
+    "navigationTarget": "/materials/ru-novosti-na-osveshchenie-novykh-stantsij-metro-almaty-v-chas-tratitsya-okolo-8-tysyach-tenge",
+    "sourceTarget": "/materials/ru-novosti-na-osveshchenie-novykh-stantsij-metro-almaty-v-chas-tratitsya-okolo-8-tysyach-tenge",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-na-osveshchenie-novykh-stantsij-metro-almaty-v-chas-tratitsya-okolo-8-tysyach-tenge.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/na-vserossijskom-konkurse-yunykh-inzhenerov-deti-sozdali-maket-zavoda-alageum-electric",
+    "navigationTarget": "/materials/ru-novosti-na-vserossijskom-konkurse-yunykh-inzhenerov-deti-sozdali-maket-zavoda-alageum-electric",
+    "sourceTarget": "/materials/ru-novosti-na-vserossijskom-konkurse-yunykh-inzhenerov-deti-sozdali-maket-zavoda-alageum-electric",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-na-vserossijskom-konkurse-yunykh-inzhenerov-deti-sozdali-maket-zavoda-alageum-electric.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/na-zavod-too-asia-trafo-pribyli-predstaviteli-too-mangistauenergomunaj",
+    "navigationTarget": "/materials/ru-novosti-na-zavod-too-asia-trafo-pribyli-predstaviteli-too-mangistauenergomunaj",
+    "sourceTarget": "/materials/ru-novosti-na-zavod-too-asia-trafo-pribyli-predstaviteli-too-mangistauenergomunaj",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-na-zavod-too-asia-trafo-pribyli-predstaviteli-too-mangistauenergomunaj.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/na-zavode-asia-trafo-sostoyalsya-vazhnyj-vizit",
+    "navigationTarget": "/materials/ru-novosti-na-zavode-asia-trafo-sostoyalsya-vazhnyj-vizit",
+    "sourceTarget": "/materials/ru-novosti-na-zavode-asia-trafo-sostoyalsya-vazhnyj-vizit",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-na-zavode-asia-trafo-sostoyalsya-vazhnyj-vizit.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/nabiraya-vysotu-v-sisteme-menedzhmenta-kachestva",
+    "navigationTarget": "/materials/ru-novosti-nabiraya-vysotu-v-sisteme-menedzhmenta-kachestva",
+    "sourceTarget": "/materials/ru-novosti-nabiraya-vysotu-v-sisteme-menedzhmenta-kachestva",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-nabiraya-vysotu-v-sisteme-menedzhmenta-kachestva.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/nachalsya-novyj-otschet-vremeni",
+    "navigationTarget": "/materials/ru-novosti-nachalsya-novyj-otschet-vremeni",
+    "sourceTarget": "/materials/ru-novosti-nachalsya-novyj-otschet-vremeni",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-nachalsya-novyj-otschet-vremeni.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/nam-odobrili-poluchenie-preferentsij",
+    "navigationTarget": "/materials/ru-novosti-nam-odobrili-poluchenie-preferentsij",
+    "sourceTarget": "/materials/ru-novosti-nam-odobrili-poluchenie-preferentsij",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-nam-odobrili-poluchenie-preferentsij.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/nastoyashchaya-konkurentsiya-nachnetsya-v-vto",
+    "navigationTarget": "/materials/ru-novosti-nastoyashchaya-konkurentsiya-nachnetsya-v-vto",
+    "sourceTarget": "/materials/ru-novosti-nastoyashchaya-konkurentsiya-nachnetsya-v-vto",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-nastoyashchaya-konkurentsiya-nachnetsya-v-vto.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/natsproekt-v-energetiki-i-zhkkh-stavka-na-kazakhstanskikh-proizvoditelej",
+    "navigationTarget": "/materials/ru-novosti-natsproekt-v-energetiki-i-zhkkh-stavka-na-kazakhstanskikh-proizvoditelej",
+    "sourceTarget": "/materials/ru-novosti-natsproekt-v-energetiki-i-zhkkh-stavka-na-kazakhstanskikh-proizvoditelej",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-natsproekt-v-energetiki-i-zhkkh-stavka-na-kazakhstanskikh-proizvoditelej.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/nauryz-tty-bolsyn",
+    "navigationTarget": "/materials/ru-novosti-nauryz-tty-bolsyn",
+    "sourceTarget": "/materials/ru-novosti-nauryz-tty-bolsyn",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-nauryz-tty-bolsyn.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/novaya-produktsiya-zavodov-gk-alageum-electric",
+    "navigationTarget": "/materials/ru-novosti-novaya-produktsiya-zavodov-gk-alageum-electric",
+    "sourceTarget": "/materials/ru-novosti-novaya-produktsiya-zavodov-gk-alageum-electric",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-novaya-produktsiya-zavodov-gk-alageum-electric.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/novaya-proizvodstvennaya-tekhnologiya-asia-trafo-prezentovana-na-mezhdunarodnom-forume-digital-almaty",
+    "navigationTarget": "/materials/ru-novosti-novaya-proizvodstvennaya-tekhnologiya-asia-trafo-prezentovana-na-mezhdunarodnom-forume-digital-almaty",
+    "sourceTarget": "/materials/ru-novosti-novaya-proizvodstvennaya-tekhnologiya-asia-trafo-prezentovana-na-mezhdunarodnom-forume-digital-almaty",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-novaya-proizvodstvennaya-tekhnologiya-asia-trafo-prezentovana-na-mezhdunarodnom-forume-digital-almaty.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/novaya-zhizn-drevnego-goroda",
+    "navigationTarget": "/materials/ru-novosti-novaya-zhizn-drevnego-goroda",
+    "sourceTarget": "/materials/ru-novosti-novaya-zhizn-drevnego-goroda",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-novaya-zhizn-drevnego-goroda.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/novyj-zavod-ot-alageum-electric",
+    "navigationTarget": "/materials/ru-novosti-novyj-zavod-ot-alageum-electric",
+    "sourceTarget": "/materials/ru-novosti-novyj-zavod-ot-alageum-electric",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-novyj-zavod-ot-alageum-electric.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/nursultan-nazarbaev-nash-prezident",
+    "navigationTarget": "/materials/ru-novosti-nursultan-nazarbaev-nash-prezident",
+    "sourceTarget": "/materials/ru-novosti-nursultan-nazarbaev-nash-prezident",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-nursultan-nazarbaev-nash-prezident.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/nursultan-nazarbaev-vstretilsya-s-predstavitelyami-vedushchikh-proizvodstv-kazakhstana",
+    "navigationTarget": "/materials/ru-novosti-nursultan-nazarbaev-vstretilsya-s-predstavitelyami-vedushchikh-proizvodstv-kazakhstana",
+    "sourceTarget": "/materials/ru-novosti-nursultan-nazarbaev-vstretilsya-s-predstavitelyami-vedushchikh-proizvodstv-kazakhstana",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-nursultan-nazarbaev-vstretilsya-s-predstavitelyami-vedushchikh-proizvodstv-kazakhstana.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/nurzhan-stvaev-zamgendirektora-alageum-group-situatsiya-v-nashem-sektore-stabilizirovalas-posle-perekhoda-na-svobodno-plavayushchij-valyutnyj-kurs",
+    "navigationTarget": "/materials/ru-novosti-nurzhan-stvaev-zamgendirektora-alageum-group-situatsiya-v-nashem-sektore-stabilizirovalas-posle-perekhoda-na-svobodno-p-4a67e3553310",
+    "sourceTarget": "/materials/ru-novosti-nurzhan-stvaev-zamgendirektora-alageum-group-situatsiya-v-nashem-sektore-stabilizirovalas-posle-perekhoda-na-svobodno-p-4a67e3553310",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-nurzhan-stvaev-zamgendirektora-alageum-group-situatsiya-v-nashem-sektore-stabilizirovalas-posle-perekhoda-na-svobodno-p-4a67e3553310.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/o-dekarbonizatsii-i-ne-tolko-ekspertnoe-mnenie-s-kozhabaeva-v-zhurnale-neftegazovaya-vertikal",
+    "navigationTarget": "/materials/ru-novosti-o-dekarbonizatsii-i-ne-tolko-ekspertnoe-mnenie-s-kozhabaeva-v-zhurnale-neftegazovaya-vertikal",
+    "sourceTarget": "/materials/ru-novosti-o-dekarbonizatsii-i-ne-tolko-ekspertnoe-mnenie-s-kozhabaeva-v-zhurnale-neftegazovaya-vertikal",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-o-dekarbonizatsii-i-ne-tolko-ekspertnoe-mnenie-s-kozhabaeva-v-zhurnale-neftegazovaya-vertikal.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/images/news/Модернизация_угольной_энергетики.pdf",
+    "navigationTarget": null,
+    "sourceTarget": null,
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-o-dekarbonizatsii-i-ne-tolko-ekspertnoe-mnenie-s-kozhabaeva-v-zhurnale-neftegazovaya-vertikal.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/oborudovanie-dlya-elektrifikatsii-kovidnykh-gospitalej",
+    "navigationTarget": "/materials/ru-novosti-oborudovanie-dlya-elektrifikatsii-kovidnykh-gospitalej",
+    "sourceTarget": "/materials/ru-novosti-oborudovanie-dlya-elektrifikatsii-kovidnykh-gospitalej",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-oborudovanie-dlya-elektrifikatsii-kovidnykh-gospitalej.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/obrashchenie-k-kollektivu-khk-alageum",
+    "navigationTarget": "/materials/ru-novosti-obrashchenie-k-kollektivu-khk-alageum",
+    "sourceTarget": "/materials/ru-novosti-obrashchenie-k-kollektivu-khk-alageum",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-obrashchenie-k-kollektivu-khk-alageum.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/obyavlenie-o-provedenii-otkrytogo-konkursa-po-otboru-upravlyayushchej-kompanii-fidutsiariya",
+    "navigationTarget": "/materials/ru-novosti-obyavlenie-o-provedenii-otkrytogo-konkursa-po-otboru-upravlyayushchej-kompanii-fidutsiariya",
+    "sourceTarget": "/materials/ru-novosti-obyavlenie-o-provedenii-otkrytogo-konkursa-po-otboru-upravlyayushchej-kompanii-fidutsiariya",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-obyavlenie-o-provedenii-otkrytogo-konkursa-po-otboru-upravlyayushchej-kompanii-fidutsiariya.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/odin-iz-uspeshno-realizovannykh-nashej-komandoj-proektov-komplektnaya-podstantsiya-moshchnostyu-2500-kva-dlya-legkoatleticheskogo-kompleksa-v-gorode-nur-sultan",
+    "navigationTarget": "/materials/ru-novosti-odin-iz-uspeshno-realizovannykh-nashej-komandoj-proektov-komplektnaya-podstantsiya-moshchnostyu-2500-kva-dlya-legkoatle-c52007307ca0",
+    "sourceTarget": "/materials/ru-novosti-odin-iz-uspeshno-realizovannykh-nashej-komandoj-proektov-komplektnaya-podstantsiya-moshchnostyu-2500-kva-dlya-legkoatle-c52007307ca0",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-odin-iz-uspeshno-realizovannykh-nashej-komandoj-proektov-komplektnaya-podstantsiya-moshchnostyu-2500-kva-dlya-legkoatle-c52007307ca0.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/ofitsialnoe-soobshchenie-alageum-electric-kasatelno-situatsii-na-kentauskom-transformatornom-zavode",
+    "navigationTarget": "/materials/ru-novosti-ofitsialnoe-soobshchenie-alageum-electric-kasatelno-situatsii-na-kentauskom-transformatornom-zavode",
+    "sourceTarget": "/materials/ru-novosti-ofitsialnoe-soobshchenie-alageum-electric-kasatelno-situatsii-na-kentauskom-transformatornom-zavode",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-ofitsialnoe-soobshchenie-alageum-electric-kasatelno-situatsii-na-kentauskom-transformatornom-zavode.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/oral-transformator-zauyty-zhshs-nim-k-lemin-molajtyp-yntyma-tasty-ayasyn-ke-ejte-t-spek",
+    "navigationTarget": "/materials/ru-novosti-oral-transformator-zauyty-zhshs-nim-k-lemin-molajtyp-yntyma-tasty-ayasyn-ke-ejte-t-spek",
+    "sourceTarget": "/materials/ru-novosti-oral-transformator-zauyty-zhshs-nim-k-lemin-molajtyp-yntyma-tasty-ayasyn-ke-ejte-t-spek",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-oral-transformator-zauyty-zhshs-nim-k-lemin-molajtyp-yntyma-tasty-ayasyn-ke-ejte-t-spek.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/ot-novykh-idej-k-novym-vozmozhnostyam",
+    "navigationTarget": "/materials/ru-novosti-ot-novykh-idej-k-novym-vozmozhnostyam",
+    "sourceTarget": "/materials/ru-novosti-ot-novykh-idej-k-novym-vozmozhnostyam",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-ot-novykh-idej-k-novym-vozmozhnostyam.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/otechestvennye-kompanii-vybirayut-kazakhstanskie-transformatory",
+    "navigationTarget": "/materials/ru-novosti-otechestvennye-kompanii-vybirayut-kazakhstanskie-transformatory",
+    "sourceTarget": "/materials/ru-novosti-otechestvennye-kompanii-vybirayut-kazakhstanskie-transformatory",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-otechestvennye-kompanii-vybirayut-kazakhstanskie-transformatory.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/otechestvennye-mashinostroiteli-poluchili-gosudarstvennye-nagrady",
+    "navigationTarget": "/materials/ru-novosti-otechestvennye-mashinostroiteli-poluchili-gosudarstvennye-nagrady",
+    "sourceTarget": "/materials/ru-novosti-otechestvennye-mashinostroiteli-poluchili-gosudarstvennye-nagrady",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-otechestvennye-mashinostroiteli-poluchili-gosudarstvennye-nagrady.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/otvetstvennyj-zakaz",
+    "navigationTarget": "/materials/ru-novosti-otvetstvennyj-zakaz",
+    "sourceTarget": "/materials/ru-novosti-otvetstvennyj-zakaz",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-otvetstvennyj-zakaz.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/panelnye-radiatory-kazakhstanskogo-proizvodstva-budut-eksportirovatsya-v-belarus",
+    "navigationTarget": "/materials/ru-novosti-panelnye-radiatory-kazakhstanskogo-proizvodstva-budut-eksportirovatsya-v-belarus",
+    "sourceTarget": "/materials/ru-novosti-panelnye-radiatory-kazakhstanskogo-proizvodstva-budut-eksportirovatsya-v-belarus",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-panelnye-radiatory-kazakhstanskogo-proizvodstva-budut-eksportirovatsya-v-belarus.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/perekhod-tenge-v-rezhim-svobodnogo-plavaniya-povysit-eksportnye-vozmozhnosti",
+    "navigationTarget": "/materials/ru-novosti-perekhod-tenge-v-rezhim-svobodnogo-plavaniya-povysit-eksportnye-vozmozhnosti",
+    "sourceTarget": "/materials/ru-novosti-perekhod-tenge-v-rezhim-svobodnogo-plavaniya-povysit-eksportnye-vozmozhnosti",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-perekhod-tenge-v-rezhim-svobodnogo-plavaniya-povysit-eksportnye-vozmozhnosti.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/personalnye-kompetentsii-sotrudnikov-nailuchshaya-investitsiya-rabotodatelya",
+    "navigationTarget": "/materials/ru-novosti-personalnye-kompetentsii-sotrudnikov-nailuchshaya-investitsiya-rabotodatelya",
+    "sourceTarget": "/materials/ru-novosti-personalnye-kompetentsii-sotrudnikov-nailuchshaya-investitsiya-rabotodatelya",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-personalnye-kompetentsii-sotrudnikov-nailuchshaya-investitsiya-rabotodatelya.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/pervyj-shag-na-rossijskij-rynok",
+    "navigationTarget": "/materials/ru-novosti-pervyj-shag-na-rossijskij-rynok",
+    "sourceTarget": "/materials/ru-novosti-pervyj-shag-na-rossijskij-rynok",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-pervyj-shag-na-rossijskij-rynok.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/pervyj-vypusk-molodykh-spetsialistov-kentauskogo-politekhnicheskogo-kolledzha",
+    "navigationTarget": "/materials/ru-novosti-pervyj-vypusk-molodykh-spetsialistov-kentauskogo-politekhnicheskogo-kolledzha",
+    "sourceTarget": "/materials/ru-novosti-pervyj-vypusk-molodykh-spetsialistov-kentauskogo-politekhnicheskogo-kolledzha",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-pervyj-vypusk-molodykh-spetsialistov-kentauskogo-politekhnicheskogo-kolledzha.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/plan-upravleniya-prirodookhrannymi-meropriyatiyami-podproekta-razrabotka-i-vnedrenie-klientoorientirovannoj-kompleksnoj-avtomatizirovannoj-sistemy-rascheta-i-izgotovleniya-transformatorov",
+    "navigationTarget": "/materials/ru-novosti-plan-upravleniya-prirodookhrannymi-meropriyatiyami-podproekta-razrabotka-i-vnedrenie-klientoorientirovannoj-kompleksnoj-79abb0b76b18",
+    "sourceTarget": "/materials/ru-novosti-plan-upravleniya-prirodookhrannymi-meropriyatiyami-podproekta-razrabotka-i-vnedrenie-klientoorientirovannoj-kompleksnoj-79abb0b76b18",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-plan-upravleniya-prirodookhrannymi-meropriyatiyami-podproekta-razrabotka-i-vnedrenie-klientoorientirovannoj-kompleksnoj-79abb0b76b18.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/podpisan-dogovor-o-gosudarstvenno-chastnom-partnerstve",
+    "navigationTarget": "/materials/ru-novosti-podpisan-dogovor-o-gosudarstvenno-chastnom-partnerstve",
+    "sourceTarget": "/materials/ru-novosti-podpisan-dogovor-o-gosudarstvenno-chastnom-partnerstve",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-podpisan-dogovor-o-gosudarstvenno-chastnom-partnerstve.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/podpisan-memorandum",
+    "navigationTarget": "/materials/ru-novosti-podpisan-memorandum",
+    "sourceTarget": "/materials/ru-novosti-podpisan-memorandum",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-podpisan-memorandum.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/poslednie-novosti-ot-asia-trafo",
+    "navigationTarget": "/materials/ru-novosti-poslednie-novosti-ot-asia-trafo",
+    "sourceTarget": "/materials/ru-novosti-poslednie-novosti-ot-asia-trafo",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-poslednie-novosti-ot-asia-trafo.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/postavka-transformatora-trdns-32000-35kv-v-gruziyu",
+    "navigationTarget": "/materials/ru-novosti-postavka-transformatora-trdns-32000-35kv-v-gruziyu",
+    "sourceTarget": "/materials/ru-novosti-postavka-transformatora-trdns-32000-35kv-v-gruziyu",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-postavka-transformatora-trdns-32000-35kv-v-gruziyu.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/posvyatil-svoyu-zhizn-zavodu",
+    "navigationTarget": "/materials/ru-novosti-posvyatil-svoyu-zhizn-zavodu",
+    "sourceTarget": "/materials/ru-novosti-posvyatil-svoyu-zhizn-zavodu",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-posvyatil-svoyu-zhizn-zavodu.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/pozdravlenie-s-55-letiem-sajdulle-ilyasovichu-kozhabaevu",
+    "navigationTarget": "/materials/ru-novosti-pozdravlenie-s-55-letiem-sajdulle-ilyasovichu-kozhabaevu",
+    "sourceTarget": "/materials/ru-novosti-pozdravlenie-s-55-letiem-sajdulle-ilyasovichu-kozhabaevu",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-pozdravlenie-s-55-letiem-sajdulle-ilyasovichu-kozhabaevu.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/pozdravlyaem-so-svyashchennym-prazdnikom-oraza-ajt",
+    "navigationTarget": "/materials/ru-novosti-pozdravlyaem-so-svyashchennym-prazdnikom-oraza-ajt",
+    "sourceTarget": "/materials/ru-novosti-pozdravlyaem-so-svyashchennym-prazdnikom-oraza-ajt",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-pozdravlyaem-so-svyashchennym-prazdnikom-oraza-ajt.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/pozdravlyaem",
+    "navigationTarget": "/materials/ru-novosti-pozdravlyaem",
+    "sourceTarget": "/materials/ru-novosti-pozdravlyaem",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-pozdravlyaem.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/pozhelaem-udachi",
+    "navigationTarget": "/materials/ru-novosti-pozhelaem-udachi",
+    "sourceTarget": "/materials/ru-novosti-pozhelaem-udachi",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-pozhelaem-udachi.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/praktika-kriterij-istiny",
+    "navigationTarget": "/materials/ru-novosti-praktika-kriterij-istiny",
+    "sourceTarget": "/materials/ru-novosti-praktika-kriterij-istiny",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-praktika-kriterij-istiny.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/predsedatel-pravleniya-ao-ktz-bauyrzhan-khudajbergenov-nagrazhden-ordenom-rmet",
+    "navigationTarget": "/materials/ru-novosti-predsedatel-pravleniya-ao-ktz-bauyrzhan-khudajbergenov-nagrazhden-ordenom-rmet",
+    "sourceTarget": "/materials/ru-novosti-predsedatel-pravleniya-ao-ktz-bauyrzhan-khudajbergenov-nagrazhden-ordenom-rmet",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-predsedatel-pravleniya-ao-ktz-bauyrzhan-khudajbergenov-nagrazhden-ordenom-rmet.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/predsedatel-soveta-direktorov-erkebulan-ilyasov-nagrazhden-ordenom-rmet",
+    "navigationTarget": "/materials/ru-novosti-predsedatel-soveta-direktorov-erkebulan-ilyasov-nagrazhden-ordenom-rmet",
+    "sourceTarget": "/materials/ru-novosti-predsedatel-soveta-direktorov-erkebulan-ilyasov-nagrazhden-ordenom-rmet",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-predsedatel-soveta-direktorov-erkebulan-ilyasov-nagrazhden-ordenom-rmet.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/premer-ministru-prezentovali-ii-resheniya-dlya-besperebojnoj-raboty-shkol-bolnits-i-kriticheskoj-infrastruktury",
+    "navigationTarget": "/materials/ru-novosti-premer-ministru-prezentovali-ii-resheniya-dlya-besperebojnoj-raboty-shkol-bolnits-i-kriticheskoj-infrastruktury",
+    "sourceTarget": "/materials/ru-novosti-premer-ministru-prezentovali-ii-resheniya-dlya-besperebojnoj-raboty-shkol-bolnits-i-kriticheskoj-infrastruktury",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-premer-ministru-prezentovali-ii-resheniya-dlya-besperebojnoj-raboty-shkol-bolnits-i-kriticheskoj-infrastruktury.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/press-reliz-o-zapuske-uralskogo-transformatornogo-zavoda",
+    "navigationTarget": "/materials/ru-novosti-press-reliz-o-zapuske-uralskogo-transformatornogo-zavoda",
+    "sourceTarget": "/materials/ru-novosti-press-reliz-o-zapuske-uralskogo-transformatornogo-zavoda",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-press-reliz-o-zapuske-uralskogo-transformatornogo-zavoda.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/prezentatsiya-kompanii-alageum-electric-v-tyumeni",
+    "navigationTarget": "/materials/ru-novosti-prezentatsiya-kompanii-alageum-electric-v-tyumeni",
+    "sourceTarget": "/materials/ru-novosti-prezentatsiya-kompanii-alageum-electric-v-tyumeni",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-prezentatsiya-kompanii-alageum-electric-v-tyumeni.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/prezentatsiya-zavoda-asia-trafo",
+    "navigationTarget": "/materials/ru-novosti-prezentatsiya-zavoda-asia-trafo",
+    "sourceTarget": "/materials/ru-novosti-prezentatsiya-zavoda-asia-trafo",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-prezentatsiya-zavoda-asia-trafo.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/prezident-kazakhstana-nagradil-osnovatelya-gruppy-kompanij-alageum-electric-sajdullu-kozhabaeva-nagrudnym-znakom-altyn-barys",
+    "navigationTarget": "/materials/ru-novosti-prezident-kazakhstana-nagradil-osnovatelya-gruppy-kompanij-alageum-electric-sajdullu-kozhabaeva-nagrudnym-znakom-altyn-barys",
+    "sourceTarget": "/materials/ru-novosti-prezident-kazakhstana-nagradil-osnovatelya-gruppy-kompanij-alageum-electric-sajdullu-kozhabaeva-nagrudnym-znakom-altyn-barys",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-prezident-kazakhstana-nagradil-osnovatelya-gruppy-kompanij-alageum-electric-sajdullu-kozhabaeva-nagrudnym-znakom-altyn-barys.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/prezident-kazakhstana-posetil-uralskij-transformatornyj-zavod",
+    "navigationTarget": "/materials/ru-novosti-prezident-kazakhstana-posetil-uralskij-transformatornyj-zavod",
+    "sourceTarget": "/materials/ru-novosti-prezident-kazakhstana-posetil-uralskij-transformatornyj-zavod",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-prezident-kazakhstana-posetil-uralskij-transformatornyj-zavod.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/priglashenie-k-uchastiyu-v-torgakh-2",
+    "navigationTarget": "/materials/ru-novosti-priglashenie-k-uchastiyu-v-torgakh-2",
+    "sourceTarget": "/materials/ru-novosti-priglashenie-k-uchastiyu-v-torgakh-2",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-priglashenie-k-uchastiyu-v-torgakh-2.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/priglashenie-k-uchastiyu-v-torgakh",
+    "navigationTarget": "/materials/ru-novosti-priglashenie-k-uchastiyu-v-torgakh",
+    "sourceTarget": "/materials/ru-novosti-priglashenie-k-uchastiyu-v-torgakh",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-priglashenie-k-uchastiyu-v-torgakh.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/prodolzhaya-traditsii-novaya-postavka-na-zavod-alyuminiya-kazakhstana",
+    "navigationTarget": "/materials/ru-novosti-prodolzhaya-traditsii-novaya-postavka-na-zavod-alyuminiya-kazakhstana",
+    "sourceTarget": "/materials/ru-novosti-prodolzhaya-traditsii-novaya-postavka-na-zavod-alyuminiya-kazakhstana",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-prodolzhaya-traditsii-novaya-postavka-na-zavod-alyuminiya-kazakhstana.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/produktsiyu-ao-ktz-v-rossii-khorosho-znayut",
+    "navigationTarget": "/materials/ru-novosti-produktsiyu-ao-ktz-v-rossii-khorosho-znayut",
+    "sourceTarget": "/materials/ru-novosti-produktsiyu-ao-ktz-v-rossii-khorosho-znayut",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-produktsiyu-ao-ktz-v-rossii-khorosho-znayut.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/proekt-stroitelstva-podstantsii-1-m-1-v-g-shymkent",
+    "navigationTarget": "/materials/ru-novosti-proekt-stroitelstva-podstantsii-1-m-1-v-g-shymkent",
+    "sourceTarget": "/materials/ru-novosti-proekt-stroitelstva-podstantsii-1-m-1-v-g-shymkent",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-proekt-stroitelstva-podstantsii-1-m-1-v-g-shymkent.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/proizvodstvo-pechnykh-transformatorov-eotsn-3500035-kv",
+    "navigationTarget": "/materials/ru-novosti-proizvodstvo-pechnykh-transformatorov-eotsn-3500035-kv",
+    "sourceTarget": "/materials/ru-novosti-proizvodstvo-pechnykh-transformatorov-eotsn-3500035-kv",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-proizvodstvo-pechnykh-transformatorov-eotsn-3500035-kv.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/proon-predostavila-8-uchebnykh-stendov-v-kazakhstansko-nemetskij-politekhnicheskij-kolledzh-2",
+    "navigationTarget": "/materials/ru-novosti-proon-predostavila-8-uchebnykh-stendov-v-kazakhstansko-nemetskij-politekhnicheskij-kolledzh-2",
+    "sourceTarget": "/materials/ru-novosti-proon-predostavila-8-uchebnykh-stendov-v-kazakhstansko-nemetskij-politekhnicheskij-kolledzh-2",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-proon-predostavila-8-uchebnykh-stendov-v-kazakhstansko-nemetskij-politekhnicheskij-kolledzh-2.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/rabota-na-proizvodstve-vsegda-budet-v-tsene",
+    "navigationTarget": "/materials/ru-novosti-rabota-na-proizvodstve-vsegda-budet-v-tsene",
+    "sourceTarget": "/materials/ru-novosti-rabota-na-proizvodstve-vsegda-budet-v-tsene",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-rabota-na-proizvodstve-vsegda-budet-v-tsene.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/rabotat-kak-schastlivye-lyudi",
+    "navigationTarget": "/materials/ru-novosti-rabotat-kak-schastlivye-lyudi",
+    "sourceTarget": "/materials/ru-novosti-rabotat-kak-schastlivye-lyudi",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-rabotat-kak-schastlivye-lyudi.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/raduemsya-preodoleniyu-novogo-rubezha",
+    "navigationTarget": "/materials/ru-novosti-raduemsya-preodoleniyu-novogo-rubezha",
+    "sourceTarget": "/materials/ru-novosti-raduemsya-preodoleniyu-novogo-rubezha",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-raduemsya-preodoleniyu-novogo-rubezha.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/reshenie-o-razmeshchenii-prostykh-ob-yavlennykh-aktsij-obshchestva",
+    "navigationTarget": "/materials/ru-novosti-reshenie-o-razmeshchenii-prostykh-ob-yavlennykh-aktsij-obshchestva",
+    "sourceTarget": "/materials/ru-novosti-reshenie-o-razmeshchenii-prostykh-ob-yavlennykh-aktsij-obshchestva",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-reshenie-o-razmeshchenii-prostykh-ob-yavlennykh-aktsij-obshchestva.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/rmetti-dostar",
+    "navigationTarget": "/materials/ru-novosti-rmetti-dostar",
+    "sourceTarget": "/materials/ru-novosti-rmetti-dostar",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-rmetti-dostar.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/rmetti-riptester",
+    "navigationTarget": "/materials/ru-novosti-rmetti-riptester",
+    "sourceTarget": "/materials/ru-novosti-rmetti-riptester",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-rmetti-riptester.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/rozhdennyj-pod-znakom-lva-budet-pobezhdat",
+    "navigationTarget": "/materials/ru-novosti-rozhdennyj-pod-znakom-lva-budet-pobezhdat",
+    "sourceTarget": "/materials/ru-novosti-rozhdennyj-pod-znakom-lva-budet-pobezhdat",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-rozhdennyj-pod-znakom-lva-budet-pobezhdat.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/s-dnem-osnovaniya-ao-kentauskij-transformatornyj-zavod",
+    "navigationTarget": "/materials/ru-novosti-s-dnem-osnovaniya-ao-kentauskij-transformatornyj-zavod",
+    "sourceTarget": "/materials/ru-novosti-s-dnem-osnovaniya-ao-kentauskij-transformatornyj-zavod",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-s-dnem-osnovaniya-ao-kentauskij-transformatornyj-zavod.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/s-dnem-zashchitnika-otechestva",
+    "navigationTarget": "/materials/ru-novosti-s-dnem-zashchitnika-otechestva",
+    "sourceTarget": "/materials/ru-novosti-s-dnem-zashchitnika-otechestva",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-s-dnem-zashchitnika-otechestva.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/sajdolla-kozhabaev-podderzhal-kurs-prezidenta-na-postroenie-spravedlivogo-kazakhstana",
+    "navigationTarget": "/materials/ru-novosti-sajdolla-kozhabaev-podderzhal-kurs-prezidenta-na-postroenie-spravedlivogo-kazakhstana",
+    "sourceTarget": "/materials/ru-novosti-sajdolla-kozhabaev-podderzhal-kurs-prezidenta-na-postroenie-spravedlivogo-kazakhstana",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-sajdolla-kozhabaev-podderzhal-kurs-prezidenta-na-postroenie-spravedlivogo-kazakhstana.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/sajdulla-kozhabaev-biznesmen-goda-po-versii-forbes",
+    "navigationTarget": "/materials/ru-novosti-sajdulla-kozhabaev-biznesmen-goda-po-versii-forbes",
+    "sourceTarget": "/materials/ru-novosti-sajdulla-kozhabaev-biznesmen-goda-po-versii-forbes",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-sajdulla-kozhabaev-biznesmen-goda-po-versii-forbes.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/sdelano-doma-orientatsiya-na-importozameshchenie",
+    "navigationTarget": "/materials/ru-novosti-sdelano-doma-orientatsiya-na-importozameshchenie",
+    "sourceTarget": "/materials/ru-novosti-sdelano-doma-orientatsiya-na-importozameshchenie",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-sdelano-doma-orientatsiya-na-importozameshchenie.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/sdelano-v-kazakhstane",
+    "navigationTarget": "/materials/ru-novosti-sdelano-v-kazakhstane",
+    "sourceTarget": "/materials/ru-novosti-sdelano-v-kazakhstane",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-sdelano-v-kazakhstane.json",
+      "frontend/lib/public/materials-index.json",
+      "frontend/lib/public/project-cases.js"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/segodnya-uchashchijsya-zavtra-abiturient",
+    "navigationTarget": "/materials/ru-novosti-segodnya-uchashchijsya-zavtra-abiturient",
+    "sourceTarget": "/materials/ru-novosti-segodnya-uchashchijsya-zavtra-abiturient",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-segodnya-uchashchijsya-zavtra-abiturient.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/seminar-po-dualnoj-sisteme-obucheniya",
+    "navigationTarget": "/materials/ru-novosti-seminar-po-dualnoj-sisteme-obucheniya",
+    "sourceTarget": "/materials/ru-novosti-seminar-po-dualnoj-sisteme-obucheniya",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-seminar-po-dualnoj-sisteme-obucheniya.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/sergazy-kuntuarov-ni-o-kakom-tekhnicheskom-shpionazhe-ne-mozhet-byt-i-rechi",
+    "navigationTarget": "/materials/ru-novosti-sergazy-kuntuarov-ni-o-kakom-tekhnicheskom-shpionazhe-ne-mozhet-byt-i-rechi",
+    "sourceTarget": "/materials/ru-novosti-sergazy-kuntuarov-ni-o-kakom-tekhnicheskom-shpionazhe-ne-mozhet-byt-i-rechi",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-sergazy-kuntuarov-ni-o-kakom-tekhnicheskom-shpionazhe-ne-mozhet-byt-i-rechi.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/shest-rukovoditelej-kholdinga-alageum-zasluzhili-zvaniya-zasluzhennykh-i-pochetnykh-energetikov",
+    "navigationTarget": "/materials/ru-novosti-shest-rukovoditelej-kholdinga-alageum-zasluzhili-zvaniya-zasluzhennykh-i-pochetnykh-energetikov",
+    "sourceTarget": "/materials/ru-novosti-shest-rukovoditelej-kholdinga-alageum-zasluzhili-zvaniya-zasluzhennykh-i-pochetnykh-energetikov",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-shest-rukovoditelej-kholdinga-alageum-zasluzhili-zvaniya-zasluzhennykh-i-pochetnykh-energetikov.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/shpionazh-v-promyshlennom-masshtabe-ktz-otvetil-na-obvineniya-v-svoj-adres",
+    "navigationTarget": "/materials/ru-novosti-shpionazh-v-promyshlennom-masshtabe-ktz-otvetil-na-obvineniya-v-svoj-adres",
+    "sourceTarget": "/materials/ru-novosti-shpionazh-v-promyshlennom-masshtabe-ktz-otvetil-na-obvineniya-v-svoj-adres",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-shpionazh-v-promyshlennom-masshtabe-ktz-otvetil-na-obvineniya-v-svoj-adres.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/silovoj-transformator-dlya-aza-stan-temir-zholy",
+    "navigationTarget": "/materials/ru-novosti-silovoj-transformator-dlya-aza-stan-temir-zholy",
+    "sourceTarget": "/materials/ru-novosti-silovoj-transformator-dlya-aza-stan-temir-zholy",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-silovoj-transformator-dlya-aza-stan-temir-zholy.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/sotrudniki-alageum-electric-otmetili-den-zemli",
+    "navigationTarget": "/materials/ru-novosti-sotrudniki-alageum-electric-otmetili-den-zemli",
+    "sourceTarget": "/materials/ru-novosti-sotrudniki-alageum-electric-otmetili-den-zemli",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-sotrudniki-alageum-electric-otmetili-den-zemli.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/spasibo-chto-vernulis-zhivymi",
+    "navigationTarget": "/materials/ru-novosti-spasibo-chto-vernulis-zhivymi",
+    "sourceTarget": "/materials/ru-novosti-spasibo-chto-vernulis-zhivymi",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-spasibo-chto-vernulis-zhivymi.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/spiker-mazhilisa-parlamenta-rk-na-transformatornom-zavode",
+    "navigationTarget": "/materials/ru-novosti-spiker-mazhilisa-parlamenta-rk-na-transformatornom-zavode",
+    "sourceTarget": "/materials/ru-novosti-spiker-mazhilisa-parlamenta-rk-na-transformatornom-zavode",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-spiker-mazhilisa-parlamenta-rk-na-transformatornom-zavode.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/stadion",
+    "navigationTarget": "/materials/ru-novosti-stadion",
+    "sourceTarget": "/materials/ru-novosti-stadion",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-stadion.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/stazhirovka-na-zavodakh-germanii",
+    "navigationTarget": "/materials/ru-novosti-stazhirovka-na-zavodakh-germanii",
+    "sourceTarget": "/materials/ru-novosti-stazhirovka-na-zavodakh-germanii",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-stazhirovka-na-zavodakh-germanii.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/stipendiya-bolashak-9-mest-nashi",
+    "navigationTarget": "/materials/ru-novosti-stipendiya-bolashak-9-mest-nashi",
+    "sourceTarget": "/materials/ru-novosti-stipendiya-bolashak-9-mest-nashi",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-stipendiya-bolashak-9-mest-nashi.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/studenty-kolledzha-pomogli-veteranu",
+    "navigationTarget": "/materials/ru-novosti-studenty-kolledzha-pomogli-veteranu",
+    "sourceTarget": "/materials/ru-novosti-studenty-kolledzha-pomogli-veteranu",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-studenty-kolledzha-pomogli-veteranu.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/sverkhmoshchnyj-avtotransformator-predstavlen-v-shymkente",
+    "navigationTarget": "/materials/ru-novosti-sverkhmoshchnyj-avtotransformator-predstavlen-v-shymkente",
+    "sourceTarget": "/materials/ru-novosti-sverkhmoshchnyj-avtotransformator-predstavlen-v-shymkente",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-sverkhmoshchnyj-avtotransformator-predstavlen-v-shymkente.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/tengizshevrojl-zainteresovan-v-sotrudnichestve-s-alageum-electric",
+    "navigationTarget": "/materials/ru-novosti-tengizshevrojl-zainteresovan-v-sotrudnichestve-s-alageum-electric",
+    "sourceTarget": "/materials/ru-novosti-tengizshevrojl-zainteresovan-v-sotrudnichestve-s-alageum-electric",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-tengizshevrojl-zainteresovan-v-sotrudnichestve-s-alageum-electric.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/togyzkumalak-v-ostrom-intellektualnom-poedinke",
+    "navigationTarget": "/materials/ru-novosti-togyzkumalak-v-ostrom-intellektualnom-poedinke",
+    "sourceTarget": "/materials/ru-novosti-togyzkumalak-v-ostrom-intellektualnom-poedinke",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-togyzkumalak-v-ostrom-intellektualnom-poedinke.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/too-aemz-udostoeno-diploma-v-regionalnom-konkurse-luchshij-tovar-kazakhstana",
+    "navigationTarget": "/materials/ru-novosti-too-aemz-udostoeno-diploma-v-regionalnom-konkurse-luchshij-tovar-kazakhstana",
+    "sourceTarget": "/materials/ru-novosti-too-aemz-udostoeno-diploma-v-regionalnom-konkurse-luchshij-tovar-kazakhstana",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-too-aemz-udostoeno-diploma-v-regionalnom-konkurse-luchshij-tovar-kazakhstana.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/too-monoeletekh-zavershaetsya-montazh-oborudovaniya",
+    "navigationTarget": "/materials/ru-novosti-too-monoeletekh-zavershaetsya-montazh-oborudovaniya",
+    "sourceTarget": "/materials/ru-novosti-too-monoeletekh-zavershaetsya-montazh-oborudovaniya",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-too-monoeletekh-zavershaetsya-montazh-oborudovaniya.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/transformator-dlya-badamshi-pervoj-vetroelektrostantsii-v-aktyubinskoj-oblasti",
+    "navigationTarget": "/materials/ru-novosti-transformator-dlya-badamshi-pervoj-vetroelektrostantsii-v-aktyubinskoj-oblasti",
+    "sourceTarget": "/materials/ru-novosti-transformator-dlya-badamshi-pervoj-vetroelektrostantsii-v-aktyubinskoj-oblasti",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-transformator-dlya-badamshi-pervoj-vetroelektrostantsii-v-aktyubinskoj-oblasti.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/transformatory-iz-aktau-otgruzhayut-na-eksport-v-turkmeniyu",
+    "navigationTarget": "/materials/ru-novosti-transformatory-iz-aktau-otgruzhayut-na-eksport-v-turkmeniyu",
+    "sourceTarget": "/materials/ru-novosti-transformatory-iz-aktau-otgruzhayut-na-eksport-v-turkmeniyu",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-transformatory-iz-aktau-otgruzhayut-na-eksport-v-turkmeniyu.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/transformatory-s-putevkoj-v-eaes",
+    "navigationTarget": "/materials/ru-novosti-transformatory-s-putevkoj-v-eaes",
+    "sourceTarget": "/materials/ru-novosti-transformatory-s-putevkoj-v-eaes",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-transformatory-s-putevkoj-v-eaes.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/transformatory-tipa-tdns-25000-35-10-kv-otgruzheny-v-azerbajdzhanskuyu-respubliku",
+    "navigationTarget": "/materials/ru-novosti-transformatory-tipa-tdns-25000-35-10-kv-otgruzheny-v-azerbajdzhanskuyu-respubliku",
+    "sourceTarget": "/materials/ru-novosti-transformatory-tipa-tdns-25000-35-10-kv-otgruzheny-v-azerbajdzhanskuyu-respubliku",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-transformatory-tipa-tdns-25000-35-10-kv-otgruzheny-v-azerbajdzhanskuyu-respubliku.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/transformatory-vesom-do-300-tonn-budut-delat-v-shymkente",
+    "navigationTarget": "/materials/ru-novosti-transformatory-vesom-do-300-tonn-budut-delat-v-shymkente",
+    "sourceTarget": "/materials/ru-novosti-transformatory-vesom-do-300-tonn-budut-delat-v-shymkente",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-transformatory-vesom-do-300-tonn-budut-delat-v-shymkente.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/turkestan-god-rabochikh-professij",
+    "navigationTarget": "/materials/ru-novosti-turkestan-god-rabochikh-professij",
+    "sourceTarget": "/materials/ru-novosti-turkestan-god-rabochikh-professij",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-turkestan-god-rabochikh-professij.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/turkmeniya-strategicheskij-partner-ao-ktz",
+    "navigationTarget": "/materials/ru-novosti-turkmeniya-strategicheskij-partner-ao-ktz",
+    "sourceTarget": "/materials/ru-novosti-turkmeniya-strategicheskij-partner-ao-ktz",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-turkmeniya-strategicheskij-partner-ao-ktz.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/turnir-po-mini-futbolu",
+    "navigationTarget": "/materials/ru-novosti-turnir-po-mini-futbolu",
+    "sourceTarget": "/materials/ru-novosti-turnir-po-mini-futbolu",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-turnir-po-mini-futbolu.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/turnir-yunykh-intellektualov",
+    "navigationTarget": "/materials/ru-novosti-turnir-yunykh-intellektualov",
+    "sourceTarget": "/materials/ru-novosti-turnir-yunykh-intellektualov",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-turnir-yunykh-intellektualov.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/tvorcheskij-den-molodezhnaya-politika-na-proizvodstve",
+    "navigationTarget": "/materials/ru-novosti-tvorcheskij-den-molodezhnaya-politika-na-proizvodstve",
+    "sourceTarget": "/materials/ru-novosti-tvorcheskij-den-molodezhnaya-politika-na-proizvodstve",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-tvorcheskij-den-molodezhnaya-politika-na-proizvodstve.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/u-nas-poyavlyayutsya-novye-vozmozhnosti",
+    "navigationTarget": "/materials/ru-novosti-u-nas-poyavlyayutsya-novye-vozmozhnosti",
+    "sourceTarget": "/materials/ru-novosti-u-nas-poyavlyayutsya-novye-vozmozhnosti",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-u-nas-poyavlyayutsya-novye-vozmozhnosti.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/uchastie-v-ezhegodnoj-rossijskoj-vystavke-elektricheskie-seti-2013",
+    "navigationTarget": "/materials/ru-novosti-uchastie-v-ezhegodnoj-rossijskoj-vystavke-elektricheskie-seti-2013",
+    "sourceTarget": "/materials/ru-novosti-uchastie-v-ezhegodnoj-rossijskoj-vystavke-elektricheskie-seti-2013",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-uchastie-v-ezhegodnoj-rossijskoj-vystavke-elektricheskie-seti-2013.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/uchastok-vysokogo-napryazheniya",
+    "navigationTarget": "/materials/ru-novosti-uchastok-vysokogo-napryazheniya",
+    "sourceTarget": "/materials/ru-novosti-uchastok-vysokogo-napryazheniya",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-uchastok-vysokogo-napryazheniya.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/uralskij-transformatornyj-zavod-est-pervyj-transformator",
+    "navigationTarget": "/materials/ru-novosti-uralskij-transformatornyj-zavod-est-pervyj-transformator",
+    "sourceTarget": "/materials/ru-novosti-uralskij-transformatornyj-zavod-est-pervyj-transformator",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-uralskij-transformatornyj-zavod-est-pervyj-transformator.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/uralskij-transformatornyj-zavod-luchshee-predpriyatie-proizvodstvennogo-naznacheniya",
+    "navigationTarget": "/materials/ru-novosti-uralskij-transformatornyj-zavod-luchshee-predpriyatie-proizvodstvennogo-naznacheniya",
+    "sourceTarget": "/materials/ru-novosti-uralskij-transformatornyj-zavod-luchshee-predpriyatie-proizvodstvennogo-naznacheniya",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-uralskij-transformatornyj-zavod-luchshee-predpriyatie-proizvodstvennogo-naznacheniya.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/uralskij-transformatornyj-zavod-nagrazhden-premiej-paryz-za-luchshij-kollektivnyj-dogovor",
+    "navigationTarget": "/materials/ru-novosti-uralskij-transformatornyj-zavod-nagrazhden-premiej-paryz-za-luchshij-kollektivnyj-dogovor",
+    "sourceTarget": "/materials/ru-novosti-uralskij-transformatornyj-zavod-nagrazhden-premiej-paryz-za-luchshij-kollektivnyj-dogovor",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-uralskij-transformatornyj-zavod-nagrazhden-premiej-paryz-za-luchshij-kollektivnyj-dogovor.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/uralskij-transformatornyj-zavod-planiruet-uvelichit-proizvodstvo-na-29-v-2018-godu",
+    "navigationTarget": "/materials/ru-novosti-uralskij-transformatornyj-zavod-planiruet-uvelichit-proizvodstvo-na-29-v-2018-godu",
+    "sourceTarget": "/materials/ru-novosti-uralskij-transformatornyj-zavod-planiruet-uvelichit-proizvodstvo-na-29-v-2018-godu",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-uralskij-transformatornyj-zavod-planiruet-uvelichit-proizvodstvo-na-29-v-2018-godu.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/uralskij-transformatornyj-zavod-provel-rabochuyu-vstrechu-i-prezentatsiyu-svoego-tovara",
+    "navigationTarget": "/materials/ru-novosti-uralskij-transformatornyj-zavod-provel-rabochuyu-vstrechu-i-prezentatsiyu-svoego-tovara",
+    "sourceTarget": "/materials/ru-novosti-uralskij-transformatornyj-zavod-provel-rabochuyu-vstrechu-i-prezentatsiyu-svoego-tovara",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-uralskij-transformatornyj-zavod-provel-rabochuyu-vstrechu-i-prezentatsiyu-svoego-tovara.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/uzhe-istoriya",
+    "navigationTarget": "/materials/ru-novosti-uzhe-istoriya",
+    "sourceTarget": "/materials/ru-novosti-uzhe-istoriya",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-uzhe-istoriya.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/v-almaty-kotelnaya-kholdinga-alageum-electric-obespechit-teplom-gorod-sputnik",
+    "navigationTarget": "/materials/ru-novosti-v-almaty-kotelnaya-kholdinga-alageum-electric-obespechit-teplom-gorod-sputnik",
+    "sourceTarget": "/materials/ru-novosti-v-almaty-kotelnaya-kholdinga-alageum-electric-obespechit-teplom-gorod-sputnik",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-v-almaty-kotelnaya-kholdinga-alageum-electric-obespechit-teplom-gorod-sputnik.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/v-dualnom-obuchenii-my-pervoprokhodtsy",
+    "navigationTarget": "/materials/ru-novosti-v-dualnom-obuchenii-my-pervoprokhodtsy",
+    "sourceTarget": "/materials/ru-novosti-v-dualnom-obuchenii-my-pervoprokhodtsy",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-v-dualnom-obuchenii-my-pervoprokhodtsy.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/v-forum-sozdaem-kazakhstanskoe",
+    "navigationTarget": "/materials/ru-novosti-v-forum-sozdaem-kazakhstanskoe",
+    "sourceTarget": "/materials/ru-novosti-v-forum-sozdaem-kazakhstanskoe",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-v-forum-sozdaem-kazakhstanskoe.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/v-karagandinskoj-oblasti-proshla-regionalnaya-prezentatsiya-gk-alageum-electric",
+    "navigationTarget": "/materials/ru-novosti-v-karagandinskoj-oblasti-proshla-regionalnaya-prezentatsiya-gk-alageum-electric",
+    "sourceTarget": "/materials/ru-novosti-v-karagandinskoj-oblasti-proshla-regionalnaya-prezentatsiya-gk-alageum-electric",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-v-karagandinskoj-oblasti-proshla-regionalnaya-prezentatsiya-gk-alageum-electric.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/v-kazakhstane-usilivaetsya-podgotovka-kadrov-v-oblasti-iskusstvennogo-intellekta",
+    "navigationTarget": "/materials/ru-novosti-v-kazakhstane-usilivaetsya-podgotovka-kadrov-v-oblasti-iskusstvennogo-intellekta",
+    "sourceTarget": "/materials/ru-novosti-v-kazakhstane-usilivaetsya-podgotovka-kadrov-v-oblasti-iskusstvennogo-intellekta",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-v-kazakhstane-usilivaetsya-podgotovka-kadrov-v-oblasti-iskusstvennogo-intellekta.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/v-kolledzhe-pri-ao-ktz-popolnenie",
+    "navigationTarget": "/materials/ru-novosti-v-kolledzhe-pri-ao-ktz-popolnenie",
+    "sourceTarget": "/materials/ru-novosti-v-kolledzhe-pri-ao-ktz-popolnenie",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-v-kolledzhe-pri-ao-ktz-popolnenie.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/v-nur-sultane-prokhodit-vii-forum-mashinostroitelej",
+    "navigationTarget": "/materials/ru-novosti-v-nur-sultane-prokhodit-vii-forum-mashinostroitelej",
+    "sourceTarget": "/materials/ru-novosti-v-nur-sultane-prokhodit-vii-forum-mashinostroitelej",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-v-nur-sultane-prokhodit-vii-forum-mashinostroitelej.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/v-oblastnykh-tsentrakh-vpervye-proshli-regionalnye-prezentatsii-ao-alageum-electric",
+    "navigationTarget": "/materials/ru-novosti-v-oblastnykh-tsentrakh-vpervye-proshli-regionalnye-prezentatsii-ao-alageum-electric",
+    "sourceTarget": "/materials/ru-novosti-v-oblastnykh-tsentrakh-vpervye-proshli-regionalnye-prezentatsii-ao-alageum-electric",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-v-oblastnykh-tsentrakh-vpervye-proshli-regionalnye-prezentatsii-ao-alageum-electric.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/v-programme-vizita-poseshchenie-semi-zavodov-germanii",
+    "navigationTarget": "/materials/ru-novosti-v-programme-vizita-poseshchenie-semi-zavodov-germanii",
+    "sourceTarget": "/materials/ru-novosti-v-programme-vizita-poseshchenie-semi-zavodov-germanii",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-v-programme-vizita-poseshchenie-semi-zavodov-germanii.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/v-ramkakh-podderzhki-eksportnoj-deyatelnosti",
+    "navigationTarget": "/materials/ru-novosti-v-ramkakh-podderzhki-eksportnoj-deyatelnosti",
+    "sourceTarget": "/materials/ru-novosti-v-ramkakh-podderzhki-eksportnoj-deyatelnosti",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-v-ramkakh-podderzhki-eksportnoj-deyatelnosti.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/v-rk-opredelili-luchshikh-rabotodatelej-2015-goda",
+    "navigationTarget": "/materials/ru-novosti-v-rk-opredelili-luchshikh-rabotodatelej-2015-goda",
+    "sourceTarget": "/materials/ru-novosti-v-rk-opredelili-luchshikh-rabotodatelej-2015-goda",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-v-rk-opredelili-luchshikh-rabotodatelej-2015-goda.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/v-rk-zakanchivaetsya-stroitelstvo-kotelnoj-dlya-gorodov-sputnikov",
+    "navigationTarget": "/materials/ru-novosti-v-rk-zakanchivaetsya-stroitelstvo-kotelnoj-dlya-gorodov-sputnikov",
+    "sourceTarget": "/materials/ru-novosti-v-rk-zakanchivaetsya-stroitelstvo-kotelnoj-dlya-gorodov-sputnikov",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-v-rk-zakanchivaetsya-stroitelstvo-kotelnoj-dlya-gorodov-sputnikov.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/v-shymkente-stroitsya-krupnejshij-transformatornyj-zavod",
+    "navigationTarget": "/materials/ru-novosti-v-shymkente-stroitsya-krupnejshij-transformatornyj-zavod",
+    "sourceTarget": "/materials/ru-novosti-v-shymkente-stroitsya-krupnejshij-transformatornyj-zavod",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-v-shymkente-stroitsya-krupnejshij-transformatornyj-zavod.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/v-sostave-biznes-delegatsij-predstaviteli-alageum-electric",
+    "navigationTarget": "/materials/ru-novosti-v-sostave-biznes-delegatsij-predstaviteli-alageum-electric",
+    "sourceTarget": "/materials/ru-novosti-v-sostave-biznes-delegatsij-predstaviteli-alageum-electric",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-v-sostave-biznes-delegatsij-predstaviteli-alageum-electric.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/v-uralske-rossiyane-vysoko-otsenili-produktsiyu-utz",
+    "navigationTarget": "/materials/ru-novosti-v-uralske-rossiyane-vysoko-otsenili-produktsiyu-utz",
+    "sourceTarget": "/materials/ru-novosti-v-uralske-rossiyane-vysoko-otsenili-produktsiyu-utz",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-v-uralske-rossiyane-vysoko-otsenili-produktsiyu-utz.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/v-yuko-zavershaetsya-stroitelstvo-krupnejshego-transformatornogo-zavoda-v-tsentralnoj-azii",
+    "navigationTarget": "/materials/ru-novosti-v-yuko-zavershaetsya-stroitelstvo-krupnejshego-transformatornogo-zavoda-v-tsentralnoj-azii",
+    "sourceTarget": "/materials/ru-novosti-v-yuko-zavershaetsya-stroitelstvo-krupnejshego-transformatornogo-zavoda-v-tsentralnoj-azii",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-v-yuko-zavershaetsya-stroitelstvo-krupnejshego-transformatornogo-zavoda-v-tsentralnoj-azii.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/vesennij-turnir-po-futbolu",
+    "navigationTarget": "/materials/ru-novosti-vesennij-turnir-po-futbolu",
+    "sourceTarget": "/materials/ru-novosti-vesennij-turnir-po-futbolu",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-vesennij-turnir-po-futbolu.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/vesomyj-uspekh-studentov-kolledzha",
+    "navigationTarget": "/materials/ru-novosti-vesomyj-uspekh-studentov-kolledzha",
+    "sourceTarget": "/materials/ru-novosti-vesomyj-uspekh-studentov-kolledzha",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-vesomyj-uspekh-studentov-kolledzha.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/veterany-energetiki-pozhelali-bolshomu-korablyu-bolshoe-plavanie",
+    "navigationTarget": "/materials/ru-novosti-veterany-energetiki-pozhelali-bolshomu-korablyu-bolshoe-plavanie",
+    "sourceTarget": "/materials/ru-novosti-veterany-energetiki-pozhelali-bolshomu-korablyu-bolshoe-plavanie",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-veterany-energetiki-pozhelali-bolshomu-korablyu-bolshoe-plavanie.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/vitse-ministr-truda-i-sotsialnoj-zashchity-naseleniya-rk-posetil-zavod-asia-trafo-v-industrialnoj-zone-tassaj",
+    "navigationTarget": "/materials/ru-novosti-vitse-ministr-truda-i-sotsialnoj-zashchity-naseleniya-rk-posetil-zavod-asia-trafo-v-industrialnoj-zone-tassaj",
+    "sourceTarget": "/materials/ru-novosti-vitse-ministr-truda-i-sotsialnoj-zashchity-naseleniya-rk-posetil-zavod-asia-trafo-v-industrialnoj-zone-tassaj",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-vitse-ministr-truda-i-sotsialnoj-zashchity-naseleniya-rk-posetil-zavod-asia-trafo-v-industrialnoj-zone-tassaj.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/vizit-akima-turksibskogo-rajona",
+    "navigationTarget": "/materials/ru-novosti-vizit-akima-turksibskogo-rajona",
+    "sourceTarget": "/materials/ru-novosti-vizit-akima-turksibskogo-rajona",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-vizit-akima-turksibskogo-rajona.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/vklad-stroitelej-too-nur-stroj-v-sotsialnye-programmy",
+    "navigationTarget": "/materials/ru-novosti-vklad-stroitelej-too-nur-stroj-v-sotsialnye-programmy",
+    "sourceTarget": "/materials/ru-novosti-vklad-stroitelej-too-nur-stroj-v-sotsialnye-programmy",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-vklad-stroitelej-too-nur-stroj-v-sotsialnye-programmy.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/vstrechi-na-minskoj-zemle",
+    "navigationTarget": "/materials/ru-novosti-vstrechi-na-minskoj-zemle",
+    "sourceTarget": "/materials/ru-novosti-vstrechi-na-minskoj-zemle",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-vstrechi-na-minskoj-zemle.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/za-osobye-uspekhi-v-uchebe",
+    "navigationTarget": "/materials/ru-novosti-za-osobye-uspekhi-v-uchebe",
+    "sourceTarget": "/materials/ru-novosti-za-osobye-uspekhi-v-uchebe",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-za-osobye-uspekhi-v-uchebe.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/za-strokoj-poslaniya-strategicheski-vyverennyj-shag",
+    "navigationTarget": "/materials/ru-novosti-za-strokoj-poslaniya-strategicheski-vyverennyj-shag",
+    "sourceTarget": "/materials/ru-novosti-za-strokoj-poslaniya-strategicheski-vyverennyj-shag",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-za-strokoj-poslaniya-strategicheski-vyverennyj-shag.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/za-strokoj-poslaniya-vlozhiv-v-modernizatsiyu-sily-i-investitsii-my-prakticheski-sozdali-novoe-predpriyatie-i-khotim-dovesti-dolyu-eksporta-do-60-protsentov-s-kozhabaev",
+    "navigationTarget": "/materials/ru-novosti-za-strokoj-poslaniya-vlozhiv-v-modernizatsiyu-sily-i-investitsii-my-prakticheski-sozdali-novoe-predpriyatie-i-khotim-do-bc0fd4cfa9cb",
+    "sourceTarget": "/materials/ru-novosti-za-strokoj-poslaniya-vlozhiv-v-modernizatsiyu-sily-i-investitsii-my-prakticheski-sozdali-novoe-predpriyatie-i-khotim-do-bc0fd4cfa9cb",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-za-strokoj-poslaniya-vlozhiv-v-modernizatsiyu-sily-i-investitsii-my-prakticheski-sozdali-novoe-predpriyatie-i-khotim-do-bc0fd4cfa9cb.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/zavod-asia-trafo-zaklyuchil-dolgosrochnyj-kontrakt-s-erg",
+    "navigationTarget": "/materials/ru-novosti-zavod-asia-trafo-zaklyuchil-dolgosrochnyj-kontrakt-s-erg",
+    "sourceTarget": "/materials/ru-novosti-zavod-asia-trafo-zaklyuchil-dolgosrochnyj-kontrakt-s-erg",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-zavod-asia-trafo-zaklyuchil-dolgosrochnyj-kontrakt-s-erg.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  },
+  {
+    "url": "https://alageum.com/ru/novosti/zavod-po-proizvodstvu-transformatorov-stoimostyu-17-5-mlrd-tenge-zapustyat-v-yuzhnom-kazakhstane",
+    "navigationTarget": "/materials/ru-novosti-zavod-po-proizvodstvu-transformatorov-stoimostyu-17-5-mlrd-tenge-zapustyat-v-yuzhnom-kazakhstane",
+    "sourceTarget": "/materials/ru-novosti-zavod-po-proizvodstvu-transformatorov-stoimostyu-17-5-mlrd-tenge-zapustyat-v-yuzhnom-kazakhstane",
+    "files": [
+      "frontend/lib/public/materials/ru-novosti-zavod-po-proizvodstvu-transformatorov-stoimostyu-17-5-mlrd-tenge-zapustyat-v-yuzhnom-kazakhstane.json",
+      "frontend/lib/public/materials-index.json"
+    ]
+  }
+]

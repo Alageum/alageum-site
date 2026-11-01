@@ -1,3 +1,4 @@
 'use client';
 import E from './LocaleElement';
-export default function LocalResourceAnchor(props){return <E as="a" {...props}/>;}
+import {localResourceHref} from '@/lib/public/localResources';
+export default function LocalResourceAnchor(props){return localResourceHref(props.href)===null?null:<E as="a" {...props}/>;}

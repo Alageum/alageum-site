@@ -1,0 +1,16 @@
+{
+  "table": "alageum_pages",
+  "transaction": "BEGIN READ ONLY; SELECT editorial fields; ROLLBACK",
+  "totalRecords": 0,
+  "publishedRecords": 0,
+  "draftRecords": 0,
+  "publicAboutResponses": {
+    "ru": 404,
+    "en": 404,
+    "kk": 404,
+    "zh": 404,
+    "uz": 404
+  },
+  "writesPerformed": false,
+  "snapshot": "/tmp/alageum-company-ia-baseline-20261101/cms-pages.json"
+}

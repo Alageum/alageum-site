@@ -1,0 +1,148 @@
+[
+  {
+    "source": "/company/history",
+    "status": 308,
+    "destination": "/company#history",
+    "targetAnchorExists": true,
+    "canonical": [
+      "http://127.0.0.1:3001/company"
+    ]
+  },
+  {
+    "source": "/company/achievements",
+    "status": 308,
+    "destination": "/company#achievements",
+    "targetAnchorExists": true,
+    "canonical": [
+      "http://127.0.0.1:3001/company"
+    ]
+  },
+  {
+    "source": "/company/production",
+    "status": 308,
+    "destination": "/manufacturers#technology",
+    "targetAnchorExists": true,
+    "canonical": [
+      "http://127.0.0.1:3001/manufacturers"
+    ]
+  },
+  {
+    "source": "/company/assets",
+    "status": 308,
+    "destination": "/contacts#assets",
+    "targetAnchorExists": true,
+    "canonical": []
+  },
+  {
+    "source": "/ru/company/history",
+    "status": 308,
+    "destination": "/company#history",
+    "targetAnchorExists": true,
+    "canonical": [
+      "http://127.0.0.1:3001/company"
+    ]
+  },
+  {
+    "source": "/ru/company/achievements",
+    "status": 308,
+    "destination": "/company#achievements",
+    "targetAnchorExists": true,
+    "canonical": [
+      "http://127.0.0.1:3001/company"
+    ]
+  },
+  {
+    "source": "/ru/company/production",
+    "status": 308,
+    "destination": "/manufacturers#technology",
+    "targetAnchorExists": true,
+    "canonical": [
+      "http://127.0.0.1:3001/manufacturers"
+    ]
+  },
+  {
+    "source": "/ru/company/assets",
+    "status": 308,
+    "destination": "/contacts#assets",
+    "targetAnchorExists": true,
+    "canonical": []
+  },
+  {
+    "source": "/en/company/history",
+    "status": 308,
+    "destination": "/en/company#history",
+    "targetAnchorExists": true,
+    "canonical": [
+      "http://127.0.0.1:3001/en/company"
+    ]
+  },
+  {
+    "source": "/en/company/achievements",
+    "status": 308,
+    "destination": "/en/company#achievements",
+    "targetAnchorExists": true,
+    "canonical": [
+      "http://127.0.0.1:3001/en/company"
+    ]
+  },
+  {
+    "source": "/en/company/production",
+    "status": 308,
+    "destination": "/en/manufacturers#technology",
+    "targetAnchorExists": true,
+    "canonical": [
+      "http://127.0.0.1:3001/en/manufacturers"
+    ]
+  },
+  {
+    "source": "/en/company/assets",
+    "status": 308,
+    "destination": "/en/contacts#assets",
+    "targetAnchorExists": true,
+    "canonical": []
+  },
+  {
+    "source": "/kk/company/history",
+    "status": 308,
+    "destination": "/kk/company#history",
+    "targetAnchorExists": true,
+    "canonical": [
+      "http://127.0.0.1:3001/kk/company"
+    ]
+  },
+  {
+    "source": "/kk/company/achievements",
+    "status": 308,
+    "destination": "/kk/company#achievements",
+    "targetAnchorExists": true,
+    "canonical": [
+      "http://127.0.0.1:3001/kk/company"
+    ]
+  },
+  {
+    "source": "/kk/company/production",
+    "status": 308,
+    "destination": "/kk/manufacturers#technology",
+    "targetAnchorExists": true,
+    "canonical": [
+      "http://127.0.0.1:3001/kk/manufacturers"
+    ]
+  },
+  {
+    "source": "/kk/company/assets",
+    "status": 308,
+    "destination": "/kk/contacts#assets",
+    "targetAnchorExists": true,
+    "canonical": []
+  },
+  {
+    "source": "/company/history?ref=bookmark",
+    "status": 308,
+    "destination": "/company?ref=bookmark#history",
+    "queryPreserved": true
+  },
+  {
+    "source": "/company/unknown-section",
+    "status": 404
+  }
+]

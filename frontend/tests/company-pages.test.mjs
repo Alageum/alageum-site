@@ -42,7 +42,8 @@ test('corporate history has an official source for every event', () => {
 test('corporate pages use local verified assets, keep contact preparation truthful and link to live routes', () => {
   for (const path of ['public/company/ktz-production.webp','public/company/aemz-engineers.webp']) assert.ok(existsSync(path));
   const contact = readFileSync('app/(site)/contacts/page.js','utf8');
-  assert.match(contact, /не отправляет заявку на сервер/); assert.match(contact, /почтовую программу/);
+  assert.match(contact, /tel:\+77710052222/); assert.match(contact, /mailto:sales@alageum.com/);
+  assert.doesNotMatch(contact, /href="\/inquiry/);
   assert.ok(!contact.includes('<form')); assert.ok(!contact.includes('fetch('));
   const home = readFileSync('app/(site)/page.js','utf8');
   assert.match(home, /1997/); assert.match(home, /getCorporatePhoto/); assert.match(home, /manufacturer/);
