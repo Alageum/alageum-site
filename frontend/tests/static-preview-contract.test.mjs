@@ -74,7 +74,7 @@ async function companyModules(stage) {
   // Isolate metadata from the component's JSX dependencies. Keep the actual
   // declaration and execute the generated root and unchanged locale modules.
   const companySource = await text(stage, 'components/public/StaticCompanyPage.js');
-  const declaration = companySource.match(/^export const metadata = .*;$/m)?.[0];
+  const declaration = companySource.match(/^export const metadata\s*=\s*.*;$/m)?.[0];
   assert.ok(declaration, 'StaticCompanyPage metadata declaration must be present');
   const componentUrl = await moduleUrl('component', `${declaration}\nexport default function StaticCompanyPage() { return null; }`);
   const rootUrl = await moduleUrl('root', (await text(stage, 'app/company/page.js'))

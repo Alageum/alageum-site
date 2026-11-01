@@ -39,7 +39,7 @@ const { default: LocaleElement } = await compile('../components/locale/LocaleEle
   Children, useLocale, translateText, localizedHref, localResourceHref,
   SelectionIndicator: unusedControl, DesignSelect: unusedControl,
 });
-const { default: LocalResourceAnchor } = await compile('../components/locale/LocalResourceAnchor.js', { E: LocaleElement });
+const { default: LocalResourceAnchor } = await compile('../components/locale/LocalResourceAnchor.js', { E: LocaleElement, localResourceHref });
 const { default: CatalogSourceEvidence } = await compile('../components/catalog/CatalogSourceEvidence.js', {
   LocalResourceAnchor, useEffect,
   Link: props => createElement('a', props),
@@ -62,10 +62,11 @@ test('reviewed SHR11 construction citation preserves its literal source through 
   const before = JSON.stringify(officialProducts);
 
   for (const locale of ['ru', 'kk', 'en']) {
-    // Establish the original failure mode using the actual production wrappers.
+    // An unavailable legacy page has no invented /materials fallback. The
+    // separately reviewed construction citation below must still stay literal.
     const rewritten = renderToStaticMarkup(createElement(LocaleProvider, { locale },
       createElement(LocalResourceAnchor, { href }, 'source')));
-    assert.equal(rewritten, `<a href="${localizedHref('/materials', locale)}">source</a>`);
+    assert.equal(rewritten, ''); // No invented fallback for an unavailable legacy page.
 
     for (const row of [product, api]) {
       const original = JSON.stringify(row);

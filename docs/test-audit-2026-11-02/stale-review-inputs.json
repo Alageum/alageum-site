@@ -1,0 +1,532 @@
+[
+  {
+    "path": ".github/workflows/ci.yml",
+    "reviewedSha256": "1e1f805d631abb67630c9e85c6810dfe207b338b5fc3a4dc0980d771f3c8fb71",
+    "currentSha256": "e288b4f5a67dc1c7a8bf9746fa3ff42d336b82f69ee14655db4edfbfb9650bb7"
+  },
+  {
+    "path": ".gitignore",
+    "reviewedSha256": "44654179416a0e2743aa9d13990ee4dc405cc139c26143f088fb8392552f31e4",
+    "currentSha256": "d37b261f5608da8a769c88ed03ccdcd9e1987e089dfa16a69c3dd996ce3a3835"
+  },
+  {
+    "path": "Design/index.html",
+    "reviewedSha256": "59a72501f5c3562a8f7985f722471ee20f85b06522f4885ef635df4e871b29ca",
+    "currentSha256": "73b84fe3150ace6458876bb19c4cce1b8aa1370502ed8452e1f42ba31bb1903a"
+  },
+  {
+    "path": "backend-node/config/alageum.js",
+    "reviewedSha256": "a3eb6e5bd34adb2c92baada1f4c26aa94ac1c006b9ab2566e431849ce41f192a",
+    "currentSha256": "ca738a91abdb5215d05458b12219f7bd92307b8ed56a30a47f5345addbc28057"
+  },
+  {
+    "path": "backend-node/config/middlewares.js",
+    "reviewedSha256": "dbc0cc4d015b9e2edc76bbb0e3dfbadaed23a32be79d0151d08645109551a3e4",
+    "currentSha256": "69e0cf24cbacfcffec34938b05079f04d905af0216f465957814918983c4da35"
+  },
+  {
+    "path": "backend-node/package-lock.json",
+    "reviewedSha256": "720b62d6df31f9594667617758247d090ca6888241b871575dcb31746d421035",
+    "currentSha256": "583fe354b948c79711d27f87fcf3b168f70d8e32cdc4d3b677b8f167f84cc830"
+  },
+  {
+    "path": "backend-node/package.json",
+    "reviewedSha256": "00c062b825c058fe9adf424e9c7ae814fa6ba9e33f3f21de8e48a22b8f2dd097",
+    "currentSha256": "b1888ba624d826a87a3c7e1c7789aac4cad1de4061371ffcdfe5368a6724614e"
+  },
+  {
+    "path": "backend-node/src/api/compat/controllers/compat.js",
+    "reviewedSha256": "7b31b5e4d72519b2cf32ff16bb34cf3d71ef825ff4f2c93f52de7b45ca7280d9",
+    "currentSha256": "ed87ae0974c6b6d144e7da0a98b93d042f1014b12eee095c19489e5c3eb7785e"
+  },
+  {
+    "path": "backend-node/src/api/compat/routes/compat.js",
+    "reviewedSha256": "d00d6ddbfc29dda0614603695aa0e29ce712459f22d3f8f1df4ab6d766397274",
+    "currentSha256": "767254f35d22efb469e45dfcb823f36d50ebd5e81093adeb24e5c1f2318e8d08"
+  },
+  {
+    "path": "backend-node/src/domain/auth.js",
+    "reviewedSha256": "6233ca1eb6ff29f536b3afc2b62fea788117af558f943605da8e05998e9f41dc",
+    "currentSha256": "3442b77f1005498e1114af8c3da3696fcb124db8feff4c2ca6240a30443eca2b"
+  },
+  {
+    "path": "backend-node/src/domain/catalog.js",
+    "reviewedSha256": "f9db357fb5a811807315f883b33f861654b2f2d89659bd58777ebfd11febeabb",
+    "currentSha256": "468dc7857ccdb010f4ffc13e2095c1890fd0ed0cc09607341b402f894a16275f"
+  },
+  {
+    "path": "backend-node/src/domain/document-signing-schema.js",
+    "reviewedSha256": "7d2669b468afd6da646fd526893e8b48c19efedd51409b94b3f200e796d2d8d2",
+    "currentSha256": "3b4c08421c00287865e207424a45c949f9e8d236b945487dff97a41455e88dc9"
+  },
+  {
+    "path": "backend-node/src/domain/federated-auth.js",
+    "reviewedSha256": "cb3a3b6981ab4055e9683285e527ba65fb5112b0eec2b242ca00b0d84b591a86",
+    "currentSha256": "b1c9dc9a687583adbe9e5c38bca46b5b2f85318f0909d2cdede32527b417dc79"
+  },
+  {
+    "path": "backend-node/src/domain/federated-schema.js",
+    "reviewedSha256": "32e8cd906028ce8ae87b287e911fdd4e759b5e428089c96217bc33d2c564981b",
+    "currentSha256": "3a7c8190438efcf1c8541c3a8b70cea706dacbe3795304189db6486841e95787"
+  },
+  {
+    "path": "backend-node/src/index.js",
+    "reviewedSha256": "772575ad458fb5464a665bd2de701f7e74587be79616fa943bb8ae85b6840764",
+    "currentSha256": "d18662ddb8a2c80cf037850ffaf0e793d9bbabb50f973958c24c724f9079d793"
+  },
+  {
+    "path": "backend-node/src/middlewares/compat-errors.js",
+    "reviewedSha256": "5d32ff8f6eb51283e6ac1e2d7a5c3de41c22e0a8f150b5ed4e1715f1852c8c55",
+    "currentSha256": "cf00a6466e08be66264cecf4912e191533b9ddf66dec882c739efeec6650a8ee"
+  },
+  {
+    "path": "backend-node/tests/cms-upload.integration-support.js",
+    "reviewedSha256": "eb7b12d37cc5100830ad97e41531fbf6f2ab71e09c5778878391ea100691abd2",
+    "currentSha256": "a2d476ae9f35178768128a04203133e54f3c4190a90d2abb883bd7e77020697c"
+  },
+  {
+    "path": "backend-node/tests/document-signing.integration-signing.js",
+    "reviewedSha256": "7fec4856036e124cf27b572d908304b2b2b8a43f5e37d86ab40d13946a08a821",
+    "currentSha256": "6856eb987b1d44c38f275abc9d37d256269e75eaf67e79c7a7d8450b4c9d63ba"
+  },
+  {
+    "path": "backend-node/tests/document-signing.test.js",
+    "reviewedSha256": "701b22d8a1d92249c1dce6217eef4720bc79b2659f3732c24359c455935aa76f",
+    "currentSha256": "65579ca97867f00dfb4a670648526c4e2ef2e6ac89b4986fe47b38f564767515"
+  },
+  {
+    "path": "backend-node/tests/federated-auth.integration.js",
+    "reviewedSha256": "ceb1c990297eb59dae425d17167270b94aab0547b301fdbc1bb1fd826aa73d9e",
+    "currentSha256": "66db5057398313f26b9c5843329e87e8628f60f2e57966ae2f2b9fc9ec671a08"
+  },
+  {
+    "path": "docs/investor-visual-2026-10-12/browser-test-result.log",
+    "reviewedSha256": "d2ef759c1d42ad35dd649c275ec7fb47964c7d5d966896cdd457d8fbdb4cc4a1",
+    "currentSha256": null
+  },
+  {
+    "path": "docs/investor-visual-2026-10-12/unit-test-result.log",
+    "reviewedSha256": "558cecf3b244945660a08ee51a55ad0d9710da86ca5c59d8cddc6cff93cea253",
+    "currentSha256": null
+  },
+  {
+    "path": "frontend/app/(site)/contacts/page.js",
+    "reviewedSha256": "03c95619f051e4b3ddee7129a0229186e4ef847cbe01ff18c79d109de8e06c41",
+    "currentSha256": "1eddf51815aea3d4af6a9539208b3315f571ca2432d1fe5036592d1f6ba1b3f4"
+  },
+  {
+    "path": "frontend/app/(site)/data-policy/page.js",
+    "reviewedSha256": "a56d9b6fbaa50cc06b3e45652dcdbd075a7359504a3af7b4b704cfa2a93cd57a",
+    "currentSha256": "57d29f011617105ee98440a1cc8e8ade11f898c72d768ce065d23f65bcf66cc9"
+  },
+  {
+    "path": "frontend/app/(site)/documents/page.js",
+    "reviewedSha256": "9259aa2a77755de6896651ddc7b297c60aa7f9b06e4afb62d112f3fe0e7cd141",
+    "currentSha256": "2543d3aede2639db04acaeeccbf139964c29cb5e25752a3201411d04d9afb393"
+  },
+  {
+    "path": "frontend/app/(site)/inquiry/inquiry.css",
+    "reviewedSha256": "2804edf540129567960c059331a541bc75bd033dfec3eff8e7c7337337f3b8ad",
+    "currentSha256": "b5a7bd4d2231b68e2bd807e840fbea2cdf8da0896d7b8262acc72f118adeb0db"
+  },
+  {
+    "path": "frontend/app/(site)/login/page.js",
+    "reviewedSha256": "0eca0cc28f149c0fb7b320183be44a189d9024924f4c74c30b7f9a45c03bf7aa",
+    "currentSha256": "235b7984843cd5b67c64eac56bccf3104784a7febc83dc765fce0c8d6acf44c0"
+  },
+  {
+    "path": "frontend/app/(site)/manufacturers/[slug]/page.js",
+    "reviewedSha256": "afa6c77a83c5be3e354d33360be2f318fbb67b8063195542c03c45f109f918ae",
+    "currentSha256": "78e968aad41a0b7f613d438f47c1e26682821eb66add1bdfc39e66cef58aeb61"
+  },
+  {
+    "path": "frontend/app/(site)/manufacturers/page.js",
+    "reviewedSha256": "1a615434f9f842d157d8562875fd32c32f0012e021a7a1da4d746b5812df9f9b",
+    "currentSha256": "ac01375eaf7f3a22487818e96cae99720fd7ff6be4adf338942b61dda6e21463"
+  },
+  {
+    "path": "frontend/app/(site)/page.js",
+    "reviewedSha256": "db4e1f560cbdbd57d24f40c6583782bf170a12f70a1f77d424ce6abc0a2bf6f2",
+    "currentSha256": "cb36e3465ca2b9f5ecad8347aa2e5e144c68dcbfda9279352855b9be3f61dff9"
+  },
+  {
+    "path": "frontend/app/(site)/projects/[slug]/page.js",
+    "reviewedSha256": "077a9e974a2dec6430af64ff6a6cb4f654348f3c7a78c7459ab078d5d3c031dd",
+    "currentSha256": "2acc53b4fbd5a91cbf82c910845a0e0366ea2984e89243ca380d9458f4b6db55"
+  },
+  {
+    "path": "frontend/app/(site)/projects/page.js",
+    "reviewedSha256": "db63e14f559879ed304b39ee0e77df6b1d018729466eba2fd9de6621ce98cf78",
+    "currentSha256": "b7aae8605b56e3394c57fa2453cd6391167c8e0d7ee25052b4deb55cbe5dc14f"
+  },
+  {
+    "path": "frontend/app/(site)/solutions/[slug]/page.js",
+    "reviewedSha256": "05c088f0cdf3e5335fb605558e292aecad1c5eb2f530c81decff58e9e395f444",
+    "currentSha256": "a13c4e18c71ca987e725629e62d100d16035be7c040271bdeb6ed85fdd9b45aa"
+  },
+  {
+    "path": "frontend/app/(site)/solutions/page.js",
+    "reviewedSha256": "4d48951ea7d033b6ef7a1802e37eb8e2da083c98cdceada3d3f87cd8e347c139",
+    "currentSha256": "432a2255d8f5c844c44e60bba393ecc195593aa9f6f6aa5484b6eb2bea4ae80e"
+  },
+  {
+    "path": "frontend/app/(site)/workspace/workspace.css",
+    "reviewedSha256": "790597befa44d6fa4152c78d34f18ceb37d93af0e812a03876fa27655b205c85",
+    "currentSha256": "4e0e3c26c83ba21af088cc85316d53ac038d35d8cf5edfa7996ea4b81c89a215"
+  },
+  {
+    "path": "frontend/app/catalog.css",
+    "reviewedSha256": "e0733807e2326ce761337a2916d1721241eea39522651a9df28ee523ab9436b6",
+    "currentSha256": "086e31c7d828caa0d9edb43ab08970cd6b2a86b5eece225afa041dc26080b1e8"
+  },
+  {
+    "path": "frontend/app/company-pages.css",
+    "reviewedSha256": "bb2547a0a650dd6bac1a7448409c524b956a8a2a6e598e7e353e0ca76692780b",
+    "currentSha256": "69f51b220ada58bdca4836be351147948b7bcd9d898fffca3b4f65a8acf5427d"
+  },
+  {
+    "path": "frontend/app/globals.css",
+    "reviewedSha256": "3227280397fa44e6137cdf3a9964829fd5ca1956e9a4bbb6ba090af2d3435937",
+    "currentSha256": "fa170c5df26b99ecb7ca540e600f1ea7d56c29e663fcc8a2414f7a02658dd189"
+  },
+  {
+    "path": "frontend/components/AuthProvider.js",
+    "reviewedSha256": "8a51cdad6d693903b415bb44efcfcda8f32e26459bf2db510066cc38e1158c5d",
+    "currentSha256": "9f5ade9065afc56ab3d5708cf256e237dc65a43525da0242ead7eb51ed59fa92"
+  },
+  {
+    "path": "frontend/components/catalog/Catalog.js",
+    "reviewedSha256": "162ef84b26bdd9c0f29f87adb22d771f534725bb4c49867afb9c3f42c391ec67",
+    "currentSha256": "ab1fc89261bf1fcb7d39d5c830b7b4aee8414826ce86eb281b643fd995ddab1b"
+  },
+  {
+    "path": "frontend/components/catalog/CatalogConfigurations.js",
+    "reviewedSha256": "168b6d447be76635ecb6d6b4bdcc88a9ee4257d1e727270992b17a99e0ad732f",
+    "currentSha256": "9285a3148203db4dcdc2aadfb3cb0fd95bb73732629bf44751a07893c4050f17"
+  },
+  {
+    "path": "frontend/components/catalog/CatalogNotice.js",
+    "reviewedSha256": "59c85068c12971f617d5c74c27c36bb996bfab00b016f95acaae5e6d3e27f575",
+    "currentSha256": "04f8ce4b4e76040771f7087101a0955099b95afb6fcf83b49ac6237902044bda"
+  },
+  {
+    "path": "frontend/components/catalog/CatalogSourceEvidence.js",
+    "reviewedSha256": "66df3a538df94b840a91a34da5e9476b1f405cd00fcbf3fe009327599e5a869d",
+    "currentSha256": "6c120aa995880d2fe4d0783d1afd2082a2bf76080fa8952c5950f3a29de2ccce"
+  },
+  {
+    "path": "frontend/components/catalog/CatalogSourcePreview.js",
+    "reviewedSha256": "4e0015acaf48c667252fb7c5a615376a042b1dfb16bdf14c583ac0107125a575",
+    "currentSha256": "01107345910612b2cd45543d08516decca4a1ecb33397a1579c58a62e394613c"
+  },
+  {
+    "path": "frontend/components/catalog/EquipmentModel.js",
+    "reviewedSha256": "a558d1b02a4eb8944a38e4f874899a349f0234816a173a9e78c92f5c95529275",
+    "currentSha256": "237220b08c083ace49e9f5f546108b08232bfcc6d130f785f05884cff41c57ef"
+  },
+  {
+    "path": "frontend/components/catalog/FamilyProductVisual.js",
+    "reviewedSha256": "f1fb238c78542b7a5e2223d6cd7e1ce585743ea328d01aa9b00c85dda251e971",
+    "currentSha256": "0203fd0f33d3f42aa40bdbb88699ae727ed0c886c7fb97b13330e7b4d74ce2e7"
+  },
+  {
+    "path": "frontend/components/catalog/ImportedProductData.js",
+    "reviewedSha256": "930b86b108abd7b839acbf62a7ced8c4d6ffcd9bed82babe0bfb404b34c6683d",
+    "currentSha256": "3ef90fc51c56ed31037c97e33fad504a430d65874500521cccffcf15b81a5140"
+  },
+  {
+    "path": "frontend/components/catalog/ProductDetails.js",
+    "reviewedSha256": "0e2b7f4ee79de5ef18b5ed146c908796ddd4212be66b136f3ccc5d05017058fa",
+    "currentSha256": "bac9e09e1abb790109152a09c5382e06eae66c5b60a9f0b1e6037dc2129c3899"
+  },
+  {
+    "path": "frontend/components/catalog/ProductPhotograph.js",
+    "reviewedSha256": "c692ab86ac8b3bf7a3c42dccda4784612a9922c46d47e6103fc9e4b2ef423689",
+    "currentSha256": "32f811313682569d2fbffe958d9c71276590d7d7aab25f6fb0b5f96f173b9550"
+  },
+  {
+    "path": "frontend/components/catalog/ProductVisual.js",
+    "reviewedSha256": "7272435e4cd2f59a12bd776a9e64c63a3eac8813dc518177e8e88c1e54c6c7aa",
+    "currentSha256": "08eee21af2cb3fbffe3b464ee57caa78b88e1534cadcfedca059ff707025bc5a"
+  },
+  {
+    "path": "frontend/components/catalog/Selection.js",
+    "reviewedSha256": "e9e9ebf345e22a89f484c3566b01a2a2027f07de37b8375f728694d135ee55eb",
+    "currentSha256": "859ed95188a66ff2b71136f5bd5642d4f5ba5a24b2c50f11af78bdc5daf7037e"
+  },
+  {
+    "path": "frontend/components/catalog/models/EquipmentModel.module.css",
+    "reviewedSha256": "4a6c15f9775b07811f83bee54e711bdb8b26dfa30af0e315e7a9df6ab758cc86",
+    "currentSha256": "9dd5d83275cdba58e2cc2e488afce9ae29663405620ab81d8fb844fd8362f930"
+  },
+  {
+    "path": "frontend/components/catalog/source-context/CatalogSourceContext.js",
+    "reviewedSha256": "d7da62a8ec6fa2529a8ac01e01b10e2acf84d79d413bb0d366279af73c983319",
+    "currentSha256": "67e55f25f7d9e9f8a154e8dbfce2c6a579d931f2d6acfa66456892b4c8f8b98a"
+  },
+  {
+    "path": "frontend/components/catalog/source-context/SourceContextImage.js",
+    "reviewedSha256": "53773db991258d2f99e1b581edab091a60250aa636ff130c6103441250ca291b",
+    "currentSha256": "1886fb275b7b68f8184d9a9c9105213a8e6ede6eccda2b1fb68a94368d1c39c8"
+  },
+  {
+    "path": "frontend/components/public/CorporatePage.js",
+    "reviewedSha256": "f5171e0a308d9d518c1e49276a39b3e3af92c16c4ea482abcbc3322236348051",
+    "currentSha256": "7940748260734f7261b9647394734303c355b285bb1065100042a89c3e598b96"
+  },
+  {
+    "path": "frontend/components/public/CorporateParts.js",
+    "reviewedSha256": "101f3de3029162e3324ccaa55e27a5be337da3127f41fb567ce439a7c865f5a4",
+    "currentSha256": "7bf4afc3fe0e7c7c4c0c7ca87e82c939c813dcec7350bf6b75048d2c2bb33ec1"
+  },
+  {
+    "path": "frontend/components/public/CorporatePhoto.js",
+    "reviewedSha256": "035af6fdfadc9571b7c42bf1e095aee0791d9f4c0f8a38f6d24606205c15e462",
+    "currentSha256": "e69233930d8fbdd209726b364866b4f01c96a827a13ec522ae3c01f7a24e5751"
+  },
+  {
+    "path": "frontend/components/public/EditorialBlocks.js",
+    "reviewedSha256": "19fc5dfc3b83bd6596ba538bcc99a70294fe2cd55e625a5de22adbc20d69f3b5",
+    "currentSha256": "293c0a443bc453de8e42a9c87b13e451afd95723590201f88fbee2b74f3ea51b"
+  },
+  {
+    "path": "frontend/components/public/EditorialPage.js",
+    "reviewedSha256": "022b11134d8dc24d6b9b9ee1c26806470f3ef5d60f9dc228f4bbfe5451fd549b",
+    "currentSha256": "645cf5e3298cec85ce34f365d986007383115f08b67357a4658921ac167b94c2"
+  },
+  {
+    "path": "frontend/components/public/EnterpriseDirectory.js",
+    "reviewedSha256": "24b24092e820150e7a7b239fa6d5f7d1d3484c8ae6b57f5f9be968ac7ce20e32",
+    "currentSha256": "ced9f22d5929b04a5425037aabbc6685aa8a593c94f755b65966f64583ec81b1"
+  },
+  {
+    "path": "frontend/components/public/OfficeDirectory.js",
+    "reviewedSha256": "46e4b7f6489da8105cf8d336e7a131fe8bc668f3bebdab25ddb8574bec5fd74c",
+    "currentSha256": "d2371e2fa89f9830557d49e84446ec7372741e0e1e782a30f9c39d9ef2b8b5c5"
+  },
+  {
+    "path": "frontend/components/public/PageIntro.js",
+    "reviewedSha256": "b70d93a391f750d0b75625ec0f1e3e782a1785431e121c56e278e33c5001ea20",
+    "currentSha256": "f6e03657ef60ca9e06a63b1d8d483b73ce48bcace86acf7a18b7177f0298dabd"
+  },
+  {
+    "path": "frontend/components/public/ProjectCTA.js",
+    "reviewedSha256": "f79d86bdf119d8e61406d1c802a4c621813d225968b2b795c012f877c12679c9",
+    "currentSha256": "e37cb514b1b179252c5f0d5b6833e31f9ca8a313573e7bf5ffd02dbc1254f0bb"
+  },
+  {
+    "path": "frontend/components/public/SourceNote.js",
+    "reviewedSha256": "a8f901a6c4b5af4632543de708599267c484fcb1816ff5161664ca5b7fa376dd",
+    "currentSha256": "be18f3516036e6ba1746ec98c245adc5078457437d67b24497c8f943933cb8ce"
+  },
+  {
+    "path": "frontend/components/public/StaticCompanyPage.js",
+    "reviewedSha256": "6c940d921bd66cc50b97789a5d7fba54526d0e9a6d2cbd636d0b3b5a2a04ef96",
+    "currentSha256": "8a82f45be430f85c3188aea3d0d1bfec89635704f1989b58ca943414d45cc1f8"
+  },
+  {
+    "path": "frontend/e2e/catalog.spec.js",
+    "reviewedSha256": "cc06ec1299f040b684785837f16dba1c4f1f8faa1e6e0170d8f0df196cc8ad67",
+    "currentSha256": "67626cd71c2fdaac972c9ed2ff13edf29723db6bc3adcfaa99052e394e3f58a3"
+  },
+  {
+    "path": "frontend/e2e/company-pages.spec.js",
+    "reviewedSha256": "df915f1e2fa9bf5dd1cb74aa722107b883044b1132082057fe5faa2c3d6c1816",
+    "currentSha256": "6e755fc7c11d3635c4d1ad5e55f735c7a100c0bf72b397a04cd3fb647108e445"
+  },
+  {
+    "path": "frontend/e2e/ktpb-source-context.browser.js",
+    "reviewedSha256": "1fa271c4545d047927b49df92fc5a6712d5031e24be2d88dd8fd7fde5d856530",
+    "currentSha256": "9c4ca1b6a71dd9767882b216bb046be4e90b50c1d7bcbd507a70a0c39a1961ff"
+  },
+  {
+    "path": "frontend/lib/api/auth.js",
+    "reviewedSha256": "699cd456b2bde27dcce661335a36f1d1cfe7b4f9ee22e0674b7a282a7d213b74",
+    "currentSha256": "a9347ce065011c1ef2d988e040b7644ed737b85733aea97860fbfe2bb4bc68bd"
+  },
+  {
+    "path": "frontend/lib/api/client.js",
+    "reviewedSha256": "a36ff1230c279cf8165d88a7851da326d15c939931805c8615c6123dd5c06c38",
+    "currentSha256": "c1459e523dd34058a6ce85b5b6eaf7354d7c98148ad0aa5df5665b17a10f1616"
+  },
+  {
+    "path": "frontend/lib/api/federated.js",
+    "reviewedSha256": "7155624c1f6c2954720ab347dcabb60bec3f68eb95f2422ce218cfdb23a3673f",
+    "currentSha256": "52bfd939f1ea54f57f5bed876132a53a0186bbfcce23bf6d635b06ad5f6675b8"
+  },
+  {
+    "path": "frontend/lib/api/loginRedirect.js",
+    "reviewedSha256": "87d8884fbbf6a331365fcf2ea5436a98c8b289b5b26826f571f0401506673d24",
+    "currentSha256": "a16e507111ab92707622d86b39301f6fee1e48d4723b63481353224c1c742998"
+  },
+  {
+    "path": "frontend/lib/api/sessionTransport.js",
+    "reviewedSha256": "e7e3e481c5d36ac32d50b377f47fb0d7703c7b91eb85b2aba2eab03f2a45f4c7",
+    "currentSha256": "c9af50b73c8326119d00d7171369e0707e84098f5416c3952dbbf35d3aa90054"
+  },
+  {
+    "path": "frontend/lib/catalog/data.js",
+    "reviewedSha256": "265d0ed324c8681d7d309c7c4b9bdc9ca21fa35e80d8bf08ab586c29a7ebd662",
+    "currentSha256": "760138d6854e4b244fff1d154d617e7966a6bfdad63ed118d8e853aa0f8f6f3d"
+  },
+  {
+    "path": "frontend/lib/catalog/grouping.js",
+    "reviewedSha256": "1e850ada566574e0b2a85a7e46245daa5f14300caab69b7773642e06ed2abbf6",
+    "currentSha256": "e0fe05f1d3d5395d9381d61135c4a313bc77e168efe801792fdc5cc0b306f5fa"
+  },
+  {
+    "path": "frontend/lib/catalog/presentation.js",
+    "reviewedSha256": "74b84fbc0648eb230a3c3b2e898328786e2c6ae3328439c1106ea840ae909f32",
+    "currentSha256": "c4d474fd66f51be8b6b040eac236725188e3820785abe0de6433a99ecd059bdd"
+  },
+  {
+    "path": "frontend/lib/catalog/query.js",
+    "reviewedSha256": "b1dce5c5ba6b20294098a4edb4a66e7473365406c58e53a3d81c4c5ab4e9d476",
+    "currentSha256": "eefce94177bcaff01affae0bf154e0f61bdb7f4bf560b02f5b07308c277efd3d"
+  },
+  {
+    "path": "frontend/lib/public/company.js",
+    "reviewedSha256": "ede50a9733abc0841b03f077cc3fd0f61c1d3f6a1fdf506d159d10b5dcdc10fc",
+    "currentSha256": "beb07a6d3eb16a249a27b7e4a20ae8f6b49ff619922d02ced7add8bc48bc2ba8"
+  },
+  {
+    "path": "frontend/lib/public/content.js",
+    "reviewedSha256": "63b95a93162bf51d56df12baa77a510395721523c4ca84cbfb1ede56569a13bf",
+    "currentSha256": "212967cb5cac8c0e1ba98aeabdb21e2635541c50d713728d276a3d416b9321bb"
+  },
+  {
+    "path": "frontend/lib/public/pagesPreview.js",
+    "reviewedSha256": "0ca71016a96f8efbf070812d36ee0045e59c256b7eed88efacf0b269a651b073",
+    "currentSha256": "74f4ea0eadaa67e6d4ed0ecde1b1c914c7db46cf1c6e56a0c9e9f82ef7d6583f"
+  },
+  {
+    "path": "frontend/lib/public/photography-manifest.json",
+    "reviewedSha256": "8509cd3badb5e844c6065016286208ebd2e8e8056732a2a91eb0d3c97242535f",
+    "currentSha256": "3a21d976181f5c4a94af9764f72ac505df53621463a2733ed3fe0c8c04f2c36b"
+  },
+  {
+    "path": "frontend/next.config.mjs",
+    "reviewedSha256": "9dd452eecb3c984fcf669037361700ad1d1e8a518081daa67899a4bcf40447fc",
+    "currentSha256": "38d5a5076419132f02105e57e817a6062633fb5ae75907022597c67c20d99a74"
+  },
+  {
+    "path": "frontend/package.json",
+    "reviewedSha256": "628d1dadf6493c75197e5971b9bef3664f24d3e0d0b1e7367896c464739286ce",
+    "currentSha256": "fbb3b7f10ea8f5494d9c50a874ccb861364ae869abd12fa560db05119424ae67"
+  },
+  {
+    "path": "frontend/scripts/audit-company-pages.mjs",
+    "reviewedSha256": "0e53a717c9c99e572ef9c989fe22d1a00cb00cfd88933a62ffa7ff15608823c4",
+    "currentSha256": "5c9eba05d815a7409267f210e0ff085fc552fd62b52e951c3b3d003536723a9d"
+  },
+  {
+    "path": "frontend/scripts/build-preview.mjs",
+    "reviewedSha256": "198172237a08edfa48aa0ce7486743168ba55c36f84ad4216df449a7a19f3614",
+    "currentSha256": "41082835e5acc43ab06b6b62b1f9e5e5cd61c2b0dbef862b9b7acbdf67d6fa57"
+  },
+  {
+    "path": "frontend/tests/catalog-api-variant-specs.test.mjs",
+    "reviewedSha256": "5f3a6aa634f2033bf7538ccced8a86a06e59e485cbb547a42c84caffb43c822f",
+    "currentSha256": "7e9207ec271fd03c68202affdc02bbef23df793076bde184ce142c3443658f55"
+  },
+  {
+    "path": "frontend/tests/catalog-media.test.mjs",
+    "reviewedSha256": "081757314ba77d1e370bd47f81d497e003c4f2ba521939778f9572f6f9607c1e",
+    "currentSha256": "a10167e5d0679b6cbcc5895241b301c4b3e6caaf815042c48986a614b7dcfe7d"
+  },
+  {
+    "path": "frontend/tests/catalog-presentation.test.mjs",
+    "reviewedSha256": "322ccc1807f0cb82d437ee4ef2117f36ac58fbf70a024318158471272a206b79",
+    "currentSha256": "6335ca21ed1052d9c649ff78ba059c30f55503db416ca69e1ef1cf4f159a091e"
+  },
+  {
+    "path": "frontend/tests/catalog-proof-parity.test.mjs",
+    "reviewedSha256": "bd3b1830694b2473e2b5ea64e3ff1263032a932f4bacc597e3f9af17e8c0aa81",
+    "currentSha256": "9052393cbafee5cf5d698efb70db4cbbd755142ea6ab7c5e6292220fdde869fb"
+  },
+  {
+    "path": "frontend/tests/catalog-source-context-render.test.mjs",
+    "reviewedSha256": "9466961a4682f514ef9509a8af78917cd833dfacdc2a78c2b7c73a9d7728515f",
+    "currentSha256": "c63f57b65f0ffd4437a41947fffd48c17afc6f5ca860f63121834d1c21d994ff"
+  },
+  {
+    "path": "frontend/tests/company-pages.test.mjs",
+    "reviewedSha256": "d42fc4de1a27534655d24f6f217e888c13c3dce8320d0c501fa3cb679f869310",
+    "currentSha256": "69e7690bf5ffb96454fcaf885b2e0f040853babfaaa8d8cf6743daed694b837a"
+  },
+  {
+    "path": "frontend/tests/editorial-pages.test.mjs",
+    "reviewedSha256": "89aa0a2cca763887b3a6be99b4e907e31f330306cef915c513a193608ea7ed0f",
+    "currentSha256": "2fec47f5342a4f588dc632786a54894eddfbce79a9ad90d819072c25ad62b92b"
+  },
+  {
+    "path": "frontend/tests/federated-auth.test.mjs",
+    "reviewedSha256": "bbeb106725e96eb78e479cf0b9998ca8caacff12908fc7406122ccc47c703835",
+    "currentSha256": "4ca3a142be33856601fbba59a0ddb3b153d8ba9e87e9484d15f54d24058cdfee"
+  },
+  {
+    "path": "frontend/tests/investor-pages.test.mjs",
+    "reviewedSha256": "c4657b861ffc178eba0c9defbb06a6f3015ff320e32a164bbfb6627600516390",
+    "currentSha256": "fb6cac4612c8fdbf17582fc40c3d6b4a2efd42278fbcc05b8ad827c7b2a15fe5"
+  },
+  {
+    "path": "frontend/tests/ktpb-browser-contract.test.mjs",
+    "reviewedSha256": "2882707666318a690c4e6553145c243806086dcc068a4ba16c2a2b18428e9cc8",
+    "currentSha256": "08d3048ddb4d03d902b082ba767ff1739fd386e76fb9a922219fa0750cce9faf"
+  },
+  {
+    "path": "frontend/tests/ktpb-source-context.test.mjs",
+    "reviewedSha256": "6a236e921be6c6c5275455da939bb5a43cd1762265458cb1de83a3d2bdc2369b",
+    "currentSha256": "60c26076707e3c443c63e9cccd8e796fa09febcc3570d22e1976c023045b4b9d"
+  },
+  {
+    "path": "frontend/tests/measurement-column-completion.test.mjs",
+    "reviewedSha256": "e72649554fc029888d693a34a815b859699a4f82511e0b16721fe2d74959e71b",
+    "currentSha256": "494f8e4889fe8a46fc1764fcecf22c715a9783c70cf6d499872c4749bc45698b"
+  },
+  {
+    "path": "frontend/tests/photography.test.mjs",
+    "reviewedSha256": "6660dc3129c5ed956a996bd1263ffa5cae3b2bbef54a4a48f84649aa21cf6e34",
+    "currentSha256": "1a17881dd7aea1c8e9c700ac0e864bef0a524f70a1b868778c7de8aef8806f26"
+  },
+  {
+    "path": "frontend/tests/protection-context-integration.test.mjs",
+    "reviewedSha256": "fb3337f71e81654b91c08b949a8810df686c27c283005c82199f7001a80f14b0",
+    "currentSha256": "c381bb73b49a0a9e5724724353fdef2ee7d6f402986853a434f59264458b5499"
+  },
+  {
+    "path": "frontend/tests/ptmm-browser-contract.test.mjs",
+    "reviewedSha256": "12368d27be3d68fb4bbecb1ca6fbd75c1368f67dc9991e624deb7fa98707be21",
+    "currentSha256": "2aea4b4db0e4805df96cb84bca0ccfb05b27ce59e54a386c412d0e540836f2a1"
+  },
+  {
+    "path": "frontend/tests/ptmm-dimension-qualification.test.mjs",
+    "reviewedSha256": "03beaa1778bfff62ce1965ed8001324f09639e5c98db1e765926b7e1f1376ecd",
+    "currentSha256": "c2e0b1da81ebb9a2f8b7262dab79fc5e7e335540c087a0f0c461bbdbbaa2eef0"
+  },
+  {
+    "path": "frontend/tests/source-asset-completion.test.mjs",
+    "reviewedSha256": "99718e003b26a6bcff54c217e0d1470c87314ec54afd6623088d2d4e092d6b4a",
+    "currentSha256": "434f15e49f117a8b1c2861bb237acb7db1c39f5d6af82a796ecbdd5166053537"
+  },
+  {
+    "path": "frontend/tests/source-context-build-gate.test.mjs",
+    "reviewedSha256": "260fe9364a2671e205825891f2a7bff742663204f2c2649c6e84cb35fef12762",
+    "currentSha256": "332c0d09f2621b6a51c76f280312a63b656b2bd06766acee1da2fa362be6cbe4"
+  },
+  {
+    "path": "frontend/tests/transformer-import.test.mjs",
+    "reviewedSha256": "ccc951b6cc57fd572e566158fe0988a2828c157936b96c38610aaff892607147",
+    "currentSha256": "65eef742262e84c02ed7f4d24698ab2310a4b5541b5a7132c70bbb2520e41fe8"
+  },
+  {
+    "path": "scripts/catalog/protection-context-asset-snapshot.mjs",
+    "reviewedSha256": "0750e03bf910827c5dd7ed4426e5fe5c397e570a5280582427decb8410c8b902",
+    "currentSha256": "589f7019262c504916623214603e24830f38cccb811126b83b46e68703bf3a43"
+  },
+  {
+    "path": "scripts/check-protection-context-integration.mjs",
+    "reviewedSha256": "4f031a7b463746c1edbcb4a816f6409230e7b49f0d4e2256a405ba618164211e",
+    "currentSha256": "2feeea7059a308e3bea20b845c040f2514372c792829dcdbdf2d54e85dce419e"
+  }
+]

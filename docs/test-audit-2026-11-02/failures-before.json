@@ -1,0 +1,392 @@
+[
+  {
+    "file": "tests/backend-security-amendment.test.mjs:60:1",
+    "test": "real candidate evidence is distinct from independent approval and the exact predecessor remains accepted",
+    "error": "Changed unreviewed combined dependency .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/backend-security-amendment.test.mjs:71:1",
+    "test": "exact synthetic successor reaches all ten explicit-reader gates without changing checkout authority",
+    "error": "Got unwanted exception: backend"
+  },
+  {
+    "file": "tests/backend-security-amendment.test.mjs:80:1",
+    "test": "pending and missing approvals or reports fail through every inherited gate after success",
+    "error": "Changed immutable PR44 backend pin .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/backend-security-amendment.test.mjs:91:1",
+    "test": "wrong baseline identities, predecessor scope, closure membership and report bindings are rejected",
+    "error": "The input did not match the regular expression /Changed independent backend report/. Input:"
+  },
+  {
+    "file": "tests/backend-security-amendment.test.mjs:107:1",
+    "test": "every required path rejects missing and changed bytes without refreshing its approved hash",
+    "error": "Changed immutable PR44 backend pin .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/backend-security-amendment.test.mjs:117:1",
+    "test": "reattestation cannot authorize package, workflow, source, Page, coordinator or historical approval changes",
+    "error": "backend-node/package.json"
+  },
+  {
+    "file": "tests/backend-security-amendment.test.mjs:147:1",
+    "test": "the current combined disk stack uses default readers, final rereads, and rejects persistent corruption after warm success",
+    "error": "Changed immutable PR44 backend pin .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/catalog-browser-amendment.test.mjs:41:1",
+    "test": "exact browser amendment preserves the full historical gate and prior hashes",
+    "error": "Unapproved browser assertion bytes"
+  },
+  {
+    "file": "tests/catalog-browser-amendment.test.mjs:50:1",
+    "test": "missing, pending, mismatched or broadened approval cannot admit the corrected assertions",
+    "error": "The input did not match the regular expression /Missing browser amendment/. Input:"
+  },
+  {
+    "file": "tests/catalog-browser-amendment.test.mjs:83:1",
+    "test": "all new dependencies, historical approvals and threshold changes fail after warm success",
+    "error": "Changed fixed build/source/consumer dependency frontend/package.json"
+  },
+  {
+    "file": "tests/catalog-browser-amendment.test.mjs:101:1",
+    "test": "same-size timestamp-restored test mutations cannot reuse warmed approval",
+    "error": "Changed fixed build/source/consumer dependency frontend/package.json"
+  },
+  {
+    "file": "tests/catalog-construction-source-link.test.mjs:57:1",
+    "test": "reviewed SHR11 construction citation preserves its literal source through the real locale wrappers",
+    "error": "localResourceHref is not defined"
+  },
+  {
+    "file": "tests/catalog-proof-parity.test.mjs:120:1",
+    "test": "all nine same-admission disk routes match the explicit uncached reader and final-read their complete closure",
+    "error": "Changed immutable PR43 KTPB pin .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/catalog-proof-parity.test.mjs:137:1",
+    "test": "stable corruption, deletion and pending authority reject identically after previous success",
+    "error": "Changed immutable PR43 KTPB pin .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/catalog-proof-parity.test.mjs:158:1",
+    "test": "every consumed proof input is freshly reread after successful evaluation, including scope-only and cached inputs",
+    "error": "Changed immutable PR43 KTPB pin .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/catalog-proof-parity.test.mjs:180:1",
+    "test": "historical bulk preserves aliases, duplicates, per-edge expectations and raw hashes",
+    "error": "Changed immutable source input frontend/components/catalog/CatalogSourceEvidence.js"
+  },
+  {
+    "file": "tests/catalog-proof-parity.test.mjs:201:1",
+    "test": "public supplied readers including explicit defaults and undefined never join the snapshot path",
+    "error": "Changed immutable PR43 KTPB pin .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/catalog-proof-parity.test.mjs:232:1",
+    "test": "caller-owned clearances keep exact identity on ordinary and opaque fallback paths",
+    "error": "Changed immutable PR43 KTPB pin .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/catalog-proof-parity.test.mjs:248:1",
+    "test": "NTMI Scope, Files and Clearance share one owner and retain supplied nested counts identity",
+    "error": "Changed fixed build/source/consumer dependency frontend/package.json"
+  },
+  {
+    "file": "tests/catalog-proof-parity.test.mjs:262:1",
+    "test": "json copies and serialization collisions never supply canonical proof authority",
+    "error": "Changed immutable PR43 KTPB pin .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/combined-eds-auth-amendment.test.mjs:73:1",
+    "test": "historical combined authority remains separately valid and default gates require current joint approval",
+    "error": "Changed unreviewed joint dependency .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/combined-eds-auth-amendment.test.mjs:83:1",
+    "test": "synthetic exact successor reaches all eleven gates and rejects pending, missing and forged authority after same-reader success",
+    "error": "Got unwanted exception: combined"
+  },
+  {
+    "file": "tests/combined-eds-auth-amendment.test.mjs:122:1",
+    "test": "every declared current dependency fails closed on deletion or byte mutation",
+    "error": "Changed immutable PR45 combined pin .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/combined-eds-auth-amendment.test.mjs:132:1",
+    "test": "reattestation cannot alter fixed app, tests, evidence, source, RFQ, CMS, coordinator or historical approvals",
+    "error": "backend-node/config/middlewares.js"
+  },
+  {
+    "file": "tests/combined-eds-auth-amendment.test.mjs:149:1",
+    "test": "stale predecessor bytes cannot substitute for the exact current successor, even after warm success",
+    "error": "Changed immutable PR45 combined pin .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/combined-eds-auth-amendment.test.mjs:161:1",
+    "test": "superseded approval cannot authorize corrected bytes and retained prior authority is immutable",
+    "error": "docs/catalog-transformers-2026/review/combined-eds-auth/clearance.json"
+  },
+  {
+    "file": "tests/combined-eds-auth-amendment.test.mjs:191:1",
+    "test": "current disk stack finalizes one closure, rejects persistent and mid-invocation tampering, and isolates readers",
+    "error": "Changed immutable PR45 combined pin .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/frontend-security-amendment.test.mjs:52:1",
+    "test": "published PR43 security bytes preserve their approval and complete inherited chain",
+    "error": "Changed unreviewed KTPB dependency .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/frontend-security-amendment.test.mjs:61:1",
+    "test": "exact synthetic security approval reaches every inherited gate without writing checkout approval",
+    "error": "Changed immutable PR42 security pin .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/frontend-security-amendment.test.mjs:70:1",
+    "test": "missing or pending security approval and post-success lock mutations fail through every inherited gate",
+    "error": "Changed immutable PR42 security pin .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/frontend-security-amendment.test.mjs:95:1",
+    "test": "every reviewed file and report is read again after warm success, and missing files cannot fall back",
+    "error": "Changed immutable PR42 security pin .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/frontend-security-amendment.test.mjs:124:1",
+    "test": "same-size timestamp-restored disk mutations cannot reuse approval",
+    "error": "Changed immutable PR42 security pin .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/joint-site-amendment.test.mjs:72:1",
+    "test": "exact candidate dependency evidence is separate from independent approval and binds all current bytes",
+    "error": "Changed joint-reviewed bytes .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/joint-site-amendment.test.mjs:82:1",
+    "test": "synthetic exact successor reaches all twelve gates and rejects pending, missing and forged authority after same-reader success",
+    "error": "Assertion failed while validating the frozen dependency closure; see original log."
+  },
+  {
+    "file": "tests/joint-site-amendment.test.mjs:107:1",
+    "test": "wrong identities, extra or incomplete closure, and broadened runtime/release scope reject reattestation",
+    "error": "Assertion failed while validating the frozen dependency closure; see original log."
+  },
+  {
+    "file": "tests/joint-site-amendment.test.mjs:126:1",
+    "test": "every declared current dependency fails closed on deletion or byte mutation",
+    "error": "Assertion failed while validating the frozen dependency closure; see original log."
+  },
+  {
+    "file": "tests/joint-site-amendment.test.mjs:136:1",
+    "test": "reattestation cannot alter fixed app, tests, evidence, source, RFQ, CMS, coordinator or historical approvals",
+    "error": "Assertion failed while validating the frozen dependency closure; see original log."
+  },
+  {
+    "file": "tests/joint-site-amendment.test.mjs:153:1",
+    "test": "stale predecessor bytes cannot substitute for the exact current successor, even after warm success",
+    "error": "Assertion failed while validating the frozen dependency closure; see original log."
+  },
+  {
+    "file": "tests/joint-site-amendment.test.mjs:165:1",
+    "test": "superseded approval cannot authorize corrected bytes and retained prior authority is immutable",
+    "error": "Assertion failed while validating the frozen dependency closure; see original log."
+  },
+  {
+    "file": "tests/joint-site-amendment.test.mjs:195:1",
+    "test": "current disk stack finalizes one closure, rejects persistent and mid-invocation tampering, and isolates readers",
+    "error": "Assertion failed while validating the frozen dependency closure; see original log."
+  },
+  {
+    "file": "tests/ktpb-source-context-amendment.test.mjs:73:1",
+    "test": "published PR44 KTPB bytes preserve their approval through every historical inherited gate",
+    "error": "Changed unreviewed backend dependency .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/ktpb-source-context-amendment.test.mjs:82:1",
+    "test": "synthetic exact KTPB approval reaches all nine gates and forwards only its explicit PR43 predecessor bytes",
+    "error": "Got unwanted exception: KTPB"
+  },
+  {
+    "file": "tests/ktpb-source-context-amendment.test.mjs:92:1",
+    "test": "pending, missing approval and missing report fail through every inherited gate after prior success",
+    "error": "Changed immutable PR43 KTPB pin .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/ktpb-source-context-amendment.test.mjs:124:1",
+    "test": "performance approval is required, independently bound, and exact about code, tests and changed observations",
+    "error": "Changed immutable PR43 KTPB pin .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/ktpb-source-context-amendment.test.mjs:171:1",
+    "test": "pending candidate reviews contain no carried-forward independent approval claims",
+    "error": "Changed unreviewed backend dependency .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/ktpb-source-context-amendment.test.mjs:181:1",
+    "test": "every reviewed file is freshly read after success; reattesting frozen source, security, approvals, assets or old workflows cannot broaden scope",
+    "error": "Changed immutable PR43 KTPB pin .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/ktpb-source-context-amendment.test.mjs:207:1",
+    "test": "isolated PR44 default disk readers reject warm same-size timestamp-restored mutations without read-time substitution",
+    "error": "Changed immutable PR43 KTPB pin .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/local-content-migration.test.mjs:3:1",
+    "test": "all archived materials and referenced images are stored locally",
+    "error": "Expected values to be strictly equal:"
+  },
+  {
+    "file": "tests/local-content-migration.test.mjs:4:1",
+    "test": "technical page images and document destinations do not require the source website",
+    "error": "The expression evaluated to a falsy value:"
+  },
+  {
+    "file": "tests/measurement-column-amendment.test.mjs:50:1",
+    "test": "candidate evidence is separate from release approval; exact independent forward amendment is accepted",
+    "error": "Changed historical test input frontend/components/catalog/CatalogSourceEvidence.js"
+  },
+  {
+    "file": "tests/measurement-column-amendment.test.mjs:66:1",
+    "test": "forward amendment rejects missing self pins, missing amendments, wrong digests and expanded scope even with matching synthetic report hashes",
+    "error": "Changed historical test input frontend/components/catalog/CatalogSourceEvidence.js"
+  },
+  {
+    "file": "tests/measurement-column-amendment.test.mjs:97:1",
+    "test": "every pinned file and the independent report fail closed after a single-byte change, including old approvals and the verifier itself",
+    "error": "Changed historical test input frontend/components/catalog/CatalogSourceEvidence.js"
+  },
+  {
+    "file": "tests/ntmi-source-preview.test.mjs:96:1",
+    "test": "exact unchanged asset dependencies and new preview files match the independently reviewed clearance",
+    "error": "Changed fixed build/source/consumer dependency frontend/package.json"
+  },
+  {
+    "file": "tests/protection-context-amendment.test.mjs:49:1",
+    "test": "candidate byte evidence does not confer independent release authority; exact reviewed successor forwards only its predecessor hashes",
+    "error": "Changed fixed build/source/consumer dependency frontend/package.json"
+  },
+  {
+    "file": "tests/protection-context-amendment.test.mjs:107:1",
+    "test": "batched historical chain rechecks warm authority after same-size changes with restored timestamps, then accepts restored bytes",
+    "error": "Changed fixed build/source/consumer dependency frontend/package.json"
+  },
+  {
+    "file": "tests/ptmm-browser-correction-amendment.test.mjs:76:1",
+    "test": "fresh normal bytes stay rejected while pending and pass only after actual independent approval",
+    "error": "Changed joint-reviewed bytes .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/ptmm-browser-correction-amendment.test.mjs:92:1",
+    "test": "exact synthetic approval reaches the entire inherited chain without approving the checkout",
+    "error": "Changed fixed PTMM browser correction pin .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/ptmm-browser-correction-amendment.test.mjs:106:1",
+    "test": "missing clearance, report or any reviewed dependency cannot reuse synthetic approval",
+    "error": "Changed fixed PTMM browser correction pin .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/ptmm-browser-correction-amendment.test.mjs:173:1",
+    "test": "each inherited gate rejects a missing or pending successor and changed bytes after warm success",
+    "error": "Changed fixed PTMM dependency backend-node/src/domain/catalog.js"
+  },
+  {
+    "file": "tests/ptmm-browser-correction-amendment.test.mjs:193:1",
+    "test": "every reviewed byte and the report are freshly hashed after a successful leaf verification",
+    "error": "Changed fixed PTMM browser correction pin .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/ptmm-browser-correction-amendment.test.mjs:205:1",
+    "test": "PR41/current helper and bridge byte mixtures cannot inherit a new approval",
+    "error": "Changed fixed PTMM browser correction pin .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/ptmm-browser-correction-amendment.test.mjs:268:1",
+    "test": "same-size timestamp-restored disk changes cannot reuse a warm approval",
+    "error": "Changed fixed PTMM browser correction pin .github/workflows/ci.yml"
+  },
+  {
+    "file": "tests/ptmm-qualification-amendment.test.mjs:40:1",
+    "test": "normal reader keeps the real checkout pending until its independent successor is approved",
+    "error": "Changed fixed PTMM dependency backend-node/src/domain/catalog.js"
+  },
+  {
+    "file": "tests/ptmm-qualification-amendment.test.mjs:47:1",
+    "test": "exact synthetic PTMM successor reaches every inherited layer with the full closure and source/UI freeze",
+    "error": "Changed fixed PTMM dependency backend-node/src/domain/catalog.js"
+  },
+  {
+    "file": "tests/ptmm-qualification-amendment.test.mjs:54:1",
+    "test": "missing, pending, mismatched and broadened approval cannot pass any current chain",
+    "error": "The input did not match the regular expression /Missing PTMM amendment/. Input:"
+  },
+  {
+    "file": "tests/ptmm-qualification-amendment.test.mjs:68:1",
+    "test": "warm verification rejects every changed consumer, test, source, bridge and approval byte",
+    "error": "Changed fixed PTMM dependency backend-node/src/domain/catalog.js"
+  },
+  {
+    "file": "tests/ptmm-qualification-amendment.test.mjs:88:1",
+    "test": "same-size timestamp-restored disk edits are rejected after warm success",
+    "error": "Changed fixed PTMM dependency backend-node/src/domain/catalog.js"
+  },
+  {
+    "file": "tests/source-asset-completion.test.mjs:146:1",
+    "test": "release amendment rejects pending status, absent hashes, source/shape expansion and later single-byte edits",
+    "error": "Changed historical test input frontend/components/catalog/CatalogSourceEvidence.js"
+  },
+  {
+    "file": "tests/source-context-build-gate.test.mjs:13:1",
+    "test": "mandatory production and development config gates replace stale proof only after current bytes pass; preview config installs the same gate",
+    "error": "node:internal/modules/esm/resolve:271"
+  },
+  {
+    "file": "tests/static-preview-contract.test.mjs:96:1",
+    "test": "static preview retains root and localized company metadata wiring for both allowed source selectors",
+    "error": "StaticCompanyPage metadata declaration must be present"
+  },
+  {
+    "file": "tests/transformer-asset-completion.test.mjs:54:1",
+    "test": "supplement retains 25 exact defaults and 8 alternatives; historical release requires any forward amendment to be independently approved",
+    "error": "Changed fixed build/source/consumer dependency frontend/package.json"
+  },
+  {
+    "file": "tests/transformer-asset-completion.test.mjs:186:1",
+    "test": "historical release refuses pending forward approval; approved integration rejects later corruption and mismatched amendments",
+    "error": "Assertion failed while validating the frozen dependency closure; see original log."
+  },
+  {
+    "file": "tests/transformer-execution-choices.test.mjs:31:1",
+    "test": "separate clearance reproduces exactly 32 admitted mixed records and 66 explicit choices",
+    "error": "Changed immutable source input frontend/components/catalog/CatalogSourceEvidence.js"
+  },
+  {
+    "file": "tests/transformer-execution-choices.test.mjs:139:1",
+    "test": "the seven choices reuse existing meshes and icons alongside the separately reviewed default supplement",
+    "error": "Changed immutable source input frontend/components/catalog/CatalogSourceEvidence.js"
+  },
+  {
+    "file": "tests/visual-presentation-amendment.test.mjs:36:1",
+    "test": "exact current presentation succeeds through all inherited approval layers and binds prior hashes",
+    "error": "Changed unreviewed PTMM dependency frontend/e2e/catalog.spec.js"
+  },
+  {
+    "file": "tests/visual-presentation-amendment.test.mjs:45:1",
+    "test": "missing, pending, mismatched or widened presentation approval cannot pass the historical gate",
+    "error": "The input did not match the regular expression /Missing visual amendment/. Input:"
+  },
+  {
+    "file": "tests/visual-presentation-amendment.test.mjs:60:1",
+    "test": "warm gate rejects dependency/source/threshold mutations and mixed old/new runtime bytes, then accepts restoration",
+    "error": "Changed fixed build/source/consumer dependency frontend/package.json"
+  },
+  {
+    "file": "tests/visual-presentation-amendment.test.mjs:80:1",
+    "test": "current disk bytes are rechecked after a same-size timestamp-restored mutation",
+    "error": "Changed fixed build/source/consumer dependency frontend/package.json"
+  }
+]
