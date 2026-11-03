@@ -21,5 +21,5 @@ export default function SealedTransformer(){return <figure className="tmg-explai
   <div><span className="tmg-key" aria-hidden="true">1</span><div><E as="h3">Герметичный бак</E><E as="p">Масло не контактирует с окружающим воздухом.</E></div></div>
   <div><span className="tmg-key" aria-hidden="true">2</span><div><E as="h3">Полное заполнение маслом</E><E as="p">Без расширителя и воздушной подушки.</E></div></div>
  </div>
- <E as="figcaption">Схема поясняет принцип герметичного исполнения ТМГ. Геометрия и детали показаны условно; это не чертёж конкретного изделия.</E>
+ <E as="figcaption">Бак ТМГ полностью заполнен маслом и изолирован от воздуха. На рисунке — условный разрез без размеров.</E>
  </figure>;}

@@ -61,15 +61,15 @@ export default function EnterpriseDirectory() {
     {previewLayer}
     <E as="section" className="corp-geography" aria-label="География предприятий и офисов">
       <E as="div" className="corp-geo-sidebar">
-        <E as="p" className="site-eyebrow">КАЗАХСТАН / ВЫБЕРИТЕ ГОРОД</E>
-        <E as="h2">Заводы и офисы.<br />Выберите город.</E>
+        <E as="p" className="site-eyebrow">КАЗАХСТАН</E>
+        <E as="h2">Предприятия и офисы продаж</E>
         <E as="div" className="corp-city-filter" aria-label="Город предприятия">
           <E as="button" type="button" aria-pressed={!city && !region} onClick={() => selectCity('all')}>Заводы и офисы <E as="span">{mapLocations.length.toString().padStart(2, '0')}</E></E>
           {mapCities.map(item => <E as="button" type="button" aria-pressed={city?.id === item.id} key={item.id} onClick={() => selectCity(item.title)}>{item.title}<E as="span">{locationsInCity(item.title).length.toString().padStart(2, '0')}</E></E>)}
         </E>
       </E>
       <E as="div" ref={mapRef} className="corp-map-panel">
-        <E as="span" className="corp-map-label site-metadata">{region ? region.title : 'ПРОИЗВОДСТВО / ИНЖИНИРИНГ'}</E>
+        <E as="span" className="corp-map-label site-metadata">{region ? region.title : 'ЗАВОДЫ И ОФИСЫ'}</E>
         {viewport && <E as="button" className="corp-map-reset" type="button" onClick={() => selectCity('all')}>← Вся карта</E>}
         <E as="div" className={`corp-map${viewport ? ' is-zoomed' : ''}`} style={{ '--map-scale': scale, '--region-lift': `${-7 / scale}px`, '--pin-scale': 1 / scale }}>
           <div className="corp-map-scene" style={{ transform: viewport ? `translate(calc(var(${region ? '--enterprise-region-focus-x, 28%' : '--enterprise-focus-x, 34%'}) - ${viewport.x / 820 * 100}%), ${50 - viewport.y / 460 * 100}%) scale(${scale})` : 'none', transformOrigin: viewport ? `${viewport.x / 820 * 100}% ${viewport.y / 460 * 100}%` : 'center' }}>
@@ -100,7 +100,7 @@ export default function EnterpriseDirectory() {
             <E as="span" className="corp-country-name" aria-hidden="true">КАЗАХСТАН</E>
           </div>
         </E>
-        <E as="div" className="corp-map-legend"><E as="span">Нажмите на область, чтобы посмотреть заводы и офисы</E></E>
+        <E as="div" className="corp-map-legend"><E as="span">Выберите область или город. Повторное нажатие на область вернёт всю карту.</E></E>
         <E as="p" className="corp-map-note">Маркеры обозначают города, а не точные адреса заводов.<br />Границы областей: <E as="a" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap</E> · Центры городов: <E as="a" href="https://www.geonames.org/" target="_blank" rel="noopener noreferrer">GeoNames</E> / OpenStreetMap</E>
       </E>
     </E>

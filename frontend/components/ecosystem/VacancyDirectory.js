@@ -1,9 +1,8 @@
 "use client";
-import L from "@/components/careers/Text";
+import L, {useCareerTranslate} from "@/components/careers/Text";
 import CorporateArrow from "@/components/public/CorporateArrow";
 import { useState, useSyncExternalStore } from "react";
 import { jobs } from "@/lib/ecosystem/careers";
-import { useTranslate } from "@/components/locale/LocaleProvider";
 const subscribeReady = () => () => {};
 const clientReady = () => true;
 const serverReady = () => false;
@@ -12,7 +11,7 @@ export default function VacancyDirectory() {
   const [query, setQuery] = useState("");
   const [field, setField] = useState("all");
   const [status, setStatus] = useState("open");
-  const tx = useTranslate();
+  const tx = useCareerTranslate();
   const visible = jobs.filter(
     (j) =>
       (status === "all" || j.status === status) &&
@@ -24,7 +23,7 @@ export default function VacancyDirectory() {
   return (
     <>
       <L as="label" className="career-search">
-        Найти позицию
+        Поиск вакансий
         <L
           as="input"
           type="search"
@@ -36,8 +35,8 @@ export default function VacancyDirectory() {
       </L>
       <div className="career-filter">
         {[
-          ["open", "Актуальные"],
-          ["all", "Все публикации"],
+          ["open", "Открытые вакансии"],
+          ["all", "Включая архив"],
         ].map(([v, t]) => (
           <L
             as="button"
@@ -64,7 +63,7 @@ export default function VacancyDirectory() {
         ))}
       </div>
       <L as="p" role="status">
-        Найдено позиций: {visible.length}
+        Найдено вакансий: {visible.length}
       </L>
       {visible.map((j) => (
         <article className="career-job" key={j.id}>
@@ -72,7 +71,7 @@ export default function VacancyDirectory() {
             <L className="career-status">
               {j.status === "closed"
                 ? "Вакансия закрыта"
-                : "Актуальность не подтверждена"}
+                : "Набор нужно уточнить"}
             </L>
             <L as="h3">
               <L as="a" href={`/careers/vacancies/${j.id}`}>
@@ -94,12 +93,11 @@ export default function VacancyDirectory() {
         <div className="eco-empty">
           <L as="h2">
             {status === "open"
-              ? "Открытые вакансии пока не подтверждены"
-              : "Позиции не найдены"}
+              ? "Вакансии уточняйте у HR"
+              : "По вашему запросу вакансий нет"}
           </L>
           <L as="p">
-            Можно посмотреть опубликованные ранее позиции или подготовить
-            инициативное письмо.
+            Можно посмотреть архив вакансий или отправить резюме на cv@alageum.com.
           </L>
           <div className="site-actions">
             <L
@@ -111,14 +109,14 @@ export default function VacancyDirectory() {
                 setStatus("all");
               }}
             >
-              Показать все публикации
+              Посмотреть архив вакансий
             </L>
             <L
               as="a"
               href="/careers/apply"
               className="site-button site-button-primary"
             >
-              Инициативный отклик <CorporateArrow />
+              Резюме без выбора вакансии <CorporateArrow />
             </L>
           </div>
         </div>

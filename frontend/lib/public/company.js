@@ -4,16 +4,16 @@
 export const companySource = 'https://alageum.com/ru/kompaniya/o-nas';
 export const contactSource = 'https://alageum.com/ru/kontakty';
 export const companyHistory = [
-  { year: '1997', title: 'Начало общей истории', text: 'Предприятия проектирования, производства и монтажа электротехнической продукции объединяются под брендом Alageum.', source: 'https://alageum.com/ru/kompaniya/istoriya' },
-  { year: '1999', title: 'Развитие производства', text: 'Алматинский электромеханический завод входит в состав группы.', source: 'https://alageum.com/ru/predpriyatiya/too-aemz' },
-  { year: '2012', title: 'Единая структура', text: 'Образована управляющая компания холдинга Alageum Electric.', source: 'https://alageum.com/ru/kompaniya/istoriya' },
-  { year: '2021', title: 'Новая площадка на севере', text: 'Открыт Петропавловский электротехнический завод.', source: 'https://alageum.com/ru/predpriyatiya/too-petropavlovskij-elektrotekhnicheskij-zavod' },
+  { year: '1997', title: 'Создание группы Alageum', text: 'Проектные, производственные и монтажные предприятия объединены под брендом Alageum.', source: 'https://alageum.com/ru/kompaniya/istoriya' },
+  { year: '1999', title: 'АЭМЗ входит в группу', text: 'Алматинский электромеханический завод входит в состав группы.', source: 'https://alageum.com/ru/predpriyatiya/too-aemz' },
+  { year: '2012', title: 'Управляющая компания', text: 'Образована управляющая компания холдинга Alageum Electric.', source: 'https://alageum.com/ru/kompaniya/istoriya' },
+  { year: '2021', title: 'Открытие ПЭТЗ', text: 'Открыт Петропавловский электротехнический завод.', source: 'https://alageum.com/ru/predpriyatiya/too-petropavlovskij-elektrotekhnicheskij-zavod' },
 ];
 export const projectStages = [
-  { number: '01', title: 'Проектирование', text: 'Проработка исходных данных и проектных решений для энергообъектов.', href: '/solutions' },
-  { number: '02', title: 'Производство', text: 'Выпуск трансформаторов, подстанций и распределительного оборудования.', href: '/catalog' },
-  { number: '03', title: 'Монтаж и запуск', text: 'Строительство, электромонтаж и пусконаладочные работы.', href: '/projects' },
-  { number: '04', title: 'Обслуживание', text: 'Гарантийное и техническое сопровождение оборудования.', href: '/contacts' },
+  { number: '01', title: 'Проектируем', text: 'Готовим проекты энергообъектов. В Asia Trafo конструкторы разрабатывают трёхмерные модели трансформаторов.', href: '/solutions', source: 'https://alageum.com/ru/predpriyatiya/too-asia-trafo' },
+  { number: '02', title: 'Производим', text: 'АЭМЗ за полтора месяца изготовил подстанцию 2500 кВА для легкоатлетического комплекса «Qazaqstan» в Астане.', href: '/manufacturers/aemz', source: 'https://alageum.com/ru/novosti/odin-iz-uspeshno-realizovannykh-nashej-komandoj-proektov-komplektnaya-podstantsiya-moshchnostyu-2500-kva-dlya-legkoatleticheskogo-kompleksa-v-gorode-nur-sultan', period: 'Публикация: 13.04.2021' },
+  { number: '03', title: 'Строим и запускаем', text: 'В Петропавловске группа строит подстанцию 110/10 кВ для областной больницы и объектов СЭЗ Qyzyljar.', href: '/projects/petropavlovsk', source: 'https://alageum.com/ru/novosti/alageum-obespechit-energiej-novye-obekty-petropavlovska', period: 'Публикация: 17.08.2026' },
+  { number: '04', title: 'Обслуживаем', text: 'Гарантийное и техническое обслуживание оборудования. По вопросам эксплуатации свяжитесь с предприятием-изготовителем.', href: '/contacts', source: companySource },
 ];
 export const enterpriseContacts = {
   'batys-electric': { city:'Актау', address:'Точный адрес предприятия необходимо уточнить', phone:'+7 771 005 22 22', tel:'+77710052222', email:'sales@alageum.com', label:'Единый отдел продаж — направит запрос предприятию' },

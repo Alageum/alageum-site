@@ -2,5 +2,12 @@ import {getProjectPhoto} from '@/lib/public/photography';
 import E from '@/components/locale/LocaleElement';
 import {Story,Hero,Section,Jump,ChapterNav} from '@/components/public/story/Story';
 import ProjectPortfolio from '@/components/public/ProjectPortfolio';
-export const metadata={title:'Проекты и кейсы',description:'Строительство, реконструкция и поставки: подтверждённые роли предприятий Alageum Electric на объектах.'};
-export default function Projects(){return <Story name="projects"><Hero label="Проекты" variant="dark" photo={getProjectPhoto('nura')} title="За каждым объектом — конкретная работа." lead="Строительство, реконструкция и поставки оборудования. В кейсе важен не только масштаб объекта, но и то, что именно выполнило предприятие."/><ChapterNav items={[["#portfolio","Выбрать кейс"],["#project-evidence","Как читать проект"]]}/><Section id="portfolio" label="ПОРТФЕЛЬ РАБОТ" title="Выберите тип участия."><ProjectPortfolio/></Section><Section id="project-evidence" tone="paper" title="Поставка оборудования и строительство — разные роли."><div className="story-columns"><div className="story-copy"><E as="p">Референс поставки подтверждает оборудование для объекта. Он сам по себе не означает, что производитель построил всю подстанцию или электростанцию.</E><Jump href="/documents">Изучить каталоги и референсы</Jump></div><div className="story-process">{[['Роль','В начале кейса указано участие предприятия: поставка, строительство или реконструкция.'],['Период','Дата публикации или период референс-листа сохраняются рядом с описанием.'],['Подтверждение','Официальный источник и ограничения сведений завершают каждый кейс.']].map(([title,text])=><article key={title}><E as="h3">{title}</E><E as="p">{text}</E></article>)}</div></div></Section></Story>;}
+export const metadata={title:'Проекты Alageum Electric',description:'Строительство подстанций, реконструкция электросетей и поставки оборудования предприятий Alageum Electric.'};
+export default function Projects(){return <Story name="projects">
+ <Hero label="Проекты" variant="dark" photo={getProjectPhoto('nura')} title="Наши проекты и поставки" lead="Подстанции, электростанции и городские сети, для которых предприятия Alageum поставляли оборудование или выполняли строительные работы."/>
+ <ChapterNav items={[["#portfolio","Найти проект"],["#project-evidence","Каталоги и референсы"]]}/>
+ <Section id="portfolio"><ProjectPortfolio/></Section>
+ <Section id="project-evidence" tone="paper" label="ДОКУМЕНТЫ" title="Документы о проектах и поставках">
+  <div className="story-columns"><E as="p" className="story-lead">В референс-листах указаны объекты, заказчики и поставленное оборудование. Корпоративный каталог содержит перечень строительных проектов группы.</E><div><Jump href="/documents">Каталоги и документы</Jump></div></div>
+ </Section>
+ </Story>;}

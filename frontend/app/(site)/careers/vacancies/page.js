@@ -6,8 +6,7 @@ export default function Vacancies() {
   return (
     <>
       <Intro label="КАРЬЕРА" title="Вакансии">
-        Выберите направление и изучите требования. Статус каждой публикации
-        указан отдельно.
+        Выберите профессию и посмотрите требования. Если подходящей вакансии нет, отправьте резюме в HR.
       </Intro>
       <section className="career-section career-vacancies">
         <VacancyDirectory />

@@ -12,7 +12,7 @@ test("candidate journey and local resume", async ({ page }, info) => {
       posts.push(r.url());
   });
   await page.goto("/careers");
-  await expect(page.locator("h1")).toContainText("Работа, которая");
+  await expect(page.locator("h1")).toContainText("Работа в");
   await page.evaluate(() => {
     document.activeElement?.blur();
     window.scrollTo(0, 0);
@@ -32,16 +32,16 @@ test("candidate journey and local resume", async ({ page }, info) => {
     .click();
   await expect(
     page.getByRole("heading", {
-      name: "Открытые вакансии пока не подтверждены",
+      name: "Вакансии уточняйте у HR",
     }),
   ).toBeVisible();
-  await page.getByRole("button", { name: "Показать все публикации" }).click();
+  await page.getByRole("button", { name: "Посмотреть архив вакансий" }).click();
   await expect(page.locator(".career-job")).toHaveCount(2);
   await page.getByRole("searchbox").fill("несуществующая профессия");
   await expect(
-    page.getByRole("heading", { name: "Позиции не найдены" }),
+    page.getByRole("heading", { name: "По вашему запросу вакансий нет" }),
   ).toBeVisible();
-  await page.getByRole("button", { name: "Показать все публикации" }).click();
+  await page.getByRole("button", { name: "Посмотреть архив вакансий" }).click();
   await page
     .getByRole("button", { name: "Строительство", exact: true })
     .click();
@@ -51,9 +51,9 @@ test("candidate journey and local resume", async ({ page }, info) => {
     .getByRole("link", { name: "Задачи и требования" })
     .click();
   await expect(page.locator(".eco-notice").first()).toContainText(
-    "Актуальность не подтверждена",
+    "Архивная публикация.",
   );
-  await page.getByRole("link", { name: "Уточнить актуальность" }).click();
+  await page.getByRole("link", { name: "Спросить о вакансии" }).click();
   await page
     .getByRole("button", { name: "Сохранить черновик", exact: true })
     .click();
@@ -133,8 +133,8 @@ test("redirects, languages, internship, reduced motion and 404", async ({
     await expect(page).toHaveURL(new RegExp(target + "$"));
   }
   for (const [locale, title] of [
-    ["en", "Work that"],
-    ["kk", "Елге қуат"],
+    ["en", "Working at"],
+    ["kk", "Жұмыс орны"],
   ]) {
     await page.goto(`/${locale}/careers`);
     await expect(page.locator("h1")).toContainText(title);

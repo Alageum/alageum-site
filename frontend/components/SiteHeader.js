@@ -11,22 +11,23 @@ import { useAuth } from "@/components/AuthProvider";
 import './public/company/company-architecture.css';
 import {companyMenuLinks,companyResources} from '@/lib/public/company-architecture';
 import HeaderContact from '@/components/HeaderContact';
+import PageOrientation from '@/components/PageOrientation';
 import { careerSections, careerSectionIndex } from "@/components/careers/navigation";
 
 import { isPublicOnly } from '@/lib/deployment/publicMode';
 
 const corporateSections = [
 {
-  href: "/company", label: "Компания", title: "ALAGEUM Electric", note: "Предприятия, компетенции и проверенные публичные материалы.",
+  href: "/company", label: "Компания", title: "ALAGEUM Electric", note: "Заводы, история группы, руководство и новости.",
   links: companyMenuLinks, resources: companyResources
 
 },
 {
-  href: "/solutions", label: "Решения", title: "От задачи к оборудованию", note: "Начните подбор с направления вашего проекта.",
+  href: "/solutions", label: "Решения", title: "Оборудование по типу объекта", note: "Оборудование для электросетей, предприятий и городских объектов.",
   links: [
-  ["Направления решений", "/solutions", "Структура проектного подбора"],
-  ["Проекты", "/projects", "Подтверждённые публикации и поставки"],
-  ["Подготовить запрос", "/inquiry", "Исходные данные для менеджера"]]
+  ["По типу объекта", "/solutions", "Сети, производство и инфраструктура"],
+  ["Проекты", "/projects", "Объекты и поставленное оборудование"],
+  ["Подготовить запрос", "/inquiry", "Задача, параметры и сроки поставки"]]
 
 },
 {
@@ -38,7 +39,7 @@ const corporateSections = [
 
 },
 {
-  href: "/contacts", label: "Контакты", title: "Связь по вашему проекту", note: "Официальные каналы связи и подготовка вашего обращения.",
+  href: "/contacts", label: "Контакты", title: "Телефоны и адреса", note: "Отдел продаж, офисы в городах и контакты предприятий.",
   links: [
   ["Контактная информация", "/contacts", "Телефоны, почта и региональные офисы"]]
 
@@ -184,6 +185,7 @@ export default function SiteHeader({ selectionCount }) {
             }}><LocaleElement as="span" /><LocaleElement as="span" /><LocaleElement as="span" /></LocaleElement>
           </LocaleElement>
         </LocaleElement>
+        <PageOrientation menuOpen={anyOpen}/>
         <LocaleElement as="nav" className={`site-mobile-navigation${mobileOpen ? " is-open" : ""}`} id="site-mobile-navigation" aria-label="Мобильная навигация" inert={!mobileOpen}>
           {sections.map((section, index) =>
           <LocaleElement as="div" className="site-mobile-group" key={section.href}>

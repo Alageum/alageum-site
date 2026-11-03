@@ -16,7 +16,7 @@ export default async function Vacancy({ params }) {
       <div className="site-container career-back">
         <L as="a" className="site-text-link" href="/careers/vacancies">
           <CorporateArrow direction="right" />
-          Все позиции
+          Все вакансии
         </L>
       </div>
       <Intro label={job.field} title={job.title} />
@@ -24,7 +24,7 @@ export default async function Vacancy({ params }) {
         <L as="p" className="eco-notice">
           {job.status === "closed"
             ? "Вакансия закрыта. Можно подготовить инициативный отклик."
-            : "Актуальность не подтверждена. Это сохранённая публикация, а не подтверждённая открытая вакансия."}
+            : "Архивная публикация. Уточните у HR, открыт ли сейчас набор на эту должность."}
         </L>
         <div className="career-facts">
           <div>
@@ -40,10 +40,9 @@ export default async function Vacancy({ params }) {
             <Source href={job.source}>Публикация о вакансиях</Source>
           </div>
           <aside>
-            <L as="h3">Условия позиции</L>
+            <L as="h3">Город, график и зарплата</L>
             <L as="p">
-              Город, предприятие, график, зарплата и дата закрытия не
-              подтверждены. Уточните их у HR перед передачей резюме.
+              В архивной публикации указан Алматы. Предприятие, действующий график и зарплату уточните у HR перед отправкой резюме.
             </L>
             <Action
               href={
@@ -53,8 +52,8 @@ export default async function Vacancy({ params }) {
               }
             >
               {job.status === "closed"
-                ? "Инициативный отклик"
-                : "Уточнить актуальность"}
+                ? "Резюме без выбора вакансии"
+                : "Спросить о вакансии"}
             </Action>
           </aside>
         </div>

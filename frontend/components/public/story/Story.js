@@ -27,7 +27,7 @@ export function Jump({ href, children }) {
   const external = /^https?:/.test(href) && !/\.pdf(?:#|$)/i.test(href);
   return external ? <a href={href} className="story-jump" target="_blank" rel="noopener noreferrer"><E>{children}</E><CorporateArrow /></a> : <Link href={href} className="story-jump">{children}<CorporateArrow /></Link>;
 }
-export function Source({ href, children = 'Официальный источник', period }) {
+export function Source({ href, children = 'Источник', period }) {
   href=localSourceHref(href);
   if(href===null)return period?<E as="p" className="story-source">{period}</E>:null;
   const external=/^https?:/.test(href);

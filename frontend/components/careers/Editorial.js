@@ -3,14 +3,14 @@ import L from "@/components/careers/Text";
 import Image from "./CareerImage";
 import CorporateArrow from "@/components/public/CorporateArrow";
 
-export function Photo({ id, caption, priority = false, className = "" }) {
+export function Photo({ id, photo, caption = photo?.caption, priority = false, className = "" }) {
   return (
     <figure className={`corp-photo ${className}`}>
       <Image
-        src={`/photography/manufacturers/${id}.webp`}
-        alt={caption}
-        width={1000}
-        height={600}
+        src={photo?.path || `/photography/manufacturers/${id}.webp`}
+        alt={photo?.alt || caption}
+        width={photo?.width || 1000}
+        height={photo?.height || 600}
         sizes="(max-width: 760px) 100vw, 60vw"
         preload={priority}
       />
@@ -40,19 +40,16 @@ export function Action({ href, children }) {
   );
 }
 export function Source({ href, children, publishedAt }) {
+  const target = localSourceHref(href);
+  if (!target) return null;
+  const external = /^https?:/.test(target);
   return (
     <p className="corp-small-note career-source">
-      <L as="a" href={localSourceHref(href)} target="_blank" rel="noreferrer">
+      <L as="a" href={target} target={external ? '_blank' : undefined} rel={external ? 'noopener noreferrer' : undefined}>
         {children}
         <CorporateArrow />
       </L>
-      {publishedAt ? (
-        <span>
-          <L>Дата публикации:</L> {publishedAt}. <L>Проверено 01.11.2026.</L>
-        </span>
-      ) : (
-        <L>Проверено 01.11.2026. Дата публикации не указана.</L>
-      )}
+      {publishedAt && <time dateTime={publishedAt.split('.').reverse().join('-')}>{publishedAt}</time>}
     </p>
   );
 }

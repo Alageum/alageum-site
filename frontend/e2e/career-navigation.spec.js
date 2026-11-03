@@ -4,7 +4,7 @@ const destinations = [
   {
     label: "Карьера",
     href: "/careers",
-    heading: "Работа, которая",
+    heading: "Работа в",
     marker: "#workplaces",
   },
   {
@@ -103,7 +103,7 @@ test("each visible menu destination opens distinct content and is active", async
     await expect(page.locator("h1")).toContainText(item.heading);
     await expect(page).toHaveURL(new RegExp(item.href + "$"));
   }
-  for(const [label,href,heading] of [['Предприятия','/manufacturers','Найдите свою точку контакта.'],['Контакты','/contacts','Контакты.Начнём сотрудничество.']]){
+  for(const [label,href,heading] of [['Предприятия','/manufacturers','Заводы и отделы продаж'],['Контакты','/contacts','Контакты.Офисы и отделы продаж.']]){
     await page.goto('/careers');await page.locator('.site-footer nav a').filter({hasText:new RegExp('^'+label+'$')}).click();
     await expect(page).toHaveURL(new RegExp(href+'$'));await expect(page.locator('h1')).toContainText(heading);
   }

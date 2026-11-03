@@ -77,9 +77,9 @@ export default function LoginPage() {
   return <LocaleElement as="section" className="brand-login">
     <LocaleElement as="aside" className="brand-login-story">
       <Image src="/photography/manufacturers/asia-trafo.webp" alt="Производственная линия Asia Trafo" width={1000} height={600} sizes="(max-width: 760px) 100vw, 50vw" />
-      <LocaleElement as="p" className="site-eyebrow">ALAGEUM ELECTRIC / B2B</LocaleElement>
-      <LocaleElement as="h2">Ваш проект.<br />Единое пространство.</LocaleElement>
-      <LocaleElement as="p">Запросы, документы и работа с вашей организацией — в одном кабинете.</LocaleElement>
+      <LocaleElement as="p" className="site-eyebrow">ASIA TRAFO · ПРОИЗВОДСТВО</LocaleElement>
+      <LocaleElement as="h2">Аккаунт компании.<br />Заказы и документы.</LocaleElement>
+      <LocaleElement as="p">Войдите и запросите доступ к заказам и документам своей компании.</LocaleElement>
     </LocaleElement>
     <LocaleElement as="div" className="brand-login-form">
     <LocaleElement as="p" className="site-eyebrow">ЛИЧНЫЙ КАБИНЕТ</LocaleElement>

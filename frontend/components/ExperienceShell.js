@@ -8,6 +8,7 @@ import { ecosystemArea } from '@/components/locale/EcosystemNavigation';
 import ContextSupport from '@/components/public/ContextSupport';
 import SiteFooter from '@/components/SiteFooter';
 import CorporateArrow from '@/components/public/CorporateArrow';
+import readingStyles from '@/components/PageOrientation.module.css';
 
 // Route scope keeps technical catalog and printable documents visually stable.
 export default function ExperienceShell({ children }) {
@@ -95,7 +96,7 @@ export default function ExperienceShell({ children }) {
     };
   }, [pathname, technical]);
 
-  return <LocaleElement as="div" ref={shellRef} className={technical ? 'technical-experience' : `brand-experience${utility ? ' brand-utility' : ''}`}>
+  return <LocaleElement as="div" ref={shellRef} className={technical ? 'technical-experience' : `brand-experience${utility ? ' brand-utility' : ` ${readingStyles.pageScope}`}`}>
     {!technical && <LocaleElement as="div" ref={progressRef} className="brand-scroll-progress" aria-hidden="true" />}
     <SiteHeader />
     <LocaleElement as="main" id="main-content" className="site-main"><LegacyLocalization />{children}</LocaleElement>

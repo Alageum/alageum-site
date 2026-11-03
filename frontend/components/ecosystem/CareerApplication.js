@@ -102,7 +102,7 @@ export default function CareerApplication() {
     } catch {
       if (saved) deleteLocalDocument(saved.id).catch(() => {});
       setError(
-        "Браузер не разрешил сохранить черновик или файл. Вы можете подготовить письмо без сохранения.",
+        "Не удалось сохранить черновик или резюме. Можно открыть письмо HR без сохранения.",
       );
     }
   }
@@ -133,9 +133,9 @@ export default function CareerApplication() {
       });
       setResume(null);
       if (fileRef.current) fileRef.current.value = "";
-      setNotice("Черновик и локальное резюме удалены.");
+      setNotice("Черновик и сохранённое резюме удалены.");
     } catch {
-      setError("Не удалось удалить локальный файл. Попробуйте ещё раз.");
+      setError("Не удалось удалить резюме из браузера. Попробуйте ещё раз.");
     }
   }
   function openMail() {
@@ -143,16 +143,16 @@ export default function CareerApplication() {
     if (!formRef.current.reportValidity()) return;
     if (!form.name.trim() || !form.email || !form.consent) {
       setError(
-        "Заполните имя, email и подтвердите согласие перед подготовкой письма.",
+        "Укажите имя, email и отметьте согласие на сохранение данных.",
       );
       return;
     }
     const position =
       jobs.find((item) => item.id === form.position)?.title ||
-      (form.position === "internship" ? "Стажировка" : "Инициативный отклик");
+      (form.position === "internship" ? "Стажировка" : "Резюме без выбора вакансии");
     const body = [
       `${tx("Имя")}: ${form.name}`,
-      `${tx("Направление")}: ${tx(position)}`,
+      `${tx("Вакансия или стажировка")}: ${tx(position)}`,
       `${tx("Email")}: ${form.email}`,
       `${tx("Телефон")}: ${form.phone}`,
       `${tx("Город")}: ${form.city}`,
@@ -231,7 +231,7 @@ export default function CareerApplication() {
           />
         </LocaleElement>
         <LocaleElement as="label">
-          Направление
+          Вакансия или стажировка
           <LocaleElement
             as="select"
             name="position"
@@ -240,7 +240,7 @@ export default function CareerApplication() {
             onChange={change}
           >
             <LocaleElement as="option" value="">
-              Инициативный отклик
+              Резюме без выбора вакансии
             </LocaleElement>
             {jobs.map((job) => (
               <LocaleElement as="option" value={job.id} key={job.id}>
@@ -300,7 +300,7 @@ export default function CareerApplication() {
             value={form.experience}
             onChange={change}
             placeholder={tx(
-              "Кратко расскажите об образовании, опыте и интересующем направлении",
+              "Где вы работали или учились? Что умеете и какую работу ищете?",
             )}
           />
         </LocaleElement>
@@ -350,9 +350,7 @@ export default function CareerApplication() {
             onChange={change}
           />
           <LocaleElement as="span">
-            Я понимаю, что черновик и контактные данные сохранятся в этом
-            браузере. Передача работодателю происходит только через мою почтовую
-            программу.
+            Разрешаю сохранить мои данные и резюме в этом браузере. Письмо работодателю отправлю самостоятельно.
           </LocaleElement>
         </LocaleElement>
         <LocaleElement as="div" className="site-actions">
@@ -396,17 +394,14 @@ export default function CareerApplication() {
       </LocaleElement>
       <LocaleElement as="aside">
         <LocaleElement as="p" className="site-eyebrow">
-          ЧТО ПРОИЗОЙДЁТ ДАЛЬШЕ
+          ОТПРАВКА РЕЗЮМЕ
         </LocaleElement>
-        <LocaleElement as="h2">Как передать резюме</LocaleElement>
+        <LocaleElement as="h2">Отправьте письмо в HR</LocaleElement>
         <LocaleElement as="p" className="eco-notice">
-          Это локальная версия. Форма не загружает резюме на сервер и не
-          отправляет письмо. После открытия почтовой программы проверьте текст и
-          добавьте файл резюме.
+          Нажмите «Подготовить письмо HR»: откроется ваша почтовая программа с заполненным текстом. Добавьте файл резюме и отправьте письмо.
         </LocaleElement>
         <LocaleElement as="p" className="eco-section-lead">
-          Официальный контакт из материалов компании: cv@alageum.com.
-          Актуальность вакансии, сроки ответа и условия работы уточняются у HR.
+          Если почтовая программа не открылась, напишите на cv@alageum.com и приложите резюме.
         </LocaleElement>
       </LocaleElement>
     </LocaleElement>

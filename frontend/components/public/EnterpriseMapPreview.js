@@ -123,7 +123,7 @@ export function useEnterpriseMapPreview() {
       <div className="enterprise-map-preview-top"><E as="p" className="site-eyebrow">ЗАВОДЫ И ОФИСЫ ГРУППЫ</E><E as="button" type="button" className="enterprise-map-preview-close" aria-label="Закрыть справку о предприятии" onClick={restoreFocus}>×</E></div>
       <E as="p" className="enterprise-map-preview-city">{preview.city}</E>
       {preview.cities ? <div className="enterprise-map-region-results">
-        <E as="p" className="enterprise-region-count" role="status">Точек: {items.length}</E>
+        <E as="p" className="enterprise-region-count" role="status">Объектов: {items.length}</E>
         {items.length ? items.map(item => {
           const photo = getManufacturerPhoto(item.id);
           const contact = mapContacts[item.id];

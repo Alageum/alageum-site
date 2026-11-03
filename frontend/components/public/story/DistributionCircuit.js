@@ -15,11 +15,11 @@ function CircuitIcon({stage}){return <svg viewBox="0 0 100 80" fill="none" aria-
  </svg>;}
 
 export default function DistributionCircuit(){return <DistributionCircuitMotion>
- <E as="h2">От подключения — к потребителю.</E>
+ <E as="h2">Как электроэнергия поступает к потребителю</E>
  <div className="dc-route" aria-hidden="true"><span/><svg viewBox="0 0 1000 20" preserveAspectRatio="none"><path className="dc-route-base" d="M0 10H1000"/><path className="dc-route-draw" pathLength="1" d="M0 10H1000"/><path d="m490 3 9 7-9 7m-333-14 9 7-9 7m666-14 9 7-9 7"/></svg><span/></div>
  <ol className="dc-stages">{stages.map(([title,text],index)=><li key={title}>
   <div className="dc-stage-top"><span className="dc-stage-number" aria-hidden="true">0{index+1}</span><CircuitIcon stage={index}/></div>
   <E as="h3">{title}</E><E as="p">{text}</E>
  </li>)}</ol>
- <E as="figcaption">Принцип распределения электроэнергии. Состав оборудования определяется проектом; схема не заменяет однолинейную схему объекта.</E>
+ <E as="figcaption">Трансформатор понижает напряжение сети до уровня потребителей. Оборудование и схема подключения определяются проектом.</E>
  </DistributionCircuitMotion>;}

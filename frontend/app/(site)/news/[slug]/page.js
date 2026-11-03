@@ -17,7 +17,7 @@ export default async function Article({ params }) {
 
     <LocaleElement as="p" className="eco-section-lead">{item.text}</LocaleElement>
     {item.body && <EditorialBlocks body={item.body} locale={locale} />}
-    {item.source && <Source href={item.source} period="Краткое изложение официальной публикации. Данные о последующих событиях здесь не заявляются." />}
+    {item.source && <Source href={item.source} period="По материалам компании на дату публикации." />}
     <LocaleElement as="div" className="site-actions"><Jump href={item.project || '/news'}>{item.project ? 'Связанный проект' : 'Все новости'}</Jump></LocaleElement>
   </Section></Story>;
 }
