@@ -1,4 +1,18 @@
-# Retired-host safeguard: only the deny configuration is eligible for upload.
-# This does not unlink the Git integration or change existing deployments.
-/*
-!/vercel.json
+# Keep credentials, local data and generated output out of deployment uploads.
+**/.env
+**/.env.*
+**/node_modules
+**/.next
+**/.next-*
+**/.vercel
+**/.git
+**/coverage
+**/test-results
+**/playwright-report
+**/.preview-build
+**/preview-dist
+**/*.sql
+**/*.sqlite*
+backend/
+backend-node/
+artifacts/

@@ -1,12 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "framework": null,
-  "installCommand": "printf '%s\\n' 'Vercel deployment is disabled. Use the self-hosted deployment guide.' >&2; exit 1",
-  "buildCommand": "printf '%s\\n' 'Vercel deployment is disabled. Use the self-hosted deployment guide.' >&2; exit 1",
-  "routes": [
-    {
-      "src": "/(.*)",
-      "status": 404
-    }
-  ]
+  "framework": "nextjs",
+  "installCommand": "npm ci",
+  "buildCommand": "ALAGEUM_PUBLIC_ONLY=1 npm run build",
+  "devCommand": "ALAGEUM_PUBLIC_ONLY=1 npm run dev"
 }

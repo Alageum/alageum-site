@@ -1,4 +1,15 @@
-# Retired-host safeguard when the linked project root is frontend/.
-# Git integration can fetch the repository before these deployment rules run.
-/*
-!/vercel.json
+# Keep credentials, local data and generated output out of deployment uploads.
+**/.env
+**/.env.*
+**/node_modules
+**/.next
+**/.next-*
+**/.vercel
+**/.git
+**/coverage
+**/test-results
+**/playwright-report
+**/.preview-build
+**/preview-dist
+**/*.sql
+**/*.sqlite*
