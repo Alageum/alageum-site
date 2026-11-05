@@ -9,42 +9,16 @@ import SelectionNavigation from "@/components/catalog/SelectionNavigation";
 import { useAuth } from "@/components/AuthProvider";
 
 import './public/company/company-architecture.css';
-import {companyMenuLinks,companyResources} from '@/lib/public/company-architecture';
 import HeaderContact from '@/components/HeaderContact';
 import PageOrientation from '@/components/PageOrientation';
+import SiteMenuLinks from '@/components/SiteMenuLinks';
+import menuStyles from '@/components/SiteMenuLinks.module.css';
+import {siteNavigation} from '@/lib/public/site-navigation';
 import { careerSections, careerSectionIndex } from "@/components/careers/navigation";
 
 import { isPublicOnly } from '@/lib/deployment/publicMode';
 
-const corporateSections = [
-{
-  href: "/company", label: "Компания", title: "ALAGEUM Electric", note: "Заводы, история группы, руководство и новости.",
-  links: companyMenuLinks, resources: companyResources
-
-},
-{
-  href: "/solutions", label: "Решения", title: "Оборудование по типу объекта", note: "Оборудование для электросетей, предприятий и городских объектов.",
-  links: [
-  ["По типу объекта", "/solutions", "Сети, производство и инфраструктура"],
-  ["Проекты", "/projects", "Объекты и поставленное оборудование"],
-  ["Подготовить запрос", "/inquiry", "Задача, параметры и сроки поставки"]]
-
-},
-{
-  href: "/catalog/home", label: "Каталог", title: "Технический каталог", note: "Оборудование, характеристики и подборка для проекта.",
-  links: [
-  ["Трансформаторы", "/catalog?category=transformers", "Параметры и исполнение"],
-  ["Распределительные устройства", "/catalog?category=switchgear", "Коммутация и распределение"],
-  ["Подстанции", "/catalog?category=substations", "Комплектные решения"]]
-
-},
-{
-  href: "/contacts", label: "Контакты", title: "Телефоны и адреса", note: "Отдел продаж, офисы в городах и контакты предприятий.",
-  links: [
-  ["Контактная информация", "/contacts", "Телефоны, почта и региональные офисы"]]
-
-}];
-
+const corporateSections = siteNavigation;
 
 const catalogSections = [
 { href: '/catalog/home', label: 'Каталог', title: 'Оборудование для вашего проекта', note: 'Выберите направление или начните с инженерной задачи.', links: [['Каталог продукции', '/catalog', 'Категории и технические параметры'], ['Производители', '/manufacturers', 'Промышленные площадки'], ['Материалы', '/documents', 'Каталоги и источники']] },
@@ -59,11 +33,12 @@ function Chevron({ expanded = false }) {
 export default function SiteHeader({ selectionCount }) {
   const pathname = usePathname();
   const area = pathname.startsWith('/careers') ? 'careers' : ['/catalog', '/client', '/b2b', '/selection', '/inquiry', '/login', '/account', '/register', '/verify-email', '/forgot-password', '/reset-password'].some((root) => pathname === root || pathname.startsWith(`${root}/`)) ? 'catalog' : 'company';
-  const configuredSections = area === 'careers' ? careerSections : area === 'catalog' ? catalogSections : corporateSections;
+  const workspace = ['/client','/b2b','/selection','/inquiry','/login','/account','/register','/verify-email','/forgot-password','/reset-password'].some(root => pathname === root || pathname.startsWith(`${root}/`));
+  const configuredSections = area === 'careers' ? careerSections : workspace ? catalogSections : corporateSections;
   const sections = isPublicOnly() ? configuredSections.map(section => ({
     ...section,
     ...(section.href === '/account' ? { href: '/service-unavailable', label: 'Кабинет недоступен', title: 'Личный кабинет временно недоступен', note: 'Публичный каталог и локальные черновики работают без входа.' } : {}),
-    links: section.links.map(([label, href, note]) => ['/account', '/b2b'].includes(href) ? [label, '/service-unavailable', 'Временно недоступно. Данные не отправляются.'] : [label, href, note]),
+    links: section.links.map(([label, href, note, children]) => ['/account', '/b2b'].includes(href) ? [label, '/service-unavailable', 'Временно недоступно. Данные не отправляются.'] : [label, href, note, children]),
   })) : configuredSections;
   const { hasPermission } = useAuth();
   const headerRef = useRef(null);
@@ -73,7 +48,9 @@ export default function SiteHeader({ selectionCount }) {
   const suppressFocusPreview = useRef(false);
   const pendingSubmenuFocus = useRef(false);
   const [menu, setMenu] = useState({ pathname, preview: null, desktop: false, mobile: false, group: null });
-  const navPath = ['/account', '/b2b', '/login', '/register', '/verify-email', '/forgot-password', '/reset-password'].some(root => pathname === root || pathname.startsWith(`${root}/`)) ? '/account' : ['/manufacturers', '/documents', '/news', '/materials', '/partners'].some((prefix) => pathname.startsWith(prefix)) ? '/company' : pathname.startsWith('/projects') ? '/solutions' : pathname.startsWith('/inquiry') || pathname.startsWith('/client') ? '/contacts' : pathname;
+  const navPath = configuredSections === corporateSections
+    ? pathname.startsWith('/catalog') ? '/catalog/directions' : pathname.startsWith('/industries') || pathname.startsWith('/solutions') || pathname.startsWith('/projects') ? '/industries' : pathname.startsWith('/manufacturers') ? '/manufacturers' : pathname.startsWith('/investors') ? '/investors' : ['/company','/news','/materials','/partners','/documents','/contacts','/data-policy'].some(root => pathname === root || pathname.startsWith(`${root}/`)) ? '/company' : pathname
+    : ['/account', '/b2b', '/login', '/register', '/verify-email', '/forgot-password', '/reset-password'].some(root => pathname === root || pathname.startsWith(`${root}/`)) ? '/account' : pathname.startsWith('/inquiry') || pathname.startsWith('/client') ? '/contacts' : pathname;
   const exactIndex = sections.findIndex(section => navPath === section.href);
   const currentIndex = area === "careers" ? careerSectionIndex(pathname) : exactIndex >= 0 ? exactIndex : sections.reduce((found,section,index) => navPath.startsWith(`${section.href}/`) && section.href.length > (sections[found]?.href.length || 0) ? index : found,-1);
   const onCurrentPath = menu.pathname === pathname;
@@ -87,7 +64,7 @@ export default function SiteHeader({ selectionCount }) {
   useLayoutEffect(() => {
     if (desktopOpen && pendingSubmenuFocus.current) {
       pendingSubmenuFocus.current = false;
-      headerRef.current?.querySelector('.site-mega-link')?.focus();
+      headerRef.current?.querySelector('.site-mega-link, [data-site-menu-link]')?.focus();
     }
   }, [desktopOpen, menu]);
 
@@ -135,15 +112,15 @@ export default function SiteHeader({ selectionCount }) {
       <LocaleElement as="a" className="site-skip-link" href="#main-content">Перейти к содержанию</LocaleElement>
       <LocaleElement as="div" className={`site-nav-backdrop${anyOpen ? " is-visible" : ""}`} aria-hidden="true" onClick={() => closeMenus()} />
       <LocaleElement as="header" className="site-header" ref={headerRef} onMouseLeave={() => {if (desktopOpen) closeMenus();}} onBlur={(event) => {if (!event.currentTarget.contains(event.relatedTarget)) closeMenus();}}>
-        <LocaleElement as="div" className="site-header-rail">
+        <LocaleElement as="div" className="site-header-rail" style={configuredSections === corporateSections ? {'--site-tab-width':'108px'} : undefined}>
           <Link href="/" className="site-brand" aria-label="ALAGEUM Electric — главная" onNavigate={() => closeMenus()}>
             <Image src="/brand/logo-lettering-01-red.svg" alt="ALAGEUM Electric" width={148} height={45} priority className="site-brand-image" />
           </Link>
           <LocaleElement as="nav" className="site-desktop-nav" aria-label="Основная навигация">
             <LocaleElement as="div" className="site-nav-rail">
               {sections.map((section, index) =>
-              <Link key={section.href} href={section.href} ref={(element) => {navRefs.current[index] = element;}} className={`site-nav-link${currentIndex === index ? " is-current" : ""}`} aria-current={currentIndex === index ? "page" : undefined} aria-expanded={section.links.length ? desktopOpen && previewIndex === index : undefined} aria-controls={section.links.length ? "site-mega-navigation" : undefined} onMouseEnter={() => {if(section.links.length)previewSection(index);}} onFocus={() => {
-                if (!section.links.length) return;
+              <Link key={section.href} href={section.href} ref={(element) => {navRefs.current[index] = element;}} className={`site-nav-link${currentIndex === index ? " is-current" : ""}`} aria-current={currentIndex === index ? "page" : undefined} aria-expanded={section.links.length ? desktopOpen && previewIndex === index : undefined} aria-controls={section.links.length ? "site-mega-navigation" : undefined} onMouseEnter={() => {if(section.links.length)previewSection(index);else closeMenus();}} onFocus={() => {
+                if (!section.links.length) {closeMenus();return;}
                 if (suppressFocusPreview.current) {suppressFocusPreview.current = false;return;}
                 previewSection(index);
               }} onKeyDown={(event) => {
@@ -161,9 +138,9 @@ export default function SiteHeader({ selectionCount }) {
             </LocaleElement>
             {area !== "careers" && <LocaleElement as="div" id="site-mega-navigation" className={`site-mega-navigation${desktopOpen ? " is-open" : ""}`} inert={!desktopOpen}>
               {activeSection &&
-              <LocaleElement as="div" className="site-mega-inner" key={activeSection.href}>
+              <LocaleElement as="div" className={`site-mega-inner ${menuStyles.panel}`} key={activeSection.href}>
                   <LocaleElement as="div" className="site-mega-intro"><LocaleElement as="span" className="site-eyebrow">{activeSection.label}</LocaleElement><LocaleElement as="strong">{activeSection.title}</LocaleElement><LocaleElement as="p">{activeSection.note}</LocaleElement>{activeSection.resources&&<div className="company-menu-resources">{activeSection.resources.map(([label,href])=><Link key={href} href={href} onNavigate={()=>closeMenus()}>{label} ↗</Link>)}</div>}</LocaleElement>
-                  {activeSection.links.map(([label, href, note]) => <Link key={`${label}:${href}`} href={href} className="site-mega-link" onNavigate={() => closeMenus()}><LocaleElement as="span">{label}</LocaleElement><LocaleElement as="small" className="site-metadata">{note}</LocaleElement></Link>)}
+                  <SiteMenuLinks links={activeSection.links} onNavigate={() => closeMenus()}/>
                 </LocaleElement>
               }
             </LocaleElement>}
@@ -193,7 +170,7 @@ export default function SiteHeader({ selectionCount }) {
                 <Link href={section.href} aria-current={currentIndex === index ? "page" : undefined} onNavigate={() => closeMenus()}>{section.label}</Link>
                 {section.links.length > 0 && <LocaleElement as="button" type="button" aria-label={`${menu.group === index ? "Свернуть" : "Развернуть"} раздел «${section.label}»`} aria-controls={`site-mobile-group-${index}`} aria-expanded={menu.group === index} onClick={() => setMenu((previous) => ({ ...previous, group: previous.group === index ? null : index }))}><Chevron expanded={menu.group === index} /></LocaleElement>}
               </LocaleElement>
-              {(section.links.length > 0 || section.resources?.length > 0) && <LocaleElement as="div" id={`site-mobile-group-${index}`} className="site-mobile-group-links" hidden={menu.group !== index}>{section.links.map(([label, href]) => <Link key={`${label}:${href}`} href={href} onNavigate={() => closeMenus()}>{label}</Link>)}{section.resources&&<div className="company-menu-resources">{section.resources.map(([label,href])=><Link key={href} href={href} onNavigate={()=>closeMenus()}>{label} ↗</Link>)}</div>}</LocaleElement>}
+              {(section.links.length > 0 || section.resources?.length > 0) && <LocaleElement as="div" id={`site-mobile-group-${index}`} className="site-mobile-group-links" hidden={menu.group !== index}><SiteMenuLinks links={section.links} mobile onNavigate={() => closeMenus()}/>{section.resources&&<div className="company-menu-resources">{section.resources.map(([label,href])=><Link key={href} href={href} onNavigate={()=>closeMenus()}>{label} ↗</Link>)}</div>}</LocaleElement>}
             </LocaleElement>
           )}
           <LanguageSwitcher />

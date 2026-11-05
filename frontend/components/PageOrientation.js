@@ -13,7 +13,7 @@ const routeNames = {
   '/news': 'Новости', '/documents': 'Документы', '/materials': 'Архив публикаций', '/data-policy': 'Данные и приватность',
   '/careers': 'Карьера', '/careers/vacancies': 'Вакансии',
   '/careers/internships': 'Стажировки', '/careers/apply': 'Отклик',
-  '/catalog/home': 'Каталог оборудования',
+  '/catalog/home': 'Каталог оборудования', '/catalog/directions': 'Каталог', '/industries': 'Отрасли', '/investors': 'Инвесторам',
 };
 const ui = {
   ru: {sections: 'Разделы', label: 'Разделы этой страницы', top: 'К началу страницы', close: 'Закрыть список разделов'},
@@ -21,7 +21,7 @@ const ui = {
   kk: {sections: 'Бөлімдер', label: 'Осы беттегі бөлімдер', top: 'Беттің басына', close: 'Бөлімдер тізімін жабу'},
 };
 const clean = value => String(value || '').replace(/\s+/g, ' ').trim();
-const allowed = path => Object.hasOwn(routeNames, path) || ['/company/', '/solutions/', '/projects/', '/manufacturers/', '/news/', '/materials/', '/partners/', '/careers/vacancies/'].some(root => path.startsWith(root));
+const allowed = path => Object.hasOwn(routeNames, path) || ['/industries/', '/catalog/directions/', '/company/', '/solutions/', '/projects/', '/manufacturers/', '/news/', '/materials/', '/partners/', '/careers/vacancies/'].some(root => path.startsWith(root));
 
 // This lives inside the existing header. It does not create a second site menu
 // or move the reader between sections without an explicit link click.

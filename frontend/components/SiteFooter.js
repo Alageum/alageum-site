@@ -14,9 +14,9 @@ const companyGroups = [
     ['Руководство', '/company/team'], ['Социальная ответственность', '/company/social'], ['Новости', '/news'], ['Материалы компании', '/materials'],
   ]],
   ['Продукция и проекты', [
-    ['Решения', '/solutions'], ['Каталог продукции', '/catalog/home'], ['Проекты', '/projects'], ['Документы', '/documents'],
+    ['Отрасли', '/industries'], ['Каталог продукции', '/catalog/directions'], ['Проекты', '/projects'], ['Документы', '/documents'],
   ]],
-  ['Связь', [['Контакты', '/contacts'], ['Карьера', '/careers']]],
+  ['Связь', [['Контакты', '/contacts'], ['Карьера', '/careers'], ['Инвесторам', '/investors']]],
 ];
 const catalogGroups = [
   ['Продукция', [

@@ -30,14 +30,7 @@ test('canonical metadata uses only an explicitly validated origin and final loca
  assert.throws(()=>companyPageMetadata({title:'Test'},'/company','ru','https://example.test/path'));
 });
 
-test('retired investors page redirects to localized company results and leaves no menu entry', async()=>{
- const {investorRedirects,companyResources}=await import('../lib/public/company-architecture.js');
- const rules=investorRedirects();assert.equal(rules.length,4);
- for(const locale of ['','ru','en','kk']){
-  const prefix=locale?`/${locale}`:'';
-  const rule=rules.find(r=>r.source===`${prefix}/investors`);
-  assert.equal(rule.destination,`${['en','kk'].includes(locale)?prefix:''}/company#results`);
-  assert.equal(rule.permanent,true);
- }
- assert.ok(companyResources.every(([,href])=>href!=='/investors'));
+test('investors is restored as a standalone destination without a legacy redirect', async()=>{
+ const {investorRedirects}=await import('../lib/public/company-architecture.js');
+ assert.deepEqual(investorRedirects(),[]);
 });

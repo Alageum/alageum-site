@@ -1,0 +1,7 @@
+import E from '@/components/locale/LocaleElement';
+import {Story,Hero,Section,Jump} from '@/components/public/story/Story';
+import {getManufacturerPhoto} from '@/lib/public/photography';
+import {industries} from '@/lib/public/industries';
+import {companyPageMetadata} from '@/lib/public/company-metadata';
+export const metadata=companyPageMetadata({title:'Отрасли',description:'Оборудование и проекты Alageum Electric для энергетики, промышленности, строительства, инфраструктуры и ВИЭ.'},'/industries');
+export default function Industries(){return <Story name="industries"><Hero label="Отрасли" title="Оборудование по отрасли и задаче" lead="Выберите отрасль: здесь собраны подходящие направления оборудования, исходные данные для подбора и проекты группы." photo={getManufacturerPhoto('asia-trafo')} variant="dark"/><Section label="НАПРАВЛЕНИЯ" title="Для какого объекта нужно оборудование?"><div className="story-ledger">{industries.map(item=><article key={item.id}><E as="span" className="story-index">{item.number}</E><div><E as="h3">{item.title}</E></div><div><E as="p">{item.description}</E><Jump href={item.href}>Оборудование и проекты</Jump></div></article>)}</div></Section><Section tone="paper" title="Уже есть спецификация?"><div className="story-columns"><E as="p" className="story-lead">Найдите оборудование по обозначению, мощности или напряжению.</E><div><Jump href="/catalog">Перейти к каталогу</Jump><br/><Jump href="/contacts">Обсудить задачу с отделом продаж</Jump></div></div></Section></Story>;}

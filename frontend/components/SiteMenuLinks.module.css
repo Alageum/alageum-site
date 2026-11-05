@@ -1,0 +1,14 @@
+.panel { max-height: calc(100dvh - 118px); overflow-y: auto; overscroll-behavior: contain; }
+.tree { grid-column: 2 / -1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px 28px; align-items: start; }
+.group { min-width: 0; }
+.link { display: flex; flex-direction: column; gap: 6px; min-height: 48px; padding: 10px 0; border-bottom: 1px solid var(--site-line); color: var(--site-ink); text-decoration: none; }
+.link > span { font-size: 14px; font-weight: 550; line-height: 1.45; }
+.link small { color: var(--site-muted); font-size: 11px; line-height: 1.5; }
+.children { list-style: none; margin: 8px 0 0; padding: 0 0 0 12px; border-left: 2px solid #e3e4e1; }
+.children a { display: block; padding: 8px 0; font-size: 12px; line-height: 1.5; color: var(--site-muted); text-decoration: none; }
+.link:hover, .children a:hover { color: var(--site-red); border-color: var(--site-red); }
+.link:focus-visible, .children a:focus-visible { outline: 2px solid var(--site-red); outline-offset: 3px; }
+.mobile .link { min-height: 44px; padding: 12px 0; }
+.mobile .link small { display: none; }
+.mobile .children a { min-height: 44px; padding: 12px 0; box-sizing: border-box; }
+@media(max-width: 1180px) { .tree { gap: 12px 20px; } }
