@@ -2,7 +2,7 @@ import GroupResults from './company/GroupResults';
 import GroupStructure from './company/GroupStructure';
 import {Story,Hero,Section,Jump,ChapterNav,ReadingLinks} from './story/Story';
 import CompanyHistory from './company/CompanyHistory';
-export const metadata={title:'О компании — структура, история и признание',description:'Предприятия Alageum Electric, финансовые результаты, история группы и награды.'};
+export const metadata={title:'Alageum Electric: предприятия, история и награды',description:'Предприятия Alageum Electric, финансовые результаты, история группы и награды.'};
 const groupPhoto={path:'/company/aemz-engineers.webp',width:951,height:367,alt:'Специалисты Алматинского электромеханического завода у электротехнического оборудования',caption:'АЭМЗ · специалисты у оборудования',objectPosition:'68% 50%'};
 // CMS owns the overview slot when selected; historical chapters remain the
 // existing sourced editorial content. API errors never select static overview.
@@ -13,5 +13,5 @@ export default function CompanyPage({overview}){return <Story name="company comp
  {!overview&&<GroupStructure/>}
  <GroupResults/>
  <CompanyHistory/>
- <Section id="company-guide" label="ДОКУМЕНТЫ И КОНТАКТЫ" title="Документы и контакты"><ReadingLinks items={[["/documents","Документы","Корпоративный каталог, технические материалы и список поставок."],["/contacts#investment","Инвесторам и партнёрам","Контакт для запроса отчётности и обсуждения сотрудничества."],["/careers","Карьера","Вакансии, стажировки и подготовка отклика."],["/contacts#assets","Непрофильные активы","Объявление об объекте и контакт для уточнения условий."]]} /></Section>
+ <Section id="company-guide" label="ДОКУМЕНТЫ И КОНТАКТЫ" title="Документы и контакты"><ReadingLinks items={[["/documents","Документы","Корпоративный каталог, технические материалы и список поставок."],["/contacts#investment","Инвесторам и партнёрам","Контакты для запроса отчётности и обсуждения сотрудничества."],["/careers","Карьера","Вакансии, стажировки и подготовка отклика."],["/contacts#assets","Непрофильные активы","Архивное объявление об объекте и контакты для уточнения условий."]]} /></Section>
  </Story>;}

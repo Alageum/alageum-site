@@ -81,7 +81,7 @@ export default function SiteHeader({ selectionCount }) {
   useEffect(() => {
     if (!anyOpen) return;
     function onKeyDown(event) {
-      if (event.key !== "Escape") return;
+      if (event.key !== "Escape" || headerRef.current?.querySelector('[data-site-menu-dialog][open]')) return;
       event.preventDefault();
       setMenu({ pathname, preview: null, desktop: false, mobile: false, group: null });
       if (lastTrigger.current && document.activeElement !== lastTrigger.current) {
@@ -111,7 +111,13 @@ export default function SiteHeader({ selectionCount }) {
     <>
       <LocaleElement as="a" className="site-skip-link" href="#main-content">Перейти к содержанию</LocaleElement>
       <LocaleElement as="div" className={`site-nav-backdrop${anyOpen ? " is-visible" : ""}`} aria-hidden="true" onClick={() => closeMenus()} />
-      <LocaleElement as="header" className="site-header" ref={headerRef} onMouseLeave={() => {if (desktopOpen) closeMenus();}} onBlur={(event) => {if (!event.currentTarget.contains(event.relatedTarget)) closeMenus();}}>
+      <LocaleElement as="header" className="site-header" ref={headerRef}
+        onMouseLeave={(event) => {
+          if (desktopOpen && !event.currentTarget.querySelector('[data-site-menu-dialog][open]')) closeMenus();
+        }}
+        onBlur={(event) => {
+          if (!event.currentTarget.contains(event.relatedTarget) && !event.currentTarget.querySelector('[data-site-menu-dialog][open]')) closeMenus();
+        }}>
         <LocaleElement as="div" className="site-header-rail" style={configuredSections === corporateSections ? {'--site-tab-width':'108px'} : undefined}>
           <Link href="/" className="site-brand" aria-label="ALAGEUM Electric — главная" onNavigate={() => closeMenus()}>
             <Image src="/brand/logo-lettering-01-red.svg" alt="ALAGEUM Electric" width={148} height={45} priority className="site-brand-image" />
@@ -140,7 +146,7 @@ export default function SiteHeader({ selectionCount }) {
               {activeSection &&
               <LocaleElement as="div" className={`site-mega-inner ${menuStyles.panel}`} key={activeSection.href}>
                   <LocaleElement as="div" className="site-mega-intro"><LocaleElement as="span" className="site-eyebrow">{activeSection.label}</LocaleElement><LocaleElement as="strong">{activeSection.title}</LocaleElement><LocaleElement as="p">{activeSection.note}</LocaleElement>{activeSection.resources&&<div className="company-menu-resources">{activeSection.resources.map(([label,href])=><Link key={href} href={href} onNavigate={()=>closeMenus()}>{label} ↗</Link>)}</div>}</LocaleElement>
-                  <SiteMenuLinks links={activeSection.links} onNavigate={() => closeMenus()}/>
+                  {desktopOpen && <SiteMenuLinks links={activeSection.links} onNavigate={() => closeMenus()}/>}
                 </LocaleElement>
               }
             </LocaleElement>}
@@ -164,17 +170,31 @@ export default function SiteHeader({ selectionCount }) {
         </LocaleElement>
         <PageOrientation menuOpen={anyOpen}/>
         <LocaleElement as="nav" className={`site-mobile-navigation${mobileOpen ? " is-open" : ""}`} id="site-mobile-navigation" aria-label="Мобильная навигация" inert={!mobileOpen}>
-          {sections.map((section, index) =>
-          <LocaleElement as="div" className="site-mobile-group" key={section.href}>
+          {sections.map((section, index) => {
+            const catalogDisclosure = section.href === '/catalog/directions' && section.links.length > 0;
+            const groupOpen = menu.group === index;
+            const groupId = `site-mobile-group-${index}`;
+            const toggleGroup = () => setMenu((previous) => ({ ...previous, group: previous.group === index ? null : index }));
+            return <LocaleElement as="div" className="site-mobile-group" key={section.href}>
               <LocaleElement as="div" className="site-mobile-group-heading">
-                <Link href={section.href} aria-current={currentIndex === index ? "page" : undefined} onNavigate={() => closeMenus()}>{section.label}</Link>
-                {section.links.length > 0 && <LocaleElement as="button" type="button" aria-label={`${menu.group === index ? "Свернуть" : "Развернуть"} раздел «${section.label}»`} aria-controls={`site-mobile-group-${index}`} aria-expanded={menu.group === index} onClick={() => setMenu((previous) => ({ ...previous, group: previous.group === index ? null : index }))}><Chevron expanded={menu.group === index} /></LocaleElement>}
+                {catalogDisclosure ? (
+                  <LocaleElement as="button" type="button" className={menuStyles.mobileSectionTrigger} aria-controls={groupId} aria-expanded={groupOpen} onClick={toggleGroup}>
+                    <LocaleElement as="span">{section.label}</LocaleElement><Chevron expanded={groupOpen} />
+                  </LocaleElement>
+                ) : <>
+                  <Link href={section.href} aria-current={currentIndex === index ? "page" : undefined} onNavigate={() => closeMenus()}>{section.label}</Link>
+                  {section.links.length > 0 && <LocaleElement as="button" type="button" aria-label={`${groupOpen ? "Свернуть" : "Развернуть"} раздел «${section.label}»`} aria-controls={groupId} aria-expanded={groupOpen} onClick={toggleGroup}><Chevron expanded={groupOpen} /></LocaleElement>}
+                </>}
               </LocaleElement>
-              {(section.links.length > 0 || section.resources?.length > 0) && <LocaleElement as="div" id={`site-mobile-group-${index}`} className="site-mobile-group-links" hidden={menu.group !== index}><SiteMenuLinks links={section.links} mobile onNavigate={() => closeMenus()}/>{section.resources&&<div className="company-menu-resources">{section.resources.map(([label,href])=><Link key={href} href={href} onNavigate={()=>closeMenus()}>{label} ↗</Link>)}</div>}</LocaleElement>}
-            </LocaleElement>
-          )}
+              {(section.links.length > 0 || section.resources?.length > 0) && <LocaleElement as="div" id={groupId} className="site-mobile-group-links" hidden={!groupOpen}>
+                {catalogDisclosure && <div className="company-menu-resources"><Link href={section.href} aria-current={pathname === section.href ? "page" : undefined} onNavigate={() => closeMenus()}>Каталог оборудования</Link></div>}
+                {groupOpen && <SiteMenuLinks links={section.links} mobile onNavigate={() => closeMenus()}/>}
+                {section.resources && <div className="company-menu-resources">{section.resources.map(([label,href])=><Link key={href} href={href} onNavigate={()=>closeMenus()}>{label} ↗</Link>)}</div>}
+              </LocaleElement>}
+            </LocaleElement>;
+          })}
           <LanguageSwitcher />
-          <LocaleElement as="p" className="site-metadata site-mobile-note">Тестовая версия сайта · RU</LocaleElement>
+          <LocaleElement as="p" className="site-metadata site-mobile-note">Тестовая версия сайта</LocaleElement>
         </LocaleElement>
       </LocaleElement>
     </>);

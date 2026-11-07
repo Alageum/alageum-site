@@ -1,5 +1,6 @@
 'use client';
 import { sourcePageUrl } from '@/lib/catalog/sources';
+import LocalResourceAnchor from '@/components/locale/LocalResourceAnchor';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
@@ -60,7 +61,12 @@ export function LiveProductDetails({id}) {
  {warnings.length>0&&<details className="catalog-data-warning"><summary>Примечания источника ({warnings.length})</summary><ul>{warnings.map((warning,index)=><li key={index}>{warning.note}{warning.productId!==product.id&&<> <Link href={liveHref(warning.productId)}>Запись: {warning.designation} →</Link></>}</li>)}</ul></details>}
  <CatalogConfigurations product={product}/>
  {product.familyId&&data.items.some(item=>item.id===product.familyId)&&<p><Link href={liveHref(product.familyId)}>Семейство: {displayFamilyName(product)||product.familyId} →</Link></p>}{related.length>0&&<><h3>Опубликованные исполнения серии</h3><div className="variant-grid">{related.map(item=><Link key={item.id} href={liveHref(item.id)}><ProductIcon product={item} size={40}/><span>{catalogMemberLabel(item)}</span></Link>)}</div></>}
- <h3>Источник</h3><p>{product.sourceTitle||'Данные владельца каталога'}</p>{product.sourceUrl&&<a href={product.sourceUrl} target="_blank" rel="noopener noreferrer">Открыть источник ↗</a>}<div className="catalog-source-pages">{product.sourcePages.map(page=><Link key={page} href={sourcePageUrl(product, page)}>Страница {page}</Link>)}</div></section>{!isCatalogFamily(product)&&<CatalogSourceEvidence product={product} records={data.items}/>}</>)}
+ <h3>Источник</h3><p>{product.sourceTitle||'Данные владельца каталога'}</p>
+ {product.sourceUrl && <LocalResourceAnchor href={product.sourceUrl} target="_blank" rel="noopener noreferrer">Открыть источник ↗</LocalResourceAnchor>}
+ <div className="catalog-source-pages">{product.sourcePages.map(page => {
+   const href = sourcePageUrl(product, page);
+   return href ? <Link key={page} href={href}>Страница {page}</Link> : null;
+ })}</div></section>{!isCatalogFamily(product)&&<CatalogSourceEvidence product={product} records={data.items}/>}</>)}
  </div>;
 }
 export function LiveComparison(){

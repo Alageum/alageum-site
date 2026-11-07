@@ -43,7 +43,7 @@ const { default: LocalResourceAnchor } = await compile('../components/locale/Loc
 const { default: CatalogSourceEvidence } = await compile('../components/catalog/CatalogSourceEvidence.js', {
   LocalResourceAnchor, useEffect,
   Link: props => createElement('a', props),
-  getCatalogRelatedReferences, getCatalogSourceComparisons, sourcePageUrl,
+  getCatalogRelatedReferences, getCatalogSourceComparisons, sourcePageUrl, localResourceHref,
   getCatalogFamilySourceReferences, sourcePanelAnchor, getReviewedLegacyCompletion,
   displayExecution, displayProductName, displaySpecLabel,
   CatalogConfigurations: unusedControl, CatalogSourcePreview: unusedControl,
@@ -54,7 +54,7 @@ function render(product, locale) {
     createElement(CatalogSourceEvidence, { product, records: officialProducts })));
 }
 
-test('reviewed SHR11 construction citation preserves its literal source through the real locale wrappers', () => {
+test('reviewed SHR11 construction retains its provenance without linking to the retired site', () => {
   const href = 'https://alageum.com/ru/katalog/shkafy-upravleniya/shr11';
   assert.equal(legacyAssetCompletion.primarySourceUrl, href);
   const product = productById('cat-pr-shr11-v002');
@@ -62,8 +62,7 @@ test('reviewed SHR11 construction citation preserves its literal source through 
   const before = JSON.stringify(officialProducts);
 
   for (const locale of ['ru', 'kk', 'en']) {
-    // An unavailable legacy page has no invented /materials fallback. The
-    // separately reviewed construction citation below must still stay literal.
+    // An unavailable legacy page has no equivalent in the local archive.
     const rewritten = renderToStaticMarkup(createElement(LocaleProvider, { locale },
       createElement(LocalResourceAnchor, { href }, 'source')));
     assert.equal(rewritten, ''); // No invented fallback for an unavailable legacy page.
@@ -71,12 +70,8 @@ test('reviewed SHR11 construction citation preserves its literal source through 
     for (const row of [product, api]) {
       const original = JSON.stringify(row);
       const html = render(row, locale);
-      const anchors = html.match(/<a\b[^>]*>[\s\S]*?<\/a>/g) || [];
-      assert.deepEqual(anchors, [
-        `<a class="site-text-link" href="${href}" target="_blank" rel="noopener noreferrer">Источник сопоставления ШР11 ↗</a>`,
-      ], `${locale}: ${row.source}`);
-      assert.match(html, /Официальный раздел производителя/);
-      assert.doesNotMatch(html, /data-catalog-source-panel=|href="\/(?:kk\/|en\/)?materials/);
+      assert.equal(getReviewedLegacyCompletion(row, 'geometry')?.sourceUrl, href);
+      assert.equal(html, '', `${locale}: ${row.source}`);
       assert.equal(JSON.stringify(row), original);
     }
 

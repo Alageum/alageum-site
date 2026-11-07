@@ -8,7 +8,7 @@ import { deploymentMode } from '../lib/deployment/config.js';
 import { prepareStandalone } from '../scripts/prepare-standalone.mjs';
 import { GET, HEAD, dynamic } from '../app/healthz/route.js';
 
-test('self-hosted builds default to connected standalone Next without active platform wiring', () => {
+test('self-hosted builds default to connected standalone Next', () => {
   assert.equal(deploymentMode({}), 'connected');
   assert.equal(deploymentMode({ ALAGEUM_PUBLIC_ONLY: '0', NEXT_PUBLIC_API_URL: '/api/v1' }), 'connected');
   const nextSource = fs.readFileSync(new URL('../next.config.mjs', import.meta.url), 'utf8');
@@ -17,13 +17,6 @@ test('self-hosted builds default to connected standalone Next without active pla
   assert.equal(pkg.scripts['build:standalone'], 'next build && node scripts/prepare-standalone.mjs');
   assert.equal(pkg.scripts['start:standalone'], 'node .next/standalone/server.js');
   assert.doesNotMatch(JSON.stringify(pkg), /vercel|ALAGEUM_PUBLIC_ONLY=1/i);
-  // The retired-host guard is intentionally retained while the repository is
-  // still linked there. It must never select an application service or runtime.
-  for (const path of ['../../vercel.json', '../vercel.json']) {
-    const guard = JSON.parse(fs.readFileSync(new URL(path, import.meta.url), 'utf8'));
-    assert.equal(guard.framework, null);
-    for (const key of ['services', 'functions', 'builds']) assert.equal(Object.hasOwn(guard, key), false);
-  }
 });
 
 test('standalone packaging adds only public assets and refuses an incompatible build', async () => {
