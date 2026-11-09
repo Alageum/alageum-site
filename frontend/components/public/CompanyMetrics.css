@@ -1,12 +1,12 @@
-.company-metrics{scroll-margin-top:96px;padding:68px 0;background:#f2f3f4;font-family:var(--site-font);color:var(--ink,#1d1d1b)}.company-metrics-heading{max-width:720px;margin-bottom:36px}.company-metrics-heading h2{font-size:clamp(30px,3.4vw,48px);letter-spacing:-.045em;line-height:1.15;font-weight:400;margin:16px 0}.company-metrics-heading>p:last-child{font-size:15px;line-height:1.7;color:#676d73}.company-metrics-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #c6c6c6;border-bottom:1px solid #c6c6c6}.company-metrics-facts article{padding:32px 28px 28px;border-right:1px solid #c6c6c6}.company-metrics-facts article:first-child{padding-left:0}.company-metrics-facts article:last-child{border:0}.company-metrics-facts strong{font-size:clamp(46px,5.4vw,76px);font-weight:400;letter-spacing:-.055em;line-height:1;font-variant-numeric:tabular-nums}.company-metrics-facts h3{font-size:15px;font-weight:500;line-height:1.5;margin:20px 0 9px}.company-metrics-facts p{font-size:11px;color:#8a9096;line-height:1.6;margin:0}.company-metrics-source{font-size:10px;color:#8a9096;line-height:1.8;margin:22px 0 8px}.company-metrics .site-text-link{font-size:11px}@media(max-width:1000px){.company-metrics-facts article{padding-inline:18px}.company-metrics-facts h3{font-size:13px}}@media(max-width:760px){.company-metrics{padding-block:44px}.company-metrics-facts{grid-template-columns:repeat(2,minmax(0,1fr))}.company-metrics-facts article{padding:24px 16px;border-bottom:1px solid #c6c6c6}.company-metrics-facts article:nth-child(2){border-right:0}.company-metrics-facts article:nth-child(3){grid-column:1/-1;padding-left:0;border-bottom:0}.company-metrics-facts article:last-child{border-bottom:0}.company-metrics-heading{margin-bottom:24px}}
-.company-metrics-facts .company-metric-unit{display:block;margin-top:10px;font-size:14px;line-height:1.5;color:#676d73}
-.company-metrics-facts article{min-width:0}
-.company-metrics-facts strong{font-size:clamp(36px,4.6vw,68px);white-space:nowrap}
-@media(min-width:761px) and (max-width:1000px){.company-metrics-facts strong{font-size:clamp(28px,4.2vw,42px)}}
-@media(max-width:480px){.company-metrics-facts strong{font-size:clamp(28px,8.2vw,39px)}}
+.company-metrics {
+  scroll-margin-top: 96px;
+  padding-block: clamp(44px, 6vw, 68px);
+  background: #f2f3f4;
+  font-family: var(--site-font);
+  color: var(--ink, #1d1d1b);
+}
 
 .company-operations {
-  margin-top: clamp(28px, 5vw, 60px);
   border: 1px solid #d6d5d1;
   background: #f9f8f6;
 }
@@ -21,7 +21,7 @@
   min-width: 0;
   padding: clamp(22px, 4vw, 56px);
 }
-.company-operations h3 {
+.company-operations h2 {
   display: flex;
   align-items: center;
   gap: 13px;
@@ -32,7 +32,7 @@
   line-height: 1.15;
   letter-spacing: -.035em;
 }
-.company-operations h3::before {
+.company-operations h2::before {
   content: '';
   flex: 0 0 19px;
   height: 3px;
