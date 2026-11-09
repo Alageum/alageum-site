@@ -39,6 +39,21 @@ test('Vercel serves public pages/assets and replaces private entry points with h
   expect(asset.headers()['content-type']).toContain('image/png');
 });
 
+test('photos decode on public pages through the deployed ingress', async ({ page }) => {
+  for (const [path, alt] of [
+    ['/', 'Силовые трансформаторы в цехе Кентауского трансформаторного завода'],
+    ['/company', 'Специалисты Алматинского электромеханического завода у электротехнического оборудования'],
+    ['/projects', 'Автотрансформатор в производственном цехе Asia Trafo'],
+  ]) {
+    await page.goto(path);
+    const photo = page.getByRole('img', { name: alt, exact: true }).first();
+    await photo.scrollIntoViewIfNeeded();
+    await expect.poll(() => photo.evaluate(image => image.complete && image.naturalWidth > 0), {
+      message: `The photograph must load and decode on ${path}`,
+    }).toBe(true);
+  }
+});
+
 test('public catalogue browsing never makes backend requests or implies submitted data', async ({ page }) => {
   const apiRequests = [];
   page.on('request', request => { if (new URL(request.url()).pathname.startsWith('/api/')) apiRequests.push(request.url()); });

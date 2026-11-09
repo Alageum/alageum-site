@@ -19,7 +19,13 @@ const nextConfig = {
 export default async function config(phase) {
   if (phase === PHASE_PRODUCTION_BUILD || phase === PHASE_DEVELOPMENT_SERVER) await verifySourceContextBuild();
   const mode = deploymentMode();
-  return { ...nextConfig, env: { NEXT_PUBLIC_SITE_MODE: mode } }; 
+  return {
+    ...nextConfig,
+    // The public Vercel ingress serves bundled images directly because its
+    // /_next/image route returns 404.
+    images: { unoptimized: mode === 'public-only' },
+    env: { NEXT_PUBLIC_SITE_MODE: mode },
+  };
 }
 import { PHASE_DEVELOPMENT_SERVER, PHASE_PRODUCTION_BUILD } from 'next/constants.js';
 import { verifySourceContextBuild } from './scripts/verify-source-context-build.mjs';
