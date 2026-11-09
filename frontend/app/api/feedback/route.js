@@ -22,13 +22,16 @@ export async function POST(request) {
   const requestError = publicFormRequestError(request);
   if (requestError) return failure(requestError);
 
-  const feedback = await readPublicFormJson(request, 2048);
+  const feedback = await readPublicFormJson(request, 8 * 1024);
   if (!feedback || feedback.website !== '') return failure(400);
   const name = typeof feedback.name === 'string' ? feedback.name.trim() : '';
   const rawPhone = typeof feedback.phone === 'string' ? feedback.phone.trim() : '';
   const phone = rawPhone.replace(/[\s().-]/g, '');
+  const comment = feedback.comment ?? '';
   if (!name || name.length > 120 || /[\x00-\x1f\x7f]/.test(name) ||
-      rawPhone.length > 40 || !/^\+?\d{7,15}$/.test(phone)) return failure(400);
+      rawPhone.length > 40 || !/^\+?\d{7,15}$/.test(phone) ||
+      typeof comment !== 'string' || comment.length > 1000 || comment.includes('\0')) return failure(400);
+  const comments = comment.trim();
 
   const endpoint = getLeadEndpoint();
   if (!endpoint) return failure(503);
@@ -42,6 +45,7 @@ export async function POST(request) {
         fields: {
           title: 'Обратная связь с сайта Alageum Electric',
           name,
+          ...(comments && { comments }),
           sourceDescription: 'Кнопка «Обратная связь»',
           fm: [{ typeId: 'PHONE', valueType: 'WORK', value: phone }],
         },

@@ -76,6 +76,10 @@ export default function QuickFeedback({ onOpen }) {
             <LocaleElement as="label" htmlFor="quick-feedback-phone">Телефон</LocaleElement>
             <input id="quick-feedback-phone" name="phone" type="tel" autoComplete="tel" maxLength={40} placeholder="+7 (___) ___-__-__" required />
           </div>
+          <div className={styles.field}>
+            <LocaleElement as="label" htmlFor="quick-feedback-comment">Комментарий (необязательно)</LocaleElement>
+            <textarea id="quick-feedback-comment" name="comment" rows={3} maxLength={1000} />
+          </div>
           <input name="website" defaultValue="" autoComplete="off" hidden />
           <LocaleElement as="button" type="submit" className={`site-button site-button-primary ${styles.submit}`}>{pending ? 'Отправляем…' : 'Отправить заявку'}</LocaleElement>
         </fieldset>
@@ -84,7 +88,7 @@ export default function QuickFeedback({ onOpen }) {
         {status === 'sent' && <LocaleElement as="p" className={styles.success}>Заявка отправлена. Мы свяжемся с вами по указанному номеру.</LocaleElement>}
       </div>
       <div role="alert">
-        {status === 'invalid' && <LocaleElement as="p" className={styles.error}>Проверьте имя и номер телефона.</LocaleElement>}
+        {status === 'invalid' && <LocaleElement as="p" className={styles.error}>Проверьте имя, номер телефона и комментарий.</LocaleElement>}
         {status === 'error' && <p className={styles.error}><LocaleElement>Не удалось отправить заявку. Попробуйте ещё раз или позвоните нам.</LocaleElement> <a href="tel:+77710052222">+7 771 005 22 22</a></p>}
       </div>
     </dialog>

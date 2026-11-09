@@ -69,7 +69,7 @@
 .field { display: grid; gap: 6px; min-width: 0; }
 .field label { font-size: 14px; font-weight: 600; }
 
-.field input {
+.field :is(input, textarea) {
   box-sizing: border-box;
   width: 100%;
   min-width: 0;
@@ -82,7 +82,9 @@
   font: inherit;
 }
 
-.field input:focus {
+.field textarea { resize: vertical; }
+
+.field :is(input, textarea):focus {
   border-color: var(--site-red);
   outline: 1px solid var(--site-red);
   outline-offset: 0;

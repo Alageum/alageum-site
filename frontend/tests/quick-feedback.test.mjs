@@ -28,6 +28,7 @@ test('feedback sends a CRM lead and confirms only a successful creation', async 
   for (const data of [
     { ...valid, name: ' ' }, { ...valid, phone: 'no phone' },
     { ...valid, website: 'autofilled' }, { ...valid, name: 'а'.repeat(2048) },
+    { ...valid, comment: 123 }, { ...valid, comment: 'ә'.repeat(1001) },
   ]) assert.equal((await submit(data)).status, 400);
   assert.equal((await submit(valid, 'https://elsewhere.example.test')).status, 403);
   assert.equal(fetchMock.mock.callCount(), 0);
@@ -42,6 +43,12 @@ test('feedback sends a CRM lead and confirms only a successful creation', async 
   assert.equal(entityTypeId, 1);
   assert.equal(fields.name, 'Алия');
   assert.deepEqual(fields.fm, [{ typeId: 'PHONE', valueType: 'WORK', value: '+77000000000' }]);
+  assert.equal(fields.comments, undefined);
+
+  const comment = 'Нужна консультация.\nУдобно после 15:00.';
+  assert.equal((await submit({ ...valid, comment: ` ${comment} ` })).status, 200);
+  assert.equal(JSON.parse(fetchMock.mock.calls[1].arguments[1].body).fields.comments, comment);
+  assert.equal((await submit({ ...valid, comment: 'ә'.repeat(1000) })).status, 200);
 
   providerResponse = { error: 'ACCESS_DENIED' };
   const rejected = await submit();
