@@ -10,7 +10,7 @@ const catalogRows = (page) => page.getByRole("region", { name: "Таблица �
 const foundCount = (page) => page.getByRole("status").filter({ hasText: "Найдено:" });
 
 async function openFilters(page) {
-  const toggle = page.getByRole("button", { name: /Параметры и категории/ });
+  const toggle = page.getByRole("button", { name: /^Фильтры(?: \(\d+\))?$/ });
   if (await toggle.isVisible() && await toggle.getAttribute("aria-expanded") === "false") await toggle.click();
   return page.getByRole("complementary", { name: "Фильтры каталога" });
 }
@@ -130,6 +130,7 @@ test("category and parameter filters survive reload and back-forward navigation"
   await expect(foundCount(page)).toHaveText("Найдено: 1");
   await page.reload();
   await expect(foundCount(page)).toHaveText("Найдено: 1");
+  await openFilters(page);
   await expect(catalogFacetOption(await openCatalogFacet(page, "Мощность, кВА"), "1600")).toBeChecked();
   await page.keyboard.press("Escape");
   await expect(catalogFacet(page, "Мощность, кВА")).not.toHaveAttribute("open");
