@@ -27,8 +27,10 @@ export default function CompanyMetrics({ operationsPhoto }) {
       <div className="company-operations">
         <div className="company-operations-feature">
           <div className="company-operations-lead">
-            <E as="h2" id="company-operations-title">Предприятия и команда</E>
+            <E as="p" className="company-operations-note">Предприятия и команда</E>
+            <E as="h2" id="company-operations-title">Компания в цифрах</E>
             <OperationsFigures items={operations.slice(0, 2)} className="company-operations-primary" />
+            <E as="p" className="company-operations-founded">Группа основана в 1997 году.</E>
           </div>
           <CorporatePhoto photo={operationsPhoto} className="company-operations-photo" sizes="(max-width: 640px) 100vw, 45vw" />
         </div>

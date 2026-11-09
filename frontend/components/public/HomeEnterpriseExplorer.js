@@ -44,6 +44,16 @@ export default function HomeEnterpriseExplorer({ cities, regions, overviewPhoto 
         <E as="span" className="site-eyebrow">КАЗАХСТАН</E>
         <E as="button" type="button" onClick={reset} disabled={!ready} aria-disabled={!selected} className="home-map-reset">Вся карта</E>
       </div>
+      <div className="home-map-city-picker">
+        <E as="p" id="home-map-city-picker">Выберите город</E>
+        <ul aria-labelledby="home-map-city-picker">
+          {cities.map(city => <li key={city.id}>
+            <button className="home-map-city" {...cityControls(city)}>
+              <span aria-hidden="true">{city.number}</span><E>{city.title}</E>
+            </button>
+          </li>)}
+        </ul>
+      </div>
       <div className="home-map-plot">
         <svg viewBox="0 0 820 460" aria-hidden="true" className="home-map-artwork">
           {regions.map(region => <path key={region.id} data-home-map-region={region.id} d={region.path} vectorEffect="non-scaling-stroke"
@@ -60,16 +70,6 @@ export default function HomeEnterpriseExplorer({ cities, regions, overviewPhoto 
           <span className="home-map-pin-dot" aria-hidden="true">{city.number}</span>
           <E as="span" className="home-map-pin-name">{city.title}</E>
         </button>)}
-      </div>
-      <div className="home-map-city-picker">
-        <E as="p" id="home-map-city-picker">Выберите город</E>
-        <ul aria-labelledby="home-map-city-picker">
-          {cities.map(city => <li key={city.id}>
-            <button className="home-map-city" {...cityControls(city)}>
-              <span aria-hidden="true">{city.number}</span><E>{city.title}</E>
-            </button>
-          </li>)}
-        </ul>
       </div>
       <p className="home-map-credit">
         <E>Границы областей:</E>{' '}<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap</a>

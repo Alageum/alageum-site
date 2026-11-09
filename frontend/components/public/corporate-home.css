@@ -26,18 +26,6 @@
 .brand-experience .corp-home .corp-hero-copy .site-actions { gap: 12px; }
 .brand-experience .corp-home .corp-hero-copy .site-actions > a { flex: none; }
 
-.brand-experience .corp-home .corp-facts-band {
-  background: #f4f3f0;
-  border-bottom: 1px solid #d8d8d3;
-}
-
-.brand-experience .corp-home .corp-fact-strip > div:first-child strong {
-  color: var(--site-red);
-  font-variant-numeric: tabular-nums;
-  letter-spacing: -.06em;
-}
-
-.brand-experience .corp-home .corp-fact-strip > a svg { color: var(--site-red); }
 .brand-experience .corp-home #equipment { background: #f4f3f0; }
 
 .brand-experience .corp-home .corp-equipment-card {

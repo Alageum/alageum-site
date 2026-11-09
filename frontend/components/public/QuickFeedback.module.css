@@ -1,0 +1,74 @@
+.dialog {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  width: min(440px, calc(100% - 32px));
+  max-height: calc(100% - 32px);
+  max-height: calc(100dvh - 32px);
+  overflow: auto;
+  padding: clamp(20px, 5vw, 36px);
+  border: 1px solid #dedbd7;
+  background: #fff;
+  color: #20201e;
+  box-shadow: 0 24px 80px rgb(20 17 15 / 22%);
+}
+
+.dialog::backdrop { background: rgb(20 17 15 / 60%); }
+
+.dialog h2 {
+  margin: 0 42px 10px 0;
+  font-size: clamp(23px, 5vw, 30px);
+  line-height: 1.12;
+}
+
+.intro { margin: 0 0 24px; color: #5b5752; }
+
+.close {
+  position: absolute;
+  inset: 12px 12px auto auto;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.close:hover { border-color: #dedbd7; }
+
+.dialog fieldset {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.dialog label { font-size: 14px; font-weight: 600; }
+
+.dialog input:not([hidden]) {
+  width: 100%;
+  min-height: 48px;
+  margin-bottom: 8px;
+  padding: 10px 12px;
+  border: 1px solid #a9a5a0;
+  background: #fff;
+  color: inherit;
+  font: inherit;
+  font-size: 16px;
+}
+
+.dialog :focus-visible {
+  outline: 2px solid var(--site-red, #ce1727);
+  outline-offset: 2px;
+}
+
+.dialog button[type="submit"] { margin-top: 4px; }
+.dialog button:disabled { opacity: .7; cursor: wait; }
+.success, .error { margin: 16px 0 0; padding: 12px 14px; font-size: 14px; }
+.success { background: #eaf4ec; color: #244d31; }
+.error { background: #f9edec; color: #91222c; }
+.error a { font-weight: 600; white-space: nowrap; }

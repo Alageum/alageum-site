@@ -55,7 +55,7 @@
   }
 }
 
-.site-header .site-feedback-link{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:0 16px;background:var(--site-red,#ce1727);color:#fff;font-size:12px;font-weight:600;white-space:nowrap;flex-shrink:0;transition:background-color 180ms ease}
+.site-header .site-feedback-link{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:0 16px;border:0;background:var(--site-red,#ce1727);color:#fff;font:inherit;font-size:12px;cursor:pointer;font-weight:600;white-space:nowrap;flex-shrink:0;transition:background-color 180ms ease}
 .site-header .site-feedback-link:hover{background:var(--site-red-hover,#ac1120)}
 .site-header .site-feedback-link svg{flex-shrink:0}
 .site-header .site-header-rail-corporate{--site-tab-width:108px}

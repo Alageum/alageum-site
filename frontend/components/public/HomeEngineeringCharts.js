@@ -29,7 +29,7 @@ export function DeliveryPowerChart() {
   return <E as="section" className="home-power-section" id="delivery-power">
     <div className="site-container home-chart-layout">
       <div className="home-chart-intro">
-        <p className="site-eyebrow">02 / <E>ОПЫТ ПОСТАВОК</E></p>
+        <p className="site-eyebrow"><E>ОПЫТ ПОСТАВОК</E></p>
         <E as="h2">Поставки Asia Trafo<br />для подстанций</E>
         <E as="p">Трансформаторы для подстанций «Нур-Есил», «Яссы» и «Нура» из референс-листа Asia Trafo за 2019–2023 годы.</E>
         <Link href="/documents/asia-trafo-references-2019-2023.pdf" className="site-text-link">Референс-лист 2019–2023 →</Link>

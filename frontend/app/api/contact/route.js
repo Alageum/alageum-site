@@ -1,3 +1,5 @@
+import { publicFormRequestError, readPublicFormJson } from '../../../lib/public-form-request.js';
+
 const salesEmail = 'sales@alageum.com';
 const emailPattern = /^[^\s@<>,;:"()[\]\\]+@[^\s@<>,;:"()[\]\\]+\.[^\s@<>,;:"()[\]\\]+$/;
 const maxBodyBytes = 12 * 1024;
@@ -7,39 +9,11 @@ function failure(status) {
   return Response.json({ sent: false }, { status });
 }
 
-async function readContact(request) {
-  if (!request.body || Number(request.headers.get('content-length')) > maxBodyBytes) return null;
-  const reader = request.body.getReader();
-  const decoder = new TextDecoder('utf-8', { fatal: true });
-  let size = 0;
-  let raw = '';
-  try {
-    for (;;) {
-      const { value, done } = await reader.read();
-      if (done) break;
-      size += value.byteLength;
-      if (size > maxBodyBytes) {
-        await reader.cancel();
-        return null;
-      }
-      raw += decoder.decode(value, { stream: true });
-    }
-    return JSON.parse(raw + decoder.decode());
-  } catch {
-    return null;
-  } finally {
-    reader.releaseLock();
-  }
-}
-
 export async function POST(request) {
-  const origin = request.headers.get('origin');
-  const host = request.headers.get('host');
-  const url = new URL(request.url);
-  if (!origin || (origin !== url.origin && origin !== `${url.protocol}//${host}`)) return failure(403);
-  if (request.headers.get('content-type')?.split(';')[0].trim() !== 'application/json') return failure(415);
+  const requestError = publicFormRequestError(request);
+  if (requestError) return failure(requestError);
 
-  const contact = await readContact(request);
+  const contact = await readPublicFormJson(request, maxBodyBytes);
   if (!contact || contact.website !== '' || typeof contact.id !== 'string' || !submissionIdPattern.test(contact.id)) return failure(400);
   const name = typeof contact.name === 'string' ? contact.name.trim() : '';
   const email = typeof contact.email === 'string' ? contact.email.trim() : '';
