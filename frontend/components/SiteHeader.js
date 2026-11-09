@@ -40,7 +40,11 @@ export default function SiteHeader({ selectionCount }) {
     ...(section.href === '/account' ? { href: '/service-unavailable', label: 'Кабинет недоступен', title: 'Личный кабинет временно недоступен', note: 'Публичный каталог и локальные черновики работают без входа.' } : {}),
     links: section.links.map(([label, href, note, children]) => ['/account', '/b2b'].includes(href) ? [label, '/service-unavailable', 'Временно недоступно. Данные не отправляются.'] : [label, href, note, children]),
   })) : configuredSections;
-  const { hasPermission } = useAuth();
+  const { hasPermission, profile } = useAuth();
+  const publicOnly = isPublicOnly();
+  const canManageCatalog = !publicOnly && hasPermission('catalog.manage');
+  const accountHref = publicOnly ? '/service-unavailable' : profile ? '/account' : '/login?next=%2Faccount';
+  const accountLabel = publicOnly ? 'Кабинет недоступен' : profile ? 'Личный кабинет' : 'Войти';
   const headerRef = useRef(null);
   const toggleRef = useRef(null);
   const navRefs = useRef([]);
@@ -118,14 +122,14 @@ export default function SiteHeader({ selectionCount }) {
         onBlur={(event) => {
           if (!event.currentTarget.contains(event.relatedTarget) && !event.currentTarget.querySelector('[data-site-menu-dialog][open]')) closeMenus();
         }}>
-        <LocaleElement as="div" className="site-header-rail" style={configuredSections === corporateSections ? {'--site-tab-width':'108px'} : undefined}>
+        <LocaleElement as="div" className={`site-header-rail${configuredSections === corporateSections ? " site-header-rail-corporate" : ""}`}>
           <Link href="/" className="site-brand" aria-label="ALAGEUM Electric — главная" onNavigate={() => closeMenus()}>
             <Image src="/brand/logo-lettering-01-red.svg" alt="ALAGEUM Electric" width={148} height={45} priority className="site-brand-image" />
           </Link>
           <LocaleElement as="nav" className="site-desktop-nav" aria-label="Основная навигация">
             <LocaleElement as="div" className="site-nav-rail">
               {sections.map((section, index) =>
-              <Link key={section.href} href={section.href} ref={(element) => {navRefs.current[index] = element;}} className={`site-nav-link${currentIndex === index ? " is-current" : ""}`} aria-current={currentIndex === index ? "page" : undefined} aria-expanded={section.links.length ? desktopOpen && previewIndex === index : undefined} aria-controls={section.links.length ? "site-mega-navigation" : undefined} onMouseEnter={() => {if(section.links.length)previewSection(index);else closeMenus();}} onFocus={() => {
+              <Link key={section.href} href={section.href === '/catalog/directions' ? '/catalog' : section.href} ref={(element) => {navRefs.current[index] = element;}} className={`site-nav-link${currentIndex === index ? " is-current" : ""}`} aria-current={currentIndex === index ? "page" : undefined} aria-expanded={section.links.length ? desktopOpen && previewIndex === index : undefined} aria-controls={section.links.length ? "site-mega-navigation" : undefined} onMouseEnter={() => {if(section.links.length)previewSection(index);else closeMenus();}} onFocus={() => {
                 if (!section.links.length) {closeMenus();return;}
                 if (suppressFocusPreview.current) {suppressFocusPreview.current = false;return;}
                 previewSection(index);
@@ -159,8 +163,11 @@ export default function SiteHeader({ selectionCount }) {
               <LocaleElement as="span">Обратная связь</LocaleElement>
             </Link>}
             {area !== 'company' && <Link href={area === 'careers' ? '/careers/apply' : '/client/projects'} className={`brand-header-contact${area === 'careers' ? ' career-resume-link' : ''}`} onNavigate={() => closeMenus()}>{area === 'careers' ? 'Оставить резюме' : 'Создать проект'} <LocaleElement as="span" aria-hidden="true">↗</LocaleElement></Link>}
-            <Link href={isPublicOnly() ? "/service-unavailable" : "/account"} className="site-language site-metadata" onNavigate={() => closeMenus()}>{isPublicOnly() ? "Кабинет недоступен" : "Личный кабинет"}</Link>
-            {!isPublicOnly() && hasPermission('catalog.manage') && <Link href="/admin/catalog" className="site-selection-link">Управление каталогом</Link>}
+            <Link href={accountHref} className="site-account-link" aria-label={accountLabel} title={accountLabel} onNavigate={() => closeMenus()}>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" aria-hidden="true"><circle cx="12" cy="8" r="3.5" /><path d="M5 20v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2" /></svg>
+              <LocaleElement as="span">{accountLabel}</LocaleElement>
+            </Link>
+            {canManageCatalog && <Link href="/admin/catalog" className="site-selection-link site-admin-link" onNavigate={() => closeMenus()}>Управление каталогом</Link>}
             {area === 'catalog' && <Suspense fallback={<Link href="/selection" className="site-selection-link">Подборка</Link>}><SelectionNavigation selectionCount={selectionCount} onNavigate={() => closeMenus()} /></Suspense>}
             <LocaleElement as="button" ref={toggleRef} type="button" className="site-menu-toggle" aria-label={mobileOpen ? "Закрыть навигацию" : "Открыть навигацию"} aria-expanded={mobileOpen} aria-controls="site-mobile-navigation" onClick={() => {
               lastTrigger.current = toggleRef.current;
@@ -187,12 +194,14 @@ export default function SiteHeader({ selectionCount }) {
                 </>}
               </LocaleElement>
               {(section.links.length > 0 || section.resources?.length > 0) && <LocaleElement as="div" id={groupId} className="site-mobile-group-links" hidden={!groupOpen}>
-                {catalogDisclosure && <div className="company-menu-resources"><Link href={section.href} aria-current={pathname === section.href ? "page" : undefined} onNavigate={() => closeMenus()}>Каталог оборудования</Link></div>}
+                {section.resources && <div className="company-menu-resources">{section.resources.map(([label,href]) => <Link key={href} href={href} aria-current={pathname === href ? "page" : undefined} onNavigate={() => closeMenus()}>{label}</Link>)}</div>}
                 {groupOpen && <SiteMenuLinks links={section.links} mobile onNavigate={() => closeMenus()}/>}
-                {section.resources && <div className="company-menu-resources">{section.resources.map(([label,href])=><Link key={href} href={href} onNavigate={()=>closeMenus()}>{label} ↗</Link>)}</div>}
               </LocaleElement>}
             </LocaleElement>;
           })}
+          {canManageCatalog && <div className="site-mobile-group"><div className="site-mobile-group-heading">
+            <Link href="/admin/catalog" onNavigate={() => closeMenus()}>Управление каталогом</Link>
+          </div></div>}
           <LanguageSwitcher />
           <LocaleElement as="p" className="site-metadata site-mobile-note">Тестовая версия сайта</LocaleElement>
         </LocaleElement>

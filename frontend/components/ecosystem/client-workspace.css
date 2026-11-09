@@ -1,0 +1,156 @@
+@media screen {
+  .client-shell.client-workspace {
+    grid-template-columns: minmax(190px, 232px) minmax(0, 1fr);
+    gap: clamp(24px, 4vw, 56px);
+    align-items: start;
+  }
+
+  .client-workspace .client-sidebar {
+    padding: 20px 16px;
+    background: #222528;
+    color: #fff;
+    border-top: 3px solid var(--site-red);
+  }
+
+  .client-workspace .client-sidebar .site-eyebrow {
+    margin: 0 0 12px;
+    padding-inline: 10px;
+    color: #ffaab4;
+  }
+
+  .client-workspace .client-sidebar nav { display: grid; gap: 4px; }
+
+  .client-workspace .client-sidebar :is(nav a, .client-server-link) {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 8px 10px;
+    border-inline-start: 2px solid transparent;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .client-workspace .client-sidebar :is(nav a:hover, a[aria-current="page"], .client-server-link:hover) {
+    background: #ffffff12;
+    border-inline-start-color: #ffaab4;
+    color: #fff;
+  }
+
+  .client-workspace .client-sidebar a:focus-visible { outline-color: #ffaab4; }
+
+  .client-workspace .client-sidebar .client-server-link { margin-top: 8px; color: #ffbcc4; }
+  .client-workspace .client-sidebar > p:last-child {
+    margin: 12px 10px 0;
+    padding-top: 12px;
+    border-top: 1px solid #ffffff30;
+    color: #d7d8d9;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .client-workspace .client-content h1 {
+    margin: 24px 0 20px;
+    font-weight: 650;
+    overflow-wrap: anywhere;
+  }
+
+  .client-workspace .client-content > .eco-notice {
+    padding: 14px 18px;
+    border: 0;
+    border-inline-start: 3px solid var(--site-red);
+    background: #f2f2f1;
+    color: var(--site-muted);
+  }
+
+  .client-workspace .client-content .eco-facts {
+    gap: 0;
+    margin-block: 12px 20px;
+    border: 1px solid var(--site-line);
+  }
+
+  .client-workspace .client-content .eco-facts > div {
+    border-top: 0;
+    padding: clamp(14px, 3vw, 28px);
+  }
+
+  .client-workspace .client-content .eco-facts > div + div { border-inline-start: 1px solid var(--site-line); }
+  .client-workspace .client-content .eco-facts dd { color: var(--site-red-hover); font-size: clamp(28px, 4vw, 52px); line-height: 1; }
+  .client-workspace .client-content .eco-facts dt { font-size: 13px; }
+  .client-workspace .client-content .eco-facts dt a { text-decoration: underline; text-underline-offset: 4px; }
+
+  .client-workspace .client-overview-heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px 28px;
+    margin-block: 24px 20px;
+  }
+  .client-workspace .client-content .client-overview-heading h1 { margin: 0; }
+  .client-workspace .client-resume {
+    padding: clamp(18px, 4vw, 36px);
+    margin-bottom: 18px;
+    border-top: 3px solid var(--site-red);
+    background: #fff;
+  }
+  .client-workspace .client-resume h2 { margin: 0 0 12px; overflow-wrap: anywhere; }
+  .client-workspace .client-resume .site-eyebrow { margin: 0 0 12px; }
+  .client-workspace .client-resume .site-text-link { text-decoration: underline; text-underline-offset: 4px; }
+
+  .client-workspace .client-content :is(form.eco-form, .eco-empty, .client-document-row) {
+    padding: clamp(16px, 3vw, 32px);
+    border: 1px solid var(--site-line);
+    background: #fff;
+  }
+
+  .client-workspace .client-content .eco-empty { text-align: start; margin: 20px 0 0; }
+  .client-workspace .client-content .eco-empty > :first-child { margin-top: 0; }
+  .client-workspace .client-content .eco-empty > a { text-decoration: underline; text-underline-offset: 4px; }
+  .client-workspace .client-content .eco-grid > .eco-card { padding: clamp(16px, 2vw, 24px); }
+  .client-workspace .client-content .client-document-row h2 { margin-top: 0; }
+  .client-workspace .client-project-list > .eco-card:hover { border-color: var(--site-red); }
+  .client-workspace .client-project-list .eco-card h2 { overflow-wrap: anywhere; }
+  .client-workspace .client-content :is(.eco-card, .client-document-row, .client-file) { overflow-wrap: anywhere; }
+  .client-workspace .client-content :is(form, .client-items) :is(input, select, textarea) { font-size: 16px; min-width: 0; }
+  .client-workspace .client-content :is(.eco-result, .error) { padding: 12px 16px; border-inline-start: 3px solid currentColor; }
+
+  .client-document-page .document-controls:first-child {
+    justify-content: flex-end;
+    margin-bottom: 18px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--site-line);
+  }
+
+  .client-document-page .document-controls:first-child > a {
+    display: inline-flex;
+    align-items: center;
+    margin-inline-end: auto;
+    min-height: 44px;
+    font-size: 14px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+
+  .client-document-page .document-controls:first-child button { border-color: var(--site-line); }
+  .client-document-page .document-controls:first-child button:disabled { opacity: .6; }
+  .client-document-page .client-print-document { border-top: 3px solid var(--site-red); padding: clamp(18px, 4vw, 44px); overflow-wrap: anywhere; }
+  .client-document-page .client-print-document h1 { font-size: clamp(27px, 4vw, 42px); }
+  .client-document-page .document-controls.eco-section { padding: clamp(18px, 3vw, 32px); border: 1px solid var(--site-line); }
+  .client-document-page .document-price input { font-size: 16px; }
+  .client-document-empty { padding: clamp(24px, 5vw, 54px); margin-block: 42px 64px; border: 1px solid var(--site-line); border-top: 3px solid var(--site-red); }
+
+  @media (max-width: 850px) {
+    .client-shell.client-workspace { grid-template-columns: minmax(0, 1fr); padding-block: 24px 48px; }
+    .client-workspace .client-sidebar { position: static; }
+    .client-workspace .client-sidebar nav { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .client-workspace .client-content .eco-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+
+  @media (max-width: 550px) {
+    .client-workspace .client-sidebar nav { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .client-workspace .client-content .eco-facts { grid-template-columns: minmax(0, 1fr); }
+    .client-workspace .client-content .eco-facts > div + div { border-inline-start: 0; border-top: 1px solid var(--site-line); }
+    .client-workspace .client-content :is(.eco-grid, .client-project-list),
+    .client-document-page .client-invoice-fields { grid-template-columns: minmax(0, 1fr); }
+  }
+}

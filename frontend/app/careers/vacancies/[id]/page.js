@@ -13,14 +13,14 @@ export default async function Vacancy({ params }) {
   if (!job) notFound();
   return (
     <>
-      <div className="site-container career-back">
-        <L as="a" className="site-text-link" href="/careers/vacancies">
-          <CorporateArrow direction="right" />
-          Все вакансии
+      <Intro label={job.field} title={job.title} back={
+        <L as="a" className="site-text-link career-back-link" href="/careers/vacancies">
+          <CorporateArrow direction="right" /> Все вакансии
         </L>
-      </div>
-      <Intro label={job.field} title={job.title} />
-      <section className="career-section">
+      }>
+        {job.text}
+      </Intro>
+      <section className="career-section career-vacancy-detail">
         <L as="p" className="eco-notice">
           {job.status === "closed"
             ? "Вакансия закрыта. Можно подготовить инициативный отклик."
@@ -29,7 +29,6 @@ export default async function Vacancy({ params }) {
         <div className="career-facts">
           <div>
             <L as="h2">Задачи и требования</L>
-            <L as="p">{job.text}</L>
             <ul>
               {job.requirements.map((r) => (
                 <L as="li" key={r}>
@@ -40,9 +39,12 @@ export default async function Vacancy({ params }) {
             <Source href={job.source}>Публикация о вакансиях</Source>
           </div>
           <aside>
-            <L as="h3">Город, график и зарплата</L>
+            <dl className="career-vacancy-location">
+              <L as="dt">Город</L>
+              <L as="dd">{job.city}</L>
+            </dl>
             <L as="p">
-              В архивной публикации указан город Алматы. Перед отправкой резюме уточните в отделе кадров предприятие, график и размер зарплаты.
+              Перед отправкой резюме уточните в отделе кадров предприятие, график и размер зарплаты.
             </L>
             <Action
               href={

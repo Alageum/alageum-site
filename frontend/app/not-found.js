@@ -1,2 +1,9 @@
-import LocaleElement from "@/components/locale/LocaleElement";import Link from "@/components/locale/LocaleLink";
-export default function NotFound() {return <LocaleElement as="div" className="site-container site-info-page"><LocaleElement as="div" className="public-error"><LocaleElement as="p" className="site-eyebrow">404 / СТРАНИЦА НЕ НАЙДЕНА</LocaleElement><LocaleElement as="h1">Этот маршрут<br />не ведёт к странице.</LocaleElement><LocaleElement as="p">Возможно, адрес изменился. Продолжите с каталога или главной страницы.</LocaleElement><LocaleElement as="div" className="site-actions"><Link href="/catalog" className="site-button site-button-primary">Перейти в каталог ↗</Link><Link href="/" className="site-text-link">На главную →</Link></LocaleElement></LocaleElement></LocaleElement>;}
+import Link from '@/components/locale/LocaleLink';
+import SiteStatus from '@/components/public/SiteStatus';
+
+export default function NotFound() {
+  return <SiteStatus code="404" title="Страница не найдена" description="Проверьте адрес или вернитесь на главную.">
+    <Link href="/" className="site-button site-button-primary">На главную</Link>
+    <Link href="/catalog" className="site-text-link">Перейти в каталог</Link>
+  </SiteStatus>;
+}

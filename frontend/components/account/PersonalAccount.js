@@ -61,7 +61,7 @@ function PersonalAccountScope({ generation, signOut, signingOut, logoutError }) 
     <LocaleElement as="header" className={styles.heading}><LocaleElement as="div">
       <LocaleElement as="p" className="site-eyebrow">ЛИЧНЫЙ КАБИНЕТ</LocaleElement><LocaleElement as="h1">{account.user.display_name || 'Мой аккаунт'}</LocaleElement>
       <LocaleElement as="p" className={styles.longText} data-no-translate>{account.user.email}</LocaleElement>
-      <LocaleElement as="p" className="muted">{account.email_verified ? 'Email подтверждён' : 'Email ещё не подтверждён'}</LocaleElement>
+      <LocaleElement as="p" className={styles.status} data-verified={account.email_verified}>{account.email_verified ? 'Email подтверждён' : 'Email ещё не подтверждён'}</LocaleElement>
     </LocaleElement><LocaleElement as="button" type="button" className="buttonSecondary" onClick={signOut} disabled={signingOut}>{signingOut ? 'Выход…' : 'Выйти'}</LocaleElement></LocaleElement>
     {logoutError && <LocaleElement as="p" className="error" role="alert">{logoutError}</LocaleElement>}
     {saved && <LocaleElement as="p" className={styles.notice} role="status">Заявка отправлена на сервер. Доступ откроется только после одобрения администратором.</LocaleElement>}
@@ -81,12 +81,12 @@ function PersonalAccountScope({ generation, signOut, signingOut, logoutError }) 
           {request.status === 'rejected' && <LocaleElement as="p">Уточните реквизиты и связь с компанией перед новой заявкой.</LocaleElement>}
         </LocaleElement>)}</LocaleElement>}
       </LocaleElement>
-      <LocaleElement as="section" className={styles.section}><LocaleElement as="h2">Локальные черновики</LocaleElement>
-        <LocaleElement as="p">Подборки, проекты и черновики документов сохраняются в этом браузере. Регистрация не отправляет их на сервер и не переносит между устройствами.</LocaleElement>
-        <LocaleElement as="div" className={styles.actions}><Link href="/client" className="buttonSecondary">Открыть черновики</Link><Link href="/catalog/home">Перейти в каталог</Link></LocaleElement>
-      </LocaleElement>
       <LocaleElement as="section" className={styles.section}><LocaleElement as="h2">Запросить доступ к компании</LocaleElement>
         {account.email_verified ? <CompanyRequestForm onSaved={() => { setSaved(true); refresh(); }} /> : <Link href="/verify-email" className="button">Подтвердить email</Link>}
+      </LocaleElement>
+      <LocaleElement as="section" className={`${styles.section} ${styles.draftsStrip}`}><LocaleElement as="h2">Локальные черновики</LocaleElement>
+        <LocaleElement as="p">Подборки, проекты и черновики документов сохраняются в этом браузере. Регистрация не отправляет их на сервер и не переносит между устройствами.</LocaleElement>
+        <LocaleElement as="div" className={styles.actions}><Link href="/client" className="buttonSecondary">Открыть черновики</Link><Link href="/catalog" className="site-text-link">Перейти в каталог</Link></LocaleElement>
       </LocaleElement>
     </LocaleElement>
     {choice && <OrganizationChooser modal expectedGeneration={generation} currentOrganizationId={profile?.organization?.id} onCancel={closeChoice} onSelected={selected} />}
@@ -124,8 +124,13 @@ export default function PersonalAccount() {
   }, [generation, router, setProfile, runLogout, signingOut]);
   if (!ready) return <LocaleElement as="section" className={styles.page}><LocaleElement as="p" role="status">Проверка сессии…</LocaleElement></LocaleElement>;
   if (!getSession().access_token) return <LocaleElement as="section" className={styles.page}>
-    <LocaleElement as="h1">Личный кабинет</LocaleElement><LocaleElement as="p">Войдите или создайте аккаунт, чтобы запросить доступ к компании.</LocaleElement>
-    <LocaleElement as="div" className={styles.actions}><Link href="/login?next=%2Faccount" className="button">Войти</Link><Link href="/register" className="buttonSecondary">Создать аккаунт</Link><Link href="/client">Локальные черновики</Link></LocaleElement>
+    <div className={styles.guest}>
+      <LocaleElement as="p" className="site-eyebrow">ALAGEUM ELECTRIC</LocaleElement>
+      <LocaleElement as="h1">Личный кабинет</LocaleElement>
+      <LocaleElement as="p">Войдите или создайте аккаунт, чтобы запросить доступ к компании.</LocaleElement>
+      <div className={styles.actions}><Link href="/login?next=%2Faccount" className="site-button site-button-primary">Войти</Link><Link href="/register" className="buttonSecondary">Создать аккаунт</Link></div>
+      <Link href="/client" className="site-text-link">Локальные черновики</Link>
+    </div>
   </LocaleElement>;
   // A new login/organization gets a fresh component: private data from the
   // previous scope is never visible while its replacement is loading.

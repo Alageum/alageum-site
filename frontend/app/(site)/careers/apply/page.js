@@ -7,23 +7,23 @@ export const metadata = { title: "Отклик и резюме" };
 export default async function Apply({ searchParams }) {
   const internship = (await searchParams)?.type === "internship";
   return (
-    <LocaleElement as="div" className="eco-page">
-      {internship && (
-        <div className="site-container career-back">
+    <LocaleElement as="div" className="eco-page career-apply-page">
+      <Intro
+        label={internship ? "СТУДЕНТАМ И ВЫПУСКНИКАМ" : "ОТКЛИК"}
+        title={internship ? "Отклик на стажировку" : "Подготовить отклик"}
+        back={internship && (
           <LocaleElement
             as="a"
-            className="site-text-link"
+            className="site-text-link career-back-link"
             href="/careers/internships"
           >
             О программе стажировки
           </LocaleElement>
-        </div>
-      )}
-      <Intro
-        label={internship ? "СТУДЕНТАМ И ВЫПУСКНИКАМ" : "ОТКЛИК"}
-        title={internship ? "Отклик на стажировку" : "Подготовить отклик"}
+        )}
       >
-        Расскажите о себе и добавьте резюме. Можно сохранить черновик или открыть письмо для HR. Письмо и резюме вы отправляете через свою почту.
+        {internship
+          ? "Укажите специальность, курс и период, когда сможете пройти практику."
+          : "Укажите контакты, интересующую вакансию и подходящий опыт."}
       </Intro>
       <EcoSection>
         <Suspense

@@ -9,4 +9,8 @@
 .actions button{max-width:100%;white-space:normal}
 .list>button{margin-top:16px;max-width:100%;white-space:normal}
 .list article{min-width:0;overflow-wrap:anywhere}
+@media screen and (min-width:1180px){
+  .workspace:has(.create):has(.list){grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);align-items:start}
+  .list :global(.grid){grid-template-columns:minmax(0,1fr)}
+}
 @media(max-width:720px){.create{padding:16px}.actions button{flex:1 1 160px}}

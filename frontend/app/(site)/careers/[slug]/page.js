@@ -17,16 +17,24 @@ export default async function CareerPage({ params }) {
   if (slug !== "internships") notFound();
   return (
     <>
-      <Intro label="СТУДЕНТАМ И ВЫПУСКНИКАМ" title="Стажировки для студентов">
-        Летняя практика на заводах и в офисах группы для студентов и выпускников технических вузов.
-      </Intro>
-      <div className="site-container site-actions career-program-actions">
-        <Action href="/careers/apply?type=internship">Заполнить отклик</Action>
-        <L as="a" className="site-text-link" href="#directions">
-          Выбрать направление
-        </L>
+      <div className="career-program-overview career-program-hero">
+        <Intro
+          label="СТУДЕНТАМ И ВЫПУСКНИКАМ"
+          title="Стажировки для студентов"
+          actions={
+            <>
+              <Action href="/careers/apply?type=internship">Заполнить отклик</Action>
+              <L as="a" className="site-text-link" href="#directions">
+                Выбрать направление
+              </L>
+            </>
+          }
+        >
+          Летняя практика на заводах и в офисах группы для студентов и выпускников технических вузов.
+        </Intro>
+        <Photo photo={storyPhotos.asiaEngineering} priority />
       </div>
-      <section className="career-section career-program-overview">
+      <section className="career-section career-program-summary">
         <div>
           <L as="p" className="site-eyebrow">
             О ПРОГРАММЕ
@@ -36,20 +44,22 @@ export default async function CareerPage({ params }) {
             <br />на предприятии
           </L>
           <L as="p">
-            По архивному описанию стажировка занимала от 6 до 10 недель с полным рабочим днём. Студенты работали над текущими задачами и проектами в отделе или производственном цехе.
+            По архивному описанию студенты работали полный день над текущими задачами отдела или производственного цеха.
           </L>
           <L as="p">
             В архивном описании перечислены продажи, закупки, производство, учёт и аудит, проектные работы и подготовка конструкторской документации.
           </L>
-          <L as="p" className="eco-notice">
-            Даты набора не опубликованы. Уточните у HR, когда можно подать заявку и есть ли свободные места.
-          </L>
           <Source href={internshipSource}>Описание программы</Source>
         </div>
-        <Photo
-          photo={storyPhotos.asiaEngineering}
-          priority
-        />
+        <dl className="career-program-duration">
+          <div>
+            <L as="dt">Продолжительность по архивному описанию</L>
+            <L as="dd">6–10 недель</L>
+            <L as="dd" className="career-program-availability">
+              Даты набора не опубликованы. Уточните у HR, когда можно подать заявку и есть ли свободные места.
+            </L>
+          </div>
+        </dl>
       </section>
       <section className="career-section" id="directions">
         <L as="p" className="site-eyebrow">

@@ -1,8 +1,8 @@
 /* Local specificity keeps the shared corporate styles from overriding these refinements. */
 .page.page:global(.corp-investor) :global(.site-page-heading) {
-  padding: 24px 0;
-  margin-bottom: 24px;
-  border-bottom: 0;
+  padding: 26px 0 30px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid #dedfdd;
 }
 .page.page:global(.corp-investor) :global(.site-page-heading h1) {
   font-size: clamp(38px, 4.6vw, 62px);
@@ -24,7 +24,7 @@
 }
 .page.page:global(.corp-investor) :global(.corp-contact-hero) { grid-template-columns: 1.12fr 1fr; margin-top: 0; }
 .page.page:global(.corp-investor) :global(.corp-contact-main), .page.page:global(.corp-investor) :global(.corp-contact-prepare) { padding: 36px 40px; }
-.page.page:global(.corp-investor) :global(.corp-contact-main) { background: #222528; color: #fff; }
+.page.page:global(.corp-investor) :global(.corp-contact-main) { background: #232527; color: #fff; border-top: 3px solid var(--site-red); }
 .page.page:global(.corp-investor) :global(.corp-contact-main .site-eyebrow) { color: #f18e9b; }
 .page.page:global(.corp-investor) :global(.corp-contact-main h2) {
   font-size: clamp(29px, 3vw, 42px);
@@ -33,12 +33,13 @@
   color: #fff;
 }
 .page.page:global(.corp-investor) :global(.corp-contact-main > p:last-child) { color: #bfc4c4; margin: 20px 0 0; line-height: 1.7; }
-.page.page:global(.corp-investor) :global(.corp-contact-prepare) { background: #eeefed; border: 1px solid #dedfdd; }
+.page.page:global(.corp-investor) :global(.corp-contact-prepare) { background: #f5f4f1; border: 1px solid #dedfdd; border-top: 3px solid #232527; }
 .page.page:global(.corp-investor) :global(.corp-contact-prepare h3) { font-size: clamp(27px, 2.8vw, 37px); line-height: 1.12; margin: 24px 0; }
 .page.page:global(.corp-investor) :global(.corp-contact-prepare ol) { margin-bottom: 0; }
 .page.page:global(.corp-investor) :global(.corp-contact-prepare li) { padding-block: 15px; line-height: 1.5; }
-.page.page:global(.corp-investor) :global(.corp-contact-shortcuts) { margin-block: 20px 0; }
+.page.page:global(.corp-investor) :global(.corp-contact-shortcuts) { margin-block: 20px 0; padding-inline: clamp(12px, 2vw, 24px); background: #f5f4f1; }
 .page.page:global(.corp-investor) :global(.corp-contact-shortcuts a) { min-height: 76px; font-size: 12px; }
+.page.page:global(.corp-investor) :global(.corp-contact-shortcuts a:is(:hover, :focus-visible)) { color: var(--site-red); }
 .page.page:global(.corp-investor) :global(.corp-office-grid) { gap: 16px; }
 .page.page:global(.corp-investor) :global(.corp-office) {
   background: #fff;

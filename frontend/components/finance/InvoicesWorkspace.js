@@ -24,8 +24,8 @@ function InvoiceList({ scope }) {
       <LocaleElement as="p" className="error" role="alert">{invoiceReadError(state.error)}</LocaleElement>
       <LocaleElement as="button" className="buttonSecondary" type="button" onClick={() => reader.current?.reload()}>Повторить</LocaleElement>
     </LocaleElement>}
-    {state.status === 'ready' && (state.value.length ? <LocaleElement as="div" className="grid">
-      {state.value.map((item) => <LocaleElement as="div" className="card" key={item.id} data-testid="invoice-summary">
+    {state.status === 'ready' && (state.value.length ? <LocaleElement as="div" className="grid b2b-record-list">
+      {state.value.map((item) => <LocaleElement as="div" className="card b2b-record" key={item.id} data-testid="invoice-summary">
         <LocaleElement as="h3">{item.number}</LocaleElement><LocaleElement as="p">{item.amount} {item.currency}</LocaleElement><LocaleElement as="span" className="muted">{item.status}</LocaleElement>
       </LocaleElement>)}
     </LocaleElement> : <LocaleElement as="p" className="card muted" role="status">Данных пока нет</LocaleElement>)}

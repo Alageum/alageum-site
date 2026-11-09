@@ -1,4 +1,5 @@
 import { facetValues } from './grouping.js';
+export { normalizeSelection } from './selection.js';
 
 export const PAGE_SIZE = 6;
 export const filterKeys = ['category', 'equipmentType', 'recordKind', 'power', 'voltage', 'cooling', 'installation', 'current', 'subtype', 'function'];
@@ -122,12 +123,6 @@ export function reconcileComparisonDraft(value, previous) {
 export function parseComparison(value, products, max = 4) {
   const allowed = new Set(products.map((product) => product.id));
   return [...new Set(String(value || '').split(','))].filter((id) => allowed.has(id)).slice(0, max);
-}
-export function normalizeSelection(value, products) {
-  if (!Array.isArray(value)) return [];
-  const allowed = new Set(products.map((product) => product.id));
-  const seen = new Set();
-  return value.filter((item) => item && allowed.has(item.id) && !seen.has(item.id) && seen.add(item.id)).map((item) => ({ id: item.id, quantity: Math.min(999, Math.max(1, Math.floor(Number(item.quantity)) || 1)) }));
 }
 export function selectionCsv(items, products) {
   const cell = (value) => {

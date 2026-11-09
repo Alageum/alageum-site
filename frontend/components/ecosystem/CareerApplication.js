@@ -180,6 +180,7 @@ export default function CareerApplication() {
         onSubmit={save}
         aria-busy={!ready}
       >
+        <LocaleElement as="h2" className="career-form-title">Данные кандидата</LocaleElement>
         <LocaleElement as="label">
           Имя и фамилия *
           <LocaleElement
@@ -357,7 +358,7 @@ export default function CareerApplication() {
           <LocaleElement
             as="button"
             disabled={!ready}
-            className="site-button site-button-primary"
+            className="site-button career-draft-button"
             type="submit"
           >
             Сохранить черновик
@@ -366,7 +367,7 @@ export default function CareerApplication() {
             as="button"
             disabled={!ready}
             type="button"
-            className="site-button"
+            className="site-button site-button-primary"
             onClick={openMail}
           >
             Подготовить письмо HR ↗
@@ -392,7 +393,7 @@ export default function CareerApplication() {
           </LocaleElement>
         )}
       </LocaleElement>
-      <LocaleElement as="aside">
+      <LocaleElement as="aside" className="career-application-guide">
         <LocaleElement as="p" className="site-eyebrow">
           ОТПРАВКА РЕЗЮМЕ
         </LocaleElement>

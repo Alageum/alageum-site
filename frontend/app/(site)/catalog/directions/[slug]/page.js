@@ -8,6 +8,7 @@ import {displayProductName} from '@/lib/catalog/presentation';
 import {projectById} from '@/lib/public/content';
 import {getManufacturerPhoto} from '@/lib/public/photography';
 import {companyPageMetadata} from '@/lib/public/company-metadata';
+import '../catalog-directions.css';
 
 export async function generateMetadata({params}) {
   const {slug,locale = 'ru'} = await params;
@@ -23,17 +24,22 @@ export default async function CatalogDirection({params}) {
   const parent = item.parentId ? catalogDirectionById(item.parentId) : null;
   const requestHref = `/inquiry?intent=selection&solution=${encodeURIComponent(item.title)}`;
   return <Story name={`catalog-direction-${slug}`}>
-    <Hero label={item.title} title={item.title} lead={item.description} variant={item.photoKey ? 'split' : 'wide'} photo={item.photoKey ? getManufacturerPhoto(item.photoKey) : null} ancestors={parent ? [{label:'Каталог',href:'/catalog/directions'}] : []} parent={parent ? {label:parent.title,href:catalogDirectionHref(parent.id)} : {label:'Каталог',href:'/catalog/directions'}} />
+    <Hero label={item.title} title={item.title} lead={item.description} variant={item.photoKey ? 'split' : 'wide'} photo={item.photoKey ? getManufacturerPhoto(item.photoKey) : null} ancestors={parent ? [{label:'Каталог',href:'/catalog/directions'}] : []} parent={parent ? {label:parent.title,href:catalogDirectionHref(parent.id)} : {label:'Каталог',href:'/catalog/directions'}}>
+      <div className="catalog-direction-actions">
+        {records.length > 0 && <Jump href="#published-series">Серии в каталоге</Jump>}
+        <Jump href={requestHref}>Запросить подбор</Jump>
+      </div>
+    </Hero>
     <ChapterNav items={[["#equipment-types","Виды оборудования"],["#published-series","Серии в каталоге"],["#direction-projects","Проекты"],["#selection-data","Данные для подбора"]]} />
     <Section id="equipment-types" title="Виды оборудования">
       {item.children.length > 0 && <ReadingLinks items={item.children.map(id=>{const child = catalogDirectionById(id);return [catalogDirectionHref(id),child.title,child.description];})} />}
-      {item.subtypes.length > 0 && <><E as="p" className="story-note">Перечень помогает составить запрос. Опубликованные технические серии приведены отдельно ниже; комплектация и возможность поставки согласуются по заданию.</E><ul className="story-checklist">{item.subtypes.map(type=><E as="li" key={type}>{type}</E>)}</ul></>}
+      {item.subtypes.length > 0 && <ul className="catalog-type-list">{item.subtypes.map(type=><E as="li" key={type}>{type}</E>)}</ul>}
     </Section>
     <Section id="published-series" tone="paper" title="Опубликованные серии">
-      {records.length ? <><E as="p">Откройте серию, чтобы проверить исполнения, характеристики и исходный документ.</E><ul className="story-checklist">{records.map(product=><li key={product.id}><Link href={`/catalog/${encodeURIComponent(product.id)}`}>{displayProductName(product)}</Link></li>)}</ul></> : <><E as="p">Технические карточки по этому направлению пока не опубликованы. Передайте параметры задачи в отдел продаж, чтобы уточнить исполнение и возможность поставки.</E><Jump href={requestHref}>Запросить подбор</Jump></>}
+      {records.length ? <ul className="catalog-series-list">{records.map(product=><li key={product.id}><Link href={`/catalog/${encodeURIComponent(product.id)}`}><span>{displayProductName(product)}</span><span aria-hidden="true">↗</span></Link></li>)}</ul> : <E as="p">Технические карточки пока не опубликованы. Исполнение и возможность поставки уточнит отдел продаж по вашему техническому заданию.</E>}
     </Section>
     <Section id="direction-projects" title="Проекты по направлению">
-      {projects.length ? <ReadingLinks items={projects.map(project=>[`/projects/${project.id}`,project.title,`${project.description} ${project.note || ''}`])}/> : <><E as="p">В опубликованном портфеле пока нет проекта с указанным составом поставки по этому направлению.</E><Jump href={requestHref}>Обсудить ваш объект</Jump></>}
+      {projects.length ? <ReadingLinks items={projects.map(project=>[`/projects/${project.id}`,project.title,`${project.description} ${project.note || ''}`])}/> : <E as="p">Проекты с опубликованным составом поставки пока отсутствуют.</E>}
     </Section>
     <Section id="selection-data" tone="paper" title="Что нужно для подбора"><div className="story-columns"><ul className="story-checklist">{item.inputs.map(input=><E as="li" key={input}>{input}</E>)}</ul><div><E as="p">Приложите техническое задание и укажите объект, количество оборудования и желаемый срок поставки.</E><Jump href={requestHref}>Подготовить запрос</Jump><br/><Jump href="/contacts">Контакты отдела продаж</Jump></div></div></Section>
   </Story>;

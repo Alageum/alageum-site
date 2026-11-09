@@ -6,6 +6,7 @@ const privateRoots = ['api', 'admin', 'cms', 'b2b', 'account', 'login', 'registe
 export function publicRoutePolicy(pathname, search = '') {
   let path;
   try { path = decodeURIComponent(pathname); } catch { return 'api'; }
+  if (path === '/api/contact') return 'public';
   path = path.replace(/^\/(?:ru|kk|en)(?=\/|$)/, '');
   const root = path.split('/')[1];
   if (['catalog', 'selection', 'inquiry'].includes(root) && new URLSearchParams(search).get('source') === 'api') return 'unavailable';

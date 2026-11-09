@@ -8,13 +8,16 @@ import Image from '@/components/locale/LocaleImage';
 import Link from '@/components/locale/LocaleLink';
 import styles from './SiteFooter.module.css';
 
+const homeLinks = [
+  ['Компания', '/company'], ['Предприятия', '/manufacturers'], ['Каталог', '/catalog'], ['Контакты', '/contacts'],
+];
 const companyGroups = [
   ['Компания', [
     ['О компании', '/company'], ['Предприятия и производство', '/manufacturers'],
     ['Руководство', '/company/team'], ['Социальная ответственность', '/company/social'], ['Новости', '/news'], ['Материалы компании', '/materials'],
   ]],
   ['Продукция и проекты', [
-    ['Отрасли', '/industries'], ['Каталог продукции', '/catalog/directions'], ['Проекты', '/projects'], ['Документы', '/documents'],
+    ['Отрасли', '/industries'], ['Каталог продукции', '/catalog'], ['Проекты', '/projects'], ['Документы', '/documents'],
   ]],
   ['Связь', [['Контакты', '/contacts'], ['Карьера', '/careers'], ['Инвесторам', '/investors']]],
 ];
@@ -63,12 +66,14 @@ export default function SiteFooter() {
           </div>
         </div>
       </div>
-      <div className={styles.navigation}>
+      {pathname === '/' ? <nav className={`${styles.group} ${styles.homeNavigation}`} aria-label={text.navigation}>
+        <ul>{homeLinks.map(([label, href]) => <li key={href}><Link href={href}>{label}</Link></li>)}</ul>
+      </nav> : <div className={styles.navigation}>
         {groups.map(([title, links]) => <nav className={styles.group} key={title} aria-label={`${groupTitle(title)} — ${text.navigation}`}>
           <h2>{groupTitle(title)}</h2>
           <ul>{links.map(([label, href]) => <li key={href}><Link href={href} aria-current={pathname === href ? 'page' : undefined}>{label}</Link></li>)}</ul>
         </nav>)}
-      </div>
+      </div>}
       <div className={styles.bottom}>
         <span className={styles.copyright}>© 2005–2026 Alageum Electric</span>
         <Link href="/data-policy" className={styles.policy} data-no-translate>{text.policy}</Link>

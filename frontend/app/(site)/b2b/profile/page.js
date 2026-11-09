@@ -1,5 +1,6 @@
-import LocaleElement from "@/components/locale/LocaleElement";import CompanyProfileEditor from '@/components/CompanyProfileEditor';
+import WorkspaceHeading from "@/components/b2b/WorkspaceHeading";
+import CompanyProfileEditor from '@/components/CompanyProfileEditor';
 
 export default function ProfilePage() {
-  return <><LocaleElement as="h1">Профиль</LocaleElement><CompanyProfileEditor /></>;
+  return <><WorkspaceHeading title="Профиль" /><CompanyProfileEditor /></>;
 }

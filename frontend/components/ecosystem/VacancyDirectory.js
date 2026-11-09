@@ -1,5 +1,5 @@
 "use client";
-import L, {useCareerTranslate} from "@/components/careers/Text";
+import L, { useCareerTranslate } from "@/components/careers/Text";
 import CorporateArrow from "@/components/public/CorporateArrow";
 import { useState, useSyncExternalStore } from "react";
 import { jobs } from "@/lib/ecosystem/careers";
@@ -22,52 +22,54 @@ export default function VacancyDirectory() {
   );
   return (
     <>
-      <L as="label" className="career-search">
-        Поиск вакансий
-        <L
-          as="input"
-          type="search"
-          disabled={!ready}
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder={tx("Профессия или направление")}
-        />
-      </L>
-      <div className="career-filter">
-        {[
-          ["open", "Открытые вакансии"],
-          ["all", "Включая архив"],
-        ].map(([v, t]) => (
+      <div className="career-directory-controls">
+        <L as="label" className="career-search">
+          Поиск вакансий
           <L
-            as="button"
+            as="input"
+            type="search"
             disabled={!ready}
-            key={v}
-            onClick={() => setStatus(v)}
-            aria-pressed={status === v}
-          >
-            {t}
-          </L>
-        ))}
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder={tx("Профессия или направление")}
+          />
+        </L>
+        <div className="career-filter career-filter-status" role="group" aria-label={tx("Статус вакансии")}>
+          {[
+            ["open", "Открытые вакансии"],
+            ["all", "Включая архив"],
+          ].map(([v, t]) => (
+            <L
+              as="button"
+              disabled={!ready}
+              key={v}
+              onClick={() => setStatus(v)}
+              aria-pressed={status === v}
+            >
+              {t}
+            </L>
+          ))}
+        </div>
+        <div className="career-filter career-filter-fields" role="group" aria-label={tx("Направления работы")}>
+          {["all", ...new Set(jobs.map((j) => j.field))].map((v) => (
+            <L
+              as="button"
+              disabled={!ready}
+              key={v}
+              onClick={() => setField(v)}
+              aria-pressed={field === v}
+            >
+              {v === "all" ? "Все направления" : v}
+            </L>
+          ))}
+        </div>
       </div>
-      <div className="career-filter">
-        {["all", ...new Set(jobs.map((j) => j.field))].map((v) => (
-          <L
-            as="button"
-            disabled={!ready}
-            key={v}
-            onClick={() => setField(v)}
-            aria-pressed={field === v}
-          >
-            {v === "all" ? "Все направления" : v}
-          </L>
-        ))}
-      </div>
-      <L as="p" role="status">
+      <L as="p" className="career-result-count" role="status">
         Найдено вакансий: {visible.length}
       </L>
       {visible.map((j) => (
         <article className="career-job" key={j.id}>
-          <div>
+          <div className="career-job-summary">
             <L className="career-status">
               {j.status === "closed"
                 ? "Вакансия закрыта"
@@ -80,9 +82,11 @@ export default function VacancyDirectory() {
             </L>
             <L as="p">{j.text}</L>
           </div>
-          <div>
-            <L as="p">{j.field}</L>
-            <L as="p">{j.city}</L>
+          <div className="career-job-meta">
+            <div className="career-job-tags">
+              <L>{j.field}</L>
+              <L>{j.city}</L>
+            </div>
             <L as="a" href={`/careers/vacancies/${j.id}`}>
               Задачи и требования <CorporateArrow />
             </L>
@@ -90,15 +94,17 @@ export default function VacancyDirectory() {
         </article>
       ))}
       {!visible.length && (
-        <div className="eco-empty">
-          <L as="h2">
-            {status === "open"
-              ? "Вакансии уточняйте у HR"
-              : "По вашему запросу вакансий нет"}
-          </L>
-          <L as="p">
-            Можно посмотреть архив вакансий или отправить резюме на cv@alageum.com.
-          </L>
+        <div className="eco-empty career-directory-empty">
+          <div>
+            <L as="h2">
+              {status === "open"
+                ? "Вакансии уточняйте у HR"
+                : "По вашему запросу вакансий нет"}
+            </L>
+            <L as="p">
+              Можно посмотреть архив вакансий или отправить резюме на cv@alageum.com.
+            </L>
+          </div>
           <div className="site-actions">
             <L
               as="button"
@@ -109,7 +115,7 @@ export default function VacancyDirectory() {
                 setStatus("all");
               }}
             >
-              Посмотреть архив вакансий
+              {status === "open" ? "Посмотреть архив вакансий" : "Сбросить фильтры"}
             </L>
             <L
               as="a"

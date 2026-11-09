@@ -1,8 +1,40 @@
 import {notFound} from 'next/navigation';
 import E from '@/components/locale/LocaleElement';
 import Image from '@/components/locale/LocaleImage';
-import {Story,Hero,Section,Source,Jump} from '@/components/public/story/Story';
-import {partners,partnerProfiles} from '@/lib/public/partners';
-export function generateStaticParams(){return partners.map(item=>({slug:item.id}));}
-export async function generateMetadata({params}){const {slug}=await params;return {title:partners.find(item=>item.id===slug)?.name||'Партнёры'};}
-export default async function Partner({params}){const {slug}=await params;const item=partners.find(item=>item.id===slug),profile=partnerProfiles[slug];if(!item||!profile)notFound();return <Story name={`partner partner-${slug}`}><Hero label={item.name} parent={{href:'/#partner-heading',label:'Партнёры'}} variant="wide" title={item.name} lead={item.text}><E as="p" className="story-kicker">Партнёр Alageum Electric</E><Image className="story-partner-logo" src={`/partners/${slug}.png`} alt={item.name} width={180} height={90} unoptimized/></Hero><Section label={item.sector}><div className="story-columns"><div><E as="h2">{profile.focus}</E><E as="p" className="story-lead">{profile.geography}</E></div><div className="story-copy">{profile.paragraphs.map(text=><E as="p" key={text}>{text}</E>)}</div></div><Source href={profile.source} period="Сведения об организации; поставки группы здесь не перечислены."/></Section><Section tone="paper" label="ФОТОГРАФИИ ИЗ МАТЕРИАЛОВ ПАРТНЁРА"><div className="story-partner-gallery">{profile.gallery.map(photo=><E as="figure" key={photo.src}><Image src={photo.src} alt={photo.caption} width={900} height={600} unoptimized/><E as="figcaption">{photo.caption}</E></E>)}</div><E as="p" className="story-source">Название, логотип и фотографии принадлежат соответствующим правообладателям.</E><Jump href="/#partner-heading">К партнёрам компании</Jump></Section></Story>;}
+import {Story, Hero, Section, Source, Jump} from '@/components/public/story/Story';
+import {partners, partnerProfiles} from '@/lib/public/partners';
+
+export function generateStaticParams() { return partners.map(item => ({slug: item.id})); }
+
+export async function generateMetadata({params}) {
+  const {slug} = await params;
+  return {title: partners.find(item => item.id === slug)?.name || 'Партнёры'};
+}
+
+export default async function Partner({params}) {
+  const {slug} = await params;
+  const item = partners.find(item => item.id === slug);
+  const profile = partnerProfiles[slug];
+  if (!item || !profile) notFound();
+  return <Story name={`partner partner-${slug}`}>
+    <Hero label={item.name} kicker={null} parent={{href:'/#partner-heading',label:'Партнёры'}} variant="split" title={item.name} lead={item.text}
+      visual={<div className="story-partner-identity"><Image className="story-partner-logo" src={`/partners/${slug}.png`} alt={item.name} width={180} height={90} unoptimized /></div>}>
+      <E as="p" className="story-partner-role">Партнёр Alageum Electric</E>
+    </Hero>
+    <Section id="partner-profile" label={item.sector}>
+      <div className="story-columns">
+        <div><E as="h2">{profile.focus}</E><E as="p" className="story-lead">{profile.geography}</E></div>
+        <div className="story-copy">{profile.paragraphs.map(text => <E as="p" key={text}>{text}</E>)}</div>
+      </div>
+      <Source href={profile.source} period="Сведения об организации; поставки группы здесь не перечислены." />
+    </Section>
+    <Section id="partner-gallery" tone="paper" label="ФОТОГРАФИИ ИЗ МАТЕРИАЛОВ ПАРТНЁРА">
+      <div className="story-partner-gallery">{profile.gallery.map(photo => <E as="figure" key={photo.src}>
+        <Image src={photo.src} alt={photo.caption} width={900} height={600} unoptimized />
+        <E as="figcaption">{photo.caption}</E>
+      </E>)}</div>
+      <E as="p" className="story-source">Название, логотип и фотографии принадлежат соответствующим правообладателям.</E>
+      <Jump href="/#partner-heading">К партнёрам компании</Jump>
+    </Section>
+  </Story>;
+}

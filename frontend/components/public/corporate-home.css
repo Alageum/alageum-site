@@ -1,0 +1,122 @@
+.brand-experience .corp-home .corp-hero-copy > .site-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-experience .corp-home .corp-hero-copy > .site-eyebrow::before {
+  content: '';
+  width: 22px;
+  height: 2px;
+  background: #ff6977;
+}
+
+.brand-experience .corp-home .corp-home-company-link {
+  color: #fff;
+  border-color: #ffffffbd;
+  background: #17191aa6;
+}
+
+.brand-experience .corp-home .corp-home-company-link:hover {
+  color: var(--site-ink);
+  background: #fff;
+  border-color: #fff;
+}
+
+.brand-experience .corp-home .corp-hero-copy .site-actions { gap: 12px; }
+.brand-experience .corp-home .corp-hero-copy .site-actions > a { flex: none; }
+
+.brand-experience .corp-home .corp-facts-band {
+  background: #f4f3f0;
+  border-bottom: 1px solid #d8d8d3;
+}
+
+.brand-experience .corp-home .corp-fact-strip > div:first-child strong {
+  color: var(--site-red);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -.06em;
+}
+
+.brand-experience .corp-home .corp-fact-strip > a svg { color: var(--site-red); }
+.brand-experience .corp-home #equipment { background: #f4f3f0; }
+
+.brand-experience .corp-home .corp-equipment-card {
+  background: #fff;
+  border: 1px solid #deded9;
+  border-top: 2px solid #282a2c;
+}
+
+.brand-experience .corp-home .corp-equipment-card:hover {
+  background: #fff;
+  border-top-color: var(--site-red);
+}
+
+.brand-experience .corp-home .corp-equipment-card .corp-card-index { color: #595d60; }
+
+@media (max-width: 760px) {
+  .brand-experience .corp-home .corp-hero-copy .site-actions {
+    align-items: center;
+    flex-direction: row;
+    gap: 8px;
+  }
+  .brand-experience .corp-home .corp-hero-copy .site-actions > a {
+    padding-inline: 13px;
+    gap: 9px;
+  }
+  .brand-experience .corp-home .corp-hero-copy .site-actions svg { flex: none; }
+}
+
+.corp-home-industry-list { list-style: none; margin: 0; padding: 0; border-bottom: 1px solid #d8d8d3; }
+.corp-home-industry-list li {
+  display: grid;
+  grid-template-columns: 2.25rem minmax(0, 1fr) auto;
+  align-items: center;
+  gap: clamp(12px, 3vw, 36px);
+  padding-block: 19px;
+  border-top: 1px solid #d8d8d3;
+}
+.corp-home-industry-number { align-self: start; padding-top: .25rem; color: var(--site-red); font-variant-numeric: tabular-nums; }
+.corp-home-industry-list h3 { margin: 0 0 .45rem; font-size: clamp(1.05rem, 1.7vw, 1.35rem); line-height: 1.3; font-weight: 500; }
+.corp-home-industry-list h3 a { color: inherit; text-decoration: none; }
+.corp-home-industry-list h3 a:hover, .corp-home-industry-list h3 a:focus-visible { text-decoration: underline; text-underline-offset: .2em; }
+.corp-home-industry-list p { max-width: 68ch; margin: 0; line-height: 1.55; color: #515459; }
+.corp-home-industry-list .site-text-link { min-height: 44px; }
+
+.corp-home-contact { background: #f3f2ef; border-top: 1px solid #d8d8d3; }
+.corp-home-contact-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(24px, 7vw, 100px);
+  align-items: start;
+}
+.corp-home-contact h2 { margin: 14px 0; font-size: clamp(1.8rem, 4vw, 3.3rem); font-weight: 400; line-height: 1.1; }
+.corp-home-contact p:not(.site-eyebrow) { max-width: 44ch; line-height: 1.6; }
+.corp-home-contact-links { display: flex; flex-wrap: wrap; gap: 0 20px; }
+.corp-home-contact-links a { display: inline-flex; align-items: center; min-height: 44px; color: inherit; text-underline-offset: .22em; }
+.corp-home-contact fieldset { min-width: 0; margin: 0; padding: 0; border: 0; display: grid; gap: 14px; }
+.corp-home-contact label { display: grid; gap: 5px; font-size: .95rem; }
+.corp-home-contact :is(input, textarea) {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  color: inherit;
+  background: #fff;
+  border: 1px solid #a2a3a5;
+  border-radius: 0;
+  font: inherit;
+}
+.corp-home-contact textarea { resize: vertical; }
+.corp-home-contact button { justify-self: start; }
+@media (max-width: 760px) {
+  .corp-home-contact-layout { grid-template-columns: 1fr; }
+  .corp-home-industry-list li { grid-template-columns: 1.5rem minmax(0, 1fr); row-gap: 4px; }
+  .corp-home-industry-list .site-text-link { grid-column: 2; justify-self: start; }
+}
+.corp-home-contact-success:not(:empty) {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-inline-start: 3px solid #237548;
+  background: #e7f2eb;
+  color: #1c5838;
+}
+.corp-home-contact [role="alert"] { color: #a8192d; }

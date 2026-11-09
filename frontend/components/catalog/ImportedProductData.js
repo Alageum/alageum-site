@@ -4,8 +4,8 @@ import Link from '@/components/locale/LocaleLink';
 import { officialProducts } from '@/lib/catalog/data';
 import ProductIcon from './ProductIcon';
 import CatalogConfigurations from './CatalogConfigurations';
-import CatalogSpecValue from './CatalogSpecValue';
-import { catalogFamilyMembers, catalogMemberLabel, displayFamilyName, displaySpecLabel, catalogSourceWarnings } from '@/lib/catalog/presentation';
+import ProductSpecificationRows from './ProductSpecificationRows';
+import { catalogFamilyMembers, catalogMemberLabel, displayFamilyName, catalogSourceWarnings } from '@/lib/catalog/presentation';
 
 export function SourcePageLink({ page, product }) {
  const href = sourcePageUrl(product, page);
@@ -22,7 +22,7 @@ export function ImportedSpecifications({ product }) {
   {!!warnings.length && <details className="catalog-data-warning"><summary>Примечания и ограничения источника ({warnings.length})</summary><ul>{warnings.map((warning,i)=><li key={i}>{warning.note}{warning.productId !== product.id && <> <Link href={`/catalog/${warning.productId}`}>Запись: {warning.designation} →</Link></>}</li>)}</ul></details>}
   <h3>Параметры из печатного каталога</h3>
   <p className="filter-help">Значения сохранены с единицами источника. Табличные варианты и диапазоны не означают подтверждённую комплектацию или готовый артикул заказа. Несогласованности исходного издания указаны в примечаниях.</p>
-  <dl className="technical-specs imported-specs">{product.technicalSpecs.map((spec,i)=><div key={`${displaySpecLabel(spec.label)}-${i}`}><dt className="catalog-spec-text">{displaySpecLabel(spec.label)}</dt><dd className="catalog-spec-text"><CatalogSpecValue product={product} row={spec}/></dd><span className="catalog-spec-text">{spec.unit || '—'}<SourcePageLink product={product} page={spec.page}/></span></div>)}</dl>
+  <ProductSpecificationRows product={product} records={officialProducts}/>
   {variants.length>0 && <section className="catalog-variants"><h3>Модели и обозначения в каталоге <span>({variants.length})</span></h3><p className="filter-help">Обозначения приведены из таблиц, подписей или составлены по напечатанному шаблону; особенности указаны в примечаниях. Наличие, актуальность и код заказа уточняются.</p><div className="variant-grid">{variants.map(variant=><Link key={variant.id} href={`/catalog/${variant.id}`}><ProductIcon product={variant} size={40}/><strong>{variant.designation || variant.sku || variant.name}</strong><span>{catalogMemberLabel(variant)}</span><span>Открыть характеристики →</span></Link>)}</div></section>}
   <CatalogConfigurations product={product}/>
  </div>;

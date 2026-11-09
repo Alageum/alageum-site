@@ -1,0 +1,40 @@
+.project-story .project-summary {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1fr);
+  gap: 18px 36px;
+  max-width: 690px;
+  margin-top: 28px;
+  padding-top: 18px;
+  border-top: 2px solid var(--story-red);
+}
+
+.project-story .project-summary-data strong {
+  display: block;
+  font-size: clamp(28px, 3.3vw, 52px);
+  line-height: 1.15;
+  letter-spacing: -.04em;
+}
+
+.project-story .project-summary-scope { align-self: end; font-size: 14px; }
+.project-story .project-summary-data p { margin-top: 5px; font-size: 14px; }
+.project-story .story-hero-dark .project-summary { border-color: #ff6977; }
+.project-story .story-hero-dark .project-summary-scope { color: #f2f2ee; }
+
+.project-story .project-context {
+  max-width: 34ch;
+  font-size: clamp(19px, 2vw, 29px);
+  line-height: 1.45;
+}
+
+.project-story.case-supply #project-work { background: var(--story-paper); }
+.project-story #project-documents .story-source { margin-top: 16px !important; }
+
+@media (max-width: 620px) {
+  .project-story .project-summary { grid-template-columns: minmax(0, 1fr); }
+}
+
+.project-story .project-summary-data .project-value-unit {
+  display: inline;
+  margin: 0 0 0 .2em;
+  font-size: .62em;
+}

@@ -8,24 +8,12 @@ import OrganizationChooser, { organizationDestination } from "./OrganizationChoo
 import { loginDestination } from "@/lib/api/loginRedirect";
 import { getSession } from "@/lib/api/client";
 import { getSessionGeneration, subscribeSession } from "@/lib/api/sessionTransport";
-import { supportAccess } from "@/lib/support/model";
+import { b2bNavigation } from "@/lib/organizations/b2bNavigation";
 import { rawMembersQuery, subscribeMembersLocation } from "@/lib/organizations/members";
 import styles from "./OrganizationChooser.module.css";
 
-const links = [
-["/b2b", "Обзор", null],
-["/b2b/orders", "Заказы", "order.read"],
-["/b2b/documents", "Документы", "document.read"],
-["/b2b/finance", "Финансы", "finance.read"],
-["/b2b/quotes", "Запросы КП", "quote.read"],
-["/b2b/support", "Поддержка", "ticket.read"],
-["/b2b/profile", "Профиль", null],
-["/b2b/members", "Участники", "organization.manage_users"],
-["/b2b/access-requests", "Заявки на доступ", "organization.manage_users"]];
-
-
 function Navigation() {
-  const { profile, loading, authError, hasPermission, setProfile } = useAuth();
+  const { profile, loading, authError, setProfile } = useAuth();
   const router = useRouter(),pathname = usePathname();
   useSearchParams();
   const search = useSyncExternalStore(subscribeMembersLocation, rawMembersQuery, () => '');
@@ -40,9 +28,8 @@ function Navigation() {
   }, [setProfile, router, destination]);
   const tokenPresent = !loading && Boolean(getSession().access_token);
 
-  return <LocaleElement as="aside" className="sidebar">
-    <Link href="/account">Мой аккаунт</Link>
-    <LocaleElement as="section" className={styles.active} aria-label="Текущая организация" data-testid="active-organization">
+  return <LocaleElement as="aside" className="sidebar b2b-nav">
+    <LocaleElement as="section" className={`${styles.active} b2b-nav-organization`} aria-label="Текущая организация" data-testid="active-organization">
       {loading ? <LocaleElement as="p" role="status">Проверка сессии…</LocaleElement> : profile ? <>
         <LocaleElement as="p" className="muted">Текущая организация</LocaleElement>
         <LocaleElement as="strong">{profile.organization?.name}</LocaleElement>
@@ -54,13 +41,15 @@ function Navigation() {
       </LocaleElement>}
       {!loading && !tokenPresent && <Link className="button" href={`/login?next=${encodeURIComponent(loginDestination(destination))}`}>Войти</Link>}
     </LocaleElement>
-    {profile && links.filter(([href,, permission]) => href === '/b2b/support' ? supportAccess(profile.permissions).visible : !permission || hasPermission(permission)).map(([href, label]) =>
-    <Link key={href} href={href} prefetch={href === '/b2b/members' ? false : undefined} aria-current={pathname === href ? "page" : undefined}>{label}</Link>
-    )}
+    {profile && <LocaleElement as="nav" className="b2b-nav-links" aria-label="B2B кабинет">
+      {b2bNavigation(profile.permissions).map(([href, label]) => <Link key={href} href={href} prefetch={href === '/b2b/members' ? false : undefined}
+        aria-current={pathname === href ? "page" : href !== '/b2b' && pathname.startsWith(`${href}/`) ? "location" : undefined}>{label}</Link>)}
+    </LocaleElement>}
+    <Link href="/account" className="b2b-nav-account">Мой аккаунт</Link>
     {choice && <OrganizationChooser modal expectedGeneration={choice.generation} currentOrganizationId={profile?.organization?.id} onCancel={close} onSelected={selected} returnFocusRef={trigger} />}
   </LocaleElement>;
 }
 
 export default function B2BNav() {
-  return <Suspense fallback={<LocaleElement as="aside" className="sidebar"><LocaleElement as="p" role="status">Проверка сессии…</LocaleElement></LocaleElement>}><Navigation /></Suspense>;
+  return <Suspense fallback={<LocaleElement as="aside" className="sidebar b2b-nav"><LocaleElement as="p" role="status">Проверка сессии…</LocaleElement></LocaleElement>}><Navigation /></Suspense>;
 }

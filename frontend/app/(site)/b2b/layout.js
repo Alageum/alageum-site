@@ -8,6 +8,7 @@ import { useAuth } from "@/components/AuthProvider";
 import { organizationContentBoundary, organizationDestination } from "@/lib/organizations/navigation";
 import { getSessionGeneration, subscribeSession } from "@/lib/api/sessionTransport";
 import { getSession } from "@/lib/api/client";
+import "./workspace.css";
 
 export default function B2BLayout({ children }) {
   const { profile, loading } = useAuth();
@@ -26,7 +27,7 @@ export default function B2BLayout({ children }) {
     if (redirecting) router.replace(organizationDestination(pathname));
   }, [redirecting, pathname, router]);
 
-  return <LocaleElement as="div" className="shell"><B2BNav /><LocaleElement as="section">
-    {loading || redirecting ? <LocaleElement as="p" role="status">Проверка доступа…</LocaleElement> : profile ? <LocaleElement as="div" key={tenantKey}>{children}</LocaleElement> : <LocaleElement as="section" className="card"><LocaleElement as="h1">{getSession().access_token ? "Выберите доступную организацию" : "Войдите в B2B кабинет"}</LocaleElement><LocaleElement as="p">Для доступа к данным компании необходимо подтверждённое членство. Статус заявки доступен в личном кабинете.</LocaleElement><Link className="button" href="/account">Открыть личный кабинет</Link></LocaleElement>}
+  return <LocaleElement as="div" className="shell b2b-shell"><B2BNav /><LocaleElement as="section" className="b2b-content">
+    {loading || redirecting ? <LocaleElement as="p" role="status">Проверка доступа…</LocaleElement> : profile ? <LocaleElement as="div" key={tenantKey}>{children}</LocaleElement> : <LocaleElement as="section" className="card b2b-access-card"><LocaleElement as="h1">{getSession().access_token ? "Выберите доступную организацию" : "Войдите в B2B кабинет"}</LocaleElement><LocaleElement as="p">Для доступа к данным компании необходимо подтверждённое членство. Статус заявки доступен в личном кабинете.</LocaleElement><Link className="button" href="/account">Открыть личный кабинет</Link></LocaleElement>}
   </LocaleElement></LocaleElement>;
 }

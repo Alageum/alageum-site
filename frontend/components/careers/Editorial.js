@@ -18,15 +18,17 @@ export function Photo({ id, photo, caption = photo?.caption, priority = false, c
     </figure>
   );
 }
-export function Intro({ label, title, children }) {
+export function Intro({ label, title, children, actions, back }) {
   return (
     <header className="site-container career-intro">
       <div className="site-page-heading">
+        {back}
         <L as="p" className="site-eyebrow">
           ALAGEUM ELECTRIC / {label}
         </L>
         <L as="h1">{title}</L>
         {children && <L as="p">{children}</L>}
+        {actions && <div className="site-actions career-intro-actions">{actions}</div>}
       </div>
     </header>
   );

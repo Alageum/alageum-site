@@ -17,11 +17,14 @@ import { QUOTE_PRINT_FALLBACK } from '@/lib/quotes/print';
 import { AuthProvider } from '@/components/AuthProvider';
 import { ApiSelectionProvider } from '@/components/catalog/ApiSelectionProvider';
 import { SelectionProvider } from '@/components/catalog/SelectionProvider';
+import { products } from '@/lib/catalog/data';
 import ExperienceShell from '@/components/ExperienceShell';
+
+const selectionProducts = products.map(({ id }) => ({ id }));
 
 const baseMetadata = { title: { default: 'ALAGEUM Electric — компания, продукция, карьера', template: '%s · ALAGEUM Electric' }, description: 'Электротехническое оборудование ALAGEUM Electric: каталог, предприятия, решения и подготовка запроса.', robots: { index: false, follow: false } };
 export async function generateMetadata({ params }) { return localizeMetadata(baseMetadata, (await params)?.locale || 'ru'); }
 export default async function RootLayout({ children }) {
   const locale = (await headers()).get('x-alageum-locale') || (await cookies()).get('alageum-locale')?.value || 'ru';
-  return <html lang={locale} data-scroll-behavior="smooth"><body><LocaleProvider locale={locale}><AuthProvider><ApiSelectionProvider><SelectionProvider><ExperienceShell>{children}</ExperienceShell></SelectionProvider></ApiSelectionProvider></AuthProvider></LocaleProvider><p data-quote-native-print-fallback="">{QUOTE_PRINT_FALLBACK}</p></body></html>;
+  return <html lang={locale} data-scroll-behavior="smooth"><body><LocaleProvider locale={locale}><AuthProvider><ApiSelectionProvider><SelectionProvider products={selectionProducts}><ExperienceShell>{children}</ExperienceShell></SelectionProvider></ApiSelectionProvider></AuthProvider></LocaleProvider><p data-quote-native-print-fallback="">{QUOTE_PRINT_FALLBACK}</p></body></html>;
 }

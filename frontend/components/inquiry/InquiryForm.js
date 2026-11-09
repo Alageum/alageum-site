@@ -99,7 +99,7 @@ export default function InquiryForm({ initial }) {
 
   return <LocaleElement as="div" className="catalog-page inquiry-page">
     <LocaleElement as="nav" className="breadcrumbs" aria-label="Хлебные крошки"><Link href="/">Главная</Link><LocaleElement as="span">/</LocaleElement><LocaleElement as="span">Запрос по проекту</LocaleElement></LocaleElement>
-    <LocaleElement as="div" className="catalog-heading"><LocaleElement as="div"><LocaleElement as="p" className="catalog-kicker">ОТ ЗАДАЧИ К ОБОРУДОВАНИЮ</LocaleElement><LocaleElement as="h1">Обсудим ваш проект</LocaleElement></LocaleElement><LocaleElement as="p">Соберите исходные данные и состав оборудования.<br />Подготовьте понятный запрос для отдела продаж.</LocaleElement></LocaleElement>
+    <LocaleElement as="div" className="catalog-heading"><LocaleElement as="div"><LocaleElement as="h1">Запрос по проекту</LocaleElement></LocaleElement><LocaleElement as="p">Соберите исходные данные и состав оборудования.</LocaleElement></LocaleElement>
     <LocaleElement as="div" className="inquiry-note"><LocaleElement as="span" className="notice-mark" aria-hidden="true">i</LocaleElement><LocaleElement as="div"><LocaleElement as="strong">Подготовьте запрос и отправьте его из своей почты.</LocaleElement> Эта форма формирует текст в браузере и не отправляет данные на сервер. Можно скачать запрос, скопировать его или открыть письмо в вашей почтовой программе. Контакты не сохраняются, пока вы сами не сохраните локальный черновик.</LocaleElement></LocaleElement>
     <LocaleElement as="div" className="inquiry-layout">
       <LocaleElement as="div">

@@ -20,8 +20,9 @@ const originalProjects = [
 ];
 export const projects = [...originalProjects.map(project => ({ ...project, ...existingProjectDetails[project.id] })), ...additionalProjects];
 export const projectById = (id) => projects.find((item) => item.id === id);
+export const corporateProfileHref = '/documents/alageum-group-2024.pdf';
 export const documents = [
- { title: 'Каталог группы компаний', format: 'PDF', period: '2024 · русский язык · 36 страниц', description: 'Состав группы, предприятия и основные направления работы.', href: '/documents/alageum-group-2024.pdf' },
+ { title: 'Каталог группы компаний', format: 'PDF', period: '2024 · русский язык · 36 страниц', description: 'Состав группы, предприятия и основные направления работы.', href: corporateProfileHref },
  { title: 'Референс-лист Asia Trafo', format: 'PDF', period: '2019–2023 · 3 страницы', description: 'Поставки трансформаторного оборудования Asia Trafo за 2019–2023 годы.', href: '/documents/asia-trafo-references-2019-2023.pdf' },
  { title: 'Трансформаторы: технический каталог', format: 'WEB', period: 'Веб-каталог', description: 'Масляные, сухие и измерительные трансформаторы. Технические таблицы доступны на страницах серий.', href: '/catalog?category=transformers' },
  { title: 'Подстанции и распределительное оборудование', format: 'WEB', period: 'Веб-каталог', description: 'Шкафные конструкции, подстанции, высоковольтное и низковольтное оборудование.', href: '/catalog?category=substations' },

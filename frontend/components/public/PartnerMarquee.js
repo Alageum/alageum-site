@@ -11,7 +11,7 @@ import { partnerProfiles, partners } from '@/lib/public/partners';
 export { partners } from '@/lib/public/partners';
 
 
-export default function PartnerMarquee() {
+export default function PartnerMarquee({ number } = {}) {
   const [active, setActive] = useState(null);
   const [paused, setPaused] = useState(false);
   const cardRef = useRef(null);
@@ -67,7 +67,7 @@ export default function PartnerMarquee() {
   }, []);
   const profile = partner ? partnerProfiles[partner.id] : null;
   return <LocaleElement as="section" ref={sectionRef} className="partner-section" aria-labelledby="partner-heading">
-    <LocaleElement as="div" className="site-container partner-heading"><LocaleElement as="div"><LocaleElement as="p" className="site-eyebrow">ПАРТНЁРЫ КОМПАНИИ</LocaleElement><LocaleElement as="h2" id="partner-heading">Партнёры Alageum Electric</LocaleElement></LocaleElement><LocaleElement as="button" type="button" className="partner-pause" aria-label={paused ? 'Продолжить движение логотипов' : 'Приостановить движение логотипов'} aria-pressed={paused} onClick={() => setPaused((value) => !value)}>{paused ? 'Продолжить →' : 'Пауза Ⅱ'}</LocaleElement></LocaleElement>
+    <LocaleElement as="div" className="site-container partner-heading"><LocaleElement as="div"><LocaleElement as="p" className="site-eyebrow">{number && <span>{number} / </span>}ПАРТНЁРЫ КОМПАНИИ</LocaleElement><LocaleElement as="h2" id="partner-heading">Партнёры Alageum Electric</LocaleElement></LocaleElement><LocaleElement as="button" type="button" className="partner-pause" aria-label={paused ? 'Продолжить движение логотипов' : 'Приостановить движение логотипов'} aria-pressed={paused} onClick={() => setPaused((value) => !value)}>{paused ? 'Продолжить →' : 'Пауза Ⅱ'}</LocaleElement></LocaleElement>
     <LocaleElement as="div" className={`partner-experience${paused || active || !inView ? ' is-paused' : ''}`}>
       <LocaleElement as="div" className="partner-window"><LocaleElement as="div" className="partner-track">{[0, 1].map((copy) => <LocaleElement as="div" className="partner-group" key={copy} aria-hidden={copy === 1 ? true : undefined}>{partners.map((item) => <LocaleElement as="button" type="button" key={item.id} className="partner-logo" tabIndex={copy === 1 ? -1 : 0} aria-label={`О партнёре ${item.name}`} aria-expanded={active?.id === item.id} aria-controls={active ? 'partner-detail' : undefined} onPointerEnter={(event) => {if (event.pointerType === 'mouse') open(item, event.currentTarget);}} onFocus={(event) => open(item, event.currentTarget)} onClick={(event) => open(item, event.currentTarget)}><Image src={`/partners/${item.id}.png`} alt={item.name} width={180} height={90} loading="eager" unoptimized /></LocaleElement>)}</LocaleElement>)}</LocaleElement></LocaleElement>
     </LocaleElement>

@@ -1,0 +1,20 @@
+.status {
+  width: min(960px, calc(100% - 40px));
+  min-height: 46vh;
+  margin: clamp(28px, 5vw, 64px) auto clamp(40px, 7vw, 96px);
+  padding: clamp(24px, 5vw, 64px);
+  border: 1px solid var(--site-line);
+  border-top: 3px solid var(--site-red);
+  background: #f6f6f5;
+}
+
+.status h1 {
+  max-width: 18ch;
+  margin: 16px 0;
+  font-size: clamp(34px, 6vw, 64px);
+  line-height: 1.04;
+  letter-spacing: -.045em;
+}
+
+.code { margin: 0; color: var(--site-red-hover); }
+.description { max-width: 55ch; margin: 0 0 26px; color: var(--site-muted); font-size: 16px; line-height: 1.6; }

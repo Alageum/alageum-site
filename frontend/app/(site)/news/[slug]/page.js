@@ -13,7 +13,7 @@ export default async function Article({ params }) {
   const { slug, locale = 'ru' } = await params;
   const item = await loadNewsArticle(locale, slug);
   if (!item) notFound();
-  return <Story name="news-article"><Hero label={item.topic || 'Новости'} parent={{href:'/news',label:'Новости'}} variant={item.photo?'dark':'wide'} photo={item.photo?{path:item.photo,unoptimized:Boolean(item.cover),width:item.cover?.width||1200,height:item.cover?.height||750,alt:item.cover?.alt||item.title,caption:item.cover?.caption||item.title}:null} title={item.title} lead={item.date.split('-').reverse().join('.')} /><Section>
+  return <Story name="news-article"><Hero label={item.title} kicker={item.topic && item.topic !== 'Новости' ? item.topic : null} parent={{href:'/news',label:'Новости'}} variant={item.photo?'split':'wide'} photo={item.photo?{path:item.photo,unoptimized:Boolean(item.cover),width:item.cover?.width||1200,height:item.cover?.height||750,alt:item.cover?.alt||item.title,caption:item.cover?.caption||item.title}:null} title={item.title} lead={item.date.split('-').reverse().join('.')} /><Section>
 
     <LocaleElement as="p" className="eco-section-lead">{item.text}</LocaleElement>
     {item.body && <EditorialBlocks body={item.body} locale={locale} />}

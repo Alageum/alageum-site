@@ -43,9 +43,16 @@ export default function CareersHome() {
         </section>
       </div>
       <div className="site-container career-evidence">
-        <L as="p">
-          В публикации от 19 марта 2026 года компания указывает 14 действующих заводов и более 4500 сотрудников в группе.
-        </L>
+        <dl className="career-scale">
+          <div>
+            <L as="dt">Действующих заводов</L>
+            <dd>14</dd>
+          </div>
+          <div>
+            <L as="dt">Сотрудников в группе</L>
+            <dd>4 500+</dd>
+          </div>
+        </dl>
         <Source
           href={careerEvidence.group.url}
           publishedAt={careerEvidence.group.publishedAt}
@@ -62,21 +69,15 @@ export default function CareersHome() {
             href="#learning"
             link={<L>Обучение на УТЗ</L>}
           />
-          <ol className="corp-stages career-directions">
+          <ol className="career-role-index career-directions">
             {careerFields.map((field, i) => (
               <li key={field.title}>
-                <span className="corp-stage-number">0{i + 1}</span>
+                <span className="career-role-number" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
                 <L as="h3">{field.title}</L>
                 <L as="p">{field.text}</L>
               </li>
             ))}
           </ol>
-          <div className="career-section-action">
-            <L as="a" className="site-text-link" href="/careers/vacancies">
-              Посмотреть вакансии
-              <CorporateArrow />
-            </L>
-          </div>
         </div>
       </section>
       <section className="corp-white-band" id="workplaces">
@@ -118,9 +119,6 @@ export default function CareersHome() {
             Обучение
             <br />на УТЗ
           </L>
-          <Photo id="utz" caption="Уральский трансформаторный завод · производственный цех" className="corp-about-image" />
-        </div>
-        <div>
           <L as="p">
             Коллективный договор УТЗ, принятый в 2022 году, предусматривает обучение работников и выплаты к юбилейным датам. 21 декабря 2023 года компания сообщила, что завод получил премию «Парыз» за лучший коллективный договор.
           </L>
@@ -134,6 +132,7 @@ export default function CareersHome() {
             Обучение на УТЗ
           </Source>
         </div>
+        <Photo id="utz" caption="Уральский трансформаторный завод · производственный цех" />
       </section>
       <section className="site-container career-students" id="development">
         <div>

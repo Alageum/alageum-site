@@ -1,5 +1,6 @@
 "use client";import LocaleElement from "@/components/locale/LocaleElement";
 
+import WorkspaceHeading from "@/components/b2b/WorkspaceHeading";
 import Link from "@/components/locale/LocaleLink";
 import { useCallback, useLayoutEffect, useRef, useState } from 'react';
 import { useAuth } from '@/components/AuthProvider';
@@ -35,8 +36,8 @@ export function OrderList({ scope }) {
   const state = useOrderRead(getOrders, scope);
   return <LocaleElement as="section" className={styles.workspace} data-testid="orders-list" aria-label="Заказы организации" aria-busy={state.status === 'loading'}>
     <ReadState state={state} />
-    {state.status === 'ready' && (state.value.length ? <LocaleElement as="div" className="grid">
-      {state.value.map((item) => <Link className="card" href={`/b2b/orders/${item.id}`} key={item.id} data-testid="order-summary">
+    {state.status === 'ready' && (state.value.length ? <LocaleElement as="div" className="grid b2b-record-list">
+      {state.value.map((item) => <Link className="card b2b-record" href={`/b2b/orders/${item.id}`} key={item.id} data-testid="order-summary">
         <LocaleElement as="h3">{item.number}</LocaleElement><LocaleElement as="p">{item.amount} {item.currency}</LocaleElement><LocaleElement as="span" className="muted">{item.status}</LocaleElement>
       </Link>)}
     </LocaleElement> : <LocaleElement as="p" className="card muted" role="status">Данных пока нет</LocaleElement>)}
@@ -47,14 +48,14 @@ export function OrderDetail({ id, scope }) {
   const load = useCallback((options) => getOrder(id, options), [id]);
   const state = useOrderRead(load, scope);
   const item = state.value;
-  return <LocaleElement as="section" className={styles.workspace} data-testid="order-detail" aria-label="Сведения о заказе" aria-busy={state.status === 'loading'}>
+  return <LocaleElement as="section" className={`${styles.workspace} b2b-order-detail`} data-testid="order-detail" aria-label="Сведения о заказе" aria-busy={state.status === 'loading'}>
     <Link className="buttonSecondary" href="/b2b/orders">К списку заказов</Link>
     <ReadState state={state} />
     {state.status === 'ready' && <>
-      <LocaleElement as="h1">Заказ {item.number}</LocaleElement>
-      <LocaleElement as="div" className="card"><LocaleElement as="p">Статус: {item.status}</LocaleElement><LocaleElement as="p">Сумма: {item.amount} {item.currency}</LocaleElement></LocaleElement>
+      <WorkspaceHeading title={<><LocaleElement>Заказ</LocaleElement> {item.number}</>} />
+      <LocaleElement as="div" className="card b2b-order-facts"><LocaleElement as="p">Статус: {item.status}</LocaleElement><LocaleElement as="p">Сумма: {item.amount} {item.currency}</LocaleElement></LocaleElement>
       <LocaleElement as="h2">Позиции</LocaleElement>
-      {item.items.length ? item.items.map((line) => <LocaleElement as="div" className="card" key={line.id} data-testid="order-item">{line.description} — {line.quantity}</LocaleElement>) : <LocaleElement as="p" className="card muted" role="status">В заказе пока нет позиций.</LocaleElement>}
+      {item.items.length ? item.items.map((line) => <LocaleElement as="div" className="card b2b-order-item" key={line.id} data-testid="order-item">{line.description} — {line.quantity}</LocaleElement>) : <LocaleElement as="p" className="card muted" role="status">В заказе пока нет позиций.</LocaleElement>}
     </>}
   </LocaleElement>;
 }

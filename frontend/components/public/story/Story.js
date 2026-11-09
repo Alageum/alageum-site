@@ -5,16 +5,18 @@ import CorporateArrow from '../CorporateArrow';
 import '@/app/company-pages.css';
 import './story.css';
 import './visual.css';
+import './corporate-story.css';
 import StoryMotion from './StoryMotion';
 import {localResourceHref,localSourceHref} from '@/lib/public/localResources';
 
 export function Story({ children, name = '' }) {
-  return <StoryMotion className={`public-story story-${name}`}>{children}</StoryMotion>;
+  const theme = name.startsWith('catalog-') ? '' : ' story-corporate';
+  return <StoryMotion className={`public-story story-${name}${theme}`}>{children}</StoryMotion>;
 }
-export function Hero({ label, title, lead, photo, children, variant = 'split', parent, visual, ancestors = [] }) {
+export function Hero({ label, kicker = label, title, lead, photo, children, variant = 'split', parent, visual, ancestors = [] }) {
   return <E as="header" className={`story-hero story-hero-${variant}`}>
-    <div className="story-hero-copy"><E as="nav" className="story-breadcrumb" aria-label="Хлебные крошки"><Link href="/">Alageum</Link><span>/</span>{ancestors.map(item=><span className="story-ancestor" key={item.href}><Link href={item.href}>{item.label}</Link><span>/</span></span>)}{parent && <><Link href={parent.href}>{parent.label}</Link><span>/</span></>}<E>{label}</E></E>
-      <E as="p" className="story-kicker">{label}</E><E as="h1">{title}</E>{lead && <E as="p" className="story-lead">{lead}</E>}{children}
+    <div className="story-hero-copy"><E as="nav" className="story-breadcrumb" aria-label="Хлебные крошки"><Link href="/">Alageum</Link><span aria-hidden="true">/</span>{ancestors.map(item=><span className="story-ancestor" key={item.href}><Link href={item.href}>{item.label}</Link><span aria-hidden="true">/</span></span>)}{parent && <><Link href={parent.href}>{parent.label}</Link><span aria-hidden="true">/</span></>}<E aria-current="page">{label}</E></E>
+      {kicker && <E as="p" className="story-kicker">{kicker}</E>}<E as="h1">{title}</E>{lead && <E as="p" className="story-lead">{lead}</E>}{children}
     </div>{photo && <CorporatePhoto photo={photo} priority className="story-hero-photo" sizes="(max-width: 800px) 100vw, 55vw" />}
   {visual && <div className="story-hero-visual">{visual}</div>}</E>;
 }

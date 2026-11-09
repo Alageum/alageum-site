@@ -52,9 +52,10 @@ test('public errors do not echo a server exception or disclose account existence
   assert.ok(accountError({ code: 'validation_error', status: 422 }).includes('Проверьте заполненные поля'));
   assert.equal(companyRequestLabels.pending, 'На проверке');
 });
-test('customer navigation retains local drafts and points account entries to /account', async () => {
+test('customer navigation retains local drafts and adapts the account entry to access', async () => {
   const header = await readFile(new URL('../components/SiteHeader.js', import.meta.url), 'utf8');
-  assert.match(header, /href=\{isPublicOnly\(\) \? "\/service-unavailable" : "\/account"\} className="site-language/);
+  assert.match(header, /accountHref = publicOnly \? '\/service-unavailable' : profile \? '\/account' : '\/login\?next=%2Faccount'/);
+  assert.match(header, /href=\{accountHref\} className="site-account-link"/);
   assert.match(header, /Локальные черновики.*\/client/);
   const account = await readFile(new URL('../components/account/PersonalAccount.js', import.meta.url), 'utf8');
   assert.match(account, /getPersonalAccount\(controller.signal\)/);

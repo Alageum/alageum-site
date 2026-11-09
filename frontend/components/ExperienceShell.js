@@ -96,7 +96,7 @@ export default function ExperienceShell({ children }) {
     };
   }, [pathname, technical]);
 
-  return <LocaleElement as="div" ref={shellRef} className={technical ? 'technical-experience' : `brand-experience${utility ? ' brand-utility' : ` ${readingStyles.pageScope}`}`}>
+  return <LocaleElement as="div" ref={shellRef} className={technical ? `technical-experience${pathname.startsWith('/catalog') ? ` ${readingStyles.pageScope}` : ''}` : `brand-experience${utility ? ' brand-utility' : ` ${readingStyles.pageScope}`}`}>
     {!technical && <LocaleElement as="div" ref={progressRef} className="brand-scroll-progress" aria-hidden="true" />}
     <SiteHeader />
     <LocaleElement as="main" id="main-content" className="site-main"><LegacyLocalization />{children}</LocaleElement>

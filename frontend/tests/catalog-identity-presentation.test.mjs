@@ -25,6 +25,7 @@ async function component(name) {
     .replace("import EquipmentModel from './EquipmentModel';", 'const EquipmentModel = props => <section data-equipment-model={props.type} data-preview-icon={props.previewIconType}/>;')
     .replace("import styles from './CatalogSourcePreview.module.css';", 'const styles = {};');
   source = source.replace("'@/lib/catalog/models/legacyAssetCompletion'", JSON.stringify(new URL('../lib/catalog/models/legacyAssetCompletion.js', import.meta.url).href));
+  source = source.replace("'@/lib/public/localResources'", JSON.stringify(new URL('../lib/public/localResources.js', import.meta.url).href));
   for (const moduleName of ['identityCompletion', 'presentation', 'sources', 'familySourceReferences', 'ntmiSourcePreview']) source = source.replace(`'@/lib/catalog/${moduleName}'`, JSON.stringify(new URL(`../lib/catalog/${moduleName}.js`, import.meta.url).href));
   const { transform, loadBindings } = require('next/dist/build/swc');
   await loadBindings();
@@ -147,7 +148,7 @@ test('the product route preserves alias context and fresh comparison links use r
   assert.match(route, /ProductDetails id=\{slug\}/);
   assert.doesNotMatch(route, /id=\{resolveCatalogReadId/);
   const details = await readFile(new URL('../components/catalog/ProductDetails.js', import.meta.url), 'utf8');
-  assert.match(details, /compare=\$\{product\.id\}/);
+  assert.match(details, /productCatalogHref\(from, source, product\.id\)/);
 });
 
 test('legacy family selectors retain all original reciprocal variants including the distinct PTM and TDE cabinets', () => {
@@ -179,14 +180,12 @@ test('source-scope comparison uses a readable voltage label without changing its
   assert.doesNotMatch(row, />nominalVoltageScope</);
 });
 
-test('SHR11 primary construction citation renders only for the exact static or original API record', async () => {
+test('SHR11 source provenance is retained without linking to the legacy site', async () => {
   const product = productById(legacyAssetCompletion.id);
   const approvedApi = { ...product, source: 'api', databaseId: legacyAssetCompletion.databaseId, sourceMediaPath: product.image };
+  assert.match(legacyAssetCompletion.primarySourceUrl, /^https:\/\/alageum\.com\//);
   for (const row of [product, approvedApi]) {
-    const html = await render('CatalogSourceEvidence', row);
-    assert.match(html, /Источник сопоставления ШР11/);
-    assert.ok(html.includes(`href="${legacyAssetCompletion.primarySourceUrl}"`));
-    assert.doesNotMatch(html, /data-catalog-source-panel=/);
+    assert.equal(await render('CatalogSourceEvidence', row), '');
   }
   for (const row of [{ ...approvedApi, databaseId: 'reused-uuid' }, { ...approvedApi, name: 'changed' }, productById('cat-pr-shr11-v001'), productById('cat-pr-shr11-v003')]) {
     assert.equal(await render('CatalogSourceEvidence', row), '');

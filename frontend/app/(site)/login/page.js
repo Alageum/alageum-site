@@ -9,7 +9,11 @@ import { getSessionGeneration, subscribeSession } from "@/lib/api/sessionTranspo
 import { useAuth } from "@/components/AuthProvider";
 import FederatedSignIn from "@/components/FederatedSignIn";
 import OrganizationChooser from "@/components/OrganizationChooser";
-import Image from "@/components/locale/LocaleImage";
+import Link from "@/components/locale/LocaleLink";
+import AccountFrame from "@/components/account/AccountFrame";
+import styles from "@/components/account/Account.module.css";
+
+const accountLinks = [['Создать аккаунт', '/register'], ['Подтвердить email', '/verify-email']];
 
 const subscribeReady = () => () => {};
 const clientReady = () => true;
@@ -17,12 +21,12 @@ const serverReady = () => false;
 
 export default function LoginPage() {
   const router = useRouter();
-  // Keep server-rendered controls disabled until the approved return URL can be preserved.
   const ready = useSyncExternalStore(subscribeReady, clientReady, serverReady);
   const sessionGeneration = useSyncExternalStore(subscribeSession, getSessionGeneration, () => 0);
   const { profile, loading, setProfile } = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
   const [pending, setPending] = useState(false);
   const [choice, setChoice] = useState(null);
@@ -35,7 +39,7 @@ export default function LoginPage() {
   }, []);
 
   const complete = useCallback((next) => {
-    setProfile(next.requiresOnboarding ? null : next);setChoice(null);setPassword("");setCompleted(true);
+    setProfile(next.requiresOnboarding ? null : next);setChoice(null);setPassword("");setShowPassword(false);setCompleted(true);
     router.replace(next.requiresOnboarding ? "/account" : loginDestination(new URLSearchParams(window.location.search).get("next")));
   }, [router, setProfile]);
   const cancelChoice = useCallback(async (generation) => {
@@ -43,7 +47,7 @@ export default function LoginPage() {
       try {await logout();} catch (reason) {setError(reason.message);return;}
     }
     if (getSessionGeneration() === generation) {clearSession();setProfile(null);}
-    setChoice(null);setPassword("");setError("");setPending(false);submitting.current = false;
+    setChoice(null);setPassword("");setShowPassword(false);setError("");setPending(false);submitting.current = false;
     requestAnimationFrame(() => emailInput.current?.focus());
   }, [setProfile]);
 
@@ -51,7 +55,7 @@ export default function LoginPage() {
     event.preventDefault();
     const flow = activeFlow.current;
     const current = () => flow && activeFlow.current === flow && !flow.controller.signal.aborted;
-    if (submitting.current || !current()) return;
+    if (!ready || pending || completed || submitting.current || !current()) return;
     submitting.current = true;setPending(true);setError("");setCompleted(false);
     try {
       const next = await login(email, password, { signal: flow.controller.signal });
@@ -74,25 +78,34 @@ export default function LoginPage() {
   const resumeChoice = ready && !completed && !pending && !loading && !profile && !getSession().federated_pending && Boolean(getSession().access_token);
   if (resumeChoice && !choice) setChoice({ generation: sessionGeneration });
   const choiceGeneration = choice?.generation ?? (resumeChoice ? sessionGeneration : null);
-  return <LocaleElement as="section" className="brand-login">
-    <LocaleElement as="aside" className="brand-login-story">
-      <Image src="/photography/manufacturers/asia-trafo.webp" alt="Производственная линия Asia Trafo" width={1000} height={600} sizes="(max-width: 760px) 100vw, 50vw" />
-      <LocaleElement as="p" className="site-eyebrow">ASIA TRAFO · ПРОИЗВОДСТВО</LocaleElement>
-      <LocaleElement as="h2">Аккаунт компании.<br />Заказы и документы.</LocaleElement>
-      <LocaleElement as="p">Войдите и запросите доступ к заказам и документам своей компании.</LocaleElement>
-    </LocaleElement>
-    <LocaleElement as="div" className="brand-login-form">
-    <LocaleElement as="p" className="site-eyebrow">ЛИЧНЫЙ КАБИНЕТ</LocaleElement>
-    <LocaleElement as="h1">Вход в B2B кабинет</LocaleElement>
-    {choiceGeneration === null && <FederatedSignIn disabled={!ready || pending} onComplete={completeFederated} onBusy={setPending} />}
-    {choiceGeneration !== null ? <OrganizationChooser key={choiceGeneration} expectedGeneration={choiceGeneration} onCancel={cancelChoice} onSelected={complete} /> : <LocaleElement as="form" className="form card" onSubmit={submit}>
-      <LocaleElement as="label">Email<LocaleElement as="input" ref={emailInput} disabled={!ready || pending} value={email} onChange={(event) => setEmail(event.target.value)} type="email" autoComplete="username" required /></LocaleElement>
-      <LocaleElement as="label">Пароль<LocaleElement as="input" disabled={!ready || pending} value={password} onChange={(event) => setPassword(event.target.value)} type="password" autoComplete="current-password" required /></LocaleElement>
-      {error && <LocaleElement as="p" className="error" role="alert">{error}</LocaleElement>}
-      <LocaleElement as="button" className="button" disabled={!ready || pending}>{pending ? "Вход…" : "Войти"}</LocaleElement>
-    </LocaleElement>}
-    <LocaleElement as="p"><LocaleElement as="a" href="/register">Регистрация</LocaleElement> · <LocaleElement as="a" href="/forgot-password">Забыли пароль?</LocaleElement></LocaleElement>
-    <LocaleElement as="p"><LocaleElement as="a" href="/verify-email">Подтвердить email</LocaleElement></LocaleElement>
-    </LocaleElement>
-  </LocaleElement>;
+  return <AccountFrame
+    title="Вход в личный кабинет"
+    description="Войдите, чтобы видеть заказы и документы вашей компании."
+    links={accountLinks}
+    secondary={choiceGeneration === null && <FederatedSignIn disabled={!ready || pending} onComplete={completeFederated} onBusy={setPending} />}
+  >
+    {choiceGeneration !== null ? (
+      <OrganizationChooser key={choiceGeneration} expectedGeneration={choiceGeneration} onCancel={cancelChoice} onSelected={complete} />
+    ) : (
+      <form onSubmit={submit} aria-busy={pending}>
+        {/* Firefox restores disabled attributes on individual form controls after reload. */}
+        <fieldset className={`form ${styles.loginForm}`} disabled={!ready || pending || completed}>
+          <LocaleElement as="label" htmlFor="login-email">Email</LocaleElement>
+          <input id="login-email" ref={emailInput} value={email} onChange={(event) => setEmail(event.target.value)} type="email" autoComplete="username" required />
+          <div className={styles.passwordHeading}>
+            <LocaleElement as="label" htmlFor="login-password">Пароль</LocaleElement>
+            <Link href="/forgot-password">Забыли пароль?</Link>
+          </div>
+          <div className={styles.passwordField}>
+            <input id="login-password" value={password} onChange={(event) => setPassword(event.target.value)} type={showPassword ? "text" : "password"} autoComplete="current-password" required />
+            <LocaleElement as="button" type="button" aria-controls="login-password" onClick={() => setShowPassword(visible => !visible)}>
+              {showPassword ? 'Скрыть пароль' : 'Показать пароль'}
+            </LocaleElement>
+          </div>
+          {error && <LocaleElement as="p" className={styles.loginError} role="alert">{error}</LocaleElement>}
+          <LocaleElement as="button" type="submit" className="site-button site-button-primary">{pending || completed ? "Вход…" : "Войти"}</LocaleElement>
+        </fieldset>
+      </form>
+    )}
+  </AccountFrame>;
 }

@@ -1,4 +1,5 @@
 'use client';
+import WorkspaceHeading from "@/components/b2b/WorkspaceHeading";
 import { useEffect, useState } from 'react';
 import LocaleElement from '@/components/locale/LocaleElement';
 import { useAuth } from '@/components/AuthProvider';
@@ -56,7 +57,7 @@ function ReviewScope({ scope }) {
   }, [scope, revision, isAuthScopeCurrent]);
   function refresh() { setRead({ status: 'loading', value: null, error: null }); setRevision(value => value + 1); }
   return <LocaleElement as="section" className={styles.review}>
-    <LocaleElement as="h1">Заявки на доступ к компании</LocaleElement>
+    <WorkspaceHeading title="Заявки на доступ к компании" />
     <LocaleElement as="p" className="muted">Проверьте личность и связь заявителя с текущей компанией перед назначением роли. Права проверяются сервером при каждом решении.</LocaleElement>
     <LocaleElement as="div"><LocaleElement as="button" className="buttonSecondary" type="button" onClick={refresh}>Обновить список</LocaleElement></LocaleElement>
     {read.status === 'loading' ? <LocaleElement as="p" role="status">Загрузка заявок…</LocaleElement> : read.status === 'error' ? <LocaleElement as="p" className="error" role="alert">{accountError(read.error)}</LocaleElement> : read.value.requests.length === 0 ? <LocaleElement as="p" role="status">Заявок нет.</LocaleElement> : <LocaleElement as="ul" className={styles.requests}>{read.value.requests.map(request => <ReviewRequest key={request.id} request={request} roles={read.value.roles} onDecided={refresh} />)}</LocaleElement>}

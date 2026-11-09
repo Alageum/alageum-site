@@ -13,5 +13,6 @@ test('login email starts empty and keeps username autofill', () => {
 
 test('login password starts empty and keeps current-password autofill', () => {
   assert.match(source, /const \[password, setPassword\] = useState\((?:""|'')\);/);
-  assert.match(source, /value=\{password\}.*type="password" autoComplete="current-password" required/);
+  assert.match(source, /const \[showPassword, setShowPassword\] = useState\(false\);/);
+  assert.match(source, /value=\{password\}.*type=\{showPassword \? "text" : "password"\} autoComplete="current-password" required/);
 });

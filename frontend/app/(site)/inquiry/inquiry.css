@@ -3,3 +3,59 @@
 @media(max-width:760px){.inquiry-layout{grid-template-columns:1fr}.inquiry-sidebar{position:static;order:2}.inquiry-fields{gap:18px}.inquiry-note{padding:15px;font-size:11px}.inquiry-section legend{font-size:17px}.inquiry-item{gap:12px}.inquiry-actions .catalog-button{flex:1 1 160px}.inquiry-preview textarea{padding:14px}.inquiry-submit>.catalog-button{width:100%}}
 @media(max-width:420px){.inquiry-fields{grid-template-columns:1fr}.inquiry-item{grid-template-columns:1fr 66px 25px}.inquiry-item strong{font-size:12px}.inquiry-section legend span{margin-right:9px}}
 .live-inquiry form{max-width:960px}.live-inquiry .inquiry-note{display:block;line-height:1.8}.live-inquiry .inquiry-note a{text-decoration:underline}.live-inquiry .quote-login{margin-bottom:28px}.live-inquiry .inquiry-section:disabled{opacity:.65}.live-inquiry .remove-item{min-width:30px;min-height:44px}.live-inquiry .catalog-heading .catalog-button{align-self:flex-start;flex-shrink:0}.live-inquiry .inquiry-item>div{min-width:0;overflow-wrap:anywhere}.live-inquiry .inquiry-error-summary:focus{outline:2px solid var(--brand-red);outline-offset:3px}
+
+.inquiry-page {
+  --inquiry-line: #d8d5d1;
+  --inquiry-muted: #5d5b58;
+}
+
+.inquiry-page .inquiry-note {
+  margin-bottom: 26px;
+  border: 1px solid var(--inquiry-line);
+  border-inline-start: 3px solid var(--brand-red);
+  background: #fff;
+  color: var(--inquiry-muted);
+}
+
+.inquiry-page .inquiry-section {
+  min-width: 0;
+  border: 1px solid var(--inquiry-line);
+  margin: 0 0 24px;
+  padding: clamp(16px, 3vw, 30px);
+  background: #fff;
+}
+
+.inquiry-page .inquiry-section legend {
+  max-width: 100%;
+  padding-inline: 10px;
+  background: #f6f5f3;
+  line-height: 1.25;
+}
+
+.inquiry-page .inquiry-section legend span {
+  color: #9d101d;
+  font-variant-numeric: tabular-nums;
+}
+
+.inquiry-page .inquiry-section > p, .inquiry-page .inquiry-help { color: var(--inquiry-muted); }
+.inquiry-page .inquiry-field :is(input, select, textarea) { border-radius: 0; font-size: 16px; }
+.inquiry-page .inquiry-field :is(input, select, textarea):focus-visible {
+  outline: 2px solid var(--brand-red);
+  outline-offset: 2px;
+}
+.inquiry-page .inquiry-field input[type="file"] { padding: 10px; max-width: 100%; }
+.inquiry-page .inquiry-field input[type="file"]::file-selector-button {
+  min-height: 34px;
+  border: 1px solid var(--inquiry-line);
+  background: #f6f5f3;
+  margin-inline-end: 12px;
+}
+.inquiry-page .inquiry-sidebar { border-top: 3px solid var(--brand-red); }
+.inquiry-page .inquiry-sidebar .catalog-kicker { color: #ffadb4; }
+.inquiry-page .inquiry-submit { gap: 18px; }
+
+@media (max-width: 480px) {
+  .inquiry-page .inquiry-section { padding-inline: 12px; }
+  .inquiry-page .inquiry-section legend { font-size: 18px; }
+  .inquiry-page .inquiry-submit .catalog-button { width: 100%; }
+}

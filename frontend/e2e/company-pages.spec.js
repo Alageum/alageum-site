@@ -312,28 +312,19 @@ test('company image audit rejects a broken visible image', async ({ page }) => {
 });
 
 
-test('login story keeps complete words at 320px and preserves wider mobile sizing', async ({ page }, testInfo) => {
+test('login form remains the first usable action on small phones', async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 780 });
-  await page.goto('/login');
-  const heading = page.locator('.brand-login-story h2');
-  await expect(heading).toHaveText(/Ваш проект\.\s*Единое пространство\./);
-  for (const [width, fontSize] of [[320, 32], [390, 38]]) {
-    await page.setViewportSize({ width, height: 780 });
-    await heading.scrollIntoViewIfNeeded();
-    await expect(heading).toBeVisible();
-    const measured = await heading.evaluate(element => {
-      const words = [], walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
-      let node;
-      while ((node = walker.nextNode())) for (const match of node.textContent.matchAll(/\S+/g)) {
-        const range = document.createRange();
-        range.setStart(node, match.index); range.setEnd(node, match.index + match[0].length);
-        words.push({ text: match[0], width: range.getBoundingClientRect().width, fragments: range.getClientRects().length });
-      }
-      return { available: element.clientWidth, fontSize: parseFloat(getComputedStyle(element).fontSize), words };
-    });
-    expect(measured.fontSize).toBe(fontSize);
-    expect(measured.words.some(word => word.text === 'пространство.')).toBe(true);
-    expect(measured.words.filter(word => word.width > measured.available + 1 || word.fragments !== 1), `Whole login words at ${width}px`).toEqual([]);
-    await testInfo.attach(`login-story-${width}px`, { body: await heading.screenshot(), contentType: 'image/png' });
-  }
+  await page.goto('/login?next=%2Faccount');
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Вход в личный кабинет');
+  const password = page.getByLabel('Пароль', { exact: true });
+  const submit = page.locator('main form').getByRole('button', { name: 'Войти', exact: true });
+  await expect(submit).toBeInViewport();
+  await expect(password).toHaveAttribute('autocomplete', 'current-password');
+  await expect(password).toHaveAttribute('type', 'password');
+  await page.getByRole('button', { name: 'Показать пароль' }).click();
+  await expect(password).toHaveAttribute('type', 'text');
+  await page.getByRole('button', { name: 'Скрыть пароль' }).click();
+  await expect(password).toHaveAttribute('type', 'password');
+  await expect(page.getByRole('link', { name: 'Забыли пароль?' })).toHaveAttribute('href', '/forgot-password');
+  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(320);
 });

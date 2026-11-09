@@ -1,0 +1,169 @@
+@media screen {
+  .site-main .b2b-shell {
+    --b2b-paper: #f5f4f1;
+    --b2b-line: #d8d8d3;
+    --b2b-graphite: #232527;
+    grid-template-columns: 236px minmax(0, 1fr);
+    align-items: start;
+    gap: clamp(22px, 4vw, 60px);
+    padding: clamp(26px, 4vw, 58px) clamp(20px, 4vw, 60px) 68px;
+  }
+
+  .b2b-shell .b2b-nav {
+    display: grid;
+    gap: 18px;
+    min-width: 0;
+    padding: 16px;
+    background: var(--b2b-graphite);
+    color: #fff;
+    position: sticky;
+    top: calc(var(--site-header-height, 76px) + 20px);
+  }
+
+  .b2b-shell .b2b-nav-organization {
+    border: 0;
+    border-top: 2px solid #ff6977;
+    padding: 14px 10px 0;
+    border-radius: 0;
+  }
+
+  .b2b-shell .b2b-nav-organization .muted { color: #d2d3d2; }
+  .b2b-shell .b2b-nav-organization strong { font-size: 16px; line-height: 1.35; }
+  .b2b-shell .b2b-nav-organization strong + span { color: #d2d3d2; font-size: 11px; }
+  .b2b-shell .b2b-nav-organization .buttonSecondary { min-height: 40px; color: #222; background: #fff; padding: 8px 10px; font-size: 13px; }
+  .b2b-shell .b2b-nav-organization .button { display: flex; justify-content: center; }
+  .b2b-shell .b2b-nav-organization .error { color: #ffbdc4; }
+  .b2b-shell .b2b-nav-links { display: grid; gap: 2px; min-width: 0; }
+
+  .b2b-shell .b2b-nav-links > a,
+  .b2b-shell .b2b-nav-account {
+    min-height: 42px;
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    line-height: 1.35;
+    border-left: 2px solid transparent;
+  }
+
+  .b2b-shell .b2b-nav-links > a[aria-current] {
+    background: #fff;
+    color: #202224;
+    border-left-color: var(--site-red);
+    font-weight: 700;
+  }
+
+  .b2b-shell .b2b-nav-account { border-top: 1px solid #535557; }
+  .b2b-shell .b2b-nav :is(a, button):focus-visible { outline-color: #ff99a3; }
+  .b2b-shell .b2b-content { min-width: 0; overflow-wrap: anywhere; }
+
+  .b2b-shell .b2b-heading,
+  .b2b-shell .b2b-overview {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: space-between;
+    gap: 16px 24px;
+    padding: clamp(20px, 3vw, 34px);
+    margin-bottom: clamp(20px, 3vw, 34px);
+    background: #fff;
+    border: 1px solid var(--b2b-line);
+    border-top: 3px solid var(--site-red);
+  }
+
+  .b2b-shell .b2b-heading-label {
+    margin: 0 0 10px;
+    font-size: 12px;
+    font-weight: 650;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: #5c6063;
+  }
+
+  .b2b-shell .b2b-heading h1,
+  .b2b-shell .b2b-overview h1 { margin: 0; font-size: clamp(29px, 3.4vw, 48px); line-height: 1.09; }
+  .b2b-shell .b2b-overview { display: block; color: #fff; background: var(--b2b-graphite); }
+  .b2b-shell .b2b-overview .b2b-heading-label { color: #f1c6cb; }
+  .b2b-shell .b2b-overview-company { margin: 16px 0 0; font-size: clamp(17px, 2vw, 24px); line-height: 1.4; }
+  .b2b-shell .b2b-overview-note { margin: 0 0 16px; color: #555b60; }
+
+  .b2b-shell .b2b-task-groups { display: grid; gap: 20px; }
+  .b2b-shell .b2b-task-groups > section {
+    padding: clamp(14px, 2.5vw, 24px);
+    background: var(--b2b-paper);
+    border-top: 2px solid var(--b2b-graphite);
+  }
+  .b2b-shell .b2b-task-groups h2 { margin: 0 0 14px; font-size: clamp(19px, 2.2vw, 25px); }
+
+  .b2b-shell .b2b-overview-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr));
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .b2b-shell .b2b-overview-links a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 72px;
+    height: 100%;
+    gap: 12px;
+    padding: 16px 20px;
+    background: #fff;
+    border: 1px solid var(--b2b-line);
+    border-top: 2px solid #242628;
+    font-size: 16px;
+    font-weight: 650;
+  }
+
+  .b2b-shell .b2b-overview-links a:hover { border-top-color: var(--site-red); color: var(--site-red); }
+  .b2b-shell .b2b-overview-links svg { flex: none; color: var(--site-red); }
+
+  .b2b-shell .b2b-content .b2b-record-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    gap: 14px;
+  }
+
+  .b2b-shell .b2b-content .b2b-record {
+    min-width: 0;
+    border-top: 2px solid #242628;
+    font-variant-numeric: tabular-nums;
+  }
+  .b2b-shell .b2b-content a.b2b-record:is(:hover, :focus-visible) { border-top-color: var(--site-red); }
+  .b2b-shell .b2b-record :is(h2, h3) { margin: 0 0 12px; overflow-wrap: anywhere; }
+  .b2b-shell .b2b-record p { margin: 0 0 6px; }
+  .b2b-shell .b2b-order-detail .b2b-heading { margin-bottom: 0; }
+  .b2b-shell .b2b-order-facts {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 10px clamp(16px, 3vw, 36px);
+    font-variant-numeric: tabular-nums;
+  }
+  .b2b-shell .b2b-order-facts p { margin: 0; }
+  .b2b-shell .b2b-order-item { padding-block: 16px; }
+  .b2b-shell .b2b-heading-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 12px; }
+  .b2b-shell .b2b-content .b2b-note { padding: 16px 18px; border-left: 2px solid #888b8b; background: var(--b2b-paper); }
+  .b2b-shell .b2b-content .quote-status { border-radius: 0; background: var(--b2b-paper); }
+  .b2b-shell .b2b-content .b2b-access-card { border-top: 3px solid var(--site-red); padding: clamp(22px, 4vw, 40px); }
+  .b2b-shell .b2b-content .b2b-access-card > p { max-width: 58ch; line-height: 1.65; }
+  .b2b-shell .b2b-content .quote-print-controls { padding: 16px; background: #fff; border: 1px solid var(--b2b-line); }
+}
+
+@media screen and (max-width: 900px) {
+  .site-main .b2b-shell { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .b2b-shell .b2b-nav { position: static; gap: 12px; }
+  .b2b-shell .b2b-nav-organization { padding-top: 10px; }
+  .b2b-shell .b2b-nav-organization .buttonSecondary { width: auto; }
+  .b2b-shell .b2b-nav-links {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #949596 transparent;
+    padding-block: 3px;
+  }
+  .b2b-shell .b2b-nav-links > a { flex: none; white-space: nowrap; }
+}

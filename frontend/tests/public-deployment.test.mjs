@@ -51,6 +51,9 @@ test('actual Next proxy redirects private reads and refuses writes without forwa
       assert.equal((await response.json()).error.code, 'service_unavailable');
       assert.equal(response.headers.get('x-middleware-rewrite'), null);
     }
+    const contact = proxy(new NextRequest('https://example.test/api/contact', { method: 'POST', body: '{}' }));
+    assert.equal(contact.headers.get('x-middleware-next'), '1');
+    assert.equal(contact.headers.get('set-cookie'), null);
     assert.equal(proxy(new NextRequest('https://example.test/catalog')).headers.get('x-middleware-next'), '1');
     assert.equal(proxy(new NextRequest('https://example.test/healthz')).headers.get('set-cookie'), null);
     process.env.NEXT_PUBLIC_SITE_MODE = 'connected';
