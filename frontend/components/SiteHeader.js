@@ -124,7 +124,7 @@ export default function SiteHeader({ selectionCount }) {
         }}>
         <LocaleElement as="div" className={`site-header-rail${configuredSections === corporateSections ? " site-header-rail-corporate" : ""}`}>
           <Link href="/" className="site-brand" aria-label="ALAGEUM Electric — главная" onNavigate={() => closeMenus()}>
-            <Image src="/brand/logo-lettering-01-red.svg" alt="ALAGEUM Electric" width={148} height={45} priority className="site-brand-image" />
+            <Image src="/brand/logo-header-red.svg" alt="ALAGEUM Electric" width={164} height={38} priority className="site-brand-image" />
           </Link>
           <LocaleElement as="nav" className="site-desktop-nav" aria-label="Основная навигация">
             <LocaleElement as="div" className="site-nav-rail">
