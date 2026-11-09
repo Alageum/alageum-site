@@ -1,74 +1,101 @@
 .dialog {
   position: fixed;
   inset: 0;
+  box-sizing: border-box;
   margin: auto;
-  width: min(440px, calc(100% - 32px));
-  max-height: calc(100% - 32px);
-  max-height: calc(100dvh - 32px);
+  width: min(460px, calc(100% - 24px));
+  max-height: calc(100% - 24px);
+  max-height: calc(100dvh - 24px);
   overflow: auto;
-  padding: clamp(20px, 5vw, 36px);
+  overscroll-behavior: contain;
+  padding: clamp(18px, 4vw, 32px);
   border: 1px solid #dedbd7;
+  border-top: 3px solid var(--site-red);
   background: #fff;
-  color: #20201e;
-  box-shadow: 0 24px 80px rgb(20 17 15 / 22%);
+  color: var(--site-ink);
+  font: 16px / 1.5 var(--site-font);
+  /* The header actions keep their labels on one line. The dialog has its own layout. */
+  white-space: normal;
+  overflow-wrap: anywhere;
+  box-shadow: 0 24px 80px rgb(20 17 15 / 25%);
 }
 
-.dialog::backdrop { background: rgb(20 17 15 / 60%); }
+.dialog::backdrop { background: rgb(20 17 15 / 65%); }
 
-.dialog h2 {
-  margin: 0 42px 10px 0;
-  font-size: clamp(23px, 5vw, 30px);
-  line-height: 1.12;
+.heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 12px;
 }
 
-.intro { margin: 0 0 24px; color: #5b5752; }
+.heading h2 {
+  margin: 0;
+  font: 650 clamp(22px, 5vw, 28px) / 1.15 var(--site-display);
+  letter-spacing: -.025em;
+  text-wrap: balance;
+}
+
+.intro {
+  max-width: 34ch;
+  margin: 10px 0 clamp(18px, 4vw, 24px);
+  color: var(--site-muted);
+  font-size: 15px;
+}
 
 .close {
-  position: absolute;
-  inset: 12px 12px auto auto;
   display: grid;
   place-items: center;
   width: 44px;
   height: 44px;
-  border: 1px solid transparent;
-  background: transparent;
+  padding: 0;
+  border: 1px solid #e7e4df;
+  background: #f7f6f4;
   color: inherit;
   cursor: pointer;
 }
 
-.close:hover { border-color: #dedbd7; }
+.close:hover { background: #efede9; }
 
-.dialog fieldset {
+.fields {
   display: grid;
-  gap: 8px;
+  gap: 14px;
   min-width: 0;
   margin: 0;
   padding: 0;
   border: 0;
 }
 
-.dialog label { font-size: 14px; font-weight: 600; }
+.field { display: grid; gap: 6px; min-width: 0; }
+.field label { font-size: 14px; font-weight: 600; }
 
-.dialog input:not([hidden]) {
+.field input {
+  box-sizing: border-box;
   width: 100%;
+  min-width: 0;
   min-height: 48px;
-  margin-bottom: 8px;
   padding: 10px 12px;
   border: 1px solid #a9a5a0;
+  border-radius: 0;
   background: #fff;
   color: inherit;
   font: inherit;
-  font-size: 16px;
 }
 
-.dialog :focus-visible {
-  outline: 2px solid var(--site-red, #ce1727);
+.field input:focus {
+  border-color: var(--site-red);
+  outline: 1px solid var(--site-red);
+  outline-offset: 0;
+}
+
+.dialog :is(button, a):focus-visible {
+  outline: 2px solid var(--site-red);
   outline-offset: 2px;
 }
 
-.dialog button[type="submit"] { margin-top: 4px; }
-.dialog button:disabled { opacity: .7; cursor: wait; }
+.submit { margin-top: 4px; min-width: 0; white-space: normal; }
+.submit:disabled { opacity: .7; cursor: wait; }
 .success, .error { margin: 16px 0 0; padding: 12px 14px; font-size: 14px; }
 .success { background: #eaf4ec; color: #244d31; }
 .error { background: #f9edec; color: #91222c; }
-.error a { font-weight: 600; white-space: nowrap; }
+.error a { font-weight: 600; }

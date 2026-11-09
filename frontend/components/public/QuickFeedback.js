@@ -16,11 +16,12 @@ export default function QuickFeedback({ onOpen }) {
   const [status, setStatus] = useState('idle');
   const pending = status === 'sending';
 
-  function open() {
+  function open(event) {
     if (status === 'sent') flushSync(() => setStatus('idle'));
     onOpen();
     dialog.current.showModal();
-    nameInput.current?.focus();
+    // Keep the whole form visible before a visitor taps a field on a phone.
+    if (event.nativeEvent.pointerType !== 'touch') nameInput.current?.focus({ preventScroll: true });
   }
 
   async function submit(event) {
@@ -58,19 +59,25 @@ export default function QuickFeedback({ onOpen }) {
       <LocaleElement as="span">Обратная связь</LocaleElement>
     </LocaleElement>
     <dialog ref={dialog} id="quick-feedback" className={styles.dialog} aria-labelledby="quick-feedback-title" onClose={() => trigger.current?.focus()}>
-      <LocaleElement as="h2" id="quick-feedback-title">Заказать обратный звонок</LocaleElement>
-      <LocaleElement as="p" className={styles.intro}>Оставьте имя и номер телефона. Мы вам перезвоним.</LocaleElement>
-      <LocaleElement as="button" ref={closeButton} type="button" className={styles.close} aria-label="Закрыть" onClick={() => dialog.current.close()}>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
-      </LocaleElement>
-      <form action="/api/feedback" method="post" onSubmit={submit} aria-busy={pending} hidden={status === 'sent'}>
-        <fieldset disabled={pending} aria-labelledby="quick-feedback-title">
-          <LocaleElement as="label" htmlFor="quick-feedback-name">Имя</LocaleElement>
-          <input ref={nameInput} id="quick-feedback-name" name="name" autoComplete="name" maxLength={120} required />
-          <LocaleElement as="label" htmlFor="quick-feedback-phone">Телефон</LocaleElement>
-          <input id="quick-feedback-phone" name="phone" type="tel" autoComplete="tel" maxLength={40} placeholder="+7 (___) ___-__-__" required />
-          <input name="website" defaultValue="" hidden />
-          <LocaleElement as="button" type="submit" className="site-button site-button-primary">{pending ? 'Отправляем…' : 'Отправить заявку'}</LocaleElement>
+      <div className={styles.heading}>
+        <LocaleElement as="h2" id="quick-feedback-title">Заказать обратный звонок</LocaleElement>
+        <LocaleElement as="button" ref={closeButton} type="button" className={styles.close} aria-label="Закрыть" onClick={() => dialog.current.close()}>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
+        </LocaleElement>
+      </div>
+      <LocaleElement as="p" className={styles.intro} id="quick-feedback-intro" hidden={status === 'sent'}>Оставьте имя и номер телефона. Мы вам перезвоним.</LocaleElement>
+      <form action="/api/feedback" method="post" onSubmit={submit} aria-busy={pending} aria-describedby="quick-feedback-intro" hidden={status === 'sent'}>
+        <fieldset className={styles.fields} disabled={pending} aria-labelledby="quick-feedback-title">
+          <div className={styles.field}>
+            <LocaleElement as="label" htmlFor="quick-feedback-name">Имя</LocaleElement>
+            <input ref={nameInput} id="quick-feedback-name" name="name" autoComplete="name" maxLength={120} required />
+          </div>
+          <div className={styles.field}>
+            <LocaleElement as="label" htmlFor="quick-feedback-phone">Телефон</LocaleElement>
+            <input id="quick-feedback-phone" name="phone" type="tel" autoComplete="tel" maxLength={40} placeholder="+7 (___) ___-__-__" required />
+          </div>
+          <input name="website" defaultValue="" autoComplete="off" hidden />
+          <LocaleElement as="button" type="submit" className={`site-button site-button-primary ${styles.submit}`}>{pending ? 'Отправляем…' : 'Отправить заявку'}</LocaleElement>
         </fieldset>
       </form>
       <div role="status">
