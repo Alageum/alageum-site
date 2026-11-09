@@ -108,3 +108,30 @@
   color: #1c5838;
 }
 .corp-home-contact [role="alert"] { color: #a8192d; }
+
+.corp-home-enterprises { background: #f3f2ef; }
+.corp-home-enterprise-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: clamp(24px, 5vw, 72px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.corp-home-enterprise-list li { border-top: 1px solid #d8d8d3; }
+.corp-home-enterprise-list a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 64px;
+  padding-block: 12px;
+  font-size: clamp(1rem, 1.6vw, 1.22rem);
+  font-weight: 500;
+  line-height: 1.35;
+}
+.corp-home-enterprise-list a:hover { color: var(--site-red); }
+.corp-home-enterprise-list svg { flex: none; color: var(--site-red); }
+@media (max-width: 760px) {
+  .corp-home-enterprise-list { grid-template-columns: 1fr; }
+}

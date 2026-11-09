@@ -7,8 +7,9 @@ import {investorRedirects} from '../lib/public/company-architecture.js';
 import {engineeringOrganizations} from '../lib/public/engineering-organizations.js';
 import {existsSync} from 'node:fs';
 
-test('primary navigation matches the requested five sections and preserves all nested catalogue groups',()=>{
- assert.deepEqual(siteNavigation.map(s=>s.label),['Каталог','Отрасли','Предприятия','Инвесторам','Компания']);
+test('primary navigation matches the requested order and preserves all nested catalogue groups',()=>{
+ assert.deepEqual(siteNavigation.map(s=>s.label),['Каталог','Отрасли','Предприятия','Инвесторам','Проектировщикам','Компания']);
+ assert.equal(siteNavigation[4].href,'/documents');
  const catalogue=siteNavigation[0];assert.equal(catalogue.links.length,topCatalogDirections.length);
  const hrefs=catalogue.links.flatMap(([,href,,children])=>[href,...children.map(([,url])=>url)]);
  assert.equal(new Set(hrefs).size,catalogDirections.length);

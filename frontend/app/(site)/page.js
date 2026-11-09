@@ -1,5 +1,4 @@
 import CompanyMetrics from '@/components/public/CompanyMetrics';
-import { DeliveryPowerChart } from '@/components/public/HomeEngineeringCharts';
 import LocaleElement from "@/components/locale/LocaleElement";
 import NewsFeed from '@/components/news/NewsFeed';
 import PartnerMarquee from '@/components/public/PartnerMarquee';
@@ -10,9 +9,8 @@ import EquipmentIcon from '@/components/catalog/EquipmentIcon';
 import CorporatePage from '@/components/public/CorporatePage';
 import CorporatePhoto from '@/components/public/CorporatePhoto';
 import { ProjectStages, SectionHeading } from '@/components/public/CorporateParts';
-import HomeEnterpriseMap from '@/components/public/HomeEnterpriseMap';
 import HomeContactForm from '@/components/public/HomeContactForm';
-import { corporateProfileHref } from '@/lib/public/content';
+import { corporateProfileHref, manufacturerById } from '@/lib/public/content';
 import { industries } from '@/lib/public/industries';
 import { getCorporatePhoto, getManufacturerPhoto } from '@/lib/public/photography';
 import '@/components/public/corporate-home.css';
@@ -24,6 +22,7 @@ const categories = [
 { id: 'substations', title: 'Подстанции', text: 'Приём и распределение электроэнергии', icon: 'substation' },
 { id: 'cabinets', title: 'Шкафы и щиты', text: 'Управление оборудованием и защита цепей', icon: 'control-cabinet' },
 { id: 'protection', title: 'Катодная защита', text: 'Защита металлических конструкций от коррозии', icon: 'protection-cabinet' }];
+const keyEnterprises = ['ktz', 'elmo', 'asia-trafo', 'aemz', 'utz', 'petz', 'batys-electric'].map(manufacturerById);
 
 export default async function HomePage({ params }) {
   const locale = (await params)?.locale || 'ru';
@@ -46,10 +45,18 @@ export default async function HomePage({ params }) {
     <LocaleElement as="section" id="equipment" className="corp-white-band"><LocaleElement as="div" className="site-container corp-section"><SectionHeading title="Каталог" href="/catalog" link="Технический каталог" /><LocaleElement as="div" className="corp-equipment-grid">{categories.map((item, index) => <Link className="corp-equipment-card" href={`/catalog?category=${item.id}`} key={item.id}><LocaleElement as="span" className="corp-card-index">0{index + 1}</LocaleElement>{getCorporatePhoto(`category-${item.id}`) ? <CorporatePhoto photo={getCorporatePhoto(`category-${item.id}`)} caption={false} className="corp-equipment-photo" sizes="(max-width: 480px) 100px, 230px" /> : <LocaleElement as="div" className="corp-equipment-symbol"><EquipmentIcon type={item.icon} size={88} /></LocaleElement>}<LocaleElement as="h3">{item.title}</LocaleElement><LocaleElement as="p">{item.text}</LocaleElement><LocaleElement as="span" className="corp-card-arrow"><CorporateArrow /></LocaleElement></Link>)}</LocaleElement><LocaleElement as="p" className="corp-small-note">Производитель уточнит характеристики, комплектацию и срок поставки по вашему техническому заданию.</LocaleElement></LocaleElement></LocaleElement>
     <LocaleElement as="section" id="capabilities" aria-label="Направления деятельности">
       <div className="corp-cycle"><LocaleElement as="div" className="site-container"><SectionHeading number="02" label="ПРОДУКЦИЯ И РАБОТЫ" title="Направления деятельности" href={corporateProfileHref} link="Корпоративный профиль (PDF)" /><LocaleElement as="p" className="corp-lead">Работаем на всех этапах: проектируем энергообъекты, выпускаем оборудование, монтируем и обслуживаем его.</LocaleElement><ProjectStages /></LocaleElement></div>
-      <DeliveryPowerChart />
     </LocaleElement>
     <CompanyMetrics operationsPhoto={getManufacturerPhoto('ktz')} />
-    <HomeEnterpriseMap />
+    <section id="home-enterprises" className="corp-home-enterprises">
+      <div className="site-container corp-section">
+        <SectionHeading number="04" label="ПРЕДПРИЯТИЯ" title="Ключевые предприятия" href="/manufacturers#company-map" link="Все предприятия и офисы" />
+        <ul className="corp-home-enterprise-list">
+          {keyEnterprises.map(({ id, legal }) => <li key={id}>
+            <Link href={`/manufacturers/${id}`}>{id === 'batys-electric' ? 'ТОО «Batys Electric»' : legal} <CorporateArrow /></Link>
+          </li>)}
+        </ul>
+      </div>
+    </section>
     <section id="home-industries" className="corp-home-industries">
       <div className="site-container corp-section">
         <SectionHeading number="05" label="ОТРАСЛИ" title="Что мы поставляем для вашей отрасли" href="/industries" link="Все отрасли" />

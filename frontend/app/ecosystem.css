@@ -96,3 +96,30 @@
     font-size: clamp(30px, 7vw, 50px);
   }
 }
+
+/* Keep all six corporate tabs legible alongside the header actions. */
+.site-header-rail-corporate .site-nav-link{flex-shrink:0}
+@media(min-width:981px) and (max-width:1024px){
+  .site-header .site-header-rail-corporate .site-desktop-nav{display:none}
+  .site-header .site-header-rail-corporate .site-menu-toggle{display:flex}
+}
+@media(min-width:1025px) and (max-width:1180px){
+  .site-header .site-header-rail-corporate{gap:16px}
+}
+@media(min-width:1025px) and (max-width:1150px){
+  .site-header .site-header-rail-corporate .site-feedback-link{width:44px;padding:0}
+  .site-header-rail-corporate .site-feedback-link>span{display:none}
+}
+@media(min-width:1181px) and (max-width:1320px){
+  .site-header .site-header-rail-corporate{--site-tab-width:100px;gap:20px}
+}
+@media(min-width:1321px){
+  .site-header .site-header-rail-corporate{gap:32px}
+}
+@media(min-width:1600px){
+  .site-header .site-header-rail-corporate{gap:24px}
+}
+@media(min-width:1321px) and (max-width:1439px), (min-width:1600px){
+  .site-header .site-header-rail-corporate .site-account-link{padding:0}
+  .site-header-rail-corporate .site-account-link>span{display:none}
+}
