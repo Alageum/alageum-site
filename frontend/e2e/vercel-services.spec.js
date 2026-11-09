@@ -39,6 +39,17 @@ test('Vercel serves public pages/assets and replaces private entry points with h
   expect(asset.headers()['content-type']).toContain('image/png');
 });
 
+test('reloading the homepage at the top does not snap to the footer', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'no-preference' });
+  await page.goto('/');
+  const hero = page.getByRole('main').getByRole('heading', { level: 1 });
+  await expect(hero).toBeInViewport();
+  await page.reload();
+  await expect(hero).toBeInViewport();
+  expect(await page.evaluate(() => window.scrollY)).toBe(0);
+  await expect(page.getByRole('contentinfo')).toHaveCSS('scroll-snap-align', 'none');
+});
+
 test('photos decode on public pages through the deployed ingress', async ({ page }) => {
   for (const [path, alt] of [
     ['/', 'Силовые трансформаторы в цехе Кентауского трансформаторного завода'],

@@ -42,14 +42,14 @@
 
 /* Gentle section alignment on the homepage; long sections remain freely scrollable. */
 @media (prefers-reduced-motion: no-preference) {
-  html:has(.corp-home) {
+  /* Next.js streams a hidden copy before inserting the page into main. */
+  html:has(#main-content > .corp-home) {
     scroll-snap-type: y proximity;
     scroll-padding-top: var(--site-header-height);
     scroll-behavior: smooth;
   }
-  .corp-home > :is(section, div):not(.corp-home-end),
-  .corp-home-end > :is(.home-opportunities, .corp-cta),
-  body:has(.corp-home) .site-footer {
+  #main-content > .corp-home > :is(section, div):not(.corp-home-end),
+  #main-content > .corp-home > .corp-home-end > :is(.home-opportunities, .corp-cta) {
     scroll-snap-align: start;
     scroll-margin-top: 0;
   }
