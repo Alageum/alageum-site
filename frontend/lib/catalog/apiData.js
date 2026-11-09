@@ -23,9 +23,7 @@ export function normalizeApiProduct(product) {
   description: product.translations?.ru?.description || product.translations?.en?.description || '',
   category: product.category_public_key || '', sku: product.sku, source: 'api',
   price: product.price, currency: product.currency, price_mode: product.price_mode, version: product.version, comparable: product.comparable,
-  ...Object.fromEntries(['designation','execution','productKind','sourceRecordType','power','voltage','voltageUnit','cooling','installation','subtype','current','function','recordKind','recordType','series','familyId','familyName'].map(key => [key,text(specs[key])])),
-  manufacturer: text(specs.manufacturer) || text(product.manufacturer_public_key),
-  ...(Array.isArray(specs.manufacturers) ? { manufacturers: specs.manufacturers.filter(value => typeof value === 'string' && value.trim()) } : {}),
+  ...Object.fromEntries(['designation','execution','productKind','sourceRecordType','power','voltage','voltageUnit','cooling','installation','subtype','manufacturer','recordKind','recordType','series','familyId','familyName'].map(key => [key,text(specs[key])])),
   // Keep variant-specific source facts for exact evidence checks and preserve
   // their sanitized rows so summaries do not substitute a family-wide range.
   ...(Object.hasOwn(specs, 'variantSpecs') ? { sourceVariantSpecs: specs.variantSpecs } : {}),
@@ -39,6 +37,16 @@ export function normalizeApiProduct(product) {
   sourceMediaPath: sourceImage?.path || null, sourceImageCaption: typeof sourceImage?.alt === 'string' ? sourceImage.alt : null,
   image: image?.path || null, imageCaption: typeof image?.alt === 'string' ? image.alt : null, attributes: product.attributes || [],
  };
+}
+// Facet metadata belongs to the catalog listing. Keep the shared product
+// representation stable for evidence checks, selection and quote consumers.
+export function normalizeApiCatalogProduct(product) {
+ const record = normalizeApiProduct(product);
+ const specs = product.specs || {};
+ const manufacturers = Array.isArray(specs.manufacturers)
+  ? specs.manufacturers.filter(value => typeof value === 'string' && value.trim()) : [];
+ return { ...record, current: text(specs.current), function: text(specs.function),
+  manufacturer: record.manufacturer || text(product.manufacturer_public_key), manufacturers };
 }
 export function normalizeApiSelection(value) {
  if (!Array.isArray(value)) return [];

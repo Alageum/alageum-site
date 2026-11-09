@@ -1,4 +1,5 @@
 import { stubRenderBoundaries } from './helpers/render-boundaries.mjs';
+import { renderLocaleElement, renderProductDetailParts } from './helpers/render-product-detail-parts.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
@@ -57,7 +58,7 @@ async function render(name, products, ids, differencesOnly = false) {
     ImportedSpecifications = function RenderedImportedSpecifications() { return createElement('div', { dangerouslySetInnerHTML: { __html: html } }); };
   }
   const bindings = {
-    ...data, ...presentation, ...grouping, ...sources, products, officialProducts: products,
+    ...data, ...presentation, ...grouping, ...sources, E: renderLocaleElement, products, officialProducts: products,
     productById: id => products.find(product => product.id === id),
     comparisonSpecValue, catalogSpecValueText, CatalogSpecValue,
     ...(ImportedSpecifications ? { ImportedSpecifications } : {}),
@@ -73,6 +74,7 @@ async function render(name, products, ids, differencesOnly = false) {
       : initial === false ? differencesOnly : initial, () => {}],
     useSelection: () => ({ add() {} }), useApiSelection: () => ({ add() {} }),
   };
+  Object.assign(bindings, await renderProductDetailParts(bindings));
   const Component = new Function('bindings', 'require', 'exports',
     `const { ${Object.keys(bindings).join(', ')} } = bindings;\n${componentCache.get(name)}\nreturn ${name};`)(bindings, require, {});
   return renderToStaticMarkup(createElement(Component, { id: ids[0], product: products.find(product => product.id === ids[0]) }));

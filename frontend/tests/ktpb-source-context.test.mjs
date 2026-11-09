@@ -1,4 +1,5 @@
 import { stubRenderBoundaries } from './helpers/render-boundaries.mjs';
+import { renderLocaleElement, renderProductDetailParts } from './helpers/render-product-detail-parts.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
@@ -129,7 +130,7 @@ async function component(relative, name, bindings) {
 // Only asynchronous data/state and unrelated leaf visuals are substituted. This
 // verifies server-rendered routing; browser layout/hydration remains untested here.
 async function render(id, { api = false, selected = '', rows = api ? live : records, failed = false } = {}) {
-  const bindings = { ...data, ...presentation, ...grouping, ...sources, useState, Link,
+  const bindings = { ...data, ...presentation, ...grouping, ...sources, E: renderLocaleElement, useState, Link,
     LocalResourceAnchor: props => createElement('a', props), DesignSelect: props => createElement('select', props),
     ProductPhotograph: () => null, RelatedProducts: () => null, ProductThumbnail: () => null,
     Image: props => createElement('img', props), ProductIcon: () => null, EquipmentModel: () => null,
@@ -144,6 +145,7 @@ async function render(id, { api = false, selected = '', rows = api ? live : reco
     getCatalogSourceContext: context, sourceContextAssetProof: proof,
     styles: new Proxy({}, { get: (_, key) => key }), SourceContextImage,
   };
+  Object.assign(bindings, await renderProductDetailParts(bindings));
   if (failed) bindings.SourceContextImage = await component('source-context/SourceContextImage', 'SourceContextImage', { createElement, useCallback, useRef, useState: () => [page, () => {}] });
   bindings.CatalogSourceContext = await component('source-context/CatalogSourceContext', 'CatalogSourceContext', bindings);
   bindings.ProductVisual = await component('ProductVisual', 'ProductVisual', bindings);

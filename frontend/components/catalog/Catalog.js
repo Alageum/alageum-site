@@ -59,7 +59,7 @@ export default function Catalog() {
   useEffect(() => {
     if (!apiMode) return;
     let active = true;
-    loadApiCatalog().then((items) => {if (active) setRemote({ items, status: 'ready', error: '' });}).catch((error) => {if (active) setRemote({ items: [], status: 'error', error: error.message });});
+    loadApiCatalog({ withFilters: true }).then((items) => {if (active) setRemote({ items, status: 'ready', error: '' });}).catch((error) => {if (active) setRemote({ items: [], status: 'error', error: error.message });});
     return () => {active = false;};
   }, [apiMode, retry]);
   const products = apiMode ? remote.items : demoMode ? demoProducts : officialProducts;

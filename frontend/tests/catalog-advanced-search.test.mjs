@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { filterAdvancedProducts, advancedFacetOptions, readFacetSelection } from '../lib/catalog/advancedQuery.js';
 import { demoProducts, officialProducts } from '../lib/catalog/data.js';
 import { filterProducts } from '../lib/catalog/query.js';
-import { normalizeApiProduct } from '../lib/catalog/apiData.js';
+import { normalizeApiCatalogProduct, normalizeApiProduct } from '../lib/catalog/apiData.js';
 test('advanced search preserves original unit-qualified matches and bookmarked filters',()=>{for(const params of [{q:'630 кВА'},{q:'10 кВ',category:'substations'},{category:'transformers',power:'630'}])assert.deepEqual(filterAdvancedProducts(officialProducts,params).map(p=>p.id),filterProducts(officialProducts,params).map(p=>p.id));});
 test('multiple values use OR inside one facet and AND across facets',()=>{const data=demoProducts.map(p=>({...p,source:'official',manufacturer:p.id==='demo-003'?'plant-b':'plant-a'}));const params={f_power:JSON.stringify(['630','1000']),f_manufacturer:JSON.stringify(['plant-a']),category:'transformers'};const result=filterAdvancedProducts(data,params);assert.ok(result.length>0);assert.ok(result.every(p=>[630,1000].includes(p.power)&&p.manufacturer==='plant-a'));assert.ok(advancedFacetOptions(data,params,'manufacturer').some(([value])=>value==='plant-b'));});
 test('exact designations reject partial matches; malformed selections are bounded safely',()=>{assert.deepEqual(filterAdvancedProducts(demoProducts,{q:' demo-001 ',searchMode:'exact'}).map(p=>p.id),['demo-001']);assert.equal(filterAdvancedProducts(demoProducts,{q:'demo',searchMode:'exact'}).length,0);assert.deepEqual(readFacetSelection('{bad'),[]);assert.deepEqual(readFacetSelection('[null,4,"a","a","x,y"]'),['a','x,y']);});
@@ -17,8 +17,11 @@ test('API records retain the source values used by technical and manufacturer fa
     manufacturer_public_key: 'plant-main',
     specs: { current: '630', function: 'Ввод', manufacturers: ['plant-main', 'plant-partner'] },
   };
-  const product = normalizeApiProduct(base);
-  const other = normalizeApiProduct({ ...base, public_key: 'api-other', specs: { current: '1000', function: 'Ввод' } });
+  const record = normalizeApiProduct(base);
+  for (const field of ['current', 'function', 'manufacturers']) assert.equal(Object.hasOwn(record, field), false);
+  assert.equal(record.manufacturer, null);
+  const product = normalizeApiCatalogProduct(base);
+  const other = normalizeApiCatalogProduct({ ...base, public_key: 'api-other', specs: { current: '1000', function: 'Ввод' } });
   assert.deepEqual(advancedFacetOptions([product, other], {}, 'manufacturer'), [['plant-main', 2], ['plant-partner', 1]]);
   assert.deepEqual(filterAdvancedProducts([product, other], { f_current: '["630"]', f_function: '["Ввод"]', f_manufacturer: '["plant-partner"]' }), [product]);
 });
