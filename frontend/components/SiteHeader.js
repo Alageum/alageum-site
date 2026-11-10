@@ -150,7 +150,7 @@ export default function SiteHeader({ selectionCount }) {
             {area !== "careers" && <LocaleElement as="div" id="site-mega-navigation" className={`site-mega-navigation${desktopOpen ? " is-open" : ""}`} inert={!desktopOpen}>
               {activeSection &&
               <LocaleElement as="div" className={`site-mega-inner ${menuStyles.panel}`} key={activeSection.href}>
-                  <LocaleElement as="div" className="site-mega-intro"><LocaleElement as="span" className="site-eyebrow">{activeSection.label}</LocaleElement><LocaleElement as="strong">{activeSection.title}</LocaleElement><LocaleElement as="p">{activeSection.note}</LocaleElement>{activeSection.resources&&<div className="company-menu-resources">{activeSection.resources.map(([label,href])=><Link key={href} href={href} onNavigate={()=>closeMenus()}>{label} ↗</Link>)}</div>}</LocaleElement>
+                  <LocaleElement as="div" className="site-mega-intro"><LocaleElement as="strong">{activeSection.title}</LocaleElement><LocaleElement as="p">{activeSection.note}</LocaleElement>{activeSection.resources&&<div className="company-menu-resources">{activeSection.resources.map(([label,href])=><Link key={href} href={href} onNavigate={()=>closeMenus()}>{label} ↗</Link>)}</div>}</LocaleElement>
                   {desktopOpen && <SiteMenuLinks links={activeSection.links} onNavigate={() => closeMenus()}/>}
                 </LocaleElement>
               }

@@ -23,6 +23,15 @@ const categories = [
 { id: 'cabinets', title: 'Шкафы и щиты', text: 'Управление оборудованием и защита цепей', icon: 'control-cabinet' },
 { id: 'protection', title: 'Катодная защита', text: 'Защита металлических конструкций от коррозии', icon: 'protection-cabinet' }];
 const keyEnterprises = ['ktz', 'elmo', 'asia-trafo', 'aemz', 'utz', 'petz', 'batys-electric'].map(manufacturerById);
+const industryIcons = {
+  'power-grid': 'M5 21 10 3h4l5 18M7 15h10M4 10h16M9 10l8 5m-2-5-8 5M4 21h16',
+  'oil-gas': 'M12 3c-3 4-6 7-6 11a6 6 0 0 0 12 0c0-4-3-7-6-11ZM9 15a3 3 0 0 0 3 3',
+  'industry-mining': 'M3 21V11l6 3V9l6 3V5h5l1 16H3Zm4-4v1m4-1v1m4-1v1',
+  'civil-construction': 'M3 21h18M5 21V4h9v17m0-12h5v12M8 8h3m-3 4h3m-3 4h3m5-3h1m-1 3h1',
+  'infrastructure-transport': 'M7 4h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm-2 9h14m-7-9v9m-4 2.5h.01m8 0h.01M8 18l-2 3m10-3 2 3',
+  epc: 'M5 3h10l4 4v14H5V3Zm10 0v5h4M8 12h8m-8 4h5',
+  renewables: 'M12 9V3c3 0 5 2 5 4l-5 2Zm0 0-5 3c-1.5-2.6-.8-5.2 1-6l4 3Zm0 0 5 3c-1.5 2.6-4.2 3-6 2l1-5Zm0 5v7m-4 0h8',
+};
 
 export default async function HomePage({ params }) {
   const locale = (await params)?.locale || 'ru';
@@ -62,12 +71,13 @@ export default async function HomePage({ params }) {
         <SectionHeading number="05" label="ОТРАСЛИ" title="Что мы поставляем для вашей отрасли" href="/industries" link="Все отрасли" />
         <ul className="corp-home-industry-list">
           {industries.map(industry => <li key={industry.id}>
-            <span className="corp-home-industry-number" aria-hidden="true">{industry.number}</span>
+            <svg className="corp-home-industry-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d={industryIcons[industry.id]} />
+            </svg>
             <div>
               <h3><Link href={industry.href}>{industry.title}</Link></h3>
               <LocaleElement as="p">{industry.description}</LocaleElement>
             </div>
-            <Link className="site-text-link" href={`${industry.href}#industry-projects`}>Проекты и поставки <CorporateArrow /></Link>
           </li>)}
         </ul>
       </div>
