@@ -4,6 +4,7 @@ import { useRef, useState } from 'react';
 import E from '@/components/locale/LocaleElement';
 import useHydrated from '@/components/ui/useHydrated';
 import CorporateArrow from './CorporateArrow';
+import SectionEyebrow from './SectionEyebrow';
 
 const salesEmail = 'sales@alageum.com';
 
@@ -60,7 +61,7 @@ export default function HomeContactForm() {
   return <section id="home-contact" className="corp-home-contact" aria-labelledby="home-contact-heading">
     <div className="site-container corp-section corp-home-contact-layout">
       <div>
-        <E as="p" className="site-eyebrow">08 / <E>ФОРМА ДЛЯ СВЯЗИ</E></E>
+        <SectionEyebrow label="Обратная связь" />
         <E as="h2" id="home-contact-heading">Напишите в отдел продаж</E>
         <E as="p" id="home-contact-instructions">Укажите, какое оборудование или работы вам нужны.</E>
         <div className="corp-home-contact-links">

@@ -6,9 +6,10 @@ import {getProjectPhoto} from '@/lib/public/photography';
 import Link from "@/components/locale/LocaleLink";
 import { projectStages } from '@/lib/public/company';
 import {localSourceHref} from '@/lib/public/localResources';
+import SectionEyebrow from './SectionEyebrow';
 
 export function SectionHeading({ number, label, title, href, link }) {
-  return <LocaleElement as="div" className="corp-section-heading"><LocaleElement as="div">{label && <LocaleElement as="p" className="site-eyebrow">{number} / {label}</LocaleElement>}<LocaleElement as="h2">{title}</LocaleElement></LocaleElement>{href && <Link className="site-text-link" href={href}>{link} <CorporateArrow /></Link>}</LocaleElement>;
+  return <LocaleElement as="div" className="corp-section-heading"><LocaleElement as="div">{label && <SectionEyebrow number={number} label={label} />}<LocaleElement as="h2">{title}</LocaleElement></LocaleElement>{href && <Link className="site-text-link" href={href}>{link} <CorporateArrow /></Link>}</LocaleElement>;
 }
 const stagePhotos = { '01': storyPhotos.asiaEngineering, '02': getManufacturerPhoto('aemz'), '03': getProjectPhoto('petropavlovsk'), '04': storyPhotos.ktzProducts };
 export function ProjectStages() {

@@ -51,14 +51,14 @@ export default async function HomePage({ params }) {
       </LocaleElement>
       <HeroVideo />
     </LocaleElement></LocaleElement>
-    <LocaleElement as="section" id="equipment" className="corp-white-band"><LocaleElement as="div" className="site-container corp-section"><SectionHeading title="Каталог" href="/catalog" link="Технический каталог" /><LocaleElement as="div" className="corp-equipment-grid">{categories.map((item, index) => <Link className="corp-equipment-card" href={`/catalog?category=${item.id}`} key={item.id}><LocaleElement as="span" className="corp-card-index">0{index + 1}</LocaleElement>{getCorporatePhoto(`category-${item.id}`) ? <CorporatePhoto photo={getCorporatePhoto(`category-${item.id}`)} caption={false} className="corp-equipment-photo" sizes="(max-width: 480px) 100px, 230px" /> : <LocaleElement as="div" className="corp-equipment-symbol"><EquipmentIcon type={item.icon} size={88} /></LocaleElement>}<LocaleElement as="h3">{item.title}</LocaleElement><LocaleElement as="p">{item.text}</LocaleElement><LocaleElement as="span" className="corp-card-arrow"><CorporateArrow /></LocaleElement></Link>)}</LocaleElement><LocaleElement as="p" className="corp-small-note">Производитель уточнит характеристики, комплектацию и срок поставки по вашему техническому заданию.</LocaleElement></LocaleElement></LocaleElement>
+    <LocaleElement as="section" id="equipment" className="corp-white-band"><LocaleElement as="div" className="site-container corp-section"><SectionHeading label="Каталог" title="Каталог" href="/catalog" link="Технический каталог" /><LocaleElement as="div" className="corp-equipment-grid">{categories.map((item, index) => <Link className="corp-equipment-card" href={`/catalog?category=${item.id}`} key={item.id}><LocaleElement as="span" className="corp-card-index">0{index + 1}</LocaleElement>{getCorporatePhoto(`category-${item.id}`) ? <CorporatePhoto photo={getCorporatePhoto(`category-${item.id}`)} caption={false} className="corp-equipment-photo" sizes="(max-width: 480px) 100px, 230px" /> : <LocaleElement as="div" className="corp-equipment-symbol"><EquipmentIcon type={item.icon} size={88} /></LocaleElement>}<LocaleElement as="h3">{item.title}</LocaleElement><LocaleElement as="p">{item.text}</LocaleElement><LocaleElement as="span" className="corp-card-arrow"><CorporateArrow /></LocaleElement></Link>)}</LocaleElement><LocaleElement as="p" className="corp-small-note">Производитель уточнит характеристики, комплектацию и срок поставки по вашему техническому заданию.</LocaleElement></LocaleElement></LocaleElement>
     <LocaleElement as="section" id="capabilities" aria-label="Направления деятельности">
-      <div className="corp-cycle"><LocaleElement as="div" className="site-container"><SectionHeading number="02" label="ПРОДУКЦИЯ И РАБОТЫ" title="Направления деятельности" href={corporateProfileHref} link="Корпоративный профиль (PDF)" /><LocaleElement as="p" className="corp-lead">Работаем на всех этапах: проектируем энергообъекты, выпускаем оборудование, монтируем и обслуживаем его.</LocaleElement><ProjectStages /></LocaleElement></div>
+      <div className="corp-cycle"><LocaleElement as="div" className="site-container"><SectionHeading label="Направления деятельности" title="Направления деятельности" href={corporateProfileHref} link="Корпоративный профиль (PDF)" /><LocaleElement as="p" className="corp-lead">Работаем на всех этапах: проектируем энергообъекты, выпускаем оборудование, монтируем и обслуживаем его.</LocaleElement><ProjectStages /></LocaleElement></div>
     </LocaleElement>
     <CompanyMetrics operationsPhoto={getManufacturerPhoto('ktz')} />
     <section id="home-enterprises" className="corp-home-enterprises">
       <div className="site-container corp-section">
-        <SectionHeading number="04" label="ПРЕДПРИЯТИЯ" title="Ключевые предприятия" href="/manufacturers#company-map" link="Все предприятия и офисы" />
+        <SectionHeading label="Предприятия" title="Ключевые предприятия" href="/manufacturers#company-map" link="Все предприятия и офисы" />
         <ul className="corp-home-enterprise-list">
           {keyEnterprises.map(({ id, legal }) => <li key={id}>
             <Link href={`/manufacturers/${id}`}>{id === 'batys-electric' ? 'ТОО «Batys Electric»' : legal} <CorporateArrow /></Link>
@@ -68,23 +68,28 @@ export default async function HomePage({ params }) {
     </section>
     <section id="home-industries" className="corp-home-industries">
       <div className="site-container corp-section">
-        <SectionHeading number="05" label="ОТРАСЛИ" title="Что мы поставляем для вашей отрасли" href="/industries" link="Все отрасли" />
+        <SectionHeading label="Отрасли" title="Что мы поставляем для вашей отрасли" href="/industries" link="Все отрасли" />
         <ul className="corp-home-industry-list">
-          {industries.map(industry => <li key={industry.id}>
-            <svg className="corp-home-industry-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <path d={industryIcons[industry.id]} />
-            </svg>
-            <div>
-              <h3><Link href={industry.href}>{industry.title}</Link></h3>
-              <LocaleElement as="p">{industry.description}</LocaleElement>
-            </div>
-          </li>)}
+          {industries.map(industry => {
+            const headingId = `home-industry-${industry.id}`;
+            return <li key={industry.id}>
+              <Link className="corp-home-industry-card" href={industry.href} aria-labelledby={headingId}>
+                <span className="corp-home-industry-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d={industryIcons[industry.id]} />
+                  </svg>
+                </span>
+                <LocaleElement as="h3" id={headingId}>{industry.title}</LocaleElement>
+                <LocaleElement as="p">{industry.description}</LocaleElement>
+              </Link>
+            </li>;
+          })}
         </ul>
       </div>
     </section>
-    <PartnerMarquee number="06" />
+    <PartnerMarquee />
     <section id="home-news" className="site-container corp-section">
-      <SectionHeading number="07" label="НОВОСТИ КОМПАНИИ" title="Новости компании и её предприятий" href="/news" link="Все публикации" />
+      <SectionHeading label="Новости" title="Новости компании и её предприятий" href="/news" link="Все публикации" />
       <NewsFeed locale={locale} />
     </section>
     <HomeContactForm />

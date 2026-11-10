@@ -1,5 +1,6 @@
 import E from '@/components/locale/LocaleElement';
 import CorporatePhoto from './CorporatePhoto';
+import SectionEyebrow from './SectionEyebrow';
 import './CompanyMetrics.css';
 
 const operations = [
@@ -21,13 +22,13 @@ function OperationsFigures({ items, className }) {
   </dl>;
 }
 
-export default function CompanyMetrics({ operationsPhoto }) {
+export default function CompanyMetrics({ number, operationsPhoto }) {
   return <section id="group-in-figures" className="company-metrics" aria-labelledby="company-operations-title">
     <div className="site-container">
       <div className="company-operations">
         <div className="company-operations-feature">
           <div className="company-operations-lead">
-            <E as="p" className="company-operations-note">Предприятия и команда</E>
+            <SectionEyebrow number={number} label="Компания в цифрах" />
             <E as="h2" id="company-operations-title">Компания в цифрах</E>
             <OperationsFigures items={operations.slice(0, 2)} className="company-operations-primary" />
             <E as="p" className="company-operations-founded">Группа основана в 1997 году.</E>

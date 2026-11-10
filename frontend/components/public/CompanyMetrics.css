@@ -21,12 +21,12 @@
   min-width: 0;
   padding: clamp(22px, 4vw, 56px);
 }
-.company-operations-note, .company-operations-founded {
+.company-operations-founded {
   color: #ebebea;
   font-size: .85rem;
   line-height: 1.4;
 }
-.company-operations-note { margin: 0 0 8px; }
+.company-operations-lead > .site-eyebrow { margin: 0 0 8px; color: #ff9aa4; }
 .company-operations-founded { margin: 22px 0 0; }
 
 .company-operations h2 {
