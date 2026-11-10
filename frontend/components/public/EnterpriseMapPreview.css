@@ -5,7 +5,56 @@
 .enterprise-map-preview-close{display:grid;place-items:center;border:1px solid #c6c6c6;background:white;width:30px;height:30px;font-size:22px;line-height:1;border-radius:50%;cursor:pointer;flex-shrink:0}.enterprise-map-preview-close:hover{background:#f2f3f4}
 .enterprise-map-preview-city{font-size:12px;color:#676d73;margin:8px 0 16px}.enterprise-map-preview h3{font-size:24px;font-weight:400;line-height:1.25;letter-spacing:-.03em;margin:16px 0 20px}.enterprise-map-preview figure{margin:0 0 20px}.enterprise-map-preview figure img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover}.enterprise-map-preview figcaption{font-size:10px;line-height:1.6;color:#676d73;margin-top:8px}
 .enterprise-map-preview-description{font-size:13px;line-height:1.75;margin:0 0 20px}.enterprise-map-preview h4{font-size:12px;font-weight:500;margin:18px 0 12px}.enterprise-map-preview ul{padding-left:18px;margin:0 0 20px;font-size:12px;line-height:1.8}
-.enterprise-map-choices{display:flex;gap:8px;flex-wrap:wrap}.enterprise-map-choices button{font:12px var(--site-font);padding:8px 12px;border:1px solid #c6c6c6;background:white;border-radius:4px;cursor:pointer}.enterprise-map-choices button:hover{background:#f2f3f4}.enterprise-map-choices button[aria-pressed=true]{background:#fff1f3;border-color:#ce1727;color:#ce1727}
+.enterprise-map-split { display: grid; gap: 12px; }
+.enterprise-map-choices { display: grid; gap: 6px; align-content: start; min-width: 0; }
+.enterprise-map-choice {
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  min-height: 48px;
+  padding: 6px 8px;
+  border: 1px solid #e0e1df;
+  border-radius: 6px;
+  background: #fff;
+  color: var(--site-ink);
+  font: 13px/1.25 var(--site-font);
+  text-align: start;
+  cursor: pointer;
+}
+.enterprise-map-choice:hover { background: #f5f5f3; }
+.enterprise-map-choice[aria-pressed="true"] {
+  border-color: #d4b9bd;
+  background: #f9f5f5;
+  box-shadow: inset 2px 0 var(--site-red);
+}
+.enterprise-map-choice-image {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  overflow: hidden;
+  border-radius: 3px;
+  background: #e9eae7;
+  color: #50544f;
+}
+.enterprise-map-choice-image img { width: 100%; height: 100%; object-fit: cover; }
+.enterprise-map-choice-name { display: grid; gap: 3px; overflow-wrap: anywhere; }
+.enterprise-map-choice-name small { color: #626762; font-size: 11px; }
+.enterprise-map-choice-name strong { font-weight: 650; }
+.enterprise-map-picker-window,
+.enterprise-map-detail-pane {
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid #c6c6c6;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 12px 30px #1d1d1b26;
+}
+.enterprise-map-detail-pane { overflow-wrap: anywhere; }
+.enterprise-map-detail-pane .enterprise-map-kind:first-child { margin-top: 0 !important; }
+.enterprise-map-detail-pane h3 { margin-top: 8px; }
 .enterprise-map-preview-contact{display:flex;flex-direction:column;gap:9px;border-block:1px solid #c6c6c6;padding:16px 0;margin-bottom:20px;font-size:12px;line-height:1.65}.enterprise-map-preview-contact p{font-size:10px;color:#676d73;margin:0}.enterprise-map-preview-contact address{font-style:normal}.enterprise-map-preview-contact a{color:#1d1d1b;text-decoration:none}.enterprise-map-preview-contact a:hover{color:#ce1727}.enterprise-map-preview .site-text-link{font-size:12px}.enterprise-map-preview button:focus-visible,.enterprise-map-preview a:focus-visible{outline:2px solid #ce1727;outline-offset:3px}
 .corp-map-pin.is-preview i{background:#ff6479;box-shadow:0 0 0 8px rgba(255,100,121,.2)}
 @keyframes enterprise-map-preview-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}@keyframes enterprise-map-shade-in{from{opacity:0}to{opacity:1}}
@@ -19,9 +68,37 @@
 .corp-map.is-zoomed .corp-country-name{opacity:0}
 .enterprise-map-preview-layer.is-pinned{position:absolute;inset:42px 16px 56px auto;width:min(350px,46%);z-index:4}
 .is-pinned .enterprise-map-preview{position:absolute;inset:0;max-height:100%;padding:20px;animation:none}
+@media(min-width:1050px){
+ .enterprise-map-preview-layer.is-pinned.is-multi{width:min(600px,63%)}
+ .corp-map-panel:has(.enterprise-map-preview-layer.is-pinned.is-multi) .corp-map{--enterprise-focus-x:27%}
+}
 @media(max-width:760px){
  .enterprise-map-preview-layer.is-pinned{position:relative;inset:auto;width:100%;margin-top:16px;pointer-events:auto}
  .is-pinned .enterprise-map-preview{position:relative;max-height:460px}
+}
+.is-multi .enterprise-map-preview {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+@media (min-width: 1050px) {
+  .is-multi .enterprise-map-preview { overflow: visible; pointer-events: none; }
+  .enterprise-map-split {
+    grid-template-columns: minmax(148px, 1fr) minmax(0, 2fr);
+    grid-template-rows: minmax(0, 1fr);
+    align-items: start;
+    max-height: inherit;
+  }
+  .is-pinned .enterprise-map-split { height: 100%; }
+  .enterprise-map-picker-window,
+  .enterprise-map-detail-pane {
+    max-height: 100%;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    pointer-events: auto;
+  }
 }
 @media(prefers-reduced-motion:reduce){.corp-map-scene{transition:none}}
 .corp-map.is-zoomed .corp-map-pin{transform:translate(-50%,-50%) scale(.2)}
@@ -54,11 +131,7 @@
 .corp-region-surface{cursor:pointer}
 .corp-region-surface:focus-visible{outline:none;stroke:#ff9aa6!important;stroke-width:2px!important}
 .corp-map-reset{position:absolute;top:12px;right:20px;z-index:5;border:1px solid #777;background:#292929;color:#fff;padding:8px 12px;cursor:pointer;font:12px var(--site-font)}
-.enterprise-region-card{border-top:1px solid #ddd;padding-top:18px;margin-top:20px;display:flex;flex-direction:column;gap:10px}
-.enterprise-region-card>img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover}
-.enterprise-region-card h3{font-size:20px;margin:0}
-.enterprise-region-card p,.enterprise-region-card address,.enterprise-region-card>a{font-size:12px;line-height:1.65;margin:0;font-style:normal}
-.enterprise-region-card>.site-eyebrow,.enterprise-region-count{font-size:10px;color:#666}
+.enterprise-region-count{font-size:12px;color:#666;margin:0 0 8px}
 @keyframes enterprise-pin-lift{from{transform:translate(-50%,-50%) scale(var(--pin-scale,1))}to{transform:translate(-50%,calc(-50% + var(--region-lift))) scale(var(--pin-scale,1))}}
 @media(prefers-reduced-motion:reduce){.corp-map .corp-map-pin.is-lifted{animation:none;transform:translate(-50%,-50%) scale(var(--pin-scale,1))}}
 .corp-region-surface:focus{outline:none}

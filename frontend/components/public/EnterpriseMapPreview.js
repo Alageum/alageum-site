@@ -16,7 +16,20 @@ function LocationSources({ item }) {
     {item.colocated && <E as="p">{item.colocated}</E>}
     {item.alternateAddress && <E as="p">{item.alternateAddress}</E>}
     {item.kind === 'enterprise' && item.listingSource && <a href={item.listingSource} target="_blank" rel="noopener noreferrer"><E>Адрес в 2ГИС ↗</E></a>}
-    {item.contact.contactSource && <Link href={item.contact.contactSource} target="_blank" rel="noopener noreferrer"><E>Контакты предприятия ↗</E></Link>}
+  </div>;
+}
+
+function LocationDetails({ item, photo }) {
+  const contact = mapContacts[item.id];
+  return <div className="enterprise-map-preview-details">
+    <E as="p" className="enterprise-map-kind">{item.kind === 'office' ? 'Офис продаж' : 'Предприятие'}</E>
+    <E as="h3">{item.title}</E>
+    {photo && <E as="figure"><Image src={photo.path} alt={photo.caption} width={760} height={480} sizes="390px" /><E as="figcaption">{photo.caption}</E></E>}
+    <E as="p" className="enterprise-map-preview-description">{item.description}</E>
+    <E as="h4">Специализация</E><E as="ul">{item.capabilities.map(value => <E as="li" key={value}>{value}</E>)}</E>
+    <div className="enterprise-map-preview-contact"><E as="p">{contact.label}</E><E as="address">{contact.city}, {contact.address}</E><E as="a" href={`tel:${contact.tel}`}>{contact.phone}{contact.extension ? ` · ${contact.extension}` : ''}</E><E as="a" href={`mailto:${contact.email}`}>{contact.email}</E></div>
+    <LocationSources item={item} />
+    <Link href={item.href} className="site-text-link" target={item.kind === 'office' ? '_blank' : undefined} rel={item.kind === 'office' ? 'noopener noreferrer' : undefined}>{item.kind === 'office' ? 'Открыть в 2ГИС ↗' : 'Профиль предприятия →'}</Link>
   </div>;
 }
 
@@ -44,7 +57,8 @@ export function useEnterpriseMapPreview() {
     const map = mapRef.current.getBoundingClientRect();
     const pin = anchor.getBoundingClientRect();
     const compact = window.innerWidth <= 760;
-    const width = Math.min(compact ? 320 : 390, window.innerWidth - 32);
+    const preferredWidth = compact ? 320 : items.length > 1 && window.innerWidth >= 1050 ? 600 : 390;
+    const width = Math.min(preferredWidth, window.innerWidth - 32);
     let left;
     let top;
     let height;
@@ -109,10 +123,14 @@ export function useEnterpriseMapPreview() {
 
   const items = !preview ? [] : preview.cities ? mapLocations.filter(item => preview.cities.includes(mapContacts[item.id]?.city)) : locationsInCity(preview.city);
   const active = items.find(item => item.id === enterpriseId) || items[0];
-  const contact = active && mapContacts[active.id];
-  const photo = active && getManufacturerPhoto(active.id);
+  const multiple = items.length > 1;
   const map = preview?.map;
-  const previewLayer = preview && createPortal(<div className={`enterprise-map-preview-layer${preview.pinned ? ' is-pinned' : ''}`}>
+  const heading = preview && <>
+    <div className="enterprise-map-preview-top"><E as="p" className="site-eyebrow">ЗАВОДЫ И ОФИСЫ ГРУППЫ</E><E as="button" type="button" className="enterprise-map-preview-close" aria-label="Закрыть справку о предприятии" onClick={restoreFocus}>×</E></div>
+    <E as="p" className="enterprise-map-preview-city">{preview.city}</E>
+    {preview.cities && <E as="p" className="enterprise-region-count" role="status">Объектов: {items.length}</E>}
+  </>;
+  const previewLayer = preview && createPortal(<div className={`enterprise-map-preview-layer${preview.pinned ? ' is-pinned' : ''}${multiple ? ' is-multi' : ''}`}>
     {/* Four independent panels leave the actual live map entirely uncovered. */}
     {!preview.pinned && <><div className="enterprise-map-shade" style={{ left: 0, top: 0, right: 0, height: map.top }} onClick={close} />
     <div className="enterprise-map-shade" style={{ left: 0, top: map.bottom, right: 0, bottom: 0 }} onClick={close} />
@@ -120,36 +138,32 @@ export function useEnterpriseMapPreview() {
     <div className="enterprise-map-shade" style={{ left: map.right, top: map.top, right: 0, height: map.bottom - map.top }} onClick={close} />
     </>}
     <E as="aside" ref={cardRef} id={id} className="enterprise-map-preview" style={preview.pinned ? undefined : preview.card} aria-label="Справка о предприятии" onPointerEnter={cancelClose}>
-      <div className="enterprise-map-preview-top"><E as="p" className="site-eyebrow">ЗАВОДЫ И ОФИСЫ ГРУППЫ</E><E as="button" type="button" className="enterprise-map-preview-close" aria-label="Закрыть справку о предприятии" onClick={restoreFocus}>×</E></div>
-      <E as="p" className="enterprise-map-preview-city">{preview.city}</E>
-      {preview.cities ? <div className="enterprise-map-region-results">
-        <E as="p" className="enterprise-region-count" role="status">Объектов: {items.length}</E>
-        {items.length ? items.map(item => {
-          const photo = getManufacturerPhoto(item.id);
-          const contact = mapContacts[item.id];
-          return <E as="article" className="enterprise-region-card" key={item.id}>
-            {photo && <Image src={photo.path} alt={photo.caption} width={760} height={480} sizes="350px" />}
-            <E as="p" className="site-eyebrow">{contact.city} · {item.short}</E>
-            <E as="p" className="enterprise-map-kind">{item.kind === 'office' ? 'Офис продаж' : 'Предприятие'}</E><E as="h3">{item.title}</E>
-            <E as="p">{item.description}</E>
-            <E as="address">{contact.address}</E>
-            <E as="p" className="enterprise-map-kind">{contact.label}</E>
-            <E as="a" href={`tel:${contact.tel}`}>{contact.phone}</E>
-            <E as="a" href={`mailto:${contact.email}`}>{contact.email}</E>
-            <LocationSources item={item} />
-            <Link href={item.href} className="site-text-link" target={item.kind === 'office' ? '_blank' : undefined} rel={item.kind === 'office' ? 'noopener noreferrer' : undefined}>{item.kind === 'office' ? 'Открыть в 2ГИС ↗' : 'Профиль предприятия →'}</Link>
-          </E>;
-        }) : <E as="p">В этой области пока нет предприятий, представленных на карте. Выберите другую область или город.</E>}
-      </div> : <>
-      {items.length > 1 && <E as="div" className="enterprise-map-choices" role="group" aria-label="Заводы и офисы в городе">{items.map(item => <E as="button" key={item.id} type="button" aria-pressed={item.id === active.id} onClick={() => setEnterpriseId(item.id)}>{item.short}</E>)}</E>}
-      <E as="p" className="enterprise-map-kind">{active.kind === 'office' ? 'Офис продаж' : 'Предприятие'}</E><E as="h3">{active.title}</E>
-      {photo && <E as="figure"><Image src={photo.path} alt={photo.caption} width={760} height={480} sizes="390px" /><E as="figcaption">{photo.caption}</E></E>}
-      <E as="p" className="enterprise-map-preview-description">{active.description}</E>
-      <E as="h4">Специализация</E><E as="ul">{active.capabilities.map(value => <E as="li" key={value}>{value}</E>)}</E>
-      <div className="enterprise-map-preview-contact"><E as="p">{contact.label}</E><E as="address">{contact.city}, {contact.address}</E><E as="a" href={`tel:${contact.tel}`}>{contact.phone}{contact.extension ? ` · ${contact.extension}` : ''}</E><E as="a" href={`mailto:${contact.email}`}>{contact.email}</E></div>
-      <LocationSources item={active} />
-      <Link href={active.href} className="site-text-link" target={active.kind === 'office' ? '_blank' : undefined} rel={active.kind === 'office' ? 'noopener noreferrer' : undefined}>{active.kind === 'office' ? 'Открыть в 2ГИС ↗' : 'Профиль предприятия →'}</Link>
-      </>}
+      {!multiple && heading}
+      {active ? <div className={multiple ? 'enterprise-map-split' : undefined}>
+        {multiple && <div className="enterprise-map-picker-window">
+          {heading}
+          <E as="div" className="enterprise-map-choices" role="group" aria-label="Выберите предприятие или офис">
+            {items.map(item => {
+              const photo = getManufacturerPhoto(item.id);
+              return <button className="enterprise-map-choice" key={item.id} type="button" aria-pressed={item.id === active.id} aria-controls={`${id}-details`}
+                onPointerEnter={event => { if (event.pointerType === 'mouse') setEnterpriseId(item.id); }}
+                onClick={() => setEnterpriseId(item.id)}>
+                <span className="enterprise-map-choice-image" aria-hidden="true">
+                  {photo ? <Image src={photo.path} alt="" width={80} height={80} sizes="40px" /> :
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M19 10c0 5-7 10-7 10S5 15 5 10a7 7 0 1 1 14 0Z" /><circle cx="12" cy="10" r="2.5" /></svg>}
+                </span>
+                <span className="enterprise-map-choice-name">
+                  <E as="strong">{item.short}</E>
+                  <E as="small">{preview.cities ? mapContacts[item.id].city : item.kind === 'office' ? 'Офис продаж' : 'Предприятие'}</E>
+                </span>
+              </button>;
+            })}
+          </E>
+        </div>}
+        <div key={active.id} id={`${id}-details`} className={multiple ? 'enterprise-map-detail-pane' : undefined}>
+          <LocationDetails item={active} photo={getManufacturerPhoto(active.id)} />
+        </div>
+      </div> : <E as="p">В этой области пока нет предприятий, представленных на карте. Выберите другую область или город.</E>}
 
     </E>
   </div>, preview.pinned ? preview.container : document.body);
