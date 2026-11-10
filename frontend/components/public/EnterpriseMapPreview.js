@@ -84,12 +84,6 @@ export function useEnterpriseMapPreview() {
     if (skipFocusRef.current === anchor) { skipFocusRef.current = null; return; }
     open(city, anchor);
   }, [open]);
-  const restoreFocus = useCallback(() => {
-    close();
-    skipFocusRef.current = anchorRef.current;
-    anchorRef.current?.focus({ preventScroll: true });
-  }, [close]);
-
   useEffect(() => {
     if (!preview) return;
     const move = event => {
@@ -126,7 +120,7 @@ export function useEnterpriseMapPreview() {
   const multiple = items.length > 1;
   const map = preview?.map;
   const heading = preview && <>
-    <div className="enterprise-map-preview-top"><E as="p" className="site-eyebrow">ЗАВОДЫ И ОФИСЫ ГРУППЫ</E><E as="button" type="button" className="enterprise-map-preview-close" aria-label="Закрыть справку о предприятии" onClick={restoreFocus}>×</E></div>
+    <E as="p" className="site-eyebrow enterprise-map-preview-label">ЗАВОДЫ И ОФИСЫ ГРУППЫ</E>
     <E as="p" className="enterprise-map-preview-city">{preview.city}</E>
     {preview.cities && <E as="p" className="enterprise-region-count" role="status">Объектов: {items.length}</E>}
   </>;
