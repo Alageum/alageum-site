@@ -1,5 +1,9 @@
 .panel { max-height: calc(100dvh - 118px); overflow-y: auto; overscroll-behavior: contain; }
 .tree { grid-column: 2 / -1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px 28px; align-items: start; }
+.catalogTree { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.catalogColumn { display: grid; gap: 4px; min-width: 0; }
+.catalogColumn .link { justify-content: center; }
+.catalogColumn .trigger { justify-content: space-between; }
 .group { min-width: 0; }
 .link { display: flex; flex-direction: column; gap: 6px; min-height: 48px; padding: 10px 0; border-bottom: 1px solid var(--site-line); color: var(--site-ink); text-decoration: none; }
 .link > span { font-size: 14px; font-weight: 550; line-height: 1.45; }

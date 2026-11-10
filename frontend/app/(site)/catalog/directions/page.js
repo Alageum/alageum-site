@@ -4,6 +4,7 @@ import {Story, Hero, Section, Jump} from '@/components/public/story/Story';
 import {topCatalogDirections, catalogDirectionById, catalogDirectionHref} from '@/lib/public/catalog-directions';
 import {getCorporatePhoto} from '@/lib/public/photography';
 import {companyPageMetadata} from '@/lib/public/company-metadata';
+import {CatalogEquipmentLayout} from '@/components/catalog/CatalogEquipmentNavigation';
 import './catalog-directions.css';
 
 export async function generateMetadata({params}) {
@@ -11,7 +12,7 @@ export async function generateMetadata({params}) {
   return companyPageMetadata({title:'Каталог оборудования по направлениям',description:'Трансформаторы, подстанции, распределительные устройства, автоматика и комплектующие.'},'/catalog/directions',locale);
 }
 export default function CatalogDirections() {
-  return <Story name="catalog-directions">
+  return <CatalogEquipmentLayout><Story name="catalog-directions">
     <Hero label="Каталог" title="Каталог оборудования" lead="Выберите тип оборудования, чтобы посмотреть доступные серии, характеристики и проекты поставок." photo={getCorporatePhoto('category-transformers')}>
       <Jump href="/catalog">Весь каталог</Jump>
     </Hero>
@@ -23,5 +24,5 @@ export default function CatalogDirections() {
         {item.children.length > 0 && <ul>{item.children.map(id=><li key={id}><Link href={catalogDirectionHref(id)}>{catalogDirectionById(id).title}</Link></li>)}</ul>}
       </article>)}</div>
     </Section>
-  </Story>;
+  </Story></CatalogEquipmentLayout>;
 }

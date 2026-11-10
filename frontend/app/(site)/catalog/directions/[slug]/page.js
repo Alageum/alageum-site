@@ -8,6 +8,7 @@ import {displayProductName} from '@/lib/catalog/presentation';
 import {projectById} from '@/lib/public/content';
 import {getManufacturerPhoto} from '@/lib/public/photography';
 import {companyPageMetadata} from '@/lib/public/company-metadata';
+import {CatalogEquipmentLayout} from '@/components/catalog/CatalogEquipmentNavigation';
 import '../catalog-directions.css';
 
 export async function generateMetadata({params}) {
@@ -23,7 +24,7 @@ export default async function CatalogDirection({params}) {
   const projects = item.projectIds.map(projectById).filter(Boolean);
   const parent = item.parentId ? catalogDirectionById(item.parentId) : null;
   const requestHref = `/inquiry?intent=selection&solution=${encodeURIComponent(item.title)}`;
-  return <Story name={`catalog-direction-${slug}`}>
+  return <CatalogEquipmentLayout activeId={slug}><Story name={`catalog-direction-${slug}`}>
     <Hero label={item.title} title={item.title} lead={item.description} variant={item.photoKey ? 'split' : 'wide'} photo={item.photoKey ? getManufacturerPhoto(item.photoKey) : null} ancestors={parent ? [{label:'Каталог',href:'/catalog/directions'}] : []} parent={parent ? {label:parent.title,href:catalogDirectionHref(parent.id)} : {label:'Каталог',href:'/catalog/directions'}}>
       <div className="catalog-direction-actions">
         {records.length > 0 && <Jump href="#published-series">Серии в каталоге</Jump>}
@@ -42,5 +43,5 @@ export default async function CatalogDirection({params}) {
       {projects.length ? <ReadingLinks items={projects.map(project=>[`/projects/${project.id}`,project.title,`${project.description} ${project.note || ''}`])}/> : <E as="p">Проекты с опубликованным составом поставки пока отсутствуют.</E>}
     </Section>
     <Section id="selection-data" tone="paper" title="Что нужно для подбора"><div className="story-columns"><ul className="story-checklist">{item.inputs.map(input=><E as="li" key={input}>{input}</E>)}</ul><div><E as="p">Приложите техническое задание и укажите объект, количество оборудования и желаемый срок поставки.</E><Jump href={requestHref}>Подготовить запрос</Jump><br/><Jump href="/contacts">Контакты отдела продаж</Jump></div></div></Section>
-  </Story>;
+  </Story></CatalogEquipmentLayout>;
 }

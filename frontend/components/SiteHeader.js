@@ -86,7 +86,7 @@ export default function SiteHeader({ selectionCount }) {
   useEffect(() => {
     if (!anyOpen) return;
     function onKeyDown(event) {
-      if (event.key !== "Escape" || headerRef.current?.querySelector('[data-site-menu-dialog][open]')) return;
+      if (event.key !== "Escape" || event.defaultPrevented || headerRef.current?.querySelector('[data-site-menu-dialog][open], [data-site-menu-popover]:is(:popover-open)')) return;
       event.preventDefault();
       setMenu({ pathname, preview: null, desktop: false, mobile: false, group: null });
       if (lastTrigger.current && document.activeElement !== lastTrigger.current) {
@@ -151,7 +151,7 @@ export default function SiteHeader({ selectionCount }) {
               {activeSection &&
               <LocaleElement as="div" className={`site-mega-inner ${menuStyles.panel}`} key={activeSection.href}>
                   <LocaleElement as="div" className="site-mega-intro"><LocaleElement as="strong">{activeSection.title}</LocaleElement><LocaleElement as="p">{activeSection.note}</LocaleElement>{activeSection.resources&&<div className="company-menu-resources">{activeSection.resources.map(([label,href])=><Link key={href} href={href} onNavigate={()=>closeMenus()}>{label} ↗</Link>)}</div>}</LocaleElement>
-                  {desktopOpen && <SiteMenuLinks links={activeSection.links} onNavigate={() => closeMenus()}/>}
+                  {desktopOpen && <SiteMenuLinks links={activeSection.links} catalog={activeSection.href === '/catalog/directions'} onNavigate={() => closeMenus()}/>}
                 </LocaleElement>
               }
             </LocaleElement>}

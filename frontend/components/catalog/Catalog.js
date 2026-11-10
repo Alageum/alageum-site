@@ -19,6 +19,8 @@ import { sortProducts, paginationWindow } from '@/lib/catalog/query';
 import { loadApiCatalog } from '@/lib/catalog/source';
 import { useSelection } from './SelectionProvider';
 import CatalogNotice from './CatalogNotice';
+import CatalogEquipmentNavigation from './CatalogEquipmentNavigation';
+import equipmentNavigationStyles from './CatalogEquipmentNavigation.module.css';
 import EquipmentIcon from './EquipmentIcon';
 import { ProductThumbnail } from './ProductPhotograph';
 import { equipmentTypeFor, categorySpecRows, categoryDisplayRows, getCatalogSpecSummary, compactCatalogSpecValue, facetValues, equipmentTypes } from '@/lib/catalog/grouping';
@@ -122,7 +124,9 @@ export default function Catalog() {
       <LocaleElement as="select" name="searchMode" aria-label="Режим поиска" defaultValue={params.searchMode||'all'} key={params.searchMode||'all'}><LocaleElement as="option" value="all">Все слова</LocaleElement><LocaleElement as="option" value="exact">Точное обозначение</LocaleElement></LocaleElement><LocaleElement as="button" type="submit" className="catalog-button primary">Найти <LocaleElement as="span" aria-hidden="true">→</LocaleElement></LocaleElement>
     </LocaleElement>
     <LocaleElement as="div" className="parametric-search-help"><LocaleElement as="span">Поиск по обозначению, описанию и параметрам. Например: «630 кВА» или «10 кВ».</LocaleElement>{params.category && <LocaleElement as="button" className="text-button" onClick={()=>update({category:'',equipmentType:''})}>Искать во всех категориях →</LocaleElement>}</LocaleElement>
-    <LocaleElement as="div" className="catalog-workspace">
+    <LocaleElement as="div" className={`catalog-workspace ${equipmentNavigationStyles.workspace}`}>
+      <div className={equipmentNavigationStyles.sidebar}>
+      <CatalogEquipmentNavigation activeId="all" />
       <LocaleElement as="button" type="button" className="catalog-button filter-toggle" aria-expanded={filtersOpen} aria-controls="catalog-filters catalog-technical-filters" onClick={() => setFiltersOpen(!filtersOpen)}>Фильтры {activeFilters.length ? `(${activeFilters.length})` : ''}<LocaleElement as="span" aria-hidden="true">{filtersOpen ? '−' : '+'}</LocaleElement></LocaleElement>
       <LocaleElement as="aside" id="catalog-filters" className={`catalog-filters${filtersOpen ? ' is-open' : ''}`} aria-label="Фильтры каталога">
         <LocaleElement as="div" className="filter-title"><LocaleElement as="h2">Категории</LocaleElement><LocaleElement as="span" className="catalog-meta">{products.length}</LocaleElement></LocaleElement>
@@ -134,6 +138,7 @@ export default function Catalog() {
           {!demoMode && <LocaleElement as="label" className="catalog-field"><LocaleElement as="span" id="filter-record-kind-label">Тип записи</LocaleElement><LocaleElement as="select" aria-labelledby="filter-record-kind-label" value={params.recordKind || ''} onChange={(event) => update({ recordKind: event.target.value })}><LocaleElement as="option" value="">Серии и модели</LocaleElement><LocaleElement as="option" value="family">Только серии / семейства</LocaleElement><LocaleElement as="option" value="variant">Модели из таблиц</LocaleElement></LocaleElement></LocaleElement>}<LocaleElement as="p" className="filter-help">«—» означает: параметр не подтверждён.<br />Варианты напряжения уточняются по исполнению.</LocaleElement></>
         <LocaleElement as="div" className="source-note"><LocaleElement as="span" className="catalog-meta">ИСТОЧНИК ДАННЫХ</LocaleElement><LocaleElement as="strong">{apiMode ? 'Опубликованное оборудование' : demoMode ? `Демо-набор · ${demoProducts.length} позиций` : `Официальный каталог · ${officialProducts.length} позиций`}</LocaleElement><Link href={demoMode ? '/catalog' : '/documents'}>{demoMode ? 'Открыть публичный каталог' : 'Источники и документы'} <LocaleElement as="span" aria-hidden="true">↗</LocaleElement></Link></LocaleElement>
       </LocaleElement>
+      </div>
       <LocaleElement as="section" className="catalog-results" aria-label="Результаты каталога">
         <div id="catalog-technical-filters" className={`catalog-technical-filters${filtersOpen ? ' is-open' : ''}`}>
           <ParametricFilters facets={facets} products={products} params={params} update={update} availableOnly={apiMode}/>
