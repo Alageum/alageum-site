@@ -15,8 +15,6 @@ test('message forms save email on a contact and coalesce simultaneous retries', 
     const body = JSON.parse(options.body);
     calls.push({ method, body });
     const results = {
-      'crm.lead.list.json': [],
-      'crm.duplicate.findbycomm.json': [],
       'crm.contact.add.json': 11,
       'crm.lead.add.json': 12,
       'crm.timeline.comment.add.json': 13,
@@ -41,10 +39,9 @@ test('message forms save email on a contact and coalesce simultaneous retries', 
     assert.equal(response.status, 200);
     assert.deepEqual(await response.json(), { sent: true });
   }
-  assert.equal(calls.length, 5);
-  assert.deepEqual(calls[1].body, { entity_type: 'CONTACT', type: 'EMAIL', values: [values.email] });
-  assert.deepEqual(calls[2].body.fields.EMAIL, [{ VALUE: values.email, VALUE_TYPE: 'WORK' }]);
-  assert.equal(calls[3].body.fields.CONTACT_ID, 11);
-  assert.equal(calls[3].body.fields.SOURCE_ID, 'ADVERTISING');
-  assert(calls[4].body.fields.COMMENT.includes(values.message));
+  assert.equal(calls.length, 3);
+  assert.deepEqual(calls[0].body.fields.EMAIL, [{ VALUE: values.email, VALUE_TYPE: 'WORK' }]);
+  assert.equal(calls[1].body.fields.CONTACT_ID, 11);
+  assert.equal(calls[1].body.fields.SOURCE_ID, 'ADVERTISING');
+  assert(calls[2].body.fields.COMMENT.includes(values.message));
 });

@@ -2,6 +2,7 @@ import { randomUUID } from 'node:crypto';
 
 const originator = 'alageum-site';
 const pendingSubmissions = new Map();
+const submissionStates = new Map();
 const webhookPath = /^(\/rest\/\d+\/[a-z\d_-]+)\/?(?:\/crm\.(?:item|lead)\.add(?:\.json)?)?$/i;
 
 export class BitrixError extends Error {
@@ -50,14 +51,8 @@ function recordId(value) {
   return id;
 }
 
-async function saveSubmission(base, submission, id) {
+async function saveSubmission(base, submission, id, state) {
   const originId = 'form-' + id;
-  const leads = await callCrm(base, 'crm.lead.list', {
-    filter: { '=ORIGINATOR_ID': originator, '=ORIGIN_ID': originId },
-    select: ['ID'],
-  });
-  if (!Array.isArray(leads)) throw new BitrixError(502);
-
   const comment = [
     submission.title,
     'Имя при обращении: ' + submission.name,
@@ -66,53 +61,42 @@ async function saveSubmission(base, submission, id) {
     '[site:' + id + ']',
   ].filter(Boolean).join('\n');
 
-  let leadId;
-  if (leads.length) {
-    leadId = recordId(leads[0].ID);
-    const entries = await callCrm(base, 'crm.timeline.comment.list', {
-      filter: { ENTITY_ID: leadId, ENTITY_TYPE: 'lead' },
-      select: ['ID', 'COMMENT'],
-    });
-    if (!Array.isArray(entries)) throw new BitrixError(502);
-    if (entries.some(entry => entry.COMMENT?.includes('[site:' + id + ']'))) return;
-  } else {
-    const communication = submission.phone
-      ? { type: 'PHONE', values: [submission.phone] }
-      : { type: 'EMAIL', values: [submission.email] };
-    const matches = await callCrm(base, 'crm.duplicate.findbycomm', {
-      entity_type: 'CONTACT',
-      ...communication,
-    });
-    let contactId;
-    if (matches?.CONTACT?.length) {
-      contactId = recordId(matches.CONTACT[0]);
-    } else {
-      contactId = recordId(await callCrm(base, 'crm.contact.add', {
-        fields: {
-          NAME: submission.name,
-          ...(submission.phone && { PHONE: [{ VALUE: submission.phone, VALUE_TYPE: 'WORK' }] }),
-          ...(submission.email && { EMAIL: [{ VALUE: submission.email, VALUE_TYPE: 'WORK' }] }),
-          SOURCE_ID: 'ADVERTISING',
-          ORIGINATOR_ID: originator,
-          ORIGIN_ID: originId,
-        },
-      }));
-    }
-    leadId = recordId(await callCrm(base, 'crm.lead.add', {
+  if (!state.contactId) {
+    state.contactId = recordId(await callCrm(base, 'crm.contact.add', {
       fields: {
-        TITLE: submission.title,
-        CONTACT_ID: contactId,
+        NAME: submission.name,
+        ...(submission.phone && { PHONE: [{ VALUE: submission.phone, VALUE_TYPE: 'WORK' }] }),
+        ...(submission.email && { EMAIL: [{ VALUE: submission.email, VALUE_TYPE: 'WORK' }] }),
         SOURCE_ID: 'ADVERTISING',
-        SOURCE_DESCRIPTION: submission.page || 'Сайт Alageum Electric',
         ORIGINATOR_ID: originator,
         ORIGIN_ID: originId,
       },
     }));
   }
-
-  recordId(await callCrm(base, 'crm.timeline.comment.add', {
-    fields: { ENTITY_ID: leadId, ENTITY_TYPE: 'lead', COMMENT: comment },
-  }));
+  if (!state.leadId) {
+    state.leadId = recordId(await callCrm(base, 'crm.lead.add', {
+      fields: {
+        TITLE: submission.title,
+        CONTACT_ID: state.contactId,
+        SOURCE_ID: 'ADVERTISING',
+        SOURCE_DESCRIPTION: submission.page || 'Сайт Alageum Electric',
+        COMMENTS: comment.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('\n', '<br>'),
+        ORIGINATOR_ID: originator,
+        ORIGIN_ID: originId,
+      },
+    }));
+  }
+  if (!state.commentId && !state.timelineSkipped) {
+    try {
+      state.commentId = recordId(await callCrm(base, 'crm.timeline.comment.add', {
+        fields: { ENTITY_ID: state.leadId, ENTITY_TYPE: 'lead', COMMENT: comment },
+      }));
+    } catch {
+      // The full message is already saved in the lead's COMMENTS field.
+      state.timelineSkipped = true;
+      console.error('Bitrix24 timeline comment unavailable; message retained in lead comments.');
+    }
+  }
 }
 
 export async function createBitrixLead(submission) {
@@ -120,7 +104,15 @@ export async function createBitrixLead(submission) {
   const id = submission.id || randomUUID().replaceAll('-', '');
   const key = base.href + id;
   if (pendingSubmissions.has(key)) return pendingSubmissions.get(key);
-  const task = saveSubmission(base, submission, id);
+  const now = Date.now();
+  for (const [storedKey, storedState] of submissionStates) {
+    if (storedState.expiresAt <= now) submissionStates.delete(storedKey);
+  }
+  if (!submissionStates.has(key)) {
+    if (submissionStates.size >= 500) submissionStates.delete(submissionStates.keys().next().value);
+    submissionStates.set(key, { expiresAt: now + 30 * 60 * 1000 });
+  }
+  const task = saveSubmission(base, submission, id, submissionStates.get(key));
   pendingSubmissions.set(key, task);
   try {
     await task;

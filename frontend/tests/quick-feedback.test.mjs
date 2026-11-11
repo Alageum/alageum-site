@@ -27,35 +27,21 @@ test('feedback links contact and lead, sets advertising source and adds timeline
   process.env.BITRIX24_WEBHOOK_URL = 'https://crm.example.test/rest/1/fake-token/';
 
   const calls = [];
-  let leadExists = false;
-  let commentExists = false;
-  let contactExists = false;
   let failTimeline = false;
-  let denyRead = false;
+  let rejectCreation = false;
   const fetchMock = t.mock.method(globalThis, 'fetch', async (endpoint, options) => {
     assert.equal(options.method, 'POST');
     const method = endpoint.pathname.split('/').at(-1);
     const body = JSON.parse(options.body);
     calls.push({ method, body });
-    if (denyRead) return Response.json({ error: '', error_description: 'Access denied.' });
+    if (rejectCreation) return Response.json({ error: '', error_description: 'Access denied.' });
     switch (method) {
-      case 'crm.lead.list.json':
-        assert.deepEqual(body.filter, { '=ORIGINATOR_ID': 'alageum-site', '=ORIGIN_ID': 'form-' + valid.id });
-        return Response.json({ result: leadExists ? [{ ID: '42' }] : [] });
-      case 'crm.duplicate.findbycomm.json':
-        assert.deepEqual(body, { entity_type: 'CONTACT', type: 'PHONE', values: ['+77000000000'] });
-        return Response.json({ result: contactExists ? { CONTACT: [17] } : [] });
       case 'crm.contact.add.json':
-        contactExists = true;
         return Response.json({ result: 17 });
       case 'crm.lead.add.json':
-        leadExists = true;
         return Response.json({ result: 42 });
-      case 'crm.timeline.comment.list.json':
-        return Response.json({ result: commentExists ? [{ ID: 81, COMMENT: '[site:' + valid.id + ']' }] : [] });
       case 'crm.timeline.comment.add.json':
         if (failTimeline) return Response.json({ error: 'ACCESS_DENIED' });
-        commentExists = true;
         return Response.json({ result: 81 });
       default:
         throw new Error('Unexpected method ' + method);
@@ -73,16 +59,15 @@ test('feedback links contact and lead, sets advertising source and adds timeline
 
   assert.deepEqual(await (await submit()).json(), { sent: true });
   assert.deepEqual(calls.map(call => call.method), [
-    'crm.lead.list.json', 'crm.duplicate.findbycomm.json',
     'crm.contact.add.json', 'crm.lead.add.json', 'crm.timeline.comment.add.json',
   ]);
-  const contact = calls[2].body.fields;
+  const contact = calls[0].body.fields;
   assert.equal(contact.NAME, 'Алия');
   assert.deepEqual(contact.PHONE, [{ VALUE: '+77000000000', VALUE_TYPE: 'WORK' }]);
-  assert.equal(calls[3].body.fields.CONTACT_ID, 17);
-  assert.equal(calls[3].body.fields.SOURCE_ID, 'ADVERTISING');
-  assert.equal(calls[3].body.fields.PHONE, undefined);
-  const timeline = calls[4].body.fields;
+  assert.equal(calls[1].body.fields.CONTACT_ID, 17);
+  assert.equal(calls[1].body.fields.SOURCE_ID, 'ADVERTISING');
+  assert.equal(calls[1].body.fields.PHONE, undefined);
+  const timeline = calls[2].body.fields;
   assert.equal(timeline.ENTITY_ID, 42);
   assert.equal(timeline.ENTITY_TYPE, 'lead');
   assert.ok(timeline.COMMENT.includes(valid.comment));
@@ -90,24 +75,21 @@ test('feedback links contact and lead, sets advertising source and adds timeline
 
   calls.length = 0;
   assert.equal((await submit()).status, 200);
-  assert.deepEqual(calls.map(call => call.method), ['crm.lead.list.json', 'crm.timeline.comment.list.json']);
+  assert.equal(calls.length, 0);
 
-  leadExists = false;
-  commentExists = false;
   failTimeline = true;
   calls.length = 0;
-  assert.equal((await submit()).status, 502);
-  assert.ok(!calls.some(call => call.method === 'crm.contact.add.json'));
+  const retryData = { ...valid, id: 'c'.repeat(32) };
+  assert.equal((await submit(retryData)).status, 200);
+  assert.ok(calls.find(call => call.method === 'crm.lead.add.json').body.fields.COMMENTS.includes(valid.comment));
   failTimeline = false;
   calls.length = 0;
-  assert.equal((await submit()).status, 200);
-  assert.deepEqual(calls.map(call => call.method), [
-    'crm.lead.list.json', 'crm.timeline.comment.list.json', 'crm.timeline.comment.add.json',
-  ]);
+  assert.equal((await submit(retryData)).status, 200);
+  assert.equal(calls.length, 0);
 
-  denyRead = true;
+  rejectCreation = true;
   calls.length = 0;
-  const rejected = await submit();
+  const rejected = await submit({ ...valid, id: 'd'.repeat(32) });
   assert.equal(rejected.status, 502);
   assert.deepEqual(await rejected.json(), { sent: false });
   assert.equal(calls.length, 1);
