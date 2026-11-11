@@ -1,3 +1,4 @@
+import { createBitrixLead, submissionPage } from '../../../lib/bitrix-leads.js';
 import { publicFormRequestError, readPublicFormJson } from '../../../lib/public-form-request.js';
 
 const salesEmail = 'sales@alageum.com';
@@ -21,6 +22,21 @@ export async function POST(request) {
   if (!name || name.length > 120 || /[\x00-\x1f\x7f]/.test(name) ||
       email.length > 254 || /[\x00-\x1f\x7f]/.test(email) || !emailPattern.test(email) ||
       !message || message.length > 1000 || message.includes('\0')) return failure(400);
+
+  const page = submissionPage(contact.page, request.url);
+  if (page === null) return failure(400);
+
+  if (process.env.BITRIX24_WEBHOOK_URL?.trim()) {
+    try {
+      await createBitrixLead({
+        id: contact.id, name, email, message, page,
+        title: 'Обращение с сайта Alageum Electric',
+      });
+      return Response.json({ sent: true });
+    } catch (error) {
+      return failure(error.status || 502);
+    }
+  }
 
   const apiKey = process.env.RESEND_API_KEY?.trim();
   const from = process.env.ALAGEUM_CONTACT_FROM?.trim();

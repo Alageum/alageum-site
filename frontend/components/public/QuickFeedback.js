@@ -12,6 +12,7 @@ export default function QuickFeedback({ onOpen }) {
   const nameInput = useRef(null);
   const closeButton = useRef(null);
   const submitting = useRef(false);
+  const submission = useRef(null);
   const ready = useHydrated();
   const [status, setStatus] = useState('idle');
   const pending = status === 'sending';
@@ -29,6 +30,12 @@ export default function QuickFeedback({ onOpen }) {
     if (submitting.current) return;
     const form = event.currentTarget;
     const data = Object.fromEntries(new FormData(form));
+    data.page = window.location.pathname;
+    const content = JSON.stringify(data);
+    if (submission.current?.content !== content) {
+      submission.current = { content, id: window.crypto.randomUUID().replaceAll('-', '') };
+    }
+    data.id = submission.current.id;
     submitting.current = true;
     setStatus('sending');
     try {
@@ -41,6 +48,7 @@ export default function QuickFeedback({ onOpen }) {
         setStatus('invalid');
       } else if (response.ok && (await response.json())?.sent === true) {
         form.reset();
+        submission.current = null;
         if (dialog.current?.open) closeButton.current?.focus();
         setStatus('sent');
       } else {

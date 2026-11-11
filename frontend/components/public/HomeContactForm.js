@@ -23,6 +23,7 @@ export default function HomeContactForm() {
       name: String(values.get('name') ?? '').trim(),
       email: String(values.get('email') ?? '').trim(),
       message: String(values.get('message') ?? '').trim(),
+      page: window.location.pathname,
       website: values.get('website'),
     };
     if (!contact.message) {
