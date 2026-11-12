@@ -1,3 +1,4 @@
+import {translateText} from '@/lib/i18n/translate';
 import { Fragment } from 'react';
 import { notFound } from 'next/navigation';
 import E from '@/components/locale/LocaleElement';
@@ -167,7 +168,7 @@ export default async function IndustryPage({ params }) {
   if (!item) notFound();
 
   const layout = presentation[item.id];
-  const copy = gridCopy[locale] || gridCopy.ru;
+  const copy = gridCopy[locale] || Object.fromEntries(Object.entries(gridCopy.ru).map(([key, value]) => [key, translateText(value, locale)]));
   const getPhoto = { projects: getProjectPhoto, corporate: getCorporatePhoto, manufacturers: getManufacturerPhoto }[item.photoGroup];
   const photo = getPhoto(item.photoId);
   const highlight = item.id === 'power-grid' ? projectById('nura') : null;

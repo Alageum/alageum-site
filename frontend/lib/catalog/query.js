@@ -38,7 +38,7 @@ function hasQuantity(evidence, value, unit) {
   return evidence.some((entry) => entry.unit === unit && number.test(entry.value));
 }
 
-function matchesSearch(product, words) {
+function matchesSearch(product, words, translate) {
   if (!words.length) return true;
   // Full original designations keep their identity even when they include unit-like suffixes.
   if (compactQuery(words.join(' ')) === compactQuery(product.sku)) return true;
@@ -47,6 +47,7 @@ function matchesSearch(product, words) {
     product.id, product.name, product.designation, product.execution, product.sku, product.category, product.voltage, product.power,
     product.cooling, product.installation, product.subtype, product.manufacturer,
     product.familyName, product.series, product.sourceRow?.variant, product.description,
+    ...(translate ? [product.name, product.description, product.execution, product.familyName, product.subtype, product.cooling, product.installation].map(value => translate(value)) : []),
     ...(product.configurations || []).map((configuration) => configuration.designation),
     ...evidence.map((entry) => `${entry.value} ${entry.unit}`),
   ].join(' '));
@@ -65,19 +66,19 @@ function matchesSearch(product, words) {
   });
 }
 
-export function filterProducts(products, params = {}, omit = '') {
-  if (products.some((product) => product.isCatalogGroup)) return filterCatalogGroups(products, params, omit);
+export function filterProducts(products, params = {}, omit = '', translate) {
+  if (products.some((product) => product.isCatalogGroup)) return filterCatalogGroups(products, params, omit, translate);
   const words = searchWords(params.q);
-  return products.filter((product) => matchesSearch(product, words) && filterKeys.every((key) => key === omit || !params[key]
+  return products.filter((product) => matchesSearch(product, words, translate) && filterKeys.every((key) => key === omit || !params[key]
     || String(product[key]) === String(params[key]) || ((product.source === 'official' || product.source === 'api') && facetValues(product, key).includes(String(params[key])))));
 }
 
 /** Every active condition must match the same original member; a series is emitted once. */
-export function filterCatalogGroups(groups, params = {}, omit = '') {
+export function filterCatalogGroups(groups, params = {}, omit = '', translate) {
   const words = searchWords(params.q);
   return groups.flatMap((group) => {
     const members = group.members || [group];
-    const matchingMembers = members.filter((member) => matchesSearch(member, words) && filterKeys.every((key) => {
+    const matchingMembers = members.filter((member) => matchesSearch(member, words, translate) && filterKeys.every((key) => {
       if (key === omit || !params[key]) return true;
       const value = String(params[key]);
       // The exact raw field keeps old bookmarked URLs (e.g. voltage=380/220) working.
@@ -124,15 +125,15 @@ export function parseComparison(value, products, max = 4) {
   const allowed = new Set(products.map((product) => product.id));
   return [...new Set(String(value || '').split(','))].filter((id) => allowed.has(id)).slice(0, max);
 }
-export function selectionCsv(items, products) {
+export function selectionCsv(items, products, translate = value => value) {
   const cell = (value) => {
     const raw = String(value);
     const safe = /^[=+@\-\t\r\n]/.test(raw) ? `'${raw}` : raw;
     return `"${safe.replaceAll('"', '""')}"`;
   };
-  return '\uFEFF' + [['Подборка — не заказ', 'Обозначение', 'Наименование', 'Количество'], ...items.map((item) => {
+  return '\uFEFF' + [['Подборка — не заказ', 'Обозначение', 'Наименование', 'Количество'].map(translate), ...items.map((item) => {
     const product = products.find((entry) => entry.id === item.id);
-    return [product?.source === 'api' ? 'Актуальный каталог API; не заказ' : product?.source === 'official' ? 'Официальный каталог; исполнение уточняется' : 'ДЕМО — не заказ; синтетические данные', product?.designation || product?.sku || '', product?.name || '', item.quantity];
+    return [translate(product?.source === 'api' ? 'Актуальный каталог API; не заказ' : product?.source === 'official' ? 'Официальный каталог; исполнение уточняется' : 'ДЕМО — не заказ; синтетические данные'), product?.designation || product?.sku || '', translate(product?.name || ''), item.quantity];
   })].map((row) => row.map(cell).join(';')).join('\r\n');
 }
 

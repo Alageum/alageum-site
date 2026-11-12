@@ -1,4 +1,6 @@
-'use client';import LocaleElement from "@/components/locale/LocaleElement";
+'use client';
+import E from '@/components/locale/LocaleElement';
+import { useTranslate } from '@/components/locale/LocaleProvider';import LocaleElement from "@/components/locale/LocaleElement";
 import { displayProductName, displayExecution } from '@/lib/catalog/presentation';
 import { isApiCatalog } from '@/lib/catalog/apiData';
 import { LiveSelection } from './LiveCatalog';
@@ -11,14 +13,16 @@ import { useSelection } from './SelectionProvider';
 import CatalogNotice from './CatalogNotice';
 import ProductIcon from './ProductIcon';
 function Quantity({ item, sku, onChange }) {
+  const tx = useTranslate();
   const [draft, setDraft] = useState(String(item.quantity));
-  return <LocaleElement as="input" type="number" min="1" max="999" step="1" value={draft} aria-label={`Количество ${sku}`} onChange={(event) => setDraft(event.target.value)} onBlur={() => {const value = Math.min(999, Math.max(1, Math.floor(Number(draft)) || 1));setDraft(String(value));onChange(value);}} />;
+  return <LocaleElement as="input" type="number" min="1" max="999" step="1" value={draft} aria-label={`${tx('Количество')} ${tx(sku)}`} onChange={(event) => setDraft(event.target.value)} onBlur={() => {const value = Math.min(999, Math.max(1, Math.floor(Number(draft)) || 1));setDraft(String(value));onChange(value);}} />;
 }
 function StaticSelection() {
+  const tx = useTranslate();
   const selection = useSelection();
   const [notice, setNotice] = useState('');
   function download() {
-    const blob = new Blob([selectionCsv(selection.items, products)], { type: 'text/csv;charset=utf-8;' });
+    const blob = new Blob([selectionCsv(selection.items, products, tx)], { type: 'text/csv;charset=utf-8;' });
     const url = URL.createObjectURL(blob);
     const anchor = document.createElement('a');anchor.href = url;anchor.download = 'alageum-selection.csv';anchor.click();
     setTimeout(() => URL.revokeObjectURL(url), 1000);

@@ -61,7 +61,7 @@ export const careerLegacyDestinations = {
   process: "/careers/apply#preparation",
 };
 export function careerSectionIndex(pathname) {
-  const path = pathname.replace(/^\/(ru|kk|en)(?=\/|$)/, "").split(/[?#]/)[0];
+  const path = pathname.replace(/^\/(ru|kk|en|zh|uz)(?=\/|$)/, "").split(/[?#]/)[0];
   let found = -1;
   careerSections.forEach(({ href }, index) => {
     if (path === href || path.startsWith(href + "/")) {

@@ -8,7 +8,9 @@ import SectionEyebrow from './SectionEyebrow';
 
 const salesEmail = 'sales@alageum.com';
 
-export default function HomeContactForm() {
+export default function HomeContactForm({ equipment = [], number }) {
+  const documentation = equipment.length > 0;
+  const sectionId = documentation ? 'documentation-request' : 'home-contact';
   const ready = useHydrated();
   const [status, setStatus] = useState('idle');
   const sending = useRef(false);
@@ -19,14 +21,16 @@ export default function HomeContactForm() {
     if (!ready || sending.current) return;
     const form = event.currentTarget;
     const values = new FormData(form);
+    const message = String(values.get('message') ?? '').trim();
+    const direction = equipment.find(item => item.id === values.get('equipment'));
     const contact = {
       name: String(values.get('name') ?? '').trim(),
       email: String(values.get('email') ?? '').trim(),
-      message: String(values.get('message') ?? '').trim(),
+      message: documentation ? `Запрос технической документации\nОборудование: ${direction?.title || 'Не указано'}\n\n${message}` : message,
       page: window.location.pathname,
       website: values.get('website'),
     };
-    if (!contact.message) {
+    if (!message) {
       setStatus('invalid');
       return;
     }
@@ -59,22 +63,26 @@ export default function HomeContactForm() {
     }
   }
 
-  return <section id="home-contact" className="corp-home-contact" aria-labelledby="home-contact-heading">
+  return <section id={sectionId} className="corp-home-contact" aria-labelledby={`${sectionId}-heading`}>
     <div className="site-container corp-section corp-home-contact-layout">
       <div>
-        <SectionEyebrow label="Обратная связь" />
-        <E as="h2" id="home-contact-heading">Напишите в отдел продаж</E>
-        <E as="p" id="home-contact-instructions">Укажите, какое оборудование или работы вам нужны.</E>
+        {!documentation && <SectionEyebrow number={number} label="Обратная связь" />}
+        <E as="h2" id={`${sectionId}-heading`}>{documentation ? 'Запросить документацию' : 'Напишите в отдел продаж'}</E>
+        <E as="p" id={`${sectionId}-instructions`}>{documentation ? 'Укажите серию или модель, параметры и нужный документ: паспорт, чертёж, сертификат или протокол испытаний.' : 'Укажите, какое оборудование или работы вам нужны.'}</E>
         <div className="corp-home-contact-links">
           <a href="tel:+77710052222">+7 771 005 22 22</a>
           <a href={`mailto:${salesEmail}`}>{salesEmail}</a>
         </div>
       </div>
-      <form action="/api/contact" method="post" onSubmit={submit} onChange={() => { if (status !== 'idle') setStatus('idle'); }} aria-describedby="home-contact-instructions" aria-busy={status === 'sending'}>
+      <form action="/api/contact" method="post" onSubmit={submit} onChange={() => { if (status !== 'idle') setStatus('idle'); }} aria-describedby={`${sectionId}-instructions`} aria-busy={status === 'sending'}>
         <fieldset disabled={!ready || status === 'sending'}>
-          <label htmlFor="home-contact-name"><E>Имя</E><input id="home-contact-name" name="name" autoComplete="name" maxLength={120} required pattern=".*\S.*" /></label>
-          <label htmlFor="home-contact-email">Email<input id="home-contact-email" name="email" type="email" autoComplete="email" maxLength={254} required /></label>
-          <label htmlFor="home-contact-message"><E>Сообщение</E><textarea id="home-contact-message" name="message" rows={4} maxLength={1000} required /></label>
+          <label><E>Имя</E><input id={`${sectionId}-name`} name="name" autoComplete="name" maxLength={120} required pattern=".*\S.*" /></label>
+          <label>Email<input id={`${sectionId}-email`} name="email" type="email" autoComplete="email" maxLength={254} required /></label>
+          {documentation && <label><E>Оборудование</E><select name="equipment" defaultValue="">
+            <E as="option" value="">Выберите направление</E>
+            {equipment.map(({ id, title }) => <E as="option" key={id} value={id}>{title}</E>)}
+          </select></label>}
+          <label><E>{documentation ? 'Какие документы нужны' : 'Сообщение'}</E><textarea id={`${sectionId}-message`} name="message" rows={4} maxLength={documentation ? 850 : 1000} required /></label>
           <input type="text" name="website" hidden tabIndex={-1} autoComplete="off" />
           <E as="button" type="submit" className="site-button site-button-primary">{status === 'sending' ? 'Отправляем…' : 'Отправить сообщение'} <CorporateArrow /></E>
         </fieldset>

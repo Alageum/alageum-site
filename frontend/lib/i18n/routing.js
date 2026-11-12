@@ -1,6 +1,6 @@
-export const locales = ['ru', 'kk', 'en'];
-export function localeFromPath(path = '/') { const match = path.match(/^\/(ru|kk|en)(?:\/|$)/); return match?.[1] || 'ru'; }
-export function stripLocale(path = '/') { return path.replace(/^\/(ru|kk|en)(?=\/|$)/, '') || '/'; }
+export const locales = ['ru', 'kk', 'en', 'zh', 'uz'];
+export function localeFromPath(path = '/') { const match = path.match(/^\/(ru|kk|en|zh|uz)(?:\/|$)/); return match?.[1] || 'ru'; }
+export function stripLocale(path = '/') { return path.replace(/^\/(ru|kk|en|zh|uz)(?=\/|$)/, '') || '/'; }
 export function localizedHref(href, locale = 'ru') {
   if (typeof href !== 'string' || !href.startsWith('/') || href.startsWith('//') || href.startsWith('/api/') || href.startsWith('/admin/')) return href;
   const [pathname] = href.split(/[?#]/, 1);

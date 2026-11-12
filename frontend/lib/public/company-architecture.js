@@ -24,12 +24,12 @@ export const companyMenuLinks = [
 export const companyResources = [];
 export function companyDestination(section,locale='ru') {
  const target=companyDestinations[section];
- return target ? (['en','kk'].includes(locale)?`/${locale}${target}`:target) : null;
+ return target ? (['en','kk','zh','uz'].includes(locale)?`/${locale}${target}`:target) : null;
 }
 export function companyRedirects(){
  return Object.entries(companyDestinations).flatMap(([section,target])=>[
   {source:`/company/${section}`,destination:target,permanent:true},
-  ...['ru','en','kk'].map(locale=>({source:`/${locale}/company/${section}`,destination:companyDestination(section,locale),permanent:true})),
+  ...['ru','en','kk','zh','uz'].map(locale=>({source:`/${locale}/company/${section}`,destination:companyDestination(section,locale),permanent:true})),
  ]);
 }
 

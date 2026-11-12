@@ -10,7 +10,7 @@ function SpecificationTable({ product, rows }) {
     const modules = row.label === 'Блок-модули' ? String(row.value ?? '').split(';').map(value => value.trim()).filter(Boolean) : [];
     return <div key={`${row.label}-${index}`}>
       <E as="dt" className="catalog-spec-text">{displaySpecLabel(row.label)}</E>
-      <dd className="catalog-spec-text">{modules.length > 1 ? <ol className="product-module-list">{modules.map((module, position) => <li key={position}>{module}</li>)}</ol> : <CatalogSpecValue product={product} row={row}/>}</dd>
+      <dd className="catalog-spec-text">{modules.length > 1 ? <ol className="product-module-list">{modules.map((module, position) => <E as="li" key={position}>{module}</E>)}</ol> : <CatalogSpecValue product={product} row={row}/>}</dd>
       <span className="catalog-spec-text">{row.unit || '—'}{href && <Link className="source-page-link" href={href}>стр. {row.page}</Link>}</span>
     </div>;
   })}</dl>;

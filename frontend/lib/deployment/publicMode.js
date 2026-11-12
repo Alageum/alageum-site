@@ -7,7 +7,7 @@ export function publicRoutePolicy(pathname, search = '') {
   let path;
   try { path = decodeURIComponent(pathname); } catch { return 'api'; }
   if (path === '/api/contact' || path === '/api/feedback') return 'public';
-  path = path.replace(/^\/(?:ru|kk|en)(?=\/|$)/, '');
+  path = path.replace(/^\/(?:ru|kk|en|zh|uz)(?=\/|$)/, '');
   const root = path.split('/')[1];
   if (['catalog', 'selection', 'inquiry'].includes(root) && new URLSearchParams(search).get('source') === 'api') return 'unavailable';
   if (root === 'catalog' && /^\/catalog\/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}(?:\/|$)/i.test(path)) return 'unavailable';

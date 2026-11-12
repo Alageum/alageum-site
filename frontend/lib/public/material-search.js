@@ -15,7 +15,7 @@ const topics = [
 export function materialMatches(item, query, translatedTitle = item.title) {
   const title = `${item.title} ${translatedTitle} ${item.id}`.toLowerCase();
   const aliases = topics.filter(([pattern]) => pattern.test(title)).map(([,words]) => words).join(' ');
-  const category = item.url.includes('/novosti/') ? 'news новости жаңалықтар' : item.url.includes('/predpriyatiya/') ? 'enterprises предприятия кәсіпорындар' : '';
+  const category = item.url.includes('/novosti/') ? 'news новости жаңалықтар 新闻 yangiliklar' : item.url.includes('/predpriyatiya/') ? 'enterprises предприятия кәсіпорындар 企业 korxonalar' : '';
   const haystack = `${title} ${aliases} ${category}`;
   return query.trim().toLowerCase().split(/\s+/u).filter(Boolean).every(word => haystack.includes(word));
 }

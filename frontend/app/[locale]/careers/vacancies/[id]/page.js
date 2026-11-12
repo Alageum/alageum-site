@@ -13,7 +13,7 @@ export async function generateMetadata(props) {
 export const dynamicParams = false;
 export async function generateStaticParams() {
   const { jobs } = await import("@/lib/ecosystem/careers");
-  return ["ru", "kk", "en"].flatMap((locale) =>
+  return ["ru", "kk", "en", "zh", "uz"].flatMap((locale) =>
     jobs.map(({ id }) => ({ locale, id })),
   );
 }

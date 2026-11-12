@@ -4,7 +4,7 @@
 // All catalog logic, property values, hrefs and children remain the real source.
 export function stubRenderBoundaries(source) {
   const native = { LocaleLink: 'a', LocalResourceAnchor: 'a', LocaleImage: 'img', DesignSelect: 'select' };
-  return source.replace(/import\s+([\w$]+)\s+from\s+(['"])(?:@\/|file:[^'"]*\/frontend\/)components\/(?:locale|ui)\/(LocaleElement|LocaleLink|LocalResourceAnchor|LocaleImage|DesignSelect)(?:\.js)?\2\s*;/g,
+  return source.replace(/import\s+\{\s*useTranslate\s*\}\s+from\s+['"](?:@\/|file:[^'"]*\/frontend\/)components\/locale\/LocaleProvider(?:\.js)?['"];?/g, 'const useTranslate = () => value => value;').replace(/import\s+([\w$]+)\s+from\s+(['"])(?:@\/|file:[^'"]*\/frontend\/)components\/(?:locale|ui)\/(LocaleElement|LocaleLink|LocalResourceAnchor|LocaleImage|DesignSelect)(?:\.js)?\2\s*;/g,
     (_, name, quote, kind) => kind === 'LocaleElement'
       ? `const ${name} = ({ as: Tag = 'span', children, ...props }) => <Tag {...props}>{children}</Tag>;`
       : `const ${name} = props => <${native[kind]} {...props}/>;`);

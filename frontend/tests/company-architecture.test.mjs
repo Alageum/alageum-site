@@ -4,8 +4,8 @@ import {companyDestinations,companyRedirects,companyNavigation,companyDestinatio
 import {companyPageMetadata} from '../lib/public/company-metadata.js';
 import {localResourceHref} from '../lib/public/localResources.js';
 test('every retired company route reaches its final section in every supported URL locale',()=>{
- const redirects=companyRedirects();assert.equal(redirects.length,16);
- for(const [section,destination] of Object.entries(companyDestinations))for(const locale of ['','ru','en','kk']){
+ const redirects=companyRedirects();assert.equal(redirects.length,24);
+ for(const [section,destination] of Object.entries(companyDestinations))for(const locale of ['','ru','en','kk','zh','uz']){
   const rule=redirects.find(r=>r.source===`${locale?'/'+locale:''}/company/${section}`);
   assert.equal(rule.destination,companyDestination(section,locale||'ru'));assert.equal(rule.permanent,true);
   assert.ok(!Object.keys(companyDestinations).some(s=>rule.destination.split('#')[0]===`/company/${s}`));

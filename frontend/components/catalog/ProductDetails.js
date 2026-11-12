@@ -1,6 +1,7 @@
 'use client';
 
 import E from '@/components/locale/LocaleElement';
+import { useTranslate } from '@/components/locale/LocaleProvider';
 import Image from '@/components/locale/LocaleImage';
 import Link from '@/components/locale/LocaleLink';
 import LocalResourceAnchor from '@/components/locale/LocalResourceAnchor';
@@ -27,6 +28,7 @@ const tabs = [{ id: 'specs', name: 'Характеристики' }, { id: 'over
 function StaticProductDetails({ id }) {
   const params = useSearchParams();
   const [tab, setTab] = useState('specs');
+  const tx = useTranslate();
   const [notice, setNotice] = useState('');
   const selection = useSelection();
   const product = productById(id);
@@ -64,7 +66,7 @@ function StaticProductDetails({ id }) {
     <CatalogNotice compact source={product.source}/>
     <ProductOverview product={product} records={officialProducts} visual={visual} price={official ? 'Цена уточняется' : 'Демо · без цены'} hasWarnings={warnings.length > 0}
       classification={official && <p className="model-type-label"><ProductIcon product={product} size={28}/><Link href={productCatalogHref(`category=${product.category}&equipmentType=${equipmentTypeFor(product)}`, source)}>{equipmentModelName(equipmentTypeFor(product))}</Link></p>}
-      actions={<><E as="button" className="catalog-button primary" onClick={() => { selection.add(product.id); setNotice(`${designation} добавлен в подборку`); }} aria-label={`В подборку ${designation}`}>Добавить в подборку <span aria-hidden="true">+</span></E><Link className="catalog-button" href={productCatalogHref(from, source, product.id)}>К сравнению <span aria-hidden="true">↗</span></Link></>}
+      actions={<><E as="button" className="catalog-button primary" onClick={() => { selection.add(product.id); setNotice(`${tx(designation)} — ${tx('Оборудование добавлено в подборку')}`); }} aria-label={`${tx('В подборку')} ${tx(designation)}`}>Добавить в подборку <span aria-hidden="true">+</span></E><Link className="catalog-button" href={productCatalogHref(from, source, product.id)}>К сравнению <span aria-hidden="true">↗</span></Link></>}
       notice={notice && <>{notice} <Link href="/selection">Открыть подборку →</Link></>}
     />
     {family && <CatalogSourceEvidence product={product} records={officialProducts}/>}

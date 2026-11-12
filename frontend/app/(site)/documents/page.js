@@ -1,57 +1,88 @@
 import E from '@/components/locale/LocaleElement';
-import Image from '@/components/locale/LocaleImage';
-import { Story, Hero, Section, Jump, ReadingLinks } from '@/components/public/story/Story';
+import Link from '@/components/locale/LocaleLink';
+import CorporateArrow from '@/components/public/CorporateArrow';
+import HomeContactForm from '@/components/public/HomeContactForm';
+import { catalogDirectionById, catalogDirectionHref, topCatalogDirections } from '@/lib/public/catalog-directions';
 import { documents } from '@/lib/public/content';
+import '@/components/public/corporate-home.css';
+import styles from './designers.module.css';
 
 export const metadata = {
-  title: 'Документы и каталоги',
-  description: 'Корпоративный каталог, список поставок Asia Trafo и технические каталоги оборудования.',
+  title: 'Проектировщикам · Alageum Electric',
+  description: 'Каталоги, параметры оборудования и запрос технической документации для проекта.',
 };
 
-const printed = [{
-  title: 'Шкафные конструкции',
-  description: 'Серии шкафов, технические характеристики, схемы и чертежи.',
-  period: '02.09.2024 · каталог в PDF',
-  href: '/catalog/source',
-  cover: '/photography/stories/document-substations.webp',
-}, ...documents.filter(item => item.format === 'PDF').map(item => ({
-  ...item,
-  cover: item.href.includes('group') ? '/photography/stories/document-group.webp' : '/photography/stories/document-reference.webp',
-}))];
+const groups = [
+  { id: 'transformers', title: 'Трансформаторы', directions: ['power-transformers', 'autotransformers', 'furnace-transformers', 'oil-dry-transformers', 'instrument-transformers'] },
+  { id: 'reactors', title: 'Реакторы', directions: ['reactors'] },
+  { id: 'substations', title: 'Подстанции', directions: ['substations'] },
+  { id: 'switchgear', title: 'Распределительное оборудование', directions: ['high-voltage-switchgear', 'low-voltage-switchgear', 'gis', 'high-voltage-switching'] },
+  { id: 'control', title: 'Автоматика и комплектующие', directions: ['relay-protection', 'cable-systems', 'electrical-components'] },
+];
+const files = [
+  {
+    title: 'Шкафные конструкции',
+    description: 'Серии шкафов, технические характеристики, схемы и чертежи.',
+    period: '02.09.2024',
+    href: '/catalog/source',
+    action: 'Читать каталог',
+  },
+  ...documents.filter(item => item.format === 'PDF').map(item => ({ ...item, action: 'Открыть PDF' })),
+];
 
 export default function Documents() {
-  return <Story name="documents">
-    <Hero label="Документы" kicker={null} variant="wide" title="Документы и каталоги Alageum Electric" lead="Корпоративный каталог, список поставок Asia Trafo и технические материалы по оборудованию." />
-    <Section id="corporate-materials" title="Каталоги и список поставок">
-      <div className="story-document-grid">
-        {printed.map(item => <article key={item.href}>
-          <Image className="story-document-real-cover" src={item.cover} alt={item.title} width={707} height={1000} />
-          <div>
-            <E as="h3">{item.title}</E>
-            <E as="p">{item.description}</E>
-            <E as="p" className="story-kicker">{item.period}</E>
-            <Jump href={item.href}>{item.href.endsWith('.pdf') ? 'Открыть документ' : 'Читать каталог'}</Jump>
-          </div>
-        </article>)}
-      </div>
-    </Section>
-    <Section id="technical-catalogs" title="Технический каталог" tone="paper">
-      <ReadingLinks items={documents.filter(item => item.format === 'WEB').map(item => [item.href, item.title, item.description])} />
-    </Section>
-    <Section tone="dark" title="Документы на выбранное оборудование">
-      <div className="story-columns">
-        <E as="p" className="story-lead">Запросите у производителя паспорт, чертёж, сертификат или протокол испытаний.</E>
-        <div className="story-copy">
-          <E as="p">В запросе укажите производителя, обозначение изделия, его параметры и нужную редакцию документа.</E>
-          <Jump href="mailto:sales@alageum.com?subject=Запрос%20документации">Запросить документацию</Jump>
+  return <div className={`site-container ${styles.page}`}>
+    <E as="nav" className={styles.sidebar} aria-label="Разделы для проектировщиков">
+      <Link href="#technical-catalogs">Оборудование</Link>
+      <ul>
+        {groups.map(group => <li key={group.id}><Link href={`#${group.id}`}>{group.title}</Link></li>)}
+      </ul>
+      <Link href="#corporate-materials">Каталоги и список поставок</Link>
+      <Link href="#documentation-request">Запросить документацию</Link>
+    </E>
+    <div className={styles.content}>
+      <header className={styles.hero}>
+        <E as="p" className="site-eyebrow">ALAGEUM ELECTRIC</E>
+        <E as="h1">Проектировщикам</E>
+        <E as="p">Найдите серию оборудования и её характеристики, откройте каталог или запросите документы для конкретного исполнения.</E>
+        <div className={styles.actions}>
+          <Link className="site-button site-button-primary" href="#documentation-request">Запросить документацию <CorporateArrow /></Link>
+          <Link className="site-button" href="#corporate-materials">Каталоги и список поставок <CorporateArrow direction="down" /></Link>
         </div>
+      </header>
+
+      <section id="technical-catalogs" className={styles.section} aria-labelledby="designer-equipment">
+        <div className={styles.sectionHeading}>
+          <E as="h2" id="designer-equipment">Оборудование</E>
+          <Link className="site-text-link" href="/catalog">Весь каталог <CorporateArrow /></Link>
+        </div>
+        <div className={styles.groups}>
+          {groups.map(group => <section key={group.id} id={group.id} className={styles.group}>
+            <E as="h3">{group.title}</E>
+            <ul>
+              {group.directions.map(id => {
+                const direction = catalogDirectionById(id);
+                return <li key={id}><Link href={catalogDirectionHref(id)}>{direction.title} <CorporateArrow /></Link></li>;
+              })}
+            </ul>
+          </section>)}
+        </div>
+      </section>
+
+      <section id="corporate-materials" className={styles.section} aria-labelledby="designer-materials">
+        <div className={styles.sectionHeading}><E as="h2" id="designer-materials">Каталоги и список поставок</E></div>
+        <ul className={styles.files}>
+          {files.map(file => <li key={file.href}>
+            <div><E as="h3">{file.title}</E><E as="p">{file.description}</E><E as="small">{file.period}</E></div>
+            <Link className="site-text-link" href={file.href}>{file.action} <E as="span" className={styles.srOnly}>{file.title}</E><CorporateArrow /></Link>
+          </li>)}
+        </ul>
+        <E as="p" className={styles.note}>Перед использованием проверьте дату документа и обозначение изделия. Чертёж должен соответствовать согласованному исполнению.</E>
+      </section>
+
+      <div className={styles.request}>
+        <HomeContactForm equipment={topCatalogDirections.map(({ id, title }) => ({ id, title }))} />
       </div>
-    </Section>
-    <Section title="Перед использованием документа">
-      <div className="story-decision">
-        <details open><E as="summary">Проверьте дату и обозначение изделия</E><E as="p">Публикация отражает данные на дату выпуска. Сертификат должен относиться к нужной продукции, а чертёж — к согласованному исполнению.</E></details>
-        <details><E as="summary">Согласуйте комплектацию</E><E as="p">Перед заказом согласуйте исполнение и комплектацию с производителем и проектировщиком.</E></details>
-      </div>
-    </Section>
-  </Story>;
+    </div>
+  </div>;
 }

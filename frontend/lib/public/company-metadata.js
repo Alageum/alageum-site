@@ -5,5 +5,5 @@ export function companyPageMetadata(metadata,path,locale='ru',origin=process.env
  if(!origin)return metadata;
  const validated=editorialMetadata({locale_code:'ru',slug:'about',title:metadata.title},origin);
  const base=validated.alternates.canonical;
- return {...metadata,alternates:{canonical:new URL(localizedHref(path,locale),base).href,languages:Object.fromEntries(['ru','en','kk'].map(lang=>[lang,new URL(localizedHref(path,lang),base).href]))}};
+ return {...metadata,alternates:{canonical:new URL(localizedHref(path,locale),base).href,languages:Object.fromEntries(['ru','en','kk','zh','uz'].map(lang=>[lang,new URL(localizedHref(path,lang),base).href]))}};
 }

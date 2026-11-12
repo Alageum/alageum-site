@@ -29,7 +29,7 @@ const allowed = path => Object.hasOwn(routeNames, path) || ['/industries/', '/ca
 export default function PageOrientation({menuOpen = false}) {
   const pathname = usePathname();
   const locale = useLocale();
-  const text = ui[locale] || ui.ru;
+  const text = ui[locale] || Object.fromEntries(Object.entries(ui.ru).map(([key, value]) => [key, translateText(value, locale)]));
   const listId = useId();
   const rootRef = useRef(null);
   const [snapshot, setSnapshot] = useState({path: '', visible: false, title: '', current: '', items: []});

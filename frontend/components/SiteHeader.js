@@ -157,10 +157,10 @@ export default function SiteHeader({ selectionCount }) {
             </LocaleElement>}
           </LocaleElement>
           <LocaleElement as="div" className="site-header-actions">
-            <div className="site-header-language"><LanguageSwitcher /></div>
             {area === 'company' && <HeaderContact />}
             {area === 'company' && <QuickFeedback onOpen={() => closeMenus()} />}
             {area !== 'company' && <Link href={area === 'careers' ? '/careers/apply' : '/client/projects'} className={`brand-header-contact${area === 'careers' ? ' career-resume-link' : ''}`} onNavigate={() => closeMenus()}>{area === 'careers' ? 'Оставить резюме' : 'Создать проект'} <LocaleElement as="span" aria-hidden="true">↗</LocaleElement></Link>}
+            <div className="site-header-language"><LanguageSwitcher /></div>
             <Link href={accountHref} className="site-account-link" aria-label={accountLabel} title={accountLabel} onNavigate={() => closeMenus()}>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" aria-hidden="true"><circle cx="12" cy="8" r="3.5" /><path d="M5 20v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2" /></svg>
               <LocaleElement as="span">{accountLabel}</LocaleElement>

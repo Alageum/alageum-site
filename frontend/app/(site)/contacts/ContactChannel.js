@@ -1,4 +1,5 @@
 'use client';
+import {translateText} from '@/lib/i18n/translate';
 
 import {useState} from 'react';
 import {useLocale} from '@/components/locale/LocaleProvider';
@@ -12,7 +13,7 @@ const messages = {
 
 export default function ContactChannel({kind, href, value}) {
   const locale = useLocale();
-  const text = messages[locale] || messages.ru;
+  const text = messages[locale] || Object.fromEntries(Object.entries(messages.ru).map(([key, value]) => [key, translateText(value, locale)]));
   const [state, setState] = useState('idle');
   const phone = kind === 'phone';
   async function copy() {

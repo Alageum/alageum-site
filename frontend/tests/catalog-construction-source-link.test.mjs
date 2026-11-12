@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { createRequire } from 'node:module';
-import { Children, createContext, createElement, useContext, useEffect } from 'react';
+import { Children, createContext, createElement, useContext, useCallback, useEffect } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { officialProducts, productById } from '../lib/catalog/data.js';
 import { getCatalogRelatedReferences, getCatalogSourceComparisons } from '../lib/catalog/identityCompletion.js';
@@ -33,7 +33,7 @@ async function compile(relativePath, bindings) {
 
 const dictionaries = JSON.parse(await readFile(new URL('../lib/i18n/dictionaries.json', import.meta.url), 'utf8'));
 const { translateText } = await compile('../lib/i18n/translate.js', { dictionaries });
-const { LocaleProvider, useLocale } = await compile('../components/locale/LocaleProvider.js', { createContext, useContext, translateText });
+const { LocaleProvider, useLocale, useTranslate } = await compile('../components/locale/LocaleProvider.js', { createContext, useContext, useCallback, translateText });
 const unusedControl = () => { throw new Error('Unexpected non-anchor control in source-link render'); };
 const { default: LocaleElement } = await compile('../components/locale/LocaleElement.js', {
   Children, useLocale, translateText, localizedHref, localResourceHref,
@@ -41,7 +41,7 @@ const { default: LocaleElement } = await compile('../components/locale/LocaleEle
 });
 const { default: LocalResourceAnchor } = await compile('../components/locale/LocalResourceAnchor.js', { E: LocaleElement, localResourceHref });
 const { default: CatalogSourceEvidence } = await compile('../components/catalog/CatalogSourceEvidence.js', {
-  LocalResourceAnchor, useEffect,
+  LocalResourceAnchor, useEffect, useTranslate, E: LocaleElement,
   Link: props => createElement('a', props),
   getCatalogRelatedReferences, getCatalogSourceComparisons, sourcePageUrl, localResourceHref,
   getCatalogFamilySourceReferences, sourcePanelAnchor, getReviewedLegacyCompletion,

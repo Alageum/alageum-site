@@ -1,4 +1,5 @@
 'use client';
+import {translateText} from '@/lib/i18n/translate';
 
 import {usePathname} from '@/components/locale/navigation';
 import {useLocale, useTranslate} from '@/components/locale/LocaleProvider';
@@ -42,7 +43,8 @@ export default function SiteFooter() {
   const area = ecosystemArea(pathname);
   const isCareer = area === 'careers';
   const tx = useTranslate();
-  const text = wording[useLocale()] || wording.ru;
+  const locale = useLocale();
+  const text = wording[locale] || Object.fromEntries(Object.entries(wording.ru).map(([key, value]) => [key, translateText(value, locale)]));
   const groups = isCareer ? careerFooterGroups : area === 'catalog' ? catalogGroups : companyGroups;
   const section = tx(isCareer ? 'Карьера' : area === 'catalog' ? 'Каталог' : 'Компания');
   const groupTitle = title => title === 'Продукция и проекты' ? text.products : title === 'Кандидатам' ? text.candidates : tx(title);

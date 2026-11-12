@@ -130,7 +130,7 @@ async function component(relative, name, bindings) {
 // Only asynchronous data/state and unrelated leaf visuals are substituted. This
 // verifies server-rendered routing; browser layout/hydration remains untested here.
 async function render(id, { api = false, selected = '', rows = api ? live : records, failed = false } = {}) {
-  const bindings = { ...data, ...presentation, ...grouping, ...sources, E: renderLocaleElement, useState, Link,
+  const bindings = { ...data, ...presentation, ...grouping, ...sources, E: renderLocaleElement, useState, Link, useTranslate: () => value => value,
     LocalResourceAnchor: props => createElement('a', props), DesignSelect: props => createElement('select', props),
     ProductPhotograph: () => null, RelatedProducts: () => null, ProductThumbnail: () => null,
     Image: props => createElement('img', props), ProductIcon: () => null, EquipmentModel: () => null,
