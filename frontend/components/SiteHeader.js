@@ -13,6 +13,7 @@ import HeaderContact from '@/components/HeaderContact';
 import QuickFeedback from '@/components/public/QuickFeedback';
 import PageOrientation from '@/components/PageOrientation';
 import SiteMenuLinks from '@/components/SiteMenuLinks';
+import SiteMenuPanel from '@/components/SiteMenuPanel';
 import menuStyles from '@/components/SiteMenuLinks.module.css';
 import {siteNavigation} from '@/lib/public/site-navigation';
 import { careerSections, careerSectionIndex } from "@/components/careers/navigation";
@@ -69,7 +70,7 @@ export default function SiteHeader({ selectionCount }) {
   useLayoutEffect(() => {
     if (desktopOpen && pendingSubmenuFocus.current) {
       pendingSubmenuFocus.current = false;
-      headerRef.current?.querySelector('.site-mega-link, [data-site-menu-link]')?.focus();
+      headerRef.current?.querySelector('[role=tab][aria-selected=true], .site-mega-link, [data-site-menu-link]')?.focus();
     }
   }, [desktopOpen, menu]);
 
@@ -147,12 +148,9 @@ export default function SiteHeader({ selectionCount }) {
               <LocaleElement as="span" className="site-nav-indicator site-nav-indicator-committed" aria-hidden="true" style={{ "--nav-index": Math.max(currentIndex, 0), opacity: currentIndex < 0 ? 0 : 1 }} />
               <LocaleElement as="span" className="site-nav-indicator site-nav-indicator-preview" aria-hidden="true" style={{ "--nav-index": Math.max(previewIndex, 0), opacity: previewIndex < 0 ? 0 : 1 }} />
             </LocaleElement>
-            {area !== "careers" && <LocaleElement as="div" id="site-mega-navigation" className={`site-mega-navigation${desktopOpen ? " is-open" : ""}`} inert={!desktopOpen}>
+            {area !== "careers" && <LocaleElement as="div" id="site-mega-navigation" className={`site-mega-navigation ${menuStyles.compactDropdown}${desktopOpen ? " is-open" : ""}`} inert={!desktopOpen}>
               {activeSection &&
-              <LocaleElement as="div" className={`site-mega-inner ${menuStyles.panel}`} key={activeSection.href}>
-                  <LocaleElement as="div" className="site-mega-intro"><LocaleElement as="strong">{activeSection.title}</LocaleElement><LocaleElement as="p">{activeSection.note}</LocaleElement>{activeSection.resources&&<div className="company-menu-resources">{activeSection.resources.map(([label,href])=><Link key={href} href={href} onNavigate={()=>closeMenus()}>{label} ↗</Link>)}</div>}</LocaleElement>
-                  {desktopOpen && <SiteMenuLinks links={activeSection.links} catalog={activeSection.href === '/catalog/directions'} onNavigate={() => closeMenus()}/>}
-                </LocaleElement>
+              <SiteMenuPanel key={activeSection.href} section={activeSection} onNavigate={() => closeMenus()} />
               }
             </LocaleElement>}
           </LocaleElement>

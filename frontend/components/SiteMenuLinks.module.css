@@ -51,3 +51,31 @@
 .mobile .close { flex-basis: 44px; min-height: 44px; }
 :global(.site-mobile-group-heading) > .mobileSectionTrigger { width: 100%; min-height: 54px; justify-content: space-between; padding: 0 17px 0 0; color: var(--site-ink); font: inherit; font-size: 15px; text-align: start; cursor: pointer; }
 @media(max-width: 1180px) { .tree { gap: 12px 20px; } }
+
+/* A single compact, two-pane dropdown shared by every header section. */
+:global(.site-header) .compactDropdown {
+  left: max(24px, calc((100vw - 1440px) / 2));
+  right: auto;
+  width: min(760px, calc(100vw - 48px));
+  border: 1px solid var(--site-line);
+  border-top: 2px solid var(--site-red);
+  box-shadow: 0 16px 32px rgb(18 22 25 / 9%);
+}
+.compactPanel { max-height: calc(100dvh - 150px); overflow-y: auto; overscroll-behavior: contain; padding: 18px 20px 14px; }
+.panelHeading { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--site-line); }
+.panelHeading strong { font-size: 14px; font-weight: 550; }
+.panelHeading a, .panelResources a { display: inline-flex; align-items: center; gap: 10px; color: var(--site-red); font-size: 12px; text-decoration: none; }
+.categoryLayout { display: grid; grid-template-columns: minmax(170px, 0.85fr) minmax(0, 1.7fr); gap: 20px; padding-top: 12px; }
+.categories { display: flex; flex-direction: column; gap: 3px; border-right: 1px solid var(--site-line); padding-right: 14px; }
+.categories button { display: flex; justify-content: space-between; align-items: center; gap: 12px; width: 100%; min-height: 48px; padding: 12px 10px; border: 0; border-left: 2px solid transparent; background: transparent; color: var(--site-ink); font: inherit; font-size: 13px; line-height: 1.45; text-align: start; cursor: pointer; transition: background 160ms ease, color 160ms ease; }
+.categories button[aria-selected="true"] { border-left-color: var(--site-red); background: #f8f3f4; color: var(--site-red); }
+.categories button:hover { background: #f8f3f4; }
+.categories button > span:last-child { flex-shrink: 0; }
+.categoryContent { min-width: 0; }
+.categoryContent .tree { display: block; }
+.categoryContent .link { min-height: 42px; padding: 10px 0; }
+.categoryContent .link > span { font-size: 13px; font-weight: 450; }
+.categoryContent .link small { font-size: 11px; }
+.panelResources { display: flex; flex-wrap: wrap; gap: 12px 22px; padding-top: 14px; margin-top: 14px; border-top: 1px solid var(--site-line); }
+.categories button:focus-visible, .panelHeading a:focus-visible, .panelResources a:focus-visible { outline: 2px solid var(--site-red); outline-offset: -2px; }
+@media(prefers-reduced-motion: reduce) { .categories button { transition: none; } }
