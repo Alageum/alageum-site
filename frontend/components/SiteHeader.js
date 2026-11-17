@@ -51,7 +51,6 @@ export default function SiteHeader({ selectionCount }) {
   const toggleRef = useRef(null);
   const navRefs = useRef([]);
   const lastTrigger = useRef(null);
-  const suppressFocusPreview = useRef(false);
   const pendingSubmenuFocus = useRef(false);
   const [menu, setMenu] = useState({ pathname, preview: null, desktop: false, mobile: false, group: null });
   const navPath = configuredSections === corporateSections
@@ -91,7 +90,6 @@ export default function SiteHeader({ selectionCount }) {
       event.preventDefault();
       setMenu({ pathname, preview: null, desktop: false, mobile: false, group: null });
       if (lastTrigger.current && document.activeElement !== lastTrigger.current) {
-        suppressFocusPreview.current = true;
         lastTrigger.current.focus();
       }
     }
@@ -131,11 +129,7 @@ export default function SiteHeader({ selectionCount }) {
           <LocaleElement as="nav" className="site-desktop-nav" aria-label="Основная навигация">
             <LocaleElement as="div" className="site-nav-rail">
               {sections.map((section, index) =>
-              <Link key={section.href} href={section.href === '/catalog/directions' ? '/catalog' : section.href} ref={(element) => {navRefs.current[index] = element;}} className={`site-nav-link${currentIndex === index ? " is-current" : ""}`} aria-current={currentIndex === index ? "page" : undefined} aria-expanded={section.links.length ? desktopOpen && previewIndex === index : undefined} aria-controls={section.links.length ? "site-mega-navigation" : undefined} onMouseEnter={() => {if(section.links.length)previewSection(index);else closeMenus();}} onFocus={() => {
-                if (!section.links.length) {closeMenus();return;}
-                if (suppressFocusPreview.current) {suppressFocusPreview.current = false;return;}
-                previewSection(index);
-              }} onKeyDown={(event) => {
+              <Link key={section.href} href={section.href === '/catalog/directions' ? '/catalog' : section.href} ref={(element) => {navRefs.current[index] = element;}} className={`site-nav-link${currentIndex === index ? " is-current" : ""}`} aria-current={currentIndex === index ? "page" : undefined} aria-expanded={section.links.length ? desktopOpen && previewIndex === index : undefined} aria-controls={section.links.length ? "site-mega-navigation" : undefined} onMouseEnter={() => {if(section.links.length)previewSection(index);else closeMenus();}} onKeyDown={(event) => {
                 if (event.key === "ArrowDown" && section.links.length) {
                   event.preventDefault();
                   pendingSubmenuFocus.current = true;
@@ -174,23 +168,17 @@ export default function SiteHeader({ selectionCount }) {
         <PageOrientation menuOpen={anyOpen}/>
         <LocaleElement as="nav" className={`site-mobile-navigation${mobileOpen ? " is-open" : ""}`} id="site-mobile-navigation" aria-label="Мобильная навигация" inert={!mobileOpen}>
           {sections.map((section, index) => {
-            const catalogDisclosure = section.href === '/catalog/directions' && section.links.length > 0;
             const groupOpen = menu.group === index;
             const groupId = `site-mobile-group-${index}`;
             const toggleGroup = () => setMenu((previous) => ({ ...previous, group: previous.group === index ? null : index }));
             return <LocaleElement as="div" className="site-mobile-group" key={section.href}>
               <LocaleElement as="div" className="site-mobile-group-heading">
-                {catalogDisclosure ? (
-                  <LocaleElement as="button" type="button" className={menuStyles.mobileSectionTrigger} aria-controls={groupId} aria-expanded={groupOpen} onClick={toggleGroup}>
-                    <LocaleElement as="span">{section.label}</LocaleElement><Chevron expanded={groupOpen} />
-                  </LocaleElement>
-                ) : <>
-                  <Link href={section.href} aria-current={currentIndex === index ? "page" : undefined} onNavigate={() => closeMenus()}>{section.label}</Link>
+                <>
+                  <Link href={section.href === '/catalog/directions' ? '/catalog' : section.href} aria-current={currentIndex === index ? "page" : undefined} onNavigate={() => closeMenus()}>{section.label}</Link>
                   {section.links.length > 0 && <LocaleElement as="button" type="button" aria-label={`${groupOpen ? "Свернуть" : "Развернуть"} раздел «${section.label}»`} aria-controls={groupId} aria-expanded={groupOpen} onClick={toggleGroup}><Chevron expanded={groupOpen} /></LocaleElement>}
-                </>}
+                </>
               </LocaleElement>
               {(section.links.length > 0 || section.resources?.length > 0) && <LocaleElement as="div" id={groupId} className="site-mobile-group-links" hidden={!groupOpen}>
-                {section.resources && <div className="company-menu-resources">{section.resources.map(([label,href]) => <Link key={href} href={href} aria-current={pathname === href ? "page" : undefined} onNavigate={() => closeMenus()}>{label}</Link>)}</div>}
                 {groupOpen && <SiteMenuLinks links={section.links} mobile onNavigate={() => closeMenus()}/>}
               </LocaleElement>}
             </LocaleElement>;

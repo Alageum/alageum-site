@@ -35,7 +35,6 @@
 .brand-experience .corp-investor .corp-page-content{padding-top:32px;padding-bottom:80px}
 .brand-experience .corp-investor .site-breadcrumbs{padding-top:0}
 .brand-experience .corp-investor .site-page-heading{padding:64px 0 56px;position:relative;border-bottom:1px solid var(--site-line);margin-bottom:40px}
-.brand-experience .corp-investor .site-page-heading::before{content:'';display:block;width:48px;height:3px;background:var(--site-red);margin-bottom:26px}
 .brand-experience .corp-investor .site-page-heading h1{font-size:clamp(42px,5.2vw,78px);line-height:1.04;letter-spacing:-.055em;font-weight:400;max-width:1120px;margin:22px 0 26px;text-wrap:balance}
 .brand-experience .corp-investor .site-page-heading>p:last-child{font-size:17px;line-height:1.75;max-width:760px;color:#636363}
 .brand-experience .corp-investor .corp-heading-muted{color:#787878}
@@ -321,8 +320,7 @@
  .brand-experience .corp-investor .site-page-heading{padding:36px 0;margin-bottom:28px}
  .brand-experience .corp-investor .site-page-heading h1{font-size:clamp(36px,7.3vw,54px);line-height:1.07;letter-spacing:-.045em}
  .brand-experience .corp-investor .site-page-heading>p:last-child{font-size:16px;line-height:1.7}
- .brand-experience .corp-investor .site-page-heading::before{width:32px;margin-bottom:22px}
- .brand-experience .corp-investor .corp-home-hero{padding:52px 24px 90px;min-height:650px}
+  .brand-experience .corp-investor .corp-home-hero{padding:52px 24px 90px;min-height:650px}
  .brand-experience .corp-investor .corp-hero-copy{max-width:600px}
  .brand-experience .corp-investor .corp-hero-copy h1{font-size:clamp(43px,8.2vw,64px);margin:28px 0}
  .brand-experience .corp-investor .corp-lead{font-size:16px;max-width:420px}

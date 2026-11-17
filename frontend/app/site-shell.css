@@ -58,22 +58,6 @@
 .site-mega-navigation.is-open { opacity: 1; visibility: visible; transform: translateY(0); pointer-events: auto; transition-delay: 0s; }
 .site-mega-inner { padding: 30px 48px 34px; display: grid; grid-template-columns: minmax(240px, 1.2fr) repeat(3, minmax(0, 1fr)); gap: 28px; min-height: 172px; animation: site-panel-enter 340ms var(--site-ease) both; }
 .site-mega-intro strong { display: block; width: fit-content; font-size: 18px; font-weight: 500; line-height: 1.25; }
-.site-mega-intro strong::before {
-  --accent-split: 78%;
-  --accent-gap: 5px;
-  content: "";
-  display: block;
-  width: 100%;
-  height: 2px;
-  margin-bottom: 10px;
-  background: linear-gradient(
-    to right,
-    var(--site-red) 0 var(--accent-split),
-    transparent var(--accent-split) calc(var(--accent-split) + var(--accent-gap)),
-    color-mix(in srgb, var(--site-red) 50%, transparent) calc(var(--accent-split) + var(--accent-gap)),
-    color-mix(in srgb, var(--site-red) 18%, transparent) 100%
-  );
-}
 .site-mega-intro p { max-width: 245px; margin: 9px 0 0; font-size: 11px; line-height: 1.55; color: var(--site-muted); }
 .site-mega-link { min-height: 84px; display: flex; flex-direction: column; justify-content: center; gap: 8px; align-self: start; padding: 8px 0 15px; border-bottom: 1px solid var(--site-line); transition: border-color var(--site-motion); }
 .site-mega-link:hover, .site-mega-link:focus-visible { border-color: var(--site-red); }

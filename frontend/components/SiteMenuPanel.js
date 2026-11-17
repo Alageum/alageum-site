@@ -2,7 +2,6 @@
 
 import { useId, useState } from 'react';
 import E from '@/components/locale/LocaleElement';
-import Link from '@/components/locale/LocaleLink';
 import SiteMenuLinks from './SiteMenuLinks';
 import styles from './SiteMenuLinks.module.css';
 
@@ -43,11 +42,9 @@ export default function SiteMenuPanel({ section, onNavigate }) {
   const [selected, setSelected] = useState(0);
   const id = useId();
   const current = Math.min(selected, groups.length - 1);
-  const overviewHref = section.href === '/catalog/directions' ? '/catalog' : section.href;
   return <div className={styles.compactPanel}>
     <div className={styles.panelHeading}>
       <E as="strong">{section.title}</E>
-      <Link href={overviewHref} onNavigate={onNavigate}><E as="span">{section.label}</E><span aria-hidden="true">↗</span></Link>
     </div>
     <div className={styles.categoryLayout}>
       <div className={styles.categories} role="tablist" aria-orientation="vertical" aria-label={section.title}>
@@ -65,6 +62,5 @@ export default function SiteMenuPanel({ section, onNavigate }) {
         <SiteMenuLinks links={groups[current].links} onNavigate={onNavigate} />
       </div>
     </div>
-    {section.resources?.length > 0 && <div className={styles.panelResources}>{section.resources.filter(([, href]) => href !== overviewHref).map(([label, href]) => <Link key={href} href={href} onNavigate={onNavigate}><E as="span">{label}</E><span aria-hidden="true">↗</span></Link>)}</div>}
   </div>;
 }
