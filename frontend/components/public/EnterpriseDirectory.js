@@ -1,78 +1,84 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useReducer, useState } from 'react';
 import E from '@/components/locale/LocaleElement';
-import { useEnterpriseMapPreview } from './EnterpriseMapPreview';
+import EnterpriseMapDetails from './EnterpriseMapPreview';
 import { useSearchParams } from 'next/navigation';
-import { usePathname, useRouter } from '@/components/locale/navigation';
-import { mapLocations, mapCities, locationsInCity } from '@/lib/public/enterprise-map-locations';
+import { directoryCities as allMapCities, enterpriseDirectoryGroups, directoryItemsForCategory, mappedDirectoryItems } from '@/lib/public/enterprise-directory';
+import { enterpriseMapReducer, readEnterpriseMapState, writeEnterpriseMapState, cityMovesWithRegion, resolveEnterpriseArea } from '@/lib/public/enterprise-map-state';
 import { cityPoint } from '@/lib/public/company';
-import { mapRegions, regionViewport } from '@/lib/public/enterprise-map-regions';
+import { mapRegions as allMapRegions, regionViewport } from '@/lib/public/enterprise-map-regions';
 
 export default function EnterpriseDirectory() {
-  const { mapRef, open, focus, close, previewLayer, previewCities, previewId } = useEnterpriseMapPreview();
   const [hoveredRegion, setHoveredRegion] = useState(null);
   const params = useSearchParams();
-  const pathname = usePathname();
-  const router = useRouter();
-  const city = mapCities.find(item => item.title === params.get('city'));
-  const region = city ? undefined : mapRegions.find(item => item.cities.length > 0 && String(item.osmId) === params.get('region'));
+  const [selection, dispatch] = useReducer(enterpriseMapReducer, params, readEnterpriseMapState);
+  const { category } = selection;
+  const mapLocations = useMemo(() => mappedDirectoryItems(category), [category]);
+  const listedItems = useMemo(() => directoryItemsForCategory(category), [category]);
+  const mapCities = useMemo(() => allMapCities.filter(city => mapLocations.some(item => item.contact.city === city.title)), [mapLocations]);
+  const mapRegions = useMemo(() => allMapRegions.map(region => ({ ...region, cities: mapCities.filter(city => cityMovesWithRegion(city, region)).map(city => city.id) })), [mapCities]);
+  const categoryTitle = enterpriseDirectoryGroups.find(group => group.id === category)?.title || 'Все организации';
+  const { region, items: detailsItems, activeId } = resolveEnterpriseArea(mapLocations, mapCities, mapRegions, selection);
   const activeRegion = mapRegions.find(item => item.osmId === hoveredRegion) || region;
-  const viewport = city ? { ...cityPoint(city), scale: 7 } : region ? regionViewport(region) : null;
+  const viewport = region ? regionViewport(region) : null;
   const scale = viewport?.scale || 1;
+  const [detailChoice, setDetailChoice] = useState(null);
+  const currentId = detailChoice || activeId;
+  const activeCity = detailsItems.find(item => item.id === currentId)?.contact.city;
 
   useEffect(() => {
-    if (city) {
-      open(city.title, mapRef.current?.querySelector(`[data-city="${city.id}"]`), true);
-    } else if (region) {
-      const cities = mapCities.filter(item => region.cities.includes(item.id)).map(item => item.title);
-      open(region.title, mapRef.current?.querySelector(`[data-region="${region.osmId}"]`), true, cities);
-    } else close();
-  }, [city, region, open, close, mapRef]);
+    const restore = () => {
+      setHoveredRegion(null);
+      setDetailChoice(null);
+      dispatch({ type: 'restore', state: readEnterpriseMapState(new URLSearchParams(window.location.search)) });
+    };
+    const escape = event => {
+      if (event.key !== 'Escape' || event.defaultPrevented || document.querySelector('dialog[open]')) return;
+      const current = readEnterpriseMapState(new URLSearchParams(window.location.search));
+      if (!current.organizationId && !current.cityId && !current.regionId) return;
+      const next = enterpriseMapReducer(current, { type: 'reset' });
+      setHoveredRegion(null); setDetailChoice(null);
+      dispatch({ type: 'restore', state: next });
+      const query = writeEnterpriseMapState(window.location.search, next).toString();
+      window.history.pushState(null, '', `${window.location.pathname}${query ? `?${query}` : ''}${window.location.hash}`);
+    };
+    window.addEventListener('popstate', restore);
+    window.addEventListener('keydown', escape);
+    return () => { window.removeEventListener('popstate', restore); window.removeEventListener('keydown', escape); };
+  }, []);
 
-  function navigate(next) {
-    router.push(`${pathname}${next.size ? `?${next}` : ''}`, { scroll: false });
-  }
-  function selectCity(value) {
+  function choose(action) {
+    const next = enterpriseMapReducer(selection, action);
+    if (['category', 'organizationId', 'cityId', 'regionId'].every(key => next[key] === selection[key])) return;
     setHoveredRegion(null);
-    if (city?.title === value) {
-      open(value, mapRef.current?.querySelector(`[data-city="${city.id}"]`), true);
-      return;
-    }
-    const next = new URLSearchParams(params.toString());
-    next.delete('region');
-    if (value === 'all') next.delete('city'); else next.set('city', value);
-    navigate(next);
-    if (value === 'all') close();
+    setDetailChoice(null);
+    dispatch(action);
+    const query = writeEnterpriseMapState(window.location.search, next).toString();
+    // Native history is integrated with Next's router. No server navigation or
+    // page scroll occurs when changing this entirely local map selection.
+    window.history.pushState(null, '', `${window.location.pathname}${query ? `?${query}` : ''}${window.location.hash}`);
   }
-  function selectRegion(item) {
-    if (!item.cities.length) return;
-    setHoveredRegion(null);
-    if (region?.osmId === item.osmId) {
-      selectCity('all');
-      return;
-    }
-    const next = new URLSearchParams(params.toString());
-    next.delete('city');
-    next.set('region', String(item.osmId));
-    navigate(next);
-  }
+  function selectCategory(id) { choose({ type: 'category', id }); }
+  function selectRegion(item) { if (item.cities.length) choose({ type: 'region', id: item.osmId }); }
   return <>
-    {previewLayer}
     <E as="section" className="corp-geography" aria-label="География предприятий и офисов">
       <E as="div" className="corp-geo-sidebar">
         <E as="p" className="site-eyebrow">КАЗАХСТАН</E>
         <E as="h2">Предприятия и офисы продаж</E>
-        <E as="div" className="corp-city-filter" aria-label="Город предприятия">
-          <E as="button" type="button" aria-pressed={!city && !region} onClick={() => selectCity('all')}>Заводы и офисы <E as="span">{mapLocations.length.toString().padStart(2, '0')}</E></E>
-          {mapCities.map(item => <E as="button" type="button" aria-pressed={city?.id === item.id} key={item.id} onClick={() => selectCity(item.title)}>{item.title}<E as="span">{locationsInCity(item.title).length.toString().padStart(2, '0')}</E></E>)}
-        </E>
+        <div className="enterprise-category-filter-shell"><E as="div" className="corp-city-filter enterprise-category-filter" aria-label="Категории организаций">
+          <E as="button" type="button" aria-pressed={category === 'all'} onClick={() => selectCategory('all')}>Все организации <E as="span">{directoryItemsForCategory().length}</E></E>
+          {enterpriseDirectoryGroups.map(group => <div key={group.id}>
+            <E as="button" type="button" aria-expanded={category === group.id} aria-controls={`directory-${group.id}`} onClick={() => selectCategory(group.id)}>{group.title}<E as="span">{group.items.length}</E></E>
+            {category === group.id && <E as="ul" id={`directory-${group.id}`} className="enterprise-category-items">{listedItems.map(item => <E as="li" key={item.id}>{item.contact?.city ? <E as="button" type="button" aria-pressed={currentId === item.id} onClick={() => choose({ type: 'organization', id: item.id })}>{item.title}<E as="small">{item.contact.city}</E></E> : <><E as="span">{item.title}</E><E as="small">Местоположение уточняется</E></>}</E>)}</E>}
+          </div>)}
+        </E></div>
       </E>
-      <E as="div" ref={mapRef} className="corp-map-panel">
-        <E as="span" className="corp-map-label site-metadata">{region ? region.title : 'ЗАВОДЫ И ОФИСЫ'}</E>
-        {viewport && <E as="button" className="corp-map-reset" type="button" onClick={() => selectCity('all')}>← Вся карта</E>}
+      <E as="div" className="corp-map-panel">
+        <E as="span" className="corp-map-label site-metadata">{region ? region.title : categoryTitle}</E>
+        {region && <E as="button" className="corp-map-reset" type="button" onClick={() => choose({ type: 'reset' })}>← Вся карта</E>}
         <E as="div" className={`corp-map${viewport ? ' is-zoomed' : ''}`} style={{ '--map-scale': scale, '--region-lift': `${-7 / scale}px`, '--pin-scale': 1 / scale }}>
-          <div className="corp-map-scene" style={{ transform: viewport ? `translate(calc(var(${region ? '--enterprise-region-focus-x, 28%' : '--enterprise-focus-x, 34%'}) - ${viewport.x / 820 * 100}%), ${50 - viewport.y / 460 * 100}%) scale(${scale})` : 'none', transformOrigin: viewport ? `${viewport.x / 820 * 100}% ${viewport.y / 460 * 100}%` : 'center' }}>
+          <div className="corp-map-scene" style={{ transform: viewport ? `translate(calc(var(--enterprise-region-focus-x, 28%) - ${viewport.x / 820 * 100}%), ${50 - viewport.y / 460 * 100}%) scale(${scale})` : 'none', transformOrigin: viewport ? `${viewport.x / 820 * 100}% ${viewport.y / 460 * 100}%` : 'center' }}>
             <svg viewBox="0 0 820 460" role="group" aria-label="Области Казахстана — выберите область">
               <defs>
                 <linearGradient id="enterprise-country-gray" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="820" y2="460"><stop offset="0%" stopColor="#747474" /><stop offset="55%" stopColor="#555555" /><stop offset="100%" stopColor="#383838" /></linearGradient>
@@ -89,17 +95,16 @@ export default function EnterpriseDirectory() {
             </svg>
             {mapCities.map(item => {
               const point = cityPoint(item);
-              const lifted = activeRegion?.cities.includes(item.id) || region?.cities.includes(item.id);
-              const visible = !viewport || (city ? city.id === item.id : region.cities.includes(item.id));
-              return <E as="button" key={item.id} data-city={item.id} type="button" aria-label={`Показать предприятия: ${item.title}`} aria-pressed={city?.id === item.id} className={`corp-map-pin label-${item.labelSide}${previewCities.includes(item.title) ? ' is-preview' : ''}${lifted ? ' is-lifted' : ''}${!visible ? ' is-outside' : ''}`} aria-controls={previewId} aria-expanded={previewCities.includes(item.title)} style={{ left: `${point.x / 820 * 100}%`, top: `${point.y / 460 * 100}%` }}
-                onPointerEnter={event => { if (event.pointerType === 'mouse') { setHoveredRegion(mapRegions.find(region => region.cities.includes(item.id))?.osmId || null); open(item.title, event.currentTarget); } }} onPointerLeave={() => setHoveredRegion(null)}
-                onFocus={event => focus(item.title, event.currentTarget)} onClick={event => { selectCity(item.title); open(item.title, event.currentTarget, true); }}>
+              const lifted = cityMovesWithRegion(item, activeRegion) || cityMovesWithRegion(item, region);
+              return <E as="button" key={item.id} data-city={item.id} type="button" aria-label={`Показать предприятия: ${item.title}`} aria-pressed={activeCity === item.title} className={`corp-map-pin label-${item.labelSide}${activeCity === item.title ? ' is-preview' : ''}${lifted ? ' is-lifted' : ''}`} aria-controls="enterprise-directory-details" aria-expanded={Boolean(region?.cities.includes(item.id))} style={{ left: `${point.x / 820 * 100}%`, top: `${point.y / 460 * 100}%` }}
+                onClick={() => choose({ type: 'city', id: item.id })}>
                 <i aria-hidden="true" /><E as="span">{item.title}</E>
               </E>;
             })}
             <E as="span" className="corp-country-name" aria-hidden="true">КАЗАХСТАН</E>
           </div>
         </E>
+        <EnterpriseMapDetails items={detailsItems} activeId={currentId} onSelect={setDetailChoice} categoryTitle={categoryTitle} areaTitle={region?.title} />
         <E as="div" className="corp-map-legend"><E as="span">Выберите область или город. Повторное нажатие на область вернёт всю карту.</E></E>
         <E as="p" className="corp-map-note">Маркеры обозначают города, а не точные адреса заводов.<br />Границы областей: <E as="a" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap</E> · Центры городов: <E as="a" href="https://www.geonames.org/" target="_blank" rel="noopener noreferrer">GeoNames</E> / OpenStreetMap</E>
       </E>

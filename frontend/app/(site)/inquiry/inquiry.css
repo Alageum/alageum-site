@@ -28,7 +28,7 @@
 .inquiry-page .inquiry-section legend {
   max-width: 100%;
   padding-inline: 10px;
-  background: #f6f5f3;
+  background: #f4f5f6;
   line-height: 1.25;
 }
 
@@ -47,7 +47,7 @@
 .inquiry-page .inquiry-field input[type="file"]::file-selector-button {
   min-height: 34px;
   border: 1px solid var(--inquiry-line);
-  background: #f6f5f3;
+  background: #f4f5f6;
   margin-inline-end: 12px;
 }
 .inquiry-page .inquiry-sidebar { border-top: 3px solid var(--brand-red); }

@@ -100,14 +100,12 @@
   }
 }
 @media(prefers-reduced-motion:reduce){.corp-map-scene{transition:none}}
-.corp-map.is-zoomed .corp-map-pin{transform:translate(-50%,-50%) scale(.2)}
 .corp-region-boundary{fill:none;stroke:#bcbcbc;stroke-width:.8;stroke-opacity:.65;pointer-events:none}
 .corp-map-legend{display:flex;gap:18px;flex-wrap:wrap;font-size:10px;color:#ccc;margin:12px 0 0}
 .corp-map-legend span{display:flex;align-items:center;gap:7px}
 .corp-map-legend span::before{content:'';width:20px;border-top:1px solid #bcbcbc}
 @media(max-width:760px){.corp-map{--enterprise-focus-x:50%}}
 .corp-map.is-zoomed .corp-map-grid{opacity:.2}
-.corp-map.is-zoomed .corp-map-pin[aria-pressed=false]{visibility:hidden}
 .brand-experience .corp-investor .corp-map-scene .corp-country-fill{stroke:none}
 
 .corp-map.is-zoomed .corp-region-boundary{stroke-width:.12}
@@ -156,6 +154,92 @@
 .story-geography .corp-region-surface.is-hovered{fill:#2e3236}
 .story-geography .corp-country-name{color:#aeb3b8}
 .story-geography .corp-map-pin span{background:#222528}
-.story-geography .corp-map-pin i{background:#f2f3f4;box-shadow:0 0 0 5px rgba(242,243,244,.12)}
+.story-geography .corp-map-pin i{background:#c2c6ca;box-shadow:none}
 .story-geography .corp-map-pin:hover i,.story-geography .corp-map-pin[aria-pressed=true] i,.story-geography .corp-map-pin.is-preview i{background:#ff6479;box-shadow:0 0 0 7px rgba(255,100,121,.18)}
 .story-geography .corp-map-note{color:#c2c6ca}
+
+/* Start the divider with the city list, leaving the heading and bottom free. */
+.story-geography .corp-geo-sidebar { border-right: 0; }
+.story-geography .corp-geo-sidebar h2 { margin-bottom: 40px; }
+.story-geography .corp-geo-sidebar .corp-city-filter { position: relative; }
+.story-geography .corp-geo-sidebar .corp-city-filter::after {
+  content: '';
+  position: absolute;
+  inset-block: 0 24px;
+  inset-inline-end: -28px;
+  width: 1px;
+  background: #51565b;
+  pointer-events: none;
+}
+@media (max-width: 900px) {
+  .story-geography .corp-geo-sidebar .corp-city-filter::after { display: none; }
+  .story-geography .corp-geo-sidebar h2 { margin-bottom: 32px; }
+}
+
+.enterprise-category-filter > div > button[aria-expanded=true] { color: #fff; background: #343a3e; border-left: 0; box-shadow: inset 3px 0 #ff7384; }
+.enterprise-category-items { list-style: none; margin: 0; padding: 6px 0 18px 12px; }
+.enterprise-category-items li { border-bottom: 1px solid #44494d; padding: 8px 0; font-size: 12px; line-height: 1.45; }
+.corp-city-filter .enterprise-category-items button { display: flex; align-items: flex-start; flex-direction: column; gap: 5px; padding: 8px; border: 0; text-align: start; font-size: 12px; }
+.enterprise-category-items small { display: block; color: #b6bdc2; font-size: 10px; margin-top: 4px; }
+.enterprise-category-filter { max-height: 620px; overflow-y: auto; scrollbar-width: thin; scrollbar-color: #777 transparent; }
+.story-geography .corp-geo-sidebar .enterprise-category-filter::after { display: none; }
+.enterprise-category-filter-shell { position: relative; }
+@media(min-width: 901px) {
+  .enterprise-category-filter-shell::after { content: ''; position: absolute; inset-inline-end: -28px; top: 0; bottom: 24px; width: 1px; background: #51565b; pointer-events: none; }
+}
+
+@media (min-width: 901px) {
+  /* Full-width hit areas; inset rules retain their original text-column width. */
+  .story-geography .enterprise-category-filter {
+    margin-inline: -28px;
+    width: calc(100% + 56px);
+  }
+  .story-geography .enterprise-category-filter > button,
+  .story-geography .enterprise-category-filter > div > button {
+    position: relative;
+    padding-inline: 38px;
+    border-top: 0;
+  }
+  .story-geography .enterprise-category-filter > button::before,
+  .story-geography .enterprise-category-filter > div > button::before {
+    content: '';
+    position: absolute;
+    inset-inline: 28px;
+    top: 0;
+    height: 1px;
+    background: #51565b;
+    pointer-events: none;
+  }
+  .story-geography .enterprise-category-items { padding-inline: 0; }
+  .story-geography .enterprise-category-items li { position: relative; border-bottom: 0; }
+  .story-geography .enterprise-category-items li::after {
+    content: '';
+    position: absolute;
+    inset-inline: 40px 28px;
+    bottom: 0;
+    height: 1px;
+    background: #44494d;
+    pointer-events: none;
+  }
+  .story-geography .corp-city-filter .enterprise-category-items button { padding-inline: 48px 36px; }
+  .story-geography .enterprise-category-items li > span,
+  .story-geography .enterprise-category-items li > small { margin-inline: 40px 28px; }
+}
+
+/* Keep category markers mounted when selecting an area; the frame alone zooms. */
+.story-geography .corp-map.is-zoomed .corp-map-pin { visibility: visible; }
+
+.story-geography .corp-map-pin.is-preview > span,
+.story-geography .corp-map-pin[aria-pressed=true] > span {
+  color: #ff9aa6;
+  background: #35262b;
+  box-shadow: 0 0 0 1px #885963;
+}
+
+.story-geography .corp-city-filter .enterprise-category-items button[aria-pressed=true] {
+  border: 0;
+  background: #343a3e;
+  color: #fff;
+  box-shadow: inset 3px 0 #ff7384;
+}
+.story-geography .enterprise-category-items button[aria-pressed=true] small { color: #e4e7e9; }

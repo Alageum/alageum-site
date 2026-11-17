@@ -16,7 +16,7 @@
 .product-overview-refined .product-summary-text { max-width: 62ch; margin-block: 18px; color: #3a4149; }
 .product-execution { margin: 12px 0; color: #454c55; }
 .product-page .product-overview-refined .product-key-facts { padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; margin-block: 20px 12px; background: #dedbd6; border: 1px solid #dedbd6; }
-.product-overview-refined .product-key-facts > div { min-width: 0; border-bottom: 0; background: #f6f5f3; padding: 14px; }
+.product-overview-refined .product-key-facts > div { min-width: 0; border-bottom: 0; background: #f4f5f6; padding: 14px; }
 .product-overview-refined .product-key-facts dt { margin-bottom: 0; color: #44494f; font-size: 12px; }
 .product-page .product-overview-refined .product-key-facts dd { margin: 7px 0 0; color: #171b1e; font-size: clamp(15px, 1.6vw, 22px); line-height: 1.25; font-weight: 650; overflow-wrap: anywhere !important; }
 .product-source-ref { display: inline-block; margin-top: 4px; text-underline-offset: 3px; text-decoration: underline; font-size: 12px; color: #8f2026; }
