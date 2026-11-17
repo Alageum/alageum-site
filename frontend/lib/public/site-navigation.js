@@ -16,6 +16,9 @@ const enterpriseLinks = [
  ['Энергия', '/manufacturers/energia', 'Научно-проектный партнёр'],
 ];
 export const siteNavigation = [
+ {href:'/company',label:'О компании',title:'Alageum Electric',note:'История, руководство, новости и контакты компании.',links:companyMenuLinks,resources:[['Корпоративный профиль (PDF)',corporateProfileHref]]},
+ {href:'/#capabilities',label:'Направления',title:'Направления деятельности',links:[]},
+ {href:'/manufacturers',label:'Предприятия',title:'Заводы и проектные организации',note:'Продукция, компетенции и контакты. Статус проектных партнёров указан в их профилях.',links:enterpriseLinks},
  {href:'/catalog/directions',label:'Каталог',title:'Каталог оборудования',note:'Выберите тип оборудования. Внутри — исполнения, опубликованные позиции и проекты.',links:topCatalogDirections.map(item=>[
    item.id === 'oil-dry-transformers' ? 'Трансформаторы распределительные масляные и сухие' : item.title,
    catalogDirectionHref(item.id),
@@ -23,9 +26,8 @@ export const siteNavigation = [
    item.children.map(id=>{const child=catalogDirectionById(id);return [child.title,catalogDirectionHref(id)];}),
  ]),resources:[['Весь каталог','/catalog'],['Каталог оборудования','/catalog/directions'],['Моя подборка','/selection']]},
  {href:'/industries',label:'Отрасли',title:'Отрасли применения',note:'Задачи электроснабжения, оборудование и проекты для вашего объекта.',links:industries.map(item=>[item.title,item.href]),resources:[['Все проекты','/projects']]},
- {href:'/manufacturers',label:'Предприятия',title:'Заводы и проектные организации',note:'Продукция, компетенции и контакты. Статус проектных партнёров указан в их профилях.',links:enterpriseLinks},
  {href:'/investors',label:'Инвесторам',title:'Инвесторам',note:'Показатели группы и контакт для делового обращения.',links:[]},
  {href:'/documents',label:'Проектировщикам',title:'Документы и каталоги',links:[]},
- {href:'/company',label:'Компания',title:'Alageum Electric',note:'История, руководство, новости и контакты компании.',links:companyMenuLinks,resources:[['Корпоративный профиль (PDF)',corporateProfileHref]]},
+ {href:'/contacts',label:'Контакты',title:'Контакты',links:[]},
 ];
 export {enterpriseLinks};

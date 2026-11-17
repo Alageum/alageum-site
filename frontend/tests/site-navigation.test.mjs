@@ -8,13 +8,15 @@ import {engineeringOrganizations} from '../lib/public/engineering-organizations.
 import {existsSync} from 'node:fs';
 
 test('primary navigation matches the requested order and preserves all nested catalogue groups',()=>{
- assert.deepEqual(siteNavigation.map(s=>s.label),['Каталог','Отрасли','Предприятия','Инвесторам','Проектировщикам','Компания']);
- assert.equal(siteNavigation[4].href,'/documents');
- const catalogue=siteNavigation[0];assert.equal(catalogue.links.length,topCatalogDirections.length);
+ assert.deepEqual(siteNavigation.map(s=>s.label),['О компании','Направления','Предприятия','Каталог','Отрасли','Инвесторам','Проектировщикам','Контакты']);
+ assert.equal(siteNavigation[6].href,'/documents');
+ assert.equal(siteNavigation[1].href,'/#capabilities');
+ assert.equal(siteNavigation[7].href,'/contacts');
+ const catalogue=siteNavigation[3];assert.equal(catalogue.links.length,topCatalogDirections.length);
  const hrefs=catalogue.links.flatMap(([,href,,children])=>[href,...children.map(([,url])=>url)]);
  assert.equal(new Set(hrefs).size,catalogDirections.length);
  for(const direction of catalogDirections)assert.ok(hrefs.includes(`/catalog/directions/${direction.id}`));
- assert.equal(siteNavigation[1].links.length,7);assert.equal(industries.length,7);
+ assert.equal(siteNavigation[4].links.length,7);assert.equal(industries.length,7);
  assert.equal(siteNavigation[2].links.length,10);
  assert.equal(new Set(siteNavigation[2].links.map(([,href])=>href)).size,10);
 });
