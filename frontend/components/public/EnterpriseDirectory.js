@@ -95,10 +95,14 @@ export default function EnterpriseDirectory() {
             </svg>
             {mapCities.map(item => {
               const point = cityPoint(item);
+              const engineeringOffice = category === 'engineering'
+                ? mapLocations.find(location => location.contact.city === item.title)
+                : null;
+              const markerLabel = engineeringOffice?.short || engineeringOffice?.title || item.title;
               const lifted = cityMovesWithRegion(item, activeRegion) || cityMovesWithRegion(item, region);
-              return <E as="button" key={item.id} data-city={item.id} type="button" aria-label={`Показать предприятия: ${item.title}`} aria-pressed={activeCity === item.title} className={`corp-map-pin label-${item.labelSide}${activeCity === item.title ? ' is-preview' : ''}${lifted ? ' is-lifted' : ''}`} aria-controls="enterprise-directory-details" aria-expanded={Boolean(region?.cities.includes(item.id))} style={{ left: `${point.x / 820 * 100}%`, top: `${point.y / 460 * 100}%` }}
+              return <E as="button" key={item.id} data-city={item.id} type="button" aria-label={`Показать предприятия: ${markerLabel}`} aria-pressed={activeCity === item.title} className={`corp-map-pin label-${item.labelSide}${activeCity === item.title ? ' is-preview' : ''}${lifted ? ' is-lifted' : ''}`} aria-controls="enterprise-directory-details" aria-expanded={Boolean(region?.cities.includes(item.id))} style={{ left: `${point.x / 820 * 100}%`, top: `${point.y / 460 * 100}%` }}
                 onClick={() => choose({ type: 'city', id: item.id })}>
-                <i aria-hidden="true" /><E as="span">{item.title}</E>
+                <i key={category} aria-hidden="true" /><E as="span">{markerLabel}</E>
               </E>;
             })}
             <E as="span" className="corp-country-name" aria-hidden="true">КАЗАХСТАН</E>

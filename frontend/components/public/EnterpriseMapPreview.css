@@ -264,3 +264,79 @@
   box-shadow: inset 3px 0 #ff7384;
 }
 .story-geography .enterprise-category-items button[aria-pressed=true] small { color: #e4e7e9; }
+
+/* Give the map the full width of the page and keep its controls readable. */
+.story-geography #company-map {
+  padding-inline: clamp(16px, 2vw, 32px);
+}
+
+.story-geography .corp-map-label,
+.story-geography .corp-map-legend,
+.story-geography .corp-map-note {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.story-geography .corp-map-note {
+  margin-top: 6px;
+}
+
+.story-geography .enterprise-category-items {
+  background: #191c1e;
+}
+
+.story-geography .enterprise-category-items li,
+.story-geography .corp-city-filter .enterprise-category-items button,
+.enterprise-map-choice,
+.enterprise-map-preview-description,
+.enterprise-map-preview-contact {
+  font-size: 14px;
+}
+
+.story-geography .enterprise-category-items small,
+.enterprise-map-choice-name small,
+.enterprise-map-preview .enterprise-map-preview-label {
+  font-size: 12px;
+}
+
+.story-geography .corp-map-pin > span {
+  font-size: 12px;
+}
+
+@media (min-width: 901px) {
+  .story-geography .corp-geography {
+    grid-template-columns: minmax(240px, 19%) minmax(0, 1fr);
+  }
+
+  .story-geography .corp-geo-sidebar h2 {
+    font-size: clamp(26px, 2.6vw, 42px);
+    margin-bottom: 24px;
+  }
+
+  .story-geography .enterprise-category-filter {
+    block-size: clamp(260px, calc(100svh - 300px), 620px);
+  }
+
+  .story-geography .corp-map-panel > .corp-map {
+    max-width: calc(clamp(290px, 100svh - 220px, 740px) * 820 / 460);
+    align-self: center;
+    margin-top: 10px;
+  }
+
+  .story-geography .enterprise-map-preview-layer.is-pinned {
+    top: 48px;
+    bottom: 70px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .story-geography .corp-map:not(.is-zoomed) .corp-map-pin i,
+  .story-geography .corp-map-pin.is-preview i {
+    animation: enterprise-marker-pulse 1.2s ease-out 2;
+  }
+}
+
+@keyframes enterprise-marker-pulse {
+  from { box-shadow: 0 0 0 0 #ff7384a0; }
+  to { box-shadow: 0 0 0 9px #ff738400; }
+}
