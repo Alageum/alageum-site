@@ -143,7 +143,7 @@ export default function SiteHeader({ selectionCount }) {
               <LocaleElement as="span" className="site-nav-indicator site-nav-indicator-preview" aria-hidden="true" style={{ "--nav-index": Math.max(previewIndex, 0), opacity: previewIndex < 0 ? 0 : 1 }} />
             </LocaleElement>
             {area !== "careers" && <LocaleElement as="div" id="site-mega-navigation" className={`site-mega-navigation ${menuStyles.compactDropdown}${desktopOpen ? " is-open" : ""}`} inert={!desktopOpen}>
-              {activeSection &&
+              {activeSection?.links.length > 0 &&
               <SiteMenuPanel key={activeSection.href} section={activeSection} onNavigate={() => closeMenus()} />
               }
             </LocaleElement>}

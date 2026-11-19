@@ -31,7 +31,7 @@ export const enterpriseCities = [
   { id:'aktau', title:'Актау', lat:43.6525, lon:51.1575, source:'https://www.geonames.org/search.html?q=Aktau&country=KZ', labelSide:'right' },
   { id: 'uralsk', title: 'Уральск', lat: 51.24601485, lon: 51.42557596, source: 'https://www.geonames.org/search.html?q=Oral%2F', labelSide: 'right' },
   { id: 'petropavlovsk', title: 'Петропавловск', lat: 54.87343494, lon: 69.15064943, source: 'https://www.geonames.org/search.html?country=KZ', labelSide: 'right' },
-  { id: 'kentau', title: 'Кентау', lat: 43.51672, lon: 68.50463, source: 'https://www.geonames.org/1522751/kentau.html', labelSide: 'left' },
+  { id: 'kentau', title: 'Кентау', lat: 43.51672, lon: 68.50463, source: 'https://www.geonames.org/1522751/kentau.html', labelSide: 'right' },
   { id: 'shymkent', title: 'Шымкент', lat: 42.31, lon: 69.6, source: 'https://www.geonames.org/KZ/largest-cities-in-kazakhstan.html', labelSide: 'below' },
   { id: 'almaty', title: 'Алматы', lat: 43.25248866, lon: 76.911499, source: 'https://www.geonames.org/advanced-search.html?q=Almaty%2CKazakhstan', labelSide: 'right' },
 ];

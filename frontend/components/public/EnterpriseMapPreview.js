@@ -20,14 +20,20 @@ function LocationDetails({ item, photo }) {
   const contact = item.contact || mapContacts[item.id];
   return <div className="enterprise-map-preview-details">
     <E as="p" className="enterprise-map-kind">{item.kind === 'office' ? 'Офис продаж' : 'Предприятие'}</E>
-    <E as="h3">{item.title}</E>
+    <h3>
+      {item.href && item.kind !== 'office'
+        ? <Link href={item.href} className="enterprise-profile-title">{item.title}</Link>
+        : <E>{item.title}</E>}
+    </h3>
     {photo && <E as="figure"><Image src={photo.path} alt={photo.caption} width={760} height={480} sizes="390px" /><E as="figcaption">{photo.caption}</E></E>}
     <E as="p" className="enterprise-map-preview-description">{item.description}</E>
     {item.capabilities.length > 0 && <><E as="h4">Специализация</E><E as="ul">{item.capabilities.map(value => <E as="li" key={value}>{value}</E>)}</E></>}
     <div className="enterprise-map-preview-contact"><E as="p">{contact.label}</E><E as="address">{contact.city}{contact.address ? `, ${contact.address}` : ''}</E>{contact.tel && <E as="a" href={`tel:${contact.tel}`}>{contact.phone}{contact.extension ? ` · ${contact.extension}` : ''}</E>}{contact.email && <E as="a" href={`mailto:${contact.email}`}>{contact.email}</E>}</div>
     <LocationSources item={item} />
     {item.addressSource && <E as="p" className="enterprise-map-kind">Адрес по открытому источнику; точка обозначает город.</E>}
-    {item.href && <Link href={item.href} className="site-text-link" target={item.kind === 'office' ? '_blank' : undefined} rel={item.kind === 'office' ? 'noopener noreferrer' : undefined}>{item.kind === 'office' ? 'Открыть в 2ГИС ↗' : 'Профиль предприятия →'}</Link>}
+    {item.href && item.kind === 'office' && (
+      <Link href={item.href} className="site-text-link" target="_blank" rel="noopener noreferrer">Открыть в 2ГИС ↗</Link>
+    )}
   </div>;
 }
 

@@ -40,12 +40,6 @@
   line-height: 1.15;
   letter-spacing: -.035em;
 }
-.company-operations h2::before {
-  content: '';
-  flex: 0 0 19px;
-  height: 3px;
-  background: #ff6479;
-}
 .company-operations dl { display: grid; margin: 0; }
 .company-operations dl > div { display: grid; align-content: start; gap: 8px; min-width: 0; }
 .company-operations dt { grid-row: 2; line-height: 1.4; overflow-wrap: anywhere; }

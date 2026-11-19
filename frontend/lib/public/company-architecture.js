@@ -2,7 +2,7 @@
 export const companyDestinations = Object.freeze({
  history: '/company#history',
  achievements: '/company#achievements',
- production: '/manufacturers#technology',
+ production: '/manufacturers#company-map',
  assets: '/contacts#assets',
 });
 export const companyNavigation = [

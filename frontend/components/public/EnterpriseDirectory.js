@@ -82,12 +82,20 @@ export default function EnterpriseDirectory() {
             <svg viewBox="0 0 820 460" role="group" aria-label="Области Казахстана — выберите область">
               <defs>
                 <linearGradient id="enterprise-country-gray" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="820" y2="460"><stop offset="0%" stopColor="#747474" /><stop offset="55%" stopColor="#555555" /><stop offset="100%" stopColor="#383838" /></linearGradient>
+                <linearGradient id="enterprise-map-wave">
+                  <stop offset="0%" stopColor="#e8edf2" stopOpacity="0" />
+                  <stop offset="50%" stopColor="#e8edf2" stopOpacity=".18" />
+                  <stop offset="100%" stopColor="#e8edf2" stopOpacity="0" />
+                </linearGradient>
                 <pattern id="geo-grid" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".7" fill="currentColor" opacity=".22" /></pattern>
                 <clipPath id="enterprise-country-clip">{mapRegions.map(item => <path key={item.osmId} d={item.path} />)}</clipPath>
               </defs>
               {mapRegions.map(item => <path key={item.osmId} data-region={item.osmId} d={item.path} role={item.cities.length ? 'button' : undefined} tabIndex={item.cities.length ? 0 : undefined} aria-label={item.cities.length ? `Показать предприятия: ${item.title}` : item.title} aria-pressed={item.cities.length ? region?.osmId === item.osmId : undefined} data-has-enterprises={item.cities.length > 0} className={`corp-country-fill corp-region-surface${(activeRegion?.osmId === item.osmId || region?.osmId === item.osmId) ? ' is-hovered' : ''}`} vectorEffect="non-scaling-stroke"
                 onPointerEnter={event => { if (event.pointerType === 'mouse') setHoveredRegion(item.osmId); }} onPointerLeave={() => setHoveredRegion(null)}
                 onClick={() => selectRegion(item)} onKeyDown={event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); selectRegion(item); } }} />)}
+              <g className="enterprise-map-wave" clipPath="url(#enterprise-country-clip)" aria-hidden="true">
+                <rect key={category} x="-460" width="460" height="460" fill="url(#enterprise-map-wave)" />
+              </g>
               <rect width="820" height="460" className="corp-map-grid" fill="url(#geo-grid)" clipPath="url(#enterprise-country-clip)" />
               {mapRegions.map(item => <path key={item.osmId} d={item.path} className="corp-region-boundary" vectorEffect="non-scaling-stroke" />)}
               {region && activeRegion?.osmId !== region.osmId && <path d={region.path} className="corp-region-raised is-selected" vectorEffect="non-scaling-stroke" />}
@@ -98,11 +106,14 @@ export default function EnterpriseDirectory() {
               const engineeringOffice = category === 'engineering'
                 ? mapLocations.find(location => location.contact.city === item.title)
                 : null;
+              const companyCount = category === 'all'
+                ? mapLocations.filter(location => location.contact.city === item.title).length
+                : null;
               const markerLabel = engineeringOffice?.short || engineeringOffice?.title || item.title;
               const lifted = cityMovesWithRegion(item, activeRegion) || cityMovesWithRegion(item, region);
-              return <E as="button" key={item.id} data-city={item.id} type="button" aria-label={`Показать предприятия: ${markerLabel}`} aria-pressed={activeCity === item.title} className={`corp-map-pin label-${item.labelSide}${activeCity === item.title ? ' is-preview' : ''}${lifted ? ' is-lifted' : ''}`} aria-controls="enterprise-directory-details" aria-expanded={Boolean(region?.cities.includes(item.id))} style={{ left: `${point.x / 820 * 100}%`, top: `${point.y / 460 * 100}%` }}
+              return <E as="button" key={item.id} data-city={item.id} type="button" aria-label={`Показать предприятия: ${markerLabel}${companyCount === null ? '' : ` (${companyCount})`}`} aria-pressed={activeCity === item.title} className={`corp-map-pin label-${item.labelSide}${activeCity === item.title ? ' is-preview' : ''}${lifted ? ' is-lifted' : ''}`} aria-controls="enterprise-directory-details" aria-expanded={Boolean(region?.cities.includes(item.id))} style={{ left: `${point.x / 820 * 100}%`, top: `${point.y / 460 * 100}%` }}
                 onClick={() => choose({ type: 'city', id: item.id })}>
-                <i key={category} aria-hidden="true" /><E as="span">{markerLabel}</E>
+                <i key={category} aria-hidden="true" /><E as="span">{companyCount !== null && <b className="enterprise-pin-count">{companyCount}</b>}{markerLabel}</E>
               </E>;
             })}
             <E as="span" className="corp-country-name" aria-hidden="true">КАЗАХСТАН</E>

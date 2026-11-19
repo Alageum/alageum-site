@@ -10,7 +10,7 @@ import {existsSync} from 'node:fs';
 test('primary navigation matches the requested order and preserves all nested catalogue groups',()=>{
  assert.deepEqual(siteNavigation.map(s=>s.label),['О компании','Направления','Предприятия','Каталог','Отрасли','Инвесторам','Проектировщикам','Контакты']);
  assert.equal(siteNavigation[6].href,'/documents');
- assert.equal(siteNavigation[1].href,'/#capabilities');
+ assert.equal(siteNavigation[1].href,'/directions');
  assert.equal(siteNavigation[7].href,'/contacts');
  const catalogue=siteNavigation[3];assert.equal(catalogue.links.length,topCatalogDirections.length);
  const hrefs=catalogue.links.flatMap(([,href,,children])=>[href,...children.map(([,url])=>url)]);

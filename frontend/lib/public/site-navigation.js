@@ -17,7 +17,7 @@ const enterpriseLinks = [
 ];
 export const siteNavigation = [
  {href:'/company',label:'О компании',title:'Alageum Electric',note:'История, руководство, новости и контакты компании.',links:companyMenuLinks,resources:[['Корпоративный профиль (PDF)',corporateProfileHref]]},
- {href:'/#capabilities',label:'Направления',title:'Направления деятельности',links:[]},
+ {href:'/directions',label:'Направления',title:'Направления деятельности',links:[]},
  {href:'/manufacturers',label:'Предприятия',title:'Заводы и проектные организации',note:'Продукция, компетенции и контакты. Статус проектных партнёров указан в их профилях.',links:enterpriseLinks},
  {href:'/catalog/directions',label:'Каталог',title:'Каталог оборудования',note:'Выберите тип оборудования. Внутри — исполнения, опубликованные позиции и проекты.',links:topCatalogDirections.map(item=>[
    item.id === 'oil-dry-transformers' ? 'Трансформаторы распределительные масляные и сухие' : item.title,
