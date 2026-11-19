@@ -31,3 +31,42 @@
  .brand-experience *,.brand-experience *::before,.brand-experience *::after{animation:none!important;transition:none!important}
 }
 @media print{.brand-scroll-progress{display:none}}
+
+/* The home video extends behind the header. Open menus use the solid header. */
+@media screen {
+  .brand-experience .site-main:has(.corp-home) {
+    padding-top: 0;
+  }
+
+  .brand-experience .corp-home .corp-home-hero.corp-home-hero {
+    min-height: 100svh;
+    border-top: var(--site-header-height) solid transparent;
+  }
+
+  .brand-experience .corp-home .corp-hero-video {
+    top: calc(-1 * var(--site-header-height));
+  }
+
+  .brand-experience:has(.corp-home) .site-header {
+    background: #fff;
+    box-shadow: 0 6px 28px #1d1d1b24;
+    transition: background-color 240ms ease, box-shadow 240ms ease, border-color 240ms ease;
+  }
+
+  .brand-experience:has(.corp-home):not([data-home-header-solid="true"])
+    .site-header:not(:has(.is-open, [aria-expanded="true"], dialog[open])) {
+    background: #181a1c99;
+    border-bottom-color: #ffffff35;
+    box-shadow: none;
+  }
+
+  .brand-experience:has(.corp-home):not([data-home-header-solid="true"])
+    .site-header:not(:has(.is-open, [aria-expanded="true"], dialog[open])) .site-nav-link {
+    color: #fff;
+  }
+
+  .brand-experience:has(.corp-home):not([data-home-header-solid="true"])
+    .site-header:not(:has(.is-open, [aria-expanded="true"], dialog[open])) .site-brand-image {
+    filter: brightness(0) invert(1);
+  }
+}

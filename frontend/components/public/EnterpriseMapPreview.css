@@ -176,12 +176,33 @@
   .story-geography .corp-geo-sidebar h2 { margin-bottom: 32px; }
 }
 
-.enterprise-category-filter > div > button[aria-expanded=true] { color: #fff; background: #343a3e; border-left: 0; box-shadow: inset 3px 0 #ff7384; }
+/* All top-level category rows share the same appearance. */
+.story-geography .enterprise-category-filter > button[aria-pressed],
+.story-geography .enterprise-category-filter > div > button[aria-expanded] {
+  background: transparent;
+  color: #d8dbde;
+  border-inline-start: 0;
+  padding-inline-start: 10px;
+}
 .enterprise-category-items { list-style: none; margin: 0; padding: 6px 0 18px 12px; }
 .enterprise-category-items li { border-bottom: 1px solid #44494d; padding: 8px 0; font-size: 12px; line-height: 1.45; }
 .corp-city-filter .enterprise-category-items button { display: flex; align-items: flex-start; flex-direction: column; gap: 5px; padding: 8px; border: 0; text-align: start; font-size: 12px; }
 .enterprise-category-items small { display: block; color: #b6bdc2; font-size: 10px; margin-top: 4px; }
-.enterprise-category-filter { max-height: 620px; overflow-y: auto; scrollbar-width: thin; scrollbar-color: #777 transparent; }
+/* Expanding a category changes the scrollable content, not the map layout. */
+.enterprise-category-filter {
+  block-size: 620px;
+  overflow-y: auto;
+  overflow-anchor: none;
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  scrollbar-color: #777 transparent;
+}
+.story-geography .corp-map-panel { justify-content: flex-start; }
+.story-geography .corp-map-panel > .corp-map { flex-shrink: 0; }
+
+@media (max-width: 760px) {
+  .enterprise-category-filter { block-size: min(320px, 45svh); }
+}
 .story-geography .corp-geo-sidebar .enterprise-category-filter::after { display: none; }
 .enterprise-category-filter-shell { position: relative; }
 @media(min-width: 901px) {
@@ -194,8 +215,8 @@
     margin-inline: -28px;
     width: calc(100% + 56px);
   }
-  .story-geography .enterprise-category-filter > button,
-  .story-geography .enterprise-category-filter > div > button {
+  .story-geography .enterprise-category-filter > button[aria-pressed],
+  .story-geography .enterprise-category-filter > div > button[aria-expanded] {
     position: relative;
     padding-inline: 38px;
     border-top: 0;

@@ -38,7 +38,7 @@
 .site-brand { display: flex; flex: 0 0 auto; align-items: center; height: 100%; }
 .site-brand-image { display: block; width: 138px; height: auto; }
 .site-desktop-nav { align-self: stretch; display: flex; flex: 1; min-width: 0; }
-.site-nav-rail { display: flex; align-items: flex-end; position: relative; width: max-content; overflow: hidden; }
+.site-nav-rail { display: flex; align-items: center; position: relative; width: max-content; overflow: hidden; }
 .site-nav-link { width: var(--site-tab-width); height: 58px; display: flex; align-items: center; justify-content: center; gap: 8px; color: var(--site-muted); font-size: 13px; font-weight: 500; white-space: nowrap; transition: color var(--site-motion) ease; }
 .site-nav-link:hover { color: var(--site-ink); }
 .site-nav-link.is-current { font-weight: 650; color: var(--site-ink); background: radial-gradient(ellipse 70% 24px at 50% 100%, rgba(206, 23, 39, .14) 0%, rgba(206, 23, 39, .055) 42%, transparent 78%); }

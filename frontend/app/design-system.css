@@ -35,3 +35,17 @@
 .site-main .catalog-notice:not([role]) strong,
 .site-main .public-note:not([role]) strong { font: inherit; color: inherit; }
 .site-main .public-note:not([role]) p { font-size: inherit; line-height: inherit; }
+
+/* Keep the language control compact without changing its keyboard or touch behavior. */
+.site-header .ecosystem-language .design-select>svg{display:none}
+.site-header .ecosystem-language .design-select select{padding-inline:12px!important;text-align:center;text-align-last:center}
+
+/* One control size for the three header utilities. */
+.site-header .site-feedback-link,.site-header .site-account-link{width:44px;height:44px;min-width:44px;min-height:44px;padding:0;flex:0 0 44px}
+.site-header .site-account-link>span{display:none}
+.site-header .ecosystem-language .design-select{width:44px;min-width:44px;height:44px}
+.site-header .ecosystem-language .design-select select{height:44px;min-height:44px;padding:0!important;line-height:normal}
+.site-header .ecosystem-language .design-select-menu{min-width:64px;left:auto;right:0}
+
+/* Consistent square corners on header actions and the language dropdown. */
+.site-header :is(.site-header-phone,.brand-header-contact,.site-feedback-link,.site-account-link,.site-selection-link,.site-menu-toggle,.ecosystem-language .design-select,.ecosystem-language .design-select select,.ecosystem-language .design-select-menu){border-radius:0!important}
