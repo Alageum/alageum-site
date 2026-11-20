@@ -32,7 +32,7 @@
 }
 @media print{.brand-scroll-progress{display:none}}
 
-/* The home video extends behind the header. Open menus use the solid header. */
+/* The home video extends behind the header until the visitor scrolls. */
 @media screen {
   .brand-experience .site-main:has(.corp-home) {
     padding-top: 0;
@@ -54,19 +54,38 @@
   }
 
   .brand-experience:has(.corp-home):not([data-home-header-solid="true"])
-    .site-header:not(:has(.is-open, [aria-expanded="true"], dialog[open])) {
-    background: #181a1c99;
+    .site-header {
+    background: #181a1cdb;
     border-bottom-color: #ffffff35;
     box-shadow: none;
   }
 
   .brand-experience:has(.corp-home):not([data-home-header-solid="true"])
-    .site-header:not(:has(.is-open, [aria-expanded="true"], dialog[open])) .site-nav-link {
+    .site-header .site-nav-link {
     color: #fff;
   }
 
   .brand-experience:has(.corp-home):not([data-home-header-solid="true"])
-    .site-header:not(:has(.is-open, [aria-expanded="true"], dialog[open])) .site-brand-image {
+    .site-header .site-brand-image {
     filter: brightness(0) invert(1);
   }
+
+  .brand-experience:has(.corp-home):not([data-home-header-solid="true"])
+    .site-header :is(.site-header-phone, .site-feedback-link, .site-account-link, .site-menu-toggle, .ecosystem-language .design-select select) {
+    color: #fff !important;
+    background: #181a1c !important;
+    border: 1px solid #ffffff80 !important;
+  }
+
+  .brand-experience:has(.corp-home):not([data-home-header-solid="true"])
+    .site-header :is(.site-header-phone, .site-feedback-link, .site-account-link, .site-menu-toggle, .ecosystem-language .design-select select):hover {
+    background: #303437 !important;
+    border-color: #fff !important;
+  }
+
+  .brand-experience:has(.corp-home):not([data-home-header-solid="true"])
+    .site-header .site-nav-link:is(:hover, :focus-visible, [aria-expanded="true"]) {
+    background: #ffffff14;
+  }
+
 }

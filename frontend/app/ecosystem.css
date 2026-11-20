@@ -123,3 +123,17 @@
   .site-header .site-header-rail-corporate .site-account-link{padding:0}
   .site-header-rail-corporate .site-account-link>span{display:none}
 }
+
+@media (min-width: 1600px) {
+  .site-header .site-header-rail-corporate {
+    --site-tab-width: 96px;
+  }
+
+  .site-header .site-header-rail-corporate .site-header-phone {
+    width: 176px;
+  }
+
+  .site-header .site-header-rail-corporate .site-header-actions {
+    gap: 12px;
+  }
+}

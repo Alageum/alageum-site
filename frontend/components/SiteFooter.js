@@ -54,7 +54,7 @@ export default function SiteFooter() {
       <div className={styles.identityRow}>
         <div className={styles.identity}>
           <Link href="/" className={styles.logoLink} aria-label={text.brand} data-no-translate>
-            <Image src="/brand/logo-lettering-01-white.svg" alt="Alageum Electric" width={154} height={47} className={styles.logo}/>
+            <Image src="/brand/logo-full-white.svg" alt="Alageum Electric" width={154} height={36} className={styles.logo}/>
           </Link>
           <div className={styles.identityText}><span className={styles.section}>{section}</span><p>{text.description}</p></div>
         </div>
