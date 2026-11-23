@@ -389,3 +389,26 @@
 .story-corporate.story-investors .investor-rank .visual-number { font-size: clamp(38px, 5vw, 70px); color: #ff6977; }
 .story-corporate.story-investors .investor-rank :is(.visual-stat p, .visual-stat small, .story-source) { color: #f2f2ee; }
 .story-corporate.story-investors .investor-rank .story-source { margin-top: 0 !important; padding-top: 0; border: 0; }
+
+.story-corporate.story-directions .story-hero {
+  padding-block: clamp(24px, 3vw, 44px);
+}
+
+.story-corporate.story-directions .story-section {
+  padding-top: clamp(16px, 2.5vw, 36px);
+}
+
+.story-corporate .enterprise-research-entry {
+  padding: 20px 0 20px 18px;
+  border-inline-start: 2px solid var(--site-red);
+  margin-block: 20px;
+}
+
+.story-corporate .enterprise-research-entry h3 {
+  margin: 0 0 8px;
+}
+
+.story-corporate .enterprise-research-entry > p:not(.story-source) {
+  max-width: 68ch;
+  margin-block: 0 12px;
+}

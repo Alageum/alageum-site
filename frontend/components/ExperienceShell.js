@@ -63,7 +63,6 @@ export default function ExperienceShell({ children }) {
       if (progressRef.current) progressRef.current.style.transform = `scaleX(${distance > 0 ? Math.min(1, Math.max(0, window.scrollY / distance)) : 0})`;
       if (backTopRef.current) backTopRef.current.hidden = window.scrollY < window.innerHeight * 1.5;
       shell.dataset.scrolled = window.scrollY > 24 ? 'true' : 'false';
-      shell.dataset.homeHeaderSolid = window.scrollY > 100 ? 'true' : 'false';
     }
     function onScroll() {if (!frame) frame = window.requestAnimationFrame(updateScroll);}
     function finishMotion() {
@@ -94,7 +93,6 @@ export default function ExperienceShell({ children }) {
       shell.removeEventListener('focusin', onFocus);
       for (const animation of animations) animation.cancel();
       delete shell.dataset.scrolled;
-      delete shell.dataset.homeHeaderSolid;
     };
   }, [pathname, technical]);
 

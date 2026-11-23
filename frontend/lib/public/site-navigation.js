@@ -26,8 +26,8 @@ export const siteNavigation = [
    item.children.map(id=>{const child=catalogDirectionById(id);return [child.title,catalogDirectionHref(id)];}),
  ]),resources:[['Весь каталог','/catalog'],['Каталог оборудования','/catalog/directions'],['Моя подборка','/selection']]},
  {href:'/industries',label:'Отрасли',title:'Отрасли применения',note:'Задачи электроснабжения, оборудование и проекты для вашего объекта.',links:industries.map(item=>[item.title,item.href]),resources:[['Все проекты','/projects']]},
- {href:'/investors',label:'Инвесторам',title:'Инвесторам',note:'Показатели группы и контакт для делового обращения.',links:[]},
- {href:'/documents',label:'Проектировщикам',title:'Документы и каталоги',links:[]},
+ {href:'/investors',label:'Инвесторам',title:'Инвесторам',note:'Показатели группы и контакт для делового обращения.',links:[],hidden:true},
+ {href:'/documents',label:'Проектировщикам',title:'Документы и каталоги',links:[],hidden:true},
  {href:'/contacts',label:'Контакты',title:'Контакты',links:[]},
-];
+].filter(section => !section.hidden);
 export {enterpriseLinks};

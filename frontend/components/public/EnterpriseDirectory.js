@@ -11,6 +11,7 @@ import { mapRegions as allMapRegions, regionViewport } from '@/lib/public/enterp
 
 export default function EnterpriseDirectory() {
   const [hoveredRegion, setHoveredRegion] = useState(null);
+  const [motionPaused, setMotionPaused] = useState(false);
   const params = useSearchParams();
   const [selection, dispatch] = useReducer(enterpriseMapReducer, params, readEnterpriseMapState);
   const { category } = selection;
@@ -59,7 +60,9 @@ export default function EnterpriseDirectory() {
     // page scroll occurs when changing this entirely local map selection.
     window.history.pushState(null, '', `${window.location.pathname}${query ? `?${query}` : ''}${window.location.hash}`);
   }
-  function selectCategory(id) { choose({ type: 'category', id }); }
+  function selectCategory(id) {
+    choose({ type: 'category', id: id === category ? 'all' : id });
+  }
   function selectRegion(item) { if (item.cities.length) choose({ type: 'region', id: item.osmId }); }
   return <>
     <E as="section" className="corp-geography" aria-label="География предприятий и офисов">
@@ -74,9 +77,13 @@ export default function EnterpriseDirectory() {
           </div>)}
         </E></div>
       </E>
-      <E as="div" className="corp-map-panel">
-        <E as="span" className="corp-map-label site-metadata">{region ? region.title : categoryTitle}</E>
-        {region && <E as="button" className="corp-map-reset" type="button" onClick={() => choose({ type: 'reset' })}>← Вся карта</E>}
+      <E as="div" className="corp-map-panel" data-motion-paused={motionPaused}>
+        <div className="enterprise-map-toolbar">
+          <E as="span" className="corp-map-label site-metadata">{region ? region.title : categoryTitle}</E>
+          {region
+            ? <E as="button" className="corp-map-reset" type="button" onClick={() => choose({ type: 'reset' })}>← Вся карта</E>
+            : <E as="button" className="enterprise-map-motion" type="button" aria-pressed={motionPaused} onClick={() => setMotionPaused(paused => !paused)}>Приостановить анимацию</E>}
+        </div>
         <E as="div" className={`corp-map${viewport ? ' is-zoomed' : ''}`} style={{ '--map-scale': scale, '--region-lift': `${-7 / scale}px`, '--pin-scale': 1 / scale }}>
           <div className="corp-map-scene" style={{ transform: viewport ? `translate(calc(var(--enterprise-region-focus-x, 28%) - ${viewport.x / 820 * 100}%), ${50 - viewport.y / 460 * 100}%) scale(${scale})` : 'none', transformOrigin: viewport ? `${viewport.x / 820 * 100}% ${viewport.y / 460 * 100}%` : 'center' }}>
             <svg viewBox="0 0 820 460" role="group" aria-label="Области Казахстана — выберите область">
@@ -91,7 +98,7 @@ export default function EnterpriseDirectory() {
                 <clipPath id="enterprise-country-clip">{mapRegions.map(item => <path key={item.osmId} d={item.path} />)}</clipPath>
               </defs>
               {mapRegions.map(item => <path key={item.osmId} data-region={item.osmId} d={item.path} role={item.cities.length ? 'button' : undefined} tabIndex={item.cities.length ? 0 : undefined} aria-label={item.cities.length ? `Показать предприятия: ${item.title}` : item.title} aria-pressed={item.cities.length ? region?.osmId === item.osmId : undefined} data-has-enterprises={item.cities.length > 0} className={`corp-country-fill corp-region-surface${(activeRegion?.osmId === item.osmId || region?.osmId === item.osmId) ? ' is-hovered' : ''}`} vectorEffect="non-scaling-stroke"
-                onPointerEnter={event => { if (event.pointerType === 'mouse') setHoveredRegion(item.osmId); }} onPointerLeave={() => setHoveredRegion(null)}
+                onPointerEnter={event => { if (item.cities.length && event.pointerType === 'mouse') setHoveredRegion(item.osmId); }} onPointerLeave={() => setHoveredRegion(null)}
                 onClick={() => selectRegion(item)} onKeyDown={event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); selectRegion(item); } }} />)}
               <g className="enterprise-map-wave" clipPath="url(#enterprise-country-clip)" aria-hidden="true">
                 <rect key={category} x="-460" width="460" height="460" fill="url(#enterprise-map-wave)" />
@@ -113,12 +120,19 @@ export default function EnterpriseDirectory() {
               const lifted = cityMovesWithRegion(item, activeRegion) || cityMovesWithRegion(item, region);
               return <E as="button" key={item.id} data-city={item.id} type="button" aria-label={`Показать предприятия: ${markerLabel}${companyCount === null ? '' : ` (${companyCount})`}`} aria-pressed={activeCity === item.title} className={`corp-map-pin label-${item.labelSide}${activeCity === item.title ? ' is-preview' : ''}${lifted ? ' is-lifted' : ''}`} aria-controls="enterprise-directory-details" aria-expanded={Boolean(region?.cities.includes(item.id))} style={{ left: `${point.x / 820 * 100}%`, top: `${point.y / 460 * 100}%` }}
                 onClick={() => choose({ type: 'city', id: item.id })}>
-                <i key={category} aria-hidden="true" /><E as="span">{companyCount !== null && <b className="enterprise-pin-count">{companyCount}</b>}{markerLabel}</E>
+                <i key={category} aria-hidden="true" /><E as="span">{companyCount !== null && <b className="enterprise-pin-count">{companyCount}</b>}<E as="em">{markerLabel}</E></E>
               </E>;
             })}
             <E as="span" className="corp-country-name" aria-hidden="true">КАЗАХСТАН</E>
           </div>
         </E>
+        <label className="enterprise-map-city-select">
+          <E>Выберите город</E>
+          <select value={mapCities.find(city => city.title === activeCity)?.id || ''} onChange={event => choose({ type: 'city', id: event.target.value })}>
+            <E as="option" value="" disabled>Выберите город</E>
+            {mapCities.map(city => <E as="option" key={city.id} value={city.id}>{city.title}</E>)}
+          </select>
+        </label>
         <EnterpriseMapDetails items={detailsItems} activeId={currentId} onSelect={setDetailChoice} categoryTitle={categoryTitle} areaTitle={region?.title} />
         <E as="div" className="corp-map-legend"><E as="span">Выберите область или город. Повторное нажатие на область вернёт всю карту.</E></E>
         <E as="p" className="corp-map-note">Маркеры обозначают города, а не точные адреса заводов.<br />Границы областей: <E as="a" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap</E> · Центры городов: <E as="a" href="https://www.geonames.org/" target="_blank" rel="noopener noreferrer">GeoNames</E> / OpenStreetMap</E>

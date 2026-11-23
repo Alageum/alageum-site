@@ -40,51 +40,56 @@
 
   .brand-experience .corp-home .corp-home-hero.corp-home-hero {
     min-height: 100svh;
-    border-top: var(--site-header-height) solid transparent;
+    background: #181a1c;
   }
 
-  .brand-experience .corp-home .corp-hero-video {
-    top: calc(-1 * var(--site-header-height));
+  .brand-experience .corp-home .corp-home-hero > .corp-hero-video {
+    inset: 0;
+    margin: 0;
+  }
+
+  .brand-experience .corp-home .corp-home-hero > .corp-hero-copy {
+    margin-block-start: var(--site-header-height);
   }
 
   .brand-experience:has(.corp-home) .site-header {
     background: #fff;
     box-shadow: 0 6px 28px #1d1d1b24;
-    transition: background-color 240ms ease, box-shadow 240ms ease, border-color 240ms ease;
+    transition: box-shadow 240ms ease, border-color 240ms ease;
   }
 
-  .brand-experience:has(.corp-home):not([data-home-header-solid="true"])
-    .site-header {
+  .brand-experience:has(.corp-home)
+    .site-header:not([data-compact="true"]) {
     background: #181a1cdb;
     border-bottom-color: #ffffff35;
     box-shadow: none;
   }
 
-  .brand-experience:has(.corp-home):not([data-home-header-solid="true"])
-    .site-header .site-nav-link {
+  .brand-experience:has(.corp-home)
+    .site-header:not([data-compact="true"]) .site-nav-link {
     color: #fff;
   }
 
-  .brand-experience:has(.corp-home):not([data-home-header-solid="true"])
-    .site-header .site-brand-image {
+  .brand-experience:has(.corp-home)
+    .site-header:not([data-compact="true"]) .site-brand-image {
     filter: brightness(0) invert(1);
   }
 
-  .brand-experience:has(.corp-home):not([data-home-header-solid="true"])
-    .site-header :is(.site-header-phone, .site-feedback-link, .site-account-link, .site-menu-toggle, .ecosystem-language .design-select select) {
+  .brand-experience:has(.corp-home)
+    .site-header:not([data-compact="true"]) :is(.site-header-phone, .site-feedback-link, .site-account-link, .site-menu-toggle, .ecosystem-language .design-select select) {
     color: #fff !important;
     background: #181a1c !important;
     border: 1px solid #ffffff80 !important;
   }
 
-  .brand-experience:has(.corp-home):not([data-home-header-solid="true"])
-    .site-header :is(.site-header-phone, .site-feedback-link, .site-account-link, .site-menu-toggle, .ecosystem-language .design-select select):hover {
+  .brand-experience:has(.corp-home)
+    .site-header:not([data-compact="true"]) :is(.site-header-phone, .site-feedback-link, .site-account-link, .site-menu-toggle, .ecosystem-language .design-select select):hover {
     background: #303437 !important;
     border-color: #fff !important;
   }
 
-  .brand-experience:has(.corp-home):not([data-home-header-solid="true"])
-    .site-header .site-nav-link:is(:hover, :focus-visible, [aria-expanded="true"]) {
+  .brand-experience:has(.corp-home)
+    .site-header:not([data-compact="true"]) .site-nav-link:is(:hover, :focus-visible, [aria-expanded="true"]) {
     background: #ffffff14;
   }
 

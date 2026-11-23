@@ -73,6 +73,16 @@ export default function SiteHeader({ selectionCount }) {
     }
   }, [desktopOpen, menu]);
 
+  useEffect(() => {
+    const header = headerRef.current;
+    function updateCompactHeader() {
+      header.dataset.compact = String(window.scrollY > 100);
+    }
+    updateCompactHeader();
+    window.addEventListener('scroll', updateCompactHeader, { passive: true });
+    return () => window.removeEventListener('scroll', updateCompactHeader);
+  }, [pathname]);
+
   function closeMenus(restoreFocus = false) {
     setMenu({ pathname, preview: null, desktop: false, mobile: false, group: null });
     if (restoreFocus) lastTrigger.current?.focus();
@@ -125,6 +135,7 @@ export default function SiteHeader({ selectionCount }) {
         <LocaleElement as="div" className={`site-header-rail${configuredSections === corporateSections ? " site-header-rail-corporate" : ""}`}>
           <Link href="/" className="site-brand" aria-label="ALAGEUM Electric — главная" onNavigate={() => closeMenus()}>
             <Image src="/brand/logo-header-red.svg" alt="ALAGEUM Electric" width={164} height={38} priority className="site-brand-image" />
+            {configuredSections === corporateSections && <Image src="/brand/logo-emblem-red.svg" alt="" width={36} height={36} className="site-brand-emblem" />}
           </Link>
           <LocaleElement as="nav" className="site-desktop-nav" aria-label="Основная навигация">
             <LocaleElement as="div" className="site-nav-rail">
@@ -136,7 +147,7 @@ export default function SiteHeader({ selectionCount }) {
                   previewSection(index);
                 }
               }} onNavigate={() => closeMenus()}>
-                  {section.label}{section.links.length > 0 && <Chevron />}
+                  <LocaleElement as="span">{section.label}</LocaleElement>{section.links.length > 0 && <Chevron />}
                 </Link>
               )}
               <LocaleElement as="span" className="site-nav-indicator site-nav-indicator-committed" aria-hidden="true" style={{ "--nav-index": Math.max(currentIndex, 0), opacity: currentIndex < 0 ? 0 : 1 }} />

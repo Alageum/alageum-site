@@ -14,29 +14,43 @@ export function SectionHeading({ number, label, title, href, link, newTab = fals
 }
 const stagePhotos = { '01': storyPhotos.asiaEngineering, '02': getManufacturerPhoto('aemz'), '03': getProjectPhoto('petropavlovsk'), '04': storyPhotos.ktzProducts };
 export function ProjectStages() {
+  const illustrated = activityDirections.filter(item => item.stage !== undefined);
+  const additional = activityDirections.filter(item => item.stage === undefined);
+
   return (
-    <ul className="corp-stages activity-stages">
-      {activityDirections.map(({ id, title, stage: stageIndex }) => {
-        const stage = projectStages[stageIndex];
-        const photo = stage && stagePhotos[stage.number];
-        return (
+    <>
+      <ul className="corp-stages activity-stages">
+        {illustrated.map(({ id, title, stage: stageIndex }) => {
+          const stage = projectStages[stageIndex];
+          const photo = stagePhotos[stage.number];
+          return (
+            <li key={id}>
+              {photo && (
+                <>
+                  <div className="corp-project-visual">
+                    <CorporatePhoto photo={photo} caption={false} sizes="(max-width:760px) 100vw,25vw" />
+                  </div>
+                  <LocaleElement as="small" className="site-metadata">{photo.caption}</LocaleElement>
+                </>
+              )}
+              <LocaleElement as="h3">{title}</LocaleElement>
+              <LocaleElement as="p">{stage.text}</LocaleElement>
+              {stage?.period && <Link href={localSourceHref(stage.source)} className="site-metadata">{stage.period}</Link>}
+              <Link href={stage.href} aria-label={title} className="corp-stage-link"><CorporateArrow /></Link>
+            </li>
+          );
+        })}
+      </ul>
+      <ul className="activity-extra-links">
+        {additional.map(({ id, title }) => (
           <li key={id}>
-            {photo && (
-              <>
-                <div className="corp-project-visual">
-                  <CorporatePhoto photo={photo} caption={false} sizes="(max-width:760px) 100vw,25vw" />
-                </div>
-                <LocaleElement as="small" className="site-metadata">{photo.caption}</LocaleElement>
-              </>
-            )}
-            <LocaleElement as="h3">{title}</LocaleElement>
-            {stage && <LocaleElement as="p">{stage.text}</LocaleElement>}
-            {stage?.period && <Link href={localSourceHref(stage.source)} className="site-metadata">{stage.period}</Link>}
-            <Link href={stage?.href || `/directions#${id}`} aria-label={title} className="corp-stage-link"><CorporateArrow /></Link>
+            <Link href={`/directions#${id}`}>
+              {title} <CorporateArrow />
+            </Link>
           </li>
-        );
-      })}
-    </ul>
+        ))}
+      </ul>
+    </>
   );
 }
 export function CorporateCTA({ title = 'Нужно подобрать оборудование?', text = 'Позвоните в отдел продаж или напишите, что нужно для вашего объекта.' }) {

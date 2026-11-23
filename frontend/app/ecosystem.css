@@ -40,21 +40,6 @@
 
 .home-news-grid .eco-card>img{height:auto;aspect-ratio:16/10;object-fit:cover;object-position:center 35%}.home-news-grid .eco-card{display:flex;flex-direction:column}.home-news-grid .eco-card>div{display:flex;flex-direction:column;flex:1}.home-news-grid .eco-card .site-text-link{margin-top:auto;padding-top:20px}.home-news-grid .eco-card time{font-size:12px;color:#676d73;margin-top:12px}
 
-/* Gentle section alignment on the homepage; long sections remain freely scrollable. */
-@media (prefers-reduced-motion: no-preference) {
-  /* Next.js streams a hidden copy before inserting the page into main. */
-  html:has(#main-content > .corp-home) {
-    scroll-snap-type: y proximity;
-    scroll-padding-top: var(--site-header-height);
-    scroll-behavior: smooth;
-  }
-  #main-content > .corp-home > :is(section, div):not(.corp-home-end),
-  #main-content > .corp-home > .corp-home-end > :is(.home-opportunities, .corp-cta) {
-    scroll-snap-align: start;
-    scroll-margin-top: 0;
-  }
-}
-
 .site-header .site-feedback-link{display:inline-flex;align-items:center;justify-content:center;gap:10px;width:44px;min-height:44px;padding:0;border:0;background:var(--site-red,#ce1727);color:#fff;font:inherit;font-size:12px;cursor:pointer;font-weight:600;white-space:nowrap;flex-shrink:0;transition:background-color 180ms ease}
 .site-header .site-feedback-link:hover{background:var(--site-red-hover,#ac1120)}
 .site-header .site-feedback-link svg{flex-shrink:0}
@@ -97,43 +82,126 @@
   }
 }
 
-/* Keep all six corporate tabs legible alongside the header actions. */
-.site-header-rail-corporate .site-nav-link{flex-shrink:0}
-@media(min-width:981px) and (max-width:1024px){
-  .site-header .site-header-rail-corporate .site-desktop-nav{display:none}
-  .site-header .site-header-rail-corporate .site-menu-toggle{display:flex}
+/* Match button heights and let longer menu labels use more space. */
+.site-header .site-header-rail-corporate .site-nav-rail {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  gap: 4px;
 }
-@media(min-width:1025px) and (max-width:1180px){
-  .site-header .site-header-rail-corporate{gap:16px}
+
+.site-header .site-header-rail-corporate .site-nav-link {
+  position: relative;
+  flex: 1 1 auto;
+  width: auto;
+  min-width: 0;
+  padding-inline: 8px;
+  text-align: center;
+  white-space: normal;
+  line-height: 1.2;
 }
-@media(min-width:1025px) and (max-width:1150px){
-  .site-header .site-header-rail-corporate .site-feedback-link{width:44px;padding:0}
-  .site-header-rail-corporate .site-feedback-link>span{display:none}
+
+.site-header .site-header-rail-corporate .site-nav-indicator {
+  display: none;
 }
-@media(min-width:1181px) and (max-width:1320px){
-  .site-header .site-header-rail-corporate{--site-tab-width:100px;gap:20px}
+
+.site-header .site-header-rail-corporate .site-nav-link:is(.is-current, [aria-expanded="true"])::after {
+  content: '';
+  position: absolute;
+  inset: auto 0 0;
+  height: 2px;
+  background: var(--site-red);
 }
-@media(min-width:1321px){
-  .site-header .site-header-rail-corporate{gap:32px}
+
+@media (max-width: 1180px) {
+  .site-header .site-header-rail-corporate .site-desktop-nav { display: none; }
+  .site-header .site-header-rail-corporate .site-menu-toggle { display: flex; }
 }
-@media(min-width:1600px){
-  .site-header .site-header-rail-corporate{gap:24px}
-}
-@media(min-width:1321px) and (max-width:1439px), (min-width:1600px){
-  .site-header .site-header-rail-corporate .site-account-link{padding:0}
-  .site-header-rail-corporate .site-account-link>span{display:none}
+
+@media screen and (min-width: 1181px) {
+  html:has(.site-header-rail-corporate) {
+    --site-header-height: 116px;
+  }
+
+  .site-header .site-header-rail-corporate {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-rows: 64px 52px;
+    gap: 0 24px;
+    max-width: 1480px;
+    padding-inline: clamp(24px, 4vw, 56px);
+  }
+
+  .site-header .site-header-rail-corporate .site-header-actions {
+    grid-area: 1 / 2;
+    justify-self: end;
+    gap: 12px;
+  }
+
+  .site-header .site-header-rail-corporate .site-desktop-nav {
+    display: flex;
+    grid-area: 2 / 1 / 3 / -1;
+    border-top: 1px solid #8a909640;
+  }
+
+  .site-header .site-header-rail-corporate .site-menu-toggle { display: none; }
+
+  .site-header .site-header-rail-corporate .site-nav-link {
+    height: 100%;
+    min-height: 50px;
+  }
 }
 
 @media (min-width: 1600px) {
-  .site-header .site-header-rail-corporate {
-    --site-tab-width: 96px;
-  }
-
   .site-header .site-header-rail-corporate .site-header-phone {
     width: 176px;
   }
 
-  .site-header .site-header-rail-corporate .site-header-actions {
-    gap: 12px;
+}
+
+.site-header .site-header-rail-corporate .site-nav-link > span {
+  min-width: 0;
+  overflow-wrap: anywhere !important;
+}
+
+.site-header .site-brand-emblem { display: none; }
+
+@media screen {
+  .site-header[data-compact="true"] .site-header-rail-corporate {
+    display: flex;
+    height: 68px;
+    padding-inline: clamp(14px, 2vw, 28px);
+    gap: clamp(10px, 1.4vw, 24px);
+    animation: compact-header-enter 220ms ease-out;
   }
+
+  .site-header[data-compact="true"] .site-header-rail-corporate .site-brand-image { display: none; }
+  .site-header[data-compact="true"] .site-brand-emblem { display: block; }
+
+  .site-header[data-compact="true"] .site-header-rail-corporate .site-desktop-nav {
+    border-top: 0;
+  }
+
+  .site-header[data-compact="true"] .site-header-rail-corporate .site-nav-link {
+    min-height: 0;
+    height: 100%;
+  }
+
+  .site-nav-backdrop:has(+ .site-header[data-compact="true"] .site-header-rail-corporate) {
+    top: 68px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .site-header[data-compact="true"] .site-header-rail-corporate .site-desktop-nav { display: none; }
+  .site-header[data-compact="true"] .site-header-rail-corporate .site-menu-toggle { display: flex; }
+}
+
+@keyframes compact-header-enter {
+  from { opacity: .75; }
+  to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header[data-compact="true"] .site-header-rail-corporate { animation: none; }
 }

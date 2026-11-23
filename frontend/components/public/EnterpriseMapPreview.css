@@ -384,3 +384,101 @@
   from { transform: translateX(0); }
   75%, to { transform: translateX(1280px); }
 }
+
+.enterprise-map-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 38px;
+}
+
+.enterprise-map-toolbar .corp-map-label { padding: 0; }
+
+.enterprise-map-toolbar :is(.corp-map-reset, .enterprise-map-motion) {
+  position: static;
+  flex-shrink: 0;
+  min-height: 36px;
+  padding: 7px 10px;
+  border: 1px solid #747b81;
+  background: #292d30;
+  color: #fff;
+  font: 12px var(--site-font);
+}
+
+.enterprise-map-toolbar :is(button:hover, button[aria-pressed="true"]) {
+  background: #41474d;
+}
+
+.corp-map-panel[data-motion-paused="true"] :is(.enterprise-map-wave > rect, .corp-map-pin i) {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .enterprise-map-motion { display: none; }
+}
+
+.story-geography .corp-map-pin > span > em { font-style: normal; }
+
+.enterprise-map-city-select { display: none; }
+
+@media (max-width: 1049px) {
+  .enterprise-map-preview-layer.is-pinned.is-multi {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    margin-block: 12px;
+  }
+
+  .is-pinned.is-multi .enterprise-map-preview {
+    position: relative;
+    inset: auto;
+    max-height: none;
+  }
+
+  .enterprise-map-picker-window { max-height: 260px; overflow: auto; }
+
+  .enterprise-map-city-select {
+    display: grid;
+    gap: 5px;
+    margin-block: 8px 12px;
+    font-size: 13px;
+  }
+
+  .enterprise-map-city-select select {
+    width: 100%;
+    min-height: 44px;
+    padding-inline: 10px;
+    border: 1px solid #747b81;
+    background: #292d30;
+    color: #fff;
+  }
+
+  .story-geography .corp-map-pin:not(:focus-visible):not(.is-preview) > span {
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    background: transparent;
+  }
+
+  .story-geography .corp-map-pin:not(:focus-visible):not(.is-preview) > span > em {
+    display: none;
+  }
+
+  .story-geography .corp-map-pin:not(:focus-visible):not(.is-preview) .enterprise-pin-count {
+    min-inline-size: 14px;
+    block-size: 14px;
+    margin: 0;
+    font-size: 9px;
+  }
+}
+
+.enterprise-map-choice-name strong {
+  overflow-wrap: anywhere !important;
+}
+
+@media (min-width: 1050px) {
+  .story-geography .enterprise-map-preview-layer.is-pinned { top: 72px; }
+}
+
+.story-geography .corp-map-pin:is(:focus-visible, .is-preview) { z-index: 3; }

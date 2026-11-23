@@ -521,3 +521,15 @@
 .brand-experience .corp-investor .corp-geo-sidebar{background:linear-gradient(160deg,#383838,#262626);border-color:#555}
 .brand-experience .corp-investor .corp-map-pin span{background:#242424}
 .brand-experience .corp-investor .corp-country-name{color:#c5c5c5}
+
+/* Match image and caption heights across the illustrated activity cards. */
+@media (min-width: 981px) {
+  .brand-experience .corp-investor .activity-stages li:first-child {
+    padding-inline-start: 28px;
+  }
+
+  .brand-experience .corp-investor .activity-stages li > small {
+    display: block;
+    min-block-size: 2.8em;
+  }
+}

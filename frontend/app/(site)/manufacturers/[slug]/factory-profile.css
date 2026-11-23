@@ -1,0 +1,122 @@
+.story-corporate.story-factory .story-hero {
+  min-height: 0;
+}
+
+.story-corporate.story-factory .story-hero-dark {
+  min-height: min(700px, 86svh);
+}
+
+.story-corporate.story-factory .story-hero-split .story-hero-photo {
+  margin-block: 0;
+  align-self: center;
+}
+
+.story-corporate.story-factory .story-hero-split .story-hero-photo img {
+  min-height: 0;
+  height: auto;
+}
+
+.story-factory .factory-location {
+  margin-block: 20px;
+  font-size: 13px;
+}
+
+.factory-headline-fact {
+  margin-block: 22px;
+  padding-inline-start: 16px;
+  border-inline-start: 3px solid #ce1727;
+}
+
+.factory-headline-fact > div {
+  display: grid;
+  gap: 6px;
+}
+
+.factory-headline-fact dd {
+  grid-row: 1;
+  margin: 0;
+  color: #bd1424;
+  font-size: clamp(28px, 4vw, 58px);
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.story-hero-dark .factory-headline-fact dd { color: #fff; }
+
+.factory-headline-fact dt { max-width: 40ch; }
+.factory-headline-fact small { font-size: 12px; }
+
+.story-corporate.factory-layout-gallery .story-hero-wide .story-hero-photo {
+  margin: 32px 0 0;
+}
+
+.story-corporate.factory-layout-gallery .story-hero-wide .story-hero-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2.4;
+  object-fit: cover;
+}
+
+.factory-layout-gallery .story-hero-photo figcaption {
+  position: static;
+  padding: 10px 0 0;
+}
+
+.factory-specs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 16px;
+  margin: 0 0 24px;
+}
+
+.factory-specs > div {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 8px;
+  padding: 18px;
+  background: #f3f4f5;
+  border-top: 2px solid #ce1727;
+}
+
+.factory-specs dd {
+  grid-row: 1;
+  margin: 0;
+  font-size: clamp(22px, 3vw, 38px);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.factory-specs small { color: #52585e; }
+.factory-contact address { font-style: normal; }
+.factory-contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
+@media (min-width: 901px) {
+  .story-corporate.factory-layout-reverse .story-hero-split .story-hero-copy {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .story-corporate.factory-layout-reverse .story-hero-split .story-hero-photo {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
+@media (max-width: 760px) {
+  .story-corporate.factory-layout-gallery .story-hero-wide .story-hero-photo img {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+:is(.factory-headline-fact, .factory-specs) .factory-fact-period {
+  grid-row: auto;
+  color: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.45;
+}

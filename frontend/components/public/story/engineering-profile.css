@@ -1,0 +1,31 @@
+.story-corporate.story-engineering-organization .story-hero-wide {
+  background: #25282b;
+  color: #fff;
+}
+
+.story-corporate.story-engineering-energia .story-hero-wide {
+  background: #e8ecef;
+  color: #25282b;
+}
+
+.story-engineering-organization #engineering-work .story-checklist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.story-engineering-organization #engineering-work .story-checklist li {
+  padding: 18px;
+  border-top: 2px solid #ce1727;
+  background: #f4f5f6;
+}
+
+.story-engineering-organization #engineering-work .story-checklist li::before {
+  content: none;
+}
+
+.story-corporate.story-engineering-promenergo .story-hero-wide :is(.story-breadcrumb, .story-lead) {
+  color: #e0e4e7;
+}

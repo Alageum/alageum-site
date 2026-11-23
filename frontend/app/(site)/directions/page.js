@@ -7,7 +7,7 @@ export const metadata = { title: 'Направления деятельност�
 export default function DirectionsPage() {
   return (
     <Story name="directions">
-      <Hero label="Направления" kicker={null} title="Направления деятельности" />
+      <Hero label="Направления" kicker={null} variant="wide" title="Направления деятельности" />
       <Section>
         <ul className="activity-directions-list">
           {activityDirections.map(({ id, title }) => <E as="li" key={id} id={id}>{title}</E>)}
