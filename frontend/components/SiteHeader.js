@@ -48,6 +48,7 @@ export default function SiteHeader({ selectionCount }) {
   const accountHref = publicOnly ? '/service-unavailable' : profile ? '/account' : '/login?next=%2Faccount';
   const accountLabel = publicOnly ? 'Кабинет недоступен' : profile ? 'Личный кабинет' : 'Войти';
   const headerRef = useRef(null);
+  const dropdownRef = useRef(null);
   const toggleRef = useRef(null);
   const navRefs = useRef([]);
   const lastTrigger = useRef(null);
@@ -64,6 +65,25 @@ export default function SiteHeader({ selectionCount }) {
   const previewIndex = desktopOpen && menu.preview !== null ? menu.preview : currentIndex;
   const activeSection = sections[previewIndex];
   const anyOpen = desktopOpen || mobileOpen;
+
+  useLayoutEffect(() => {
+    if (!desktopOpen) return;
+    const header = headerRef.current;
+    const dropdown = dropdownRef.current;
+    const trigger = navRefs.current[previewIndex];
+    if (!header || !dropdown || !trigger) return;
+
+    function alignDropdown() {
+      const offset = trigger.getBoundingClientRect().left - header.getBoundingClientRect().left;
+      dropdown.style.setProperty('--dropdown-trigger-offset', `${offset}px`);
+    }
+
+    alignDropdown();
+    const observer = new ResizeObserver(alignDropdown);
+    observer.observe(header);
+    observer.observe(trigger.parentElement);
+    return () => observer.disconnect();
+  }, [desktopOpen, previewIndex]);
 
   // Focus only after React has committed the submenu and removed its inert state.
   useLayoutEffect(() => {
@@ -153,7 +173,7 @@ export default function SiteHeader({ selectionCount }) {
               <LocaleElement as="span" className="site-nav-indicator site-nav-indicator-committed" aria-hidden="true" style={{ "--nav-index": Math.max(currentIndex, 0), opacity: currentIndex < 0 ? 0 : 1 }} />
               <LocaleElement as="span" className="site-nav-indicator site-nav-indicator-preview" aria-hidden="true" style={{ "--nav-index": Math.max(previewIndex, 0), opacity: previewIndex < 0 ? 0 : 1 }} />
             </LocaleElement>
-            {area !== "careers" && <LocaleElement as="div" id="site-mega-navigation" className={`site-mega-navigation ${menuStyles.compactDropdown}${desktopOpen ? " is-open" : ""}`} inert={!desktopOpen}>
+            {area !== "careers" && <LocaleElement as="div" ref={dropdownRef} id="site-mega-navigation" className={`site-mega-navigation ${menuStyles.compactDropdown}${desktopOpen ? " is-open" : ""}`} inert={!desktopOpen}>
               {activeSection?.links.length > 0 &&
               <SiteMenuPanel key={activeSection.href} section={activeSection} onNavigate={() => closeMenus()} />
               }

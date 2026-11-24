@@ -54,14 +54,22 @@
 
 /* A single compact, two-pane dropdown shared by every header section. */
 :global(.site-header) .compactDropdown {
-  left: max(24px, calc((100vw - 1440px) / 2));
+  --dropdown-gutter: 24px;
+  --dropdown-panel-padding: 20px;
+  /* Align the first column with the trigger and reserve space for both columns. */
+  --dropdown-left: clamp(
+    var(--dropdown-gutter),
+    calc(var(--dropdown-trigger-offset, 45px) - var(--dropdown-panel-padding) - 1px),
+    calc(100% - 540px - var(--dropdown-gutter))
+  );
+  left: var(--dropdown-left);
   right: auto;
-  width: min(760px, calc(100vw - 48px));
+  width: min(760px, calc(100% - var(--dropdown-left) - var(--dropdown-gutter)));
   border: 1px solid var(--site-line);
   border-top: 2px solid var(--site-red);
   box-shadow: 0 16px 32px rgb(18 22 25 / 9%);
 }
-.compactPanel { max-height: calc(100dvh - 150px); overflow-y: auto; overscroll-behavior: contain; padding: 18px 20px 14px; }
+.compactPanel { max-height: calc(100dvh - 150px); overflow-y: auto; overscroll-behavior: contain; padding: 18px var(--dropdown-panel-padding, 20px) 14px; }
 .panelHeading { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--site-line); }
 .panelHeading strong { font-size: 14px; font-weight: 550; }
 .categoryLayout { display: grid; grid-template-columns: minmax(170px, 0.85fr) minmax(0, 1.7fr); gap: 20px; padding-top: 12px; }
