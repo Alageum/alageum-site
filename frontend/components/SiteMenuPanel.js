@@ -3,18 +3,13 @@
 import { useId, useState } from 'react';
 import E from '@/components/locale/LocaleElement';
 import SiteMenuLinks from './SiteMenuLinks';
+import CatalogMenuTree from './CatalogMenuTree';
 import styles from './SiteMenuLinks.module.css';
 
 // Keep the route tuples intact: nested equipment and translated links still use
 // the same shared renderer as the mobile navigation.
 function groupLinks(section) {
   const links = section.links;
-  if (section.href === '/catalog/directions') return [
-    { label: 'Трансформаторы', links: links.slice(0, 6) },
-    { label: 'Подстанции', links: links.slice(6, 7) },
-    { label: 'Распределительное оборудование', links: links.slice(7, 11) },
-    { label: 'Релейная защита, автоматика и управление', links: links.slice(11) },
-  ];
   if (section.href === '/industries') return [
     { label: 'Энергетика', links: [links[0], links[6]] },
     { label: 'Промышленность', links: links.slice(1, 3) },
@@ -37,7 +32,7 @@ function groupLinks(section) {
   return links.map(link => ({ label: link[0], links: [link] }));
 }
 
-export default function SiteMenuPanel({ section, onNavigate }) {
+function SectionMenuPanel({ section, onNavigate }) {
   const groups = groupLinks(section).filter(group => group.links.length);
   const [selected, setSelected] = useState(0);
   const id = useId();
@@ -58,9 +53,18 @@ export default function SiteMenuPanel({ section, onNavigate }) {
             event.currentTarget.parentElement.children[next].focus();
           }}><E as="span">{group.label}</E><span aria-hidden="true">›</span></button>)}
       </div>
-      <div className={styles.categoryContent} role="tabpanel" id={`${id}-content`} aria-labelledby={`${id}-tab-${current}`}>
+      <div key={current} className={styles.categoryContent} role="tabpanel" id={`${id}-content`} aria-labelledby={`${id}-tab-${current}`}>
         <SiteMenuLinks links={groups[current].links} onNavigate={onNavigate} />
       </div>
     </div>
+  </div>;
+}
+
+export default function SiteMenuPanel({ section, onNavigate }) {
+  if (section.href !== '/catalog/directions') return <SectionMenuPanel section={section} onNavigate={onNavigate} />;
+
+  return <div className={`${styles.compactPanel} ${styles.catalogPanel}`}>
+    <div className={styles.panelHeading}><E as="strong">{section.title}</E></div>
+    <CatalogMenuTree onNavigate={onNavigate} />
   </div>;
 }

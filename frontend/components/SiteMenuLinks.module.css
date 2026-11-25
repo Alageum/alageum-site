@@ -83,5 +83,114 @@
 .categoryContent .link { min-height: 42px; padding: 10px 0; }
 .categoryContent .link > span { font-size: 13px; font-weight: 450; }
 .categoryContent .link small { font-size: 11px; }
+.catalogPanel {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.catalogPanel .panelHeading { flex-shrink: 0; }
+.catalogueEditions {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  column-gap: 16px;
+  margin: 12px 0 0;
+  padding: 4px 0 0;
+  list-style: none;
+  border-top: 1px solid var(--site-line);
+}
+.catalogueEditions a {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: 10px 0;
+  color: var(--site-ink);
+  font-size: 13px;
+}
+.catalogueEditions small { color: var(--site-muted); font-size: 11px; }
+.catalogueEditions .pdfLabel { color: var(--site-red); }
+.catalogueEditions a:hover { color: var(--site-red); text-decoration: underline; }
+:global(.site-mobile-group-links) .catalogueEditions {
+  flex-direction: column;
+}
+:global(.site-mobile-group-links) .catalogueEditions a { width: 100%; min-height: 44px; }
+.equipmentLayout {
+  display: grid;
+  grid-template-columns: minmax(190px, 0.95fr) minmax(0, 1.45fr);
+  gap: 20px;
+  min-height: 0;
+  padding-top: 12px;
+}
+.equipmentTree,
+.equipmentBranches {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.equipmentLayout > :is(.equipmentTree, .equipmentPane) {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+}
+.equipmentLayout > .equipmentTree {
+  border-right: 1px solid var(--site-line);
+  padding-right: 10px;
+}
+.equipmentGroup,
+.equipmentItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  min-height: 42px;
+  padding: 8px 10px;
+  color: var(--site-ink);
+  background: transparent;
+  border: 0;
+  text-align: start;
+  font: inherit;
+  font-size: 13px;
+  line-height: 1.35;
+  cursor: pointer;
+}
+.equipmentGroup { border-bottom: 1px solid var(--site-line); }
+.equipmentGroup[aria-expanded="true"] { font-weight: 650; }
+.equipmentBranches {
+  border-inline-start: 1px solid var(--site-line);
+  margin: 4px 0 6px 10px;
+  padding-inline-start: 6px;
+}
+.equipmentItem { min-height: 38px; }
+.equipmentItem[aria-pressed="true"] {
+  color: var(--site-red);
+  background: #f8f3f4;
+  box-shadow: inset 2px 0 var(--site-red);
+}
+:is(.equipmentGroup, .equipmentItem):hover { background: #f5f5f5; }
+:is(.equipmentGroup, .equipmentItem):focus-visible { outline-offset: -2px; }
+.treeChevron {
+  width: 7px;
+  height: 7px;
+  flex: 0 0 auto;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  transform: rotate(45deg);
+}
+.equipmentGroup[aria-expanded="true"] .treeChevron { transform: rotate(225deg); }
+.equipmentContent { min-width: 0; padding: 8px 4px 10px 0; }
+.equipmentContent h3 { margin: 0 0 8px; font-size: 15px; line-height: 1.4; }
+.equipmentProducts { margin: 0; padding: 0; list-style: none; }
+.equipmentProducts li { border-bottom: 1px solid var(--site-line); }
+.equipmentContent :is(li, p), .equipmentPrompt { font-size: 13px; line-height: 1.45; overflow-wrap: anywhere; }
+.equipmentProductLabel { display: block; padding: 10px 0; }
+.equipmentProductLink { display: flex; justify-content: space-between; align-items: center; gap: 10px; min-height: 44px; padding: 8px 4px 8px 0; }
+.equipmentProductLink:hover { color: var(--site-red); }
+.equipmentProductLink > span:last-child { flex-shrink: 0; }
+.equipmentSectionLink { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 44px; }
+.equipmentSectionLink:hover, .equipmentSectionLink:focus-visible { color: var(--site-red); }
+.equipmentSectionLink > span:last-child { flex-shrink: 0; }
+.mobileCatalogTree :is(.equipmentGroup, .equipmentItem) { min-height: 44px; }
+.mobileCatalogTree .equipmentContent { padding: 10px; background: #f5f5f5; }
 .categories button:focus-visible { outline: 2px solid var(--site-red); outline-offset: -2px; }
 @media(prefers-reduced-motion: reduce) { .categories button { transition: none; } }

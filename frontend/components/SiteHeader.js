@@ -14,6 +14,7 @@ import QuickFeedback from '@/components/public/QuickFeedback';
 import PageOrientation from '@/components/PageOrientation';
 import SiteMenuLinks from '@/components/SiteMenuLinks';
 import SiteMenuPanel from '@/components/SiteMenuPanel';
+import CatalogMenuTree from '@/components/CatalogMenuTree';
 import menuStyles from '@/components/SiteMenuLinks.module.css';
 import {siteNavigation} from '@/lib/public/site-navigation';
 import { careerSections, careerSectionIndex } from "@/components/careers/navigation";
@@ -210,7 +211,9 @@ export default function SiteHeader({ selectionCount }) {
                 </>
               </LocaleElement>
               {(section.links.length > 0 || section.resources?.length > 0) && <LocaleElement as="div" id={groupId} className="site-mobile-group-links" hidden={!groupOpen}>
-                {groupOpen && <SiteMenuLinks links={section.links} mobile onNavigate={() => closeMenus()}/>}
+                {groupOpen && (section.href === '/catalog/directions'
+                  ? <CatalogMenuTree mobile onNavigate={() => closeMenus()} />
+                  : <SiteMenuLinks links={section.links} mobile onNavigate={() => closeMenus()} />)}
               </LocaleElement>}
             </LocaleElement>;
           })}

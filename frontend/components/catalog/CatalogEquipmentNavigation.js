@@ -3,7 +3,7 @@
 import { useId, useState } from 'react';
 import E from '@/components/locale/LocaleElement';
 import Link from '@/components/locale/LocaleLink';
-import { catalogDirectionById, catalogDirectionHref, topCatalogDirections } from '@/lib/public/catalog-directions';
+import { catalogDirectionById, catalogDirectionHref, catalogEquipmentGroups } from '@/lib/public/catalog-directions';
 import styles from './CatalogEquipmentNavigation.module.css';
 
 export function CatalogEquipmentLayout({ activeId, children }) {
@@ -17,8 +17,8 @@ export default function CatalogEquipmentNavigation({ activeId }) {
   const id = useId();
   const [expanded, setExpanded] = useState(false);
 
-  function directionLink(direction, label = direction.title) {
-    return <Link href={catalogDirectionHref(direction.id)} aria-current={activeId === direction.id ? 'page' : undefined}>
+  function directionLink({ id, label = catalogDirectionById(id).title }) {
+    return <Link href={catalogDirectionHref(id)} aria-current={activeId === id ? 'page' : undefined}>
       {label}
     </Link>;
   }
@@ -31,16 +31,15 @@ export default function CatalogEquipmentNavigation({ activeId }) {
     <div id={id} className={expanded ? styles.expanded : styles.links}>
       <Link href="/catalog" aria-current={activeId === 'all' ? 'page' : undefined}>Все оборудование</Link>
       <ul className={styles.tree}>
-        {topCatalogDirections.map(direction => {
-          const branchActive = activeId === direction.id || direction.children.includes(activeId);
-          return <li key={direction.id}>
-            {direction.children.length ? <details open={branchActive || undefined}>
-              <E as="summary" className={branchActive ? styles.activeBranch : undefined}>{direction.title}</E>
+        {catalogEquipmentGroups.map(({ label, items }) => {
+          const branchActive = items.some(item => item.id === activeId);
+          return <li key={label}>
+            {items.length > 1 ? <details open={branchActive || undefined}>
+              <E as="summary" className={branchActive ? styles.activeBranch : undefined}>{label}</E>
               <ul className={styles.children}>
-                <li>{directionLink(direction, 'Обзор раздела')}</li>
-                {direction.children.map(catalogDirectionById).map(child => <li key={child.id}>{directionLink(child)}</li>)}
+                {items.map(item => <li key={item.id}>{directionLink(item)}</li>)}
               </ul>
-            </details> : directionLink(direction)}
+            </details> : directionLink(items[0])}
           </li>;
         })}
       </ul>

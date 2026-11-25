@@ -708,8 +708,221 @@ export const catalogDirections = [
     ]
   }
 ];
+const transformerSeries = (...series) => series.map(id => `tr2026-family-${id}`);
+
+const equipmentSections = [
+  {
+    id: 'oil-transformers-6-20',
+    title: 'Силовые масляные трансформаторы 6–20 кВ',
+    photoKey: 'ktz',
+    productIds: transformerSeries(
+      'tm-standard', 'tmg-standard', 'tmg-01', 'tmg-x1k1', 'tmge-x2k1', 'tmge-x2k2',
+      'tmgve-x3k2', 'tmgve-x3k3', 'tmgi-x4k3', 'tmgin-x4k3', 'tmgs-pole', 'tmz-panel',
+      'tmgf', 'tmg-copper', 'tmg-switch-6-10', 'isolating-tmg', 'tm-20kv', 'tmg-20kv-copper',
+      'tmg-20kv', 'tmgsu', 'tmeg', 'tmpn-top', 'tmpng-side', 'tdn-10-11', 'tds-10000', 'tm-4000-6300-10',
+    ),
+  },
+  {
+    id: 'dry-transformers-6-20',
+    title: 'Силовые сухие трансформаторы 6–20 кВ',
+    photoKey: 'ktz',
+    productIds: transformerSeries('tsl-loss-c', 'tsl-loss-a', 'tsl-20kv', 'tsn-nomex', 'ts-low-voltage', 'tsi-tools'),
+  },
+  {
+    id: 'oil-transformers-35',
+    title: 'Силовые масляные трансформаторы 35 кВ',
+    photoKey: 'ktz',
+    productIds: transformerSeries('tmg-35', 'tdtnsh-35', 'trdns-35', 'td-35', 'tdns-35', 'tm-35-20-lv04', 'tm-35-20', 'tmn-35-20'),
+  },
+  {
+    id: 'railway-transformers-27-5',
+    title: 'Силовые железнодорожные трансформаторы 27,5 кВ',
+    photoKey: 'ktz',
+    productIds: transformerSeries('omzh-27-5', 'tm-zh-35-27-5', 'tmzh-27-5', 'aomzh-27-5x2'),
+  },
+  {
+    id: 'concrete-heating-transformers',
+    title: 'Трансформаторы для прогрева бетона',
+    productIds: transformerSeries('tmto-original', 'tmto-modern'),
+  },
+  {
+    id: 'single-phase-transformers',
+    title: 'Однофазные трансформаторы',
+    productIds: transformerSeries('om', 'omp'),
+  },
+  {
+    id: 'autotransformers-220-500',
+    title: 'Автотрансформаторы 220–500 кВ',
+    photoKey: 'asia-trafo',
+    projectIds: ['nura'],
+    productIds: transformerSeries('asia-autotransformer-220', 'asia-autotransformer-330', 'asia-autotransformer-500'),
+  },
+  {
+    id: 'outdoor-substations',
+    title: 'КТП наружной установки',
+    subtypes: ['КТП и КТПН 6–10 кВ'],
+    productIds: ['cat-ktp-25-250', 'cat-ktpn-25-3150', 'cat-2ktpn-25-3150'],
+  },
+  {
+    id: 'urban-substations',
+    title: 'КТП городского типа',
+    subtypes: ['КТПГ 6–10 кВ'],
+    productIds: ['cat-ktpg-25-3150', 'cat-2ktpg-25-3150'],
+  },
+  {
+    id: 'industrial-substations',
+    title: 'Промышленные КТП',
+    subtypes: ['КТПП 6–10 кВ'],
+    productIds: ['cat-ktpp-2ktpp-250-6300'],
+  },
+  {
+    id: 'special-purpose-substations',
+    title: 'КТП специального назначения',
+    subtypes: ['КТПО, КТПТО и КТПС'],
+    productIds: ['cat-ktpo-4-10', 'cat-ktpto-80', 'cat-ktps-100-1600'],
+  },
+  {
+    id: 'pole-substations',
+    title: 'Мачтовые подстанции',
+    subtypes: ['МТП и МТПО'],
+    productIds: ['cat-mtp-25-100', 'cat-mtpo-4-10'],
+  },
+  {
+    id: 'modular-substation-buildings',
+    title: 'КТП в блочно-модульном здании (БМЗ)',
+    productIds: ['cat-bktp-modular'],
+  },
+  {
+    id: 'modular-substations',
+    title: 'Блочно-модульные подстанции',
+    subtypes: ['БКТП и 2БКТП 6–10 кВ'],
+    productIds: ['cat-bktp-modular', 'cat-bktp-modular-v002'],
+  },
+  {
+    id: 'concrete-substations',
+    title: 'Подстанции в бетонном исполнении',
+    subtypes: ['БКТП 6–10 кВ'],
+    productIds: ['cat-bktp-concrete'],
+  },
+  {
+    id: 'indoor-fixed-switchgear',
+    title: 'КРУ внутренней установки · стационарные',
+    subtypes: ['КСО и RMU'],
+    productIds: ['kso-366', 'cat-kso-366m', 'kso-2-10', 'cat-kso-2-20', 'kso-292', 'cat-rmu-ae'],
+  },
+  {
+    id: 'indoor-withdrawable-switchgear',
+    title: 'КРУ внутренней установки · выкатные',
+    subtypes: ['К-07, КМ-7М и KERNEU'],
+    productIds: ['cat-kru-k07-ktz', 'cat-km7m', 'cat-kru-kerneu-6-10', 'cat-kru-kerneu-35'],
+  },
+  {
+    id: 'outdoor-switchgear',
+    title: 'КРУ наружной установки',
+    subtypes: ['КРН-IV, К-8М, К-59 и ЯКНО'],
+    productIds: ['cat-krn-iv', 'cat-krun07-ktz', 'cat-k8m', 'cat-k59', 'cat-yakno-6-10', 'cat-yakno-20'],
+  },
+  {
+    id: 'low-voltage-04-assemblies',
+    title: 'Низковольтные комплектные устройства 0,4 кВ',
+    productIds: [
+      'cat-grsh-04', 'cat-shcho-70', 'cat-shnn', 'cat-shchsu-04', 'cat-vru', 'cat-pr-shr11',
+      'cat-yatp', 'cat-ya5000-rusm5000', 'cat-rusm-5100-5400', 'cat-yauo', 'cat-ptm-tded',
+      'cat-bdrm', 'cat-pusk-3m', 'cat-shueng', 'cat-kik', 'cat-skip',
+    ],
+  },
+  {
+    id: 'relay-control-cabinets',
+    title: 'Шкафы релейной защиты и автоматики',
+    subtypes: ['ШУОТ, ШСН 0,4 кВ и ШТЗ'],
+    productIds: ['cat-shuot', 'cat-shsn-04', 'cat-shtz'],
+  },
+  {
+    id: 'oru-with-ktpb',
+    title: 'ОРУ с блочными подстанциями КТПБ(К)',
+    description: 'Блочные подстанции КТПБ(К) для открытых распределительных устройств. В каталоге опубликованы исполнения 35, 110 и 220 кВ.',
+    productIds: ['cat-ktpb-k', 'cat-ktpb-k-v001', 'cat-ktpb-k-v002', 'cat-ktpb-k-v003'],
+  },
+  {
+    id: 'railway-equipment',
+    title: 'Оборудование для железнодорожной отрасли',
+    subtypes: ['КТПЖ, МТПЖ, АТП, ПСК и КРУ 27,5 кВ'],
+    productIds: ['cat-ktpzh-2-4', 'cat-ktpzh-25-1000', 'cat-mtpzh-1-25-2-5', 'cat-mtpzh-10', 'cat-atp-2x25', 'cat-psk-27-5', 'cat-kru-27-5'],
+  },
+  {
+    id: 'mining-equipment',
+    title: 'Оборудование для рудодобывающей промышленности',
+    subtypes: ['ПКТП на салазках, КРУ-РН и КТПШГ'],
+    productIds: ['cat-pktp', 'cat-kru-rn', 'cat-ktpshg'],
+  },
+  {
+    id: 'oil-processing-equipment',
+    title: 'Оборудование для нефтеперерабатывающей промышленности',
+    subtypes: ['УКЗВ, УКЗН, БУЭСКН, БУШК-2М, КТПНД и модульные блоки'],
+    productIds: ['cat-ukzv', 'cat-ukzn', 'cat-bueskn', 'cat-bushk-2m', 'cat-ktpnd', 'cat-modular-oil'],
+  },
+  {
+    id: 'gis-110-500',
+    title: 'КРУЭ 110–500 кВ',
+    productIds: [],
+  },
+];
+
+export const catalogEquipmentDirections = equipmentSections.map(section => ({
+  parentId: null,
+  children: [],
+  subtypes: [],
+  projectIds: [],
+  inputs: ['Номинальные параметры оборудования', 'Условия установки и эксплуатации', 'Техническое задание или однолинейная схема'],
+  description: section.productIds.length
+    ? 'Опубликованные серии и исполнения оборудования этого подраздела.'
+    : 'Исполнение и возможность поставки можно уточнить по техническому заданию.',
+  ...section,
+}));
+
+// The navigation follows the equipment breakdown supplied by Alageum.
+export const catalogEquipmentGroups = [
+  {
+    label: 'Силовые трансформаторы',
+    items: [
+      'oil-transformers-6-20', 'dry-transformers-6-20', 'oil-transformers-35', 'railway-transformers-27-5',
+      'concrete-heating-transformers', 'single-phase-transformers', 'instrument-transformers',
+      'autotransformers-220-500', ['power-transformers', 'Силовые трансформаторы 110–500 кВ'], 'reactors',
+    ],
+  },
+  {
+    label: 'Комплектные трансформаторные подстанции (КТП)',
+    items: [
+      'outdoor-substations', 'urban-substations', 'industrial-substations', 'special-purpose-substations',
+      'pole-substations', 'modular-substation-buildings', 'modular-substations', 'concrete-substations',
+    ],
+  },
+  { label: 'Комплектные распределительные устройства (КРУ)', items: ['indoor-fixed-switchgear', 'indoor-withdrawable-switchgear', 'outdoor-switchgear'] },
+  { label: 'Низковольтные комплектные устройства (НКУ)', items: ['low-voltage-04-assemblies'] },
+  { label: 'Релейная защита и автоматика', items: ['relay-control-cabinets'] },
+  { label: 'ОРУ с КТПБ(К)', items: ['oru-with-ktpb'] },
+  { label: 'Железнодорожная отрасль', items: ['railway-equipment'] },
+  { label: 'Рудодобывающая промышленность', items: ['mining-equipment'] },
+  { label: 'Нефтеперерабатывающая промышленность', items: ['oil-processing-equipment'] },
+  {
+    label: 'Высоковольтное распределительное оборудование',
+    items: ['gis-110-500', ['hv-oru', 'ОРУ 35–220 кВ'], ['hv-opu', 'ОПУ'], ['high-voltage-switching', 'Коммутационная аппаратура']],
+  },
+  {
+    label: 'Другие разделы каталога',
+    items: [
+      'furnace-transformers', 'autotransformers', 'oil-dry-transformers', 'substations', 'high-voltage-switchgear',
+      'hv-kru', 'hv-zru', 'gis', 'low-voltage-switchgear', 'lv-assemblies', 'lv-power-cabinets',
+      'lv-special-cabinets', 'relay-protection', 'cable-systems', 'electrical-components',
+    ],
+  },
+].map(({ label, items }) => ({
+  label,
+  items: items.map(item => typeof item === 'string' ? { id: item } : { id: item[0], label: item[1] }),
+}));
+
 export const topCatalogDirections = catalogDirections.filter(item => item.parentId === null);
-export const catalogDirectionById = id => catalogDirections.find(item => item.id === id);
+export const catalogDirectionById = id => catalogDirections.find(item => item.id === id) ?? catalogEquipmentDirections.find(item => item.id === id);
 export const catalogDirectionHref = id => `/catalog/directions/${encodeURIComponent(id)}`;
 export function getDirectionProducts(id, records) {
   const direction = catalogDirectionById(id);

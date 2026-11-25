@@ -1,7 +1,7 @@
 import E from '@/components/locale/LocaleElement';
 import Link from '@/components/locale/LocaleLink';
 import {Story, Hero, Section, Jump} from '@/components/public/story/Story';
-import {topCatalogDirections, catalogDirectionById, catalogDirectionHref} from '@/lib/public/catalog-directions';
+import {catalogEquipmentGroups, catalogDirectionById, catalogDirectionHref} from '@/lib/public/catalog-directions';
 import {getCorporatePhoto} from '@/lib/public/photography';
 import {companyPageMetadata} from '@/lib/public/company-metadata';
 import {CatalogEquipmentLayout} from '@/components/catalog/CatalogEquipmentNavigation';
@@ -17,12 +17,14 @@ export default function CatalogDirections() {
       <Jump href="/catalog">Весь каталог</Jump>
     </Hero>
     <Section title="Направления каталога">
-      <div className="catalog-directory-grid">{topCatalogDirections.map((item,index)=><article key={item.id}>
-        <span className="catalog-directory-index" aria-hidden="true">{String(index + 1).padStart(2,'0')}</span>
-        <E as="h3"><Link href={catalogDirectionHref(item.id)}>{item.title} <span aria-hidden="true">↗</span></Link></E>
-        <E as="p">{item.description}</E>
-        {item.children.length > 0 && <ul>{item.children.map(id=><li key={id}><Link href={catalogDirectionHref(id)}>{catalogDirectionById(id).title}</Link></li>)}</ul>}
-      </article>)}</div>
+      <div className="catalog-directory-grid">
+        {catalogEquipmentGroups.map(({ label, items }) => <article key={label}>
+          <E as="h3">{label}</E>
+          <ul>{items.map(({ id, label }) => <li key={id}>
+            <Link href={catalogDirectionHref(id)}>{label ?? catalogDirectionById(id).title}</Link>
+          </li>)}</ul>
+        </article>)}
+      </div>
     </Section>
   </Story></CatalogEquipmentLayout>;
 }

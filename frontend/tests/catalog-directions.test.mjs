@@ -1,15 +1,17 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import {readFileSync} from 'node:fs';
-import {catalogDirections,topCatalogDirections,catalogDirectionById,catalogDirectionHref,getDirectionProducts} from '../lib/public/catalog-directions.js';
+import {catalogDirections,catalogEquipmentDirections,topCatalogDirections,catalogDirectionById,catalogDirectionHref,getDirectionProducts} from '../lib/public/catalog-directions.js';
 import {officialProducts} from '../lib/catalog/data.js';
+import {catalogMenuContents} from '../lib/public/catalog-menu-contents.js';
 import {projects} from '../lib/public/content.js';
 
 test('direction tree preserves the requested hierarchy and every target resolves',()=>{
  assert.equal(topCatalogDirections.length,14);
  assert.equal(catalogDirections.length,21);
- assert.equal(new Set(catalogDirections.map(item=>item.id)).size,21);
- for(const item of catalogDirections){
+ const allDirections=[...catalogDirections,...catalogEquipmentDirections];
+ assert.equal(new Set(allDirections.map(item=>item.id)).size,allDirections.length);
+ for(const item of allDirections){
   assert.equal(catalogDirectionHref(item.id),`/catalog/directions/${item.id}`);
   if(item.parentId)assert.ok(catalogDirectionById(item.parentId).children.includes(item.id));
   for(const child of item.children)assert.equal(catalogDirectionById(child).parentId,item.id);
@@ -26,7 +28,7 @@ test('navigation never invents equipment through name matching or includes demo 
  assert.deepEqual(getDirectionProducts('power-transformers',[{id,source:'demo'},{id,source:'api'}]),[]);
  assert.deepEqual(getDirectionProducts('furnace-transformers',[{id:'invented-furnace',name:'Печной трансформатор',source:'official'}]),[]);
  const before=JSON.stringify(officialProducts);
- for(const item of catalogDirections){
+ for(const item of [...catalogDirections,...catalogEquipmentDirections]){
   const matches=getDirectionProducts(item.id,officialProducts);
   assert.deepEqual(matches.map(p=>p.id),item.productIds);
   assert.ok(matches.every(product=>officialProducts.includes(product)));
@@ -45,4 +47,15 @@ test('semantic boundaries separate reactors, autotransformers, GIS, low voltage 
 test('client navigation data imports no catalog payload or technical authority',()=>{
  const source=readFileSync(new URL('../lib/public/catalog-directions.js',import.meta.url),'utf8');
  assert.doesNotMatch(source,/^import\s/m);
+});
+
+test('dropdown product links use published catalogue records', () => {
+ const publishedIds = new Set(officialProducts.map(product => product.id));
+ for (const [sectionId, entries] of Object.entries(catalogMenuContents)) {
+  assert.ok(catalogDirectionById(sectionId), sectionId);
+  assert.equal(new Set(entries.map(([label]) => label)).size, entries.length, sectionId);
+  for (const [label, productId] of entries) {
+   if (productId) assert.ok(publishedIds.has(productId), `${sectionId}: ${label}`);
+  }
+ }
 });

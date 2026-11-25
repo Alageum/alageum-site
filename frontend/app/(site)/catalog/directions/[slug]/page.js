@@ -24,6 +24,7 @@ export default async function CatalogDirection({params}) {
   const projects = item.projectIds.map(projectById).filter(Boolean);
   const parent = item.parentId ? catalogDirectionById(item.parentId) : null;
   const requestHref = `/inquiry?intent=selection&solution=${encodeURIComponent(item.title)}`;
+  const hasEquipmentTypes = item.children.length > 0 || item.subtypes.length > 0;
   return <CatalogEquipmentLayout activeId={slug}><Story name={`catalog-direction-${slug}`}>
     <Hero label={item.title} title={item.title} lead={item.description} variant={item.photoKey ? 'split' : 'wide'} photo={item.photoKey ? getManufacturerPhoto(item.photoKey) : null} ancestors={parent ? [{label:'Каталог',href:'/catalog/directions'}] : []} parent={parent ? {label:parent.title,href:catalogDirectionHref(parent.id)} : {label:'Каталог',href:'/catalog/directions'}}>
       <div className="catalog-direction-actions">
@@ -31,11 +32,11 @@ export default async function CatalogDirection({params}) {
         <Jump href={requestHref}>Запросить подбор</Jump>
       </div>
     </Hero>
-    <ChapterNav items={[["#equipment-types","Виды оборудования"],["#published-series","Серии в каталоге"],["#direction-projects","Проекты"],["#selection-data","Данные для подбора"]]} />
-    <Section id="equipment-types" title="Виды оборудования">
+    <ChapterNav items={[...(hasEquipmentTypes ? [["#equipment-types","Виды оборудования"]] : []),["#published-series","Серии в каталоге"],["#direction-projects","Проекты"],["#selection-data","Данные для подбора"]]} />
+    {hasEquipmentTypes && <Section id="equipment-types" title="Виды оборудования">
       {item.children.length > 0 && <ReadingLinks items={item.children.map(id=>{const child = catalogDirectionById(id);return [catalogDirectionHref(id),child.title,child.description];})} />}
       {item.subtypes.length > 0 && <ul className="catalog-type-list">{item.subtypes.map(type=><E as="li" key={type}>{type}</E>)}</ul>}
-    </Section>
+    </Section>}
     <Section id="published-series" tone="paper" title="Опубликованные серии">
       {records.length ? <ul className="catalog-series-list">{records.map(product=><li key={product.id}><Link href={`/catalog/${encodeURIComponent(product.id)}`}><span>{displayProductName(product)}</span><span aria-hidden="true">↗</span></Link></li>)}</ul> : <E as="p">Технические карточки пока не опубликованы. Исполнение и возможность поставки уточнит отдел продаж по вашему техническому заданию.</E>}
     </Section>
