@@ -8,7 +8,7 @@ import {engineeringOrganizations} from '../lib/public/engineering-organizations.
 import {existsSync} from 'node:fs';
 
 test('primary navigation matches the requested order and preserves all nested catalogue groups',()=>{
- assert.deepEqual(siteNavigation.map(s=>s.label),['О компании','Направления','Предприятия','Каталог','Отрасли','Контакты']);
+ assert.deepEqual(siteNavigation.map(s=>s.label),['О компании','Направления','Предприятия','Каталог','Отрасли','Проектировщикам','Контакты']);
  assert.equal(siteNavigation[1].href,'/directions');
  assert.equal(siteNavigation.at(-1).href,'/contacts');
  const catalogue=siteNavigation[3];

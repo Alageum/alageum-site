@@ -1,88 +1,82 @@
 import E from '@/components/locale/LocaleElement';
 import Link from '@/components/locale/LocaleLink';
 import CorporateArrow from '@/components/public/CorporateArrow';
-import HomeContactForm from '@/components/public/HomeContactForm';
-import { catalogDirectionById, catalogDirectionHref, topCatalogDirections } from '@/lib/public/catalog-directions';
+import CorporatePhoto from '@/components/public/CorporatePhoto';
 import { documents } from '@/lib/public/content';
+import { designerQuestionnaires } from '@/lib/public/designer-questionnaires';
+import { getManufacturerPhoto } from '@/lib/public/photography';
 import '@/components/public/corporate-home.css';
+import DesignerWorkspace from './DesignerWorkspace';
 import styles from './designers.module.css';
 
 export const metadata = {
   title: 'Проектировщикам · Alageum Electric',
-  description: 'Каталоги, параметры оборудования и запрос технической документации для проекта.',
+  description: 'Опросные листы, технические каталоги и запрос документации на оборудование Alageum Electric.',
 };
 
-const groups = [
-  { id: 'transformers', title: 'Трансформаторы', directions: ['power-transformers', 'autotransformers', 'furnace-transformers', 'oil-dry-transformers', 'instrument-transformers'] },
-  { id: 'reactors', title: 'Реакторы', directions: ['reactors'] },
-  { id: 'substations', title: 'Подстанции', directions: ['substations'] },
-  { id: 'switchgear', title: 'Распределительное оборудование', directions: ['high-voltage-switchgear', 'low-voltage-switchgear', 'gis', 'high-voltage-switching'] },
-  { id: 'control', title: 'Автоматика и комплектующие', directions: ['relay-protection', 'cable-systems', 'electrical-components'] },
-];
-const files = [
-  {
-    title: 'Шкафные конструкции',
-    description: 'Серии шкафов, технические характеристики, схемы и чертежи.',
-    period: '02.09.2024',
-    href: '/catalog/source',
-    action: 'Читать каталог',
-  },
-  ...documents.filter(item => item.format === 'PDF').map(item => ({ ...item, action: 'Открыть PDF' })),
+const catalogues = [
+  { title: 'Каталог трансформаторов', description: 'Печатное техническое издание · 187 страниц', href: '/documents/transformers-2026-print.pdf' },
+  { title: 'Каталог подстанций и шкафных конструкций', description: 'Печатное техническое издание · 104 страницы', href: '/documents/substations-local-edition.pdf' },
+  ...documents.filter(item => item.format === 'PDF'),
 ];
 
 export default function Documents() {
   return <div className={`site-container ${styles.page}`}>
-    <E as="nav" className={styles.sidebar} aria-label="Разделы для проектировщиков">
-      <Link href="#technical-catalogs">Оборудование</Link>
-      <ul>
-        {groups.map(group => <li key={group.id}><Link href={`#${group.id}`}>{group.title}</Link></li>)}
-      </ul>
-      <Link href="#corporate-materials">Каталоги и список поставок</Link>
-      <Link href="#documentation-request">Запросить документацию</Link>
-    </E>
-    <div className={styles.content}>
-      <header className={styles.hero}>
-        <E as="p" className="site-eyebrow">ALAGEUM ELECTRIC</E>
+    <header className={styles.hero}>
+      <div className={styles.heroCopy}>
+        <E as="nav" className={styles.breadcrumbs} aria-label="Хлебные крошки">
+          <Link href="/">Alageum</Link><span aria-hidden="true">/</span><E aria-current="page">Проектировщикам</E>
+        </E>
         <E as="h1">Проектировщикам</E>
-        <E as="p">Найдите серию оборудования и её характеристики, откройте каталог или запросите документы для конкретного исполнения.</E>
+        <E as="p">Подберите оборудование, скачайте опросный лист или запросите документацию для проекта.</E>
         <div className={styles.actions}>
           <Link className="site-button site-button-primary" href="#documentation-request">Запросить документацию <CorporateArrow /></Link>
-          <Link className="site-button" href="#corporate-materials">Каталоги и список поставок <CorporateArrow direction="down" /></Link>
+          <Link className="site-button" href="#questionnaires">Опросные листы <CorporateArrow direction="down" /></Link>
         </div>
-      </header>
+      </div>
+      <CorporatePhoto photo={getManufacturerPhoto('asia-trafo')} className={styles.heroPhoto} priority sizes="(max-width: 800px) 100vw, 42vw" />
+    </header>
 
-      <section id="technical-catalogs" className={styles.section} aria-labelledby="designer-equipment">
-        <div className={styles.sectionHeading}>
-          <E as="h2" id="designer-equipment">Оборудование</E>
-          <Link className="site-text-link" href="/catalog">Весь каталог <CorporateArrow /></Link>
-        </div>
-        <div className={styles.groups}>
-          {groups.map(group => <section key={group.id} id={group.id} className={styles.group}>
-            <E as="h3">{group.title}</E>
-            <ul>
-              {group.directions.map(id => {
-                const direction = catalogDirectionById(id);
-                return <li key={id}><Link href={catalogDirectionHref(id)}>{direction.title} <CorporateArrow /></Link></li>;
-              })}
-            </ul>
-          </section>)}
+    <E as="nav" className={styles.sectionNav} aria-label="На этой странице">
+      <Link href="#technical-catalogs">Оборудование</Link>
+      <Link href="#questionnaires">Опросные листы</Link>
+      <Link href="#corporate-materials">Каталоги и список поставок</Link>
+      <Link href="#documentation-request">Заявка на документацию</Link>
+    </E>
+
+    <DesignerWorkspace>
+      <section id="questionnaires" className={styles.section} aria-labelledby="designer-questionnaires">
+        <div className={styles.sectionHeading}><E as="h2" id="designer-questionnaires">Опросные листы</E></div>
+        <E as="p" className={styles.lead}>Скачайте бланк для нужной модели и заполните параметры объекта.</E>
+        <div className={styles.questionnaires}>
+          {designerQuestionnaires.map(({ id, title, files }) => (
+            <details key={id} className={styles.questionnaireGroup}>
+              <summary><E>{title}</E><span className={styles.count}>{files.length}</span><span className={styles.chevron} aria-hidden="true" /></summary>
+              <ul className={styles.files}>
+                {files.map(([name, file]) => (
+                  <li key={file}>
+                    <E>{name}</E>
+                    <E as="a" href={`/documents/questionnaires/${file}`} download aria-label={`Скачать опросный лист ${name}`}>
+                      <E as="small">{file.split('.').at(-1).toUpperCase()}</E><CorporateArrow direction="down" />
+                    </E>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          ))}
         </div>
       </section>
 
       <section id="corporate-materials" className={styles.section} aria-labelledby="designer-materials">
         <div className={styles.sectionHeading}><E as="h2" id="designer-materials">Каталоги и список поставок</E></div>
         <ul className={styles.files}>
-          {files.map(file => <li key={file.href}>
-            <div><E as="h3">{file.title}</E><E as="p">{file.description}</E><E as="small">{file.period}</E></div>
-            <Link className="site-text-link" href={file.href}>{file.action} <E as="span" className={styles.srOnly}>{file.title}</E><CorporateArrow /></Link>
+          {catalogues.map(file => <li key={file.href}>
+            <div><E as="h3">{file.title}</E><E as="p">{file.description}</E></div>
+            <E as="a" href={file.href} target="_blank" rel="noopener noreferrer" aria-label={`${file.title} (PDF)`}><E as="small">PDF</E><CorporateArrow /></E>
           </li>)}
         </ul>
-        <E as="p" className={styles.note}>Перед использованием проверьте дату документа и обозначение изделия. Чертёж должен соответствовать согласованному исполнению.</E>
+        <E as="p" className={styles.note}>Габариты, схемы и комплектация зависят от исполнения. Для рабочей документации запросите чертежи по параметрам вашего проекта.</E>
       </section>
-
-      <div className={styles.request}>
-        <HomeContactForm equipment={topCatalogDirections.map(({ id, title }) => ({ id, title }))} />
-      </div>
-    </div>
+    </DesignerWorkspace>
   </div>;
 }
