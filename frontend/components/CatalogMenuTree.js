@@ -65,7 +65,11 @@ export default function CatalogMenuTree({ mobile = false, onNavigate }) {
                 const active = selected?.id === item.id;
                 return <li key={item.id}>
                   <E as="button" type="button" className={styles.equipmentItem} aria-pressed={active}
-                    aria-controls={!mobile || active ? contentId : undefined} onClick={() => setSelected(item)}>
+                    aria-controls={!mobile || active ? contentId : undefined}
+                    onPointerEnter={event => {
+                      if (!mobile && event.pointerType === 'mouse') setSelected(item);
+                    }}
+                    onClick={() => setSelected(item)}>
                     {item.label ?? catalogDirectionById(item.id).title}
                   </E>
                   {mobile && active && <EquipmentContent item={item} id={contentId} onNavigate={onNavigate} />}
